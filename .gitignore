@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+data/hanstory.db*
+data/voice_test.mp3
+library/master_audio/*.mp3
+library/books/*
+library/exports/*
+!library/master_audio/.gitkeep
+!library/books/.gitkeep
+!library/exports/.gitkeep

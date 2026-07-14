@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#173f35">
+  <title>HanStory Player</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/teaching.css">
+</head>
+<body>
+  <header>
+    <div><span id="brand-eyebrow" class="eyebrow"></span><h1 id="brand-title"></h1><p id="brand-subtitle"></p></div>
+    <button id="updates">Buscar actualizaciones</button>
+  </header>
+  <main>
+    <section id="library-view">
+      <div class="toolbar"><div class="tabs"><button class="tab active" data-library="online">Biblioteca online</button><button class="tab" data-library="local">Biblioteca local</button></div><label>Filtrar <select id="filter"><option value="">Todos</option></select></label></div>
+      <div id="status" role="status"></div><div id="books" class="book-grid"></div>
+      <div id="local-import" hidden><h2>Importar un libro privado</h2><p>Los archivos se quedan en este dispositivo y no se suben.</p><label class="import-button">Importar ZIP o audios<input id="import-files" type="file" multiple accept=".zip,audio/*" hidden></label><label class="import-button">Importar carpeta<input id="import-folder" type="file" webkitdirectory multiple hidden></label></div>
+    </section>
+    <section id="detail-view" hidden><button class="back">← Biblioteca</button><div id="book-detail"></div></section>
+    <section id="player-view" hidden><button class="back">← Libro</button><div class="player-card"><img id="player-cover" alt=""><div><span id="player-lesson" class="eyebrow"></span><h2 id="player-title"></h2><p id="player-text" lang="ko"></p><p id="player-translation"></p><p id="player-meta"></p><details id="teaching" hidden><summary>Explicación didáctica</summary><div class="teaching-tabs"><h3>Traducción</h3><p id="teach-meaning"></p><h3>Explicación</h3><p id="teach-explanation"></p><h3>Palabra por palabra</h3><dl id="teach-breakdown"></dl><h3>Gramática</h3><div id="teach-grammar"></div><h3>Escucha</h3><p id="teach-listening"></p><p id="teach-review" class="badge" hidden>Requiere revisión</p></div></details></div><audio id="audio" preload="metadata"></audio><div class="scrub"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="100" value="0"><span id="duration">0:00</span></div><div class="transport"><button data-action="previous">⏮</button><button data-action="back10">−10</button><button id="play" class="primary">▶</button><button data-action="forward10">+10</button><button data-action="next">⏭</button></div><div class="player-options"><label><input id="continuous" type="checkbox"> Reproducción continua</label><label>Velocidad <select id="speed"><option>.75</option><option selected>1</option><option>1.25</option><option>1.5</option><option>2</option></select></label><label>Repetición <select id="repeat"><option value="off">Apagada</option><option value="track">Pista</option><option value="lesson">Lección</option><option value="book">Libro</option></select></label><button id="favorite">☆ Favorita</button></div></div></section>
+  </main>
+  <footer>Sin cuentas · Sin anuncios · Tu progreso permanece en este dispositivo</footer>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

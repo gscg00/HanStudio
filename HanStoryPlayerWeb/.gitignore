@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+**/__pycache__/
+**/.pytest_cache/
+library/books/**/*.pdf
+library/books/**/*.epub
+library/books/**/*.mobi
+library/books/**/sources/
+library/books/**/ocr/
+library/books/**/tmp/
+library/books/**/temp/

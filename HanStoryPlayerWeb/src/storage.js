@@ -1,0 +1,9 @@
+const DB_NAME='hanstory-player', DB_VERSION=1;
+export function openDB(){return new Promise((resolve,reject)=>{const request=indexedDB.open(DB_NAME,DB_VERSION);request.onupgradeneeded=()=>{for(const name of ['progress','downloads','localBooks','metadata'])if(!request.result.objectStoreNames.contains(name))request.result.createObjectStore(name,{keyPath:'id'});};request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});}
+export async function get(store,id){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction(store).objectStore(store).get(id);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
+export async function put(store,value){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction(store,'readwrite').objectStore(store).put(value);r.onsuccess=()=>resolve(value);r.onerror=()=>reject(r.error);});}
+export async function all(store){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction(store).objectStore(store).getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
+export async function remove(store,id){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction(store,'readwrite').objectStore(store).delete(id);r.onsuccess=resolve;r.onerror=()=>reject(r.error);});}
+export const progressId=(book,mode='Frases')=>`${book}:${mode}`;
+export function mergeProgress(oldProgress,manifest){if(!oldProgress)return null;const ids=new Set(manifest.tracks.map(t=>t.id));if(ids.has(oldProgress.trackId))return oldProgress;const oldIndex=manifest.tracks.findIndex(t=>naturalCompare(t.id,oldProgress.trackId)>0);return {...oldProgress,trackId:manifest.tracks[Math.max(0,oldIndex)]?.id||'',seconds:0,recovered:true};}
+export function naturalCompare(a,b){return String(a).localeCompare(String(b),undefined,{numeric:true,sensitivity:'base'});}
