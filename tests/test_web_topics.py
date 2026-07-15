@@ -63,3 +63,8 @@ class TopicUIContractTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
         self.assertIn("function speakWord",app); self.assertIn("SpeechSynthesisUtterance",app)
         self.assertIn('class="word-audio"',app); self.assertIn("data-speak=",app)
+
+    def test_isolated_english_i_is_spoken_as_the_pronoun(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("language==='English'&&clean==='I'",app)
+        self.assertIn("return'eye'",app)
