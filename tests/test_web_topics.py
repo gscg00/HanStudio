@@ -115,3 +115,11 @@ class TopicUIContractTests(unittest.TestCase):
         for concept in ("Presentarte","Preguntar el nombre","Decir de dónde eres","Números 0–20","Hora básica","Días de la semana","Sí / no / quizá","Esto / eso / aquello","Personas y lugares","Preguntas básicas"):
             self.assertGreaterEqual(data.count(concept),7)
         self.assertIn("ZERO_STAGE_TITLES[8]",app)
+
+    def test_communicative_cards_show_target_phrase_not_only_pronunciation(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/navigation.css").read_text()
+        self.assertIn("communication=item.category==='communication'",app)
+        self.assertIn("mainText=communication?(item.speak||item.symbol):item.symbol",app)
+        self.assertIn('class="card-category"',app)
+        self.assertIn("Cómo suena",app)
+        self.assertIn(".communication-card .card-category",css)
