@@ -49,3 +49,12 @@ class TopicUIContractTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
         self.assertIn("const topicIcons=",app); self.assertIn("languageIcons={",app)
         self.assertIn("function generatedArtwork",app); self.assertIn("function playerArtwork",app)
+
+    def test_touch_feedback_does_not_shrink_the_button_hit_area(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; css=(root/"assets/navigation.css").read_text()
+        self.assertIn("button:active{transform:none",css)
+        self.assertIn(".choice-card>*{pointer-events:none}",css)
+
+    def test_hidden_review_badge_cannot_be_overridden_by_badge_styles(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; css=(root/"assets/navigation.css").read_text()
+        self.assertIn("[hidden]{display:none!important}",css)
