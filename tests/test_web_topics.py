@@ -134,3 +134,18 @@ class TopicUIContractTests(unittest.TestCase):
         self.assertIn("DETAIL_MEANINGS",data)
         self.assertIn("item.details=detailParts(item)",data)
         self.assertIn(".communication-dialog",css)
+
+    def test_pronunciation_label_is_visually_separated(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; css=(root/"assets/navigation.css").read_text()
+        self.assertIn(".zero-card .pronunciation-help{display:grid",css)
+        self.assertIn(".zero-card .pronunciation-help>span{display:block",css)
+        self.assertIn('content:":"',css)
+
+    def test_single_communication_examples_stay_inline_and_slow_is_distinct(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/navigation.css").read_text(); data=(root/"src/data/zero_courses.js").read_text()
+        self.assertIn("single=details.length===1",app)
+        self.assertIn('class="sound-card zero-card communication-card single-example"',app)
+        self.assertIn('class="inline-meaning"',app)
+        self.assertIn("mode==='slow'?.35:.9",app)
+        self.assertIn("word-break:normal;overflow-wrap:break-word",css)
+        self.assertIn("meaning:meanings[index]",data)

@@ -294,7 +294,7 @@ const DETAIL_MEANINGS={
   'Personas y lugares':['persona','amigo','familia','casa','escuela','estación'],
   'Preguntas básicas':['qué','quién','dónde','cuándo']
 };
-function detailParts(item){const meanings=DETAIL_MEANINGS[item.symbol]||[item.explanation],separator=item.symbol==='Hora básica'?/\s*;\s*/:meanings.length>3?/[，,]\s*/:/\s*\/\s*/,parts=String(item.speak||'').split(separator).map(value=>value.trim()).filter(Boolean);return parts.map((text,index)=>({text,meaning:meanings[index]||meanings.at(-1)||item.explanation}));}
+function detailParts(item){const meanings=DETAIL_MEANINGS[item.symbol]||[item.explanation],separator=item.symbol==='Hora básica'?/(?<=[?？])\s*/:meanings.length>3?/[，,]\s*/:/\s*\/\s*/,parts=String(item.speak||'').split(separator).map(value=>value.trim()).filter(Boolean);return parts.map((text,index)=>({text,meaning:meanings[index]||meanings.at(-1)||item.explanation}));}
 for(const course of Object.values(ZERO_COURSES)){const communication=course.stages.find(item=>item.id==='communication');for(const item of communication.items)item.details=detailParts(item);}
 
 export const ZERO_STAGE_TITLES=['1. Sonidos y escritura','2. Combinaciones básicas','3. Pronunciación peligrosa','4. Primeras palabras','5. Frases de supervivencia','6. Estructura básica del idioma','7. Escucha y repite','8. Primeros conceptos comunicativos','9. Prueba rápida'];
