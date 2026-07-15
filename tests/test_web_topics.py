@@ -68,3 +68,50 @@ class TopicUIContractTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
         self.assertIn("language==='English'&&clean==='I'",app)
         self.assertIn("return'eye'",app)
+
+    def test_beginner_courses_exist_without_published_books(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; html=(root/"index.html").read_text(); app=(root/"src/app.js").read_text(); courses=(root/"src/beginner_courses.js").read_text()
+        self.assertIn('data-mode="beginner"',html); self.assertIn('id="beginner-view"',html)
+        self.assertIn("function renderBeginner",app); self.assertIn("hasCourse=!!BEGINNER_COURSES",app)
+        for language in ("English","Korean","Russian","Italian","French","German","Japanese","Chinese"):
+            self.assertIn(language+":{",courses)
+
+    def test_alphabet_audio_does_not_show_pronunciation_images(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); worker=(root/"service-worker.js").read_text()
+        self.assertNotIn('id="pronunciation-coach"',app)
+        self.assertNotIn("showPronunciationCoach",app)
+        self.assertNotIn("mouth_drawings",worker)
+        self.assertFalse((root/"src/mouth_drawings.js").exists())
+        self.assertFalse((root/"src/language_mouth_guides.js").exists())
+
+    def test_zero_courses_have_eight_stage_experience_for_seven_languages(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; data=(root/"src/data/zero_courses.js").read_text(); app=(root/"src/app.js").read_text(); worker=(root/"service-worker.js").read_text()
+        for language in ("English","Korean","Chinese","German","Russian","Italian","French"):
+            self.assertIn(language+":{stages:[",data)
+        for title in ("Combinaciones básicas","Pronunciación peligrosa","Primeras palabras","Frases de supervivencia","Estructura básica del idioma","Escucha y repite","Prueba rápida"):
+            self.assertIn(title,data)
+        self.assertIn("src/data/zero_courses.js",worker)
+        self.assertIn("ZERO_STAGE_TITLES",app)
+
+    def test_zero_course_progress_audio_modes_and_quiz_are_local(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("`zero:${state.language}`",app)
+        self.assertIn("function markZeroStage",app)
+        for mode in ('normal','slow','repeat','pause'):
+            self.assertIn(f'data-zero-audio="{mode}"',app)
+        self.assertIn("SpeechSynthesisUtterance",app)
+        self.assertIn("function answerZeroQuiz",app)
+        self.assertIn("data-quiz-option",app)
+
+    def test_requested_language_foundations_are_present(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; data=(root/"src/data/zero_courses.js").read_text()
+        for required in ("은/는","이/가","을/를","이에요/예요","있어요/없어요","TH","吗","不","der / die / das","verbo en posición 2","Ы","Щ","ce / ci","gli","gn","an / en","liaison"):
+            self.assertIn(required,data)
+
+    def test_first_communicative_concepts_are_stage_eight(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; data=(root/"src/data/zero_courses.js").read_text(); app=(root/"src/app.js").read_text()
+        self.assertIn("8. Primeros conceptos comunicativos",data)
+        self.assertIn("9. Prueba rápida",data)
+        for concept in ("Presentarte","Preguntar el nombre","Decir de dónde eres","Números 0–20","Hora básica","Días de la semana","Sí / no / quizá","Esto / eso / aquello","Personas y lugares","Preguntas básicas"):
+            self.assertGreaterEqual(data.count(concept),7)
+        self.assertIn("ZERO_STAGE_TITLES[8]",app)
