@@ -162,6 +162,9 @@ def validate_book(book: Book, version: str = "1.0.0") -> PublishReport:
     try:
         manifest, files, warnings = build_manifest(book, version)
         report.warnings += warnings
+        sample = " ".join(str(track.get("text", "")) for track in manifest.get("tracks", [])[:80])
+        if manifest.get("target_language") == "Korean" and sample and not re.search(r"[가-힣]", sample):
+            report.warnings.append("El proyecto está configurado como Korean, pero las frases examinadas no contienen coreano. Revisa Fuentes → Idiomas antes de publicar.")
         if not manifest["tracks"]: report.errors.append("No se encontró ningún audio publicable.")
         for track in manifest["tracks"]:
             if not is_safe_relative(track["audio_path"]): report.errors.append(f"Ruta inválida: {track['audio_path']}")
@@ -220,6 +223,8 @@ def publish_book(book: Book, version: str = "1.0.0", bump: str | None = None, *,
         entry = _library_entry(manifest, book.code)
         index["books"] = sorted([x for x in index["books"] if x.get("code") != book.code] + [entry], key=lambda x: natural_key(x["code"])); index["updated_at"] = utc_now()
         index_path.parent.mkdir(parents=True, exist_ok=True); index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        from .web_topics import rebuild_topics
+        rebuild_topics(WEB_LIBRARY)
         disk_index = json.loads(index_path.read_text(encoding="utf-8")); disk_entry = next((x for x in disk_index.get("books", []) if x.get("code") == book.code), None)
         referenced = WEB_LIBRARY / disk_entry["manifest"] if disk_entry else None
         actual_files = sorted(p.relative_to(destination).as_posix() for p in destination.rglob("*") if p.is_file()) if destination.is_dir() else []

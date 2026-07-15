@@ -9,6 +9,7 @@ from ..book_manager import Book
 from ..creative_engine import creative_runtime_connected, load_creative_runtime, test_creative_runtime
 from ..web_library import WEB_LIBRARY, build_manifest, publish_book, rebuild_library, remove_book, validate_book
 from ..web_explanations import plan_explanations
+from ..web_topics import rebuild_topics
 
 
 class WebLibraryPanel(ttk.Frame):
@@ -29,6 +30,10 @@ class WebLibraryPanel(ttk.Frame):
         ttk.Checkbutton(explanations, text="Regenerar solo IDs seleccionados", variable=self.selected_only).grid(row=3, column=0, sticky="w"); ttk.Entry(explanations, textvariable=self.explanation_ids, width=28).grid(row=3, column=1, sticky="w", padx=8)
         self.explanation_status = ttk.Label(explanations, text="Selecciona un libro para comprobar OpenAI."); self.explanation_status.grid(row=4, column=0, columnspan=2, sticky="w", pady=(5, 0))
         ttk.Button(explanations, text="Probar OpenAI / Actualizar estado", command=self.test_openai).grid(row=4, column=2, sticky="e", padx=8)
+        topics = ttk.LabelFrame(self, text="Índice por temas", padding=8); topics.pack(fill="x", pady=(8, 2)); self.classify_topics_openai = tk.BooleanVar(value=False)
+        ttk.Checkbutton(topics, text="Clasificar frases por temas con OpenAI", variable=self.classify_topics_openai).pack(side="left")
+        for label, command in (("Analizar libro para temas", self.rebuild_topics), ("Generar/actualizar índice de temas", self.rebuild_topics), ("Revisar frases por tema", self.open_topics_folder), ("Publicar temas", self.rebuild_topics), ("Reconstruir temas desde biblioteca publicada", self.rebuild_topics)):
+            ttk.Button(topics, text=label, command=command).pack(side="left", padx=3)
         buttons = ttk.Frame(self); buttons.pack(fill="x", pady=10)
         for label, command in (("Validar paquete web", self.validate), ("Retirar", self.remove), ("Abrir carpeta publicada", self.open_folder), ("Reconstruir biblioteca desde carpetas", self.rebuild)):
             ttk.Button(buttons, text=label, command=command).pack(side="left", padx=(0, 6), pady=3)
@@ -130,6 +135,15 @@ class WebLibraryPanel(ttk.Frame):
     def rebuild(self) -> None:
         result = rebuild_library(); self._show(result.text())
         if not result.ok: messagebox.showerror("Biblioteca web", "No se pudo reconstruir library.json.")
+
+    def rebuild_topics(self) -> None:
+        try: index = rebuild_topics(WEB_LIBRARY); count = sum(len(value.get("topics", [])) for value in index.get("languages", {}).values()); self._show(f"Índice temático actualizado: {count} temas.\n\nLa clasificación por reglas no consume tokens y reutiliza los audios publicados.")
+        except Exception as exc: messagebox.showerror("Índice por temas", str(exc))
+
+    def open_topics_folder(self) -> None:
+        destination = WEB_LIBRARY / "topics"; destination.mkdir(parents=True, exist_ok=True)
+        try: subprocess.run(["open", str(destination)], check=False)
+        except OSError: self._show(f"Carpeta de temas: {destination}")
 
     def _report_window(self, title: str, content: str) -> None:
         window = tk.Toplevel(self); window.title(title); window.geometry("720x520"); window.transient(self.winfo_toplevel())

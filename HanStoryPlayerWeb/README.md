@@ -58,6 +58,12 @@ python3 HanStoryPlayerWeb/scripts/check_web_assets.py
 
 La pestaña **Biblioteca local** conserva el acceso de respaldo para ZIP, varios audios y carpetas cuando Safari lo permita. Los archivos seleccionados no se suben a ningún servidor.
 
+## Idiomas, Historias y Temas
+
+La entrada detecta automáticamente los idiomas presentes en `library.json`. Después permite elegir **Historias**, que conserva la biblioteca y el progreso por libro, o **Temas**, que lee `library/topics/topic_index.json`. Los temas contienen referencias a pistas publicadas; nunca copian ni duplican los MP3.
+
+Studio reconstruye el índice temático al publicar un libro o desde **Biblioteca web → Índice por temas**. La primera versión usa reglas locales para coreano y no consume créditos. Cada clasificación se guarda en `project_cache/topics` con un hash de ID, texto, traducción e idioma, por lo que cambiar solo el audio no vuelve a clasificar la frase. El progreso temático se guarda con una clave separada del progreso narrativo.
+
 ## Formato compartido
 
 `library.json` anuncia código, título, idiomas, versión, portada y ruta del manifest. Cada `hanstory_manifest.json` contiene lecciones y pistas ya ordenadas. Prioridad común para compatibilidad futura: manifest, `Podcast_Tecnico.txt`, `Audios_Tecnico.txt`, lección/secuencia, ID natural y nombre natural.
