@@ -133,6 +133,11 @@ def get_book_record(book_id: int) -> sqlite3.Row | None:
         return connection.execute("SELECT * FROM books WHERE id = ?", (book_id,)).fetchone()
 
 
+def delete_book_record(book_id: int) -> None:
+    with connect() as connection:
+        connection.execute("DELETE FROM books WHERE id = ?", (book_id,))
+
+
 def get_audio_asset(audio_id: str) -> sqlite3.Row | None:
     with connect() as connection:
         return connection.execute(

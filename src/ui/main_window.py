@@ -30,7 +30,7 @@ class MainWindow(tk.Tk):
             style.theme_use("aqua")
         self.notebook = ttk.Notebook(self)
         self.notebook.pack(fill="both", expand=True)
-        self.project_panel = ProjectPanel(self.notebook, self.set_current_book)
+        self.project_panel = ProjectPanel(self.notebook, self.set_current_book, self.clear_current_book)
         self.book_panel = BookPanel(self.notebook)
         self.settings_panel = SettingsPanel(self.notebook)
         self.audio_panel = AudioPanel(self.notebook, self.show_voice_manager)
@@ -64,3 +64,21 @@ class MainWindow(tk.Tk):
         self.anki_panel.set_book(book)
         self.reports_panel.set_book(book)
         self.web_library_panel.set_book(book)
+
+    def clear_current_book(self) -> None:
+        for panel in (
+            self.book_panel,
+            self.audio_panel,
+            self.sources_panel,
+            self.podcast_panel,
+            self.anki_panel,
+            self.reports_panel,
+            self.web_library_panel,
+        ):
+            if hasattr(panel, "book"):
+                panel.book = None
+        self.book_panel.info.configure(text="Selecciona un libro en Biblioteca.")
+        self.book_panel._show("Selecciona un libro en Biblioteca.")
+        self.audio_panel.status.configure(text="Selecciona un libro.")
+        self.reports_panel.text.delete("1.0", "end")
+        self.reports_panel.text.insert("1.0", "Selecciona un libro en Biblioteca.")

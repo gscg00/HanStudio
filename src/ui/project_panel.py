@@ -4,14 +4,20 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from typing import Callable
 
-from ..book_manager import Book, create_book, import_book_file, list_books
+from ..book_manager import Book, create_book, delete_book, import_book_file, list_books, summarize_book_folder
 from ..database import search_audio
 
 
 class ProjectPanel(ttk.Frame):
-    def __init__(self, parent, on_book_selected: Callable[[Book], None]) -> None:
+    def __init__(
+        self,
+        parent,
+        on_book_selected: Callable[[Book], None],
+        on_book_deleted: Callable[[], None] | None = None,
+    ) -> None:
         super().__init__(parent, padding=16)
         self.on_book_selected = on_book_selected
+        self.on_book_deleted = on_book_deleted
         self.books: list[Book] = []
         self.current_book: Book | None = None
         self._build()
@@ -36,6 +42,7 @@ class ProjectPanel(ttk.Frame):
             ("Importar HTML", lambda: self.import_file("html")),
             ("Importar portada", lambda: self.import_file("cover")),
             ("Actualizar lista", self.refresh),
+            ("Borrar libro", self.delete_current_book),
         ):
             ttk.Button(actions, text=label, command=command).pack(fill="x", pady=4)
 
@@ -68,6 +75,8 @@ class ProjectPanel(ttk.Frame):
                 selected_index = index
         if selected_index is not None:
             self.listbox.selection_set(selected_index)
+        elif selected_id is not None:
+            self.current_book = None
 
     def _select(self, _event=None) -> None:
         selection = self.listbox.curselection()
@@ -124,6 +133,52 @@ class ProjectPanel(ttk.Frame):
             self.on_book_selected(self.current_book)
         except Exception as exc:
             messagebox.showerror("Importar", str(exc))
+
+    def delete_current_book(self) -> None:
+        if self.current_book is None:
+            messagebox.showwarning("Borrar libro", "Selecciona primero el libro que quieres borrar.")
+            return
+        book = self.current_book
+        summary = summarize_book_folder(book)
+        if not summary.exists:
+            status = "La carpeta del libro no existe. Solo se borrará de la lista de libros."
+        elif summary.is_empty:
+            status = "La carpeta del libro está vacía."
+        else:
+            status = (
+                f"La carpeta contiene {summary.file_count} archivo(s), "
+                f"{summary.folder_count} carpeta(s) y pesa aproximadamente {summary.human_size}."
+            )
+        message = (
+            f"Vas a borrar este libro:\n\n"
+            f"{book.code} — {book.title}\n\n"
+            f"{status}\n\n"
+            f"Carpeta:\n{book.folder}\n\n"
+            "Esto borrará los archivos de este libro: CSV, archivo técnico, HTML, portada, "
+            "salidas, reportes, podcast y Anki del libro.\n\n"
+            "No borrará la biblioteca maestra de audios reutilizables.\n\n"
+            "¿Seguro que quieres borrarlo?"
+        )
+        if not messagebox.askyesno("Confirmar borrado de libro", message, icon="warning"):
+            return
+        try:
+            deleted_summary = delete_book(book)
+        except Exception as exc:
+            messagebox.showerror("Borrar libro", str(exc))
+            return
+        self.current_book = None
+        self.refresh()
+        if self.on_book_deleted is not None:
+            self.on_book_deleted()
+        if deleted_summary.exists and not deleted_summary.is_empty:
+            detail = (
+                f"Se borró el libro y su carpeta con {deleted_summary.file_count} archivo(s)."
+            )
+        elif deleted_summary.exists:
+            detail = "Se borró el libro. Su carpeta estaba vacía."
+        else:
+            detail = "Se borró el libro de la lista. La carpeta ya no existía."
+        messagebox.showinfo("Borrar libro", detail)
 
     def search_master(self) -> None:
         for item in self.audio_results.get_children():

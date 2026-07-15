@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .config import BOOKS_DIR
-from .database import create_book_record, get_book_record, list_book_records
+from .database import create_book_record, delete_book_record, get_book_record, list_book_records
 
 
 @dataclass(frozen=True)
@@ -39,6 +39,29 @@ class Book:
     @property
     def project_config_path(self) -> Path:
         return self.folder / "project_config.json"
+
+
+@dataclass(frozen=True)
+class BookFolderSummary:
+    exists: bool
+    file_count: int = 0
+    folder_count: int = 0
+    total_bytes: int = 0
+
+    @property
+    def is_empty(self) -> bool:
+        return self.exists and self.file_count == 0 and self.folder_count == 0
+
+    @property
+    def human_size(self) -> str:
+        size = float(self.total_bytes)
+        for unit in ("bytes", "KB", "MB", "GB"):
+            if size < 1024 or unit == "GB":
+                if unit == "bytes":
+                    return f"{int(size)} bytes"
+                return f"{size:.1f} {unit}"
+            size /= 1024
+        return f"{self.total_bytes} bytes"
 
 
 def safe_folder_name(value: str) -> str:
@@ -134,6 +157,46 @@ def get_book(book_id: int) -> Book:
     if record is None:
         raise ValueError("El libro seleccionado ya no existe.")
     return _from_record(record)
+
+
+def summarize_book_folder(book: Book) -> BookFolderSummary:
+    if not book.folder.exists():
+        return BookFolderSummary(exists=False)
+    file_count = 0
+    folder_count = 0
+    total_bytes = 0
+    for path in book.folder.rglob("*"):
+        try:
+            stat = path.lstat()
+        except OSError:
+            continue
+        if path.is_dir():
+            folder_count += 1
+        else:
+            file_count += 1
+            total_bytes += stat.st_size
+    return BookFolderSummary(
+        exists=True,
+        file_count=file_count,
+        folder_count=folder_count,
+        total_bytes=total_bytes,
+    )
+
+
+def delete_book(book: Book) -> BookFolderSummary:
+    summary = summarize_book_folder(book)
+    books_root = BOOKS_DIR.resolve()
+    folder = book.folder.resolve()
+    try:
+        folder.relative_to(books_root)
+    except ValueError as exc:
+        raise ValueError("Por seguridad, solo se pueden borrar libros dentro de library/books.") from exc
+    if folder == books_root:
+        raise ValueError("Por seguridad, no se puede borrar la carpeta principal de libros.")
+    if book.folder.exists():
+        shutil.rmtree(book.folder)
+    delete_book_record(book.book_id)
+    return summary
 
 
 def import_book_file(book: Book, source: str | Path, kind: str) -> Path:

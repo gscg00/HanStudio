@@ -178,6 +178,44 @@ class MultiBookArchitectureTests(unittest.TestCase):
         self.assertFalse(collision_result.is_valid)
         self.assertTrue(any("COLISIÓN 1001" in error for error in collision_result.errors))
 
+    def test_delete_book_removes_folder_and_links_but_keeps_master_audio(self) -> None:
+        book = self.make_book("DEL", "안녕하세요?")
+        (book.output_dir / "Reports" / "resumen_libro.txt").write_text("reporte", encoding="utf-8")
+        (self.master_dir / "1001.mp3").write_bytes(b"master mp3")
+        register_audio_asset(
+            audio_id="1001",
+            audio_type="phrase",
+            speaker="Aru",
+            text="안녕하세요?",
+            translation="Hola",
+            voice_id="voice-aru",
+            model_id="test",
+            file_name="1001.mp3",
+        )
+        database.link_audio_to_book(book.book_id, "1001")
+        replace_lesson_links(book.book_id, {1: ["1001"]})
+
+        summary = book_manager.summarize_book_folder(book)
+        self.assertTrue(summary.exists)
+        self.assertGreater(summary.file_count, 0)
+
+        deleted = book_manager.delete_book(book)
+
+        self.assertEqual(deleted.file_count, summary.file_count)
+        self.assertFalse(book.folder.exists())
+        self.assertEqual(book_manager.list_books(), [])
+        self.assertTrue((self.master_dir / "1001.mp3").exists())
+        with connect() as connection:
+            self.assertIsNotNone(
+                connection.execute("SELECT * FROM audio_assets WHERE audio_id = '1001'").fetchone()
+            )
+            self.assertIsNone(
+                connection.execute("SELECT * FROM book_audio WHERE book_id = ?", (book.book_id,)).fetchone()
+            )
+            self.assertIsNone(
+                connection.execute("SELECT * FROM lesson_audio WHERE book_id = ?", (book.book_id,)).fetchone()
+            )
+
     def test_lesson_copies_sort_by_conversation_order_not_master_id(self) -> None:
         book = book_manager.create_book("Orden narrativo", "L11")
         rows = [

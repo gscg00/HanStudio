@@ -33,3 +33,19 @@ class TopicUIContractTests(unittest.TestCase):
     def test_language_mode_and_separate_topic_progress_exist(self):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; html=(root/"index.html").read_text(); app=(root/"src/app.js").read_text()
         self.assertIn("¿Qué idioma quieres estudiar?",html); self.assertIn('data-mode="stories"',html); self.assertIn('data-mode="topics"',html); self.assertIn("topic_index.json",app); self.assertIn("progressId(state.book.entry.code,mode)",app); self.assertIn("Ver en historia",app)
+
+    def test_inline_topic_audio_navigation_and_next_lesson_exist(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("data-topic-audio",app); self.assertIn("data-topic-explain",app)
+        self.assertIn('data-nav="home"',app); self.assertIn('data-nav="stories"',app)
+        self.assertIn("function playTopicInline",app); self.assertIn("function offerNextLesson",app)
+
+    def test_language_and_mode_cards_accept_clicks_on_their_children(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("closest('[data-language]')",app)
+        self.assertIn("closest('[data-mode]')",app)
+
+    def test_player_has_topic_and_language_artwork_fallbacks(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("const topicIcons=",app); self.assertIn("languageIcons={",app)
+        self.assertIn("function generatedArtwork",app); self.assertIn("function playerArtwork",app)
