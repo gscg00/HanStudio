@@ -58,3 +58,8 @@ class TopicUIContractTests(unittest.TestCase):
     def test_hidden_review_badge_cannot_be_overridden_by_badge_styles(self):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; css=(root/"assets/navigation.css").read_text()
         self.assertIn("[hidden]{display:none!important}",css)
+
+    def test_word_breakdown_can_use_device_text_to_speech(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("function speakWord",app); self.assertIn("SpeechSynthesisUtterance",app)
+        self.assertIn('class="word-audio"',app); self.assertIn("data-speak=",app)
