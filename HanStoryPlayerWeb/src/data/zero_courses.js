@@ -282,4 +282,19 @@ Preguntas básicas|quoi / qui / où / quand|kuá / ki / u / kan|Où êtes-vous ?
 
 for(const [language,text] of Object.entries(COMMUNICATIVE))ZERO_COURSES[language].stages.push(stage(language,'communication','8. Primeros conceptos comunicativos',text));
 
+const DETAIL_MEANINGS={
+  Presentarte:['Me llamo Ana'],
+  'Preguntar el nombre':['¿Cómo te llamas?'],
+  'Decir de dónde eres':['Soy de México'],
+  'Números 0–20':['cero','uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciséis','diecisiete','dieciocho','diecinueve','veinte'],
+  'Hora básica':['¿Qué hora es?','Son las tres'],
+  'Días de la semana':['lunes','martes','miércoles','jueves','viernes','sábado','domingo'],
+  'Sí / no / quizá':['sí','no','quizá'],
+  'Esto / eso / aquello':['esto','eso','aquello'],
+  'Personas y lugares':['persona','amigo','familia','casa','escuela','estación'],
+  'Preguntas básicas':['qué','quién','dónde','cuándo']
+};
+function detailParts(item){const meanings=DETAIL_MEANINGS[item.symbol]||[item.explanation],separator=item.symbol==='Hora básica'?/\s*;\s*/:meanings.length>3?/[，,]\s*/:/\s*\/\s*/,parts=String(item.speak||'').split(separator).map(value=>value.trim()).filter(Boolean);return parts.map((text,index)=>({text,meaning:meanings[index]||meanings.at(-1)||item.explanation}));}
+for(const course of Object.values(ZERO_COURSES)){const communication=course.stages.find(item=>item.id==='communication');for(const item of communication.items)item.details=detailParts(item);}
+
 export const ZERO_STAGE_TITLES=['1. Sonidos y escritura','2. Combinaciones básicas','3. Pronunciación peligrosa','4. Primeras palabras','5. Frases de supervivencia','6. Estructura básica del idioma','7. Escucha y repite','8. Primeros conceptos comunicativos','9. Prueba rápida'];

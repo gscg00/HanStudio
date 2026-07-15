@@ -123,3 +123,14 @@ class TopicUIContractTests(unittest.TestCase):
         self.assertIn('class="card-category"',app)
         self.assertIn("Cómo suena",app)
         self.assertIn(".communication-card .card-category",css)
+
+    def test_communicative_categories_open_separate_playable_examples(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); data=(root/"src/data/zero_courses.js").read_text(); css=(root/"assets/navigation.css").read_text()
+        self.assertIn('id="communication-dialog"',app)
+        self.assertIn("function openCommunicationCard",app)
+        self.assertIn("data-communication-card",app)
+        self.assertIn('class="communication-example"',app)
+        self.assertIn('data-zero-audio="normal"',app)
+        self.assertIn("DETAIL_MEANINGS",data)
+        self.assertIn("item.details=detailParts(item)",data)
+        self.assertIn(".communication-dialog",css)
