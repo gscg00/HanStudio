@@ -114,6 +114,37 @@ console.log(JSON.stringify({good,saved,nextId:unit.lessons[1].id,restored:normal
         self.assertEqual(data["saved"]["language"], "Japanese")
         self.assertEqual(data["saved"]["id"], "jp-guided-progress-v1")
 
+    def test_course_update_migrates_progress_instead_of_resetting_it(self):
+        script = r"""
+import fs from 'node:fs';
+import {migrateJapaneseProgress} from './HanStoryPlayerWeb/src/japanese_course_logic.js';
+const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/japanese/units/hiragana-01.json'));
+const first=unit.lessons[0], second=unit.lessons[1], activity=first.activities[0];
+const old={id:'jp-guided-progress-v1',courseVersion:2,language:'Japanese',xp:275,currentUnit:'unidad-eliminada',currentLesson:'leccion-eliminada',completedLessons:[first.id,'leccion-eliminada'],lessonScores:{[first.id]:{percentage:100},'leccion-eliminada':{percentage:90}},masteryByItem:{[activity.id]:{correct:4,wrong:0,stage:4},'actividad-eliminada':{correct:1}},mistakes:[{activityId:'actividad-eliminada',lessonId:'leccion-eliminada',dueAt:'2026-07-17T00:00:00Z'}],reviewDue:['2026-07-17T00:00:00Z'],streak:7,lastStudyDate:'2026-07-16',unlockedUnits:[unit.id,'unidad-eliminada'],unlockedLessons:[first.id,'leccion-eliminada']};
+const migrated=migrateJapaneseProgress(old,[unit],3);
+console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:activity.id}));
+"""
+        result = subprocess.run(
+            ["node", "--input-type=module", "-e", script],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+        data = json.loads(result.stdout)
+        migrated = data["migrated"]
+        self.assertEqual(migrated["courseVersion"], 3)
+        self.assertEqual(migrated["xp"], 275)
+        self.assertEqual(migrated["streak"], 7)
+        self.assertEqual(migrated["completedLessons"], [data["first"]])
+        self.assertIn(data["first"], migrated["lessonScores"])
+        self.assertIn(data["activity"], migrated["masteryByItem"])
+        self.assertNotIn("leccion-eliminada", migrated["lessonScores"])
+        self.assertNotIn("actividad-eliminada", migrated["masteryByItem"])
+        self.assertEqual(migrated["mistakes"], [])
+        self.assertIn(data["second"], migrated["unlockedLessons"])
+        self.assertEqual(migrated["currentLesson"], data["second"])
+
     def test_hash_router_replaces_views_and_offline_shell_contains_course(self):
         app = (WEB / "src/japanese_course_app.js").read_text()
         shell = (WEB / "service-worker.js").read_text()
