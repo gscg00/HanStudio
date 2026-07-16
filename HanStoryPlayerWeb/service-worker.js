@@ -1,16 +1,16 @@
-const SHELL='hanstory-shell-v56';
+const SHELL='hanstory-shell-v57';
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
   './assets/japanese_course.css','./assets/japanese_lesson.css','./src/app.js','./src/storage.js','./src/branding.js',
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
   './src/japanese_course_logic.js','./manifest.webmanifest','./library/library.json',
-  './library/courses/japanese/course.json','./library/courses/japanese/units/hiragana-01.json',
-  './library/courses/japanese/units/katakana.json','./library/courses/japanese/units/rhythm.json',
-  './library/courses/japanese/units/first-words.json','./library/courses/japanese/units/first-sentences.json',
-  './library/courses/japanese/units/basic-verbs.json','./library/courses/japanese/units/adjectives.json',
-  './library/courses/japanese/units/functional-a1.json','./library/courses/japanese/units/starter-kanji.json',
-  './library/courses/japanese/units/story-bridge.json',
-  './library/courses/japanese/audio_manifest.json'
+  './library/courses/Japanese/course.json','./library/courses/Japanese/units/hiragana-01.json',
+  './library/courses/Japanese/units/katakana.json','./library/courses/Japanese/units/rhythm.json',
+  './library/courses/Japanese/units/first-words.json','./library/courses/Japanese/units/first-sentences.json',
+  './library/courses/Japanese/units/basic-verbs.json','./library/courses/Japanese/units/adjectives.json',
+  './library/courses/Japanese/units/functional-a1.json','./library/courses/Japanese/units/starter-kanji.json',
+  './library/courses/Japanese/units/story-bridge.json',
+  './library/courses/Japanese/audio_manifest.json'
 ];
 self.addEventListener('install',event=>event.waitUntil(
   caches.open(SHELL).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())
@@ -20,7 +20,7 @@ self.addEventListener('activate',event=>event.waitUntil(
 ));
 self.addEventListener('fetch',event=>{
   const requestUrl=new URL(event.request.url);
-  const japaneseCourseAudio=requestUrl.pathname.includes('/library/courses/japanese/audio/');
+  const japaneseCourseAudio=requestUrl.pathname.includes('/library/courses/Japanese/audio/');
   const fresh=requestUrl.pathname.endsWith('/library/library.json')||['document','script','style'].includes(event.request.destination)||requestUrl.pathname.endsWith('/manifest.webmanifest');
   if(fresh||japaneseCourseAudio){
     event.respondWith(fetch(event.request).then(response=>{

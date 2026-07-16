@@ -274,7 +274,7 @@ activado. El guion visible y reportes usan `text` limpio.
 
 En la PWA, **Japonés → Curso guiado** usa rutas hash compatibles con GitHub
 Pages (`#/japanese/course`, unidades, lecciones, resultados, repaso y perfil).
-El mapa y sus datos viven en `HanStoryPlayerWeb/library/courses/japanese/`;
+El mapa y sus datos viven en `HanStoryPlayerWeb/library/courses/Japanese/`;
 añadir una unidad consiste en crear su JSON y referenciarlo desde `course.json`,
 sin apilar contenido nuevo dentro de `index.html`. El progreso, XP, errores y
 desbloqueos se guardan por dispositivo con la clave `jp-guided-progress-v1` y no
@@ -290,7 +290,7 @@ Voice ID se publican en la PWA.
 Usa primero **Revisar audios** para conocer el número de clips pendientes y los
 caracteres aproximados. Después, **Generar audios con ElevenLabs** crea solo los
 MP3 faltantes y conserva los existentes. El índice público queda en
-`HanStoryPlayerWeb/library/courses/japanese/audio_manifest.json` y los MP3 en su
+`HanStoryPlayerWeb/library/courses/Japanese/audio_manifest.json` y los MP3 en su
 subcarpeta `audio/`. Si un clip falta, la PWA lo marca como pendiente y no recurre
 silenciosamente a otra voz.
 

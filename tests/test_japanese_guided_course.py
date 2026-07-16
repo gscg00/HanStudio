@@ -10,8 +10,8 @@ WEB = ROOT / "HanStoryPlayerWeb"
 
 class JapaneseGuidedCourseTests(TestCase):
     def test_course_has_ten_worlds_and_high_quality_pilot(self):
-        course = json.loads((WEB / "library/courses/japanese/course.json").read_text())
-        unit = json.loads((WEB / "library/courses/japanese/units/hiragana-01.json").read_text())
+        course = json.loads((WEB / "library/courses/Japanese/course.json").read_text())
+        unit = json.loads((WEB / "library/courses/Japanese/units/hiragana-01.json").read_text())
         self.assertEqual(course["language"], "Japanese")
         self.assertEqual(len(course["units"]), 10)
         self.assertEqual(course["version"], 3)
@@ -26,7 +26,7 @@ class JapaneseGuidedCourseTests(TestCase):
 
     def test_every_kana_is_taught_before_it_is_tested(self):
         for filename in ("hiragana-01.json", "katakana.json"):
-            unit = json.loads((WEB / "library/courses/japanese/units" / filename).read_text())
+            unit = json.loads((WEB / "library/courses/Japanese/units" / filename).read_text())
             taught = set()
             for lesson in unit["lessons"]:
                 for activity in lesson["activities"]:
@@ -37,7 +37,7 @@ class JapaneseGuidedCourseTests(TestCase):
 
     def test_kana_are_practiced_immediately_and_reviews_are_interleaved(self):
         for filename in ("hiragana-01.json", "katakana.json"):
-            unit = json.loads((WEB / "library/courses/japanese/units" / filename).read_text())
+            unit = json.loads((WEB / "library/courses/Japanese/units" / filename).read_text())
             taught = set()
             review_count = 0
             for index, lesson in enumerate(unit["lessons"][:-1]):
@@ -60,15 +60,15 @@ class JapaneseGuidedCourseTests(TestCase):
             self.assertGreaterEqual(review_count, 10)
 
     def test_words_begin_only_after_hiragana_katakana_and_rhythm(self):
-        course = json.loads((WEB / "library/courses/japanese/course.json").read_text())
+        course = json.loads((WEB / "library/courses/Japanese/course.json").read_text())
         ids = [item["id"] for item in course["units"]]
         self.assertEqual(ids[:4], ["hiragana-01", "katakana", "rhythm", "first-words"])
         for filename in ("hiragana-01.json", "katakana.json"):
-            unit = json.loads((WEB / "library/courses/japanese/units" / filename).read_text())
+            unit = json.loads((WEB / "library/courses/Japanese/units" / filename).read_text())
             self.assertFalse(any(activity["type"] == "teach_word" for lesson in unit["lessons"] for activity in lesson["activities"]))
 
     def test_each_first_word_is_practiced_before_the_next_word(self):
-        unit = json.loads((WEB / "library/courses/japanese/units/first-words.json").read_text())
+        unit = json.loads((WEB / "library/courses/Japanese/units/first-words.json").read_text())
         built = set()
         for lesson in unit["lessons"]:
             activities = lesson["activities"]
@@ -85,7 +85,7 @@ class JapaneseGuidedCourseTests(TestCase):
         script = r"""
 import fs from 'node:fs';
 import {completeJapaneseLesson,defaultJapaneseProgress,normalizeJapaneseProgress,parseJapaneseRoute,reviewsDue,scoreActivities} from './HanStoryPlayerWeb/src/japanese_course_logic.js';
-const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/japanese/units/hiragana-01.json'));
+const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/Japanese/units/hiragana-01.json'));
 const lesson=unit.lessons[0];
 const answers=Object.fromEntries(lesson.activities.map(a=>[a.id,a.answer]));
 const good=scoreActivities(lesson.activities,answers);
@@ -118,7 +118,7 @@ console.log(JSON.stringify({good,saved,nextId:unit.lessons[1].id,restored:normal
         script = r"""
 import fs from 'node:fs';
 import {migrateJapaneseProgress} from './HanStoryPlayerWeb/src/japanese_course_logic.js';
-const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/japanese/units/hiragana-01.json'));
+const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/Japanese/units/hiragana-01.json'));
 const first=unit.lessons[0], second=unit.lessons[1], activity=first.activities[0];
 const old={id:'jp-guided-progress-v1',courseVersion:2,language:'Japanese',xp:275,currentUnit:'unidad-eliminada',currentLesson:'leccion-eliminada',completedLessons:[first.id,'leccion-eliminada'],lessonScores:{[first.id]:{percentage:100},'leccion-eliminada':{percentage:90}},masteryByItem:{[activity.id]:{correct:4,wrong:0,stage:4},'actividad-eliminada':{correct:1}},mistakes:[{activityId:'actividad-eliminada',lessonId:'leccion-eliminada',dueAt:'2026-07-17T00:00:00Z'}],reviewDue:['2026-07-17T00:00:00Z'],streak:7,lastStudyDate:'2026-07-16',unlockedUnits:[unit.id,'unidad-eliminada'],unlockedLessons:[first.id,'leccion-eliminada']};
 const migrated=migrateJapaneseProgress(old,[unit],3);
@@ -155,10 +155,11 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
         self.assertIn("jp-guided-progress-v1", app)
         self.assertIn("renderTeachingActivity", app)
         self.assertIn("this.navigate('lesson',id)", app)
-        self.assertIn("library/courses/japanese/course.json", shell)
-        self.assertIn("library/courses/japanese/units/hiragana-01.json", shell)
+        self.assertIn("library/courses/Japanese/course.json", shell)
+        self.assertIn("library/courses/Japanese/units/hiragana-01.json", shell)
         self.assertIn("japanese_course_app.js", shell)
-        self.assertIn("/library/courses/japanese/audio/", shell)
+        self.assertIn("/library/courses/Japanese/audio/", shell)
+        self.assertIn("data-jp-action=\"retry-load\"", app)
         self.assertIn("cache.put(event.request", shell)
         self.assertIn("location.hash.startsWith('#/japanese/')", main)
         self.assertIn('data-nav="course"', main)
@@ -176,7 +177,7 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
         self.assertIn("<span>pasos</span>", app)
 
     def test_audio_is_eleven_v3_and_never_browser_tts(self):
-        manifest = json.loads((WEB / "library/courses/japanese/audio_manifest.json").read_text())
+        manifest = json.loads((WEB / "library/courses/Japanese/audio_manifest.json").read_text())
         app = (WEB / "src/japanese_course_app.js").read_text()
         self.assertEqual(manifest["provider"], "ElevenLabs")
         self.assertEqual(manifest["model_id"], "eleven_v3")
@@ -184,13 +185,13 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
             self.assertIn(kana, manifest["items"])
         for whole_word in ("あい", "うえ", "おばあさん", "きて", "きって"):
             self.assertIn(whole_word, manifest["items"])
-            self.assertTrue((WEB / "library/courses/japanese" / manifest["items"][whole_word]).is_file())
+            self.assertTrue((WEB / "library/courses/Japanese" / manifest["items"][whole_word]).is_file())
         self.assertNotIn("speechSynthesis", app)
         self.assertNotIn("[...key].map", app)
         self.assertIn("playbackRate", app)
 
     def test_every_course_audio_reference_exists_as_one_complete_clip(self):
-        course_root = WEB / "library/courses/japanese"
+        course_root = WEB / "library/courses/Japanese"
         course = json.loads((course_root / "course.json").read_text())
         manifest = json.loads((course_root / "audio_manifest.json").read_text())
         referenced = set()
