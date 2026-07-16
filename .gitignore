@@ -24,3 +24,14 @@ library/exports/*
 !library/master_audio/.gitkeep
 !library/books/.gitkeep
 !library/exports/.gitkeep
+
+# Este repositorio público conserva únicamente HanStory Web Player.
+# Han Studio y HanStory Player local permanecen en la computadora, fuera de Git.
+/*
+!/.gitignore
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/pages.yml
+!/HanStoryPlayerWeb/

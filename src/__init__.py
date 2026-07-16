@@ -1,2 +1,0 @@
-"""Núcleo de HanStory Studio."""
-
