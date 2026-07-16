@@ -1,22 +1,22 @@
 {
   "id": "adjectives",
   "title": "Adjetivos y descripción",
-  "description": "Describe objetos, lugares, gustos y estados.",
+  "description": "Describe colores, tamaños, estados y razones.",
   "requirements": [],
   "reward": {
-    "xp": 350,
-    "badge": "Descripción A1"
+    "xp": 650,
+    "badge": "Descripción del Libro 1"
   },
   "lessons": [
     {
-      "id": "jp-adj-i",
-      "title": "Adjetivos い",
+      "id": "jp-book1-adj-01",
+      "title": "Tamaño y valoración",
       "description": "Aprende 5 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-adj-i-intro",
+          "id": "jp-book1-adj-01-intro",
           "type": "lesson_intro",
-          "prompt": "Primero aprende: Adjetivos い",
+          "prompt": "Primero aprende: Tamaño y valoración",
           "target": "",
           "options": [],
           "answer": "",
@@ -30,7 +30,7 @@
           "gradable": false
         },
         {
-          "id": "jp-adj-i-teach-1",
+          "id": "jp-book1-adj-01-teach-1",
           "type": "teach_word",
           "prompt": "Aprende «grande»",
           "target": "おおきい",
@@ -42,21 +42,21 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i"
+            "jp-book1-adj-01"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: grande"
         },
         {
-          "id": "jp-adj-i-quiz-1",
+          "id": "jp-book1-adj-01-quiz-1",
           "type": "word_to_translation",
           "prompt": "¿Qué significa おおきい?",
           "target": "おおきい",
           "options": [
             "grande",
             "pequeño",
-            "nuevo"
+            "bonito o adorable"
           ],
           "answer": "grande",
           "explanation": "おおきい significa «grande».",
@@ -65,13 +65,13 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-adj-i-build-1",
+          "id": "jp-book1-adj-01-build-1",
           "type": "build_word",
           "prompt": "Construye «grande»",
           "target": "おおきい",
@@ -88,13 +88,13 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-adj-i-teach-2",
+          "id": "jp-book1-adj-01-teach-2",
           "type": "teach_word",
           "prompt": "Aprende «pequeño»",
           "target": "ちいさい",
@@ -106,21 +106,21 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i"
+            "jp-book1-adj-01"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: pequeño"
         },
         {
-          "id": "jp-adj-i-quiz-2",
+          "id": "jp-book1-adj-01-quiz-2",
           "type": "word_to_translation",
           "prompt": "¿Qué significa ちいさい?",
           "target": "ちいさい",
           "options": [
             "pequeño",
             "grande",
-            "nuevo"
+            "bonito o adorable"
           ],
           "answer": "pequeño",
           "explanation": "ちいさい significa «pequeño».",
@@ -129,13 +129,13 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-adj-i-build-2",
+          "id": "jp-book1-adj-01-build-2",
           "type": "build_word",
           "prompt": "Construye «pequeño»",
           "target": "ちいさい",
@@ -152,13 +152,13 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-adj-i-listen-2",
+          "id": "jp-book1-adj-01-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
           "target": "おおきい",
@@ -173,13 +173,229 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-adj-i-teach-3",
+          "id": "jp-book1-adj-01-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «bonito o adorable»",
+          "target": "かわいい",
+          "options": [],
+          "answer": "",
+          "explanation": "bonito o adorable",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: bonito o adorable"
+        },
+        {
+          "id": "jp-book1-adj-01-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "bonito o adorable",
+            "grande",
+            "pequeño"
+          ],
+          "answer": "bonito o adorable",
+          "explanation": "かわいい significa «bonito o adorable».",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-adj-01-build-3",
+          "type": "build_word",
+          "prompt": "Construye «bonito o adorable»",
+          "target": "かわいい",
+          "options": [
+            "い",
+            "い",
+            "わ",
+            "か"
+          ],
+          "answer": "かわいい",
+          "explanation": "La palabra completa es かわいい. Escúchala seguida.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-adj-01-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "かわいい",
+          "options": [
+            "ちいさい",
+            "おおきい",
+            "かわいい"
+          ],
+          "answer": "かわいい",
+          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-adj-01-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "pequeño",
+            "bonito o adorable",
+            "grande"
+          ],
+          "answer": "grande",
+          "explanation": "おおきい significa «grande».",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-adj-01-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «peligroso»",
+          "target": "あぶない",
+          "options": [],
+          "answer": "",
+          "explanation": "peligroso",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: peligroso"
+        },
+        {
+          "id": "jp-book1-adj-01-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "peligroso",
+            "grande",
+            "pequeño"
+          ],
+          "answer": "peligroso",
+          "explanation": "あぶない significa «peligroso».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-adj-01-build-4",
+          "type": "build_word",
+          "prompt": "Construye «peligroso»",
+          "target": "あぶない",
+          "options": [
+            "い",
+            "な",
+            "ぶ",
+            "あ"
+          ],
+          "answer": "あぶない",
+          "explanation": "La palabra completa es あぶない. Escúchala seguida.",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-adj-01-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "かわいい",
+          "options": [
+            "あぶない",
+            "ちいさい",
+            "かわいい"
+          ],
+          "answer": "かわいい",
+          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-adj-01-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "grande",
+            "bonito o adorable",
+            "pequeño"
+          ],
+          "answer": "pequeño",
+          "explanation": "ちいさい significa «pequeño».",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-adj-01-teach-5",
           "type": "teach_word",
           "prompt": "Aprende «nuevo»",
           "target": "あたらしい",
@@ -191,14 +407,14 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i"
+            "jp-book1-adj-01"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: nuevo"
         },
         {
-          "id": "jp-adj-i-quiz-3",
+          "id": "jp-book1-adj-01-quiz-5",
           "type": "word_to_translation",
           "prompt": "¿Qué significa あたらしい?",
           "target": "あたらしい",
@@ -214,13 +430,13 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-adj-i-build-3",
+          "id": "jp-book1-adj-01-build-5",
           "type": "build_word",
           "prompt": "Construye «nuevo»",
           "target": "あたらしい",
@@ -238,19 +454,19 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-adj-i-listen-3",
+          "id": "jp-book1-adj-01-listen-5",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
           "target": "あたらしい",
           "options": [
-            "ちいさい",
-            "おおきい",
+            "あぶない",
+            "かわいい",
             "あたらしい"
           ],
           "answer": "あたらしい",
@@ -260,244 +476,29 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-adj-i-spiral-3",
+          "id": "jp-book1-adj-01-spiral-5",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa おおきい?",
-          "target": "おおきい",
-          "options": [
-            "pequeño",
-            "nuevo",
-            "grande"
-          ],
-          "answer": "grande",
-          "explanation": "おおきい significa «grande».",
-          "audio": "おおきい",
-          "slow_audio": "おおきい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "spiral_review"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-i-teach-4",
-          "type": "teach_word",
-          "prompt": "Aprende «delicioso»",
-          "target": "おいしい",
-          "options": [],
-          "answer": "",
-          "explanation": "delicioso",
-          "audio": "おいしい",
-          "slow_audio": "おいしい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: delicioso"
-        },
-        {
-          "id": "jp-adj-i-quiz-4",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa おいしい?",
-          "target": "おいしい",
-          "options": [
-            "delicioso",
-            "grande",
-            "pequeño"
-          ],
-          "answer": "delicioso",
-          "explanation": "おいしい significa «delicioso».",
-          "audio": "おいしい",
-          "slow_audio": "おいしい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-i-build-4",
-          "type": "build_word",
-          "prompt": "Construye «delicioso»",
-          "target": "おいしい",
-          "options": [
-            "い",
-            "し",
-            "い",
-            "お"
-          ],
-          "answer": "おいしい",
-          "explanation": "La palabra completa es おいしい. Escúchala seguida.",
-          "audio": "おいしい",
-          "slow_audio": "おいしい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-i-listen-4",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "あたらしい",
-          "options": [
-            "おいしい",
-            "ちいさい",
-            "あたらしい"
-          ],
-          "answer": "あたらしい",
-          "explanation": "Escuchaste あたらしい: nuevo.",
-          "audio": "あたらしい",
-          "slow_audio": "あたらしい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-i-spiral-4",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa ちいさい?",
-          "target": "ちいさい",
-          "options": [
-            "grande",
-            "nuevo",
-            "pequeño"
-          ],
-          "answer": "pequeño",
-          "explanation": "ちいさい significa «pequeño».",
-          "audio": "ちいさい",
-          "slow_audio": "ちいさい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "spiral_review"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-i-teach-5",
-          "type": "teach_word",
-          "prompt": "Aprende «frío»",
-          "target": "さむい",
-          "options": [],
-          "answer": "",
-          "explanation": "frío",
-          "audio": "さむい",
-          "slow_audio": "さむい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: frío"
-        },
-        {
-          "id": "jp-adj-i-quiz-5",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa さむい?",
-          "target": "さむい",
-          "options": [
-            "frío",
-            "grande",
-            "pequeño"
-          ],
-          "answer": "frío",
-          "explanation": "さむい significa «frío».",
-          "audio": "さむい",
-          "slow_audio": "さむい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-i-build-5",
-          "type": "build_word",
-          "prompt": "Construye «frío»",
-          "target": "さむい",
-          "options": [
-            "い",
-            "む",
-            "さ"
-          ],
-          "answer": "さむい",
-          "explanation": "La palabra completa es さむい. Escúchala seguida.",
-          "audio": "さむい",
-          "slow_audio": "さむい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-i-listen-5",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "さむい",
-          "options": [
-            "おいしい",
-            "あたらしい",
-            "さむい"
-          ],
-          "answer": "さむい",
-          "explanation": "Escuchaste さむい: frío.",
-          "audio": "さむい",
-          "slow_audio": "さむい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-i",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-i-spiral-5",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa あたらしい?",
-          "target": "あたらしい",
+          "prompt": "Recuerda: ¿qué significa かわいい?",
+          "target": "かわいい",
           "options": [
             "grande",
             "pequeño",
-            "nuevo"
+            "bonito o adorable"
           ],
-          "answer": "nuevo",
-          "explanation": "あたらしい significa «nuevo».",
-          "audio": "あたらしい",
-          "slow_audio": "あたらしい",
+          "answer": "bonito o adorable",
+          "explanation": "かわいい significa «bonito o adorable».",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-i",
+            "jp-book1-adj-01",
             "spiral_review"
           ],
           "xp": 12
@@ -505,14 +506,14 @@
       ]
     },
     {
-      "id": "jp-adj-na",
-      "title": "Adjetivos な",
-      "description": "Aprende 5 elementos con audio y práctica.",
+      "id": "jp-book1-adj-02",
+      "title": "Colores del relato",
+      "description": "Aprende 4 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-adj-na-intro",
+          "id": "jp-book1-adj-02-intro",
           "type": "lesson_intro",
-          "prompt": "Primero aprende: Adjetivos な",
+          "prompt": "Primero aprende: Colores del relato",
           "target": "",
           "options": [],
           "answer": "",
@@ -526,955 +527,362 @@
           "gradable": false
         },
         {
-          "id": "jp-adj-na-teach-1",
-          "type": "teach_word",
-          "prompt": "Aprende «tranquilo»",
-          "target": "しずか",
-          "options": [],
-          "answer": "",
-          "explanation": "tranquilo",
-          "audio": "しずか",
-          "slow_audio": "しずか",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: tranquilo"
-        },
-        {
-          "id": "jp-adj-na-quiz-1",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa しずか?",
-          "target": "しずか",
-          "options": [
-            "tranquilo",
-            "bien o animado",
-            "bonito o limpio"
-          ],
-          "answer": "tranquilo",
-          "explanation": "しずか significa «tranquilo».",
-          "audio": "しずか",
-          "slow_audio": "しずか",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-na-build-1",
-          "type": "build_word",
-          "prompt": "Construye «tranquilo»",
-          "target": "しずか",
-          "options": [
-            "か",
-            "ず",
-            "し"
-          ],
-          "answer": "しずか",
-          "explanation": "La palabra completa es しずか. Escúchala seguida.",
-          "audio": "しずか",
-          "slow_audio": "しずか",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-na-teach-2",
-          "type": "teach_word",
-          "prompt": "Aprende «bien o animado»",
-          "target": "げんき",
-          "options": [],
-          "answer": "",
-          "explanation": "bien o animado",
-          "audio": "げんき",
-          "slow_audio": "げんき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: bien o animado"
-        },
-        {
-          "id": "jp-adj-na-quiz-2",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa げんき?",
-          "target": "げんき",
-          "options": [
-            "bien o animado",
-            "tranquilo",
-            "bonito o limpio"
-          ],
-          "answer": "bien o animado",
-          "explanation": "げんき significa «bien o animado».",
-          "audio": "げんき",
-          "slow_audio": "げんき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-na-build-2",
-          "type": "build_word",
-          "prompt": "Construye «bien o animado»",
-          "target": "げんき",
-          "options": [
-            "き",
-            "ん",
-            "げ"
-          ],
-          "answer": "げんき",
-          "explanation": "La palabra completa es げんき. Escúchala seguida.",
-          "audio": "げんき",
-          "slow_audio": "げんき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-na-listen-2",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "しずか",
-          "options": [
-            "げんき",
-            "しずか"
-          ],
-          "answer": "しずか",
-          "explanation": "Escuchaste しずか: tranquilo.",
-          "audio": "しずか",
-          "slow_audio": "しずか",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-teach-3",
-          "type": "teach_word",
-          "prompt": "Aprende «bonito o limpio»",
-          "target": "きれい",
-          "options": [],
-          "answer": "",
-          "explanation": "bonito o limpio",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: bonito o limpio"
-        },
-        {
-          "id": "jp-adj-na-quiz-3",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa きれい?",
-          "target": "きれい",
-          "options": [
-            "bonito o limpio",
-            "tranquilo",
-            "bien o animado"
-          ],
-          "answer": "bonito o limpio",
-          "explanation": "きれい significa «bonito o limpio».",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-na-build-3",
-          "type": "build_word",
-          "prompt": "Construye «bonito o limpio»",
-          "target": "きれい",
-          "options": [
-            "い",
-            "れ",
-            "き"
-          ],
-          "answer": "きれい",
-          "explanation": "La palabra completa es きれい. Escúchala seguida.",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-na-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "きれい",
-          "options": [
-            "げんき",
-            "しずか",
-            "きれい"
-          ],
-          "answer": "きれい",
-          "explanation": "Escuchaste きれい: bonito o limpio.",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-spiral-3",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa しずか?",
-          "target": "しずか",
-          "options": [
-            "bien o animado",
-            "bonito o limpio",
-            "tranquilo"
-          ],
-          "answer": "tranquilo",
-          "explanation": "しずか significa «tranquilo».",
-          "audio": "しずか",
-          "slow_audio": "しずか",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "spiral_review"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-teach-4",
-          "type": "teach_word",
-          "prompt": "Aprende «gustar»",
-          "target": "すき",
-          "options": [],
-          "answer": "",
-          "explanation": "gustar",
-          "audio": "すき",
-          "slow_audio": "すき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: gustar"
-        },
-        {
-          "id": "jp-adj-na-quiz-4",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa すき?",
-          "target": "すき",
-          "options": [
-            "gustar",
-            "tranquilo",
-            "bien o animado"
-          ],
-          "answer": "gustar",
-          "explanation": "すき significa «gustar».",
-          "audio": "すき",
-          "slow_audio": "すき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-na-build-4",
-          "type": "build_word",
-          "prompt": "Construye «gustar»",
-          "target": "すき",
-          "options": [
-            "き",
-            "す"
-          ],
-          "answer": "すき",
-          "explanation": "La palabra completa es すき. Escúchala seguida.",
-          "audio": "すき",
-          "slow_audio": "すき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-na-listen-4",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "きれい",
-          "options": [
-            "すき",
-            "げんき",
-            "きれい"
-          ],
-          "answer": "きれい",
-          "explanation": "Escuchaste きれい: bonito o limpio.",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-spiral-4",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa げんき?",
-          "target": "げんき",
-          "options": [
-            "tranquilo",
-            "bonito o limpio",
-            "bien o animado"
-          ],
-          "answer": "bien o animado",
-          "explanation": "げんき significa «bien o animado».",
-          "audio": "げんき",
-          "slow_audio": "げんき",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "spiral_review"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-teach-5",
-          "type": "teach_word",
-          "prompt": "Aprende «práctico»",
-          "target": "べんり",
-          "options": [],
-          "answer": "",
-          "explanation": "práctico",
-          "audio": "べんり",
-          "slow_audio": "べんり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: práctico"
-        },
-        {
-          "id": "jp-adj-na-quiz-5",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa べんり?",
-          "target": "べんり",
-          "options": [
-            "práctico",
-            "tranquilo",
-            "bien o animado"
-          ],
-          "answer": "práctico",
-          "explanation": "べんり significa «práctico».",
-          "audio": "べんり",
-          "slow_audio": "べんり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-adj-na-build-5",
-          "type": "build_word",
-          "prompt": "Construye «práctico»",
-          "target": "べんり",
-          "options": [
-            "り",
-            "ん",
-            "べ"
-          ],
-          "answer": "べんり",
-          "explanation": "La palabra completa es べんり. Escúchala seguida.",
-          "audio": "べんり",
-          "slow_audio": "べんり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-adj-na-listen-5",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "べんり",
-          "options": [
-            "すき",
-            "きれい",
-            "べんり"
-          ],
-          "answer": "べんり",
-          "explanation": "Escuchaste べんり: práctico.",
-          "audio": "べんり",
-          "slow_audio": "べんり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-adj-na-spiral-5",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa きれい?",
-          "target": "きれい",
-          "options": [
-            "tranquilo",
-            "bien o animado",
-            "bonito o limpio"
-          ],
-          "answer": "bonito o limpio",
-          "explanation": "きれい significa «bonito o limpio».",
-          "audio": "きれい",
-          "slow_audio": "きれい",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-na",
-            "spiral_review"
-          ],
-          "xp": 12
-        }
-      ]
-    },
-    {
-      "id": "jp-colors",
-      "title": "Colores",
-      "description": "Aprende 5 elementos con audio y práctica.",
-      "activities": [
-        {
-          "id": "jp-colors-intro",
-          "type": "lesson_intro",
-          "prompt": "Primero aprende: Colores",
-          "target": "",
-          "options": [],
-          "answer": "",
-          "explanation": "Escucha y comprende cada elemento antes de responder.",
-          "audio": "",
-          "slow_audio": "",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false
-        },
-        {
-          "id": "jp-colors-teach-1",
+          "id": "jp-book1-adj-02-teach-1",
           "type": "teach_word",
           "prompt": "Aprende «rojo»",
-          "target": "あか",
+          "target": "あかい",
           "options": [],
           "answer": "",
           "explanation": "rojo",
-          "audio": "あか",
-          "slow_audio": "あか",
+          "audio": "あかい",
+          "slow_audio": "あかい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors"
+            "jp-book1-adj-02"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: rojo"
         },
         {
-          "id": "jp-colors-quiz-1",
+          "id": "jp-book1-adj-02-quiz-1",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa あか?",
-          "target": "あか",
+          "prompt": "¿Qué significa あかい?",
+          "target": "あかい",
           "options": [
             "rojo",
             "azul",
             "blanco"
           ],
           "answer": "rojo",
-          "explanation": "あか significa «rojo».",
-          "audio": "あか",
-          "slow_audio": "あか",
+          "explanation": "あかい significa «rojo».",
+          "audio": "あかい",
+          "slow_audio": "あかい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-colors-build-1",
+          "id": "jp-book1-adj-02-build-1",
           "type": "build_word",
           "prompt": "Construye «rojo»",
-          "target": "あか",
+          "target": "あかい",
           "options": [
+            "い",
             "か",
             "あ"
           ],
-          "answer": "あか",
-          "explanation": "La palabra completa es あか. Escúchala seguida.",
-          "audio": "あか",
-          "slow_audio": "あか",
+          "answer": "あかい",
+          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-colors-teach-2",
+          "id": "jp-book1-adj-02-teach-2",
           "type": "teach_word",
           "prompt": "Aprende «azul»",
-          "target": "あお",
+          "target": "あおい",
           "options": [],
           "answer": "",
           "explanation": "azul",
-          "audio": "あお",
-          "slow_audio": "あお",
+          "audio": "あおい",
+          "slow_audio": "あおい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors"
+            "jp-book1-adj-02"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: azul"
         },
         {
-          "id": "jp-colors-quiz-2",
+          "id": "jp-book1-adj-02-quiz-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa あお?",
-          "target": "あお",
+          "prompt": "¿Qué significa あおい?",
+          "target": "あおい",
           "options": [
             "azul",
             "rojo",
             "blanco"
           ],
           "answer": "azul",
-          "explanation": "あお significa «azul».",
-          "audio": "あお",
-          "slow_audio": "あお",
+          "explanation": "あおい significa «azul».",
+          "audio": "あおい",
+          "slow_audio": "あおい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-colors-build-2",
+          "id": "jp-book1-adj-02-build-2",
           "type": "build_word",
           "prompt": "Construye «azul»",
-          "target": "あお",
+          "target": "あおい",
           "options": [
+            "い",
             "お",
             "あ"
           ],
-          "answer": "あお",
-          "explanation": "La palabra completa es あお. Escúchala seguida.",
-          "audio": "あお",
-          "slow_audio": "あお",
+          "answer": "あおい",
+          "explanation": "La palabra completa es あおい. Escúchala seguida.",
+          "audio": "あおい",
+          "slow_audio": "あおい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-colors-listen-2",
+          "id": "jp-book1-adj-02-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "あか",
+          "target": "あかい",
           "options": [
-            "あお",
-            "あか"
+            "あおい",
+            "あかい"
           ],
-          "answer": "あか",
-          "explanation": "Escuchaste あか: rojo.",
-          "audio": "あか",
-          "slow_audio": "あか",
+          "answer": "あかい",
+          "explanation": "Escuchaste あかい: rojo.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-colors-teach-3",
+          "id": "jp-book1-adj-02-teach-3",
           "type": "teach_word",
           "prompt": "Aprende «blanco»",
-          "target": "しろ",
+          "target": "しろい",
           "options": [],
           "answer": "",
           "explanation": "blanco",
-          "audio": "しろ",
-          "slow_audio": "しろ",
+          "audio": "しろい",
+          "slow_audio": "しろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors"
+            "jp-book1-adj-02"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: blanco"
         },
         {
-          "id": "jp-colors-quiz-3",
+          "id": "jp-book1-adj-02-quiz-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa しろ?",
-          "target": "しろ",
+          "prompt": "¿Qué significa しろい?",
+          "target": "しろい",
           "options": [
             "blanco",
             "rojo",
             "azul"
           ],
           "answer": "blanco",
-          "explanation": "しろ significa «blanco».",
-          "audio": "しろ",
-          "slow_audio": "しろ",
+          "explanation": "しろい significa «blanco».",
+          "audio": "しろい",
+          "slow_audio": "しろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-colors-build-3",
+          "id": "jp-book1-adj-02-build-3",
           "type": "build_word",
           "prompt": "Construye «blanco»",
-          "target": "しろ",
+          "target": "しろい",
           "options": [
+            "い",
             "ろ",
             "し"
           ],
-          "answer": "しろ",
-          "explanation": "La palabra completa es しろ. Escúchala seguida.",
-          "audio": "しろ",
-          "slow_audio": "しろ",
+          "answer": "しろい",
+          "explanation": "La palabra completa es しろい. Escúchala seguida.",
+          "audio": "しろい",
+          "slow_audio": "しろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-colors-listen-3",
+          "id": "jp-book1-adj-02-listen-3",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "しろ",
+          "target": "しろい",
           "options": [
-            "あお",
-            "あか",
-            "しろ"
+            "あおい",
+            "あかい",
+            "しろい"
           ],
-          "answer": "しろ",
-          "explanation": "Escuchaste しろ: blanco.",
-          "audio": "しろ",
-          "slow_audio": "しろ",
+          "answer": "しろい",
+          "explanation": "Escuchaste しろい: blanco.",
+          "audio": "しろい",
+          "slow_audio": "しろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-colors-spiral-3",
+          "id": "jp-book1-adj-02-spiral-3",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa あか?",
-          "target": "あか",
+          "prompt": "Recuerda: ¿qué significa あかい?",
+          "target": "あかい",
           "options": [
             "azul",
             "blanco",
             "rojo"
           ],
           "answer": "rojo",
-          "explanation": "あか significa «rojo».",
-          "audio": "あか",
-          "slow_audio": "あか",
+          "explanation": "あかい significa «rojo».",
+          "audio": "あかい",
+          "slow_audio": "あかい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "spiral_review"
           ],
           "xp": 12
         },
         {
-          "id": "jp-colors-teach-4",
+          "id": "jp-book1-adj-02-teach-4",
           "type": "teach_word",
           "prompt": "Aprende «negro»",
-          "target": "くろ",
+          "target": "くろい",
           "options": [],
           "answer": "",
           "explanation": "negro",
-          "audio": "くろ",
-          "slow_audio": "くろ",
+          "audio": "くろい",
+          "slow_audio": "くろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors"
+            "jp-book1-adj-02"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: negro"
         },
         {
-          "id": "jp-colors-quiz-4",
+          "id": "jp-book1-adj-02-quiz-4",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa くろ?",
-          "target": "くろ",
+          "prompt": "¿Qué significa くろい?",
+          "target": "くろい",
           "options": [
             "negro",
             "rojo",
             "azul"
           ],
           "answer": "negro",
-          "explanation": "くろ significa «negro».",
-          "audio": "くろ",
-          "slow_audio": "くろ",
+          "explanation": "くろい significa «negro».",
+          "audio": "くろい",
+          "slow_audio": "くろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-colors-build-4",
+          "id": "jp-book1-adj-02-build-4",
           "type": "build_word",
           "prompt": "Construye «negro»",
-          "target": "くろ",
+          "target": "くろい",
           "options": [
+            "い",
             "ろ",
             "く"
           ],
-          "answer": "くろ",
-          "explanation": "La palabra completa es くろ. Escúchala seguida.",
-          "audio": "くろ",
-          "slow_audio": "くろ",
+          "answer": "くろい",
+          "explanation": "La palabra completa es くろい. Escúchala seguida.",
+          "audio": "くろい",
+          "slow_audio": "くろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "build_word"
           ],
           "xp": 15
         },
         {
-          "id": "jp-colors-listen-4",
+          "id": "jp-book1-adj-02-listen-4",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "しろ",
+          "target": "しろい",
           "options": [
-            "くろ",
-            "あお",
-            "しろ"
+            "くろい",
+            "あおい",
+            "しろい"
           ],
-          "answer": "しろ",
-          "explanation": "Escuchaste しろ: blanco.",
-          "audio": "しろ",
-          "slow_audio": "しろ",
+          "answer": "しろい",
+          "explanation": "Escuchaste しろい: blanco.",
+          "audio": "しろい",
+          "slow_audio": "しろい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-colors-spiral-4",
+          "id": "jp-book1-adj-02-spiral-4",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa あお?",
-          "target": "あお",
+          "prompt": "Recuerda: ¿qué significa あおい?",
+          "target": "あおい",
           "options": [
             "rojo",
             "blanco",
             "azul"
           ],
           "answer": "azul",
-          "explanation": "あお significa «azul».",
-          "audio": "あお",
-          "slow_audio": "あお",
+          "explanation": "あおい significa «azul».",
+          "audio": "あおい",
+          "slow_audio": "あおい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-colors",
-            "spiral_review"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-colors-teach-5",
-          "type": "teach_word",
-          "prompt": "Aprende «verde»",
-          "target": "みどり",
-          "options": [],
-          "answer": "",
-          "explanation": "verde",
-          "audio": "みどり",
-          "slow_audio": "みどり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-colors"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: verde"
-        },
-        {
-          "id": "jp-colors-quiz-5",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa みどり?",
-          "target": "みどり",
-          "options": [
-            "verde",
-            "rojo",
-            "azul"
-          ],
-          "answer": "verde",
-          "explanation": "みどり significa «verde».",
-          "audio": "みどり",
-          "slow_audio": "みどり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-colors",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-colors-build-5",
-          "type": "build_word",
-          "prompt": "Construye «verde»",
-          "target": "みどり",
-          "options": [
-            "り",
-            "ど",
-            "み"
-          ],
-          "answer": "みどり",
-          "explanation": "La palabra completa es みどり. Escúchala seguida.",
-          "audio": "みどり",
-          "slow_audio": "みどり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-colors",
-            "build_word"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "jp-colors-listen-5",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "みどり",
-          "options": [
-            "くろ",
-            "しろ",
-            "みどり"
-          ],
-          "answer": "みどり",
-          "explanation": "Escuchaste みどり: verde.",
-          "audio": "みどり",
-          "slow_audio": "みどり",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-colors",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-colors-spiral-5",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa しろ?",
-          "target": "しろ",
-          "options": [
-            "rojo",
-            "azul",
-            "blanco"
-          ],
-          "answer": "blanco",
-          "explanation": "しろ significa «blanco».",
-          "audio": "しろ",
-          "slow_audio": "しろ",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-colors",
+            "jp-book1-adj-02",
             "spiral_review"
           ],
           "xp": 12
@@ -1482,18 +890,20 @@
       ]
     },
     {
-      "id": "jp-adj-sentences",
-      "title": "Describir cosas",
-      "description": "Los adjetivos い van directamente antes del sustantivo; los な usan な.",
+      "id": "jp-book1-adjectives-review-01",
+      "title": "Repaso obligatorio 1",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-adj-sentences-intro",
+          "id": "jp-book1-adjectives-review-01-intro",
           "type": "lesson_intro",
-          "prompt": "Describir cosas",
+          "prompt": "Repaso obligatorio 1",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Los adjetivos い van directamente antes del sustantivo; los な usan な.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -1503,127 +913,1519 @@
           "gradable": false
         },
         {
-          "id": "jp-adj-sentences-model-1",
-          "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Es una casa grande.",
-          "target": "おおきいいえです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Es una casa grande.",
-          "audio": "おおきいいえです。",
-          "slow_audio": "おおきいいえです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-sentences"
-          ],
-          "xp": 3,
-          "gradable": false,
-          "sound_hint": "Es una casa grande."
-        },
-        {
-          "id": "jp-adj-sentences-model-2",
-          "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Es una ciudad tranquila.",
-          "target": "しずかなまちです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Es una ciudad tranquila.",
-          "audio": "しずかなまちです。",
-          "slow_audio": "しずかなまちです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-sentences"
-          ],
-          "xp": 3,
-          "gradable": false,
-          "sound_hint": "Es una ciudad tranquila."
-        },
-        {
-          "id": "jp-adj-sentences-model-3",
-          "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Me gusta el azul.",
-          "target": "あおがすきです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Me gusta el azul.",
-          "audio": "あおがすきです。",
-          "slow_audio": "あおがすきです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-adj-sentences"
-          ],
-          "xp": 3,
-          "gradable": false,
-          "sound_hint": "Me gusta el azul."
-        },
-        {
-          "id": "jp-adj-sentences-listen-1",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la forma completa",
-          "target": "おおきいいえです。",
+          "id": "jp-book1-adjectives-review-01-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
           "options": [
-            "おおきいいえです。",
-            "しずかなまちです。",
-            "あおがすきです。"
+            "grande",
+            "La palabra completa es あたらしい. Escúchala seguida.",
+            "あかい significa «rojo»."
           ],
-          "answer": "おおきいいえです。",
-          "explanation": "Es una casa grande.",
-          "audio": "おおきいいえです。",
-          "slow_audio": "おおきいいえです。",
+          "answer": "grande",
+          "explanation": "grande",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-sentences",
-            "listening"
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "ちいさい significa «pequeño».",
+            "La palabra completa es あたらしい. Escúchala seguida.",
+            "Escuchaste かわいい: bonito o adorable."
+          ],
+          "answer": "ちいさい significa «pequeño».",
+          "explanation": "ちいさい significa «pequeño».",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "かわいい significa «bonito o adorable».",
+            "bonito o adorable",
+            "おおきい significa «grande»."
+          ],
+          "answer": "かわいい significa «bonito o adorable».",
+          "explanation": "かわいい significa «bonito o adorable».",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "あぶない significa «peligroso».",
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "La palabra completa es くろい. Escúchala seguida."
+          ],
+          "answer": "あぶない significa «peligroso».",
+          "explanation": "あぶない significa «peligroso».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "La palabra completa es あたらしい. Escúchala seguida.",
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "rojo"
+          ],
+          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
+          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "La palabra completa es あかい. Escúchala seguida.",
+            "negro",
+            "くろい significa «negro»."
+          ],
+          "answer": "La palabra completa es あかい. Escúchala seguida.",
+          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "Escuchaste あかい: rojo.",
+            "おおきい significa «grande».",
+            "La palabra completa es あかい. Escúchala seguida."
+          ],
+          "answer": "Escuchaste あかい: rojo.",
+          "explanation": "Escuchaste あかい: rojo.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-01-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa しろい?",
+          "target": "しろい",
+          "options": [
+            "Escuchaste しろい: blanco.",
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "La palabra completa es あおい. Escúchala seguida."
+          ],
+          "answer": "Escuchaste しろい: blanco.",
+          "explanation": "Escuchaste しろい: blanco.",
+          "audio": "しろい",
+          "slow_audio": "しろい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adj-pattern-01",
+      "title": "Adjetivo い + sustantivo",
+      "description": "Los adjetivos い van directamente antes del sustantivo",
+      "activities": [
+        {
+          "id": "jp-book1-adj-pattern-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Adjetivo い + sustantivo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Los adjetivos い van directamente antes del sustantivo",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-01-pattern",
+          "type": "teach_pattern",
+          "prompt": "Adjetivo い + sustantivo",
+          "target": "Adjetivo い + sustantivo",
+          "options": [],
+          "answer": "",
+          "explanation": "Los adjetivos い van directamente antes del sustantivo",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-01-model-1",
+          "type": "dialogue_model",
+          "prompt": "Es un libro rojo.",
+          "target": "あかいほんです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es un libro rojo.",
+          "audio": "あかいほんです。",
+          "slow_audio": "あかいほんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-01-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa あかいほんです。?",
+          "target": "あかいほんです。",
+          "options": [
+            "Es un libro rojo.",
+            "Es un gato blanco.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Es un libro rojo.",
+          "explanation": "Es un libro rojo.",
+          "audio": "あかいほんです。",
+          "slow_audio": "あかいほんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-pattern-01",
+            "meaning_recall"
           ],
           "xp": 15
         },
         {
-          "id": "jp-adj-sentences-listen-2",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la forma completa",
-          "target": "しずかなまちです。",
+          "id": "jp-book1-adj-pattern-01-model-2",
+          "type": "dialogue_model",
+          "prompt": "Es un gato blanco.",
+          "target": "しろいねこです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es un gato blanco.",
+          "audio": "しろいねこです。",
+          "slow_audio": "しろいねこです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-01-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa しろいねこです。?",
+          "target": "しろいねこです。",
           "options": [
-            "しずかなまちです。",
-            "おおきいいえです。",
-            "あおがすきです。"
+            "Es un gato blanco.",
+            "Es un libro rojo.",
+            "No corresponde a esta oración."
           ],
-          "answer": "しずかなまちです。",
-          "explanation": "Es una ciudad tranquila.",
-          "audio": "しずかなまちです。",
-          "slow_audio": "しずかなまちです。",
+          "answer": "Es un gato blanco.",
+          "explanation": "Es un gato blanco.",
+          "audio": "しろいねこです。",
+          "slow_audio": "しろいねこです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-sentences",
-            "listening"
+            "jp-book1-adj-pattern-01",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adj-pattern-02",
+      "title": "Negativo de adjetivos い",
+      "description": "Cambia い por くありません",
+      "activities": [
+        {
+          "id": "jp-book1-adj-pattern-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Negativo de adjetivos い",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Cambia い por くありません",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-02-pattern",
+          "type": "teach_pattern",
+          "prompt": "Negativo de adjetivos い",
+          "target": "Negativo de adjetivos い",
+          "options": [],
+          "answer": "",
+          "explanation": "Cambia い por くありません",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-02-model-1",
+          "type": "dialogue_model",
+          "prompt": "No es grande.",
+          "target": "おおきくありません。",
+          "options": [],
+          "answer": "",
+          "explanation": "No es grande.",
+          "audio": "おおきくありません。",
+          "slow_audio": "おおきくありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-02-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa おおきくありません。?",
+          "target": "おおきくありません。",
+          "options": [
+            "No es grande.",
+            "No es muy grande.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "No es grande.",
+          "explanation": "No es grande.",
+          "audio": "おおきくありません。",
+          "slow_audio": "おおきくありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-pattern-02",
+            "meaning_recall"
           ],
           "xp": 15
         },
         {
-          "id": "jp-adj-sentences-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la forma completa",
-          "target": "あおがすきです。",
+          "id": "jp-book1-adj-pattern-02-model-2",
+          "type": "dialogue_model",
+          "prompt": "No es muy grande.",
+          "target": "あまりおおきくありません。",
+          "options": [],
+          "answer": "",
+          "explanation": "No es muy grande.",
+          "audio": "あまりおおきくありません。",
+          "slow_audio": "あまりおおきくありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-02-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa あまりおおきくありません。?",
+          "target": "あまりおおきくありません。",
           "options": [
-            "あおがすきです。",
-            "おおきいいえです。",
-            "しずかなまちです。"
+            "No es muy grande.",
+            "No es grande.",
+            "No corresponde a esta oración."
           ],
-          "answer": "あおがすきです。",
-          "explanation": "Me gusta el azul.",
-          "audio": "あおがすきです。",
-          "slow_audio": "あおがすきです。",
+          "answer": "No es muy grande.",
+          "explanation": "No es muy grande.",
+          "audio": "あまりおおきくありません。",
+          "slow_audio": "あまりおおきくありません。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-adj-sentences",
-            "listening"
+            "jp-book1-adj-pattern-02",
+            "meaning_recall"
           ],
           "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adjectives-review-02",
+      "title": "Repaso obligatorio 2",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-adjectives-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 2",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "grande",
+            "azul",
+            "Escuchaste しろい: blanco."
+          ],
+          "answer": "grande",
+          "explanation": "grande",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "ちいさい significa «pequeño».",
+            "Es un gato blanco.",
+            "Es un libro rojo."
+          ],
+          "answer": "ちいさい significa «pequeño».",
+          "explanation": "ちいさい significa «pequeño».",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "かわいい significa «bonito o adorable».",
+            "No es grande.",
+            "rojo"
+          ],
+          "answer": "かわいい significa «bonito o adorable».",
+          "explanation": "かわいい significa «bonito o adorable».",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "あぶない significa «peligroso».",
+            "La palabra completa es くろい. Escúchala seguida.",
+            "No es grande."
+          ],
+          "answer": "あぶない significa «peligroso».",
+          "explanation": "あぶない significa «peligroso».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "La palabra completa es あたらしい. Escúchala seguida.",
+            "Es un libro rojo.",
+            "Escuchaste おおきい: grande."
+          ],
+          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
+          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "La palabra completa es あかい. Escúchala seguida.",
+            "Escuchaste かわいい: bonito o adorable.",
+            "La palabra completa es あぶない. Escúchala seguida."
+          ],
+          "answer": "La palabra completa es あかい. Escúchala seguida.",
+          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "Escuchaste あかい: rojo.",
+            "Escuchaste しろい: blanco.",
+            "La palabra completa es おおきい. Escúchala seguida."
+          ],
+          "answer": "Escuchaste あかい: rojo.",
+          "explanation": "Escuchaste あかい: rojo.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-02-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa しろい?",
+          "target": "しろい",
+          "options": [
+            "Escuchaste しろい: blanco.",
+            "La palabra completa es あぶない. Escúchala seguida.",
+            "grande"
+          ],
+          "answer": "Escuchaste しろい: blanco.",
+          "explanation": "Escuchaste しろい: blanco.",
+          "audio": "しろい",
+          "slow_audio": "しろい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adj-pattern-03",
+      "title": "～ですね",
+      "description": "Pedir o compartir confirmación",
+      "activities": [
+        {
+          "id": "jp-book1-adj-pattern-03-intro",
+          "type": "lesson_intro",
+          "prompt": "～ですね",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Pedir o compartir confirmación",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-03-pattern",
+          "type": "teach_pattern",
+          "prompt": "～ですね",
+          "target": "～ですね",
+          "options": [],
+          "answer": "",
+          "explanation": "Pedir o compartir confirmación",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-03-model-1",
+          "type": "dialogue_model",
+          "prompt": "Es adorable, ¿verdad?",
+          "target": "かわいいですね。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es adorable, ¿verdad?",
+          "audio": "かわいいですね。",
+          "slow_audio": "かわいいですね。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-03-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa かわいいですね。?",
+          "target": "かわいいですね。",
+          "options": [
+            "Es adorable, ¿verdad?",
+            "No corresponde a esta oración.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Es adorable, ¿verdad?",
+          "explanation": "Es adorable, ¿verdad?",
+          "audio": "かわいいですね。",
+          "slow_audio": "かわいいですね。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-pattern-03",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adj-pattern-04",
+      "title": "～ですから",
+      "description": "Explicar una razón",
+      "activities": [
+        {
+          "id": "jp-book1-adj-pattern-04-intro",
+          "type": "lesson_intro",
+          "prompt": "～ですから",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Explicar una razón",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-04-pattern",
+          "type": "teach_pattern",
+          "prompt": "～ですから",
+          "target": "～ですから",
+          "options": [],
+          "answer": "",
+          "explanation": "Explicar una razón",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-04-model-1",
+          "type": "dialogue_model",
+          "prompt": "Porque es peligroso.",
+          "target": "あぶないですから。",
+          "options": [],
+          "answer": "",
+          "explanation": "Porque es peligroso.",
+          "audio": "あぶないですから。",
+          "slow_audio": "あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adj-pattern-04-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa あぶないですから。?",
+          "target": "あぶないですから。",
+          "options": [
+            "Porque es peligroso.",
+            "No corresponde a esta oración.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Porque es peligroso.",
+          "explanation": "Porque es peligroso.",
+          "audio": "あぶないですから。",
+          "slow_audio": "あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adj-pattern-04",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adjectives-review-03",
+      "title": "Repaso obligatorio 3",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-adjectives-review-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 3",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "grande",
+            "Escuchaste あたらしい: nuevo.",
+            "Explicar una razón"
+          ],
+          "answer": "grande",
+          "explanation": "grande",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "No es grande.",
+            "Escuchaste おおきい: grande."
+          ],
+          "answer": "La palabra completa es ちいさい. Escúchala seguida.",
+          "explanation": "La palabra completa es ちいさい. Escúchala seguida.",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "Escuchaste かわいい: bonito o adorable.",
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "La palabra completa es くろい. Escúchala seguida."
+          ],
+          "answer": "Escuchaste かわいい: bonito o adorable.",
+          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "あたらしい significa «nuevo».",
+            "La palabra completa es あぶない. Escúchala seguida.",
+            "peligroso"
+          ],
+          "answer": "あたらしい significa «nuevo».",
+          "explanation": "あたらしい significa «nuevo».",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "La palabra completa es あかい. Escúchala seguida.",
+            "Es un gato blanco.",
+            "Escuchaste あたらしい: nuevo."
+          ],
+          "answer": "La palabra completa es あかい. Escúchala seguida.",
+          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa しろい?",
+          "target": "しろい",
+          "options": [
+            "blanco",
+            "あたらしい significa «nuevo».",
+            "La palabra completa es あぶない. Escúchala seguida."
+          ],
+          "answer": "blanco",
+          "explanation": "blanco",
+          "audio": "しろい",
+          "slow_audio": "しろい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa くろい?",
+          "target": "くろい",
+          "options": [
+            "くろい significa «negro».",
+            "あかい significa «rojo».",
+            "Pedir o compartir confirmación"
+          ],
+          "answer": "くろい significa «negro».",
+          "explanation": "くろい significa «negro».",
+          "audio": "くろい",
+          "slow_audio": "くろい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-adjectives-review-03-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa Negativo de adjetivos い?",
+          "target": "Negativo de adjetivos い",
+          "options": [
+            "Cambia い por くありません",
+            "しろい significa «blanco».",
+            "pequeño"
+          ],
+          "answer": "Cambia い por くありません",
+          "explanation": "Cambia い por くありません",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-adjectives-checkpoint",
+      "title": "Prueba de dominio",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": false,
+      "isTest": true,
+      "activities": [
+        {
+          "id": "jp-book1-adjectives-checkpoint-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "grande",
+            "かわいい significa «bonito o adorable».",
+            "La palabra completa es かわいい. Escúchala seguida."
+          ],
+          "answer": "grande",
+          "explanation": "grande",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "おおきい significa «grande».",
+            "peligroso",
+            "bonito o adorable"
+          ],
+          "answer": "おおきい significa «grande».",
+          "explanation": "おおきい significa «grande».",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "La palabra completa es おおきい. Escúchala seguida.",
+            "Explicar una razón",
+            "Escuchaste かわいい: bonito o adorable."
+          ],
+          "answer": "La palabra completa es おおきい. Escúchala seguida.",
+          "explanation": "La palabra completa es おおきい. Escúchala seguida.",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "pequeño",
+            "La palabra completa es かわいい. Escúchala seguida.",
+            "Es adorable, ¿verdad?"
+          ],
+          "answer": "pequeño",
+          "explanation": "pequeño",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "ちいさい significa «pequeño».",
+            "grande",
+            "Escuchaste あたらしい: nuevo."
+          ],
+          "answer": "ちいさい significa «pequeño».",
+          "explanation": "ちいさい significa «pequeño».",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ちいさい?",
+          "target": "ちいさい",
+          "options": [
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "Es adorable, ¿verdad?",
+            "Pedir o compartir confirmación"
+          ],
+          "answer": "La palabra completa es ちいさい. Escúchala seguida.",
+          "explanation": "La palabra completa es ちいさい. Escúchala seguida.",
+          "audio": "ちいさい",
+          "slow_audio": "ちいさい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おおきい?",
+          "target": "おおきい",
+          "options": [
+            "Escuchaste おおきい: grande.",
+            "Es un libro rojo.",
+            "bonito o adorable"
+          ],
+          "answer": "Escuchaste おおきい: grande.",
+          "explanation": "Escuchaste おおきい: grande.",
+          "audio": "おおきい",
+          "slow_audio": "おおきい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "bonito o adorable",
+            "しろい significa «blanco».",
+            "Explicar una razón"
+          ],
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-9",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "かわいい significa «bonito o adorable».",
+            "La palabra completa es あかい. Escúchala seguida.",
+            "grande"
+          ],
+          "answer": "かわいい significa «bonito o adorable».",
+          "explanation": "かわいい significa «bonito o adorable».",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-10",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "La palabra completa es かわいい. Escúchala seguida.",
+            "grande",
+            "Escuchaste あたらしい: nuevo."
+          ],
+          "answer": "La palabra completa es かわいい. Escúchala seguida.",
+          "explanation": "La palabra completa es かわいい. Escúchala seguida.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-11",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かわいい?",
+          "target": "かわいい",
+          "options": [
+            "Escuchaste かわいい: bonito o adorable.",
+            "rojo",
+            "La palabra completa es あたらしい. Escúchala seguida."
+          ],
+          "answer": "Escuchaste かわいい: bonito o adorable.",
+          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "audio": "かわいい",
+          "slow_audio": "かわいい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-12",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "peligroso",
+            "negro",
+            "blanco"
+          ],
+          "answer": "peligroso",
+          "explanation": "peligroso",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-13",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "あぶない significa «peligroso».",
+            "peligroso",
+            "Porque es peligroso."
+          ],
+          "answer": "あぶない significa «peligroso».",
+          "explanation": "あぶない significa «peligroso».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-14",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶない?",
+          "target": "あぶない",
+          "options": [
+            "La palabra completa es あぶない. Escúchala seguida.",
+            "nuevo",
+            "No es grande."
+          ],
+          "answer": "La palabra completa es あぶない. Escúchala seguida.",
+          "explanation": "La palabra completa es あぶない. Escúchala seguida.",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-15",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "nuevo",
+            "Es adorable, ¿verdad?",
+            "Es un libro rojo."
+          ],
+          "answer": "nuevo",
+          "explanation": "nuevo",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-16",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "あたらしい significa «nuevo».",
+            "Escuchaste しろい: blanco.",
+            "あかい significa «rojo»."
+          ],
+          "answer": "あたらしい significa «nuevo».",
+          "explanation": "あたらしい significa «nuevo».",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-17",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "La palabra completa es あたらしい. Escúchala seguida.",
+            "おおきい significa «grande».",
+            "Escuchaste あかい: rojo."
+          ],
+          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
+          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-18",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あたらしい?",
+          "target": "あたらしい",
+          "options": [
+            "Escuchaste あたらしい: nuevo.",
+            "Pedir o compartir confirmación",
+            "Escuchaste おおきい: grande."
+          ],
+          "answer": "Escuchaste あたらしい: nuevo.",
+          "explanation": "Escuchaste あたらしい: nuevo.",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-19",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "rojo",
+            "La palabra completa es ちいさい. Escúchala seguida.",
+            "Porque es peligroso."
+          ],
+          "answer": "rojo",
+          "explanation": "rojo",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-20",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "あかい significa «rojo».",
+            "かわいい significa «bonito o adorable».",
+            "nuevo"
+          ],
+          "answer": "あかい significa «rojo».",
+          "explanation": "あかい significa «rojo».",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-21",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかい?",
+          "target": "あかい",
+          "options": [
+            "La palabra completa es あかい. Escúchala seguida.",
+            "Escuchaste あかい: rojo.",
+            "ちいさい significa «pequeño»."
+          ],
+          "answer": "La palabra completa es あかい. Escúchala seguida.",
+          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-22",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あおい?",
+          "target": "あおい",
+          "options": [
+            "azul",
+            "La palabra completa es あかい. Escúchala seguida.",
+            "くろい significa «negro»."
+          ],
+          "answer": "azul",
+          "explanation": "azul",
+          "audio": "あおい",
+          "slow_audio": "あおい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-23",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あおい?",
+          "target": "あおい",
+          "options": [
+            "あおい significa «azul».",
+            "Es un libro rojo.",
+            "bonito o adorable"
+          ],
+          "answer": "あおい significa «azul».",
+          "explanation": "あおい significa «azul».",
+          "audio": "あおい",
+          "slow_audio": "あおい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-adjectives-checkpoint-recall-24",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あおい?",
+          "target": "あおい",
+          "options": [
+            "La palabra completa es あおい. Escúchala seguida.",
+            "Cambia い por くありません",
+            "negro"
+          ],
+          "answer": "La palabra completa es あおい. Escúchala seguida.",
+          "explanation": "La palabra completa es あおい. Escúchala seguida.",
+          "audio": "あおい",
+          "slow_audio": "あおい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-adjectives-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
         }
       ]
     }

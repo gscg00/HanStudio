@@ -1,26 +1,26 @@
 {
   "id": "first-sentences",
   "title": "Primeras oraciones",
-  "description": "Construye estructuras y partículas esenciales.",
+  "description": "Domina existencia, ubicación, preguntas y partículas del primer libro.",
   "requirements": [],
   "reward": {
-    "xp": 550,
-    "badge": "Primeras oraciones"
+    "xp": 950,
+    "badge": "Estructuras del Libro 1"
   },
   "lessons": [
     {
-      "id": "jp-sentence-01",
+      "id": "jp-book1-sentence-01",
       "title": "A は B です",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "description": "Identificar y presentarse",
       "activities": [
         {
-          "id": "jp-sentence-1-intro",
+          "id": "jp-book1-sentence-01-intro",
           "type": "lesson_intro",
           "prompt": "A は B です",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Identificar y presentarse",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -30,13 +30,13 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-1-pattern",
+          "id": "jp-book1-sentence-01-pattern",
           "type": "teach_pattern",
           "prompt": "A は B です",
           "target": "A は B です",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Identificar y presentarse",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -46,15 +46,15 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-1-model-1",
+          "id": "jp-book1-sentence-01-model-1",
           "type": "dialogue_model",
-          "prompt": "Soy Ana.",
-          "target": "わたしはアナです。",
+          "prompt": "Soy Mina.",
+          "target": "わたしはミナです。",
           "options": [],
           "answer": "",
-          "explanation": "Soy Ana.",
-          "audio": "わたしはアナです。",
-          "slow_audio": "わたしはアナです。",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -62,55 +62,80 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-1-model-2",
-          "type": "dialogue_model",
-          "prompt": "Esto es un libro.",
-          "target": "これはほんです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Esto es un libro.",
-          "audio": "これはほんです。",
-          "slow_audio": "これはほんです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-1-quiz",
+          "id": "jp-book1-sentence-01-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa わたしはアナです。?",
-          "target": "わたしはアナです。",
+          "prompt": "¿Qué significa わたしはミナです。?",
+          "target": "わたしはミナです。",
           "options": [
-            "Soy Ana.",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "Soy Mina.",
+            "Aquí es una biblioteca.",
+            "No corresponde a esta oración."
           ],
-          "answer": "Soy Ana.",
-          "explanation": "Soy Ana.",
-          "audio": "わたしはアナです。",
-          "slow_audio": "わたしはアナです。",
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-01",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-01-model-2",
+          "type": "dialogue_model",
+          "prompt": "Aquí es una biblioteca.",
+          "target": "ここはとしょかんです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
           "image": null,
           "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-01-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ここはとしょかんです。?",
+          "target": "ここはとしょかんです。",
+          "options": [
+            "Aquí es una biblioteca.",
+            "Soy Mina.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Aquí es una biblioteca.",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-01",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-02",
-      "title": "Negación con ではありません",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "id": "jp-book1-sentence-02",
+      "title": "A は B ではありません",
+      "description": "Negación nominal",
       "activities": [
         {
-          "id": "jp-sentence-2-intro",
+          "id": "jp-book1-sentence-02-intro",
           "type": "lesson_intro",
-          "prompt": "Negación con ではありません",
+          "prompt": "A は B ではありません",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Negación nominal",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -120,13 +145,13 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-2-pattern",
+          "id": "jp-book1-sentence-02-pattern",
           "type": "teach_pattern",
-          "prompt": "Negación con ではありません",
-          "target": "Negación con ではありません",
+          "prompt": "A は B ではありません",
+          "target": "A は B ではありません",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Negación nominal",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -136,15 +161,15 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-2-model-1",
+          "id": "jp-book1-sentence-02-model-1",
           "type": "dialogue_model",
-          "prompt": "No soy profesor.",
-          "target": "せんせいではありません。",
+          "prompt": "No es una persona.",
+          "target": "ひとではありません。",
           "options": [],
           "answer": "",
-          "explanation": "No soy profesor.",
-          "audio": "せんせいではありません。",
-          "slow_audio": "せんせいではありません。",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -152,55 +177,82 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-2-model-2",
-          "type": "dialogue_model",
-          "prompt": "Esto no es agua.",
-          "target": "これはみずではありません。",
-          "options": [],
-          "answer": "",
-          "explanation": "Esto no es agua.",
-          "audio": "これはみずではありません。",
-          "slow_audio": "これはみずではありません。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-2-quiz",
+          "id": "jp-book1-sentence-02-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa せんせいではありません。?",
-          "target": "せんせいではありません。",
+          "prompt": "¿Qué significa ひとではありません。?",
+          "target": "ひとではありません。",
           "options": [
-            "No soy profesor.",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "No es una persona.",
+            "Esto no es una tarjeta.",
+            "No corresponde a esta oración."
           ],
-          "answer": "No soy profesor.",
-          "explanation": "No soy profesor.",
-          "audio": "せんせいではありません。",
-          "slow_audio": "せんせいではありません。",
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-02",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-02-model-2",
+          "type": "dialogue_model",
+          "prompt": "Esto no es una tarjeta.",
+          "target": "これはカードではありません。",
+          "options": [],
+          "answer": "",
+          "explanation": "Esto no es una tarjeta.",
+          "audio": "これはカードではありません。",
+          "slow_audio": "これはカードではありません。",
           "image": null,
           "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-02-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa これはカードではありません。?",
+          "target": "これはカードではありません。",
+          "options": [
+            "Esto no es una tarjeta.",
+            "No es una persona.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Esto no es una tarjeta.",
+          "explanation": "Esto no es una tarjeta.",
+          "audio": "これはカードではありません。",
+          "slow_audio": "これはカードではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-02",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-03",
-      "title": "Preguntas con ですか",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "id": "jp-book1-sentence-review-01",
+      "title": "Repaso obligatorio 1",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-sentence-3-intro",
+          "id": "jp-book1-sentence-review-01-intro",
           "type": "lesson_intro",
-          "prompt": "Preguntas con ですか",
+          "prompt": "Repaso obligatorio 1",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -210,13 +262,168 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-3-pattern",
-          "type": "teach_pattern",
-          "prompt": "Preguntas con ですか",
-          "target": "Preguntas con ですか",
+          "id": "jp-book1-sentence-review-01-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "Aquí es una biblioteca.",
+            "Esto no es una tarjeta."
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-01-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa わたしはミナです。?",
+          "target": "わたしはミナです。",
+          "options": [
+            "Soy Mina.",
+            "Identificar y presentarse",
+            "No es una persona."
+          ],
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-01-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。?",
+          "target": "ここはとしょかんです。",
+          "options": [
+            "Aquí es una biblioteca.",
+            "Negación nominal",
+            "No es una persona."
+          ],
+          "answer": "Aquí es una biblioteca.",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-01-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ではありません?",
+          "target": "A は B ではありません",
+          "options": [
+            "Negación nominal",
+            "Esto no es una tarjeta.",
+            "Aquí es una biblioteca."
+          ],
+          "answer": "Negación nominal",
+          "explanation": "Negación nominal",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-01-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "Aquí es una biblioteca.",
+            "Identificar y presentarse"
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-01-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはカードではありません。?",
+          "target": "これはカードではありません。",
+          "options": [
+            "Esto no es una tarjeta.",
+            "Identificar y presentarse",
+            "Negación nominal"
+          ],
+          "answer": "Esto no es una tarjeta.",
+          "explanation": "Esto no es una tarjeta.",
+          "audio": "これはカードではありません。",
+          "slow_audio": "これはカードではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-03",
+      "title": "A は B ですか",
+      "description": "Preguntas con ですか",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-03-intro",
+          "type": "lesson_intro",
+          "prompt": "A は B ですか",
+          "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Preguntas con ですか",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-03-pattern",
+          "type": "teach_pattern",
+          "prompt": "A は B ですか",
+          "target": "A は B ですか",
+          "options": [],
+          "answer": "",
+          "explanation": "Preguntas con ですか",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -226,23 +433,7 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-3-model-1",
-          "type": "dialogue_model",
-          "prompt": "¿Eres Ana?",
-          "target": "アナさんですか。",
-          "options": [],
-          "answer": "",
-          "explanation": "¿Eres Ana?",
-          "audio": "アナさんですか。",
-          "slow_audio": "アナさんですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-3-model-2",
+          "id": "jp-book1-sentence-03-model-1",
           "type": "dialogue_model",
           "prompt": "¿Esto es un libro?",
           "target": "これはほんですか。",
@@ -258,39 +449,80 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-3-quiz",
+          "id": "jp-book1-sentence-03-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa アナさんですか。?",
-          "target": "アナさんですか。",
+          "prompt": "¿Qué significa これはほんですか。?",
+          "target": "これはほんですか。",
           "options": [
-            "¿Eres Ana?",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "¿Esto es un libro?",
+            "¿Aquí es una tienda?",
+            "No corresponde a esta oración."
           ],
-          "answer": "¿Eres Ana?",
-          "explanation": "¿Eres Ana?",
-          "audio": "アナさんですか。",
-          "slow_audio": "アナさんですか。",
+          "answer": "¿Esto es un libro?",
+          "explanation": "¿Esto es un libro?",
+          "audio": "これはほんですか。",
+          "slow_audio": "これはほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-03",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-03-model-2",
+          "type": "dialogue_model",
+          "prompt": "¿Aquí es una tienda?",
+          "target": "ここはみせですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
           "image": null,
           "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-03-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ここはみせですか。?",
+          "target": "ここはみせですか。",
+          "options": [
+            "¿Aquí es una tienda?",
+            "¿Esto es un libro?",
+            "No corresponde a esta oración."
+          ],
+          "answer": "¿Aquí es una tienda?",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-03",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-04",
+      "id": "jp-book1-sentence-04",
       "title": "これ・それ・あれ",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "description": "Objetos cercanos y lejanos",
       "activities": [
         {
-          "id": "jp-sentence-4-intro",
+          "id": "jp-book1-sentence-04-intro",
           "type": "lesson_intro",
           "prompt": "これ・それ・あれ",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Objetos cercanos y lejanos",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -300,13 +532,13 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-4-pattern",
+          "id": "jp-book1-sentence-04-pattern",
           "type": "teach_pattern",
           "prompt": "これ・それ・あれ",
           "target": "これ・それ・あれ",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Objetos cercanos y lejanos",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -316,7 +548,7 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-4-model-1",
+          "id": "jp-book1-sentence-04-model-1",
           "type": "dialogue_model",
           "prompt": "¿Qué es esto?",
           "target": "これはなんですか。",
@@ -332,46 +564,14 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-4-model-2",
-          "type": "dialogue_model",
-          "prompt": "Eso es una bolsa.",
-          "target": "それはかばんです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Eso es una bolsa.",
-          "audio": "それはかばんです。",
-          "slow_audio": "それはかばんです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-4-model-3",
-          "type": "dialogue_model",
-          "prompt": "Aquello es la estación.",
-          "target": "あれはえきです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Aquello es la estación.",
-          "audio": "あれはえきです。",
-          "slow_audio": "あれはえきです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-4-quiz",
+          "id": "jp-book1-sentence-04-meaning-1",
           "type": "select_translation",
           "prompt": "¿Qué significa これはなんですか。?",
           "target": "これはなんですか。",
           "options": [
             "¿Qué es esto?",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "Eso es una llave.",
+            "Aquello es un reloj."
           ],
           "answer": "¿Qué es esto?",
           "explanation": "¿Qué es esto?",
@@ -379,24 +579,105 @@
           "slow_audio": "これはなんですか。",
           "image": null,
           "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-04",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-04-model-2",
+          "type": "dialogue_model",
+          "prompt": "Eso es una llave.",
+          "target": "それはかぎです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Eso es una llave.",
+          "audio": "それはかぎです。",
+          "slow_audio": "それはかぎです。",
+          "image": null,
+          "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-04-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa それはかぎです。?",
+          "target": "それはかぎです。",
+          "options": [
+            "Eso es una llave.",
+            "¿Qué es esto?",
+            "Aquello es un reloj."
+          ],
+          "answer": "Eso es una llave.",
+          "explanation": "Eso es una llave.",
+          "audio": "それはかぎです。",
+          "slow_audio": "それはかぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-04",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-04-model-3",
+          "type": "dialogue_model",
+          "prompt": "Aquello es un reloj.",
+          "target": "あれはとけいです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-04-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "¿Qué es esto?",
+            "Eso es una llave."
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-04",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-05",
-      "title": "ここ・そこ・あそこ",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "id": "jp-book1-sentence-review-02",
+      "title": "Repaso obligatorio 2",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-sentence-5-intro",
+          "id": "jp-book1-sentence-review-02-intro",
           "type": "lesson_intro",
-          "prompt": "ここ・そこ・あそこ",
+          "prompt": "Repaso obligatorio 2",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -406,13 +687,212 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-5-pattern",
+          "id": "jp-book1-sentence-review-02-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "Esto no es una tarjeta.",
+            "Aquí es una biblioteca."
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa わたしはミナです。?",
+          "target": "わたしはミナです。",
+          "options": [
+            "Soy Mina.",
+            "Aquello es un reloj.",
+            "¿Qué es esto?"
+          ],
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。?",
+          "target": "ここはとしょかんです。",
+          "options": [
+            "Aquí es una biblioteca.",
+            "Identificar y presentarse",
+            "Esto no es una tarjeta."
+          ],
+          "answer": "Aquí es una biblioteca.",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ではありません?",
+          "target": "A は B ではありません",
+          "options": [
+            "Negación nominal",
+            "¿Qué es esto?",
+            "Aquello es un reloj."
+          ],
+          "answer": "Negación nominal",
+          "explanation": "Negación nominal",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "Esto no es una tarjeta.",
+            "Identificar y presentarse"
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはカードではありません。?",
+          "target": "これはカードではありません。",
+          "options": [
+            "Esto no es una tarjeta.",
+            "¿Aquí es una tienda?",
+            "Negación nominal"
+          ],
+          "answer": "Esto no es una tarjeta.",
+          "explanation": "Esto no es una tarjeta.",
+          "audio": "これはカードではありません。",
+          "slow_audio": "これはカードではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ですか?",
+          "target": "A は B ですか",
+          "options": [
+            "Preguntas con ですか",
+            "Identificar y presentarse",
+            "Aquí es una biblioteca."
+          ],
+          "answer": "Preguntas con ですか",
+          "explanation": "Preguntas con ですか",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-02-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはほんですか。?",
+          "target": "これはほんですか。",
+          "options": [
+            "¿Esto es un libro?",
+            "Eso es una llave.",
+            "Identificar y presentarse"
+          ],
+          "answer": "¿Esto es un libro?",
+          "explanation": "¿Esto es un libro?",
+          "audio": "これはほんですか。",
+          "slow_audio": "これはほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-05",
+      "title": "ここ・そこ・あそこ",
+      "description": "Lugares cercanos y lejanos",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-05-intro",
+          "type": "lesson_intro",
+          "prompt": "ここ・そこ・あそこ",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Lugares cercanos y lejanos",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-05-pattern",
           "type": "teach_pattern",
           "prompt": "ここ・そこ・あそこ",
           "target": "ここ・そこ・あそこ",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Lugares cercanos y lejanos",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -422,15 +902,15 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-5-model-1",
+          "id": "jp-book1-sentence-05-model-1",
           "type": "dialogue_model",
-          "prompt": "¿Dónde está el baño?",
-          "target": "トイレはどこですか。",
+          "prompt": "¿Dónde está el gato?",
+          "target": "ねこはどこですか。",
           "options": [],
           "answer": "",
-          "explanation": "¿Dónde está el baño?",
-          "audio": "トイレはどこですか。",
-          "slow_audio": "トイレはどこですか。",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこですか。",
+          "slow_audio": "ねこはどこですか。",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -438,55 +918,80 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-5-model-2",
-          "type": "dialogue_model",
-          "prompt": "Está aquí.",
-          "target": "ここです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Está aquí.",
-          "audio": "ここです。",
-          "slow_audio": "ここです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-5-quiz",
+          "id": "jp-book1-sentence-05-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa トイレはどこですか。?",
-          "target": "トイレはどこですか。",
+          "prompt": "¿Qué significa ねこはどこですか。?",
+          "target": "ねこはどこですか。",
           "options": [
-            "¿Dónde está el baño?",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "¿Dónde está el gato?",
+            "Está allí.",
+            "No corresponde a esta oración."
           ],
-          "answer": "¿Dónde está el baño?",
-          "explanation": "¿Dónde está el baño?",
-          "audio": "トイレはどこですか。",
-          "slow_audio": "トイレはどこですか。",
+          "answer": "¿Dónde está el gato?",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこですか。",
+          "slow_audio": "ねこはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-05",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-05-model-2",
+          "type": "dialogue_model",
+          "prompt": "Está allí.",
+          "target": "あそこです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Está allí.",
+          "audio": "あそこです。",
+          "slow_audio": "あそこです。",
           "image": null,
           "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-05-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa あそこです。?",
+          "target": "あそこです。",
+          "options": [
+            "Está allí.",
+            "¿Dónde está el gato?",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Está allí.",
+          "explanation": "Está allí.",
+          "audio": "あそこです。",
+          "slow_audio": "あそこです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-05",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-06",
-      "title": "の y も",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "id": "jp-book1-sentence-06",
+      "title": "あります・います",
+      "description": "Existencia de cosas y seres",
       "activities": [
         {
-          "id": "jp-sentence-6-intro",
+          "id": "jp-book1-sentence-06-intro",
           "type": "lesson_intro",
-          "prompt": "の y も",
+          "prompt": "あります・います",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Existencia de cosas y seres",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -496,13 +1001,13 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-6-pattern",
+          "id": "jp-book1-sentence-06-pattern",
           "type": "teach_pattern",
-          "prompt": "の y も",
-          "target": "の y も",
+          "prompt": "あります・います",
+          "target": "あります・います",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Existencia de cosas y seres",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -512,15 +1017,15 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-6-model-1",
+          "id": "jp-book1-sentence-06-model-1",
           "type": "dialogue_model",
-          "prompt": "Es mi libro.",
-          "target": "わたしのほんです。",
+          "prompt": "Hay un libro.",
+          "target": "ほんがあります。",
           "options": [],
           "answer": "",
-          "explanation": "Es mi libro.",
-          "audio": "わたしのほんです。",
-          "slow_audio": "わたしのほんです。",
+          "explanation": "Hay un libro.",
+          "audio": "ほんがあります。",
+          "slow_audio": "ほんがあります。",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -528,81 +1033,29 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-6-model-2",
-          "type": "dialogue_model",
-          "prompt": "Yo también soy estudiante.",
-          "target": "わたしもがくせいです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Yo también soy estudiante.",
-          "audio": "わたしもがくせいです。",
-          "slow_audio": "わたしもがくせいです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-6-quiz",
+          "id": "jp-book1-sentence-06-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa わたしのほんです。?",
-          "target": "わたしのほんです。",
+          "prompt": "¿Qué significa ほんがあります。?",
+          "target": "ほんがあります。",
           "options": [
-            "Es mi libro.",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "Hay un libro.",
+            "Hay un gato.",
+            "No hay dinero."
           ],
-          "answer": "Es mi libro.",
-          "explanation": "Es mi libro.",
-          "audio": "わたしのほんです。",
-          "slow_audio": "わたしのほんです。",
+          "answer": "Hay un libro.",
+          "explanation": "Hay un libro.",
+          "audio": "ほんがあります。",
+          "slow_audio": "ほんがあります。",
           "image": null,
           "writing_asset": null,
-          "tags": [],
+          "tags": [
+            "jp-book1-sentence-06",
+            "meaning_recall"
+          ],
           "xp": 15
-        }
-      ]
-    },
-    {
-      "id": "jp-sentence-07",
-      "title": "が・を",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
-      "activities": [
-        {
-          "id": "jp-sentence-7-intro",
-          "type": "lesson_intro",
-          "prompt": "が・を",
-          "target": "",
-          "options": [],
-          "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
-          "audio": "",
-          "slow_audio": "",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false
         },
         {
-          "id": "jp-sentence-7-pattern",
-          "type": "teach_pattern",
-          "prompt": "が・を",
-          "target": "が・を",
-          "options": [],
-          "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
-          "audio": "",
-          "slow_audio": "",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-7-model-1",
+          "id": "jp-book1-sentence-06-model-2",
           "type": "dialogue_model",
           "prompt": "Hay un gato.",
           "target": "ねこがいます。",
@@ -618,30 +1071,14 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-7-model-2",
-          "type": "dialogue_model",
-          "prompt": "Bebo agua.",
-          "target": "みずをのみます。",
-          "options": [],
-          "answer": "",
-          "explanation": "Bebo agua.",
-          "audio": "みずをのみます。",
-          "slow_audio": "みずをのみます。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-7-quiz",
+          "id": "jp-book1-sentence-06-meaning-2",
           "type": "select_translation",
           "prompt": "¿Qué significa ねこがいます。?",
           "target": "ねこがいます。",
           "options": [
             "Hay un gato.",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "Hay un libro.",
+            "No hay dinero."
           ],
           "answer": "Hay un gato.",
           "explanation": "Hay un gato.",
@@ -649,24 +1086,67 @@
           "slow_audio": "ねこがいます。",
           "image": null,
           "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-06",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-06-model-3",
+          "type": "dialogue_model",
+          "prompt": "No hay dinero.",
+          "target": "おかねがありません。",
+          "options": [],
+          "answer": "",
+          "explanation": "No hay dinero.",
+          "audio": "おかねがありません。",
+          "slow_audio": "おかねがありません。",
+          "image": null,
+          "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-06-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa おかねがありません。?",
+          "target": "おかねがありません。",
+          "options": [
+            "No hay dinero.",
+            "Hay un libro.",
+            "Hay un gato."
+          ],
+          "answer": "No hay dinero.",
+          "explanation": "No hay dinero.",
+          "audio": "おかねがありません。",
+          "slow_audio": "おかねがありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-06",
+            "meaning_recall"
+          ],
           "xp": 15
         }
       ]
     },
     {
-      "id": "jp-sentence-08",
-      "title": "に・で・へ・と",
-      "description": "Aprende el patrón dentro de oraciones comprensibles.",
+      "id": "jp-book1-sentence-review-03",
+      "title": "Repaso obligatorio 3",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-sentence-8-intro",
+          "id": "jp-book1-sentence-review-03-intro",
           "type": "lesson_intro",
-          "prompt": "に・で・へ・と",
+          "prompt": "Repaso obligatorio 3",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Observa primero la función y después completa ejercicios.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -676,13 +1156,212 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-8-pattern",
-          "type": "teach_pattern",
-          "prompt": "に・で・へ・と",
-          "target": "に・で・へ・と",
+          "id": "jp-book1-sentence-review-03-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "¿Qué es esto?",
+            "Objetos cercanos y lejanos"
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。?",
+          "target": "ここはとしょかんです。",
+          "options": [
+            "Aquí es una biblioteca.",
+            "Existencia de cosas y seres",
+            "¿Dónde está el gato?"
+          ],
+          "answer": "Aquí es una biblioteca.",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "Objetos cercanos y lejanos",
+            "¿Dónde está el gato?"
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ですか?",
+          "target": "A は B ですか",
+          "options": [
+            "Preguntas con ですか",
+            "No hay dinero.",
+            "Esto no es una tarjeta."
+          ],
+          "answer": "Preguntas con ですか",
+          "explanation": "Preguntas con ですか",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはみせですか。?",
+          "target": "ここはみせですか。",
+          "options": [
+            "¿Aquí es una tienda?",
+            "Existencia de cosas y seres",
+            "Objetos cercanos y lejanos"
+          ],
+          "answer": "¿Aquí es una tienda?",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはなんですか。?",
+          "target": "これはなんですか。",
+          "options": [
+            "¿Qué es esto?",
+            "Aquello es un reloj.",
+            "Está allí."
+          ],
+          "answer": "¿Qué es esto?",
+          "explanation": "¿Qué es esto?",
+          "audio": "これはなんですか。",
+          "slow_audio": "これはなんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "Preguntas con ですか",
+            "¿Aquí es una tienda?"
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-03-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこはどこですか。?",
+          "target": "ねこはどこですか。",
+          "options": [
+            "¿Dónde está el gato?",
+            "Existencia de cosas y seres",
+            "Aquello es un reloj."
+          ],
+          "answer": "¿Dónde está el gato?",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこですか。",
+          "slow_audio": "ねこはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-07",
+      "title": "上・中・近く・前",
+      "description": "Ubicación precisa",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-07-intro",
+          "type": "lesson_intro",
+          "prompt": "上・中・近く・前",
+          "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Estudia el patrón dentro de ejemplos completos.",
+          "explanation": "Ubicación precisa",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-07-pattern",
+          "type": "teach_pattern",
+          "prompt": "上・中・近く・前",
+          "target": "上・中・近く・前",
+          "options": [],
+          "answer": "",
+          "explanation": "Ubicación precisa",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -692,15 +1371,15 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-8-model-1",
+          "id": "jp-book1-sentence-07-model-1",
           "type": "dialogue_model",
-          "prompt": "Voy a la escuela.",
-          "target": "がっこうにいきます。",
+          "prompt": "El libro está sobre el escritorio.",
+          "target": "ほんはつくえのうえです。",
           "options": [],
           "answer": "",
-          "explanation": "Voy a la escuela.",
-          "audio": "がっこうにいきます。",
-          "slow_audio": "がっこうにいきます。",
+          "explanation": "El libro está sobre el escritorio.",
+          "audio": "ほんはつくえのうえです。",
+          "slow_audio": "ほんはつくえのうえです。",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -708,55 +1387,1794 @@
           "gradable": false
         },
         {
-          "id": "jp-sentence-8-model-2",
-          "type": "dialogue_model",
-          "prompt": "Como en casa.",
-          "target": "うちでたべます。",
-          "options": [],
-          "answer": "",
-          "explanation": "Como en casa.",
-          "audio": "うちでたべます。",
-          "slow_audio": "うちでたべます。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-8-model-3",
-          "type": "dialogue_model",
-          "prompt": "Hablo con un amigo.",
-          "target": "ともだちとはなします。",
-          "options": [],
-          "answer": "",
-          "explanation": "Hablo con un amigo.",
-          "audio": "ともだちとはなします。",
-          "slow_audio": "ともだちとはなします。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 3,
-          "gradable": false
-        },
-        {
-          "id": "jp-sentence-8-quiz",
+          "id": "jp-book1-sentence-07-meaning-1",
           "type": "select_translation",
-          "prompt": "¿Qué significa がっこうにいきます。?",
-          "target": "がっこうにいきます。",
+          "prompt": "¿Qué significa ほんはつくえのうえです。?",
+          "target": "ほんはつくえのうえです。",
           "options": [
-            "Voy a la escuela.",
-            "No corresponde al ejemplo.",
-            "Expresa tiempo pasado."
+            "El libro está sobre el escritorio.",
+            "La llave está dentro de la caja.",
+            "El gato está cerca de la ventana."
           ],
-          "answer": "Voy a la escuela.",
-          "explanation": "Voy a la escuela.",
-          "audio": "がっこうにいきます。",
-          "slow_audio": "がっこうにいきます。",
+          "answer": "El libro está sobre el escritorio.",
+          "explanation": "El libro está sobre el escritorio.",
+          "audio": "ほんはつくえのうえです。",
+          "slow_audio": "ほんはつくえのうえです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-07",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-07-model-2",
+          "type": "dialogue_model",
+          "prompt": "La llave está dentro de la caja.",
+          "target": "かぎははこのなかです。",
+          "options": [],
+          "answer": "",
+          "explanation": "La llave está dentro de la caja.",
+          "audio": "かぎははこのなかです。",
+          "slow_audio": "かぎははこのなかです。",
           "image": null,
           "writing_asset": null,
           "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-07-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa かぎははこのなかです。?",
+          "target": "かぎははこのなかです。",
+          "options": [
+            "La llave está dentro de la caja.",
+            "El libro está sobre el escritorio.",
+            "El gato está cerca de la ventana."
+          ],
+          "answer": "La llave está dentro de la caja.",
+          "explanation": "La llave está dentro de la caja.",
+          "audio": "かぎははこのなかです。",
+          "slow_audio": "かぎははこのなかです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-07",
+            "meaning_recall"
+          ],
           "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-07-model-3",
+          "type": "dialogue_model",
+          "prompt": "El gato está cerca de la ventana.",
+          "target": "ねこはまどのちかくにいます。",
+          "options": [],
+          "answer": "",
+          "explanation": "El gato está cerca de la ventana.",
+          "audio": "ねこはまどのちかくにいます。",
+          "slow_audio": "ねこはまどのちかくにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-07-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ねこはまどのちかくにいます。?",
+          "target": "ねこはまどのちかくにいます。",
+          "options": [
+            "El gato está cerca de la ventana.",
+            "El libro está sobre el escritorio.",
+            "La llave está dentro de la caja."
+          ],
+          "answer": "El gato está cerca de la ventana.",
+          "explanation": "El gato está cerca de la ventana.",
+          "audio": "ねこはまどのちかくにいます。",
+          "slow_audio": "ねこはまどのちかくにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-07",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-08",
+      "title": "の・も",
+      "description": "Posesión y adición",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-08-intro",
+          "type": "lesson_intro",
+          "prompt": "の・も",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Posesión y adición",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-08-pattern",
+          "type": "teach_pattern",
+          "prompt": "の・も",
+          "target": "の・も",
+          "options": [],
+          "answer": "",
+          "explanation": "Posesión y adición",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-08-model-1",
+          "type": "dialogue_model",
+          "prompt": "Es mi libro.",
+          "target": "わたしのほんです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es mi libro.",
+          "audio": "わたしのほんです。",
+          "slow_audio": "わたしのほんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-08-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa わたしのほんです。?",
+          "target": "わたしのほんです。",
+          "options": [
+            "Es mi libro.",
+            "También hay una tarjeta.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Es mi libro.",
+          "explanation": "Es mi libro.",
+          "audio": "わたしのほんです。",
+          "slow_audio": "わたしのほんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-08",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-08-model-2",
+          "type": "dialogue_model",
+          "prompt": "También hay una tarjeta.",
+          "target": "カードもあります。",
+          "options": [],
+          "answer": "",
+          "explanation": "También hay una tarjeta.",
+          "audio": "カードもあります。",
+          "slow_audio": "カードもあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-08-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa カードもあります。?",
+          "target": "カードもあります。",
+          "options": [
+            "También hay una tarjeta.",
+            "Es mi libro.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "También hay una tarjeta.",
+          "explanation": "También hay una tarjeta.",
+          "audio": "カードもあります。",
+          "slow_audio": "カードもあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-08",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-review-04",
+      "title": "Repaso obligatorio 4",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-sentence-review-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 4",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "Ubicación precisa",
+            "Lugares cercanos y lejanos"
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ではありません?",
+          "target": "A は B ではありません",
+          "options": [
+            "Negación nominal",
+            "El libro está sobre el escritorio.",
+            "Aquello es un reloj."
+          ],
+          "answer": "Negación nominal",
+          "explanation": "Negación nominal",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ですか?",
+          "target": "A は B ですか",
+          "options": [
+            "Preguntas con ですか",
+            "Esto no es una tarjeta.",
+            "¿Dónde está el gato?"
+          ],
+          "answer": "Preguntas con ですか",
+          "explanation": "Preguntas con ですか",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これ・それ・あれ?",
+          "target": "これ・それ・あれ",
+          "options": [
+            "Objetos cercanos y lejanos",
+            "¿Qué es esto?",
+            "Soy Mina."
+          ],
+          "answer": "Objetos cercanos y lejanos",
+          "explanation": "Objetos cercanos y lejanos",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "La llave está dentro de la caja.",
+            "Hay un gato."
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あそこです。?",
+          "target": "あそこです。",
+          "options": [
+            "Está allí.",
+            "Esto no es una tarjeta.",
+            "Lugares cercanos y lejanos"
+          ],
+          "answer": "Está allí.",
+          "explanation": "Está allí.",
+          "audio": "あそこです。",
+          "slow_audio": "あそこです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこがいます。?",
+          "target": "ねこがいます。",
+          "options": [
+            "Hay un gato.",
+            "No hay dinero.",
+            "El libro está sobre el escritorio."
+          ],
+          "answer": "Hay un gato.",
+          "explanation": "Hay un gato.",
+          "audio": "ねこがいます。",
+          "slow_audio": "ねこがいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-04-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんはつくえのうえです。?",
+          "target": "ほんはつくえのうえです。",
+          "options": [
+            "El libro está sobre el escritorio.",
+            "Posesión y adición",
+            "Aquí es una biblioteca."
+          ],
+          "answer": "El libro está sobre el escritorio.",
+          "explanation": "El libro está sobre el escritorio.",
+          "audio": "ほんはつくえのうえです。",
+          "slow_audio": "ほんはつくえのうえです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-09",
+      "title": "が・を",
+      "description": "Sujeto y objeto",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-09-intro",
+          "type": "lesson_intro",
+          "prompt": "が・を",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Sujeto y objeto",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-09-pattern",
+          "type": "teach_pattern",
+          "prompt": "が・を",
+          "target": "が・を",
+          "options": [],
+          "answer": "",
+          "explanation": "Sujeto y objeto",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-09-model-1",
+          "type": "dialogue_model",
+          "prompt": "La puerta se abre.",
+          "target": "ドアがあきます。",
+          "options": [],
+          "answer": "",
+          "explanation": "La puerta se abre.",
+          "audio": "ドアがあきます。",
+          "slow_audio": "ドアがあきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-09-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ドアがあきます。?",
+          "target": "ドアがあきます。",
+          "options": [
+            "La puerta se abre.",
+            "Leo un libro.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "La puerta se abre.",
+          "explanation": "La puerta se abre.",
+          "audio": "ドアがあきます。",
+          "slow_audio": "ドアがあきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-09",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-09-model-2",
+          "type": "dialogue_model",
+          "prompt": "Leo un libro.",
+          "target": "ほんをよみます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Leo un libro.",
+          "audio": "ほんをよみます。",
+          "slow_audio": "ほんをよみます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-09-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ほんをよみます。?",
+          "target": "ほんをよみます。",
+          "options": [
+            "Leo un libro.",
+            "La puerta se abre.",
+            "No corresponde a esta oración."
+          ],
+          "answer": "Leo un libro.",
+          "explanation": "Leo un libro.",
+          "audio": "ほんをよみます。",
+          "slow_audio": "ほんをよみます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-09",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-10",
+      "title": "に・で・へ・と",
+      "description": "Destino, lugar de acción y compañía",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-10-intro",
+          "type": "lesson_intro",
+          "prompt": "に・で・へ・と",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Destino, lugar de acción y compañía",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-10-pattern",
+          "type": "teach_pattern",
+          "prompt": "に・で・へ・と",
+          "target": "に・で・へ・と",
+          "options": [],
+          "answer": "",
+          "explanation": "Destino, lugar de acción y compañía",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-10-model-1",
+          "type": "dialogue_model",
+          "prompt": "Voy a la tienda.",
+          "target": "みせにいきます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Voy a la tienda.",
+          "audio": "みせにいきます。",
+          "slow_audio": "みせにいきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-10-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa みせにいきます。?",
+          "target": "みせにいきます。",
+          "options": [
+            "Voy a la tienda.",
+            "Espero aquí.",
+            "Vamos juntos."
+          ],
+          "answer": "Voy a la tienda.",
+          "explanation": "Voy a la tienda.",
+          "audio": "みせにいきます。",
+          "slow_audio": "みせにいきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-10",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-10-model-2",
+          "type": "dialogue_model",
+          "prompt": "Espero aquí.",
+          "target": "ここでまちます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Espero aquí.",
+          "audio": "ここでまちます。",
+          "slow_audio": "ここでまちます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-10-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa ここでまちます。?",
+          "target": "ここでまちます。",
+          "options": [
+            "Espero aquí.",
+            "Voy a la tienda.",
+            "Vamos juntos."
+          ],
+          "answer": "Espero aquí.",
+          "explanation": "Espero aquí.",
+          "audio": "ここでまちます。",
+          "slow_audio": "ここでまちます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-10",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-10-model-3",
+          "type": "dialogue_model",
+          "prompt": "Vamos juntos.",
+          "target": "いっしょにいきます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Vamos juntos.",
+          "audio": "いっしょにいきます。",
+          "slow_audio": "いっしょにいきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-10-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa いっしょにいきます。?",
+          "target": "いっしょにいきます。",
+          "options": [
+            "Vamos juntos.",
+            "Voy a la tienda.",
+            "Espero aquí."
+          ],
+          "answer": "Vamos juntos.",
+          "explanation": "Vamos juntos.",
+          "audio": "いっしょにいきます。",
+          "slow_audio": "いっしょにいきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-10",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-review-05",
+      "title": "Repaso obligatorio 5",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-sentence-review-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 5",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "¿Aquí es una tienda?",
+            "Leo un libro."
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "¿Esto es un libro?",
+            "También hay una tarjeta."
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはみせですか。?",
+          "target": "ここはみせですか。",
+          "options": [
+            "¿Aquí es una tienda?",
+            "Hay un gato.",
+            "Existencia de cosas y seres"
+          ],
+          "answer": "¿Aquí es una tienda?",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "Lugares cercanos y lejanos",
+            "La llave está dentro de la caja."
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あります・います?",
+          "target": "あります・います",
+          "options": [
+            "Existencia de cosas y seres",
+            "Identificar y presentarse",
+            "También hay una tarjeta."
+          ],
+          "answer": "Existencia de cosas y seres",
+          "explanation": "Existencia de cosas y seres",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
+          "target": "上・中・近く・前",
+          "options": [
+            "Ubicación precisa",
+            "Objetos cercanos y lejanos",
+            "Identificar y presentarse"
+          ],
+          "answer": "Ubicación precisa",
+          "explanation": "Ubicación precisa",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa の・も?",
+          "target": "の・も",
+          "options": [
+            "Posesión y adición",
+            "Negación nominal",
+            "Hay un gato."
+          ],
+          "answer": "Posesión y adición",
+          "explanation": "Posesión y adición",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-05-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ドアがあきます。?",
+          "target": "ドアがあきます。",
+          "options": [
+            "La puerta se abre.",
+            "¿Aquí es una tienda?",
+            "Aquello es un reloj."
+          ],
+          "answer": "La puerta se abre.",
+          "explanation": "La puerta se abre.",
+          "audio": "ドアがあきます。",
+          "slow_audio": "ドアがあきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-05",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-11",
+      "title": "何・誰・どこ・どうして",
+      "description": "Preguntas esenciales",
+      "activities": [
+        {
+          "id": "jp-book1-sentence-11-intro",
+          "type": "lesson_intro",
+          "prompt": "何・誰・どこ・どうして",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Preguntas esenciales",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-11-pattern",
+          "type": "teach_pattern",
+          "prompt": "何・誰・どこ・どうして",
+          "target": "何・誰・どこ・どうして",
+          "options": [],
+          "answer": "",
+          "explanation": "Preguntas esenciales",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-11-model-1",
+          "type": "dialogue_model",
+          "prompt": "¿Qué haces?",
+          "target": "なにをしますか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Qué haces?",
+          "audio": "なにをしますか。",
+          "slow_audio": "なにをしますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-11-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa なにをしますか。?",
+          "target": "なにをしますか。",
+          "options": [
+            "¿Qué haces?",
+            "¿Quién abrió?",
+            "¿Por qué?"
+          ],
+          "answer": "¿Qué haces?",
+          "explanation": "¿Qué haces?",
+          "audio": "なにをしますか。",
+          "slow_audio": "なにをしますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-11",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-11-model-2",
+          "type": "dialogue_model",
+          "prompt": "¿Quién abrió?",
+          "target": "だれがあけましたか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Quién abrió?",
+          "audio": "だれがあけましたか。",
+          "slow_audio": "だれがあけましたか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-11-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa だれがあけましたか。?",
+          "target": "だれがあけましたか。",
+          "options": [
+            "¿Quién abrió?",
+            "¿Qué haces?",
+            "¿Por qué?"
+          ],
+          "answer": "¿Quién abrió?",
+          "explanation": "¿Quién abrió?",
+          "audio": "だれがあけましたか。",
+          "slow_audio": "だれがあけましたか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-11",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-sentence-11-model-3",
+          "type": "dialogue_model",
+          "prompt": "¿Por qué?",
+          "target": "どうしてですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-11-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "¿Por qué?",
+            "¿Qué haces?",
+            "¿Quién abrió?"
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-11",
+            "meaning_recall"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-review-06",
+      "title": "Repaso obligatorio 6",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-sentence-review-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 6",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "Destino, lugar de acción y compañía",
+            "¿Quién abrió?"
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "El gato está cerca de la ventana.",
+            "La puerta se abre."
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはみせですか。?",
+          "target": "ここはみせですか。",
+          "options": [
+            "¿Aquí es una tienda?",
+            "Hay un gato.",
+            "La puerta se abre."
+          ],
+          "answer": "¿Aquí es una tienda?",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "La puerta se abre.",
+            "Soy Mina."
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あります・います?",
+          "target": "あります・います",
+          "options": [
+            "Existencia de cosas y seres",
+            "El gato está cerca de la ventana.",
+            "¿Quién abrió?"
+          ],
+          "answer": "Existencia de cosas y seres",
+          "explanation": "Existencia de cosas y seres",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
+          "target": "上・中・近く・前",
+          "options": [
+            "Ubicación precisa",
+            "Lugares cercanos y lejanos",
+            "¿Qué haces?"
+          ],
+          "answer": "Ubicación precisa",
+          "explanation": "Ubicación precisa",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa の・も?",
+          "target": "の・も",
+          "options": [
+            "Posesión y adición",
+            "Ubicación precisa",
+            "Voy a la tienda."
+          ],
+          "answer": "Posesión y adición",
+          "explanation": "Posesión y adición",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-sentence-review-06-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ドアがあきます。?",
+          "target": "ドアがあきます。",
+          "options": [
+            "La puerta se abre.",
+            "Soy Mina.",
+            "Leo un libro."
+          ],
+          "answer": "La puerta se abre.",
+          "explanation": "La puerta se abre.",
+          "audio": "ドアがあきます。",
+          "slow_audio": "ドアがあきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-review-06",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-sentence-checkpoint",
+      "title": "Prueba de dominio",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": false,
+      "isTest": true,
+      "activities": [
+        {
+          "id": "jp-book1-sentence-checkpoint-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B です?",
+          "target": "A は B です",
+          "options": [
+            "Identificar y presentarse",
+            "Lugares cercanos y lejanos",
+            "Vamos juntos."
+          ],
+          "answer": "Identificar y presentarse",
+          "explanation": "Identificar y presentarse",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa わたしはミナです。?",
+          "target": "わたしはミナです。",
+          "options": [
+            "Soy Mina.",
+            "Preguntas con ですか",
+            "Esto no es una tarjeta."
+          ],
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。?",
+          "target": "ここはとしょかんです。",
+          "options": [
+            "Aquí es una biblioteca.",
+            "Esto no es una tarjeta.",
+            "Ubicación precisa"
+          ],
+          "answer": "Aquí es una biblioteca.",
+          "explanation": "Aquí es una biblioteca.",
+          "audio": "ここはとしょかんです。",
+          "slow_audio": "ここはとしょかんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ではありません?",
+          "target": "A は B ではありません",
+          "options": [
+            "Negación nominal",
+            "Soy Mina.",
+            "Ubicación precisa"
+          ],
+          "answer": "Negación nominal",
+          "explanation": "Negación nominal",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひとではありません。?",
+          "target": "ひとではありません。",
+          "options": [
+            "No es una persona.",
+            "Voy a la tienda.",
+            "¿Por qué?"
+          ],
+          "answer": "No es una persona.",
+          "explanation": "No es una persona.",
+          "audio": "ひとではありません。",
+          "slow_audio": "ひとではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはカードではありません。?",
+          "target": "これはカードではありません。",
+          "options": [
+            "Esto no es una tarjeta.",
+            "¿Quién abrió?",
+            "Leo un libro."
+          ],
+          "answer": "Esto no es una tarjeta.",
+          "explanation": "Esto no es una tarjeta.",
+          "audio": "これはカードではありません。",
+          "slow_audio": "これはカードではありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa A は B ですか?",
+          "target": "A は B ですか",
+          "options": [
+            "Preguntas con ですか",
+            "La puerta se abre.",
+            "Sujeto y objeto"
+          ],
+          "answer": "Preguntas con ですか",
+          "explanation": "Preguntas con ですか",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはほんですか。?",
+          "target": "これはほんですか。",
+          "options": [
+            "¿Esto es un libro?",
+            "Eso es una llave.",
+            "Lugares cercanos y lejanos"
+          ],
+          "answer": "¿Esto es un libro?",
+          "explanation": "¿Esto es un libro?",
+          "audio": "これはほんですか。",
+          "slow_audio": "これはほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-9",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはみせですか。?",
+          "target": "ここはみせですか。",
+          "options": [
+            "¿Aquí es una tienda?",
+            "Es mi libro.",
+            "Leo un libro."
+          ],
+          "answer": "¿Aquí es una tienda?",
+          "explanation": "¿Aquí es una tienda?",
+          "audio": "ここはみせですか。",
+          "slow_audio": "ここはみせですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-10",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これ・それ・あれ?",
+          "target": "これ・それ・あれ",
+          "options": [
+            "Objetos cercanos y lejanos",
+            "Preguntas con ですか",
+            "Destino, lugar de acción y compañía"
+          ],
+          "answer": "Objetos cercanos y lejanos",
+          "explanation": "Objetos cercanos y lejanos",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-11",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa これはなんですか。?",
+          "target": "これはなんですか。",
+          "options": [
+            "¿Qué es esto?",
+            "Eso es una llave.",
+            "Leo un libro."
+          ],
+          "answer": "¿Qué es esto?",
+          "explanation": "¿Qué es esto?",
+          "audio": "これはなんですか。",
+          "slow_audio": "これはなんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-12",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa それはかぎです。?",
+          "target": "それはかぎです。",
+          "options": [
+            "Eso es una llave.",
+            "Posesión y adición",
+            "Soy Mina."
+          ],
+          "answer": "Eso es una llave.",
+          "explanation": "Eso es una llave.",
+          "audio": "それはかぎです。",
+          "slow_audio": "それはかぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-13",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あれはとけいです。?",
+          "target": "あれはとけいです。",
+          "options": [
+            "Aquello es un reloj.",
+            "Existencia de cosas y seres",
+            "Leo un libro."
+          ],
+          "answer": "Aquello es un reloj.",
+          "explanation": "Aquello es un reloj.",
+          "audio": "あれはとけいです。",
+          "slow_audio": "あれはとけいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-14",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここ・そこ・あそこ?",
+          "target": "ここ・そこ・あそこ",
+          "options": [
+            "Lugares cercanos y lejanos",
+            "¿Qué haces?",
+            "Preguntas con ですか"
+          ],
+          "answer": "Lugares cercanos y lejanos",
+          "explanation": "Lugares cercanos y lejanos",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-15",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこはどこですか。?",
+          "target": "ねこはどこですか。",
+          "options": [
+            "¿Dónde está el gato?",
+            "Preguntas con ですか",
+            "Leo un libro."
+          ],
+          "answer": "¿Dónde está el gato?",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこですか。",
+          "slow_audio": "ねこはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-16",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あそこです。?",
+          "target": "あそこです。",
+          "options": [
+            "Está allí.",
+            "Espero aquí.",
+            "Hay un gato."
+          ],
+          "answer": "Está allí.",
+          "explanation": "Está allí.",
+          "audio": "あそこです。",
+          "slow_audio": "あそこです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-17",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あります・います?",
+          "target": "あります・います",
+          "options": [
+            "Existencia de cosas y seres",
+            "Preguntas esenciales",
+            "¿Esto es un libro?"
+          ],
+          "answer": "Existencia de cosas y seres",
+          "explanation": "Existencia de cosas y seres",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-18",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんがあります。?",
+          "target": "ほんがあります。",
+          "options": [
+            "Hay un libro.",
+            "Esto no es una tarjeta.",
+            "La llave está dentro de la caja."
+          ],
+          "answer": "Hay un libro.",
+          "explanation": "Hay un libro.",
+          "audio": "ほんがあります。",
+          "slow_audio": "ほんがあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-19",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこがいます。?",
+          "target": "ねこがいます。",
+          "options": [
+            "Hay un gato.",
+            "Existencia de cosas y seres",
+            "Objetos cercanos y lejanos"
+          ],
+          "answer": "Hay un gato.",
+          "explanation": "Hay un gato.",
+          "audio": "ねこがいます。",
+          "slow_audio": "ねこがいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-20",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa おかねがありません。?",
+          "target": "おかねがありません。",
+          "options": [
+            "No hay dinero.",
+            "Hay un gato.",
+            "Vamos juntos."
+          ],
+          "answer": "No hay dinero.",
+          "explanation": "No hay dinero.",
+          "audio": "おかねがありません。",
+          "slow_audio": "おかねがありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-21",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
+          "target": "上・中・近く・前",
+          "options": [
+            "Ubicación precisa",
+            "¿Por qué?",
+            "Negación nominal"
+          ],
+          "answer": "Ubicación precisa",
+          "explanation": "Ubicación precisa",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-22",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんはつくえのうえです。?",
+          "target": "ほんはつくえのうえです。",
+          "options": [
+            "El libro está sobre el escritorio.",
+            "¿Esto es un libro?",
+            "Espero aquí."
+          ],
+          "answer": "El libro está sobre el escritorio.",
+          "explanation": "El libro está sobre el escritorio.",
+          "audio": "ほんはつくえのうえです。",
+          "slow_audio": "ほんはつくえのうえです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-23",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かぎははこのなかです。?",
+          "target": "かぎははこのなかです。",
+          "options": [
+            "La llave está dentro de la caja.",
+            "Objetos cercanos y lejanos",
+            "Hay un gato."
+          ],
+          "answer": "La llave está dentro de la caja.",
+          "explanation": "La llave está dentro de la caja.",
+          "audio": "かぎははこのなかです。",
+          "slow_audio": "かぎははこのなかです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-sentence-checkpoint-recall-24",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこはまどのちかくにいます。?",
+          "target": "ねこはまどのちかくにいます。",
+          "options": [
+            "El gato está cerca de la ventana.",
+            "Existencia de cosas y seres",
+            "Eso es una llave."
+          ],
+          "answer": "El gato está cerca de la ventana.",
+          "explanation": "El gato está cerca de la ventana.",
+          "audio": "ねこはまどのちかくにいます。",
+          "slow_audio": "ねこはまどのちかくにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-sentence-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
         }
       ]
     }

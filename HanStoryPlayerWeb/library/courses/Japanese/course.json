@@ -2,7 +2,7 @@
   "courseId": "japanese-from-zero",
   "title": "Japonés desde cero",
   "language": "Japanese",
-  "version": 3,
+  "version": 4,
   "levels": [
     {
       "id": "route-a1",
@@ -15,10 +15,17 @@
     }
   ],
   "unlockRules": {
-    "minimumScore": 70,
-    "masteryScore": 90
+    "minimumScore": 85,
+    "masteryScore": 95
   },
-  "recommendedBooks": [],
+  "recommendedBooks": [
+    {
+      "code": "HS-JP-B01",
+      "title": "夜の図書館",
+      "requiredWorld": 10,
+      "requiredScore": 85
+    }
+  ],
   "units": [
     {
       "id": "hiragana-01",
@@ -48,7 +55,7 @@
       "id": "first-words",
       "world": 4,
       "title": "Primeras palabras",
-      "description": "Vocabulario que ya puedes leer.",
+      "description": "Memoriza el vocabulario base de 夜の図書館.",
       "manifest": "units/first-words.json",
       "icon": "言"
     },
@@ -56,7 +63,7 @@
       "id": "first-sentences",
       "world": 5,
       "title": "Primeras oraciones",
-      "description": "Estructuras y partículas iniciales.",
+      "description": "Existencia, ubicación, preguntas y partículas.",
       "manifest": "units/first-sentences.json",
       "icon": "文"
     },
@@ -64,7 +71,7 @@
       "id": "basic-verbs",
       "world": 6,
       "title": "Verbos básicos",
-      "description": "Acciones y formas corteses.",
+      "description": "Acciones y formas necesarias para la historia.",
       "manifest": "units/basic-verbs.json",
       "icon": "動"
     },
@@ -72,7 +79,7 @@
       "id": "adjectives",
       "world": 7,
       "title": "Adjetivos y descripción",
-      "description": "Cualidades, colores y gustos.",
+      "description": "Colores, tamaños, estados y razones.",
       "manifest": "units/adjectives.json",
       "icon": "形"
     },
@@ -80,7 +87,7 @@
       "id": "functional-a1",
       "world": 8,
       "title": "Japonés funcional A1",
-      "description": "Situaciones cotidianas.",
+      "description": "Contadores, peticiones, precios y direcciones.",
       "manifest": "units/functional-a1.json",
       "icon": "会"
     },
@@ -88,7 +95,7 @@
       "id": "starter-kanji",
       "world": 9,
       "title": "Kanji inicial",
-      "description": "50 kanji dentro de palabras.",
+      "description": "74 kanji utilizados por el primer libro.",
       "manifest": "units/starter-kanji.json",
       "icon": "日"
     },
@@ -96,7 +103,7 @@
       "id": "story-bridge",
       "world": 10,
       "title": "Puente hacia las historias",
-      "description": "Diálogos y lecturas breves.",
+      "description": "Consolidación sin fundamentos nuevos.",
       "manifest": "units/story-bridge.json",
       "icon": "本"
     }

@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v57';
+const SHELL='hanstory-shell-v60';
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
   './assets/japanese_course.css','./assets/japanese_lesson.css','./src/app.js','./src/storage.js','./src/branding.js',
@@ -13,7 +13,7 @@ const ASSETS=[
   './library/courses/Japanese/audio_manifest.json'
 ];
 self.addEventListener('install',event=>event.waitUntil(
-  caches.open(SHELL).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())
+  caches.open(SHELL).then(cache=>cache.addAll(ASSETS.map(path=>new Request(path,{cache:'reload'})))).then(()=>self.skipWaiting())
 ));
 self.addEventListener('activate',event=>event.waitUntil(
   caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('hanstory-shell-')&&key!==SHELL).map(key=>caches.delete(key)))).then(()=>self.clients.claim())
@@ -23,7 +23,7 @@ self.addEventListener('fetch',event=>{
   const japaneseCourseAudio=requestUrl.pathname.includes('/library/courses/Japanese/audio/');
   const fresh=requestUrl.pathname.endsWith('/library/library.json')||['document','script','style'].includes(event.request.destination)||requestUrl.pathname.endsWith('/manifest.webmanifest');
   if(fresh||japaneseCourseAudio){
-    event.respondWith(fetch(event.request).then(response=>{
+    event.respondWith(fetch(event.request,{cache:'no-store'}).then(response=>{
       const copy=response.clone();
       caches.open(SHELL).then(cache=>cache.put(event.request,copy));
       return response;
@@ -33,5 +33,6 @@ self.addEventListener('fetch',event=>{
   event.respondWith(caches.match(event.request).then(response=>response||fetch(event.request)));
 });
 self.addEventListener('message',event=>{
+  if(event.data?.type==='SKIP_WAITING'){self.skipWaiting();return;}
   if(event.data?.type==='CHECK_UPDATES')fetch(new URL('./library/library.json',self.registration.scope),{cache:'no-store'}).then(response=>caches.open(SHELL).then(cache=>cache.put('./library/library.json',response)));
 });

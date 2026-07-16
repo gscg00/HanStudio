@@ -11,7 +11,7 @@ from .elevenlabs_client import ElevenLabsClient
 
 
 WEB_ROOT = PROJECT_DIR / "HanStoryPlayerWeb"
-COURSE_ROOT = WEB_ROOT / "library" / "courses" / "japanese"
+COURSE_ROOT = WEB_ROOT / "library" / "courses" / "Japanese"
 MANIFEST = COURSE_ROOT / "audio_manifest.json"
 AUDIO_ROOT = COURSE_ROOT / "audio"
 JAPANESE_COURSE_MODEL_ID = "eleven_v3"

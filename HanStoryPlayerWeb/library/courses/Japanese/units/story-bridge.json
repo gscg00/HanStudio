@@ -1,26 +1,26 @@
 {
   "id": "story-bridge",
   "title": "Puente hacia las historias",
-  "description": "Integra lectura, escucha y comprensión sin rōmaji.",
+  "description": "Consolida todo mediante lectura y escucha; aquí no aparecen fundamentos nuevos.",
   "requirements": [],
   "reward": {
-    "xp": 500,
-    "badge": "Listo para historias"
+    "xp": 900,
+    "badge": "Listo para 夜の図書館"
   },
   "lessons": [
     {
-      "id": "jp-bridge-intro",
-      "title": "Presentación breve",
-      "description": "Escucha primero el diálogo completo y luego comprueba ideas principales.",
+      "id": "jp-book1-bridge-01",
+      "title": "Orientarse en una biblioteca",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
       "activities": [
         {
-          "id": "jp-bridge-intro-intro",
+          "id": "jp-book1-bridge-01-intro",
           "type": "lesson_intro",
-          "prompt": "Presentación breve",
+          "prompt": "Orientarse en una biblioteca",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Escucha primero el diálogo completo y luego comprueba ideas principales.",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -30,40 +30,40 @@
           "gradable": false
         },
         {
-          "id": "jp-bridge-intro-model-1",
+          "id": "jp-book1-bridge-01-model-1",
           "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Ana se presenta y dice de dónde viene.",
-          "target": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "prompt": "Escucha la diferencia: Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "options": [],
           "answer": "",
-          "explanation": "Ana se presenta y dice de dónde viene.",
-          "audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
-          "slow_audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-intro"
+            "jp-book1-bridge-01"
           ],
           "xp": 3,
           "gradable": false,
-          "sound_hint": "Ana se presenta y dice de dónde viene."
+          "sound_hint": "Aquí hay una biblioteca y el libro está sobre el escritorio."
         },
         {
-          "id": "jp-bridge-intro-listen-1",
+          "id": "jp-book1-bridge-01-listen-1",
           "type": "listening_choice",
           "prompt": "Escucha y elige la forma completa",
-          "target": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "options": [
-            "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。"
+            "ここはとしょかんです。ほんはつくえのうえにあります。"
           ],
-          "answer": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
-          "explanation": "Ana se presenta y dice de dónde viene.",
-          "audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
-          "slow_audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "answer": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-intro",
+            "jp-book1-bridge-01",
             "listening"
           ],
           "xp": 15
@@ -71,18 +71,18 @@
       ]
     },
     {
-      "id": "jp-bridge-shop",
-      "title": "En una tienda",
-      "description": "Comprende una compra sencilla.",
+      "id": "jp-book1-bridge-02",
+      "title": "Encontrar un objeto",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
       "activities": [
         {
-          "id": "jp-bridge-shop-intro",
+          "id": "jp-book1-bridge-02-intro",
           "type": "lesson_intro",
-          "prompt": "En una tienda",
+          "prompt": "Encontrar un objeto",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Comprende una compra sencilla.",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -92,40 +92,40 @@
           "gradable": false
         },
         {
-          "id": "jp-bridge-shop-model-1",
+          "id": "jp-book1-bridge-02-model-1",
           "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Pregunta el precio y compra el objeto.",
-          "target": "これはいくらですか。ごひゃくえんです。これをください。",
+          "prompt": "Escucha la diferencia: Pregunta por una llave y recibe una indicación.",
+          "target": "かぎはどこですか。はこのなかをみてください。",
           "options": [],
           "answer": "",
-          "explanation": "Pregunta el precio y compra el objeto.",
-          "audio": "これはいくらですか。ごひゃくえんです。これをください。",
-          "slow_audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-shop"
+            "jp-book1-bridge-02"
           ],
           "xp": 3,
           "gradable": false,
-          "sound_hint": "Pregunta el precio y compra el objeto."
+          "sound_hint": "Pregunta por una llave y recibe una indicación."
         },
         {
-          "id": "jp-bridge-shop-listen-1",
+          "id": "jp-book1-bridge-02-listen-1",
           "type": "listening_choice",
           "prompt": "Escucha y elige la forma completa",
-          "target": "これはいくらですか。ごひゃくえんです。これをください。",
+          "target": "かぎはどこですか。はこのなかをみてください。",
           "options": [
-            "これはいくらですか。ごひゃくえんです。これをください。"
+            "かぎはどこですか。はこのなかをみてください。"
           ],
-          "answer": "これはいくらですか。ごひゃくえんです。これをください。",
-          "explanation": "Pregunta el precio y compra el objeto.",
-          "audio": "これはいくらですか。ごひゃくえんです。これをください。",
-          "slow_audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "answer": "かぎはどこですか。はこのなかをみてください。",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-shop",
+            "jp-book1-bridge-02",
             "listening"
           ],
           "xp": 15
@@ -133,18 +133,20 @@
       ]
     },
     {
-      "id": "jp-bridge-restaurant",
-      "title": "En un restaurante",
-      "description": "Sigue un pedido breve.",
+      "id": "jp-book1-bridge-review-01",
+      "title": "Repaso obligatorio 1",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-bridge-restaurant-intro",
+          "id": "jp-book1-bridge-review-01-intro",
           "type": "lesson_intro",
-          "prompt": "En un restaurante",
+          "prompt": "Repaso obligatorio 1",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Sigue un pedido breve.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -154,40 +156,107 @@
           "gradable": false
         },
         {
-          "id": "jp-bridge-restaurant-model-1",
-          "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Pide un plato y también agua.",
-          "target": "すみません。これをおねがいします。みずもください。",
-          "options": [],
-          "answer": "",
-          "explanation": "Pide un plato y también agua.",
-          "audio": "すみません。これをおねがいします。みずもください。",
-          "slow_audio": "すみません。これをおねがいします。みずもください。",
+          "id": "jp-book1-bridge-review-01-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。ほんはつくえのうえにあります。?",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "options": [
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Pregunta por una llave y recibe una indicación.",
+            "No corresponde."
+          ],
+          "answer": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-restaurant"
+            "jp-book1-bridge-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-01-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かぎはどこですか。はこのなかをみてください。?",
+          "target": "かぎはどこですか。はこのなかをみてください。",
+          "options": [
+            "Pregunta por una llave y recibe una indicación.",
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "No corresponde."
+          ],
+          "answer": "Pregunta por una llave y recibe una indicación.",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-bridge-03",
+      "title": "Una regla importante",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+      "activities": [
+        {
+          "id": "jp-book1-bridge-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Una regla importante",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-bridge-03-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Se prohíbe abrir una puerta y se explica el motivo.",
+          "target": "そのドアをあけないでください。あぶないですから。",
+          "options": [],
+          "answer": "",
+          "explanation": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "audio": "そのドアをあけないでください。あぶないですから。",
+          "slow_audio": "そのドアをあけないでください。あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-03"
           ],
           "xp": 3,
           "gradable": false,
-          "sound_hint": "Pide un plato y también agua."
+          "sound_hint": "Se prohíbe abrir una puerta y se explica el motivo."
         },
         {
-          "id": "jp-bridge-restaurant-listen-1",
+          "id": "jp-book1-bridge-03-listen-1",
           "type": "listening_choice",
           "prompt": "Escucha y elige la forma completa",
-          "target": "すみません。これをおねがいします。みずもください。",
+          "target": "そのドアをあけないでください。あぶないですから。",
           "options": [
-            "すみません。これをおねがいします。みずもください。"
+            "そのドアをあけないでください。あぶないですから。"
           ],
-          "answer": "すみません。これをおねがいします。みずもください。",
-          "explanation": "Pide un plato y también agua.",
-          "audio": "すみません。これをおねがいします。みずもください。",
-          "slow_audio": "すみません。これをおねがいします。みずもください。",
+          "answer": "そのドアをあけないでください。あぶないですから。",
+          "explanation": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "audio": "そのドアをあけないでください。あぶないですから。",
+          "slow_audio": "そのドアをあけないでください。あぶないですから。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-restaurant",
+            "jp-book1-bridge-03",
             "listening"
           ],
           "xp": 15
@@ -195,18 +264,18 @@
       ]
     },
     {
-      "id": "jp-bridge-directions",
-      "title": "Buscar la estación",
-      "description": "Reconoce una pregunta y una indicación.",
+      "id": "jp-book1-bridge-04",
+      "title": "Comprar agua",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
       "activities": [
         {
-          "id": "jp-bridge-directions-intro",
+          "id": "jp-book1-bridge-04-intro",
           "type": "lesson_intro",
-          "prompt": "Buscar la estación",
+          "prompt": "Comprar agua",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Reconoce una pregunta y una indicación.",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -216,40 +285,40 @@
           "gradable": false
         },
         {
-          "id": "jp-bridge-directions-model-1",
+          "id": "jp-book1-bridge-04-model-1",
           "type": "teach_concept",
-          "prompt": "Escucha la diferencia: La estación está derecho y a la derecha.",
-          "target": "えきはどこですか。まっすぐいって、みぎです。",
+          "prompt": "Escucha la diferencia: Pregunta el precio y compra agua.",
+          "target": "みずはいくらですか。ひゃくえんです。みずをください。",
           "options": [],
           "answer": "",
-          "explanation": "La estación está derecho y a la derecha.",
-          "audio": "えきはどこですか。まっすぐいって、みぎです。",
-          "slow_audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "explanation": "Pregunta el precio y compra agua.",
+          "audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "slow_audio": "みずはいくらですか。ひゃくえんです。みずをください。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-directions"
+            "jp-book1-bridge-04"
           ],
           "xp": 3,
           "gradable": false,
-          "sound_hint": "La estación está derecho y a la derecha."
+          "sound_hint": "Pregunta el precio y compra agua."
         },
         {
-          "id": "jp-bridge-directions-listen-1",
+          "id": "jp-book1-bridge-04-listen-1",
           "type": "listening_choice",
           "prompt": "Escucha y elige la forma completa",
-          "target": "えきはどこですか。まっすぐいって、みぎです。",
+          "target": "みずはいくらですか。ひゃくえんです。みずをください。",
           "options": [
-            "えきはどこですか。まっすぐいって、みぎです。"
+            "みずはいくらですか。ひゃくえんです。みずをください。"
           ],
-          "answer": "えきはどこですか。まっすぐいって、みぎです。",
-          "explanation": "La estación está derecho y a la derecha.",
-          "audio": "えきはどこですか。まっすぐいって、みぎです。",
-          "slow_audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "answer": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "explanation": "Pregunta el precio y compra agua.",
+          "audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "slow_audio": "みずはいくらですか。ひゃくえんです。みずをください。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-directions",
+            "jp-book1-bridge-04",
             "listening"
           ],
           "xp": 15
@@ -257,18 +326,20 @@
       ]
     },
     {
-      "id": "jp-bridge-reading",
-      "title": "Primera lectura guiada",
-      "description": "Lee un párrafo corto con audio completo.",
+      "id": "jp-book1-bridge-review-02",
+      "title": "Repaso obligatorio 2",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-bridge-reading-intro",
+          "id": "jp-book1-bridge-review-02-intro",
           "type": "lesson_intro",
-          "prompt": "Primera lectura guiada",
+          "prompt": "Repaso obligatorio 2",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Lee un párrafo corto con audio completo.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -278,43 +349,530 @@
           "gradable": false
         },
         {
-          "id": "jp-bridge-reading-model-1",
-          "type": "teach_concept",
-          "prompt": "Escucha la diferencia: Hoy es lunes; la persona va a la escuela y habla con un amigo.",
-          "target": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
-          "options": [],
-          "answer": "",
-          "explanation": "Hoy es lunes; la persona va a la escuela y habla con un amigo.",
-          "audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
-          "slow_audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "id": "jp-book1-bridge-review-02-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。ほんはつくえのうえにあります。?",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "options": [
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Pregunta el precio y compra agua.",
+            "Se prohíbe abrir una puerta y se explica el motivo."
+          ],
+          "answer": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-reading"
+            "jp-book1-bridge-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-02-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かぎはどこですか。はこのなかをみてください。?",
+          "target": "かぎはどこですか。はこのなかをみてください。",
+          "options": [
+            "Pregunta por una llave y recibe una indicación.",
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Pregunta por una llave y recibe una indicación.",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-02-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa そのドアをあけないでください。あぶないですから。?",
+          "target": "そのドアをあけないでください。あぶないですから。",
+          "options": [
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Pregunta por una llave y recibe una indicación.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "explanation": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "audio": "そのドアをあけないでください。あぶないですから。",
+          "slow_audio": "そのドアをあけないでください。あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-02-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。ひゃくえんです。みずをください。?",
+          "target": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "options": [
+            "Pregunta el precio y compra agua.",
+            "Pregunta por una llave y recibe una indicación.",
+            "Aquí hay una biblioteca y el libro está sobre el escritorio."
+          ],
+          "answer": "Pregunta el precio y compra agua.",
+          "explanation": "Pregunta el precio y compra agua.",
+          "audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "slow_audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-bridge-05",
+      "title": "Buscar el camino",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+      "activities": [
+        {
+          "id": "jp-book1-bridge-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Buscar el camino",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-bridge-05-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: No conoce el camino y propone esperar frente a una torre.",
+          "target": "みちがわかりません。とうのまえでまちましょう。",
+          "options": [],
+          "answer": "",
+          "explanation": "No conoce el camino y propone esperar frente a una torre.",
+          "audio": "みちがわかりません。とうのまえでまちましょう。",
+          "slow_audio": "みちがわかりません。とうのまえでまちましょう。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-05"
           ],
           "xp": 3,
           "gradable": false,
-          "sound_hint": "Hoy es lunes; la persona va a la escuela y habla con un amigo."
+          "sound_hint": "No conoce el camino y propone esperar frente a una torre."
         },
         {
-          "id": "jp-bridge-reading-listen-1",
+          "id": "jp-book1-bridge-05-listen-1",
           "type": "listening_choice",
           "prompt": "Escucha y elige la forma completa",
-          "target": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "target": "みちがわかりません。とうのまえでまちましょう。",
           "options": [
-            "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。"
+            "みちがわかりません。とうのまえでまちましょう。"
           ],
-          "answer": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
-          "explanation": "Hoy es lunes; la persona va a la escuela y habla con un amigo.",
-          "audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
-          "slow_audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "answer": "みちがわかりません。とうのまえでまちましょう。",
+          "explanation": "No conoce el camino y propone esperar frente a una torre.",
+          "audio": "みちがわかりません。とうのまえでまちましょう。",
+          "slow_audio": "みちがわかりません。とうのまえでまちましょう。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-bridge-reading",
+            "jp-book1-bridge-05",
             "listening"
           ],
           "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-bridge-06",
+      "title": "Leer una nota",
+      "description": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+      "activities": [
+        {
+          "id": "jp-book1-bridge-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Leer una nota",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Integra conocimientos ya aprendidos; no introduce gramática nueva.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-bridge-06-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Hay un nombre escrito y se pide leer la página siguiente.",
+          "target": "なまえがかいてあります。つぎのページをよんでください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "slow_audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-06"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Hay un nombre escrito y se pide leer la página siguiente."
+        },
+        {
+          "id": "jp-book1-bridge-06-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "なまえがかいてあります。つぎのページをよんでください。",
+          "options": [
+            "なまえがかいてあります。つぎのページをよんでください。"
+          ],
+          "answer": "なまえがかいてあります。つぎのページをよんでください。",
+          "explanation": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "slow_audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-06",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-bridge-review-03",
+      "title": "Repaso obligatorio 3",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-bridge-review-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 3",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。ほんはつくえのうえにあります。?",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "options": [
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Hay un nombre escrito y se pide leer la página siguiente.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かぎはどこですか。はこのなかをみてください。?",
+          "target": "かぎはどこですか。はこのなかをみてください。",
+          "options": [
+            "Pregunta por una llave y recibe una indicación.",
+            "No conoce el camino y propone esperar frente a una torre.",
+            "Aquí hay una biblioteca y el libro está sobre el escritorio."
+          ],
+          "answer": "Pregunta por una llave y recibe una indicación.",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa そのドアをあけないでください。あぶないですから。?",
+          "target": "そのドアをあけないでください。あぶないですから。",
+          "options": [
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Pregunta por una llave y recibe una indicación.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "explanation": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "audio": "そのドアをあけないでください。あぶないですから。",
+          "slow_audio": "そのドアをあけないでください。あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。ひゃくえんです。みずをください。?",
+          "target": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "options": [
+            "Pregunta el precio y compra agua.",
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Pregunta por una llave y recibe una indicación."
+          ],
+          "answer": "Pregunta el precio y compra agua.",
+          "explanation": "Pregunta el precio y compra agua.",
+          "audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "slow_audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みちがわかりません。とうのまえでまちましょう。?",
+          "target": "みちがわかりません。とうのまえでまちましょう。",
+          "options": [
+            "No conoce el camino y propone esperar frente a una torre.",
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "No conoce el camino y propone esperar frente a una torre.",
+          "explanation": "No conoce el camino y propone esperar frente a una torre.",
+          "audio": "みちがわかりません。とうのまえでまちましょう。",
+          "slow_audio": "みちがわかりません。とうのまえでまちましょう。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-bridge-review-03-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa なまえがかいてあります。つぎのページをよんでください。?",
+          "target": "なまえがかいてあります。つぎのページをよんでください。",
+          "options": [
+            "Hay un nombre escrito y se pide leer la página siguiente.",
+            "Pregunta el precio y compra agua.",
+            "Se prohíbe abrir una puerta y se explica el motivo."
+          ],
+          "answer": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "explanation": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "slow_audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-bridge-checkpoint",
+      "title": "Prueba de dominio",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": false,
+      "isTest": true,
+      "activities": [
+        {
+          "id": "jp-book1-bridge-checkpoint-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ここはとしょかんです。ほんはつくえのうえにあります。?",
+          "target": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "options": [
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Pregunta el precio y compra agua.",
+            "Hay un nombre escrito y se pide leer la página siguiente."
+          ],
+          "answer": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "explanation": "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa かぎはどこですか。はこのなかをみてください。?",
+          "target": "かぎはどこですか。はこのなかをみてください。",
+          "options": [
+            "Pregunta por una llave y recibe una indicación.",
+            "Pregunta el precio y compra agua.",
+            "Se prohíbe abrir una puerta y se explica el motivo."
+          ],
+          "answer": "Pregunta por una llave y recibe una indicación.",
+          "explanation": "Pregunta por una llave y recibe una indicación.",
+          "audio": "かぎはどこですか。はこのなかをみてください。",
+          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa そのドアをあけないでください。あぶないですから。?",
+          "target": "そのドアをあけないでください。あぶないですから。",
+          "options": [
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Hay un nombre escrito y se pide leer la página siguiente.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "explanation": "Se prohíbe abrir una puerta y se explica el motivo.",
+          "audio": "そのドアをあけないでください。あぶないですから。",
+          "slow_audio": "そのドアをあけないでください。あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。ひゃくえんです。みずをください。?",
+          "target": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "options": [
+            "Pregunta el precio y compra agua.",
+            "Aquí hay una biblioteca y el libro está sobre el escritorio.",
+            "Pregunta por una llave y recibe una indicación."
+          ],
+          "answer": "Pregunta el precio y compra agua.",
+          "explanation": "Pregunta el precio y compra agua.",
+          "audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "slow_audio": "みずはいくらですか。ひゃくえんです。みずをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みちがわかりません。とうのまえでまちましょう。?",
+          "target": "みちがわかりません。とうのまえでまちましょう。",
+          "options": [
+            "No conoce el camino y propone esperar frente a una torre.",
+            "Pregunta el precio y compra agua.",
+            "Hay un nombre escrito y se pide leer la página siguiente."
+          ],
+          "answer": "No conoce el camino y propone esperar frente a una torre.",
+          "explanation": "No conoce el camino y propone esperar frente a una torre.",
+          "audio": "みちがわかりません。とうのまえでまちましょう。",
+          "slow_audio": "みちがわかりません。とうのまえでまちましょう。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-bridge-checkpoint-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa なまえがかいてあります。つぎのページをよんでください。?",
+          "target": "なまえがかいてあります。つぎのページをよんでください。",
+          "options": [
+            "Hay un nombre escrito y se pide leer la página siguiente.",
+            "Se prohíbe abrir una puerta y se explica el motivo.",
+            "Pregunta el precio y compra agua."
+          ],
+          "answer": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "explanation": "Hay un nombre escrito y se pide leer la página siguiente.",
+          "audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "slow_audio": "なまえがかいてあります。つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-bridge-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
         }
       ]
     }

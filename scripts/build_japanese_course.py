@@ -2,10 +2,23 @@ from __future__ import annotations
 
 import json
 import random
+import re
 from pathlib import Path
 
+from japanese_book1_curriculum import (
+    ADJECTIVE_PATTERNS,
+    ADJECTIVE_SETS,
+    BRIDGE_DIALOGUES,
+    FUNCTIONAL_SETS,
+    KANJI_GROUPS,
+    SENTENCE_PATTERNS,
+    VERB_PATTERNS,
+    VERB_SETS,
+    WORD_SETS,
+)
 
-ROOT = Path(__file__).resolve().parents[1] / "HanStoryPlayerWeb" / "library" / "courses" / "japanese"
+
+ROOT = Path(__file__).resolve().parents[1] / "HanStoryPlayerWeb" / "library" / "courses" / "Japanese"
 UNITS = ROOT / "units"
 
 
@@ -312,16 +325,129 @@ def later_units():
     return [unit("rhythm","Ritmo y pronunciación","Aprende moras, duración y pausas antes del vocabulario.",rhythm,350,"Oído japonés"),unit("first-words","Primeras palabras","Tu primer vocabulario aparece solo después de Hiragana, Katakana y ritmo.",words,500,"Primer vocabulario"),unit("first-sentences","Primeras oraciones","Construye estructuras y partículas esenciales.",sentences,550,"Primeras oraciones"),unit("basic-verbs","Verbos básicos","Comprende los verbos frecuentes y cuatro formas corteses.",verbs,400,"Acciones A1"),unit("adjectives","Adjetivos y descripción","Describe objetos, lugares, gustos y estados.",adjectives,350,"Descripción A1"),unit("functional-a1","Japonés funcional A1","Resuelve situaciones cotidianas con expresiones completas.",functional,500,"Supervivencia A1"),unit("starter-kanji","Kanji inicial","Aprende 50 kanji con una lectura útil inicial.",kanji,600,"50 kanji"),unit("story-bridge","Puente hacia las historias","Integra lectura, escucha y comprensión sin rōmaji.",dialogues,500,"Listo para historias")]
 
 
+def pattern_lesson(identifier, title, explanation, examples):
+    acts = [intro(identifier + "-intro", title, explanation)]
+    acts.append(activity(identifier + "-pattern", "teach_pattern", title, target=title, explanation=explanation, xp=3, gradable=False))
+    for n, (text, meaning) in enumerate(examples, 1):
+        acts.append(activity(f"{identifier}-model-{n}", "dialogue_model", meaning, target=text, explanation=meaning, audio=text, xp=3, gradable=False))
+        distractors = [other for _, other in examples if other != meaning]
+        while len(distractors) < 2:
+            distractors.append("No corresponde a esta oración.")
+        acts.append(activity(f"{identifier}-meaning-{n}", "select_translation", f"¿Qué significa {text}?", target=text, options=[meaning, *distractors[:2]], answer=meaning, explanation=meaning, audio=text, xp=15, tags=[identifier, "meaning_recall"]))
+    return {"id": identifier, "title": title, "description": explanation, "activities": acts}
+
+
+def lesson_knowledge(lessons):
+    values = []
+    for lesson in lessons:
+        if lesson.get("isReview") or lesson.get("isTest"):
+            continue
+        for item in lesson.get("activities", []):
+            target = str(item.get("target") or "").strip()
+            meaning = str(item.get("explanation") or "").strip()
+            if not target or not meaning or not re.search(r"[ぁ-んァ-ヶ一-龯]", target):
+                continue
+            key = (target, meaning)
+            if not any(old[0:2] == key for old in values):
+                values.append((target, meaning, item.get("audio") or ""))
+    return values
+
+
+def cumulative_review(identifier, title, source_lessons, *, limit=8, is_test=False):
+    pool = lesson_knowledge(source_lessons)
+    if not pool:
+        return None
+    if len(pool) > limit:
+        step = max(1, len(pool) // limit)
+        selected = pool[::step][:limit]
+    else:
+        selected = pool
+    acts = [intro(identifier + "-intro", title, "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.")]
+    meanings = list(dict.fromkeys(meaning for _, meaning, _ in pool))
+    for n, (target, meaning, audio_key) in enumerate(selected, 1):
+        distractors = [value for value in meanings if value != meaning]
+        random.Random(f"{identifier}:{n}").shuffle(distractors)
+        while len(distractors) < 2:
+            distractors.append("No corresponde.")
+        acts.append(activity(f"{identifier}-recall-{n}", "word_to_translation", f"Recuerda: ¿qué expresa {target}?", target=target, options=[meaning, *distractors[:2]], answer=meaning, explanation=meaning, audio=audio_key, xp=18 if is_test else 14, tags=[identifier, "mandatory_review"]))
+    return {"id": identifier, "title": title, "description": "Repaso acumulativo obligatorio.", "isReview": not is_test, "isTest": is_test, "activities": acts}
+
+
+def interleave_mandatory_reviews(lessons, prefix, *, every=2):
+    result, learned, review_number = [], [], 0
+    for lesson in lessons:
+        result.append(lesson)
+        learned.append(lesson)
+        if len(learned) % every == 0:
+            review_number += 1
+            result.append(cumulative_review(f"{prefix}-review-{review_number:02d}", f"Repaso obligatorio {review_number}", learned))
+    if learned and len(learned) % every:
+        review_number += 1
+        result.append(cumulative_review(f"{prefix}-review-{review_number:02d}", f"Repaso obligatorio {review_number}", learned))
+    result.append(cumulative_review(f"{prefix}-checkpoint", "Prueba de dominio", learned, limit=24, is_test=True))
+    return [item for item in result if item]
+
+
+def book_aligned_units():
+    # Mundo 3 permanece fonético; desde el 4 todo prepara de forma explícita
+    # el vocabulario, la gramática y los kanji del primer libro japonés.
+    rhythm = later_units()[0]
+
+    word_lessons = [teaching_sequence(f"jp-book1-words-{i:02d}", title, entries) for i, (title, entries) in enumerate(WORD_SETS.items(), 1)]
+    words = interleave_mandatory_reviews(word_lessons, "jp-book1-words", every=2)
+
+    sentence_lessons = [pattern_lesson(f"jp-book1-sentence-{i:02d}", title, explanation, examples) for i, (title, explanation, examples) in enumerate(SENTENCE_PATTERNS, 1)]
+    sentences = interleave_mandatory_reviews(sentence_lessons, "jp-book1-sentence", every=2)
+
+    verb_lessons = [teaching_sequence(f"jp-book1-verbs-{i:02d}", title, entries) for i, (title, entries) in enumerate(VERB_SETS.items(), 1)]
+    verb_lessons += [pattern_lesson(f"jp-book1-verb-form-{i:02d}", title, explanation, examples) for i, (title, explanation, examples) in enumerate(VERB_PATTERNS, 1)]
+    verbs = interleave_mandatory_reviews(verb_lessons, "jp-book1-verbs", every=2)
+
+    adjective_lessons = [teaching_sequence(f"jp-book1-adj-{i:02d}", title, entries) for i, (title, entries) in enumerate(ADJECTIVE_SETS.items(), 1)]
+    adjective_lessons += [pattern_lesson(f"jp-book1-adj-pattern-{i:02d}", title, explanation, examples) for i, (title, explanation, examples) in enumerate(ADJECTIVE_PATTERNS, 1)]
+    adjectives = interleave_mandatory_reviews(adjective_lessons, "jp-book1-adjectives", every=2)
+
+    functional_lessons = [teaching_sequence(f"jp-book1-functional-{i:02d}", title, entries, "dialogue_model") for i, (title, entries) in enumerate(FUNCTIONAL_SETS.items(), 1)]
+    functional = interleave_mandatory_reviews(functional_lessons, "jp-book1-functional", every=2)
+
+    kanji_lessons = []
+    for i, (title, entries) in enumerate(KANJI_GROUPS.items(), 1):
+        acts = [intro(f"jp-book1-kanji-{i}-intro", title, "Aprende el carácter dentro de la palabra del Libro 1 y memoriza únicamente la lectura que vas a usar.")]
+        for n, (char, meaning) in enumerate(entries, 1):
+            reading = meaning.split("·")[-1].strip().split(" / ")[0]
+            acts.append(activity(f"jp-book1-kanji-{i}-teach-{n}", "teach_kanji", f"Conoce {char}", target=char, explanation=meaning, audio=reading, xp=3, gradable=False, sound_hint=meaning, stroke_hint="Observa sus componentes y relaciónalo con la palabra completa."))
+            distractors = [other for other, _ in entries if other != char]
+            while len(distractors) < 2:
+                distractors.append("々")
+            acts.append(activity(f"jp-book1-kanji-{i}-quiz-{n}", "kana_choice", f"Elige el kanji de «{meaning.split('·')[0].strip()}»", target=char, options=[char, *distractors[:2]], answer=char, explanation=meaning, audio=reading, xp=18, tags=["kanji", "book1", char]))
+        kanji_lessons.append({"id": f"jp-book1-kanji-{i:02d}", "title": title, "description": f"Memoriza {len(entries)} kanji del primer libro.", "activities": acts})
+    kanji = interleave_mandatory_reviews(kanji_lessons, "jp-book1-kanji", every=1)
+
+    bridge_lessons = [concept_lesson(f"jp-book1-bridge-{i:02d}", title, "Integra conocimientos ya aprendidos; no introduce gramática nueva.", examples) for i, (title, examples) in enumerate(BRIDGE_DIALOGUES, 1)]
+    bridge = interleave_mandatory_reviews(bridge_lessons, "jp-book1-bridge", every=2)
+
+    return [
+        rhythm,
+        unit("first-words", "Primeras palabras", "Memoriza el vocabulario base del primer libro, primero en kana.", words, 900, "Vocabulario del Libro 1"),
+        unit("first-sentences", "Primeras oraciones", "Domina existencia, ubicación, preguntas y partículas del primer libro.", sentences, 950, "Estructuras del Libro 1"),
+        unit("basic-verbs", "Verbos básicos", "Memoriza las acciones y formas verbales necesarias para leer la historia.", verbs, 1100, "Verbos del Libro 1"),
+        unit("adjectives", "Adjetivos y descripción", "Describe colores, tamaños, estados y razones.", adjectives, 650, "Descripción del Libro 1"),
+        unit("functional-a1", "Japonés funcional A1", "Usa contadores, peticiones, precios, prohibiciones y direcciones.", functional, 750, "Funciones del Libro 1"),
+        unit("starter-kanji", "Kanji inicial", "Memoriza los 74 caracteres utilizados por el primer libro, con su lectura necesaria.", kanji, 1500, "74 kanji del Libro 1"),
+        unit("story-bridge", "Puente hacia las historias", "Consolida todo mediante lectura y escucha; aquí no aparecen fundamentos nuevos.", bridge, 900, "Listo para 夜の図書館"),
+    ]
+
+
 def unit(identifier,title,description,lessons,xp,badge):
     return {"id":identifier,"title":title,"description":description,"requirements":[],"reward":{"xp":xp,"badge":badge},"lessons":lessons}
 
 
 def build():
     hiragana, katakana = kana_units()
-    units=[hiragana,katakana,*later_units()]
+    units=[hiragana,katakana,*book_aligned_units()]
     summaries=[
-        ("hiragana-01",1,"Hiragana","Domina el silabario hiragana completo.","あ"),("katakana",2,"Katakana","Domina katakana y combinaciones para préstamos.","ア"),("rhythm",3,"Ritmo y pronunciación","Moras, duración, っ y ん.","♪"),("first-words",4,"Primeras palabras","Vocabulario que ya puedes leer.","言"),("first-sentences",5,"Primeras oraciones","Estructuras y partículas iniciales.","文"),("basic-verbs",6,"Verbos básicos","Acciones y formas corteses.","動"),("adjectives",7,"Adjetivos y descripción","Cualidades, colores y gustos.","形"),("functional-a1",8,"Japonés funcional A1","Situaciones cotidianas.","会"),("starter-kanji",9,"Kanji inicial","50 kanji dentro de palabras.","日"),("story-bridge",10,"Puente hacia las historias","Diálogos y lecturas breves.","本")]
-    course={"courseId":"japanese-from-zero","title":"Japonés desde cero","language":"Japanese","version":3,"levels":[{"id":"route-a1","title":"Ruta 1 · Preparación para historias A1"},{"id":"route-a2","title":"Ruta 2 · Consolidación A1 y preparación A2","comingSoon":True}],"unlockRules":{"minimumScore":70,"masteryScore":90},"recommendedBooks":[],"units":[{"id":i,"world":w,"title":t,"description":d,"manifest":f"units/{i}.json","icon":icon} for i,w,t,d,icon in summaries]}
+        ("hiragana-01",1,"Hiragana","Domina el silabario hiragana completo.","あ"),("katakana",2,"Katakana","Domina katakana y combinaciones para préstamos.","ア"),("rhythm",3,"Ritmo y pronunciación","Moras, duración, っ y ん.","♪"),("first-words",4,"Primeras palabras","Memoriza el vocabulario base de 夜の図書館.","言"),("first-sentences",5,"Primeras oraciones","Existencia, ubicación, preguntas y partículas.","文"),("basic-verbs",6,"Verbos básicos","Acciones y formas necesarias para la historia.","動"),("adjectives",7,"Adjetivos y descripción","Colores, tamaños, estados y razones.","形"),("functional-a1",8,"Japonés funcional A1","Contadores, peticiones, precios y direcciones.","会"),("starter-kanji",9,"Kanji inicial","74 kanji utilizados por el primer libro.","日"),("story-bridge",10,"Puente hacia las historias","Consolidación sin fundamentos nuevos.","本")]
+    course={"courseId":"japanese-from-zero","title":"Japonés desde cero","language":"Japanese","version":4,"levels":[{"id":"route-a1","title":"Ruta 1 · Preparación para historias A1"},{"id":"route-a2","title":"Ruta 2 · Consolidación A1 y preparación A2","comingSoon":True}],"unlockRules":{"minimumScore":85,"masteryScore":95},"recommendedBooks":[{"code":"HS-JP-B01","title":"夜の図書館","requiredWorld":10,"requiredScore":85}],"units":[{"id":i,"world":w,"title":t,"description":d,"manifest":f"units/{i}.json","icon":icon} for i,w,t,d,icon in summaries]}
     UNITS.mkdir(parents=True,exist_ok=True)
     (ROOT/"course.json").write_text(json.dumps(course,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     for item in units:(UNITS/f"{item['id']}.json").write_text(json.dumps(item,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

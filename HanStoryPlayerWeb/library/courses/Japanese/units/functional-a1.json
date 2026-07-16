@@ -1,20 +1,20 @@
 {
   "id": "functional-a1",
   "title": "Japonés funcional A1",
-  "description": "Resuelve situaciones cotidianas con expresiones completas.",
+  "description": "Usa contadores, peticiones, precios, prohibiciones y direcciones.",
   "requirements": [],
   "reward": {
-    "xp": 500,
-    "badge": "Supervivencia A1"
+    "xp": 750,
+    "badge": "Funciones del Libro 1"
   },
   "lessons": [
     {
-      "id": "jp-functional-01",
+      "id": "jp-book1-functional-01",
       "title": "Presentarse",
       "description": "Aprende 3 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-functional-01-intro",
+          "id": "jp-book1-functional-01-intro",
           "type": "lesson_intro",
           "prompt": "Primero aprende: Presentarse",
           "target": "",
@@ -30,7 +30,7 @@
           "gradable": false
         },
         {
-          "id": "jp-functional-01-teach-1",
+          "id": "jp-book1-functional-01-teach-1",
           "type": "dialogue_model",
           "prompt": "Aprende «Mucho gusto.»",
           "target": "はじめまして。",
@@ -42,21 +42,21 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01"
+            "jp-book1-functional-01"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: Mucho gusto."
         },
         {
-          "id": "jp-functional-01-quiz-1",
+          "id": "jp-book1-functional-01-quiz-1",
           "type": "word_to_translation",
           "prompt": "¿Qué significa はじめまして。?",
           "target": "はじめまして。",
           "options": [
             "Mucho gusto.",
-            "Soy Ana.",
-            "Vengo de México."
+            "Soy Mina.",
+            "Encantada / cuento contigo."
           ],
           "answer": "Mucho gusto.",
           "explanation": "はじめまして。 significa «Mucho gusto.».",
@@ -65,59 +65,59 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-01-teach-2",
+          "id": "jp-book1-functional-01-teach-2",
           "type": "dialogue_model",
-          "prompt": "Aprende «Soy Ana.»",
-          "target": "わたしはアナです。",
+          "prompt": "Aprende «Soy Mina.»",
+          "target": "わたしはミナです。",
           "options": [],
           "answer": "",
-          "explanation": "Soy Ana.",
-          "audio": "わたしはアナです。",
-          "slow_audio": "わたしはアナです。",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01"
+            "jp-book1-functional-01"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Soy Ana."
+          "sound_hint": "Significa: Soy Mina."
         },
         {
-          "id": "jp-functional-01-quiz-2",
+          "id": "jp-book1-functional-01-quiz-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa わたしはアナです。?",
-          "target": "わたしはアナです。",
+          "prompt": "¿Qué significa わたしはミナです。?",
+          "target": "わたしはミナです。",
           "options": [
-            "Soy Ana.",
+            "Soy Mina.",
             "Mucho gusto.",
-            "Vengo de México."
+            "Encantada / cuento contigo."
           ],
-          "answer": "Soy Ana.",
-          "explanation": "わたしはアナです。 significa «Soy Ana.».",
-          "audio": "わたしはアナです。",
-          "slow_audio": "わたしはアナです。",
+          "answer": "Soy Mina.",
+          "explanation": "わたしはミナです。 significa «Soy Mina.».",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-01-listen-2",
+          "id": "jp-book1-functional-01-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
           "target": "はじめまして。",
           "options": [
-            "わたしはアナです。",
+            "わたしはミナです。",
             "はじめまして。"
           ],
           "answer": "はじめまして。",
@@ -127,82 +127,82 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-01-teach-3",
+          "id": "jp-book1-functional-01-teach-3",
           "type": "dialogue_model",
-          "prompt": "Aprende «Vengo de México.»",
-          "target": "メキシコからきました。",
+          "prompt": "Aprende «Encantada / cuento contigo.»",
+          "target": "よろしくおねがいします。",
           "options": [],
           "answer": "",
-          "explanation": "Vengo de México.",
-          "audio": "メキシコからきました。",
-          "slow_audio": "メキシコからきました。",
+          "explanation": "Encantada / cuento contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01"
+            "jp-book1-functional-01"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Vengo de México."
+          "sound_hint": "Significa: Encantada / cuento contigo."
         },
         {
-          "id": "jp-functional-01-quiz-3",
+          "id": "jp-book1-functional-01-quiz-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa メキシコからきました。?",
-          "target": "メキシコからきました。",
+          "prompt": "¿Qué significa よろしくおねがいします。?",
+          "target": "よろしくおねがいします。",
           "options": [
-            "Vengo de México.",
+            "Encantada / cuento contigo.",
             "Mucho gusto.",
-            "Soy Ana."
+            "Soy Mina."
           ],
-          "answer": "Vengo de México.",
-          "explanation": "メキシコからきました。 significa «Vengo de México.».",
-          "audio": "メキシコからきました。",
-          "slow_audio": "メキシコからきました。",
+          "answer": "Encantada / cuento contigo.",
+          "explanation": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-01-listen-3",
+          "id": "jp-book1-functional-01-listen-3",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "メキシコからきました。",
+          "target": "よろしくおねがいします。",
           "options": [
-            "わたしはアナです。",
+            "わたしはミナです。",
             "はじめまして。",
-            "メキシコからきました。"
+            "よろしくおねがいします。"
           ],
-          "answer": "メキシコからきました。",
-          "explanation": "Escuchaste メキシコからきました。: Vengo de México..",
-          "audio": "メキシコからきました。",
-          "slow_audio": "メキシコからきました。",
+          "answer": "よろしくおねがいします。",
+          "explanation": "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-01-spiral-3",
+          "id": "jp-book1-functional-01-spiral-3",
           "type": "word_to_translation",
           "prompt": "Recuerda: ¿qué significa はじめまして。?",
           "target": "はじめまして。",
           "options": [
-            "Soy Ana.",
-            "Vengo de México.",
+            "Soy Mina.",
+            "Encantada / cuento contigo.",
             "Mucho gusto."
           ],
           "answer": "Mucho gusto.",
@@ -212,7 +212,7 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-01",
+            "jp-book1-functional-01",
             "spiral_review"
           ],
           "xp": 12
@@ -220,12 +220,1047 @@
       ]
     },
     {
-      "id": "jp-functional-02",
+      "id": "jp-book1-functional-02",
+      "title": "Pedir y señalar",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-book1-functional-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Pedir y señalar",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-02-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Este libro?»",
+          "target": "このほんですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Este libro?",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Este libro?"
+        },
+        {
+          "id": "jp-book1-functional-02-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "¿Este libro?",
+            "Ese libro, por favor.",
+            "Lee la página siguiente, por favor."
+          ],
+          "answer": "¿Este libro?",
+          "explanation": "このほんですか。 significa «¿Este libro?».",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-02-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Ese libro, por favor.»",
+          "target": "そのほんをください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Ese libro, por favor.",
+          "audio": "そのほんをください。",
+          "slow_audio": "そのほんをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Ese libro, por favor."
+        },
+        {
+          "id": "jp-book1-functional-02-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa そのほんをください。?",
+          "target": "そのほんをください。",
+          "options": [
+            "Ese libro, por favor.",
+            "¿Este libro?",
+            "Lee la página siguiente, por favor."
+          ],
+          "answer": "Ese libro, por favor.",
+          "explanation": "そのほんをください。 significa «Ese libro, por favor.».",
+          "audio": "そのほんをください。",
+          "slow_audio": "そのほんをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-02-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "このほんですか。",
+          "options": [
+            "そのほんをください。",
+            "このほんですか。"
+          ],
+          "answer": "このほんですか。",
+          "explanation": "Escuchaste このほんですか。: ¿Este libro?.",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-02-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Lee la página siguiente, por favor.»",
+          "target": "つぎのページをよんでください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Lee la página siguiente, por favor.",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Lee la página siguiente, por favor."
+        },
+        {
+          "id": "jp-book1-functional-02-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa つぎのページをよんでください。?",
+          "target": "つぎのページをよんでください。",
+          "options": [
+            "Lee la página siguiente, por favor.",
+            "¿Este libro?",
+            "Ese libro, por favor."
+          ],
+          "answer": "Lee la página siguiente, por favor.",
+          "explanation": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-02-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "つぎのページをよんでください。",
+          "options": [
+            "そのほんをください。",
+            "このほんですか。",
+            "つぎのページをよんでください。"
+          ],
+          "answer": "つぎのページをよんでください。",
+          "explanation": "Escuchaste つぎのページをよんでください。: Lee la página siguiente, por favor..",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-02-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "Ese libro, por favor.",
+            "Lee la página siguiente, por favor.",
+            "¿Este libro?"
+          ],
+          "answer": "¿Este libro?",
+          "explanation": "このほんですか。 significa «¿Este libro?».",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-review-01",
+      "title": "Repaso obligatorio 1",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-functional-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 1",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Mucho gusto.",
+            "Ese libro, por favor.",
+            "Lee la página siguiente, por favor."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa わたしはミナです。?",
+          "target": "わたしはミナです。",
+          "options": [
+            "Soy Mina.",
+            "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+            "このほんですか。 significa «¿Este libro?»."
+          ],
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Escuchaste はじめまして。: Mucho gusto..",
+            "Lee la página siguiente, por favor.",
+            "Escuchaste このほんですか。: ¿Este libro?."
+          ],
+          "answer": "Escuchaste はじめまして。: Mucho gusto..",
+          "explanation": "Escuchaste はじめまして。: Mucho gusto..",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa よろしくおねがいします。?",
+          "target": "よろしくおねがいします。",
+          "options": [
+            "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+            "Soy Mina.",
+            "Lee la página siguiente, por favor."
+          ],
+          "answer": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "explanation": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "¿Este libro?",
+            "Lee la página siguiente, por favor.",
+            "Escuchaste はじめまして。: Mucho gusto.."
+          ],
+          "answer": "¿Este libro?",
+          "explanation": "¿Este libro?",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa そのほんをください。?",
+          "target": "そのほんをください。",
+          "options": [
+            "Ese libro, por favor.",
+            "¿Este libro?",
+            "はじめまして。 significa «Mucho gusto.»."
+          ],
+          "answer": "Ese libro, por favor.",
+          "explanation": "Ese libro, por favor.",
+          "audio": "そのほんをください。",
+          "slow_audio": "そのほんをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "Escuchaste このほんですか。: ¿Este libro?.",
+            "Mucho gusto.",
+            "わたしはミナです。 significa «Soy Mina.»."
+          ],
+          "answer": "Escuchaste このほんですか。: ¿Este libro?.",
+          "explanation": "Escuchaste このほんですか。: ¿Este libro?.",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-01-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa つぎのページをよんでください。?",
+          "target": "つぎのページをよんでください。",
+          "options": [
+            "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+            "¿Este libro?",
+            "Ese libro, por favor."
+          ],
+          "answer": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "explanation": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-01",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-03",
+      "title": "Contar libros con 冊",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-book1-functional-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Contar libros con 冊",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-03-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Hay tres libros.»",
+          "target": "ほんがさんさつあります。",
+          "options": [],
+          "answer": "",
+          "explanation": "Hay tres libros.",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Hay tres libros."
+        },
+        {
+          "id": "jp-book1-functional-03-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Hay tres libros.",
+            "Un libro rojo, por favor.",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "Hay tres libros.",
+          "explanation": "ほんがさんさつあります。 significa «Hay tres libros.».",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-03-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Un libro rojo, por favor.»",
+          "target": "あかいほんをいっさつください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Un libro rojo, por favor.",
+          "audio": "あかいほんをいっさつください。",
+          "slow_audio": "あかいほんをいっさつください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Un libro rojo, por favor."
+        },
+        {
+          "id": "jp-book1-functional-03-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あかいほんをいっさつください。?",
+          "target": "あかいほんをいっさつください。",
+          "options": [
+            "Un libro rojo, por favor.",
+            "Hay tres libros.",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "Un libro rojo, por favor.",
+          "explanation": "あかいほんをいっさつください。 significa «Un libro rojo, por favor.».",
+          "audio": "あかいほんをいっさつください。",
+          "slow_audio": "あかいほんをいっさつください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-03-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "あかいほんをいっさつください。",
+            "ほんがさんさつあります。"
+          ],
+          "answer": "ほんがさんさつあります。",
+          "explanation": "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-03-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Pongo dos libros en el escritorio.»",
+          "target": "にさつをつくえにおきます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Pongo dos libros en el escritorio.",
+          "audio": "にさつをつくえにおきます。",
+          "slow_audio": "にさつをつくえにおきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Pongo dos libros en el escritorio."
+        },
+        {
+          "id": "jp-book1-functional-03-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa にさつをつくえにおきます。?",
+          "target": "にさつをつくえにおきます。",
+          "options": [
+            "Pongo dos libros en el escritorio.",
+            "Hay tres libros.",
+            "Un libro rojo, por favor."
+          ],
+          "answer": "Pongo dos libros en el escritorio.",
+          "explanation": "にさつをつくえにおきます。 significa «Pongo dos libros en el escritorio.».",
+          "audio": "にさつをつくえにおきます。",
+          "slow_audio": "にさつをつくえにおきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-03-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "にさつをつくえにおきます。",
+          "options": [
+            "あかいほんをいっさつください。",
+            "ほんがさんさつあります。",
+            "にさつをつくえにおきます。"
+          ],
+          "answer": "にさつをつくえにおきます。",
+          "explanation": "Escuchaste にさつをつくえにおきます。: Pongo dos libros en el escritorio..",
+          "audio": "にさつをつくえにおきます。",
+          "slow_audio": "にさつをつくえにおきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-03-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Un libro rojo, por favor.",
+            "Pongo dos libros en el escritorio.",
+            "Hay tres libros."
+          ],
+          "answer": "Hay tres libros.",
+          "explanation": "ほんがさんさつあります。 significa «Hay tres libros.».",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-03",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-04",
+      "title": "Preguntar y explicar razones",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-book1-functional-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Preguntar y explicar razones",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-04-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Por qué?»",
+          "target": "どうしてですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Por qué?"
+        },
+        {
+          "id": "jp-book1-functional-04-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "¿Por qué?",
+            "Porque es peligroso.",
+            "No está permitido."
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "どうしてですか。 significa «¿Por qué?».",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-04-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Porque es peligroso.»",
+          "target": "あぶないですから。",
+          "options": [],
+          "answer": "",
+          "explanation": "Porque es peligroso.",
+          "audio": "あぶないですから。",
+          "slow_audio": "あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Porque es peligroso."
+        },
+        {
+          "id": "jp-book1-functional-04-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あぶないですから。?",
+          "target": "あぶないですから。",
+          "options": [
+            "Porque es peligroso.",
+            "¿Por qué?",
+            "No está permitido."
+          ],
+          "answer": "Porque es peligroso.",
+          "explanation": "あぶないですから。 significa «Porque es peligroso.».",
+          "audio": "あぶないですから。",
+          "slow_audio": "あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-04-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "どうしてですか。",
+          "options": [
+            "あぶないですから。",
+            "どうしてですか。"
+          ],
+          "answer": "どうしてですか。",
+          "explanation": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-04-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «No está permitido.»",
+          "target": "だめです。",
+          "options": [],
+          "answer": "",
+          "explanation": "No está permitido.",
+          "audio": "だめです。",
+          "slow_audio": "だめです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: No está permitido."
+        },
+        {
+          "id": "jp-book1-functional-04-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa だめです。?",
+          "target": "だめです。",
+          "options": [
+            "No está permitido.",
+            "¿Por qué?",
+            "Porque es peligroso."
+          ],
+          "answer": "No está permitido.",
+          "explanation": "だめです。 significa «No está permitido.».",
+          "audio": "だめです。",
+          "slow_audio": "だめです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-book1-functional-04-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "だめです。",
+          "options": [
+            "あぶないですから。",
+            "どうしてですか。",
+            "だめです。"
+          ],
+          "answer": "だめです。",
+          "explanation": "Escuchaste だめです。: No está permitido..",
+          "audio": "だめです。",
+          "slow_audio": "だめです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-book1-functional-04-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "Porque es peligroso.",
+            "No está permitido.",
+            "¿Por qué?"
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "どうしてですか。 significa «¿Por qué?».",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-04",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-review-02",
+      "title": "Repaso obligatorio 2",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-functional-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 2",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Mucho gusto.",
+            "Hay tres libros.",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Escuchaste はじめまして。: Mucho gusto..",
+            "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+            "わたしはミナです。 significa «Soy Mina.»."
+          ],
+          "answer": "Escuchaste はじめまして。: Mucho gusto..",
+          "explanation": "Escuchaste はじめまして。: Mucho gusto..",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "¿Este libro?",
+            "はじめまして。 significa «Mucho gusto.».",
+            "Encantada / cuento contigo."
+          ],
+          "answer": "¿Este libro?",
+          "explanation": "¿Este libro?",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "Escuchaste このほんですか。: ¿Este libro?.",
+            "Escuchaste にさつをつくえにおきます。: Pongo dos libros en el escritorio..",
+            "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.»."
+          ],
+          "answer": "Escuchaste このほんですか。: ¿Este libro?.",
+          "explanation": "Escuchaste このほんですか。: ¿Este libro?.",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Hay tres libros.",
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "ほんがさんさつあります。 significa «Hay tres libros.»."
+          ],
+          "answer": "Hay tres libros.",
+          "explanation": "Hay tres libros.",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "ほんがさんさつあります。 significa «Hay tres libros.».",
+            "このほんですか。 significa «¿Este libro?»."
+          ],
+          "answer": "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+          "explanation": "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "¿Por qué?",
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "Escuchaste だめです。: No está permitido.."
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-02-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "Escuchaste どうしてですか。: ¿Por qué?.",
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "だめです。 significa «No está permitido.»."
+          ],
+          "answer": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "explanation": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-02",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-05",
       "title": "Comprar",
       "description": "Aprende 3 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-functional-02-intro",
+          "id": "jp-book1-functional-05-intro",
           "type": "lesson_intro",
           "prompt": "Primero aprende: Comprar",
           "target": "",
@@ -241,189 +1276,189 @@
           "gradable": false
         },
         {
-          "id": "jp-functional-02-teach-1",
+          "id": "jp-book1-functional-05-teach-1",
           "type": "dialogue_model",
-          "prompt": "Aprende «¿Cuánto cuesta esto?»",
-          "target": "これはいくらですか。",
+          "prompt": "Aprende «¿Cuánto cuesta el agua?»",
+          "target": "みずはいくらですか。",
           "options": [],
           "answer": "",
-          "explanation": "¿Cuánto cuesta esto?",
-          "audio": "これはいくらですか。",
-          "slow_audio": "これはいくらですか。",
+          "explanation": "¿Cuánto cuesta el agua?",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02"
+            "jp-book1-functional-05"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: ¿Cuánto cuesta esto?"
+          "sound_hint": "Significa: ¿Cuánto cuesta el agua?"
         },
         {
-          "id": "jp-functional-02-quiz-1",
+          "id": "jp-book1-functional-05-quiz-1",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa これはいくらですか。?",
-          "target": "これはいくらですか。",
+          "prompt": "¿Qué significa みずはいくらですか。?",
+          "target": "みずはいくらですか。",
           "options": [
-            "¿Cuánto cuesta esto?",
-            "Déme esto, por favor.",
-            "¿Puedo usar tarjeta?"
+            "¿Cuánto cuesta el agua?",
+            "Son cien yenes.",
+            "¿Tienes tarjeta?"
           ],
-          "answer": "¿Cuánto cuesta esto?",
-          "explanation": "これはいくらですか。 significa «¿Cuánto cuesta esto?».",
-          "audio": "これはいくらですか。",
-          "slow_audio": "これはいくらですか。",
+          "answer": "¿Cuánto cuesta el agua?",
+          "explanation": "みずはいくらですか。 significa «¿Cuánto cuesta el agua?».",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-02-teach-2",
+          "id": "jp-book1-functional-05-teach-2",
           "type": "dialogue_model",
-          "prompt": "Aprende «Déme esto, por favor.»",
-          "target": "これをください。",
+          "prompt": "Aprende «Son cien yenes.»",
+          "target": "ひゃくえんです。",
           "options": [],
           "answer": "",
-          "explanation": "Déme esto, por favor.",
-          "audio": "これをください。",
-          "slow_audio": "これをください。",
+          "explanation": "Son cien yenes.",
+          "audio": "ひゃくえんです。",
+          "slow_audio": "ひゃくえんです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02"
+            "jp-book1-functional-05"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Déme esto, por favor."
+          "sound_hint": "Significa: Son cien yenes."
         },
         {
-          "id": "jp-functional-02-quiz-2",
+          "id": "jp-book1-functional-05-quiz-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa これをください。?",
-          "target": "これをください。",
+          "prompt": "¿Qué significa ひゃくえんです。?",
+          "target": "ひゃくえんです。",
           "options": [
-            "Déme esto, por favor.",
-            "¿Cuánto cuesta esto?",
-            "¿Puedo usar tarjeta?"
+            "Son cien yenes.",
+            "¿Cuánto cuesta el agua?",
+            "¿Tienes tarjeta?"
           ],
-          "answer": "Déme esto, por favor.",
-          "explanation": "これをください。 significa «Déme esto, por favor.».",
-          "audio": "これをください。",
-          "slow_audio": "これをください。",
+          "answer": "Son cien yenes.",
+          "explanation": "ひゃくえんです。 significa «Son cien yenes.».",
+          "audio": "ひゃくえんです。",
+          "slow_audio": "ひゃくえんです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-02-listen-2",
+          "id": "jp-book1-functional-05-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "これはいくらですか。",
+          "target": "みずはいくらですか。",
           "options": [
-            "これをください。",
-            "これはいくらですか。"
+            "ひゃくえんです。",
+            "みずはいくらですか。"
           ],
-          "answer": "これはいくらですか。",
-          "explanation": "Escuchaste これはいくらですか。: ¿Cuánto cuesta esto?.",
-          "audio": "これはいくらですか。",
-          "slow_audio": "これはいくらですか。",
+          "answer": "みずはいくらですか。",
+          "explanation": "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-02-teach-3",
+          "id": "jp-book1-functional-05-teach-3",
           "type": "dialogue_model",
-          "prompt": "Aprende «¿Puedo usar tarjeta?»",
-          "target": "カードはつかえますか。",
+          "prompt": "Aprende «¿Tienes tarjeta?»",
+          "target": "カードはありますか。",
           "options": [],
           "answer": "",
-          "explanation": "¿Puedo usar tarjeta?",
-          "audio": "カードはつかえますか。",
-          "slow_audio": "カードはつかえますか。",
+          "explanation": "¿Tienes tarjeta?",
+          "audio": "カードはありますか。",
+          "slow_audio": "カードはありますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02"
+            "jp-book1-functional-05"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: ¿Puedo usar tarjeta?"
+          "sound_hint": "Significa: ¿Tienes tarjeta?"
         },
         {
-          "id": "jp-functional-02-quiz-3",
+          "id": "jp-book1-functional-05-quiz-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa カードはつかえますか。?",
-          "target": "カードはつかえますか。",
+          "prompt": "¿Qué significa カードはありますか。?",
+          "target": "カードはありますか。",
           "options": [
-            "¿Puedo usar tarjeta?",
-            "¿Cuánto cuesta esto?",
-            "Déme esto, por favor."
+            "¿Tienes tarjeta?",
+            "¿Cuánto cuesta el agua?",
+            "Son cien yenes."
           ],
-          "answer": "¿Puedo usar tarjeta?",
-          "explanation": "カードはつかえますか。 significa «¿Puedo usar tarjeta?».",
-          "audio": "カードはつかえますか。",
-          "slow_audio": "カードはつかえますか。",
+          "answer": "¿Tienes tarjeta?",
+          "explanation": "カードはありますか。 significa «¿Tienes tarjeta?».",
+          "audio": "カードはありますか。",
+          "slow_audio": "カードはありますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-02-listen-3",
+          "id": "jp-book1-functional-05-listen-3",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "カードはつかえますか。",
+          "target": "カードはありますか。",
           "options": [
-            "これをください。",
-            "これはいくらですか。",
-            "カードはつかえますか。"
+            "ひゃくえんです。",
+            "みずはいくらですか。",
+            "カードはありますか。"
           ],
-          "answer": "カードはつかえますか。",
-          "explanation": "Escuchaste カードはつかえますか。: ¿Puedo usar tarjeta?.",
-          "audio": "カードはつかえますか。",
-          "slow_audio": "カードはつかえますか。",
+          "answer": "カードはありますか。",
+          "explanation": "Escuchaste カードはありますか。: ¿Tienes tarjeta?.",
+          "audio": "カードはありますか。",
+          "slow_audio": "カードはありますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-02-spiral-3",
+          "id": "jp-book1-functional-05-spiral-3",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa これはいくらですか。?",
-          "target": "これはいくらですか。",
+          "prompt": "Recuerda: ¿qué significa みずはいくらですか。?",
+          "target": "みずはいくらですか。",
           "options": [
-            "Déme esto, por favor.",
-            "¿Puedo usar tarjeta?",
-            "¿Cuánto cuesta esto?"
+            "Son cien yenes.",
+            "¿Tienes tarjeta?",
+            "¿Cuánto cuesta el agua?"
           ],
-          "answer": "¿Cuánto cuesta esto?",
-          "explanation": "これはいくらですか。 significa «¿Cuánto cuesta esto?».",
-          "audio": "これはいくらですか。",
-          "slow_audio": "これはいくらですか。",
+          "answer": "¿Cuánto cuesta el agua?",
+          "explanation": "みずはいくらですか。 significa «¿Cuánto cuesta el agua?».",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-02",
+            "jp-book1-functional-05",
             "spiral_review"
           ],
           "xp": 12
@@ -431,14 +1466,14 @@
       ]
     },
     {
-      "id": "jp-functional-03",
-      "title": "Pedir comida",
+      "id": "jp-book1-functional-06",
+      "title": "Buscar y ubicarse",
       "description": "Aprende 3 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-functional-03-intro",
+          "id": "jp-book1-functional-06-intro",
           "type": "lesson_intro",
-          "prompt": "Primero aprende: Pedir comida",
+          "prompt": "Primero aprende: Buscar y ubicarse",
           "target": "",
           "options": [],
           "answer": "",
@@ -452,189 +1487,189 @@
           "gradable": false
         },
         {
-          "id": "jp-functional-03-teach-1",
+          "id": "jp-book1-functional-06-teach-1",
           "type": "dialogue_model",
-          "prompt": "Aprende «Esto, por favor.»",
-          "target": "これをおねがいします。",
+          "prompt": "Aprende «¿Dónde está el gato?»",
+          "target": "ねこはどこにいますか。",
           "options": [],
           "answer": "",
-          "explanation": "Esto, por favor.",
-          "audio": "これをおねがいします。",
-          "slow_audio": "これをおねがいします。",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03"
+            "jp-book1-functional-06"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Esto, por favor."
+          "sound_hint": "Significa: ¿Dónde está el gato?"
         },
         {
-          "id": "jp-functional-03-quiz-1",
+          "id": "jp-book1-functional-06-quiz-1",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa これをおねがいします。?",
-          "target": "これをおねがいします。",
+          "prompt": "¿Qué significa ねこはどこにいますか。?",
+          "target": "ねこはどこにいますか。",
           "options": [
-            "Esto, por favor.",
-            "Agua, por favor.",
-            "Está delicioso."
+            "¿Dónde está el gato?",
+            "Está delante de la torre.",
+            "No conozco el camino."
           ],
-          "answer": "Esto, por favor.",
-          "explanation": "これをおねがいします。 significa «Esto, por favor.».",
-          "audio": "これをおねがいします。",
-          "slow_audio": "これをおねがいします。",
+          "answer": "¿Dónde está el gato?",
+          "explanation": "ねこはどこにいますか。 significa «¿Dónde está el gato?».",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-03-teach-2",
+          "id": "jp-book1-functional-06-teach-2",
           "type": "dialogue_model",
-          "prompt": "Aprende «Agua, por favor.»",
-          "target": "みずをください。",
+          "prompt": "Aprende «Está delante de la torre.»",
+          "target": "とうのまえにいます。",
           "options": [],
           "answer": "",
-          "explanation": "Agua, por favor.",
-          "audio": "みずをください。",
-          "slow_audio": "みずをください。",
+          "explanation": "Está delante de la torre.",
+          "audio": "とうのまえにいます。",
+          "slow_audio": "とうのまえにいます。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03"
+            "jp-book1-functional-06"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Agua, por favor."
+          "sound_hint": "Significa: Está delante de la torre."
         },
         {
-          "id": "jp-functional-03-quiz-2",
+          "id": "jp-book1-functional-06-quiz-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa みずをください。?",
-          "target": "みずをください。",
+          "prompt": "¿Qué significa とうのまえにいます。?",
+          "target": "とうのまえにいます。",
           "options": [
-            "Agua, por favor.",
-            "Esto, por favor.",
-            "Está delicioso."
+            "Está delante de la torre.",
+            "¿Dónde está el gato?",
+            "No conozco el camino."
           ],
-          "answer": "Agua, por favor.",
-          "explanation": "みずをください。 significa «Agua, por favor.».",
-          "audio": "みずをください。",
-          "slow_audio": "みずをください。",
+          "answer": "Está delante de la torre.",
+          "explanation": "とうのまえにいます。 significa «Está delante de la torre.».",
+          "audio": "とうのまえにいます。",
+          "slow_audio": "とうのまえにいます。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-03-listen-2",
+          "id": "jp-book1-functional-06-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "これをおねがいします。",
+          "target": "ねこはどこにいますか。",
           "options": [
-            "みずをください。",
-            "これをおねがいします。"
+            "とうのまえにいます。",
+            "ねこはどこにいますか。"
           ],
-          "answer": "これをおねがいします。",
-          "explanation": "Escuchaste これをおねがいします。: Esto, por favor..",
-          "audio": "これをおねがいします。",
-          "slow_audio": "これをおねがいします。",
+          "answer": "ねこはどこにいますか。",
+          "explanation": "Escuchaste ねこはどこにいますか。: ¿Dónde está el gato?.",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-03-teach-3",
+          "id": "jp-book1-functional-06-teach-3",
           "type": "dialogue_model",
-          "prompt": "Aprende «Está delicioso.»",
-          "target": "おいしいです。",
+          "prompt": "Aprende «No conozco el camino.»",
+          "target": "みちがわかりません。",
           "options": [],
           "answer": "",
-          "explanation": "Está delicioso.",
-          "audio": "おいしいです。",
-          "slow_audio": "おいしいです。",
+          "explanation": "No conozco el camino.",
+          "audio": "みちがわかりません。",
+          "slow_audio": "みちがわかりません。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03"
+            "jp-book1-functional-06"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Está delicioso."
+          "sound_hint": "Significa: No conozco el camino."
         },
         {
-          "id": "jp-functional-03-quiz-3",
+          "id": "jp-book1-functional-06-quiz-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa おいしいです。?",
-          "target": "おいしいです。",
+          "prompt": "¿Qué significa みちがわかりません。?",
+          "target": "みちがわかりません。",
           "options": [
-            "Está delicioso.",
-            "Esto, por favor.",
-            "Agua, por favor."
+            "No conozco el camino.",
+            "¿Dónde está el gato?",
+            "Está delante de la torre."
           ],
-          "answer": "Está delicioso.",
-          "explanation": "おいしいです。 significa «Está delicioso.».",
-          "audio": "おいしいです。",
-          "slow_audio": "おいしいです。",
+          "answer": "No conozco el camino.",
+          "explanation": "みちがわかりません。 significa «No conozco el camino.».",
+          "audio": "みちがわかりません。",
+          "slow_audio": "みちがわかりません。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-03-listen-3",
+          "id": "jp-book1-functional-06-listen-3",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "おいしいです。",
+          "target": "みちがわかりません。",
           "options": [
-            "みずをください。",
-            "これをおねがいします。",
-            "おいしいです。"
+            "とうのまえにいます。",
+            "ねこはどこにいますか。",
+            "みちがわかりません。"
           ],
-          "answer": "おいしいです。",
-          "explanation": "Escuchaste おいしいです。: Está delicioso..",
-          "audio": "おいしいです。",
-          "slow_audio": "おいしいです。",
+          "answer": "みちがわかりません。",
+          "explanation": "Escuchaste みちがわかりません。: No conozco el camino..",
+          "audio": "みちがわかりません。",
+          "slow_audio": "みちがわかりません。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-03-spiral-3",
+          "id": "jp-book1-functional-06-spiral-3",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa これをおねがいします。?",
-          "target": "これをおねがいします。",
+          "prompt": "Recuerda: ¿qué significa ねこはどこにいますか。?",
+          "target": "ねこはどこにいますか。",
           "options": [
-            "Agua, por favor.",
-            "Está delicioso.",
-            "Esto, por favor."
+            "Está delante de la torre.",
+            "No conozco el camino.",
+            "¿Dónde está el gato?"
           ],
-          "answer": "Esto, por favor.",
-          "explanation": "これをおねがいします。 significa «Esto, por favor.».",
-          "audio": "これをおねがいします。",
-          "slow_audio": "これをおねがいします。",
+          "answer": "¿Dónde está el gato?",
+          "explanation": "ねこはどこにいますか。 significa «¿Dónde está el gato?».",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-03",
+            "jp-book1-functional-06",
             "spiral_review"
           ],
           "xp": 12
@@ -642,14 +1677,215 @@
       ]
     },
     {
-      "id": "jp-functional-04",
-      "title": "Decir la hora",
+      "id": "jp-book1-functional-review-03",
+      "title": "Repaso obligatorio 3",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
+      "activities": [
+        {
+          "id": "jp-book1-functional-review-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso obligatorio 3",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Mucho gusto.",
+            "Pongo dos libros en el escritorio.",
+            "¿Este libro?"
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa よろしくおねがいします。?",
+          "target": "よろしくおねがいします。",
+          "options": [
+            "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+            "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+            "わたしはミナです。 significa «Soy Mina.»."
+          ],
+          "answer": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "explanation": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "Escuchaste このほんですか。: ¿Este libro?.",
+            "カードはありますか。 significa «¿Tienes tarjeta?».",
+            "Encantada / cuento contigo."
+          ],
+          "answer": "Escuchaste このほんですか。: ¿Este libro?.",
+          "explanation": "Escuchaste このほんですか。: ¿Este libro?.",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかいほんをいっさつください。?",
+          "target": "あかいほんをいっさつください。",
+          "options": [
+            "Un libro rojo, por favor.",
+            "Escuchaste このほんですか。: ¿Este libro?.",
+            "¿Dónde está el gato?"
+          ],
+          "answer": "Un libro rojo, por favor.",
+          "explanation": "Un libro rojo, por favor.",
+          "audio": "あかいほんをいっさつください。",
+          "slow_audio": "あかいほんをいっさつください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "¿Por qué?",
+            "No conozco el camino.",
+            "あぶないですから。 significa «Porque es peligroso.»."
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa だめです。?",
+          "target": "だめです。",
+          "options": [
+            "だめです。 significa «No está permitido.».",
+            "¿Dónde está el gato?",
+            "Escuchaste どうしてですか。: ¿Por qué?."
+          ],
+          "answer": "だめです。 significa «No está permitido.».",
+          "explanation": "だめです。 significa «No está permitido.».",
+          "audio": "だめです。",
+          "slow_audio": "だめです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。?",
+          "target": "みずはいくらですか。",
+          "options": [
+            "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+            "¿Este libro?",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+          "explanation": "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-03-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa とうのまえにいます。?",
+          "target": "とうのまえにいます。",
+          "options": [
+            "Está delante de la torre.",
+            "Un libro rojo, por favor.",
+            "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?."
+          ],
+          "answer": "Está delante de la torre.",
+          "explanation": "Está delante de la torre.",
+          "audio": "とうのまえにいます。",
+          "slow_audio": "とうのまえにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-03",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-07",
+      "title": "Comprender y actuar",
       "description": "Aprende 3 elementos con audio y práctica.",
       "activities": [
         {
-          "id": "jp-functional-04-intro",
+          "id": "jp-book1-functional-07-intro",
           "type": "lesson_intro",
-          "prompt": "Primero aprende: Decir la hora",
+          "prompt": "Primero aprende: Comprender y actuar",
           "target": "",
           "options": [],
           "answer": "",
@@ -663,429 +1899,110 @@
           "gradable": false
         },
         {
-          "id": "jp-functional-04-teach-1",
+          "id": "jp-book1-functional-07-teach-1",
           "type": "dialogue_model",
-          "prompt": "Aprende «¿Qué hora es?»",
-          "target": "いまなんじですか。",
+          "prompt": "Aprende «Entendido.»",
+          "target": "わかりました。",
           "options": [],
           "answer": "",
-          "explanation": "¿Qué hora es?",
-          "audio": "いまなんじですか。",
-          "slow_audio": "いまなんじですか。",
+          "explanation": "Entendido.",
+          "audio": "わかりました。",
+          "slow_audio": "わかりました。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-04"
+            "jp-book1-functional-07"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: ¿Qué hora es?"
+          "sound_hint": "Significa: Entendido."
         },
         {
-          "id": "jp-functional-04-quiz-1",
+          "id": "jp-book1-functional-07-quiz-1",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa いまなんじですか。?",
-          "target": "いまなんじですか。",
+          "prompt": "¿Qué significa わかりました。?",
+          "target": "わかりました。",
           "options": [
-            "¿Qué hora es?",
-            "Son las tres.",
-            "Son las siete y media."
+            "Entendido.",
+            "Vayamos deprisa.",
+            "Otra vez, por favor."
           ],
-          "answer": "¿Qué hora es?",
-          "explanation": "いまなんじですか。 significa «¿Qué hora es?».",
-          "audio": "いまなんじですか。",
-          "slow_audio": "いまなんじですか。",
+          "answer": "Entendido.",
+          "explanation": "わかりました。 significa «Entendido.».",
+          "audio": "わかりました。",
+          "slow_audio": "わかりました。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-04",
+            "jp-book1-functional-07",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-04-teach-2",
+          "id": "jp-book1-functional-07-teach-2",
           "type": "dialogue_model",
-          "prompt": "Aprende «Son las tres.»",
-          "target": "さんじです。",
+          "prompt": "Aprende «Vayamos deprisa.»",
+          "target": "いそいでいきましょう。",
           "options": [],
           "answer": "",
-          "explanation": "Son las tres.",
-          "audio": "さんじです。",
-          "slow_audio": "さんじです。",
+          "explanation": "Vayamos deprisa.",
+          "audio": "いそいでいきましょう。",
+          "slow_audio": "いそいでいきましょう。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-04"
+            "jp-book1-functional-07"
           ],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Significa: Son las tres."
+          "sound_hint": "Significa: Vayamos deprisa."
         },
         {
-          "id": "jp-functional-04-quiz-2",
+          "id": "jp-book1-functional-07-quiz-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa さんじです。?",
-          "target": "さんじです。",
+          "prompt": "¿Qué significa いそいでいきましょう。?",
+          "target": "いそいでいきましょう。",
           "options": [
-            "Son las tres.",
-            "¿Qué hora es?",
-            "Son las siete y media."
+            "Vayamos deprisa.",
+            "Entendido.",
+            "Otra vez, por favor."
           ],
-          "answer": "Son las tres.",
-          "explanation": "さんじです。 significa «Son las tres.».",
-          "audio": "さんじです。",
-          "slow_audio": "さんじです。",
+          "answer": "Vayamos deprisa.",
+          "explanation": "いそいでいきましょう。 significa «Vayamos deprisa.».",
+          "audio": "いそいでいきましょう。",
+          "slow_audio": "いそいでいきましょう。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-04",
+            "jp-book1-functional-07",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-04-listen-2",
+          "id": "jp-book1-functional-07-listen-2",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "いまなんじですか。",
+          "target": "わかりました。",
           "options": [
-            "さんじです。",
-            "いまなんじですか。"
+            "いそいでいきましょう。",
+            "わかりました。"
           ],
-          "answer": "いまなんじですか。",
-          "explanation": "Escuchaste いまなんじですか。: ¿Qué hora es?.",
-          "audio": "いまなんじですか。",
-          "slow_audio": "いまなんじですか。",
+          "answer": "わかりました。",
+          "explanation": "Escuchaste わかりました。: Entendido..",
+          "audio": "わかりました。",
+          "slow_audio": "わかりました。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-04",
+            "jp-book1-functional-07",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-04-teach-3",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Son las siete y media.»",
-          "target": "しちじはんです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Son las siete y media.",
-          "audio": "しちじはんです。",
-          "slow_audio": "しちじはんです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-04"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Son las siete y media."
-        },
-        {
-          "id": "jp-functional-04-quiz-3",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa しちじはんです。?",
-          "target": "しちじはんです。",
-          "options": [
-            "Son las siete y media.",
-            "¿Qué hora es?",
-            "Son las tres."
-          ],
-          "answer": "Son las siete y media.",
-          "explanation": "しちじはんです。 significa «Son las siete y media.».",
-          "audio": "しちじはんです。",
-          "slow_audio": "しちじはんです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-04",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-04-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "しちじはんです。",
-          "options": [
-            "さんじです。",
-            "いまなんじですか。",
-            "しちじはんです。"
-          ],
-          "answer": "しちじはんです。",
-          "explanation": "Escuchaste しちじはんです。: Son las siete y media..",
-          "audio": "しちじはんです。",
-          "slow_audio": "しちじはんです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-04",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-04-spiral-3",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa いまなんじですか。?",
-          "target": "いまなんじですか。",
-          "options": [
-            "Son las tres.",
-            "Son las siete y media.",
-            "¿Qué hora es?"
-          ],
-          "answer": "¿Qué hora es?",
-          "explanation": "いまなんじですか。 significa «¿Qué hora es?».",
-          "audio": "いまなんじですか。",
-          "slow_audio": "いまなんじですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-04",
-            "spiral_review"
-          ],
-          "xp": 12
-        }
-      ]
-    },
-    {
-      "id": "jp-functional-05",
-      "title": "Pedir dirección",
-      "description": "Aprende 3 elementos con audio y práctica.",
-      "activities": [
-        {
-          "id": "jp-functional-05-intro",
-          "type": "lesson_intro",
-          "prompt": "Primero aprende: Pedir dirección",
-          "target": "",
-          "options": [],
-          "answer": "",
-          "explanation": "Escucha y comprende cada elemento antes de responder.",
-          "audio": "",
-          "slow_audio": "",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false
-        },
-        {
-          "id": "jp-functional-05-teach-1",
-          "type": "dialogue_model",
-          "prompt": "Aprende «¿Dónde está la estación?»",
-          "target": "えきはどこですか。",
-          "options": [],
-          "answer": "",
-          "explanation": "¿Dónde está la estación?",
-          "audio": "えきはどこですか。",
-          "slow_audio": "えきはどこですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: ¿Dónde está la estación?"
-        },
-        {
-          "id": "jp-functional-05-quiz-1",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa えきはどこですか。?",
-          "target": "えきはどこですか。",
-          "options": [
-            "¿Dónde está la estación?",
-            "Está a la derecha.",
-            "Siga derecho, por favor."
-          ],
-          "answer": "¿Dónde está la estación?",
-          "explanation": "えきはどこですか。 significa «¿Dónde está la estación?».",
-          "audio": "えきはどこですか。",
-          "slow_audio": "えきはどこですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-05-teach-2",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Está a la derecha.»",
-          "target": "みぎです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Está a la derecha.",
-          "audio": "みぎです。",
-          "slow_audio": "みぎです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Está a la derecha."
-        },
-        {
-          "id": "jp-functional-05-quiz-2",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa みぎです。?",
-          "target": "みぎです。",
-          "options": [
-            "Está a la derecha.",
-            "¿Dónde está la estación?",
-            "Siga derecho, por favor."
-          ],
-          "answer": "Está a la derecha.",
-          "explanation": "みぎです。 significa «Está a la derecha.».",
-          "audio": "みぎです。",
-          "slow_audio": "みぎです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-05-listen-2",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "えきはどこですか。",
-          "options": [
-            "みぎです。",
-            "えきはどこですか。"
-          ],
-          "answer": "えきはどこですか。",
-          "explanation": "Escuchaste えきはどこですか。: ¿Dónde está la estación?.",
-          "audio": "えきはどこですか。",
-          "slow_audio": "えきはどこですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-05-teach-3",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Siga derecho, por favor.»",
-          "target": "まっすぐいってください。",
-          "options": [],
-          "answer": "",
-          "explanation": "Siga derecho, por favor.",
-          "audio": "まっすぐいってください。",
-          "slow_audio": "まっすぐいってください。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Siga derecho, por favor."
-        },
-        {
-          "id": "jp-functional-05-quiz-3",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa まっすぐいってください。?",
-          "target": "まっすぐいってください。",
-          "options": [
-            "Siga derecho, por favor.",
-            "¿Dónde está la estación?",
-            "Está a la derecha."
-          ],
-          "answer": "Siga derecho, por favor.",
-          "explanation": "まっすぐいってください。 significa «Siga derecho, por favor.».",
-          "audio": "まっすぐいってください。",
-          "slow_audio": "まっすぐいってください。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-05-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "まっすぐいってください。",
-          "options": [
-            "みぎです。",
-            "えきはどこですか。",
-            "まっすぐいってください。"
-          ],
-          "answer": "まっすぐいってください。",
-          "explanation": "Escuchaste まっすぐいってください。: Siga derecho, por favor..",
-          "audio": "まっすぐいってください。",
-          "slow_audio": "まっすぐいってください。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-05-spiral-3",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa えきはどこですか。?",
-          "target": "えきはどこですか。",
-          "options": [
-            "Está a la derecha.",
-            "Siga derecho, por favor.",
-            "¿Dónde está la estación?"
-          ],
-          "answer": "¿Dónde está la estación?",
-          "explanation": "えきはどこですか。 significa «¿Dónde está la estación?».",
-          "audio": "えきはどこですか。",
-          "slow_audio": "えきはどこですか。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-05",
-            "spiral_review"
-          ],
-          "xp": 12
-        }
-      ]
-    },
-    {
-      "id": "jp-functional-06",
-      "title": "Pedir repetición",
-      "description": "Aprende 3 elementos con audio y práctica.",
-      "activities": [
-        {
-          "id": "jp-functional-06-intro",
-          "type": "lesson_intro",
-          "prompt": "Primero aprende: Pedir repetición",
-          "target": "",
-          "options": [],
-          "answer": "",
-          "explanation": "Escucha y comprende cada elemento antes de responder.",
-          "audio": "",
-          "slow_audio": "",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false
-        },
-        {
-          "id": "jp-functional-06-teach-1",
+          "id": "jp-book1-functional-07-teach-3",
           "type": "dialogue_model",
           "prompt": "Aprende «Otra vez, por favor.»",
           "target": "もういちどおねがいします。",
@@ -1097,21 +2014,21 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-06"
+            "jp-book1-functional-07"
           ],
           "xp": 2,
           "gradable": false,
           "sound_hint": "Significa: Otra vez, por favor."
         },
         {
-          "id": "jp-functional-06-quiz-1",
+          "id": "jp-book1-functional-07-quiz-3",
           "type": "word_to_translation",
           "prompt": "¿Qué significa もういちどおねがいします。?",
           "target": "もういちどおねがいします。",
           "options": [
             "Otra vez, por favor.",
-            "Hable despacio, por favor.",
-            "No entiendo."
+            "Entendido.",
+            "Vayamos deprisa."
           ],
           "answer": "Otra vez, por favor.",
           "explanation": "もういちどおねがいします。 significa «Otra vez, por favor.».",
@@ -1120,59 +2037,19 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-06",
+            "jp-book1-functional-07",
             "immediate_recall"
           ],
           "xp": 10
         },
         {
-          "id": "jp-functional-06-teach-2",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Hable despacio, por favor.»",
-          "target": "ゆっくりはなしてください。",
-          "options": [],
-          "answer": "",
-          "explanation": "Hable despacio, por favor.",
-          "audio": "ゆっくりはなしてください。",
-          "slow_audio": "ゆっくりはなしてください。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-06"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Hable despacio, por favor."
-        },
-        {
-          "id": "jp-functional-06-quiz-2",
-          "type": "word_to_translation",
-          "prompt": "¿Qué significa ゆっくりはなしてください。?",
-          "target": "ゆっくりはなしてください。",
-          "options": [
-            "Hable despacio, por favor.",
-            "Otra vez, por favor.",
-            "No entiendo."
-          ],
-          "answer": "Hable despacio, por favor.",
-          "explanation": "ゆっくりはなしてください。 significa «Hable despacio, por favor.».",
-          "audio": "ゆっくりはなしてください。",
-          "slow_audio": "ゆっくりはなしてください。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-06",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-06-listen-2",
+          "id": "jp-book1-functional-07-listen-3",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase completa",
           "target": "もういちどおねがいします。",
           "options": [
-            "ゆっくりはなしてください。",
+            "いそいでいきましょう。",
+            "わかりました。",
             "もういちどおねがいします。"
           ],
           "answer": "もういちどおねがいします。",
@@ -1182,92 +2059,29 @@
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-06",
+            "jp-book1-functional-07",
             "cumulative_recall"
           ],
           "xp": 12
         },
         {
-          "id": "jp-functional-06-teach-3",
-          "type": "dialogue_model",
-          "prompt": "Aprende «No entiendo.»",
-          "target": "わかりません。",
-          "options": [],
-          "answer": "",
-          "explanation": "No entiendo.",
-          "audio": "わかりません。",
-          "slow_audio": "わかりません。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-06"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: No entiendo."
-        },
-        {
-          "id": "jp-functional-06-quiz-3",
+          "id": "jp-book1-functional-07-spiral-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa わかりません。?",
-          "target": "わかりません。",
+          "prompt": "Recuerda: ¿qué significa わかりました。?",
+          "target": "わかりました。",
           "options": [
-            "No entiendo.",
+            "Vayamos deprisa.",
             "Otra vez, por favor.",
-            "Hable despacio, por favor."
+            "Entendido."
           ],
-          "answer": "No entiendo.",
-          "explanation": "わかりません。 significa «No entiendo.».",
-          "audio": "わかりません。",
-          "slow_audio": "わかりません。",
+          "answer": "Entendido.",
+          "explanation": "わかりました。 significa «Entendido.».",
+          "audio": "わかりました。",
+          "slow_audio": "わかりました。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-06",
-            "immediate_recall"
-          ],
-          "xp": 10
-        },
-        {
-          "id": "jp-functional-06-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "わかりません。",
-          "options": [
-            "ゆっくりはなしてください。",
-            "もういちどおねがいします。",
-            "わかりません。"
-          ],
-          "answer": "わかりません。",
-          "explanation": "Escuchaste わかりません。: No entiendo..",
-          "audio": "わかりません。",
-          "slow_audio": "わかりません。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-06",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-06-spiral-3",
-          "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa もういちどおねがいします。?",
-          "target": "もういちどおねがいします。",
-          "options": [
-            "Hable despacio, por favor.",
-            "No entiendo.",
-            "Otra vez, por favor."
-          ],
-          "answer": "Otra vez, por favor.",
-          "explanation": "もういちどおねがいします。 significa «Otra vez, por favor.».",
-          "audio": "もういちどおねがいします。",
-          "slow_audio": "もういちどおねがいします。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-06",
+            "jp-book1-functional-07",
             "spiral_review"
           ],
           "xp": 12
@@ -1275,18 +2089,20 @@
       ]
     },
     {
-      "id": "jp-functional-07",
-      "title": "Gustos y deseos",
-      "description": "Aprende 3 elementos con audio y práctica.",
+      "id": "jp-book1-functional-review-04",
+      "title": "Repaso obligatorio 4",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": true,
+      "isTest": false,
       "activities": [
         {
-          "id": "jp-functional-07-intro",
+          "id": "jp-book1-functional-review-04-intro",
           "type": "lesson_intro",
-          "prompt": "Primero aprende: Gustos y deseos",
+          "prompt": "Repaso obligatorio 4",
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -1296,192 +2112,733 @@
           "gradable": false
         },
         {
-          "id": "jp-functional-07-teach-1",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Me gusta el sushi.»",
-          "target": "すしがすきです。",
+          "id": "jp-book1-functional-review-04-recall-1",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Mucho gusto.",
+            "Son cien yenes.",
+            "Escuchaste だめです。: No está permitido.."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-2",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa よろしくおねがいします。?",
+          "target": "よろしくおねがいします。",
+          "options": [
+            "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+            "Hay tres libros.",
+            "Escuchaste つぎのページをよんでください。: Lee la página siguiente, por favor.."
+          ],
+          "answer": "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+          "explanation": "Escuchaste よろしくおねがいします。: Encantada / cuento contigo..",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa つぎのページをよんでください。?",
+          "target": "つぎのページをよんでください。",
+          "options": [
+            "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+            "Escuchaste どうしてですか。: ¿Por qué?.",
+            "Hay tres libros."
+          ],
+          "answer": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "explanation": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa にさつをつくえにおきます。?",
+          "target": "にさつをつくえにおきます。",
+          "options": [
+            "Pongo dos libros en el escritorio.",
+            "Entendido.",
+            "Un libro rojo, por favor."
+          ],
+          "answer": "Pongo dos libros en el escritorio.",
+          "explanation": "Pongo dos libros en el escritorio.",
+          "audio": "にさつをつくえにおきます。",
+          "slow_audio": "にさつをつくえにおきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "Escuchaste どうしてですか。: ¿Por qué?.",
+            "あかいほんをいっさつください。 significa «Un libro rojo, por favor.».",
+            "このほんですか。 significa «¿Este libro?»."
+          ],
+          "answer": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "explanation": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひゃくえんです。?",
+          "target": "ひゃくえんです。",
+          "options": [
+            "ひゃくえんです。 significa «Son cien yenes.».",
+            "わかりました。 significa «Entendido.».",
+            "Escuchaste カードはありますか。: ¿Tienes tarjeta?."
+          ],
+          "answer": "ひゃくえんです。 significa «Son cien yenes.».",
+          "explanation": "ひゃくえんです。 significa «Son cien yenes.».",
+          "audio": "ひゃくえんです。",
+          "slow_audio": "ひゃくえんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa とうのまえにいます。?",
+          "target": "とうのまえにいます。",
+          "options": [
+            "Está delante de la torre.",
+            "そのほんをください。 significa «Ese libro, por favor.».",
+            "No conozco el camino."
+          ],
+          "answer": "Está delante de la torre.",
+          "explanation": "Está delante de la torre.",
+          "audio": "とうのまえにいます。",
+          "slow_audio": "とうのまえにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        },
+        {
+          "id": "jp-book1-functional-review-04-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa わかりました。?",
+          "target": "わかりました。",
+          "options": [
+            "わかりました。 significa «Entendido.».",
+            "Escuchaste みちがわかりません。: No conozco el camino..",
+            "Otra vez, por favor."
+          ],
+          "answer": "わかりました。 significa «Entendido.».",
+          "explanation": "わかりました。 significa «Entendido.».",
+          "audio": "わかりました。",
+          "slow_audio": "わかりました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-review-04",
+            "mandatory_review"
+          ],
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-functional-checkpoint",
+      "title": "Prueba de dominio",
+      "description": "Repaso acumulativo obligatorio.",
+      "isReview": false,
+      "isTest": true,
+      "activities": [
+        {
+          "id": "jp-book1-functional-checkpoint-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Me gusta el sushi.",
-          "audio": "すしがすきです。",
-          "slow_audio": "すしがすきです。",
+          "explanation": "Recupera lo aprendido sin volver a mirar la lección. Debes reconocer forma, sonido y significado.",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
-          "tags": [
-            "jp-functional-07"
-          ],
+          "tags": [],
           "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Me gusta el sushi."
+          "gradable": false
         },
         {
-          "id": "jp-functional-07-quiz-1",
+          "id": "jp-book1-functional-checkpoint-recall-1",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa すしがすきです。?",
-          "target": "すしがすきです。",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
           "options": [
-            "Me gusta el sushi.",
-            "Quiero agua.",
-            "Quiero ir a Japón."
+            "Mucho gusto.",
+            "Escuchaste にさつをつくえにおきます。: Pongo dos libros en el escritorio..",
+            "¿Cuánto cuesta el agua?"
           ],
-          "answer": "Me gusta el sushi.",
-          "explanation": "すしがすきです。 significa «Me gusta el sushi.».",
-          "audio": "すしがすきです。",
-          "slow_audio": "すしがすきです。",
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-07",
-            "immediate_recall"
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
           ],
-          "xp": 10
+          "xp": 18
         },
         {
-          "id": "jp-functional-07-teach-2",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Quiero agua.»",
-          "target": "みずがほしいです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Quiero agua.",
-          "audio": "みずがほしいです。",
-          "slow_audio": "みずがほしいです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-07"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Quiero agua."
-        },
-        {
-          "id": "jp-functional-07-quiz-2",
+          "id": "jp-book1-functional-checkpoint-recall-2",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa みずがほしいです。?",
-          "target": "みずがほしいです。",
+          "prompt": "Recuerda: ¿qué expresa わたしはミナです。?",
+          "target": "わたしはミナです。",
           "options": [
-            "Quiero agua.",
-            "Me gusta el sushi.",
-            "Quiero ir a Japón."
+            "Soy Mina.",
+            "わかりました。 significa «Entendido.».",
+            "ひゃくえんです。 significa «Son cien yenes.»."
           ],
-          "answer": "Quiero agua.",
-          "explanation": "みずがほしいです。 significa «Quiero agua.».",
-          "audio": "みずがほしいです。",
-          "slow_audio": "みずがほしいです。",
+          "answer": "Soy Mina.",
+          "explanation": "Soy Mina.",
+          "audio": "わたしはミナです。",
+          "slow_audio": "わたしはミナです。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-07",
-            "immediate_recall"
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
           ],
-          "xp": 10
+          "xp": 18
         },
         {
-          "id": "jp-functional-07-listen-2",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "すしがすきです。",
-          "options": [
-            "みずがほしいです。",
-            "すしがすきです。"
-          ],
-          "answer": "すしがすきです。",
-          "explanation": "Escuchaste すしがすきです。: Me gusta el sushi..",
-          "audio": "すしがすきです。",
-          "slow_audio": "すしがすきです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-07",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-07-teach-3",
-          "type": "dialogue_model",
-          "prompt": "Aprende «Quiero ir a Japón.»",
-          "target": "にほんにいきたいです。",
-          "options": [],
-          "answer": "",
-          "explanation": "Quiero ir a Japón.",
-          "audio": "にほんにいきたいです。",
-          "slow_audio": "にほんにいきたいです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-07"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Significa: Quiero ir a Japón."
-        },
-        {
-          "id": "jp-functional-07-quiz-3",
+          "id": "jp-book1-functional-checkpoint-recall-3",
           "type": "word_to_translation",
-          "prompt": "¿Qué significa にほんにいきたいです。?",
-          "target": "にほんにいきたいです。",
+          "prompt": "Recuerda: ¿qué expresa はじめまして。?",
+          "target": "はじめまして。",
           "options": [
-            "Quiero ir a Japón.",
-            "Me gusta el sushi.",
-            "Quiero agua."
+            "Escuchaste はじめまして。: Mucho gusto..",
+            "Mucho gusto.",
+            "Soy Mina."
           ],
-          "answer": "Quiero ir a Japón.",
-          "explanation": "にほんにいきたいです。 significa «Quiero ir a Japón.».",
-          "audio": "にほんにいきたいです。",
-          "slow_audio": "にほんにいきたいです。",
+          "answer": "Escuchaste はじめまして。: Mucho gusto..",
+          "explanation": "Escuchaste はじめまして。: Mucho gusto..",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-07",
-            "immediate_recall"
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
           ],
-          "xp": 10
+          "xp": 18
         },
         {
-          "id": "jp-functional-07-listen-3",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase completa",
-          "target": "にほんにいきたいです。",
-          "options": [
-            "みずがほしいです。",
-            "すしがすきです。",
-            "にほんにいきたいです。"
-          ],
-          "answer": "にほんにいきたいです。",
-          "explanation": "Escuchaste にほんにいきたいです。: Quiero ir a Japón..",
-          "audio": "にほんにいきたいです。",
-          "slow_audio": "にほんにいきたいです。",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "jp-functional-07",
-            "cumulative_recall"
-          ],
-          "xp": 12
-        },
-        {
-          "id": "jp-functional-07-spiral-3",
+          "id": "jp-book1-functional-checkpoint-recall-4",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué significa すしがすきです。?",
-          "target": "すしがすきです。",
+          "prompt": "Recuerda: ¿qué expresa よろしくおねがいします。?",
+          "target": "よろしくおねがいします。",
           "options": [
-            "Quiero agua.",
-            "Quiero ir a Japón.",
-            "Me gusta el sushi."
+            "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+            "Escuchaste つぎのページをよんでください。: Lee la página siguiente, por favor..",
+            "¿Este libro?"
           ],
-          "answer": "Me gusta el sushi.",
-          "explanation": "すしがすきです。 significa «Me gusta el sushi.».",
-          "audio": "すしがすきです。",
-          "slow_audio": "すしがすきです。",
+          "answer": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "explanation": "よろしくおねがいします。 significa «Encantada / cuento contigo.».",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
           "image": null,
           "writing_asset": null,
           "tags": [
-            "jp-functional-07",
-            "spiral_review"
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
           ],
-          "xp": 12
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "¿Este libro?",
+            "Escuchaste もういちどおねがいします。: Otra vez, por favor..",
+            "Escuchaste このほんですか。: ¿Este libro?."
+          ],
+          "answer": "¿Este libro?",
+          "explanation": "¿Este libro?",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa そのほんをください。?",
+          "target": "そのほんをください。",
+          "options": [
+            "Ese libro, por favor.",
+            "Encantada / cuento contigo.",
+            "ほんがさんさつあります。 significa «Hay tres libros.»."
+          ],
+          "answer": "Ese libro, por favor.",
+          "explanation": "Ese libro, por favor.",
+          "audio": "そのほんをください。",
+          "slow_audio": "そのほんをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa このほんですか。?",
+          "target": "このほんですか。",
+          "options": [
+            "Escuchaste このほんですか。: ¿Este libro?.",
+            "Hay tres libros.",
+            "もういちどおねがいします。 significa «Otra vez, por favor.»."
+          ],
+          "answer": "Escuchaste このほんですか。: ¿Este libro?.",
+          "explanation": "Escuchaste このほんですか。: ¿Este libro?.",
+          "audio": "このほんですか。",
+          "slow_audio": "このほんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa つぎのページをよんでください。?",
+          "target": "つぎのページをよんでください。",
+          "options": [
+            "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+            "Soy Mina.",
+            "だめです。 significa «No está permitido.»."
+          ],
+          "answer": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "explanation": "つぎのページをよんでください。 significa «Lee la página siguiente, por favor.».",
+          "audio": "つぎのページをよんでください。",
+          "slow_audio": "つぎのページをよんでください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-9",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Hay tres libros.",
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "あかいほんをいっさつください。 significa «Un libro rojo, por favor.»."
+          ],
+          "answer": "Hay tres libros.",
+          "explanation": "Hay tres libros.",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-10",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あかいほんをいっさつください。?",
+          "target": "あかいほんをいっさつください。",
+          "options": [
+            "Un libro rojo, por favor.",
+            "にさつをつくえにおきます。 significa «Pongo dos libros en el escritorio.».",
+            "¿Por qué?"
+          ],
+          "answer": "Un libro rojo, por favor.",
+          "explanation": "Un libro rojo, por favor.",
+          "audio": "あかいほんをいっさつください。",
+          "slow_audio": "あかいほんをいっさつください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-11",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ほんがさんさつあります。?",
+          "target": "ほんがさんさつあります。",
+          "options": [
+            "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+            "¿Por qué?",
+            "Escuchaste どうしてですか。: ¿Por qué?."
+          ],
+          "answer": "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+          "explanation": "Escuchaste ほんがさんさつあります。: Hay tres libros..",
+          "audio": "ほんがさんさつあります。",
+          "slow_audio": "ほんがさんさつあります。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-12",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa にさつをつくえにおきます。?",
+          "target": "にさつをつくえにおきます。",
+          "options": [
+            "にさつをつくえにおきます。 significa «Pongo dos libros en el escritorio.».",
+            "Escuchaste わかりました。: Entendido..",
+            "よろしくおねがいします。 significa «Encantada / cuento contigo.»."
+          ],
+          "answer": "にさつをつくえにおきます。 significa «Pongo dos libros en el escritorio.».",
+          "explanation": "にさつをつくえにおきます。 significa «Pongo dos libros en el escritorio.».",
+          "audio": "にさつをつくえにおきます。",
+          "slow_audio": "にさつをつくえにおきます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-13",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "¿Por qué?",
+            "Escuchaste にさつをつくえにおきます。: Pongo dos libros en el escritorio..",
+            "No está permitido."
+          ],
+          "answer": "¿Por qué?",
+          "explanation": "¿Por qué?",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-14",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa あぶないですから。?",
+          "target": "あぶないですから。",
+          "options": [
+            "Porque es peligroso.",
+            "カードはありますか。 significa «¿Tienes tarjeta?».",
+            "Lee la página siguiente, por favor."
+          ],
+          "answer": "Porque es peligroso.",
+          "explanation": "Porque es peligroso.",
+          "audio": "あぶないですから。",
+          "slow_audio": "あぶないですから。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-15",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa どうしてですか。?",
+          "target": "どうしてですか。",
+          "options": [
+            "Escuchaste どうしてですか。: ¿Por qué?.",
+            "Escuchaste みちがわかりません。: No conozco el camino..",
+            "Escuchaste だめです。: No está permitido.."
+          ],
+          "answer": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "explanation": "Escuchaste どうしてですか。: ¿Por qué?.",
+          "audio": "どうしてですか。",
+          "slow_audio": "どうしてですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-16",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa だめです。?",
+          "target": "だめです。",
+          "options": [
+            "だめです。 significa «No está permitido.».",
+            "みちがわかりません。 significa «No conozco el camino.».",
+            "Entendido."
+          ],
+          "answer": "だめです。 significa «No está permitido.».",
+          "explanation": "だめです。 significa «No está permitido.».",
+          "audio": "だめです。",
+          "slow_audio": "だめです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-17",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。?",
+          "target": "みずはいくらですか。",
+          "options": [
+            "¿Cuánto cuesta el agua?",
+            "ひゃくえんです。 significa «Son cien yenes.».",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "¿Cuánto cuesta el agua?",
+          "explanation": "¿Cuánto cuesta el agua?",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-18",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ひゃくえんです。?",
+          "target": "ひゃくえんです。",
+          "options": [
+            "Son cien yenes.",
+            "Entendido.",
+            "Escuchaste だめです。: No está permitido.."
+          ],
+          "answer": "Son cien yenes.",
+          "explanation": "Son cien yenes.",
+          "audio": "ひゃくえんです。",
+          "slow_audio": "ひゃくえんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-19",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みずはいくらですか。?",
+          "target": "みずはいくらですか。",
+          "options": [
+            "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+            "Está delante de la torre.",
+            "だめです。 significa «No está permitido.»."
+          ],
+          "answer": "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+          "explanation": "Escuchaste みずはいくらですか。: ¿Cuánto cuesta el agua?.",
+          "audio": "みずはいくらですか。",
+          "slow_audio": "みずはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-20",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa カードはありますか。?",
+          "target": "カードはありますか。",
+          "options": [
+            "カードはありますか。 significa «¿Tienes tarjeta?».",
+            "¿Dónde está el gato?",
+            "どうしてですか。 significa «¿Por qué?»."
+          ],
+          "answer": "カードはありますか。 significa «¿Tienes tarjeta?».",
+          "explanation": "カードはありますか。 significa «¿Tienes tarjeta?».",
+          "audio": "カードはありますか。",
+          "slow_audio": "カードはありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-21",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこはどこにいますか。?",
+          "target": "ねこはどこにいますか。",
+          "options": [
+            "¿Dónde está el gato?",
+            "Pongo dos libros en el escritorio.",
+            "Escuchaste だめです。: No está permitido.."
+          ],
+          "answer": "¿Dónde está el gato?",
+          "explanation": "¿Dónde está el gato?",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-22",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa とうのまえにいます。?",
+          "target": "とうのまえにいます。",
+          "options": [
+            "Está delante de la torre.",
+            "Otra vez, por favor.",
+            "Pongo dos libros en el escritorio."
+          ],
+          "answer": "Está delante de la torre.",
+          "explanation": "Está delante de la torre.",
+          "audio": "とうのまえにいます。",
+          "slow_audio": "とうのまえにいます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-23",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa ねこはどこにいますか。?",
+          "target": "ねこはどこにいますか。",
+          "options": [
+            "Escuchaste ねこはどこにいますか。: ¿Dónde está el gato?.",
+            "Escuchaste みちがわかりません。: No conozco el camino..",
+            "No está permitido."
+          ],
+          "answer": "Escuchaste ねこはどこにいますか。: ¿Dónde está el gato?.",
+          "explanation": "Escuchaste ねこはどこにいますか。: ¿Dónde está el gato?.",
+          "audio": "ねこはどこにいますか。",
+          "slow_audio": "ねこはどこにいますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
+        },
+        {
+          "id": "jp-book1-functional-checkpoint-recall-24",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué expresa みちがわかりません。?",
+          "target": "みちがわかりません。",
+          "options": [
+            "みちがわかりません。 significa «No conozco el camino.».",
+            "Entendido.",
+            "みずはいくらですか。 significa «¿Cuánto cuesta el agua?»."
+          ],
+          "answer": "みちがわかりません。 significa «No conozco el camino.».",
+          "explanation": "みちがわかりません。 significa «No conozco el camino.».",
+          "audio": "みちがわかりません。",
+          "slow_audio": "みちがわかりません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-functional-checkpoint",
+            "mandatory_review"
+          ],
+          "xp": 18
         }
       ]
     }

@@ -14,7 +14,9 @@ class JapaneseGuidedCourseTests(TestCase):
         unit = json.loads((WEB / "library/courses/Japanese/units/hiragana-01.json").read_text())
         self.assertEqual(course["language"], "Japanese")
         self.assertEqual(len(course["units"]), 10)
-        self.assertEqual(course["version"], 3)
+        self.assertEqual(course["version"], 4)
+        self.assertEqual(course["unlockRules"]["minimumScore"], 85)
+        self.assertEqual(course["recommendedBooks"][0]["code"], "HS-JP-B01")
         self.assertGreaterEqual(len(unit["lessons"]), 29)
         self.assertTrue(unit["lessons"][-1]["isTest"])
         kana = {activity["target"] for lesson in unit["lessons"] for activity in lesson["activities"]}
@@ -79,7 +81,8 @@ class JapaneseGuidedCourseTests(TestCase):
                 practice = activities[position + 1:next_position]
                 self.assertTrue(any(item.get("target") == taught and item.get("gradable", True) for item in practice))
                 built.update(item["target"] for item in practice if item["type"] == "build_word")
-        self.assertIn("あい", built)
+        self.assertIn("としょかん", built)
+        self.assertIn("いっさつ", built)
 
     def test_routes_scoring_unlock_progress_restore_and_review(self):
         script = r"""
@@ -121,7 +124,7 @@ import {migrateJapaneseProgress} from './HanStoryPlayerWeb/src/japanese_course_l
 const unit=JSON.parse(fs.readFileSync('./HanStoryPlayerWeb/library/courses/Japanese/units/hiragana-01.json'));
 const first=unit.lessons[0], second=unit.lessons[1], activity=first.activities[0];
 const old={id:'jp-guided-progress-v1',courseVersion:2,language:'Japanese',xp:275,currentUnit:'unidad-eliminada',currentLesson:'leccion-eliminada',completedLessons:[first.id,'leccion-eliminada'],lessonScores:{[first.id]:{percentage:100},'leccion-eliminada':{percentage:90}},masteryByItem:{[activity.id]:{correct:4,wrong:0,stage:4},'actividad-eliminada':{correct:1}},mistakes:[{activityId:'actividad-eliminada',lessonId:'leccion-eliminada',dueAt:'2026-07-17T00:00:00Z'}],reviewDue:['2026-07-17T00:00:00Z'],streak:7,lastStudyDate:'2026-07-16',unlockedUnits:[unit.id,'unidad-eliminada'],unlockedLessons:[first.id,'leccion-eliminada']};
-const migrated=migrateJapaneseProgress(old,[unit],3);
+const migrated=migrateJapaneseProgress(old,[unit],4);
 console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:activity.id}));
 """
         result = subprocess.run(
@@ -133,7 +136,7 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
         )
         data = json.loads(result.stdout)
         migrated = data["migrated"]
-        self.assertEqual(migrated["courseVersion"], 3)
+        self.assertEqual(migrated["courseVersion"], 4)
         self.assertEqual(migrated["xp"], 275)
         self.assertEqual(migrated["streak"], 7)
         self.assertEqual(migrated["completedLessons"], [data["first"]])
@@ -164,6 +167,12 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
         self.assertIn("location.hash.startsWith('#/japanese/')", main)
         self.assertIn('data-nav="course"', main)
         self.assertIn("Curso guiado", main)
+        self.assertIn("updateViaCache:'none'", main)
+        self.assertIn("registration.update()", main)
+        self.assertIn("controllerchange", main)
+        self.assertIn("new Request(path,{cache:'reload'})", shell)
+        self.assertIn("fetch(event.request,{cache:'no-store'})", shell)
+        self.assertIn("SKIP_WAITING", shell)
 
     def test_brief_reviews_do_not_advance_visible_lesson_numbers(self):
         app = (WEB / "src/japanese_course_app.js").read_text()
@@ -175,6 +184,50 @@ console.log(JSON.stringify({migrated,first:first.id,second:second.id,activity:ac
         self.assertIn("lesson.isReview?'↻':lesson.isTest?'★':displayNumber", app)
         self.assertIn("${lessonTotal} lecciones · ${reviewTotal} repasos", app)
         self.assertIn("<span>pasos</span>", app)
+
+    def test_worlds_four_to_nine_require_book_one_mastery(self):
+        course_root = WEB / "library/courses/Japanese"
+        course = json.loads((course_root / "course.json").read_text())
+        units = {
+            item["id"]: json.loads((course_root / item["manifest"]).read_text())
+            for item in course["units"]
+        }
+        required_kanji = set("一三上中事二人今仕何入円冊分前動危名図塔大始家小帰店待急戻持探料新日明昨時書朝未本机来次水無物猫理生由町白百私窓箱緒置行見計読誰買赤近道金鍵開青願館")
+        taught_kanji = {
+            activity["target"]
+            for lesson in units["starter-kanji"]["lessons"]
+            for activity in lesson["activities"]
+            if activity["type"] == "teach_kanji"
+        }
+        self.assertEqual(taught_kanji, required_kanji)
+        all_targets = {
+            activity.get("target", "")
+            for unit_id in ("first-words", "first-sentences", "basic-verbs", "adjectives", "functional-a1")
+            for lesson in units[unit_id]["lessons"]
+            for activity in lesson["activities"]
+        }
+        for required in (
+            "としょかん",
+            "いっさつ",
+            "はこがうごいています。",
+            "はこのなかをみてください。",
+            "そのドアをあけないでください。",
+            "いっしょにいきましょう。",
+            "みずをかいたいです。",
+            "なまえがかいてあります。",
+        ):
+            self.assertIn(required, all_targets)
+        for unit_id in ("first-words", "first-sentences", "basic-verbs", "adjectives", "functional-a1", "starter-kanji"):
+            lessons = units[unit_id]["lessons"]
+            self.assertTrue(any(lesson.get("isReview") for lesson in lessons), unit_id)
+            self.assertTrue(lessons[-1].get("isTest"), unit_id)
+
+    def test_new_curriculum_requires_85_percent_to_unlock(self):
+        logic = (WEB / "src/japanese_course_logic.js").read_text()
+        app = (WEB / "src/japanese_course_app.js").read_text()
+        self.assertIn("JAPANESE_PASSING_SCORE=85", logic)
+        self.assertNotIn("percentage>=70", logic + app)
+        self.assertIn("Necesitas 85 % para avanzar", app)
 
     def test_audio_is_eleven_v3_and_never_browser_tts(self):
         manifest = json.loads((WEB / "library/courses/Japanese/audio_manifest.json").read_text())
