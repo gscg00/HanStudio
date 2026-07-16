@@ -1,4 +1,5 @@
 import unittest
+import re
 from pathlib import Path
 
 
@@ -41,6 +42,10 @@ class AccountInfrastructureTests(unittest.TestCase):
         render_position = app.index("renderLanguages();show('language-view')")
         storage_position = app.index("storageFallback(get('metadata','library')")
         self.assertLess(render_position, storage_position)
+
+    def test_async_defaults_do_not_break_module_parsing(self):
+        combined = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / "src").rglob("*.js"))
+        self.assertIsNone(re.search(r"function\s+\w+\s*\([^)]*=\s*await", combined))
 
 
 if __name__ == "__main__":

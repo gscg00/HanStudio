@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v63';
+const SHELL='hanstory-shell-v64';
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
   './assets/japanese_course.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
