@@ -1,10 +1,10 @@
-const SHELL='hanstory-shell-v64';
+const SHELL='hanstory-shell-v66';
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
   './assets/japanese_course.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
   './src/app.js','./src/storage.js','./src/branding.js','./src/config.example.js','./src/public_config.js',
   './src/auth_service.js','./src/local_progress_store.js','./src/cloud_progress_store.js',
-  './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js',
+  './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/xp_service.js','./src/friends_service.js',
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
   './src/japanese_course_logic.js','./manifest.webmanifest','./library/library.json',
   './library/courses/Japanese/course.json','./library/courses/Japanese/units/hiragana-01.json',
