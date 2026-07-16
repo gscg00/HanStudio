@@ -2,6 +2,14 @@
 .env
 .env.*
 !.env.example
+.pages-dist/
+node_modules/
+*.log
+*.zip
+*.pem
+*.key
+*.p12
+*.sqlite*
 **/__pycache__/
 **/.pytest_cache/
 library/books/**/*.pdf

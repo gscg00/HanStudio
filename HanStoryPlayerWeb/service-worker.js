@@ -1,7 +1,8 @@
-const SHELL='hanstory-shell-v60';
+const SHELL='hanstory-shell-v61';
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
-  './assets/japanese_course.css','./assets/japanese_lesson.css','./src/app.js','./src/storage.js','./src/branding.js',
+  './assets/japanese_course.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
+  './src/app.js','./src/storage.js','./src/branding.js',
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
   './src/japanese_course_logic.js','./manifest.webmanifest','./library/library.json',
   './library/courses/Japanese/course.json','./library/courses/Japanese/units/hiragana-01.json',
