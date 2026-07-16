@@ -149,3 +149,41 @@ class TopicUIContractTests(unittest.TestCase):
         self.assertIn("mode==='slow'?.35:.9",app)
         self.assertIn("word-break:normal;overflow-wrap:break-word",css)
         self.assertIn("meaning:meanings[index]",data)
+
+    def test_story_lessons_show_resume_location(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/styles.css").read_text()
+        self.assertIn("state.book={entry,manifest,progress}",app)
+        self.assertIn("Continuar aquí · pista",app)
+        self.assertIn("current-lesson",app)
+        self.assertIn(".lesson.current-lesson",css)
+
+    def test_explanation_is_reordered_closable_and_has_no_romanization(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; html=(root/"index.html").read_text(); app=(root/"src/app.js").read_text(); css=(root/"assets/teaching.css").read_text()
+        self.assertIn("<summary>Explicación</summary>",html)
+        self.assertLess(html.index("Palabra por palabra"),html.index('<h3>Explicación</h3>'))
+        self.assertIn('id="close-teaching"',html)
+        self.assertIn("position:sticky",css)
+        self.assertNotIn("Mostrar romanización",html+app)
+        self.assertNotIn("show-romanization",app)
+        self.assertNotIn("v.romanization",app)
+
+    def test_five_second_skip_only_appears_for_long_audio(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; html=(root/"index.html").read_text(); app=(root/"src/app.js").read_text()
+        self.assertIn('data-action="back5" hidden',html)
+        self.assertIn('data-action="forward5" hidden',html)
+        self.assertIn("audio.duration>10",app)
+        self.assertIn("audio.currentTime-5",app)
+        self.assertIn("audio.currentTime+5",app)
+
+    def test_spanish_has_no_beginner_course_or_empty_language_card(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; courses=(root/"src/beginner_courses.js").read_text(); app=(root/"src/app.js").read_text()
+        self.assertNotIn("Spanish:{title:'Primeros pasos",courses)
+        self.assertIn("language!=='Spanish'||available.includes('Spanish')",app)
+        self.assertIn("[data-mode=\"beginner\"]",app)
+
+    def test_orphan_lesson_zero_is_hidden_when_numbered_lessons_exist(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text()
+        self.assertIn("hasNumberedLessons=allLessons.some",app)
+        self.assertIn("allLessons.filter(lesson=>Number(lesson.number)>0)",app)
+        self.assertIn("!hasNumberedLessons||Number(t.lesson)>0",app)
+        self.assertIn("number=>Number.isFinite(number)&&number>0",app)

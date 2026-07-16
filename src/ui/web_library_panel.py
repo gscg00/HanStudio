@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import subprocess
 import threading
 import tkinter as tk
@@ -7,7 +8,7 @@ from tkinter import messagebox, ttk
 
 from ..book_manager import Book
 from ..creative_engine import creative_runtime_connected, load_creative_runtime, test_creative_runtime
-from ..web_library import WEB_LIBRARY, build_manifest, publish_book, rebuild_library, remove_book, validate_book
+from ..web_library import WEB_LIBRARY, build_manifest, publish_book, published_books, rebuild_library, remove_book, update_published_book, validate_book
 from ..web_explanations import plan_explanations
 from ..web_topics import rebuild_topics
 
@@ -38,12 +39,56 @@ class WebLibraryPanel(ttk.Frame):
         for label, command in (("Validar paquete web", self.validate), ("Retirar", self.remove), ("Abrir carpeta publicada", self.open_folder), ("Reconstruir biblioteca desde carpetas", self.rebuild)):
             ttk.Button(buttons, text=label, command=command).pack(side="left", padx=(0, 6), pady=3)
         self.publish_button = ttk.Button(buttons, text="Publicar / actualizar", command=self.publish); self.publish_button.pack(side="left", padx=(0, 6), pady=3)
+        metadata = ttk.LabelFrame(self, text="Título y orden de los libros online", padding=8); metadata.pack(fill="x", pady=(0, 8))
+        ttk.Label(metadata, text="Libro publicado").grid(row=0, column=0, sticky="w")
+        self.published_choice = tk.StringVar(); self.published_choices: dict[str, dict] = {}
+        self.published_combo = ttk.Combobox(metadata, textvariable=self.published_choice, state="readonly", width=54)
+        self.published_combo.grid(row=0, column=1, columnspan=3, sticky="ew", padx=6); self.published_combo.bind("<<ComboboxSelected>>", self._load_published_selection)
+        ttk.Button(metadata, text="Actualizar lista", command=self.refresh_published_books).grid(row=0, column=4, padx=4)
+        self.public_title = tk.StringVar(); self.public_order = tk.StringVar(value="0")
+        ttk.Label(metadata, text="Título visible").grid(row=1, column=0, sticky="w", pady=(7, 0)); ttk.Entry(metadata, textvariable=self.public_title).grid(row=1, column=1, sticky="ew", padx=6, pady=(7, 0))
+        ttk.Label(metadata, text="Orden en su idioma").grid(row=1, column=2, sticky="w", padx=(10, 0), pady=(7, 0)); ttk.Spinbox(metadata, from_=0, to=999, textvariable=self.public_order, width=7).grid(row=1, column=3, sticky="w", padx=6, pady=(7, 0))
+        ttk.Button(metadata, text="Guardar título y orden", command=self.save_published_metadata).grid(row=1, column=4, padx=4, pady=(7, 0))
+        ttk.Label(metadata, text="El orden se aplica dentro de cada idioma. Usa 1, 2, 3…; 0 deja el libro sin posición fija.").grid(row=2, column=0, columnspan=5, sticky="w", pady=(6, 0))
+        metadata.columnconfigure(1, weight=1)
         self.report = tk.Text(self, wrap="word", height=24); self.report.pack(fill="both", expand=True)
+        self.refresh_published_books()
         self._show("Selecciona un libro en Biblioteca para preparar su publicación.\n\nLos archivos publicados en un sitio público podrán ser accesibles mediante internet. Publica únicamente contenido propio o contenido que tengas autorización para distribuir.")
 
     def set_book(self, book: Book) -> None:
         self.book = book; self.generate_explanations.set(False); self.refresh_engine_status()
         self._show(f"Libro seleccionado: {book.title} ({book.code})")
+
+    def refresh_published_books(self) -> None:
+        books = published_books(); self.published_choices = {}
+        labels = []
+        for book in books:
+            order = int(book.get("display_order") or 0); prefix = f"{order}. " if order else ""
+            label = f"{book.get('code', '')} · {book.get('target_language', '')} · {prefix}{book.get('title', '')}"
+            labels.append(label); self.published_choices[label] = book
+        self.published_combo.configure(values=labels)
+        if labels:
+            current_code = self.book.code if self.book else ""
+            selected = next((label for label in labels if self.published_choices[label].get("code") == current_code), labels[0])
+            self.published_choice.set(selected); self._load_published_selection()
+        else:
+            self.published_choice.set(""); self.public_title.set(""); self.public_order.set("0")
+
+    def _load_published_selection(self, _event=None) -> None:
+        book = self.published_choices.get(self.published_choice.get())
+        if not book: return
+        self.public_title.set(str(book.get("title", ""))); self.public_order.set(str(book.get("display_order") or 0))
+
+    def save_published_metadata(self) -> None:
+        book = self.published_choices.get(self.published_choice.get())
+        if not book: messagebox.showinfo("Libros online", "Todavía no hay un libro publicado para editar."); return
+        try:
+            order = int(self.public_order.get().strip() or "0")
+            entry = update_published_book(str(book.get("code", "")), self.public_title.get(), order)
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
+            messagebox.showerror("Libros online", str(exc)); return
+        self.refresh_published_books(); self._show(f"Título online actualizado: {entry['title']}\nOrden en {entry.get('target_language') or 'su idioma'}: {entry.get('display_order') or 'sin posición fija'}\n\nNo se copiaron audios ni se usaron tokens.")
+        messagebox.showinfo("Libros online", "El título y el orden se actualizaron correctamente.")
 
     def refresh_engine_status(self) -> None:
         if not self.book: return
@@ -112,7 +157,7 @@ class WebLibraryPanel(ttk.Frame):
         self.after(0, lambda: self._publish_finished(result))
 
     def _publish_finished(self, result) -> None:
-        self.publish_button.configure(state="normal"); self.version.set(result.version); self._show(result.text()); self._report_window("Resultado de publicación", result.text())
+        self.publish_button.configure(state="normal"); self.version.set(result.version); self._show(result.text()); self._report_window("Resultado de publicación", result.text()); self.refresh_published_books()
         if not result.ok: messagebox.showerror("Biblioteca web", "Publicación fallida: los archivos no fueron copiados.")
 
     def _publish_failed(self, detail: str) -> None:
@@ -133,7 +178,7 @@ class WebLibraryPanel(ttk.Frame):
         except OSError: self._show(f"Carpeta publicada: {destination}")
 
     def rebuild(self) -> None:
-        result = rebuild_library(); self._show(result.text())
+        result = rebuild_library(); self._show(result.text()); self.refresh_published_books()
         if not result.ok: messagebox.showerror("Biblioteca web", "No se pudo reconstruir library.json.")
 
     def rebuild_topics(self) -> None:

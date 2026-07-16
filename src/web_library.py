@@ -19,6 +19,7 @@ SAFE_CODE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 SECRET_PATTERNS = (re.compile(r"sk-[A-Za-z0-9_-]{16,}"), re.compile(r"api[_-]?key\s*[:=]", re.I))
 PUBLIC_FILES = {"Audio_Master.csv", "Podcast_Master.csv", "Audios_Tecnico.txt", "Podcast_Tecnico.txt", "book.html"}
 AUDIO_EXTENSIONS = {".mp3", ".m4a", ".wav", ".aac", ".ogg"}
+TRACK_ID_PATTERN = re.compile(r"(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9]*\d)(?![A-Za-z0-9])", re.I)
 
 
 def utc_now() -> str:
@@ -27,6 +28,20 @@ def utc_now() -> str:
 
 def natural_key(value: str) -> list[object]:
     return [int(part) if part.isdigit() else part.casefold() for part in re.split(r"(\d+)", value)]
+
+
+def _library_sort_key(entry: dict) -> tuple:
+    """Keep each language in its chosen reading order."""
+    try:
+        position = int(entry.get("display_order", 0))
+    except (TypeError, ValueError):
+        position = 0
+    return (
+        str(entry.get("target_language", "")).casefold(),
+        position if position > 0 else 1_000_000,
+        natural_key(str(entry.get("title", ""))),
+        natural_key(str(entry.get("code", ""))),
+    )
 
 
 def bump_version(version: str, part: str = "patch") -> str:
@@ -84,7 +99,7 @@ def _technical_ids(path: Path) -> list[str]:
     result = []
     for line in path.read_text(encoding="utf-8-sig").splitlines():
         if line.lstrip().startswith("#"): continue
-        match = re.search(r"(?<![A-Za-z0-9])((?:POD[A-Za-z]*|[A-Za-z]?)[0-9]+)(?![A-Za-z0-9])", line, re.I)
+        match = TRACK_ID_PATTERN.search(line)
         if match: result.append(match.group(1))
     return result
 
@@ -97,7 +112,7 @@ def _technical_layout(path: Path) -> dict[str, tuple[int, int]]:
         heading = re.search(r"(?i)^\s*#{2,4}\s*Lecci[oó]n\s+(\d+)", line)
         if heading: lesson = int(heading.group(1)); sequence = 0; continue
         if not lesson or line.lstrip().startswith("#"): continue
-        for audio_id in re.findall(r"(?<![A-Za-z0-9])((?:POD[A-Za-z]*|[A-Za-z]?)[0-9]+)(?![A-Za-z0-9])", line, re.I):
+        for audio_id in TRACK_ID_PATTERN.findall(line):
             sequence += 1; result.setdefault(audio_id.casefold(), (lesson, sequence))
     return result
 
@@ -196,6 +211,18 @@ def publish_book(book: Book, version: str = "1.0.0", bump: str | None = None, *,
     destination = WEB_LIBRARY / "books" / book.code
     try:
         manifest, audio_files, warnings = build_manifest(book, version); report.warnings = warnings
+        previous_manifest_path = destination / "hanstory_manifest.json"
+        if previous_manifest_path.exists():
+            try:
+                previous_manifest = json.loads(previous_manifest_path.read_text(encoding="utf-8"))
+                for key in ("display_order",):
+                    if key in previous_manifest: manifest[key] = previous_manifest[key]
+                # A title edited in Biblioteca web is an intentional public override.
+                if previous_manifest.get("public_title"):
+                    manifest["public_title"] = previous_manifest["public_title"]
+                    manifest["title"] = previous_manifest["public_title"]
+            except (OSError, json.JSONDecodeError):
+                pass
         from .web_explanations import cache_path, generate_explanations
         if generate_web_explanations:
             _, explanation_report = generate_explanations(book, manifest, regenerate=regenerate_explanations, lesson=explanation_lesson, selected_ids=explanation_ids, version=version)
@@ -221,7 +248,7 @@ def publish_book(book: Book, version: str = "1.0.0", bump: str | None = None, *,
         manifest["checksums"] = {rel: hashlib.sha256((destination / rel).read_bytes()).hexdigest() for rel in sorted(keep - {"hanstory_manifest.json"})}
         manifest_path = destination / "hanstory_manifest.json"; manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         entry = _library_entry(manifest, book.code)
-        index["books"] = sorted([x for x in index["books"] if x.get("code") != book.code] + [entry], key=lambda x: natural_key(x["code"])); index["updated_at"] = utc_now()
+        index["books"] = sorted([x for x in index["books"] if x.get("code") != book.code] + [entry], key=_library_sort_key); index["updated_at"] = utc_now()
         index_path.parent.mkdir(parents=True, exist_ok=True); index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         from .web_topics import rebuild_topics
         rebuild_topics(WEB_LIBRARY)
@@ -239,7 +266,43 @@ def publish_book(book: Book, version: str = "1.0.0", bump: str | None = None, *,
 
 
 def _library_entry(manifest: dict, code: str) -> dict:
-    return {"code": code, "title": manifest.get("title", code), "type": "Libro", "series": "HanStory", "target_language": manifest.get("target_language", ""), "explanation_language": manifest.get("explanation_language", ""), "version": manifest.get("version", "1.0.0"), "cover": f"books/{code}/cover.jpg" if manifest.get("cover") else "", "manifest": f"books/{code}/hanstory_manifest.json", "updated_at": manifest.get("updated_at", utc_now())}
+    return {"code": code, "title": manifest.get("public_title") or manifest.get("title", code), "display_order": manifest.get("display_order", 0), "type": "Libro", "series": "HanStory", "target_language": manifest.get("target_language", ""), "explanation_language": manifest.get("explanation_language", ""), "version": manifest.get("version", "1.0.0"), "cover": f"books/{code}/cover.jpg" if manifest.get("cover") else "", "manifest": f"books/{code}/hanstory_manifest.json", "updated_at": manifest.get("updated_at", utc_now())}
+
+
+def published_books() -> list[dict]:
+    """Return the real published catalog for Studio's metadata editor."""
+    index_path = WEB_LIBRARY / "library.json"
+    if not index_path.exists(): return []
+    try:
+        return sorted(json.loads(index_path.read_text(encoding="utf-8")).get("books", []), key=_library_sort_key)
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def update_published_book(code: str, title: str, display_order: int = 0) -> dict:
+    """Edit public presentation metadata without copying or changing audio."""
+    title = title.strip()
+    if not SAFE_CODE.fullmatch(code): raise ValueError("El código del libro no es válido.")
+    if not title: raise ValueError("El título visible no puede estar vacío.")
+    if display_order < 0: raise ValueError("El orden debe ser cero o un número positivo.")
+    manifest_path = WEB_LIBRARY / "books" / code / "hanstory_manifest.json"
+    if not manifest_path.is_file(): raise FileNotFoundError("El libro publicado no tiene hanstory_manifest.json.")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest.setdefault("source_title", manifest.get("title", code))
+    manifest["public_title"] = title
+    manifest["title"] = title
+    manifest["display_order"] = display_order
+    manifest["updated_at"] = utc_now()
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    index_path = WEB_LIBRARY / "library.json"
+    index = json.loads(index_path.read_text(encoding="utf-8")) if index_path.exists() else {"schema_version": 1, "books": []}
+    entry = _library_entry(manifest, code)
+    index["books"] = sorted([book for book in index.get("books", []) if book.get("code") != code] + [entry], key=_library_sort_key)
+    index["updated_at"] = utc_now()
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+    index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return entry
 
 
 def rebuild_library() -> PublishReport:
@@ -254,7 +317,7 @@ def rebuild_library() -> PublishReport:
             manifest = json.loads(path.read_text(encoding="utf-8")); code = str(manifest.get("project_code") or path.parent.name)
             if SAFE_CODE.fullmatch(code): books.append(_library_entry(manifest, code))
             else: report.errors.append(f"Código inválido en {path}")
-        data = {"schema_version": 1, "updated_at": utc_now(), "books": sorted(books, key=lambda x: natural_key(x["code"]))}
+        data = {"schema_version": 1, "updated_at": utc_now(), "books": sorted(books, key=_library_sort_key)}
         index_path.parent.mkdir(parents=True, exist_ok=True); index_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         report.library_updated = True; report.books_after = len(books); report.folder_created = (WEB_LIBRARY / "books").is_dir(); report.files = [str(p.relative_to(WEB_LIBRARY)) for p in (WEB_LIBRARY / "books").glob("*/hanstory_manifest.json")]; report.ok = not report.errors
     except (OSError, json.JSONDecodeError) as exc: report.errors.append(str(exc)); report.ok = False

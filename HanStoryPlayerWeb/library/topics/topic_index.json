@@ -1,7 +1,231 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-15T02:26:15Z",
+  "updated_at": "2026-07-16T04:51:46Z",
   "languages": {
+    "French": {
+      "topics": [
+        {
+          "id": "fr_requests",
+          "title": "Ayuda / Peticiones",
+          "description": "Pedir ayuda o solicitar una acción cortésmente.",
+          "patterns": [],
+          "track_count": 5,
+          "manifest": "topics/French/fr_requests.json"
+        },
+        {
+          "id": "fr_food",
+          "title": "Comida y bebida",
+          "description": "Vocabulario y frases para comer, beber y pedir alimentos.",
+          "patterns": [],
+          "track_count": 10,
+          "manifest": "topics/French/fr_food.json"
+        },
+        {
+          "id": "fr_contrast",
+          "title": "Comparación / Contraste",
+          "description": "Contrastar ideas y añadir matices.",
+          "patterns": [],
+          "track_count": 18,
+          "manifest": "topics/French/fr_contrast.json"
+        },
+        {
+          "id": "fr_shopping",
+          "title": "Compras / Mercado",
+          "description": "Preguntar precios, comprar y pedir productos.",
+          "patterns": [],
+          "track_count": 3,
+          "manifest": "topics/French/fr_shopping.json"
+        },
+        {
+          "id": "fr_directions",
+          "title": "Direcciones",
+          "description": "Moverse y explicar hacia dónde ir.",
+          "patterns": [],
+          "track_count": 5,
+          "manifest": "topics/French/fr_directions.json"
+        },
+        {
+          "id": "fr_existence",
+          "title": "Existencia",
+          "description": "Decir que algo existe, está o no está.",
+          "patterns": [],
+          "track_count": 6,
+          "manifest": "topics/French/fr_existence.json"
+        },
+        {
+          "id": "fr_experience",
+          "title": "Experiencia",
+          "description": "Hablar de experiencias previas.",
+          "patterns": [],
+          "track_count": 1,
+          "manifest": "topics/French/fr_experience.json"
+        },
+        {
+          "id": "fr_future",
+          "title": "Futuro / Intención",
+          "description": "Planes, promesas e intenciones.",
+          "patterns": [],
+          "track_count": 20,
+          "manifest": "topics/French/fr_future.json"
+        },
+        {
+          "id": "fr_places",
+          "title": "Lugares",
+          "description": "Ubicar personas, objetos y destinos.",
+          "patterns": [],
+          "track_count": 16,
+          "manifest": "topics/French/fr_places.json"
+        },
+        {
+          "id": "fr_negation",
+          "title": "Negación",
+          "description": "Negar acciones, estados o posibilidades.",
+          "patterns": [],
+          "track_count": 22,
+          "manifest": "topics/French/fr_negation.json"
+        },
+        {
+          "id": "fr_obligation",
+          "title": "Obligación / Tener que",
+          "description": "Frases para expresar que alguien tiene que hacer algo.",
+          "patterns": [],
+          "track_count": 7,
+          "manifest": "topics/French/fr_obligation.json"
+        },
+        {
+          "id": "fr_permission",
+          "title": "Permiso / Posibilidad",
+          "description": "Permiso, capacidad y posibilidad.",
+          "patterns": [],
+          "track_count": 8,
+          "manifest": "topics/French/fr_permission.json"
+        },
+        {
+          "id": "fr_wanting",
+          "title": "Querer",
+          "description": "Expresar deseos y cosas que se quieren hacer.",
+          "patterns": [],
+          "track_count": 7,
+          "manifest": "topics/French/fr_wanting.json"
+        },
+        {
+          "id": "fr_past",
+          "title": "Tiempo pasado",
+          "description": "Hablar de acciones y estados pasados.",
+          "patterns": [],
+          "track_count": 19,
+          "manifest": "topics/French/fr_past.json"
+        }
+      ]
+    },
+    "German": {
+      "topics": [
+        {
+          "id": "ge_requests",
+          "title": "Ayuda / Peticiones",
+          "description": "Pedir ayuda o solicitar una acción cortésmente.",
+          "patterns": [],
+          "track_count": 6,
+          "manifest": "topics/German/ge_requests.json"
+        },
+        {
+          "id": "ge_food",
+          "title": "Comida y bebida",
+          "description": "Vocabulario y frases para comer, beber y pedir alimentos.",
+          "patterns": [],
+          "track_count": 2,
+          "manifest": "topics/German/ge_food.json"
+        },
+        {
+          "id": "ge_contrast",
+          "title": "Comparación / Contraste",
+          "description": "Contrastar ideas y añadir matices.",
+          "patterns": [],
+          "track_count": 6,
+          "manifest": "topics/German/ge_contrast.json"
+        },
+        {
+          "id": "ge_shopping",
+          "title": "Compras / Mercado",
+          "description": "Preguntar precios, comprar y pedir productos.",
+          "patterns": [],
+          "track_count": 5,
+          "manifest": "topics/German/ge_shopping.json"
+        },
+        {
+          "id": "ge_directions",
+          "title": "Direcciones",
+          "description": "Moverse y explicar hacia dónde ir.",
+          "patterns": [],
+          "track_count": 7,
+          "manifest": "topics/German/ge_directions.json"
+        },
+        {
+          "id": "ge_existence",
+          "title": "Existencia",
+          "description": "Decir que algo existe, está o no está.",
+          "patterns": [],
+          "track_count": 4,
+          "manifest": "topics/German/ge_existence.json"
+        },
+        {
+          "id": "ge_future",
+          "title": "Futuro / Intención",
+          "description": "Planes, promesas e intenciones.",
+          "patterns": [],
+          "track_count": 4,
+          "manifest": "topics/German/ge_future.json"
+        },
+        {
+          "id": "ge_places",
+          "title": "Lugares",
+          "description": "Ubicar personas, objetos y destinos.",
+          "patterns": [],
+          "track_count": 14,
+          "manifest": "topics/German/ge_places.json"
+        },
+        {
+          "id": "ge_negation",
+          "title": "Negación",
+          "description": "Negar acciones, estados o posibilidades.",
+          "patterns": [],
+          "track_count": 7,
+          "manifest": "topics/German/ge_negation.json"
+        },
+        {
+          "id": "ge_obligation",
+          "title": "Obligación / Tener que",
+          "description": "Frases para expresar que alguien tiene que hacer algo.",
+          "patterns": [],
+          "track_count": 6,
+          "manifest": "topics/German/ge_obligation.json"
+        },
+        {
+          "id": "ge_permission",
+          "title": "Permiso / Posibilidad",
+          "description": "Permiso, capacidad y posibilidad.",
+          "patterns": [],
+          "track_count": 9,
+          "manifest": "topics/German/ge_permission.json"
+        },
+        {
+          "id": "ge_wanting",
+          "title": "Querer",
+          "description": "Expresar deseos y cosas que se quieren hacer.",
+          "patterns": [],
+          "track_count": 5,
+          "manifest": "topics/German/ge_wanting.json"
+        },
+        {
+          "id": "ge_past",
+          "title": "Tiempo pasado",
+          "description": "Hablar de acciones y estados pasados.",
+          "patterns": [],
+          "track_count": 4,
+          "manifest": "topics/German/ge_past.json"
+        }
+      ]
+    },
     "Korean": {
       "topics": [
         {
@@ -11,7 +235,7 @@
           "patterns": [
             "-아/어 주세요"
           ],
-          "track_count": 7,
+          "track_count": 17,
           "manifest": "topics/Korean/ko_requests.json"
         },
         {
@@ -22,7 +246,7 @@
             "먹다",
             "마시다"
           ],
-          "track_count": 22,
+          "track_count": 46,
           "manifest": "topics/Korean/ko_food.json"
         },
         {
@@ -34,7 +258,7 @@
             "그런데",
             "그래도"
           ],
-          "track_count": 45,
+          "track_count": 56,
           "manifest": "topics/Korean/ko_contrast.json"
         },
         {
@@ -45,7 +269,7 @@
             "얼마예요",
             "주세요"
           ],
-          "track_count": 12,
+          "track_count": 29,
           "manifest": "topics/Korean/ko_shopping.json"
         },
         {
@@ -58,7 +282,7 @@
             "오른쪽",
             "왼쪽"
           ],
-          "track_count": 43,
+          "track_count": 55,
           "manifest": "topics/Korean/ko_directions.json"
         },
         {
@@ -69,7 +293,7 @@
             "있어요",
             "없어요"
           ],
-          "track_count": 58,
+          "track_count": 79,
           "manifest": "topics/Korean/ko_existence.json"
         },
         {
@@ -90,7 +314,7 @@
             "-(으)ㄹ 거예요",
             "-(으)ㄹ게요"
           ],
-          "track_count": 28,
+          "track_count": 42,
           "manifest": "topics/Korean/ko_future.json"
         },
         {
@@ -103,7 +327,7 @@
             "저기",
             "어디"
           ],
-          "track_count": 65,
+          "track_count": 106,
           "manifest": "topics/Korean/ko_places.json"
         },
         {
@@ -115,7 +339,7 @@
             "못",
             "-지 않아요"
           ],
-          "track_count": 74,
+          "track_count": 85,
           "manifest": "topics/Korean/ko_negation.json"
         },
         {
@@ -127,7 +351,7 @@
             "해야 해요",
             "해야 한다"
           ],
-          "track_count": 28,
+          "track_count": 30,
           "manifest": "topics/Korean/ko_obligation.json"
         },
         {
@@ -139,7 +363,7 @@
             "-(으)ㄹ 수 있어요",
             "못"
           ],
-          "track_count": 22,
+          "track_count": 31,
           "manifest": "topics/Korean/ko_permission.json"
         },
         {
@@ -149,7 +373,7 @@
           "patterns": [
             "-고 싶어요"
           ],
-          "track_count": 12,
+          "track_count": 20,
           "manifest": "topics/Korean/ko_wanting.json"
         },
         {
@@ -160,7 +384,7 @@
             "-았/었어요",
             "했어요"
           ],
-          "track_count": 50,
+          "track_count": 57,
           "manifest": "topics/Korean/ko_past.json"
         }
       ]

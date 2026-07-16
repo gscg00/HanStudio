@@ -59,33 +59,6 @@ Z|zee|zi (EE. UU.)|zoo`)}]},
 사|사|sa|ㅅ + ㅏ
 자|자|ya/cha suave|ㅈ + ㅏ
 한|한|han|ㅎ + ㅏ + ㄴ`)}]},
-  Spanish:{title:'Primeros pasos con el español',intro:'Repasa el nombre de las letras y sus sonidos más frecuentes.',groups:[{title:'Alfabeto español',items:latin(`A|a|a|ala
-B|be|b|barco
-C|ce|k ante a/o/u; s ante e/i|casa
-D|de|d|dado
-E|e|e|elefante
-F|efe|f|faro
-G|ge|g; j fuerte ante e/i|gato
-H|hache|no suena|hola
-I|i|i|isla
-J|jota|j fuerte|jardín
-K|ka|k|kilo
-L|ele|l|luna
-M|eme|m|mano
-N|ene|n|nube
-Ñ|eñe|ñ|niño
-O|o|o|oso
-P|pe|p|pan
-Q|cu|k|queso
-R|erre|r suave o vibrante|rosa
-S|ese|s|sol
-T|te|t|taza
-U|u|u|uva
-V|uve|suena como b en español|vaso
-W|doble u|depende de la palabra|wifi
-X|equis|ks|taxi
-Y|ye|y o i al final|yo
-Z|zeta|s en América; th en España|zapato`)}]},
   Russian:{title:'Primeros pasos con el cirílico',intro:'Muchas letras se parecen a las latinas, pero algunas representan sonidos distintos.',groups:[{title:'Alfabeto ruso',items:rows(`А|а|a|мама
 Б|бэ|b|банк
 В|вэ|v|вода
@@ -241,7 +214,52 @@ Z|tsett|tset|Zeit
 ろ|ろ|ro suave|ろく
 わ|わ|wa|わたし
 を|を|o; partícula de objeto|みずを
-ん|ん|n|ほん`)}]},
+ん|ん|n|ほん`)},{title:'Katakana esencial',items:rows(`ア|ア|a|アメリカ
+イ|イ|i|イタリア
+ウ|ウ|u suave|ウール
+エ|エ|e|エレベーター
+オ|オ|o|オレンジ
+カ|カ|ka|カメラ
+キ|キ|ki|キロ
+ク|ク|ku|クラス
+ケ|ケ|ke|ケーキ
+コ|コ|ko|コーヒー
+サ|サ|sa|サラダ
+シ|シ|shi|シャツ
+ス|ス|su suave|スーパー
+セ|セ|se|セーター
+ソ|ソ|so|ソファ
+タ|タ|ta|タクシー
+チ|チ|chi|チーズ
+ツ|ツ|tsu|ツアー
+テ|テ|te|テスト
+ト|ト|to|トイレ
+ナ|ナ|na|ナイフ
+ニ|ニ|ni|ニュース
+ヌ|ヌ|nu|カヌー
+ネ|ネ|ne|ネクタイ
+ノ|ノ|no|ノート
+ハ|ハ|ha|ハンバーガー
+ヒ|ヒ|hi|コーヒー
+フ|フ|fu suave|フォーク
+ヘ|ヘ|he|ヘルメット
+ホ|ホ|ho|ホテル
+マ|マ|ma|マスク
+ミ|ミ|mi|ミルク
+ム|ム|mu|ゲーム
+メ|メ|me|メール
+モ|モ|mo|モデル
+ヤ|ヤ|ya|タイヤ
+ユ|ユ|yu|ユーロ
+ヨ|ヨ|yo|ヨーグルト
+ラ|ラ|ra suave|ラジオ
+リ|リ|ri suave|リスト
+ル|ル|ru suave|ルール
+レ|レ|re suave|レストラン
+ロ|ロ|ro suave|ロシア
+ワ|ワ|wa|ワイン
+ヲ|ヲ|o; uso poco frecuente|ヲ
+ン|ン|n|パン`)}]},
   Chinese:{title:'Primeros pasos con el chino mandarín',intro:'El chino no tiene alfabeto. Comienza con pinyin y sus cuatro tonos; cambiar el tono puede cambiar el significado.',groups:[{title:'Los cuatro tonos',items:rows(`ā|mā|tono 1: alto y plano|mā 妈, mamá
 á|má|tono 2: sube, como una pregunta|má 麻, cáñamo
 ǎ|mǎ|tono 3: baja y vuelve a subir|mǎ 马, caballo

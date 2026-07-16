@@ -73,16 +73,22 @@ def phrase_tracks(manifest: dict) -> list[dict]:
     return [t for t in manifest.get("tracks", []) if t.get("type") == "phrase" and str(t.get("text", "")).strip()]
 
 
+def _explanation_complete(payload: dict | None, track: dict) -> bool:
+    """Only reuse an entry when every learner-facing breakdown row is usable."""
+    return bool(payload) and not _validate(payload, track)
+
+
 def plan_explanations(book: Book, manifest: dict, *, regenerate: bool = False, lesson: int | None = None, selected_ids: set[str] | None = None) -> tuple[ExplanationPlan, dict]:
     config = load_project_config(book); data = load_explanations(book); items = data.get("items", {}); tracks = phrase_tracks(manifest)
     plan = ExplanationPlan(total=len(tracks), model=config.creative_model_name)
     for track in tracks:
         old = items.get(str(track["id"])); digest = source_hash(track, manifest.get("target_language", ""), manifest.get("explanation_language", "")); eligible = (lesson is None or track.get("lesson") == lesson) and (not selected_ids or str(track["id"]) in selected_ids)
         if old: plan.existing += 1
-        if old and old.get("source_hash") == digest and not regenerate: plan.reused += 1
+        reusable = old and old.get("source_hash") == digest and _explanation_complete(old, track)
+        if reusable and not regenerate: plan.reused += 1
         elif old: plan.outdated += 1
         else: plan.missing += 1
-        if eligible and (regenerate or not old or old.get("source_hash") != digest):
+        if eligible and (regenerate or not reusable):
             plan.selected += 1; plan.estimated_characters += len(str(track.get("text", ""))) + len(str(track.get("translation", ""))) + 900
     plan.estimated_tokens = max(1, plan.estimated_characters // 4) if plan.selected else 0
     return plan, data
@@ -96,7 +102,11 @@ def _validate(payload: dict, track: dict) -> list[str]:
         if phrase in combined: errors.append(f"Frase genérica prohibida: {phrase}")
     if not str(payload.get("natural_meaning_es", "")).strip(): errors.append("Falta natural_meaning_es.")
     if not str(payload.get("explanation_es", "")).strip(): errors.append("Falta explanation_es.")
-    if len(str(track.get("text", "")).split()) > 2 and not payload.get("breakdown"): errors.append("El desglose está vacío.")
+    breakdown = payload.get("breakdown") or []
+    if len(str(track.get("text", "")).split()) > 2 and not breakdown: errors.append("El desglose está vacío.")
+    for index, item in enumerate(breakdown, 1):
+        if not str(item.get("text", "")).strip(): errors.append(f"Falta el texto original en palabra por palabra #{index}.")
+        if not str(item.get("meaning_es", "")).strip(): errors.append(f"Falta el significado en palabra por palabra #{index}.")
     if payload.get("text") and payload["text"] != track.get("text"): errors.append("La respuesta cambió el texto original.")
     return errors
 
@@ -116,10 +126,10 @@ def generate_explanations(book: Book, manifest: dict, *, regenerate: bool = Fals
     if not api_key: raise ValueError("Falta OPENAI_API_KEY.")
     if not config.creative_model_name: raise ValueError("Selecciona un modelo de OpenAI.")
     plan, data = plan_explanations(book, manifest, regenerate=regenerate, lesson=lesson, selected_ids=selected_ids); items = data.setdefault("items", {}); engine = get_engine("OpenAI"); report = ExplanationReport(model=config.creative_model_name, estimated_tokens=plan.estimated_tokens)
-    instructions = f"Eres un profesor experto de {manifest.get('target_language','idiomas')} para hablantes de {manifest.get('explanation_language','Spanish')}. Devuelve exclusivamente JSON válido. Explica de forma clara, específica, útil y natural. No inventes contenido fuera de la frase. No uses estas expresiones: {', '.join(FORBIDDEN)}. Si hay duda, marca requires_review=true."
+    instructions = f"Eres un profesor experto de {manifest.get('target_language','idiomas')} para hablantes de {manifest.get('explanation_language','Spanish')}. Devuelve exclusivamente JSON válido. Explica de forma clara, específica, útil y natural. No inventes contenido fuera de la frase. En breakdown devuelve objetos con text (palabra o grupo copiado literalmente de la frase), meaning_es (significado en español), function_es (función breve) y romanization (siempre vacío). Nunca dejes text ni meaning_es vacíos. No uses estas expresiones: {', '.join(FORBIDDEN)}. Si hay duda, marca requires_review=true."
     for track in phrase_tracks(manifest):
         track_id = str(track["id"]); digest = source_hash(track, manifest.get("target_language", ""), manifest.get("explanation_language", "")); old = items.get(track_id); eligible = (lesson is None or track.get("lesson") == lesson) and (not selected_ids or track_id in selected_ids)
-        if not eligible or (old and old.get("source_hash") == digest and not regenerate): report.reused += bool(old); continue
+        if not eligible or (old and old.get("source_hash") == digest and _explanation_complete(old, track) and not regenerate): report.reused += bool(old); continue
         prompt = json.dumps({"task": "Explica únicamente esta frase", "required_keys": ["id", "natural_meaning_es", "literal_note_es", "explanation_es", "breakdown", "grammar_notes", "usage_notes_es", "listening_tip_es", "requires_review"], "track": {k: track.get(k) for k in ("id", "speaker", "lesson", "sequence", "text", "translation")}}, ensure_ascii=False)
         try:
             payload = _normalize_payload(engine.generate_structured_json(api_key=api_key, model_name=config.creative_model_name, instructions=instructions, prompt=prompt, temperature=0.2, max_tokens=1800))

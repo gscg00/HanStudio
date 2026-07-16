@@ -33,6 +33,10 @@ class WebPublicationTests(unittest.TestCase):
             manifest,files,warnings=web.build_manifest(self.book)
         self.assertEqual([t["id"] for t in manifest["tracks"]],["L2","L10"]); self.assertEqual([t["lesson"] for t in manifest["tracks"]],[29,30]); self.assertEqual([t["sequence"] for t in manifest["tracks"]],[1,1]); self.assertEqual(len(files),2); self.assertFalse(warnings); self.assertIn("L29-01",manifest["tracks"][0]["audio_path"])
         self.assertEqual(manifest["total_lessons"],2)
+    def test_compound_french_ids_are_assigned_to_lessons(self):
+        path=self.root/"French_Tecnico.txt"
+        path.write_text("## Distribución por carpeta/lección\n\n### Lección 01\nFrases: HFA1011, HFA1012\nPalabras importantes: HFA1V001, HFA1V002\n",encoding="utf-8")
+        self.assertEqual(web._technical_layout(path),{"hfa1011":(1,1),"hfa1012":(1,2),"hfa1v001":(1,3),"hfa1v002":(1,4)})
     def test_missing_files_are_reported(self):
         (self.book.folder/"output/L2.mp3").unlink()
         (self.book.folder/"output/Lecciones/Leccion_29/L29-01 - L2 - Aru - 둘.mp3").unlink()
@@ -53,6 +57,20 @@ class WebPublicationTests(unittest.TestCase):
         with patch.object(web,"WEB_LIBRARY",library), patch.object(web,"MASTER_AUDIO_DIR",self.root/"master"):
             self.assertTrue(web.publish_book(self.book).ok); (library/"library.json").write_text('{"schema_version":1,"books":[]}'); report=web.rebuild_library()
         self.assertTrue(report.ok); self.assertEqual(json.loads((library/"library.json").read_text())["books"][0]["code"],"HS-TEST")
+    def test_edit_public_title_and_order_survives_rebuild(self):
+        library=self.root/"web/library"
+        with patch.object(web,"WEB_LIBRARY",library), patch.object(web,"MASTER_AUDIO_DIR",self.root/"master"):
+            self.assertTrue(web.publish_book(self.book).ok)
+            entry=web.update_published_book("HS-TEST","Libro 1 — El despertar",1)
+            self.assertEqual((entry["title"],entry["display_order"]),("Libro 1 — El despertar",1))
+            manifest=json.loads((library/"books/HS-TEST/hanstory_manifest.json").read_text())
+            self.assertEqual((manifest["title"],manifest["display_order"]),("Libro 1 — El despertar",1))
+            self.assertTrue(web.rebuild_library().ok)
+            rebuilt=json.loads((library/"library.json").read_text())["books"][0]
+            self.assertEqual((rebuilt["title"],rebuilt["display_order"]),("Libro 1 — El despertar",1))
+    def test_public_order_sorts_inside_each_language(self):
+        entries=[{"code":"EN-2","title":"Second","target_language":"English","display_order":2},{"code":"KO-1","title":"Primero","target_language":"Korean","display_order":1},{"code":"EN-1","title":"First","target_language":"English","display_order":1}]
+        self.assertEqual([item["code"] for item in sorted(entries,key=web._library_sort_key)],["EN-1","EN-2","KO-1"])
     def test_duplicate_ids_fail(self):
         with (self.book.folder/"Audio_Master.csv").open("a") as f: f.write("L2,phrase,Aru,x,y\n")
         with patch.object(web,"MASTER_AUDIO_DIR",self.root/"master"): report=web.validate_book(self.book)

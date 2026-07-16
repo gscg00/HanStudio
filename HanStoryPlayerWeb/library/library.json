@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-15T02:26:15Z",
+  "updated_at": "2026-07-16T04:51:46Z",
   "books": [
     {
       "code": "HE-B1",
-      "title": "A New Beginning",
+      "title": "1-A New Beginning",
+      "display_order": 1,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "English",
@@ -12,11 +13,12 @@
       "version": "1.2.0",
       "cover": "",
       "manifest": "books/HE-B1/hanstory_manifest.json",
-      "updated_at": "2026-07-15T00:16:38Z"
+      "updated_at": "2026-07-16T02:50:28Z"
     },
     {
       "code": "HE-B2",
-      "title": "Everyday Life",
+      "title": "2-Everyday Life",
+      "display_order": 2,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "English",
@@ -24,11 +26,12 @@
       "version": "1.1.0",
       "cover": "",
       "manifest": "books/HE-B2/hanstory_manifest.json",
-      "updated_at": "2026-07-15T01:12:15Z"
+      "updated_at": "2026-07-16T02:50:47Z"
     },
     {
       "code": "HE-Bridge",
-      "title": "Real English",
+      "title": "3-Real English",
+      "display_order": 3,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "English",
@@ -36,11 +39,77 @@
       "version": "1.2.0",
       "cover": "",
       "manifest": "books/HE-Bridge/hanstory_manifest.json",
-      "updated_at": "2026-07-15T01:42:57Z"
+      "updated_at": "2026-07-16T02:50:54Z"
+    },
+    {
+      "code": "HF-A1",
+      "title": "Fondations A1",
+      "display_order": 1,
+      "type": "Libro",
+      "series": "HanStory",
+      "target_language": "French",
+      "explanation_language": "Spanish",
+      "version": "1.0.0",
+      "cover": "",
+      "manifest": "books/HF-A1/hanstory_manifest.json",
+      "updated_at": "2026-07-16T04:06:00Z"
+    },
+    {
+      "code": "HF-A2",
+      "title": "Français quotidien A2",
+      "display_order": 0,
+      "type": "Libro",
+      "series": "HanStory",
+      "target_language": "French",
+      "explanation_language": "Spanish",
+      "version": "1.0.0",
+      "cover": "",
+      "manifest": "books/HF-A2/hanstory_manifest.json",
+      "updated_at": "2026-07-16T04:12:47Z"
+    },
+    {
+      "code": "HG-A1",
+      "title": "HanGerman 1 — Erste Schritte A1",
+      "display_order": 0,
+      "type": "Libro",
+      "series": "HanStory",
+      "target_language": "German",
+      "explanation_language": "Spanish",
+      "version": "1.1.0",
+      "cover": "",
+      "manifest": "books/HG-A1/hanstory_manifest.json",
+      "updated_at": "2026-07-16T04:38:14Z"
+    },
+    {
+      "code": "L01",
+      "title": "Libro 1: El Despertar",
+      "display_order": 0,
+      "type": "Libro",
+      "series": "HanStory",
+      "target_language": "Korean",
+      "explanation_language": "Spanish",
+      "version": "1.4.0",
+      "cover": "",
+      "manifest": "books/L01/hanstory_manifest.json",
+      "updated_at": "2026-07-16T03:11:22Z"
+    },
+    {
+      "code": "HS-B02",
+      "title": "Libro 2: Un Nuevo Hogar",
+      "display_order": 0,
+      "type": "Libro",
+      "series": "HanStory",
+      "target_language": "Korean",
+      "explanation_language": "Spanish",
+      "version": "1.3.0",
+      "cover": "",
+      "manifest": "books/HS-B02/hanstory_manifest.json",
+      "updated_at": "2026-07-16T01:52:02Z"
     },
     {
       "code": "HS-B03",
       "title": "Libro 3- Más allá de la aldea",
+      "display_order": 0,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "Korean",
@@ -53,6 +122,7 @@
     {
       "code": "HS-B04",
       "title": "Libro 4 — La Ciudad",
+      "display_order": 0,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "Korean",
@@ -65,6 +135,7 @@
     {
       "code": "HS-VARIETY-S01E01",
       "title": "수상한 하루 — Episodio 1: El Invitado Sospechoso",
+      "display_order": 0,
       "type": "Libro",
       "series": "HanStory",
       "target_language": "Korean",

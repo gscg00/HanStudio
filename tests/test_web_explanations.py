@@ -21,7 +21,7 @@ class WebExplanationTests(unittest.TestCase):
     def test_hash_ignores_audio_path_but_changes_with_text(self):
         a = explanations.source_hash(self.manifest["tracks"][0], "Korean", "Spanish"); self.manifest["tracks"][0]["audio_path"]="new.mp3"; self.assertEqual(a, explanations.source_hash(self.manifest["tracks"][0], "Korean", "Spanish")); self.manifest["tracks"][0]["text"] += "!"; self.assertNotEqual(a, explanations.source_hash(self.manifest["tracks"][0], "Korean", "Spanish"))
     def test_unchanged_explanation_is_reused(self):
-        track=self.manifest["tracks"][0]; data={"items":{"3007":{"source_hash":explanations.source_hash(track,"Korean","Spanish"),"explanation_es":"ok"}}}; self.cache.write_text(json.dumps(data))
+        track=self.manifest["tracks"][0]; data={"items":{"3007":{"source_hash":explanations.source_hash(track,"Korean","Spanish"),"id":"3007","natural_meaning_es":"Primero pon agua.","explanation_es":"Explicación útil.","breakdown":[{"text":"먼저","meaning_es":"primero"}]}}}; self.cache.write_text(json.dumps(data))
         with patch.object(explanations,"cache_path",return_value=self.cache): plan,_=explanations.plan_explanations(self.book,self.manifest)
         self.assertEqual(plan.reused,1); self.assertEqual(plan.selected,0)
     def test_quality_marks_generic_or_incomplete_output(self):
@@ -32,3 +32,6 @@ class WebExplanationTests(unittest.TestCase):
         value=explanations._normalize_payload({"breakdown":[{"part":"괜찮","type":"raíz","meaning_es":"estar bien"}],"grammar_notes":[{"point":"-아요","detail":"forma cortés"}],"usage_notes_es":["Uso cotidiano"]})
         self.assertEqual(value["breakdown"][0]["text"],"괜찮"); self.assertEqual(value["grammar_notes"][0]["pattern"],"-아요"); self.assertIn("Uso cotidiano",value["usage_notes_es"])
         korean=explanations._normalize_payload({"breakdown":[{"korean":"저기","romanization":"jeogi","meaning_es":"allí"}]}); self.assertEqual(korean["breakdown"][0]["text"],"저기"); self.assertEqual(korean["breakdown"][0]["romanization"],"jeogi")
+    def test_incomplete_breakdown_is_not_reused(self):
+        track=self.manifest["tracks"][0]; payload={"id":"3007","natural_meaning_es":"Primero pon agua.","explanation_es":"Explicación útil.","breakdown":[{"text":"","meaning_es":"primero"}]}
+        self.assertFalse(explanations._explanation_complete(payload,track)); self.assertTrue(any("texto original" in error for error in explanations._validate(payload,track)))
