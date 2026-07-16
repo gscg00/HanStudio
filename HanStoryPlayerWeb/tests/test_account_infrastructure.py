@@ -1,0 +1,37 @@
+import unittest
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class AccountInfrastructureTests(unittest.TestCase):
+    def test_account_button_replaces_update_button(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('id="account-button"', html)
+        self.assertNotIn('id="updates"', html)
+        auth = (ROOT / "src/auth_service.js").read_text(encoding="utf-8")
+        self.assertIn("@supabase/supabase-js@2", auth)
+
+    def test_database_migration_has_rls_for_every_private_table(self):
+        sql = (ROOT / "supabase/migrations/001_initial_progress.sql").read_text(encoding="utf-8").lower()
+        for table in ("profiles", "user_progress", "sync_events"):
+            self.assertIn(f"alter table public.{table} enable row level security", sql)
+        self.assertGreaterEqual(sql.count("to authenticated"), 12)
+        self.assertNotIn("to anon\nusing (true)", sql)
+
+    def test_service_worker_bypasses_private_network_requests(self):
+        worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
+        self.assertIn("requestUrl.origin!==self.location.origin", worker)
+        self.assertNotIn("indexedDB.deleteDatabase", worker)
+        self.assertNotIn("localStorage.clear", worker)
+
+    def test_only_public_configuration_fields_are_used(self):
+        config = (ROOT / "src/config.example.js").read_text(encoding="utf-8")
+        self.assertEqual(config.count("export const"), 2)
+        self.assertIn("SUPABASE_URL", config)
+        self.assertIn("SUPABASE_PUBLISHABLE_KEY", config)
+
+
+if __name__ == "__main__":
+    unittest.main()

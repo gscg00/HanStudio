@@ -1,6 +1,12 @@
 # HanStory Player Web
 
-PWA estática para escuchar libros publicados por HanStory Studio. No usa cuentas, anuncios, analítica, backend ni base de datos remota. Metadatos, favoritos, descargas y progreso permanecen en el navegador.
+PWA estática para escuchar libros publicados por HanStory Studio. Funciona sin anuncios y permite estudiar sin cuenta con progreso inmediato en IndexedDB. Opcionalmente puede usar Supabase Auth para iniciar sesión con Google, respaldar el progreso y sincronizarlo entre dispositivos sin perder el modo offline.
+
+## Cuentas y sincronización opcional
+
+El botón **Cuenta** muestra el estado local, la sesión, cambios pendientes, sincronización manual y exportación/importación. Sin configuración externa, **Continuar sin cuenta** mantiene toda la aplicación disponible. Para activar Google y la nube sigue [docs/SUPABASE_GOOGLE_SETUP.md](docs/SUPABASE_GOOGLE_SETUP.md) y ejecuta la migración `supabase/migrations/001_initial_progress.sql`.
+
+Solo se colocan en el navegador `SUPABASE_URL` y `SUPABASE_PUBLISHABLE_KEY`. La seguridad depende de RLS; las credenciales administrativas y el secreto de Google nunca pertenecen al Web Player.
 
 ## Probar en la Mac y en Safari
 
@@ -36,7 +42,7 @@ La generación ocurre exclusivamente en la Mac y requiere confirmar que las fras
 2. En **Settings → Pages → Build and deployment**, selecciona **GitHub Actions**.
 3. El flujo incluido publica `HanStoryPlayerWeb` cuando cambia `main`; también se puede ejecutar manualmente.
 4. La aplicación usa rutas relativas y funciona tanto en la raíz como bajo una subruta, por ejemplo `/hanstory-player/`. No requiere cambiar el código para configurar la URL base.
-5. Alternativa manual: publica el contenido de `HanStoryPlayerWeb` en una rama `gh-pages`, conservando `.nojekyll`.
+5. Para activar cuentas, agrega las variables públicas descritas en la guía de Supabase. El flujo genera el archivo de configuración dentro del artefacto, no en el repositorio.
 
 Nunca subas `.env`, claves API, PDFs/EPUB/MOBI fuente, escaneos, OCR, carpetas `sources`, temporales ni proyectos originales completos. El publicador los excluye y busca patrones comunes de secretos, pero el reporte debe revisarse antes de confirmar.
 
@@ -44,7 +50,7 @@ Nunca subas `.env`, claves API, PDFs/EPUB/MOBI fuente, escaneos, OCR, carpetas `
 
 Abre la URL HTTPS en Safari, toca **Compartir → Añadir a pantalla de inicio**. Abre un libro para reproducirlo en orden. **Descargar libro** guarda manifiesto, portada y audios en Cache Storage; **Eliminar descarga local** libera esa copia sin retirar el libro online. **Buscar actualizaciones** vuelve a consultar el índice. La biblioteca no descarga automáticamente todos los audios.
 
-Safari puede suspender audio, JavaScript o descargas según batería, memoria, red, bloqueo de pantalla y versión de iOS. Media Session ofrece controles del sistema cuando está disponible, pero la reproducción continua en segundo plano o con pantalla bloqueada no está garantizada por iOS.
+Safari puede suspender audio, JavaScript o descargas según batería, memoria, red, bloqueo de pantalla y versión de iOS. Media Session ofrece controles del sistema cuando está disponible, pero la reproducción continua en segundo plano o con pantalla bloqueada no está garantizada por iOS. **Buscar actualizaciones** se encuentra ahora dentro de **Cuenta**.
 
 ## Cambiar el nombre y los textos de marca
 

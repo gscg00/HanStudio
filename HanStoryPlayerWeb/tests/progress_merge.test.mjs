@@ -1,0 +1,10 @@
+import test from'node:test';
+import assert from'node:assert/strict';
+import{mergeProgressData,mergeSnapshots}from'../src/progress_merge.js';
+import{completeJapaneseLesson,defaultJapaneseProgress}from'../src/japanese_course_logic.js';
+
+test('combina desbloqueos y lecciones sin duplicarlos',()=>{const result=mergeProgressData({completedLessons:['a'],unlockedUnits:['u1']},{completedLessons:['a','b'],unlockedUnits:['u2']});assert.deepEqual(result.completedLessons,['a','b']);assert.deepEqual(result.unlockedUnits,['u1','u2']);});
+test('no suma XP ni reduce la mejor puntuación',()=>{const result=mergeProgressData({xp:120,lessonScores:{a:{percentage:90}}},{xp:100,lessonScores:{a:{percentage:70},b:{percentage:80}}});assert.equal(result.xp,120);assert.equal(result.lessonScores.a.percentage,90);assert.equal(result.lessonScores.b.percentage,80);});
+test('fusiona dominio por elemento y conserva el estado más fuerte',()=>{const result=mergeProgressData({masteryByItem:{x:{correct:3,wrong:1,stage:2,lastSeen:'2026-01-01'}}},{masteryByItem:{x:{correct:2,wrong:4,stage:1,lastSeen:'2026-02-01'}}});assert.deepEqual(result.masteryByItem.x,{correct:3,wrong:4,stage:2,lastSeen:'2026-02-01'});});
+test('fusiona documentos por entityKey',()=>{const records=mergeSnapshots([{entityKey:'course:japanese',value:{xp:10,completedLessons:['a']}}],[{entityKey:'course:japanese',value:{xp:20,completedLessons:['b']}}]);assert.equal(records.length,1);assert.equal(records[0].value.xp,20);assert.deepEqual(records[0].value.completedLessons,['a','b']);});
+test('repetir una lección no duplica XP',()=>{const lesson={id:'l1',activities:[]},unit={id:'u1',lessons:[lesson]},result={percentage:100,correct:1,total:1,xp:10,errors:[]};const first=completeJapaneseLesson(defaultJapaneseProgress(),unit,lesson,result,new Date('2026-01-01T12:00:00Z')),second=completeJapaneseLesson(first,unit,lesson,result,new Date('2026-01-02T12:00:00Z'));assert.equal(first.xp,10);assert.equal(second.xp,10);assert.deepEqual(second.completedLessons,['l1']);});

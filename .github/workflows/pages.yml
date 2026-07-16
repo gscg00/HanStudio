@@ -33,6 +33,14 @@ jobs:
       - name: Construir artefacto público
         run: python3 scripts/build_pages_artifact.py --output .pages-dist
 
+      - name: Agregar configuración pública de Supabase
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          python3 -c "import json, os, pathlib; p=pathlib.Path('.pages-dist/src/config.local.js'); p.write_text('export const SUPABASE_URL='+json.dumps(os.environ.get('SUPABASE_URL',''))+';\nexport const SUPABASE_PUBLISHABLE_KEY='+json.dumps(os.environ.get('SUPABASE_PUBLISHABLE_KEY',''))+';\n', encoding='utf-8')"
+          python3 scripts/build_pages_artifact.py --output .pages-dist --validate-only
+
       - name: Comprobar que solo contiene el Web Player
         run: |
           test -f .pages-dist/index.html

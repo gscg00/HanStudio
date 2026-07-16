@@ -29,6 +29,10 @@ FORBIDDEN_SUFFIXES = {
     ".db", ".env", ".key", ".log", ".p12", ".pem", ".py", ".pyc",
     ".sqlite", ".wav", ".zip",
 }
+SENSITIVE_MARKERS = (
+    "service_role", "client_secret", "private_key",
+    "database password", "google client secret",
+)
 
 
 def is_public_file(path: Path, root: Path = ROOT) -> bool:
@@ -97,6 +101,17 @@ def validate(output: Path) -> None:
     if forbidden:
         raise RuntimeError("El artefacto contiene archivos privados o de desarrollo: " + ", ".join(forbidden))
 
+    sensitive: list[str] = []
+    text_suffixes = {".css", ".html", ".js", ".json", ".svg", ".webmanifest"}
+    for path in output.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in text_suffixes:
+            continue
+        content = path.read_text(encoding="utf-8", errors="ignore").lower()
+        if any(marker in content for marker in SENSITIVE_MARKERS):
+            sensitive.append(path.relative_to(output).as_posix())
+    if sensitive:
+        raise RuntimeError("Se detectaron marcadores de credenciales privadas en: " + ", ".join(sensitive))
+
     library = json.loads((output / "library/library.json").read_text(encoding="utf-8"))
     for book in library.get("books", []):
         manifest = PurePosixPath("library") / PurePosixPath(book["manifest"])
@@ -114,8 +129,13 @@ def directory_size(path: Path) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=ROOT / ".pages-dist")
+    parser.add_argument("--validate-only", action="store_true")
     args = parser.parse_args()
-    files = build(args.output)
+    if args.validate_only:
+        validate(args.output.resolve())
+        files = [item for item in args.output.rglob("*") if item.is_file()]
+    else:
+        files = build(args.output)
     size = directory_size(args.output)
     print(f"Artefacto público verificado: {len(files)} archivos · {size / 1024 / 1024:.1f} MB")
     print(f"Salida: {args.output.resolve()}")

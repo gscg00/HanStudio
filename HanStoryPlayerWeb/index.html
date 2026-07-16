@@ -12,7 +12,7 @@
 <body>
   <header>
     <div><span id="brand-eyebrow" class="eyebrow">HANSTORY</span><h1 id="brand-title">Biblioteca de historias</h1><p id="brand-subtitle">Escucha, repite y continúa justo donde te quedaste.</p></div>
-    <button id="updates">Buscar actualizaciones</button>
+    <button id="account-button" type="button">Cuenta</button>
   </header>
   <main>
     <nav id="breadcrumb" class="breadcrumb" hidden></nav>
@@ -29,7 +29,7 @@
     <section id="detail-view" hidden><button class="back">← Biblioteca</button><div id="book-detail"></div></section>
     <section id="player-view" hidden><button class="back">← Libro</button><div class="player-card"><img id="player-cover" alt=""><div><span id="player-lesson" class="eyebrow"></span><h2 id="player-title"></h2><p id="player-text" lang="ko"></p><p id="player-translation"></p><p id="player-meta"></p><details id="teaching" hidden><summary>Explicación</summary><div class="teaching-tabs"><button id="close-teaching" type="button">Cerrar explicación ✕</button><h3>Traducción</h3><p id="teach-meaning"></p><h3>Palabra por palabra</h3><dl id="teach-breakdown"></dl><h3>Explicación</h3><p id="teach-explanation"></p><h3>Gramática</h3><div id="teach-grammar"></div><h3>Escucha</h3><p id="teach-listening"></p><p id="teach-review" class="badge" hidden>Requiere revisión</p></div></details></div><audio id="audio" preload="metadata"></audio><div class="scrub"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="100" value="0"><span id="duration">0:00</span></div><div class="transport"><button data-action="previous">⏮</button><button id="back-five" data-action="back5" hidden>−5</button><button id="play" class="primary">▶</button><button id="forward-five" data-action="forward5" hidden>+5</button><button data-action="next">⏭</button></div><div class="player-options"><label><input id="continuous" type="checkbox"> Reproducción continua</label><label>Velocidad <select id="speed"><option>.75</option><option selected>1</option><option>1.25</option><option>1.5</option><option>2</option></select></label><label>Repetición <select id="repeat"><option value="off">Apagada</option><option value="track">Pista</option><option value="lesson">Lección</option><option value="book">Libro</option></select></label><button id="favorite">☆ Favorita</button></div></div></section>
   </main>
-  <footer>Sin cuentas · Sin anuncios · Tu progreso permanece en este dispositivo</footer>
+  <footer>Sin anuncios · Funciona sin conexión · Tú decides si sincronizas tu progreso</footer>
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>
