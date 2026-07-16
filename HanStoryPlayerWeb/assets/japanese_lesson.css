@@ -1,0 +1,12 @@
+.jp-teaching .jp-question{justify-content:center}
+.jp-teach-symbol{min-height:130px;margin:.35rem 0}
+.jp-teach-detail{width:min(560px,100%);margin:.25rem auto;text-align:center;color:var(--jp-muted);font-size:1rem}
+.jp-teach-detail.sound{color:var(--jp-green);font-weight:800;font-size:1.15rem}
+.jp-teach-note{width:min(560px,100%);margin:1rem auto;padding:.8rem 1rem;border-radius:14px;background:#f3eadc;color:#6a5c4b;text-align:center}
+.jp-teaching .jp-listen-row{margin:1rem 0 0}
+.jp-teaching .jp-listen-row button{min-width:120px}
+.jp-teaching .jp-check{position:sticky;bottom:0;background:var(--jp-paper)}
+@media(max-width:650px){.jp-teach-symbol{min-height:100px}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}}
+.jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
+.jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
+.jp-lesson-row.review small{color:#647b72}

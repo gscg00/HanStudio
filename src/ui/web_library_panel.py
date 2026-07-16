@@ -7,7 +7,9 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 
 from ..book_manager import Book
+from ..config import get_api_key, get_japanese_course_voice_id, save_japanese_course_voice_id
 from ..creative_engine import creative_runtime_connected, load_creative_runtime, test_creative_runtime
+from ..japanese_course_audio import JAPANESE_COURSE_MODEL_ID, generate_japanese_course_audio
 from ..web_library import WEB_LIBRARY, build_manifest, publish_book, published_books, rebuild_library, remove_book, update_published_book, validate_book
 from ..web_explanations import plan_explanations
 from ..web_topics import rebuild_topics
@@ -35,6 +37,14 @@ class WebLibraryPanel(ttk.Frame):
         ttk.Checkbutton(topics, text="Clasificar frases por temas con OpenAI", variable=self.classify_topics_openai).pack(side="left")
         for label, command in (("Analizar libro para temas", self.rebuild_topics), ("Generar/actualizar índice de temas", self.rebuild_topics), ("Revisar frases por tema", self.open_topics_folder), ("Publicar temas", self.rebuild_topics), ("Reconstruir temas desde biblioteca publicada", self.rebuild_topics)):
             ttk.Button(topics, text=label, command=command).pack(side="left", padx=3)
+        japanese = ttk.LabelFrame(self, text="Curso de entrada japonés · audio ElevenLabs", padding=8); japanese.pack(fill="x", pady=(8, 2))
+        ttk.Label(japanese, text="Voice ID japonesa").grid(row=0, column=0, sticky="w")
+        self.japanese_voice_id = tk.StringVar(value=get_japanese_course_voice_id())
+        ttk.Entry(japanese, textvariable=self.japanese_voice_id, width=28, show="•").grid(row=0, column=1, sticky="w", padx=6)
+        ttk.Button(japanese, text="Revisar audios", command=lambda: self.generate_japanese_audio(True)).grid(row=0, column=2, padx=4)
+        self.japanese_audio_button = ttk.Button(japanese, text="Generar audios con ElevenLabs", command=lambda: self.generate_japanese_audio(False)); self.japanese_audio_button.grid(row=0, column=3, padx=4)
+        self.japanese_audio_status = ttk.Label(japanese, text=""); self.japanese_audio_status.grid(row=1, column=0, columnspan=4, sticky="w", pady=(5, 0))
+        self.refresh_japanese_audio_status()
         buttons = ttk.Frame(self); buttons.pack(fill="x", pady=10)
         for label, command in (("Validar paquete web", self.validate), ("Retirar", self.remove), ("Abrir carpeta publicada", self.open_folder), ("Reconstruir biblioteca desde carpetas", self.rebuild)):
             ttk.Button(buttons, text=label, command=command).pack(side="left", padx=(0, 6), pady=3)
@@ -105,6 +115,41 @@ class WebLibraryPanel(ttk.Frame):
         if not runtime.openai_ready: self.refresh_engine_status(); messagebox.showerror("OpenAI", "Configura OpenAI en Fuentes → Motor creativo o en .env."); return
         self.explanation_status.configure(text=f"Probando OpenAI · Modelo: {runtime.model_name}…")
         threading.Thread(target=self._test_openai_worker, daemon=True).start()
+
+    def refresh_japanese_audio_status(self) -> None:
+        model = f"Eleven v3 ({JAPANESE_COURSE_MODEL_ID})"
+        key = "ElevenLabs conectado" if get_api_key() else "Falta ELEVENLABS_API_KEY en Voces y ajustes"
+        voice = "voz japonesa seleccionada" if get_japanese_course_voice_id() else "falta Voice ID japonesa"
+        self.japanese_audio_status.configure(text=f"{key} · {voice} · Modelo exclusivo: {model}")
+
+    def generate_japanese_audio(self, dry_run: bool) -> None:
+        voice_id = self.japanese_voice_id.get().strip()
+        if voice_id:
+            save_japanese_course_voice_id(voice_id)
+        self.refresh_japanese_audio_status()
+        preview = generate_japanese_course_audio(dry_run=True)
+        self._show(preview.text(dry_run=True))
+        if dry_run:
+            self._report_window("Audios del curso japonés", preview.text(dry_run=True)); return
+        if preview.missing <= 0:
+            messagebox.showinfo("Curso japonés", "Todos los audios del curso japonés ya existen."); return
+        if not get_api_key():
+            messagebox.showerror("ElevenLabs", "Configura ELEVENLABS_API_KEY en Voces y ajustes."); return
+        if not get_japanese_course_voice_id():
+            messagebox.showerror("ElevenLabs", "Escribe una Voice ID japonesa."); return
+        if not messagebox.askyesno("Generar curso japonés", f"Se generarán {preview.missing} MP3 con ElevenLabs.\nCaracteres aproximados: {preview.characters}.\n\nLos audios existentes se reutilizarán. ¿Continuar?"):
+            return
+        self.japanese_audio_button.configure(state="disabled"); self._show("Generando audios japoneses con ElevenLabs…")
+        threading.Thread(target=self._japanese_audio_worker, daemon=True).start()
+
+    def _japanese_audio_worker(self) -> None:
+        result = generate_japanese_course_audio(dry_run=False)
+        self.after(0, lambda: self._japanese_audio_finished(result))
+
+    def _japanese_audio_finished(self, result) -> None:
+        self.japanese_audio_button.configure(state="normal"); self.refresh_japanese_audio_status(); self._show(result.text(dry_run=False)); self._report_window("Audios del curso japonés", result.text(dry_run=False))
+        if result.errors: messagebox.showerror("Curso japonés", "La generación terminó con errores. Revisa el reporte.")
+        else: messagebox.showinfo("Curso japonés", "Los audios japoneses se generaron y quedaron listos para la PWA.")
 
     def _test_openai_worker(self) -> None:
         try: detail = test_creative_runtime(self.book)

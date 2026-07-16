@@ -150,6 +150,24 @@ class TopicUIContractTests(unittest.TestCase):
         self.assertIn("word-break:normal;overflow-wrap:break-word",css)
         self.assertIn("meaning:meanings[index]",data)
 
+    def test_japanese_course_has_dedicated_layout_and_splits_ideographic_commas(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/navigation.css").read_text(); data=(root/"src/data/zero_courses.js").read_text()
+        self.assertIn("function decorateJapaneseCourse",app)
+        self.assertIn("japanese-game-home",app)
+        self.assertIn(".japanese-course",css)
+        self.assertIn("[、，,]",data)
+        self.assertIn("(?<=[?？。])",data)
+
+    def test_japanese_course_uses_prebuilt_elevenlabs_audio_without_romaji(self):
+        root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/navigation.css").read_text(); manifest=(root/"library/courses/Japanese/audio_manifest.json").read_text()
+        self.assertIn("state.language==='Japanese'",app)
+        self.assertIn("library/courses/Japanese/audio_manifest.json",app)
+        self.assertIn("courseAudio.src",app)
+        self.assertIn("showPronunciation=state.language!=='Japanese'",app)
+        self.assertIn("japanese-game-home",app)
+        self.assertIn(".jp-path-node",css)
+        self.assertIn('"provider": "ElevenLabs"',manifest)
+
     def test_story_lessons_show_resume_location(self):
         root=Path(__file__).resolve().parents[1]/"HanStoryPlayerWeb"; app=(root/"src/app.js").read_text(); css=(root/"assets/styles.css").read_text()
         self.assertIn("state.book={entry,manifest,progress}",app)

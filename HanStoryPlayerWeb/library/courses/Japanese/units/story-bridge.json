@@ -1,0 +1,322 @@
+{
+  "id": "story-bridge",
+  "title": "Puente hacia las historias",
+  "description": "Integra lectura, escucha y comprensión sin rōmaji.",
+  "requirements": [],
+  "reward": {
+    "xp": 500,
+    "badge": "Listo para historias"
+  },
+  "lessons": [
+    {
+      "id": "jp-bridge-intro",
+      "title": "Presentación breve",
+      "description": "Escucha primero el diálogo completo y luego comprueba ideas principales.",
+      "activities": [
+        {
+          "id": "jp-bridge-intro-intro",
+          "type": "lesson_intro",
+          "prompt": "Presentación breve",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero el diálogo completo y luego comprueba ideas principales.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-bridge-intro-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Ana se presenta y dice de dónde viene.",
+          "target": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Ana se presenta y dice de dónde viene.",
+          "audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "slow_audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-intro"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Ana se presenta y dice de dónde viene."
+        },
+        {
+          "id": "jp-bridge-intro-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "options": [
+            "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。"
+          ],
+          "answer": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "explanation": "Ana se presenta y dice de dónde viene.",
+          "audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "slow_audio": "はじめまして。わたしはアナです。メキシコからきました。よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-intro",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-bridge-shop",
+      "title": "En una tienda",
+      "description": "Comprende una compra sencilla.",
+      "activities": [
+        {
+          "id": "jp-bridge-shop-intro",
+          "type": "lesson_intro",
+          "prompt": "En una tienda",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Comprende una compra sencilla.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-bridge-shop-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Pregunta el precio y compra el objeto.",
+          "target": "これはいくらですか。ごひゃくえんです。これをください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Pregunta el precio y compra el objeto.",
+          "audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "slow_audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-shop"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Pregunta el precio y compra el objeto."
+        },
+        {
+          "id": "jp-bridge-shop-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "これはいくらですか。ごひゃくえんです。これをください。",
+          "options": [
+            "これはいくらですか。ごひゃくえんです。これをください。"
+          ],
+          "answer": "これはいくらですか。ごひゃくえんです。これをください。",
+          "explanation": "Pregunta el precio y compra el objeto.",
+          "audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "slow_audio": "これはいくらですか。ごひゃくえんです。これをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-shop",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-bridge-restaurant",
+      "title": "En un restaurante",
+      "description": "Sigue un pedido breve.",
+      "activities": [
+        {
+          "id": "jp-bridge-restaurant-intro",
+          "type": "lesson_intro",
+          "prompt": "En un restaurante",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Sigue un pedido breve.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-bridge-restaurant-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Pide un plato y también agua.",
+          "target": "すみません。これをおねがいします。みずもください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Pide un plato y también agua.",
+          "audio": "すみません。これをおねがいします。みずもください。",
+          "slow_audio": "すみません。これをおねがいします。みずもください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-restaurant"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Pide un plato y también agua."
+        },
+        {
+          "id": "jp-bridge-restaurant-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "すみません。これをおねがいします。みずもください。",
+          "options": [
+            "すみません。これをおねがいします。みずもください。"
+          ],
+          "answer": "すみません。これをおねがいします。みずもください。",
+          "explanation": "Pide un plato y también agua.",
+          "audio": "すみません。これをおねがいします。みずもください。",
+          "slow_audio": "すみません。これをおねがいします。みずもください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-restaurant",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-bridge-directions",
+      "title": "Buscar la estación",
+      "description": "Reconoce una pregunta y una indicación.",
+      "activities": [
+        {
+          "id": "jp-bridge-directions-intro",
+          "type": "lesson_intro",
+          "prompt": "Buscar la estación",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce una pregunta y una indicación.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-bridge-directions-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: La estación está derecho y a la derecha.",
+          "target": "えきはどこですか。まっすぐいって、みぎです。",
+          "options": [],
+          "answer": "",
+          "explanation": "La estación está derecho y a la derecha.",
+          "audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "slow_audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-directions"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "La estación está derecho y a la derecha."
+        },
+        {
+          "id": "jp-bridge-directions-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "えきはどこですか。まっすぐいって、みぎです。",
+          "options": [
+            "えきはどこですか。まっすぐいって、みぎです。"
+          ],
+          "answer": "えきはどこですか。まっすぐいって、みぎです。",
+          "explanation": "La estación está derecho y a la derecha.",
+          "audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "slow_audio": "えきはどこですか。まっすぐいって、みぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-directions",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-bridge-reading",
+      "title": "Primera lectura guiada",
+      "description": "Lee un párrafo corto con audio completo.",
+      "activities": [
+        {
+          "id": "jp-bridge-reading-intro",
+          "type": "lesson_intro",
+          "prompt": "Primera lectura guiada",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Lee un párrafo corto con audio completo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-bridge-reading-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Hoy es lunes; la persona va a la escuela y habla con un amigo.",
+          "target": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Hoy es lunes; la persona va a la escuela y habla con un amigo.",
+          "audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "slow_audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-reading"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Hoy es lunes; la persona va a la escuela y habla con un amigo."
+        },
+        {
+          "id": "jp-bridge-reading-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "options": [
+            "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。"
+          ],
+          "answer": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "explanation": "Hoy es lunes; la persona va a la escuela y habla con un amigo.",
+          "audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "slow_audio": "きょうはげつようびです。あさ、がっこうにいきます。ともだちとはなします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-bridge-reading",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    }
+  ]
+}

@@ -270,6 +270,30 @@ van en `text_tts`, por ejemplo:
 La app manda `text_tts` a ElevenLabs cuando **Acting / Variety Mode** está
 activado. El guion visible y reportes usan `text` limpio.
 
+### Audio del curso de entrada japonés
+
+En la PWA, **Japonés → Curso guiado** usa rutas hash compatibles con GitHub
+Pages (`#/japanese/course`, unidades, lecciones, resultados, repaso y perfil).
+El mapa y sus datos viven en `HanStoryPlayerWeb/library/courses/japanese/`;
+añadir una unidad consiste en crear su JSON y referenciarlo desde `course.json`,
+sin apilar contenido nuevo dentro de `index.html`. El progreso, XP, errores y
+desbloqueos se guardan por dispositivo con la clave `jp-guided-progress-v1` y no
+se mezclan con el progreso de Historias ni con los cursos de otros idiomas.
+
+El curso japonés no usa la voz TTS del navegador. Sus clips se preparan como MP3
+con ElevenLabs desde **Biblioteca web → Curso de entrada japonés · audio
+ElevenLabs**. La herramienta reutiliza `ELEVENLABS_API_KEY`, usa exclusivamente
+**Eleven v3 (`eleven_v3`)** y toma una Voice ID específica para japonés. La Voice ID se guarda
+localmente como `JAPANESE_COURSE_VOICE_ID` dentro de `.env`; ni la clave ni la
+Voice ID se publican en la PWA.
+
+Usa primero **Revisar audios** para conocer el número de clips pendientes y los
+caracteres aproximados. Después, **Generar audios con ElevenLabs** crea solo los
+MP3 faltantes y conserva los existentes. El índice público queda en
+`HanStoryPlayerWeb/library/courses/japanese/audio_manifest.json` y los MP3 en su
+subcarpeta `audio/`. Si un clip falta, la PWA lo marca como pendiente y no recurre
+silenciosamente a otra voz.
+
 ### Diálogo multi-speaker ElevenLabs v3
 
 La opción **Usar diálogo multi-speaker ElevenLabs v3 cuando sea posible** prepara

@@ -1,0 +1,4523 @@
+{
+  "id": "first-words",
+  "title": "Primeras palabras",
+  "description": "Tu primer vocabulario aparece solo después de Hiragana, Katakana y ritmo.",
+  "requirements": [],
+  "reward": {
+    "xp": 500,
+    "badge": "Primer vocabulario"
+  },
+  "lessons": [
+    {
+      "id": "jp-words-01",
+      "title": "Saludos",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Saludos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-01-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «Buenos días»",
+          "target": "おはようございます",
+          "options": [],
+          "answer": "",
+          "explanation": "Buenos días",
+          "audio": "おはようございます",
+          "slow_audio": "おはようございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Buenos días"
+        },
+        {
+          "id": "jp-words-01-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa おはようございます?",
+          "target": "おはようございます",
+          "options": [
+            "Buenos días",
+            "Hola / buenas tardes",
+            "Buenas noches"
+          ],
+          "answer": "Buenos días",
+          "explanation": "おはようございます significa «Buenos días».",
+          "audio": "おはようございます",
+          "slow_audio": "おはようございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-01-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «Hola / buenas tardes»",
+          "target": "こんにちは",
+          "options": [],
+          "answer": "",
+          "explanation": "Hola / buenas tardes",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Hola / buenas tardes"
+        },
+        {
+          "id": "jp-words-01-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa こんにちは?",
+          "target": "こんにちは",
+          "options": [
+            "Hola / buenas tardes",
+            "Buenos días",
+            "Buenas noches"
+          ],
+          "answer": "Hola / buenas tardes",
+          "explanation": "こんにちは significa «Hola / buenas tardes».",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-01-build-2",
+          "type": "build_word",
+          "prompt": "Construye «Hola / buenas tardes»",
+          "target": "こんにちは",
+          "options": [
+            "は",
+            "ち",
+            "に",
+            "ん",
+            "こ"
+          ],
+          "answer": "こんにちは",
+          "explanation": "La palabra completa es こんにちは. Escúchala seguida.",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-01-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "おはようございます",
+          "options": [
+            "こんにちは",
+            "おはようございます"
+          ],
+          "answer": "おはようございます",
+          "explanation": "Escuchaste おはようございます: Buenos días.",
+          "audio": "おはようございます",
+          "slow_audio": "おはようございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «Buenas noches»",
+          "target": "こんばんは",
+          "options": [],
+          "answer": "",
+          "explanation": "Buenas noches",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Buenas noches"
+        },
+        {
+          "id": "jp-words-01-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa こんばんは?",
+          "target": "こんばんは",
+          "options": [
+            "Buenas noches",
+            "Buenos días",
+            "Hola / buenas tardes"
+          ],
+          "answer": "Buenas noches",
+          "explanation": "こんばんは significa «Buenas noches».",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-01-build-3",
+          "type": "build_word",
+          "prompt": "Construye «Buenas noches»",
+          "target": "こんばんは",
+          "options": [
+            "は",
+            "ん",
+            "ば",
+            "ん",
+            "こ"
+          ],
+          "answer": "こんばんは",
+          "explanation": "La palabra completa es こんばんは. Escúchala seguida.",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-01-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "こんばんは",
+          "options": [
+            "こんにちは",
+            "おはようございます",
+            "こんばんは"
+          ],
+          "answer": "こんばんは",
+          "explanation": "Escuchaste こんばんは: Buenas noches.",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa おはようございます?",
+          "target": "おはようございます",
+          "options": [
+            "Hola / buenas tardes",
+            "Buenas noches",
+            "Buenos días"
+          ],
+          "answer": "Buenos días",
+          "explanation": "おはようございます significa «Buenos días».",
+          "audio": "おはようございます",
+          "slow_audio": "おはようございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «Muchas gracias»",
+          "target": "ありがとうございます",
+          "options": [],
+          "answer": "",
+          "explanation": "Muchas gracias",
+          "audio": "ありがとうございます",
+          "slow_audio": "ありがとうございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Muchas gracias"
+        },
+        {
+          "id": "jp-words-01-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ありがとうございます?",
+          "target": "ありがとうございます",
+          "options": [
+            "Muchas gracias",
+            "Buenos días",
+            "Hola / buenas tardes"
+          ],
+          "answer": "Muchas gracias",
+          "explanation": "ありがとうございます significa «Muchas gracias».",
+          "audio": "ありがとうございます",
+          "slow_audio": "ありがとうございます",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-01-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "こんばんは",
+          "options": [
+            "ありがとうございます",
+            "こんにちは",
+            "こんばんは"
+          ],
+          "answer": "こんばんは",
+          "explanation": "Escuchaste こんばんは: Buenas noches.",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa こんにちは?",
+          "target": "こんにちは",
+          "options": [
+            "Buenos días",
+            "Buenas noches",
+            "Hola / buenas tardes"
+          ],
+          "answer": "Hola / buenas tardes",
+          "explanation": "こんにちは significa «Hola / buenas tardes».",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «Adiós»",
+          "target": "さようなら",
+          "options": [],
+          "answer": "",
+          "explanation": "Adiós",
+          "audio": "さようなら",
+          "slow_audio": "さようなら",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Adiós"
+        },
+        {
+          "id": "jp-words-01-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa さようなら?",
+          "target": "さようなら",
+          "options": [
+            "Adiós",
+            "Buenos días",
+            "Hola / buenas tardes"
+          ],
+          "answer": "Adiós",
+          "explanation": "さようなら significa «Adiós».",
+          "audio": "さようなら",
+          "slow_audio": "さようなら",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-01-build-5",
+          "type": "build_word",
+          "prompt": "Construye «Adiós»",
+          "target": "さようなら",
+          "options": [
+            "ら",
+            "な",
+            "う",
+            "よ",
+            "さ"
+          ],
+          "answer": "さようなら",
+          "explanation": "La palabra completa es さようなら. Escúchala seguida.",
+          "audio": "さようなら",
+          "slow_audio": "さようなら",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-01-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "さようなら",
+          "options": [
+            "ありがとうございます",
+            "こんばんは",
+            "さようなら"
+          ],
+          "answer": "さようなら",
+          "explanation": "Escuchaste さようなら: Adiós.",
+          "audio": "さようなら",
+          "slow_audio": "さようなら",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-01-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa こんばんは?",
+          "target": "こんばんは",
+          "options": [
+            "Buenos días",
+            "Hola / buenas tardes",
+            "Buenas noches"
+          ],
+          "answer": "Buenas noches",
+          "explanation": "こんばんは significa «Buenas noches».",
+          "audio": "こんばんは",
+          "slow_audio": "こんばんは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-02",
+      "title": "Personas y afecto",
+      "description": "Aprende 6 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Personas y afecto",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-02-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «yo»",
+          "target": "わたし",
+          "options": [],
+          "answer": "",
+          "explanation": "yo",
+          "audio": "わたし",
+          "slow_audio": "わたし",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: yo"
+        },
+        {
+          "id": "jp-words-02-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa わたし?",
+          "target": "わたし",
+          "options": [
+            "yo",
+            "amigo o amiga",
+            "amor"
+          ],
+          "answer": "yo",
+          "explanation": "わたし significa «yo».",
+          "audio": "わたし",
+          "slow_audio": "わたし",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-1",
+          "type": "build_word",
+          "prompt": "Construye «yo»",
+          "target": "わたし",
+          "options": [
+            "し",
+            "た",
+            "わ"
+          ],
+          "answer": "わたし",
+          "explanation": "La palabra completa es わたし. Escúchala seguida.",
+          "audio": "わたし",
+          "slow_audio": "わたし",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «amigo o amiga»",
+          "target": "ともだち",
+          "options": [],
+          "answer": "",
+          "explanation": "amigo o amiga",
+          "audio": "ともだち",
+          "slow_audio": "ともだち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: amigo o amiga"
+        },
+        {
+          "id": "jp-words-02-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ともだち?",
+          "target": "ともだち",
+          "options": [
+            "amigo o amiga",
+            "yo",
+            "amor"
+          ],
+          "answer": "amigo o amiga",
+          "explanation": "ともだち significa «amigo o amiga».",
+          "audio": "ともだち",
+          "slow_audio": "ともだち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-2",
+          "type": "build_word",
+          "prompt": "Construye «amigo o amiga»",
+          "target": "ともだち",
+          "options": [
+            "ち",
+            "だ",
+            "も",
+            "と"
+          ],
+          "answer": "ともだち",
+          "explanation": "La palabra completa es ともだち. Escúchala seguida.",
+          "audio": "ともだち",
+          "slow_audio": "ともだち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "わたし",
+          "options": [
+            "ともだち",
+            "わたし"
+          ],
+          "answer": "わたし",
+          "explanation": "Escuchaste わたし: yo.",
+          "audio": "わたし",
+          "slow_audio": "わたし",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «amor»",
+          "target": "あい",
+          "options": [],
+          "answer": "",
+          "explanation": "amor",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: amor"
+        },
+        {
+          "id": "jp-words-02-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あい?",
+          "target": "あい",
+          "options": [
+            "amor",
+            "yo",
+            "amigo o amiga"
+          ],
+          "answer": "amor",
+          "explanation": "あい significa «amor».",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-3",
+          "type": "build_word",
+          "prompt": "Construye «amor»",
+          "target": "あい",
+          "options": [
+            "い",
+            "あ"
+          ],
+          "answer": "あい",
+          "explanation": "La palabra completa es あい. Escúchala seguida.",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あい",
+          "options": [
+            "ともだち",
+            "わたし",
+            "あい"
+          ],
+          "answer": "あい",
+          "explanation": "Escuchaste あい: amor.",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa わたし?",
+          "target": "わたし",
+          "options": [
+            "amigo o amiga",
+            "amor",
+            "yo"
+          ],
+          "answer": "yo",
+          "explanation": "わたし significa «yo».",
+          "audio": "わたし",
+          "slow_audio": "わたし",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «profesor»",
+          "target": "せんせい",
+          "options": [],
+          "answer": "",
+          "explanation": "profesor",
+          "audio": "せんせい",
+          "slow_audio": "せんせい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: profesor"
+        },
+        {
+          "id": "jp-words-02-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa せんせい?",
+          "target": "せんせい",
+          "options": [
+            "profesor",
+            "yo",
+            "amigo o amiga"
+          ],
+          "answer": "profesor",
+          "explanation": "せんせい significa «profesor».",
+          "audio": "せんせい",
+          "slow_audio": "せんせい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-4",
+          "type": "build_word",
+          "prompt": "Construye «profesor»",
+          "target": "せんせい",
+          "options": [
+            "い",
+            "せ",
+            "ん",
+            "せ"
+          ],
+          "answer": "せんせい",
+          "explanation": "La palabra completa es せんせい. Escúchala seguida.",
+          "audio": "せんせい",
+          "slow_audio": "せんせい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あい",
+          "options": [
+            "せんせい",
+            "ともだち",
+            "あい"
+          ],
+          "answer": "あい",
+          "explanation": "Escuchaste あい: amor.",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ともだち?",
+          "target": "ともだち",
+          "options": [
+            "yo",
+            "amor",
+            "amigo o amiga"
+          ],
+          "answer": "amigo o amiga",
+          "explanation": "ともだち significa «amigo o amiga».",
+          "audio": "ともだち",
+          "slow_audio": "ともだち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «familia»",
+          "target": "かぞく",
+          "options": [],
+          "answer": "",
+          "explanation": "familia",
+          "audio": "かぞく",
+          "slow_audio": "かぞく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: familia"
+        },
+        {
+          "id": "jp-words-02-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa かぞく?",
+          "target": "かぞく",
+          "options": [
+            "familia",
+            "yo",
+            "amigo o amiga"
+          ],
+          "answer": "familia",
+          "explanation": "かぞく significa «familia».",
+          "audio": "かぞく",
+          "slow_audio": "かぞく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-5",
+          "type": "build_word",
+          "prompt": "Construye «familia»",
+          "target": "かぞく",
+          "options": [
+            "く",
+            "ぞ",
+            "か"
+          ],
+          "answer": "かぞく",
+          "explanation": "La palabra completa es かぞく. Escúchala seguida.",
+          "audio": "かぞく",
+          "slow_audio": "かぞく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "かぞく",
+          "options": [
+            "せんせい",
+            "あい",
+            "かぞく"
+          ],
+          "answer": "かぞく",
+          "explanation": "Escuchaste かぞく: familia.",
+          "audio": "かぞく",
+          "slow_audio": "かぞく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa あい?",
+          "target": "あい",
+          "options": [
+            "yo",
+            "amigo o amiga",
+            "amor"
+          ],
+          "answer": "amor",
+          "explanation": "あい significa «amor».",
+          "audio": "あい",
+          "slow_audio": "あい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-teach-6",
+          "type": "teach_word",
+          "prompt": "Aprende «persona»",
+          "target": "ひと",
+          "options": [],
+          "answer": "",
+          "explanation": "persona",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: persona"
+        },
+        {
+          "id": "jp-words-02-quiz-6",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ひと?",
+          "target": "ひと",
+          "options": [
+            "persona",
+            "yo",
+            "amigo o amiga"
+          ],
+          "answer": "persona",
+          "explanation": "ひと significa «persona».",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-02-build-6",
+          "type": "build_word",
+          "prompt": "Construye «persona»",
+          "target": "ひと",
+          "options": [
+            "と",
+            "ひ"
+          ],
+          "answer": "ひと",
+          "explanation": "La palabra completa es ひと. Escúchala seguida.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-02-listen-6",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "かぞく",
+          "options": [
+            "ひと",
+            "せんせい",
+            "かぞく"
+          ],
+          "answer": "かぞく",
+          "explanation": "Escuchaste かぞく: familia.",
+          "audio": "かぞく",
+          "slow_audio": "かぞく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-02-spiral-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa せんせい?",
+          "target": "せんせい",
+          "options": [
+            "yo",
+            "amigo o amiga",
+            "profesor"
+          ],
+          "answer": "profesor",
+          "explanation": "せんせい significa «profesor».",
+          "audio": "せんせい",
+          "slow_audio": "せんせい",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-03",
+      "title": "Objetos",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Objetos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-03-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «libro»",
+          "target": "ほん",
+          "options": [],
+          "answer": "",
+          "explanation": "libro",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: libro"
+        },
+        {
+          "id": "jp-words-03-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ほん?",
+          "target": "ほん",
+          "options": [
+            "libro",
+            "bolsa",
+            "teléfono"
+          ],
+          "answer": "libro",
+          "explanation": "ほん significa «libro».",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-03-build-1",
+          "type": "build_word",
+          "prompt": "Construye «libro»",
+          "target": "ほん",
+          "options": [
+            "ん",
+            "ほ"
+          ],
+          "answer": "ほん",
+          "explanation": "La palabra completa es ほん. Escúchala seguida.",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-03-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «bolsa»",
+          "target": "かばん",
+          "options": [],
+          "answer": "",
+          "explanation": "bolsa",
+          "audio": "かばん",
+          "slow_audio": "かばん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: bolsa"
+        },
+        {
+          "id": "jp-words-03-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa かばん?",
+          "target": "かばん",
+          "options": [
+            "bolsa",
+            "libro",
+            "teléfono"
+          ],
+          "answer": "bolsa",
+          "explanation": "かばん significa «bolsa».",
+          "audio": "かばん",
+          "slow_audio": "かばん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-03-build-2",
+          "type": "build_word",
+          "prompt": "Construye «bolsa»",
+          "target": "かばん",
+          "options": [
+            "ん",
+            "ば",
+            "か"
+          ],
+          "answer": "かばん",
+          "explanation": "La palabra completa es かばん. Escúchala seguida.",
+          "audio": "かばん",
+          "slow_audio": "かばん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-03-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "ほん",
+          "options": [
+            "かばん",
+            "ほん"
+          ],
+          "answer": "ほん",
+          "explanation": "Escuchaste ほん: libro.",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «teléfono»",
+          "target": "でんわ",
+          "options": [],
+          "answer": "",
+          "explanation": "teléfono",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: teléfono"
+        },
+        {
+          "id": "jp-words-03-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa でんわ?",
+          "target": "でんわ",
+          "options": [
+            "teléfono",
+            "libro",
+            "bolsa"
+          ],
+          "answer": "teléfono",
+          "explanation": "でんわ significa «teléfono».",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-03-build-3",
+          "type": "build_word",
+          "prompt": "Construye «teléfono»",
+          "target": "でんわ",
+          "options": [
+            "わ",
+            "ん",
+            "で"
+          ],
+          "answer": "でんわ",
+          "explanation": "La palabra completa es でんわ. Escúchala seguida.",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-03-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "でんわ",
+          "options": [
+            "かばん",
+            "ほん",
+            "でんわ"
+          ],
+          "answer": "でんわ",
+          "explanation": "Escuchaste でんわ: teléfono.",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ほん?",
+          "target": "ほん",
+          "options": [
+            "bolsa",
+            "teléfono",
+            "libro"
+          ],
+          "answer": "libro",
+          "explanation": "ほん significa «libro».",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «llave»",
+          "target": "かぎ",
+          "options": [],
+          "answer": "",
+          "explanation": "llave",
+          "audio": "かぎ",
+          "slow_audio": "かぎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: llave"
+        },
+        {
+          "id": "jp-words-03-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa かぎ?",
+          "target": "かぎ",
+          "options": [
+            "llave",
+            "libro",
+            "bolsa"
+          ],
+          "answer": "llave",
+          "explanation": "かぎ significa «llave».",
+          "audio": "かぎ",
+          "slow_audio": "かぎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-03-build-4",
+          "type": "build_word",
+          "prompt": "Construye «llave»",
+          "target": "かぎ",
+          "options": [
+            "ぎ",
+            "か"
+          ],
+          "answer": "かぎ",
+          "explanation": "La palabra completa es かぎ. Escúchala seguida.",
+          "audio": "かぎ",
+          "slow_audio": "かぎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-03-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "でんわ",
+          "options": [
+            "かぎ",
+            "かばん",
+            "でんわ"
+          ],
+          "answer": "でんわ",
+          "explanation": "Escuchaste でんわ: teléfono.",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa かばん?",
+          "target": "かばん",
+          "options": [
+            "libro",
+            "teléfono",
+            "bolsa"
+          ],
+          "answer": "bolsa",
+          "explanation": "かばん significa «bolsa».",
+          "audio": "かばん",
+          "slow_audio": "かばん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «escritorio»",
+          "target": "つくえ",
+          "options": [],
+          "answer": "",
+          "explanation": "escritorio",
+          "audio": "つくえ",
+          "slow_audio": "つくえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: escritorio"
+        },
+        {
+          "id": "jp-words-03-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa つくえ?",
+          "target": "つくえ",
+          "options": [
+            "escritorio",
+            "libro",
+            "bolsa"
+          ],
+          "answer": "escritorio",
+          "explanation": "つくえ significa «escritorio».",
+          "audio": "つくえ",
+          "slow_audio": "つくえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-03-build-5",
+          "type": "build_word",
+          "prompt": "Construye «escritorio»",
+          "target": "つくえ",
+          "options": [
+            "え",
+            "く",
+            "つ"
+          ],
+          "answer": "つくえ",
+          "explanation": "La palabra completa es つくえ. Escúchala seguida.",
+          "audio": "つくえ",
+          "slow_audio": "つくえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-03-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "つくえ",
+          "options": [
+            "かぎ",
+            "でんわ",
+            "つくえ"
+          ],
+          "answer": "つくえ",
+          "explanation": "Escuchaste つくえ: escritorio.",
+          "audio": "つくえ",
+          "slow_audio": "つくえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-03-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa でんわ?",
+          "target": "でんわ",
+          "options": [
+            "libro",
+            "bolsa",
+            "teléfono"
+          ],
+          "answer": "teléfono",
+          "explanation": "でんわ significa «teléfono».",
+          "audio": "でんわ",
+          "slow_audio": "でんわ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-03",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-04",
+      "title": "Casa",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Casa",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-04-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «casa»",
+          "target": "いえ",
+          "options": [],
+          "answer": "",
+          "explanation": "casa",
+          "audio": "いえ",
+          "slow_audio": "いえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: casa"
+        },
+        {
+          "id": "jp-words-04-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa いえ?",
+          "target": "いえ",
+          "options": [
+            "casa",
+            "habitación",
+            "ventana"
+          ],
+          "answer": "casa",
+          "explanation": "いえ significa «casa».",
+          "audio": "いえ",
+          "slow_audio": "いえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-04-build-1",
+          "type": "build_word",
+          "prompt": "Construye «casa»",
+          "target": "いえ",
+          "options": [
+            "え",
+            "い"
+          ],
+          "answer": "いえ",
+          "explanation": "La palabra completa es いえ. Escúchala seguida.",
+          "audio": "いえ",
+          "slow_audio": "いえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-04-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «habitación»",
+          "target": "へや",
+          "options": [],
+          "answer": "",
+          "explanation": "habitación",
+          "audio": "へや",
+          "slow_audio": "へや",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: habitación"
+        },
+        {
+          "id": "jp-words-04-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa へや?",
+          "target": "へや",
+          "options": [
+            "habitación",
+            "casa",
+            "ventana"
+          ],
+          "answer": "habitación",
+          "explanation": "へや significa «habitación».",
+          "audio": "へや",
+          "slow_audio": "へや",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-04-build-2",
+          "type": "build_word",
+          "prompt": "Construye «habitación»",
+          "target": "へや",
+          "options": [
+            "や",
+            "へ"
+          ],
+          "answer": "へや",
+          "explanation": "La palabra completa es へや. Escúchala seguida.",
+          "audio": "へや",
+          "slow_audio": "へや",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-04-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "いえ",
+          "options": [
+            "へや",
+            "いえ"
+          ],
+          "answer": "いえ",
+          "explanation": "Escuchaste いえ: casa.",
+          "audio": "いえ",
+          "slow_audio": "いえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «ventana»",
+          "target": "まど",
+          "options": [],
+          "answer": "",
+          "explanation": "ventana",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ventana"
+        },
+        {
+          "id": "jp-words-04-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa まど?",
+          "target": "まど",
+          "options": [
+            "ventana",
+            "casa",
+            "habitación"
+          ],
+          "answer": "ventana",
+          "explanation": "まど significa «ventana».",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-04-build-3",
+          "type": "build_word",
+          "prompt": "Construye «ventana»",
+          "target": "まど",
+          "options": [
+            "ど",
+            "ま"
+          ],
+          "answer": "まど",
+          "explanation": "La palabra completa es まど. Escúchala seguida.",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-04-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "まど",
+          "options": [
+            "へや",
+            "いえ",
+            "まど"
+          ],
+          "answer": "まど",
+          "explanation": "Escuchaste まど: ventana.",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa いえ?",
+          "target": "いえ",
+          "options": [
+            "habitación",
+            "ventana",
+            "casa"
+          ],
+          "answer": "casa",
+          "explanation": "いえ significa «casa».",
+          "audio": "いえ",
+          "slow_audio": "いえ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «silla»",
+          "target": "いす",
+          "options": [],
+          "answer": "",
+          "explanation": "silla",
+          "audio": "いす",
+          "slow_audio": "いす",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: silla"
+        },
+        {
+          "id": "jp-words-04-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa いす?",
+          "target": "いす",
+          "options": [
+            "silla",
+            "casa",
+            "habitación"
+          ],
+          "answer": "silla",
+          "explanation": "いす significa «silla».",
+          "audio": "いす",
+          "slow_audio": "いす",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-04-build-4",
+          "type": "build_word",
+          "prompt": "Construye «silla»",
+          "target": "いす",
+          "options": [
+            "す",
+            "い"
+          ],
+          "answer": "いす",
+          "explanation": "La palabra completa es いす. Escúchala seguida.",
+          "audio": "いす",
+          "slow_audio": "いす",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-04-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "まど",
+          "options": [
+            "いす",
+            "へや",
+            "まど"
+          ],
+          "answer": "まど",
+          "explanation": "Escuchaste まど: ventana.",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa へや?",
+          "target": "へや",
+          "options": [
+            "casa",
+            "ventana",
+            "habitación"
+          ],
+          "answer": "habitación",
+          "explanation": "へや significa «habitación».",
+          "audio": "へや",
+          "slow_audio": "へや",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «baño»",
+          "target": "おふろ",
+          "options": [],
+          "answer": "",
+          "explanation": "baño",
+          "audio": "おふろ",
+          "slow_audio": "おふろ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: baño"
+        },
+        {
+          "id": "jp-words-04-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa おふろ?",
+          "target": "おふろ",
+          "options": [
+            "baño",
+            "casa",
+            "habitación"
+          ],
+          "answer": "baño",
+          "explanation": "おふろ significa «baño».",
+          "audio": "おふろ",
+          "slow_audio": "おふろ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-04-build-5",
+          "type": "build_word",
+          "prompt": "Construye «baño»",
+          "target": "おふろ",
+          "options": [
+            "ろ",
+            "ふ",
+            "お"
+          ],
+          "answer": "おふろ",
+          "explanation": "La palabra completa es おふろ. Escúchala seguida.",
+          "audio": "おふろ",
+          "slow_audio": "おふろ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-04-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "おふろ",
+          "options": [
+            "いす",
+            "まど",
+            "おふろ"
+          ],
+          "answer": "おふろ",
+          "explanation": "Escuchaste おふろ: baño.",
+          "audio": "おふろ",
+          "slow_audio": "おふろ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-04-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa まど?",
+          "target": "まど",
+          "options": [
+            "casa",
+            "habitación",
+            "ventana"
+          ],
+          "answer": "ventana",
+          "explanation": "まど significa «ventana».",
+          "audio": "まど",
+          "slow_audio": "まど",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-04",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-05",
+      "title": "Comida",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Comida",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-05-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «agua»",
+          "target": "みず",
+          "options": [],
+          "answer": "",
+          "explanation": "agua",
+          "audio": "みず",
+          "slow_audio": "みず",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: agua"
+        },
+        {
+          "id": "jp-words-05-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa みず?",
+          "target": "みず",
+          "options": [
+            "agua",
+            "arroz o comida",
+            "pan"
+          ],
+          "answer": "agua",
+          "explanation": "みず significa «agua».",
+          "audio": "みず",
+          "slow_audio": "みず",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-05-build-1",
+          "type": "build_word",
+          "prompt": "Construye «agua»",
+          "target": "みず",
+          "options": [
+            "ず",
+            "み"
+          ],
+          "answer": "みず",
+          "explanation": "La palabra completa es みず. Escúchala seguida.",
+          "audio": "みず",
+          "slow_audio": "みず",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-05-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «arroz o comida»",
+          "target": "ごはん",
+          "options": [],
+          "answer": "",
+          "explanation": "arroz o comida",
+          "audio": "ごはん",
+          "slow_audio": "ごはん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: arroz o comida"
+        },
+        {
+          "id": "jp-words-05-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ごはん?",
+          "target": "ごはん",
+          "options": [
+            "arroz o comida",
+            "agua",
+            "pan"
+          ],
+          "answer": "arroz o comida",
+          "explanation": "ごはん significa «arroz o comida».",
+          "audio": "ごはん",
+          "slow_audio": "ごはん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-05-build-2",
+          "type": "build_word",
+          "prompt": "Construye «arroz o comida»",
+          "target": "ごはん",
+          "options": [
+            "ん",
+            "は",
+            "ご"
+          ],
+          "answer": "ごはん",
+          "explanation": "La palabra completa es ごはん. Escúchala seguida.",
+          "audio": "ごはん",
+          "slow_audio": "ごはん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-05-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "みず",
+          "options": [
+            "ごはん",
+            "みず"
+          ],
+          "answer": "みず",
+          "explanation": "Escuchaste みず: agua.",
+          "audio": "みず",
+          "slow_audio": "みず",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «pan»",
+          "target": "パン",
+          "options": [],
+          "answer": "",
+          "explanation": "pan",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: pan"
+        },
+        {
+          "id": "jp-words-05-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa パン?",
+          "target": "パン",
+          "options": [
+            "pan",
+            "agua",
+            "arroz o comida"
+          ],
+          "answer": "pan",
+          "explanation": "パン significa «pan».",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-05-build-3",
+          "type": "build_word",
+          "prompt": "Construye «pan»",
+          "target": "パン",
+          "options": [
+            "ン",
+            "パ"
+          ],
+          "answer": "パン",
+          "explanation": "La palabra completa es パン. Escúchala seguida.",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-05-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "パン",
+          "options": [
+            "ごはん",
+            "みず",
+            "パン"
+          ],
+          "answer": "パン",
+          "explanation": "Escuchaste パン: pan.",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa みず?",
+          "target": "みず",
+          "options": [
+            "arroz o comida",
+            "pan",
+            "agua"
+          ],
+          "answer": "agua",
+          "explanation": "みず significa «agua».",
+          "audio": "みず",
+          "slow_audio": "みず",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «té»",
+          "target": "おちゃ",
+          "options": [],
+          "answer": "",
+          "explanation": "té",
+          "audio": "おちゃ",
+          "slow_audio": "おちゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: té"
+        },
+        {
+          "id": "jp-words-05-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa おちゃ?",
+          "target": "おちゃ",
+          "options": [
+            "té",
+            "agua",
+            "arroz o comida"
+          ],
+          "answer": "té",
+          "explanation": "おちゃ significa «té».",
+          "audio": "おちゃ",
+          "slow_audio": "おちゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-05-build-4",
+          "type": "build_word",
+          "prompt": "Construye «té»",
+          "target": "おちゃ",
+          "options": [
+            "ゃ",
+            "ち",
+            "お"
+          ],
+          "answer": "おちゃ",
+          "explanation": "La palabra completa es おちゃ. Escúchala seguida.",
+          "audio": "おちゃ",
+          "slow_audio": "おちゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-05-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "パン",
+          "options": [
+            "おちゃ",
+            "ごはん",
+            "パン"
+          ],
+          "answer": "パン",
+          "explanation": "Escuchaste パン: pan.",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ごはん?",
+          "target": "ごはん",
+          "options": [
+            "agua",
+            "pan",
+            "arroz o comida"
+          ],
+          "answer": "arroz o comida",
+          "explanation": "ごはん significa «arroz o comida».",
+          "audio": "ごはん",
+          "slow_audio": "ごはん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «pescado»",
+          "target": "さかな",
+          "options": [],
+          "answer": "",
+          "explanation": "pescado",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: pescado"
+        },
+        {
+          "id": "jp-words-05-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa さかな?",
+          "target": "さかな",
+          "options": [
+            "pescado",
+            "agua",
+            "arroz o comida"
+          ],
+          "answer": "pescado",
+          "explanation": "さかな significa «pescado».",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-05-build-5",
+          "type": "build_word",
+          "prompt": "Construye «pescado»",
+          "target": "さかな",
+          "options": [
+            "な",
+            "か",
+            "さ"
+          ],
+          "answer": "さかな",
+          "explanation": "La palabra completa es さかな. Escúchala seguida.",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-05-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "さかな",
+          "options": [
+            "おちゃ",
+            "パン",
+            "さかな"
+          ],
+          "answer": "さかな",
+          "explanation": "Escuchaste さかな: pescado.",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-05-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa パン?",
+          "target": "パン",
+          "options": [
+            "agua",
+            "arroz o comida",
+            "pan"
+          ],
+          "answer": "pan",
+          "explanation": "パン significa «pan».",
+          "audio": "パン",
+          "slow_audio": "パン",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-05",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-06",
+      "title": "Lugares",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Lugares",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-06-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «aquí»",
+          "target": "ここ",
+          "options": [],
+          "answer": "",
+          "explanation": "aquí",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: aquí"
+        },
+        {
+          "id": "jp-words-06-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ここ?",
+          "target": "ここ",
+          "options": [
+            "aquí",
+            "ahí",
+            "allí"
+          ],
+          "answer": "aquí",
+          "explanation": "ここ significa «aquí».",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-06-build-1",
+          "type": "build_word",
+          "prompt": "Construye «aquí»",
+          "target": "ここ",
+          "options": [
+            "こ",
+            "こ"
+          ],
+          "answer": "ここ",
+          "explanation": "La palabra completa es ここ. Escúchala seguida.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-06-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «ahí»",
+          "target": "そこ",
+          "options": [],
+          "answer": "",
+          "explanation": "ahí",
+          "audio": "そこ",
+          "slow_audio": "そこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ahí"
+        },
+        {
+          "id": "jp-words-06-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa そこ?",
+          "target": "そこ",
+          "options": [
+            "ahí",
+            "aquí",
+            "allí"
+          ],
+          "answer": "ahí",
+          "explanation": "そこ significa «ahí».",
+          "audio": "そこ",
+          "slow_audio": "そこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-06-build-2",
+          "type": "build_word",
+          "prompt": "Construye «ahí»",
+          "target": "そこ",
+          "options": [
+            "こ",
+            "そ"
+          ],
+          "answer": "そこ",
+          "explanation": "La palabra completa es そこ. Escúchala seguida.",
+          "audio": "そこ",
+          "slow_audio": "そこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-06-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "ここ",
+          "options": [
+            "そこ",
+            "ここ"
+          ],
+          "answer": "ここ",
+          "explanation": "Escuchaste ここ: aquí.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «allí»",
+          "target": "あそこ",
+          "options": [],
+          "answer": "",
+          "explanation": "allí",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: allí"
+        },
+        {
+          "id": "jp-words-06-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あそこ?",
+          "target": "あそこ",
+          "options": [
+            "allí",
+            "aquí",
+            "ahí"
+          ],
+          "answer": "allí",
+          "explanation": "あそこ significa «allí».",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-06-build-3",
+          "type": "build_word",
+          "prompt": "Construye «allí»",
+          "target": "あそこ",
+          "options": [
+            "こ",
+            "そ",
+            "あ"
+          ],
+          "answer": "あそこ",
+          "explanation": "La palabra completa es あそこ. Escúchala seguida.",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-06-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あそこ",
+          "options": [
+            "そこ",
+            "ここ",
+            "あそこ"
+          ],
+          "answer": "あそこ",
+          "explanation": "Escuchaste あそこ: allí.",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ここ?",
+          "target": "ここ",
+          "options": [
+            "ahí",
+            "allí",
+            "aquí"
+          ],
+          "answer": "aquí",
+          "explanation": "ここ significa «aquí».",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «estación»",
+          "target": "えき",
+          "options": [],
+          "answer": "",
+          "explanation": "estación",
+          "audio": "えき",
+          "slow_audio": "えき",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: estación"
+        },
+        {
+          "id": "jp-words-06-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa えき?",
+          "target": "えき",
+          "options": [
+            "estación",
+            "aquí",
+            "ahí"
+          ],
+          "answer": "estación",
+          "explanation": "えき significa «estación».",
+          "audio": "えき",
+          "slow_audio": "えき",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-06-build-4",
+          "type": "build_word",
+          "prompt": "Construye «estación»",
+          "target": "えき",
+          "options": [
+            "き",
+            "え"
+          ],
+          "answer": "えき",
+          "explanation": "La palabra completa es えき. Escúchala seguida.",
+          "audio": "えき",
+          "slow_audio": "えき",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-06-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あそこ",
+          "options": [
+            "えき",
+            "そこ",
+            "あそこ"
+          ],
+          "answer": "あそこ",
+          "explanation": "Escuchaste あそこ: allí.",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa そこ?",
+          "target": "そこ",
+          "options": [
+            "aquí",
+            "allí",
+            "ahí"
+          ],
+          "answer": "ahí",
+          "explanation": "そこ significa «ahí».",
+          "audio": "そこ",
+          "slow_audio": "そこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «tienda»",
+          "target": "みせ",
+          "options": [],
+          "answer": "",
+          "explanation": "tienda",
+          "audio": "みせ",
+          "slow_audio": "みせ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: tienda"
+        },
+        {
+          "id": "jp-words-06-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa みせ?",
+          "target": "みせ",
+          "options": [
+            "tienda",
+            "aquí",
+            "ahí"
+          ],
+          "answer": "tienda",
+          "explanation": "みせ significa «tienda».",
+          "audio": "みせ",
+          "slow_audio": "みせ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-06-build-5",
+          "type": "build_word",
+          "prompt": "Construye «tienda»",
+          "target": "みせ",
+          "options": [
+            "せ",
+            "み"
+          ],
+          "answer": "みせ",
+          "explanation": "La palabra completa es みせ. Escúchala seguida.",
+          "audio": "みせ",
+          "slow_audio": "みせ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-06-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "みせ",
+          "options": [
+            "えき",
+            "あそこ",
+            "みせ"
+          ],
+          "answer": "みせ",
+          "explanation": "Escuchaste みせ: tienda.",
+          "audio": "みせ",
+          "slow_audio": "みせ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-06-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa あそこ?",
+          "target": "あそこ",
+          "options": [
+            "aquí",
+            "ahí",
+            "allí"
+          ],
+          "answer": "allí",
+          "explanation": "あそこ significa «allí».",
+          "audio": "あそこ",
+          "slow_audio": "あそこ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-06",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-07",
+      "title": "Números",
+      "description": "Aprende 10 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-07-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Números",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-07-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «uno»",
+          "target": "いち",
+          "options": [],
+          "answer": "",
+          "explanation": "uno",
+          "audio": "いち",
+          "slow_audio": "いち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: uno"
+        },
+        {
+          "id": "jp-words-07-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa いち?",
+          "target": "いち",
+          "options": [
+            "uno",
+            "dos",
+            "tres"
+          ],
+          "answer": "uno",
+          "explanation": "いち significa «uno».",
+          "audio": "いち",
+          "slow_audio": "いち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-1",
+          "type": "build_word",
+          "prompt": "Construye «uno»",
+          "target": "いち",
+          "options": [
+            "ち",
+            "い"
+          ],
+          "answer": "いち",
+          "explanation": "La palabra completa es いち. Escúchala seguida.",
+          "audio": "いち",
+          "slow_audio": "いち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «dos»",
+          "target": "に",
+          "options": [],
+          "answer": "",
+          "explanation": "dos",
+          "audio": "に",
+          "slow_audio": "に",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: dos"
+        },
+        {
+          "id": "jp-words-07-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa に?",
+          "target": "に",
+          "options": [
+            "dos",
+            "uno",
+            "tres"
+          ],
+          "answer": "dos",
+          "explanation": "に significa «dos».",
+          "audio": "に",
+          "slow_audio": "に",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-2",
+          "type": "build_word",
+          "prompt": "Construye «dos»",
+          "target": "に",
+          "options": [
+            "に"
+          ],
+          "answer": "に",
+          "explanation": "La palabra completa es に. Escúchala seguida.",
+          "audio": "に",
+          "slow_audio": "に",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "いち",
+          "options": [
+            "に",
+            "いち"
+          ],
+          "answer": "いち",
+          "explanation": "Escuchaste いち: uno.",
+          "audio": "いち",
+          "slow_audio": "いち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «tres»",
+          "target": "さん",
+          "options": [],
+          "answer": "",
+          "explanation": "tres",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: tres"
+        },
+        {
+          "id": "jp-words-07-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa さん?",
+          "target": "さん",
+          "options": [
+            "tres",
+            "uno",
+            "dos"
+          ],
+          "answer": "tres",
+          "explanation": "さん significa «tres».",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-3",
+          "type": "build_word",
+          "prompt": "Construye «tres»",
+          "target": "さん",
+          "options": [
+            "ん",
+            "さ"
+          ],
+          "answer": "さん",
+          "explanation": "La palabra completa es さん. Escúchala seguida.",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "さん",
+          "options": [
+            "に",
+            "いち",
+            "さん"
+          ],
+          "answer": "さん",
+          "explanation": "Escuchaste さん: tres.",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa いち?",
+          "target": "いち",
+          "options": [
+            "dos",
+            "tres",
+            "uno"
+          ],
+          "answer": "uno",
+          "explanation": "いち significa «uno».",
+          "audio": "いち",
+          "slow_audio": "いち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «cuatro»",
+          "target": "よん",
+          "options": [],
+          "answer": "",
+          "explanation": "cuatro",
+          "audio": "よん",
+          "slow_audio": "よん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: cuatro"
+        },
+        {
+          "id": "jp-words-07-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa よん?",
+          "target": "よん",
+          "options": [
+            "cuatro",
+            "uno",
+            "dos"
+          ],
+          "answer": "cuatro",
+          "explanation": "よん significa «cuatro».",
+          "audio": "よん",
+          "slow_audio": "よん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-4",
+          "type": "build_word",
+          "prompt": "Construye «cuatro»",
+          "target": "よん",
+          "options": [
+            "ん",
+            "よ"
+          ],
+          "answer": "よん",
+          "explanation": "La palabra completa es よん. Escúchala seguida.",
+          "audio": "よん",
+          "slow_audio": "よん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "さん",
+          "options": [
+            "よん",
+            "に",
+            "さん"
+          ],
+          "answer": "さん",
+          "explanation": "Escuchaste さん: tres.",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa に?",
+          "target": "に",
+          "options": [
+            "uno",
+            "tres",
+            "dos"
+          ],
+          "answer": "dos",
+          "explanation": "に significa «dos».",
+          "audio": "に",
+          "slow_audio": "に",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «cinco»",
+          "target": "ご",
+          "options": [],
+          "answer": "",
+          "explanation": "cinco",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: cinco"
+        },
+        {
+          "id": "jp-words-07-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ご?",
+          "target": "ご",
+          "options": [
+            "cinco",
+            "uno",
+            "dos"
+          ],
+          "answer": "cinco",
+          "explanation": "ご significa «cinco».",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-5",
+          "type": "build_word",
+          "prompt": "Construye «cinco»",
+          "target": "ご",
+          "options": [
+            "ご"
+          ],
+          "answer": "ご",
+          "explanation": "La palabra completa es ご. Escúchala seguida.",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "ご",
+          "options": [
+            "よん",
+            "さん",
+            "ご"
+          ],
+          "answer": "ご",
+          "explanation": "Escuchaste ご: cinco.",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa さん?",
+          "target": "さん",
+          "options": [
+            "uno",
+            "dos",
+            "tres"
+          ],
+          "answer": "tres",
+          "explanation": "さん significa «tres».",
+          "audio": "さん",
+          "slow_audio": "さん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-6",
+          "type": "teach_word",
+          "prompt": "Aprende «seis»",
+          "target": "ろく",
+          "options": [],
+          "answer": "",
+          "explanation": "seis",
+          "audio": "ろく",
+          "slow_audio": "ろく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: seis"
+        },
+        {
+          "id": "jp-words-07-quiz-6",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ろく?",
+          "target": "ろく",
+          "options": [
+            "seis",
+            "uno",
+            "dos"
+          ],
+          "answer": "seis",
+          "explanation": "ろく significa «seis».",
+          "audio": "ろく",
+          "slow_audio": "ろく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-6",
+          "type": "build_word",
+          "prompt": "Construye «seis»",
+          "target": "ろく",
+          "options": [
+            "く",
+            "ろ"
+          ],
+          "answer": "ろく",
+          "explanation": "La palabra completa es ろく. Escúchala seguida.",
+          "audio": "ろく",
+          "slow_audio": "ろく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-6",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "ご",
+          "options": [
+            "ろく",
+            "よん",
+            "ご"
+          ],
+          "answer": "ご",
+          "explanation": "Escuchaste ご: cinco.",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-6",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa よん?",
+          "target": "よん",
+          "options": [
+            "uno",
+            "dos",
+            "cuatro"
+          ],
+          "answer": "cuatro",
+          "explanation": "よん significa «cuatro».",
+          "audio": "よん",
+          "slow_audio": "よん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-7",
+          "type": "teach_word",
+          "prompt": "Aprende «siete»",
+          "target": "なな",
+          "options": [],
+          "answer": "",
+          "explanation": "siete",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: siete"
+        },
+        {
+          "id": "jp-words-07-quiz-7",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa なな?",
+          "target": "なな",
+          "options": [
+            "siete",
+            "uno",
+            "dos"
+          ],
+          "answer": "siete",
+          "explanation": "なな significa «siete».",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-7",
+          "type": "build_word",
+          "prompt": "Construye «siete»",
+          "target": "なな",
+          "options": [
+            "な",
+            "な"
+          ],
+          "answer": "なな",
+          "explanation": "La palabra completa es なな. Escúchala seguida.",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-7",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "なな",
+          "options": [
+            "ろく",
+            "ご",
+            "なな"
+          ],
+          "answer": "なな",
+          "explanation": "Escuchaste なな: siete.",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-7",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ご?",
+          "target": "ご",
+          "options": [
+            "uno",
+            "dos",
+            "cinco"
+          ],
+          "answer": "cinco",
+          "explanation": "ご significa «cinco».",
+          "audio": "ご",
+          "slow_audio": "ご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-8",
+          "type": "teach_word",
+          "prompt": "Aprende «ocho»",
+          "target": "はち",
+          "options": [],
+          "answer": "",
+          "explanation": "ocho",
+          "audio": "はち",
+          "slow_audio": "はち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ocho"
+        },
+        {
+          "id": "jp-words-07-quiz-8",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa はち?",
+          "target": "はち",
+          "options": [
+            "ocho",
+            "uno",
+            "dos"
+          ],
+          "answer": "ocho",
+          "explanation": "はち significa «ocho».",
+          "audio": "はち",
+          "slow_audio": "はち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-8",
+          "type": "build_word",
+          "prompt": "Construye «ocho»",
+          "target": "はち",
+          "options": [
+            "ち",
+            "は"
+          ],
+          "answer": "はち",
+          "explanation": "La palabra completa es はち. Escúchala seguida.",
+          "audio": "はち",
+          "slow_audio": "はち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-8",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "なな",
+          "options": [
+            "はち",
+            "ろく",
+            "なな"
+          ],
+          "answer": "なな",
+          "explanation": "Escuchaste なな: siete.",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-8",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa ろく?",
+          "target": "ろく",
+          "options": [
+            "uno",
+            "dos",
+            "seis"
+          ],
+          "answer": "seis",
+          "explanation": "ろく significa «seis».",
+          "audio": "ろく",
+          "slow_audio": "ろく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-9",
+          "type": "teach_word",
+          "prompt": "Aprende «nueve»",
+          "target": "きゅう",
+          "options": [],
+          "answer": "",
+          "explanation": "nueve",
+          "audio": "きゅう",
+          "slow_audio": "きゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: nueve"
+        },
+        {
+          "id": "jp-words-07-quiz-9",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa きゅう?",
+          "target": "きゅう",
+          "options": [
+            "nueve",
+            "uno",
+            "dos"
+          ],
+          "answer": "nueve",
+          "explanation": "きゅう significa «nueve».",
+          "audio": "きゅう",
+          "slow_audio": "きゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-9",
+          "type": "build_word",
+          "prompt": "Construye «nueve»",
+          "target": "きゅう",
+          "options": [
+            "う",
+            "ゅ",
+            "き"
+          ],
+          "answer": "きゅう",
+          "explanation": "La palabra completa es きゅう. Escúchala seguida.",
+          "audio": "きゅう",
+          "slow_audio": "きゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-9",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "きゅう",
+          "options": [
+            "はち",
+            "なな",
+            "きゅう"
+          ],
+          "answer": "きゅう",
+          "explanation": "Escuchaste きゅう: nueve.",
+          "audio": "きゅう",
+          "slow_audio": "きゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-9",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa なな?",
+          "target": "なな",
+          "options": [
+            "uno",
+            "dos",
+            "siete"
+          ],
+          "answer": "siete",
+          "explanation": "なな significa «siete».",
+          "audio": "なな",
+          "slow_audio": "なな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-teach-10",
+          "type": "teach_word",
+          "prompt": "Aprende «diez»",
+          "target": "じゅう",
+          "options": [],
+          "answer": "",
+          "explanation": "diez",
+          "audio": "じゅう",
+          "slow_audio": "じゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: diez"
+        },
+        {
+          "id": "jp-words-07-quiz-10",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa じゅう?",
+          "target": "じゅう",
+          "options": [
+            "diez",
+            "uno",
+            "dos"
+          ],
+          "answer": "diez",
+          "explanation": "じゅう significa «diez».",
+          "audio": "じゅう",
+          "slow_audio": "じゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-07-build-10",
+          "type": "build_word",
+          "prompt": "Construye «diez»",
+          "target": "じゅう",
+          "options": [
+            "う",
+            "ゅ",
+            "じ"
+          ],
+          "answer": "じゅう",
+          "explanation": "La palabra completa es じゅう. Escúchala seguida.",
+          "audio": "じゅう",
+          "slow_audio": "じゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-07-listen-10",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "きゅう",
+          "options": [
+            "じゅう",
+            "はち",
+            "きゅう"
+          ],
+          "answer": "きゅう",
+          "explanation": "Escuchaste きゅう: nueve.",
+          "audio": "きゅう",
+          "slow_audio": "きゅう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-07-spiral-10",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa はち?",
+          "target": "はち",
+          "options": [
+            "uno",
+            "dos",
+            "ocho"
+          ],
+          "answer": "ocho",
+          "explanation": "はち significa «ocho».",
+          "audio": "はち",
+          "slow_audio": "はち",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-words-08",
+      "title": "Hora y días",
+      "description": "Aprende 5 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-words-08-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Hora y días",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-words-08-teach-1",
+          "type": "teach_word",
+          "prompt": "Aprende «ahora»",
+          "target": "いま",
+          "options": [],
+          "answer": "",
+          "explanation": "ahora",
+          "audio": "いま",
+          "slow_audio": "いま",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ahora"
+        },
+        {
+          "id": "jp-words-08-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa いま?",
+          "target": "いま",
+          "options": [
+            "ahora",
+            "hoy",
+            "mañana"
+          ],
+          "answer": "ahora",
+          "explanation": "いま significa «ahora».",
+          "audio": "いま",
+          "slow_audio": "いま",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-08-build-1",
+          "type": "build_word",
+          "prompt": "Construye «ahora»",
+          "target": "いま",
+          "options": [
+            "ま",
+            "い"
+          ],
+          "answer": "いま",
+          "explanation": "La palabra completa es いま. Escúchala seguida.",
+          "audio": "いま",
+          "slow_audio": "いま",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-08-teach-2",
+          "type": "teach_word",
+          "prompt": "Aprende «hoy»",
+          "target": "きょう",
+          "options": [],
+          "answer": "",
+          "explanation": "hoy",
+          "audio": "きょう",
+          "slow_audio": "きょう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: hoy"
+        },
+        {
+          "id": "jp-words-08-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa きょう?",
+          "target": "きょう",
+          "options": [
+            "hoy",
+            "ahora",
+            "mañana"
+          ],
+          "answer": "hoy",
+          "explanation": "きょう significa «hoy».",
+          "audio": "きょう",
+          "slow_audio": "きょう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-08-build-2",
+          "type": "build_word",
+          "prompt": "Construye «hoy»",
+          "target": "きょう",
+          "options": [
+            "う",
+            "ょ",
+            "き"
+          ],
+          "answer": "きょう",
+          "explanation": "La palabra completa es きょう. Escúchala seguida.",
+          "audio": "きょう",
+          "slow_audio": "きょう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-08-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "いま",
+          "options": [
+            "きょう",
+            "いま"
+          ],
+          "answer": "いま",
+          "explanation": "Escuchaste いま: ahora.",
+          "audio": "いま",
+          "slow_audio": "いま",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-teach-3",
+          "type": "teach_word",
+          "prompt": "Aprende «mañana»",
+          "target": "あした",
+          "options": [],
+          "answer": "",
+          "explanation": "mañana",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: mañana"
+        },
+        {
+          "id": "jp-words-08-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa あした?",
+          "target": "あした",
+          "options": [
+            "mañana",
+            "ahora",
+            "hoy"
+          ],
+          "answer": "mañana",
+          "explanation": "あした significa «mañana».",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-08-build-3",
+          "type": "build_word",
+          "prompt": "Construye «mañana»",
+          "target": "あした",
+          "options": [
+            "た",
+            "し",
+            "あ"
+          ],
+          "answer": "あした",
+          "explanation": "La palabra completa es あした. Escúchala seguida.",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-08-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あした",
+          "options": [
+            "きょう",
+            "いま",
+            "あした"
+          ],
+          "answer": "あした",
+          "explanation": "Escuchaste あした: mañana.",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa いま?",
+          "target": "いま",
+          "options": [
+            "hoy",
+            "mañana",
+            "ahora"
+          ],
+          "answer": "ahora",
+          "explanation": "いま significa «ahora».",
+          "audio": "いま",
+          "slow_audio": "いま",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-teach-4",
+          "type": "teach_word",
+          "prompt": "Aprende «lunes»",
+          "target": "げつようび",
+          "options": [],
+          "answer": "",
+          "explanation": "lunes",
+          "audio": "げつようび",
+          "slow_audio": "げつようび",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: lunes"
+        },
+        {
+          "id": "jp-words-08-quiz-4",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa げつようび?",
+          "target": "げつようび",
+          "options": [
+            "lunes",
+            "ahora",
+            "hoy"
+          ],
+          "answer": "lunes",
+          "explanation": "げつようび significa «lunes».",
+          "audio": "げつようび",
+          "slow_audio": "げつようび",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-08-build-4",
+          "type": "build_word",
+          "prompt": "Construye «lunes»",
+          "target": "げつようび",
+          "options": [
+            "び",
+            "う",
+            "よ",
+            "つ",
+            "げ"
+          ],
+          "answer": "げつようび",
+          "explanation": "La palabra completa es げつようび. Escúchala seguida.",
+          "audio": "げつようび",
+          "slow_audio": "げつようび",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-08-listen-4",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "あした",
+          "options": [
+            "げつようび",
+            "きょう",
+            "あした"
+          ],
+          "answer": "あした",
+          "explanation": "Escuchaste あした: mañana.",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-spiral-4",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa きょう?",
+          "target": "きょう",
+          "options": [
+            "ahora",
+            "mañana",
+            "hoy"
+          ],
+          "answer": "hoy",
+          "explanation": "きょう significa «hoy».",
+          "audio": "きょう",
+          "slow_audio": "きょう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "spiral_review"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-teach-5",
+          "type": "teach_word",
+          "prompt": "Aprende «qué hora»",
+          "target": "なんじ",
+          "options": [],
+          "answer": "",
+          "explanation": "qué hora",
+          "audio": "なんじ",
+          "slow_audio": "なんじ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: qué hora"
+        },
+        {
+          "id": "jp-words-08-quiz-5",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa なんじ?",
+          "target": "なんじ",
+          "options": [
+            "qué hora",
+            "ahora",
+            "hoy"
+          ],
+          "answer": "qué hora",
+          "explanation": "なんじ significa «qué hora».",
+          "audio": "なんじ",
+          "slow_audio": "なんじ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-words-08-build-5",
+          "type": "build_word",
+          "prompt": "Construye «qué hora»",
+          "target": "なんじ",
+          "options": [
+            "じ",
+            "ん",
+            "な"
+          ],
+          "answer": "なんじ",
+          "explanation": "La palabra completa es なんじ. Escúchala seguida.",
+          "audio": "なんじ",
+          "slow_audio": "なんじ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "build_word"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-words-08-listen-5",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "なんじ",
+          "options": [
+            "げつようび",
+            "あした",
+            "なんじ"
+          ],
+          "answer": "なんじ",
+          "explanation": "Escuchaste なんじ: qué hora.",
+          "audio": "なんじ",
+          "slow_audio": "なんじ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-words-08-spiral-5",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa あした?",
+          "target": "あした",
+          "options": [
+            "ahora",
+            "hoy",
+            "mañana"
+          ],
+          "answer": "mañana",
+          "explanation": "あした significa «mañana».",
+          "audio": "あした",
+          "slow_audio": "あした",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-words-08",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    }
+  ]
+}

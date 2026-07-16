@@ -121,6 +121,29 @@ def save_api_key(api_key: str) -> None:
         pass
 
 
+def get_japanese_course_voice_id() -> str:
+    load_dotenv(ENV_FILE, override=True)
+    explicit = os.getenv("JAPANESE_COURSE_VOICE_ID", "").strip()
+    if explicit:
+        return explicit
+    profiles = load_voice_profiles()
+    for preferred in ("Japonés", "Japanese", "Mina"):
+        voice_id = profiles.get(preferred, {}).get("voice_id", "").strip()
+        if voice_id:
+            return voice_id
+    return ""
+
+
+def save_japanese_course_voice_id(voice_id: str) -> None:
+    if not ENV_FILE.exists():
+        ENV_FILE.touch(mode=0o600)
+    set_key(str(ENV_FILE), "JAPANESE_COURSE_VOICE_ID", voice_id.strip())
+    try:
+        ENV_FILE.chmod(0o600)
+    except OSError:
+        pass
+
+
 def get_creative_api_key() -> str:
     load_dotenv(ENV_FILE, override=True)
     return os.getenv("CREATIVE_ENGINE_API_KEY", "").strip()

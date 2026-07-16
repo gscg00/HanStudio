@@ -1,0 +1,104 @@
+{
+  "courseId": "japanese-from-zero",
+  "title": "Japonés desde cero",
+  "language": "Japanese",
+  "version": 3,
+  "levels": [
+    {
+      "id": "route-a1",
+      "title": "Ruta 1 · Preparación para historias A1"
+    },
+    {
+      "id": "route-a2",
+      "title": "Ruta 2 · Consolidación A1 y preparación A2",
+      "comingSoon": true
+    }
+  ],
+  "unlockRules": {
+    "minimumScore": 70,
+    "masteryScore": 90
+  },
+  "recommendedBooks": [],
+  "units": [
+    {
+      "id": "hiragana-01",
+      "world": 1,
+      "title": "Hiragana",
+      "description": "Domina el silabario hiragana completo.",
+      "manifest": "units/hiragana-01.json",
+      "icon": "あ"
+    },
+    {
+      "id": "katakana",
+      "world": 2,
+      "title": "Katakana",
+      "description": "Domina katakana y combinaciones para préstamos.",
+      "manifest": "units/katakana.json",
+      "icon": "ア"
+    },
+    {
+      "id": "rhythm",
+      "world": 3,
+      "title": "Ritmo y pronunciación",
+      "description": "Moras, duración, っ y ん.",
+      "manifest": "units/rhythm.json",
+      "icon": "♪"
+    },
+    {
+      "id": "first-words",
+      "world": 4,
+      "title": "Primeras palabras",
+      "description": "Vocabulario que ya puedes leer.",
+      "manifest": "units/first-words.json",
+      "icon": "言"
+    },
+    {
+      "id": "first-sentences",
+      "world": 5,
+      "title": "Primeras oraciones",
+      "description": "Estructuras y partículas iniciales.",
+      "manifest": "units/first-sentences.json",
+      "icon": "文"
+    },
+    {
+      "id": "basic-verbs",
+      "world": 6,
+      "title": "Verbos básicos",
+      "description": "Acciones y formas corteses.",
+      "manifest": "units/basic-verbs.json",
+      "icon": "動"
+    },
+    {
+      "id": "adjectives",
+      "world": 7,
+      "title": "Adjetivos y descripción",
+      "description": "Cualidades, colores y gustos.",
+      "manifest": "units/adjectives.json",
+      "icon": "形"
+    },
+    {
+      "id": "functional-a1",
+      "world": 8,
+      "title": "Japonés funcional A1",
+      "description": "Situaciones cotidianas.",
+      "manifest": "units/functional-a1.json",
+      "icon": "会"
+    },
+    {
+      "id": "starter-kanji",
+      "world": 9,
+      "title": "Kanji inicial",
+      "description": "50 kanji dentro de palabras.",
+      "manifest": "units/starter-kanji.json",
+      "icon": "日"
+    },
+    {
+      "id": "story-bridge",
+      "world": 10,
+      "title": "Puente hacia las historias",
+      "description": "Diálogos y lecturas breves.",
+      "manifest": "units/story-bridge.json",
+      "icon": "本"
+    }
+  ]
+}

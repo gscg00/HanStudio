@@ -1,0 +1,780 @@
+{
+  "id": "rhythm",
+  "title": "Ritmo y pronunciación",
+  "description": "Aprende moras, duración y pausas antes del vocabulario.",
+  "requirements": [],
+  "reward": {
+    "xp": 350,
+    "badge": "Oído japonés"
+  },
+  "lessons": [
+    {
+      "id": "jp-rhythm-mora",
+      "title": "Moras y ritmo regular",
+      "description": "Cada kana suele ocupar un pulso.",
+      "activities": [
+        {
+          "id": "jp-rhythm-mora-intro",
+          "type": "lesson_intro",
+          "prompt": "Moras y ritmo regular",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Cada kana suele ocupar un pulso.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-rhythm-mora-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Tres pulsos regulares.",
+          "target": "たまご",
+          "options": [],
+          "answer": "",
+          "explanation": "Tres pulsos regulares.",
+          "audio": "たまご",
+          "slow_audio": "たまご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Tres pulsos regulares."
+        },
+        {
+          "id": "jp-rhythm-mora-model-2",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Tres pulsos regulares.",
+          "target": "さかな",
+          "options": [],
+          "answer": "",
+          "explanation": "Tres pulsos regulares.",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Tres pulsos regulares."
+        },
+        {
+          "id": "jp-rhythm-mora-model-3",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Dos pulsos.",
+          "target": "ここ",
+          "options": [],
+          "answer": "",
+          "explanation": "Dos pulsos.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Dos pulsos."
+        },
+        {
+          "id": "jp-rhythm-mora-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "たまご",
+          "options": [
+            "たまご",
+            "さかな",
+            "ここ"
+          ],
+          "answer": "たまご",
+          "explanation": "Tres pulsos regulares.",
+          "audio": "たまご",
+          "slow_audio": "たまご",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-mora-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "さかな",
+          "options": [
+            "さかな",
+            "たまご",
+            "ここ"
+          ],
+          "answer": "さかな",
+          "explanation": "Tres pulsos regulares.",
+          "audio": "さかな",
+          "slow_audio": "さかな",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-mora-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "ここ",
+          "options": [
+            "ここ",
+            "たまご",
+            "さかな"
+          ],
+          "answer": "ここ",
+          "explanation": "Dos pulsos.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-mora",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-rhythm-long",
+      "title": "Vocales largas",
+      "description": "Una vocal larga ocupa dos moras y puede cambiar el significado.",
+      "activities": [
+        {
+          "id": "jp-rhythm-long-intro",
+          "type": "lesson_intro",
+          "prompt": "Vocales largas",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Una vocal larga ocupa dos moras y puede cambiar el significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-rhythm-long-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Tía o señora.",
+          "target": "おばさん",
+          "options": [],
+          "answer": "",
+          "explanation": "Tía o señora.",
+          "audio": "おばさん",
+          "slow_audio": "おばさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Tía o señora."
+        },
+        {
+          "id": "jp-rhythm-long-model-2",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Abuela o anciana.",
+          "target": "おばあさん",
+          "options": [],
+          "answer": "",
+          "explanation": "Abuela o anciana.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Abuela o anciana."
+        },
+        {
+          "id": "jp-rhythm-long-model-3",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Aquí.",
+          "target": "ここ",
+          "options": [],
+          "answer": "",
+          "explanation": "Aquí.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Aquí."
+        },
+        {
+          "id": "jp-rhythm-long-model-4",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Preparatoria.",
+          "target": "こうこう",
+          "options": [],
+          "answer": "",
+          "explanation": "Preparatoria.",
+          "audio": "こうこう",
+          "slow_audio": "こうこう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Preparatoria."
+        },
+        {
+          "id": "jp-rhythm-long-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "おばさん",
+          "options": [
+            "おばさん",
+            "おばあさん",
+            "ここ"
+          ],
+          "answer": "おばさん",
+          "explanation": "Tía o señora.",
+          "audio": "おばさん",
+          "slow_audio": "おばさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-long-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "おばあさん",
+          "options": [
+            "おばあさん",
+            "おばさん",
+            "ここ"
+          ],
+          "answer": "おばあさん",
+          "explanation": "Abuela o anciana.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-long-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "ここ",
+          "options": [
+            "ここ",
+            "おばさん",
+            "おばあさん"
+          ],
+          "answer": "ここ",
+          "explanation": "Aquí.",
+          "audio": "ここ",
+          "slow_audio": "ここ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-long",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-rhythm-small-tsu",
+      "title": "Consonante doble con っ",
+      "description": "La っ pequeña crea una pausa de una mora.",
+      "activities": [
+        {
+          "id": "jp-rhythm-small-tsu-intro",
+          "type": "lesson_intro",
+          "prompt": "Consonante doble con っ",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La っ pequeña crea una pausa de una mora.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-rhythm-small-tsu-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Ven / viniendo, según contexto.",
+          "target": "きて",
+          "options": [],
+          "answer": "",
+          "explanation": "Ven / viniendo, según contexto.",
+          "audio": "きて",
+          "slow_audio": "きて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Ven / viniendo, según contexto."
+        },
+        {
+          "id": "jp-rhythm-small-tsu-model-2",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Sello postal.",
+          "target": "きって",
+          "options": [],
+          "answer": "",
+          "explanation": "Sello postal.",
+          "audio": "きって",
+          "slow_audio": "きって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Sello postal."
+        },
+        {
+          "id": "jp-rhythm-small-tsu-model-3",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Cuesta.",
+          "target": "さか",
+          "options": [],
+          "answer": "",
+          "explanation": "Cuesta.",
+          "audio": "さか",
+          "slow_audio": "さか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Cuesta."
+        },
+        {
+          "id": "jp-rhythm-small-tsu-model-4",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Escritor.",
+          "target": "さっか",
+          "options": [],
+          "answer": "",
+          "explanation": "Escritor.",
+          "audio": "さっか",
+          "slow_audio": "さっか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Escritor."
+        },
+        {
+          "id": "jp-rhythm-small-tsu-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "きて",
+          "options": [
+            "きて",
+            "きって",
+            "さか"
+          ],
+          "answer": "きて",
+          "explanation": "Ven / viniendo, según contexto.",
+          "audio": "きて",
+          "slow_audio": "きて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-small-tsu-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "きって",
+          "options": [
+            "きって",
+            "きて",
+            "さか"
+          ],
+          "answer": "きって",
+          "explanation": "Sello postal.",
+          "audio": "きって",
+          "slow_audio": "きって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-small-tsu-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "さか",
+          "options": [
+            "さか",
+            "きて",
+            "きって"
+          ],
+          "answer": "さか",
+          "explanation": "Cuesta.",
+          "audio": "さか",
+          "slow_audio": "さか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-small-tsu",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-rhythm-n",
+      "title": "La mora ん",
+      "description": "Cuenta como una mora y se adapta al sonido siguiente.",
+      "activities": [
+        {
+          "id": "jp-rhythm-n-intro",
+          "type": "lesson_intro",
+          "prompt": "La mora ん",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Cuenta como una mora y se adapta al sonido siguiente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-rhythm-n-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Libro.",
+          "target": "ほん",
+          "options": [],
+          "answer": "",
+          "explanation": "Libro.",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Libro."
+        },
+        {
+          "id": "jp-rhythm-n-model-2",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Paseo.",
+          "target": "さんぽ",
+          "options": [],
+          "answer": "",
+          "explanation": "Paseo.",
+          "audio": "さんぽ",
+          "slow_audio": "さんぽ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Paseo."
+        },
+        {
+          "id": "jp-rhythm-n-model-3",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Periódico.",
+          "target": "しんぶん",
+          "options": [],
+          "answer": "",
+          "explanation": "Periódico.",
+          "audio": "しんぶん",
+          "slow_audio": "しんぶん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Periódico."
+        },
+        {
+          "id": "jp-rhythm-n-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "ほん",
+          "options": [
+            "ほん",
+            "さんぽ",
+            "しんぶん"
+          ],
+          "answer": "ほん",
+          "explanation": "Libro.",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-n-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "さんぽ",
+          "options": [
+            "さんぽ",
+            "ほん",
+            "しんぶん"
+          ],
+          "answer": "さんぽ",
+          "explanation": "Paseo.",
+          "audio": "さんぽ",
+          "slow_audio": "さんぽ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-n-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "しんぶん",
+          "options": [
+            "しんぶん",
+            "ほん",
+            "さんぽ"
+          ],
+          "answer": "しんぶん",
+          "explanation": "Periódico.",
+          "audio": "しんぶん",
+          "slow_audio": "しんぶん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-n",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "jp-rhythm-particles",
+      "title": "は・へ・を como partículas",
+      "description": "En partículas, は suena わ, へ suena え y を normalmente suena お.",
+      "activities": [
+        {
+          "id": "jp-rhythm-particles-intro",
+          "type": "lesson_intro",
+          "prompt": "は・へ・を como partículas",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "En partículas, は suena わ, へ suena え y を normalmente suena お.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-rhythm-particles-model-1",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: En cuanto a mí…",
+          "target": "わたしは",
+          "options": [],
+          "answer": "",
+          "explanation": "En cuanto a mí…",
+          "audio": "わたしは",
+          "slow_audio": "わたしは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "En cuanto a mí…"
+        },
+        {
+          "id": "jp-rhythm-particles-model-2",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Hacia la escuela.",
+          "target": "がっこうへ",
+          "options": [],
+          "answer": "",
+          "explanation": "Hacia la escuela.",
+          "audio": "がっこうへ",
+          "slow_audio": "がっこうへ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Hacia la escuela."
+        },
+        {
+          "id": "jp-rhythm-particles-model-3",
+          "type": "teach_concept",
+          "prompt": "Escucha la diferencia: Agua como objeto.",
+          "target": "みずを",
+          "options": [],
+          "answer": "",
+          "explanation": "Agua como objeto.",
+          "audio": "みずを",
+          "slow_audio": "みずを",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles"
+          ],
+          "xp": 3,
+          "gradable": false,
+          "sound_hint": "Agua como objeto."
+        },
+        {
+          "id": "jp-rhythm-particles-listen-1",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "わたしは",
+          "options": [
+            "わたしは",
+            "がっこうへ",
+            "みずを"
+          ],
+          "answer": "わたしは",
+          "explanation": "En cuanto a mí…",
+          "audio": "わたしは",
+          "slow_audio": "わたしは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-particles-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "がっこうへ",
+          "options": [
+            "がっこうへ",
+            "わたしは",
+            "みずを"
+          ],
+          "answer": "がっこうへ",
+          "explanation": "Hacia la escuela.",
+          "audio": "がっこうへ",
+          "slow_audio": "がっこうへ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles",
+            "listening"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-rhythm-particles-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma completa",
+          "target": "みずを",
+          "options": [
+            "みずを",
+            "わたしは",
+            "がっこうへ"
+          ],
+          "answer": "みずを",
+          "explanation": "Agua como objeto.",
+          "audio": "みずを",
+          "slow_audio": "みずを",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-rhythm-particles",
+            "listening"
+          ],
+          "xp": 15
+        }
+      ]
+    }
+  ]
+}

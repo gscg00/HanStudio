@@ -1,0 +1,1489 @@
+{
+  "id": "functional-a1",
+  "title": "Japonés funcional A1",
+  "description": "Resuelve situaciones cotidianas con expresiones completas.",
+  "requirements": [],
+  "reward": {
+    "xp": 500,
+    "badge": "Supervivencia A1"
+  },
+  "lessons": [
+    {
+      "id": "jp-functional-01",
+      "title": "Presentarse",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Presentarse",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-01-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Mucho gusto.»",
+          "target": "はじめまして。",
+          "options": [],
+          "answer": "",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Mucho gusto."
+        },
+        {
+          "id": "jp-functional-01-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Mucho gusto.",
+            "Soy Ana.",
+            "Vengo de México."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "はじめまして。 significa «Mucho gusto.».",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-01-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Soy Ana.»",
+          "target": "わたしはアナです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy Ana.",
+          "audio": "わたしはアナです。",
+          "slow_audio": "わたしはアナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Soy Ana."
+        },
+        {
+          "id": "jp-functional-01-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa わたしはアナです。?",
+          "target": "わたしはアナです。",
+          "options": [
+            "Soy Ana.",
+            "Mucho gusto.",
+            "Vengo de México."
+          ],
+          "answer": "Soy Ana.",
+          "explanation": "わたしはアナです。 significa «Soy Ana.».",
+          "audio": "わたしはアナです。",
+          "slow_audio": "わたしはアナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-01-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "はじめまして。",
+          "options": [
+            "わたしはアナです。",
+            "はじめまして。"
+          ],
+          "answer": "はじめまして。",
+          "explanation": "Escuchaste はじめまして。: Mucho gusto..",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-01-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Vengo de México.»",
+          "target": "メキシコからきました。",
+          "options": [],
+          "answer": "",
+          "explanation": "Vengo de México.",
+          "audio": "メキシコからきました。",
+          "slow_audio": "メキシコからきました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Vengo de México."
+        },
+        {
+          "id": "jp-functional-01-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa メキシコからきました。?",
+          "target": "メキシコからきました。",
+          "options": [
+            "Vengo de México.",
+            "Mucho gusto.",
+            "Soy Ana."
+          ],
+          "answer": "Vengo de México.",
+          "explanation": "メキシコからきました。 significa «Vengo de México.».",
+          "audio": "メキシコからきました。",
+          "slow_audio": "メキシコからきました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-01-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "メキシコからきました。",
+          "options": [
+            "わたしはアナです。",
+            "はじめまして。",
+            "メキシコからきました。"
+          ],
+          "answer": "メキシコからきました。",
+          "explanation": "Escuchaste メキシコからきました。: Vengo de México..",
+          "audio": "メキシコからきました。",
+          "slow_audio": "メキシコからきました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-01-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa はじめまして。?",
+          "target": "はじめまして。",
+          "options": [
+            "Soy Ana.",
+            "Vengo de México.",
+            "Mucho gusto."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "はじめまして。 significa «Mucho gusto.».",
+          "audio": "はじめまして。",
+          "slow_audio": "はじめまして。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-01",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-02",
+      "title": "Comprar",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Comprar",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-02-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Cuánto cuesta esto?»",
+          "target": "これはいくらですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Cuánto cuesta esto?"
+        },
+        {
+          "id": "jp-functional-02-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa これはいくらですか。?",
+          "target": "これはいくらですか。",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "Déme esto, por favor.",
+            "¿Puedo usar tarjeta?"
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "これはいくらですか。 significa «¿Cuánto cuesta esto?».",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-02-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Déme esto, por favor.»",
+          "target": "これをください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Déme esto, por favor.",
+          "audio": "これをください。",
+          "slow_audio": "これをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Déme esto, por favor."
+        },
+        {
+          "id": "jp-functional-02-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa これをください。?",
+          "target": "これをください。",
+          "options": [
+            "Déme esto, por favor.",
+            "¿Cuánto cuesta esto?",
+            "¿Puedo usar tarjeta?"
+          ],
+          "answer": "Déme esto, por favor.",
+          "explanation": "これをください。 significa «Déme esto, por favor.».",
+          "audio": "これをください。",
+          "slow_audio": "これをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-02-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "これはいくらですか。",
+          "options": [
+            "これをください。",
+            "これはいくらですか。"
+          ],
+          "answer": "これはいくらですか。",
+          "explanation": "Escuchaste これはいくらですか。: ¿Cuánto cuesta esto?.",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-02-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Puedo usar tarjeta?»",
+          "target": "カードはつかえますか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo usar tarjeta?",
+          "audio": "カードはつかえますか。",
+          "slow_audio": "カードはつかえますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Puedo usar tarjeta?"
+        },
+        {
+          "id": "jp-functional-02-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa カードはつかえますか。?",
+          "target": "カードはつかえますか。",
+          "options": [
+            "¿Puedo usar tarjeta?",
+            "¿Cuánto cuesta esto?",
+            "Déme esto, por favor."
+          ],
+          "answer": "¿Puedo usar tarjeta?",
+          "explanation": "カードはつかえますか。 significa «¿Puedo usar tarjeta?».",
+          "audio": "カードはつかえますか。",
+          "slow_audio": "カードはつかえますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-02-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "カードはつかえますか。",
+          "options": [
+            "これをください。",
+            "これはいくらですか。",
+            "カードはつかえますか。"
+          ],
+          "answer": "カードはつかえますか。",
+          "explanation": "Escuchaste カードはつかえますか。: ¿Puedo usar tarjeta?.",
+          "audio": "カードはつかえますか。",
+          "slow_audio": "カードはつかえますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-02-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa これはいくらですか。?",
+          "target": "これはいくらですか。",
+          "options": [
+            "Déme esto, por favor.",
+            "¿Puedo usar tarjeta?",
+            "¿Cuánto cuesta esto?"
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "これはいくらですか。 significa «¿Cuánto cuesta esto?».",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-02",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-03",
+      "title": "Pedir comida",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Pedir comida",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-03-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Esto, por favor.»",
+          "target": "これをおねがいします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Esto, por favor.",
+          "audio": "これをおねがいします。",
+          "slow_audio": "これをおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Esto, por favor."
+        },
+        {
+          "id": "jp-functional-03-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa これをおねがいします。?",
+          "target": "これをおねがいします。",
+          "options": [
+            "Esto, por favor.",
+            "Agua, por favor.",
+            "Está delicioso."
+          ],
+          "answer": "Esto, por favor.",
+          "explanation": "これをおねがいします。 significa «Esto, por favor.».",
+          "audio": "これをおねがいします。",
+          "slow_audio": "これをおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-03-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Agua, por favor.»",
+          "target": "みずをください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Agua, por favor.",
+          "audio": "みずをください。",
+          "slow_audio": "みずをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Agua, por favor."
+        },
+        {
+          "id": "jp-functional-03-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa みずをください。?",
+          "target": "みずをください。",
+          "options": [
+            "Agua, por favor.",
+            "Esto, por favor.",
+            "Está delicioso."
+          ],
+          "answer": "Agua, por favor.",
+          "explanation": "みずをください。 significa «Agua, por favor.».",
+          "audio": "みずをください。",
+          "slow_audio": "みずをください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-03-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "これをおねがいします。",
+          "options": [
+            "みずをください。",
+            "これをおねがいします。"
+          ],
+          "answer": "これをおねがいします。",
+          "explanation": "Escuchaste これをおねがいします。: Esto, por favor..",
+          "audio": "これをおねがいします。",
+          "slow_audio": "これをおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-03-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Está delicioso.»",
+          "target": "おいしいです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Está delicioso.",
+          "audio": "おいしいです。",
+          "slow_audio": "おいしいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Está delicioso."
+        },
+        {
+          "id": "jp-functional-03-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa おいしいです。?",
+          "target": "おいしいです。",
+          "options": [
+            "Está delicioso.",
+            "Esto, por favor.",
+            "Agua, por favor."
+          ],
+          "answer": "Está delicioso.",
+          "explanation": "おいしいです。 significa «Está delicioso.».",
+          "audio": "おいしいです。",
+          "slow_audio": "おいしいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-03-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "おいしいです。",
+          "options": [
+            "みずをください。",
+            "これをおねがいします。",
+            "おいしいです。"
+          ],
+          "answer": "おいしいです。",
+          "explanation": "Escuchaste おいしいです。: Está delicioso..",
+          "audio": "おいしいです。",
+          "slow_audio": "おいしいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-03-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa これをおねがいします。?",
+          "target": "これをおねがいします。",
+          "options": [
+            "Agua, por favor.",
+            "Está delicioso.",
+            "Esto, por favor."
+          ],
+          "answer": "Esto, por favor.",
+          "explanation": "これをおねがいします。 significa «Esto, por favor.».",
+          "audio": "これをおねがいします。",
+          "slow_audio": "これをおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-03",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-04",
+      "title": "Decir la hora",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Decir la hora",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-04-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Qué hora es?»",
+          "target": "いまなんじですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Qué hora es?",
+          "audio": "いまなんじですか。",
+          "slow_audio": "いまなんじですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Qué hora es?"
+        },
+        {
+          "id": "jp-functional-04-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa いまなんじですか。?",
+          "target": "いまなんじですか。",
+          "options": [
+            "¿Qué hora es?",
+            "Son las tres.",
+            "Son las siete y media."
+          ],
+          "answer": "¿Qué hora es?",
+          "explanation": "いまなんじですか。 significa «¿Qué hora es?».",
+          "audio": "いまなんじですか。",
+          "slow_audio": "いまなんじですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-04-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Son las tres.»",
+          "target": "さんじです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Son las tres.",
+          "audio": "さんじです。",
+          "slow_audio": "さんじです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Son las tres."
+        },
+        {
+          "id": "jp-functional-04-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa さんじです。?",
+          "target": "さんじです。",
+          "options": [
+            "Son las tres.",
+            "¿Qué hora es?",
+            "Son las siete y media."
+          ],
+          "answer": "Son las tres.",
+          "explanation": "さんじです。 significa «Son las tres.».",
+          "audio": "さんじです。",
+          "slow_audio": "さんじです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-04-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "いまなんじですか。",
+          "options": [
+            "さんじです。",
+            "いまなんじですか。"
+          ],
+          "answer": "いまなんじですか。",
+          "explanation": "Escuchaste いまなんじですか。: ¿Qué hora es?.",
+          "audio": "いまなんじですか。",
+          "slow_audio": "いまなんじですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-04-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Son las siete y media.»",
+          "target": "しちじはんです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Son las siete y media.",
+          "audio": "しちじはんです。",
+          "slow_audio": "しちじはんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Son las siete y media."
+        },
+        {
+          "id": "jp-functional-04-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa しちじはんです。?",
+          "target": "しちじはんです。",
+          "options": [
+            "Son las siete y media.",
+            "¿Qué hora es?",
+            "Son las tres."
+          ],
+          "answer": "Son las siete y media.",
+          "explanation": "しちじはんです。 significa «Son las siete y media.».",
+          "audio": "しちじはんです。",
+          "slow_audio": "しちじはんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-04-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "しちじはんです。",
+          "options": [
+            "さんじです。",
+            "いまなんじですか。",
+            "しちじはんです。"
+          ],
+          "answer": "しちじはんです。",
+          "explanation": "Escuchaste しちじはんです。: Son las siete y media..",
+          "audio": "しちじはんです。",
+          "slow_audio": "しちじはんです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-04-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa いまなんじですか。?",
+          "target": "いまなんじですか。",
+          "options": [
+            "Son las tres.",
+            "Son las siete y media.",
+            "¿Qué hora es?"
+          ],
+          "answer": "¿Qué hora es?",
+          "explanation": "いまなんじですか。 significa «¿Qué hora es?».",
+          "audio": "いまなんじですか。",
+          "slow_audio": "いまなんじですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-04",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-05",
+      "title": "Pedir dirección",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Pedir dirección",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-05-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «¿Dónde está la estación?»",
+          "target": "えきはどこですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está la estación?",
+          "audio": "えきはどこですか。",
+          "slow_audio": "えきはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: ¿Dónde está la estación?"
+        },
+        {
+          "id": "jp-functional-05-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa えきはどこですか。?",
+          "target": "えきはどこですか。",
+          "options": [
+            "¿Dónde está la estación?",
+            "Está a la derecha.",
+            "Siga derecho, por favor."
+          ],
+          "answer": "¿Dónde está la estación?",
+          "explanation": "えきはどこですか。 significa «¿Dónde está la estación?».",
+          "audio": "えきはどこですか。",
+          "slow_audio": "えきはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-05-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Está a la derecha.»",
+          "target": "みぎです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Está a la derecha.",
+          "audio": "みぎです。",
+          "slow_audio": "みぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Está a la derecha."
+        },
+        {
+          "id": "jp-functional-05-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa みぎです。?",
+          "target": "みぎです。",
+          "options": [
+            "Está a la derecha.",
+            "¿Dónde está la estación?",
+            "Siga derecho, por favor."
+          ],
+          "answer": "Está a la derecha.",
+          "explanation": "みぎです。 significa «Está a la derecha.».",
+          "audio": "みぎです。",
+          "slow_audio": "みぎです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-05-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "えきはどこですか。",
+          "options": [
+            "みぎです。",
+            "えきはどこですか。"
+          ],
+          "answer": "えきはどこですか。",
+          "explanation": "Escuchaste えきはどこですか。: ¿Dónde está la estación?.",
+          "audio": "えきはどこですか。",
+          "slow_audio": "えきはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-05-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Siga derecho, por favor.»",
+          "target": "まっすぐいってください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Siga derecho, por favor.",
+          "audio": "まっすぐいってください。",
+          "slow_audio": "まっすぐいってください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Siga derecho, por favor."
+        },
+        {
+          "id": "jp-functional-05-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa まっすぐいってください。?",
+          "target": "まっすぐいってください。",
+          "options": [
+            "Siga derecho, por favor.",
+            "¿Dónde está la estación?",
+            "Está a la derecha."
+          ],
+          "answer": "Siga derecho, por favor.",
+          "explanation": "まっすぐいってください。 significa «Siga derecho, por favor.».",
+          "audio": "まっすぐいってください。",
+          "slow_audio": "まっすぐいってください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-05-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "まっすぐいってください。",
+          "options": [
+            "みぎです。",
+            "えきはどこですか。",
+            "まっすぐいってください。"
+          ],
+          "answer": "まっすぐいってください。",
+          "explanation": "Escuchaste まっすぐいってください。: Siga derecho, por favor..",
+          "audio": "まっすぐいってください。",
+          "slow_audio": "まっすぐいってください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-05-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa えきはどこですか。?",
+          "target": "えきはどこですか。",
+          "options": [
+            "Está a la derecha.",
+            "Siga derecho, por favor.",
+            "¿Dónde está la estación?"
+          ],
+          "answer": "¿Dónde está la estación?",
+          "explanation": "えきはどこですか。 significa «¿Dónde está la estación?».",
+          "audio": "えきはどこですか。",
+          "slow_audio": "えきはどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-05",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-06",
+      "title": "Pedir repetición",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Pedir repetición",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-06-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Otra vez, por favor.»",
+          "target": "もういちどおねがいします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Otra vez, por favor.",
+          "audio": "もういちどおねがいします。",
+          "slow_audio": "もういちどおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Otra vez, por favor."
+        },
+        {
+          "id": "jp-functional-06-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa もういちどおねがいします。?",
+          "target": "もういちどおねがいします。",
+          "options": [
+            "Otra vez, por favor.",
+            "Hable despacio, por favor.",
+            "No entiendo."
+          ],
+          "answer": "Otra vez, por favor.",
+          "explanation": "もういちどおねがいします。 significa «Otra vez, por favor.».",
+          "audio": "もういちどおねがいします。",
+          "slow_audio": "もういちどおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-06-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Hable despacio, por favor.»",
+          "target": "ゆっくりはなしてください。",
+          "options": [],
+          "answer": "",
+          "explanation": "Hable despacio, por favor.",
+          "audio": "ゆっくりはなしてください。",
+          "slow_audio": "ゆっくりはなしてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Hable despacio, por favor."
+        },
+        {
+          "id": "jp-functional-06-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa ゆっくりはなしてください。?",
+          "target": "ゆっくりはなしてください。",
+          "options": [
+            "Hable despacio, por favor.",
+            "Otra vez, por favor.",
+            "No entiendo."
+          ],
+          "answer": "Hable despacio, por favor.",
+          "explanation": "ゆっくりはなしてください。 significa «Hable despacio, por favor.».",
+          "audio": "ゆっくりはなしてください。",
+          "slow_audio": "ゆっくりはなしてください。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-06-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "もういちどおねがいします。",
+          "options": [
+            "ゆっくりはなしてください。",
+            "もういちどおねがいします。"
+          ],
+          "answer": "もういちどおねがいします。",
+          "explanation": "Escuchaste もういちどおねがいします。: Otra vez, por favor..",
+          "audio": "もういちどおねがいします。",
+          "slow_audio": "もういちどおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-06-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «No entiendo.»",
+          "target": "わかりません。",
+          "options": [],
+          "answer": "",
+          "explanation": "No entiendo.",
+          "audio": "わかりません。",
+          "slow_audio": "わかりません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: No entiendo."
+        },
+        {
+          "id": "jp-functional-06-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa わかりません。?",
+          "target": "わかりません。",
+          "options": [
+            "No entiendo.",
+            "Otra vez, por favor.",
+            "Hable despacio, por favor."
+          ],
+          "answer": "No entiendo.",
+          "explanation": "わかりません。 significa «No entiendo.».",
+          "audio": "わかりません。",
+          "slow_audio": "わかりません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-06-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "わかりません。",
+          "options": [
+            "ゆっくりはなしてください。",
+            "もういちどおねがいします。",
+            "わかりません。"
+          ],
+          "answer": "わかりません。",
+          "explanation": "Escuchaste わかりません。: No entiendo..",
+          "audio": "わかりません。",
+          "slow_audio": "わかりません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-06-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa もういちどおねがいします。?",
+          "target": "もういちどおねがいします。",
+          "options": [
+            "Hable despacio, por favor.",
+            "No entiendo.",
+            "Otra vez, por favor."
+          ],
+          "answer": "Otra vez, por favor.",
+          "explanation": "もういちどおねがいします。 significa «Otra vez, por favor.».",
+          "audio": "もういちどおねがいします。",
+          "slow_audio": "もういちどおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-06",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "id": "jp-functional-07",
+      "title": "Gustos y deseos",
+      "description": "Aprende 3 elementos con audio y práctica.",
+      "activities": [
+        {
+          "id": "jp-functional-07-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero aprende: Gustos y deseos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha y comprende cada elemento antes de responder.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-functional-07-teach-1",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Me gusta el sushi.»",
+          "target": "すしがすきです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Me gusta el sushi.",
+          "audio": "すしがすきです。",
+          "slow_audio": "すしがすきです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Me gusta el sushi."
+        },
+        {
+          "id": "jp-functional-07-quiz-1",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa すしがすきです。?",
+          "target": "すしがすきです。",
+          "options": [
+            "Me gusta el sushi.",
+            "Quiero agua.",
+            "Quiero ir a Japón."
+          ],
+          "answer": "Me gusta el sushi.",
+          "explanation": "すしがすきです。 significa «Me gusta el sushi.».",
+          "audio": "すしがすきです。",
+          "slow_audio": "すしがすきです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-07-teach-2",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Quiero agua.»",
+          "target": "みずがほしいです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Quiero agua.",
+          "audio": "みずがほしいです。",
+          "slow_audio": "みずがほしいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Quiero agua."
+        },
+        {
+          "id": "jp-functional-07-quiz-2",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa みずがほしいです。?",
+          "target": "みずがほしいです。",
+          "options": [
+            "Quiero agua.",
+            "Me gusta el sushi.",
+            "Quiero ir a Japón."
+          ],
+          "answer": "Quiero agua.",
+          "explanation": "みずがほしいです。 significa «Quiero agua.».",
+          "audio": "みずがほしいです。",
+          "slow_audio": "みずがほしいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-07-listen-2",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "すしがすきです。",
+          "options": [
+            "みずがほしいです。",
+            "すしがすきです。"
+          ],
+          "answer": "すしがすきです。",
+          "explanation": "Escuchaste すしがすきです。: Me gusta el sushi..",
+          "audio": "すしがすきです。",
+          "slow_audio": "すしがすきです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-07-teach-3",
+          "type": "dialogue_model",
+          "prompt": "Aprende «Quiero ir a Japón.»",
+          "target": "にほんにいきたいです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Quiero ir a Japón.",
+          "audio": "にほんにいきたいです。",
+          "slow_audio": "にほんにいきたいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Significa: Quiero ir a Japón."
+        },
+        {
+          "id": "jp-functional-07-quiz-3",
+          "type": "word_to_translation",
+          "prompt": "¿Qué significa にほんにいきたいです。?",
+          "target": "にほんにいきたいです。",
+          "options": [
+            "Quiero ir a Japón.",
+            "Me gusta el sushi.",
+            "Quiero agua."
+          ],
+          "answer": "Quiero ir a Japón.",
+          "explanation": "にほんにいきたいです。 significa «Quiero ir a Japón.».",
+          "audio": "にほんにいきたいです。",
+          "slow_audio": "にほんにいきたいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "immediate_recall"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "jp-functional-07-listen-3",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase completa",
+          "target": "にほんにいきたいです。",
+          "options": [
+            "みずがほしいです。",
+            "すしがすきです。",
+            "にほんにいきたいです。"
+          ],
+          "answer": "にほんにいきたいです。",
+          "explanation": "Escuchaste にほんにいきたいです。: Quiero ir a Japón..",
+          "audio": "にほんにいきたいです。",
+          "slow_audio": "にほんにいきたいです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "cumulative_recall"
+          ],
+          "xp": 12
+        },
+        {
+          "id": "jp-functional-07-spiral-3",
+          "type": "word_to_translation",
+          "prompt": "Recuerda: ¿qué significa すしがすきです。?",
+          "target": "すしがすきです。",
+          "options": [
+            "Quiero agua.",
+            "Quiero ir a Japón.",
+            "Me gusta el sushi."
+          ],
+          "answer": "Me gusta el sushi.",
+          "explanation": "すしがすきです。 significa «Me gusta el sushi.».",
+          "audio": "すしがすきです。",
+          "slow_audio": "すしがすきです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-functional-07",
+            "spiral_review"
+          ],
+          "xp": 12
+        }
+      ]
+    }
+  ]
+}
