@@ -32,6 +32,16 @@ class AccountInfrastructureTests(unittest.TestCase):
         self.assertIn("SUPABASE_URL", config)
         self.assertIn("SUPABASE_PUBLISHABLE_KEY", config)
 
+    def test_blocked_indexeddb_never_hides_language_cards(self):
+        storage = (ROOT / "src/storage.js").read_text(encoding="utf-8")
+        app = (ROOT / "src/app.js").read_text(encoding="utf-8")
+        self.assertIn("db.onversionchange", storage)
+        self.assertIn("Otra pestaña está usando una versión anterior", storage)
+        self.assertIn("storageFallback", app)
+        render_position = app.index("renderLanguages();show('language-view')")
+        storage_position = app.index("storageFallback(get('metadata','library')")
+        self.assertLess(render_position, storage_position)
+
 
 if __name__ == "__main__":
     unittest.main()
