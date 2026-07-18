@@ -1,8 +1,9 @@
 import{all,get,put,remove}from'./storage.js';
 
 const JP_ID='jp-guided-progress-v1';
-const syncable=(store,value)=>store==='progress'||(store==='metadata'&&(value?.id===JP_ID||String(value?.id||'').startsWith('zero:')||value?.id==='settings:global'));
-export function entityKeyFor(store,value){if(store==='progress'){const book=String(value.book||value.id||'').split(':Frases')[0];return book.startsWith('topic:')?book:`book:${book}`;}if(value.id===JP_ID)return'course:japanese';if(String(value.id).startsWith('zero:'))return`course:${String(value.id).slice(5).toLowerCase()}`;return'settings:global';}
+const isGuided=value=>value?.id===JP_ID||String(value?.id||'').startsWith('guided:');
+const syncable=(store,value)=>store==='progress'||(store==='metadata'&&(isGuided(value)||String(value?.id||'').startsWith('zero:')||value?.id==='settings:global'));
+export function entityKeyFor(store,value){if(store==='progress'){const book=String(value.book||value.id||'').split(':Frases')[0];return book.startsWith('topic:')?book:`book:${book}`;}if(isGuided(value))return`course:${String(value.language||value.id.split(':')[1]||'japanese').toLowerCase()}`;if(String(value.id).startsWith('zero:'))return`course:${String(value.id).slice(5).toLowerCase()}`;return'settings:global';}
 export function recordFromWrite(store,value){if(!syncable(store,value))return null;return{entityKey:entityKeyFor(store,value),store,id:value.id,value:structuredClone(value),updatedAt:value.lastDate||value.updatedAt||value.lastStudyDate||new Date().toISOString()};}
 
 export async function readSnapshot(){const progress=(await all('progress')).map(value=>recordFromWrite('progress',value));const metadata=(await all('metadata')).filter(value=>syncable('metadata',value)).map(value=>recordFromWrite('metadata',value));return[...progress,...metadata].filter(Boolean);}

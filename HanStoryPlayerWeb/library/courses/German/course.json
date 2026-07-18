@@ -1,0 +1,95 @@
+{
+  "courseId": "german-from-zero",
+  "title": "Alemán desde cero",
+  "language": "German",
+  "languageCode": "de",
+  "version": 1,
+  "routeLabel": "RUTA 1 · BASE PARA HISTORIAS A1",
+  "tagline": "Comprende la lectura y el orden de la oración alemana.",
+  "vocabularyGoal": 300,
+  "vocabularyPrepared": 466,
+  "levels": [
+    {
+      "id": "route-a1",
+      "title": "Preparación para historias A1"
+    }
+  ],
+  "unlockRules": {
+    "minimumScore": 85,
+    "masteryScore": 95
+  },
+  "recommendedBooks": [
+    {
+      "code": "HG-A1",
+      "title": "HanGerman 1 — Erste Schritte A1",
+      "requiredWorld": 8,
+      "requiredScore": 85
+    }
+  ],
+  "units": [
+    {
+      "id": "reading",
+      "world": 1,
+      "title": "Sonidos y lectura",
+      "description": "Pronunciación y reglas básicas de lectura.",
+      "manifest": "units/reading.json",
+      "icon": "Aa"
+    },
+    {
+      "id": "survival",
+      "world": 2,
+      "title": "Comunicación esencial",
+      "description": "Saludos, cortesía y expresiones para desenvolverte.",
+      "manifest": "units/survival.json",
+      "icon": "☀"
+    },
+    {
+      "id": "essentials",
+      "world": 3,
+      "title": "Pronombres y verbos esenciales",
+      "description": "Ser, estar, tener, ir, querer, poder y hacer.",
+      "manifest": "units/essentials.json",
+      "icon": "人"
+    },
+    {
+      "id": "questions",
+      "world": 4,
+      "title": "Preguntas y estructura",
+      "description": "Orden, negación, preguntas y palabras interrogativas.",
+      "manifest": "units/questions.json",
+      "icon": "?"
+    },
+    {
+      "id": "time",
+      "world": 5,
+      "title": "Números, tiempo y vida diaria",
+      "description": "Números, días, horas y expresiones cotidianas.",
+      "manifest": "units/time.json",
+      "icon": "12"
+    },
+    {
+      "id": "vocabulary",
+      "world": 6,
+      "title": "Vocabulario frecuente",
+      "description": "Palabras frecuentes organizadas en sesiones breves.",
+      "manifest": "units/vocabulary.json",
+      "icon": "言"
+    },
+    {
+      "id": "reading-bridge",
+      "world": 7,
+      "title": "Escucha y lectura guiada",
+      "description": "Oraciones graduadas con comprensión y audio.",
+      "manifest": "units/reading-bridge.json",
+      "icon": "文"
+    },
+    {
+      "id": "story-bridge",
+      "world": 8,
+      "title": "Puente hacia las historias",
+      "description": "Consolida lo esencial antes de abrir tu primera historia.",
+      "manifest": "units/story-bridge.json",
+      "icon": "本"
+    }
+  ]
+}

@@ -118,8 +118,16 @@ def validate(output: Path) -> None:
         if manifest.is_absolute() or ".." in manifest.parts or not (output / manifest).is_file():
             raise RuntimeError(f"Manifest público inexistente o inseguro: {manifest}")
 
-    if not (output / "library/courses/Japanese/course.json").is_file():
-        raise RuntimeError("El curso guiado de japonés no está en el artefacto.")
+    guided_languages = (
+        "English", "Korean", "Russian", "Italian", "French", "German",
+        "Japanese", "Chinese", "Portuguese", "Arabic",
+    )
+    missing_courses = [
+        language for language in guided_languages
+        if not (output / "library" / "courses" / language / "course.json").is_file()
+    ]
+    if missing_courses:
+        raise RuntimeError("Faltan cursos guiados en el artefacto: " + ", ".join(missing_courses))
 
 
 def directory_size(path: Path) -> int:
