@@ -7,6 +7,7 @@ const LANGUAGE_ALIASES={mandarin:'chinese','mandarin chinese':'chinese',zh:'chin
 const emptySummary=()=>({totalXp:0,byLanguage:{},todayXp:0,lastActivity:null,pendingXp:0,completedLessons:0});
 const day=value=>String(value||'').slice(0,10);
 export function canonicalLanguageId(value=''){const raw=String(value).trim().toLowerCase();return LANGUAGE_ALIASES[raw]||raw.replace(/[^a-z0-9_-]+/g,'-').replace(/^-|-$/g,'');}
+export function xpForLanguage(summary={},languageId=''){const wanted=canonicalLanguageId(languageId),byLanguage=summary?.byLanguage||summary?.by_language||{};return Object.entries(byLanguage).reduce((total,[key,value])=>canonicalLanguageId(key)===wanted?total+Math.max(0,Number(value||0)):total,0);}
 export function storyXpIdentity({bookCode,lesson}={}){const code=String(bookCode||'').trim(),rawLesson=String(lesson??'').trim(),lessonKey=!rawLesson||rawLesson==='0'?'continuous':rawLesson;if(!code)throw new Error('El libro no tiene un código válido para conceder XP.');return{courseId:`story:${code}`,lessonId:`lesson:${lessonKey}`};}
 export function isStoryLessonBoundary(tracks=[],index=0){const current=tracks[index];if(!current)return false;const next=tracks[index+1],currentLesson=String(current.lesson??'0').trim()||'0',nextLesson=String(next?.lesson??'0').trim()||'0';return!next||currentLesson!==nextLesson;}
 export function lessonEventKey({languageId,courseId,lessonId}){return`lesson-completed:${canonicalLanguageId(languageId)}:${String(courseId).trim()}:${String(lessonId).trim()}`;}
