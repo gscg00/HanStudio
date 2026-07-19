@@ -10,3 +10,54 @@
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
 .jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
 .jp-lesson-row.review small{color:#647b72}
+
+/* La actividad ocupa una pantalla: el progreso y la acción nunca se pierden al desplazarse. */
+.jp-app:has(> .jp-activity) .jp-app-nav{margin-bottom:.5rem}
+.jp-activity{
+  height:min(780px,calc(100dvh - .5rem));
+  min-height:min(480px,calc(100dvh - .5rem));
+}
+.jp-activity-top,
+.jp-feedback,
+.jp-check{
+  position:relative;
+  z-index:2;
+  flex:0 0 auto;
+}
+.jp-activity-top{flex-direction:row;align-items:center;background:var(--jp-green);color:#fff}
+.jp-question{
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+}
+.jp-feedback,
+.jp-check{box-shadow:0 -8px 22px #173f3508}
+
+@media(max-height:760px){
+  .jp-activity{border-radius:20px}
+  .jp-activity-top{padding:.65rem 1.1rem}
+  .jp-question{padding:.7rem 1rem}
+  .jp-question h1{font-size:clamp(1.45rem,5.5vh,2.35rem);line-height:1.04;margin:.3rem 0 .65rem}
+  .jp-type{font-size:.65rem}
+  .jp-big-audio{width:clamp(74px,15vh,96px);height:clamp(74px,15vh,96px);margin:.55rem;box-shadow:0 7px 0 #b74b22}
+  .jp-target{min-height:clamp(72px,18vh,120px)}
+  .guided-course .jp-teach-symbol{min-height:clamp(70px,17vh,105px)}
+  .jp-answers{margin:.45rem 0}
+  .jp-answer{min-height:clamp(50px,9vh,62px)}
+  .jp-listen-row{margin-top:.35rem}
+  .jp-feedback,.jp-check{padding:.7rem clamp(1rem,4vw,2rem)}
+  .jp-feedback strong{font-size:1.1rem}
+  .jp-feedback p{font-size:.9rem;line-height:1.2}
+  .jp-teach-detail{margin:.12rem auto;line-height:1.25}
+  .jp-teach-detail.sound{font-size:1rem}
+  .jp-teach-note{margin:.45rem auto;padding:.55rem .8rem}
+  .jp-teaching .jp-listen-row{margin:.45rem 0 0}
+}
+
+@media(max-width:650px){
+  .jp-activity{height:calc(100dvh - max(1rem,env(safe-area-inset-top)) - env(safe-area-inset-bottom));min-height:0}
+  .jp-activity-top{padding-top:max(.65rem,env(safe-area-inset-top))}
+  .jp-question{padding-inline:.8rem}
+  .jp-feedback,.jp-check{padding-bottom:max(.75rem,env(safe-area-inset-bottom))}
+}
