@@ -47,6 +47,19 @@ class AccountInfrastructureTests(unittest.TestCase):
         combined = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / "src").rglob("*.js"))
         self.assertIsNone(re.search(r"function\s+\w+\s*\([^)]*=\s*await", combined))
 
+    def test_cloud_progress_is_restored_automatically_without_erasing_guest(self):
+        sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
+        self.assertIn("saveOwnerSnapshot(this.activeOwner,local)", sync)
+        self.assertIn("ownerSnapshot('guest')", sync)
+        self.assertIn("this.activeOwner===owner", sync)
+        self.assertIn("await this.pullAndMerge()", sync)
+        self.assertNotIn("this.pendingChoice={", sync)
+
+    def test_offline_session_restoration_keeps_the_account_owner(self):
+        sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
+        self.assertIn("if(!navigator.onLine||this.auth.error)", sync)
+        self.assertIn("return this.activeOwner.startsWith('user:')", sync)
+
 
 if __name__ == "__main__":
     unittest.main()

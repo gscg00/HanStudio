@@ -33,7 +33,7 @@
           "id": "chinese-reading-bridge-01-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "nǐ hǎo",
+          "target": "你好！",
           "options": [],
           "answer": "",
           "explanation": "Hola.",
@@ -44,39 +44,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Hola."
+          "sound_hint": "Hola.",
+          "pinyin": "nǐ hǎo",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «nǐ hǎo»?",
-          "target": "nǐ hǎo",
+          "prompt": "¿Qué significa «你好！»?",
+          "target": "你好！",
           "options": [
-            "你好！",
-            "多少钱？",
+            "Hola.",
+            "¿Cuánto cuesta?",
             "tres"
           ],
-          "answer": "你好！",
-          "explanation": "你好！",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "nǐ hǎo",
           "slow_audio": "nǐ hǎo",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "nǐ hǎo",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "我来自墨西哥。",
             "你好！",
-            "Soy de México",
-            "seis"
+            "六"
           ],
           "answer": "你好！",
-          "explanation": "你好！",
+          "explanation": "La forma escrita correcta es «你好！»: Hola..",
           "audio": "nǐ hǎo",
           "slow_audio": "nǐ hǎo",
           "image": null,
@@ -88,7 +92,7 @@
           "id": "chinese-reading-bridge-01-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "xièxie",
+          "target": "谢谢！",
           "options": [],
           "answer": "",
           "explanation": "Gracias.",
@@ -99,39 +103,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Gracias."
+          "sound_hint": "Gracias.",
+          "pinyin": "xièxie",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «xièxie»?",
-          "target": "xièxie",
+          "prompt": "¿Qué significa «谢谢！»?",
+          "target": "谢谢！",
           "options": [
             "cuatro",
             "Me llamo Ana",
-            "谢谢！"
+            "Gracias."
           ],
-          "answer": "谢谢！",
-          "explanation": "谢谢！",
+          "answer": "Gracias.",
+          "explanation": "Gracias.",
           "audio": "xièxie",
           "slow_audio": "xièxie",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "xièxie",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "谢谢！",
-            "cero",
-            "siete"
+            "零",
+            "七",
+            "谢谢！"
           ],
           "answer": "谢谢！",
-          "explanation": "谢谢！",
+          "explanation": "La forma escrita correcta es «谢谢！»: Gracias..",
           "audio": "xièxie",
           "slow_audio": "xièxie",
           "image": null,
@@ -143,7 +151,7 @@
           "id": "chinese-reading-bridge-01-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "wǒ tīng bù dǒng",
+          "target": "我听不懂。",
           "options": [],
           "answer": "",
           "explanation": "No entiendo lo que escucho.",
@@ -154,39 +162,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "No entiendo lo que escucho."
+          "sound_hint": "No entiendo lo que escucho.",
+          "pinyin": "wǒ tīng bù dǒng",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «wǒ tīng bù dǒng»?",
-          "target": "wǒ tīng bù dǒng",
+          "prompt": "¿Qué significa «我听不懂。»?",
+          "target": "我听不懂。",
           "options": [
-            "我听不懂。",
             "cinco",
-            "¿Cómo te llamas?"
+            "¿Cómo te llamas?",
+            "No entiendo lo que escucho."
           ],
-          "answer": "我听不懂。",
-          "explanation": "我听不懂。",
+          "answer": "No entiendo lo que escucho.",
+          "explanation": "No entiendo lo que escucho.",
           "audio": "wǒ tīng bù dǒng",
           "slow_audio": "wǒ tīng bù dǒng",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "wǒ tīng bù dǒng",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "我听不懂。",
-            "uno",
-            "ocho"
+            "一",
+            "八"
           ],
           "answer": "我听不懂。",
-          "explanation": "我听不懂。",
+          "explanation": "La forma escrita correcta es «我听不懂。»: No entiendo lo que escucho..",
           "audio": "wǒ tīng bù dǒng",
           "slow_audio": "wǒ tīng bù dǒng",
           "image": null,
@@ -198,7 +210,7 @@
           "id": "chinese-reading-bridge-01-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "qǐng zài shuō yí biàn",
+          "target": "请再说一遍。",
           "options": [],
           "answer": "",
           "explanation": "Repítalo, por favor.",
@@ -209,39 +221,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Repítalo, por favor."
+          "sound_hint": "Repítalo, por favor.",
+          "pinyin": "qǐng zài shuō yí biàn",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «qǐng zài shuō yí biàn»?",
-          "target": "qǐng zài shuō yí biàn",
+          "prompt": "¿Qué significa «请再说一遍。»?",
+          "target": "请再说一遍。",
           "options": [
             "Soy de México",
             "seis",
-            "请再说一遍。"
+            "Repítalo, por favor."
           ],
-          "answer": "请再说一遍。",
-          "explanation": "请再说一遍。",
+          "answer": "Repítalo, por favor.",
+          "explanation": "Repítalo, por favor.",
           "audio": "qǐng zài shuō yí biàn",
           "slow_audio": "qǐng zài shuō yí biàn",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "qǐng zài shuō yí biàn",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "nueve",
             "请再说一遍。",
-            "dos"
+            "二",
+            "九"
           ],
           "answer": "请再说一遍。",
-          "explanation": "请再说一遍。",
+          "explanation": "La forma escrita correcta es «请再说一遍。»: Repítalo, por favor..",
           "audio": "qǐng zài shuō yí biàn",
           "slow_audio": "qǐng zài shuō yí biàn",
           "image": null,
@@ -253,7 +269,7 @@
           "id": "chinese-reading-bridge-01-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "xǐshǒujiān zài nǎlǐ",
+          "target": "洗手间在哪里？",
           "options": [],
           "answer": "",
           "explanation": "¿Dónde está el baño?",
@@ -264,39 +280,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "¿Dónde está el baño?"
+          "sound_hint": "¿Dónde está el baño?",
+          "pinyin": "xǐshǒujiān zài nǎlǐ",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «xǐshǒujiān zài nǎlǐ»?",
-          "target": "xǐshǒujiān zài nǎlǐ",
+          "prompt": "¿Qué significa «洗手间在哪里？»?",
+          "target": "洗手间在哪里？",
           "options": [
-            "洗手间在哪里？",
             "cero",
+            "¿Dónde está el baño?",
             "siete"
           ],
-          "answer": "洗手间在哪里？",
-          "explanation": "洗手间在哪里？",
+          "answer": "¿Dónde está el baño?",
+          "explanation": "¿Dónde está el baño?",
           "audio": "xǐshǒujiān zài nǎlǐ",
           "slow_audio": "xǐshǒujiān zài nǎlǐ",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "xǐshǒujiān zài nǎlǐ",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-01-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "tres",
-            "diez",
+            "三",
+            "十",
             "洗手间在哪里？"
           ],
           "answer": "洗手间在哪里？",
-          "explanation": "洗手间在哪里？",
+          "explanation": "La forma escrita correcta es «洗手间在哪里？»: ¿Dónde está el baño?.",
           "audio": "xǐshǒujiān zài nǎlǐ",
           "slow_audio": "xǐshǒujiān zài nǎlǐ",
           "image": null,
@@ -331,7 +351,7 @@
           "id": "chinese-reading-bridge-02-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "qǐng shuō màn yìdiǎn",
+          "target": "请说慢一点。",
           "options": [],
           "answer": "",
           "explanation": "Hable más despacio.",
@@ -342,39 +362,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Hable más despacio."
+          "sound_hint": "Hable más despacio.",
+          "pinyin": "qǐng shuō màn yìdiǎn",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «qǐng shuō màn yìdiǎn»?",
-          "target": "qǐng shuō màn yìdiǎn",
+          "prompt": "¿Qué significa «请说慢一点。»?",
+          "target": "请说慢一点。",
           "options": [
-            "请说慢一点。",
+            "Hable más despacio.",
             "cuatro",
             "Me llamo Ana"
           ],
-          "answer": "请说慢一点。",
-          "explanation": "请说慢一点。",
+          "answer": "Hable más despacio.",
+          "explanation": "Hable más despacio.",
           "audio": "qǐng shuō màn yìdiǎn",
           "slow_audio": "qǐng shuō màn yìdiǎn",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "qǐng shuō màn yìdiǎn",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "请说慢一点。",
-            "cero",
-            "siete"
+            "零",
+            "七"
           ],
           "answer": "请说慢一点。",
-          "explanation": "请说慢一点。",
+          "explanation": "La forma escrita correcta es «请说慢一点。»: Hable más despacio..",
           "audio": "qǐng shuō màn yìdiǎn",
           "slow_audio": "qǐng shuō màn yìdiǎn",
           "image": null,
@@ -386,7 +410,7 @@
           "id": "chinese-reading-bridge-02-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "nǐ huì shuō Yīngyǔ ma",
+          "target": "你会说英语吗？",
           "options": [],
           "answer": "",
           "explanation": "¿Habla inglés?",
@@ -397,39 +421,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "¿Habla inglés?"
+          "sound_hint": "¿Habla inglés?",
+          "pinyin": "nǐ huì shuō Yīngyǔ ma",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «nǐ huì shuō Yīngyǔ ma»?",
-          "target": "nǐ huì shuō Yīngyǔ ma",
+          "prompt": "¿Qué significa «你会说英语吗？»?",
+          "target": "你会说英语吗？",
           "options": [
+            "¿Habla inglés?",
             "cinco",
-            "¿Cómo te llamas?",
-            "你会说英语吗？"
+            "¿Cómo te llamas?"
           ],
-          "answer": "你会说英语吗？",
-          "explanation": "你会说英语吗？",
+          "answer": "¿Habla inglés?",
+          "explanation": "¿Habla inglés?",
           "audio": "nǐ huì shuō Yīngyǔ ma",
           "slow_audio": "nǐ huì shuō Yīngyǔ ma",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "nǐ huì shuō Yīngyǔ ma",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "你会说英语吗？",
-            "uno",
-            "ocho"
+            "一",
+            "八",
+            "你会说英语吗？"
           ],
           "answer": "你会说英语吗？",
-          "explanation": "你会说英语吗？",
+          "explanation": "La forma escrita correcta es «你会说英语吗？»: ¿Habla inglés?.",
           "audio": "nǐ huì shuō Yīngyǔ ma",
           "slow_audio": "nǐ huì shuō Yīngyǔ ma",
           "image": null,
@@ -441,7 +469,7 @@
           "id": "chinese-reading-bridge-02-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "duōshao qián",
+          "target": "多少钱？",
           "options": [],
           "answer": "",
           "explanation": "¿Cuánto cuesta?",
@@ -452,39 +480,43 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "¿Cuánto cuesta?"
+          "sound_hint": "¿Cuánto cuesta?",
+          "pinyin": "duōshao qián",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «duōshao qián»?",
-          "target": "duōshao qián",
+          "prompt": "¿Qué significa «多少钱？»?",
+          "target": "多少钱？",
           "options": [
             "Soy de México",
-            "多少钱？",
-            "seis"
+            "seis",
+            "¿Cuánto cuesta?"
           ],
-          "answer": "多少钱？",
-          "explanation": "多少钱？",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "duōshao qián",
           "slow_audio": "duōshao qián",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "duōshao qián",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-02-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "多少钱？",
-            "nueve",
-            "dos"
+            "二",
+            "九"
           ],
           "answer": "多少钱？",
-          "explanation": "多少钱？",
+          "explanation": "La forma escrita correcta es «多少钱？»: ¿Cuánto cuesta?.",
           "audio": "duōshao qián",
           "slow_audio": "duōshao qián",
           "image": null,
@@ -531,15 +563,15 @@
         {
           "id": "chinese-reading-bridge-02-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "tres",
-            "diez",
-            "Me llamo Ana"
+            "我叫安娜。",
+            "三",
+            "十"
           ],
-          "answer": "Me llamo Ana",
-          "explanation": "Me llamo Ana",
+          "answer": "我叫安娜。",
+          "explanation": "La forma escrita correcta es «我叫安娜。»: Me llamo Ana.",
           "audio": "我叫安娜。",
           "slow_audio": "我叫安娜。",
           "image": null,
@@ -586,15 +618,15 @@
         {
           "id": "chinese-reading-bridge-02-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "once",
-            "¿Cómo te llamas?",
-            "cuatro"
+            "你叫什么名字？",
+            "十一",
+            "四"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "¿Cómo te llamas?",
+          "answer": "你叫什么名字？",
+          "explanation": "La forma escrita correcta es «你叫什么名字？»: ¿Cómo te llamas?.",
           "audio": "你叫什么名字？",
           "slow_audio": "你叫什么名字？",
           "image": null,
@@ -664,15 +696,15 @@
         {
           "id": "chinese-reading-bridge-03-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Soy de México",
-            "uno",
-            "ocho"
+            "一",
+            "八",
+            "我来自墨西哥。"
           ],
-          "answer": "Soy de México",
-          "explanation": "Soy de México",
+          "answer": "我来自墨西哥。",
+          "explanation": "La forma escrita correcta es «我来自墨西哥。»: Soy de México.",
           "audio": "我来自墨西哥。",
           "slow_audio": "我来自墨西哥。",
           "image": null,
@@ -719,15 +751,15 @@
         {
           "id": "chinese-reading-bridge-03-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "cero",
-            "nueve",
-            "dos"
+            "零",
+            "二",
+            "九"
           ],
-          "answer": "cero",
-          "explanation": "cero",
+          "answer": "零",
+          "explanation": "La forma escrita correcta es «零»: cero.",
           "audio": "零",
           "slow_audio": "零",
           "image": null,
@@ -774,15 +806,15 @@
         {
           "id": "chinese-reading-bridge-03-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "uno",
-            "tres",
-            "diez"
+            "一",
+            "三",
+            "十"
           ],
-          "answer": "uno",
-          "explanation": "uno",
+          "answer": "一",
+          "explanation": "La forma escrita correcta es «一»: uno.",
           "audio": "一",
           "slow_audio": "一",
           "image": null,
@@ -829,15 +861,15 @@
         {
           "id": "chinese-reading-bridge-03-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "dos",
-            "once",
-            "cuatro"
+            "十一",
+            "二",
+            "四"
           ],
-          "answer": "dos",
-          "explanation": "dos",
+          "answer": "二",
+          "explanation": "La forma escrita correcta es «二»: dos.",
           "audio": "二",
           "slow_audio": "二",
           "image": null,
@@ -884,15 +916,15 @@
         {
           "id": "chinese-reading-bridge-03-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "tres",
-            "doce",
-            "cinco"
+            "三",
+            "五",
+            "十二"
           ],
-          "answer": "tres",
-          "explanation": "tres",
+          "answer": "三",
+          "explanation": "La forma escrita correcta es «三»: tres.",
           "audio": "三",
           "slow_audio": "三",
           "image": null,
@@ -927,34 +959,36 @@
         {
           "id": "chinese-reading-bridge-review-03-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «duōshao qián»?",
-          "target": "duōshao qián",
+          "prompt": "¿Qué significa «多少钱？»?",
+          "target": "多少钱？",
           "options": [
-            "多少钱？",
+            "¿Cuánto cuesta?",
             "cinco",
             "¿Cómo te llamas?"
           ],
-          "answer": "多少钱？",
-          "explanation": "多少钱？",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "duōshao qián",
           "slow_audio": "duōshao qián",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "duōshao qián",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-review-03-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "uno",
-            "多少钱？",
-            "ocho"
+            "一",
+            "八",
+            "多少钱？"
           ],
           "answer": "多少钱？",
-          "explanation": "多少钱？",
+          "explanation": "La forma escrita correcta es «多少钱？»: ¿Cuánto cuesta?.",
           "audio": "duōshao qián",
           "slow_audio": "duōshao qián",
           "image": null,
@@ -984,15 +1018,15 @@
         {
           "id": "chinese-reading-bridge-review-03-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "nueve",
-            "¿Cómo te llamas?",
-            "dos"
+            "二",
+            "九",
+            "你叫什么名字？"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "¿Cómo te llamas?",
+          "answer": "你叫什么名字？",
+          "explanation": "La forma escrita correcta es «你叫什么名字？»: ¿Cómo te llamas?.",
           "audio": "你叫什么名字？",
           "slow_audio": "你叫什么名字？",
           "image": null,
@@ -1022,15 +1056,15 @@
         {
           "id": "chinese-reading-bridge-review-03-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "cero",
-            "tres",
-            "diez"
+            "零",
+            "三",
+            "十"
           ],
-          "answer": "cero",
-          "explanation": "cero",
+          "answer": "零",
+          "explanation": "La forma escrita correcta es «零»: cero.",
           "audio": "零",
           "slow_audio": "零",
           "image": null,
@@ -1060,15 +1094,15 @@
         {
           "id": "chinese-reading-bridge-review-03-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "dos",
-            "once",
-            "cuatro"
+            "十一",
+            "二",
+            "四"
           ],
-          "answer": "dos",
-          "explanation": "dos",
+          "answer": "二",
+          "explanation": "La forma escrita correcta es «二»: dos.",
           "audio": "二",
           "slow_audio": "二",
           "image": null,
@@ -1138,15 +1172,15 @@
         {
           "id": "chinese-reading-bridge-04-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "nueve",
-            "cuatro",
-            "dos"
+            "四",
+            "二",
+            "九"
           ],
-          "answer": "cuatro",
-          "explanation": "cuatro",
+          "answer": "四",
+          "explanation": "La forma escrita correcta es «四»: cuatro.",
           "audio": "四",
           "slow_audio": "四",
           "image": null,
@@ -1193,15 +1227,15 @@
         {
           "id": "chinese-reading-bridge-04-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "tres",
-            "diez",
-            "cinco"
+            "五",
+            "三",
+            "十"
           ],
-          "answer": "cinco",
-          "explanation": "cinco",
+          "answer": "五",
+          "explanation": "La forma escrita correcta es «五»: cinco.",
           "audio": "五",
           "slow_audio": "五",
           "image": null,
@@ -1248,15 +1282,15 @@
         {
           "id": "chinese-reading-bridge-04-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "seis",
-            "once",
-            "cuatro"
+            "十一",
+            "六",
+            "四"
           ],
-          "answer": "seis",
-          "explanation": "seis",
+          "answer": "六",
+          "explanation": "La forma escrita correcta es «六»: seis.",
           "audio": "六",
           "slow_audio": "六",
           "image": null,
@@ -1303,15 +1337,15 @@
         {
           "id": "chinese-reading-bridge-04-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "doce",
-            "siete",
-            "cinco"
+            "七",
+            "五",
+            "十二"
           ],
-          "answer": "siete",
-          "explanation": "siete",
+          "answer": "七",
+          "explanation": "La forma escrita correcta es «七»: siete.",
           "audio": "七",
           "slow_audio": "七",
           "image": null,
@@ -1358,15 +1392,15 @@
         {
           "id": "chinese-reading-bridge-04-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "ocho",
-            "seis"
+            "八",
+            "六",
+            "十三"
           ],
-          "answer": "ocho",
-          "explanation": "ocho",
+          "answer": "八",
+          "explanation": "La forma escrita correcta es «八»: ocho.",
           "audio": "八",
           "slow_audio": "八",
           "image": null,
@@ -1436,15 +1470,15 @@
         {
           "id": "chinese-reading-bridge-05-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "tres",
-            "diez",
-            "nueve"
+            "九",
+            "三",
+            "十"
           ],
-          "answer": "nueve",
-          "explanation": "nueve",
+          "answer": "九",
+          "explanation": "La forma escrita correcta es «九»: nueve.",
           "audio": "九",
           "slow_audio": "九",
           "image": null,
@@ -1491,15 +1525,15 @@
         {
           "id": "chinese-reading-bridge-05-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diez",
-            "once",
-            "cuatro"
+            "十一",
+            "十",
+            "四"
           ],
-          "answer": "diez",
-          "explanation": "diez",
+          "answer": "十",
+          "explanation": "La forma escrita correcta es «十»: diez.",
           "audio": "十",
           "slow_audio": "十",
           "image": null,
@@ -1546,15 +1580,15 @@
         {
           "id": "chinese-reading-bridge-05-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "once",
-            "doce",
-            "cinco"
+            "五",
+            "十一",
+            "十二"
           ],
-          "answer": "once",
-          "explanation": "once",
+          "answer": "十一",
+          "explanation": "La forma escrita correcta es «十一»: once.",
           "audio": "十一",
           "slow_audio": "十一",
           "image": null,
@@ -1601,15 +1635,15 @@
         {
           "id": "chinese-reading-bridge-05-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "doce",
-            "seis"
+            "六",
+            "十二",
+            "十三"
           ],
-          "answer": "doce",
-          "explanation": "doce",
+          "answer": "十二",
+          "explanation": "La forma escrita correcta es «十二»: doce.",
           "audio": "十二",
           "slow_audio": "十二",
           "image": null,
@@ -1656,15 +1690,15 @@
         {
           "id": "chinese-reading-bridge-05-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "siete",
-            "catorce"
+            "七",
+            "十三",
+            "十四"
           ],
-          "answer": "trece",
-          "explanation": "trece",
+          "answer": "十三",
+          "explanation": "La forma escrita correcta es «十三»: trece.",
           "audio": "十三",
           "slow_audio": "十三",
           "image": null,
@@ -1734,15 +1768,15 @@
         {
           "id": "chinese-reading-bridge-06-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "catorce",
-            "once",
-            "cuatro"
+            "十四",
+            "十一",
+            "四"
           ],
-          "answer": "catorce",
-          "explanation": "catorce",
+          "answer": "十四",
+          "explanation": "La forma escrita correcta es «十四»: catorce.",
           "audio": "十四",
           "slow_audio": "十四",
           "image": null,
@@ -1789,15 +1823,15 @@
         {
           "id": "chinese-reading-bridge-06-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "quince",
-            "doce",
-            "cinco"
+            "五",
+            "十五",
+            "十二"
           ],
-          "answer": "quince",
-          "explanation": "quince",
+          "answer": "十五",
+          "explanation": "La forma escrita correcta es «十五»: quince.",
           "audio": "十五",
           "slow_audio": "十五",
           "image": null,
@@ -1844,15 +1878,15 @@
         {
           "id": "chinese-reading-bridge-06-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "dieciséis",
-            "seis"
+            "六",
+            "十六",
+            "十三"
           ],
-          "answer": "dieciséis",
-          "explanation": "dieciséis",
+          "answer": "十六",
+          "explanation": "La forma escrita correcta es «十六»: dieciséis.",
           "audio": "十六",
           "slow_audio": "十六",
           "image": null,
@@ -1899,15 +1933,15 @@
         {
           "id": "chinese-reading-bridge-06-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diecisiete",
-            "siete",
-            "catorce"
+            "七",
+            "十七",
+            "十四"
           ],
-          "answer": "diecisiete",
-          "explanation": "diecisiete",
+          "answer": "十七",
+          "explanation": "La forma escrita correcta es «十七»: diecisiete.",
           "audio": "十七",
           "slow_audio": "十七",
           "image": null,
@@ -1954,15 +1988,15 @@
         {
           "id": "chinese-reading-bridge-06-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "dieciocho",
-            "ocho",
-            "quince"
+            "八",
+            "十八",
+            "十五"
           ],
-          "answer": "dieciocho",
-          "explanation": "dieciocho",
+          "answer": "十八",
+          "explanation": "La forma escrita correcta es «十八»: dieciocho.",
           "audio": "十八",
           "slow_audio": "十八",
           "image": null,
@@ -2016,15 +2050,15 @@
         {
           "id": "chinese-reading-bridge-review-06-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "once",
-            "dieciocho",
-            "cuatro"
+            "十一",
+            "十八",
+            "四"
           ],
-          "answer": "once",
-          "explanation": "once",
+          "answer": "十一",
+          "explanation": "La forma escrita correcta es «十一»: once.",
           "audio": "十一",
           "slow_audio": "十一",
           "image": null,
@@ -2054,15 +2088,15 @@
         {
           "id": "chinese-reading-bridge-review-06-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "doce",
-            "trece",
-            "cinco"
+            "五",
+            "十三",
+            "十二"
           ],
-          "answer": "trece",
-          "explanation": "trece",
+          "answer": "十三",
+          "explanation": "La forma escrita correcta es «十三»: trece.",
           "audio": "十三",
           "slow_audio": "十三",
           "image": null,
@@ -2092,15 +2126,15 @@
         {
           "id": "chinese-reading-bridge-review-06-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "quince",
-            "seis"
+            "六",
+            "十五",
+            "十三"
           ],
-          "answer": "quince",
-          "explanation": "quince",
+          "answer": "十五",
+          "explanation": "La forma escrita correcta es «十五»: quince.",
           "audio": "十五",
           "slow_audio": "十五",
           "image": null,
@@ -2130,15 +2164,15 @@
         {
           "id": "chinese-reading-bridge-review-06-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diecisiete",
-            "siete",
-            "catorce"
+            "七",
+            "十七",
+            "十四"
           ],
-          "answer": "diecisiete",
-          "explanation": "diecisiete",
+          "answer": "十七",
+          "explanation": "La forma escrita correcta es «十七»: diecisiete.",
           "audio": "十七",
           "slow_audio": "十七",
           "image": null,
@@ -2208,15 +2242,15 @@
         {
           "id": "chinese-reading-bridge-07-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "doce",
-            "diecinueve",
-            "cinco"
+            "五",
+            "十九",
+            "十二"
           ],
-          "answer": "diecinueve",
-          "explanation": "diecinueve",
+          "answer": "十九",
+          "explanation": "La forma escrita correcta es «十九»: diecinueve.",
           "audio": "十九",
           "slow_audio": "十九",
           "image": null,
@@ -2263,15 +2297,15 @@
         {
           "id": "chinese-reading-bridge-07-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "veinte",
-            "seis"
+            "六",
+            "二十",
+            "十三"
           ],
-          "answer": "veinte",
-          "explanation": "veinte",
+          "answer": "二十",
+          "explanation": "La forma escrita correcta es «二十»: veinte.",
           "audio": "二十",
           "slow_audio": "二十",
           "image": null,
@@ -2318,15 +2352,15 @@
         {
           "id": "chinese-reading-bridge-07-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "siete",
-            "catorce",
-            "¿Qué hora es?"
+            "七",
+            "十四",
+            "几点？"
           ],
-          "answer": "¿Qué hora es?",
-          "explanation": "¿Qué hora es?",
+          "answer": "几点？",
+          "explanation": "La forma escrita correcta es «几点？»: ¿Qué hora es?.",
           "audio": "几点？",
           "slow_audio": "几点？",
           "image": null,
@@ -2373,15 +2407,15 @@
         {
           "id": "chinese-reading-bridge-07-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ocho",
-            "quince",
-            "Son las tres"
+            "三点。",
+            "八",
+            "十五"
           ],
-          "answer": "Son las tres",
-          "explanation": "Son las tres",
+          "answer": "三点。",
+          "explanation": "La forma escrita correcta es «三点。»: Son las tres.",
           "audio": "三点。",
           "slow_audio": "三点。",
           "image": null,
@@ -2428,15 +2462,15 @@
         {
           "id": "chinese-reading-bridge-07-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "dieciséis",
-            "lunes",
-            "nueve"
+            "十六",
+            "星期一",
+            "九"
           ],
-          "answer": "lunes",
-          "explanation": "lunes",
+          "answer": "星期一",
+          "explanation": "La forma escrita correcta es «星期一»: lunes.",
           "audio": "星期一",
           "slow_audio": "星期一",
           "image": null,
@@ -2506,15 +2540,15 @@
         {
           "id": "chinese-reading-bridge-08-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "trece",
-            "martes",
-            "seis"
+            "六",
+            "十三",
+            "星期二"
           ],
-          "answer": "martes",
-          "explanation": "martes",
+          "answer": "星期二",
+          "explanation": "La forma escrita correcta es «星期二»: martes.",
           "audio": "星期二",
           "slow_audio": "星期二",
           "image": null,
@@ -2561,15 +2595,15 @@
         {
           "id": "chinese-reading-bridge-08-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "miércoles",
-            "siete",
-            "catorce"
+            "七",
+            "十四",
+            "星期三"
           ],
-          "answer": "miércoles",
-          "explanation": "miércoles",
+          "answer": "星期三",
+          "explanation": "La forma escrita correcta es «星期三»: miércoles.",
           "audio": "星期三",
           "slow_audio": "星期三",
           "image": null,
@@ -2616,15 +2650,15 @@
         {
           "id": "chinese-reading-bridge-08-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ocho",
-            "jueves",
-            "quince"
+            "星期四",
+            "八",
+            "十五"
           ],
-          "answer": "jueves",
-          "explanation": "jueves",
+          "answer": "星期四",
+          "explanation": "La forma escrita correcta es «星期四»: jueves.",
           "audio": "星期四",
           "slow_audio": "星期四",
           "image": null,
@@ -2671,15 +2705,15 @@
         {
           "id": "chinese-reading-bridge-08-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "viernes",
-            "dieciséis",
-            "nueve"
+            "十六",
+            "星期五",
+            "九"
           ],
-          "answer": "viernes",
-          "explanation": "viernes",
+          "answer": "星期五",
+          "explanation": "La forma escrita correcta es «星期五»: viernes.",
           "audio": "星期五",
           "slow_audio": "星期五",
           "image": null,
@@ -2726,15 +2760,15 @@
         {
           "id": "chinese-reading-bridge-08-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "sábado",
-            "diez",
-            "diecisiete"
+            "十",
+            "十七",
+            "星期六"
           ],
-          "answer": "sábado",
-          "explanation": "sábado",
+          "answer": "星期六",
+          "explanation": "La forma escrita correcta es «星期六»: sábado.",
           "audio": "星期六",
           "slow_audio": "星期六",
           "image": null,
@@ -2804,15 +2838,15 @@
         {
           "id": "chinese-reading-bridge-09-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "siete",
-            "domingo",
-            "catorce"
+            "七",
+            "十四",
+            "星期日"
           ],
-          "answer": "domingo",
-          "explanation": "domingo",
+          "answer": "星期日",
+          "explanation": "La forma escrita correcta es «星期日»: domingo.",
           "audio": "星期日",
           "slow_audio": "星期日",
           "image": null,
@@ -2859,15 +2893,15 @@
         {
           "id": "chinese-reading-bridge-09-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ocho",
-            "quince",
-            "sí"
+            "是",
+            "八",
+            "十五"
           ],
-          "answer": "sí",
-          "explanation": "sí",
+          "answer": "是",
+          "explanation": "La forma escrita correcta es «是»: sí.",
           "audio": "是",
           "slow_audio": "是",
           "image": null,
@@ -2914,15 +2948,15 @@
         {
           "id": "chinese-reading-bridge-09-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "no",
-            "dieciséis",
-            "nueve"
+            "不是",
+            "十六",
+            "九"
           ],
-          "answer": "no",
-          "explanation": "no",
+          "answer": "不是",
+          "explanation": "La forma escrita correcta es «不是»: no.",
           "audio": "不是",
           "slow_audio": "不是",
           "image": null,
@@ -2969,15 +3003,15 @@
         {
           "id": "chinese-reading-bridge-09-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diez",
-            "quizá",
-            "diecisiete"
+            "十",
+            "可能",
+            "十七"
           ],
-          "answer": "quizá",
-          "explanation": "quizá",
+          "answer": "可能",
+          "explanation": "La forma escrita correcta es «可能»: quizá.",
           "audio": "可能",
           "slow_audio": "可能",
           "image": null,
@@ -3024,15 +3058,15 @@
         {
           "id": "chinese-reading-bridge-09-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "esto",
-            "once",
-            "dieciocho"
+            "这",
+            "十一",
+            "十八"
           ],
-          "answer": "esto",
-          "explanation": "esto",
+          "answer": "这",
+          "explanation": "La forma escrita correcta es «这»: esto.",
           "audio": "这",
           "slow_audio": "这",
           "image": null,
@@ -3086,15 +3120,15 @@
         {
           "id": "chinese-reading-bridge-review-09-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "siete",
-            "jueves",
-            "catorce"
+            "七",
+            "十四",
+            "星期四"
           ],
-          "answer": "jueves",
-          "explanation": "jueves",
+          "answer": "星期四",
+          "explanation": "La forma escrita correcta es «星期四»: jueves.",
           "audio": "星期四",
           "slow_audio": "星期四",
           "image": null,
@@ -3124,15 +3158,15 @@
         {
           "id": "chinese-reading-bridge-review-09-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ocho",
-            "sábado",
-            "quince"
+            "星期六",
+            "八",
+            "十五"
           ],
-          "answer": "sábado",
-          "explanation": "sábado",
+          "answer": "星期六",
+          "explanation": "La forma escrita correcta es «星期六»: sábado.",
           "audio": "星期六",
           "slow_audio": "星期六",
           "image": null,
@@ -3162,15 +3196,15 @@
         {
           "id": "chinese-reading-bridge-review-09-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "sí",
-            "dieciséis",
-            "nueve"
+            "十六",
+            "是",
+            "九"
           ],
-          "answer": "sí",
-          "explanation": "sí",
+          "answer": "是",
+          "explanation": "La forma escrita correcta es «是»: sí.",
           "audio": "是",
           "slow_audio": "是",
           "image": null,
@@ -3200,15 +3234,15 @@
         {
           "id": "chinese-reading-bridge-review-09-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diez",
-            "quizá",
-            "diecisiete"
+            "十",
+            "可能",
+            "十七"
           ],
-          "answer": "quizá",
-          "explanation": "quizá",
+          "answer": "可能",
+          "explanation": "La forma escrita correcta es «可能»: quizá.",
           "audio": "可能",
           "slow_audio": "可能",
           "image": null,
@@ -3278,15 +3312,15 @@
         {
           "id": "chinese-reading-bridge-10-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "eso",
-            "ocho",
-            "quince"
+            "那",
+            "八",
+            "十五"
           ],
-          "answer": "eso",
-          "explanation": "eso",
+          "answer": "那",
+          "explanation": "La forma escrita correcta es «那»: eso.",
           "audio": "那",
           "slow_audio": "那",
           "image": null,
@@ -3333,15 +3367,15 @@
         {
           "id": "chinese-reading-bridge-10-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "aquello",
-            "dieciséis",
-            "nueve"
+            "十六",
+            "那边那个",
+            "九"
           ],
-          "answer": "aquello",
-          "explanation": "aquello",
+          "answer": "那边那个",
+          "explanation": "La forma escrita correcta es «那边那个»: aquello.",
           "audio": "那边那个",
           "slow_audio": "那边那个",
           "image": null,
@@ -3388,15 +3422,15 @@
         {
           "id": "chinese-reading-bridge-10-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "persona",
-            "diez",
-            "diecisiete"
+            "人",
+            "十",
+            "十七"
           ],
-          "answer": "persona",
-          "explanation": "persona",
+          "answer": "人",
+          "explanation": "La forma escrita correcta es «人»: persona.",
           "audio": "人",
           "slow_audio": "人",
           "image": null,
@@ -3443,15 +3477,15 @@
         {
           "id": "chinese-reading-bridge-10-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "amigo",
-            "once",
-            "dieciocho"
+            "朋友",
+            "十一",
+            "十八"
           ],
-          "answer": "amigo",
-          "explanation": "amigo",
+          "answer": "朋友",
+          "explanation": "La forma escrita correcta es «朋友»: amigo.",
           "audio": "朋友",
           "slow_audio": "朋友",
           "image": null,
@@ -3498,15 +3532,15 @@
         {
           "id": "chinese-reading-bridge-10-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "doce",
-            "diecinueve",
-            "familia"
+            "家人",
+            "十二",
+            "十九"
           ],
-          "answer": "familia",
-          "explanation": "familia",
+          "answer": "家人",
+          "explanation": "La forma escrita correcta es «家人»: familia.",
           "audio": "家人",
           "slow_audio": "家人",
           "image": null,
@@ -3576,15 +3610,15 @@
         {
           "id": "chinese-reading-bridge-11-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "casa",
-            "dieciséis",
-            "nueve"
+            "十六",
+            "家",
+            "九"
           ],
-          "answer": "casa",
-          "explanation": "casa",
+          "answer": "家",
+          "explanation": "La forma escrita correcta es «家»: casa.",
           "audio": "家",
           "slow_audio": "家",
           "image": null,
@@ -3631,15 +3665,15 @@
         {
           "id": "chinese-reading-bridge-11-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "escuela",
-            "diez",
-            "diecisiete"
+            "十",
+            "学校",
+            "十七"
           ],
-          "answer": "escuela",
-          "explanation": "escuela",
+          "answer": "学校",
+          "explanation": "La forma escrita correcta es «学校»: escuela.",
           "audio": "学校",
           "slow_audio": "学校",
           "image": null,
@@ -3686,15 +3720,15 @@
         {
           "id": "chinese-reading-bridge-11-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "estación",
-            "once",
-            "dieciocho"
+            "车站",
+            "十一",
+            "十八"
           ],
-          "answer": "estación",
-          "explanation": "estación",
+          "answer": "车站",
+          "explanation": "La forma escrita correcta es «车站»: estación.",
           "audio": "车站",
           "slow_audio": "车站",
           "image": null,
@@ -3741,15 +3775,15 @@
         {
           "id": "chinese-reading-bridge-11-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "doce",
-            "diecinueve",
-            "qué"
+            "什么",
+            "十二",
+            "十九"
           ],
-          "answer": "qué",
-          "explanation": "qué",
+          "answer": "什么",
+          "explanation": "La forma escrita correcta es «什么»: qué.",
           "audio": "什么",
           "slow_audio": "什么",
           "image": null,
@@ -3796,15 +3830,15 @@
         {
           "id": "chinese-reading-bridge-11-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "quién",
-            "trece",
-            "veinte"
+            "谁",
+            "十三",
+            "二十"
           ],
-          "answer": "quién",
-          "explanation": "quién",
+          "answer": "谁",
+          "explanation": "La forma escrita correcta es «谁»: quién.",
           "audio": "谁",
           "slow_audio": "谁",
           "image": null,
@@ -3874,15 +3908,15 @@
         {
           "id": "chinese-reading-bridge-12-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diez",
-            "dónde",
-            "diecisiete"
+            "十",
+            "哪里",
+            "十七"
           ],
-          "answer": "dónde",
-          "explanation": "dónde",
+          "answer": "哪里",
+          "explanation": "La forma escrita correcta es «哪里»: dónde.",
           "audio": "哪里",
           "slow_audio": "哪里",
           "image": null,
@@ -3929,15 +3963,15 @@
         {
           "id": "chinese-reading-bridge-12-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "cuándo",
-            "once",
-            "dieciocho"
+            "十一",
+            "十八",
+            "什么时候"
           ],
-          "answer": "cuándo",
-          "explanation": "cuándo",
+          "answer": "什么时候",
+          "explanation": "La forma escrita correcta es «什么时候»: cuándo.",
           "audio": "什么时候",
           "slow_audio": "什么时候",
           "image": null,
@@ -3974,34 +4008,36 @@
         {
           "id": "chinese-reading-bridge-test-16-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «nǐ hǎo»?",
-          "target": "nǐ hǎo",
+          "prompt": "¿Qué significa «你好！»?",
+          "target": "你好！",
           "options": [
-            "你好！",
+            "Hola.",
             "once",
             "dieciocho"
           ],
-          "answer": "你好！",
-          "explanation": "你好！",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "nǐ hǎo",
           "slow_audio": "nǐ hǎo",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "nǐ hǎo",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-test-16-1-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "catorce",
+            "十四",
             "你好！",
-            "¿Qué hora es?"
+            "几点？"
           ],
           "answer": "你好！",
-          "explanation": "你好！",
+          "explanation": "La forma escrita correcta es «你好！»: Hola..",
           "audio": "nǐ hǎo",
           "slow_audio": "nǐ hǎo",
           "image": null,
@@ -4012,34 +4048,36 @@
         {
           "id": "chinese-reading-bridge-test-16-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «qǐng shuō màn yìdiǎn»?",
-          "target": "qǐng shuō màn yìdiǎn",
+          "prompt": "¿Qué significa «请说慢一点。»?",
+          "target": "请说慢一点。",
           "options": [
+            "Hable más despacio.",
             "doce",
-            "diecinueve",
-            "请说慢一点。"
+            "diecinueve"
           ],
-          "answer": "请说慢一点。",
-          "explanation": "请说慢一点。",
+          "answer": "Hable más despacio.",
+          "explanation": "Hable más despacio.",
           "audio": "qǐng shuō màn yìdiǎn",
           "slow_audio": "qǐng shuō màn yìdiǎn",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "pinyin": "qǐng shuō màn yìdiǎn",
+          "pinyin_mode": "hidden"
         },
         {
           "id": "chinese-reading-bridge-test-16-2-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "请说慢一点。",
-            "quince",
-            "Son las tres"
+            "十五",
+            "三点。"
           ],
           "answer": "请说慢一点。",
-          "explanation": "请说慢一点。",
+          "explanation": "La forma escrita correcta es «请说慢一点。»: Hable más despacio..",
           "audio": "qǐng shuō màn yìdiǎn",
           "slow_audio": "qǐng shuō màn yìdiǎn",
           "image": null,
@@ -4069,15 +4107,15 @@
         {
           "id": "chinese-reading-bridge-test-16-3-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "lunes",
-            "Soy de México",
-            "dieciséis"
+            "我来自墨西哥。",
+            "十六",
+            "星期一"
           ],
-          "answer": "Soy de México",
-          "explanation": "Soy de México",
+          "answer": "我来自墨西哥。",
+          "explanation": "La forma escrita correcta es «我来自墨西哥。»: Soy de México.",
           "audio": "我来自墨西哥。",
           "slow_audio": "我来自墨西哥。",
           "image": null,
@@ -4107,15 +4145,15 @@
         {
           "id": "chinese-reading-bridge-test-16-4-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "diecisiete",
-            "cuatro",
-            "martes"
+            "四",
+            "十七",
+            "星期二"
           ],
-          "answer": "cuatro",
-          "explanation": "cuatro",
+          "answer": "四",
+          "explanation": "La forma escrita correcta es «四»: cuatro.",
           "audio": "四",
           "slow_audio": "四",
           "image": null,
@@ -4145,15 +4183,15 @@
         {
           "id": "chinese-reading-bridge-test-16-5-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "dieciocho",
-            "miércoles",
-            "nueve"
+            "星期三",
+            "九",
+            "十八"
           ],
-          "answer": "nueve",
-          "explanation": "nueve",
+          "answer": "九",
+          "explanation": "La forma escrita correcta es «九»: nueve.",
           "audio": "九",
           "slow_audio": "九",
           "image": null,
@@ -4183,15 +4221,15 @@
         {
           "id": "chinese-reading-bridge-test-16-6-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "catorce",
-            "diecinueve",
-            "jueves"
+            "十四",
+            "十九",
+            "星期四"
           ],
-          "answer": "catorce",
-          "explanation": "catorce",
+          "answer": "十四",
+          "explanation": "La forma escrita correcta es «十四»: catorce.",
           "audio": "十四",
           "slow_audio": "十四",
           "image": null,
@@ -4221,15 +4259,15 @@
         {
           "id": "chinese-reading-bridge-test-16-7-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "veinte",
-            "viernes",
-            "diecinueve"
+            "十九",
+            "二十",
+            "星期五"
           ],
-          "answer": "diecinueve",
-          "explanation": "diecinueve",
+          "answer": "十九",
+          "explanation": "La forma escrita correcta es «十九»: diecinueve.",
           "audio": "十九",
           "slow_audio": "十九",
           "image": null,
@@ -4259,15 +4297,15 @@
         {
           "id": "chinese-reading-bridge-test-16-8-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "martes",
-            "sábado",
-            "¿Qué hora es?"
+            "星期二",
+            "几点？",
+            "星期六"
           ],
-          "answer": "martes",
-          "explanation": "martes",
+          "answer": "星期二",
+          "explanation": "La forma escrita correcta es «星期二»: martes.",
           "audio": "星期二",
           "slow_audio": "星期二",
           "image": null,
@@ -4297,15 +4335,15 @@
         {
           "id": "chinese-reading-bridge-test-16-9-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "domingo",
-            "Son las tres",
-            "persona"
+            "人",
+            "星期日",
+            "三点。"
           ],
-          "answer": "domingo",
-          "explanation": "domingo",
+          "answer": "星期日",
+          "explanation": "La forma escrita correcta es «星期日»: domingo.",
           "audio": "星期日",
           "slow_audio": "星期日",
           "image": null,
@@ -4335,15 +4373,15 @@
         {
           "id": "chinese-reading-bridge-test-16-10-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el significado",
+          "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "eso",
-            "lunes",
-            "sí"
+            "星期一",
+            "那",
+            "是"
           ],
-          "answer": "eso",
-          "explanation": "eso",
+          "answer": "那",
+          "explanation": "La forma escrita correcta es «那»: eso.",
           "audio": "那",
           "slow_audio": "那",
           "image": null,

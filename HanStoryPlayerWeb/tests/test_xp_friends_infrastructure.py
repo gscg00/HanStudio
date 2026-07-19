@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SQL = (ROOT / "supabase/migrations/002_xp_and_friends.sql").read_text(encoding="utf-8").lower()
 STORY_SQL = (ROOT / "supabase/migrations/003_story_lesson_xp.sql").read_text(encoding="utf-8").lower()
+GUIDED_SQL = (ROOT / "supabase/migrations/004_guided_course_catalog.sql").read_text(encoding="utf-8").lower()
 
 
 class XpFriendsInfrastructureTests(unittest.TestCase):
@@ -81,6 +82,21 @@ class XpFriendsInfrastructureTests(unittest.TestCase):
             self.assertEqual(ranges[code][1], lessons)
         self.assertIn("'normal',20,true", STORY_SQL)
         self.assertIn("on conflict(language_id,course_id,lesson_id) do update", STORY_SQL)
+
+    def test_every_guided_lesson_is_in_the_server_catalog(self):
+        import json
+        catalog = set(re.findall(r"\('([^']+)','([^']+)','([^']+)'", GUIDED_SQL))
+        for course_path in (ROOT / "library/courses").glob("*/course.json"):
+            course = json.loads(course_path.read_text(encoding="utf-8"))
+            language = course.get("language", course_path.parent.name).lower()
+            for unit_ref in course.get("units", []):
+                if not unit_ref.get("manifest"):
+                    continue
+                unit = json.loads((course_path.parent / unit_ref["manifest"]).read_text(encoding="utf-8"))
+                for lesson in unit.get("lessons", []):
+                    self.assertIn((language, course["courseId"].lower(), lesson["id"].lower()), catalog)
+        self.assertIn("alter table public.lesson_catalog enable row level security", GUIDED_SQL)
+        self.assertIn("revoke all on public.lesson_catalog from anon,authenticated", GUIDED_SQL)
 
 
 if __name__ == "__main__":
