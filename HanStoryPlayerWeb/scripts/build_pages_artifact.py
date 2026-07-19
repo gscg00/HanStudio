@@ -15,6 +15,7 @@ PUBLIC_SUFFIXES = {
     ".css", ".html", ".ico", ".jpeg", ".jpg", ".js", ".json",
     ".m4a", ".mp3", ".ogg", ".opus", ".otf", ".png", ".svg",
     ".ttf", ".webmanifest", ".webp", ".woff", ".woff2",
+    ".wav",
 }
 FORBIDDEN_PARTS = {
     ".git", ".github", ".pytest_cache", "__pycache__", "node_modules",
@@ -27,7 +28,7 @@ FORBIDDEN_NAMES = {
 }
 FORBIDDEN_SUFFIXES = {
     ".db", ".env", ".key", ".log", ".p12", ".pem", ".py", ".pyc",
-    ".sqlite", ".wav", ".zip",
+    ".sqlite", ".zip",
 }
 SENSITIVE_MARKERS = (
     "service_role", "client_secret", "private_key",
@@ -35,7 +36,45 @@ SENSITIVE_MARKERS = (
 )
 
 
-def is_public_file(path: Path, root: Path = ROOT) -> bool:
+def _safe_manifest_asset(manifest: Path, relative_value: object, root: Path) -> Path | None:
+    value = str(relative_value or "").strip()
+    if not value:
+        return None
+    relative = PurePosixPath(value)
+    if relative.is_absolute() or ".." in relative.parts:
+        raise RuntimeError(f"Ruta de audio insegura en {manifest.relative_to(root)}: {value}")
+    destination = (manifest.parent / Path(*relative.parts)).resolve()
+    try:
+        destination.relative_to(root.resolve())
+    except ValueError as exc:
+        raise RuntimeError(f"Ruta de audio fuera del Web Player: {value}") from exc
+    return destination
+
+
+def referenced_audio_files(root: Path = ROOT) -> set[Path]:
+    references: set[Path] = set()
+    for manifest in (root / "library" / "courses").glob("*/audio_manifest.json"):
+        payload = json.loads(manifest.read_text(encoding="utf-8"))
+        for value in payload.get("items", {}).values():
+            destination = _safe_manifest_asset(manifest, value, root)
+            if destination:
+                references.add(destination)
+    for manifest in (root / "library" / "books").glob("*/hanstory_manifest.json"):
+        payload = json.loads(manifest.read_text(encoding="utf-8"))
+        for track in payload.get("tracks", []):
+            destination = _safe_manifest_asset(
+                manifest, track.get("audio_path") or track.get("audio"), root
+            )
+            if destination:
+                references.add(destination)
+    return references
+
+
+def is_public_file(
+    path: Path,
+    root: Path = ROOT,
+    referenced_audio: set[Path] | None = None,
+) -> bool:
     relative = path.relative_to(root)
     if any(part in FORBIDDEN_PARTS for part in relative.parts):
         return False
@@ -43,6 +82,12 @@ def is_public_file(path: Path, root: Path = ROOT) -> bool:
         return False
     if path.suffix.lower() in FORBIDDEN_SUFFIXES:
         return False
+    # Los recortes y la limpieza del administrador se guardan como WAV final.
+    # Solo publicamos los WAV que algún manifiesto realmente utiliza; así no se
+    # confunden con originales de producción ni se infla el sitio con descartes.
+    if path.suffix.lower() == ".wav":
+        references = referenced_audio if referenced_audio is not None else referenced_audio_files(root)
+        return path.resolve() in references
     return path.suffix.lower() in PUBLIC_SUFFIXES
 
 
@@ -55,6 +100,7 @@ def build(output: Path) -> list[Path]:
     output.mkdir(parents=True)
 
     copied: list[Path] = []
+    referenced_audio = referenced_audio_files(ROOT)
     for name in PUBLIC_ROOT_FILES:
         source = ROOT / name
         if not source.is_file():
@@ -68,7 +114,7 @@ def build(output: Path) -> list[Path]:
         if not source_root.is_dir():
             raise FileNotFoundError(f"Falta la carpeta pública: {directory}")
         for source in source_root.rglob("*"):
-            if not source.is_file() or not is_public_file(source):
+            if not source.is_file() or not is_public_file(source, referenced_audio=referenced_audio):
                 continue
             destination = output / source.relative_to(ROOT)
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -128,6 +174,26 @@ def validate(output: Path) -> None:
     ]
     if missing_courses:
         raise RuntimeError("Faltan cursos guiados en el artefacto: " + ", ".join(missing_courses))
+
+    missing_audio: list[str] = []
+    for manifest in (output / "library" / "courses").glob("*/audio_manifest.json"):
+        payload = json.loads(manifest.read_text(encoding="utf-8"))
+        for text, value in payload.get("items", {}).items():
+            destination = _safe_manifest_asset(manifest, value, output)
+            if destination and not destination.is_file():
+                missing_audio.append(f"{manifest.parent.name}: {text} -> {value}")
+    for manifest in (output / "library" / "books").glob("*/hanstory_manifest.json"):
+        payload = json.loads(manifest.read_text(encoding="utf-8"))
+        for track in payload.get("tracks", []):
+            value = track.get("audio_path") or track.get("audio")
+            destination = _safe_manifest_asset(manifest, value, output)
+            if destination and not destination.is_file():
+                missing_audio.append(f"{manifest.parent.name}: {track.get('id', '?')} -> {value}")
+    if missing_audio:
+        preview = ", ".join(missing_audio[:12])
+        remainder = len(missing_audio) - 12
+        suffix = f" (+{remainder} más)" if remainder > 0 else ""
+        raise RuntimeError("Audios referenciados que no entrarían al sitio: " + preview + suffix)
 
 
 def directory_size(path: Path) -> int:

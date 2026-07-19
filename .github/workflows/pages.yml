@@ -51,7 +51,7 @@ jobs:
           test -f .pages-dist/library/library.json
           test ! -e .pages-dist/HanStoryPlayer
           test ! -e .pages-dist/src/ui
-          ! find .pages-dist -type f \( -name '.env*' -o -name '*.pem' -o -name '*.key' -o -name '*.db' -o -name '*.wav' -o -name '*.zip' \) -print -quit | grep -q .
+          ! find .pages-dist -type f \( -name '.env*' -o -name '*.pem' -o -name '*.key' -o -name '*.db' -o -name '*.zip' \) -print -quit | grep -q .
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
