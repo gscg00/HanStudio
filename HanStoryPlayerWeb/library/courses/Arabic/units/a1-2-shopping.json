@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "arabic-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "سعر",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سعر»?",
+          "target": "سعر",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«سعر» significa «precio».",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "سعر",
+            "غرفة القياس"
+          ],
+          "answer": "سعر",
+          "explanation": "La forma escuchada es «سعر»: precio",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "مال",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مال»?",
+          "target": "مال",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«مال» significa «dinero».",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مال",
+            "كم سعر هذا؟",
+            "لدي نقد فقط."
+          ],
+          "answer": "مال",
+          "explanation": "La forma escuchada es «مال»: dinero",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "كم سعر هذا؟",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «كم سعر هذا؟»?",
+          "target": "كم سعر هذا؟",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«كم سعر هذا؟» significa «¿Cuánto cuesta esto?».",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "غالٍ",
+            "كم سعر هذا؟"
+          ],
+          "answer": "كم سعر هذا؟",
+          "explanation": "La forma escuchada es «كم سعر هذا؟»: ¿Cuánto cuesta esto?",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "أحتاج إلى مقاس أكبر.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «أحتاج إلى مقاس أكبر.»?",
+          "target": "أحتاج إلى مقاس أكبر.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«أحتاج إلى مقاس أكبر.» significa «Necesito una talla más grande.».",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "نقد",
+            "أحتاج إلى مقاس أكبر.",
+            "سعر"
+          ],
+          "answer": "أحتاج إلى مقاس أكبر.",
+          "explanation": "La forma escuchada es «أحتاج إلى مقاس أكبر.»: Necesito una talla más grande.",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "مقاس",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مقاس»?",
+          "target": "مقاس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«مقاس» significa «talla».",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "أحتاج إلى مقاس أكبر.",
+            "أين غرفة القياس؟",
+            "مقاس"
+          ],
+          "answer": "مقاس",
+          "explanation": "La forma escuchada es «مقاس»: talla",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "رخيص",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «رخيص»?",
+          "target": "رخيص",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«رخيص» significa «barato».",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "رخيص",
+            "هل يوجد هذا باللون الأزرق؟"
+          ],
+          "answer": "رخيص",
+          "explanation": "La forma escuchada es «رخيص»: barato",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "هل يوجد هذا باللون الأزرق؟",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هل يوجد هذا باللون الأزرق؟»?",
+          "target": "هل يوجد هذا باللون الأزرق؟",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«هل يوجد هذا باللون الأزرق؟» significa «¿Lo tiene en azul?».",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يوجد هذا باللون الأزرق؟",
+            "مال",
+            "بطاقة"
+          ],
+          "answer": "هل يوجد هذا باللون الأزرق؟",
+          "explanation": "La forma escuchada es «هل يوجد هذا باللون الأزرق؟»: ¿Lo tiene en azul?",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "سآخذه.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سآخذه.»?",
+          "target": "سآخذه.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«سآخذه.» significa «Me lo llevo.».",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مقاس",
+            "غرفة القياس",
+            "سآخذه."
+          ],
+          "answer": "سآخذه.",
+          "explanation": "La forma escuchada es «سآخذه.»: Me lo llevo.",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سعر»?",
+          "target": "سعر",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«سعر» significa «precio».",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "سعر",
+            "غرفة القياس"
+          ],
+          "answer": "سعر",
+          "explanation": "La forma escuchada es «سعر»: precio",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مقاس»?",
+          "target": "مقاس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«مقاس» significa «talla».",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "أحتاج إلى مقاس أكبر.",
+            "أين غرفة القياس؟",
+            "مقاس"
+          ],
+          "answer": "مقاس",
+          "explanation": "La forma escuchada es «مقاس»: talla",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «كم سعر هذا؟»?",
+          "target": "كم سعر هذا؟",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«كم سعر هذا؟» significa «¿Cuánto cuesta esto?».",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "غالٍ",
+            "كم سعر هذا؟"
+          ],
+          "answer": "كم سعر هذا؟",
+          "explanation": "La forma escuchada es «كم سعر هذا؟»: ¿Cuánto cuesta esto?",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هل يوجد هذا باللون الأزرق؟»?",
+          "target": "هل يوجد هذا باللون الأزرق؟",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«هل يوجد هذا باللون الأزرق؟» significa «¿Lo tiene en azul?».",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يوجد هذا باللون الأزرق؟",
+            "مال",
+            "بطاقة"
+          ],
+          "answer": "هل يوجد هذا باللون الأزرق؟",
+          "explanation": "La forma escuchada es «هل يوجد هذا باللون الأزرق؟»: ¿Lo tiene en azul?",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "غالٍ",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "غالٍ",
+          "slow_audio": "غالٍ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «غالٍ»?",
+          "target": "غالٍ",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«غالٍ» significa «caro».",
+          "audio": "غالٍ",
+          "slow_audio": "غالٍ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "غالٍ",
+            "سآخذه.",
+            "سعر"
+          ],
+          "answer": "غالٍ",
+          "explanation": "La forma escuchada es «غالٍ»: caro",
+          "audio": "غالٍ",
+          "slow_audio": "غالٍ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "نقد",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «نقد»?",
+          "target": "نقد",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«نقد» significa «efectivo».",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "مال",
+            "نقد"
+          ],
+          "answer": "نقد",
+          "explanation": "La forma escuchada es «نقد»: efectivo",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "هل يمكنني الدفع بالبطاقة؟",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هل يمكنني الدفع بالبطاقة؟»?",
+          "target": "هل يمكنني الدفع بالبطاقة؟",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«هل يمكنني الدفع بالبطاقة؟» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "كم سعر هذا؟",
+            "هل يمكنني الدفع بالبطاقة؟",
+            "رخيص"
+          ],
+          "answer": "هل يمكنني الدفع بالبطاقة؟",
+          "explanation": "La forma escuchada es «هل يمكنني الدفع بالبطاقة؟»: ¿Puedo pagar con tarjeta?",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "لدي نقد فقط.",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «لدي نقد فقط.»?",
+          "target": "لدي نقد فقط.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«لدي نقد فقط.» significa «Solo tengo efectivo.».",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "لدي نقد فقط.",
+            "غالٍ",
+            "أحتاج إلى مقاس أكبر."
+          ],
+          "answer": "لدي نقد فقط.",
+          "explanation": "La forma escuchada es «لدي نقد فقط.»: Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "بطاقة",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «بطاقة»?",
+          "target": "بطاقة",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«بطاقة» significa «tarjeta».",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مقاس",
+            "بطاقة",
+            "لدي نقد فقط."
+          ],
+          "answer": "بطاقة",
+          "explanation": "La forma escuchada es «بطاقة»: tarjeta",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "غرفة القياس",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «غرفة القياس»?",
+          "target": "غرفة القياس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«غرفة القياس» significa «probador».",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "غرفة القياس",
+            "أين غرفة القياس؟",
+            "رخيص"
+          ],
+          "answer": "غرفة القياس",
+          "explanation": "La forma escuchada es «غرفة القياس»: probador",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "أين غرفة القياس؟",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "أين غرفة القياس؟",
+          "slow_audio": "أين غرفة القياس؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «أين غرفة القياس؟»?",
+          "target": "أين غرفة القياس؟",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«أين غرفة القياس؟» significa «¿Dónde está el probador?».",
+          "audio": "أين غرفة القياس؟",
+          "slow_audio": "أين غرفة القياس؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "نقد",
+            "هل يوجد هذا باللون الأزرق؟",
+            "أين غرفة القياس؟"
+          ],
+          "answer": "أين غرفة القياس؟",
+          "explanation": "La forma escuchada es «أين غرفة القياس؟»: ¿Dónde está el probador?",
+          "audio": "أين غرفة القياس؟",
+          "slow_audio": "أين غرفة القياس؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "هذا غالٍ جدًا.",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هذا غالٍ جدًا.»?",
+          "target": "هذا غالٍ جدًا.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«هذا غالٍ جدًا.» significa «Es demasiado caro.».",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "سآخذه.",
+            "هذا غالٍ جدًا.",
+            "بطاقة"
+          ],
+          "answer": "هذا غالٍ جدًا.",
+          "explanation": "La forma escuchada es «هذا غالٍ جدًا.»: Es demasiado caro.",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مال»?",
+          "target": "مال",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«مال» significa «dinero».",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مال",
+            "كم سعر هذا؟",
+            "لدي نقد فقط."
+          ],
+          "answer": "مال",
+          "explanation": "La forma escuchada es «مال»: dinero",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «رخيص»?",
+          "target": "رخيص",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«رخيص» significa «barato».",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "رخيص",
+            "هل يوجد هذا باللون الأزرق؟"
+          ],
+          "answer": "رخيص",
+          "explanation": "La forma escuchada es «رخيص»: barato",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «نقد»?",
+          "target": "نقد",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«نقد» significa «efectivo».",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "مال",
+            "نقد"
+          ],
+          "answer": "نقد",
+          "explanation": "La forma escuchada es «نقد»: efectivo",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «غرفة القياس»?",
+          "target": "غرفة القياس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«غرفة القياس» significa «probador».",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "غرفة القياس",
+            "أين غرفة القياس؟",
+            "رخيص"
+          ],
+          "answer": "غرفة القياس",
+          "explanation": "La forma escuchada es «غرفة القياس»: probador",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «أحتاج إلى مقاس أكبر.»?",
+          "target": "أحتاج إلى مقاس أكبر.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«أحتاج إلى مقاس أكبر.» significa «Necesito una talla más grande.».",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "نقد",
+            "أحتاج إلى مقاس أكبر.",
+            "سعر"
+          ],
+          "answer": "أحتاج إلى مقاس أكبر.",
+          "explanation": "La forma escuchada es «أحتاج إلى مقاس أكبر.»: Necesito una talla más grande.",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سآخذه.»?",
+          "target": "سآخذه.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«سآخذه.» significa «Me lo llevo.».",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مقاس",
+            "غرفة القياس",
+            "سآخذه."
+          ],
+          "answer": "سآخذه.",
+          "explanation": "La forma escuchada es «سآخذه.»: Me lo llevo.",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «لدي نقد فقط.»?",
+          "target": "لدي نقد فقط.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«لدي نقد فقط.» significa «Solo tengo efectivo.».",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "لدي نقد فقط.",
+            "غالٍ",
+            "أحتاج إلى مقاس أكبر."
+          ],
+          "answer": "لدي نقد فقط.",
+          "explanation": "La forma escuchada es «لدي نقد فقط.»: Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هذا غالٍ جدًا.»?",
+          "target": "هذا غالٍ جدًا.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«هذا غالٍ جدًا.» significa «Es demasiado caro.».",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "سآخذه.",
+            "هذا غالٍ جدًا.",
+            "بطاقة"
+          ],
+          "answer": "هذا غالٍ جدًا.",
+          "explanation": "La forma escuchada es «هذا غالٍ جدًا.»: Es demasiado caro.",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "arabic-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سعر»?",
+          "target": "سعر",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«سعر» significa «precio».",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "سعر",
+            "غرفة القياس"
+          ],
+          "answer": "سعر",
+          "explanation": "La forma escuchada es «سعر»: precio",
+          "audio": "سعر",
+          "slow_audio": "سعر",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مال»?",
+          "target": "مال",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«مال» significa «dinero».",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مال",
+            "كم سعر هذا؟",
+            "لدي نقد فقط."
+          ],
+          "answer": "مال",
+          "explanation": "La forma escuchada es «مال»: dinero",
+          "audio": "مال",
+          "slow_audio": "مال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «مقاس»?",
+          "target": "مقاس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«مقاس» significa «talla».",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "أحتاج إلى مقاس أكبر.",
+            "أين غرفة القياس؟",
+            "مقاس"
+          ],
+          "answer": "مقاس",
+          "explanation": "La forma escuchada es «مقاس»: talla",
+          "audio": "مقاس",
+          "slow_audio": "مقاس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «رخيص»?",
+          "target": "رخيص",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«رخيص» significa «barato».",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "رخيص",
+            "هل يوجد هذا باللون الأزرق؟"
+          ],
+          "answer": "رخيص",
+          "explanation": "La forma escuchada es «رخيص»: barato",
+          "audio": "رخيص",
+          "slow_audio": "رخيص",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «غالٍ»?",
+          "target": "غالٍ",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«غالٍ» significa «caro».",
+          "audio": "غالٍ",
+          "slow_audio": "غالٍ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "غالٍ",
+            "سآخذه.",
+            "سعر"
+          ],
+          "answer": "غالٍ",
+          "explanation": "La forma escuchada es «غالٍ»: caro",
+          "audio": "غالٍ",
+          "slow_audio": "غالٍ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «نقد»?",
+          "target": "نقد",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«نقد» significa «efectivo».",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يمكنني الدفع بالبطاقة؟",
+            "مال",
+            "نقد"
+          ],
+          "answer": "نقد",
+          "explanation": "La forma escuchada es «نقد»: efectivo",
+          "audio": "نقد",
+          "slow_audio": "نقد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «بطاقة»?",
+          "target": "بطاقة",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«بطاقة» significa «tarjeta».",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مقاس",
+            "بطاقة",
+            "لدي نقد فقط."
+          ],
+          "answer": "بطاقة",
+          "explanation": "La forma escuchada es «بطاقة»: tarjeta",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «غرفة القياس»?",
+          "target": "غرفة القياس",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«غرفة القياس» significa «probador».",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "غرفة القياس",
+            "أين غرفة القياس؟",
+            "رخيص"
+          ],
+          "answer": "غرفة القياس",
+          "explanation": "La forma escuchada es «غرفة القياس»: probador",
+          "audio": "غرفة القياس",
+          "slow_audio": "غرفة القياس",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «كم سعر هذا؟»?",
+          "target": "كم سعر هذا؟",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«كم سعر هذا؟» significa «¿Cuánto cuesta esto?».",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هذا غالٍ جدًا.",
+            "غالٍ",
+            "كم سعر هذا؟"
+          ],
+          "answer": "كم سعر هذا؟",
+          "explanation": "La forma escuchada es «كم سعر هذا؟»: ¿Cuánto cuesta esto?",
+          "audio": "كم سعر هذا؟",
+          "slow_audio": "كم سعر هذا؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «أحتاج إلى مقاس أكبر.»?",
+          "target": "أحتاج إلى مقاس أكبر.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«أحتاج إلى مقاس أكبر.» significa «Necesito una talla más grande.».",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "نقد",
+            "أحتاج إلى مقاس أكبر.",
+            "سعر"
+          ],
+          "answer": "أحتاج إلى مقاس أكبر.",
+          "explanation": "La forma escuchada es «أحتاج إلى مقاس أكبر.»: Necesito una talla más grande.",
+          "audio": "أحتاج إلى مقاس أكبر.",
+          "slow_audio": "أحتاج إلى مقاس أكبر.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هل يوجد هذا باللون الأزرق؟»?",
+          "target": "هل يوجد هذا باللون الأزرق؟",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«هل يوجد هذا باللون الأزرق؟» significa «¿Lo tiene en azul?».",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "هل يوجد هذا باللون الأزرق؟",
+            "مال",
+            "بطاقة"
+          ],
+          "answer": "هل يوجد هذا باللون الأزرق؟",
+          "explanation": "La forma escuchada es «هل يوجد هذا باللون الأزرق؟»: ¿Lo tiene en azul?",
+          "audio": "هل يوجد هذا باللون الأزرق؟",
+          "slow_audio": "هل يوجد هذا باللون الأزرق؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «سآخذه.»?",
+          "target": "سآخذه.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«سآخذه.» significa «Me lo llevo.».",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "مقاس",
+            "غرفة القياس",
+            "سآخذه."
+          ],
+          "answer": "سآخذه.",
+          "explanation": "La forma escuchada es «سآخذه.»: Me lo llevo.",
+          "audio": "سآخذه.",
+          "slow_audio": "سآخذه.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هل يمكنني الدفع بالبطاقة؟»?",
+          "target": "هل يمكنني الدفع بالبطاقة؟",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«هل يمكنني الدفع بالبطاقة؟» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "كم سعر هذا؟",
+            "هل يمكنني الدفع بالبطاقة؟",
+            "رخيص"
+          ],
+          "answer": "هل يمكنني الدفع بالبطاقة؟",
+          "explanation": "La forma escuchada es «هل يمكنني الدفع بالبطاقة؟»: ¿Puedo pagar con tarjeta?",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «لدي نقد فقط.»?",
+          "target": "لدي نقد فقط.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«لدي نقد فقط.» significa «Solo tengo efectivo.».",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "لدي نقد فقط.",
+            "غالٍ",
+            "أحتاج إلى مقاس أكبر."
+          ],
+          "answer": "لدي نقد فقط.",
+          "explanation": "La forma escuchada es «لدي نقد فقط.»: Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «أين غرفة القياس؟»?",
+          "target": "أين غرفة القياس؟",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«أين غرفة القياس؟» significa «¿Dónde está el probador?».",
+          "audio": "أين غرفة القياس؟",
+          "slow_audio": "أين غرفة القياس؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "نقد",
+            "هل يوجد هذا باللون الأزرق؟",
+            "أين غرفة القياس؟"
+          ],
+          "answer": "أين غرفة القياس؟",
+          "explanation": "La forma escuchada es «أين غرفة القياس؟»: ¿Dónde está el probador?",
+          "audio": "أين غرفة القياس؟",
+          "slow_audio": "أين غرفة القياس؟",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «هذا غالٍ جدًا.»?",
+          "target": "هذا غالٍ جدًا.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«هذا غالٍ جدًا.» significa «Es demasiado caro.».",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "سآخذه.",
+            "هذا غالٍ جدًا.",
+            "بطاقة"
+          ],
+          "answer": "هذا غالٍ جدًا.",
+          "explanation": "La forma escuchada es «هذا غالٍ جدًا.»: Es demasiado caro.",
+          "audio": "هذا غالٍ جدًا.",
+          "slow_audio": "هذا غالٍ جدًا.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

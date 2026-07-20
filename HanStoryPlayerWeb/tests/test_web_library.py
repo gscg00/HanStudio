@@ -5,9 +5,11 @@ from src.web_library import bump_version, is_safe_relative, natural_key
 
 WEB = Path(__file__).resolve().parents[1]
 
-def test_empty_library_is_valid():
+def test_published_library_is_valid():
     data = json.loads((WEB / "library/library.json").read_text())
-    assert data["schema_version"] == 1 and data["books"] == []
+    assert data["schema_version"] == 1
+    assert isinstance(data["books"], list)
+    assert all(book.get("code") and book.get("manifest") for book in data["books"])
 
 def test_natural_order():
     assert sorted(["L10", "L2", "L1"], key=natural_key) == ["L1", "L2", "L10"]

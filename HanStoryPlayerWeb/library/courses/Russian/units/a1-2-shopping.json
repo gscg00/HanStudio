@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "russian-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "russian-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "цена",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «цена»?",
+          "target": "цена",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«цена» significa «precio».",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "цена",
+            "примерочная"
+          ],
+          "answer": "цена",
+          "explanation": "La forma escuchada es «цена»: precio",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "деньги",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «деньги»?",
+          "target": "деньги",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«деньги» significa «dinero».",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "деньги",
+            "Сколько это стоит?",
+            "У меня только наличные."
+          ],
+          "answer": "деньги",
+          "explanation": "La forma escuchada es «деньги»: dinero",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Сколько это стоит?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Сколько это стоит?»?",
+          "target": "Сколько это стоит?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Сколько это стоит?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дорогой",
+            "Сколько это стоит?"
+          ],
+          "answer": "Сколько это стоит?",
+          "explanation": "La forma escuchada es «Сколько это стоит?»: ¿Cuánto cuesta esto?",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Мне нужен размер побольше.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Мне нужен размер побольше.»?",
+          "target": "Мне нужен размер побольше.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Мне нужен размер побольше.» significa «Necesito una talla más grande.».",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "наличные",
+            "Мне нужен размер побольше.",
+            "цена"
+          ],
+          "answer": "Мне нужен размер побольше.",
+          "explanation": "La forma escuchada es «Мне нужен размер побольше.»: Necesito una talla más grande.",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "russian-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "размер",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «размер»?",
+          "target": "размер",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«размер» significa «talla».",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Мне нужен размер побольше.",
+            "Где примерочная?",
+            "размер"
+          ],
+          "answer": "размер",
+          "explanation": "La forma escuchada es «размер»: talla",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "дешёвый",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «дешёвый»?",
+          "target": "дешёвый",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«дешёвый» significa «barato».",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дешёвый",
+            "У вас есть это в синем цвете?"
+          ],
+          "answer": "дешёвый",
+          "explanation": "La forma escuchada es «дешёвый»: barato",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "У вас есть это в синем цвете?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У вас есть это в синем цвете?»?",
+          "target": "У вас есть это в синем цвете?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«У вас есть это в синем цвете?» significa «¿Lo tiene en azul?».",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У вас есть это в синем цвете?",
+            "деньги",
+            "карта"
+          ],
+          "answer": "У вас есть это в синем цвете?",
+          "explanation": "La forma escuchada es «У вас есть это в синем цвете?»: ¿Lo tiene en azul?",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Я беру.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Я беру.»?",
+          "target": "Я беру.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Я беру.» significa «Me lo llevo.».",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "размер",
+            "примерочная",
+            "Я беру."
+          ],
+          "answer": "Я беру.",
+          "explanation": "La forma escuchada es «Я беру.»: Me lo llevo.",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "russian-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «цена»?",
+          "target": "цена",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«цена» significa «precio».",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "цена",
+            "примерочная"
+          ],
+          "answer": "цена",
+          "explanation": "La forma escuchada es «цена»: precio",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «размер»?",
+          "target": "размер",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«размер» significa «talla».",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Мне нужен размер побольше.",
+            "Где примерочная?",
+            "размер"
+          ],
+          "answer": "размер",
+          "explanation": "La forma escuchada es «размер»: talla",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Сколько это стоит?»?",
+          "target": "Сколько это стоит?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Сколько это стоит?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дорогой",
+            "Сколько это стоит?"
+          ],
+          "answer": "Сколько это стоит?",
+          "explanation": "La forma escuchada es «Сколько это стоит?»: ¿Cuánto cuesta esto?",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У вас есть это в синем цвете?»?",
+          "target": "У вас есть это в синем цвете?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«У вас есть это в синем цвете?» significa «¿Lo tiene en azul?».",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У вас есть это в синем цвете?",
+            "деньги",
+            "карта"
+          ],
+          "answer": "У вас есть это в синем цвете?",
+          "explanation": "La forma escuchada es «У вас есть это в синем цвете?»: ¿Lo tiene en azul?",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "russian-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "дорогой",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "дорогой",
+          "slow_audio": "дорогой",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «дорогой»?",
+          "target": "дорогой",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«дорогой» significa «caro».",
+          "audio": "дорогой",
+          "slow_audio": "дорогой",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "дорогой",
+            "Я беру.",
+            "цена"
+          ],
+          "answer": "дорогой",
+          "explanation": "La forma escuchada es «дорогой»: caro",
+          "audio": "дорогой",
+          "slow_audio": "дорогой",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "наличные",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «наличные»?",
+          "target": "наличные",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«наличные» significa «efectivo».",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "деньги",
+            "наличные"
+          ],
+          "answer": "наличные",
+          "explanation": "La forma escuchada es «наличные»: efectivo",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Можно оплатить картой?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "Можно оплатить картой?",
+          "slow_audio": "Можно оплатить картой?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Можно оплатить картой?»?",
+          "target": "Можно оплатить картой?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Можно оплатить картой?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Можно оплатить картой?",
+          "slow_audio": "Можно оплатить картой?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Сколько это стоит?",
+            "Можно оплатить картой?",
+            "дешёвый"
+          ],
+          "answer": "Можно оплатить картой?",
+          "explanation": "La forma escuchada es «Можно оплатить картой?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Можно оплатить картой?",
+          "slow_audio": "Можно оплатить картой?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "У меня только наличные.",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У меня только наличные.»?",
+          "target": "У меня только наличные.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«У меня только наличные.» significa «Solo tengo efectivo.».",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У меня только наличные.",
+            "дорогой",
+            "Мне нужен размер побольше."
+          ],
+          "answer": "У меня только наличные.",
+          "explanation": "La forma escuchada es «У меня только наличные.»: Solo tengo efectivo.",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "russian-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "карта",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "карта",
+          "slow_audio": "карта",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «карта»?",
+          "target": "карта",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«карта» significa «tarjeta».",
+          "audio": "карта",
+          "slow_audio": "карта",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "размер",
+            "карта",
+            "У меня только наличные."
+          ],
+          "answer": "карта",
+          "explanation": "La forma escuchada es «карта»: tarjeta",
+          "audio": "карта",
+          "slow_audio": "карта",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "примерочная",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «примерочная»?",
+          "target": "примерочная",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«примерочная» significa «probador».",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "примерочная",
+            "Где примерочная?",
+            "дешёвый"
+          ],
+          "answer": "примерочная",
+          "explanation": "La forma escuchada es «примерочная»: probador",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Где примерочная?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "Где примерочная?",
+          "slow_audio": "Где примерочная?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Где примерочная?»?",
+          "target": "Где примерочная?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Где примерочная?» significa «¿Dónde está el probador?».",
+          "audio": "Где примерочная?",
+          "slow_audio": "Где примерочная?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "наличные",
+            "У вас есть это в синем цвете?",
+            "Где примерочная?"
+          ],
+          "answer": "Где примерочная?",
+          "explanation": "La forma escuchada es «Где примерочная?»: ¿Dónde está el probador?",
+          "audio": "Где примерочная?",
+          "slow_audio": "Где примерочная?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Это слишком дорого.",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Это слишком дорого.»?",
+          "target": "Это слишком дорого.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«Это слишком дорого.» significa «Es demasiado caro.».",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Я беру.",
+            "Это слишком дорого.",
+            "карта"
+          ],
+          "answer": "Это слишком дорого.",
+          "explanation": "La forma escuchada es «Это слишком дорого.»: Es demasiado caro.",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "russian-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «деньги»?",
+          "target": "деньги",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«деньги» significa «dinero».",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "деньги",
+            "Сколько это стоит?",
+            "У меня только наличные."
+          ],
+          "answer": "деньги",
+          "explanation": "La forma escuchada es «деньги»: dinero",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «дешёвый»?",
+          "target": "дешёвый",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«дешёвый» significa «barato».",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дешёвый",
+            "У вас есть это в синем цвете?"
+          ],
+          "answer": "дешёвый",
+          "explanation": "La forma escuchada es «дешёвый»: barato",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «наличные»?",
+          "target": "наличные",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«наличные» significa «efectivo».",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "деньги",
+            "наличные"
+          ],
+          "answer": "наличные",
+          "explanation": "La forma escuchada es «наличные»: efectivo",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «примерочная»?",
+          "target": "примерочная",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«примерочная» significa «probador».",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "примерочная",
+            "Где примерочная?",
+            "дешёвый"
+          ],
+          "answer": "примерочная",
+          "explanation": "La forma escuchada es «примерочная»: probador",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Мне нужен размер побольше.»?",
+          "target": "Мне нужен размер побольше.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Мне нужен размер побольше.» significa «Necesito una talla más grande.».",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "наличные",
+            "Мне нужен размер побольше.",
+            "цена"
+          ],
+          "answer": "Мне нужен размер побольше.",
+          "explanation": "La forma escuchada es «Мне нужен размер побольше.»: Necesito una talla más grande.",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Я беру.»?",
+          "target": "Я беру.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Я беру.» significa «Me lo llevo.».",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "размер",
+            "примерочная",
+            "Я беру."
+          ],
+          "answer": "Я беру.",
+          "explanation": "La forma escuchada es «Я беру.»: Me lo llevo.",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У меня только наличные.»?",
+          "target": "У меня только наличные.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«У меня только наличные.» significa «Solo tengo efectivo.».",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У меня только наличные.",
+            "дорогой",
+            "Мне нужен размер побольше."
+          ],
+          "answer": "У меня только наличные.",
+          "explanation": "La forma escuchada es «У меня только наличные.»: Solo tengo efectivo.",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Это слишком дорого.»?",
+          "target": "Это слишком дорого.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«Это слишком дорого.» significa «Es demasiado caro.».",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Я беру.",
+            "Это слишком дорого.",
+            "карта"
+          ],
+          "answer": "Это слишком дорого.",
+          "explanation": "La forma escuchada es «Это слишком дорого.»: Es demasiado caro.",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "russian-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «цена»?",
+          "target": "цена",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«цена» significa «precio».",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "цена",
+            "примерочная"
+          ],
+          "answer": "цена",
+          "explanation": "La forma escuchada es «цена»: precio",
+          "audio": "цена",
+          "slow_audio": "цена",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «деньги»?",
+          "target": "деньги",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«деньги» significa «dinero».",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "деньги",
+            "Сколько это стоит?",
+            "У меня только наличные."
+          ],
+          "answer": "деньги",
+          "explanation": "La forma escuchada es «деньги»: dinero",
+          "audio": "деньги",
+          "slow_audio": "деньги",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «размер»?",
+          "target": "размер",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«размер» significa «talla».",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Мне нужен размер побольше.",
+            "Где примерочная?",
+            "размер"
+          ],
+          "answer": "размер",
+          "explanation": "La forma escuchada es «размер»: talla",
+          "audio": "размер",
+          "slow_audio": "размер",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «дешёвый»?",
+          "target": "дешёвый",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«дешёвый» significa «barato».",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дешёвый",
+            "У вас есть это в синем цвете?"
+          ],
+          "answer": "дешёвый",
+          "explanation": "La forma escuchada es «дешёвый»: barato",
+          "audio": "дешёвый",
+          "slow_audio": "дешёвый",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «дорогой»?",
+          "target": "дорогой",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«дорогой» significa «caro».",
+          "audio": "дорогой",
+          "slow_audio": "дорогой",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "дорогой",
+            "Я беру.",
+            "цена"
+          ],
+          "answer": "дорогой",
+          "explanation": "La forma escuchada es «дорогой»: caro",
+          "audio": "дорогой",
+          "slow_audio": "дорогой",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «наличные»?",
+          "target": "наличные",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«наличные» significa «efectivo».",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Можно оплатить картой?",
+            "деньги",
+            "наличные"
+          ],
+          "answer": "наличные",
+          "explanation": "La forma escuchada es «наличные»: efectivo",
+          "audio": "наличные",
+          "slow_audio": "наличные",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «карта»?",
+          "target": "карта",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«карта» significa «tarjeta».",
+          "audio": "карта",
+          "slow_audio": "карта",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "размер",
+            "карта",
+            "У меня только наличные."
+          ],
+          "answer": "карта",
+          "explanation": "La forma escuchada es «карта»: tarjeta",
+          "audio": "карта",
+          "slow_audio": "карта",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «примерочная»?",
+          "target": "примерочная",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«примерочная» significa «probador».",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "примерочная",
+            "Где примерочная?",
+            "дешёвый"
+          ],
+          "answer": "примерочная",
+          "explanation": "La forma escuchada es «примерочная»: probador",
+          "audio": "примерочная",
+          "slow_audio": "примерочная",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Сколько это стоит?»?",
+          "target": "Сколько это стоит?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Сколько это стоит?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Это слишком дорого.",
+            "дорогой",
+            "Сколько это стоит?"
+          ],
+          "answer": "Сколько это стоит?",
+          "explanation": "La forma escuchada es «Сколько это стоит?»: ¿Cuánto cuesta esto?",
+          "audio": "Сколько это стоит?",
+          "slow_audio": "Сколько это стоит?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Мне нужен размер побольше.»?",
+          "target": "Мне нужен размер побольше.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Мне нужен размер побольше.» significa «Necesito una talla más grande.».",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "наличные",
+            "Мне нужен размер побольше.",
+            "цена"
+          ],
+          "answer": "Мне нужен размер побольше.",
+          "explanation": "La forma escuchada es «Мне нужен размер побольше.»: Necesito una talla más grande.",
+          "audio": "Мне нужен размер побольше.",
+          "slow_audio": "Мне нужен размер побольше.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У вас есть это в синем цвете?»?",
+          "target": "У вас есть это в синем цвете?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«У вас есть это в синем цвете?» significa «¿Lo tiene en azul?».",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У вас есть это в синем цвете?",
+            "деньги",
+            "карта"
+          ],
+          "answer": "У вас есть это в синем цвете?",
+          "explanation": "La forma escuchada es «У вас есть это в синем цвете?»: ¿Lo tiene en azul?",
+          "audio": "У вас есть это в синем цвете?",
+          "slow_audio": "У вас есть это в синем цвете?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Я беру.»?",
+          "target": "Я беру.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Я беру.» significa «Me lo llevo.».",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "размер",
+            "примерочная",
+            "Я беру."
+          ],
+          "answer": "Я беру.",
+          "explanation": "La forma escuchada es «Я беру.»: Me lo llevo.",
+          "audio": "Я беру.",
+          "slow_audio": "Я беру.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Можно оплатить картой?»?",
+          "target": "Можно оплатить картой?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Можно оплатить картой?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Можно оплатить картой?",
+          "slow_audio": "Можно оплатить картой?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Сколько это стоит?",
+            "Можно оплатить картой?",
+            "дешёвый"
+          ],
+          "answer": "Можно оплатить картой?",
+          "explanation": "La forma escuchada es «Можно оплатить картой?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Можно оплатить картой?",
+          "slow_audio": "Можно оплатить картой?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «У меня только наличные.»?",
+          "target": "У меня только наличные.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«У меня только наличные.» significa «Solo tengo efectivo.».",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "У меня только наличные.",
+            "дорогой",
+            "Мне нужен размер побольше."
+          ],
+          "answer": "У меня только наличные.",
+          "explanation": "La forma escuchada es «У меня только наличные.»: Solo tengo efectivo.",
+          "audio": "У меня только наличные.",
+          "slow_audio": "У меня только наличные.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Где примерочная?»?",
+          "target": "Где примерочная?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Где примерочная?» significa «¿Dónde está el probador?».",
+          "audio": "Где примерочная?",
+          "slow_audio": "Где примерочная?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "наличные",
+            "У вас есть это в синем цвете?",
+            "Где примерочная?"
+          ],
+          "answer": "Где примерочная?",
+          "explanation": "La forma escuchada es «Где примерочная?»: ¿Dónde está el probador?",
+          "audio": "Где примерочная?",
+          "slow_audio": "Где примерочная?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Это слишком дорого.»?",
+          "target": "Это слишком дорого.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«Это слишком дорого.» significa «Es demasiado caro.».",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Я беру.",
+            "Это слишком дорого.",
+            "карта"
+          ],
+          "answer": "Это слишком дорого.",
+          "explanation": "La forma escuchada es «Это слишком дорого.»: Es demasiado caro.",
+          "audio": "Это слишком дорого.",
+          "slow_audio": "Это слишком дорого.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

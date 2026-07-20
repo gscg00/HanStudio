@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "italian-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "italian-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "prezzo",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prezzo»?",
+          "target": "prezzo",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prezzo» significa «precio».",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "prezzo",
+            "camerino"
+          ],
+          "answer": "prezzo",
+          "explanation": "La forma escuchada es «prezzo»: precio",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "denaro",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «denaro»?",
+          "target": "denaro",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«denaro» significa «dinero».",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "denaro",
+            "Quanto costa questo?",
+            "Ho solo contanti."
+          ],
+          "answer": "denaro",
+          "explanation": "La forma escuchada es «denaro»: dinero",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Quanto costa questo?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Quanto costa questo?»?",
+          "target": "Quanto costa questo?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Quanto costa questo?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "costoso",
+            "Quanto costa questo?"
+          ],
+          "answer": "Quanto costa questo?",
+          "explanation": "La forma escuchada es «Quanto costa questo?»: ¿Cuánto cuesta esto?",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Mi serve una taglia più grande.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Mi serve una taglia più grande.»?",
+          "target": "Mi serve una taglia più grande.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Mi serve una taglia più grande.» significa «Necesito una talla más grande.».",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "contanti",
+            "Mi serve una taglia più grande.",
+            "prezzo"
+          ],
+          "answer": "Mi serve una taglia più grande.",
+          "explanation": "La forma escuchada es «Mi serve una taglia più grande.»: Necesito una talla más grande.",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "italian-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "taglia",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taglia»?",
+          "target": "taglia",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taglia» significa «talla».",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Mi serve una taglia più grande.",
+            "Dov’è il camerino?",
+            "taglia"
+          ],
+          "answer": "taglia",
+          "explanation": "La forma escuchada es «taglia»: talla",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "economico",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «economico»?",
+          "target": "economico",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«economico» significa «barato».",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "economico",
+            "Ce l’ha in blu?"
+          ],
+          "answer": "economico",
+          "explanation": "La forma escuchada es «economico»: barato",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Ce l’ha in blu?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ce l’ha in blu?»?",
+          "target": "Ce l’ha in blu?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Ce l’ha in blu?» significa «¿Lo tiene en azul?».",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ce l’ha in blu?",
+            "denaro",
+            "carta"
+          ],
+          "answer": "Ce l’ha in blu?",
+          "explanation": "La forma escuchada es «Ce l’ha in blu?»: ¿Lo tiene en azul?",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Lo prendo.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Lo prendo.»?",
+          "target": "Lo prendo.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Lo prendo.» significa «Me lo llevo.».",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taglia",
+            "camerino",
+            "Lo prendo."
+          ],
+          "answer": "Lo prendo.",
+          "explanation": "La forma escuchada es «Lo prendo.»: Me lo llevo.",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "italian-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prezzo»?",
+          "target": "prezzo",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prezzo» significa «precio».",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "prezzo",
+            "camerino"
+          ],
+          "answer": "prezzo",
+          "explanation": "La forma escuchada es «prezzo»: precio",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taglia»?",
+          "target": "taglia",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taglia» significa «talla».",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Mi serve una taglia più grande.",
+            "Dov’è il camerino?",
+            "taglia"
+          ],
+          "answer": "taglia",
+          "explanation": "La forma escuchada es «taglia»: talla",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Quanto costa questo?»?",
+          "target": "Quanto costa questo?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Quanto costa questo?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "costoso",
+            "Quanto costa questo?"
+          ],
+          "answer": "Quanto costa questo?",
+          "explanation": "La forma escuchada es «Quanto costa questo?»: ¿Cuánto cuesta esto?",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ce l’ha in blu?»?",
+          "target": "Ce l’ha in blu?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Ce l’ha in blu?» significa «¿Lo tiene en azul?».",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ce l’ha in blu?",
+            "denaro",
+            "carta"
+          ],
+          "answer": "Ce l’ha in blu?",
+          "explanation": "La forma escuchada es «Ce l’ha in blu?»: ¿Lo tiene en azul?",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "italian-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "costoso",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "costoso",
+          "slow_audio": "costoso",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «costoso»?",
+          "target": "costoso",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«costoso» significa «caro».",
+          "audio": "costoso",
+          "slow_audio": "costoso",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "costoso",
+            "Lo prendo.",
+            "prezzo"
+          ],
+          "answer": "costoso",
+          "explanation": "La forma escuchada es «costoso»: caro",
+          "audio": "costoso",
+          "slow_audio": "costoso",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "contanti",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «contanti»?",
+          "target": "contanti",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«contanti» significa «efectivo».",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "denaro",
+            "contanti"
+          ],
+          "answer": "contanti",
+          "explanation": "La forma escuchada es «contanti»: efectivo",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Posso pagare con la carta?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "Posso pagare con la carta?",
+          "slow_audio": "Posso pagare con la carta?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Posso pagare con la carta?»?",
+          "target": "Posso pagare con la carta?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Posso pagare con la carta?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Posso pagare con la carta?",
+          "slow_audio": "Posso pagare con la carta?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Quanto costa questo?",
+            "Posso pagare con la carta?",
+            "economico"
+          ],
+          "answer": "Posso pagare con la carta?",
+          "explanation": "La forma escuchada es «Posso pagare con la carta?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Posso pagare con la carta?",
+          "slow_audio": "Posso pagare con la carta?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Ho solo contanti.",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ho solo contanti.»?",
+          "target": "Ho solo contanti.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Ho solo contanti.» significa «Solo tengo efectivo.».",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ho solo contanti.",
+            "costoso",
+            "Mi serve una taglia più grande."
+          ],
+          "answer": "Ho solo contanti.",
+          "explanation": "La forma escuchada es «Ho solo contanti.»: Solo tengo efectivo.",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "italian-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "carta",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "carta",
+          "slow_audio": "carta",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «carta»?",
+          "target": "carta",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«carta» significa «tarjeta».",
+          "audio": "carta",
+          "slow_audio": "carta",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taglia",
+            "carta",
+            "Ho solo contanti."
+          ],
+          "answer": "carta",
+          "explanation": "La forma escuchada es «carta»: tarjeta",
+          "audio": "carta",
+          "slow_audio": "carta",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "camerino",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «camerino»?",
+          "target": "camerino",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«camerino» significa «probador».",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "camerino",
+            "Dov’è il camerino?",
+            "economico"
+          ],
+          "answer": "camerino",
+          "explanation": "La forma escuchada es «camerino»: probador",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Dov’è il camerino?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "Dov’è il camerino?",
+          "slow_audio": "Dov’è il camerino?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Dov’è il camerino?»?",
+          "target": "Dov’è il camerino?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Dov’è il camerino?» significa «¿Dónde está el probador?».",
+          "audio": "Dov’è il camerino?",
+          "slow_audio": "Dov’è il camerino?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "contanti",
+            "Ce l’ha in blu?",
+            "Dov’è il camerino?"
+          ],
+          "answer": "Dov’è il camerino?",
+          "explanation": "La forma escuchada es «Dov’è il camerino?»: ¿Dónde está el probador?",
+          "audio": "Dov’è il camerino?",
+          "slow_audio": "Dov’è il camerino?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "È troppo costoso.",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «È troppo costoso.»?",
+          "target": "È troppo costoso.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«È troppo costoso.» significa «Es demasiado caro.».",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Lo prendo.",
+            "È troppo costoso.",
+            "carta"
+          ],
+          "answer": "È troppo costoso.",
+          "explanation": "La forma escuchada es «È troppo costoso.»: Es demasiado caro.",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "italian-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «denaro»?",
+          "target": "denaro",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«denaro» significa «dinero».",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "denaro",
+            "Quanto costa questo?",
+            "Ho solo contanti."
+          ],
+          "answer": "denaro",
+          "explanation": "La forma escuchada es «denaro»: dinero",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «economico»?",
+          "target": "economico",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«economico» significa «barato».",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "economico",
+            "Ce l’ha in blu?"
+          ],
+          "answer": "economico",
+          "explanation": "La forma escuchada es «economico»: barato",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «contanti»?",
+          "target": "contanti",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«contanti» significa «efectivo».",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "denaro",
+            "contanti"
+          ],
+          "answer": "contanti",
+          "explanation": "La forma escuchada es «contanti»: efectivo",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «camerino»?",
+          "target": "camerino",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«camerino» significa «probador».",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "camerino",
+            "Dov’è il camerino?",
+            "economico"
+          ],
+          "answer": "camerino",
+          "explanation": "La forma escuchada es «camerino»: probador",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Mi serve una taglia più grande.»?",
+          "target": "Mi serve una taglia più grande.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Mi serve una taglia più grande.» significa «Necesito una talla más grande.».",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "contanti",
+            "Mi serve una taglia più grande.",
+            "prezzo"
+          ],
+          "answer": "Mi serve una taglia più grande.",
+          "explanation": "La forma escuchada es «Mi serve una taglia più grande.»: Necesito una talla más grande.",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Lo prendo.»?",
+          "target": "Lo prendo.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Lo prendo.» significa «Me lo llevo.».",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taglia",
+            "camerino",
+            "Lo prendo."
+          ],
+          "answer": "Lo prendo.",
+          "explanation": "La forma escuchada es «Lo prendo.»: Me lo llevo.",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ho solo contanti.»?",
+          "target": "Ho solo contanti.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Ho solo contanti.» significa «Solo tengo efectivo.».",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ho solo contanti.",
+            "costoso",
+            "Mi serve una taglia più grande."
+          ],
+          "answer": "Ho solo contanti.",
+          "explanation": "La forma escuchada es «Ho solo contanti.»: Solo tengo efectivo.",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «È troppo costoso.»?",
+          "target": "È troppo costoso.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«È troppo costoso.» significa «Es demasiado caro.».",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Lo prendo.",
+            "È troppo costoso.",
+            "carta"
+          ],
+          "answer": "È troppo costoso.",
+          "explanation": "La forma escuchada es «È troppo costoso.»: Es demasiado caro.",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "italian-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prezzo»?",
+          "target": "prezzo",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prezzo» significa «precio».",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "prezzo",
+            "camerino"
+          ],
+          "answer": "prezzo",
+          "explanation": "La forma escuchada es «prezzo»: precio",
+          "audio": "prezzo",
+          "slow_audio": "prezzo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «denaro»?",
+          "target": "denaro",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«denaro» significa «dinero».",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "denaro",
+            "Quanto costa questo?",
+            "Ho solo contanti."
+          ],
+          "answer": "denaro",
+          "explanation": "La forma escuchada es «denaro»: dinero",
+          "audio": "denaro",
+          "slow_audio": "denaro",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taglia»?",
+          "target": "taglia",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taglia» significa «talla».",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Mi serve una taglia più grande.",
+            "Dov’è il camerino?",
+            "taglia"
+          ],
+          "answer": "taglia",
+          "explanation": "La forma escuchada es «taglia»: talla",
+          "audio": "taglia",
+          "slow_audio": "taglia",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «economico»?",
+          "target": "economico",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«economico» significa «barato».",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "economico",
+            "Ce l’ha in blu?"
+          ],
+          "answer": "economico",
+          "explanation": "La forma escuchada es «economico»: barato",
+          "audio": "economico",
+          "slow_audio": "economico",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «costoso»?",
+          "target": "costoso",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«costoso» significa «caro».",
+          "audio": "costoso",
+          "slow_audio": "costoso",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "costoso",
+            "Lo prendo.",
+            "prezzo"
+          ],
+          "answer": "costoso",
+          "explanation": "La forma escuchada es «costoso»: caro",
+          "audio": "costoso",
+          "slow_audio": "costoso",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «contanti»?",
+          "target": "contanti",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«contanti» significa «efectivo».",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Posso pagare con la carta?",
+            "denaro",
+            "contanti"
+          ],
+          "answer": "contanti",
+          "explanation": "La forma escuchada es «contanti»: efectivo",
+          "audio": "contanti",
+          "slow_audio": "contanti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «carta»?",
+          "target": "carta",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«carta» significa «tarjeta».",
+          "audio": "carta",
+          "slow_audio": "carta",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taglia",
+            "carta",
+            "Ho solo contanti."
+          ],
+          "answer": "carta",
+          "explanation": "La forma escuchada es «carta»: tarjeta",
+          "audio": "carta",
+          "slow_audio": "carta",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «camerino»?",
+          "target": "camerino",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«camerino» significa «probador».",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "camerino",
+            "Dov’è il camerino?",
+            "economico"
+          ],
+          "answer": "camerino",
+          "explanation": "La forma escuchada es «camerino»: probador",
+          "audio": "camerino",
+          "slow_audio": "camerino",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Quanto costa questo?»?",
+          "target": "Quanto costa questo?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Quanto costa questo?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "È troppo costoso.",
+            "costoso",
+            "Quanto costa questo?"
+          ],
+          "answer": "Quanto costa questo?",
+          "explanation": "La forma escuchada es «Quanto costa questo?»: ¿Cuánto cuesta esto?",
+          "audio": "Quanto costa questo?",
+          "slow_audio": "Quanto costa questo?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Mi serve una taglia più grande.»?",
+          "target": "Mi serve una taglia più grande.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«Mi serve una taglia più grande.» significa «Necesito una talla más grande.».",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "contanti",
+            "Mi serve una taglia più grande.",
+            "prezzo"
+          ],
+          "answer": "Mi serve una taglia più grande.",
+          "explanation": "La forma escuchada es «Mi serve una taglia più grande.»: Necesito una talla más grande.",
+          "audio": "Mi serve una taglia più grande.",
+          "slow_audio": "Mi serve una taglia più grande.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ce l’ha in blu?»?",
+          "target": "Ce l’ha in blu?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Ce l’ha in blu?» significa «¿Lo tiene en azul?».",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ce l’ha in blu?",
+            "denaro",
+            "carta"
+          ],
+          "answer": "Ce l’ha in blu?",
+          "explanation": "La forma escuchada es «Ce l’ha in blu?»: ¿Lo tiene en azul?",
+          "audio": "Ce l’ha in blu?",
+          "slow_audio": "Ce l’ha in blu?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Lo prendo.»?",
+          "target": "Lo prendo.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Lo prendo.» significa «Me lo llevo.».",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taglia",
+            "camerino",
+            "Lo prendo."
+          ],
+          "answer": "Lo prendo.",
+          "explanation": "La forma escuchada es «Lo prendo.»: Me lo llevo.",
+          "audio": "Lo prendo.",
+          "slow_audio": "Lo prendo.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Posso pagare con la carta?»?",
+          "target": "Posso pagare con la carta?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Posso pagare con la carta?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Posso pagare con la carta?",
+          "slow_audio": "Posso pagare con la carta?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Quanto costa questo?",
+            "Posso pagare con la carta?",
+            "economico"
+          ],
+          "answer": "Posso pagare con la carta?",
+          "explanation": "La forma escuchada es «Posso pagare con la carta?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Posso pagare con la carta?",
+          "slow_audio": "Posso pagare con la carta?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ho solo contanti.»?",
+          "target": "Ho solo contanti.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Ho solo contanti.» significa «Solo tengo efectivo.».",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ho solo contanti.",
+            "costoso",
+            "Mi serve una taglia più grande."
+          ],
+          "answer": "Ho solo contanti.",
+          "explanation": "La forma escuchada es «Ho solo contanti.»: Solo tengo efectivo.",
+          "audio": "Ho solo contanti.",
+          "slow_audio": "Ho solo contanti.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Dov’è il camerino?»?",
+          "target": "Dov’è il camerino?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Dov’è il camerino?» significa «¿Dónde está el probador?».",
+          "audio": "Dov’è il camerino?",
+          "slow_audio": "Dov’è il camerino?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "contanti",
+            "Ce l’ha in blu?",
+            "Dov’è il camerino?"
+          ],
+          "answer": "Dov’è il camerino?",
+          "explanation": "La forma escuchada es «Dov’è il camerino?»: ¿Dónde está el probador?",
+          "audio": "Dov’è il camerino?",
+          "slow_audio": "Dov’è il camerino?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «È troppo costoso.»?",
+          "target": "È troppo costoso.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«È troppo costoso.» significa «Es demasiado caro.».",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Lo prendo.",
+            "È troppo costoso.",
+            "carta"
+          ],
+          "answer": "È troppo costoso.",
+          "explanation": "La forma escuchada es «È troppo costoso.»: Es demasiado caro.",
+          "audio": "È troppo costoso.",
+          "slow_audio": "È troppo costoso.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "korean-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "korean-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "가격",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «가격»?",
+          "target": "가격",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«가격» significa «precio».",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "가격",
+            "탈의실"
+          ],
+          "answer": "가격",
+          "explanation": "La forma escuchada es «가격»: precio",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "돈",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «돈»?",
+          "target": "돈",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«돈» significa «dinero».",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "돈",
+            "이거 얼마예요?",
+            "현금만 있어요."
+          ],
+          "answer": "돈",
+          "explanation": "La forma escuchada es «돈»: dinero",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "이거 얼마예요?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이거 얼마예요?»?",
+          "target": "이거 얼마예요?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«이거 얼마예요?» significa «¿Cuánto cuesta esto?».",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "비싸다",
+            "이거 얼마예요?"
+          ],
+          "answer": "이거 얼마예요?",
+          "explanation": "La forma escuchada es «이거 얼마예요?»: ¿Cuánto cuesta esto?",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "더 큰 사이즈가 필요해요.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «더 큰 사이즈가 필요해요.»?",
+          "target": "더 큰 사이즈가 필요해요.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«더 큰 사이즈가 필요해요.» significa «Necesito una talla más grande.».",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금",
+            "더 큰 사이즈가 필요해요.",
+            "가격"
+          ],
+          "answer": "더 큰 사이즈가 필요해요.",
+          "explanation": "La forma escuchada es «더 큰 사이즈가 필요해요.»: Necesito una talla más grande.",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "korean-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "사이즈",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «사이즈»?",
+          "target": "사이즈",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«사이즈» significa «talla».",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "더 큰 사이즈가 필요해요.",
+            "탈의실이 어디예요?",
+            "사이즈"
+          ],
+          "answer": "사이즈",
+          "explanation": "La forma escuchada es «사이즈»: talla",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "싸다",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «싸다»?",
+          "target": "싸다",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«싸다» significa «barato».",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "싸다",
+            "파란색도 있어요?"
+          ],
+          "answer": "싸다",
+          "explanation": "La forma escuchada es «싸다»: barato",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "파란색도 있어요?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «파란색도 있어요?»?",
+          "target": "파란색도 있어요?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«파란색도 있어요?» significa «¿Lo tiene en azul?».",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "파란색도 있어요?",
+            "돈",
+            "카드"
+          ],
+          "answer": "파란색도 있어요?",
+          "explanation": "La forma escuchada es «파란색도 있어요?»: ¿Lo tiene en azul?",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "이걸로 할게요.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이걸로 할게요.»?",
+          "target": "이걸로 할게요.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«이걸로 할게요.» significa «Me lo llevo.».",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "사이즈",
+            "탈의실",
+            "이걸로 할게요."
+          ],
+          "answer": "이걸로 할게요.",
+          "explanation": "La forma escuchada es «이걸로 할게요.»: Me lo llevo.",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "korean-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «가격»?",
+          "target": "가격",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«가격» significa «precio».",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "가격",
+            "탈의실"
+          ],
+          "answer": "가격",
+          "explanation": "La forma escuchada es «가격»: precio",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «사이즈»?",
+          "target": "사이즈",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«사이즈» significa «talla».",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "더 큰 사이즈가 필요해요.",
+            "탈의실이 어디예요?",
+            "사이즈"
+          ],
+          "answer": "사이즈",
+          "explanation": "La forma escuchada es «사이즈»: talla",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이거 얼마예요?»?",
+          "target": "이거 얼마예요?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«이거 얼마예요?» significa «¿Cuánto cuesta esto?».",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "비싸다",
+            "이거 얼마예요?"
+          ],
+          "answer": "이거 얼마예요?",
+          "explanation": "La forma escuchada es «이거 얼마예요?»: ¿Cuánto cuesta esto?",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «파란색도 있어요?»?",
+          "target": "파란색도 있어요?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«파란색도 있어요?» significa «¿Lo tiene en azul?».",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "파란색도 있어요?",
+            "돈",
+            "카드"
+          ],
+          "answer": "파란색도 있어요?",
+          "explanation": "La forma escuchada es «파란색도 있어요?»: ¿Lo tiene en azul?",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "korean-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "비싸다",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "비싸다",
+          "slow_audio": "비싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «비싸다»?",
+          "target": "비싸다",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«비싸다» significa «caro».",
+          "audio": "비싸다",
+          "slow_audio": "비싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "비싸다",
+            "이걸로 할게요.",
+            "가격"
+          ],
+          "answer": "비싸다",
+          "explanation": "La forma escuchada es «비싸다»: caro",
+          "audio": "비싸다",
+          "slow_audio": "비싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "현금",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금»?",
+          "target": "현금",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«현금» significa «efectivo».",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "돈",
+            "현금"
+          ],
+          "answer": "현금",
+          "explanation": "La forma escuchada es «현금»: efectivo",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "카드로 결제할 수 있어요?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "카드로 결제할 수 있어요?",
+          "slow_audio": "카드로 결제할 수 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «카드로 결제할 수 있어요?»?",
+          "target": "카드로 결제할 수 있어요?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«카드로 결제할 수 있어요?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "카드로 결제할 수 있어요?",
+          "slow_audio": "카드로 결제할 수 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "이거 얼마예요?",
+            "카드로 결제할 수 있어요?",
+            "싸다"
+          ],
+          "answer": "카드로 결제할 수 있어요?",
+          "explanation": "La forma escuchada es «카드로 결제할 수 있어요?»: ¿Puedo pagar con tarjeta?",
+          "audio": "카드로 결제할 수 있어요?",
+          "slow_audio": "카드로 결제할 수 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "현금만 있어요.",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금만 있어요.»?",
+          "target": "현금만 있어요.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«현금만 있어요.» significa «Solo tengo efectivo.».",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금만 있어요.",
+            "비싸다",
+            "더 큰 사이즈가 필요해요."
+          ],
+          "answer": "현금만 있어요.",
+          "explanation": "La forma escuchada es «현금만 있어요.»: Solo tengo efectivo.",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "korean-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "카드",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "카드",
+          "slow_audio": "카드",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «카드»?",
+          "target": "카드",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«카드» significa «tarjeta».",
+          "audio": "카드",
+          "slow_audio": "카드",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "사이즈",
+            "카드",
+            "현금만 있어요."
+          ],
+          "answer": "카드",
+          "explanation": "La forma escuchada es «카드»: tarjeta",
+          "audio": "카드",
+          "slow_audio": "카드",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "탈의실",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «탈의실»?",
+          "target": "탈의실",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«탈의실» significa «probador».",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "탈의실",
+            "탈의실이 어디예요?",
+            "싸다"
+          ],
+          "answer": "탈의실",
+          "explanation": "La forma escuchada es «탈의실»: probador",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "탈의실이 어디예요?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "탈의실이 어디예요?",
+          "slow_audio": "탈의실이 어디예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «탈의실이 어디예요?»?",
+          "target": "탈의실이 어디예요?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«탈의실이 어디예요?» significa «¿Dónde está el probador?».",
+          "audio": "탈의실이 어디예요?",
+          "slow_audio": "탈의실이 어디예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금",
+            "파란색도 있어요?",
+            "탈의실이 어디예요?"
+          ],
+          "answer": "탈의실이 어디예요?",
+          "explanation": "La forma escuchada es «탈의실이 어디예요?»: ¿Dónde está el probador?",
+          "audio": "탈의실이 어디예요?",
+          "slow_audio": "탈의실이 어디예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "너무 비싸요.",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «너무 비싸요.»?",
+          "target": "너무 비싸요.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«너무 비싸요.» significa «Es demasiado caro.».",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "이걸로 할게요.",
+            "너무 비싸요.",
+            "카드"
+          ],
+          "answer": "너무 비싸요.",
+          "explanation": "La forma escuchada es «너무 비싸요.»: Es demasiado caro.",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "korean-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «돈»?",
+          "target": "돈",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«돈» significa «dinero».",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "돈",
+            "이거 얼마예요?",
+            "현금만 있어요."
+          ],
+          "answer": "돈",
+          "explanation": "La forma escuchada es «돈»: dinero",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «싸다»?",
+          "target": "싸다",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«싸다» significa «barato».",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "싸다",
+            "파란색도 있어요?"
+          ],
+          "answer": "싸다",
+          "explanation": "La forma escuchada es «싸다»: barato",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금»?",
+          "target": "현금",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«현금» significa «efectivo».",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "돈",
+            "현금"
+          ],
+          "answer": "현금",
+          "explanation": "La forma escuchada es «현금»: efectivo",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «탈의실»?",
+          "target": "탈의실",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«탈의실» significa «probador».",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "탈의실",
+            "탈의실이 어디예요?",
+            "싸다"
+          ],
+          "answer": "탈의실",
+          "explanation": "La forma escuchada es «탈의실»: probador",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «더 큰 사이즈가 필요해요.»?",
+          "target": "더 큰 사이즈가 필요해요.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«더 큰 사이즈가 필요해요.» significa «Necesito una talla más grande.».",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금",
+            "더 큰 사이즈가 필요해요.",
+            "가격"
+          ],
+          "answer": "더 큰 사이즈가 필요해요.",
+          "explanation": "La forma escuchada es «더 큰 사이즈가 필요해요.»: Necesito una talla más grande.",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이걸로 할게요.»?",
+          "target": "이걸로 할게요.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«이걸로 할게요.» significa «Me lo llevo.».",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "사이즈",
+            "탈의실",
+            "이걸로 할게요."
+          ],
+          "answer": "이걸로 할게요.",
+          "explanation": "La forma escuchada es «이걸로 할게요.»: Me lo llevo.",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금만 있어요.»?",
+          "target": "현금만 있어요.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«현금만 있어요.» significa «Solo tengo efectivo.».",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금만 있어요.",
+            "비싸다",
+            "더 큰 사이즈가 필요해요."
+          ],
+          "answer": "현금만 있어요.",
+          "explanation": "La forma escuchada es «현금만 있어요.»: Solo tengo efectivo.",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «너무 비싸요.»?",
+          "target": "너무 비싸요.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«너무 비싸요.» significa «Es demasiado caro.».",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "이걸로 할게요.",
+            "너무 비싸요.",
+            "카드"
+          ],
+          "answer": "너무 비싸요.",
+          "explanation": "La forma escuchada es «너무 비싸요.»: Es demasiado caro.",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "korean-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "korean-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «가격»?",
+          "target": "가격",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«가격» significa «precio».",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "가격",
+            "탈의실"
+          ],
+          "answer": "가격",
+          "explanation": "La forma escuchada es «가격»: precio",
+          "audio": "가격",
+          "slow_audio": "가격",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «돈»?",
+          "target": "돈",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«돈» significa «dinero».",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "돈",
+            "이거 얼마예요?",
+            "현금만 있어요."
+          ],
+          "answer": "돈",
+          "explanation": "La forma escuchada es «돈»: dinero",
+          "audio": "돈",
+          "slow_audio": "돈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «사이즈»?",
+          "target": "사이즈",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«사이즈» significa «talla».",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "더 큰 사이즈가 필요해요.",
+            "탈의실이 어디예요?",
+            "사이즈"
+          ],
+          "answer": "사이즈",
+          "explanation": "La forma escuchada es «사이즈»: talla",
+          "audio": "사이즈",
+          "slow_audio": "사이즈",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «싸다»?",
+          "target": "싸다",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«싸다» significa «barato».",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "싸다",
+            "파란색도 있어요?"
+          ],
+          "answer": "싸다",
+          "explanation": "La forma escuchada es «싸다»: barato",
+          "audio": "싸다",
+          "slow_audio": "싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «비싸다»?",
+          "target": "비싸다",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«비싸다» significa «caro».",
+          "audio": "비싸다",
+          "slow_audio": "비싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "비싸다",
+            "이걸로 할게요.",
+            "가격"
+          ],
+          "answer": "비싸다",
+          "explanation": "La forma escuchada es «비싸다»: caro",
+          "audio": "비싸다",
+          "slow_audio": "비싸다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금»?",
+          "target": "현금",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«현금» significa «efectivo».",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "카드로 결제할 수 있어요?",
+            "돈",
+            "현금"
+          ],
+          "answer": "현금",
+          "explanation": "La forma escuchada es «현금»: efectivo",
+          "audio": "현금",
+          "slow_audio": "현금",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «카드»?",
+          "target": "카드",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«카드» significa «tarjeta».",
+          "audio": "카드",
+          "slow_audio": "카드",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "사이즈",
+            "카드",
+            "현금만 있어요."
+          ],
+          "answer": "카드",
+          "explanation": "La forma escuchada es «카드»: tarjeta",
+          "audio": "카드",
+          "slow_audio": "카드",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «탈의실»?",
+          "target": "탈의실",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«탈의실» significa «probador».",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "탈의실",
+            "탈의실이 어디예요?",
+            "싸다"
+          ],
+          "answer": "탈의실",
+          "explanation": "La forma escuchada es «탈의실»: probador",
+          "audio": "탈의실",
+          "slow_audio": "탈의실",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이거 얼마예요?»?",
+          "target": "이거 얼마예요?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«이거 얼마예요?» significa «¿Cuánto cuesta esto?».",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "너무 비싸요.",
+            "비싸다",
+            "이거 얼마예요?"
+          ],
+          "answer": "이거 얼마예요?",
+          "explanation": "La forma escuchada es «이거 얼마예요?»: ¿Cuánto cuesta esto?",
+          "audio": "이거 얼마예요?",
+          "slow_audio": "이거 얼마예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «더 큰 사이즈가 필요해요.»?",
+          "target": "더 큰 사이즈가 필요해요.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«더 큰 사이즈가 필요해요.» significa «Necesito una talla más grande.».",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금",
+            "더 큰 사이즈가 필요해요.",
+            "가격"
+          ],
+          "answer": "더 큰 사이즈가 필요해요.",
+          "explanation": "La forma escuchada es «더 큰 사이즈가 필요해요.»: Necesito una talla más grande.",
+          "audio": "더 큰 사이즈가 필요해요.",
+          "slow_audio": "더 큰 사이즈가 필요해요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «파란색도 있어요?»?",
+          "target": "파란색도 있어요?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«파란색도 있어요?» significa «¿Lo tiene en azul?».",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "파란색도 있어요?",
+            "돈",
+            "카드"
+          ],
+          "answer": "파란색도 있어요?",
+          "explanation": "La forma escuchada es «파란색도 있어요?»: ¿Lo tiene en azul?",
+          "audio": "파란색도 있어요?",
+          "slow_audio": "파란색도 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «이걸로 할게요.»?",
+          "target": "이걸로 할게요.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«이걸로 할게요.» significa «Me lo llevo.».",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "사이즈",
+            "탈의실",
+            "이걸로 할게요."
+          ],
+          "answer": "이걸로 할게요.",
+          "explanation": "La forma escuchada es «이걸로 할게요.»: Me lo llevo.",
+          "audio": "이걸로 할게요.",
+          "slow_audio": "이걸로 할게요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «카드로 결제할 수 있어요?»?",
+          "target": "카드로 결제할 수 있어요?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«카드로 결제할 수 있어요?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "카드로 결제할 수 있어요?",
+          "slow_audio": "카드로 결제할 수 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "이거 얼마예요?",
+            "카드로 결제할 수 있어요?",
+            "싸다"
+          ],
+          "answer": "카드로 결제할 수 있어요?",
+          "explanation": "La forma escuchada es «카드로 결제할 수 있어요?»: ¿Puedo pagar con tarjeta?",
+          "audio": "카드로 결제할 수 있어요?",
+          "slow_audio": "카드로 결제할 수 있어요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «현금만 있어요.»?",
+          "target": "현금만 있어요.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«현금만 있어요.» significa «Solo tengo efectivo.».",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금만 있어요.",
+            "비싸다",
+            "더 큰 사이즈가 필요해요."
+          ],
+          "answer": "현금만 있어요.",
+          "explanation": "La forma escuchada es «현금만 있어요.»: Solo tengo efectivo.",
+          "audio": "현금만 있어요.",
+          "slow_audio": "현금만 있어요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «탈의실이 어디예요?»?",
+          "target": "탈의실이 어디예요?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«탈의실이 어디예요?» significa «¿Dónde está el probador?».",
+          "audio": "탈의실이 어디예요?",
+          "slow_audio": "탈의실이 어디예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "현금",
+            "파란색도 있어요?",
+            "탈의실이 어디예요?"
+          ],
+          "answer": "탈의실이 어디예요?",
+          "explanation": "La forma escuchada es «탈의실이 어디예요?»: ¿Dónde está el probador?",
+          "audio": "탈의실이 어디예요?",
+          "slow_audio": "탈의실이 어디예요?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «너무 비싸요.»?",
+          "target": "너무 비싸요.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«너무 비싸요.» significa «Es demasiado caro.».",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "korean-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "이걸로 할게요.",
+            "너무 비싸요.",
+            "카드"
+          ],
+          "answer": "너무 비싸요.",
+          "explanation": "La forma escuchada es «너무 비싸요.»: Es demasiado caro.",
+          "audio": "너무 비싸요.",
+          "slow_audio": "너무 비싸요.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

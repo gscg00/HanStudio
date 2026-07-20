@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-20T12:19:36-06:00",
+  "status": "GENERATED_AND_DRY_RUN_VERIFIED",
+  "provider": "ElevenLabs",
+  "model_id": "eleven_v3",
+  "scope": "Active guided-course manifests through complete A1.1",
+  "totals": {
+    "pending_audio_files": 612,
+    "pending_characters": 6987,
+    "generated_audio_files": 612,
+    "remaining_audio_files": 0,
+    "active_course_audio_texts": 5467
+  },
+  "languages": {
+    "English": {"language_code": "en", "required": 697, "cached": 645, "pending": 52, "characters": 811},
+    "French": {"language_code": "fr", "required": 712, "cached": 657, "pending": 55, "characters": 884},
+    "German": {"language_code": "de", "required": 662, "cached": 587, "pending": 75, "characters": 1053},
+    "Italian": {"language_code": "it", "required": 438, "cached": 378, "pending": 60, "characters": 845},
+    "Russian": {"language_code": "ru", "required": 444, "cached": 387, "pending": 57, "characters": 734},
+    "Korean": {"language_code": "ko", "required": 717, "cached": 663, "pending": 54, "characters": 475},
+    "Chinese": {"language_code": "zh", "required": 427, "cached": 369, "pending": 58, "characters": 269},
+    "Portuguese": {"language_code": "pt", "required": 408, "cached": 353, "pending": 55, "characters": 791},
+    "Arabic": {"language_code": "ar", "required": 412, "cached": 353, "pending": 59, "characters": 625},
+    "Japanese": {"language_code": "ja", "required": 550, "cached": 463, "pending": 87, "characters": 500}
+  },
+  "safety": {
+    "regenerate_existing": false,
+    "only_missing_audio": true,
+    "language_override_required": true,
+    "secrets_written_to_report": false,
+    "post_generation_dry_run_pending": 0
+  }
+}

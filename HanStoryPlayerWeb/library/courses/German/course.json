@@ -3,15 +3,69 @@
   "title": "Alemán desde cero",
   "language": "German",
   "languageCode": "de",
-  "version": 1,
-  "routeLabel": "RUTA 1 · BASE PARA HISTORIAS A1",
+  "version": 7,
+  "routeLabel": "RUTA GUIADA · FUNDAMENTOS, A1 Y A2.1",
   "tagline": "Comprende la lectura y el orden de la oración alemana.",
   "vocabularyGoal": 300,
   "vocabularyPrepared": 466,
   "levels": [
     {
-      "id": "route-a1",
-      "title": "Preparación para historias A1"
+      "id": "foundations",
+      "label": "ETAPA 1 · A0",
+      "title": "Fundamentos para empezar",
+      "description": "Lectura, pronunciación y estructuras esenciales.",
+      "unitIds": [
+        "reading",
+        "survival",
+        "essentials",
+        "questions",
+        "time",
+        "vocabulary",
+        "reading-bridge",
+        "story-bridge"
+      ]
+    },
+    {
+      "id": "a1-1",
+      "label": "ETAPA 2 · A1.1",
+      "title": "Primeras conversaciones",
+      "description": "Seis unidades de identidad, vida diaria y autonomía inicial.",
+      "unitIds": [
+        "a1-1-identity",
+        "a1-1-people",
+        "a1-1-home",
+        "a1-1-routine",
+        "a1-1-food",
+        "a1-1-places"
+      ]
+    },
+    {
+      "id": "a1-2",
+      "label": "ETAPA 3 · A1.2",
+      "title": "Vida diaria y autonomía",
+      "description": "Compras, citas, transporte, salud, clima y planes sociales en situaciones reales.",
+      "unitIds": [
+        "a1-2-shopping",
+        "a1-2-time",
+        "a1-2-transport",
+        "a1-2-health",
+        "a1-2-weather",
+        "a1-2-social"
+      ]
+    },
+    {
+      "id": "a2-1",
+      "label": "ETAPA 4 · A2.1",
+      "title": "Planes, tiempo y decisiones",
+      "description": "Pasado, futuro, comparación, modalidad, servicios y conversaciones conectadas.",
+      "unitIds": [
+        "a2-1-past",
+        "a2-1-future",
+        "a2-1-comparison",
+        "a2-1-ability",
+        "a2-1-services",
+        "a2-1-conversation"
+      ]
     }
   ],
   "unlockRules": {
@@ -90,6 +144,168 @@
       "description": "Consolida lo esencial antes de abrir tu primera historia.",
       "manifest": "units/story-bridge.json",
       "icon": "B"
+    },
+    {
+      "id": "a1-1-identity",
+      "world": 9,
+      "mapLabel": "UNIDAD A1.1 · 1",
+      "title": "Identidad y saludos",
+      "description": "Saludar, presentarte, preguntar el nombre y pedir ayuda básica.",
+      "manifest": "units/a1-1-identity.json",
+      "icon": "Ich"
+    },
+    {
+      "id": "a1-1-people",
+      "world": 10,
+      "mapLabel": "UNIDAD A1.1 · 2",
+      "title": "Familia y personas",
+      "description": "Identificar personas, relaciones, edad y convivencia.",
+      "manifest": "units/a1-1-people.json",
+      "icon": "Wir"
+    },
+    {
+      "id": "a1-1-home",
+      "world": 11,
+      "mapLabel": "UNIDAD A1.1 · 3",
+      "title": "Casa y pertenencias",
+      "description": "Nombrar objetos, expresar posesión y localizar cosas.",
+      "manifest": "units/a1-1-home.json",
+      "icon": "Haus"
+    },
+    {
+      "id": "a1-1-routine",
+      "world": 12,
+      "mapLabel": "UNIDAD A1.1 · 4",
+      "title": "Rutina diaria",
+      "description": "Hablar de acciones frecuentes, horarios y hábitos.",
+      "manifest": "units/a1-1-routine.json",
+      "icon": "Tag"
+    },
+    {
+      "id": "a1-1-food",
+      "world": 13,
+      "mapLabel": "UNIDAD A1.1 · 5",
+      "title": "Comida y bebida",
+      "description": "Pedir, aceptar, rechazar y expresar preferencias básicas.",
+      "manifest": "units/a1-1-food.json",
+      "icon": "Essen"
+    },
+    {
+      "id": "a1-1-places",
+      "world": 14,
+      "mapLabel": "UNIDAD A1.1 · 6",
+      "title": "Lugares y direcciones",
+      "description": "Preguntar dónde está algo y comprender indicaciones sencillas.",
+      "manifest": "units/a1-1-places.json",
+      "icon": "Wo"
+    },
+    {
+      "id": "a1-2-shopping",
+      "world": 15,
+      "mapLabel": "UNIDAD A1.2 · 1",
+      "title": "Compras y precios",
+      "description": "Preguntar precios, elegir una variante y completar un pago.",
+      "manifest": "units/a1-2-shopping.json",
+      "icon": "€"
+    },
+    {
+      "id": "a1-2-time",
+      "world": 16,
+      "mapLabel": "UNIDAD A1.2 · 2",
+      "title": "Fechas, horas y citas",
+      "description": "Hablar de días y horas y concertar un encuentro.",
+      "manifest": "units/a1-2-time.json",
+      "icon": "Uhr"
+    },
+    {
+      "id": "a1-2-transport",
+      "world": 17,
+      "mapLabel": "UNIDAD A1.2 · 3",
+      "title": "Transporte y trayectos",
+      "description": "Comprar un billete, seguir una ruta y entender cambios o retrasos.",
+      "manifest": "units/a1-2-transport.json",
+      "icon": "Zug"
+    },
+    {
+      "id": "a1-2-health",
+      "world": 18,
+      "mapLabel": "UNIDAD A1.2 · 4",
+      "title": "Cuerpo y necesidades",
+      "description": "Describir síntomas sencillos, comprender indicaciones y pedir ayuda.",
+      "manifest": "units/a1-2-health.json",
+      "icon": "Hilfe"
+    },
+    {
+      "id": "a1-2-weather",
+      "world": 19,
+      "mapLabel": "UNIDAD A1.2 · 5",
+      "title": "Clima y ropa",
+      "description": "Comprender el pronóstico y elegir ropa adecuada.",
+      "manifest": "units/a1-2-weather.json",
+      "icon": "Sonne"
+    },
+    {
+      "id": "a1-2-social",
+      "world": 20,
+      "mapLabel": "UNIDAD A1.2 · 6",
+      "title": "Invitaciones y planes",
+      "description": "Invitar, aceptar, rechazar y acordar los detalles de un plan.",
+      "manifest": "units/a1-2-social.json",
+      "icon": "Treff"
+    },
+    {
+      "id": "a2-1-past",
+      "world": 21,
+      "mapLabel": "UNIDAD A2.1 · 1",
+      "title": "Lo que pasó",
+      "description": "Narrar actividades y experiencias pasadas en orden.",
+      "manifest": "units/a2-1-past.json",
+      "icon": "Gestern"
+    },
+    {
+      "id": "a2-1-future",
+      "world": 22,
+      "mapLabel": "UNIDAD A2.1 · 2",
+      "title": "Planes y futuro",
+      "description": "Expresar intención, predicción y planes acordados.",
+      "manifest": "units/a2-1-future.json",
+      "icon": "Morgen"
+    },
+    {
+      "id": "a2-1-comparison",
+      "world": 23,
+      "mapLabel": "UNIDAD A2.1 · 3",
+      "title": "Describir y comparar",
+      "description": "Comparar personas, lugares, objetos y opciones.",
+      "manifest": "units/a2-1-comparison.json",
+      "icon": "↔"
+    },
+    {
+      "id": "a2-1-ability",
+      "world": 24,
+      "mapLabel": "UNIDAD A2.1 · 4",
+      "title": "Capacidad y obligación",
+      "description": "Expresar capacidad, permiso, necesidad y prohibición.",
+      "manifest": "units/a2-1-ability.json",
+      "icon": "Können"
+    },
+    {
+      "id": "a2-1-services",
+      "world": 25,
+      "mapLabel": "UNIDAD A2.1 · 5",
+      "title": "Servicios y problemas",
+      "description": "Explicar un problema y negociar una solución.",
+      "manifest": "units/a2-1-services.json",
+      "icon": "Service"
+    },
+    {
+      "id": "a2-1-conversation",
+      "world": 26,
+      "mapLabel": "UNIDAD A2.1 · 6",
+      "title": "Conversaciones conectadas",
+      "description": "Mantener intercambios de varias intervenciones.",
+      "manifest": "units/a2-1-conversation.json",
+      "icon": "Dialog"
     }
   ]
 }

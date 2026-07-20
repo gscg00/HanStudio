@@ -1,6 +1,11 @@
-const SHELL='hanstory-shell-v80';
+const SHELL='hanstory-shell-v86';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
-const GUIDED_COURSE_UNITS=['reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge'];
+const GUIDED_COURSE_UNITS=[
+  'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
+  'a1-1-identity','a1-1-people','a1-1-home','a1-1-routine','a1-1-food','a1-1-places',
+  'a1-2-shopping','a1-2-time','a1-2-transport','a1-2-health','a1-2-weather','a1-2-social',
+  'a2-1-past','a2-1-future','a2-1-comparison','a2-1-ability','a2-1-services','a2-1-conversation'
+];
 const GUIDED_COURSE_ASSETS=GUIDED_COURSE_LANGUAGES.flatMap(language=>[
   `./library/courses/${language}/course.json`,
   `./library/courses/${language}/audio_manifest.json`,
@@ -22,8 +27,16 @@ const ASSETS=[
   './library/courses/Japanese/units/basic-verbs.json','./library/courses/Japanese/units/adjectives.json',
   './library/courses/Japanese/units/functional-a1.json','./library/courses/Japanese/units/starter-kanji.json',
   './library/courses/Japanese/units/story-bridge.json',
+  './library/courses/Japanese/units/a1-1-identity.json','./library/courses/Japanese/units/a1-1-people.json',
+  './library/courses/Japanese/units/a1-1-home.json','./library/courses/Japanese/units/a1-1-routine.json',
+  './library/courses/Japanese/units/a1-1-food.json','./library/courses/Japanese/units/a1-1-places.json',
+  './library/courses/Japanese/units/a1-2-shopping.json','./library/courses/Japanese/units/a1-2-time.json',
+  './library/courses/Japanese/units/a1-2-transport.json','./library/courses/Japanese/units/a1-2-health.json',
+  './library/courses/Japanese/units/a1-2-weather.json','./library/courses/Japanese/units/a1-2-social.json',
+  './library/courses/Japanese/units/a2-1-past.json','./library/courses/Japanese/units/a2-1-future.json',
+  './library/courses/Japanese/units/a2-1-comparison.json','./library/courses/Japanese/units/a2-1-ability.json',
+  './library/courses/Japanese/units/a2-1-services.json','./library/courses/Japanese/units/a2-1-conversation.json',
   './library/courses/Japanese/audio_manifest.json',
-  './library/courses/Korean/units/a1-1-introductions.json',
   ...GUIDED_COURSE_ASSETS
 ];
 self.addEventListener('install',event=>event.waitUntil(

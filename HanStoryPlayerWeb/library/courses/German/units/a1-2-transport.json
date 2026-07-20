@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-transport",
+  "title": "Transporte y trayectos",
+  "description": "Comprar un billete, seguir una ruta y entender cambios o retrasos.",
+  "requirements": [
+    "a1-2-time"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Transporte y trayectos"
+  },
+  "lessons": [
+    {
+      "id": "german-a12-transport-01",
+      "title": "Transporte y trayectos · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-transport-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Fahrkarte",
+          "options": [],
+          "answer": "",
+          "explanation": "billete",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fahrkarte»?",
+          "target": "Fahrkarte",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«Fahrkarte» significa «billete».",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Fahrkarte",
+            "Ziel"
+          ],
+          "answer": "Fahrkarte",
+          "explanation": "La forma escuchada es «Fahrkarte»: billete",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Zug",
+          "options": [],
+          "answer": "",
+          "explanation": "tren",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Zug»?",
+          "target": "Zug",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«Zug» significa «tren».",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Zug",
+            "Eine Fahrkarte, bitte.",
+            "Der Zug hat Verspätung."
+          ],
+          "answer": "Zug",
+          "explanation": "La forma escuchada es «Zug»: tren",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Eine Fahrkarte, bitte.",
+          "options": [],
+          "answer": "",
+          "explanation": "Un billete, por favor.",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Eine Fahrkarte, bitte.»?",
+          "target": "Eine Fahrkarte, bitte.",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«Eine Fahrkarte, bitte.» significa «Un billete, por favor.».",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "Bahnsteig",
+            "Eine Fahrkarte, bitte."
+          ],
+          "answer": "Eine Fahrkarte, bitte.",
+          "explanation": "La forma escuchada es «Eine Fahrkarte, bitte.»: Un billete, por favor.",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wann fährt der Zug ab?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuándo sale el tren?",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wann fährt der Zug ab?»?",
+          "target": "Wann fährt der Zug ab?",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«Wann fährt der Zug ab?» significa «¿Cuándo sale el tren?».",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Haltestelle",
+            "Wann fährt der Zug ab?",
+            "Fahrkarte"
+          ],
+          "answer": "Wann fährt der Zug ab?",
+          "explanation": "La forma escuchada es «Wann fährt der Zug ab?»: ¿Cuándo sale el tren?",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-02",
+      "title": "Transporte y trayectos · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-transport-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Bus",
+          "options": [],
+          "answer": "",
+          "explanation": "autobús",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Bus»?",
+          "target": "Bus",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«Bus» significa «autobús».",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wann fährt der Zug ab?",
+            "Ich steige hier aus.",
+            "Bus"
+          ],
+          "answer": "Bus",
+          "explanation": "La forma escuchada es «Bus»: autobús",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "U-Bahn",
+          "options": [],
+          "answer": "",
+          "explanation": "metro",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «U-Bahn»?",
+          "target": "U-Bahn",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«U-Bahn» significa «metro».",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "U-Bahn",
+            "Fährt dieser Bus ins Stadtzentrum?"
+          ],
+          "answer": "U-Bahn",
+          "explanation": "La forma escuchada es «U-Bahn»: metro",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Fährt dieser Bus ins Stadtzentrum?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Este autobús va al centro?",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fährt dieser Bus ins Stadtzentrum?»?",
+          "target": "Fährt dieser Bus ins Stadtzentrum?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«Fährt dieser Bus ins Stadtzentrum?» significa «¿Este autobús va al centro?».",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Fährt dieser Bus ins Stadtzentrum?",
+            "Zug",
+            "Flughafen"
+          ],
+          "answer": "Fährt dieser Bus ins Stadtzentrum?",
+          "explanation": "La forma escuchada es «Fährt dieser Bus ins Stadtzentrum?»: ¿Este autobús va al centro?",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Was ist die nächste Haltestelle?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuál es la próxima parada?",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Was ist die nächste Haltestelle?»?",
+          "target": "Was ist die nächste Haltestelle?",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«Was ist die nächste Haltestelle?» significa «¿Cuál es la próxima parada?».",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bus",
+            "Ziel",
+            "Was ist die nächste Haltestelle?"
+          ],
+          "answer": "Was ist die nächste Haltestelle?",
+          "explanation": "La forma escuchada es «Was ist die nächste Haltestelle?»: ¿Cuál es la próxima parada?",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a12-transport-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fahrkarte»?",
+          "target": "Fahrkarte",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«Fahrkarte» significa «billete».",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Fahrkarte",
+            "Ziel"
+          ],
+          "answer": "Fahrkarte",
+          "explanation": "La forma escuchada es «Fahrkarte»: billete",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Bus»?",
+          "target": "Bus",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«Bus» significa «autobús».",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wann fährt der Zug ab?",
+            "Ich steige hier aus.",
+            "Bus"
+          ],
+          "answer": "Bus",
+          "explanation": "La forma escuchada es «Bus»: autobús",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Eine Fahrkarte, bitte.»?",
+          "target": "Eine Fahrkarte, bitte.",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«Eine Fahrkarte, bitte.» significa «Un billete, por favor.».",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "Bahnsteig",
+            "Eine Fahrkarte, bitte."
+          ],
+          "answer": "Eine Fahrkarte, bitte.",
+          "explanation": "La forma escuchada es «Eine Fahrkarte, bitte.»: Un billete, por favor.",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fährt dieser Bus ins Stadtzentrum?»?",
+          "target": "Fährt dieser Bus ins Stadtzentrum?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«Fährt dieser Bus ins Stadtzentrum?» significa «¿Este autobús va al centro?».",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Fährt dieser Bus ins Stadtzentrum?",
+            "Zug",
+            "Flughafen"
+          ],
+          "answer": "Fährt dieser Bus ins Stadtzentrum?",
+          "explanation": "La forma escuchada es «Fährt dieser Bus ins Stadtzentrum?»: ¿Este autobús va al centro?",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-03",
+      "title": "Transporte y trayectos · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-transport-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Bahnsteig",
+          "options": [],
+          "answer": "",
+          "explanation": "andén",
+          "audio": "Bahnsteig",
+          "slow_audio": "Bahnsteig",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Bahnsteig»?",
+          "target": "Bahnsteig",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "andén"
+          ],
+          "answer": "andén",
+          "explanation": "«Bahnsteig» significa «andén».",
+          "audio": "Bahnsteig",
+          "slow_audio": "Bahnsteig",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bahnsteig",
+            "Was ist die nächste Haltestelle?",
+            "Fahrkarte"
+          ],
+          "answer": "Bahnsteig",
+          "explanation": "La forma escuchada es «Bahnsteig»: andén",
+          "audio": "Bahnsteig",
+          "slow_audio": "Bahnsteig",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Haltestelle",
+          "options": [],
+          "answer": "",
+          "explanation": "parada",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Haltestelle»?",
+          "target": "Haltestelle",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«Haltestelle» significa «parada».",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Zug",
+            "Haltestelle"
+          ],
+          "answer": "Haltestelle",
+          "explanation": "La forma escuchada es «Haltestelle»: parada",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Muss ich umsteigen?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Tengo que hacer transbordo?",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Muss ich umsteigen?»?",
+          "target": "Muss ich umsteigen?",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "aeropuerto"
+          ],
+          "answer": "¿Tengo que hacer transbordo?",
+          "explanation": "«Muss ich umsteigen?» significa «¿Tengo que hacer transbordo?».",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Eine Fahrkarte, bitte.",
+            "Muss ich umsteigen?",
+            "U-Bahn"
+          ],
+          "answer": "Muss ich umsteigen?",
+          "explanation": "La forma escuchada es «Muss ich umsteigen?»: ¿Tengo que hacer transbordo?",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Der Zug hat Verspätung.",
+          "options": [],
+          "answer": "",
+          "explanation": "El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Der Zug hat Verspätung.»?",
+          "target": "Der Zug hat Verspätung.",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«Der Zug hat Verspätung.» significa «El tren lleva retraso.».",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Der Zug hat Verspätung.",
+            "Bahnsteig",
+            "Wann fährt der Zug ab?"
+          ],
+          "answer": "Der Zug hat Verspätung.",
+          "explanation": "La forma escuchada es «Der Zug hat Verspätung.»: El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-04",
+      "title": "Transporte y trayectos · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-transport-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Flughafen",
+          "options": [],
+          "answer": "",
+          "explanation": "aeropuerto",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Flughafen»?",
+          "target": "Flughafen",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "aeropuerto",
+          "explanation": "«Flughafen» significa «aeropuerto».",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bus",
+            "Flughafen",
+            "Der Zug hat Verspätung."
+          ],
+          "answer": "Flughafen",
+          "explanation": "La forma escuchada es «Flughafen»: aeropuerto",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Ziel",
+          "options": [],
+          "answer": "",
+          "explanation": "destino",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ziel»?",
+          "target": "Ziel",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«Ziel» significa «destino».",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ziel",
+            "Ich steige hier aus.",
+            "U-Bahn"
+          ],
+          "answer": "Ziel",
+          "explanation": "La forma escuchada es «Ziel»: destino",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Ich steige hier aus.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me bajo aquí.",
+          "audio": "Ich steige hier aus.",
+          "slow_audio": "Ich steige hier aus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ich steige hier aus.»?",
+          "target": "Ich steige hier aus.",
+          "options": [
+            "Un billete, por favor.",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "Me bajo aquí.",
+          "explanation": "«Ich steige hier aus.» significa «Me bajo aquí.».",
+          "audio": "Ich steige hier aus.",
+          "slow_audio": "Ich steige hier aus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Haltestelle",
+            "Fährt dieser Bus ins Stadtzentrum?",
+            "Ich steige hier aus."
+          ],
+          "answer": "Ich steige hier aus.",
+          "explanation": "La forma escuchada es «Ich steige hier aus.»: Me bajo aquí.",
+          "audio": "Ich steige hier aus.",
+          "slow_audio": "Ich steige hier aus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wie lange dauert die Fahrt?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto dura el viaje?",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie lange dauert die Fahrt?»?",
+          "target": "Wie lange dauert die Fahrt?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«Wie lange dauert die Fahrt?» significa «¿Cuánto dura el viaje?».",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Was ist die nächste Haltestelle?",
+            "Wie lange dauert die Fahrt?",
+            "Flughafen"
+          ],
+          "answer": "Wie lange dauert die Fahrt?",
+          "explanation": "La forma escuchada es «Wie lange dauert die Fahrt?»: ¿Cuánto dura el viaje?",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a12-transport-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Zug»?",
+          "target": "Zug",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«Zug» significa «tren».",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Zug",
+            "Eine Fahrkarte, bitte.",
+            "Der Zug hat Verspätung."
+          ],
+          "answer": "Zug",
+          "explanation": "La forma escuchada es «Zug»: tren",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «U-Bahn»?",
+          "target": "U-Bahn",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«U-Bahn» significa «metro».",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "U-Bahn",
+            "Fährt dieser Bus ins Stadtzentrum?"
+          ],
+          "answer": "U-Bahn",
+          "explanation": "La forma escuchada es «U-Bahn»: metro",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Haltestelle»?",
+          "target": "Haltestelle",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«Haltestelle» significa «parada».",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Zug",
+            "Haltestelle"
+          ],
+          "answer": "Haltestelle",
+          "explanation": "La forma escuchada es «Haltestelle»: parada",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ziel»?",
+          "target": "Ziel",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«Ziel» significa «destino».",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ziel",
+            "Ich steige hier aus.",
+            "U-Bahn"
+          ],
+          "answer": "Ziel",
+          "explanation": "La forma escuchada es «Ziel»: destino",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wann fährt der Zug ab?»?",
+          "target": "Wann fährt der Zug ab?",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«Wann fährt der Zug ab?» significa «¿Cuándo sale el tren?».",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Haltestelle",
+            "Wann fährt der Zug ab?",
+            "Fahrkarte"
+          ],
+          "answer": "Wann fährt der Zug ab?",
+          "explanation": "La forma escuchada es «Wann fährt der Zug ab?»: ¿Cuándo sale el tren?",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Was ist die nächste Haltestelle?»?",
+          "target": "Was ist die nächste Haltestelle?",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«Was ist die nächste Haltestelle?» significa «¿Cuál es la próxima parada?».",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bus",
+            "Ziel",
+            "Was ist die nächste Haltestelle?"
+          ],
+          "answer": "Was ist die nächste Haltestelle?",
+          "explanation": "La forma escuchada es «Was ist die nächste Haltestelle?»: ¿Cuál es la próxima parada?",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Der Zug hat Verspätung.»?",
+          "target": "Der Zug hat Verspätung.",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«Der Zug hat Verspätung.» significa «El tren lleva retraso.».",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Der Zug hat Verspätung.",
+            "Bahnsteig",
+            "Wann fährt der Zug ab?"
+          ],
+          "answer": "Der Zug hat Verspätung.",
+          "explanation": "La forma escuchada es «Der Zug hat Verspätung.»: El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie lange dauert die Fahrt?»?",
+          "target": "Wie lange dauert die Fahrt?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«Wie lange dauert die Fahrt?» significa «¿Cuánto dura el viaje?».",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Was ist die nächste Haltestelle?",
+            "Wie lange dauert die Fahrt?",
+            "Flughafen"
+          ],
+          "answer": "Wie lange dauert die Fahrt?",
+          "explanation": "La forma escuchada es «Wie lange dauert die Fahrt?»: ¿Cuánto dura el viaje?",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-transport-test",
+      "title": "Prueba · Transporte y trayectos",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "german-a12-transport-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-transport-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fahrkarte»?",
+          "target": "Fahrkarte",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«Fahrkarte» significa «billete».",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Fahrkarte",
+            "Ziel"
+          ],
+          "answer": "Fahrkarte",
+          "explanation": "La forma escuchada es «Fahrkarte»: billete",
+          "audio": "Fahrkarte",
+          "slow_audio": "Fahrkarte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Zug»?",
+          "target": "Zug",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«Zug» significa «tren».",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Zug",
+            "Eine Fahrkarte, bitte.",
+            "Der Zug hat Verspätung."
+          ],
+          "answer": "Zug",
+          "explanation": "La forma escuchada es «Zug»: tren",
+          "audio": "Zug",
+          "slow_audio": "Zug",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Bus»?",
+          "target": "Bus",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«Bus» significa «autobús».",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wann fährt der Zug ab?",
+            "Ich steige hier aus.",
+            "Bus"
+          ],
+          "answer": "Bus",
+          "explanation": "La forma escuchada es «Bus»: autobús",
+          "audio": "Bus",
+          "slow_audio": "Bus",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «U-Bahn»?",
+          "target": "U-Bahn",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«U-Bahn» significa «metro».",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "U-Bahn",
+            "Fährt dieser Bus ins Stadtzentrum?"
+          ],
+          "answer": "U-Bahn",
+          "explanation": "La forma escuchada es «U-Bahn»: metro",
+          "audio": "U-Bahn",
+          "slow_audio": "U-Bahn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Bahnsteig»?",
+          "target": "Bahnsteig",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "andén"
+          ],
+          "answer": "andén",
+          "explanation": "«Bahnsteig» significa «andén».",
+          "audio": "Bahnsteig",
+          "slow_audio": "Bahnsteig",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bahnsteig",
+            "Was ist die nächste Haltestelle?",
+            "Fahrkarte"
+          ],
+          "answer": "Bahnsteig",
+          "explanation": "La forma escuchada es «Bahnsteig»: andén",
+          "audio": "Bahnsteig",
+          "slow_audio": "Bahnsteig",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Haltestelle»?",
+          "target": "Haltestelle",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«Haltestelle» significa «parada».",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Muss ich umsteigen?",
+            "Zug",
+            "Haltestelle"
+          ],
+          "answer": "Haltestelle",
+          "explanation": "La forma escuchada es «Haltestelle»: parada",
+          "audio": "Haltestelle",
+          "slow_audio": "Haltestelle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Flughafen»?",
+          "target": "Flughafen",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "aeropuerto",
+          "explanation": "«Flughafen» significa «aeropuerto».",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bus",
+            "Flughafen",
+            "Der Zug hat Verspätung."
+          ],
+          "answer": "Flughafen",
+          "explanation": "La forma escuchada es «Flughafen»: aeropuerto",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ziel»?",
+          "target": "Ziel",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«Ziel» significa «destino».",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ziel",
+            "Ich steige hier aus.",
+            "U-Bahn"
+          ],
+          "answer": "Ziel",
+          "explanation": "La forma escuchada es «Ziel»: destino",
+          "audio": "Ziel",
+          "slow_audio": "Ziel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Eine Fahrkarte, bitte.»?",
+          "target": "Eine Fahrkarte, bitte.",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«Eine Fahrkarte, bitte.» significa «Un billete, por favor.».",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie lange dauert die Fahrt?",
+            "Bahnsteig",
+            "Eine Fahrkarte, bitte."
+          ],
+          "answer": "Eine Fahrkarte, bitte.",
+          "explanation": "La forma escuchada es «Eine Fahrkarte, bitte.»: Un billete, por favor.",
+          "audio": "Eine Fahrkarte, bitte.",
+          "slow_audio": "Eine Fahrkarte, bitte.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wann fährt der Zug ab?»?",
+          "target": "Wann fährt der Zug ab?",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«Wann fährt der Zug ab?» significa «¿Cuándo sale el tren?».",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Haltestelle",
+            "Wann fährt der Zug ab?",
+            "Fahrkarte"
+          ],
+          "answer": "Wann fährt der Zug ab?",
+          "explanation": "La forma escuchada es «Wann fährt der Zug ab?»: ¿Cuándo sale el tren?",
+          "audio": "Wann fährt der Zug ab?",
+          "slow_audio": "Wann fährt der Zug ab?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Fährt dieser Bus ins Stadtzentrum?»?",
+          "target": "Fährt dieser Bus ins Stadtzentrum?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«Fährt dieser Bus ins Stadtzentrum?» significa «¿Este autobús va al centro?».",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Fährt dieser Bus ins Stadtzentrum?",
+            "Zug",
+            "Flughafen"
+          ],
+          "answer": "Fährt dieser Bus ins Stadtzentrum?",
+          "explanation": "La forma escuchada es «Fährt dieser Bus ins Stadtzentrum?»: ¿Este autobús va al centro?",
+          "audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "slow_audio": "Fährt dieser Bus ins Stadtzentrum?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Was ist die nächste Haltestelle?»?",
+          "target": "Was ist die nächste Haltestelle?",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«Was ist die nächste Haltestelle?» significa «¿Cuál es la próxima parada?».",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Bus",
+            "Ziel",
+            "Was ist die nächste Haltestelle?"
+          ],
+          "answer": "Was ist die nächste Haltestelle?",
+          "explanation": "La forma escuchada es «Was ist die nächste Haltestelle?»: ¿Cuál es la próxima parada?",
+          "audio": "Was ist die nächste Haltestelle?",
+          "slow_audio": "Was ist die nächste Haltestelle?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Muss ich umsteigen?»?",
+          "target": "Muss ich umsteigen?",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "aeropuerto"
+          ],
+          "answer": "¿Tengo que hacer transbordo?",
+          "explanation": "«Muss ich umsteigen?» significa «¿Tengo que hacer transbordo?».",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Eine Fahrkarte, bitte.",
+            "Muss ich umsteigen?",
+            "U-Bahn"
+          ],
+          "answer": "Muss ich umsteigen?",
+          "explanation": "La forma escuchada es «Muss ich umsteigen?»: ¿Tengo que hacer transbordo?",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Der Zug hat Verspätung.»?",
+          "target": "Der Zug hat Verspätung.",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«Der Zug hat Verspätung.» significa «El tren lleva retraso.».",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Der Zug hat Verspätung.",
+            "Bahnsteig",
+            "Wann fährt der Zug ab?"
+          ],
+          "answer": "Der Zug hat Verspätung.",
+          "explanation": "La forma escuchada es «Der Zug hat Verspätung.»: El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ich steige hier aus.»?",
+          "target": "Ich steige hier aus.",
+          "options": [
+            "Un billete, por favor.",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "Me bajo aquí.",
+          "explanation": "«Ich steige hier aus.» significa «Me bajo aquí.».",
+          "audio": "Ich steige hier aus.",
+          "slow_audio": "Ich steige hier aus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Haltestelle",
+            "Fährt dieser Bus ins Stadtzentrum?",
+            "Ich steige hier aus."
+          ],
+          "answer": "Ich steige hier aus.",
+          "explanation": "La forma escuchada es «Ich steige hier aus.»: Me bajo aquí.",
+          "audio": "Ich steige hier aus.",
+          "slow_audio": "Ich steige hier aus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie lange dauert die Fahrt?»?",
+          "target": "Wie lange dauert die Fahrt?",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«Wie lange dauert die Fahrt?» significa «¿Cuánto dura el viaje?».",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-transport-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Was ist die nächste Haltestelle?",
+            "Wie lange dauert die Fahrt?",
+            "Flughafen"
+          ],
+          "answer": "Wie lange dauert die Fahrt?",
+          "explanation": "La forma escuchada es «Wie lange dauert die Fahrt?»: ¿Cuánto dura el viaje?",
+          "audio": "Wie lange dauert die Fahrt?",
+          "slow_audio": "Wie lange dauert die Fahrt?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "french-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "french-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "prix",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prix»?",
+          "target": "prix",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prix» significa «precio».",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "prix",
+            "cabine d’essayage"
+          ],
+          "answer": "prix",
+          "explanation": "La forma escuchada es «prix»: precio",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "argent",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «argent»?",
+          "target": "argent",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«argent» significa «dinero».",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "argent",
+            "Combien ça coûte ?",
+            "Je n’ai que des espèces."
+          ],
+          "answer": "argent",
+          "explanation": "La forma escuchada es «argent»: dinero",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Combien ça coûte ?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Combien ça coûte ?»?",
+          "target": "Combien ça coûte ?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Combien ça coûte ?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "cher",
+            "Combien ça coûte ?"
+          ],
+          "answer": "Combien ça coûte ?",
+          "explanation": "La forma escuchada es «Combien ça coûte ?»: ¿Cuánto cuesta esto?",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "J’ai besoin d’une taille au-dessus.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «J’ai besoin d’une taille au-dessus.»?",
+          "target": "J’ai besoin d’une taille au-dessus.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«J’ai besoin d’une taille au-dessus.» significa «Necesito una talla más grande.».",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "espèces",
+            "J’ai besoin d’une taille au-dessus.",
+            "prix"
+          ],
+          "answer": "J’ai besoin d’une taille au-dessus.",
+          "explanation": "La forma escuchada es «J’ai besoin d’une taille au-dessus.»: Necesito una talla más grande.",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "french-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "taille",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taille»?",
+          "target": "taille",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taille» significa «talla».",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "J’ai besoin d’une taille au-dessus.",
+            "Où est la cabine d’essayage ?",
+            "taille"
+          ],
+          "answer": "taille",
+          "explanation": "La forma escuchada es «taille»: talla",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "bon marché",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «bon marché»?",
+          "target": "bon marché",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«bon marché» significa «barato».",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "bon marché",
+            "Vous l’avez en bleu ?"
+          ],
+          "answer": "bon marché",
+          "explanation": "La forma escuchada es «bon marché»: barato",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Vous l’avez en bleu ?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Vous l’avez en bleu ?»?",
+          "target": "Vous l’avez en bleu ?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Vous l’avez en bleu ?» significa «¿Lo tiene en azul?».",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Vous l’avez en bleu ?",
+            "argent",
+            "carte"
+          ],
+          "answer": "Vous l’avez en bleu ?",
+          "explanation": "La forma escuchada es «Vous l’avez en bleu ?»: ¿Lo tiene en azul?",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Je le prends.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je le prends.»?",
+          "target": "Je le prends.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Je le prends.» significa «Me lo llevo.».",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taille",
+            "cabine d’essayage",
+            "Je le prends."
+          ],
+          "answer": "Je le prends.",
+          "explanation": "La forma escuchada es «Je le prends.»: Me lo llevo.",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "french-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prix»?",
+          "target": "prix",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prix» significa «precio».",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "prix",
+            "cabine d’essayage"
+          ],
+          "answer": "prix",
+          "explanation": "La forma escuchada es «prix»: precio",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taille»?",
+          "target": "taille",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taille» significa «talla».",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "J’ai besoin d’une taille au-dessus.",
+            "Où est la cabine d’essayage ?",
+            "taille"
+          ],
+          "answer": "taille",
+          "explanation": "La forma escuchada es «taille»: talla",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Combien ça coûte ?»?",
+          "target": "Combien ça coûte ?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Combien ça coûte ?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "cher",
+            "Combien ça coûte ?"
+          ],
+          "answer": "Combien ça coûte ?",
+          "explanation": "La forma escuchada es «Combien ça coûte ?»: ¿Cuánto cuesta esto?",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Vous l’avez en bleu ?»?",
+          "target": "Vous l’avez en bleu ?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Vous l’avez en bleu ?» significa «¿Lo tiene en azul?».",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Vous l’avez en bleu ?",
+            "argent",
+            "carte"
+          ],
+          "answer": "Vous l’avez en bleu ?",
+          "explanation": "La forma escuchada es «Vous l’avez en bleu ?»: ¿Lo tiene en azul?",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "french-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "cher",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "cher",
+          "slow_audio": "cher",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «cher»?",
+          "target": "cher",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«cher» significa «caro».",
+          "audio": "cher",
+          "slow_audio": "cher",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "cher",
+            "Je le prends.",
+            "prix"
+          ],
+          "answer": "cher",
+          "explanation": "La forma escuchada es «cher»: caro",
+          "audio": "cher",
+          "slow_audio": "cher",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "espèces",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «espèces»?",
+          "target": "espèces",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«espèces» significa «efectivo».",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "argent",
+            "espèces"
+          ],
+          "answer": "espèces",
+          "explanation": "La forma escuchada es «espèces»: efectivo",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Je peux payer par carte ?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "Je peux payer par carte ?",
+          "slow_audio": "Je peux payer par carte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je peux payer par carte ?»?",
+          "target": "Je peux payer par carte ?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Je peux payer par carte ?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Je peux payer par carte ?",
+          "slow_audio": "Je peux payer par carte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Combien ça coûte ?",
+            "Je peux payer par carte ?",
+            "bon marché"
+          ],
+          "answer": "Je peux payer par carte ?",
+          "explanation": "La forma escuchada es «Je peux payer par carte ?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Je peux payer par carte ?",
+          "slow_audio": "Je peux payer par carte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Je n’ai que des espèces.",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je n’ai que des espèces.»?",
+          "target": "Je n’ai que des espèces.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Je n’ai que des espèces.» significa «Solo tengo efectivo.».",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je n’ai que des espèces.",
+            "cher",
+            "J’ai besoin d’une taille au-dessus."
+          ],
+          "answer": "Je n’ai que des espèces.",
+          "explanation": "La forma escuchada es «Je n’ai que des espèces.»: Solo tengo efectivo.",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "french-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "carte",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "carte",
+          "slow_audio": "carte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «carte»?",
+          "target": "carte",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«carte» significa «tarjeta».",
+          "audio": "carte",
+          "slow_audio": "carte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taille",
+            "carte",
+            "Je n’ai que des espèces."
+          ],
+          "answer": "carte",
+          "explanation": "La forma escuchada es «carte»: tarjeta",
+          "audio": "carte",
+          "slow_audio": "carte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "cabine d’essayage",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «cabine d’essayage»?",
+          "target": "cabine d’essayage",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«cabine d’essayage» significa «probador».",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "cabine d’essayage",
+            "Où est la cabine d’essayage ?",
+            "bon marché"
+          ],
+          "answer": "cabine d’essayage",
+          "explanation": "La forma escuchada es «cabine d’essayage»: probador",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Où est la cabine d’essayage ?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "Où est la cabine d’essayage ?",
+          "slow_audio": "Où est la cabine d’essayage ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Où est la cabine d’essayage ?»?",
+          "target": "Où est la cabine d’essayage ?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Où est la cabine d’essayage ?» significa «¿Dónde está el probador?».",
+          "audio": "Où est la cabine d’essayage ?",
+          "slow_audio": "Où est la cabine d’essayage ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "espèces",
+            "Vous l’avez en bleu ?",
+            "Où est la cabine d’essayage ?"
+          ],
+          "answer": "Où est la cabine d’essayage ?",
+          "explanation": "La forma escuchada es «Où est la cabine d’essayage ?»: ¿Dónde está el probador?",
+          "audio": "Où est la cabine d’essayage ?",
+          "slow_audio": "Où est la cabine d’essayage ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "C’est trop cher.",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «C’est trop cher.»?",
+          "target": "C’est trop cher.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«C’est trop cher.» significa «Es demasiado caro.».",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je le prends.",
+            "C’est trop cher.",
+            "carte"
+          ],
+          "answer": "C’est trop cher.",
+          "explanation": "La forma escuchada es «C’est trop cher.»: Es demasiado caro.",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "french-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «argent»?",
+          "target": "argent",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«argent» significa «dinero».",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "argent",
+            "Combien ça coûte ?",
+            "Je n’ai que des espèces."
+          ],
+          "answer": "argent",
+          "explanation": "La forma escuchada es «argent»: dinero",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «bon marché»?",
+          "target": "bon marché",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«bon marché» significa «barato».",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "bon marché",
+            "Vous l’avez en bleu ?"
+          ],
+          "answer": "bon marché",
+          "explanation": "La forma escuchada es «bon marché»: barato",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «espèces»?",
+          "target": "espèces",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«espèces» significa «efectivo».",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "argent",
+            "espèces"
+          ],
+          "answer": "espèces",
+          "explanation": "La forma escuchada es «espèces»: efectivo",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «cabine d’essayage»?",
+          "target": "cabine d’essayage",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«cabine d’essayage» significa «probador».",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "cabine d’essayage",
+            "Où est la cabine d’essayage ?",
+            "bon marché"
+          ],
+          "answer": "cabine d’essayage",
+          "explanation": "La forma escuchada es «cabine d’essayage»: probador",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «J’ai besoin d’une taille au-dessus.»?",
+          "target": "J’ai besoin d’une taille au-dessus.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«J’ai besoin d’une taille au-dessus.» significa «Necesito una talla más grande.».",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "espèces",
+            "J’ai besoin d’une taille au-dessus.",
+            "prix"
+          ],
+          "answer": "J’ai besoin d’une taille au-dessus.",
+          "explanation": "La forma escuchada es «J’ai besoin d’une taille au-dessus.»: Necesito una talla más grande.",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je le prends.»?",
+          "target": "Je le prends.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Je le prends.» significa «Me lo llevo.».",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taille",
+            "cabine d’essayage",
+            "Je le prends."
+          ],
+          "answer": "Je le prends.",
+          "explanation": "La forma escuchada es «Je le prends.»: Me lo llevo.",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je n’ai que des espèces.»?",
+          "target": "Je n’ai que des espèces.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Je n’ai que des espèces.» significa «Solo tengo efectivo.».",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je n’ai que des espèces.",
+            "cher",
+            "J’ai besoin d’une taille au-dessus."
+          ],
+          "answer": "Je n’ai que des espèces.",
+          "explanation": "La forma escuchada es «Je n’ai que des espèces.»: Solo tengo efectivo.",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «C’est trop cher.»?",
+          "target": "C’est trop cher.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«C’est trop cher.» significa «Es demasiado caro.».",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je le prends.",
+            "C’est trop cher.",
+            "carte"
+          ],
+          "answer": "C’est trop cher.",
+          "explanation": "La forma escuchada es «C’est trop cher.»: Es demasiado caro.",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "french-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «prix»?",
+          "target": "prix",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«prix» significa «precio».",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "prix",
+            "cabine d’essayage"
+          ],
+          "answer": "prix",
+          "explanation": "La forma escuchada es «prix»: precio",
+          "audio": "prix",
+          "slow_audio": "prix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «argent»?",
+          "target": "argent",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«argent» significa «dinero».",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "argent",
+            "Combien ça coûte ?",
+            "Je n’ai que des espèces."
+          ],
+          "answer": "argent",
+          "explanation": "La forma escuchada es «argent»: dinero",
+          "audio": "argent",
+          "slow_audio": "argent",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «taille»?",
+          "target": "taille",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«taille» significa «talla».",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "J’ai besoin d’une taille au-dessus.",
+            "Où est la cabine d’essayage ?",
+            "taille"
+          ],
+          "answer": "taille",
+          "explanation": "La forma escuchada es «taille»: talla",
+          "audio": "taille",
+          "slow_audio": "taille",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «bon marché»?",
+          "target": "bon marché",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«bon marché» significa «barato».",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "bon marché",
+            "Vous l’avez en bleu ?"
+          ],
+          "answer": "bon marché",
+          "explanation": "La forma escuchada es «bon marché»: barato",
+          "audio": "bon marché",
+          "slow_audio": "bon marché",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «cher»?",
+          "target": "cher",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«cher» significa «caro».",
+          "audio": "cher",
+          "slow_audio": "cher",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "cher",
+            "Je le prends.",
+            "prix"
+          ],
+          "answer": "cher",
+          "explanation": "La forma escuchada es «cher»: caro",
+          "audio": "cher",
+          "slow_audio": "cher",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «espèces»?",
+          "target": "espèces",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«espèces» significa «efectivo».",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je peux payer par carte ?",
+            "argent",
+            "espèces"
+          ],
+          "answer": "espèces",
+          "explanation": "La forma escuchada es «espèces»: efectivo",
+          "audio": "espèces",
+          "slow_audio": "espèces",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «carte»?",
+          "target": "carte",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«carte» significa «tarjeta».",
+          "audio": "carte",
+          "slow_audio": "carte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taille",
+            "carte",
+            "Je n’ai que des espèces."
+          ],
+          "answer": "carte",
+          "explanation": "La forma escuchada es «carte»: tarjeta",
+          "audio": "carte",
+          "slow_audio": "carte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «cabine d’essayage»?",
+          "target": "cabine d’essayage",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«cabine d’essayage» significa «probador».",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "cabine d’essayage",
+            "Où est la cabine d’essayage ?",
+            "bon marché"
+          ],
+          "answer": "cabine d’essayage",
+          "explanation": "La forma escuchada es «cabine d’essayage»: probador",
+          "audio": "cabine d’essayage",
+          "slow_audio": "cabine d’essayage",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Combien ça coûte ?»?",
+          "target": "Combien ça coûte ?",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«Combien ça coûte ?» significa «¿Cuánto cuesta esto?».",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "C’est trop cher.",
+            "cher",
+            "Combien ça coûte ?"
+          ],
+          "answer": "Combien ça coûte ?",
+          "explanation": "La forma escuchada es «Combien ça coûte ?»: ¿Cuánto cuesta esto?",
+          "audio": "Combien ça coûte ?",
+          "slow_audio": "Combien ça coûte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «J’ai besoin d’une taille au-dessus.»?",
+          "target": "J’ai besoin d’une taille au-dessus.",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«J’ai besoin d’une taille au-dessus.» significa «Necesito una talla más grande.».",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "espèces",
+            "J’ai besoin d’une taille au-dessus.",
+            "prix"
+          ],
+          "answer": "J’ai besoin d’une taille au-dessus.",
+          "explanation": "La forma escuchada es «J’ai besoin d’une taille au-dessus.»: Necesito una talla más grande.",
+          "audio": "J’ai besoin d’une taille au-dessus.",
+          "slow_audio": "J’ai besoin d’une taille au-dessus.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Vous l’avez en bleu ?»?",
+          "target": "Vous l’avez en bleu ?",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«Vous l’avez en bleu ?» significa «¿Lo tiene en azul?».",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Vous l’avez en bleu ?",
+            "argent",
+            "carte"
+          ],
+          "answer": "Vous l’avez en bleu ?",
+          "explanation": "La forma escuchada es «Vous l’avez en bleu ?»: ¿Lo tiene en azul?",
+          "audio": "Vous l’avez en bleu ?",
+          "slow_audio": "Vous l’avez en bleu ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je le prends.»?",
+          "target": "Je le prends.",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«Je le prends.» significa «Me lo llevo.».",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "taille",
+            "cabine d’essayage",
+            "Je le prends."
+          ],
+          "answer": "Je le prends.",
+          "explanation": "La forma escuchada es «Je le prends.»: Me lo llevo.",
+          "audio": "Je le prends.",
+          "slow_audio": "Je le prends.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je peux payer par carte ?»?",
+          "target": "Je peux payer par carte ?",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«Je peux payer par carte ?» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "Je peux payer par carte ?",
+          "slow_audio": "Je peux payer par carte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Combien ça coûte ?",
+            "Je peux payer par carte ?",
+            "bon marché"
+          ],
+          "answer": "Je peux payer par carte ?",
+          "explanation": "La forma escuchada es «Je peux payer par carte ?»: ¿Puedo pagar con tarjeta?",
+          "audio": "Je peux payer par carte ?",
+          "slow_audio": "Je peux payer par carte ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Je n’ai que des espèces.»?",
+          "target": "Je n’ai que des espèces.",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«Je n’ai que des espèces.» significa «Solo tengo efectivo.».",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je n’ai que des espèces.",
+            "cher",
+            "J’ai besoin d’une taille au-dessus."
+          ],
+          "answer": "Je n’ai que des espèces.",
+          "explanation": "La forma escuchada es «Je n’ai que des espèces.»: Solo tengo efectivo.",
+          "audio": "Je n’ai que des espèces.",
+          "slow_audio": "Je n’ai que des espèces.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Où est la cabine d’essayage ?»?",
+          "target": "Où est la cabine d’essayage ?",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«Où est la cabine d’essayage ?» significa «¿Dónde está el probador?».",
+          "audio": "Où est la cabine d’essayage ?",
+          "slow_audio": "Où est la cabine d’essayage ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "espèces",
+            "Vous l’avez en bleu ?",
+            "Où est la cabine d’essayage ?"
+          ],
+          "answer": "Où est la cabine d’essayage ?",
+          "explanation": "La forma escuchada es «Où est la cabine d’essayage ?»: ¿Dónde está el probador?",
+          "audio": "Où est la cabine d’essayage ?",
+          "slow_audio": "Où est la cabine d’essayage ?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «C’est trop cher.»?",
+          "target": "C’est trop cher.",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«C’est trop cher.» significa «Es demasiado caro.».",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Je le prends.",
+            "C’est trop cher.",
+            "carte"
+          ],
+          "answer": "C’est trop cher.",
+          "explanation": "La forma escuchada es «C’est trop cher.»: Es demasiado caro.",
+          "audio": "C’est trop cher.",
+          "slow_audio": "C’est trop cher.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

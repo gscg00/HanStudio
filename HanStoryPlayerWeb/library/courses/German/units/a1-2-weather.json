@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-weather",
+  "title": "Clima y ropa",
+  "description": "Comprender el pronóstico y elegir ropa adecuada.",
+  "requirements": [
+    "a1-2-health"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Clima y ropa"
+  },
+  "lessons": [
+    {
+      "id": "german-a12-weather-01",
+      "title": "Clima y ropa · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-weather-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Clima y ropa",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Sonne",
+          "options": [],
+          "answer": "",
+          "explanation": "sol",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Sonne»?",
+          "target": "Sonne",
+          "options": [
+            "sol",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "sol",
+          "explanation": "«Sonne» significa «sol».",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Sonne",
+            "Regenschirm"
+          ],
+          "answer": "Sonne",
+          "explanation": "La forma escuchada es «Sonne»: sol",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Regen",
+          "options": [],
+          "answer": "",
+          "explanation": "lluvia",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regen»?",
+          "target": "Regen",
+          "options": [
+            "abrigo",
+            "Lleva un paraguas.",
+            "lluvia"
+          ],
+          "answer": "lluvia",
+          "explanation": "«Regen» significa «lluvia».",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regen",
+            "Heute ist es sonnig.",
+            "Das Wetter ändert sich schnell."
+          ],
+          "answer": "Regen",
+          "explanation": "La forma escuchada es «Regen»: lluvia",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Heute ist es sonnig.",
+          "options": [],
+          "answer": "",
+          "explanation": "Hoy hace sol.",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Heute ist es sonnig.»?",
+          "target": "Heute ist es sonnig.",
+          "options": [
+            "nieve",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "Hoy hace sol.",
+          "explanation": "«Heute ist es sonnig.» significa «Hoy hace sol.».",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Hitze",
+            "Heute ist es sonnig."
+          ],
+          "answer": "Heute ist es sonnig.",
+          "explanation": "La forma escuchada es «Heute ist es sonnig.»: Hoy hace sol.",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Morgen regnet es.",
+          "options": [],
+          "answer": "",
+          "explanation": "Mañana va a llover.",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Morgen regnet es.»?",
+          "target": "Morgen regnet es.",
+          "options": [
+            "Mañana va a llover.",
+            "Hay diez grados.",
+            "viento"
+          ],
+          "answer": "Mañana va a llover.",
+          "explanation": "«Morgen regnet es.» significa «Mañana va a llover.».",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Kälte",
+            "Morgen regnet es.",
+            "Sonne"
+          ],
+          "answer": "Morgen regnet es.",
+          "explanation": "La forma escuchada es «Morgen regnet es.»: Mañana va a llover.",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-02",
+      "title": "Clima y ropa · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-weather-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Clima y ropa",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Schnee",
+          "options": [],
+          "answer": "",
+          "explanation": "nieve",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Schnee»?",
+          "target": "Schnee",
+          "options": [
+            "Necesito un abrigo.",
+            "nieve",
+            "paraguas"
+          ],
+          "answer": "nieve",
+          "explanation": "«Schnee» significa «nieve».",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Morgen regnet es.",
+            "Es sind zehn Grad.",
+            "Schnee"
+          ],
+          "answer": "Schnee",
+          "explanation": "La forma escuchada es «Schnee»: nieve",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wind",
+          "options": [],
+          "answer": "",
+          "explanation": "viento",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wind»?",
+          "target": "Wind",
+          "options": [
+            "viento",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "viento",
+          "explanation": "«Wind» significa «viento».",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Wind",
+            "Es ist sehr kalt."
+          ],
+          "answer": "Wind",
+          "explanation": "La forma escuchada es «Wind»: viento",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Es ist sehr kalt.",
+          "options": [],
+          "answer": "",
+          "explanation": "Hace mucho frío.",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Es ist sehr kalt.»?",
+          "target": "Es ist sehr kalt.",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Hace mucho frío."
+          ],
+          "answer": "Hace mucho frío.",
+          "explanation": "«Es ist sehr kalt.» significa «Hace mucho frío.».",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Es ist sehr kalt.",
+            "Regen",
+            "Mantel"
+          ],
+          "answer": "Es ist sehr kalt.",
+          "explanation": "La forma escuchada es «Es ist sehr kalt.»: Hace mucho frío.",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Nehmen Sie einen Regenschirm mit.",
+          "options": [],
+          "answer": "",
+          "explanation": "Lleva un paraguas.",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Nehmen Sie einen Regenschirm mit.»?",
+          "target": "Nehmen Sie einen Regenschirm mit.",
+          "options": [
+            "frío",
+            "Lleva un paraguas.",
+            "sol"
+          ],
+          "answer": "Lleva un paraguas.",
+          "explanation": "«Nehmen Sie einen Regenschirm mit.» significa «Lleva un paraguas.».",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Schnee",
+            "Regenschirm",
+            "Nehmen Sie einen Regenschirm mit."
+          ],
+          "answer": "Nehmen Sie einen Regenschirm mit.",
+          "explanation": "La forma escuchada es «Nehmen Sie einen Regenschirm mit.»: Lleva un paraguas.",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a12-weather-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Sonne»?",
+          "target": "Sonne",
+          "options": [
+            "sol",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "sol",
+          "explanation": "«Sonne» significa «sol».",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Sonne",
+            "Regenschirm"
+          ],
+          "answer": "Sonne",
+          "explanation": "La forma escuchada es «Sonne»: sol",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Schnee»?",
+          "target": "Schnee",
+          "options": [
+            "Necesito un abrigo.",
+            "nieve",
+            "paraguas"
+          ],
+          "answer": "nieve",
+          "explanation": "«Schnee» significa «nieve».",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Morgen regnet es.",
+            "Es sind zehn Grad.",
+            "Schnee"
+          ],
+          "answer": "Schnee",
+          "explanation": "La forma escuchada es «Schnee»: nieve",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Heute ist es sonnig.»?",
+          "target": "Heute ist es sonnig.",
+          "options": [
+            "nieve",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "Hoy hace sol.",
+          "explanation": "«Heute ist es sonnig.» significa «Hoy hace sol.».",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Hitze",
+            "Heute ist es sonnig."
+          ],
+          "answer": "Heute ist es sonnig.",
+          "explanation": "La forma escuchada es «Heute ist es sonnig.»: Hoy hace sol.",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Es ist sehr kalt.»?",
+          "target": "Es ist sehr kalt.",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Hace mucho frío."
+          ],
+          "answer": "Hace mucho frío.",
+          "explanation": "«Es ist sehr kalt.» significa «Hace mucho frío.».",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Es ist sehr kalt.",
+            "Regen",
+            "Mantel"
+          ],
+          "answer": "Es ist sehr kalt.",
+          "explanation": "La forma escuchada es «Es ist sehr kalt.»: Hace mucho frío.",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-03",
+      "title": "Clima y ropa · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-weather-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Clima y ropa",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Hitze",
+          "options": [],
+          "answer": "",
+          "explanation": "calor",
+          "audio": "Hitze",
+          "slow_audio": "Hitze",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Hitze»?",
+          "target": "Hitze",
+          "options": [
+            "Mañana va a llover.",
+            "Hay diez grados.",
+            "calor"
+          ],
+          "answer": "calor",
+          "explanation": "«Hitze» significa «calor».",
+          "audio": "Hitze",
+          "slow_audio": "Hitze",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Hitze",
+            "Nehmen Sie einen Regenschirm mit.",
+            "Sonne"
+          ],
+          "answer": "Hitze",
+          "explanation": "La forma escuchada es «Hitze»: calor",
+          "audio": "Hitze",
+          "slow_audio": "Hitze",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Kälte",
+          "options": [],
+          "answer": "",
+          "explanation": "frío",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Kälte»?",
+          "target": "Kälte",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "frío",
+          "explanation": "«Kälte» significa «frío».",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Regen",
+            "Kälte"
+          ],
+          "answer": "Kälte",
+          "explanation": "La forma escuchada es «Kälte»: frío",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Ich brauche einen Mantel.",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito un abrigo.",
+          "audio": "Ich brauche einen Mantel.",
+          "slow_audio": "Ich brauche einen Mantel.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ich brauche einen Mantel.»?",
+          "target": "Ich brauche einen Mantel.",
+          "options": [
+            "Necesito un abrigo.",
+            "lluvia",
+            "abrigo"
+          ],
+          "answer": "Necesito un abrigo.",
+          "explanation": "«Ich brauche einen Mantel.» significa «Necesito un abrigo.».",
+          "audio": "Ich brauche einen Mantel.",
+          "slow_audio": "Ich brauche einen Mantel.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Heute ist es sonnig.",
+            "Ich brauche einen Mantel.",
+            "Wind"
+          ],
+          "answer": "Ich brauche einen Mantel.",
+          "explanation": "La forma escuchada es «Ich brauche einen Mantel.»: Necesito un abrigo.",
+          "audio": "Ich brauche einen Mantel.",
+          "slow_audio": "Ich brauche einen Mantel.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Das Wetter ändert sich schnell.",
+          "options": [],
+          "answer": "",
+          "explanation": "El tiempo cambia rápido.",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Das Wetter ändert sich schnell.»?",
+          "target": "Das Wetter ändert sich schnell.",
+          "options": [
+            "nieve",
+            "paraguas",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "El tiempo cambia rápido.",
+          "explanation": "«Das Wetter ändert sich schnell.» significa «El tiempo cambia rápido.».",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Das Wetter ändert sich schnell.",
+            "Hitze",
+            "Morgen regnet es."
+          ],
+          "answer": "Das Wetter ändert sich schnell.",
+          "explanation": "La forma escuchada es «Das Wetter ändert sich schnell.»: El tiempo cambia rápido.",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-04",
+      "title": "Clima y ropa · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "german-a12-weather-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Clima y ropa",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Mantel",
+          "options": [],
+          "answer": "",
+          "explanation": "abrigo",
+          "audio": "Mantel",
+          "slow_audio": "Mantel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Mantel»?",
+          "target": "Mantel",
+          "options": [
+            "abrigo",
+            "Lleva un paraguas.",
+            "sol"
+          ],
+          "answer": "abrigo",
+          "explanation": "«Mantel» significa «abrigo».",
+          "audio": "Mantel",
+          "slow_audio": "Mantel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Schnee",
+            "Mantel",
+            "Das Wetter ändert sich schnell."
+          ],
+          "answer": "Mantel",
+          "explanation": "La forma escuchada es «Mantel»: abrigo",
+          "audio": "Mantel",
+          "slow_audio": "Mantel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Regenschirm",
+          "options": [],
+          "answer": "",
+          "explanation": "paraguas",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regenschirm»?",
+          "target": "Regenschirm",
+          "options": [
+            "Necesito un abrigo.",
+            "lluvia",
+            "paraguas"
+          ],
+          "answer": "paraguas",
+          "explanation": "«Regenschirm» significa «paraguas».",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regenschirm",
+            "Es sind zehn Grad.",
+            "Wind"
+          ],
+          "answer": "Regenschirm",
+          "explanation": "La forma escuchada es «Regenschirm»: paraguas",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Es sind zehn Grad.",
+          "options": [],
+          "answer": "",
+          "explanation": "Hay diez grados.",
+          "audio": "Es sind zehn Grad.",
+          "slow_audio": "Es sind zehn Grad.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Es sind zehn Grad.»?",
+          "target": "Es sind zehn Grad.",
+          "options": [
+            "Hoy hace sol.",
+            "Hay diez grados.",
+            "viento"
+          ],
+          "answer": "Hay diez grados.",
+          "explanation": "«Es sind zehn Grad.» significa «Hay diez grados.».",
+          "audio": "Es sind zehn Grad.",
+          "slow_audio": "Es sind zehn Grad.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Kälte",
+            "Es ist sehr kalt.",
+            "Es sind zehn Grad."
+          ],
+          "answer": "Es sind zehn Grad.",
+          "explanation": "La forma escuchada es «Es sind zehn Grad.»: Hay diez grados.",
+          "audio": "Es sind zehn Grad.",
+          "slow_audio": "Es sind zehn Grad.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wie wird das Wetter am Wochenende?",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Qué tiempo hará el fin de semana?",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie wird das Wetter am Wochenende?»?",
+          "target": "Wie wird das Wetter am Wochenende?",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Mañana va a llover."
+          ],
+          "answer": "¿Qué tiempo hará el fin de semana?",
+          "explanation": "«Wie wird das Wetter am Wochenende?» significa «¿Qué tiempo hará el fin de semana?».",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Nehmen Sie einen Regenschirm mit.",
+            "Wie wird das Wetter am Wochenende?",
+            "Mantel"
+          ],
+          "answer": "Wie wird das Wetter am Wochenende?",
+          "explanation": "La forma escuchada es «Wie wird das Wetter am Wochenende?»: ¿Qué tiempo hará el fin de semana?",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a12-weather-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regen»?",
+          "target": "Regen",
+          "options": [
+            "abrigo",
+            "Lleva un paraguas.",
+            "lluvia"
+          ],
+          "answer": "lluvia",
+          "explanation": "«Regen» significa «lluvia».",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regen",
+            "Heute ist es sonnig.",
+            "Das Wetter ändert sich schnell."
+          ],
+          "answer": "Regen",
+          "explanation": "La forma escuchada es «Regen»: lluvia",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wind»?",
+          "target": "Wind",
+          "options": [
+            "viento",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "viento",
+          "explanation": "«Wind» significa «viento».",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Wind",
+            "Es ist sehr kalt."
+          ],
+          "answer": "Wind",
+          "explanation": "La forma escuchada es «Wind»: viento",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Kälte»?",
+          "target": "Kälte",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "frío",
+          "explanation": "«Kälte» significa «frío».",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Regen",
+            "Kälte"
+          ],
+          "answer": "Kälte",
+          "explanation": "La forma escuchada es «Kälte»: frío",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regenschirm»?",
+          "target": "Regenschirm",
+          "options": [
+            "Necesito un abrigo.",
+            "lluvia",
+            "paraguas"
+          ],
+          "answer": "paraguas",
+          "explanation": "«Regenschirm» significa «paraguas».",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regenschirm",
+            "Es sind zehn Grad.",
+            "Wind"
+          ],
+          "answer": "Regenschirm",
+          "explanation": "La forma escuchada es «Regenschirm»: paraguas",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Morgen regnet es.»?",
+          "target": "Morgen regnet es.",
+          "options": [
+            "Mañana va a llover.",
+            "Hay diez grados.",
+            "viento"
+          ],
+          "answer": "Mañana va a llover.",
+          "explanation": "«Morgen regnet es.» significa «Mañana va a llover.».",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Kälte",
+            "Morgen regnet es.",
+            "Sonne"
+          ],
+          "answer": "Morgen regnet es.",
+          "explanation": "La forma escuchada es «Morgen regnet es.»: Mañana va a llover.",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Nehmen Sie einen Regenschirm mit.»?",
+          "target": "Nehmen Sie einen Regenschirm mit.",
+          "options": [
+            "frío",
+            "Lleva un paraguas.",
+            "sol"
+          ],
+          "answer": "Lleva un paraguas.",
+          "explanation": "«Nehmen Sie einen Regenschirm mit.» significa «Lleva un paraguas.».",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Schnee",
+            "Regenschirm",
+            "Nehmen Sie einen Regenschirm mit."
+          ],
+          "answer": "Nehmen Sie einen Regenschirm mit.",
+          "explanation": "La forma escuchada es «Nehmen Sie einen Regenschirm mit.»: Lleva un paraguas.",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Das Wetter ändert sich schnell.»?",
+          "target": "Das Wetter ändert sich schnell.",
+          "options": [
+            "nieve",
+            "paraguas",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "El tiempo cambia rápido.",
+          "explanation": "«Das Wetter ändert sich schnell.» significa «El tiempo cambia rápido.».",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Das Wetter ändert sich schnell.",
+            "Hitze",
+            "Morgen regnet es."
+          ],
+          "answer": "Das Wetter ändert sich schnell.",
+          "explanation": "La forma escuchada es «Das Wetter ändert sich schnell.»: El tiempo cambia rápido.",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie wird das Wetter am Wochenende?»?",
+          "target": "Wie wird das Wetter am Wochenende?",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Mañana va a llover."
+          ],
+          "answer": "¿Qué tiempo hará el fin de semana?",
+          "explanation": "«Wie wird das Wetter am Wochenende?» significa «¿Qué tiempo hará el fin de semana?».",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Nehmen Sie einen Regenschirm mit.",
+            "Wie wird das Wetter am Wochenende?",
+            "Mantel"
+          ],
+          "answer": "Wie wird das Wetter am Wochenende?",
+          "explanation": "La forma escuchada es «Wie wird das Wetter am Wochenende?»: ¿Qué tiempo hará el fin de semana?",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a12-weather-test",
+      "title": "Prueba · Clima y ropa",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "german-a12-weather-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a12-weather-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Sonne»?",
+          "target": "Sonne",
+          "options": [
+            "sol",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "sol",
+          "explanation": "«Sonne» significa «sol».",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Sonne",
+            "Regenschirm"
+          ],
+          "answer": "Sonne",
+          "explanation": "La forma escuchada es «Sonne»: sol",
+          "audio": "Sonne",
+          "slow_audio": "Sonne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regen»?",
+          "target": "Regen",
+          "options": [
+            "abrigo",
+            "Lleva un paraguas.",
+            "lluvia"
+          ],
+          "answer": "lluvia",
+          "explanation": "«Regen» significa «lluvia».",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regen",
+            "Heute ist es sonnig.",
+            "Das Wetter ändert sich schnell."
+          ],
+          "answer": "Regen",
+          "explanation": "La forma escuchada es «Regen»: lluvia",
+          "audio": "Regen",
+          "slow_audio": "Regen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Schnee»?",
+          "target": "Schnee",
+          "options": [
+            "Necesito un abrigo.",
+            "nieve",
+            "paraguas"
+          ],
+          "answer": "nieve",
+          "explanation": "«Schnee» significa «nieve».",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Morgen regnet es.",
+            "Es sind zehn Grad.",
+            "Schnee"
+          ],
+          "answer": "Schnee",
+          "explanation": "La forma escuchada es «Schnee»: nieve",
+          "audio": "Schnee",
+          "slow_audio": "Schnee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wind»?",
+          "target": "Wind",
+          "options": [
+            "viento",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "viento",
+          "explanation": "«Wind» significa «viento».",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Wind",
+            "Es ist sehr kalt."
+          ],
+          "answer": "Wind",
+          "explanation": "La forma escuchada es «Wind»: viento",
+          "audio": "Wind",
+          "slow_audio": "Wind",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Hitze»?",
+          "target": "Hitze",
+          "options": [
+            "Mañana va a llover.",
+            "Hay diez grados.",
+            "calor"
+          ],
+          "answer": "calor",
+          "explanation": "«Hitze» significa «calor».",
+          "audio": "Hitze",
+          "slow_audio": "Hitze",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Hitze",
+            "Nehmen Sie einen Regenschirm mit.",
+            "Sonne"
+          ],
+          "answer": "Hitze",
+          "explanation": "La forma escuchada es «Hitze»: calor",
+          "audio": "Hitze",
+          "slow_audio": "Hitze",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Kälte»?",
+          "target": "Kälte",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "frío",
+            "Hace mucho frío."
+          ],
+          "answer": "frío",
+          "explanation": "«Kälte» significa «frío».",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Ich brauche einen Mantel.",
+            "Regen",
+            "Kälte"
+          ],
+          "answer": "Kälte",
+          "explanation": "La forma escuchada es «Kälte»: frío",
+          "audio": "Kälte",
+          "slow_audio": "Kälte",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Mantel»?",
+          "target": "Mantel",
+          "options": [
+            "abrigo",
+            "Lleva un paraguas.",
+            "sol"
+          ],
+          "answer": "abrigo",
+          "explanation": "«Mantel» significa «abrigo».",
+          "audio": "Mantel",
+          "slow_audio": "Mantel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Schnee",
+            "Mantel",
+            "Das Wetter ändert sich schnell."
+          ],
+          "answer": "Mantel",
+          "explanation": "La forma escuchada es «Mantel»: abrigo",
+          "audio": "Mantel",
+          "slow_audio": "Mantel",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Regenschirm»?",
+          "target": "Regenschirm",
+          "options": [
+            "Necesito un abrigo.",
+            "lluvia",
+            "paraguas"
+          ],
+          "answer": "paraguas",
+          "explanation": "«Regenschirm» significa «paraguas».",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Regenschirm",
+            "Es sind zehn Grad.",
+            "Wind"
+          ],
+          "answer": "Regenschirm",
+          "explanation": "La forma escuchada es «Regenschirm»: paraguas",
+          "audio": "Regenschirm",
+          "slow_audio": "Regenschirm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Heute ist es sonnig.»?",
+          "target": "Heute ist es sonnig.",
+          "options": [
+            "nieve",
+            "Hoy hace sol.",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "Hoy hace sol.",
+          "explanation": "«Heute ist es sonnig.» significa «Hoy hace sol.».",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Wie wird das Wetter am Wochenende?",
+            "Hitze",
+            "Heute ist es sonnig."
+          ],
+          "answer": "Heute ist es sonnig.",
+          "explanation": "La forma escuchada es «Heute ist es sonnig.»: Hoy hace sol.",
+          "audio": "Heute ist es sonnig.",
+          "slow_audio": "Heute ist es sonnig.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Morgen regnet es.»?",
+          "target": "Morgen regnet es.",
+          "options": [
+            "Mañana va a llover.",
+            "Hay diez grados.",
+            "viento"
+          ],
+          "answer": "Mañana va a llover.",
+          "explanation": "«Morgen regnet es.» significa «Mañana va a llover.».",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Kälte",
+            "Morgen regnet es.",
+            "Sonne"
+          ],
+          "answer": "Morgen regnet es.",
+          "explanation": "La forma escuchada es «Morgen regnet es.»: Mañana va a llover.",
+          "audio": "Morgen regnet es.",
+          "slow_audio": "Morgen regnet es.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Es ist sehr kalt.»?",
+          "target": "Es ist sehr kalt.",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Hace mucho frío."
+          ],
+          "answer": "Hace mucho frío.",
+          "explanation": "«Es ist sehr kalt.» significa «Hace mucho frío.».",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Es ist sehr kalt.",
+            "Regen",
+            "Mantel"
+          ],
+          "answer": "Es ist sehr kalt.",
+          "explanation": "La forma escuchada es «Es ist sehr kalt.»: Hace mucho frío.",
+          "audio": "Es ist sehr kalt.",
+          "slow_audio": "Es ist sehr kalt.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Nehmen Sie einen Regenschirm mit.»?",
+          "target": "Nehmen Sie einen Regenschirm mit.",
+          "options": [
+            "frío",
+            "Lleva un paraguas.",
+            "sol"
+          ],
+          "answer": "Lleva un paraguas.",
+          "explanation": "«Nehmen Sie einen Regenschirm mit.» significa «Lleva un paraguas.».",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Schnee",
+            "Regenschirm",
+            "Nehmen Sie einen Regenschirm mit."
+          ],
+          "answer": "Nehmen Sie einen Regenschirm mit.",
+          "explanation": "La forma escuchada es «Nehmen Sie einen Regenschirm mit.»: Lleva un paraguas.",
+          "audio": "Nehmen Sie einen Regenschirm mit.",
+          "slow_audio": "Nehmen Sie einen Regenschirm mit.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ich brauche einen Mantel.»?",
+          "target": "Ich brauche einen Mantel.",
+          "options": [
+            "Necesito un abrigo.",
+            "lluvia",
+            "abrigo"
+          ],
+          "answer": "Necesito un abrigo.",
+          "explanation": "«Ich brauche einen Mantel.» significa «Necesito un abrigo.».",
+          "audio": "Ich brauche einen Mantel.",
+          "slow_audio": "Ich brauche einen Mantel.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Heute ist es sonnig.",
+            "Ich brauche einen Mantel.",
+            "Wind"
+          ],
+          "answer": "Ich brauche einen Mantel.",
+          "explanation": "La forma escuchada es «Ich brauche einen Mantel.»: Necesito un abrigo.",
+          "audio": "Ich brauche einen Mantel.",
+          "slow_audio": "Ich brauche einen Mantel.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Das Wetter ändert sich schnell.»?",
+          "target": "Das Wetter ändert sich schnell.",
+          "options": [
+            "nieve",
+            "paraguas",
+            "El tiempo cambia rápido."
+          ],
+          "answer": "El tiempo cambia rápido.",
+          "explanation": "«Das Wetter ändert sich schnell.» significa «El tiempo cambia rápido.».",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Das Wetter ändert sich schnell.",
+            "Hitze",
+            "Morgen regnet es."
+          ],
+          "answer": "Das Wetter ändert sich schnell.",
+          "explanation": "La forma escuchada es «Das Wetter ändert sich schnell.»: El tiempo cambia rápido.",
+          "audio": "Das Wetter ändert sich schnell.",
+          "slow_audio": "Das Wetter ändert sich schnell.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Es sind zehn Grad.»?",
+          "target": "Es sind zehn Grad.",
+          "options": [
+            "Hoy hace sol.",
+            "Hay diez grados.",
+            "viento"
+          ],
+          "answer": "Hay diez grados.",
+          "explanation": "«Es sind zehn Grad.» significa «Hay diez grados.».",
+          "audio": "Es sind zehn Grad.",
+          "slow_audio": "Es sind zehn Grad.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Kälte",
+            "Es ist sehr kalt.",
+            "Es sind zehn Grad."
+          ],
+          "answer": "Es sind zehn Grad.",
+          "explanation": "La forma escuchada es «Es sind zehn Grad.»: Hay diez grados.",
+          "audio": "Es sind zehn Grad.",
+          "slow_audio": "Es sind zehn Grad.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie wird das Wetter am Wochenende?»?",
+          "target": "Wie wird das Wetter am Wochenende?",
+          "options": [
+            "¿Qué tiempo hará el fin de semana?",
+            "calor",
+            "Mañana va a llover."
+          ],
+          "answer": "¿Qué tiempo hará el fin de semana?",
+          "explanation": "«Wie wird das Wetter am Wochenende?» significa «¿Qué tiempo hará el fin de semana?».",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a12-weather-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "Nehmen Sie einen Regenschirm mit.",
+            "Wie wird das Wetter am Wochenende?",
+            "Mantel"
+          ],
+          "answer": "Wie wird das Wetter am Wochenende?",
+          "explanation": "La forma escuchada es «Wie wird das Wetter am Wochenende?»: ¿Qué tiempo hará el fin de semana?",
+          "audio": "Wie wird das Wetter am Wochenende?",
+          "slow_audio": "Wie wird das Wetter am Wochenende?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "weather",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

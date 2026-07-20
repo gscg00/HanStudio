@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "chinese-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "价格",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «价格»?",
+          "target": "价格",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«价格» significa «precio».",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "价格",
+            "试衣间"
+          ],
+          "answer": "价格",
+          "explanation": "La forma escuchada es «价格»: precio",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "钱",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «钱»?",
+          "target": "钱",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«钱» significa «dinero».",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "钱",
+            "这个多少钱？",
+            "我只有现金。"
+          ],
+          "answer": "钱",
+          "explanation": "La forma escuchada es «钱»: dinero",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "这个多少钱？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这个多少钱？»?",
+          "target": "这个多少钱？",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«这个多少钱？» significa «¿Cuánto cuesta esto?».",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "贵",
+            "这个多少钱？"
+          ],
+          "answer": "这个多少钱？",
+          "explanation": "La forma escuchada es «这个多少钱？»: ¿Cuánto cuesta esto?",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我需要大一点的尺码。",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我需要大一点的尺码。»?",
+          "target": "我需要大一点的尺码。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«我需要大一点的尺码。» significa «Necesito una talla más grande.».",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "现金",
+            "我需要大一点的尺码。",
+            "价格"
+          ],
+          "answer": "我需要大一点的尺码。",
+          "explanation": "La forma escuchada es «我需要大一点的尺码。»: Necesito una talla más grande.",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "尺码",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «尺码»?",
+          "target": "尺码",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«尺码» significa «talla».",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我需要大一点的尺码。",
+            "试衣间在哪里？",
+            "尺码"
+          ],
+          "answer": "尺码",
+          "explanation": "La forma escuchada es «尺码»: talla",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "便宜",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «便宜»?",
+          "target": "便宜",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«便宜» significa «barato».",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "便宜",
+            "有蓝色的吗？"
+          ],
+          "answer": "便宜",
+          "explanation": "La forma escuchada es «便宜»: barato",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "有蓝色的吗？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «有蓝色的吗？»?",
+          "target": "有蓝色的吗？",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«有蓝色的吗？» significa «¿Lo tiene en azul?».",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "有蓝色的吗？",
+            "钱",
+            "卡"
+          ],
+          "answer": "有蓝色的吗？",
+          "explanation": "La forma escuchada es «有蓝色的吗？»: ¿Lo tiene en azul?",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我要这个。",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我要这个。»?",
+          "target": "我要这个。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«我要这个。» significa «Me lo llevo.».",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "尺码",
+            "试衣间",
+            "我要这个。"
+          ],
+          "answer": "我要这个。",
+          "explanation": "La forma escuchada es «我要这个。»: Me lo llevo.",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «价格»?",
+          "target": "价格",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«价格» significa «precio».",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "价格",
+            "试衣间"
+          ],
+          "answer": "价格",
+          "explanation": "La forma escuchada es «价格»: precio",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «尺码»?",
+          "target": "尺码",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«尺码» significa «talla».",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我需要大一点的尺码。",
+            "试衣间在哪里？",
+            "尺码"
+          ],
+          "answer": "尺码",
+          "explanation": "La forma escuchada es «尺码»: talla",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这个多少钱？»?",
+          "target": "这个多少钱？",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«这个多少钱？» significa «¿Cuánto cuesta esto?».",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "贵",
+            "这个多少钱？"
+          ],
+          "answer": "这个多少钱？",
+          "explanation": "La forma escuchada es «这个多少钱？»: ¿Cuánto cuesta esto?",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «有蓝色的吗？»?",
+          "target": "有蓝色的吗？",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«有蓝色的吗？» significa «¿Lo tiene en azul?».",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "有蓝色的吗？",
+            "钱",
+            "卡"
+          ],
+          "answer": "有蓝色的吗？",
+          "explanation": "La forma escuchada es «有蓝色的吗？»: ¿Lo tiene en azul?",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "贵",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "贵",
+          "slow_audio": "贵",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «贵»?",
+          "target": "贵",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«贵» significa «caro».",
+          "audio": "贵",
+          "slow_audio": "贵",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "贵",
+            "我要这个。",
+            "价格"
+          ],
+          "answer": "贵",
+          "explanation": "La forma escuchada es «贵»: caro",
+          "audio": "贵",
+          "slow_audio": "贵",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "现金",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «现金»?",
+          "target": "现金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«现金» significa «efectivo».",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "钱",
+            "现金"
+          ],
+          "answer": "现金",
+          "explanation": "La forma escuchada es «现金»: efectivo",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "可以刷卡吗？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "可以刷卡吗？",
+          "slow_audio": "可以刷卡吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «可以刷卡吗？»?",
+          "target": "可以刷卡吗？",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«可以刷卡吗？» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "可以刷卡吗？",
+          "slow_audio": "可以刷卡吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "这个多少钱？",
+            "可以刷卡吗？",
+            "便宜"
+          ],
+          "answer": "可以刷卡吗？",
+          "explanation": "La forma escuchada es «可以刷卡吗？»: ¿Puedo pagar con tarjeta?",
+          "audio": "可以刷卡吗？",
+          "slow_audio": "可以刷卡吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我只有现金。",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我只有现金。»?",
+          "target": "我只有现金。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«我只有现金。» significa «Solo tengo efectivo.».",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我只有现金。",
+            "贵",
+            "我需要大一点的尺码。"
+          ],
+          "answer": "我只有现金。",
+          "explanation": "La forma escuchada es «我只有现金。»: Solo tengo efectivo.",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "卡",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "卡",
+          "slow_audio": "卡",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «卡»?",
+          "target": "卡",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«卡» significa «tarjeta».",
+          "audio": "卡",
+          "slow_audio": "卡",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "尺码",
+            "卡",
+            "我只有现金。"
+          ],
+          "answer": "卡",
+          "explanation": "La forma escuchada es «卡»: tarjeta",
+          "audio": "卡",
+          "slow_audio": "卡",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "试衣间",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «试衣间»?",
+          "target": "试衣间",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«试衣间» significa «probador».",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "试衣间",
+            "试衣间在哪里？",
+            "便宜"
+          ],
+          "answer": "试衣间",
+          "explanation": "La forma escuchada es «试衣间»: probador",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "试衣间在哪里？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "试衣间在哪里？",
+          "slow_audio": "试衣间在哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «试衣间在哪里？»?",
+          "target": "试衣间在哪里？",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«试衣间在哪里？» significa «¿Dónde está el probador?».",
+          "audio": "试衣间在哪里？",
+          "slow_audio": "试衣间在哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "现金",
+            "有蓝色的吗？",
+            "试衣间在哪里？"
+          ],
+          "answer": "试衣间在哪里？",
+          "explanation": "La forma escuchada es «试衣间在哪里？»: ¿Dónde está el probador?",
+          "audio": "试衣间在哪里？",
+          "slow_audio": "试衣间在哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "太贵了。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «太贵了。»?",
+          "target": "太贵了。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«太贵了。» significa «Es demasiado caro.».",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我要这个。",
+            "太贵了。",
+            "卡"
+          ],
+          "answer": "太贵了。",
+          "explanation": "La forma escuchada es «太贵了。»: Es demasiado caro.",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «钱»?",
+          "target": "钱",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«钱» significa «dinero».",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "钱",
+            "这个多少钱？",
+            "我只有现金。"
+          ],
+          "answer": "钱",
+          "explanation": "La forma escuchada es «钱»: dinero",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «便宜»?",
+          "target": "便宜",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«便宜» significa «barato».",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "便宜",
+            "有蓝色的吗？"
+          ],
+          "answer": "便宜",
+          "explanation": "La forma escuchada es «便宜»: barato",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «现金»?",
+          "target": "现金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«现金» significa «efectivo».",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "钱",
+            "现金"
+          ],
+          "answer": "现金",
+          "explanation": "La forma escuchada es «现金»: efectivo",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «试衣间»?",
+          "target": "试衣间",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«试衣间» significa «probador».",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "试衣间",
+            "试衣间在哪里？",
+            "便宜"
+          ],
+          "answer": "试衣间",
+          "explanation": "La forma escuchada es «试衣间»: probador",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我需要大一点的尺码。»?",
+          "target": "我需要大一点的尺码。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«我需要大一点的尺码。» significa «Necesito una talla más grande.».",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "现金",
+            "我需要大一点的尺码。",
+            "价格"
+          ],
+          "answer": "我需要大一点的尺码。",
+          "explanation": "La forma escuchada es «我需要大一点的尺码。»: Necesito una talla más grande.",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我要这个。»?",
+          "target": "我要这个。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«我要这个。» significa «Me lo llevo.».",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "尺码",
+            "试衣间",
+            "我要这个。"
+          ],
+          "answer": "我要这个。",
+          "explanation": "La forma escuchada es «我要这个。»: Me lo llevo.",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我只有现金。»?",
+          "target": "我只有现金。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«我只有现金。» significa «Solo tengo efectivo.».",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我只有现金。",
+            "贵",
+            "我需要大一点的尺码。"
+          ],
+          "answer": "我只有现金。",
+          "explanation": "La forma escuchada es «我只有现金。»: Solo tengo efectivo.",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «太贵了。»?",
+          "target": "太贵了。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«太贵了。» significa «Es demasiado caro.».",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我要这个。",
+            "太贵了。",
+            "卡"
+          ],
+          "answer": "太贵了。",
+          "explanation": "La forma escuchada es «太贵了。»: Es demasiado caro.",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "chinese-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «价格»?",
+          "target": "价格",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«价格» significa «precio».",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "价格",
+            "试衣间"
+          ],
+          "answer": "价格",
+          "explanation": "La forma escuchada es «价格»: precio",
+          "audio": "价格",
+          "slow_audio": "价格",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «钱»?",
+          "target": "钱",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«钱» significa «dinero».",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "钱",
+            "这个多少钱？",
+            "我只有现金。"
+          ],
+          "answer": "钱",
+          "explanation": "La forma escuchada es «钱»: dinero",
+          "audio": "钱",
+          "slow_audio": "钱",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «尺码»?",
+          "target": "尺码",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«尺码» significa «talla».",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我需要大一点的尺码。",
+            "试衣间在哪里？",
+            "尺码"
+          ],
+          "answer": "尺码",
+          "explanation": "La forma escuchada es «尺码»: talla",
+          "audio": "尺码",
+          "slow_audio": "尺码",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «便宜»?",
+          "target": "便宜",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«便宜» significa «barato».",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "便宜",
+            "有蓝色的吗？"
+          ],
+          "answer": "便宜",
+          "explanation": "La forma escuchada es «便宜»: barato",
+          "audio": "便宜",
+          "slow_audio": "便宜",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «贵»?",
+          "target": "贵",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«贵» significa «caro».",
+          "audio": "贵",
+          "slow_audio": "贵",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "贵",
+            "我要这个。",
+            "价格"
+          ],
+          "answer": "贵",
+          "explanation": "La forma escuchada es «贵»: caro",
+          "audio": "贵",
+          "slow_audio": "贵",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «现金»?",
+          "target": "现金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«现金» significa «efectivo».",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "可以刷卡吗？",
+            "钱",
+            "现金"
+          ],
+          "answer": "现金",
+          "explanation": "La forma escuchada es «现金»: efectivo",
+          "audio": "现金",
+          "slow_audio": "现金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «卡»?",
+          "target": "卡",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«卡» significa «tarjeta».",
+          "audio": "卡",
+          "slow_audio": "卡",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "尺码",
+            "卡",
+            "我只有现金。"
+          ],
+          "answer": "卡",
+          "explanation": "La forma escuchada es «卡»: tarjeta",
+          "audio": "卡",
+          "slow_audio": "卡",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «试衣间»?",
+          "target": "试衣间",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«试衣间» significa «probador».",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "试衣间",
+            "试衣间在哪里？",
+            "便宜"
+          ],
+          "answer": "试衣间",
+          "explanation": "La forma escuchada es «试衣间»: probador",
+          "audio": "试衣间",
+          "slow_audio": "试衣间",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这个多少钱？»?",
+          "target": "这个多少钱？",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«这个多少钱？» significa «¿Cuánto cuesta esto?».",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "太贵了。",
+            "贵",
+            "这个多少钱？"
+          ],
+          "answer": "这个多少钱？",
+          "explanation": "La forma escuchada es «这个多少钱？»: ¿Cuánto cuesta esto?",
+          "audio": "这个多少钱？",
+          "slow_audio": "这个多少钱？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我需要大一点的尺码。»?",
+          "target": "我需要大一点的尺码。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«我需要大一点的尺码。» significa «Necesito una talla más grande.».",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "现金",
+            "我需要大一点的尺码。",
+            "价格"
+          ],
+          "answer": "我需要大一点的尺码。",
+          "explanation": "La forma escuchada es «我需要大一点的尺码。»: Necesito una talla más grande.",
+          "audio": "我需要大一点的尺码。",
+          "slow_audio": "我需要大一点的尺码。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «有蓝色的吗？»?",
+          "target": "有蓝色的吗？",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«有蓝色的吗？» significa «¿Lo tiene en azul?».",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "有蓝色的吗？",
+            "钱",
+            "卡"
+          ],
+          "answer": "有蓝色的吗？",
+          "explanation": "La forma escuchada es «有蓝色的吗？»: ¿Lo tiene en azul?",
+          "audio": "有蓝色的吗？",
+          "slow_audio": "有蓝色的吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我要这个。»?",
+          "target": "我要这个。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«我要这个。» significa «Me lo llevo.».",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "尺码",
+            "试衣间",
+            "我要这个。"
+          ],
+          "answer": "我要这个。",
+          "explanation": "La forma escuchada es «我要这个。»: Me lo llevo.",
+          "audio": "我要这个。",
+          "slow_audio": "我要这个。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «可以刷卡吗？»?",
+          "target": "可以刷卡吗？",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«可以刷卡吗？» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "可以刷卡吗？",
+          "slow_audio": "可以刷卡吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "这个多少钱？",
+            "可以刷卡吗？",
+            "便宜"
+          ],
+          "answer": "可以刷卡吗？",
+          "explanation": "La forma escuchada es «可以刷卡吗？»: ¿Puedo pagar con tarjeta?",
+          "audio": "可以刷卡吗？",
+          "slow_audio": "可以刷卡吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我只有现金。»?",
+          "target": "我只有现金。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«我只有现金。» significa «Solo tengo efectivo.».",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我只有现金。",
+            "贵",
+            "我需要大一点的尺码。"
+          ],
+          "answer": "我只有现金。",
+          "explanation": "La forma escuchada es «我只有现金。»: Solo tengo efectivo.",
+          "audio": "我只有现金。",
+          "slow_audio": "我只有现金。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «试衣间在哪里？»?",
+          "target": "试衣间在哪里？",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«试衣间在哪里？» significa «¿Dónde está el probador?».",
+          "audio": "试衣间在哪里？",
+          "slow_audio": "试衣间在哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "现金",
+            "有蓝色的吗？",
+            "试衣间在哪里？"
+          ],
+          "answer": "试衣间在哪里？",
+          "explanation": "La forma escuchada es «试衣间在哪里？»: ¿Dónde está el probador?",
+          "audio": "试衣间在哪里？",
+          "slow_audio": "试衣间在哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «太贵了。»?",
+          "target": "太贵了。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«太贵了。» significa «Es demasiado caro.».",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "我要这个。",
+            "太贵了。",
+            "卡"
+          ],
+          "answer": "太贵了。",
+          "explanation": "La forma escuchada es «太贵了。»: Es demasiado caro.",
+          "audio": "太贵了。",
+          "slow_audio": "太贵了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

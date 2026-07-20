@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-shopping",
+  "title": "Compras y precios",
+  "description": "Preguntar precios, elegir una variante y completar un pago.",
+  "requirements": [
+    "a1-1-places"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Compras y precios"
+  },
+  "lessons": [
+    {
+      "id": "japanese-a12-shopping-01",
+      "title": "Compras y precios · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "値段",
+          "options": [],
+          "answer": "",
+          "explanation": "precio",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «値段»?",
+          "target": "値段",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«値段» significa «precio».",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "値段",
+            "試着室"
+          ],
+          "answer": "値段",
+          "explanation": "La forma escuchada es «値段»: precio",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "お金",
+          "options": [],
+          "answer": "",
+          "explanation": "dinero",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «お金»?",
+          "target": "お金",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«お金» significa «dinero».",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "お金",
+            "これはいくらですか。",
+            "現金しかありません。"
+          ],
+          "answer": "お金",
+          "explanation": "La forma escuchada es «お金»: dinero",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "これはいくらですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これはいくらですか。»?",
+          "target": "これはいくらですか。",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«これはいくらですか。» significa «¿Cuánto cuesta esto?».",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "高い",
+            "これはいくらですか。"
+          ],
+          "answer": "これはいくらですか。",
+          "explanation": "La forma escuchada es «これはいくらですか。»: ¿Cuánto cuesta esto?",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "もっと大きいサイズが必要です。",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesito una talla más grande.",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «もっと大きいサイズが必要です。»?",
+          "target": "もっと大きいサイズが必要です。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«もっと大きいサイズが必要です。» significa «Necesito una talla más grande.».",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金",
+            "もっと大きいサイズが必要です。",
+            "値段"
+          ],
+          "answer": "もっと大きいサイズが必要です。",
+          "explanation": "La forma escuchada es «もっと大きいサイズが必要です。»: Necesito una talla más grande.",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-02",
+      "title": "Compras y precios · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "サイズ",
+          "options": [],
+          "answer": "",
+          "explanation": "talla",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «サイズ»?",
+          "target": "サイズ",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«サイズ» significa «talla».",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "もっと大きいサイズが必要です。",
+            "試着室はどこですか。",
+            "サイズ"
+          ],
+          "answer": "サイズ",
+          "explanation": "La forma escuchada es «サイズ»: talla",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "安い",
+          "options": [],
+          "answer": "",
+          "explanation": "barato",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «安い»?",
+          "target": "安い",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«安い» significa «barato».",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "安い",
+            "青色はありますか。"
+          ],
+          "answer": "安い",
+          "explanation": "La forma escuchada es «安い»: barato",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "青色はありますか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Lo tiene en azul?",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «青色はありますか。»?",
+          "target": "青色はありますか。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«青色はありますか。» significa «¿Lo tiene en azul?».",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "青色はありますか。",
+            "お金",
+            "カード"
+          ],
+          "answer": "青色はありますか。",
+          "explanation": "La forma escuchada es «青色はありますか。»: ¿Lo tiene en azul?",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "これにします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Me lo llevo.",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これにします。»?",
+          "target": "これにします。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«これにします。» significa «Me lo llevo.».",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "サイズ",
+            "試着室",
+            "これにします。"
+          ],
+          "answer": "これにします。",
+          "explanation": "La forma escuchada es «これにします。»: Me lo llevo.",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «値段»?",
+          "target": "値段",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«値段» significa «precio».",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "値段",
+            "試着室"
+          ],
+          "answer": "値段",
+          "explanation": "La forma escuchada es «値段»: precio",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «サイズ»?",
+          "target": "サイズ",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«サイズ» significa «talla».",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "もっと大きいサイズが必要です。",
+            "試着室はどこですか。",
+            "サイズ"
+          ],
+          "answer": "サイズ",
+          "explanation": "La forma escuchada es «サイズ»: talla",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これはいくらですか。»?",
+          "target": "これはいくらですか。",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«これはいくらですか。» significa «¿Cuánto cuesta esto?».",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "高い",
+            "これはいくらですか。"
+          ],
+          "answer": "これはいくらですか。",
+          "explanation": "La forma escuchada es «これはいくらですか。»: ¿Cuánto cuesta esto?",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «青色はありますか。»?",
+          "target": "青色はありますか。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«青色はありますか。» significa «¿Lo tiene en azul?».",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "青色はありますか。",
+            "お金",
+            "カード"
+          ],
+          "answer": "青色はありますか。",
+          "explanation": "La forma escuchada es «青色はありますか。»: ¿Lo tiene en azul?",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-03",
+      "title": "Compras y precios · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "高い",
+          "options": [],
+          "answer": "",
+          "explanation": "caro",
+          "audio": "高い",
+          "slow_audio": "高い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «高い»?",
+          "target": "高い",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«高い» significa «caro».",
+          "audio": "高い",
+          "slow_audio": "高い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高い",
+            "これにします。",
+            "値段"
+          ],
+          "answer": "高い",
+          "explanation": "La forma escuchada es «高い»: caro",
+          "audio": "高い",
+          "slow_audio": "高い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "現金",
+          "options": [],
+          "answer": "",
+          "explanation": "efectivo",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金»?",
+          "target": "現金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«現金» significa «efectivo».",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "お金",
+            "現金"
+          ],
+          "answer": "現金",
+          "explanation": "La forma escuchada es «現金»: efectivo",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "カードで払えますか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Puedo pagar con tarjeta?",
+          "audio": "カードで払えますか。",
+          "slow_audio": "カードで払えますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «カードで払えますか。»?",
+          "target": "カードで払えますか。",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«カードで払えますか。» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "カードで払えますか。",
+          "slow_audio": "カードで払えますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "これはいくらですか。",
+            "カードで払えますか。",
+            "安い"
+          ],
+          "answer": "カードで払えますか。",
+          "explanation": "La forma escuchada es «カードで払えますか。»: ¿Puedo pagar con tarjeta?",
+          "audio": "カードで払えますか。",
+          "slow_audio": "カードで払えますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "現金しかありません。",
+          "options": [],
+          "answer": "",
+          "explanation": "Solo tengo efectivo.",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金しかありません。»?",
+          "target": "現金しかありません。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«現金しかありません。» significa «Solo tengo efectivo.».",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金しかありません。",
+            "高い",
+            "もっと大きいサイズが必要です。"
+          ],
+          "answer": "現金しかありません。",
+          "explanation": "La forma escuchada es «現金しかありません。»: Solo tengo efectivo.",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-04",
+      "title": "Compras y precios · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Compras y precios",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "カード",
+          "options": [],
+          "answer": "",
+          "explanation": "tarjeta",
+          "audio": "カード",
+          "slow_audio": "カード",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «カード»?",
+          "target": "カード",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«カード» significa «tarjeta».",
+          "audio": "カード",
+          "slow_audio": "カード",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "サイズ",
+            "カード",
+            "現金しかありません。"
+          ],
+          "answer": "カード",
+          "explanation": "La forma escuchada es «カード»: tarjeta",
+          "audio": "カード",
+          "slow_audio": "カード",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "試着室",
+          "options": [],
+          "answer": "",
+          "explanation": "probador",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «試着室»?",
+          "target": "試着室",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«試着室» significa «probador».",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "試着室",
+            "試着室はどこですか。",
+            "安い"
+          ],
+          "answer": "試着室",
+          "explanation": "La forma escuchada es «試着室»: probador",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "試着室はどこですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Dónde está el probador?",
+          "audio": "試着室はどこですか。",
+          "slow_audio": "試着室はどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «試着室はどこですか。»?",
+          "target": "試着室はどこですか。",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«試着室はどこですか。» significa «¿Dónde está el probador?».",
+          "audio": "試着室はどこですか。",
+          "slow_audio": "試着室はどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金",
+            "青色はありますか。",
+            "試着室はどこですか。"
+          ],
+          "answer": "試着室はどこですか。",
+          "explanation": "La forma escuchada es «試着室はどこですか。»: ¿Dónde está el probador?",
+          "audio": "試着室はどこですか。",
+          "slow_audio": "試着室はどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "高すぎます。",
+          "options": [],
+          "answer": "",
+          "explanation": "Es demasiado caro.",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «高すぎます。»?",
+          "target": "高すぎます。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«高すぎます。» significa «Es demasiado caro.».",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "これにします。",
+            "高すぎます。",
+            "カード"
+          ],
+          "answer": "高すぎます。",
+          "explanation": "La forma escuchada es «高すぎます。»: Es demasiado caro.",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «お金»?",
+          "target": "お金",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«お金» significa «dinero».",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "お金",
+            "これはいくらですか。",
+            "現金しかありません。"
+          ],
+          "answer": "お金",
+          "explanation": "La forma escuchada es «お金»: dinero",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «安い»?",
+          "target": "安い",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«安い» significa «barato».",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "安い",
+            "青色はありますか。"
+          ],
+          "answer": "安い",
+          "explanation": "La forma escuchada es «安い»: barato",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金»?",
+          "target": "現金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«現金» significa «efectivo».",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "お金",
+            "現金"
+          ],
+          "answer": "現金",
+          "explanation": "La forma escuchada es «現金»: efectivo",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «試着室»?",
+          "target": "試着室",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«試着室» significa «probador».",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "試着室",
+            "試着室はどこですか。",
+            "安い"
+          ],
+          "answer": "試着室",
+          "explanation": "La forma escuchada es «試着室»: probador",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «もっと大きいサイズが必要です。»?",
+          "target": "もっと大きいサイズが必要です。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«もっと大きいサイズが必要です。» significa «Necesito una talla más grande.».",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金",
+            "もっと大きいサイズが必要です。",
+            "値段"
+          ],
+          "answer": "もっと大きいサイズが必要です。",
+          "explanation": "La forma escuchada es «もっと大きいサイズが必要です。»: Necesito una talla más grande.",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これにします。»?",
+          "target": "これにします。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«これにします。» significa «Me lo llevo.».",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "サイズ",
+            "試着室",
+            "これにします。"
+          ],
+          "answer": "これにします。",
+          "explanation": "La forma escuchada es «これにします。»: Me lo llevo.",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金しかありません。»?",
+          "target": "現金しかありません。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«現金しかありません。» significa «Solo tengo efectivo.».",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金しかありません。",
+            "高い",
+            "もっと大きいサイズが必要です。"
+          ],
+          "answer": "現金しかありません。",
+          "explanation": "La forma escuchada es «現金しかありません。»: Solo tengo efectivo.",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «高すぎます。»?",
+          "target": "高すぎます。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«高すぎます。» significa «Es demasiado caro.».",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "これにします。",
+            "高すぎます。",
+            "カード"
+          ],
+          "answer": "高すぎます。",
+          "explanation": "La forma escuchada es «高すぎます。»: Es demasiado caro.",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a12-shopping-test",
+      "title": "Prueba · Compras y precios",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "japanese-a12-shopping-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a12-shopping-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «値段»?",
+          "target": "値段",
+          "options": [
+            "precio",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "precio",
+          "explanation": "«値段» significa «precio».",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "値段",
+            "試着室"
+          ],
+          "answer": "値段",
+          "explanation": "La forma escuchada es «値段»: precio",
+          "audio": "値段",
+          "slow_audio": "値段",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «お金»?",
+          "target": "お金",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "dinero"
+          ],
+          "answer": "dinero",
+          "explanation": "«お金» significa «dinero».",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "お金",
+            "これはいくらですか。",
+            "現金しかありません。"
+          ],
+          "answer": "お金",
+          "explanation": "La forma escuchada es «お金»: dinero",
+          "audio": "お金",
+          "slow_audio": "お金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «サイズ»?",
+          "target": "サイズ",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "talla",
+            "probador"
+          ],
+          "answer": "talla",
+          "explanation": "«サイズ» significa «talla».",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "もっと大きいサイズが必要です。",
+            "試着室はどこですか。",
+            "サイズ"
+          ],
+          "answer": "サイズ",
+          "explanation": "La forma escuchada es «サイズ»: talla",
+          "audio": "サイズ",
+          "slow_audio": "サイズ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «安い»?",
+          "target": "安い",
+          "options": [
+            "barato",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "barato",
+          "explanation": "«安い» significa «barato».",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "安い",
+            "青色はありますか。"
+          ],
+          "answer": "安い",
+          "explanation": "La forma escuchada es «安い»: barato",
+          "audio": "安い",
+          "slow_audio": "安い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «高い»?",
+          "target": "高い",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "caro"
+          ],
+          "answer": "caro",
+          "explanation": "«高い» significa «caro».",
+          "audio": "高い",
+          "slow_audio": "高い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高い",
+            "これにします。",
+            "値段"
+          ],
+          "answer": "高い",
+          "explanation": "La forma escuchada es «高い»: caro",
+          "audio": "高い",
+          "slow_audio": "高い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金»?",
+          "target": "現金",
+          "options": [
+            "Es demasiado caro.",
+            "efectivo",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "efectivo",
+          "explanation": "«現金» significa «efectivo».",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "カードで払えますか。",
+            "お金",
+            "現金"
+          ],
+          "answer": "現金",
+          "explanation": "La forma escuchada es «現金»: efectivo",
+          "audio": "現金",
+          "slow_audio": "現金",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «カード»?",
+          "target": "カード",
+          "options": [
+            "tarjeta",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "tarjeta",
+          "explanation": "«カード» significa «tarjeta».",
+          "audio": "カード",
+          "slow_audio": "カード",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "サイズ",
+            "カード",
+            "現金しかありません。"
+          ],
+          "answer": "カード",
+          "explanation": "La forma escuchada es «カード»: tarjeta",
+          "audio": "カード",
+          "slow_audio": "カード",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «試着室»?",
+          "target": "試着室",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "probador"
+          ],
+          "answer": "probador",
+          "explanation": "«試着室» significa «probador».",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "試着室",
+            "試着室はどこですか。",
+            "安い"
+          ],
+          "answer": "試着室",
+          "explanation": "La forma escuchada es «試着室»: probador",
+          "audio": "試着室",
+          "slow_audio": "試着室",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これはいくらですか。»?",
+          "target": "これはいくらですか。",
+          "options": [
+            "talla",
+            "¿Cuánto cuesta esto?",
+            "Solo tengo efectivo."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "«これはいくらですか。» significa «¿Cuánto cuesta esto?».",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "高すぎます。",
+            "高い",
+            "これはいくらですか。"
+          ],
+          "answer": "これはいくらですか。",
+          "explanation": "La forma escuchada es «これはいくらですか。»: ¿Cuánto cuesta esto?",
+          "audio": "これはいくらですか。",
+          "slow_audio": "これはいくらですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «もっと大きいサイズが必要です。»?",
+          "target": "もっと大きいサイズが必要です。",
+          "options": [
+            "Necesito una talla más grande.",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "Necesito una talla más grande.",
+          "explanation": "«もっと大きいサイズが必要です。» significa «Necesito una talla más grande.».",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金",
+            "もっと大きいサイズが必要です。",
+            "値段"
+          ],
+          "answer": "もっと大きいサイズが必要です。",
+          "explanation": "La forma escuchada es «もっと大きいサイズが必要です。»: Necesito una talla más grande.",
+          "audio": "もっと大きいサイズが必要です。",
+          "slow_audio": "もっと大きいサイズが必要です。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «青色はありますか。»?",
+          "target": "青色はありますか。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "¿Lo tiene en azul?"
+          ],
+          "answer": "¿Lo tiene en azul?",
+          "explanation": "«青色はありますか。» significa «¿Lo tiene en azul?».",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "青色はありますか。",
+            "お金",
+            "カード"
+          ],
+          "answer": "青色はありますか。",
+          "explanation": "La forma escuchada es «青色はありますか。»: ¿Lo tiene en azul?",
+          "audio": "青色はありますか。",
+          "slow_audio": "青色はありますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これにします。»?",
+          "target": "これにします。",
+          "options": [
+            "efectivo",
+            "Me lo llevo.",
+            "precio"
+          ],
+          "answer": "Me lo llevo.",
+          "explanation": "«これにします。» significa «Me lo llevo.».",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "サイズ",
+            "試着室",
+            "これにします。"
+          ],
+          "answer": "これにします。",
+          "explanation": "La forma escuchada es «これにします。»: Me lo llevo.",
+          "audio": "これにします。",
+          "slow_audio": "これにします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «カードで払えますか。»?",
+          "target": "カードで払えますか。",
+          "options": [
+            "¿Puedo pagar con tarjeta?",
+            "dinero",
+            "tarjeta"
+          ],
+          "answer": "¿Puedo pagar con tarjeta?",
+          "explanation": "«カードで払えますか。» significa «¿Puedo pagar con tarjeta?».",
+          "audio": "カードで払えますか。",
+          "slow_audio": "カードで払えますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "これはいくらですか。",
+            "カードで払えますか。",
+            "安い"
+          ],
+          "answer": "カードで払えますか。",
+          "explanation": "La forma escuchada es «カードで払えますか。»: ¿Puedo pagar con tarjeta?",
+          "audio": "カードで払えますか。",
+          "slow_audio": "カードで払えますか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «現金しかありません。»?",
+          "target": "現金しかありません。",
+          "options": [
+            "talla",
+            "probador",
+            "Solo tengo efectivo."
+          ],
+          "answer": "Solo tengo efectivo.",
+          "explanation": "«現金しかありません。» significa «Solo tengo efectivo.».",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金しかありません。",
+            "高い",
+            "もっと大きいサイズが必要です。"
+          ],
+          "answer": "現金しかありません。",
+          "explanation": "La forma escuchada es «現金しかありません。»: Solo tengo efectivo.",
+          "audio": "現金しかありません。",
+          "slow_audio": "現金しかありません。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «試着室はどこですか。»?",
+          "target": "試着室はどこですか。",
+          "options": [
+            "¿Cuánto cuesta esto?",
+            "¿Dónde está el probador?",
+            "barato"
+          ],
+          "answer": "¿Dónde está el probador?",
+          "explanation": "«試着室はどこですか。» significa «¿Dónde está el probador?».",
+          "audio": "試着室はどこですか。",
+          "slow_audio": "試着室はどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "現金",
+            "青色はありますか。",
+            "試着室はどこですか。"
+          ],
+          "answer": "試着室はどこですか。",
+          "explanation": "La forma escuchada es «試着室はどこですか。»: ¿Dónde está el probador?",
+          "audio": "試着室はどこですか。",
+          "slow_audio": "試着室はどこですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «高すぎます。»?",
+          "target": "高すぎます。",
+          "options": [
+            "Es demasiado caro.",
+            "caro",
+            "Necesito una talla más grande."
+          ],
+          "answer": "Es demasiado caro.",
+          "explanation": "«高すぎます。» significa «Es demasiado caro.».",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a12-shopping-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "これにします。",
+            "高すぎます。",
+            "カード"
+          ],
+          "answer": "高すぎます。",
+          "explanation": "La forma escuchada es «高すぎます。»: Es demasiado caro.",
+          "audio": "高すぎます。",
+          "slow_audio": "高すぎます。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "shopping",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

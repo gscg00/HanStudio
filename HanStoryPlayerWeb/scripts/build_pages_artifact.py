@@ -70,10 +70,28 @@ def referenced_audio_files(root: Path = ROOT) -> set[Path]:
     return references
 
 
+def referenced_course_unit_files(root: Path = ROOT) -> set[Path]:
+    """Devuelve solo los manifiestos de unidad que están activos en course.json.
+
+    Los borradores de autoría pueden permanecer en el repositorio sin terminar
+    accidentalmente en GitHub Pages ni en la caché offline de los alumnos.
+    """
+    references: set[Path] = set()
+    courses_root = root / "library" / "courses"
+    for course_path in courses_root.glob("*/course.json"):
+        payload = json.loads(course_path.read_text(encoding="utf-8"))
+        for unit in payload.get("units", []):
+            destination = _safe_manifest_asset(course_path, unit.get("manifest"), root)
+            if destination:
+                references.add(destination)
+    return references
+
+
 def is_public_file(
     path: Path,
     root: Path = ROOT,
     referenced_audio: set[Path] | None = None,
+    referenced_course_units: set[Path] | None = None,
 ) -> bool:
     relative = path.relative_to(root)
     if any(part in FORBIDDEN_PARTS for part in relative.parts):
@@ -82,9 +100,22 @@ def is_public_file(
         return False
     if path.suffix.lower() in FORBIDDEN_SUFFIXES:
         return False
-    # Los recortes y la limpieza del administrador se guardan como WAV final.
-    # Solo publicamos los WAV que algún manifiesto realmente utiliza; así no se
-    # confunden con originales de producción ni se infla el sitio con descartes.
+    relative_parts = relative.parts
+    if (
+        len(relative_parts) >= 5
+        and relative_parts[0:2] == ("library", "courses")
+        and relative_parts[3] == "units"
+        and path.suffix.lower() == ".json"
+    ):
+        references = (
+            referenced_course_units
+            if referenced_course_units is not None
+            else referenced_course_unit_files(root)
+        )
+        return path.resolve() in references
+    # Los audios editados nuevos se guardan en MP3, pero mantenemos compatibilidad
+    # con recortes WAV antiguos. Solo publicamos un WAV cuando algún manifiesto lo
+    # utiliza, para no confundir originales de producción con audios finales.
     if path.suffix.lower() == ".wav":
         references = referenced_audio if referenced_audio is not None else referenced_audio_files(root)
         return path.resolve() in references
@@ -101,6 +132,7 @@ def build(output: Path) -> list[Path]:
 
     copied: list[Path] = []
     referenced_audio = referenced_audio_files(ROOT)
+    referenced_course_units = referenced_course_unit_files(ROOT)
     for name in PUBLIC_ROOT_FILES:
         source = ROOT / name
         if not source.is_file():
@@ -114,7 +146,11 @@ def build(output: Path) -> list[Path]:
         if not source_root.is_dir():
             raise FileNotFoundError(f"Falta la carpeta pública: {directory}")
         for source in source_root.rglob("*"):
-            if not source.is_file() or not is_public_file(source, referenced_audio=referenced_audio):
+            if not source.is_file() or not is_public_file(
+                source,
+                referenced_audio=referenced_audio,
+                referenced_course_units=referenced_course_units,
+            ):
                 continue
             destination = output / source.relative_to(ROOT)
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -174,6 +210,16 @@ def validate(output: Path) -> None:
     ]
     if missing_courses:
         raise RuntimeError("Faltan cursos guiados en el artefacto: " + ", ".join(missing_courses))
+
+    missing_units: list[str] = []
+    for course_path in (output / "library" / "courses").glob("*/course.json"):
+        payload = json.loads(course_path.read_text(encoding="utf-8"))
+        for unit in payload.get("units", []):
+            destination = _safe_manifest_asset(course_path, unit.get("manifest"), output)
+            if destination and not destination.is_file():
+                missing_units.append(f"{course_path.parent.name}: {unit.get('manifest')}")
+    if missing_units:
+        raise RuntimeError("Faltan unidades activas en el artefacto: " + ", ".join(missing_units))
 
     missing_audio: list[str] = []
     for manifest in (output / "library" / "courses").glob("*/audio_manifest.json"):

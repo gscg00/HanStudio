@@ -1,0 +1,1615 @@
+{
+  "id": "a1-1-introductions",
+  "title": "Conocerse y presentarse",
+  "description": "Saluda, di quién eres, pregunta el nombre y origen, y pide ayuda para comprender.",
+  "requirements": [],
+  "reward": {
+    "xp": 120,
+    "badge": "Primer encuentro A1.1"
+  },
+  "lessons": [
+    {
+      "id": "chinese-a11-introductions-01",
+      "title": "Saludar y presentarte",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Saludar y presentarte",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-01-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "你好",
+          "options": [],
+          "answer": "",
+          "explanation": "你好 se lee con tercer tono y tercer tono; al hablar, el primero suele cambiar de contorno.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-01-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "你好",
+          "options": [],
+          "answer": "",
+          "explanation": "你好 se lee con tercer tono y tercer tono; al hablar, el primero suele cambiar de contorno.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¡Hola!"
+        },
+        {
+          "id": "chinese-a11-introductions-01-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你好»?",
+          "target": "你好",
+          "options": [
+            "Repítalo, por favor.",
+            "¡Hola!",
+            "gracias"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "你好 se lee con tercer tono y tercer tono; al hablar, el primero suele cambiar de contorno.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-01-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你好",
+            "你来自哪里？",
+            "谢谢"
+          ],
+          "answer": "你好",
+          "explanation": "La forma escrita correcta es «你好»: ¡Hola!",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-01-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我叫安娜。",
+          "options": [],
+          "answer": "",
+          "explanation": "Me llamo Anna.",
+          "audio": "我叫安娜。",
+          "slow_audio": "我叫安娜。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Me llamo Anna."
+        },
+        {
+          "id": "chinese-a11-introductions-01-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我叫安娜。»?",
+          "target": "我叫安娜。",
+          "options": [
+            "Hable más despacio.",
+            "Me llamo Anna.",
+            "Soy de México."
+          ],
+          "answer": "Me llamo Anna.",
+          "explanation": "Me llamo Anna.",
+          "audio": "我叫安娜。",
+          "slow_audio": "我叫安娜。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-01-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "你会说英语吗？",
+            "我来自墨西哥。"
+          ],
+          "answer": "我叫安娜。",
+          "explanation": "La forma escrita correcta es «我叫安娜。»: Me llamo Anna.",
+          "audio": "我叫安娜。",
+          "slow_audio": "我叫安娜。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-01-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "很高兴认识你。",
+          "options": [],
+          "answer": "",
+          "explanation": "Mucho gusto.",
+          "audio": "很高兴认识你。",
+          "slow_audio": "很高兴认识你。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Mucho gusto."
+        },
+        {
+          "id": "chinese-a11-introductions-01-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «很高兴认识你。»?",
+          "target": "很高兴认识你。",
+          "options": [
+            "¡Hola!",
+            "¿De dónde eres?",
+            "Mucho gusto."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "很高兴认识你。",
+          "slow_audio": "很高兴认识你。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-01-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "你来自哪里？",
+            "很高兴认识你。"
+          ],
+          "answer": "很高兴认识你。",
+          "explanation": "La forma escrita correcta es «很高兴认识你。»: Mucho gusto.",
+          "audio": "很高兴认识你。",
+          "slow_audio": "很高兴认识你。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-02",
+      "title": "Preguntar el nombre",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Preguntar el nombre",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-02-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "你叫什么名字？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-02-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "你叫什么名字？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿Cómo te llamas?"
+        },
+        {
+          "id": "chinese-a11-introductions-02-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你叫什么名字？»?",
+          "target": "你叫什么名字？",
+          "options": [
+            "¿Cómo te llamas?",
+            "Repítalo, por favor.",
+            "gracias"
+          ],
+          "answer": "¿Cómo te llamas?",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-02-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你来自哪里？",
+            "你好",
+            "你叫什么名字？"
+          ],
+          "answer": "你叫什么名字？",
+          "explanation": "La forma escrita correcta es «你叫什么名字？»: ¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-02-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "名字",
+          "options": [],
+          "answer": "",
+          "explanation": "nombre",
+          "audio": "名字",
+          "slow_audio": "名字",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "nombre"
+        },
+        {
+          "id": "chinese-a11-introductions-02-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «名字»?",
+          "target": "名字",
+          "options": [
+            "Hable más despacio.",
+            "nombre",
+            "Soy de México."
+          ],
+          "answer": "nombre",
+          "explanation": "nombre",
+          "audio": "名字",
+          "slow_audio": "名字",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-02-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "名字",
+            "你会说英语吗？"
+          ],
+          "answer": "名字",
+          "explanation": "La forma escrita correcta es «名字»: nombre",
+          "audio": "名字",
+          "slow_audio": "名字",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-02-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "谢谢",
+          "options": [],
+          "answer": "",
+          "explanation": "gracias",
+          "audio": "xièxie",
+          "slow_audio": "xièxie",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "gracias"
+        },
+        {
+          "id": "chinese-a11-introductions-02-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «谢谢»?",
+          "target": "谢谢",
+          "options": [
+            "¡Hola!",
+            "gracias",
+            "¿De dónde eres?"
+          ],
+          "answer": "gracias",
+          "explanation": "gracias",
+          "audio": "xièxie",
+          "slow_audio": "xièxie",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-02-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "谢谢",
+            "很高兴认识你。"
+          ],
+          "answer": "谢谢",
+          "explanation": "La forma escrita correcta es «谢谢»: gracias",
+          "audio": "xièxie",
+          "slow_audio": "xièxie",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-review-01",
+      "title": "Repaso breve · nombre e identidad",
+      "description": "Recupera de memoria una selección de lo ya aprendido.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No aparece contenido nuevo: intenta recordar antes de pedir una pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你好»?",
+          "target": "你好",
+          "options": [
+            "Repítalo, por favor.",
+            "¡Hola!",
+            "gracias"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "你好 se lee con tercer tono y tercer tono; al hablar, el primero suele cambiar de contorno.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你好",
+            "你来自哪里？",
+            "谢谢"
+          ],
+          "answer": "你好",
+          "explanation": "La forma escrita correcta es «你好»: ¡Hola!",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你叫什么名字？»?",
+          "target": "你叫什么名字？",
+          "options": [
+            "Hable más despacio.",
+            "¿Cómo te llamas?",
+            "Soy de México."
+          ],
+          "answer": "¿Cómo te llamas?",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "你叫什么名字？",
+            "你会说英语吗？"
+          ],
+          "answer": "你叫什么名字？",
+          "explanation": "La forma escrita correcta es «你叫什么名字？»: ¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «名字»?",
+          "target": "名字",
+          "options": [
+            "nombre",
+            "¡Hola!",
+            "¿De dónde eres?"
+          ],
+          "answer": "nombre",
+          "explanation": "nombre",
+          "audio": "名字",
+          "slow_audio": "名字",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-01-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "名字",
+            "很高兴认识你。"
+          ],
+          "answer": "名字",
+          "explanation": "La forma escrita correcta es «名字»: nombre",
+          "audio": "名字",
+          "slow_audio": "名字",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-03",
+      "title": "Decir de dónde eres",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Decir de dónde eres",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-03-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "我来自墨西哥。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-03-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我来自墨西哥。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Soy de México."
+        },
+        {
+          "id": "chinese-a11-introductions-03-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我来自墨西哥。»?",
+          "target": "我来自墨西哥。",
+          "options": [
+            "Repítalo, por favor.",
+            "Soy de México.",
+            "gracias"
+          ],
+          "answer": "Soy de México.",
+          "explanation": "Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-03-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你来自哪里？",
+            "你好",
+            "我来自墨西哥。"
+          ],
+          "answer": "我来自墨西哥。",
+          "explanation": "La forma escrita correcta es «我来自墨西哥。»: Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-03-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "你来自哪里？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿De dónde eres?",
+          "audio": "你来自哪里？",
+          "slow_audio": "你来自哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿De dónde eres?"
+        },
+        {
+          "id": "chinese-a11-introductions-03-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你来自哪里？»?",
+          "target": "你来自哪里？",
+          "options": [
+            "¿De dónde eres?",
+            "Hable más despacio.",
+            "Soy de México."
+          ],
+          "answer": "¿De dónde eres?",
+          "explanation": "¿De dónde eres?",
+          "audio": "你来自哪里？",
+          "slow_audio": "你来自哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-03-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "你来自哪里？",
+            "你会说英语吗？"
+          ],
+          "answer": "你来自哪里？",
+          "explanation": "La forma escrita correcta es «你来自哪里？»: ¿De dónde eres?",
+          "audio": "你来自哪里？",
+          "slow_audio": "你来自哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-03-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "你会说英语吗？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Hablas inglés?",
+          "audio": "nǐ huì shuō Yīngyǔ ma",
+          "slow_audio": "nǐ huì shuō Yīngyǔ ma",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿Hablas inglés?"
+        },
+        {
+          "id": "chinese-a11-introductions-03-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你会说英语吗？»?",
+          "target": "你会说英语吗？",
+          "options": [
+            "¡Hola!",
+            "¿Hablas inglés?",
+            "¿De dónde eres?"
+          ],
+          "answer": "¿Hablas inglés?",
+          "explanation": "¿Hablas inglés?",
+          "audio": "nǐ huì shuō Yīngyǔ ma",
+          "slow_audio": "nǐ huì shuō Yīngyǔ ma",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-03-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "你会说英语吗？",
+            "很高兴认识你。"
+          ],
+          "answer": "你会说英语吗？",
+          "explanation": "La forma escrita correcta es «你会说英语吗？»: ¿Hablas inglés?",
+          "audio": "nǐ huì shuō Yīngyǔ ma",
+          "slow_audio": "nǐ huì shuō Yīngyǔ ma",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-04",
+      "title": "Pedir ayuda para comprender",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Pedir ayuda para comprender",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-04-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "我听不懂。",
+          "options": [],
+          "answer": "",
+          "explanation": "No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-04-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我听不懂。",
+          "options": [],
+          "answer": "",
+          "explanation": "No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "No entiendo lo que oigo."
+        },
+        {
+          "id": "chinese-a11-introductions-04-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我听不懂。»?",
+          "target": "我听不懂。",
+          "options": [
+            "No entiendo lo que oigo.",
+            "Repítalo, por favor.",
+            "gracias"
+          ],
+          "answer": "No entiendo lo que oigo.",
+          "explanation": "No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-04-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你来自哪里？",
+            "你好",
+            "我听不懂。"
+          ],
+          "answer": "我听不懂。",
+          "explanation": "La forma escrita correcta es «我听不懂。»: No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-04-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "请再说一遍。",
+          "options": [],
+          "answer": "",
+          "explanation": "Repítalo, por favor.",
+          "audio": "qǐng zài shuō yí biàn",
+          "slow_audio": "qǐng zài shuō yí biàn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Repítalo, por favor."
+        },
+        {
+          "id": "chinese-a11-introductions-04-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «请再说一遍。»?",
+          "target": "请再说一遍。",
+          "options": [
+            "Hable más despacio.",
+            "Repítalo, por favor.",
+            "Soy de México."
+          ],
+          "answer": "Repítalo, por favor.",
+          "explanation": "Repítalo, por favor.",
+          "audio": "qǐng zài shuō yí biàn",
+          "slow_audio": "qǐng zài shuō yí biàn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-04-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "请再说一遍。",
+            "你会说英语吗？"
+          ],
+          "answer": "请再说一遍。",
+          "explanation": "La forma escrita correcta es «请再说一遍。»: Repítalo, por favor.",
+          "audio": "qǐng zài shuō yí biàn",
+          "slow_audio": "qǐng zài shuō yí biàn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-04-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "请说慢一点。",
+          "options": [],
+          "answer": "",
+          "explanation": "Hable más despacio.",
+          "audio": "qǐng shuō màn yìdiǎn",
+          "slow_audio": "qǐng shuō màn yìdiǎn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Hable más despacio."
+        },
+        {
+          "id": "chinese-a11-introductions-04-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «请说慢一点。»?",
+          "target": "请说慢一点。",
+          "options": [
+            "¡Hola!",
+            "Hable más despacio.",
+            "¿De dónde eres?"
+          ],
+          "answer": "Hable más despacio.",
+          "explanation": "Hable más despacio.",
+          "audio": "qǐng shuō màn yìdiǎn",
+          "slow_audio": "qǐng shuō màn yìdiǎn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-04-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "请说慢一点。",
+            "很高兴认识你。"
+          ],
+          "answer": "请说慢一点。",
+          "explanation": "La forma escrita correcta es «请说慢一点。»: Hable más despacio.",
+          "audio": "qǐng shuō màn yìdiǎn",
+          "slow_audio": "qǐng shuō màn yìdiǎn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-review-02",
+      "title": "Repaso breve · primer encuentro",
+      "description": "Recupera de memoria una selección de lo ya aprendido.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No aparece contenido nuevo: intenta recordar antes de pedir una pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我叫安娜。»?",
+          "target": "我叫安娜。",
+          "options": [
+            "Repítalo, por favor.",
+            "Me llamo Anna.",
+            "gracias"
+          ],
+          "answer": "Me llamo Anna.",
+          "explanation": "Me llamo Anna.",
+          "audio": "我叫安娜。",
+          "slow_audio": "我叫安娜。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你来自哪里？",
+            "你好",
+            "我叫安娜。"
+          ],
+          "answer": "我叫安娜。",
+          "explanation": "La forma escrita correcta es «我叫安娜。»: Me llamo Anna.",
+          "audio": "我叫安娜。",
+          "slow_audio": "我叫安娜。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «谢谢»?",
+          "target": "谢谢",
+          "options": [
+            "gracias",
+            "Hable más despacio.",
+            "Soy de México."
+          ],
+          "answer": "gracias",
+          "explanation": "gracias",
+          "audio": "xièxie",
+          "slow_audio": "xièxie",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "谢谢",
+            "你会说英语吗？"
+          ],
+          "answer": "谢谢",
+          "explanation": "La forma escrita correcta es «谢谢»: gracias",
+          "audio": "xièxie",
+          "slow_audio": "xièxie",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你来自哪里？»?",
+          "target": "你来自哪里？",
+          "options": [
+            "¡Hola!",
+            "¿De dónde eres?",
+            "gracias"
+          ],
+          "answer": "¿De dónde eres?",
+          "explanation": "¿De dónde eres?",
+          "audio": "你来自哪里？",
+          "slow_audio": "你来自哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "你来自哪里？",
+            "很高兴认识你。"
+          ],
+          "answer": "你来自哪里？",
+          "explanation": "La forma escrita correcta es «你来自哪里？»: ¿De dónde eres?",
+          "audio": "你来自哪里？",
+          "slow_audio": "你来自哪里？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «请再说一遍。»?",
+          "target": "请再说一遍。",
+          "options": [
+            "Me llamo Anna.",
+            "¿Hablas inglés?",
+            "Repítalo, por favor."
+          ],
+          "answer": "Repítalo, por favor.",
+          "explanation": "Repítalo, por favor.",
+          "audio": "qǐng zài shuō yí biàn",
+          "slow_audio": "qǐng zài shuō yí biàn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-review-02-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你叫什么名字？",
+            "你会说英语吗？",
+            "请再说一遍。"
+          ],
+          "answer": "请再说一遍。",
+          "explanation": "La forma escrita correcta es «请再说一遍。»: Repítalo, por favor.",
+          "audio": "qǐng zài shuō yí biàn",
+          "slow_audio": "qǐng zài shuō yí biàn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a11-introductions-test",
+      "title": "Prueba · Conocerse y presentarse",
+      "description": "Comprueba que reconoces y comprendes las expresiones sin ayuda.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 30,
+      "activities": [
+        {
+          "id": "chinese-a11-introductions-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba final A1.1",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a11-introductions-test-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你好»?",
+          "target": "你好",
+          "options": [
+            "Repítalo, por favor.",
+            "¡Hola!",
+            "gracias"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "你好 se lee con tercer tono y tercer tono; al hablar, el primero suele cambiar de contorno.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你好",
+            "你来自哪里？",
+            "谢谢"
+          ],
+          "answer": "你好",
+          "explanation": "La forma escrita correcta es «你好»: ¡Hola!",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你叫什么名字？»?",
+          "target": "你叫什么名字？",
+          "options": [
+            "Hable más despacio.",
+            "¿Cómo te llamas?",
+            "Soy de México."
+          ],
+          "answer": "¿Cómo te llamas?",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我叫安娜。",
+            "你叫什么名字？",
+            "你会说英语吗？"
+          ],
+          "answer": "你叫什么名字？",
+          "explanation": "La forma escrita correcta es «你叫什么名字？»: ¿Cómo te llamas?",
+          "audio": "你叫什么名字？",
+          "slow_audio": "你叫什么名字？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我来自墨西哥。»?",
+          "target": "我来自墨西哥。",
+          "options": [
+            "Soy de México.",
+            "¡Hola!",
+            "¿De dónde eres?"
+          ],
+          "answer": "Soy de México.",
+          "explanation": "Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "我听不懂。",
+            "我来自墨西哥。",
+            "很高兴认识你。"
+          ],
+          "answer": "我来自墨西哥。",
+          "explanation": "La forma escrita correcta es «我来自墨西哥。»: Soy de México.",
+          "audio": "我来自墨西哥。",
+          "slow_audio": "我来自墨西哥。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «你会说英语吗？»?",
+          "target": "你会说英语吗？",
+          "options": [
+            "Me llamo Anna.",
+            "Soy de México.",
+            "¿Hablas inglés?"
+          ],
+          "answer": "¿Hablas inglés?",
+          "explanation": "¿Hablas inglés?",
+          "audio": "nǐ huì shuō Yīngyǔ ma",
+          "slow_audio": "nǐ huì shuō Yīngyǔ ma",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "你会说英语吗？",
+            "你叫什么名字？",
+            "请再说一遍。"
+          ],
+          "answer": "你会说英语吗？",
+          "explanation": "La forma escrita correcta es «你会说英语吗？»: ¿Hablas inglés?",
+          "audio": "nǐ huì shuō Yīngyǔ ma",
+          "slow_audio": "nǐ huì shuō Yīngyǔ ma",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我听不懂。»?",
+          "target": "我听不懂。",
+          "options": [
+            "No entiendo lo que oigo.",
+            "Mucho gusto.",
+            "¿De dónde eres?"
+          ],
+          "answer": "No entiendo lo que oigo.",
+          "explanation": "No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "请说慢一点。",
+            "名字",
+            "我听不懂。"
+          ],
+          "answer": "我听不懂。",
+          "explanation": "La forma escrita correcta es «我听不懂。»: No entiendo lo que oigo.",
+          "audio": "wǒ tīng bù dǒng",
+          "slow_audio": "wǒ tīng bù dǒng",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-6-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «请说慢一点。»?",
+          "target": "请说慢一点。",
+          "options": [
+            "Hable más despacio.",
+            "Repítalo, por favor.",
+            "¿Cómo te llamas?"
+          ],
+          "answer": "Hable más despacio.",
+          "explanation": "Hable más despacio.",
+          "audio": "qǐng shuō màn yìdiǎn",
+          "slow_audio": "qǐng shuō màn yìdiǎn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a11-introductions-test-6-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "请说慢一点。",
+            "你好",
+            "谢谢"
+          ],
+          "answer": "请说慢一点。",
+          "explanation": "La forma escrita correcta es «请说慢一点。»: Hable más despacio.",
+          "audio": "qǐng shuō màn yìdiǎn",
+          "slow_audio": "qǐng shuō màn yìdiǎn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

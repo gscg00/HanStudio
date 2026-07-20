@@ -1,0 +1,88 @@
+begin;
+
+-- Generado por scripts/build_guided_continuations.mjs.
+-- Publica únicamente los IDs A1.1; complete_lesson sigue siendo la única vía que concede XP.
+insert into public.lesson_catalog(
+  language_id,course_id,lesson_id,lesson_type,xp_reward,active,metadata
+)
+values
+  ('english','english-from-zero','english-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('english','english-from-zero','english-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('french','french-from-zero','french-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('german','german-from-zero','german-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('italian','italian-from-zero','italian-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('russian','russian-from-zero','russian-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('chinese','chinese-from-zero','chinese-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('japanese','japanese-from-zero','japanese-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('portuguese','portuguese-from-zero','portuguese-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('arabic','arabic-from-zero','arabic-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-01','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-02','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-review-01','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-03','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-04','normal',20,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-review-02','review',5,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb),
+  ('korean','korean-from-zero','korean-a11-introductions-test','test',30,true,'{"source":"guided-course","unitId":"a1-1-introductions","level":"A1.1"}'::jsonb)
+on conflict(language_id,course_id,lesson_id) do update
+set lesson_type=excluded.lesson_type,
+    xp_reward=excluded.xp_reward,
+    active=true,
+    metadata=excluded.metadata;
+
+alter table public.lesson_catalog enable row level security;
+revoke all on public.lesson_catalog from anon,authenticated;
+
+commit;

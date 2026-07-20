@@ -1,0 +1,2548 @@
+{
+  "id": "a1-2-transport",
+  "title": "Transporte y trayectos",
+  "description": "Comprar un billete, seguir una ruta y entender cambios o retrasos.",
+  "requirements": [
+    "a1-2-time"
+  ],
+  "reward": {
+    "xp": 160,
+    "badge": "A1.2 · Transporte y trayectos"
+  },
+  "lessons": [
+    {
+      "id": "chinese-a12-transport-01",
+      "title": "Transporte y trayectos · 1",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-transport-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-01-01-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "票",
+          "options": [],
+          "answer": "",
+          "explanation": "billete",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «票»?",
+          "target": "票",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«票» significa «billete».",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "票",
+            "目的地"
+          ],
+          "answer": "票",
+          "explanation": "La forma escuchada es «票»: billete",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-02-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "火车",
+          "options": [],
+          "answer": "",
+          "explanation": "tren",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-01-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车»?",
+          "target": "火车",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«火车» significa «tren».",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车",
+            "一张票，谢谢。",
+            "火车晚点了。"
+          ],
+          "answer": "火车",
+          "explanation": "La forma escuchada es «火车»: tren",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-09-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "一张票，谢谢。",
+          "options": [],
+          "answer": "",
+          "explanation": "Un billete, por favor.",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «一张票，谢谢。»?",
+          "target": "一张票，谢谢。",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«一张票，谢谢。» significa «Un billete, por favor.».",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "站台",
+            "一张票，谢谢。"
+          ],
+          "answer": "一张票，谢谢。",
+          "explanation": "La forma escuchada es «一张票，谢谢。»: Un billete, por favor.",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-10-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "火车什么时候出发？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuándo sale el tren?",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-01-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车什么时候出发？»?",
+          "target": "火车什么时候出发？",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«火车什么时候出发？» significa «¿Cuándo sale el tren?».",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-01-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公交站",
+            "火车什么时候出发？",
+            "票"
+          ],
+          "answer": "火车什么时候出发？",
+          "explanation": "La forma escuchada es «火车什么时候出发？»: ¿Cuándo sale el tren?",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-02",
+      "title": "Transporte y trayectos · 2",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-transport-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-02-03-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "公共汽车",
+          "options": [],
+          "answer": "",
+          "explanation": "autobús",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-02-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公共汽车»?",
+          "target": "公共汽车",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«公共汽车» significa «autobús».",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车什么时候出发？",
+            "我在这里下车。",
+            "公共汽车"
+          ],
+          "answer": "公共汽车",
+          "explanation": "La forma escuchada es «公共汽车»: autobús",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-04-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "地铁",
+          "options": [],
+          "answer": "",
+          "explanation": "metro",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «地铁»?",
+          "target": "地铁",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«地铁» significa «metro».",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "地铁",
+            "这辆公共汽车去市中心吗？"
+          ],
+          "answer": "地铁",
+          "explanation": "La forma escuchada es «地铁»: metro",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-11-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "这辆公共汽车去市中心吗？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Este autobús va al centro?",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-02-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这辆公共汽车去市中心吗？»?",
+          "target": "这辆公共汽车去市中心吗？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«这辆公共汽车去市中心吗？» significa «¿Este autobús va al centro?».",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "这辆公共汽车去市中心吗？",
+            "火车",
+            "机场"
+          ],
+          "answer": "这辆公共汽车去市中心吗？",
+          "explanation": "La forma escuchada es «这辆公共汽车去市中心吗？»: ¿Este autobús va al centro?",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-12-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "下一站是什么？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuál es la próxima parada?",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «下一站是什么？»?",
+          "target": "下一站是什么？",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«下一站是什么？» significa «¿Cuál es la próxima parada?».",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公共汽车",
+            "目的地",
+            "下一站是什么？"
+          ],
+          "answer": "下一站是什么？",
+          "explanation": "La forma escuchada es «下一站是什么？»: ¿Cuál es la próxima parada?",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-review-01",
+      "title": "Repaso breve · 1",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a12-transport-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-review-01-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «票»?",
+          "target": "票",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«票» significa «billete».",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "票",
+            "目的地"
+          ],
+          "answer": "票",
+          "explanation": "La forma escuchada es «票»: billete",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公共汽车»?",
+          "target": "公共汽车",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«公共汽车» significa «autobús».",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车什么时候出发？",
+            "我在这里下车。",
+            "公共汽车"
+          ],
+          "answer": "公共汽车",
+          "explanation": "La forma escuchada es «公共汽车»: autobús",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «一张票，谢谢。»?",
+          "target": "一张票，谢谢。",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«一张票，谢谢。» significa «Un billete, por favor.».",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "站台",
+            "一张票，谢谢。"
+          ],
+          "answer": "一张票，谢谢。",
+          "explanation": "La forma escuchada es «一张票，谢谢。»: Un billete, por favor.",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这辆公共汽车去市中心吗？»?",
+          "target": "这辆公共汽车去市中心吗？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«这辆公共汽车去市中心吗？» significa «¿Este autobús va al centro?».",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-01-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "这辆公共汽车去市中心吗？",
+            "火车",
+            "机场"
+          ],
+          "answer": "这辆公共汽车去市中心吗？",
+          "explanation": "La forma escuchada es «这辆公共汽车去市中心吗？»: ¿Este autobús va al centro?",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-03",
+      "title": "Transporte y trayectos · 3",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-transport-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-03-05-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "站台",
+          "options": [],
+          "answer": "",
+          "explanation": "andén",
+          "audio": "站台",
+          "slow_audio": "站台",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-03-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «站台»?",
+          "target": "站台",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "andén"
+          ],
+          "answer": "andén",
+          "explanation": "«站台» significa «andén».",
+          "audio": "站台",
+          "slow_audio": "站台",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "站台",
+            "下一站是什么？",
+            "票"
+          ],
+          "answer": "站台",
+          "explanation": "La forma escuchada es «站台»: andén",
+          "audio": "站台",
+          "slow_audio": "站台",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-06-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "公交站",
+          "options": [],
+          "answer": "",
+          "explanation": "parada",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-03-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公交站»?",
+          "target": "公交站",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«公交站» significa «parada».",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "火车",
+            "公交站"
+          ],
+          "answer": "公交站",
+          "explanation": "La forma escuchada es «公交站»: parada",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-13-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "需要换乘吗？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Tengo que hacer transbordo?",
+          "audio": "需要换乘吗？",
+          "slow_audio": "需要换乘吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-03-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «需要换乘吗？»?",
+          "target": "需要换乘吗？",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "aeropuerto"
+          ],
+          "answer": "¿Tengo que hacer transbordo?",
+          "explanation": "«需要换乘吗？» significa «¿Tengo que hacer transbordo?».",
+          "audio": "需要换乘吗？",
+          "slow_audio": "需要换乘吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "一张票，谢谢。",
+            "需要换乘吗？",
+            "地铁"
+          ],
+          "answer": "需要换乘吗？",
+          "explanation": "La forma escuchada es «需要换乘吗？»: ¿Tengo que hacer transbordo?",
+          "audio": "需要换乘吗？",
+          "slow_audio": "需要换乘吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-14-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "火车晚点了。",
+          "options": [],
+          "answer": "",
+          "explanation": "El tren lleva retraso.",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-03-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车晚点了。»?",
+          "target": "火车晚点了。",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«火车晚点了。» significa «El tren lleva retraso.».",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-03-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车晚点了。",
+            "站台",
+            "火车什么时候出发？"
+          ],
+          "answer": "火车晚点了。",
+          "explanation": "La forma escuchada es «火车晚点了。»: El tren lleva retraso.",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-04",
+      "title": "Transporte y trayectos · 4",
+      "description": "Aprende cuatro elementos nuevos y practícalos de inmediato.",
+      "activities": [
+        {
+          "id": "chinese-a12-transport-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Transporte y trayectos",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha primero. Después relaciona la forma escrita con su significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-04-07-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "机场",
+          "options": [],
+          "answer": "",
+          "explanation": "aeropuerto",
+          "audio": "机场",
+          "slow_audio": "机场",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-04-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «机场»?",
+          "target": "机场",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "aeropuerto",
+          "explanation": "«机场» significa «aeropuerto».",
+          "audio": "机场",
+          "slow_audio": "机场",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公共汽车",
+            "机场",
+            "火车晚点了。"
+          ],
+          "answer": "机场",
+          "explanation": "La forma escuchada es «机场»: aeropuerto",
+          "audio": "机场",
+          "slow_audio": "机场",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-08-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "目的地",
+          "options": [],
+          "answer": "",
+          "explanation": "destino",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-04-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «目的地»?",
+          "target": "目的地",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«目的地» significa «destino».",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "目的地",
+            "我在这里下车。",
+            "地铁"
+          ],
+          "answer": "目的地",
+          "explanation": "La forma escuchada es «目的地»: destino",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-15-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "我在这里下车。",
+          "options": [],
+          "answer": "",
+          "explanation": "Me bajo aquí.",
+          "audio": "我在这里下车。",
+          "slow_audio": "我在这里下车。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-04-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我在这里下车。»?",
+          "target": "我在这里下车。",
+          "options": [
+            "Un billete, por favor.",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "Me bajo aquí.",
+          "explanation": "«我在这里下车。» significa «Me bajo aquí.».",
+          "audio": "我在这里下车。",
+          "slow_audio": "我在这里下车。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公交站",
+            "这辆公共汽车去市中心吗？",
+            "我在这里下车。"
+          ],
+          "answer": "我在这里下车。",
+          "explanation": "La forma escuchada es «我在这里下车。»: Me bajo aquí.",
+          "audio": "我在这里下车。",
+          "slow_audio": "我在这里下车。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-16-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "要多长时间？",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto dura el viaje?",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "teaching"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-04-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «要多长时间？»?",
+          "target": "要多长时间？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«要多长时间？» significa «¿Cuánto dura el viaje?».",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-04-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "下一站是什么？",
+            "要多长时间？",
+            "机场"
+          ],
+          "answer": "要多长时间？",
+          "explanation": "La forma escuchada es «要多长时间？»: ¿Cuánto dura el viaje?",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-review-02",
+      "title": "Repaso breve · 2",
+      "description": "Recupera contenidos anteriores sin añadir vocabulario nuevo.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-a12-transport-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Intenta recordar antes de utilizar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "review"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-review-02-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车»?",
+          "target": "火车",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«火车» significa «tren».",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车",
+            "一张票，谢谢。",
+            "火车晚点了。"
+          ],
+          "answer": "火车",
+          "explanation": "La forma escuchada es «火车»: tren",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «地铁»?",
+          "target": "地铁",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«地铁» significa «metro».",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "地铁",
+            "这辆公共汽车去市中心吗？"
+          ],
+          "answer": "地铁",
+          "explanation": "La forma escuchada es «地铁»: metro",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公交站»?",
+          "target": "公交站",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«公交站» significa «parada».",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "火车",
+            "公交站"
+          ],
+          "answer": "公交站",
+          "explanation": "La forma escuchada es «公交站»: parada",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «目的地»?",
+          "target": "目的地",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«目的地» significa «destino».",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "目的地",
+            "我在这里下车。",
+            "地铁"
+          ],
+          "answer": "目的地",
+          "explanation": "La forma escuchada es «目的地»: destino",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车什么时候出发？»?",
+          "target": "火车什么时候出发？",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«火车什么时候出发？» significa «¿Cuándo sale el tren?».",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公交站",
+            "火车什么时候出发？",
+            "票"
+          ],
+          "answer": "火车什么时候出发？",
+          "explanation": "La forma escuchada es «火车什么时候出发？»: ¿Cuándo sale el tren?",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «下一站是什么？»?",
+          "target": "下一站是什么？",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«下一站是什么？» significa «¿Cuál es la próxima parada?».",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公共汽车",
+            "目的地",
+            "下一站是什么？"
+          ],
+          "answer": "下一站是什么？",
+          "explanation": "La forma escuchada es «下一站是什么？»: ¿Cuál es la próxima parada?",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车晚点了。»?",
+          "target": "火车晚点了。",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«火车晚点了。» significa «El tren lleva retraso.».",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车晚点了。",
+            "站台",
+            "火车什么时候出发？"
+          ],
+          "answer": "火车晚点了。",
+          "explanation": "La forma escuchada es «火车晚点了。»: El tren lleva retraso.",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «要多长时间？»?",
+          "target": "要多长时间？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«要多长时间？» significa «¿Cuánto dura el viaje?».",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-review-02-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "下一站是什么？",
+            "要多长时间？",
+            "机场"
+          ],
+          "answer": "要多长时间？",
+          "explanation": "La forma escuchada es «要多长时间？»: ¿Cuánto dura el viaje?",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-a12-transport-test",
+      "title": "Prueba · Transporte y trayectos",
+      "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 40,
+      "activities": [
+        {
+          "id": "chinese-a12-transport-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de unidad",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "test"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a12-transport-test-01-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «票»?",
+          "target": "票",
+          "options": [
+            "billete",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "billete",
+          "explanation": "«票» significa «billete».",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-01-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "票",
+            "目的地"
+          ],
+          "answer": "票",
+          "explanation": "La forma escuchada es «票»: billete",
+          "audio": "票",
+          "slow_audio": "票",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-02-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车»?",
+          "target": "火车",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "tren"
+          ],
+          "answer": "tren",
+          "explanation": "«火车» significa «tren».",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-02-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车",
+            "一张票，谢谢。",
+            "火车晚点了。"
+          ],
+          "answer": "火车",
+          "explanation": "La forma escuchada es «火车»: tren",
+          "audio": "火车",
+          "slow_audio": "火车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-03-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公共汽车»?",
+          "target": "公共汽车",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "autobús",
+            "destino"
+          ],
+          "answer": "autobús",
+          "explanation": "«公共汽车» significa «autobús».",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-03-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车什么时候出发？",
+            "我在这里下车。",
+            "公共汽车"
+          ],
+          "answer": "公共汽车",
+          "explanation": "La forma escuchada es «公共汽车»: autobús",
+          "audio": "公共汽车",
+          "slow_audio": "公共汽车",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-04-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «地铁»?",
+          "target": "地铁",
+          "options": [
+            "metro",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "metro",
+          "explanation": "«地铁» significa «metro».",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-04-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "地铁",
+            "这辆公共汽车去市中心吗？"
+          ],
+          "answer": "地铁",
+          "explanation": "La forma escuchada es «地铁»: metro",
+          "audio": "地铁",
+          "slow_audio": "地铁",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-05-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «站台»?",
+          "target": "站台",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "andén"
+          ],
+          "answer": "andén",
+          "explanation": "«站台» significa «andén».",
+          "audio": "站台",
+          "slow_audio": "站台",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-05-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "站台",
+            "下一站是什么？",
+            "票"
+          ],
+          "answer": "站台",
+          "explanation": "La forma escuchada es «站台»: andén",
+          "audio": "站台",
+          "slow_audio": "站台",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-06-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «公交站»?",
+          "target": "公交站",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "parada",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "parada",
+          "explanation": "«公交站» significa «parada».",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-06-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "需要换乘吗？",
+            "火车",
+            "公交站"
+          ],
+          "answer": "公交站",
+          "explanation": "La forma escuchada es «公交站»: parada",
+          "audio": "公交站",
+          "slow_audio": "公交站",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-07-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «机场»?",
+          "target": "机场",
+          "options": [
+            "aeropuerto",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "aeropuerto",
+          "explanation": "«机场» significa «aeropuerto».",
+          "audio": "机场",
+          "slow_audio": "机场",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-07-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公共汽车",
+            "机场",
+            "火车晚点了。"
+          ],
+          "answer": "机场",
+          "explanation": "La forma escuchada es «机场»: aeropuerto",
+          "audio": "机场",
+          "slow_audio": "机场",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-08-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «目的地»?",
+          "target": "目的地",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "destino"
+          ],
+          "answer": "destino",
+          "explanation": "«目的地» significa «destino».",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-08-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "目的地",
+            "我在这里下车。",
+            "地铁"
+          ],
+          "answer": "目的地",
+          "explanation": "La forma escuchada es «目的地»: destino",
+          "audio": "目的地",
+          "slow_audio": "目的地",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-09-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «一张票，谢谢。»?",
+          "target": "一张票，谢谢。",
+          "options": [
+            "autobús",
+            "Un billete, por favor.",
+            "El tren lleva retraso."
+          ],
+          "answer": "Un billete, por favor.",
+          "explanation": "«一张票，谢谢。» significa «Un billete, por favor.».",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-09-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "要多长时间？",
+            "站台",
+            "一张票，谢谢。"
+          ],
+          "answer": "一张票，谢谢。",
+          "explanation": "La forma escuchada es «一张票，谢谢。»: Un billete, por favor.",
+          "audio": "一张票，谢谢。",
+          "slow_audio": "一张票，谢谢。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-10-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车什么时候出发？»?",
+          "target": "火车什么时候出发？",
+          "options": [
+            "¿Cuándo sale el tren?",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "¿Cuándo sale el tren?",
+          "explanation": "«火车什么时候出发？» significa «¿Cuándo sale el tren?».",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-10-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公交站",
+            "火车什么时候出发？",
+            "票"
+          ],
+          "answer": "火车什么时候出发？",
+          "explanation": "La forma escuchada es «火车什么时候出发？»: ¿Cuándo sale el tren?",
+          "audio": "火车什么时候出发？",
+          "slow_audio": "火车什么时候出发？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-11-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «这辆公共汽车去市中心吗？»?",
+          "target": "这辆公共汽车去市中心吗？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Este autobús va al centro?"
+          ],
+          "answer": "¿Este autobús va al centro?",
+          "explanation": "«这辆公共汽车去市中心吗？» significa «¿Este autobús va al centro?».",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-11-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "这辆公共汽车去市中心吗？",
+            "火车",
+            "机场"
+          ],
+          "answer": "这辆公共汽车去市中心吗？",
+          "explanation": "La forma escuchada es «这辆公共汽车去市中心吗？»: ¿Este autobús va al centro?",
+          "audio": "这辆公共汽车去市中心吗？",
+          "slow_audio": "这辆公共汽车去市中心吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-12-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «下一站是什么？»?",
+          "target": "下一站是什么？",
+          "options": [
+            "parada",
+            "¿Cuál es la próxima parada?",
+            "billete"
+          ],
+          "answer": "¿Cuál es la próxima parada?",
+          "explanation": "«下一站是什么？» significa «¿Cuál es la próxima parada?».",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-12-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公共汽车",
+            "目的地",
+            "下一站是什么？"
+          ],
+          "answer": "下一站是什么？",
+          "explanation": "La forma escuchada es «下一站是什么？»: ¿Cuál es la próxima parada?",
+          "audio": "下一站是什么？",
+          "slow_audio": "下一站是什么？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-13-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «需要换乘吗？»?",
+          "target": "需要换乘吗？",
+          "options": [
+            "¿Tengo que hacer transbordo?",
+            "tren",
+            "aeropuerto"
+          ],
+          "answer": "¿Tengo que hacer transbordo?",
+          "explanation": "«需要换乘吗？» significa «¿Tengo que hacer transbordo?».",
+          "audio": "需要换乘吗？",
+          "slow_audio": "需要换乘吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-13-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "一张票，谢谢。",
+            "需要换乘吗？",
+            "地铁"
+          ],
+          "answer": "需要换乘吗？",
+          "explanation": "La forma escuchada es «需要换乘吗？»: ¿Tengo que hacer transbordo?",
+          "audio": "需要换乘吗？",
+          "slow_audio": "需要换乘吗？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-14-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «火车晚点了。»?",
+          "target": "火车晚点了。",
+          "options": [
+            "autobús",
+            "destino",
+            "El tren lleva retraso."
+          ],
+          "answer": "El tren lleva retraso.",
+          "explanation": "«火车晚点了。» significa «El tren lleva retraso.».",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-14-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "火车晚点了。",
+            "站台",
+            "火车什么时候出发？"
+          ],
+          "answer": "火车晚点了。",
+          "explanation": "La forma escuchada es «火车晚点了。»: El tren lleva retraso.",
+          "audio": "火车晚点了。",
+          "slow_audio": "火车晚点了。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-15-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «我在这里下车。»?",
+          "target": "我在这里下车。",
+          "options": [
+            "Un billete, por favor.",
+            "Me bajo aquí.",
+            "metro"
+          ],
+          "answer": "Me bajo aquí.",
+          "explanation": "«我在这里下车。» significa «Me bajo aquí.».",
+          "audio": "我在这里下车。",
+          "slow_audio": "我在这里下车。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-15-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "公交站",
+            "这辆公共汽车去市中心吗？",
+            "我在这里下车。"
+          ],
+          "answer": "我在这里下车。",
+          "explanation": "La forma escuchada es «我在这里下车。»: Me bajo aquí.",
+          "audio": "我在这里下车。",
+          "slow_audio": "我在这里下车。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-16-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «要多长时间？»?",
+          "target": "要多长时间？",
+          "options": [
+            "¿Cuánto dura el viaje?",
+            "andén",
+            "¿Cuándo sale el tren?"
+          ],
+          "answer": "¿Cuánto dura el viaje?",
+          "explanation": "«要多长时间？» significa «¿Cuánto dura el viaje?».",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "meaning"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-a12-transport-test-16-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma escrita correcta",
+          "target": "",
+          "options": [
+            "下一站是什么？",
+            "要多长时间？",
+            "机场"
+          ],
+          "answer": "要多长时间？",
+          "explanation": "La forma escuchada es «要多长时间？»: ¿Cuánto dura el viaje?",
+          "audio": "要多长时间？",
+          "slow_audio": "要多长时间？",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "A1.2",
+            "transport",
+            "listening"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

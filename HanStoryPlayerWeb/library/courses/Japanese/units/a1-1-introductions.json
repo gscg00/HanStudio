@@ -1,0 +1,1615 @@
+{
+  "id": "a1-1-introductions",
+  "title": "Conocerse y presentarse",
+  "description": "Saluda, di quién eres, pregunta el nombre y origen, y pide ayuda para comprender.",
+  "requirements": [],
+  "reward": {
+    "xp": 120,
+    "badge": "Primer encuentro A1.1"
+  },
+  "lessons": [
+    {
+      "id": "japanese-a11-introductions-01",
+      "title": "Saludar y presentarte",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Saludar y presentarte",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-01-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "こんにちは",
+          "options": [],
+          "answer": "",
+          "explanation": "¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-01-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "こんにちは",
+          "options": [],
+          "answer": "",
+          "explanation": "¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¡Hola!"
+        },
+        {
+          "id": "japanese-a11-introductions-01-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «こんにちは»?",
+          "target": "こんにちは",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "¡Hola!"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-01-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "にほんごが すこし わかります",
+            "よろしくおねがいします。",
+            "こんにちは"
+          ],
+          "answer": "こんにちは",
+          "explanation": "La forma escrita correcta es «こんにちは»: ¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-01-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "わたしは アナです。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです。",
+          "slow_audio": "わたしは アナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Soy Anna."
+        },
+        {
+          "id": "japanese-a11-introductions-01-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わたしは アナです。»?",
+          "target": "わたしは アナです。",
+          "options": [
+            "Despacio, por favor.",
+            "Soy Anna.",
+            "Soy de México."
+          ],
+          "answer": "Soy Anna.",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです。",
+          "slow_audio": "わたしは アナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-01-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わたしは アナです。",
+            "これは いくらですか",
+            "メキシコから きました。"
+          ],
+          "answer": "わたしは アナです。",
+          "explanation": "La forma escrita correcta es «わたしは アナです。»: Soy Anna.",
+          "audio": "わたしは アナです。",
+          "slow_audio": "わたしは アナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-01-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "はじめまして",
+          "options": [],
+          "answer": "",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして",
+          "slow_audio": "はじめまして",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Mucho gusto."
+        },
+        {
+          "id": "japanese-a11-introductions-01-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «はじめまして»?",
+          "target": "はじめまして",
+          "options": [
+            "¡Hola!",
+            "Mucho gusto.",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "Mucho gusto.",
+          "explanation": "Mucho gusto.",
+          "audio": "はじめまして",
+          "slow_audio": "はじめまして",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-01-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "はじめまして",
+            "わかりません",
+            "にほんごが すこし わかります"
+          ],
+          "answer": "はじめまして",
+          "explanation": "La forma escrita correcta es «はじめまして»: Mucho gusto.",
+          "audio": "はじめまして",
+          "slow_audio": "はじめまして",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-02",
+      "title": "Preguntar el nombre",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Preguntar el nombre",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-02-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "おなまえは なんですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-02-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "おなまえは なんですか。",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿Cómo se llama?"
+        },
+        {
+          "id": "japanese-a11-introductions-02-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «おなまえは なんですか。»?",
+          "target": "おなまえは なんですか。",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "¿Cómo se llama?"
+          ],
+          "answer": "¿Cómo se llama?",
+          "explanation": "¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-02-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "にほんごが すこし わかります",
+            "おなまえは なんですか。",
+            "こんにちは"
+          ],
+          "answer": "おなまえは なんですか。",
+          "explanation": "La forma escrita correcta es «おなまえは なんですか。»: ¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-02-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "わたしは アナです",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです",
+          "slow_audio": "わたしは アナです",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Soy Anna."
+        },
+        {
+          "id": "japanese-a11-introductions-02-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わたしは アナです»?",
+          "target": "わたしは アナです",
+          "options": [
+            "Despacio, por favor.",
+            "Soy Anna.",
+            "Soy de México."
+          ],
+          "answer": "Soy Anna.",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです",
+          "slow_audio": "わたしは アナです",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-02-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わたしは アナです",
+            "これは いくらですか",
+            "わたしは アナです。"
+          ],
+          "answer": "わたしは アナです",
+          "explanation": "La forma escrita correcta es «わたしは アナです»: Soy Anna.",
+          "audio": "わたしは アナです",
+          "slow_audio": "わたしは アナです",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-02-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "よろしくおねがいします。",
+          "options": [],
+          "answer": "",
+          "explanation": "Encantado; espero llevarme bien contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Encantado; espero llevarme bien contigo."
+        },
+        {
+          "id": "japanese-a11-introductions-02-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «よろしくおねがいします。»?",
+          "target": "よろしくおねがいします。",
+          "options": [
+            "¡Hola!",
+            "Encantado; espero llevarme bien contigo.",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "Encantado; espero llevarme bien contigo.",
+          "explanation": "Encantado; espero llevarme bien contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-02-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "よろしくおねがいします。",
+            "わかりません",
+            "はじめまして"
+          ],
+          "answer": "よろしくおねがいします。",
+          "explanation": "La forma escrita correcta es «よろしくおねがいします。»: Encantado; espero llevarme bien contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-review-01",
+      "title": "Repaso breve · nombre e identidad",
+      "description": "Recupera de memoria una selección de lo ya aprendido.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No aparece contenido nuevo: intenta recordar antes de pedir una pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «こんにちは»?",
+          "target": "こんにちは",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "¡Hola!"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "にほんごが すこし わかります",
+            "よろしくおねがいします。",
+            "こんにちは"
+          ],
+          "answer": "こんにちは",
+          "explanation": "La forma escrita correcta es «こんにちは»: ¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «おなまえは なんですか。»?",
+          "target": "おなまえは なんですか。",
+          "options": [
+            "¿Cómo se llama?",
+            "Despacio, por favor.",
+            "Soy de México."
+          ],
+          "answer": "¿Cómo se llama?",
+          "explanation": "¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "これは いくらですか",
+            "わたしは アナです。",
+            "おなまえは なんですか。"
+          ],
+          "answer": "おなまえは なんですか。",
+          "explanation": "La forma escrita correcta es «おなまえは なんですか。»: ¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わたしは アナです»?",
+          "target": "わたしは アナです",
+          "options": [
+            "¡Hola!",
+            "Entiendo un poco de japonés.",
+            "Soy Anna."
+          ],
+          "answer": "Soy Anna.",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです",
+          "slow_audio": "わたしは アナです",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-01-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わたしは アナです",
+            "わかりません",
+            "はじめまして"
+          ],
+          "answer": "わたしは アナです",
+          "explanation": "La forma escrita correcta es «わたしは アナです»: Soy Anna.",
+          "audio": "わたしは アナです",
+          "slow_audio": "わたしは アナです",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-03",
+      "title": "Decir de dónde eres",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Decir de dónde eres",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-03-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "メキシコから きました。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-03-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "メキシコから きました。",
+          "options": [],
+          "answer": "",
+          "explanation": "Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Soy de México."
+        },
+        {
+          "id": "japanese-a11-introductions-03-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «メキシコから きました。»?",
+          "target": "メキシコから きました。",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "Soy de México."
+          ],
+          "answer": "Soy de México.",
+          "explanation": "Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-03-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "にほんごが すこし わかります",
+            "メキシコから きました。",
+            "こんにちは"
+          ],
+          "answer": "メキシコから きました。",
+          "explanation": "La forma escrita correcta es «メキシコから きました。»: Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-03-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "にほんごが すこし わかります",
+          "options": [],
+          "answer": "",
+          "explanation": "Entiendo un poco de japonés.",
+          "audio": "にほんごが すこし わかります",
+          "slow_audio": "にほんごが すこし わかります",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Entiendo un poco de japonés."
+        },
+        {
+          "id": "japanese-a11-introductions-03-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «にほんごが すこし わかります»?",
+          "target": "にほんごが すこし わかります",
+          "options": [
+            "Entiendo un poco de japonés.",
+            "Despacio, por favor.",
+            "Soy de México."
+          ],
+          "answer": "Entiendo un poco de japonés.",
+          "explanation": "Entiendo un poco de japonés.",
+          "audio": "にほんごが すこし わかります",
+          "slow_audio": "にほんごが すこし わかります",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-03-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "これは いくらですか",
+            "わたしは アナです。",
+            "にほんごが すこし わかります"
+          ],
+          "answer": "にほんごが すこし わかります",
+          "explanation": "La forma escrita correcta es «にほんごが すこし わかります»: Entiendo un poco de japonés.",
+          "audio": "にほんごが すこし わかります",
+          "slow_audio": "にほんごが すこし わかります",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-03-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "これは いくらですか",
+          "options": [],
+          "answer": "",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "これは いくらですか",
+          "slow_audio": "これは いくらですか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿Cuánto cuesta esto?"
+        },
+        {
+          "id": "japanese-a11-introductions-03-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これは いくらですか»?",
+          "target": "これは いくらですか",
+          "options": [
+            "¡Hola!",
+            "¿Cuánto cuesta esto?",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "これは いくらですか",
+          "slow_audio": "これは いくらですか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-03-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "これは いくらですか",
+            "わかりません",
+            "はじめまして"
+          ],
+          "answer": "これは いくらですか",
+          "explanation": "La forma escrita correcta es «これは いくらですか»: ¿Cuánto cuesta esto?",
+          "audio": "これは いくらですか",
+          "slow_audio": "これは いくらですか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-04",
+      "title": "Pedir ayuda para comprender",
+      "description": "Aprende tres expresiones y úsalas inmediatamente.",
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Pedir ayuda para comprender",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero escucharás y comprenderás cada expresión; después la reconocerás.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-04-dialogue",
+          "type": "dialogue_model",
+          "prompt": "Escucha la escena modelo",
+          "target": "わかりません",
+          "options": [],
+          "answer": "",
+          "explanation": "No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-04-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "わかりません",
+          "options": [],
+          "answer": "",
+          "explanation": "No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "No entiendo."
+        },
+        {
+          "id": "japanese-a11-introductions-04-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わかりません»?",
+          "target": "わかりません",
+          "options": [
+            "No entiendo.",
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor."
+          ],
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-04-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わかりません",
+            "にほんごが すこし わかります",
+            "こんにちは"
+          ],
+          "answer": "わかりません",
+          "explanation": "La forma escrita correcta es «わかりません»: No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-04-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "もういちど おねがいします",
+          "options": [],
+          "answer": "",
+          "explanation": "Otra vez, por favor.",
+          "audio": "もういちど おねがいします",
+          "slow_audio": "もういちど おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Otra vez, por favor."
+        },
+        {
+          "id": "japanese-a11-introductions-04-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «もういちど おねがいします»?",
+          "target": "もういちど おねがいします",
+          "options": [
+            "Otra vez, por favor.",
+            "Despacio, por favor.",
+            "Soy de México."
+          ],
+          "answer": "Otra vez, por favor.",
+          "explanation": "Otra vez, por favor.",
+          "audio": "もういちど おねがいします",
+          "slow_audio": "もういちど おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-04-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "もういちど おねがいします",
+            "これは いくらですか",
+            "わたしは アナです。"
+          ],
+          "answer": "もういちど おねがいします",
+          "explanation": "La forma escrita correcta es «もういちど おねがいします»: Otra vez, por favor.",
+          "audio": "もういちど おねがいします",
+          "slow_audio": "もういちど おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-04-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "ゆっくり おねがいします",
+          "options": [],
+          "answer": "",
+          "explanation": "Despacio, por favor.",
+          "audio": "ゆっくり おねがいします",
+          "slow_audio": "ゆっくり おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Despacio, por favor."
+        },
+        {
+          "id": "japanese-a11-introductions-04-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «ゆっくり おねがいします»?",
+          "target": "ゆっくり おねがいします",
+          "options": [
+            "¡Hola!",
+            "Despacio, por favor.",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "Despacio, por favor.",
+          "explanation": "Despacio, por favor.",
+          "audio": "ゆっくり おねがいします",
+          "slow_audio": "ゆっくり おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-04-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "ゆっくり おねがいします",
+            "わかりません",
+            "はじめまして"
+          ],
+          "answer": "ゆっくり おねがいします",
+          "explanation": "La forma escrita correcta es «ゆっくり おねがいします»: Despacio, por favor.",
+          "audio": "ゆっくり おねがいします",
+          "slow_audio": "ゆっくり おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-review-02",
+      "title": "Repaso breve · primer encuentro",
+      "description": "Recupera de memoria una selección de lo ya aprendido.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No aparece contenido nuevo: intenta recordar antes de pedir una pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わたしは アナです。»?",
+          "target": "わたしは アナです。",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "Soy Anna."
+          ],
+          "answer": "Soy Anna.",
+          "explanation": "Soy Anna.",
+          "audio": "わたしは アナです。",
+          "slow_audio": "わたしは アナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わたしは アナです。",
+            "にほんごが すこし わかります",
+            "こんにちは"
+          ],
+          "answer": "わたしは アナです。",
+          "explanation": "La forma escrita correcta es «わたしは アナです。»: Soy Anna.",
+          "audio": "わたしは アナです。",
+          "slow_audio": "わたしは アナです。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «よろしくおねがいします。»?",
+          "target": "よろしくおねがいします。",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Despacio, por favor.",
+            "Soy de México."
+          ],
+          "answer": "Encantado; espero llevarme bien contigo.",
+          "explanation": "Encantado; espero llevarme bien contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "これは いくらですか",
+            "わたしは アナです。",
+            "よろしくおねがいします。"
+          ],
+          "answer": "よろしくおねがいします。",
+          "explanation": "La forma escrita correcta es «よろしくおねがいします。»: Encantado; espero llevarme bien contigo.",
+          "audio": "よろしくおねがいします。",
+          "slow_audio": "よろしくおねがいします。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «にほんごが すこし わかります»?",
+          "target": "にほんごが すこし わかります",
+          "options": [
+            "¡Hola!",
+            "Entiendo un poco de japonés.",
+            "Encantado; espero llevarme bien contigo."
+          ],
+          "answer": "Entiendo un poco de japonés.",
+          "explanation": "Entiendo un poco de japonés.",
+          "audio": "にほんごが すこし わかります",
+          "slow_audio": "にほんごが すこし わかります",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わかりません",
+            "はじめまして",
+            "にほんごが すこし わかります"
+          ],
+          "answer": "にほんごが すこし わかります",
+          "explanation": "La forma escrita correcta es «にほんごが すこし わかります»: Entiendo un poco de japonés.",
+          "audio": "にほんごが すこし わかります",
+          "slow_audio": "にほんごが すこし わかります",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «もういちど おねがいします»?",
+          "target": "もういちど おねがいします",
+          "options": [
+            "Soy Anna.",
+            "Otra vez, por favor.",
+            "¿Cuánto cuesta esto?"
+          ],
+          "answer": "Otra vez, por favor.",
+          "explanation": "Otra vez, por favor.",
+          "audio": "もういちど おねがいします",
+          "slow_audio": "もういちど おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-review-02-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "おなまえは なんですか。",
+            "もういちど おねがいします",
+            "これは いくらですか"
+          ],
+          "answer": "もういちど おねがいします",
+          "explanation": "La forma escrita correcta es «もういちど おねがいします»: Otra vez, por favor.",
+          "audio": "もういちど おねがいします",
+          "slow_audio": "もういちど おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-a11-introductions-test",
+      "title": "Prueba · Conocerse y presentarse",
+      "description": "Comprueba que reconoces y comprendes las expresiones sin ayuda.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 30,
+      "activities": [
+        {
+          "id": "japanese-a11-introductions-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba final A1.1",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar la unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a11-introductions-test-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «こんにちは»?",
+          "target": "こんにちは",
+          "options": [
+            "Encantado; espero llevarme bien contigo.",
+            "Otra vez, por favor.",
+            "¡Hola!"
+          ],
+          "answer": "¡Hola!",
+          "explanation": "¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "にほんごが すこし わかります",
+            "よろしくおねがいします。",
+            "こんにちは"
+          ],
+          "answer": "こんにちは",
+          "explanation": "La forma escrita correcta es «こんにちは»: ¡Hola!",
+          "audio": "こんにちは",
+          "slow_audio": "こんにちは",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «おなまえは なんですか。»?",
+          "target": "おなまえは なんですか。",
+          "options": [
+            "¿Cómo se llama?",
+            "Despacio, por favor.",
+            "Soy de México."
+          ],
+          "answer": "¿Cómo se llama?",
+          "explanation": "¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "これは いくらですか",
+            "わたしは アナです。",
+            "おなまえは なんですか。"
+          ],
+          "answer": "おなまえは なんですか。",
+          "explanation": "La forma escrita correcta es «おなまえは なんですか。»: ¿Cómo se llama?",
+          "audio": "おなまえは なんですか。",
+          "slow_audio": "おなまえは なんですか。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «メキシコから きました。»?",
+          "target": "メキシコから きました。",
+          "options": [
+            "Soy de México.",
+            "¡Hola!",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "Soy de México.",
+          "explanation": "Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "メキシコから きました。",
+            "わかりません",
+            "はじめまして"
+          ],
+          "answer": "メキシコから きました。",
+          "explanation": "La forma escrita correcta es «メキシコから きました。»: Soy de México.",
+          "audio": "メキシコから きました。",
+          "slow_audio": "メキシコから きました。",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «これは いくらですか»?",
+          "target": "これは いくらですか",
+          "options": [
+            "Soy Anna.",
+            "Soy de México.",
+            "¿Cuánto cuesta esto?"
+          ],
+          "answer": "¿Cuánto cuesta esto?",
+          "explanation": "¿Cuánto cuesta esto?",
+          "audio": "これは いくらですか",
+          "slow_audio": "これは いくらですか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "おなまえは なんですか。",
+            "もういちど おねがいします",
+            "これは いくらですか"
+          ],
+          "answer": "これは いくらですか",
+          "explanation": "La forma escrita correcta es «これは いくらですか»: ¿Cuánto cuesta esto?",
+          "audio": "これは いくらですか",
+          "slow_audio": "これは いくらですか",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «わかりません»?",
+          "target": "わかりません",
+          "options": [
+            "No entiendo.",
+            "Mucho gusto.",
+            "Entiendo un poco de japonés."
+          ],
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "わかりません",
+            "ゆっくり おねがいします",
+            "わたしは アナです"
+          ],
+          "answer": "わかりません",
+          "explanation": "La forma escrita correcta es «わかりません»: No entiendo.",
+          "audio": "わかりません",
+          "slow_audio": "わかりません",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-6-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «ゆっくり おねがいします»?",
+          "target": "ゆっくり おねがいします",
+          "options": [
+            "¿Cómo se llama?",
+            "Despacio, por favor.",
+            "Otra vez, por favor."
+          ],
+          "answer": "Despacio, por favor.",
+          "explanation": "Despacio, por favor.",
+          "audio": "ゆっくり おねがいします",
+          "slow_audio": "ゆっくり おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-a11-introductions-test-6-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la frase correcta",
+          "target": "",
+          "options": [
+            "こんにちは",
+            "ゆっくり おねがいします",
+            "よろしくおねがいします。"
+          ],
+          "answer": "ゆっくり おねがいします",
+          "explanation": "La forma escrita correcta es «ゆっくり おねがいします»: Despacio, por favor.",
+          "audio": "ゆっくり おねがいします",
+          "slow_audio": "ゆっくり おねがいします",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "a1.1",
+            "introductions"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

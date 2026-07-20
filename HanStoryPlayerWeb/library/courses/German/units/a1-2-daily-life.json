@@ -1,0 +1,1752 @@
+{
+  "id": "a1-2-daily-life",
+  "title": "Vida diaria y autonomía",
+  "description": "Resuelve necesidades cotidianas, habla de ti y comprende respuestas frecuentes.",
+  "requirements": [],
+  "reward": {
+    "xp": 140,
+    "badge": "Vida diaria y autonomía"
+  },
+  "lessons": [
+    {
+      "id": "german-a1-2-daily-life-01",
+      "title": "Necesidades inmediatas",
+      "description": "Aprende tres elementos, compréndelos y recupéralos de oído.",
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Necesidades inmediatas",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero aprenderás cada elemento; después tendrás que reconocerlo sin adivinar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-01-model",
+          "type": "dialogue_model",
+          "prompt": "Escucha el modelo completo",
+          "target": "Ich heiße Anna.",
+          "options": [],
+          "answer": "",
+          "explanation": "Me llamo Ana",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-01-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "Ich heiße Anna.",
+          "options": [],
+          "answer": "",
+          "explanation": "También puedes decir “Ich bin Anna”.",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Me llamo Ana"
+        },
+        {
+          "id": "german-a1-2-daily-life-01-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich heiße Anna.»?",
+          "target": "Ich heiße Anna.",
+          "options": [
+            "Me llamo Ana",
+            "Soy de México",
+            "¿Cómo te llamas?"
+          ],
+          "answer": "Me llamo Ana",
+          "explanation": "También puedes decir “Ich bin Anna”.",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-01-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "Ich komme aus Mexiko.",
+            "Wie heißt du?"
+          ],
+          "answer": "Ich heiße Anna.",
+          "explanation": "La forma correcta es «Ich heiße Anna.»: Me llamo Ana",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-01-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "Wie heißt du?",
+          "options": [],
+          "answer": "",
+          "explanation": "Con respeto: Wie heißen Sie?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "¿Cómo te llamas?"
+        },
+        {
+          "id": "german-a1-2-daily-life-01-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Wie heißt du?»?",
+          "target": "Wie heißt du?",
+          "options": [
+            "Me llamo Ana",
+            "Soy de México",
+            "¿Cómo te llamas?"
+          ],
+          "answer": "¿Cómo te llamas?",
+          "explanation": "Con respeto: Wie heißen Sie?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-01-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "Ich komme aus Mexiko.",
+            "Wie heißt du?"
+          ],
+          "answer": "Wie heißt du?",
+          "explanation": "La forma correcta es «Wie heißt du?»: ¿Cómo te llamas?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-01-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "Ich komme aus Mexiko.",
+          "options": [],
+          "answer": "",
+          "explanation": "aus introduce el lugar de origen.",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "Soy de México"
+        },
+        {
+          "id": "german-a1-2-daily-life-01-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich komme aus Mexiko.»?",
+          "target": "Ich komme aus Mexiko.",
+          "options": [
+            "Me llamo Ana",
+            "Soy de México",
+            "¿Cómo te llamas?"
+          ],
+          "answer": "Soy de México",
+          "explanation": "aus introduce el lugar de origen.",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-01-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "Ich komme aus Mexiko.",
+            "Wie heißt du?"
+          ],
+          "answer": "Ich komme aus Mexiko.",
+          "explanation": "La forma correcta es «Ich komme aus Mexiko.»: Soy de México",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-02",
+      "title": "Personas y acciones",
+      "description": "Aprende tres elementos, compréndelos y recupéralos de oído.",
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Personas y acciones",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero aprenderás cada elemento; después tendrás que reconocerlo sin adivinar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-02-model",
+          "type": "dialogue_model",
+          "prompt": "Escucha el modelo completo",
+          "target": "null",
+          "options": [],
+          "answer": "",
+          "explanation": "cero",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-02-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "null",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "cero"
+        },
+        {
+          "id": "german-a1-2-daily-life-02-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «null»?",
+          "target": "null",
+          "options": [
+            "cero",
+            "dos",
+            "uno"
+          ],
+          "answer": "cero",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-02-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "null",
+            "zwei",
+            "eins"
+          ],
+          "answer": "null",
+          "explanation": "La forma correcta es «null»: cero",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-02-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "eins",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "eins",
+          "slow_audio": "eins",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "uno"
+        },
+        {
+          "id": "german-a1-2-daily-life-02-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «eins»?",
+          "target": "eins",
+          "options": [
+            "cero",
+            "dos",
+            "uno"
+          ],
+          "answer": "uno",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "eins",
+          "slow_audio": "eins",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-02-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "null",
+            "zwei",
+            "eins"
+          ],
+          "answer": "eins",
+          "explanation": "La forma correcta es «eins»: uno",
+          "audio": "eins",
+          "slow_audio": "eins",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-02-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "zwei",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "dos"
+        },
+        {
+          "id": "german-a1-2-daily-life-02-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «zwei»?",
+          "target": "zwei",
+          "options": [
+            "cero",
+            "dos",
+            "uno"
+          ],
+          "answer": "dos",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-02-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "null",
+            "zwei",
+            "eins"
+          ],
+          "answer": "zwei",
+          "explanation": "La forma correcta es «zwei»: dos",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-review-01",
+      "title": "Repaso breve · vida diaria",
+      "description": "Recuperación acumulativa de elementos ya estudiados.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-review-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso breve · vida diaria",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No se introduce contenido nuevo. Intenta recordar antes de usar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich heiße Anna.»?",
+          "target": "Ich heiße Anna.",
+          "options": [
+            "Me llamo Ana",
+            "Soy de México",
+            "cero"
+          ],
+          "answer": "Me llamo Ana",
+          "explanation": "También puedes decir “Ich bin Anna”.",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "Ich komme aus Mexiko.",
+            "null"
+          ],
+          "answer": "Ich heiße Anna.",
+          "explanation": "La forma correcta es «Ich heiße Anna.»: Me llamo Ana",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich komme aus Mexiko.»?",
+          "target": "Ich komme aus Mexiko.",
+          "options": [
+            "cero",
+            "dos",
+            "Soy de México"
+          ],
+          "answer": "Soy de México",
+          "explanation": "aus introduce el lugar de origen.",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "null",
+            "zwei",
+            "Ich komme aus Mexiko."
+          ],
+          "answer": "Ich komme aus Mexiko.",
+          "explanation": "La forma correcta es «Ich komme aus Mexiko.»: Soy de México",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «null»?",
+          "target": "null",
+          "options": [
+            "Me llamo Ana",
+            "cero",
+            "dos"
+          ],
+          "answer": "cero",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "null",
+            "zwei"
+          ],
+          "answer": "null",
+          "explanation": "La forma correcta es «null»: cero",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «zwei»?",
+          "target": "zwei",
+          "options": [
+            "dos",
+            "Me llamo Ana",
+            "Soy de México"
+          ],
+          "answer": "dos",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-1-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "zwei",
+            "Ich heiße Anna.",
+            "Ich komme aus Mexiko."
+          ],
+          "answer": "zwei",
+          "explanation": "La forma correcta es «zwei»: dos",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-03",
+      "title": "Moverte con autonomía",
+      "description": "Aprende tres elementos, compréndelos y recupéralos de oído.",
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Moverte con autonomía",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero aprenderás cada elemento; después tendrás que reconocerlo sin adivinar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-03-model",
+          "type": "dialogue_model",
+          "prompt": "Escucha el modelo completo",
+          "target": "drei",
+          "options": [],
+          "answer": "",
+          "explanation": "tres",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-03-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "drei",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "tres"
+        },
+        {
+          "id": "german-a1-2-daily-life-03-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «drei»?",
+          "target": "drei",
+          "options": [
+            "tres",
+            "cinco",
+            "cuatro"
+          ],
+          "answer": "tres",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-03-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "drei",
+            "fünf",
+            "vier"
+          ],
+          "answer": "drei",
+          "explanation": "La forma correcta es «drei»: tres",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-03-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "vier",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "vier",
+          "slow_audio": "vier",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "cuatro"
+        },
+        {
+          "id": "german-a1-2-daily-life-03-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «vier»?",
+          "target": "vier",
+          "options": [
+            "tres",
+            "cinco",
+            "cuatro"
+          ],
+          "answer": "cuatro",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "vier",
+          "slow_audio": "vier",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-03-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "drei",
+            "fünf",
+            "vier"
+          ],
+          "answer": "vier",
+          "explanation": "La forma correcta es «vier»: cuatro",
+          "audio": "vier",
+          "slow_audio": "vier",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-03-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "fünf",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "cinco"
+        },
+        {
+          "id": "german-a1-2-daily-life-03-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «fünf»?",
+          "target": "fünf",
+          "options": [
+            "tres",
+            "cinco",
+            "cuatro"
+          ],
+          "answer": "cinco",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-03-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "drei",
+            "fünf",
+            "vier"
+          ],
+          "answer": "fünf",
+          "explanation": "La forma correcta es «fünf»: cinco",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-04",
+      "title": "Resolver una situación",
+      "description": "Aprende tres elementos, compréndelos y recupéralos de oído.",
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Resolver una situación",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Primero aprenderás cada elemento; después tendrás que reconocerlo sin adivinar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-04-model",
+          "type": "dialogue_model",
+          "prompt": "Escucha el modelo completo",
+          "target": "sechs",
+          "options": [],
+          "answer": "",
+          "explanation": "seis",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-04-1-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "sechs",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "seis"
+        },
+        {
+          "id": "german-a1-2-daily-life-04-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «sechs»?",
+          "target": "sechs",
+          "options": [
+            "seis",
+            "ocho",
+            "siete"
+          ],
+          "answer": "seis",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-04-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "sechs",
+            "acht",
+            "sieben"
+          ],
+          "answer": "sechs",
+          "explanation": "La forma correcta es «sechs»: seis",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-04-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "sieben",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sieben",
+          "slow_audio": "sieben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "siete"
+        },
+        {
+          "id": "german-a1-2-daily-life-04-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «sieben»?",
+          "target": "sieben",
+          "options": [
+            "seis",
+            "ocho",
+            "siete"
+          ],
+          "answer": "siete",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sieben",
+          "slow_audio": "sieben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-04-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "sechs",
+            "acht",
+            "sieben"
+          ],
+          "answer": "sieben",
+          "explanation": "La forma correcta es «sieben»: siete",
+          "audio": "sieben",
+          "slow_audio": "sieben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-04-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende en contexto",
+          "target": "acht",
+          "options": [],
+          "answer": "",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "sound_hint": "ocho"
+        },
+        {
+          "id": "german-a1-2-daily-life-04-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «acht»?",
+          "target": "acht",
+          "options": [
+            "seis",
+            "ocho",
+            "siete"
+          ],
+          "answer": "ocho",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-04-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "sechs",
+            "acht",
+            "sieben"
+          ],
+          "answer": "acht",
+          "explanation": "La forma correcta es «acht»: ocho",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-review-02",
+      "title": "Repaso acumulativo · autonomía",
+      "description": "Recuperación acumulativa de elementos ya estudiados.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-review-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo · autonomía",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No se introduce contenido nuevo. Intenta recordar antes de usar la pista.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Wie heißt du?»?",
+          "target": "Wie heißt du?",
+          "options": [
+            "¿Cómo te llamas?",
+            "ocho",
+            "siete"
+          ],
+          "answer": "¿Cómo te llamas?",
+          "explanation": "Con respeto: Wie heißen Sie?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Wie heißt du?",
+            "acht",
+            "sieben"
+          ],
+          "answer": "Wie heißt du?",
+          "explanation": "La forma correcta es «Wie heißt du?»: ¿Cómo te llamas?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «eins»?",
+          "target": "eins",
+          "options": [
+            "¿Cómo te llamas?",
+            "ocho",
+            "uno"
+          ],
+          "answer": "uno",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "eins",
+          "slow_audio": "eins",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Wie heißt du?",
+            "acht",
+            "eins"
+          ],
+          "answer": "eins",
+          "explanation": "La forma correcta es «eins»: uno",
+          "audio": "eins",
+          "slow_audio": "eins",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «drei»?",
+          "target": "drei",
+          "options": [
+            "¿Cómo te llamas?",
+            "tres",
+            "uno"
+          ],
+          "answer": "tres",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Wie heißt du?",
+            "drei",
+            "eins"
+          ],
+          "answer": "drei",
+          "explanation": "La forma correcta es «drei»: tres",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «fünf»?",
+          "target": "fünf",
+          "options": [
+            "cinco",
+            "tres",
+            "uno"
+          ],
+          "answer": "cinco",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "fünf",
+            "drei",
+            "eins"
+          ],
+          "answer": "fünf",
+          "explanation": "La forma correcta es «fünf»: cinco",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «sieben»?",
+          "target": "sieben",
+          "options": [
+            "cinco",
+            "tres",
+            "siete"
+          ],
+          "answer": "siete",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sieben",
+          "slow_audio": "sieben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "fünf",
+            "drei",
+            "sieben"
+          ],
+          "answer": "sieben",
+          "explanation": "La forma correcta es «sieben»: siete",
+          "audio": "sieben",
+          "slow_audio": "sieben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-6-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «acht»?",
+          "target": "acht",
+          "options": [
+            "cinco",
+            "ocho",
+            "siete"
+          ],
+          "answer": "ocho",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-review-2-6-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "fünf",
+            "acht",
+            "sieben"
+          ],
+          "answer": "acht",
+          "explanation": "La forma correcta es «acht»: ocho",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-a1-2-daily-life-test",
+      "title": "Prueba · Vida diaria y autonomía",
+      "description": "Evaluación acumulativa de la etapa.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "german-a1-2-daily-life-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba · Vida diaria y autonomía",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas al menos 85 % para completar esta etapa.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-daily-life-test-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich heiße Anna.»?",
+          "target": "Ich heiße Anna.",
+          "options": [
+            "Me llamo Ana",
+            "cinco",
+            "cero"
+          ],
+          "answer": "Me llamo Ana",
+          "explanation": "También puedes decir “Ich bin Anna”.",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich heiße Anna.",
+            "fünf",
+            "null"
+          ],
+          "answer": "Ich heiße Anna.",
+          "explanation": "La forma correcta es «Ich heiße Anna.»: Me llamo Ana",
+          "audio": "Ich heiße Anna.",
+          "slow_audio": "Ich heiße Anna.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «Ich komme aus Mexiko.»?",
+          "target": "Ich komme aus Mexiko.",
+          "options": [
+            "seis",
+            "dos",
+            "Soy de México"
+          ],
+          "answer": "Soy de México",
+          "explanation": "aus introduce el lugar de origen.",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "sechs",
+            "zwei",
+            "Ich komme aus Mexiko."
+          ],
+          "answer": "Ich komme aus Mexiko.",
+          "explanation": "La forma correcta es «Ich komme aus Mexiko.»: Soy de México",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «null»?",
+          "target": "null",
+          "options": [
+            "tres",
+            "cero",
+            "ocho"
+          ],
+          "answer": "cero",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "drei",
+            "null",
+            "acht"
+          ],
+          "answer": "null",
+          "explanation": "La forma correcta es «null»: cero",
+          "audio": "null",
+          "slow_audio": "null",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «zwei»?",
+          "target": "zwei",
+          "options": [
+            "dos",
+            "Me llamo Ana",
+            "cinco"
+          ],
+          "answer": "dos",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "zwei",
+            "Ich heiße Anna.",
+            "fünf"
+          ],
+          "answer": "zwei",
+          "explanation": "La forma correcta es «zwei»: dos",
+          "audio": "zwei",
+          "slow_audio": "zwei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «drei»?",
+          "target": "drei",
+          "options": [
+            "Soy de México",
+            "seis",
+            "tres"
+          ],
+          "answer": "tres",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "Ich komme aus Mexiko.",
+            "sechs",
+            "drei"
+          ],
+          "answer": "drei",
+          "explanation": "La forma correcta es «drei»: tres",
+          "audio": "drei",
+          "slow_audio": "drei",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-6-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «fünf»?",
+          "target": "fünf",
+          "options": [
+            "ocho",
+            "cinco",
+            "cero"
+          ],
+          "answer": "cinco",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-6-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "acht",
+            "fünf",
+            "null"
+          ],
+          "answer": "fünf",
+          "explanation": "La forma correcta es «fünf»: cinco",
+          "audio": "fünf",
+          "slow_audio": "fünf",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-7-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «sechs»?",
+          "target": "sechs",
+          "options": [
+            "seis",
+            "dos",
+            "Me llamo Ana"
+          ],
+          "answer": "seis",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-7-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "sechs",
+            "zwei",
+            "Ich heiße Anna."
+          ],
+          "answer": "sechs",
+          "explanation": "La forma correcta es «sechs»: seis",
+          "audio": "sechs",
+          "slow_audio": "sechs",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-8-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué expresa «acht»?",
+          "target": "acht",
+          "options": [
+            "tres",
+            "Soy de México",
+            "ocho"
+          ],
+          "answer": "ocho",
+          "explanation": "Del 13 al 19 aparece -zehn.",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-a1-2-daily-life-test-8-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la forma correcta",
+          "target": "",
+          "options": [
+            "drei",
+            "Ich komme aus Mexiko.",
+            "acht"
+          ],
+          "answer": "acht",
+          "explanation": "La forma correcta es «acht»: ocho",
+          "audio": "acht",
+          "slow_audio": "acht",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "guided-continuation"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}
