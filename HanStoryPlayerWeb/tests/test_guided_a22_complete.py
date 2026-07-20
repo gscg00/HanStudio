@@ -96,6 +96,6 @@ def test_a22_xp_catalog_is_complete_and_private():
 
 def test_service_worker_precaches_a22_manifests():
     worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "hanstory-shell-v90" in worker
+    assert "hanstory-shell-v91" in worker
     for unit_id in A22_IDS:
         assert unit_id in worker

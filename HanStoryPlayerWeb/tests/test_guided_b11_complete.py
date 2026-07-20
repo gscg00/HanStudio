@@ -23,6 +23,13 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def test_course_cover_describes_the_real_b1_reach():
+    for language in LANGUAGES:
+        course = load(COURSES / language / "course.json")
+        assert course["routeLabel"] == "RUTA GUIADA · DE CERO A B1"
+        assert course["title"].endswith("de cero a conversaciones intermedias")
+
+
 def test_every_language_has_six_b11_units_and_42_lessons():
     for language in LANGUAGES:
         course = load(COURSES / language / "course.json")
@@ -88,6 +95,6 @@ def test_b11_xp_catalog_is_complete_and_private():
 
 def test_service_worker_precaches_b11_manifests():
     worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "hanstory-shell-v90" in worker
+    assert "hanstory-shell-v91" in worker
     for unit_id in B11_IDS:
         assert unit_id in worker

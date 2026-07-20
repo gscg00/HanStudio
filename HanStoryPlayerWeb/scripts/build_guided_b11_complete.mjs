@@ -9,6 +9,6 @@ buildGuidedStage({
   webRoot,themes:B11_THEMES,targetsByLanguage:B11_TARGETS,validateContent:validateB11Content,
   stageId:'b1-1',stageTag:'B1.1',idTag:'b11',levelLabel:'ETAPA 6 · B1.1',
   levelTitle:'Narración y razones',levelDescription:'Narraciones conectadas, causas, medios, emociones, sociedad y registro.',
-  routeLabel:'RUTA GUIADA · FUNDAMENTOS A B1',previousStageLastUnit:'a2-2-problemSolving',
+  routeLabel:'RUTA GUIADA · DE CERO A B1',previousStageLastUnit:'a2-2-problemSolving',
   migrationFile:'012_all_languages_b11_complete_catalog.sql',curriculumVersion:2,courseVersion:9,
 });
