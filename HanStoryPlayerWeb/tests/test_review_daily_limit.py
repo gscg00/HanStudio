@@ -11,6 +11,8 @@ class ReviewDailyLimitTests(unittest.TestCase):
         self.assertNotIn("Próximos repasos", app)
         self.assertNotIn("Próximo repaso programado", app)
         self.assertNotIn("El siguiente repaso será", app)
+        self.assertNotIn('class="jp-review-items"', app)
+        self.assertNotIn("Intervalo completado", app)
 
     def test_recommended_global_daily_limit_is_enforced(self):
         settings = (ROOT / "src/user_settings.js").read_text(encoding="utf-8")

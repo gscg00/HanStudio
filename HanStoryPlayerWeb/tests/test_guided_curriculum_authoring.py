@@ -69,7 +69,7 @@ def test_complete_a11_replaces_the_pilot_without_reintroducing_advanced_prototyp
 
 def test_service_worker_does_not_precache_retired_prototypes():
     worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "hanstory-shell-v86" in worker
+    assert "hanstory-shell-v90" in worker
     for unit_id in RETIRED_PROTOTYPES:
         assert unit_id not in worker
 

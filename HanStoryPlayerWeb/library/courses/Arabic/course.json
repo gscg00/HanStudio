@@ -3,8 +3,8 @@
   "title": "Árabe desde cero",
   "language": "Arabic",
   "languageCode": "ar",
-  "version": 7,
-  "routeLabel": "RUTA GUIADA · FUNDAMENTOS, A1 Y A2.1",
+  "version": 9,
+  "routeLabel": "RUTA GUIADA · FUNDAMENTOS A B1",
   "tagline": "Aprende el alfabeto conectado y las frases más esenciales.",
   "vocabularyGoal": 300,
   "vocabularyPrepared": 321,
@@ -65,6 +65,34 @@
         "a2-1-ability",
         "a2-1-services",
         "a2-1-conversation"
+      ]
+    },
+    {
+      "id": "a2-2",
+      "label": "ETAPA 5 · A2.2",
+      "title": "Descripción y resolución",
+      "description": "Opiniones, experiencias, trabajo, tecnología, cultura y resolución de imprevistos.",
+      "unitIds": [
+        "a2-2-opinions",
+        "a2-2-experiences",
+        "a2-2-workStudy",
+        "a2-2-technology",
+        "a2-2-culture",
+        "a2-2-problemSolving"
+      ]
+    },
+    {
+      "id": "b1-1",
+      "label": "ETAPA 6 · B1.1",
+      "title": "Narración y razones",
+      "description": "Narraciones conectadas, causas, medios, emociones, sociedad y registro.",
+      "unitIds": [
+        "b1-1-narrative",
+        "b1-1-cause-effect",
+        "b1-1-media",
+        "b1-1-emotions",
+        "b1-1-society",
+        "b1-1-register"
       ]
     }
   ],
@@ -299,6 +327,114 @@
       "description": "Mantener intercambios de varias intervenciones.",
       "manifest": "units/a2-1-conversation.json",
       "icon": "حديث"
+    },
+    {
+      "id": "a2-2-opinions",
+      "world": 27,
+      "mapLabel": "UNIDAD A2.2 · 1",
+      "title": "Opiniones y razones",
+      "description": "Expresar acuerdo, desacuerdo, causa y preferencia.",
+      "manifest": "units/a2-2-opinions.json",
+      "icon": "رأي"
+    },
+    {
+      "id": "a2-2-experiences",
+      "world": 28,
+      "mapLabel": "UNIDAD A2.2 · 2",
+      "title": "Viajes y experiencias",
+      "description": "Contar una experiencia y reaccionar a la de otra persona.",
+      "manifest": "units/a2-2-experiences.json",
+      "icon": "تجربة"
+    },
+    {
+      "id": "a2-2-workStudy",
+      "world": 29,
+      "mapLabel": "UNIDAD A2.2 · 3",
+      "title": "Trabajo y estudio",
+      "description": "Describir responsabilidades, objetivos y dificultades.",
+      "manifest": "units/a2-2-workStudy.json",
+      "icon": "عمل"
+    },
+    {
+      "id": "a2-2-technology",
+      "world": 30,
+      "mapLabel": "UNIDAD A2.2 · 4",
+      "title": "Tecnología y comunicación",
+      "description": "Resolver problemas digitales y comunicarte a distancia.",
+      "manifest": "units/a2-2-technology.json",
+      "icon": "شبكة"
+    },
+    {
+      "id": "a2-2-culture",
+      "world": 31,
+      "mapLabel": "UNIDAD A2.2 · 5",
+      "title": "Costumbres y cultura",
+      "description": "Describir normas sociales, celebraciones y diferencias.",
+      "manifest": "units/a2-2-culture.json",
+      "icon": "ثقافة"
+    },
+    {
+      "id": "a2-2-problemSolving",
+      "world": 32,
+      "mapLabel": "UNIDAD A2.2 · 6",
+      "title": "Resolver imprevistos",
+      "description": "Comprender un problema, proponer y evaluar soluciones.",
+      "manifest": "units/a2-2-problemSolving.json",
+      "icon": "حل"
+    },
+    {
+      "id": "b1-1-narrative",
+      "world": 33,
+      "mapLabel": "UNIDAD B1.1 · 1",
+      "title": "Narraciones conectadas",
+      "description": "Organizar antecedentes, hechos y desenlace.",
+      "manifest": "units/b1-1-narrative.json",
+      "icon": "قصة"
+    },
+    {
+      "id": "b1-1-cause-effect",
+      "world": 34,
+      "mapLabel": "UNIDAD B1.1 · 2",
+      "title": "Causas y consecuencias",
+      "description": "Explicar por qué ocurrió algo y qué produjo.",
+      "manifest": "units/b1-1-cause-effect.json",
+      "icon": "سبب"
+    },
+    {
+      "id": "b1-1-media",
+      "world": 35,
+      "mapLabel": "UNIDAD B1.1 · 3",
+      "title": "Historias, cine y medios",
+      "description": "Resumir una obra y comentar personajes o acontecimientos.",
+      "manifest": "units/b1-1-media.json",
+      "icon": "إعلام"
+    },
+    {
+      "id": "b1-1-emotions",
+      "world": 36,
+      "mapLabel": "UNIDAD B1.1 · 4",
+      "title": "Relaciones y emociones",
+      "description": "Expresar reacciones, conflictos, consejos y cambios.",
+      "manifest": "units/b1-1-emotions.json",
+      "icon": "مشاعر"
+    },
+    {
+      "id": "b1-1-society",
+      "world": 37,
+      "mapLabel": "UNIDAD B1.1 · 5",
+      "title": "Sociedad y entorno",
+      "description": "Hablar de comunidad, medio ambiente y vida urbana.",
+      "manifest": "units/b1-1-society.json",
+      "icon": "مجتمع"
+    },
+    {
+      "id": "b1-1-register",
+      "world": 38,
+      "mapLabel": "UNIDAD B1.1 · 6",
+      "title": "Registro y cortesía",
+      "description": "Adaptar peticiones y opiniones a situaciones formales e informales.",
+      "manifest": "units/b1-1-register.json",
+      "icon": "لباقة"
     }
   ]
 }
