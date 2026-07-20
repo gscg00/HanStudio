@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v76';
+const SHELL='hanstory-shell-v77';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=['reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge'];
 const GUIDED_COURSE_ASSETS=GUIDED_COURSE_LANGUAGES.flatMap(language=>[
@@ -12,7 +12,7 @@ const ASSETS=[
   './assets/japanese_course.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
   './src/app.js','./src/storage.js','./src/branding.js','./src/config.example.js','./src/config.local.js','./src/public_config.js',
   './src/auth_service.js','./src/local_progress_store.js','./src/cloud_progress_store.js',
-  './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/xp_service.js','./src/friends_service.js',
+  './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/user_settings.js','./src/xp_service.js','./src/friends_service.js',
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
   './src/japanese_course_logic.js','./src/guided_course_config.js','./src/guided_course_logic.js',
   './manifest.webmanifest','./library/library.json',
