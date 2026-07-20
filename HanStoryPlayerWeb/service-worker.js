@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v77';
+const SHELL='hanstory-shell-v80';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=['reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge'];
 const GUIDED_COURSE_ASSETS=GUIDED_COURSE_LANGUAGES.flatMap(language=>[
@@ -9,7 +9,7 @@ const GUIDED_COURSE_ASSETS=GUIDED_COURSE_LANGUAGES.flatMap(language=>[
 // La ruta histórica /library/courses/Japanese/audio/ también queda cubierta por guidedCourseAudio.
 const ASSETS=[
   './','./index.html','./assets/styles.css','./assets/teaching.css','./assets/navigation.css',
-  './assets/japanese_course.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
+  './assets/japanese_course.css','./assets/guided_course_levels.css','./assets/japanese_lesson.css','./assets/icon-192.svg','./assets/icon-512.svg',
   './src/app.js','./src/storage.js','./src/branding.js','./src/config.example.js','./src/config.local.js','./src/public_config.js',
   './src/auth_service.js','./src/local_progress_store.js','./src/cloud_progress_store.js',
   './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/user_settings.js','./src/xp_service.js','./src/friends_service.js',
@@ -23,6 +23,7 @@ const ASSETS=[
   './library/courses/Japanese/units/functional-a1.json','./library/courses/Japanese/units/starter-kanji.json',
   './library/courses/Japanese/units/story-bridge.json',
   './library/courses/Japanese/audio_manifest.json',
+  './library/courses/Korean/units/a1-1-introductions.json',
   ...GUIDED_COURSE_ASSETS
 ];
 self.addEventListener('install',event=>event.waitUntil(

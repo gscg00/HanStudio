@@ -1,17 +1,38 @@
 {
   "courseId": "korean-from-zero",
-  "title": "Coreano desde cero",
+  "title": "Coreano: de cero a conversaciones A1",
   "language": "Korean",
   "languageCode": "ko",
-  "version": 1,
-  "routeLabel": "RUTA 1 · BASE PARA HISTORIAS A1",
-  "tagline": "Lee hangul y construye una base práctica para tus historias.",
+  "version": 2,
+  "routeLabel": "RUTA GUIADA · FUNDAMENTOS Y A1",
+  "tagline": "Aprende los fundamentos y continúa con conversaciones guiadas antes de leer historias.",
   "vocabularyGoal": 300,
   "vocabularyPrepared": 500,
   "levels": [
     {
-      "id": "route-a1",
-      "title": "Preparación para historias A1"
+      "id": "foundations",
+      "label": "ETAPA 1 · A0",
+      "title": "Fundamentos para empezar",
+      "description": "Lectura, vocabulario y estructuras esenciales antes de las conversaciones guiadas.",
+      "unitIds": [
+        "reading",
+        "survival",
+        "essentials",
+        "questions",
+        "time",
+        "vocabulary",
+        "reading-bridge",
+        "story-bridge"
+      ]
+    },
+    {
+      "id": "a1-1",
+      "label": "ETAPA 2 · A1.1",
+      "title": "Primeras conversaciones",
+      "description": "Escenas breves, gramática contextual, escucha y respuesta paso a paso.",
+      "unitIds": [
+        "a1-1-introductions"
+      ]
     }
   ],
   "unlockRules": {
@@ -114,6 +135,15 @@
       "description": "Consolida lo esencial antes de abrir tu primera historia.",
       "manifest": "units/story-bridge.json",
       "icon": "책"
+    },
+    {
+      "id": "a1-1-introductions",
+      "world": 9,
+      "mapLabel": "UNIDAD A1.1 · 1",
+      "title": "Conocerse y presentarse",
+      "description": "Saluda, di quién eres, pregunta el nombre y habla de tu origen.",
+      "manifest": "units/a1-1-introductions.json",
+      "icon": "인"
     }
   ]
 }
