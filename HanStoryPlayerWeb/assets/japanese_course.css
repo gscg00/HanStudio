@@ -10,3 +10,17 @@
 @media(max-width:650px){.guided-course .jp-target{font-size:clamp(2rem,11vw,4rem);min-height:90px}.jp-app[data-course-language="Japanese"] .jp-target,.jp-app[data-course-language="Korean"] .jp-target,.jp-app[data-course-language="Chinese"] .jp-target{font-size:clamp(3rem,18vw,6rem)}}
 .jp-srs-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;width:min(650px,100%);margin:1.1rem 0}.jp-srs-steps span{padding:.7rem .3rem;border-radius:999px;background:#e8efe9;color:var(--jp-green);font-weight:800}.jp-review-ready{display:flex;align-items:center;gap:1rem;width:min(600px,100%);margin:1.3rem 0 .2rem;text-align:left}.jp-review-ready>strong{display:grid;place-items:center;flex:0 0 76px;height:76px;border-radius:50%;background:var(--jp-orange);color:#fff;font-size:2rem}.jp-review-ready h2,.jp-review-ready p{margin:.15rem 0}.jp-upcoming-review{width:min(650px,100%);margin:1.5rem 0;text-align:left}.jp-upcoming-review>div{display:grid;grid-template-columns:85px 1fr auto;align-items:center;gap:.8rem;padding:.7rem;border-bottom:1px solid #173f3518}.jp-upcoming-review span,.jp-upcoming-review em{color:var(--jp-muted);font-style:normal}.jp-pinyin-help{display:flex;align-items:center;justify-content:center;gap:.7rem;min-height:44px;margin:.25rem 0 .8rem}.jp-pinyin-help span{font-size:1.15rem;color:var(--jp-muted)}.jp-pinyin-help button{padding:.55rem .85rem}
 @media(max-width:650px){.jp-srs-steps{grid-template-columns:1fr}.jp-review-ready{align-items:flex-start}.jp-upcoming-review>div{grid-template-columns:75px 1fr}.jp-upcoming-review em{grid-column:2}}
+
+/* Retroalimentación táctil y de reproducción para los controles de audio. */
+.jp-listen-row [data-jp-audio],.jp-big-audio[data-jp-audio]{position:relative;transition:transform .12s ease,background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .18s ease;will-change:transform}
+.jp-listen-row [data-jp-audio]:active,.jp-big-audio[data-jp-audio]:active{transform:scale(.94)}
+.jp-listen-row [data-jp-audio].is-loading,.jp-listen-row [data-jp-audio].is-playing{background:var(--jp-green);border-color:var(--jp-green);color:#fff;box-shadow:0 0 0 4px #173f3520}
+.jp-listen-row [data-jp-audio].is-loading:after{content:"";width:.72rem;height:.72rem;margin-left:.45rem;display:inline-block;vertical-align:-.08rem;border:2px solid #ffffff66;border-top-color:#fff;border-radius:50%;animation:jp-spin .65s linear infinite}
+.jp-listen-row [data-jp-audio].is-playing{animation:jp-audio-pulse .8s ease-in-out infinite alternate}
+.jp-listen-row [data-jp-audio].is-error{background:#f8ded4;border-color:#bd4b32;color:#8c2f20;animation:jp-audio-shake .28s ease}
+.jp-big-audio[data-jp-audio].is-loading{filter:saturate(.7);animation:jp-audio-pulse .8s ease-in-out infinite alternate}
+.jp-big-audio[data-jp-audio].is-playing{background:var(--jp-green-2);box-shadow:0 6px 0 var(--jp-green),0 0 0 7px #2d665633;animation:jp-audio-pulse .7s ease-in-out infinite alternate}
+.jp-big-audio[data-jp-audio].is-error{background:#bd4b32;animation:jp-audio-shake .28s ease}
+@keyframes jp-audio-pulse{from{transform:scale(1)}to{transform:scale(1.055)}}
+@keyframes jp-audio-shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media(prefers-reduced-motion:reduce){.jp-listen-row [data-jp-audio].is-playing,.jp-big-audio[data-jp-audio].is-loading,.jp-big-audio[data-jp-audio].is-playing,.jp-listen-row [data-jp-audio].is-error,.jp-big-audio[data-jp-audio].is-error{animation:none}}
