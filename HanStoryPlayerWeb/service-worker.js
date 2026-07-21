@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v91';
+const SHELL='hanstory-shell-v92';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -6,7 +6,8 @@ const GUIDED_COURSE_UNITS=[
   'a1-2-shopping','a1-2-time','a1-2-transport','a1-2-health','a1-2-weather','a1-2-social',
   'a2-1-past','a2-1-future','a2-1-comparison','a2-1-ability','a2-1-services','a2-1-conversation',
   'a2-2-opinions','a2-2-experiences','a2-2-workStudy','a2-2-technology','a2-2-culture','a2-2-problemSolving',
-  'b1-1-narrative','b1-1-cause-effect','b1-1-media','b1-1-emotions','b1-1-society','b1-1-register'
+  'b1-1-narrative','b1-1-cause-effect','b1-1-media','b1-1-emotions','b1-1-society','b1-1-register',
+  'b1-2-conditions','b1-2-nuance','b1-2-negotiation','b1-2-projects','b1-2-perspectives','b1-2-conversation'
 ];
 const GUIDED_COURSE_ASSETS=GUIDED_COURSE_LANGUAGES.flatMap(language=>[
   `./library/courses/${language}/course.json`,
@@ -44,6 +45,9 @@ const ASSETS=[
   './library/courses/Japanese/units/b1-1-narrative.json','./library/courses/Japanese/units/b1-1-cause-effect.json',
   './library/courses/Japanese/units/b1-1-media.json','./library/courses/Japanese/units/b1-1-emotions.json',
   './library/courses/Japanese/units/b1-1-society.json','./library/courses/Japanese/units/b1-1-register.json',
+  './library/courses/Japanese/units/b1-2-conditions.json','./library/courses/Japanese/units/b1-2-nuance.json',
+  './library/courses/Japanese/units/b1-2-negotiation.json','./library/courses/Japanese/units/b1-2-projects.json',
+  './library/courses/Japanese/units/b1-2-perspectives.json','./library/courses/Japanese/units/b1-2-conversation.json',
   './library/courses/Japanese/audio_manifest.json',
   ...GUIDED_COURSE_ASSETS
 ];

@@ -52,8 +52,8 @@
           "prompt": "¿Qué significa «Wie spät ist es?»?",
           "target": "Wie spät ist es?",
           "options": [
+            "Hable despacio.",
             "sábado",
-            "Sprechen Sie langsam.",
             "¿Qué hora es?"
           ],
           "answer": "¿Qué hora es?",
@@ -107,9 +107,9 @@
           "prompt": "¿Qué significa «Es ist drei Uhr.»?",
           "target": "Es ist drei Uhr.",
           "options": [
+            "¿Puede ayudarme?",
             "Son las tres",
-            "domingo",
-            "Können Sie mir helfen?"
+            "domingo"
           ],
           "answer": "Son las tres",
           "explanation": "Son las tres",
@@ -162,9 +162,9 @@
           "prompt": "¿Qué significa «Montag»?",
           "target": "Montag",
           "options": [
+            "Quisiera agua.",
             "lunes",
-            "Hallo!",
-            "Ich hätte gern Wasser."
+            "Hola."
           ],
           "answer": "lunes",
           "explanation": "lunes",
@@ -217,8 +217,8 @@
           "prompt": "¿Qué significa «Dienstag»?",
           "target": "Dienstag",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "Ich verstehe nicht.",
             "martes"
           ],
           "answer": "martes",
@@ -273,7 +273,7 @@
           "target": "Mittwoch",
           "options": [
             "¿Cómo te llamas?",
-            "Bitte wiederholen.",
+            "Repita, por favor.",
             "miércoles"
           ],
           "answer": "miércoles",
@@ -351,8 +351,8 @@
           "target": "Donnerstag",
           "options": [
             "jueves",
-            "domingo",
-            "Können Sie mir helfen?"
+            "¿Puede ayudarme?",
+            "domingo"
           ],
           "answer": "jueves",
           "explanation": "jueves",
@@ -405,9 +405,9 @@
           "prompt": "¿Qué significa «Freitag»?",
           "target": "Freitag",
           "options": [
-            "Hallo!",
-            "viernes",
-            "Ich hätte gern Wasser."
+            "Quisiera agua.",
+            "Hola.",
+            "viernes"
           ],
           "answer": "viernes",
           "explanation": "viernes",
@@ -460,8 +460,8 @@
           "prompt": "¿Qué significa «Samstag»?",
           "target": "Samstag",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "Ich verstehe nicht.",
             "sábado"
           ],
           "answer": "sábado",
@@ -517,7 +517,7 @@
           "options": [
             "¿Cómo te llamas?",
             "domingo",
-            "Bitte wiederholen."
+            "Repita, por favor."
           ],
           "answer": "domingo",
           "explanation": "domingo",
@@ -570,12 +570,12 @@
           "prompt": "¿Qué significa «Hallo!»?",
           "target": "Hallo!",
           "options": [
-            "Wo ist die Toilette?",
-            "Hallo!",
+            "Hola.",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "Hallo!",
-          "explanation": "Hallo!",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "Hallo!",
           "slow_audio": "Hallo!",
           "image": null,
@@ -594,7 +594,7 @@
             "Hallo!"
           ],
           "answer": "Hallo!",
-          "explanation": "La forma escrita correcta es «Hallo!»: Hallo!.",
+          "explanation": "La forma escrita correcta es «Hallo!»: Hola..",
           "audio": "Hallo!",
           "slow_audio": "Hallo!",
           "image": null,
@@ -648,12 +648,12 @@
           "prompt": "¿Qué significa «Ich verstehe nicht.»?",
           "target": "Ich verstehe nicht.",
           "options": [
-            "Ich verstehe nicht.",
-            "Hallo!",
-            "Ich hätte gern Wasser."
+            "Quisiera agua.",
+            "Hola.",
+            "No entiendo."
           ],
-          "answer": "Ich verstehe nicht.",
-          "explanation": "Ich verstehe nicht.",
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
           "audio": "Ich verstehe nicht.",
           "slow_audio": "Ich verstehe nicht.",
           "image": null,
@@ -672,7 +672,7 @@
             "Ich verstehe nicht."
           ],
           "answer": "Ich verstehe nicht.",
-          "explanation": "La forma escrita correcta es «Ich verstehe nicht.»: Ich verstehe nicht..",
+          "explanation": "La forma escrita correcta es «Ich verstehe nicht.»: No entiendo..",
           "audio": "Ich verstehe nicht.",
           "slow_audio": "Ich verstehe nicht.",
           "image": null,
@@ -703,12 +703,12 @@
           "prompt": "¿Qué significa «Bitte wiederholen.»?",
           "target": "Bitte wiederholen.",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "Bitte wiederholen.",
-            "Ich verstehe nicht."
+            "Repita, por favor."
           ],
-          "answer": "Bitte wiederholen.",
-          "explanation": "Bitte wiederholen.",
+          "answer": "Repita, por favor.",
+          "explanation": "Repita, por favor.",
           "audio": "Bitte wiederholen.",
           "slow_audio": "Bitte wiederholen.",
           "image": null,
@@ -727,7 +727,7 @@
             "Bitte wiederholen."
           ],
           "answer": "Bitte wiederholen.",
-          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Bitte wiederholen..",
+          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Repita, por favor..",
           "audio": "Bitte wiederholen.",
           "slow_audio": "Bitte wiederholen.",
           "image": null,
@@ -759,11 +759,11 @@
           "target": "Wo ist die Toilette?",
           "options": [
             "¿Cómo te llamas?",
-            "Bitte wiederholen.",
-            "Wo ist die Toilette?"
+            "Repita, por favor.",
+            "¿Dónde está el baño?"
           ],
-          "answer": "Wo ist die Toilette?",
-          "explanation": "Wo ist die Toilette?",
+          "answer": "¿Dónde está el baño?",
+          "explanation": "¿Dónde está el baño?",
           "audio": "Wo ist die Toilette?",
           "slow_audio": "Wo ist die Toilette?",
           "image": null,
@@ -782,7 +782,7 @@
             "Sprechen Sie langsam."
           ],
           "answer": "Wo ist die Toilette?",
-          "explanation": "La forma escrita correcta es «Wo ist die Toilette?»: Wo ist die Toilette?.",
+          "explanation": "La forma escrita correcta es «Wo ist die Toilette?»: ¿Dónde está el baño?.",
           "audio": "Wo ist die Toilette?",
           "slow_audio": "Wo ist die Toilette?",
           "image": null,
@@ -813,12 +813,12 @@
           "prompt": "¿Qué significa «Wie viel kostet das?»?",
           "target": "Wie viel kostet das?",
           "options": [
-            "Wie viel kostet das?",
-            "Wo ist die Toilette?",
+            "¿Cuánto cuesta?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "Wie viel kostet das?",
-          "explanation": "Wie viel kostet das?",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "Wie viel kostet das?",
           "slow_audio": "Wie viel kostet das?",
           "image": null,
@@ -837,7 +837,7 @@
             "Wie viel kostet das?"
           ],
           "answer": "Wie viel kostet das?",
-          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: Wie viel kostet das?.",
+          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: ¿Cuánto cuesta?.",
           "audio": "Wie viel kostet das?",
           "slow_audio": "Wie viel kostet das?",
           "image": null,
@@ -869,11 +869,11 @@
           "target": "Sprechen Sie langsam.",
           "options": [
             "cero",
-            "Wie viel kostet das?",
-            "Sprechen Sie langsam."
+            "Hable despacio.",
+            "¿Cuánto cuesta?"
           ],
-          "answer": "Sprechen Sie langsam.",
-          "explanation": "Sprechen Sie langsam.",
+          "answer": "Hable despacio.",
+          "explanation": "Hable despacio.",
           "audio": "Sprechen Sie langsam.",
           "slow_audio": "Sprechen Sie langsam.",
           "image": null,
@@ -892,7 +892,7 @@
             "drei"
           ],
           "answer": "Sprechen Sie langsam.",
-          "explanation": "La forma escrita correcta es «Sprechen Sie langsam.»: Sprechen Sie langsam..",
+          "explanation": "La forma escrita correcta es «Sprechen Sie langsam.»: Hable despacio..",
           "audio": "Sprechen Sie langsam.",
           "slow_audio": "Sprechen Sie langsam.",
           "image": null,
@@ -930,9 +930,9 @@
           "prompt": "¿Qué significa «Samstag»?",
           "target": "Samstag",
           "options": [
-            "sábado",
-            "Hallo!",
-            "Ich hätte gern Wasser."
+            "Quisiera agua.",
+            "Hola.",
+            "sábado"
           ],
           "answer": "sábado",
           "explanation": "sábado",
@@ -968,12 +968,12 @@
           "prompt": "¿Qué significa «Hallo!»?",
           "target": "Hallo!",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "Ich verstehe nicht.",
-            "Hallo!"
+            "Hola."
           ],
-          "answer": "Hallo!",
-          "explanation": "Hallo!",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "Hallo!",
           "slow_audio": "Hallo!",
           "image": null,
@@ -992,7 +992,7 @@
             "Hallo!"
           ],
           "answer": "Hallo!",
-          "explanation": "La forma escrita correcta es «Hallo!»: Hallo!.",
+          "explanation": "La forma escrita correcta es «Hallo!»: Hola..",
           "audio": "Hallo!",
           "slow_audio": "Hallo!",
           "image": null,
@@ -1007,11 +1007,11 @@
           "target": "Bitte wiederholen.",
           "options": [
             "¿Cómo te llamas?",
-            "Bitte wiederholen.",
+            "Repita, por favor.",
             "cinco"
           ],
-          "answer": "Bitte wiederholen.",
-          "explanation": "Bitte wiederholen.",
+          "answer": "Repita, por favor.",
+          "explanation": "Repita, por favor.",
           "audio": "Bitte wiederholen.",
           "slow_audio": "Bitte wiederholen.",
           "image": null,
@@ -1030,7 +1030,7 @@
             "Sprechen Sie langsam."
           ],
           "answer": "Bitte wiederholen.",
-          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Bitte wiederholen..",
+          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Repita, por favor..",
           "audio": "Bitte wiederholen.",
           "slow_audio": "Bitte wiederholen.",
           "image": null,
@@ -1044,12 +1044,12 @@
           "prompt": "¿Qué significa «Wie viel kostet das?»?",
           "target": "Wie viel kostet das?",
           "options": [
-            "Wie viel kostet das?",
-            "Wo ist die Toilette?",
+            "¿Cuánto cuesta?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "Wie viel kostet das?",
-          "explanation": "Wie viel kostet das?",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "Wie viel kostet das?",
           "slow_audio": "Wie viel kostet das?",
           "image": null,
@@ -1068,7 +1068,7 @@
             "Wie viel kostet das?"
           ],
           "answer": "Wie viel kostet das?",
-          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: Wie viel kostet das?.",
+          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: ¿Cuánto cuesta?.",
           "audio": "Wie viel kostet das?",
           "slow_audio": "Wie viel kostet das?",
           "image": null,
@@ -1122,12 +1122,12 @@
           "prompt": "¿Qué significa «Können Sie mir helfen?»?",
           "target": "Können Sie mir helfen?",
           "options": [
-            "Können Sie mir helfen?",
+            "No entiendo.",
             "Me llamo Ana",
-            "Ich verstehe nicht."
+            "¿Puede ayudarme?"
           ],
-          "answer": "Können Sie mir helfen?",
-          "explanation": "Können Sie mir helfen?",
+          "answer": "¿Puede ayudarme?",
+          "explanation": "¿Puede ayudarme?",
           "audio": "Können Sie mir helfen?",
           "slow_audio": "Können Sie mir helfen?",
           "image": null,
@@ -1146,7 +1146,7 @@
             "Können Sie mir helfen?"
           ],
           "answer": "Können Sie mir helfen?",
-          "explanation": "La forma escrita correcta es «Können Sie mir helfen?»: Können Sie mir helfen?.",
+          "explanation": "La forma escrita correcta es «Können Sie mir helfen?»: ¿Puede ayudarme?.",
           "audio": "Können Sie mir helfen?",
           "slow_audio": "Können Sie mir helfen?",
           "image": null,
@@ -1178,11 +1178,11 @@
           "target": "Ich hätte gern Wasser.",
           "options": [
             "¿Cómo te llamas?",
-            "Ich hätte gern Wasser.",
-            "Bitte wiederholen."
+            "Repita, por favor.",
+            "Quisiera agua."
           ],
-          "answer": "Ich hätte gern Wasser.",
-          "explanation": "Ich hätte gern Wasser.",
+          "answer": "Quisiera agua.",
+          "explanation": "Quisiera agua.",
           "audio": "Ich hätte gern Wasser.",
           "slow_audio": "Ich hätte gern Wasser.",
           "image": null,
@@ -1201,7 +1201,7 @@
             "Ich hätte gern Wasser."
           ],
           "answer": "Ich hätte gern Wasser.",
-          "explanation": "La forma escrita correcta es «Ich hätte gern Wasser.»: Ich hätte gern Wasser..",
+          "explanation": "La forma escrita correcta es «Ich hätte gern Wasser.»: Quisiera agua..",
           "audio": "Ich hätte gern Wasser.",
           "slow_audio": "Ich hätte gern Wasser.",
           "image": null,
@@ -1232,7 +1232,7 @@
           "prompt": "¿Qué significa «Ich heiße Anna.»?",
           "target": "Ich heiße Anna.",
           "options": [
-            "Wo ist die Toilette?",
+            "¿Dónde está el baño?",
             "Me llamo Ana",
             "Soy de México"
           ],
@@ -1288,7 +1288,7 @@
           "target": "Wie heißt du?",
           "options": [
             "cero",
-            "Wie viel kostet das?",
+            "¿Cuánto cuesta?",
             "¿Cómo te llamas?"
           ],
           "answer": "¿Cómo te llamas?",
@@ -1344,7 +1344,7 @@
           "options": [
             "Soy de México",
             "uno",
-            "Sprechen Sie langsam."
+            "Hable despacio."
           ],
           "answer": "Soy de México",
           "explanation": "Soy de México",
@@ -1421,7 +1421,7 @@
           "target": "null",
           "options": [
             "¿Cómo te llamas?",
-            "Bitte wiederholen.",
+            "Repita, por favor.",
             "cero"
           ],
           "answer": "cero",
@@ -1475,7 +1475,7 @@
           "prompt": "¿Qué significa «eins»?",
           "target": "eins",
           "options": [
-            "Wo ist die Toilette?",
+            "¿Dónde está el baño?",
             "uno",
             "Soy de México"
           ],
@@ -1531,7 +1531,7 @@
           "target": "zwei",
           "options": [
             "cero",
-            "Wie viel kostet das?",
+            "¿Cuánto cuesta?",
             "dos"
           ],
           "answer": "dos",
@@ -1587,7 +1587,7 @@
           "options": [
             "uno",
             "tres",
-            "Sprechen Sie langsam."
+            "Hable despacio."
           ],
           "answer": "tres",
           "explanation": "tres",
@@ -1640,9 +1640,9 @@
           "prompt": "¿Qué significa «vier»?",
           "target": "vier",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "cuatro"
+            "cuatro",
+            "¿Puede ayudarme?"
           ],
           "answer": "cuatro",
           "explanation": "cuatro",
@@ -1719,7 +1719,7 @@
           "target": "fünf",
           "options": [
             "cinco",
-            "Wo ist die Toilette?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
           "answer": "cinco",
@@ -1775,7 +1775,7 @@
           "options": [
             "seis",
             "cero",
-            "Wie viel kostet das?"
+            "¿Cuánto cuesta?"
           ],
           "answer": "seis",
           "explanation": "seis",
@@ -1830,7 +1830,7 @@
           "options": [
             "uno",
             "siete",
-            "Sprechen Sie langsam."
+            "Hable despacio."
           ],
           "answer": "siete",
           "explanation": "siete",
@@ -1883,9 +1883,9 @@
           "prompt": "¿Qué significa «acht»?",
           "target": "acht",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "ocho"
+            "ocho",
+            "¿Puede ayudarme?"
           ],
           "answer": "ocho",
           "explanation": "ocho",
@@ -1938,7 +1938,7 @@
           "prompt": "¿Qué significa «neun»?",
           "target": "neun",
           "options": [
-            "Ich hätte gern Wasser.",
+            "Quisiera agua.",
             "tres",
             "nueve"
           ],
@@ -2000,7 +2000,7 @@
           "prompt": "¿Qué significa «zwei»?",
           "target": "zwei",
           "options": [
-            "Wo ist die Toilette?",
+            "¿Dónde está el baño?",
             "dos",
             "Soy de México"
           ],
@@ -2039,7 +2039,7 @@
           "target": "vier",
           "options": [
             "cero",
-            "Wie viel kostet das?",
+            "¿Cuánto cuesta?",
             "cuatro"
           ],
           "answer": "cuatro",
@@ -2078,7 +2078,7 @@
           "options": [
             "uno",
             "seis",
-            "Sprechen Sie langsam."
+            "Hable despacio."
           ],
           "answer": "seis",
           "explanation": "seis",
@@ -2114,9 +2114,9 @@
           "prompt": "¿Qué significa «acht»?",
           "target": "acht",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "ocho"
+            "ocho",
+            "¿Puede ayudarme?"
           ],
           "answer": "ocho",
           "explanation": "ocho",
@@ -2194,7 +2194,7 @@
           "options": [
             "diez",
             "cero",
-            "Wie viel kostet das?"
+            "¿Cuánto cuesta?"
           ],
           "answer": "diez",
           "explanation": "diez",
@@ -2249,7 +2249,7 @@
           "options": [
             "uno",
             "once",
-            "Sprechen Sie langsam."
+            "Hable despacio."
           ],
           "answer": "once",
           "explanation": "once",
@@ -2302,9 +2302,9 @@
           "prompt": "¿Qué significa «zwölf»?",
           "target": "zwölf",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "doce"
+            "doce",
+            "¿Puede ayudarme?"
           ],
           "answer": "doce",
           "explanation": "doce",
@@ -2357,7 +2357,7 @@
           "prompt": "¿Qué significa «dreizehn»?",
           "target": "dreizehn",
           "options": [
-            "Ich hätte gern Wasser.",
+            "Quisiera agua.",
             "tres",
             "trece"
           ],
@@ -2491,8 +2491,8 @@
           "target": "fünfzehn",
           "options": [
             "uno",
-            "quince",
-            "Sprechen Sie langsam."
+            "Hable despacio.",
+            "quince"
           ],
           "answer": "quince",
           "explanation": "quince",
@@ -2545,9 +2545,9 @@
           "prompt": "¿Qué significa «sechzehn»?",
           "target": "sechzehn",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "dieciséis"
+            "dieciséis",
+            "¿Puede ayudarme?"
           ],
           "answer": "dieciséis",
           "explanation": "dieciséis",
@@ -2600,7 +2600,7 @@
           "prompt": "¿Qué significa «siebzehn»?",
           "target": "siebzehn",
           "options": [
-            "Ich hätte gern Wasser.",
+            "Quisiera agua.",
             "tres",
             "diecisiete"
           ],
@@ -2788,9 +2788,9 @@
           "prompt": "¿Qué significa «zwanzig»?",
           "target": "zwanzig",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "veinte"
+            "veinte",
+            "¿Puede ayudarme?"
           ],
           "answer": "veinte",
           "explanation": "veinte",
@@ -2844,7 +2844,7 @@
           "target": "ja",
           "options": [
             "sí",
-            "Ich hätte gern Wasser.",
+            "Quisiera agua.",
             "tres"
           ],
           "answer": "sí",
@@ -3070,9 +3070,9 @@
           "prompt": "¿Qué significa «siebzehn»?",
           "target": "siebzehn",
           "options": [
-            "Können Sie mir helfen?",
             "dos",
-            "diecisiete"
+            "diecisiete",
+            "¿Puede ayudarme?"
           ],
           "answer": "diecisiete",
           "explanation": "diecisiete",
@@ -3108,7 +3108,7 @@
           "prompt": "¿Qué significa «neunzehn»?",
           "target": "neunzehn",
           "options": [
-            "Ich hätte gern Wasser.",
+            "Quisiera agua.",
             "tres",
             "diecinueve"
           ],
@@ -3262,8 +3262,8 @@
           "prompt": "¿Qué significa «das»?",
           "target": "das",
           "options": [
-            "Ich hätte gern Wasser.",
             "eso",
+            "Quisiera agua.",
             "tres"
           ],
           "answer": "eso",
@@ -4053,12 +4053,12 @@
           "prompt": "¿Qué significa «Ich verstehe nicht.»?",
           "target": "Ich verstehe nicht.",
           "options": [
-            "Ich verstehe nicht.",
             "once",
-            "cuatro"
+            "cuatro",
+            "No entiendo."
           ],
-          "answer": "Ich verstehe nicht.",
-          "explanation": "Ich verstehe nicht.",
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
           "audio": "Ich verstehe nicht.",
           "slow_audio": "Ich verstehe nicht.",
           "image": null,
@@ -4077,7 +4077,7 @@
             "Ich verstehe nicht."
           ],
           "answer": "Ich verstehe nicht.",
-          "explanation": "La forma escrita correcta es «Ich verstehe nicht.»: Ich verstehe nicht..",
+          "explanation": "La forma escrita correcta es «Ich verstehe nicht.»: No entiendo..",
           "audio": "Ich verstehe nicht.",
           "slow_audio": "Ich verstehe nicht.",
           "image": null,
@@ -4091,12 +4091,12 @@
           "prompt": "¿Qué significa «Können Sie mir helfen?»?",
           "target": "Können Sie mir helfen?",
           "options": [
-            "Können Sie mir helfen?",
             "doce",
-            "cinco"
+            "cinco",
+            "¿Puede ayudarme?"
           ],
-          "answer": "Können Sie mir helfen?",
-          "explanation": "Können Sie mir helfen?",
+          "answer": "¿Puede ayudarme?",
+          "explanation": "¿Puede ayudarme?",
           "audio": "Können Sie mir helfen?",
           "slow_audio": "Können Sie mir helfen?",
           "image": null,
@@ -4115,7 +4115,7 @@
             "fünfzehn"
           ],
           "answer": "Können Sie mir helfen?",
-          "explanation": "La forma escrita correcta es «Können Sie mir helfen?»: Können Sie mir helfen?.",
+          "explanation": "La forma escrita correcta es «Können Sie mir helfen?»: ¿Puede ayudarme?.",
           "audio": "Können Sie mir helfen?",
           "slow_audio": "Können Sie mir helfen?",
           "image": null,

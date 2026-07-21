@@ -3,7 +3,7 @@
   "title": "Coreano: de cero a conversaciones intermedias",
   "language": "Korean",
   "languageCode": "ko",
-  "version": 9,
+  "version": 10,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Aprende los fundamentos y continúa con conversaciones guiadas antes de leer historias.",
   "vocabularyGoal": 300,
@@ -93,6 +93,20 @@
         "b1-1-emotions",
         "b1-1-society",
         "b1-1-register"
+      ]
+    },
+    {
+      "id": "b1-2",
+      "label": "ETAPA 7 · B1.2",
+      "title": "Conversación intermedia",
+      "description": "Hipótesis, matices, negociación, proyectos, argumentos y conversaciones extensas.",
+      "unitIds": [
+        "b1-2-conditions",
+        "b1-2-nuance",
+        "b1-2-negotiation",
+        "b1-2-projects",
+        "b1-2-perspectives",
+        "b1-2-conversation"
       ]
     }
   ],
@@ -466,6 +480,60 @@
       "description": "Adaptar peticiones y opiniones a situaciones formales e informales.",
       "manifest": "units/b1-1-register.json",
       "icon": "예의"
+    },
+    {
+      "id": "b1-2-conditions",
+      "world": 39,
+      "mapLabel": "UNIDAD B1.2 · 1",
+      "title": "Hipótesis y condiciones",
+      "description": "Imaginar posibilidades, condiciones y resultados alternativos.",
+      "manifest": "units/b1-2-conditions.json",
+      "icon": "조건"
+    },
+    {
+      "id": "b1-2-nuance",
+      "world": 40,
+      "mapLabel": "UNIDAD B1.2 · 2",
+      "title": "Opiniones con matices",
+      "description": "Acordar, discrepar y expresar grados de certeza.",
+      "manifest": "units/b1-2-nuance.json",
+      "icon": "뉘앙스"
+    },
+    {
+      "id": "b1-2-negotiation",
+      "world": 41,
+      "mapLabel": "UNIDAD B1.2 · 3",
+      "title": "Decisiones y negociación",
+      "description": "Proponer, ceder, rechazar y cerrar acuerdos.",
+      "manifest": "units/b1-2-negotiation.json",
+      "icon": "합의"
+    },
+    {
+      "id": "b1-2-projects",
+      "world": 42,
+      "mapLabel": "UNIDAD B1.2 · 4",
+      "title": "Proyectos y colaboración",
+      "description": "Planificar tareas, prioridades, riesgos y evaluación.",
+      "manifest": "units/b1-2-projects.json",
+      "icon": "계획"
+    },
+    {
+      "id": "b1-2-perspectives",
+      "world": 43,
+      "mapLabel": "UNIDAD B1.2 · 5",
+      "title": "Perspectivas y argumentos",
+      "description": "Relacionar contexto, experiencia, evidencia y conclusión.",
+      "manifest": "units/b1-2-perspectives.json",
+      "icon": "관점"
+    },
+    {
+      "id": "b1-2-conversation",
+      "world": 44,
+      "mapLabel": "UNIDAD B1.2 · 6",
+      "title": "Conversaciones extensas",
+      "description": "Aclarar, retomar, reformular y resumir una conversación.",
+      "manifest": "units/b1-2-conversation.json",
+      "icon": "대화"
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "stage": "B1.2",
+  "status": "READY_WITHIN_REPORTED_BUDGET_AWAITING_APPROVAL",
+  "model": "eleven_v3",
+  "language_override_required": true,
+  "regenerate_existing": false,
+  "available_credits_reported": 15000,
+  "totals": {
+    "pending_audio_files": 480,
+    "estimated_billable_characters": 14820,
+    "estimated_credits_remaining": 180,
+    "estimated_cumulative_characters_a11_through_b12": 71362
+  },
+  "languages": {
+    "English": { "language_code": "en", "pending_audio_files": 48, "estimated_billable_characters": 1622 },
+    "French": { "language_code": "fr", "pending_audio_files": 48, "estimated_billable_characters": 1884 },
+    "German": { "language_code": "de", "pending_audio_files": 48, "estimated_billable_characters": 1909 },
+    "Korean": { "language_code": "ko", "pending_audio_files": 48, "estimated_billable_characters": 1081 },
+    "Russian": { "language_code": "ru", "pending_audio_files": 48, "estimated_billable_characters": 1684 },
+    "Chinese": { "language_code": "zh", "pending_audio_files": 48, "estimated_billable_characters": 682 },
+    "Italian": { "language_code": "it", "pending_audio_files": 48, "estimated_billable_characters": 1867 },
+    "Portuguese": { "language_code": "pt", "pending_audio_files": 48, "estimated_billable_characters": 1786 },
+    "Arabic": { "language_code": "ar", "pending_audio_files": 48, "estimated_billable_characters": 1394 },
+    "Japanese": { "language_code": "ja", "pending_audio_files": 48, "estimated_billable_characters": 911 }
+  },
+  "notes": [
+    "Los 48 audios nuevos por idioma corresponden únicamente al contenido nuevo de B1.2.",
+    "Los otros 48 contenidos de cada idioma reutilizan audio ya generado en B1.1 y no se vuelven a cobrar.",
+    "La generación requiere aprobación explícita porque dejaría solo unos 180 créditos según el saldo aproximado reportado."
+  ]
+}

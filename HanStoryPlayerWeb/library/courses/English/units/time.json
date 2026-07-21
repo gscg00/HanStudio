@@ -53,8 +53,8 @@
           "target": "What time is it?",
           "options": [
             "sábado",
-            "Nice to meet you.",
-            "¿Qué hora es?"
+            "¿Qué hora es?",
+            "Escucha, deja una pausa y repite."
           ],
           "answer": "¿Qué hora es?",
           "explanation": "¿Qué hora es?",
@@ -107,9 +107,9 @@
           "prompt": "¿Qué significa «It's three o'clock.»?",
           "target": "It's three o'clock.",
           "options": [
-            "Can you help me?",
             "Son las tres",
-            "domingo"
+            "domingo",
+            "Practica la unión natural de las palabras."
           ],
           "answer": "Son las tres",
           "explanation": "Son las tres",
@@ -162,9 +162,9 @@
           "prompt": "¿Qué significa «Monday»?",
           "target": "Monday",
           "options": [
-            "I would like water.",
             "lunes",
-            "Hello!"
+            "Hola.",
+            "Repite sin separar cada palabra."
           ],
           "answer": "lunes",
           "explanation": "lunes",
@@ -217,8 +217,8 @@
           "prompt": "¿Qué significa «Tuesday»?",
           "target": "Tuesday",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "I don't understand.",
             "martes"
           ],
           "answer": "martes",
@@ -273,7 +273,7 @@
           "target": "Wednesday",
           "options": [
             "¿Cómo te llamas?",
-            "Could you repeat that?",
+            "¿Podría repetirlo?",
             "miércoles"
           ],
           "answer": "miércoles",
@@ -351,8 +351,8 @@
           "target": "Thursday",
           "options": [
             "jueves",
-            "Can you help me?",
-            "domingo"
+            "domingo",
+            "Practica la unión natural de las palabras."
           ],
           "answer": "jueves",
           "explanation": "jueves",
@@ -405,9 +405,9 @@
           "prompt": "¿Qué significa «Friday»?",
           "target": "Friday",
           "options": [
-            "I would like water.",
-            "Hello!",
-            "viernes"
+            "Hola.",
+            "viernes",
+            "Repite sin separar cada palabra."
           ],
           "answer": "viernes",
           "explanation": "viernes",
@@ -460,8 +460,8 @@
           "prompt": "¿Qué significa «Saturday»?",
           "target": "Saturday",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "I don't understand.",
             "sábado"
           ],
           "answer": "sábado",
@@ -517,7 +517,7 @@
           "options": [
             "¿Cómo te llamas?",
             "domingo",
-            "Could you repeat that?"
+            "¿Podría repetirlo?"
           ],
           "answer": "domingo",
           "explanation": "domingo",
@@ -570,12 +570,12 @@
           "prompt": "¿Qué significa «Hello!»?",
           "target": "Hello!",
           "options": [
-            "Hello!",
-            "Where is the bathroom?",
+            "Hola.",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "Hello!",
-          "explanation": "Hello!",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "Hello!",
           "slow_audio": "Hello!",
           "image": null,
@@ -594,7 +594,7 @@
             "Can you help me?"
           ],
           "answer": "Hello!",
-          "explanation": "La forma escrita correcta es «Hello!»: Hello!.",
+          "explanation": "La forma escrita correcta es «Hello!»: Hola..",
           "audio": "Hello!",
           "slow_audio": "Hello!",
           "image": null,
@@ -648,12 +648,12 @@
           "prompt": "¿Qué significa «I don't understand.»?",
           "target": "I don't understand.",
           "options": [
-            "I don't understand.",
-            "I would like water.",
-            "Hello!"
+            "Hola.",
+            "No entiendo.",
+            "Repite sin separar cada palabra."
           ],
-          "answer": "I don't understand.",
-          "explanation": "I don't understand.",
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
           "audio": "I don't understand.",
           "slow_audio": "I don't understand.",
           "image": null,
@@ -672,7 +672,7 @@
             "I don't understand."
           ],
           "answer": "I don't understand.",
-          "explanation": "La forma escrita correcta es «I don't understand.»: I don't understand..",
+          "explanation": "La forma escrita correcta es «I don't understand.»: No entiendo..",
           "audio": "I don't understand.",
           "slow_audio": "I don't understand.",
           "image": null,
@@ -703,12 +703,12 @@
           "prompt": "¿Qué significa «Could you repeat that?»?",
           "target": "Could you repeat that?",
           "options": [
-            "Could you repeat that?",
+            "No entiendo.",
             "Me llamo Ana",
-            "I don't understand."
+            "¿Podría repetirlo?"
           ],
-          "answer": "Could you repeat that?",
-          "explanation": "Could you repeat that?",
+          "answer": "¿Podría repetirlo?",
+          "explanation": "¿Podría repetirlo?",
           "audio": "Could you repeat that?",
           "slow_audio": "Could you repeat that?",
           "image": null,
@@ -727,7 +727,7 @@
             "Could you repeat that?"
           ],
           "answer": "Could you repeat that?",
-          "explanation": "La forma escrita correcta es «Could you repeat that?»: Could you repeat that?.",
+          "explanation": "La forma escrita correcta es «Could you repeat that?»: ¿Podría repetirlo?.",
           "audio": "Could you repeat that?",
           "slow_audio": "Could you repeat that?",
           "image": null,
@@ -759,11 +759,11 @@
           "target": "Where is the bathroom?",
           "options": [
             "¿Cómo te llamas?",
-            "Where is the bathroom?",
-            "Could you repeat that?"
+            "¿Podría repetirlo?",
+            "¿Dónde está el baño?"
           ],
-          "answer": "Where is the bathroom?",
-          "explanation": "Where is the bathroom?",
+          "answer": "¿Dónde está el baño?",
+          "explanation": "¿Dónde está el baño?",
           "audio": "Where is the bathroom?",
           "slow_audio": "Where is the bathroom?",
           "image": null,
@@ -782,7 +782,7 @@
             "Nice to meet you."
           ],
           "answer": "Where is the bathroom?",
-          "explanation": "La forma escrita correcta es «Where is the bathroom?»: Where is the bathroom?.",
+          "explanation": "La forma escrita correcta es «Where is the bathroom?»: ¿Dónde está el baño?.",
           "audio": "Where is the bathroom?",
           "slow_audio": "Where is the bathroom?",
           "image": null,
@@ -813,12 +813,12 @@
           "prompt": "¿Qué significa «How much is it?»?",
           "target": "How much is it?",
           "options": [
-            "How much is it?",
-            "Where is the bathroom?",
+            "¿Cuánto cuesta?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "How much is it?",
-          "explanation": "How much is it?",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "How much is it?",
           "slow_audio": "How much is it?",
           "image": null,
@@ -837,7 +837,7 @@
             "Can you help me?"
           ],
           "answer": "How much is it?",
-          "explanation": "La forma escrita correcta es «How much is it?»: How much is it?.",
+          "explanation": "La forma escrita correcta es «How much is it?»: ¿Cuánto cuesta?.",
           "audio": "How much is it?",
           "slow_audio": "How much is it?",
           "image": null,
@@ -869,11 +869,11 @@
           "target": "Nice to meet you.",
           "options": [
             "cero",
-            "How much is it?",
-            "Nice to meet you."
+            "¿Cuánto cuesta?",
+            "Escucha, deja una pausa y repite."
           ],
-          "answer": "Nice to meet you.",
-          "explanation": "Nice to meet you.",
+          "answer": "Escucha, deja una pausa y repite.",
+          "explanation": "Escucha, deja una pausa y repite.",
           "audio": "Nice to meet you.",
           "slow_audio": "Nice to meet you.",
           "image": null,
@@ -892,7 +892,7 @@
             "three"
           ],
           "answer": "Nice to meet you.",
-          "explanation": "La forma escrita correcta es «Nice to meet you.»: Nice to meet you..",
+          "explanation": "La forma escrita correcta es «Nice to meet you.»: Escucha, deja una pausa y repite..",
           "audio": "Nice to meet you.",
           "slow_audio": "Nice to meet you.",
           "image": null,
@@ -930,9 +930,9 @@
           "prompt": "¿Qué significa «Saturday»?",
           "target": "Saturday",
           "options": [
-            "I would like water.",
+            "Hola.",
             "sábado",
-            "Hello!"
+            "Repite sin separar cada palabra."
           ],
           "answer": "sábado",
           "explanation": "sábado",
@@ -968,12 +968,12 @@
           "prompt": "¿Qué significa «Hello!»?",
           "target": "Hello!",
           "options": [
+            "No entiendo.",
             "Me llamo Ana",
-            "I don't understand.",
-            "Hello!"
+            "Hola."
           ],
-          "answer": "Hello!",
-          "explanation": "Hello!",
+          "answer": "Hola.",
+          "explanation": "Hola.",
           "audio": "Hello!",
           "slow_audio": "Hello!",
           "image": null,
@@ -992,7 +992,7 @@
             "Hello!"
           ],
           "answer": "Hello!",
-          "explanation": "La forma escrita correcta es «Hello!»: Hello!.",
+          "explanation": "La forma escrita correcta es «Hello!»: Hola..",
           "audio": "Hello!",
           "slow_audio": "Hello!",
           "image": null,
@@ -1007,11 +1007,11 @@
           "target": "Could you repeat that?",
           "options": [
             "¿Cómo te llamas?",
-            "Could you repeat that?",
+            "¿Podría repetirlo?",
             "cinco"
           ],
-          "answer": "Could you repeat that?",
-          "explanation": "Could you repeat that?",
+          "answer": "¿Podría repetirlo?",
+          "explanation": "¿Podría repetirlo?",
           "audio": "Could you repeat that?",
           "slow_audio": "Could you repeat that?",
           "image": null,
@@ -1030,7 +1030,7 @@
             "Nice to meet you."
           ],
           "answer": "Could you repeat that?",
-          "explanation": "La forma escrita correcta es «Could you repeat that?»: Could you repeat that?.",
+          "explanation": "La forma escrita correcta es «Could you repeat that?»: ¿Podría repetirlo?.",
           "audio": "Could you repeat that?",
           "slow_audio": "Could you repeat that?",
           "image": null,
@@ -1044,12 +1044,12 @@
           "prompt": "¿Qué significa «How much is it?»?",
           "target": "How much is it?",
           "options": [
-            "How much is it?",
-            "Where is the bathroom?",
+            "¿Cuánto cuesta?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
-          "answer": "How much is it?",
-          "explanation": "How much is it?",
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
           "audio": "How much is it?",
           "slow_audio": "How much is it?",
           "image": null,
@@ -1068,7 +1068,7 @@
             "Can you help me?"
           ],
           "answer": "How much is it?",
-          "explanation": "La forma escrita correcta es «How much is it?»: How much is it?.",
+          "explanation": "La forma escrita correcta es «How much is it?»: ¿Cuánto cuesta?.",
           "audio": "How much is it?",
           "slow_audio": "How much is it?",
           "image": null,
@@ -1122,12 +1122,12 @@
           "prompt": "¿Qué significa «Can you help me?»?",
           "target": "Can you help me?",
           "options": [
-            "Me llamo Ana",
-            "I don't understand.",
-            "Can you help me?"
+            "Practica la unión natural de las palabras.",
+            "No entiendo.",
+            "Me llamo Ana"
           ],
-          "answer": "Can you help me?",
-          "explanation": "Can you help me?",
+          "answer": "Practica la unión natural de las palabras.",
+          "explanation": "Practica la unión natural de las palabras.",
           "audio": "Can you help me?",
           "slow_audio": "Can you help me?",
           "image": null,
@@ -1146,7 +1146,7 @@
             "Can you help me?"
           ],
           "answer": "Can you help me?",
-          "explanation": "La forma escrita correcta es «Can you help me?»: Can you help me?.",
+          "explanation": "La forma escrita correcta es «Can you help me?»: Practica la unión natural de las palabras..",
           "audio": "Can you help me?",
           "slow_audio": "Can you help me?",
           "image": null,
@@ -1178,11 +1178,11 @@
           "target": "I would like water.",
           "options": [
             "¿Cómo te llamas?",
-            "Could you repeat that?",
-            "I would like water."
+            "Repite sin separar cada palabra.",
+            "¿Podría repetirlo?"
           ],
-          "answer": "I would like water.",
-          "explanation": "I would like water.",
+          "answer": "Repite sin separar cada palabra.",
+          "explanation": "Repite sin separar cada palabra.",
           "audio": "I would like water.",
           "slow_audio": "I would like water.",
           "image": null,
@@ -1201,7 +1201,7 @@
             "Nice to meet you."
           ],
           "answer": "I would like water.",
-          "explanation": "La forma escrita correcta es «I would like water.»: I would like water..",
+          "explanation": "La forma escrita correcta es «I would like water.»: Repite sin separar cada palabra..",
           "audio": "I would like water.",
           "slow_audio": "I would like water.",
           "image": null,
@@ -1232,8 +1232,8 @@
           "prompt": "¿Qué significa «My name is Ana.»?",
           "target": "My name is Ana.",
           "options": [
+            "¿Dónde está el baño?",
             "Me llamo Ana",
-            "Where is the bathroom?",
             "Soy de México"
           ],
           "answer": "Me llamo Ana",
@@ -1288,7 +1288,7 @@
           "target": "What's your name?",
           "options": [
             "cero",
-            "How much is it?",
+            "¿Cuánto cuesta?",
             "¿Cómo te llamas?"
           ],
           "answer": "¿Cómo te llamas?",
@@ -1343,8 +1343,8 @@
           "target": "I'm from Mexico.",
           "options": [
             "Soy de México",
-            "uno",
-            "Nice to meet you."
+            "Escucha, deja una pausa y repite.",
+            "uno"
           ],
           "answer": "Soy de México",
           "explanation": "Soy de México",
@@ -1421,7 +1421,7 @@
           "target": "zero",
           "options": [
             "¿Cómo te llamas?",
-            "Could you repeat that?",
+            "¿Podría repetirlo?",
             "cero"
           ],
           "answer": "cero",
@@ -1475,7 +1475,7 @@
           "prompt": "¿Qué significa «one»?",
           "target": "one",
           "options": [
-            "Where is the bathroom?",
+            "¿Dónde está el baño?",
             "uno",
             "Soy de México"
           ],
@@ -1531,7 +1531,7 @@
           "target": "two",
           "options": [
             "cero",
-            "How much is it?",
+            "¿Cuánto cuesta?",
             "dos"
           ],
           "answer": "dos",
@@ -1585,9 +1585,9 @@
           "prompt": "¿Qué significa «three»?",
           "target": "three",
           "options": [
+            "Escucha, deja una pausa y repite.",
             "uno",
-            "tres",
-            "Nice to meet you."
+            "tres"
           ],
           "answer": "tres",
           "explanation": "tres",
@@ -1640,9 +1640,9 @@
           "prompt": "¿Qué significa «four»?",
           "target": "four",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "cuatro",
-            "Can you help me?"
+            "cuatro"
           ],
           "answer": "cuatro",
           "explanation": "cuatro",
@@ -1719,7 +1719,7 @@
           "target": "five",
           "options": [
             "cinco",
-            "Where is the bathroom?",
+            "¿Dónde está el baño?",
             "Soy de México"
           ],
           "answer": "cinco",
@@ -1775,7 +1775,7 @@
           "options": [
             "seis",
             "cero",
-            "How much is it?"
+            "¿Cuánto cuesta?"
           ],
           "answer": "seis",
           "explanation": "seis",
@@ -1828,9 +1828,9 @@
           "prompt": "¿Qué significa «seven»?",
           "target": "seven",
           "options": [
+            "Escucha, deja una pausa y repite.",
             "uno",
-            "siete",
-            "Nice to meet you."
+            "siete"
           ],
           "answer": "siete",
           "explanation": "siete",
@@ -1883,9 +1883,9 @@
           "prompt": "¿Qué significa «eight»?",
           "target": "eight",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "ocho",
-            "Can you help me?"
+            "ocho"
           ],
           "answer": "ocho",
           "explanation": "ocho",
@@ -1938,7 +1938,7 @@
           "prompt": "¿Qué significa «nine»?",
           "target": "nine",
           "options": [
-            "I would like water.",
+            "Repite sin separar cada palabra.",
             "tres",
             "nueve"
           ],
@@ -2000,7 +2000,7 @@
           "prompt": "¿Qué significa «two»?",
           "target": "two",
           "options": [
-            "Where is the bathroom?",
+            "¿Dónde está el baño?",
             "dos",
             "Soy de México"
           ],
@@ -2039,7 +2039,7 @@
           "target": "four",
           "options": [
             "cero",
-            "How much is it?",
+            "¿Cuánto cuesta?",
             "cuatro"
           ],
           "answer": "cuatro",
@@ -2076,9 +2076,9 @@
           "prompt": "¿Qué significa «six»?",
           "target": "six",
           "options": [
+            "Escucha, deja una pausa y repite.",
             "uno",
-            "seis",
-            "Nice to meet you."
+            "seis"
           ],
           "answer": "seis",
           "explanation": "seis",
@@ -2114,9 +2114,9 @@
           "prompt": "¿Qué significa «eight»?",
           "target": "eight",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "ocho",
-            "Can you help me?"
+            "ocho"
           ],
           "answer": "ocho",
           "explanation": "ocho",
@@ -2194,7 +2194,7 @@
           "options": [
             "diez",
             "cero",
-            "How much is it?"
+            "¿Cuánto cuesta?"
           ],
           "answer": "diez",
           "explanation": "diez",
@@ -2247,9 +2247,9 @@
           "prompt": "¿Qué significa «eleven»?",
           "target": "eleven",
           "options": [
+            "Escucha, deja una pausa y repite.",
             "uno",
-            "once",
-            "Nice to meet you."
+            "once"
           ],
           "answer": "once",
           "explanation": "once",
@@ -2302,9 +2302,9 @@
           "prompt": "¿Qué significa «twelve»?",
           "target": "twelve",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "doce",
-            "Can you help me?"
+            "doce"
           ],
           "answer": "doce",
           "explanation": "doce",
@@ -2357,7 +2357,7 @@
           "prompt": "¿Qué significa «thirteen»?",
           "target": "thirteen",
           "options": [
-            "I would like water.",
+            "Repite sin separar cada palabra.",
             "tres",
             "trece"
           ],
@@ -2490,9 +2490,9 @@
           "prompt": "¿Qué significa «fifteen»?",
           "target": "fifteen",
           "options": [
+            "Escucha, deja una pausa y repite.",
             "uno",
-            "quince",
-            "Nice to meet you."
+            "quince"
           ],
           "answer": "quince",
           "explanation": "quince",
@@ -2545,9 +2545,9 @@
           "prompt": "¿Qué significa «sixteen»?",
           "target": "sixteen",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "dieciséis",
-            "Can you help me?"
+            "dieciséis"
           ],
           "answer": "dieciséis",
           "explanation": "dieciséis",
@@ -2600,7 +2600,7 @@
           "prompt": "¿Qué significa «seventeen»?",
           "target": "seventeen",
           "options": [
-            "I would like water.",
+            "Repite sin separar cada palabra.",
             "tres",
             "diecisiete"
           ],
@@ -2788,9 +2788,9 @@
           "prompt": "¿Qué significa «twenty»?",
           "target": "twenty",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "veinte",
-            "Can you help me?"
+            "veinte"
           ],
           "answer": "veinte",
           "explanation": "veinte",
@@ -2844,7 +2844,7 @@
           "target": "yes",
           "options": [
             "sí",
-            "I would like water.",
+            "Repite sin separar cada palabra.",
             "tres"
           ],
           "answer": "sí",
@@ -3070,9 +3070,9 @@
           "prompt": "¿Qué significa «seventeen»?",
           "target": "seventeen",
           "options": [
+            "Practica la unión natural de las palabras.",
             "dos",
-            "diecisiete",
-            "Can you help me?"
+            "diecisiete"
           ],
           "answer": "diecisiete",
           "explanation": "diecisiete",
@@ -3108,7 +3108,7 @@
           "prompt": "¿Qué significa «nineteen»?",
           "target": "nineteen",
           "options": [
-            "I would like water.",
+            "Repite sin separar cada palabra.",
             "tres",
             "diecinueve"
           ],
@@ -3262,8 +3262,8 @@
           "prompt": "¿Qué significa «that»?",
           "target": "that",
           "options": [
+            "Repite sin separar cada palabra.",
             "eso",
-            "I would like water.",
             "tres"
           ],
           "answer": "eso",
@@ -4053,12 +4053,12 @@
           "prompt": "¿Qué significa «I don't understand.»?",
           "target": "I don't understand.",
           "options": [
-            "I don't understand.",
             "once",
-            "cuatro"
+            "cuatro",
+            "No entiendo."
           ],
-          "answer": "I don't understand.",
-          "explanation": "I don't understand.",
+          "answer": "No entiendo.",
+          "explanation": "No entiendo.",
           "audio": "I don't understand.",
           "slow_audio": "I don't understand.",
           "image": null,
@@ -4077,7 +4077,7 @@
             "I don't understand."
           ],
           "answer": "I don't understand.",
-          "explanation": "La forma escrita correcta es «I don't understand.»: I don't understand..",
+          "explanation": "La forma escrita correcta es «I don't understand.»: No entiendo..",
           "audio": "I don't understand.",
           "slow_audio": "I don't understand.",
           "image": null,
@@ -4091,12 +4091,12 @@
           "prompt": "¿Qué significa «Can you help me?»?",
           "target": "Can you help me?",
           "options": [
+            "Practica la unión natural de las palabras.",
             "doce",
-            "cinco",
-            "Can you help me?"
+            "cinco"
           ],
-          "answer": "Can you help me?",
-          "explanation": "Can you help me?",
+          "answer": "Practica la unión natural de las palabras.",
+          "explanation": "Practica la unión natural de las palabras.",
           "audio": "Can you help me?",
           "slow_audio": "Can you help me?",
           "image": null,
@@ -4115,7 +4115,7 @@
             "fifteen"
           ],
           "answer": "Can you help me?",
-          "explanation": "La forma escrita correcta es «Can you help me?»: Can you help me?.",
+          "explanation": "La forma escrita correcta es «Can you help me?»: Practica la unión natural de las palabras..",
           "audio": "Can you help me?",
           "slow_audio": "Can you help me?",
           "image": null,
