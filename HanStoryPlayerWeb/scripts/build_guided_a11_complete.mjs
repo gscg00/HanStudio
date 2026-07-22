@@ -12,8 +12,8 @@ const courseRoot=path.join(web,'library','courses');
 const catalog=[];
 const slugs={English:'english',French:'french',German:'german',Italian:'italian',Russian:'russian',Korean:'korean',Japanese:'japanese',Chinese:'chinese',Portuguese:'portuguese',Arabic:'arabic'};
 
-function activity(id,type,prompt,{target='',options=[],answer='',explanation='',audio='',gradable=true,tags=[]}={}){
-  return{id,type,prompt,target,options,answer,explanation,audio,slow_audio:audio,image:null,writing_asset:null,tags:['a1.1',...tags],xp:gradable?10:2,...(!gradable?{gradable:false}:{})};
+function activity(id,type,prompt,{target='',options=[],answer='',meaning='',explanation='',audio='',gradable=true,tags=[]}={}){
+  return{id,type,prompt,target,options,answer,meaning,explanation,audio,slow_audio:audio,image:null,writing_asset:null,tags:['a1.1',...tags],xp:gradable?10:2,...(!gradable?{gradable:false}:{})};
 }
 function distractors(values,correct,index){
   const result=[correct];
@@ -27,7 +27,7 @@ function distractors(values,correct,index){
 function exercises({slug,theme,target,meaning,index,targets,meanings,prefix,teach}){
   const id=`${slug}-${prefix}-${String(index+1).padStart(2,'0')}`;
   const values=[];
-  if(teach)values.push(activity(`${id}-teach`,'teach_concept','Aprende y escucha',{target,explanation:meaning,audio:target,gradable:false,tags:[theme,'teaching']}));
+  if(teach)values.push(activity(`${id}-teach`,'teach_concept','Aprende y escucha',{target,meaning,explanation:meaning,audio:target,gradable:false,tags:[theme,'teaching']}));
   values.push(activity(`${id}-meaning`,'select_translation',`¿Qué significa «${target}»?`,{target,options:distractors(meanings,meaning,index),answer:meaning,explanation:`«${target}» significa «${meaning}».`,audio:target,tags:[theme,'meaning']}));
   values.push(activity(`${id}-listen`,'listening_choice','Escucha y elige la forma escrita correcta',{options:distractors(targets,target,index+2),answer:target,explanation:`La forma escuchada es «${target}»: ${meaning}`,audio:target,tags:[theme,'listening']}));
   return values;

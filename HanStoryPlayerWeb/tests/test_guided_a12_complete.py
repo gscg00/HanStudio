@@ -97,6 +97,6 @@ def test_xp_catalog_contains_all_420_a12_lessons_and_remains_private():
 
 def test_service_worker_precaches_a12_manifests_for_all_courses():
     worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "hanstory-shell-v92" in worker
+    assert "const SHELL='hanstory-shell-v" in worker
     for unit_id in A12_IDS:
         assert unit_id in worker

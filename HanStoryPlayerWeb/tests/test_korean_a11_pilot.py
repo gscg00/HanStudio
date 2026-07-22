@@ -11,13 +11,16 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def test_korean_course_separates_foundations_from_a11():
+def test_korean_course_separates_foundations_from_complete_a11():
     course = load(COURSE_ROOT / "course.json")
     levels = {level["id"]: level for level in course["levels"]}
     assert course["version"] >= 2
     assert "story-bridge" in levels["foundations"]["unitIds"]
-    assert levels["a1-1"]["unitIds"] == ["a1-1-introductions"]
-    summary = next(unit for unit in course["units"] if unit["id"] == "a1-1-introductions")
+    assert levels["a1-1"]["unitIds"] == [
+        "a1-1-identity", "a1-1-people", "a1-1-home",
+        "a1-1-routine", "a1-1-food", "a1-1-places",
+    ]
+    summary = next(unit for unit in course["units"] if unit["id"] == "a1-1-identity")
     assert summary["mapLabel"] == "UNIDAD A1.1 · 1"
     assert (COURSE_ROOT / summary["manifest"]).is_file()
 

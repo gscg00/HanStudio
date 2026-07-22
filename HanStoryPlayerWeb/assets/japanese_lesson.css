@@ -2,6 +2,9 @@
 .jp-teach-symbol{min-height:130px;margin:.35rem 0}
 .jp-teach-detail{width:min(560px,100%);margin:.25rem auto;text-align:center;color:var(--jp-muted);font-size:1rem}
 .jp-teach-detail.sound{color:var(--jp-green);font-weight:800;font-size:1.15rem}
+.jp-teach-meaning{display:flex;flex-direction:column;align-items:center;gap:.2rem;width:min(560px,100%);margin:.2rem auto .55rem;padding:.65rem 1rem;border:1px solid #df6c3840;border-radius:15px;background:#fff0e8;text-align:center}
+.jp-teach-meaning span{color:var(--jp-orange);font-size:.68rem;font-weight:900;letter-spacing:.14em}
+.jp-teach-meaning strong{color:var(--jp-green);font-size:clamp(1.15rem,3vw,1.45rem);line-height:1.2}
 .jp-teach-note{width:min(560px,100%);margin:1rem auto;padding:.8rem 1rem;border-radius:14px;background:#f3eadc;color:#6a5c4b;text-align:center}
 .jp-teaching .jp-listen-row{margin:1rem 0 0}
 .jp-teaching .jp-listen-row button{min-width:120px}
@@ -51,6 +54,7 @@
   .jp-feedback p{font-size:.9rem;line-height:1.2}
   .jp-teach-detail{margin:.12rem auto;line-height:1.25}
   .jp-teach-detail.sound{font-size:1rem}
+  .jp-teach-meaning{margin:.1rem auto .3rem;padding:.45rem .8rem}
   .jp-teach-note{margin:.45rem auto;padding:.55rem .8rem}
   .jp-teaching .jp-listen-row{margin:.45rem 0 0}
 }

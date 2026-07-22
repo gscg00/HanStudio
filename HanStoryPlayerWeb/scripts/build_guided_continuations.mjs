@@ -90,7 +90,7 @@ const rotated=(pool,correct,index,key)=>{
 const practice=(slug,idPrefix,concept,index,pool,{teach=true}={})=>{
   const id=`${slug}-${idPrefix}-${index+1}`;
   const result=[];
-  if(teach)result.push({...base(`${id}-teach`,'teach_concept','Aprende y escucha',concept.target,[],'',concept.explanation,concept.audio,false),sound_hint:concept.meaning});
+  if(teach)result.push({...base(`${id}-teach`,'teach_concept','Aprende y escucha',concept.target,[],'',concept.explanation,concept.audio,false),meaning:concept.meaning,sound_hint:concept.meaning});
   result.push(base(`${id}-meaning`,'select_translation',`¿Qué significa «${concept.target}»?`,concept.target,rotated(pool,concept.meaning,index,'meaning'),concept.meaning,concept.explanation,concept.audio));
   result.push(base(`${id}-listen`,'listening_choice','Escucha y elige la frase correcta','',rotated(pool,concept.target,index+2,'target'),concept.target,`La forma escrita correcta es «${concept.target}»: ${concept.meaning}`,concept.audio));
   return result;

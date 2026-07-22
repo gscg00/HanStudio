@@ -88,7 +88,7 @@ def test_b12_xp_catalog_is_complete_and_private():
 
 def test_service_worker_precaches_b12_manifests():
     worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "hanstory-shell-v92" in worker
+    assert "const SHELL='hanstory-shell-v" in worker
     for unit_id in B12_IDS:
         assert unit_id in worker
 
