@@ -75,6 +75,51 @@ def test_reported_korean_cards_have_the_expected_spanish_meaning():
     assert found == expected
 
 
+def test_group_descriptions_are_not_rendered_as_individual_explanations():
+    expected = {
+        "네": "sí",
+        "아니요": "no",
+        "아마": "quizá",
+    }
+    found = {target: [] for target in expected}
+    for language, lesson in active_lessons():
+        if language != "Korean":
+            continue
+        for activity in lesson.get("activities", []):
+            target = activity.get("target")
+            if target not in expected or activity.get("type") not in TEACHING_TYPES:
+                continue
+            found[target].append(activity)
+
+    for target, meaning in expected.items():
+        activities = found[target]
+        assert activities
+        assert any(activity.get("group_hint") == "Sí, no y quizá." for activity in activities)
+        for activity in activities:
+            if activity.get("meaning") != meaning:
+                continue
+            assert activity.get("explanation", "") != "Sí, no y quizá."
+            assert activity.get("sound_hint", "") != "Sí, no y quizá."
+
+
+def test_no_category_description_is_repeated_as_multiple_item_explanations():
+    problems = []
+    for language, lesson in active_lessons():
+        occurrences = {}
+        for activity in lesson.get("activities", []):
+            if activity.get("type") not in TEACHING_TYPES:
+                continue
+            meaning = str(activity.get("meaning", "")).strip()
+            for key in ("explanation", "sound_hint"):
+                hint = str(activity.get(key, "")).strip()
+                if hint and hint != meaning:
+                    occurrences.setdefault(hint, set()).add(meaning)
+        for hint, meanings in occurrences.items():
+            if len(meanings) > 1:
+                problems.append((language, lesson.get("id"), hint, sorted(meanings)))
+    assert not problems
+
+
 def test_course_player_renders_a_dedicated_spanish_meaning_block():
     source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
     styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")

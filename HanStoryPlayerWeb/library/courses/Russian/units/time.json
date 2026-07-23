@@ -36,7 +36,7 @@
           "target": "Который час?",
           "options": [],
           "answer": "",
-          "explanation": "La forma de час cambia con el número.",
+          "explanation": "",
           "audio": "Который час?",
           "slow_audio": "Который час?",
           "image": null,
@@ -44,7 +44,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "La forma de час cambia con el número."
+          "meaning": "¿Qué hora es?",
+          "sound_hint": "",
+          "group_hint": "La forma de час cambia con el número."
         },
         {
           "id": "russian-time-01-1-meaning",
@@ -53,8 +55,8 @@
           "target": "Который час?",
           "options": [
             "¿Qué hora es?",
-            "uno",
-            "Hable más despacio."
+            "dos",
+            "¿Habla inglés?"
           ],
           "answer": "¿Qué hora es?",
           "explanation": "¿Qué hora es?",
@@ -72,8 +74,8 @@
           "target": "",
           "options": [
             "Который час?",
-            "Меня зовут Анна.",
-            "четыре"
+            "Как вас зовут?",
+            "пять"
           ],
           "answer": "Который час?",
           "explanation": "La forma escrita correcta es «Который час?»: ¿Qué hora es?",
@@ -88,65 +90,10 @@
           "id": "russian-time-01-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Три часа.",
-          "options": [],
-          "answer": "",
-          "explanation": "La forma de час cambia con el número.",
-          "audio": "Три часа.",
-          "slow_audio": "Три часа.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "La forma de час cambia con el número."
-        },
-        {
-          "id": "russian-time-01-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Три часа.»?",
-          "target": "Три часа.",
-          "options": [
-            "¿Habla inglés?",
-            "Son las tres",
-            "dos"
-          ],
-          "answer": "Son las tres",
-          "explanation": "Son las tres",
-          "audio": "Три часа.",
-          "slow_audio": "Три часа.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-01-2-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Три часа.",
-            "Как вас зовут?",
-            "пять"
-          ],
-          "answer": "Три часа.",
-          "explanation": "La forma escrita correcta es «Три часа.»: Son las tres.",
-          "audio": "Три часа.",
-          "slow_audio": "Три часа.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-01-3-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "Здравствуйте!",
           "options": [],
           "answer": "",
-          "explanation": "Hola formal.",
+          "explanation": "",
           "audio": "Здравствуйте!",
           "slow_audio": "Здравствуйте!",
           "image": null,
@@ -154,10 +101,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Hola formal."
+          "meaning": "Hola formal.",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-01-3-meaning",
+          "id": "russian-time-01-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Здравствуйте!»?",
           "target": "Здравствуйте!",
@@ -176,14 +125,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-01-3-listen",
+          "id": "russian-time-01-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
             "Здравствуйте!",
-            "Я из Мексики."
+            "Я из Мексики.",
+            "шесть"
           ],
           "answer": "Здравствуйте!",
           "explanation": "La forma escrita correcta es «Здравствуйте!»: Hola formal.",
@@ -195,13 +144,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-01-4-teach",
+          "id": "russian-time-01-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Спасибо.",
           "options": [],
           "answer": "",
-          "explanation": "Gracias.",
+          "explanation": "",
           "audio": "Спасибо.",
           "slow_audio": "Спасибо.",
           "image": null,
@@ -209,17 +158,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Gracias."
+          "meaning": "Gracias.",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-01-4-meaning",
+          "id": "russian-time-01-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Спасибо.»?",
           "target": "Спасибо.",
           "options": [
-            "Me llamo Ana",
             "Gracias.",
-            "cuatro"
+            "cuatro",
+            "Me llamo Ana"
           ],
           "answer": "Gracias.",
           "explanation": "Gracias.",
@@ -231,14 +182,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-01-4-listen",
+          "id": "russian-time-01-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "Спасибо.",
             "ноль",
-            "семь",
-            "Спасибо."
+            "семь"
           ],
           "answer": "Спасибо.",
           "explanation": "La forma escrita correcta es «Спасибо.»: Gracias.",
@@ -250,13 +201,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-01-5-teach",
+          "id": "russian-time-01-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Я не понимаю.",
           "options": [],
           "answer": "",
-          "explanation": "No entiendo.",
+          "explanation": "",
           "audio": "Я не понимаю.",
           "slow_audio": "Я не понимаю.",
           "image": null,
@@ -264,17 +215,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "No entiendo."
+          "meaning": "No entiendo.",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-01-5-meaning",
+          "id": "russian-time-01-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Я не понимаю.»?",
           "target": "Я не понимаю.",
           "options": [
-            "¿Cómo te llamas?",
             "No entiendo.",
-            "cinco"
+            "cinco",
+            "¿Cómo te llamas?"
           ],
           "answer": "No entiendo.",
           "explanation": "No entiendo.",
@@ -286,19 +239,76 @@
           "xp": 10
         },
         {
-          "id": "russian-time-01-5-listen",
+          "id": "russian-time-01-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Я не понимаю.",
             "один",
-            "восемь"
+            "восемь",
+            "Я не понимаю."
           ],
           "answer": "Я не понимаю.",
           "explanation": "La forma escrita correcta es «Я не понимаю.»: No entiendo.",
           "audio": "Я не понимаю.",
           "slow_audio": "Я не понимаю.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-01-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Повторите, пожалуйста.",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Повторите, пожалуйста.",
+          "slow_audio": "Повторите, пожалуйста.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "Repita, por favor.",
+          "sound_hint": "",
+          "group_hint": ""
+        },
+        {
+          "id": "russian-time-01-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Повторите, пожалуйста.»?",
+          "target": "Повторите, пожалуйста.",
+          "options": [
+            "Repita, por favor.",
+            "Soy de México",
+            "seis"
+          ],
+          "answer": "Repita, por favor.",
+          "explanation": "Repita, por favor.",
+          "audio": "Повторите, пожалуйста.",
+          "slow_audio": "Повторите, пожалуйста.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-01-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "два",
+            "девять",
+            "Повторите, пожалуйста."
+          ],
+          "answer": "Повторите, пожалуйста.",
+          "explanation": "La forma escrita correcta es «Повторите, пожалуйста.»: Repita, por favor.",
+          "audio": "Повторите, пожалуйста.",
+          "slow_audio": "Повторите, пожалуйста.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -331,65 +341,10 @@
           "id": "russian-time-02-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Повторите, пожалуйста.",
-          "options": [],
-          "answer": "",
-          "explanation": "Repita, por favor.",
-          "audio": "Повторите, пожалуйста.",
-          "slow_audio": "Повторите, пожалуйста.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Repita, por favor."
-        },
-        {
-          "id": "russian-time-02-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Повторите, пожалуйста.»?",
-          "target": "Повторите, пожалуйста.",
-          "options": [
-            "¿Habla inglés?",
-            "Repita, por favor.",
-            "dos"
-          ],
-          "answer": "Repita, por favor.",
-          "explanation": "Repita, por favor.",
-          "audio": "Повторите, пожалуйста.",
-          "slow_audio": "Повторите, пожалуйста.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-02-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Повторите, пожалуйста.",
-            "Как вас зовут?",
-            "пять"
-          ],
-          "answer": "Повторите, пожалуйста.",
-          "explanation": "La forma escrita correcta es «Повторите, пожалуйста.»: Repita, por favor.",
-          "audio": "Повторите, пожалуйста.",
-          "slow_audio": "Повторите, пожалуйста.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-02-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "Где туалет?",
           "options": [],
           "answer": "",
-          "explanation": "¿Dónde está el baño?",
+          "explanation": "",
           "audio": "Где туалет?",
           "slow_audio": "Где туалет?",
           "image": null,
@@ -397,10 +352,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "¿Dónde está el baño?"
+          "meaning": "¿Dónde está el baño?",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-02-2-meaning",
+          "id": "russian-time-02-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Где туалет?»?",
           "target": "Где туалет?",
@@ -419,14 +376,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-2-listen",
+          "id": "russian-time-02-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
             "Где туалет?",
-            "Я из Мексики."
+            "Я из Мексики.",
+            "шесть"
           ],
           "answer": "Где туалет?",
           "explanation": "La forma escrita correcta es «Где туалет?»: ¿Dónde está el baño?",
@@ -438,13 +395,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-3-teach",
+          "id": "russian-time-02-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Говорите медленнее.",
           "options": [],
           "answer": "",
-          "explanation": "Hable más despacio.",
+          "explanation": "",
           "audio": "Говорите медленнее.",
           "slow_audio": "Говорите медленнее.",
           "image": null,
@@ -452,17 +409,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Hable más despacio."
+          "meaning": "Hable más despacio.",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-02-3-meaning",
+          "id": "russian-time-02-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Говорите медленнее.»?",
           "target": "Говорите медленнее.",
           "options": [
-            "Me llamo Ana",
             "Hable más despacio.",
-            "cuatro"
+            "cuatro",
+            "Me llamo Ana"
           ],
           "answer": "Hable más despacio.",
           "explanation": "Hable más despacio.",
@@ -474,7 +433,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-3-listen",
+          "id": "russian-time-02-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -493,13 +452,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-4-teach",
+          "id": "russian-time-02-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Вы говорите по-английски?",
           "options": [],
           "answer": "",
-          "explanation": "¿Habla inglés?",
+          "explanation": "",
           "audio": "Вы говорите по-английски?",
           "slow_audio": "Вы говорите по-английски?",
           "image": null,
@@ -507,17 +466,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "¿Habla inglés?"
+          "meaning": "¿Habla inglés?",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-02-4-meaning",
+          "id": "russian-time-02-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Вы говорите по-английски?»?",
           "target": "Вы говорите по-английски?",
           "options": [
-            "¿Cómo te llamas?",
             "¿Habla inglés?",
-            "cinco"
+            "cinco",
+            "¿Cómo te llamas?"
           ],
           "answer": "¿Habla inglés?",
           "explanation": "¿Habla inglés?",
@@ -529,7 +490,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-4-listen",
+          "id": "russian-time-02-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -548,13 +509,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-5-teach",
+          "id": "russian-time-02-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Помогите, пожалуйста.",
           "options": [],
           "answer": "",
-          "explanation": "Ayúdeme, por favor.",
+          "explanation": "",
           "audio": "Помогите, пожалуйста.",
           "slow_audio": "Помогите, пожалуйста.",
           "image": null,
@@ -562,10 +523,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Ayúdeme, por favor."
+          "meaning": "Ayúdeme, por favor.",
+          "sound_hint": "",
+          "group_hint": ""
         },
         {
-          "id": "russian-time-02-5-meaning",
+          "id": "russian-time-02-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Помогите, пожалуйста.»?",
           "target": "Помогите, пожалуйста.",
@@ -584,7 +547,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-02-5-listen",
+          "id": "russian-time-02-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -597,6 +560,63 @@
           "explanation": "La forma escrita correcta es «Помогите, пожалуйста.»: Ayúdeme, por favor.",
           "audio": "Помогите, пожалуйста.",
           "slow_audio": "Помогите, пожалуйста.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-02-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Меня зовут Анна.",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Меня зовут Анна.",
+          "slow_audio": "Меня зовут Анна.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "Me llamo Ana",
+          "sound_hint": "",
+          "group_hint": "Literalmente: a mí me llaman Anna."
+        },
+        {
+          "id": "russian-time-02-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Меня зовут Анна.»?",
+          "target": "Меня зовут Анна.",
+          "options": [
+            "siete",
+            "Me llamo Ana",
+            "cero"
+          ],
+          "answer": "Me llamo Ana",
+          "explanation": "Me llamo Ana",
+          "audio": "Меня зовут Анна.",
+          "slow_audio": "Меня зовут Анна.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-02-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "три",
+            "Меня зовут Анна.",
+            "десять"
+          ],
+          "answer": "Меня зовут Анна.",
+          "explanation": "La forma escrita correcta es «Меня зовут Анна.»: Me llamo Ana.",
+          "audio": "Меня зовут Анна.",
+          "slow_audio": "Меня зовут Анна.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -629,65 +649,10 @@
           "id": "russian-time-03-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Меня зовут Анна.",
-          "options": [],
-          "answer": "",
-          "explanation": "Literalmente: a mí me llaman Anna.",
-          "audio": "Меня зовут Анна.",
-          "slow_audio": "Меня зовут Анна.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "Literalmente: a mí me llaman Anna."
-        },
-        {
-          "id": "russian-time-03-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Меня зовут Анна.»?",
-          "target": "Меня зовут Анна.",
-          "options": [
-            "Ayúdeme, por favor.",
-            "tres",
-            "Me llamo Ana"
-          ],
-          "answer": "Me llamo Ana",
-          "explanation": "Me llamo Ana",
-          "audio": "Меня зовут Анна.",
-          "slow_audio": "Меня зовут Анна.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-03-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "шесть",
-            "Меня зовут Анна.",
-            "Я из Мексики."
-          ],
-          "answer": "Меня зовут Анна.",
-          "explanation": "La forma escrita correcta es «Меня зовут Анна.»: Me llamo Ana.",
-          "audio": "Меня зовут Анна.",
-          "slow_audio": "Меня зовут Анна.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-03-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "Как вас зовут?",
           "options": [],
           "answer": "",
-          "explanation": "Informal: Как тебя зовут?",
+          "explanation": "",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -695,17 +660,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Informal: Как тебя зовут?"
+          "meaning": "¿Cómo te llamas?",
+          "sound_hint": "",
+          "group_hint": "Informal: Как тебя зовут?"
         },
         {
-          "id": "russian-time-03-2-meaning",
+          "id": "russian-time-03-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Как вас зовут?»?",
           "target": "Как вас зовут?",
           "options": [
-            "Me llamo Ana",
             "¿Cómo te llamas?",
-            "cuatro"
+            "cuatro",
+            "Me llamo Ana"
           ],
           "answer": "¿Cómo te llamas?",
           "explanation": "¿Cómo te llamas?",
@@ -717,7 +684,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-2-listen",
+          "id": "russian-time-03-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -736,13 +703,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-3-teach",
+          "id": "russian-time-03-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Я из Мексики.",
           "options": [],
           "answer": "",
-          "explanation": "из indica procedencia.",
+          "explanation": "",
           "audio": "Я из Мексики.",
           "slow_audio": "Я из Мексики.",
           "image": null,
@@ -750,17 +717,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "из indica procedencia."
+          "meaning": "Soy de México",
+          "sound_hint": "",
+          "group_hint": "из indica procedencia."
         },
         {
-          "id": "russian-time-03-3-meaning",
+          "id": "russian-time-03-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Я из Мексики.»?",
           "target": "Я из Мексики.",
           "options": [
-            "¿Cómo te llamas?",
             "Soy de México",
-            "cinco"
+            "cinco",
+            "¿Cómo te llamas?"
           ],
           "answer": "Soy de México",
           "explanation": "Soy de México",
@@ -772,14 +741,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-3-listen",
+          "id": "russian-time-03-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Я из Мексики.",
             "один",
-            "восемь"
+            "восемь",
+            "Я из Мексики."
           ],
           "answer": "Я из Мексики.",
           "explanation": "La forma escrita correcta es «Я из Мексики.»: Soy de México.",
@@ -791,13 +760,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-4-teach",
+          "id": "russian-time-03-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "ноль",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "ноль",
           "slow_audio": "ноль",
           "image": null,
@@ -805,10 +774,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "cero",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-03-4-meaning",
+          "id": "russian-time-03-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «ноль»?",
           "target": "ноль",
@@ -827,7 +798,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-4-listen",
+          "id": "russian-time-03-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -846,13 +817,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-5-teach",
+          "id": "russian-time-03-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "один",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "один",
           "slow_audio": "один",
           "image": null,
@@ -860,17 +831,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "uno",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-03-5-meaning",
+          "id": "russian-time-03-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «один»?",
           "target": "один",
           "options": [
-            "cero",
             "siete",
-            "uno"
+            "uno",
+            "cero"
           ],
           "answer": "uno",
           "explanation": "uno",
@@ -882,19 +855,76 @@
           "xp": 10
         },
         {
-          "id": "russian-time-03-5-listen",
+          "id": "russian-time-03-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "десять",
             "три",
-            "один"
+            "один",
+            "десять"
           ],
           "answer": "один",
           "explanation": "La forma escrita correcta es «один»: uno.",
           "audio": "один",
           "slow_audio": "один",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-03-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "два",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "два",
+          "slow_audio": "два",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "dos",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
+        },
+        {
+          "id": "russian-time-03-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «два»?",
+          "target": "два",
+          "options": [
+            "ocho",
+            "dos",
+            "uno"
+          ],
+          "answer": "dos",
+          "explanation": "dos",
+          "audio": "два",
+          "slow_audio": "два",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-03-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "четыре",
+            "одиннадцать",
+            "два"
+          ],
+          "answer": "два",
+          "explanation": "La forma escrita correcta es «два»: dos.",
+          "audio": "два",
+          "slow_audio": "два",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -927,17 +957,17 @@
         {
           "id": "russian-time-review-03-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Говорите медленнее.»?",
-          "target": "Говорите медленнее.",
+          "prompt": "¿Qué significa «Вы говорите по-английски?»?",
+          "target": "Вы говорите по-английски?",
           "options": [
-            "Hable más despacio.",
-            "Ayúdeme, por favor.",
-            "tres"
+            "¿Habla inglés?",
+            "cuatro",
+            "Me llamo Ana"
           ],
-          "answer": "Hable más despacio.",
-          "explanation": "Hable más despacio.",
-          "audio": "Говорите медленнее.",
-          "slow_audio": "Говорите медленнее.",
+          "answer": "¿Habla inglés?",
+          "explanation": "¿Habla inglés?",
+          "audio": "Вы говорите по-английски?",
+          "slow_audio": "Вы говорите по-английски?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -949,14 +979,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
-            "Я из Мексики.",
-            "Говорите медленнее."
+            "Вы говорите по-английски?",
+            "ноль",
+            "семь"
           ],
-          "answer": "Говорите медленнее.",
-          "explanation": "La forma escrita correcta es «Говорите медленнее.»: Hable más despacio.",
-          "audio": "Говорите медленнее.",
-          "slow_audio": "Говорите медленнее.",
+          "answer": "Вы говорите по-английски?",
+          "explanation": "La forma escrita correcta es «Вы говорите по-английски?»: ¿Habla inglés?",
+          "audio": "Вы говорите по-английски?",
+          "slow_audio": "Вы говорите по-английски?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -965,17 +995,17 @@
         {
           "id": "russian-time-review-03-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Помогите, пожалуйста.»?",
-          "target": "Помогите, пожалуйста.",
+          "prompt": "¿Qué significa «Меня зовут Анна.»?",
+          "target": "Меня зовут Анна.",
           "options": [
             "Me llamo Ana",
-            "Ayúdeme, por favor.",
-            "cuatro"
+            "cinco",
+            "¿Cómo te llamas?"
           ],
-          "answer": "Ayúdeme, por favor.",
-          "explanation": "Ayúdeme, por favor.",
-          "audio": "Помогите, пожалуйста.",
-          "slow_audio": "Помогите, пожалуйста.",
+          "answer": "Me llamo Ana",
+          "explanation": "Me llamo Ana",
+          "audio": "Меня зовут Анна.",
+          "slow_audio": "Меня зовут Анна.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -987,14 +1017,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ноль",
-            "семь",
-            "Помогите, пожалуйста."
+            "один",
+            "Меня зовут Анна.",
+            "восемь"
           ],
-          "answer": "Помогите, пожалуйста.",
-          "explanation": "La forma escrita correcta es «Помогите, пожалуйста.»: Ayúdeme, por favor.",
-          "audio": "Помогите, пожалуйста.",
-          "slow_audio": "Помогите, пожалуйста.",
+          "answer": "Меня зовут Анна.",
+          "explanation": "La forma escrita correcta es «Меня зовут Анна.»: Me llamo Ana.",
+          "audio": "Меня зовут Анна.",
+          "slow_audio": "Меня зовут Анна.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1003,17 +1033,17 @@
         {
           "id": "russian-time-review-03-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Как вас зовут?»?",
-          "target": "Как вас зовут?",
+          "prompt": "¿Qué significa «Я из Мексики.»?",
+          "target": "Я из Мексики.",
           "options": [
-            "¿Cómo te llamas?",
-            "doce",
-            "cinco"
+            "Soy de México",
+            "seis",
+            "trece"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "¿Cómo te llamas?",
-          "audio": "Как вас зовут?",
-          "slow_audio": "Как вас зовут?",
+          "answer": "Soy de México",
+          "explanation": "Soy de México",
+          "audio": "Я из Мексики.",
+          "slow_audio": "Я из Мексики.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1025,14 +1055,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Как вас зовут?",
-            "один",
-            "восемь"
+            "Я из Мексики.",
+            "два",
+            "девять"
           ],
-          "answer": "Как вас зовут?",
-          "explanation": "La forma escrita correcta es «Как вас зовут?»: ¿Cómo te llamas?",
-          "audio": "Как вас зовут?",
-          "slow_audio": "Как вас зовут?",
+          "answer": "Я из Мексики.",
+          "explanation": "La forma escrita correcta es «Я из Мексики.»: Soy de México.",
+          "audio": "Я из Мексики.",
+          "slow_audio": "Я из Мексики.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1041,17 +1071,17 @@
         {
           "id": "russian-time-review-03-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «ноль»?",
-          "target": "ноль",
+          "prompt": "¿Qué significa «один»?",
+          "target": "один",
           "options": [
-            "Soy de México",
-            "cero",
-            "seis"
+            "siete",
+            "uno",
+            "cero"
           ],
-          "answer": "cero",
-          "explanation": "cero",
-          "audio": "ноль",
-          "slow_audio": "ноль",
+          "answer": "uno",
+          "explanation": "uno",
+          "audio": "один",
+          "slow_audio": "один",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1063,14 +1093,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "два",
-            "ноль",
-            "девять"
+            "три",
+            "один",
+            "десять"
           ],
-          "answer": "ноль",
-          "explanation": "La forma escrita correcta es «ноль»: cero.",
-          "audio": "ноль",
-          "slow_audio": "ноль",
+          "answer": "один",
+          "explanation": "La forma escrita correcta es «один»: uno.",
+          "audio": "один",
+          "slow_audio": "один",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1103,65 +1133,10 @@
           "id": "russian-time-04-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "два",
-          "options": [],
-          "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
-          "audio": "два",
-          "slow_audio": "два",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
-        },
-        {
-          "id": "russian-time-04-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «два»?",
-          "target": "два",
-          "options": [
-            "Me llamo Ana",
-            "dos",
-            "cuatro"
-          ],
-          "answer": "dos",
-          "explanation": "dos",
-          "audio": "два",
-          "slow_audio": "два",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-04-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "ноль",
-            "семь",
-            "два"
-          ],
-          "answer": "два",
-          "explanation": "La forma escrita correcta es «два»: dos.",
-          "audio": "два",
-          "slow_audio": "два",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-04-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "три",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "три",
           "slow_audio": "три",
           "image": null,
@@ -1169,17 +1144,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "tres",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-04-2-meaning",
+          "id": "russian-time-04-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «три»?",
           "target": "три",
           "options": [
-            "¿Cómo te llamas?",
             "tres",
-            "cinco"
+            "cinco",
+            "¿Cómo te llamas?"
           ],
           "answer": "tres",
           "explanation": "tres",
@@ -1191,14 +1168,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-2-listen",
+          "id": "russian-time-04-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "три",
             "один",
-            "восемь"
+            "восемь",
+            "три"
           ],
           "answer": "три",
           "explanation": "La forma escrita correcta es «три»: tres.",
@@ -1210,13 +1187,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-3-teach",
+          "id": "russian-time-04-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "четыре",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "четыре",
           "slow_audio": "четыре",
           "image": null,
@@ -1224,10 +1201,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "cuatro",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-04-3-meaning",
+          "id": "russian-time-04-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «четыре»?",
           "target": "четыре",
@@ -1246,7 +1225,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-3-listen",
+          "id": "russian-time-04-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -1265,13 +1244,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-4-teach",
+          "id": "russian-time-04-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "пять",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "пять",
           "slow_audio": "пять",
           "image": null,
@@ -1279,17 +1258,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "cinco",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-04-4-meaning",
+          "id": "russian-time-04-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «пять»?",
           "target": "пять",
           "options": [
-            "cero",
             "cinco",
-            "siete"
+            "siete",
+            "cero"
           ],
           "answer": "cinco",
           "explanation": "cinco",
@@ -1301,14 +1282,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-4-listen",
+          "id": "russian-time-04-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "десять",
             "три",
-            "пять"
+            "пять",
+            "десять"
           ],
           "answer": "пять",
           "explanation": "La forma escrita correcta es «пять»: cinco.",
@@ -1320,13 +1301,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-5-teach",
+          "id": "russian-time-04-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "шесть",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "шесть",
           "slow_audio": "шесть",
           "image": null,
@@ -1334,17 +1315,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "seis",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-04-5-meaning",
+          "id": "russian-time-04-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «шесть»?",
           "target": "шесть",
           "options": [
-            "uno",
             "seis",
-            "ocho"
+            "ocho",
+            "uno"
           ],
           "answer": "seis",
           "explanation": "seis",
@@ -1356,19 +1339,76 @@
           "xp": 10
         },
         {
-          "id": "russian-time-04-5-listen",
+          "id": "russian-time-04-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
             "четыре",
-            "одиннадцать"
+            "одиннадцать",
+            "шесть"
           ],
           "answer": "шесть",
           "explanation": "La forma escrita correcta es «шесть»: seis.",
           "audio": "шесть",
           "slow_audio": "шесть",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-04-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "семь",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "семь",
+          "slow_audio": "семь",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "siete",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
+        },
+        {
+          "id": "russian-time-04-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «семь»?",
+          "target": "семь",
+          "options": [
+            "dos",
+            "siete",
+            "nueve"
+          ],
+          "answer": "siete",
+          "explanation": "siete",
+          "audio": "семь",
+          "slow_audio": "семь",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-04-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "двенадцать",
+            "семь",
+            "пять"
+          ],
+          "answer": "семь",
+          "explanation": "La forma escrita correcta es «семь»: siete.",
+          "audio": "семь",
+          "slow_audio": "семь",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1401,65 +1441,10 @@
           "id": "russian-time-05-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "семь",
-          "options": [],
-          "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
-          "audio": "семь",
-          "slow_audio": "семь",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
-        },
-        {
-          "id": "russian-time-05-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «семь»?",
-          "target": "семь",
-          "options": [
-            "¿Cómo te llamas?",
-            "siete",
-            "cinco"
-          ],
-          "answer": "siete",
-          "explanation": "siete",
-          "audio": "семь",
-          "slow_audio": "семь",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-05-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "семь",
-            "один",
-            "восемь"
-          ],
-          "answer": "семь",
-          "explanation": "La forma escrita correcta es «семь»: siete.",
-          "audio": "семь",
-          "slow_audio": "семь",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-05-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "восемь",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "восемь",
           "slow_audio": "восемь",
           "image": null,
@@ -1467,10 +1452,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "ocho",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-05-2-meaning",
+          "id": "russian-time-05-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «восемь»?",
           "target": "восемь",
@@ -1489,7 +1476,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-2-listen",
+          "id": "russian-time-05-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -1508,13 +1495,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-3-teach",
+          "id": "russian-time-05-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "девять",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "девять",
           "slow_audio": "девять",
           "image": null,
@@ -1522,17 +1509,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "nueve",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-05-3-meaning",
+          "id": "russian-time-05-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «девять»?",
           "target": "девять",
           "options": [
-            "cero",
             "nueve",
-            "siete"
+            "siete",
+            "cero"
           ],
           "answer": "nueve",
           "explanation": "nueve",
@@ -1544,14 +1533,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-3-listen",
+          "id": "russian-time-05-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "три",
             "девять",
-            "десять",
-            "три"
+            "десять"
           ],
           "answer": "девять",
           "explanation": "La forma escrita correcta es «девять»: nueve.",
@@ -1563,13 +1552,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-4-teach",
+          "id": "russian-time-05-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "десять",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "десять",
           "slow_audio": "десять",
           "image": null,
@@ -1577,17 +1566,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "diez",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-05-4-meaning",
+          "id": "russian-time-05-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «десять»?",
           "target": "десять",
           "options": [
-            "uno",
             "diez",
-            "ocho"
+            "ocho",
+            "uno"
           ],
           "answer": "diez",
           "explanation": "diez",
@@ -1599,7 +1590,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-4-listen",
+          "id": "russian-time-05-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -1618,13 +1609,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-5-teach",
+          "id": "russian-time-05-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "одиннадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "одиннадцать",
           "slow_audio": "одиннадцать",
           "image": null,
@@ -1632,10 +1623,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "once",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-05-5-meaning",
+          "id": "russian-time-05-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «одиннадцать»?",
           "target": "одиннадцать",
@@ -1654,19 +1647,76 @@
           "xp": 10
         },
         {
-          "id": "russian-time-05-5-listen",
+          "id": "russian-time-05-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
             "двенадцать",
-            "одиннадцать"
+            "одиннадцать",
+            "пять"
           ],
           "answer": "одиннадцать",
           "explanation": "La forma escrita correcta es «одиннадцать»: once.",
           "audio": "одиннадцать",
           "slow_audio": "одиннадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-05-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "двенадцать",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "двенадцать",
+          "slow_audio": "двенадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "doce",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
+        },
+        {
+          "id": "russian-time-05-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «двенадцать»?",
+          "target": "двенадцать",
+          "options": [
+            "doce",
+            "tres",
+            "diez"
+          ],
+          "answer": "doce",
+          "explanation": "doce",
+          "audio": "двенадцать",
+          "slow_audio": "двенадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-05-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "двенадцать",
+            "шесть",
+            "тринадцать"
+          ],
+          "answer": "двенадцать",
+          "explanation": "La forma escrita correcta es «двенадцать»: doce.",
+          "audio": "двенадцать",
+          "slow_audio": "двенадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1699,65 +1749,10 @@
           "id": "russian-time-06-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "двенадцать",
-          "options": [],
-          "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
-          "audio": "двенадцать",
-          "slow_audio": "двенадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
-        },
-        {
-          "id": "russian-time-06-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «двенадцать»?",
-          "target": "двенадцать",
-          "options": [
-            "Soy de México",
-            "doce",
-            "seis"
-          ],
-          "answer": "doce",
-          "explanation": "doce",
-          "audio": "двенадцать",
-          "slow_audio": "двенадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-06-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "два",
-            "двенадцать",
-            "девять"
-          ],
-          "answer": "двенадцать",
-          "explanation": "La forma escrita correcta es «двенадцать»: doce.",
-          "audio": "двенадцать",
-          "slow_audio": "двенадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-06-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "тринадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "тринадцать",
           "slow_audio": "тринадцать",
           "image": null,
@@ -1765,17 +1760,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "trece",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-06-2-meaning",
+          "id": "russian-time-06-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «тринадцать»?",
           "target": "тринадцать",
           "options": [
-            "cero",
             "trece",
-            "siete"
+            "siete",
+            "cero"
           ],
           "answer": "trece",
           "explanation": "trece",
@@ -1787,14 +1784,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-2-listen",
+          "id": "russian-time-06-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "десять",
             "три",
-            "тринадцать"
+            "тринадцать",
+            "десять"
           ],
           "answer": "тринадцать",
           "explanation": "La forma escrita correcta es «тринадцать»: trece.",
@@ -1806,13 +1803,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-3-teach",
+          "id": "russian-time-06-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "четырнадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "четырнадцать",
           "slow_audio": "четырнадцать",
           "image": null,
@@ -1820,17 +1817,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "catorce",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-06-3-meaning",
+          "id": "russian-time-06-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «четырнадцать»?",
           "target": "четырнадцать",
           "options": [
-            "uno",
             "ocho",
-            "catorce"
+            "catorce",
+            "uno"
           ],
           "answer": "catorce",
           "explanation": "catorce",
@@ -1842,7 +1841,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-3-listen",
+          "id": "russian-time-06-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -1861,13 +1860,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-4-teach",
+          "id": "russian-time-06-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "пятнадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "пятнадцать",
           "slow_audio": "пятнадцать",
           "image": null,
@@ -1875,10 +1874,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "quince",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-06-4-meaning",
+          "id": "russian-time-06-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «пятнадцать»?",
           "target": "пятнадцать",
@@ -1897,14 +1898,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-4-listen",
+          "id": "russian-time-06-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
             "пятнадцать",
-            "двенадцать"
+            "двенадцать",
+            "пять"
           ],
           "answer": "пятнадцать",
           "explanation": "La forma escrita correcta es «пятнадцать»: quince.",
@@ -1916,13 +1917,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-5-teach",
+          "id": "russian-time-06-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "шестнадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "шестнадцать",
           "slow_audio": "шестнадцать",
           "image": null,
@@ -1930,10 +1931,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "dieciséis",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-06-5-meaning",
+          "id": "russian-time-06-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «шестнадцать»?",
           "target": "шестнадцать",
@@ -1952,7 +1955,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-06-5-listen",
+          "id": "russian-time-06-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -1965,6 +1968,63 @@
           "explanation": "La forma escrita correcta es «шестнадцать»: dieciséis.",
           "audio": "шестнадцать",
           "slow_audio": "шестнадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-06-5-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "семнадцать",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "семнадцать",
+          "slow_audio": "семнадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "diecisiete",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
+        },
+        {
+          "id": "russian-time-06-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «семнадцать»?",
+          "target": "семнадцать",
+          "options": [
+            "cuatro",
+            "once",
+            "diecisiete"
+          ],
+          "answer": "diecisiete",
+          "explanation": "diecisiete",
+          "audio": "семнадцать",
+          "slow_audio": "семнадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-06-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "семь",
+            "семнадцать",
+            "четырнадцать"
+          ],
+          "answer": "семнадцать",
+          "explanation": "La forma escrita correcta es «семнадцать»: diecisiete.",
+          "audio": "семнадцать",
+          "slow_audio": "семнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -1997,17 +2057,17 @@
         {
           "id": "russian-time-review-06-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «девять»?",
-          "target": "девять",
+          "prompt": "¿Qué significa «десять»?",
+          "target": "десять",
           "options": [
-            "nueve",
-            "Soy de México",
-            "seis"
+            "siete",
+            "diez",
+            "cero"
           ],
-          "answer": "nueve",
-          "explanation": "nueve",
-          "audio": "девять",
-          "slow_audio": "девять",
+          "answer": "diez",
+          "explanation": "diez",
+          "audio": "десять",
+          "slow_audio": "десять",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2019,14 +2079,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "два",
-            "девять",
-            "шестнадцать"
+            "три",
+            "семнадцать",
+            "десять"
           ],
-          "answer": "девять",
-          "explanation": "La forma escrita correcta es «девять»: nueve.",
-          "audio": "девять",
-          "slow_audio": "девять",
+          "answer": "десять",
+          "explanation": "La forma escrita correcta es «десять»: diez.",
+          "audio": "десять",
+          "slow_audio": "десять",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2035,17 +2095,17 @@
         {
           "id": "russian-time-review-06-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «одиннадцать»?",
-          "target": "одиннадцать",
+          "prompt": "¿Qué significa «двенадцать»?",
+          "target": "двенадцать",
           "options": [
-            "once",
-            "cero",
-            "siete"
+            "doce",
+            "ocho",
+            "uno"
           ],
-          "answer": "once",
-          "explanation": "once",
-          "audio": "одиннадцать",
-          "slow_audio": "одиннадцать",
+          "answer": "doce",
+          "explanation": "doce",
+          "audio": "двенадцать",
+          "slow_audio": "двенадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2057,14 +2117,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "четыре",
             "одиннадцать",
-            "десять",
-            "три"
+            "двенадцать"
           ],
-          "answer": "одиннадцать",
-          "explanation": "La forma escrita correcta es «одиннадцать»: once.",
-          "audio": "одиннадцать",
-          "slow_audio": "одиннадцать",
+          "answer": "двенадцать",
+          "explanation": "La forma escrita correcta es «двенадцать»: doce.",
+          "audio": "двенадцать",
+          "slow_audio": "двенадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2073,17 +2133,17 @@
         {
           "id": "russian-time-review-06-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «тринадцать»?",
-          "target": "тринадцать",
+          "prompt": "¿Qué significa «четырнадцать»?",
+          "target": "четырнадцать",
           "options": [
-            "uno",
-            "ocho",
-            "trece"
+            "dos",
+            "nueve",
+            "catorce"
           ],
-          "answer": "trece",
-          "explanation": "trece",
-          "audio": "тринадцать",
-          "slow_audio": "тринадцать",
+          "answer": "catorce",
+          "explanation": "catorce",
+          "audio": "четырнадцать",
+          "slow_audio": "четырнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2095,14 +2155,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "тринадцать",
-            "четыре",
-            "одиннадцать"
+            "двенадцать",
+            "четырнадцать",
+            "пять"
           ],
-          "answer": "тринадцать",
-          "explanation": "La forma escrita correcta es «тринадцать»: trece.",
-          "audio": "тринадцать",
-          "slow_audio": "тринадцать",
+          "answer": "четырнадцать",
+          "explanation": "La forma escrita correcta es «четырнадцать»: catorce.",
+          "audio": "четырнадцать",
+          "slow_audio": "четырнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2111,17 +2171,17 @@
         {
           "id": "russian-time-review-06-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «пятнадцать»?",
-          "target": "пятнадцать",
+          "prompt": "¿Qué significa «шестнадцать»?",
+          "target": "шестнадцать",
           "options": [
-            "dos",
-            "nueve",
-            "quince"
+            "dieciséis",
+            "tres",
+            "diez"
           ],
-          "answer": "quince",
-          "explanation": "quince",
-          "audio": "пятнадцать",
-          "slow_audio": "пятнадцать",
+          "answer": "dieciséis",
+          "explanation": "dieciséis",
+          "audio": "шестнадцать",
+          "slow_audio": "шестнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2133,14 +2193,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
-            "пятнадцать",
-            "двенадцать"
+            "шесть",
+            "тринадцать",
+            "шестнадцать"
           ],
-          "answer": "пятнадцать",
-          "explanation": "La forma escrita correcta es «пятнадцать»: quince.",
-          "audio": "пятнадцать",
-          "slow_audio": "пятнадцать",
+          "answer": "шестнадцать",
+          "explanation": "La forma escrita correcta es «шестнадцать»: dieciséis.",
+          "audio": "шестнадцать",
+          "slow_audio": "шестнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2173,65 +2233,10 @@
           "id": "russian-time-07-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "семнадцать",
-          "options": [],
-          "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
-          "audio": "семнадцать",
-          "slow_audio": "семнадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
-        },
-        {
-          "id": "russian-time-07-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «семнадцать»?",
-          "target": "семнадцать",
-          "options": [
-            "cero",
-            "diecisiete",
-            "siete"
-          ],
-          "answer": "diecisiete",
-          "explanation": "diecisiete",
-          "audio": "семнадцать",
-          "slow_audio": "семнадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-07-1-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "десять",
-            "три",
-            "семнадцать"
-          ],
-          "answer": "семнадцать",
-          "explanation": "La forma escrita correcta es «семнадцать»: diecisiete.",
-          "audio": "семнадцать",
-          "slow_audio": "семнадцать",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "russian-time-07-2-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
           "target": "восемнадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "восемнадцать",
           "slow_audio": "восемнадцать",
           "image": null,
@@ -2239,17 +2244,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "dieciocho",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-07-2-meaning",
+          "id": "russian-time-07-1-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «восемнадцать»?",
           "target": "восемнадцать",
           "options": [
-            "uno",
             "dieciocho",
-            "ocho"
+            "ocho",
+            "uno"
           ],
           "answer": "dieciocho",
           "explanation": "dieciocho",
@@ -2261,7 +2268,7 @@
           "xp": 10
         },
         {
-          "id": "russian-time-07-2-listen",
+          "id": "russian-time-07-1-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
@@ -2280,13 +2287,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-07-3-teach",
+          "id": "russian-time-07-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "девятнадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "девятнадцать",
           "slow_audio": "девятнадцать",
           "image": null,
@@ -2294,10 +2301,12 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "diecinueve",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-07-3-meaning",
+          "id": "russian-time-07-2-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «девятнадцать»?",
           "target": "девятнадцать",
@@ -2316,14 +2325,14 @@
           "xp": 10
         },
         {
-          "id": "russian-time-07-3-listen",
+          "id": "russian-time-07-2-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
             "двенадцать",
-            "девятнадцать"
+            "девятнадцать",
+            "пять"
           ],
           "answer": "девятнадцать",
           "explanation": "La forma escrita correcta es «девятнадцать»: diecinueve.",
@@ -2335,13 +2344,13 @@
           "xp": 10
         },
         {
-          "id": "russian-time-07-4-teach",
+          "id": "russian-time-07-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "двадцать",
           "options": [],
           "answer": "",
-          "explanation": "11–19 comparten una terminación relacionada con diez.",
+          "explanation": "",
           "audio": "двадцать",
           "slow_audio": "двадцать",
           "image": null,
@@ -2349,17 +2358,19 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "11–19 comparten una terminación relacionada con diez."
+          "meaning": "veinte",
+          "sound_hint": "",
+          "group_hint": "11–19 comparten una terminación relacionada con diez."
         },
         {
-          "id": "russian-time-07-4-meaning",
+          "id": "russian-time-07-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «двадцать»?",
           "target": "двадцать",
           "options": [
-            "veinte",
             "tres",
-            "diez"
+            "diez",
+            "veinte"
           ],
           "answer": "veinte",
           "explanation": "veinte",
@@ -2371,19 +2382,76 @@
           "xp": 10
         },
         {
-          "id": "russian-time-07-4-listen",
+          "id": "russian-time-07-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "двадцать",
             "шесть",
-            "тринадцать"
+            "тринадцать",
+            "двадцать"
           ],
           "answer": "двадцать",
           "explanation": "La forma escrita correcta es «двадцать»: veinte.",
           "audio": "двадцать",
           "slow_audio": "двадцать",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-07-4-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Три часа.",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Три часа.",
+          "slow_audio": "Три часа.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "Son las tres",
+          "sound_hint": "",
+          "group_hint": "La forma de час cambia con el número."
+        },
+        {
+          "id": "russian-time-07-4-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Три часа.»?",
+          "target": "Три часа.",
+          "options": [
+            "cuatro",
+            "Son las tres",
+            "once"
+          ],
+          "answer": "Son las tres",
+          "explanation": "Son las tres",
+          "audio": "Три часа.",
+          "slow_audio": "Три часа.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "russian-time-07-4-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "Три часа.",
+            "семь",
+            "четырнадцать"
+          ],
+          "answer": "Три часа.",
+          "explanation": "La forma escrita correcta es «Три часа.»: Son las tres.",
+          "audio": "Три часа.",
+          "slow_audio": "Три часа.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -2396,7 +2464,7 @@
           "target": "понедельник",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "понедельник",
           "slow_audio": "понедельник",
           "image": null,
@@ -2404,7 +2472,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "lunes",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-07-5-meaning",
@@ -2413,8 +2483,8 @@
           "target": "понедельник",
           "options": [
             "lunes",
-            "cuatro",
-            "once"
+            "cinco",
+            "doce"
           ],
           "answer": "lunes",
           "explanation": "lunes",
@@ -2431,9 +2501,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "четырнадцать",
-            "семь",
-            "понедельник"
+            "пятнадцать",
+            "понедельник",
+            "восемь"
           ],
           "answer": "понедельник",
           "explanation": "La forma escrita correcta es «понедельник»: lunes.",
@@ -2474,7 +2544,7 @@
           "target": "вторник",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "вторник",
           "slow_audio": "вторник",
           "image": null,
@@ -2482,7 +2552,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "martes",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-08-1-meaning",
@@ -2490,8 +2562,8 @@
           "prompt": "¿Qué significa «вторник»?",
           "target": "вторник",
           "options": [
-            "uno",
-            "ocho",
+            "dos",
+            "nueve",
             "martes"
           ],
           "answer": "martes",
@@ -2509,9 +2581,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "четыре",
-            "одиннадцать",
-            "вторник"
+            "двенадцать",
+            "вторник",
+            "пять"
           ],
           "answer": "вторник",
           "explanation": "La forma escrita correcta es «вторник»: martes.",
@@ -2529,7 +2601,7 @@
           "target": "среда",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "среда",
           "slow_audio": "среда",
           "image": null,
@@ -2537,7 +2609,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "miércoles",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-08-2-meaning",
@@ -2545,9 +2619,9 @@
           "prompt": "¿Qué significa «среда»?",
           "target": "среда",
           "options": [
-            "dos",
             "miércoles",
-            "nueve"
+            "tres",
+            "diez"
           ],
           "answer": "miércoles",
           "explanation": "miércoles",
@@ -2564,9 +2638,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
             "среда",
-            "двенадцать"
+            "шесть",
+            "тринадцать"
           ],
           "answer": "среда",
           "explanation": "La forma escrita correcta es «среда»: miércoles.",
@@ -2584,7 +2658,7 @@
           "target": "четверг",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "четверг",
           "slow_audio": "четверг",
           "image": null,
@@ -2592,7 +2666,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "jueves",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-08-3-meaning",
@@ -2601,8 +2677,8 @@
           "target": "четверг",
           "options": [
             "jueves",
-            "tres",
-            "diez"
+            "cuatro",
+            "once"
           ],
           "answer": "jueves",
           "explanation": "jueves",
@@ -2619,9 +2695,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
-            "тринадцать",
-            "четверг"
+            "семь",
+            "четверг",
+            "четырнадцать"
           ],
           "answer": "четверг",
           "explanation": "La forma escrita correcta es «четверг»: jueves.",
@@ -2639,7 +2715,7 @@
           "target": "пятница",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "пятница",
           "slow_audio": "пятница",
           "image": null,
@@ -2647,7 +2723,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "viernes",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-08-4-meaning",
@@ -2655,9 +2733,9 @@
           "prompt": "¿Qué significa «пятница»?",
           "target": "пятница",
           "options": [
-            "cuatro",
+            "cinco",
             "viernes",
-            "once"
+            "doce"
           ],
           "answer": "viernes",
           "explanation": "viernes",
@@ -2675,8 +2753,8 @@
           "target": "",
           "options": [
             "пятница",
-            "четырнадцать",
-            "семь"
+            "пятнадцать",
+            "восемь"
           ],
           "answer": "пятница",
           "explanation": "La forma escrita correcta es «пятница»: viernes.",
@@ -2694,7 +2772,7 @@
           "target": "суббота",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "суббота",
           "slow_audio": "суббота",
           "image": null,
@@ -2702,7 +2780,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "sábado",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-08-5-meaning",
@@ -2710,8 +2790,8 @@
           "prompt": "¿Qué significa «суббота»?",
           "target": "суббота",
           "options": [
-            "doce",
-            "cinco",
+            "seis",
+            "trece",
             "sábado"
           ],
           "answer": "sábado",
@@ -2729,9 +2809,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "суббота",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "суббота"
           ],
           "answer": "суббота",
           "explanation": "La forma escrita correcta es «суббота»: sábado.",
@@ -2772,7 +2852,7 @@
           "target": "воскресенье",
           "options": [],
           "answer": "",
-          "explanation": "Apréndelos como palabras completas.",
+          "explanation": "",
           "audio": "воскресенье",
           "slow_audio": "воскресенье",
           "image": null,
@@ -2780,7 +2860,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Apréndelos como palabras completas."
+          "meaning": "domingo",
+          "sound_hint": "",
+          "group_hint": "Apréndelos como palabras completas."
         },
         {
           "id": "russian-time-09-1-meaning",
@@ -2789,8 +2871,8 @@
           "target": "воскресенье",
           "options": [
             "domingo",
-            "dos",
-            "nueve"
+            "tres",
+            "diez"
           ],
           "answer": "domingo",
           "explanation": "domingo",
@@ -2807,8 +2889,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
-            "двенадцать",
+            "шесть",
+            "тринадцать",
             "воскресенье"
           ],
           "answer": "воскресенье",
@@ -2827,7 +2909,7 @@
           "target": "да",
           "options": [],
           "answer": "",
-          "explanation": "Sí, no y quizá.",
+          "explanation": "",
           "audio": "да",
           "slow_audio": "да",
           "image": null,
@@ -2835,7 +2917,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Sí, no y quizá."
+          "meaning": "sí",
+          "sound_hint": "",
+          "group_hint": "Sí, no y quizá."
         },
         {
           "id": "russian-time-09-2-meaning",
@@ -2843,9 +2927,9 @@
           "prompt": "¿Qué significa «да»?",
           "target": "да",
           "options": [
+            "cuatro",
             "sí",
-            "tres",
-            "diez"
+            "once"
           ],
           "answer": "sí",
           "explanation": "sí",
@@ -2862,9 +2946,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
-            "тринадцать",
-            "да"
+            "семь",
+            "да",
+            "четырнадцать"
           ],
           "answer": "да",
           "explanation": "La forma escrita correcta es «да»: sí.",
@@ -2882,7 +2966,7 @@
           "target": "нет",
           "options": [],
           "answer": "",
-          "explanation": "Sí, no y quizá.",
+          "explanation": "",
           "audio": "нет",
           "slow_audio": "нет",
           "image": null,
@@ -2890,7 +2974,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Sí, no y quizá."
+          "meaning": "no",
+          "sound_hint": "",
+          "group_hint": "Sí, no y quizá."
         },
         {
           "id": "russian-time-09-3-meaning",
@@ -2898,9 +2984,9 @@
           "prompt": "¿Qué significa «нет»?",
           "target": "нет",
           "options": [
-            "cuatro",
+            "cinco",
             "no",
-            "once"
+            "doce"
           ],
           "answer": "no",
           "explanation": "no",
@@ -2917,9 +3003,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "четырнадцать",
             "нет",
-            "семь"
+            "пятнадцать",
+            "восемь"
           ],
           "answer": "нет",
           "explanation": "La forma escrita correcta es «нет»: no.",
@@ -2937,7 +3023,7 @@
           "target": "может быть",
           "options": [],
           "answer": "",
-          "explanation": "Sí, no y quizá.",
+          "explanation": "",
           "audio": "может быть",
           "slow_audio": "может быть",
           "image": null,
@@ -2945,7 +3031,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Sí, no y quizá."
+          "meaning": "quizá",
+          "sound_hint": "",
+          "group_hint": "Sí, no y quizá."
         },
         {
           "id": "russian-time-09-4-meaning",
@@ -2953,9 +3041,9 @@
           "prompt": "¿Qué significa «может быть»?",
           "target": "может быть",
           "options": [
-            "doce",
+            "seis",
             "quizá",
-            "cinco"
+            "trece"
           ],
           "answer": "quizá",
           "explanation": "quizá",
@@ -2972,9 +3060,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "может быть",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "может быть"
           ],
           "answer": "может быть",
           "explanation": "La forma escrita correcta es «может быть»: quizá.",
@@ -2992,7 +3080,7 @@
           "target": "это",
           "options": [],
           "answer": "",
-          "explanation": "Это sirve para presentar algo.",
+          "explanation": "",
           "audio": "это",
           "slow_audio": "это",
           "image": null,
@@ -3000,7 +3088,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Это sirve para presentar algo."
+          "meaning": "esto",
+          "sound_hint": "",
+          "group_hint": "Это sirve para presentar algo."
         },
         {
           "id": "russian-time-09-5-meaning",
@@ -3009,8 +3099,8 @@
           "target": "это",
           "options": [
             "esto",
-            "seis",
-            "trece"
+            "siete",
+            "catorce"
           ],
           "answer": "esto",
           "explanation": "esto",
@@ -3027,8 +3117,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "девять",
-            "шестнадцать",
+            "семнадцать",
+            "десять",
             "это"
           ],
           "answer": "это",
@@ -3070,8 +3160,8 @@
           "prompt": "¿Qué significa «четверг»?",
           "target": "четверг",
           "options": [
-            "dos",
-            "nueve",
+            "tres",
+            "diez",
             "jueves"
           ],
           "answer": "jueves",
@@ -3089,8 +3179,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пять",
-            "двенадцать",
+            "шесть",
+            "тринадцать",
             "четверг"
           ],
           "answer": "четверг",
@@ -3109,8 +3199,8 @@
           "target": "суббота",
           "options": [
             "sábado",
-            "tres",
-            "diez"
+            "cuatro",
+            "once"
           ],
           "answer": "sábado",
           "explanation": "sábado",
@@ -3127,9 +3217,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
-            "тринадцать",
-            "суббота"
+            "семь",
+            "суббота",
+            "четырнадцать"
           ],
           "answer": "суббота",
           "explanation": "La forma escrita correcta es «суббота»: sábado.",
@@ -3146,9 +3236,9 @@
           "prompt": "¿Qué significa «да»?",
           "target": "да",
           "options": [
-            "cuatro",
+            "cinco",
             "sí",
-            "once"
+            "doce"
           ],
           "answer": "sí",
           "explanation": "sí",
@@ -3166,8 +3256,8 @@
           "target": "",
           "options": [
             "да",
-            "четырнадцать",
-            "семь"
+            "пятнадцать",
+            "восемь"
           ],
           "answer": "да",
           "explanation": "La forma escrita correcta es «да»: sí.",
@@ -3184,9 +3274,9 @@
           "prompt": "¿Qué significa «может быть»?",
           "target": "может быть",
           "options": [
-            "doce",
+            "seis",
             "quizá",
-            "cinco"
+            "trece"
           ],
           "answer": "quizá",
           "explanation": "quizá",
@@ -3203,9 +3293,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "может быть",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "может быть"
           ],
           "answer": "может быть",
           "explanation": "La forma escrita correcta es «может быть»: quizá.",
@@ -3246,7 +3336,7 @@
           "target": "то",
           "options": [],
           "answer": "",
-          "explanation": "Это sirve para presentar algo.",
+          "explanation": "",
           "audio": "то",
           "slow_audio": "то",
           "image": null,
@@ -3254,7 +3344,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Это sirve para presentar algo."
+          "meaning": "eso",
+          "sound_hint": "",
+          "group_hint": "Это sirve para presentar algo."
         },
         {
           "id": "russian-time-10-1-meaning",
@@ -3262,9 +3354,9 @@
           "prompt": "¿Qué significa «то»?",
           "target": "то",
           "options": [
+            "cuatro",
             "eso",
-            "tres",
-            "diez"
+            "once"
           ],
           "answer": "eso",
           "explanation": "eso",
@@ -3281,9 +3373,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "шесть",
-            "тринадцать",
-            "то"
+            "семь",
+            "то",
+            "четырнадцать"
           ],
           "answer": "то",
           "explanation": "La forma escrita correcta es «то»: eso.",
@@ -3301,7 +3393,7 @@
           "target": "вон то",
           "options": [],
           "answer": "",
-          "explanation": "Это sirve para presentar algo.",
+          "explanation": "",
           "audio": "вон то",
           "slow_audio": "вон то",
           "image": null,
@@ -3309,7 +3401,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Это sirve para presentar algo."
+          "meaning": "aquello",
+          "sound_hint": "",
+          "group_hint": "Это sirve para presentar algo."
         },
         {
           "id": "russian-time-10-2-meaning",
@@ -3317,9 +3411,9 @@
           "prompt": "¿Qué significa «вон то»?",
           "target": "вон то",
           "options": [
-            "cuatro",
+            "cinco",
             "aquello",
-            "once"
+            "doce"
           ],
           "answer": "aquello",
           "explanation": "aquello",
@@ -3336,9 +3430,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "четырнадцать",
-            "семь",
-            "вон то"
+            "пятнадцать",
+            "вон то",
+            "восемь"
           ],
           "answer": "вон то",
           "explanation": "La forma escrita correcta es «вон то»: aquello.",
@@ -3356,7 +3450,7 @@
           "target": "человек",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "человек",
           "slow_audio": "человек",
           "image": null,
@@ -3364,7 +3458,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "persona",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-10-3-meaning",
@@ -3372,8 +3468,8 @@
           "prompt": "¿Qué significa «человек»?",
           "target": "человек",
           "options": [
-            "doce",
-            "cinco",
+            "seis",
+            "trece",
             "persona"
           ],
           "answer": "persona",
@@ -3391,9 +3487,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "человек",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "человек"
           ],
           "answer": "человек",
           "explanation": "La forma escrita correcta es «человек»: persona.",
@@ -3411,7 +3507,7 @@
           "target": "друг",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "друг",
           "slow_audio": "друг",
           "image": null,
@@ -3419,7 +3515,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "amigo",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-10-4-meaning",
@@ -3427,9 +3525,9 @@
           "prompt": "¿Qué significa «друг»?",
           "target": "друг",
           "options": [
-            "seis",
             "amigo",
-            "trece"
+            "siete",
+            "catorce"
           ],
           "answer": "amigo",
           "explanation": "amigo",
@@ -3446,8 +3544,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "девять",
-            "шестнадцать",
+            "семнадцать",
+            "десять",
             "друг"
           ],
           "answer": "друг",
@@ -3466,7 +3564,7 @@
           "target": "семья",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "семья",
           "slow_audio": "семья",
           "image": null,
@@ -3474,7 +3572,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "familia",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-10-5-meaning",
@@ -3483,8 +3583,8 @@
           "target": "семья",
           "options": [
             "familia",
-            "catorce",
-            "siete"
+            "ocho",
+            "quince"
           ],
           "answer": "familia",
           "explanation": "familia",
@@ -3502,8 +3602,8 @@
           "target": "",
           "options": [
             "семья",
-            "семнадцать",
-            "десять"
+            "одиннадцать",
+            "восемнадцать"
           ],
           "answer": "семья",
           "explanation": "La forma escrita correcta es «семья»: familia.",
@@ -3544,7 +3644,7 @@
           "target": "дом",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "дом",
           "slow_audio": "дом",
           "image": null,
@@ -3552,7 +3652,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "casa",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-11-1-meaning",
@@ -3560,9 +3662,9 @@
           "prompt": "¿Qué significa «дом»?",
           "target": "дом",
           "options": [
-            "cuatro",
+            "cinco",
             "casa",
-            "once"
+            "doce"
           ],
           "answer": "casa",
           "explanation": "casa",
@@ -3579,9 +3681,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "четырнадцать",
             "дом",
-            "семь"
+            "пятнадцать",
+            "восемь"
           ],
           "answer": "дом",
           "explanation": "La forma escrita correcta es «дом»: casa.",
@@ -3599,7 +3701,7 @@
           "target": "школа",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "школа",
           "slow_audio": "школа",
           "image": null,
@@ -3607,7 +3709,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "escuela",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-11-2-meaning",
@@ -3615,8 +3719,8 @@
           "prompt": "¿Qué significa «школа»?",
           "target": "школа",
           "options": [
-            "doce",
-            "cinco",
+            "seis",
+            "trece",
             "escuela"
           ],
           "answer": "escuela",
@@ -3634,9 +3738,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "школа",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "школа"
           ],
           "answer": "школа",
           "explanation": "La forma escrita correcta es «школа»: escuela.",
@@ -3654,7 +3758,7 @@
           "target": "вокзал",
           "options": [],
           "answer": "",
-          "explanation": "Personas y lugares frecuentes.",
+          "explanation": "",
           "audio": "вокзал",
           "slow_audio": "вокзал",
           "image": null,
@@ -3662,7 +3766,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Personas y lugares frecuentes."
+          "meaning": "estación",
+          "sound_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
         },
         {
           "id": "russian-time-11-3-meaning",
@@ -3671,8 +3777,8 @@
           "target": "вокзал",
           "options": [
             "estación",
-            "seis",
-            "trece"
+            "siete",
+            "catorce"
           ],
           "answer": "estación",
           "explanation": "estación",
@@ -3689,9 +3795,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "семнадцать",
             "вокзал",
-            "девять",
-            "шестнадцать"
+            "десять"
           ],
           "answer": "вокзал",
           "explanation": "La forma escrita correcta es «вокзал»: estación.",
@@ -3709,7 +3815,7 @@
           "target": "что",
           "options": [],
           "answer": "",
-          "explanation": "Qué, quién, dónde y cuándo.",
+          "explanation": "",
           "audio": "что",
           "slow_audio": "что",
           "image": null,
@@ -3717,7 +3823,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Qué, quién, dónde y cuándo."
+          "meaning": "qué",
+          "sound_hint": "",
+          "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
           "id": "russian-time-11-4-meaning",
@@ -3725,9 +3833,9 @@
           "prompt": "¿Qué significa «что»?",
           "target": "что",
           "options": [
-            "catorce",
             "qué",
-            "siete"
+            "ocho",
+            "quince"
           ],
           "answer": "qué",
           "explanation": "qué",
@@ -3744,8 +3852,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "семнадцать",
-            "десять",
+            "одиннадцать",
+            "восемнадцать",
             "что"
           ],
           "answer": "что",
@@ -3764,7 +3872,7 @@
           "target": "кто",
           "options": [],
           "answer": "",
-          "explanation": "Qué, quién, dónde y cuándo.",
+          "explanation": "",
           "audio": "кто",
           "slow_audio": "кто",
           "image": null,
@@ -3772,7 +3880,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Qué, quién, dónde y cuándo."
+          "meaning": "quién",
+          "sound_hint": "",
+          "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
           "id": "russian-time-11-5-meaning",
@@ -3780,9 +3890,9 @@
           "prompt": "¿Qué significa «кто»?",
           "target": "кто",
           "options": [
-            "quince",
-            "ocho",
-            "quién"
+            "dieciséis",
+            "quién",
+            "nueve"
           ],
           "answer": "quién",
           "explanation": "quién",
@@ -3800,8 +3910,8 @@
           "target": "",
           "options": [
             "кто",
-            "одиннадцать",
-            "восемнадцать"
+            "двенадцать",
+            "девятнадцать"
           ],
           "answer": "кто",
           "explanation": "La forma escrita correcta es «кто»: quién.",
@@ -3842,7 +3952,7 @@
           "target": "где",
           "options": [],
           "answer": "",
-          "explanation": "Qué, quién, dónde y cuándo.",
+          "explanation": "",
           "audio": "где",
           "slow_audio": "где",
           "image": null,
@@ -3850,7 +3960,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Qué, quién, dónde y cuándo."
+          "meaning": "dónde",
+          "sound_hint": "",
+          "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
           "id": "russian-time-12-1-meaning",
@@ -3858,9 +3970,9 @@
           "prompt": "¿Qué significa «где»?",
           "target": "где",
           "options": [
-            "doce",
+            "seis",
             "dónde",
-            "cinco"
+            "trece"
           ],
           "answer": "dónde",
           "explanation": "dónde",
@@ -3877,9 +3989,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "восемь",
-            "где",
-            "пятнадцать"
+            "девять",
+            "шестнадцать",
+            "где"
           ],
           "answer": "где",
           "explanation": "La forma escrita correcta es «где»: dónde.",
@@ -3897,7 +4009,7 @@
           "target": "когда",
           "options": [],
           "answer": "",
-          "explanation": "Qué, quién, dónde y cuándo.",
+          "explanation": "",
           "audio": "когда",
           "slow_audio": "когда",
           "image": null,
@@ -3905,7 +4017,9 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "sound_hint": "Qué, quién, dónde y cuándo."
+          "meaning": "cuándo",
+          "sound_hint": "",
+          "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
           "id": "russian-time-12-2-meaning",
@@ -3913,9 +4027,9 @@
           "prompt": "¿Qué significa «когда»?",
           "target": "когда",
           "options": [
-            "seis",
-            "trece",
-            "cuándo"
+            "siete",
+            "cuándo",
+            "catorce"
           ],
           "answer": "cuándo",
           "explanation": "cuándo",
@@ -3933,8 +4047,8 @@
           "target": "",
           "options": [
             "когда",
-            "девять",
-            "шестнадцать"
+            "семнадцать",
+            "десять"
           ],
           "answer": "когда",
           "explanation": "La forma escrita correcta es «когда»: cuándo.",
@@ -3977,9 +4091,9 @@
           "prompt": "¿Qué significa «Который час?»?",
           "target": "Который час?",
           "options": [
-            "nueve",
+            "diecisiete",
             "¿Qué hora es?",
-            "dieciséis"
+            "diez"
           ],
           "answer": "¿Qué hora es?",
           "explanation": "¿Qué hora es?",
@@ -3997,8 +4111,8 @@
           "target": "",
           "options": [
             "Который час?",
-            "девятнадцать",
-            "двенадцать"
+            "двадцать",
+            "тринадцать"
           ],
           "answer": "Который час?",
           "explanation": "La forma escrita correcta es «Который час?»: ¿Qué hora es?",
@@ -4012,17 +4126,17 @@
         {
           "id": "russian-time-test-16-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Повторите, пожалуйста.»?",
-          "target": "Повторите, пожалуйста.",
+          "prompt": "¿Qué significa «Где туалет?»?",
+          "target": "Где туалет?",
           "options": [
-            "diez",
-            "diecisiete",
-            "Repita, por favor."
+            "once",
+            "dieciocho",
+            "¿Dónde está el baño?"
           ],
-          "answer": "Repita, por favor.",
-          "explanation": "Repita, por favor.",
-          "audio": "Повторите, пожалуйста.",
-          "slow_audio": "Повторите, пожалуйста.",
+          "answer": "¿Dónde está el baño?",
+          "explanation": "¿Dónde está el baño?",
+          "audio": "Где туалет?",
+          "slow_audio": "Где туалет?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4034,14 +4148,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Повторите, пожалуйста.",
-            "двадцать",
-            "тринадцать"
+            "Где туалет?",
+            "четырнадцать",
+            "Три часа."
           ],
-          "answer": "Повторите, пожалуйста.",
-          "explanation": "La forma escrita correcta es «Повторите, пожалуйста.»: Repita, por favor.",
-          "audio": "Повторите, пожалуйста.",
-          "slow_audio": "Повторите, пожалуйста.",
+          "answer": "Где туалет?",
+          "explanation": "La forma escrita correcta es «Где туалет?»: ¿Dónde está el baño?",
+          "audio": "Где туалет?",
+          "slow_audio": "Где туалет?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4050,17 +4164,17 @@
         {
           "id": "russian-time-test-16-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Меня зовут Анна.»?",
-          "target": "Меня зовут Анна.",
+          "prompt": "¿Qué significa «Как вас зовут?»?",
+          "target": "Как вас зовут?",
           "options": [
-            "once",
-            "dieciocho",
-            "Me llamo Ana"
+            "doce",
+            "diecinueve",
+            "¿Cómo te llamas?"
           ],
-          "answer": "Me llamo Ana",
-          "explanation": "Me llamo Ana",
-          "audio": "Меня зовут Анна.",
-          "slow_audio": "Меня зовут Анна.",
+          "answer": "¿Cómo te llamas?",
+          "explanation": "¿Cómo te llamas?",
+          "audio": "Как вас зовут?",
+          "slow_audio": "Как вас зовут?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4072,14 +4186,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Меня зовут Анна.",
+            "пятнадцать",
             "понедельник",
-            "четырнадцать"
+            "Как вас зовут?"
           ],
-          "answer": "Меня зовут Анна.",
-          "explanation": "La forma escrita correcta es «Меня зовут Анна.»: Me llamo Ana.",
-          "audio": "Меня зовут Анна.",
-          "slow_audio": "Меня зовут Анна.",
+          "answer": "Как вас зовут?",
+          "explanation": "La forma escrita correcta es «Как вас зовут?»: ¿Cómo te llamas?",
+          "audio": "Как вас зовут?",
+          "slow_audio": "Как вас зовут?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4088,17 +4202,17 @@
         {
           "id": "russian-time-test-16-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «два»?",
-          "target": "два",
+          "prompt": "¿Qué significa «три»?",
+          "target": "три",
           "options": [
-            "dos",
-            "doce",
-            "diecinueve"
+            "tres",
+            "trece",
+            "veinte"
           ],
-          "answer": "dos",
-          "explanation": "dos",
-          "audio": "два",
-          "slow_audio": "два",
+          "answer": "tres",
+          "explanation": "tres",
+          "audio": "три",
+          "slow_audio": "три",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4110,14 +4224,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "пятнадцать",
+            "шестнадцать",
             "вторник",
-            "два"
+            "три"
           ],
-          "answer": "два",
-          "explanation": "La forma escrita correcta es «два»: dos.",
-          "audio": "два",
-          "slow_audio": "два",
+          "answer": "три",
+          "explanation": "La forma escrita correcta es «три»: tres.",
+          "audio": "три",
+          "slow_audio": "три",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4126,17 +4240,17 @@
         {
           "id": "russian-time-test-16-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «семь»?",
-          "target": "семь",
+          "prompt": "¿Qué significa «восемь»?",
+          "target": "восемь",
           "options": [
-            "veinte",
-            "siete",
-            "trece"
+            "catorce",
+            "Son las tres",
+            "ocho"
           ],
-          "answer": "siete",
-          "explanation": "siete",
-          "audio": "семь",
-          "slow_audio": "семь",
+          "answer": "ocho",
+          "explanation": "ocho",
+          "audio": "восемь",
+          "slow_audio": "восемь",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4148,14 +4262,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "семь",
+            "семнадцать",
             "среда",
-            "шестнадцать"
+            "восемь"
           ],
-          "answer": "семь",
-          "explanation": "La forma escrita correcta es «семь»: siete.",
-          "audio": "семь",
-          "slow_audio": "семь",
+          "answer": "восемь",
+          "explanation": "La forma escrita correcta es «восемь»: ocho.",
+          "audio": "восемь",
+          "slow_audio": "восемь",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4164,17 +4278,17 @@
         {
           "id": "russian-time-test-16-6-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «двенадцать»?",
-          "target": "двенадцать",
+          "prompt": "¿Qué significa «тринадцать»?",
+          "target": "тринадцать",
           "options": [
+            "trece",
             "lunes",
-            "catorce",
-            "doce"
+            "quince"
           ],
-          "answer": "doce",
-          "explanation": "doce",
-          "audio": "двенадцать",
-          "slow_audio": "двенадцать",
+          "answer": "trece",
+          "explanation": "trece",
+          "audio": "тринадцать",
+          "slow_audio": "тринадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4186,14 +4300,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "восемнадцать",
             "четверг",
-            "двенадцать",
-            "семнадцать"
+            "тринадцать"
           ],
-          "answer": "двенадцать",
-          "explanation": "La forma escrita correcta es «двенадцать»: doce.",
-          "audio": "двенадцать",
-          "slow_audio": "двенадцать",
+          "answer": "тринадцать",
+          "explanation": "La forma escrita correcta es «тринадцать»: trece.",
+          "audio": "тринадцать",
+          "slow_audio": "тринадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4202,17 +4316,17 @@
         {
           "id": "russian-time-test-16-7-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «семнадцать»?",
-          "target": "семнадцать",
+          "prompt": "¿Qué significa «восемнадцать»?",
+          "target": "восемнадцать",
           "options": [
-            "diecisiete",
-            "quince",
+            "dieciocho",
+            "dieciséis",
             "martes"
           ],
-          "answer": "diecisiete",
-          "explanation": "diecisiete",
-          "audio": "семнадцать",
-          "slow_audio": "семнадцать",
+          "answer": "dieciocho",
+          "explanation": "dieciocho",
+          "audio": "восемнадцать",
+          "slow_audio": "восемнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4225,13 +4339,13 @@
           "target": "",
           "options": [
             "восемнадцать",
-            "пятница",
-            "семнадцать"
+            "девятнадцать",
+            "пятница"
           ],
-          "answer": "семнадцать",
-          "explanation": "La forma escrita correcta es «семнадцать»: diecisiete.",
-          "audio": "семнадцать",
-          "slow_audio": "семнадцать",
+          "answer": "восемнадцать",
+          "explanation": "La forma escrita correcta es «восемнадцать»: dieciocho.",
+          "audio": "восемнадцать",
+          "slow_audio": "восемнадцать",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -4243,8 +4357,8 @@
           "prompt": "¿Qué significa «вторник»?",
           "target": "вторник",
           "options": [
-            "dieciséis",
             "miércoles",
+            "diecisiete",
             "martes"
           ],
           "answer": "martes",
@@ -4263,8 +4377,8 @@
           "target": "",
           "options": [
             "вторник",
-            "девятнадцать",
-            "суббота"
+            "суббота",
+            "двадцать"
           ],
           "answer": "вторник",
           "explanation": "La forma escrita correcta es «вторник»: martes.",
@@ -4282,7 +4396,7 @@
           "target": "воскресенье",
           "options": [
             "domingo",
-            "diecisiete",
+            "dieciocho",
             "jueves"
           ],
           "answer": "domingo",
@@ -4300,9 +4414,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "Три часа.",
             "воскресенье",
-            "человек",
-            "двадцать"
+            "человек"
           ],
           "answer": "воскресенье",
           "explanation": "La forma escrita correcta es «воскресенье»: domingo.",
@@ -4321,7 +4435,7 @@
           "options": [
             "viernes",
             "eso",
-            "dieciocho"
+            "diecinueve"
           ],
           "answer": "eso",
           "explanation": "eso",
