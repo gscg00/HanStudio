@@ -120,6 +120,44 @@ def test_no_category_description_is_repeated_as_multiple_item_explanations():
     assert not problems
 
 
+def test_korean_combination_cards_are_rules_not_false_translations():
+    expected = {
+        "가": ("ga/ka suave", "ㄱ + ㅏ = 가"),
+        "너": ("neo", "ㄴ + ㅓ = 너"),
+        "도": ("do/to suave", "ㄷ + ㅗ = 도"),
+    }
+    found = {}
+    for language, lesson in active_lessons():
+        if language != "Korean":
+            continue
+        for activity in lesson.get("activities", []):
+            target = activity.get("target")
+            if target in expected and activity.get("teaching_kind") == "rule":
+                found[target] = activity
+
+    assert set(found) == set(expected)
+    for target, (sound, formation) in expected.items():
+        activity = found[target]
+        assert activity.get("meaning", "") == ""
+        assert activity.get("sound_hint") == f"Cómo suena: {sound}"
+        assert activity.get("memory_hint") == f"Cómo se forma: {formation}"
+        assert activity.get("explanation")
+
+
+def test_rule_teaching_cards_never_claim_to_show_a_spanish_translation():
+    problems = []
+    for language, lesson in active_lessons():
+        activities = lesson.get("activities", [])
+        for index, activity in enumerate(activities):
+            if activity.get("teaching_kind") != "rule":
+                continue
+            if linked_spanish_meaning(activities, index):
+                problems.append((language, lesson.get("id"), activity.get("target")))
+            if activity.get("meaning"):
+                problems.append((language, lesson.get("id"), activity.get("target")))
+    assert not problems
+
+
 def test_course_player_renders_a_dedicated_spanish_meaning_block():
     source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
     styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
