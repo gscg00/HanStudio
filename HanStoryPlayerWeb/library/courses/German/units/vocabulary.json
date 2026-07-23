@@ -27218,7 +27218,7 @@
           "id": "german-vocabulary-42-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Bär",
+          "target": "ä",
           "options": [],
           "answer": "",
           "explanation": "Ä se acerca a una e abierta.",
@@ -27239,12 +27239,12 @@
         {
           "id": "german-vocabulary-42-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Bär»?",
-          "target": "Bär",
+          "prompt": "¿Qué debes recordar sobre «ä»?",
+          "target": "ä",
           "options": [
+            "Representa una s sorda después de vocal larga.",
             "Ä se acerca a una e abierta.",
-            "la cocina",
-            "hambriento"
+            "En una oración principal el verbo conjugado ocupa la segunda posición."
           ],
           "answer": "Ä se acerca a una e abierta.",
           "explanation": "Ä se acerca a una e abierta.",
@@ -27261,12 +27261,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Bär",
             "schmerzen",
-            "der Tisch"
+            "der Tisch",
+            "ä"
           ],
-          "answer": "Bär",
-          "explanation": "La forma escrita correcta es «Bär»: Ä se acerca a una e abierta.",
+          "answer": "ä",
+          "explanation": "La forma escrita correcta es «ä»: Ä se acerca a una e abierta.",
           "audio": "Bär",
           "slow_audio": "Bär",
           "image": null,
@@ -27278,7 +27278,67 @@
           "id": "german-vocabulary-42-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "über",
+          "target": "ö",
+          "options": [],
+          "answer": "",
+          "explanation": "Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "sound_hint": "Cómo suena: e con labios de o",
+          "memory_hint": "Cómo se forma: schön",
+          "group_hint": "",
+          "teaching_kind": "rule",
+          "rule_kind": "combinations"
+        },
+        {
+          "id": "german-vocabulary-42-5-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué debes recordar sobre «ö»?",
+          "target": "ö",
+          "options": [
+            "Mantén la lengua de e y redondea labios.",
+            "Tres letras forman un sonido.",
+            "El orden neutro comienza con sujeto y verbo."
+          ],
+          "answer": "Mantén la lengua de e y redondea labios.",
+          "explanation": "Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-42-5-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "das Haus",
+            "der Stuhl",
+            "ö"
+          ],
+          "answer": "ö",
+          "explanation": "La forma escrita correcta es «ö»: Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-42-6-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "ü",
           "options": [],
           "answer": "",
           "explanation": "No existe igual en español.",
@@ -27297,14 +27357,14 @@
           "rule_kind": "combinations"
         },
         {
-          "id": "german-vocabulary-42-5-meaning",
+          "id": "german-vocabulary-42-6-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «über»?",
-          "target": "über",
+          "prompt": "¿Qué debes recordar sobre «ü»?",
+          "target": "ü",
           "options": [
+            "Al inicio de palabra suelen comenzar con sh.",
             "No existe igual en español.",
-            "el baño",
-            "sediento"
+            "Ä se acerca a una e abierta."
           ],
           "answer": "No existe igual en español.",
           "explanation": "No existe igual en español.",
@@ -27316,17 +27376,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-5-listen",
+          "id": "german-vocabulary-42-6-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Haus",
-            "über",
-            "der Stuhl"
+            "ü",
+            "die Wohnung",
+            "die Lampe"
           ],
-          "answer": "über",
-          "explanation": "La forma escrita correcta es «über»: No existe igual en español.",
+          "answer": "ü",
+          "explanation": "La forma escrita correcta es «ü»: No existe igual en español.",
           "audio": "über",
           "slow_audio": "über",
           "image": null,
@@ -27335,10 +27395,10 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-6-teach",
+          "id": "german-vocabulary-42-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Straße",
+          "target": "ß",
           "options": [],
           "answer": "",
           "explanation": "Representa una s sorda después de vocal larga.",
@@ -27357,14 +27417,14 @@
           "rule_kind": "combinations"
         },
         {
-          "id": "german-vocabulary-42-6-meaning",
+          "id": "german-vocabulary-42-7-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Straße»?",
-          "target": "Straße",
+          "prompt": "¿Qué debes recordar sobre «ß»?",
+          "target": "ß",
           "options": [
-            "Representa una s sorda después de vocal larga.",
-            "la cama",
-            "dolorido"
+            "Después de i/e es más frontal.",
+            "Mantén la lengua de e y redondea labios.",
+            "Representa una s sorda después de vocal larga."
           ],
           "answer": "Representa una s sorda después de vocal larga.",
           "explanation": "Representa una s sorda después de vocal larga.",
@@ -27376,17 +27436,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-6-listen",
+          "id": "german-vocabulary-42-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Straße",
-            "die Wohnung",
-            "die Lampe"
+            "das Zimmer",
+            "ß",
+            "die Tür"
           ],
-          "answer": "Straße",
-          "explanation": "La forma escrita correcta es «Straße»: Representa una s sorda después de vocal larga.",
+          "answer": "ß",
+          "explanation": "La forma escrita correcta es «ß»: Representa una s sorda después de vocal larga.",
           "audio": "Straße",
           "slow_audio": "Straße",
           "image": null,
@@ -27395,10 +27455,10 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-7-teach",
+          "id": "german-vocabulary-42-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Schule",
+          "target": "sch",
           "options": [],
           "answer": "",
           "explanation": "Tres letras forman un sonido.",
@@ -27417,14 +27477,14 @@
           "rule_kind": "combinations"
         },
         {
-          "id": "german-vocabulary-42-7-meaning",
+          "id": "german-vocabulary-42-8-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Schule»?",
-          "target": "Schule",
+          "prompt": "¿Qué debes recordar sobre «sch»?",
+          "target": "sch",
           "options": [
-            "Tres letras forman un sonido.",
-            "doler",
-            "la mesa"
+            "Ambas variantes pueden ser correctas.",
+            "No existe igual en español.",
+            "Tres letras forman un sonido."
           ],
           "answer": "Tres letras forman un sonido.",
           "explanation": "Tres letras forman un sonido.",
@@ -27436,17 +27496,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-7-listen",
+          "id": "german-vocabulary-42-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
-            "Schule",
-            "die Tür"
+            "die Küche",
+            "das Fenster",
+            "sch"
           ],
-          "answer": "Schule",
-          "explanation": "La forma escrita correcta es «Schule»: Tres letras forman un sonido.",
+          "answer": "sch",
+          "explanation": "La forma escrita correcta es «sch»: Tres letras forman un sonido.",
           "audio": "Schule",
           "slow_audio": "Schule",
           "image": null,
@@ -27455,10 +27515,10 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-8-teach",
+          "id": "german-vocabulary-42-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Sport / Stadt",
+          "target": "sp / st",
           "options": [],
           "answer": "",
           "explanation": "Al inicio de palabra suelen comenzar con sh.",
@@ -27477,13 +27537,13 @@
           "rule_kind": "combinations"
         },
         {
-          "id": "german-vocabulary-42-8-meaning",
+          "id": "german-vocabulary-42-9-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Sport / Stadt»?",
-          "target": "Sport / Stadt",
+          "prompt": "¿Qué debes recordar sobre «sp / st»?",
+          "target": "sp / st",
           "options": [
-            "la casa",
-            "la silla",
+            "Representa una s sorda después de vocal larga.",
+            "V suele sonar f; W suele sonar v.",
             "Al inicio de palabra suelen comenzar con sh."
           ],
           "answer": "Al inicio de palabra suelen comenzar con sh.",
@@ -27496,79 +27556,19 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-42-8-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "die Küche",
-            "das Fenster",
-            "Sport / Stadt"
-          ],
-          "answer": "Sport / Stadt",
-          "explanation": "La forma escrita correcta es «Sport / Stadt»: Al inicio de palabra suelen comenzar con sh.",
-          "audio": "Sport / Stadt",
-          "slow_audio": "Sport / Stadt",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-42-9-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "Bach",
-          "options": [],
-          "answer": "",
-          "explanation": "Después de a/o/u suena más atrás.",
-          "audio": "Bach",
-          "slow_audio": "Bach",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "",
-          "sound_hint": "Cómo suena: j más posterior",
-          "memory_hint": "Ejemplo: Bach",
-          "group_hint": "",
-          "teaching_kind": "rule",
-          "rule_kind": "dangerous"
-        },
-        {
-          "id": "german-vocabulary-42-9-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Bach»?",
-          "target": "Bach",
-          "options": [
-            "Después de a/o/u suena más atrás.",
-            "el piso, el apartamento",
-            "la lámpara"
-          ],
-          "answer": "Después de a/o/u suena más atrás.",
-          "explanation": "Después de a/o/u suena más atrás.",
-          "audio": "Bach",
-          "slow_audio": "Bach",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
           "id": "german-vocabulary-42-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "der Schlüssel",
-            "Bach",
+            "sp / st",
             "das Bad"
           ],
-          "answer": "Bach",
-          "explanation": "La forma escrita correcta es «Bach»: Después de a/o/u suena más atrás.",
-          "audio": "Bach",
-          "slow_audio": "Bach",
+          "answer": "sp / st",
+          "explanation": "La forma escrita correcta es «sp / st»: Al inicio de palabra suelen comenzar con sh.",
+          "audio": "Sport / Stadt",
+          "slow_audio": "Sport / Stadt",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27578,20 +27578,20 @@
           "id": "german-vocabulary-42-10-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Vater / Wasser",
+          "target": "ch",
           "options": [],
           "answer": "",
-          "explanation": "V suele sonar f; W suele sonar v.",
-          "audio": "Vater / Wasser",
-          "slow_audio": "Vater / Wasser",
+          "explanation": "Después de i/e es más frontal.",
+          "audio": "ich",
+          "slow_audio": "ich",
           "image": null,
           "writing_asset": null,
           "tags": [],
           "xp": 2,
           "gradable": false,
           "meaning": "",
-          "sound_hint": "Cómo suena: f / v",
-          "memory_hint": "Ejemplo: Vater / Wasser",
+          "sound_hint": "Cómo suena: j muy suave, frontal",
+          "memory_hint": "Ejemplo: ich",
           "group_hint": "",
           "teaching_kind": "rule",
           "rule_kind": "dangerous"
@@ -27599,17 +27599,17 @@
         {
           "id": "german-vocabulary-42-10-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Vater / Wasser»?",
-          "target": "Vater / Wasser",
+          "prompt": "¿Qué debes recordar sobre «ch»?",
+          "target": "ch",
           "options": [
-            "V suele sonar f; W suele sonar v.",
-            "la habitación",
-            "la puerta"
+            "Después de i/e es más frontal.",
+            "Los sustantivos tienen género y empiezan con mayúscula.",
+            "Tres letras forman un sonido."
           ],
-          "answer": "V suele sonar f; W suele sonar v.",
-          "explanation": "V suele sonar f; W suele sonar v.",
-          "audio": "Vater / Wasser",
-          "slow_audio": "Vater / Wasser",
+          "answer": "Después de i/e es más frontal.",
+          "explanation": "Después de i/e es más frontal.",
+          "audio": "ich",
+          "slow_audio": "ich",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27621,14 +27621,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "ch",
             "das Bett",
-            "Vater / Wasser",
             "die Tasche"
           ],
-          "answer": "Vater / Wasser",
-          "explanation": "La forma escrita correcta es «Vater / Wasser»: V suele sonar f; W suele sonar v.",
-          "audio": "Vater / Wasser",
-          "slow_audio": "Vater / Wasser",
+          "answer": "ch",
+          "explanation": "La forma escrita correcta es «ch»: Después de i/e es más frontal.",
+          "audio": "ich",
+          "slow_audio": "ich",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27699,17 +27699,17 @@
         {
           "id": "german-vocabulary-review-42-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «über»?",
-          "target": "über",
+          "prompt": "¿Qué debes recordar sobre «ö»?",
+          "target": "ö",
           "options": [
-            "el piso, el apartamento",
-            "sano",
-            "No existe igual en español."
+            "V suele sonar f; W suele sonar v.",
+            "Mantén la lengua de e y redondea labios.",
+            "Representa una s sorda después de vocal larga."
           ],
-          "answer": "No existe igual en español.",
-          "explanation": "No existe igual en español.",
-          "audio": "über",
-          "slow_audio": "über",
+          "answer": "Mantén la lengua de e y redondea labios.",
+          "explanation": "Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27721,14 +27721,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "ö",
             "durstig",
-            "das Bad",
-            "über"
+            "das Bad"
           ],
-          "answer": "über",
-          "explanation": "La forma escrita correcta es «über»: No existe igual en español.",
-          "audio": "über",
-          "slow_audio": "über",
+          "answer": "ö",
+          "explanation": "La forma escrita correcta es «ö»: Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27737,17 +27737,17 @@
         {
           "id": "german-vocabulary-review-42-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Schule»?",
-          "target": "Schule",
+          "prompt": "¿Qué debes recordar sobre «ß»?",
+          "target": "ß",
           "options": [
-            "cansado",
-            "la habitación",
-            "Tres letras forman un sonido."
+            "No existe igual en español.",
+            "Los sustantivos tienen género y empiezan con mayúscula.",
+            "Representa una s sorda después de vocal larga."
           ],
-          "answer": "Tres letras forman un sonido.",
-          "explanation": "Tres letras forman un sonido.",
-          "audio": "Schule",
-          "slow_audio": "Schule",
+          "answer": "Representa una s sorda después de vocal larga.",
+          "explanation": "Representa una s sorda después de vocal larga.",
+          "audio": "Straße",
+          "slow_audio": "Straße",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27759,14 +27759,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Schule",
+            "ß",
             "weh",
             "das Bett"
           ],
-          "answer": "Schule",
-          "explanation": "La forma escrita correcta es «Schule»: Tres letras forman un sonido.",
-          "audio": "Schule",
-          "slow_audio": "Schule",
+          "answer": "ß",
+          "explanation": "La forma escrita correcta es «ß»: Representa una s sorda después de vocal larga.",
+          "audio": "Straße",
+          "slow_audio": "Straße",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27775,17 +27775,17 @@
         {
           "id": "german-vocabulary-review-42-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Bach»?",
-          "target": "Bach",
+          "prompt": "¿Qué debes recordar sobre «sp / st»?",
+          "target": "sp / st",
           "options": [
-            "Después de a/o/u suena más atrás.",
-            "la cocina",
-            "hambriento"
+            "Representa una s sorda después de vocal larga.",
+            "Al inicio de palabra suelen comenzar con sh.",
+            "En una oración principal el verbo conjugado ocupa la segunda posición."
           ],
-          "answer": "Después de a/o/u suena más atrás.",
-          "explanation": "Después de a/o/u suena más atrás.",
-          "audio": "Bach",
-          "slow_audio": "Bach",
+          "answer": "Al inicio de palabra suelen comenzar con sh.",
+          "explanation": "Al inicio de palabra suelen comenzar con sh.",
+          "audio": "Sport / Stadt",
+          "slow_audio": "Sport / Stadt",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27797,14 +27797,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Bach",
             "schmerzen",
-            "der Tisch"
+            "der Tisch",
+            "sp / st"
           ],
-          "answer": "Bach",
-          "explanation": "La forma escrita correcta es «Bach»: Después de a/o/u suena más atrás.",
-          "audio": "Bach",
-          "slow_audio": "Bach",
+          "answer": "sp / st",
+          "explanation": "La forma escrita correcta es «sp / st»: Al inicio de palabra suelen comenzar con sh.",
+          "audio": "Sport / Stadt",
+          "slow_audio": "Sport / Stadt",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -27837,6 +27837,126 @@
           "id": "german-vocabulary-43-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
+          "target": "R",
+          "options": [],
+          "answer": "",
+          "explanation": "Ambas variantes pueden ser correctas.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "sound_hint": "Cómo suena: r de garganta o vibrante",
+          "memory_hint": "Ejemplo: rot",
+          "group_hint": "",
+          "teaching_kind": "rule",
+          "rule_kind": "dangerous"
+        },
+        {
+          "id": "german-vocabulary-43-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué debes recordar sobre «R»?",
+          "target": "R",
+          "options": [
+            "V suele sonar f; W suele sonar v.",
+            "Mantén la lengua de e y redondea labios.",
+            "Ambas variantes pueden ser correctas."
+          ],
+          "answer": "Ambas variantes pueden ser correctas.",
+          "explanation": "Ambas variantes pueden ser correctas.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-43-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "R",
+            "durstig",
+            "das Bad"
+          ],
+          "answer": "R",
+          "explanation": "La forma escrita correcta es «R»: Ambas variantes pueden ser correctas.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-43-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "V / W",
+          "options": [],
+          "answer": "",
+          "explanation": "V suele sonar f; W suele sonar v.",
+          "audio": "Vater / Wasser",
+          "slow_audio": "Vater / Wasser",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "sound_hint": "Cómo suena: f / v",
+          "memory_hint": "Ejemplo: Vater / Wasser",
+          "group_hint": "",
+          "teaching_kind": "rule",
+          "rule_kind": "dangerous"
+        },
+        {
+          "id": "german-vocabulary-43-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué debes recordar sobre «V / W»?",
+          "target": "V / W",
+          "options": [
+            "No existe igual en español.",
+            "V suele sonar f; W suele sonar v.",
+            "Los sustantivos tienen género y empiezan con mayúscula."
+          ],
+          "answer": "V suele sonar f; W suele sonar v.",
+          "explanation": "V suele sonar f; W suele sonar v.",
+          "audio": "Vater / Wasser",
+          "slow_audio": "Vater / Wasser",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-43-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "V / W",
+            "weh",
+            "das Bett"
+          ],
+          "answer": "V / W",
+          "explanation": "La forma escrita correcta es «V / W»: V suele sonar f; W suele sonar v.",
+          "audio": "Vater / Wasser",
+          "slow_audio": "Vater / Wasser",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-43-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
           "target": "ja",
           "options": [],
           "answer": "",
@@ -27854,14 +27974,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-1-meaning",
+          "id": "german-vocabulary-43-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «ja»?",
           "target": "ja",
           "options": [
             "Sí.",
-            "el piso, el apartamento",
-            "sano"
+            "la cocina",
+            "hambriento"
           ],
           "answer": "Sí.",
           "explanation": "Sí.",
@@ -27873,14 +27993,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-1-listen",
+          "id": "german-vocabulary-43-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "ja",
-            "durstig",
-            "das Bad"
+            "schmerzen",
+            "der Tisch",
+            "ja"
           ],
           "answer": "ja",
           "explanation": "La forma escrita correcta es «ja»: Sí.",
@@ -27892,7 +28012,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-2-teach",
+          "id": "german-vocabulary-43-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "nein",
@@ -27912,14 +28032,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-2-meaning",
+          "id": "german-vocabulary-43-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «nein»?",
           "target": "nein",
           "options": [
-            "cansado",
+            "el baño",
             "No.",
-            "la habitación"
+            "sediento"
           ],
           "answer": "No.",
           "explanation": "No.",
@@ -27931,14 +28051,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-2-listen",
+          "id": "german-vocabulary-43-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "das Haus",
             "nein",
-            "weh",
-            "das Bett"
+            "der Stuhl"
           ],
           "answer": "nein",
           "explanation": "La forma escrita correcta es «nein»: No.",
@@ -27950,7 +28070,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-3-teach",
+          "id": "german-vocabulary-43-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "bitte",
@@ -27970,14 +28090,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-3-meaning",
+          "id": "german-vocabulary-43-5-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «bitte»?",
           "target": "bitte",
           "options": [
-            "la cocina",
             "Por favor o de nada.",
-            "hambriento"
+            "la cama",
+            "dolorido"
           ],
           "answer": "Por favor o de nada.",
           "explanation": "Por favor o de nada.",
@@ -27989,13 +28109,13 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-3-listen",
+          "id": "german-vocabulary-43-5-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "schmerzen",
-            "der Tisch",
+            "die Wohnung",
+            "die Lampe",
             "bitte"
           ],
           "answer": "bitte",
@@ -28008,7 +28128,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-4-teach",
+          "id": "german-vocabulary-43-6-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "danke",
@@ -28028,14 +28148,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-4-meaning",
+          "id": "german-vocabulary-43-6-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «danke»?",
           "target": "danke",
           "options": [
-            "el baño",
             "Gracias.",
-            "sediento"
+            "doler",
+            "la mesa"
           ],
           "answer": "Gracias.",
           "explanation": "Gracias.",
@@ -28047,14 +28167,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-4-listen",
+          "id": "german-vocabulary-43-6-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Haus",
-            "der Stuhl",
-            "danke"
+            "danke",
+            "das Zimmer",
+            "die Tür"
           ],
           "answer": "danke",
           "explanation": "La forma escrita correcta es «danke»: Gracias.",
@@ -28066,7 +28186,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-5-teach",
+          "id": "german-vocabulary-43-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Wasser",
@@ -28086,14 +28206,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-5-meaning",
+          "id": "german-vocabulary-43-7-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Wasser»?",
           "target": "Wasser",
           "options": [
-            "Agua.",
-            "la cama",
-            "dolorido"
+            "la casa",
+            "la silla",
+            "Agua."
           ],
           "answer": "Agua.",
           "explanation": "Agua.",
@@ -28105,14 +28225,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-5-listen",
+          "id": "german-vocabulary-43-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "die Küche",
             "Wasser",
-            "die Wohnung",
-            "die Lampe"
+            "das Fenster"
           ],
           "answer": "Wasser",
           "explanation": "La forma escrita correcta es «Wasser»: Agua.",
@@ -28124,7 +28244,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-6-teach",
+          "id": "german-vocabulary-43-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Hallo!",
@@ -28144,14 +28264,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-6-meaning",
+          "id": "german-vocabulary-43-8-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Hallo!»?",
           "target": "Hallo!",
           "options": [
+            "el piso, el apartamento",
             "Hola.",
-            "doler",
-            "la mesa"
+            "la lámpara"
           ],
           "answer": "Hola.",
           "explanation": "Hola.",
@@ -28163,14 +28283,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-6-listen",
+          "id": "german-vocabulary-43-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
+            "der Schlüssel",
             "Hallo!",
-            "die Tür"
+            "das Bad"
           ],
           "answer": "Hallo!",
           "explanation": "La forma escrita correcta es «Hallo!»: Hola.",
@@ -28182,7 +28302,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-7-teach",
+          "id": "german-vocabulary-43-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Ich verstehe nicht.",
@@ -28202,14 +28322,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-7-meaning",
+          "id": "german-vocabulary-43-9-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Ich verstehe nicht.»?",
           "target": "Ich verstehe nicht.",
           "options": [
             "No entiendo.",
-            "la casa",
-            "la silla"
+            "la habitación",
+            "la puerta"
           ],
           "answer": "No entiendo.",
           "explanation": "No entiendo.",
@@ -28221,14 +28341,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-7-listen",
+          "id": "german-vocabulary-43-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "das Bett",
             "Ich verstehe nicht.",
-            "die Küche",
-            "das Fenster"
+            "die Tasche"
           ],
           "answer": "Ich verstehe nicht.",
           "explanation": "La forma escrita correcta es «Ich verstehe nicht.»: No entiendo.",
@@ -28240,7 +28360,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-8-teach",
+          "id": "german-vocabulary-43-10-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Bitte wiederholen.",
@@ -28260,14 +28380,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-43-8-meaning",
+          "id": "german-vocabulary-43-10-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Bitte wiederholen.»?",
           "target": "Bitte wiederholen.",
           "options": [
-            "Repita, por favor.",
-            "el piso, el apartamento",
-            "la lámpara"
+            "la cocina",
+            "la ventana",
+            "Repita, por favor."
           ],
           "answer": "Repita, por favor.",
           "explanation": "Repita, por favor.",
@@ -28279,135 +28399,19 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-43-8-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Bitte wiederholen.",
-            "der Schlüssel",
-            "das Bad"
-          ],
-          "answer": "Bitte wiederholen.",
-          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Repita, por favor.",
-          "audio": "Bitte wiederholen.",
-          "slow_audio": "Bitte wiederholen.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-43-9-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "Wo ist die Toilette?",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "Wo ist die Toilette?",
-          "slow_audio": "Wo ist die Toilette?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "¿Dónde está el baño?",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": ""
-        },
-        {
-          "id": "german-vocabulary-43-9-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Wo ist die Toilette?»?",
-          "target": "Wo ist die Toilette?",
-          "options": [
-            "¿Dónde está el baño?",
-            "la habitación",
-            "la puerta"
-          ],
-          "answer": "¿Dónde está el baño?",
-          "explanation": "¿Dónde está el baño?",
-          "audio": "Wo ist die Toilette?",
-          "slow_audio": "Wo ist die Toilette?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-43-9-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "das Bett",
-            "Wo ist die Toilette?",
-            "die Tasche"
-          ],
-          "answer": "Wo ist die Toilette?",
-          "explanation": "La forma escrita correcta es «Wo ist die Toilette?»: ¿Dónde está el baño?",
-          "audio": "Wo ist die Toilette?",
-          "slow_audio": "Wo ist die Toilette?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-43-10-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "Wie viel kostet das?",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "Wie viel kostet das?",
-          "slow_audio": "Wie viel kostet das?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "¿Cuánto cuesta?",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": ""
-        },
-        {
-          "id": "german-vocabulary-43-10-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Wie viel kostet das?»?",
-          "target": "Wie viel kostet das?",
-          "options": [
-            "la cocina",
-            "¿Cuánto cuesta?",
-            "la ventana"
-          ],
-          "answer": "¿Cuánto cuesta?",
-          "explanation": "¿Cuánto cuesta?",
-          "audio": "Wie viel kostet das?",
-          "slow_audio": "Wie viel kostet das?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
           "id": "german-vocabulary-43-10-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "Bitte wiederholen.",
             "das Buch",
-            "der Tisch",
-            "Wie viel kostet das?"
+            "der Tisch"
           ],
-          "answer": "Wie viel kostet das?",
-          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: ¿Cuánto cuesta?",
-          "audio": "Wie viel kostet das?",
-          "slow_audio": "Wie viel kostet das?",
+          "answer": "Bitte wiederholen.",
+          "explanation": "La forma escrita correcta es «Bitte wiederholen.»: Repita, por favor.",
+          "audio": "Bitte wiederholen.",
+          "slow_audio": "Bitte wiederholen.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -28440,7 +28444,123 @@
           "id": "german-vocabulary-44-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "der Mann / die Frau / das Kind",
+          "target": "Wo ist die Toilette?",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Wo ist die Toilette?",
+          "slow_audio": "Wo ist die Toilette?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "¿Dónde está el baño?",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": ""
+        },
+        {
+          "id": "german-vocabulary-44-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wo ist die Toilette?»?",
+          "target": "Wo ist die Toilette?",
+          "options": [
+            "cansado",
+            "la habitación",
+            "¿Dónde está el baño?"
+          ],
+          "answer": "¿Dónde está el baño?",
+          "explanation": "¿Dónde está el baño?",
+          "audio": "Wo ist die Toilette?",
+          "slow_audio": "Wo ist die Toilette?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-44-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "Wo ist die Toilette?",
+            "weh",
+            "das Bett"
+          ],
+          "answer": "Wo ist die Toilette?",
+          "explanation": "La forma escrita correcta es «Wo ist die Toilette?»: ¿Dónde está el baño?",
+          "audio": "Wo ist die Toilette?",
+          "slow_audio": "Wo ist die Toilette?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-44-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wie viel kostet das?",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Wie viel kostet das?",
+          "slow_audio": "Wie viel kostet das?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "¿Cuánto cuesta?",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": ""
+        },
+        {
+          "id": "german-vocabulary-44-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie viel kostet das?»?",
+          "target": "Wie viel kostet das?",
+          "options": [
+            "la cocina",
+            "¿Cuánto cuesta?",
+            "hambriento"
+          ],
+          "answer": "¿Cuánto cuesta?",
+          "explanation": "¿Cuánto cuesta?",
+          "audio": "Wie viel kostet das?",
+          "slow_audio": "Wie viel kostet das?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-44-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "schmerzen",
+            "der Tisch",
+            "Wie viel kostet das?"
+          ],
+          "answer": "Wie viel kostet das?",
+          "explanation": "La forma escrita correcta es «Wie viel kostet das?»: ¿Cuánto cuesta?",
+          "audio": "Wie viel kostet das?",
+          "slow_audio": "Wie viel kostet das?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-44-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "der / die / das",
           "options": [],
           "answer": "",
           "explanation": "Los sustantivos tienen género y empiezan con mayúscula.",
@@ -28459,14 +28579,14 @@
           "rule_kind": "structure"
         },
         {
-          "id": "german-vocabulary-44-1-meaning",
+          "id": "german-vocabulary-44-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «der Mann / die Frau / das Kind»?",
-          "target": "der Mann / die Frau / das Kind",
+          "prompt": "¿Qué debes recordar sobre «der / die / das»?",
+          "target": "der / die / das",
           "options": [
-            "cansado",
-            "la habitación",
-            "Los sustantivos tienen género y empiezan con mayúscula."
+            "Los sustantivos tienen género y empiezan con mayúscula.",
+            "Tres letras forman un sonido.",
+            "El orden neutro comienza con sujeto y verbo."
           ],
           "answer": "Los sustantivos tienen género y empiezan con mayúscula.",
           "explanation": "Los sustantivos tienen género y empiezan con mayúscula.",
@@ -28478,17 +28598,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-1-listen",
+          "id": "german-vocabulary-44-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "der Mann / die Frau / das Kind",
-            "weh",
-            "das Bett"
+            "das Haus",
+            "der Stuhl",
+            "der / die / das"
           ],
-          "answer": "der Mann / die Frau / das Kind",
-          "explanation": "La forma escrita correcta es «der Mann / die Frau / das Kind»: Los sustantivos tienen género y empiezan con mayúscula.",
+          "answer": "der / die / das",
+          "explanation": "La forma escrita correcta es «der / die / das»: Los sustantivos tienen género y empiezan con mayúscula.",
           "audio": "der Mann / die Frau / das Kind",
           "slow_audio": "der Mann / die Frau / das Kind",
           "image": null,
@@ -28497,10 +28617,10 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-2-teach",
+          "id": "german-vocabulary-44-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Heute lerne ich.",
+          "target": "verbo en posición 2",
           "options": [],
           "answer": "",
           "explanation": "En una oración principal el verbo conjugado ocupa la segunda posición.",
@@ -28519,14 +28639,14 @@
           "rule_kind": "structure"
         },
         {
-          "id": "german-vocabulary-44-2-meaning",
+          "id": "german-vocabulary-44-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Heute lerne ich.»?",
-          "target": "Heute lerne ich.",
+          "prompt": "¿Qué debes recordar sobre «verbo en posición 2»?",
+          "target": "verbo en posición 2",
           "options": [
-            "la cocina",
+            "Al inicio de palabra suelen comenzar con sh.",
             "En una oración principal el verbo conjugado ocupa la segunda posición.",
-            "hambriento"
+            "Ä se acerca a una e abierta."
           ],
           "answer": "En una oración principal el verbo conjugado ocupa la segunda posición.",
           "explanation": "En una oración principal el verbo conjugado ocupa la segunda posición.",
@@ -28538,17 +28658,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-2-listen",
+          "id": "german-vocabulary-44-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "schmerzen",
-            "der Tisch",
-            "Heute lerne ich."
+            "die Wohnung",
+            "verbo en posición 2",
+            "die Lampe"
           ],
-          "answer": "Heute lerne ich.",
-          "explanation": "La forma escrita correcta es «Heute lerne ich.»: En una oración principal el verbo conjugado ocupa la segunda posición.",
+          "answer": "verbo en posición 2",
+          "explanation": "La forma escrita correcta es «verbo en posición 2»: En una oración principal el verbo conjugado ocupa la segunda posición.",
           "audio": "Heute lerne ich.",
           "slow_audio": "Heute lerne ich.",
           "image": null,
@@ -28557,10 +28677,10 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-3-teach",
+          "id": "german-vocabulary-44-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Ich trinke Wasser.",
+          "target": "S + V + O",
           "options": [],
           "answer": "",
           "explanation": "El orden neutro comienza con sujeto y verbo.",
@@ -28579,14 +28699,14 @@
           "rule_kind": "structure"
         },
         {
-          "id": "german-vocabulary-44-3-meaning",
+          "id": "german-vocabulary-44-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «Ich trinke Wasser.»?",
-          "target": "Ich trinke Wasser.",
+          "prompt": "¿Qué debes recordar sobre «S + V + O»?",
+          "target": "S + V + O",
           "options": [
-            "el baño",
-            "sediento",
-            "El orden neutro comienza con sujeto y verbo."
+            "El orden neutro comienza con sujeto y verbo.",
+            "Después de i/e es más frontal.",
+            "Mantén la lengua de e y redondea labios."
           ],
           "answer": "El orden neutro comienza con sujeto y verbo.",
           "explanation": "El orden neutro comienza con sujeto y verbo.",
@@ -28598,17 +28718,17 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-3-listen",
+          "id": "german-vocabulary-44-5-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Ich trinke Wasser.",
-            "das Haus",
-            "der Stuhl"
+            "das Zimmer",
+            "die Tür",
+            "S + V + O"
           ],
-          "answer": "Ich trinke Wasser.",
-          "explanation": "La forma escrita correcta es «Ich trinke Wasser.»: El orden neutro comienza con sujeto y verbo.",
+          "answer": "S + V + O",
+          "explanation": "La forma escrita correcta es «S + V + O»: El orden neutro comienza con sujeto y verbo.",
           "audio": "Ich trinke Wasser.",
           "slow_audio": "Ich trinke Wasser.",
           "image": null,
@@ -28617,7 +28737,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-4-teach",
+          "id": "german-vocabulary-44-6-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Sprechen Sie langsam.",
@@ -28637,14 +28757,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-44-4-meaning",
+          "id": "german-vocabulary-44-6-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Sprechen Sie langsam.»?",
           "target": "Sprechen Sie langsam.",
           "options": [
-            "Hable despacio.",
-            "la cama",
-            "dolorido"
+            "la casa",
+            "la silla",
+            "Hable despacio."
           ],
           "answer": "Hable despacio.",
           "explanation": "Hable despacio.",
@@ -28656,14 +28776,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-4-listen",
+          "id": "german-vocabulary-44-6-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "die Küche",
             "Sprechen Sie langsam.",
-            "die Wohnung",
-            "die Lampe"
+            "das Fenster"
           ],
           "answer": "Sprechen Sie langsam.",
           "explanation": "La forma escrita correcta es «Sprechen Sie langsam.»: Hable despacio.",
@@ -28675,7 +28795,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-5-teach",
+          "id": "german-vocabulary-44-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Können Sie mir helfen?",
@@ -28695,14 +28815,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-44-5-meaning",
+          "id": "german-vocabulary-44-7-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Können Sie mir helfen?»?",
           "target": "Können Sie mir helfen?",
           "options": [
-            "doler",
             "¿Puede ayudarme?",
-            "la mesa"
+            "el piso, el apartamento",
+            "la lámpara"
           ],
           "answer": "¿Puede ayudarme?",
           "explanation": "¿Puede ayudarme?",
@@ -28714,14 +28834,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-5-listen",
+          "id": "german-vocabulary-44-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
+            "der Schlüssel",
             "Können Sie mir helfen?",
-            "die Tür"
+            "das Bad"
           ],
           "answer": "Können Sie mir helfen?",
           "explanation": "La forma escrita correcta es «Können Sie mir helfen?»: ¿Puede ayudarme?",
@@ -28733,7 +28853,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-6-teach",
+          "id": "german-vocabulary-44-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Ich hätte gern Wasser.",
@@ -28753,14 +28873,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-44-6-meaning",
+          "id": "german-vocabulary-44-8-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Ich hätte gern Wasser.»?",
           "target": "Ich hätte gern Wasser.",
           "options": [
-            "la casa",
-            "la silla",
-            "Quisiera agua."
+            "la habitación",
+            "Quisiera agua.",
+            "la puerta"
           ],
           "answer": "Quisiera agua.",
           "explanation": "Quisiera agua.",
@@ -28772,14 +28892,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-6-listen",
+          "id": "german-vocabulary-44-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "die Küche",
-            "das Fenster",
-            "Ich hätte gern Wasser."
+            "Ich hätte gern Wasser.",
+            "das Bett",
+            "die Tasche"
           ],
           "answer": "Ich hätte gern Wasser.",
           "explanation": "La forma escrita correcta es «Ich hätte gern Wasser.»: Quisiera agua.",
@@ -28791,7 +28911,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-7-teach",
+          "id": "german-vocabulary-44-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Ich heiße Anna.",
@@ -28811,14 +28931,14 @@
           "group_hint": "También puedes decir “Ich bin Anna”."
         },
         {
-          "id": "german-vocabulary-44-7-meaning",
+          "id": "german-vocabulary-44-9-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Ich heiße Anna.»?",
           "target": "Ich heiße Anna.",
           "options": [
-            "Me llamo Ana",
-            "el piso, el apartamento",
-            "la lámpara"
+            "la cocina",
+            "la ventana",
+            "Me llamo Ana"
           ],
           "answer": "Me llamo Ana",
           "explanation": "Me llamo Ana",
@@ -28830,14 +28950,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-7-listen",
+          "id": "german-vocabulary-44-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "der Schlüssel",
-            "Ich heiße Anna.",
-            "das Bad"
+            "das Buch",
+            "der Tisch",
+            "Ich heiße Anna."
           ],
           "answer": "Ich heiße Anna.",
           "explanation": "La forma escrita correcta es «Ich heiße Anna.»: Me llamo Ana.",
@@ -28849,7 +28969,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-8-teach",
+          "id": "german-vocabulary-44-10-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Wie heißt du?",
@@ -28869,14 +28989,14 @@
           "group_hint": "Con respeto: Wie heißen Sie?"
         },
         {
-          "id": "german-vocabulary-44-8-meaning",
+          "id": "german-vocabulary-44-10-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Wie heißt du?»?",
           "target": "Wie heißt du?",
           "options": [
+            "la llave",
             "¿Cómo te llamas?",
-            "la habitación",
-            "la puerta"
+            "el baño"
           ],
           "answer": "¿Cómo te llamas?",
           "explanation": "¿Cómo te llamas?",
@@ -28888,135 +29008,19 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-44-8-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Wie heißt du?",
-            "das Bett",
-            "die Tasche"
-          ],
-          "answer": "Wie heißt du?",
-          "explanation": "La forma escrita correcta es «Wie heißt du?»: ¿Cómo te llamas?",
-          "audio": "Wie heißt du?",
-          "slow_audio": "Wie heißt du?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-44-9-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "Ich komme aus Mexiko.",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "Ich komme aus Mexiko.",
-          "slow_audio": "Ich komme aus Mexiko.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "Soy de México",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": "aus introduce el lugar de origen."
-        },
-        {
-          "id": "german-vocabulary-44-9-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Ich komme aus Mexiko.»?",
-          "target": "Ich komme aus Mexiko.",
-          "options": [
-            "la cocina",
-            "la ventana",
-            "Soy de México"
-          ],
-          "answer": "Soy de México",
-          "explanation": "Soy de México",
-          "audio": "Ich komme aus Mexiko.",
-          "slow_audio": "Ich komme aus Mexiko.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-44-9-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Ich komme aus Mexiko.",
-            "das Buch",
-            "der Tisch"
-          ],
-          "answer": "Ich komme aus Mexiko.",
-          "explanation": "La forma escrita correcta es «Ich komme aus Mexiko.»: Soy de México.",
-          "audio": "Ich komme aus Mexiko.",
-          "slow_audio": "Ich komme aus Mexiko.",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-44-10-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "Wie spät ist es?",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "Wie spät ist es?",
-          "slow_audio": "Wie spät ist es?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "¿Qué hora es?",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": "Uhr acompaña la hora exacta."
-        },
-        {
-          "id": "german-vocabulary-44-10-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «Wie spät ist es?»?",
-          "target": "Wie spät ist es?",
-          "options": [
-            "¿Qué hora es?",
-            "la llave",
-            "el baño"
-          ],
-          "answer": "¿Qué hora es?",
-          "explanation": "¿Qué hora es?",
-          "audio": "Wie spät ist es?",
-          "slow_audio": "Wie spät ist es?",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
           "id": "german-vocabulary-44-10-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Wie spät ist es?",
+            "Wie heißt du?",
             "der Stuhl",
             "der Stift"
           ],
-          "answer": "Wie spät ist es?",
-          "explanation": "La forma escrita correcta es «Wie spät ist es?»: ¿Qué hora es?",
-          "audio": "Wie spät ist es?",
-          "slow_audio": "Wie spät ist es?",
+          "answer": "Wie heißt du?",
+          "explanation": "La forma escrita correcta es «Wie heißt du?»: ¿Cómo te llamas?",
+          "audio": "Wie heißt du?",
+          "slow_audio": "Wie heißt du?",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29049,6 +29053,122 @@
           "id": "german-vocabulary-45-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
+          "target": "Ich komme aus Mexiko.",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "Soy de México",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "aus introduce el lugar de origen."
+        },
+        {
+          "id": "german-vocabulary-45-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Ich komme aus Mexiko.»?",
+          "target": "Ich komme aus Mexiko.",
+          "options": [
+            "Soy de México",
+            "la cocina",
+            "hambriento"
+          ],
+          "answer": "Soy de México",
+          "explanation": "Soy de México",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-45-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "schmerzen",
+            "der Tisch",
+            "Ich komme aus Mexiko."
+          ],
+          "answer": "Ich komme aus Mexiko.",
+          "explanation": "La forma escrita correcta es «Ich komme aus Mexiko.»: Soy de México.",
+          "audio": "Ich komme aus Mexiko.",
+          "slow_audio": "Ich komme aus Mexiko.",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-45-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Wie spät ist es?",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Wie spät ist es?",
+          "slow_audio": "Wie spät ist es?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "¿Qué hora es?",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "Uhr acompaña la hora exacta."
+        },
+        {
+          "id": "german-vocabulary-45-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Wie spät ist es?»?",
+          "target": "Wie spät ist es?",
+          "options": [
+            "el baño",
+            "¿Qué hora es?",
+            "sediento"
+          ],
+          "answer": "¿Qué hora es?",
+          "explanation": "¿Qué hora es?",
+          "audio": "Wie spät ist es?",
+          "slow_audio": "Wie spät ist es?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-45-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "das Haus",
+            "der Stuhl",
+            "Wie spät ist es?"
+          ],
+          "answer": "Wie spät ist es?",
+          "explanation": "La forma escrita correcta es «Wie spät ist es?»: ¿Qué hora es?",
+          "audio": "Wie spät ist es?",
+          "slow_audio": "Wie spät ist es?",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-45-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
           "target": "Es ist drei Uhr.",
           "options": [],
           "answer": "",
@@ -29066,14 +29186,14 @@
           "group_hint": "Uhr acompaña la hora exacta."
         },
         {
-          "id": "german-vocabulary-45-1-meaning",
+          "id": "german-vocabulary-45-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Es ist drei Uhr.»?",
           "target": "Es ist drei Uhr.",
           "options": [
             "Son las tres",
-            "la cocina",
-            "hambriento"
+            "la cama",
+            "dolorido"
           ],
           "answer": "Son las tres",
           "explanation": "Son las tres",
@@ -29085,14 +29205,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-1-listen",
+          "id": "german-vocabulary-45-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "schmerzen",
-            "der Tisch",
-            "Es ist drei Uhr."
+            "Es ist drei Uhr.",
+            "die Wohnung",
+            "die Lampe"
           ],
           "answer": "Es ist drei Uhr.",
           "explanation": "La forma escrita correcta es «Es ist drei Uhr.»: Son las tres.",
@@ -29104,7 +29224,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-2-teach",
+          "id": "german-vocabulary-45-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Montag",
@@ -29124,14 +29244,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-2-meaning",
+          "id": "german-vocabulary-45-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Montag»?",
           "target": "Montag",
           "options": [
             "lunes",
-            "el baño",
-            "sediento"
+            "doler",
+            "la mesa"
           ],
           "answer": "lunes",
           "explanation": "lunes",
@@ -29143,14 +29263,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-2-listen",
+          "id": "german-vocabulary-45-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Haus",
-            "der Stuhl",
-            "Montag"
+            "das Zimmer",
+            "Montag",
+            "die Tür"
           ],
           "answer": "Montag",
           "explanation": "La forma escrita correcta es «Montag»: lunes.",
@@ -29162,7 +29282,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-3-teach",
+          "id": "german-vocabulary-45-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Dienstag",
@@ -29182,14 +29302,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-3-meaning",
+          "id": "german-vocabulary-45-5-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Dienstag»?",
           "target": "Dienstag",
           "options": [
-            "martes",
-            "la cama",
-            "dolorido"
+            "la casa",
+            "la silla",
+            "martes"
           ],
           "answer": "martes",
           "explanation": "martes",
@@ -29201,14 +29321,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-3-listen",
+          "id": "german-vocabulary-45-5-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "die Wohnung",
-            "Dienstag",
-            "die Lampe"
+            "die Küche",
+            "das Fenster",
+            "Dienstag"
           ],
           "answer": "Dienstag",
           "explanation": "La forma escrita correcta es «Dienstag»: martes.",
@@ -29220,7 +29340,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-4-teach",
+          "id": "german-vocabulary-45-6-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Mittwoch",
@@ -29240,14 +29360,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-4-meaning",
+          "id": "german-vocabulary-45-6-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Mittwoch»?",
           "target": "Mittwoch",
           "options": [
+            "el piso, el apartamento",
             "miércoles",
-            "doler",
-            "la mesa"
+            "la lámpara"
           ],
           "answer": "miércoles",
           "explanation": "miércoles",
@@ -29259,14 +29379,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-4-listen",
+          "id": "german-vocabulary-45-6-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
-            "die Tür",
-            "Mittwoch"
+            "Mittwoch",
+            "der Schlüssel",
+            "das Bad"
           ],
           "answer": "Mittwoch",
           "explanation": "La forma escrita correcta es «Mittwoch»: miércoles.",
@@ -29278,7 +29398,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-5-teach",
+          "id": "german-vocabulary-45-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Donnerstag",
@@ -29298,14 +29418,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-5-meaning",
+          "id": "german-vocabulary-45-7-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Donnerstag»?",
           "target": "Donnerstag",
           "options": [
-            "la casa",
-            "la silla",
-            "jueves"
+            "jueves",
+            "la habitación",
+            "la puerta"
           ],
           "answer": "jueves",
           "explanation": "jueves",
@@ -29317,14 +29437,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-5-listen",
+          "id": "german-vocabulary-45-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "die Küche",
+            "das Bett",
             "Donnerstag",
-            "das Fenster"
+            "die Tasche"
           ],
           "answer": "Donnerstag",
           "explanation": "La forma escrita correcta es «Donnerstag»: jueves.",
@@ -29336,7 +29456,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-6-teach",
+          "id": "german-vocabulary-45-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Freitag",
@@ -29356,14 +29476,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-6-meaning",
+          "id": "german-vocabulary-45-8-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Freitag»?",
           "target": "Freitag",
           "options": [
-            "viernes",
-            "el piso, el apartamento",
-            "la lámpara"
+            "la cocina",
+            "la ventana",
+            "viernes"
           ],
           "answer": "viernes",
           "explanation": "viernes",
@@ -29375,14 +29495,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-6-listen",
+          "id": "german-vocabulary-45-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "der Schlüssel",
             "Freitag",
-            "das Bad"
+            "das Buch",
+            "der Tisch"
           ],
           "answer": "Freitag",
           "explanation": "La forma escrita correcta es «Freitag»: viernes.",
@@ -29394,7 +29514,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-7-teach",
+          "id": "german-vocabulary-45-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Samstag",
@@ -29414,14 +29534,14 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-7-meaning",
+          "id": "german-vocabulary-45-9-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Samstag»?",
           "target": "Samstag",
           "options": [
+            "la llave",
             "sábado",
-            "la habitación",
-            "la puerta"
+            "el baño"
           ],
           "answer": "sábado",
           "explanation": "sábado",
@@ -29433,14 +29553,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-7-listen",
+          "id": "german-vocabulary-45-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "Samstag",
-            "das Bett",
-            "die Tasche"
+            "der Stuhl",
+            "der Stift"
           ],
           "answer": "Samstag",
           "explanation": "La forma escrita correcta es «Samstag»: sábado.",
@@ -29452,7 +29572,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-45-8-teach",
+          "id": "german-vocabulary-45-10-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Sonntag",
@@ -29472,135 +29592,19 @@
           "group_hint": "Los días son sustantivos y llevan mayúscula."
         },
         {
-          "id": "german-vocabulary-45-8-meaning",
+          "id": "german-vocabulary-45-10-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Sonntag»?",
           "target": "Sonntag",
           "options": [
-            "la cocina",
-            "la ventana",
-            "domingo"
+            "domingo",
+            "la cama",
+            "la bolsa, el bolso"
           ],
           "answer": "domingo",
           "explanation": "domingo",
           "audio": "Sonntag",
           "slow_audio": "Sonntag",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-45-8-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "Sonntag",
-            "das Buch",
-            "der Tisch"
-          ],
-          "answer": "Sonntag",
-          "explanation": "La forma escrita correcta es «Sonntag»: domingo.",
-          "audio": "Sonntag",
-          "slow_audio": "Sonntag",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-45-9-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "dies",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "dies",
-          "slow_audio": "dies",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "esto",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": "das es muy frecuente para señalar algo."
-        },
-        {
-          "id": "german-vocabulary-45-9-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «dies»?",
-          "target": "dies",
-          "options": [
-            "la llave",
-            "esto",
-            "el baño"
-          ],
-          "answer": "esto",
-          "explanation": "esto",
-          "audio": "dies",
-          "slow_audio": "dies",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-45-9-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "dies",
-            "der Stuhl",
-            "der Stift"
-          ],
-          "answer": "dies",
-          "explanation": "La forma escrita correcta es «dies»: esto.",
-          "audio": "dies",
-          "slow_audio": "dies",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-45-10-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "das",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "das",
-          "slow_audio": "das",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "eso",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": "das es muy frecuente para señalar algo."
-        },
-        {
-          "id": "german-vocabulary-45-10-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «das»?",
-          "target": "das",
-          "options": [
-            "la cama",
-            "eso",
-            "la bolsa, el bolso"
-          ],
-          "answer": "eso",
-          "explanation": "eso",
-          "audio": "das",
-          "slow_audio": "das",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29613,13 +29617,13 @@
           "target": "",
           "options": [
             "die Lampe",
-            "das",
+            "Sonntag",
             "das Heft"
           ],
-          "answer": "das",
-          "explanation": "La forma escrita correcta es «das»: eso.",
-          "audio": "das",
-          "slow_audio": "das",
+          "answer": "Sonntag",
+          "explanation": "La forma escrita correcta es «Sonntag»: domingo.",
+          "audio": "Sonntag",
+          "slow_audio": "Sonntag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29652,17 +29656,17 @@
         {
           "id": "german-vocabulary-review-45-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Dienstag»?",
-          "target": "Dienstag",
+          "prompt": "¿Qué significa «Es ist drei Uhr.»?",
+          "target": "Es ist drei Uhr.",
           "options": [
-            "martes",
+            "Son las tres",
             "la cocina",
             "hambriento"
           ],
-          "answer": "martes",
-          "explanation": "martes",
-          "audio": "Dienstag",
-          "slow_audio": "Dienstag",
+          "answer": "Son las tres",
+          "explanation": "Son las tres",
+          "audio": "Es ist drei Uhr.",
+          "slow_audio": "Es ist drei Uhr.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29674,14 +29678,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "Dienstag",
             "schmerzen",
-            "der Tisch"
+            "der Tisch",
+            "Es ist drei Uhr."
           ],
-          "answer": "Dienstag",
-          "explanation": "La forma escrita correcta es «Dienstag»: martes.",
-          "audio": "Dienstag",
-          "slow_audio": "Dienstag",
+          "answer": "Es ist drei Uhr.",
+          "explanation": "La forma escrita correcta es «Es ist drei Uhr.»: Son las tres.",
+          "audio": "Es ist drei Uhr.",
+          "slow_audio": "Es ist drei Uhr.",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29690,17 +29694,17 @@
         {
           "id": "german-vocabulary-review-45-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Donnerstag»?",
-          "target": "Donnerstag",
+          "prompt": "¿Qué significa «Dienstag»?",
+          "target": "Dienstag",
           "options": [
-            "jueves",
+            "martes",
             "el baño",
             "sediento"
           ],
-          "answer": "jueves",
-          "explanation": "jueves",
-          "audio": "Donnerstag",
-          "slow_audio": "Donnerstag",
+          "answer": "martes",
+          "explanation": "martes",
+          "audio": "Dienstag",
+          "slow_audio": "Dienstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29712,14 +29716,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "Dienstag",
             "das Haus",
-            "der Stuhl",
-            "Donnerstag"
+            "der Stuhl"
           ],
-          "answer": "Donnerstag",
-          "explanation": "La forma escrita correcta es «Donnerstag»: jueves.",
-          "audio": "Donnerstag",
-          "slow_audio": "Donnerstag",
+          "answer": "Dienstag",
+          "explanation": "La forma escrita correcta es «Dienstag»: martes.",
+          "audio": "Dienstag",
+          "slow_audio": "Dienstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29728,17 +29732,17 @@
         {
           "id": "german-vocabulary-review-45-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Samstag»?",
-          "target": "Samstag",
+          "prompt": "¿Qué significa «Donnerstag»?",
+          "target": "Donnerstag",
           "options": [
-            "sábado",
+            "jueves",
             "la cama",
             "dolorido"
           ],
-          "answer": "sábado",
-          "explanation": "sábado",
-          "audio": "Samstag",
-          "slow_audio": "Samstag",
+          "answer": "jueves",
+          "explanation": "jueves",
+          "audio": "Donnerstag",
+          "slow_audio": "Donnerstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29751,13 +29755,13 @@
           "target": "",
           "options": [
             "die Wohnung",
-            "Samstag",
-            "die Lampe"
+            "die Lampe",
+            "Donnerstag"
           ],
-          "answer": "Samstag",
-          "explanation": "La forma escrita correcta es «Samstag»: sábado.",
-          "audio": "Samstag",
-          "slow_audio": "Samstag",
+          "answer": "Donnerstag",
+          "explanation": "La forma escrita correcta es «Donnerstag»: jueves.",
+          "audio": "Donnerstag",
+          "slow_audio": "Donnerstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29766,17 +29770,17 @@
         {
           "id": "german-vocabulary-review-45-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «dies»?",
-          "target": "dies",
+          "prompt": "¿Qué significa «Samstag»?",
+          "target": "Samstag",
           "options": [
-            "esto",
             "doler",
+            "sábado",
             "la mesa"
           ],
-          "answer": "esto",
-          "explanation": "esto",
-          "audio": "dies",
-          "slow_audio": "dies",
+          "answer": "sábado",
+          "explanation": "sábado",
+          "audio": "Samstag",
+          "slow_audio": "Samstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29789,13 +29793,13 @@
           "target": "",
           "options": [
             "das Zimmer",
-            "die Tür",
-            "dies"
+            "Samstag",
+            "die Tür"
           ],
-          "answer": "dies",
-          "explanation": "La forma escrita correcta es «dies»: esto.",
-          "audio": "dies",
-          "slow_audio": "dies",
+          "answer": "Samstag",
+          "explanation": "La forma escrita correcta es «Samstag»: sábado.",
+          "audio": "Samstag",
+          "slow_audio": "Samstag",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -29828,6 +29832,122 @@
           "id": "german-vocabulary-46-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
+          "target": "dies",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "dies",
+          "slow_audio": "dies",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "esto",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "das es muy frecuente para señalar algo."
+        },
+        {
+          "id": "german-vocabulary-46-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «dies»?",
+          "target": "dies",
+          "options": [
+            "el baño",
+            "sediento",
+            "esto"
+          ],
+          "answer": "esto",
+          "explanation": "esto",
+          "audio": "dies",
+          "slow_audio": "dies",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "das Haus",
+            "dies",
+            "der Stuhl"
+          ],
+          "answer": "dies",
+          "explanation": "La forma escrita correcta es «dies»: esto.",
+          "audio": "dies",
+          "slow_audio": "dies",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "das",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "das",
+          "slow_audio": "das",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "eso",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "das es muy frecuente para señalar algo."
+        },
+        {
+          "id": "german-vocabulary-46-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «das»?",
+          "target": "das",
+          "options": [
+            "la cama",
+            "eso",
+            "dolorido"
+          ],
+          "answer": "eso",
+          "explanation": "eso",
+          "audio": "das",
+          "slow_audio": "das",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "die Wohnung",
+            "das",
+            "die Lampe"
+          ],
+          "answer": "das",
+          "explanation": "La forma escrita correcta es «das»: eso.",
+          "audio": "das",
+          "slow_audio": "das",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
           "target": "jenes",
           "options": [],
           "answer": "",
@@ -29845,14 +29965,14 @@
           "group_hint": "das es muy frecuente para señalar algo."
         },
         {
-          "id": "german-vocabulary-46-1-meaning",
+          "id": "german-vocabulary-46-3-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «jenes»?",
           "target": "jenes",
           "options": [
+            "doler",
             "aquello",
-            "el baño",
-            "sediento"
+            "la mesa"
           ],
           "answer": "aquello",
           "explanation": "aquello",
@@ -29864,14 +29984,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-1-listen",
+          "id": "german-vocabulary-46-3-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Haus",
-            "der Stuhl",
-            "jenes"
+            "jenes",
+            "das Zimmer",
+            "die Tür"
           ],
           "answer": "jenes",
           "explanation": "La forma escrita correcta es «jenes»: aquello.",
@@ -29883,7 +30003,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-2-teach",
+          "id": "german-vocabulary-46-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Person",
@@ -29903,14 +30023,14 @@
           "group_hint": "Personas y lugares frecuentes."
         },
         {
-          "id": "german-vocabulary-46-2-meaning",
+          "id": "german-vocabulary-46-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Person»?",
           "target": "Person",
           "options": [
             "persona",
-            "la cama",
-            "dolorido"
+            "la casa",
+            "la silla"
           ],
           "answer": "persona",
           "explanation": "persona",
@@ -29922,14 +30042,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-2-listen",
+          "id": "german-vocabulary-46-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "die Küche",
             "Person",
-            "die Wohnung",
-            "die Lampe"
+            "das Fenster"
           ],
           "answer": "Person",
           "explanation": "La forma escrita correcta es «Person»: persona.",
@@ -29941,7 +30061,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-3-teach",
+          "id": "german-vocabulary-46-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Haus",
@@ -29961,14 +30081,14 @@
           "group_hint": "Personas y lugares frecuentes."
         },
         {
-          "id": "german-vocabulary-46-3-meaning",
+          "id": "german-vocabulary-46-5-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Haus»?",
           "target": "Haus",
           "options": [
+            "el piso, el apartamento",
             "casa",
-            "doler",
-            "la mesa"
+            "la lámpara"
           ],
           "answer": "casa",
           "explanation": "casa",
@@ -29980,14 +30100,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-3-listen",
+          "id": "german-vocabulary-46-5-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
-            "die Tür",
-            "Haus"
+            "der Schlüssel",
+            "Haus",
+            "das Bad"
           ],
           "answer": "Haus",
           "explanation": "La forma escrita correcta es «Haus»: casa.",
@@ -29999,7 +30119,65 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-4-teach",
+          "id": "german-vocabulary-46-6-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "Schule",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "Schule",
+          "slow_audio": "Schule",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "escuela",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "Personas y lugares frecuentes."
+        },
+        {
+          "id": "german-vocabulary-46-6-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «Schule»?",
+          "target": "Schule",
+          "options": [
+            "escuela",
+            "la habitación",
+            "la puerta"
+          ],
+          "answer": "escuela",
+          "explanation": "escuela",
+          "audio": "Schule",
+          "slow_audio": "Schule",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-6-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "das Bett",
+            "die Tasche",
+            "Schule"
+          ],
+          "answer": "Schule",
+          "explanation": "La forma escrita correcta es «Schule»: escuela.",
+          "audio": "Schule",
+          "slow_audio": "Schule",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-46-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "Bahnhof",
@@ -30019,14 +30197,14 @@
           "group_hint": "Personas y lugares frecuentes."
         },
         {
-          "id": "german-vocabulary-46-4-meaning",
+          "id": "german-vocabulary-46-7-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «Bahnhof»?",
           "target": "Bahnhof",
           "options": [
-            "la casa",
-            "estación",
-            "la silla"
+            "la cocina",
+            "la ventana",
+            "estación"
           ],
           "answer": "estación",
           "explanation": "estación",
@@ -30038,14 +30216,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-4-listen",
+          "id": "german-vocabulary-46-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "die Küche",
-            "das Fenster",
-            "Bahnhof"
+            "Bahnhof",
+            "das Buch",
+            "der Tisch"
           ],
           "answer": "Bahnhof",
           "explanation": "La forma escrita correcta es «Bahnhof»: estación.",
@@ -30057,7 +30235,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-5-teach",
+          "id": "german-vocabulary-46-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "was",
@@ -30077,14 +30255,14 @@
           "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
-          "id": "german-vocabulary-46-5-meaning",
+          "id": "german-vocabulary-46-8-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «was»?",
           "target": "was",
           "options": [
             "qué",
-            "el piso, el apartamento",
-            "la lámpara"
+            "la llave",
+            "el baño"
           ],
           "answer": "qué",
           "explanation": "qué",
@@ -30096,14 +30274,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-5-listen",
+          "id": "german-vocabulary-46-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
             "was",
-            "der Schlüssel",
-            "das Bad"
+            "der Stuhl",
+            "der Stift"
           ],
           "answer": "was",
           "explanation": "La forma escrita correcta es «was»: qué.",
@@ -30115,7 +30293,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-6-teach",
+          "id": "german-vocabulary-46-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "wer",
@@ -30135,14 +30313,14 @@
           "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
-          "id": "german-vocabulary-46-6-meaning",
+          "id": "german-vocabulary-46-9-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «wer»?",
           "target": "wer",
           "options": [
-            "quién",
-            "la habitación",
-            "la puerta"
+            "la cama",
+            "la bolsa, el bolso",
+            "quién"
           ],
           "answer": "quién",
           "explanation": "quién",
@@ -30154,14 +30332,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-6-listen",
+          "id": "german-vocabulary-46-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "die Lampe",
             "wer",
-            "das Bett",
-            "die Tasche"
+            "das Heft"
           ],
           "answer": "wer",
           "explanation": "La forma escrita correcta es «wer»: quién.",
@@ -30173,7 +30351,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-7-teach",
+          "id": "german-vocabulary-46-10-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "wo",
@@ -30193,14 +30371,14 @@
           "group_hint": "Qué, quién, dónde y cuándo."
         },
         {
-          "id": "german-vocabulary-46-7-meaning",
+          "id": "german-vocabulary-46-10-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «wo»?",
           "target": "wo",
           "options": [
-            "la cocina",
-            "dónde",
-            "la ventana"
+            "la mesa",
+            "el libro",
+            "dónde"
           ],
           "answer": "dónde",
           "explanation": "dónde",
@@ -30212,193 +30390,19 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-46-7-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "wo",
-            "das Buch",
-            "der Tisch"
-          ],
-          "answer": "wo",
-          "explanation": "La forma escrita correcta es «wo»: dónde.",
-          "audio": "wo",
-          "slow_audio": "wo",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-46-8-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "wann",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "wann",
-          "slow_audio": "wann",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "cuándo",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": "Qué, quién, dónde y cuándo."
-        },
-        {
-          "id": "german-vocabulary-46-8-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «wann»?",
-          "target": "wann",
-          "options": [
-            "la llave",
-            "cuándo",
-            "el baño"
-          ],
-          "answer": "cuándo",
-          "explanation": "cuándo",
-          "audio": "wann",
-          "slow_audio": "wann",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-46-8-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "wann",
-            "der Stuhl",
-            "der Stift"
-          ],
-          "answer": "wann",
-          "explanation": "La forma escrita correcta es «wann»: cuándo.",
-          "audio": "wann",
-          "slow_audio": "wann",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-46-9-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "haben",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "haben",
-          "slow_audio": "haben",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "tener",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": ""
-        },
-        {
-          "id": "german-vocabulary-46-9-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «haben»?",
-          "target": "haben",
-          "options": [
-            "la cama",
-            "la bolsa, el bolso",
-            "tener"
-          ],
-          "answer": "tener",
-          "explanation": "tener",
-          "audio": "haben",
-          "slow_audio": "haben",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-46-9-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige la palabra o frase correcta",
-          "target": "",
-          "options": [
-            "die Lampe",
-            "haben",
-            "das Heft"
-          ],
-          "answer": "haben",
-          "explanation": "La forma escrita correcta es «haben»: tener.",
-          "audio": "haben",
-          "slow_audio": "haben",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
-          "id": "german-vocabulary-46-10-teach",
-          "type": "teach_concept",
-          "prompt": "Aprende y escucha",
-          "target": "wollen",
-          "options": [],
-          "answer": "",
-          "explanation": "",
-          "audio": "wollen",
-          "slow_audio": "wollen",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "querer",
-          "sound_hint": "",
-          "memory_hint": "",
-          "group_hint": ""
-        },
-        {
-          "id": "german-vocabulary-46-10-meaning",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «wollen»?",
-          "target": "wollen",
-          "options": [
-            "querer",
-            "la mesa",
-            "el libro"
-          ],
-          "answer": "querer",
-          "explanation": "querer",
-          "audio": "wollen",
-          "slow_audio": "wollen",
-          "image": null,
-          "writing_asset": null,
-          "tags": [],
-          "xp": 10
-        },
-        {
           "id": "german-vocabulary-46-10-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "wollen",
+            "wo",
             "die Tür",
             "der Rucksack"
           ],
-          "answer": "wollen",
-          "explanation": "La forma escrita correcta es «wollen»: querer.",
-          "audio": "wollen",
-          "slow_audio": "wollen",
+          "answer": "wo",
+          "explanation": "La forma escrita correcta es «wo»: dónde.",
+          "audio": "wo",
+          "slow_audio": "wo",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -30409,7 +30413,7 @@
     {
       "id": "german-vocabulary-47",
       "title": "Vocabulario frecuente · 47",
-      "description": "6 elementos nuevos con práctica inmediata.",
+      "description": "9 elementos nuevos con práctica inmediata.",
       "activities": [
         {
           "id": "german-vocabulary-47-intro",
@@ -30431,6 +30435,180 @@
           "id": "german-vocabulary-47-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
+          "target": "wann",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "wann",
+          "slow_audio": "wann",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "cuándo",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": "Qué, quién, dónde y cuándo."
+        },
+        {
+          "id": "german-vocabulary-47-1-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «wann»?",
+          "target": "wann",
+          "options": [
+            "cuándo",
+            "la cama",
+            "dolorido"
+          ],
+          "answer": "cuándo",
+          "explanation": "cuándo",
+          "audio": "wann",
+          "slow_audio": "wann",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-1-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "die Wohnung",
+            "wann",
+            "die Lampe"
+          ],
+          "answer": "wann",
+          "explanation": "La forma escrita correcta es «wann»: cuándo.",
+          "audio": "wann",
+          "slow_audio": "wann",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-2-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "haben",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "haben",
+          "slow_audio": "haben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "tener",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": ""
+        },
+        {
+          "id": "german-vocabulary-47-2-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «haben»?",
+          "target": "haben",
+          "options": [
+            "tener",
+            "doler",
+            "la mesa"
+          ],
+          "answer": "tener",
+          "explanation": "tener",
+          "audio": "haben",
+          "slow_audio": "haben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-2-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "haben",
+            "das Zimmer",
+            "die Tür"
+          ],
+          "answer": "haben",
+          "explanation": "La forma escrita correcta es «haben»: tener.",
+          "audio": "haben",
+          "slow_audio": "haben",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-3-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
+          "target": "wollen",
+          "options": [],
+          "answer": "",
+          "explanation": "",
+          "audio": "wollen",
+          "slow_audio": "wollen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "querer",
+          "sound_hint": "",
+          "memory_hint": "",
+          "group_hint": ""
+        },
+        {
+          "id": "german-vocabulary-47-3-meaning",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «wollen»?",
+          "target": "wollen",
+          "options": [
+            "la casa",
+            "la silla",
+            "querer"
+          ],
+          "answer": "querer",
+          "explanation": "querer",
+          "audio": "wollen",
+          "slow_audio": "wollen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-3-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la palabra o frase correcta",
+          "target": "",
+          "options": [
+            "die Küche",
+            "wollen",
+            "das Fenster"
+          ],
+          "answer": "wollen",
+          "explanation": "La forma escrita correcta es «wollen»: querer.",
+          "audio": "wollen",
+          "slow_audio": "wollen",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 10
+        },
+        {
+          "id": "german-vocabulary-47-4-teach",
+          "type": "teach_concept",
+          "prompt": "Aprende y escucha",
           "target": "können",
           "options": [],
           "answer": "",
@@ -30448,14 +30626,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-1-meaning",
+          "id": "german-vocabulary-47-4-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «können»?",
           "target": "können",
           "options": [
+            "el piso, el apartamento",
             "poder",
-            "la cama",
-            "dolorido"
+            "la lámpara"
           ],
           "answer": "poder",
           "explanation": "poder",
@@ -30467,14 +30645,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-1-listen",
+          "id": "german-vocabulary-47-4-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "der Schlüssel",
             "können",
-            "die Wohnung",
-            "die Lampe"
+            "das Bad"
           ],
           "answer": "können",
           "explanation": "La forma escrita correcta es «können»: poder.",
@@ -30486,7 +30664,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-2-teach",
+          "id": "german-vocabulary-47-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "machen",
@@ -30506,14 +30684,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-2-meaning",
+          "id": "german-vocabulary-47-5-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «machen»?",
           "target": "machen",
           "options": [
             "hacer",
-            "doler",
-            "la mesa"
+            "la habitación",
+            "la puerta"
           ],
           "answer": "hacer",
           "explanation": "hacer",
@@ -30525,14 +30703,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-2-listen",
+          "id": "german-vocabulary-47-5-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Zimmer",
-            "machen",
-            "die Tür"
+            "das Bett",
+            "die Tasche",
+            "machen"
           ],
           "answer": "machen",
           "explanation": "La forma escrita correcta es «machen»: hacer.",
@@ -30544,7 +30722,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-3-teach",
+          "id": "german-vocabulary-47-6-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "wie",
@@ -30564,14 +30742,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-3-meaning",
+          "id": "german-vocabulary-47-6-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «wie»?",
           "target": "wie",
           "options": [
-            "la casa",
-            "la silla",
-            "cómo"
+            "cómo",
+            "la cocina",
+            "la ventana"
           ],
           "answer": "cómo",
           "explanation": "cómo",
@@ -30583,14 +30761,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-3-listen",
+          "id": "german-vocabulary-47-6-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "die Küche",
-            "das Fenster",
-            "wie"
+            "wie",
+            "das Buch",
+            "der Tisch"
           ],
           "answer": "wie",
           "explanation": "La forma escrita correcta es «wie»: cómo.",
@@ -30602,7 +30780,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-4-teach",
+          "id": "german-vocabulary-47-7-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "warum",
@@ -30622,14 +30800,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-4-meaning",
+          "id": "german-vocabulary-47-7-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «warum»?",
           "target": "warum",
           "options": [
+            "la llave",
             "por qué",
-            "el piso, el apartamento",
-            "la lámpara"
+            "el baño"
           ],
           "answer": "por qué",
           "explanation": "por qué",
@@ -30641,14 +30819,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-4-listen",
+          "id": "german-vocabulary-47-7-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "der Schlüssel",
             "warum",
-            "das Bad"
+            "der Stuhl",
+            "der Stift"
           ],
           "answer": "warum",
           "explanation": "La forma escrita correcta es «warum»: por qué.",
@@ -30660,7 +30838,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-5-teach",
+          "id": "german-vocabulary-47-8-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "nicht",
@@ -30680,14 +30858,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-5-meaning",
+          "id": "german-vocabulary-47-8-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «nicht»?",
           "target": "nicht",
           "options": [
+            "la cama",
             "no / negación",
-            "la habitación",
-            "la puerta"
+            "la bolsa, el bolso"
           ],
           "answer": "no / negación",
           "explanation": "no / negación",
@@ -30699,14 +30877,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-5-listen",
+          "id": "german-vocabulary-47-8-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Bett",
+            "die Lampe",
             "nicht",
-            "die Tasche"
+            "das Heft"
           ],
           "answer": "nicht",
           "explanation": "La forma escrita correcta es «nicht»: no / negación.",
@@ -30718,7 +30896,7 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-6-teach",
+          "id": "german-vocabulary-47-9-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
           "target": "dort",
@@ -30738,14 +30916,14 @@
           "group_hint": ""
         },
         {
-          "id": "german-vocabulary-47-6-meaning",
+          "id": "german-vocabulary-47-9-meaning",
           "type": "select_translation",
           "prompt": "¿Qué significa «dort»?",
           "target": "dort",
           "options": [
-            "allí",
-            "la cocina",
-            "la ventana"
+            "la mesa",
+            "el libro",
+            "allí"
           ],
           "answer": "allí",
           "explanation": "allí",
@@ -30757,14 +30935,14 @@
           "xp": 10
         },
         {
-          "id": "german-vocabulary-47-6-listen",
+          "id": "german-vocabulary-47-9-listen",
           "type": "listening_choice",
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "das Buch",
             "dort",
-            "der Tisch"
+            "die Tür",
+            "der Rucksack"
           ],
           "answer": "dort",
           "explanation": "La forma escrita correcta es «dort»: allí.",
@@ -31146,17 +31324,17 @@
         {
           "id": "german-vocabulary-test-63-10-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «über»?",
-          "target": "über",
+          "prompt": "¿Qué debes recordar sobre «ö»?",
+          "target": "ö",
           "options": [
-            "rojo",
-            "el vestido",
-            "No existe igual en español."
+            "Mantén la lengua de e y redondea labios.",
+            "Después de i/e es más frontal.",
+            "V suele sonar f; W suele sonar v."
           ],
-          "answer": "No existe igual en español.",
-          "explanation": "No existe igual en español.",
-          "audio": "über",
-          "slow_audio": "über",
+          "answer": "Mantén la lengua de e y redondea labios.",
+          "explanation": "Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
           "image": null,
           "writing_asset": null,
           "tags": [],
@@ -31168,14 +31346,14 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "über",
+            "ö",
             "gelb",
             "die Socken"
           ],
-          "answer": "über",
-          "explanation": "La forma escrita correcta es «über»: No existe igual en español.",
-          "audio": "über",
-          "slow_audio": "über",
+          "answer": "ö",
+          "explanation": "La forma escrita correcta es «ö»: Mantén la lengua de e y redondea labios.",
+          "audio": "schön",
+          "slow_audio": "schön",
           "image": null,
           "writing_asset": null,
           "tags": [],

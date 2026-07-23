@@ -2288,8 +2288,8 @@
           "target": "가",
           "options": [
             "Una consonante y una vocal forman un bloque.",
-            "hacer",
-            "no / negación"
+            "Cambia según su posición.",
+            "Expresan existencia o posesión."
           ],
           "answer": "Una consonante y una vocal forman un bloque.",
           "explanation": "Una consonante y una vocal forman un bloque.",
@@ -2348,8 +2348,8 @@
           "target": "너",
           "options": [
             "Se lee de izquierda a derecha dentro del bloque.",
-            "qué",
-            "esto"
+            "No equivale exactamente a una vocal española.",
+            "El verbo suele ir al final."
           ],
           "answer": "Se lee de izquierda a derecha dentro del bloque.",
           "explanation": "Se lee de izquierda a derecha dentro del bloque.",
@@ -2408,8 +2408,8 @@
           "target": "도",
           "options": [
             "La consonante se coloca arriba o a la izquierda.",
-            "eso",
-            "quién"
+            "Una consonante y una vocal forman un bloque.",
+            "Ante ㅣ, ㅅ se aproxima a “sh”."
           ],
           "answer": "La consonante se coloca arriba o a la izquierda.",
           "explanation": "La consonante se coloca arriba o a la izquierda.",
@@ -2468,8 +2468,8 @@
           "target": "한",
           "options": [
             "La consonante final se llama batchim.",
-            "aquello",
-            "dónde"
+            "Al inicio es muda; al final suena ng.",
+            "Se lee de izquierda a derecha dentro del bloque."
           ],
           "answer": "La consonante final se llama batchim.",
           "explanation": "La consonante final se llama batchim.",
@@ -2503,7 +2503,7 @@
           "id": "korean-essentials-07-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "밥",
+          "target": "받침",
           "options": [],
           "answer": "",
           "explanation": "La consonante final suele cerrarse sin soltar aire.",
@@ -2524,12 +2524,12 @@
         {
           "id": "korean-essentials-07-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «밥»?",
-          "target": "밥",
+          "prompt": "¿Qué debes recordar sobre «받침»?",
+          "target": "받침",
           "options": [
             "La consonante final suele cerrarse sin soltar aire.",
-            "cuándo",
-            "aquí"
+            "La consonante se coloca arriba o a la izquierda.",
+            "Marca el tema de la conversación."
           ],
           "answer": "La consonante final suele cerrarse sin soltar aire.",
           "explanation": "La consonante final suele cerrarse sin soltar aire.",
@@ -2546,12 +2546,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "받침",
             "오늘",
-            "밥",
             "안"
           ],
-          "answer": "밥",
-          "explanation": "La forma escrita correcta es «밥»: La consonante final suele cerrarse sin soltar aire.",
+          "answer": "받침",
+          "explanation": "La forma escrita correcta es «받침»: La consonante final suele cerrarse sin soltar aire.",
           "audio": "밥",
           "slow_audio": "밥",
           "image": null,
@@ -2586,7 +2586,7 @@
           "id": "korean-essentials-08-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "라",
+          "target": "ㄹ",
           "options": [],
           "answer": "",
           "explanation": "Cambia según su posición.",
@@ -2607,12 +2607,12 @@
         {
           "id": "korean-essentials-08-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «라»?",
-          "target": "라",
+          "prompt": "¿Qué debes recordar sobre «ㄹ»?",
+          "target": "ㄹ",
           "options": [
-            "qué",
-            "esto",
-            "Cambia según su posición."
+            "Cambia según su posición.",
+            "No equivale exactamente a una vocal española.",
+            "El verbo suele ir al final."
           ],
           "answer": "Cambia según su posición.",
           "explanation": "Cambia según su posición.",
@@ -2629,12 +2629,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "라",
+            "ㄹ",
             "언제",
             "여기"
           ],
-          "answer": "라",
-          "explanation": "La forma escrita correcta es «라»: Cambia según su posición.",
+          "answer": "ㄹ",
+          "explanation": "La forma escrita correcta es «ㄹ»: Cambia según su posición.",
           "audio": "라",
           "slow_audio": "라",
           "image": null,
@@ -2646,7 +2646,7 @@
           "id": "korean-essentials-08-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "어",
+          "target": "ㅓ",
           "options": [],
           "answer": "",
           "explanation": "No equivale exactamente a una vocal española.",
@@ -2667,12 +2667,12 @@
         {
           "id": "korean-essentials-08-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «어»?",
-          "target": "어",
+          "prompt": "¿Qué debes recordar sobre «ㅓ»?",
+          "target": "ㅓ",
           "options": [
-            "eso",
-            "No equivale exactamente a una vocal española.",
-            "quién"
+            "Una consonante y una vocal forman un bloque.",
+            "Ante ㅣ, ㅅ se aproxima a “sh”.",
+            "No equivale exactamente a una vocal española."
           ],
           "answer": "No equivale exactamente a una vocal española.",
           "explanation": "No equivale exactamente a una vocal española.",
@@ -2689,12 +2689,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "어",
+            "ㅓ",
             "거기",
             "어떻게"
           ],
-          "answer": "어",
-          "explanation": "La forma escrita correcta es «어»: No equivale exactamente a una vocal española.",
+          "answer": "ㅓ",
+          "explanation": "La forma escrita correcta es «ㅓ»: No equivale exactamente a una vocal española.",
           "audio": "어",
           "slow_audio": "어",
           "image": null,
@@ -2706,7 +2706,7 @@
           "id": "korean-essentials-08-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "시",
+          "target": "ㅅ + ㅣ",
           "options": [],
           "answer": "",
           "explanation": "Ante ㅣ, ㅅ se aproxima a “sh”.",
@@ -2727,12 +2727,12 @@
         {
           "id": "korean-essentials-08-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «시»?",
-          "target": "시",
+          "prompt": "¿Qué debes recordar sobre «ㅅ + ㅣ»?",
+          "target": "ㅅ + ㅣ",
           "options": [
-            "aquello",
-            "Ante ㅣ, ㅅ se aproxima a “sh”.",
-            "dónde"
+            "Al inicio es muda; al final suena ng.",
+            "Se lee de izquierda a derecha dentro del bloque.",
+            "Ante ㅣ, ㅅ se aproxima a “sh”."
           ],
           "answer": "Ante ㅣ, ㅅ se aproxima a “sh”.",
           "explanation": "Ante ㅣ, ㅅ se aproxima a “sh”.",
@@ -2749,12 +2749,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "시",
+            "ㅅ + ㅣ",
             "왜",
             "지금"
           ],
-          "answer": "시",
-          "explanation": "La forma escrita correcta es «시»: Ante ㅣ, ㅅ se aproxima a “sh”.",
+          "answer": "ㅅ + ㅣ",
+          "explanation": "La forma escrita correcta es «ㅅ + ㅣ»: Ante ㅣ, ㅅ se aproxima a “sh”.",
           "audio": "시",
           "slow_audio": "시",
           "image": null,
@@ -2766,7 +2766,7 @@
           "id": "korean-essentials-08-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "강",
+          "target": "ㅇ final",
           "options": [],
           "answer": "",
           "explanation": "Al inicio es muda; al final suena ng.",
@@ -2787,12 +2787,12 @@
         {
           "id": "korean-essentials-08-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «강»?",
-          "target": "강",
+          "prompt": "¿Qué debes recordar sobre «ㅇ final»?",
+          "target": "ㅇ final",
           "options": [
-            "cuándo",
             "Al inicio es muda; al final suena ng.",
-            "aquí"
+            "La consonante se coloca arriba o a la izquierda.",
+            "Marca el tema de la conversación."
           ],
           "answer": "Al inicio es muda; al final suena ng.",
           "explanation": "Al inicio es muda; al final suena ng.",
@@ -2809,12 +2809,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "ㅇ final",
             "오늘",
-            "강",
             "안"
           ],
-          "answer": "강",
-          "explanation": "La forma escrita correcta es «강»: Al inicio es muda; al final suena ng.",
+          "answer": "ㅇ final",
+          "explanation": "La forma escrita correcta es «ㅇ final»: Al inicio es muda; al final suena ng.",
           "audio": "강",
           "slow_audio": "강",
           "image": null,
@@ -2826,7 +2826,7 @@
           "id": "korean-essentials-08-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "저는 학생이에요.",
+          "target": "은/는",
           "options": [],
           "answer": "",
           "explanation": "Marca el tema de la conversación.",
@@ -2847,12 +2847,12 @@
         {
           "id": "korean-essentials-08-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «저는 학생이에요.»?",
-          "target": "저는 학생이에요.",
+          "prompt": "¿Qué debes recordar sobre «은/는»?",
+          "target": "은/는",
           "options": [
-            "cómo",
-            "Marca el tema de la conversación.",
-            "ahí"
+            "Marca el sujeto o información nueva.",
+            "La consonante final se llama batchim.",
+            "Marca el tema de la conversación."
           ],
           "answer": "Marca el tema de la conversación.",
           "explanation": "Marca el tema de la conversación.",
@@ -2871,10 +2871,10 @@
           "options": [
             "이것",
             "내일",
-            "저는 학생이에요."
+            "은/는"
           ],
-          "answer": "저는 학생이에요.",
-          "explanation": "La forma escrita correcta es «저는 학생이에요.»: Marca el tema de la conversación.",
+          "answer": "은/는",
+          "explanation": "La forma escrita correcta es «은/는»: Marca el tema de la conversación.",
           "audio": "저는 학생이에요.",
           "slow_audio": "저는 학생이에요.",
           "image": null,
@@ -2909,7 +2909,7 @@
           "id": "korean-essentials-09-1-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "물이 있어요.",
+          "target": "이/가",
           "options": [],
           "answer": "",
           "explanation": "Marca el sujeto o información nueva.",
@@ -2930,11 +2930,11 @@
         {
           "id": "korean-essentials-09-1-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «물이 있어요.»?",
-          "target": "물이 있어요.",
+          "prompt": "¿Qué debes recordar sobre «이/가»?",
+          "target": "이/가",
           "options": [
-            "eso",
-            "quién",
+            "Una consonante y una vocal forman un bloque.",
+            "Ante ㅣ, ㅅ se aproxima a “sh”.",
             "Marca el sujeto o información nueva."
           ],
           "answer": "Marca el sujeto o información nueva.",
@@ -2952,12 +2952,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "물이 있어요.",
             "거기",
+            "이/가",
             "어떻게"
           ],
-          "answer": "물이 있어요.",
-          "explanation": "La forma escrita correcta es «물이 있어요.»: Marca el sujeto o información nueva.",
+          "answer": "이/가",
+          "explanation": "La forma escrita correcta es «이/가»: Marca el sujeto o información nueva.",
           "audio": "물이 있어요.",
           "slow_audio": "물이 있어요.",
           "image": null,
@@ -2969,7 +2969,7 @@
           "id": "korean-essentials-09-2-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "물을 마셔요.",
+          "target": "을/를",
           "options": [],
           "answer": "",
           "explanation": "Marca el objeto directo.",
@@ -2990,12 +2990,12 @@
         {
           "id": "korean-essentials-09-2-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «물을 마셔요.»?",
-          "target": "물을 마셔요.",
+          "prompt": "¿Qué debes recordar sobre «을/를»?",
+          "target": "을/를",
           "options": [
-            "aquello",
-            "Marca el objeto directo.",
-            "dónde"
+            "Al inicio es muda; al final suena ng.",
+            "Se lee de izquierda a derecha dentro del bloque.",
+            "Marca el objeto directo."
           ],
           "answer": "Marca el objeto directo.",
           "explanation": "Marca el objeto directo.",
@@ -3012,12 +3012,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "을/를",
             "왜",
-            "물을 마셔요.",
             "지금"
           ],
-          "answer": "물을 마셔요.",
-          "explanation": "La forma escrita correcta es «물을 마셔요.»: Marca el objeto directo.",
+          "answer": "을/를",
+          "explanation": "La forma escrita correcta es «을/를»: Marca el objeto directo.",
           "audio": "물을 마셔요.",
           "slow_audio": "물을 마셔요.",
           "image": null,
@@ -3029,7 +3029,7 @@
           "id": "korean-essentials-09-3-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "학생이에요.",
+          "target": "이에요/예요",
           "options": [],
           "answer": "",
           "explanation": "Equivale aproximadamente a “ser”.",
@@ -3050,12 +3050,12 @@
         {
           "id": "korean-essentials-09-3-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «학생이에요.»?",
-          "target": "학생이에요.",
+          "prompt": "¿Qué debes recordar sobre «이에요/예요»?",
+          "target": "이에요/예요",
           "options": [
-            "cuándo",
             "Equivale aproximadamente a “ser”.",
-            "aquí"
+            "La consonante se coloca arriba o a la izquierda.",
+            "Marca el tema de la conversación."
           ],
           "answer": "Equivale aproximadamente a “ser”.",
           "explanation": "Equivale aproximadamente a “ser”.",
@@ -3073,11 +3073,11 @@
           "target": "",
           "options": [
             "오늘",
-            "학생이에요.",
+            "이에요/예요",
             "안"
           ],
-          "answer": "학생이에요.",
-          "explanation": "La forma escrita correcta es «학생이에요.»: Equivale aproximadamente a “ser”.",
+          "answer": "이에요/예요",
+          "explanation": "La forma escrita correcta es «이에요/예요»: Equivale aproximadamente a “ser”.",
           "audio": "학생이에요.",
           "slow_audio": "학생이에요.",
           "image": null,
@@ -3089,7 +3089,7 @@
           "id": "korean-essentials-09-4-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "시간이 있어요.",
+          "target": "있어요/없어요",
           "options": [],
           "answer": "",
           "explanation": "Expresan existencia o posesión.",
@@ -3110,12 +3110,12 @@
         {
           "id": "korean-essentials-09-4-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «시간이 있어요.»?",
-          "target": "시간이 있어요.",
+          "prompt": "¿Qué debes recordar sobre «있어요/없어요»?",
+          "target": "있어요/없어요",
           "options": [
-            "cómo",
             "Expresan existencia o posesión.",
-            "ahí"
+            "Marca el sujeto o información nueva.",
+            "La consonante final se llama batchim."
           ],
           "answer": "Expresan existencia o posesión.",
           "explanation": "Expresan existencia o posesión.",
@@ -3132,12 +3132,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
+            "있어요/없어요",
             "이것",
-            "내일",
-            "시간이 있어요."
+            "내일"
           ],
-          "answer": "시간이 있어요.",
-          "explanation": "La forma escrita correcta es «시간이 있어요.»: Expresan existencia o posesión.",
+          "answer": "있어요/없어요",
+          "explanation": "La forma escrita correcta es «있어요/없어요»: Expresan existencia o posesión.",
           "audio": "시간이 있어요.",
           "slow_audio": "시간이 있어요.",
           "image": null,
@@ -3149,7 +3149,7 @@
           "id": "korean-essentials-09-5-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "저는 물을 마셔요.",
+          "target": "S + O + V",
           "options": [],
           "answer": "",
           "explanation": "El verbo suele ir al final.",
@@ -3170,12 +3170,12 @@
         {
           "id": "korean-essentials-09-5-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «저는 물을 마셔요.»?",
-          "target": "저는 물을 마셔요.",
+          "prompt": "¿Qué debes recordar sobre «S + O + V»?",
+          "target": "S + O + V",
           "options": [
-            "ahora",
-            "El verbo suele ir al final.",
-            "por qué"
+            "Marca el objeto directo.",
+            "La consonante final suele cerrarse sin soltar aire.",
+            "El verbo suele ir al final."
           ],
           "answer": "El verbo suele ir al final.",
           "explanation": "El verbo suele ir al final.",
@@ -3192,12 +3192,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "저는 물을 마셔요.",
             "그것",
-            "어제"
+            "어제",
+            "S + O + V"
           ],
-          "answer": "저는 물을 마셔요.",
-          "explanation": "La forma escrita correcta es «저는 물을 마셔요.»: El verbo suele ir al final.",
+          "answer": "S + O + V",
+          "explanation": "La forma escrita correcta es «S + O + V»: El verbo suele ir al final.",
           "audio": "저는 물을 마셔요.",
           "slow_audio": "저는 물을 마셔요.",
           "image": null,
@@ -3484,9 +3484,9 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "밥",
             "여기",
-            "오늘"
+            "오늘",
+            "받침"
           ],
           "answer": "여기",
           "explanation": "La forma escrita correcta es «여기»: aquí.",
@@ -3522,8 +3522,8 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "라",
-            "학생이에요.",
+            "ㄹ",
+            "이에요/예요",
             "내일"
           ],
           "answer": "내일",
@@ -3543,7 +3543,7 @@
           "options": [
             "La consonante final se llama batchim.",
             "La consonante se coloca arriba o a la izquierda.",
-            "ahora"
+            "Marca el objeto directo."
           ],
           "answer": "La consonante se coloca arriba o a la izquierda.",
           "explanation": "La consonante se coloca arriba o a la izquierda.",
@@ -3561,7 +3561,7 @@
           "target": "",
           "options": [
             "도",
-            "어",
+            "ㅓ",
             "어제"
           ],
           "answer": "도",
@@ -3576,12 +3576,12 @@
         {
           "id": "korean-essentials-test-12-10-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué debes recordar sobre «어»?",
-          "target": "어",
+          "prompt": "¿Qué debes recordar sobre «ㅓ»?",
+          "target": "ㅓ",
           "options": [
             "No equivale exactamente a una vocal española.",
             "La consonante final suele cerrarse sin soltar aire.",
-            "hoy"
+            "Equivale aproximadamente a “ser”."
           ],
           "answer": "No equivale exactamente a una vocal española.",
           "explanation": "No equivale exactamente a una vocal española.",
@@ -3598,12 +3598,12 @@
           "prompt": "Escucha y elige la palabra o frase correcta",
           "target": "",
           "options": [
-            "어",
-            "가",
-            "시"
+            "ㅅ + ㅣ",
+            "ㅓ",
+            "가"
           ],
-          "answer": "어",
-          "explanation": "La forma escrita correcta es «어»: No equivale exactamente a una vocal española.",
+          "answer": "ㅓ",
+          "explanation": "La forma escrita correcta es «ㅓ»: No equivale exactamente a una vocal española.",
           "audio": "어",
           "slow_audio": "어",
           "image": null,

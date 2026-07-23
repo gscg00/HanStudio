@@ -158,6 +158,31 @@ def test_rule_teaching_cards_never_claim_to_show_a_spanish_translation():
     assert not problems
 
 
+def test_korean_topic_particle_uses_the_pattern_and_grammar_distractors():
+    matches = []
+    for language, lesson in active_lessons():
+        if language != "Korean":
+            continue
+        activities = lesson.get("activities", [])
+        for index, activity in enumerate(activities):
+            if activity.get("teaching_kind") != "rule" or activity.get("target") != "은/는":
+                continue
+            question = next(
+                candidate for candidate in activities[index + 1 :]
+                if candidate.get("type") == "select_translation"
+                and candidate.get("target") == "은/는"
+            )
+            matches.append((activity, question))
+
+    assert matches
+    for activity, question in matches:
+        assert activity.get("audio") == "저는 학생이에요."
+        assert activity.get("meaning", "") == ""
+        assert question.get("prompt") == "¿Qué debes recordar sobre «은/는»?"
+        assert question.get("answer") == "Marca el tema de la conversación."
+        assert all(option not in {"cómo", "ahí"} for option in question.get("options", []))
+
+
 def test_course_player_renders_a_dedicated_spanish_meaning_block():
     source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
     styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
