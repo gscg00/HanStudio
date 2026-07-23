@@ -1,4 +1,4 @@
-const items=(language,category,text)=>text.trim().split('\n').map((line,order)=>{const [symbol,speak,pronunciation,example,explanation]=line.split('|');return{symbol,speak,pronunciation,example,explanation,language,category,order:order+1,audio:true};});
+const items=(language,category,text)=>text.trim().split('\n').map((line,order)=>{const [symbol,speak,pronunciation,example,explanation,teachingPoints='',quizAnswer='']=line.split('|');return{symbol,speak,pronunciation,example,explanation,teachingPoints:teachingPoints.split(';').map(point=>point.trim()).filter(Boolean),quizAnswer,language,category,order:order+1,audio:true};});
 const stage=(language,id,title,text)=>({id,title,items:items(language,id,text)});
 const quiz=(language,questions)=>({language,questions});
 
@@ -57,7 +57,7 @@ I would like water.|I would like water.|ai wud laik uóter|I would like water.|R
 을/를|물을 마셔요.|eul/reul|물을 마셔요.|Marca el objeto directo.
 이에요/예요|학생이에요.|ieyo/yeyo|학생이에요.|Equivale aproximadamente a “ser”.
 있어요/없어요|시간이 있어요.|isseoyo / eopseoyo|시간이 있어요.|Expresan existencia o posesión.
-S + O + V|저는 물을 마셔요.|jeoneun mureul masyeoyo|저는 물을 마셔요.|El verbo suele ir al final.`),
+Tema + objeto + verbo|저는 물을 마셔요.|El verbo cierra la oración|저는 물을 마셔요. = Yo bebo agua.|En coreano, el verbo normalmente aparece al final. Las partículas muestran la función de cada palabra, así que no necesitas copiar el orden del español.|저는 = «yo» como tema (저 + 는);물을 = «agua» como objeto (물 + 을);마셔요 = «bebo»;Frase completa: «Yo bebo agua».|El verbo va al final.`),
     stage('Korean','repeat','7. Escucha y repite',`천천히 말해 주세요.|천천히 말해 주세요.|cheoncheonhi malhae juseyo|천천히 말해 주세요.|Hable más despacio, por favor.
 괜찮아요.|괜찮아요.|gwaenchanayo|괜찮아요.|Está bien.
 도와주세요.|도와주세요.|dowajuseyo|도와주세요.|Ayúdeme, por favor.`)

@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v96';
+const SHELL='hanstory-shell-v97';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',

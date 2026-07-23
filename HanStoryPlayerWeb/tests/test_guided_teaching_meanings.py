@@ -183,6 +183,33 @@ def test_korean_topic_particle_uses_the_pattern_and_grammar_distractors():
         assert all(option not in {"cómo", "ahí"} for option in question.get("options", []))
 
 
+def test_korean_sentence_order_card_explains_and_breaks_down_the_example():
+    matches = []
+    for language, lesson in active_lessons():
+        if language != "Korean":
+            continue
+        activities = lesson.get("activities", [])
+        for index, activity in enumerate(activities):
+            if (
+                activity.get("teaching_kind") == "rule"
+                and activity.get("target") == "Tema + objeto + verbo"
+            ):
+                matches.append((activity, activities[index + 1]))
+
+    assert matches
+    for activity, question in matches:
+        assert activity.get("audio") == "저는 물을 마셔요."
+        assert activity.get("sound_hint") == "Idea clave: El verbo cierra la oración"
+        assert "Yo bebo agua" in activity.get("memory_hint", "")
+        assert "partículas" in activity.get("explanation", "")
+        points = activity.get("teaching_points", [])
+        assert len(points) == 4
+        assert any("저는" in point and "tema" in point for point in points)
+        assert any("물을" in point and "objeto" in point for point in points)
+        assert any("마셔요" in point and "bebo" in point for point in points)
+        assert question.get("answer") == "El verbo va al final."
+
+
 def test_course_player_renders_a_dedicated_spanish_meaning_block():
     source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
     styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
@@ -190,3 +217,5 @@ def test_course_player_renders_a_dedicated_spanish_meaning_block():
     assert "EN ESPAÑOL" in source
     assert "jp-teach-meaning" in source
     assert ".jp-teach-meaning" in styles
+    assert "DESGLOSE DEL EJEMPLO" in source
+    assert ".jp-teach-points" in styles
