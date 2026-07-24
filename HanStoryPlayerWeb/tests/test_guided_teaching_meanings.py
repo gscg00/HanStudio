@@ -218,4 +218,6 @@ def test_course_player_renders_a_dedicated_spanish_meaning_block():
     assert "jp-teach-meaning" in source
     assert ".jp-teach-meaning" in styles
     assert "DESGLOSE DEL EJEMPLO" in source
+    assert "jp-rich-teaching" in source
     assert ".jp-teach-points" in styles
+    assert ".jp-rich-teaching .jp-teach-symbol" in styles
