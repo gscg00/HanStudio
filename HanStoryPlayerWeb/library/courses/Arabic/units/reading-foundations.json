@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el árabe",
+  "description": "Aprende dirección, conexión, formas contextuales y vocales antes de intentar reconocer palabras.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "arabic-reading-00-01",
+      "title": "Dirección y alfabeto",
+      "description": "Cambia la dirección de lectura y reconoce letras, no dibujos.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Cambia la dirección de lectura y reconoce letras, no dibujos.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "De derecha a izquierda",
+          "target": "العربية",
+          "options": [],
+          "answer": "",
+          "explanation": "Los números pueden mantener otra dirección dentro del texto.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El texto árabe se lee de derecha a izquierda.",
+          "memory_hint": "Empieza en el extremo derecho de cada línea.",
+          "teaching_points": [
+            "Las palabras avanzan hacia la izquierda.",
+            "Las letras se conectan.",
+            "La línea siguiente comienza otra vez a la derecha."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿En qué dirección se leen las palabras árabes?",
+          "target": "العربية",
+          "options": [
+            "De derecha a izquierda",
+            "De izquierda a derecha",
+            "De abajo arriba"
+          ],
+          "answer": "De derecha a izquierda",
+          "explanation": "Los números pueden mantener otra dirección dentro del texto.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Letras consonánticas",
+          "target": "ب · ت · ث",
+          "options": [],
+          "answer": "",
+          "explanation": "Los puntos son esenciales, no adornos.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Muchas letras comparten una forma base y se distinguen por puntos.",
+          "memory_hint": "Cuenta y ubica los puntos.",
+          "teaching_points": [
+            "ب: un punto abajo.",
+            "ت: dos puntos arriba.",
+            "ث: tres puntos arriba."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue especialmente ب, ت y ث?",
+          "target": "ب · ت · ث",
+          "options": [
+            "La cantidad y posición de puntos",
+            "El tamaño",
+            "El color"
+          ],
+          "answer": "La cantidad y posición de puntos",
+          "explanation": "Los puntos son esenciales, no adornos.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-02",
+      "title": "Letras que se conectan",
+      "description": "La forma cambia según la posición.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La forma cambia según la posición.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Cuatro formas contextuales",
+          "target": "عـ ـعـ ـع ع",
+          "options": [],
+          "answer": "",
+          "explanation": "No son cuatro letras distintas.",
+          "audio": "عين",
+          "slow_audio": "عين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Una letra puede tener forma aislada, inicial, media y final.",
+          "memory_hint": "Busca su esqueleto común.",
+          "teaching_points": [
+            "Aislada.",
+            "Conectada al inicio/medio.",
+            "Conectada al final."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Las formas contextuales representan letras distintas?",
+          "target": "عـ ـعـ ـع ع",
+          "options": [
+            "No, son la misma letra en posiciones distintas",
+            "Sí",
+            "Solo la final es letra"
+          ],
+          "answer": "No, son la misma letra en posiciones distintas",
+          "explanation": "No son cuatro letras distintas.",
+          "audio": "عين",
+          "slow_audio": "عين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "La palabra es una cadena",
+          "target": "كتب",
+          "options": [],
+          "answer": "",
+          "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
+          "audio": "كاف",
+          "slow_audio": "كاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Lee la cadena identificando cada forma conectada.",
+          "memory_hint": "No memorices la silueta completa sin analizar.",
+          "teaching_points": [
+            "Identifica ك.",
+            "Después ت.",
+            "Finalmente ب."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo empiezas a leer una palabra conectada?",
+          "target": "كتب",
+          "options": [
+            "Identificando sus letras contextuales",
+            "Como un dibujo único",
+            "Desde la izquierda"
+          ],
+          "answer": "Identificando sus letras contextuales",
+          "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
+          "audio": "كاف",
+          "slow_audio": "كاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-03",
+      "title": "Letras que no conectan después",
+      "description": "Seis letras interrumpen la unión hacia la izquierda.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Seis letras interrumpen la unión hacia la izquierda.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "ا د ذ ر ز و",
+          "target": "ا د ذ ر ز و",
+          "options": [],
+          "answer": "",
+          "explanation": "El corte no significa que empiece otra palabra.",
+          "audio": "دال",
+          "slow_audio": "دال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Estas letras se conectan con la anterior, pero no con la siguiente.",
+          "memory_hint": "Espera un pequeño corte visual después.",
+          "teaching_points": [
+            "ا no conecta después.",
+            "د/ذ no conectan después.",
+            "ر/ز/و tampoco."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Un corte tras ا siempre separa palabras?",
+          "target": "ا د ذ ر ز و",
+          "options": [
+            "No, puede ser la misma palabra",
+            "Sí",
+            "Solo ocurre al final"
+          ],
+          "answer": "No, puede ser la misma palabra",
+          "explanation": "El corte no significa que empiece otra palabra.",
+          "audio": "دال",
+          "slow_audio": "دال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "Reconoce el espacio real",
+          "target": "دار",
+          "options": [],
+          "answer": "",
+          "explanation": "Con práctica, ambos tipos de separación se vuelven claros.",
+          "audio": "راء",
+          "slow_audio": "راء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Distingue el corte causado por una letra del espacio entre palabras.",
+          "memory_hint": "Mira la distancia y la estructura.",
+          "teaching_points": [
+            "Las letras de una palabra pueden verse en grupos.",
+            "El espacio entre palabras es mayor.",
+            "La dirección sigue igual."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Por qué una palabra árabe puede verse dividida?",
+          "target": "دار",
+          "options": [
+            "Porque algunas letras no conectan hacia la izquierda",
+            "Porque se lee por columnas",
+            "Porque faltan letras"
+          ],
+          "answer": "Porque algunas letras no conectan hacia la izquierda",
+          "explanation": "Con práctica, ambos tipos de separación se vuelven claros.",
+          "audio": "راء",
+          "slow_audio": "راء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-04",
+      "title": "Vocales cortas",
+      "description": "Las marcas vocálicas suelen omitirse en textos normales.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Las marcas vocálicas suelen omitirse en textos normales.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "Fatha, kasra y damma",
+          "target": "َ ِ ُ",
+          "options": [],
+          "answer": "",
+          "explanation": "Material infantil y didáctico suele mostrarlas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Estas marcas indican a, i y u breves.",
+          "memory_hint": "Apréndelas en textos vocalizados antes de retirarlas.",
+          "teaching_points": [
+            "َ encima: a breve.",
+            "ِ debajo: i breve.",
+            "ُ encima: u breve."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indican َ ِ ُ?",
+          "target": "َ ِ ُ",
+          "options": [
+            "Vocales cortas",
+            "Puntos de consonante",
+            "Final de oración"
+          ],
+          "answer": "Vocales cortas",
+          "explanation": "Material infantil y didáctico suele mostrarlas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "Sukun y shadda",
+          "target": "ْ ّ",
+          "options": [],
+          "answer": "",
+          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Sukun indica ausencia de vocal; shadda duplica una consonante.",
+          "memory_hint": "No ignores estas marcas al aprender.",
+          "teaching_points": [
+            "ْ: sin vocal posterior.",
+            "ّ: consonante doble.",
+            "Se combinan con marcas vocálicas."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica shadda ّ?",
+          "target": "ْ ّ",
+          "options": [
+            "Una consonante duplicada",
+            "Una vocal larga",
+            "Una pausa de párrafo"
+          ],
+          "answer": "Una consonante duplicada",
+          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-05",
+      "title": "Vocales largas y hamza",
+      "description": "Reconoce letras que prolongan y el ataque glotal.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce letras que prolongan y el ataque glotal.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "ا و ي como largas",
+          "target": "ا · و · ي",
+          "options": [],
+          "answer": "",
+          "explanation": "La función depende del contexto.",
+          "audio": "واو",
+          "slow_audio": "واو",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Tras la vocal correspondiente pueden indicar ā, ū, ī.",
+          "memory_hint": "Distingue letra vocálica larga de consonante w/y.",
+          "teaching_points": [
+            "َ + ا → ā.",
+            "ُ + و → ū.",
+            "ِ + ي → ī."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden representar ا, و, ي?",
+          "target": "ا · و · ي",
+          "options": [
+            "Vocales largas según el contexto",
+            "Solo puntuación",
+            "Siempre letras mudas"
+          ],
+          "answer": "Vocales largas según el contexto",
+          "explanation": "La función depende del contexto.",
+          "audio": "واو",
+          "slow_audio": "واو",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Hamza ء",
+          "target": "ء · أ · إ",
+          "options": [],
+          "answer": "",
+          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Hamza representa un cierre glotal y puede escribirse con distintos soportes.",
+          "memory_hint": "Reconoce el signo aunque cambie su asiento.",
+          "teaching_points": [
+            "ء puede aparecer sola.",
+            "أ/إ usan alif como soporte.",
+            "La posición sigue reglas ortográficas."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué representa hamza?",
+          "target": "ء · أ · إ",
+          "options": [
+            "Un cierre glotal",
+            "Una vocal larga fija",
+            "El plural"
+          ],
+          "answer": "Un cierre glotal",
+          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-06",
+      "title": "Leer con y sin vocales",
+      "description": "Pasa gradualmente de texto vocalizado a texto normal.",
+      "activities": [
+        {
+          "id": "arabic-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Pasa gradualmente de texto vocalizado a texto normal.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Primero con ayudas",
+          "target": "كِتاب",
+          "options": [],
+          "answer": "",
+          "explanation": "Después verás la misma palabra sin todas las vocales cortas.",
+          "audio": "تاء",
+          "slow_audio": "تاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Las marcas permiten comprobar la sílaba y el patrón.",
+          "memory_hint": "Lee con marcas, escucha y repite.",
+          "teaching_points": [
+            "Identifica consonantes.",
+            "Añade vocales marcadas.",
+            "Une la palabra."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué conviene usar al principio?",
+          "target": "كِتاب",
+          "options": [
+            "Texto vocalizado y audio",
+            "Solo texto sin marcas",
+            "Transliteración permanente"
+          ],
+          "answer": "Texto vocalizado y audio",
+          "explanation": "Después verás la misma palabra sin todas las vocales cortas.",
+          "audio": "تاء",
+          "slow_audio": "تاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Luego reconoce patrones",
+          "target": "كتاب",
+          "options": [],
+          "answer": "",
+          "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "En textos comunes deduces vocales por vocabulario, gramática y patrones.",
+          "memory_hint": "No se espera adivinar palabras desconocidas sin contexto.",
+          "teaching_points": [
+            "Reconoce la raíz.",
+            "Usa el patrón.",
+            "Confirma con contexto."
+          ]
+        },
+        {
+          "id": "arabic-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se leen textos sin todas las vocales?",
+          "target": "كتاب",
+          "options": [
+            "Con vocabulario, patrones y contexto",
+            "Inventando vocales al azar",
+            "Leyendo solo puntos"
+          ],
+          "answer": "Con vocabulario, patrones y contexto",
+          "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "arabic-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿En qué dirección se leen las palabras árabes?",
+          "target": "العربية",
+          "options": [
+            "De derecha a izquierda",
+            "De izquierda a derecha",
+            "De abajo arriba"
+          ],
+          "answer": "De derecha a izquierda",
+          "explanation": "Los números pueden mantener otra dirección dentro del texto.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo empiezas a leer una palabra conectada?",
+          "target": "كتب",
+          "options": [
+            "Identificando sus letras contextuales",
+            "Como un dibujo único",
+            "Desde la izquierda"
+          ],
+          "answer": "Identificando sus letras contextuales",
+          "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
+          "audio": "كاف",
+          "slow_audio": "كاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Un corte tras ا siempre separa palabras?",
+          "target": "ا د ذ ر ز و",
+          "options": [
+            "No, puede ser la misma palabra",
+            "Sí",
+            "Solo ocurre al final"
+          ],
+          "answer": "No, puede ser la misma palabra",
+          "explanation": "El corte no significa que empiece otra palabra.",
+          "audio": "دال",
+          "slow_audio": "دال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica shadda ّ?",
+          "target": "ْ ّ",
+          "options": [
+            "Una consonante duplicada",
+            "Una vocal larga",
+            "Una pausa de párrafo"
+          ],
+          "answer": "Una consonante duplicada",
+          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden representar ا, و, ي?",
+          "target": "ا · و · ي",
+          "options": [
+            "Vocales largas según el contexto",
+            "Solo puntuación",
+            "Siempre letras mudas"
+          ],
+          "answer": "Vocales largas según el contexto",
+          "explanation": "La función depende del contexto.",
+          "audio": "واو",
+          "slow_audio": "واو",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se leen textos sin todas las vocales?",
+          "target": "كتاب",
+          "options": [
+            "Con vocabulario, patrones y contexto",
+            "Inventando vocales al azar",
+            "Leyendo solo puntos"
+          ],
+          "answer": "Con vocabulario, patrones y contexto",
+          "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "arabic-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "arabic-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿En qué dirección se leen las palabras árabes?",
+          "target": "العربية",
+          "options": [
+            "De derecha a izquierda",
+            "De izquierda a derecha",
+            "De abajo arriba"
+          ],
+          "answer": "De derecha a izquierda",
+          "explanation": "Los números pueden mantener otra dirección dentro del texto.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue especialmente ب, ت y ث?",
+          "target": "ب · ت · ث",
+          "options": [
+            "La cantidad y posición de puntos",
+            "El tamaño",
+            "El color"
+          ],
+          "answer": "La cantidad y posición de puntos",
+          "explanation": "Los puntos son esenciales, no adornos.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Las formas contextuales representan letras distintas?",
+          "target": "عـ ـعـ ـع ع",
+          "options": [
+            "No, son la misma letra en posiciones distintas",
+            "Sí",
+            "Solo la final es letra"
+          ],
+          "answer": "No, son la misma letra en posiciones distintas",
+          "explanation": "No son cuatro letras distintas.",
+          "audio": "عين",
+          "slow_audio": "عين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo empiezas a leer una palabra conectada?",
+          "target": "كتب",
+          "options": [
+            "Identificando sus letras contextuales",
+            "Como un dibujo único",
+            "Desde la izquierda"
+          ],
+          "answer": "Identificando sus letras contextuales",
+          "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
+          "audio": "كاف",
+          "slow_audio": "كاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Un corte tras ا siempre separa palabras?",
+          "target": "ا د ذ ر ز و",
+          "options": [
+            "No, puede ser la misma palabra",
+            "Sí",
+            "Solo ocurre al final"
+          ],
+          "answer": "No, puede ser la misma palabra",
+          "explanation": "El corte no significa que empiece otra palabra.",
+          "audio": "دال",
+          "slow_audio": "دال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Por qué una palabra árabe puede verse dividida?",
+          "target": "دار",
+          "options": [
+            "Porque algunas letras no conectan hacia la izquierda",
+            "Porque se lee por columnas",
+            "Porque faltan letras"
+          ],
+          "answer": "Porque algunas letras no conectan hacia la izquierda",
+          "explanation": "Con práctica, ambos tipos de separación se vuelven claros.",
+          "audio": "راء",
+          "slow_audio": "راء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indican َ ِ ُ?",
+          "target": "َ ِ ُ",
+          "options": [
+            "Vocales cortas",
+            "Puntos de consonante",
+            "Final de oración"
+          ],
+          "answer": "Vocales cortas",
+          "explanation": "Material infantil y didáctico suele mostrarlas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica shadda ّ?",
+          "target": "ْ ّ",
+          "options": [
+            "Una consonante duplicada",
+            "Una vocal larga",
+            "Una pausa de párrafo"
+          ],
+          "answer": "Una consonante duplicada",
+          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden representar ا, و, ي?",
+          "target": "ا · و · ي",
+          "options": [
+            "Vocales largas según el contexto",
+            "Solo puntuación",
+            "Siempre letras mudas"
+          ],
+          "answer": "Vocales largas según el contexto",
+          "explanation": "La función depende del contexto.",
+          "audio": "واو",
+          "slow_audio": "واو",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Qué representa hamza?",
+          "target": "ء · أ · إ",
+          "options": [
+            "Un cierre glotal",
+            "Una vocal larga fija",
+            "El plural"
+          ],
+          "answer": "Un cierre glotal",
+          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Qué conviene usar al principio?",
+          "target": "كِتاب",
+          "options": [
+            "Texto vocalizado y audio",
+            "Solo texto sin marcas",
+            "Transliteración permanente"
+          ],
+          "answer": "Texto vocalizado y audio",
+          "explanation": "Después verás la misma palabra sin todas las vocales cortas.",
+          "audio": "تاء",
+          "slow_audio": "تاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "arabic-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se leen textos sin todas las vocales?",
+          "target": "كتاب",
+          "options": [
+            "Con vocabulario, patrones y contexto",
+            "Inventando vocales al azar",
+            "Leyendo solo puntos"
+          ],
+          "answer": "Con vocabulario, patrones y contexto",
+          "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

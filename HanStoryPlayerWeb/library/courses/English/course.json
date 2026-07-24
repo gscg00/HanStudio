@@ -3,7 +3,7 @@
   "title": "Inglés: de cero a conversaciones intermedias",
   "language": "English",
   "languageCode": "en",
-  "version": 10,
+  "version": 11,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Pronuncia, comprende y empieza a leer historias en inglés.",
   "vocabularyGoal": 300,
@@ -15,6 +15,7 @@
       "title": "Fundamentos para empezar",
       "description": "Lectura, pronunciación y estructuras esenciales.",
       "unitIds": [
+        "reading-foundations",
         "reading",
         "survival",
         "essentials",
@@ -112,7 +113,9 @@
   ],
   "unlockRules": {
     "minimumScore": 85,
-    "masteryScore": 95
+    "masteryScore": 95,
+    "requireReadingMastery": true,
+    "readingUnitId": "reading-foundations"
   },
   "recommendedBooks": [
     {
@@ -135,6 +138,15 @@
     }
   ],
   "units": [
+    {
+      "id": "reading-foundations",
+      "world": 0,
+      "mapLabel": "MUNDO 0",
+      "title": "Lectura inicial: el inglés",
+      "description": "Relaciona letras y sonidos sin confundir el nombre de una letra con su pronunciación dentro de una palabra.",
+      "icon": "ABC",
+      "manifest": "units/reading-foundations.json"
+    },
     {
       "id": "reading",
       "world": 1,

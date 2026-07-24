@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo funciona la escritura japonesa",
+  "description": "Comprende kana, mora, kanji y ayudas de lectura antes de memorizar hiragana y katakana.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "japanese-reading-00-01",
+      "title": "Tres sistemas de escritura",
+      "description": "Distingue hiragana, katakana y kanji sin usar rōmaji.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Distingue hiragana, katakana y kanji sin usar rōmaji.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "Hiragana",
+          "target": "あ い う え お",
+          "options": [],
+          "answer": "",
+          "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Hiragana representa moras y aparece en terminaciones y palabras japonesas.",
+          "memory_hint": "Asocia cada signo directamente con su sonido.",
+          "teaching_points": [
+            "Formas curvas frecuentes.",
+            "Una mora por signo básico.",
+            "Base indispensable para leer."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué aprenderás primero para leer japonés?",
+          "target": "あ い う え お",
+          "options": [
+            "Hiragana",
+            "Rōmaji permanente",
+            "Solo kanji"
+          ],
+          "answer": "Hiragana",
+          "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Katakana y kanji",
+          "target": "ア · 日",
+          "options": [],
+          "answer": "",
+          "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
+          "audio": "い",
+          "slow_audio": "い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Katakana representa las mismas moras; kanji aporta significado y lecturas.",
+          "memory_hint": "No confundas función con sonido.",
+          "teaching_points": [
+            "ア es katakana.",
+            "日 es kanji.",
+            "Ambos pueden aparecer en una frase."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Katakana usa sonidos totalmente distintos de hiragana?",
+          "target": "ア · 日",
+          "options": [
+            "No, representa las mismas moras básicas",
+            "Sí",
+            "No representa sonidos"
+          ],
+          "answer": "No, representa las mismas moras básicas",
+          "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
+          "audio": "い",
+          "slow_audio": "い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-02",
+      "title": "Moras y cinco vocales",
+      "description": "El ritmo japonés se organiza en unidades regulares.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "El ritmo japonés se organiza en unidades regulares.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Cinco vocales",
+          "target": "あ い う え お",
+          "options": [],
+          "answer": "",
+          "explanation": "Escucha cada vocal y conserva su duración.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Las vocales son estables y cada kana básico contiene una mora.",
+          "memory_hint": "No añadas diptongos españoles.",
+          "teaching_points": [
+            "あ: a.",
+            "い: i.",
+            "う/え/お completan el sistema."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cuántas vocales básicas organiza el kana?",
+          "target": "あ い う え お",
+          "options": [
+            "Cinco",
+            "Tres",
+            "Diez"
+          ],
+          "answer": "Cinco",
+          "explanation": "Escucha cada vocal y conserva su duración.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "Mora no es sílaba española",
+          "target": "ひと",
+          "options": [],
+          "answer": "",
+          "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ひ・と ocupa dos moras.",
+          "memory_hint": "Cuenta golpes rítmicos regulares.",
+          "teaching_points": [
+            "ひ: una mora.",
+            "と: una mora.",
+            "Mantén dos pulsos regulares."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cuántas moras tiene «ひと»?",
+          "target": "ひと",
+          "options": [
+            "Dos",
+            "Una",
+            "Tres"
+          ],
+          "answer": "Dos",
+          "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-03",
+      "title": "Filas del kana",
+      "description": "Una consonante se combina con las cinco vocales.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Una consonante se combina con las cinco vocales.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "La fila K",
+          "target": "か き く け こ",
+          "options": [],
+          "answer": "",
+          "explanation": "El curso presenta una familia, practica y repasa anteriores.",
+          "audio": "か",
+          "slow_audio": "か",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La fila conserva una consonante aproximada k y cambia la vocal.",
+          "memory_hint": "Aprende por familias, no en orden aleatorio.",
+          "teaching_points": [
+            "か: k+a.",
+            "き: k+i.",
+            "く/け/こ continúan la fila."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué cambia dentro de una fila de kana?",
+          "target": "か き く け こ",
+          "options": [
+            "La vocal",
+            "El sentido de lectura",
+            "El tipo de escritura"
+          ],
+          "answer": "La vocal",
+          "explanation": "El curso presenta una familia, practica y repasa anteriores.",
+          "audio": "か",
+          "slow_audio": "か",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "Excepciones de sonido",
+          "target": "し · ち · つ · ふ",
+          "options": [],
+          "answer": "",
+          "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
+          "audio": "し",
+          "slow_audio": "し",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Algunos kana no siguen una combinación española literal.",
+          "memory_hint": "Aprende su sonido japonés directamente.",
+          "teaching_points": [
+            "し tiene sonido propio.",
+            "ち y つ requieren escucha.",
+            "ふ no es una f española idéntica."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo debes aprender し o つ?",
+          "target": "し · ち · つ · ふ",
+          "options": [
+            "Asociando el kana directamente con su audio",
+            "Leyendo rōmaji siempre",
+            "Inventando una vocal"
+          ],
+          "answer": "Asociando el kana directamente con su audio",
+          "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
+          "audio": "し",
+          "slow_audio": "し",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-04",
+      "title": "Marcas y kana pequeños",
+      "description": "Dakuten, handakuten y tamaño cambian el sonido.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Dakuten, handakuten y tamaño cambian el sonido.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "Dakuten y handakuten",
+          "target": "か→が · は→ぱ",
+          "options": [],
+          "answer": "",
+          "explanation": "No son signos decorativos.",
+          "audio": "が",
+          "slow_audio": "が",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Las marcas convierten familias sordas en sonoras o en la serie p.",
+          "memory_hint": "Observa los dos trazos o el pequeño círculo.",
+          "teaching_points": [
+            "か→が.",
+            "さ→ざ.",
+            "は→ば o ぱ."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace dakuten?",
+          "target": "か→が · は→ぱ",
+          "options": [
+            "Modifica la consonante de una familia",
+            "Alarga siempre la vocal",
+            "Convierte kana en kanji"
+          ],
+          "answer": "Modifica la consonante de una familia",
+          "explanation": "No son signos decorativos.",
+          "audio": "が",
+          "slow_audio": "が",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "Kana pequeños",
+          "target": "きゃ · っ",
+          "options": [],
+          "answer": "",
+          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ゃゅょ pequeños forman combinaciones; っ marca consonante doble.",
+          "memory_hint": "El tamaño importa.",
+          "teaching_points": [
+            "き + ゃ → きゃ.",
+            "っ prepara una consonante doble.",
+            "El ritmo cambia."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "target": "きゃ · っ",
+          "options": [
+            "No",
+            "Sí",
+            "Es silencioso siempre"
+          ],
+          "answer": "No",
+          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-05",
+      "title": "Vocales largas",
+      "description": "La duración puede distinguir palabras.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La duración puede distinguir palabras.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "Duración vocálica",
+          "target": "おばさん · おばあさん",
+          "options": [],
+          "answer": "",
+          "explanation": "No reduzcas la diferencia a un acento gráfico.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Una vocal larga ocupa más tiempo y puede cambiar significado.",
+          "memory_hint": "Cuenta una mora adicional.",
+          "teaching_points": [
+            "おばさん: tía/señora.",
+            "おばあさん: abuela/señora mayor.",
+            "あ adicional cuenta."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Una vocal larga puede cambiar significado?",
+          "target": "おばさん · おばあさん",
+          "options": [
+            "Sí",
+            "No",
+            "Solo en canciones"
+          ],
+          "answer": "Sí",
+          "explanation": "No reduzcas la diferencia a un acento gráfico.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Chōonpu en katakana",
+          "target": "コーヒー",
+          "options": [],
+          "answer": "",
+          "explanation": "Es muy frecuente en palabras extranjeras escritas en katakana.",
+          "audio": "コーヒー",
+          "slow_audio": "コーヒー",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La raya ー alarga la vocal anterior.",
+          "memory_hint": "No la leas como guion.",
+          "teaching_points": [
+            "コー alarga o.",
+            "ヒー alarga i.",
+            "Cada alargamiento afecta el ritmo."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica ー en katakana?",
+          "target": "コーヒー",
+          "options": [
+            "Vocal larga",
+            "Separación de palabras",
+            "Consonante doble"
+          ],
+          "answer": "Vocal larga",
+          "explanation": "Es muy frecuente en palabras extranjeras escritas en katakana.",
+          "audio": "コーヒー",
+          "slow_audio": "コーヒー",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-06",
+      "title": "Kanji y furigana",
+      "description": "Aprende lectura útil dentro de palabras, no todas a la vez.",
+      "activities": [
+        {
+          "id": "japanese-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende lectura útil dentro de palabras, no todas a la vez.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Kanji aporta significado",
+          "target": "人",
+          "options": [],
+          "answer": "",
+          "explanation": "Un kanji puede tener varias lecturas según la palabra.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "人 representa la idea de persona y se aprende primero en una palabra útil.",
+          "memory_hint": "Une carácter, palabra, audio y significado.",
+          "teaching_points": [
+            "人 → ひと en esta palabra.",
+            "Aprende una lectura útil.",
+            "Amplía lecturas con vocabulario real."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Conviene memorizar todas las lecturas de un kanji de golpe?",
+          "target": "人",
+          "options": [
+            "No",
+            "Sí",
+            "Los kanji no tienen lectura"
+          ],
+          "answer": "No",
+          "explanation": "Un kanji puede tener varias lecturas según la palabra.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Furigana es ayuda temporal",
+          "target": "人（ひと）",
+          "options": [],
+          "answer": "",
+          "explanation": "A diferencia del rōmaji, mantiene al alumno dentro del sistema japonés.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Furigana muestra kana sobre o junto al kanji.",
+          "memory_hint": "Intenta recordar primero y consúltala después.",
+          "teaching_points": [
+            "Muestra pronunciación en kana.",
+            "Ayuda con kanji nuevos.",
+            "Puede ocultarse gradualmente."
+          ]
+        },
+        {
+          "id": "japanese-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sistema debe usar la ayuda de lectura japonesa?",
+          "target": "人（ひと）",
+          "options": [
+            "Kana mediante furigana, no rōmaji",
+            "Solo letras latinas",
+            "Traducción española encima"
+          ],
+          "answer": "Kana mediante furigana, no rōmaji",
+          "explanation": "A diferencia del rōmaji, mantiene al alumno dentro del sistema japonés.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "japanese-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué aprenderás primero para leer japonés?",
+          "target": "あ い う え お",
+          "options": [
+            "Hiragana",
+            "Rōmaji permanente",
+            "Solo kanji"
+          ],
+          "answer": "Hiragana",
+          "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Cuántas moras tiene «ひと»?",
+          "target": "ひと",
+          "options": [
+            "Dos",
+            "Una",
+            "Tres"
+          ],
+          "answer": "Dos",
+          "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Qué cambia dentro de una fila de kana?",
+          "target": "か き く け こ",
+          "options": [
+            "La vocal",
+            "El sentido de lectura",
+            "El tipo de escritura"
+          ],
+          "answer": "La vocal",
+          "explanation": "El curso presenta una familia, practica y repasa anteriores.",
+          "audio": "か",
+          "slow_audio": "か",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "target": "きゃ · っ",
+          "options": [
+            "No",
+            "Sí",
+            "Es silencioso siempre"
+          ],
+          "answer": "No",
+          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Una vocal larga puede cambiar significado?",
+          "target": "おばさん · おばあさん",
+          "options": [
+            "Sí",
+            "No",
+            "Solo en canciones"
+          ],
+          "answer": "Sí",
+          "explanation": "No reduzcas la diferencia a un acento gráfico.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sistema debe usar la ayuda de lectura japonesa?",
+          "target": "人（ひと）",
+          "options": [
+            "Kana mediante furigana, no rōmaji",
+            "Solo letras latinas",
+            "Traducción española encima"
+          ],
+          "answer": "Kana mediante furigana, no rōmaji",
+          "explanation": "A diferencia del rōmaji, mantiene al alumno dentro del sistema japonés.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "japanese-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "japanese-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué aprenderás primero para leer japonés?",
+          "target": "あ い う え お",
+          "options": [
+            "Hiragana",
+            "Rōmaji permanente",
+            "Solo kanji"
+          ],
+          "answer": "Hiragana",
+          "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Katakana usa sonidos totalmente distintos de hiragana?",
+          "target": "ア · 日",
+          "options": [
+            "No, representa las mismas moras básicas",
+            "Sí",
+            "No representa sonidos"
+          ],
+          "answer": "No, representa las mismas moras básicas",
+          "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
+          "audio": "い",
+          "slow_audio": "い",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Cuántas vocales básicas organiza el kana?",
+          "target": "あ い う え お",
+          "options": [
+            "Cinco",
+            "Tres",
+            "Diez"
+          ],
+          "answer": "Cinco",
+          "explanation": "Escucha cada vocal y conserva su duración.",
+          "audio": "あ",
+          "slow_audio": "あ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cuántas moras tiene «ひと»?",
+          "target": "ひと",
+          "options": [
+            "Dos",
+            "Una",
+            "Tres"
+          ],
+          "answer": "Dos",
+          "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué cambia dentro de una fila de kana?",
+          "target": "か き く け こ",
+          "options": [
+            "La vocal",
+            "El sentido de lectura",
+            "El tipo de escritura"
+          ],
+          "answer": "La vocal",
+          "explanation": "El curso presenta una familia, practica y repasa anteriores.",
+          "audio": "か",
+          "slow_audio": "か",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo debes aprender し o つ?",
+          "target": "し · ち · つ · ふ",
+          "options": [
+            "Asociando el kana directamente con su audio",
+            "Leyendo rōmaji siempre",
+            "Inventando una vocal"
+          ],
+          "answer": "Asociando el kana directamente con su audio",
+          "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
+          "audio": "し",
+          "slow_audio": "し",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace dakuten?",
+          "target": "か→が · は→ぱ",
+          "options": [
+            "Modifica la consonante de una familia",
+            "Alarga siempre la vocal",
+            "Convierte kana en kanji"
+          ],
+          "answer": "Modifica la consonante de una familia",
+          "explanation": "No son signos decorativos.",
+          "audio": "が",
+          "slow_audio": "が",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "target": "きゃ · っ",
+          "options": [
+            "No",
+            "Sí",
+            "Es silencioso siempre"
+          ],
+          "answer": "No",
+          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Una vocal larga puede cambiar significado?",
+          "target": "おばさん · おばあさん",
+          "options": [
+            "Sí",
+            "No",
+            "Solo en canciones"
+          ],
+          "answer": "Sí",
+          "explanation": "No reduzcas la diferencia a un acento gráfico.",
+          "audio": "おばあさん",
+          "slow_audio": "おばあさん",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica ー en katakana?",
+          "target": "コーヒー",
+          "options": [
+            "Vocal larga",
+            "Separación de palabras",
+            "Consonante doble"
+          ],
+          "answer": "Vocal larga",
+          "explanation": "Es muy frecuente en palabras extranjeras escritas en katakana.",
+          "audio": "コーヒー",
+          "slow_audio": "コーヒー",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Conviene memorizar todas las lecturas de un kanji de golpe?",
+          "target": "人",
+          "options": [
+            "No",
+            "Sí",
+            "Los kanji no tienen lectura"
+          ],
+          "answer": "No",
+          "explanation": "Un kanji puede tener varias lecturas según la palabra.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "japanese-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sistema debe usar la ayuda de lectura japonesa?",
+          "target": "人（ひと）",
+          "options": [
+            "Kana mediante furigana, no rōmaji",
+            "Solo letras latinas",
+            "Traducción española encima"
+          ],
+          "answer": "Kana mediante furigana, no rōmaji",
+          "explanation": "A diferencia del rōmaji, mantiene al alumno dentro del sistema japonés.",
+          "audio": "ひと",
+          "slow_audio": "ひと",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

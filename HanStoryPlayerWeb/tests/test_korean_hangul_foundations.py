@@ -22,6 +22,8 @@ def test_hangul_foundations_is_the_first_world_and_first_foundations_unit():
     assert summary["mapLabel"] == "MUNDO 0"
     assert summary["icon"] == "한"
     assert foundations["unitIds"][0] == "hangul-foundations"
+    assert course["unlockRules"]["requireReadingMastery"] is True
+    assert course["unlockRules"]["readingUnitId"] == "hangul-foundations"
     assert (COURSE_ROOT / summary["manifest"]).is_file()
 
 
@@ -31,6 +33,7 @@ def test_hangul_foundations_teaches_before_asking_the_learner_to_recognize():
     assert sum(bool(lesson.get("isReview")) for lesson in unit["lessons"]) == 1
     tests = [lesson for lesson in unit["lessons"] if lesson.get("isTest")]
     assert len(tests) == 1 and tests[0].get("isUnitFinal") is True
+    assert tests[0].get("passingScore") == 100
 
     for lesson in unit["lessons"]:
         if lesson.get("isReview") or lesson.get("isTest"):

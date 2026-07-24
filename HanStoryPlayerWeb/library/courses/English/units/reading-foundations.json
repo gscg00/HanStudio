@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el inglés",
+  "description": "Relaciona letras y sonidos sin confundir el nombre de una letra con su pronunciación dentro de una palabra.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "english-reading-00-01",
+      "title": "Letras, nombres y sonidos",
+      "description": "Comprende por qué saber el abecedario no basta para leer.",
+      "activities": [
+        {
+          "id": "english-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Comprende por qué saber el abecedario no basta para leer.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "La letra no es su nombre",
+          "target": "A · /æ/",
+          "options": [],
+          "answer": "",
+          "explanation": "En inglés una misma letra puede representar sonidos distintos según la palabra.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "A se llama «ei», pero en cat representa otro sonido.",
+          "memory_hint": "Pregunta siempre: ¿nombre de letra o sonido dentro de palabra?",
+          "teaching_points": [
+            "A es la letra escrita.",
+            "«ei» es su nombre.",
+            "El sonido se aprende dentro de palabras."
+          ]
+        },
+        {
+          "id": "english-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes mirar al leer una palabra?",
+          "target": "A · /æ/",
+          "options": [
+            "El sonido de la letra en esa palabra",
+            "Solo el nombre del abecedario",
+            "La traducción española"
+          ],
+          "answer": "El sonido de la letra en esa palabra",
+          "explanation": "En inglés una misma letra puede representar sonidos distintos según la palabra.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "El contexto decide",
+          "target": "C: cat / city",
+          "options": [],
+          "answer": "",
+          "explanation": "Muchas correspondencias inglesas dependen de las letras vecinas.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "C puede sonar como k o como s.",
+          "memory_hint": "Mira la vocal que aparece después.",
+          "teaching_points": [
+            "c + a/o/u suele sonar k.",
+            "c + e/i/y suele sonar s.",
+            "Aprende patrones, no reglas absolutas."
+          ]
+        },
+        {
+          "id": "english-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Puede C tener más de un sonido?",
+          "target": "C: cat / city",
+          "options": [
+            "Sí, depende del contexto",
+            "No, siempre suena igual",
+            "Solo en nombres propios"
+          ],
+          "answer": "Sí, depende del contexto",
+          "explanation": "Muchas correspondencias inglesas dependen de las letras vecinas.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-02",
+      "title": "Las vocales",
+      "description": "Distingue vocales breves, largas y combinaciones frecuentes.",
+      "activities": [
+        {
+          "id": "english-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Distingue vocales breves, largas y combinaciones frecuentes.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Vocal breve",
+          "target": "A en cat",
+          "options": [],
+          "answer": "",
+          "explanation": "Las cinco letras vocálicas representan más de cinco sonidos.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La vocal breve no se pronuncia como el nombre «ei».",
+          "memory_hint": "Escucha la palabra completa; no deletrees.",
+          "teaching_points": [
+            "Una vocal breve dura poco.",
+            "No añadas una vocal española.",
+            "Compara palabras en pares."
+          ]
+        },
+        {
+          "id": "english-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿La A de cat suena igual que el nombre A?",
+          "target": "A en cat",
+          "options": [
+            "No, es un sonido vocálico breve",
+            "Sí, siempre es «ei»",
+            "No se pronuncia"
+          ],
+          "answer": "No, es un sonido vocálico breve",
+          "explanation": "Las cinco letras vocálicas representan más de cinco sonidos.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "Vocal larga y e silenciosa",
+          "target": "a_e: name",
+          "options": [],
+          "answer": "",
+          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "En muchos patrones consonante + e final, la primera vocal cambia.",
+          "memory_hint": "La e final suele modificar y no sonar.",
+          "teaching_points": [
+            "cap y cape no tienen la misma vocal.",
+            "La e final suele ser silenciosa.",
+            "Hay excepciones que se aprenden con uso."
+          ]
+        },
+        {
+          "id": "english-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace normalmente la e final en name?",
+          "target": "a_e: name",
+          "options": [
+            "Modifica la vocal anterior y no suena",
+            "Se pronuncia como e española",
+            "Duplica la consonante"
+          ],
+          "answer": "Modifica la vocal anterior y no suena",
+          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-03",
+      "title": "Consonantes que confunden",
+      "description": "Separa sonidos ingleses que un hispanohablante suele mezclar.",
+      "activities": [
+        {
+          "id": "english-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Separa sonidos ingleses que un hispanohablante suele mezclar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "B y V no son iguales",
+          "target": "B / V",
+          "options": [],
+          "answer": "",
+          "explanation": "La diferencia puede cambiar una palabra.",
+          "audio": "vee",
+          "slow_audio": "vee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "V se articula con dientes superiores y labio inferior.",
+          "memory_hint": "No conviertas automáticamente V en B.",
+          "teaching_points": [
+            "B usa los dos labios.",
+            "V usa dientes y labio inferior.",
+            "Escucha y observa la articulación."
+          ]
+        },
+        {
+          "id": "english-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿B y V representan el mismo sonido inglés?",
+          "target": "B / V",
+          "options": [
+            "No, se articulan de manera distinta",
+            "Sí, siempre",
+            "Solo cambian al escribir"
+          ],
+          "answer": "No, se articulan de manera distinta",
+          "explanation": "La diferencia puede cambiar una palabra.",
+          "audio": "vee",
+          "slow_audio": "vee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "H sí puede sonar",
+          "target": "H",
+          "options": [],
+          "answer": "",
+          "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
+          "audio": "aitch",
+          "slow_audio": "aitch",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La H inglesa suele ser una salida de aire.",
+          "memory_hint": "No la trates como la h muda del español.",
+          "teaching_points": [
+            "Expulsa aire suavemente.",
+            "No añadas una j española fuerte.",
+            "Hay algunas palabras con h muda."
+          ]
+        },
+        {
+          "id": "english-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué haces normalmente con una H inicial inglesa?",
+          "target": "H",
+          "options": [
+            "Produces una salida suave de aire",
+            "La omites siempre",
+            "La pronuncias como rr"
+          ],
+          "answer": "Produces una salida suave de aire",
+          "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
+          "audio": "aitch",
+          "slow_audio": "aitch",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-04",
+      "title": "Grupos de letras",
+      "description": "Aprende que dos letras pueden representar un solo sonido.",
+      "activities": [
+        {
+          "id": "english-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende que dos letras pueden representar un solo sonido.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "TH tiene dos realizaciones",
+          "target": "TH",
+          "options": [],
+          "answer": "",
+          "explanation": "TH no se lee como una t seguida de una h.",
+          "audio": "tee",
+          "slow_audio": "tee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La lengua se acerca o sale ligeramente entre los dientes.",
+          "memory_hint": "Aprende think y this como dos variantes.",
+          "teaching_points": [
+            "Puede ser sorda en think.",
+            "Puede ser sonora en this.",
+            "Se articula con la lengua y los dientes."
+          ]
+        },
+        {
+          "id": "english-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee TH?",
+          "target": "TH",
+          "options": [
+            "Como un sonido conjunto, no deletreando T y H",
+            "Como dos sílabas",
+            "Siempre como t española"
+          ],
+          "answer": "Como un sonido conjunto, no deletreando T y H",
+          "explanation": "TH no se lee como una t seguida de una h.",
+          "audio": "tee",
+          "slow_audio": "tee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "SH y CH",
+          "target": "SH · CH",
+          "options": [],
+          "answer": "",
+          "explanation": "Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Cada grupo funciona como una unidad frecuente.",
+          "memory_hint": "Reconoce el grupo antes de leer letra por letra.",
+          "teaching_points": [
+            "sh: aire continuo.",
+            "ch: cierre y liberación.",
+            "Busca el grupo completo."
+          ]
+        },
+        {
+          "id": "english-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer al encontrar SH o CH?",
+          "target": "SH · CH",
+          "options": [
+            "Reconocer el grupo como una unidad sonora",
+            "Pronunciar cada nombre de letra",
+            "Ignorar la segunda letra"
+          ],
+          "answer": "Reconocer el grupo como una unidad sonora",
+          "explanation": "Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-05",
+      "title": "Letras silenciosas",
+      "description": "Reconoce letras escritas que no siempre se oyen.",
+      "activities": [
+        {
+          "id": "english-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce letras escritas que no siempre se oyen.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "No todo se pronuncia",
+          "target": "kn · wr · mb",
+          "options": [],
+          "answer": "",
+          "explanation": "La ortografía inglesa conserva huellas históricas.",
+          "audio": "en",
+          "slow_audio": "en",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "En know, write y lamb hay letras silenciosas.",
+          "memory_hint": "Aprende la forma escrita junto con el audio.",
+          "teaching_points": [
+            "kn inicial suele perder k.",
+            "wr inicial suele perder w.",
+            "mb final suele perder b."
+          ]
+        },
+        {
+          "id": "english-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
+          "target": "kn · wr · mb",
+          "options": [
+            "No, algunas son silenciosas",
+            "Sí, sin excepción",
+            "Solo las consonantes"
+          ],
+          "answer": "No, algunas son silenciosas",
+          "explanation": "La ortografía inglesa conserva huellas históricas.",
+          "audio": "en",
+          "slow_audio": "en",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Terminaciones",
+          "target": "-ed · -s",
+          "options": [],
+          "answer": "",
+          "explanation": "-ed puede sonar t, d o id; -s puede sonar s, z o iz.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Una misma terminación cambia de sonido según lo anterior.",
+          "memory_hint": "Escucha el final, no añadas una sílaba automáticamente.",
+          "teaching_points": [
+            "worked termina en t.",
+            "played termina en d.",
+            "wanted termina en id."
+          ]
+        },
+        {
+          "id": "english-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿La terminación -ed suena siempre igual?",
+          "target": "-ed · -s",
+          "options": [
+            "No, cambia según el contexto",
+            "Sí, siempre «ed»",
+            "Nunca se pronuncia"
+          ],
+          "answer": "No, cambia según el contexto",
+          "explanation": "-ed puede sonar t, d o id; -s puede sonar s, z o iz.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-06",
+      "title": "Ritmo y lectura de palabras",
+      "description": "Lee por sílabas y conserva el acento principal.",
+      "activities": [
+        {
+          "id": "english-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Lee por sílabas y conserva el acento principal.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Acento de palabra",
+          "target": "PREsent / preSENT",
+          "options": [],
+          "answer": "",
+          "explanation": "El acento puede distinguir palabras y facilita la comprensión.",
+          "audio": "eye",
+          "slow_audio": "eye",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La sílaba acentuada destaca más.",
+          "memory_hint": "Marca una sílaba fuerte, no todas por igual.",
+          "teaching_points": [
+            "Una sílaba recibe más prominencia.",
+            "Las demás se reducen con frecuencia.",
+            "Escucha la palabra completa."
+          ]
+        },
+        {
+          "id": "english-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Todas las sílabas inglesas tienen la misma fuerza?",
+          "target": "PREsent / preSENT",
+          "options": [
+            "No, suele haber una sílaba principal",
+            "Sí, siempre",
+            "Solo en preguntas"
+          ],
+          "answer": "No, suele haber una sílaba principal",
+          "explanation": "El acento puede distinguir palabras y facilita la comprensión.",
+          "audio": "eye",
+          "slow_audio": "eye",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "No deletrees al leer",
+          "target": "cat ≠ C-A-T",
+          "options": [],
+          "answer": "",
+          "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Une los sonidos para formar la palabra.",
+          "memory_hint": "Los nombres de las letras sirven para deletrear, no para leer corrido.",
+          "teaching_points": [
+            "Identifica el patrón.",
+            "Produce sus sonidos.",
+            "Únelos sin pausas artificiales."
+          ]
+        },
+        {
+          "id": "english-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra conocida?",
+          "target": "cat ≠ C-A-T",
+          "options": [
+            "Uniendo sus sonidos y patrones",
+            "Diciendo los nombres de cada letra",
+            "Traduciéndola antes de verla"
+          ],
+          "answer": "Uniendo sus sonidos y patrones",
+          "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "english-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes mirar al leer una palabra?",
+          "target": "A · /æ/",
+          "options": [
+            "El sonido de la letra en esa palabra",
+            "Solo el nombre del abecedario",
+            "La traducción española"
+          ],
+          "answer": "El sonido de la letra en esa palabra",
+          "explanation": "En inglés una misma letra puede representar sonidos distintos según la palabra.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace normalmente la e final en name?",
+          "target": "a_e: name",
+          "options": [
+            "Modifica la vocal anterior y no suena",
+            "Se pronuncia como e española",
+            "Duplica la consonante"
+          ],
+          "answer": "Modifica la vocal anterior y no suena",
+          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿B y V representan el mismo sonido inglés?",
+          "target": "B / V",
+          "options": [
+            "No, se articulan de manera distinta",
+            "Sí, siempre",
+            "Solo cambian al escribir"
+          ],
+          "answer": "No, se articulan de manera distinta",
+          "explanation": "La diferencia puede cambiar una palabra.",
+          "audio": "vee",
+          "slow_audio": "vee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer al encontrar SH o CH?",
+          "target": "SH · CH",
+          "options": [
+            "Reconocer el grupo como una unidad sonora",
+            "Pronunciar cada nombre de letra",
+            "Ignorar la segunda letra"
+          ],
+          "answer": "Reconocer el grupo como una unidad sonora",
+          "explanation": "Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
+          "target": "kn · wr · mb",
+          "options": [
+            "No, algunas son silenciosas",
+            "Sí, sin excepción",
+            "Solo las consonantes"
+          ],
+          "answer": "No, algunas son silenciosas",
+          "explanation": "La ortografía inglesa conserva huellas históricas.",
+          "audio": "en",
+          "slow_audio": "en",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra conocida?",
+          "target": "cat ≠ C-A-T",
+          "options": [
+            "Uniendo sus sonidos y patrones",
+            "Diciendo los nombres de cada letra",
+            "Traduciéndola antes de verla"
+          ],
+          "answer": "Uniendo sus sonidos y patrones",
+          "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "english-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "english-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes mirar al leer una palabra?",
+          "target": "A · /æ/",
+          "options": [
+            "El sonido de la letra en esa palabra",
+            "Solo el nombre del abecedario",
+            "La traducción española"
+          ],
+          "answer": "El sonido de la letra en esa palabra",
+          "explanation": "En inglés una misma letra puede representar sonidos distintos según la palabra.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Puede C tener más de un sonido?",
+          "target": "C: cat / city",
+          "options": [
+            "Sí, depende del contexto",
+            "No, siempre suena igual",
+            "Solo en nombres propios"
+          ],
+          "answer": "Sí, depende del contexto",
+          "explanation": "Muchas correspondencias inglesas dependen de las letras vecinas.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿La A de cat suena igual que el nombre A?",
+          "target": "A en cat",
+          "options": [
+            "No, es un sonido vocálico breve",
+            "Sí, siempre es «ei»",
+            "No se pronuncia"
+          ],
+          "answer": "No, es un sonido vocálico breve",
+          "explanation": "Las cinco letras vocálicas representan más de cinco sonidos.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace normalmente la e final en name?",
+          "target": "a_e: name",
+          "options": [
+            "Modifica la vocal anterior y no suena",
+            "Se pronuncia como e española",
+            "Duplica la consonante"
+          ],
+          "answer": "Modifica la vocal anterior y no suena",
+          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿B y V representan el mismo sonido inglés?",
+          "target": "B / V",
+          "options": [
+            "No, se articulan de manera distinta",
+            "Sí, siempre",
+            "Solo cambian al escribir"
+          ],
+          "answer": "No, se articulan de manera distinta",
+          "explanation": "La diferencia puede cambiar una palabra.",
+          "audio": "vee",
+          "slow_audio": "vee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué haces normalmente con una H inicial inglesa?",
+          "target": "H",
+          "options": [
+            "Produces una salida suave de aire",
+            "La omites siempre",
+            "La pronuncias como rr"
+          ],
+          "answer": "Produces una salida suave de aire",
+          "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
+          "audio": "aitch",
+          "slow_audio": "aitch",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee TH?",
+          "target": "TH",
+          "options": [
+            "Como un sonido conjunto, no deletreando T y H",
+            "Como dos sílabas",
+            "Siempre como t española"
+          ],
+          "answer": "Como un sonido conjunto, no deletreando T y H",
+          "explanation": "TH no se lee como una t seguida de una h.",
+          "audio": "tee",
+          "slow_audio": "tee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer al encontrar SH o CH?",
+          "target": "SH · CH",
+          "options": [
+            "Reconocer el grupo como una unidad sonora",
+            "Pronunciar cada nombre de letra",
+            "Ignorar la segunda letra"
+          ],
+          "answer": "Reconocer el grupo como una unidad sonora",
+          "explanation": "Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
+          "target": "kn · wr · mb",
+          "options": [
+            "No, algunas son silenciosas",
+            "Sí, sin excepción",
+            "Solo las consonantes"
+          ],
+          "answer": "No, algunas son silenciosas",
+          "explanation": "La ortografía inglesa conserva huellas históricas.",
+          "audio": "en",
+          "slow_audio": "en",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿La terminación -ed suena siempre igual?",
+          "target": "-ed · -s",
+          "options": [
+            "No, cambia según el contexto",
+            "Sí, siempre «ed»",
+            "Nunca se pronuncia"
+          ],
+          "answer": "No, cambia según el contexto",
+          "explanation": "-ed puede sonar t, d o id; -s puede sonar s, z o iz.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Todas las sílabas inglesas tienen la misma fuerza?",
+          "target": "PREsent / preSENT",
+          "options": [
+            "No, suele haber una sílaba principal",
+            "Sí, siempre",
+            "Solo en preguntas"
+          ],
+          "answer": "No, suele haber una sílaba principal",
+          "explanation": "El acento puede distinguir palabras y facilita la comprensión.",
+          "audio": "eye",
+          "slow_audio": "eye",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "english-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra conocida?",
+          "target": "cat ≠ C-A-T",
+          "options": [
+            "Uniendo sus sonidos y patrones",
+            "Diciendo los nombres de cada letra",
+            "Traduciéndola antes de verla"
+          ],
+          "answer": "Uniendo sus sonidos y patrones",
+          "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

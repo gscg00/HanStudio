@@ -2,7 +2,7 @@
   "courseId": "japanese-from-zero",
   "title": "Japonés: de cero a conversaciones intermedias",
   "language": "Japanese",
-  "version": 10,
+  "version": 11,
   "levels": [
     {
       "id": "foundations",
@@ -10,6 +10,7 @@
       "title": "Fundamentos para empezar",
       "description": "Lectura, pronunciación y estructuras esenciales.",
       "unitIds": [
+        "reading-foundations",
         "hiragana-01",
         "katakana",
         "rhythm",
@@ -109,7 +110,9 @@
   ],
   "unlockRules": {
     "minimumScore": 85,
-    "masteryScore": 95
+    "masteryScore": 95,
+    "requireReadingMastery": true,
+    "readingUnitId": "reading-foundations"
   },
   "recommendedBooks": [
     {
@@ -120,6 +123,15 @@
     }
   ],
   "units": [
+    {
+      "id": "reading-foundations",
+      "world": 0,
+      "mapLabel": "MUNDO 0",
+      "title": "Lectura inicial: japonesa",
+      "description": "Comprende kana, mora, kanji y ayudas de lectura antes de memorizar hiragana y katakana.",
+      "icon": "あ",
+      "manifest": "units/reading-foundations.json"
+    },
     {
       "id": "hiragana-01",
       "world": 1,

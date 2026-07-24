@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el alemán",
+  "description": "Aprende vocales, umlauts, combinaciones y consonantes para aprovechar una ortografía bastante regular.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "german-reading-00-01",
+      "title": "Letras y pronunciación",
+      "description": "Separa nombre de letra y sonido de palabra.",
+      "activities": [
+        {
+          "id": "german-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Separa nombre de letra y sonido de palabra.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "Leer no es deletrear",
+          "target": "A · Name",
+          "options": [],
+          "answer": "",
+          "explanation": "El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.",
+          "audio": "ah",
+          "slow_audio": "ah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El nombre de una letra no es necesariamente su sonido dentro de una palabra.",
+          "memory_hint": "Usa los nombres solo para deletrear.",
+          "teaching_points": [
+            "Letra escrita.",
+            "Sonido dentro de palabra.",
+            "Nombre usado al deletrear."
+          ]
+        },
+        {
+          "id": "german-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra alemana?",
+          "target": "A · Name",
+          "options": [
+            "Con sus sonidos, no con nombres de letras",
+            "Deletreando siempre",
+            "Traduciéndola primero"
+          ],
+          "answer": "Con sus sonidos, no con nombres de letras",
+          "explanation": "El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.",
+          "audio": "ah",
+          "slow_audio": "ah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Las mayúsculas importan",
+          "target": "Haus · das Haus",
+          "options": [],
+          "answer": "",
+          "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Todos los sustantivos se escriben con mayúscula.",
+          "memory_hint": "Una mayúscula interna suele anunciar un sustantivo.",
+          "teaching_points": [
+            "Haus es sustantivo.",
+            "Los nombres propios también usan mayúscula.",
+            "No cambia por estar en medio de frase."
+          ]
+        },
+        {
+          "id": "german-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué clase de palabras usa mayúscula en alemán?",
+          "target": "Haus · das Haus",
+          "options": [
+            "Los sustantivos",
+            "Solo los verbos",
+            "Todas las palabras"
+          ],
+          "answer": "Los sustantivos",
+          "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-02",
+      "title": "Umlauts",
+      "description": "Aprende ä, ö y ü como vocales propias.",
+      "activities": [
+        {
+          "id": "german-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende ä, ö y ü como vocales propias.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Ä no es A decorada",
+          "target": "ä",
+          "options": [],
+          "answer": "",
+          "explanation": "El umlaut puede cambiar pronunciación y significado.",
+          "audio": "äh",
+          "slow_audio": "äh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ä suele acercarse a una e abierta.",
+          "memory_hint": "Trátala como una vocal distinta.",
+          "teaching_points": [
+            "ä tiene sonido propio.",
+            "No ignores los puntos.",
+            "Compara palabras relacionadas."
+          ]
+        },
+        {
+          "id": "german-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Debes leer Ä exactamente como A?",
+          "target": "ä",
+          "options": [
+            "No, es una vocal distinta",
+            "Sí",
+            "Es silenciosa"
+          ],
+          "answer": "No, es una vocal distinta",
+          "explanation": "El umlaut puede cambiar pronunciación y significado.",
+          "audio": "äh",
+          "slow_audio": "äh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ö y Ü",
+          "target": "ö · ü",
+          "options": [],
+          "answer": "",
+          "explanation": "No tienen equivalente exacto en español.",
+          "audio": "öh",
+          "slow_audio": "öh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Son vocales frontales con labios redondeados.",
+          "memory_hint": "Forma la lengua para e/i y redondea los labios.",
+          "teaching_points": [
+            "ö: frontal redondeada media.",
+            "ü: frontal redondeada alta.",
+            "Escucha y reproduce, sin añadir otra vocal."
+          ]
+        },
+        {
+          "id": "german-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué comparten Ö y Ü?",
+          "target": "ö · ü",
+          "options": [
+            "Son vocales frontales con labios redondeados",
+            "Son consonantes",
+            "Siempre son mudas"
+          ],
+          "answer": "Son vocales frontales con labios redondeados",
+          "explanation": "No tienen equivalente exacto en español.",
+          "audio": "öh",
+          "slow_audio": "öh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-03",
+      "title": "Combinaciones vocálicas",
+      "description": "Reconoce el orden visual y el sonido resultante.",
+      "activities": [
+        {
+          "id": "german-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce el orden visual y el sonido resultante.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "EI e IE",
+          "target": "ei · ie",
+          "options": [],
+          "answer": "",
+          "explanation": "Confundirlas cambia muchas palabras.",
+          "audio": "ih",
+          "slow_audio": "ih",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "EI suele sonar parecido a ai; IE suele ser una i larga.",
+          "memory_hint": "En EI suena la segunda idea; IE conserva i larga.",
+          "teaching_points": [
+            "mein contiene ei.",
+            "Liebe contiene ie.",
+            "No pronuncies dos vocales separadas."
+          ]
+        },
+        {
+          "id": "german-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿EI e IE se leen igual?",
+          "target": "ei · ie",
+          "options": [
+            "No, representan sonidos distintos",
+            "Sí",
+            "Solo en nombres"
+          ],
+          "answer": "No, representan sonidos distintos",
+          "explanation": "Confundirlas cambia muchas palabras.",
+          "audio": "ih",
+          "slow_audio": "ih",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "EU y ÄU",
+          "target": "eu · äu",
+          "options": [],
+          "answer": "",
+          "explanation": "ÄU aparece a menudo en palabras relacionadas con AU.",
+          "audio": "üh",
+          "slow_audio": "üh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ambas combinaciones suelen sonar parecido a oi.",
+          "memory_hint": "Reconócelas como una unidad.",
+          "teaching_points": [
+            "heute contiene eu.",
+            "Häuser contiene äu.",
+            "Las dos forman diptongo."
+          ]
+        },
+        {
+          "id": "german-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se comportan EU y ÄU?",
+          "target": "eu · äu",
+          "options": [
+            "Suelen compartir un diptongo parecido a oi",
+            "Se leen letra por letra",
+            "Son silenciosas"
+          ],
+          "answer": "Suelen compartir un diptongo parecido a oi",
+          "explanation": "ÄU aparece a menudo en palabras relacionadas con AU.",
+          "audio": "üh",
+          "slow_audio": "üh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-04",
+      "title": "Grupos consonánticos",
+      "description": "Lee CH, SCH, SP y ST como patrones.",
+      "activities": [
+        {
+          "id": "german-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Lee CH, SCH, SP y ST como patrones.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "CH tiene variantes",
+          "target": "ich · Bach",
+          "options": [],
+          "answer": "",
+          "explanation": "Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "CH cambia según la vocal y el entorno.",
+          "memory_hint": "Aprende el sonido de ich y el de Bach por separado.",
+          "teaching_points": [
+            "ich usa un sonido suave frontal.",
+            "Bach usa uno posterior.",
+            "No es la ch española."
+          ]
+        },
+        {
+          "id": "german-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿CH alemán tiene un único sonido?",
+          "target": "ich · Bach",
+          "options": [
+            "No, cambia según el contexto",
+            "Sí, siempre como ch española",
+            "No se pronuncia"
+          ],
+          "answer": "No, cambia según el contexto",
+          "explanation": "Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "SCH, SP y ST",
+          "target": "Schule · Spiel · Straße",
+          "options": [],
+          "answer": "",
+          "explanation": "En otras posiciones SP y ST pueden conservar s.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "SCH suele sonar sh; SP/ST iniciales suelen comenzar con sonido sh.",
+          "memory_hint": "Mira el inicio de la sílaba.",
+          "teaching_points": [
+            "sch funciona como grupo.",
+            "sp inicial suele sonar shp.",
+            "st inicial suele sonar sht."
+          ]
+        },
+        {
+          "id": "german-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele empezar SCH?",
+          "target": "Schule · Spiel · Straße",
+          "options": [
+            "Con un sonido parecido a sh",
+            "Como sk",
+            "Como s muda"
+          ],
+          "answer": "Con un sonido parecido a sh",
+          "explanation": "En otras posiciones SP y ST pueden conservar s.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-05",
+      "title": "Consonantes finales y ß",
+      "description": "Reconoce cambios regulares al final de palabra.",
+      "activities": [
+        {
+          "id": "german-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce cambios regulares al final de palabra.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "B, D, G finales",
+          "target": "Tag · Hund",
+          "options": [],
+          "answer": "",
+          "explanation": "Este ensordecimiento es regular.",
+          "audio": "geh",
+          "slow_audio": "geh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Al final suelen sonar más sordas: p, t, k.",
+          "memory_hint": "La escritura se conserva aunque cambie el sonido.",
+          "teaching_points": [
+            "b final se acerca a p.",
+            "d final se acerca a t.",
+            "g final se acerca a k."
+          ]
+        },
+        {
+          "id": "german-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena normalmente D al final?",
+          "target": "Tag · Hund",
+          "options": [
+            "Más cerca de t",
+            "Como d muy sonora",
+            "No suena"
+          ],
+          "answer": "Más cerca de t",
+          "explanation": "Este ensordecimiento es regular.",
+          "audio": "geh",
+          "slow_audio": "geh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "ß representa s",
+          "target": "ß",
+          "options": [],
+          "answer": "",
+          "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
+          "audio": "eszett",
+          "slow_audio": "eszett",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ß representa una s sorda larga y no es una B.",
+          "memory_hint": "Asóciala con ss.",
+          "teaching_points": [
+            "ß no es beta.",
+            "Suena como s fuerte.",
+            "En mayúsculas existe ẞ, aunque SS también aparece."
+          ]
+        },
+        {
+          "id": "german-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sonido representa ß?",
+          "target": "ß",
+          "options": [
+            "Una s sorda larga",
+            "Una b",
+            "Una vocal"
+          ],
+          "answer": "Una s sorda larga",
+          "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
+          "audio": "eszett",
+          "slow_audio": "eszett",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-06",
+      "title": "Sílabas y acento",
+      "description": "Combina unidades sin añadir vocales.",
+      "activities": [
+        {
+          "id": "german-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Combina unidades sin añadir vocales.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Consonantes juntas",
+          "target": "Strumpf",
+          "options": [],
+          "answer": "",
+          "explanation": "Divide por morfemas o sílabas, no por cada letra.",
+          "audio": "teh",
+          "slow_audio": "teh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El alemán permite grupos consonánticos largos.",
+          "memory_hint": "No insertes vocales entre consonantes.",
+          "teaching_points": [
+            "Reconoce prefijos y raíces.",
+            "Mantén juntas las consonantes.",
+            "Practica despacio y luego une."
+          ]
+        },
+        {
+          "id": "german-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Debes añadir vocales entre consonantes alemanas?",
+          "target": "Strumpf",
+          "options": [
+            "No",
+            "Sí, siempre",
+            "Solo tras S"
+          ],
+          "answer": "No",
+          "explanation": "Divide por morfemas o sílabas, no por cada letra.",
+          "audio": "teh",
+          "slow_audio": "teh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Acento léxico",
+          "target": "ARbeiten",
+          "options": [],
+          "answer": "",
+          "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
+          "audio": "err",
+          "slow_audio": "err",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Muchas palabras nativas acentúan la raíz o primera sílaba, con excepciones.",
+          "memory_hint": "Escucha palabras completas.",
+          "teaching_points": [
+            "Identifica la sílaba fuerte.",
+            "Reduce las no acentuadas.",
+            "No existe una regla única absoluta."
+          ]
+        },
+        {
+          "id": "german-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué conviene memorizar junto con una palabra?",
+          "target": "ARbeiten",
+          "options": [
+            "Su sílaba acentuada",
+            "Solo su primera letra",
+            "El nombre de cada letra"
+          ],
+          "answer": "Su sílaba acentuada",
+          "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
+          "audio": "err",
+          "slow_audio": "err",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "german-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra alemana?",
+          "target": "A · Name",
+          "options": [
+            "Con sus sonidos, no con nombres de letras",
+            "Deletreando siempre",
+            "Traduciéndola primero"
+          ],
+          "answer": "Con sus sonidos, no con nombres de letras",
+          "explanation": "El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.",
+          "audio": "ah",
+          "slow_audio": "ah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué comparten Ö y Ü?",
+          "target": "ö · ü",
+          "options": [
+            "Son vocales frontales con labios redondeados",
+            "Son consonantes",
+            "Siempre son mudas"
+          ],
+          "answer": "Son vocales frontales con labios redondeados",
+          "explanation": "No tienen equivalente exacto en español.",
+          "audio": "öh",
+          "slow_audio": "öh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿EI e IE se leen igual?",
+          "target": "ei · ie",
+          "options": [
+            "No, representan sonidos distintos",
+            "Sí",
+            "Solo en nombres"
+          ],
+          "answer": "No, representan sonidos distintos",
+          "explanation": "Confundirlas cambia muchas palabras.",
+          "audio": "ih",
+          "slow_audio": "ih",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele empezar SCH?",
+          "target": "Schule · Spiel · Straße",
+          "options": [
+            "Con un sonido parecido a sh",
+            "Como sk",
+            "Como s muda"
+          ],
+          "answer": "Con un sonido parecido a sh",
+          "explanation": "En otras posiciones SP y ST pueden conservar s.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena normalmente D al final?",
+          "target": "Tag · Hund",
+          "options": [
+            "Más cerca de t",
+            "Como d muy sonora",
+            "No suena"
+          ],
+          "answer": "Más cerca de t",
+          "explanation": "Este ensordecimiento es regular.",
+          "audio": "geh",
+          "slow_audio": "geh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué conviene memorizar junto con una palabra?",
+          "target": "ARbeiten",
+          "options": [
+            "Su sílaba acentuada",
+            "Solo su primera letra",
+            "El nombre de cada letra"
+          ],
+          "answer": "Su sílaba acentuada",
+          "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
+          "audio": "err",
+          "slow_audio": "err",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "german-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "german-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo lees una palabra alemana?",
+          "target": "A · Name",
+          "options": [
+            "Con sus sonidos, no con nombres de letras",
+            "Deletreando siempre",
+            "Traduciéndola primero"
+          ],
+          "answer": "Con sus sonidos, no con nombres de letras",
+          "explanation": "El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.",
+          "audio": "ah",
+          "slow_audio": "ah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué clase de palabras usa mayúscula en alemán?",
+          "target": "Haus · das Haus",
+          "options": [
+            "Los sustantivos",
+            "Solo los verbos",
+            "Todas las palabras"
+          ],
+          "answer": "Los sustantivos",
+          "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Debes leer Ä exactamente como A?",
+          "target": "ä",
+          "options": [
+            "No, es una vocal distinta",
+            "Sí",
+            "Es silenciosa"
+          ],
+          "answer": "No, es una vocal distinta",
+          "explanation": "El umlaut puede cambiar pronunciación y significado.",
+          "audio": "äh",
+          "slow_audio": "äh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué comparten Ö y Ü?",
+          "target": "ö · ü",
+          "options": [
+            "Son vocales frontales con labios redondeados",
+            "Son consonantes",
+            "Siempre son mudas"
+          ],
+          "answer": "Son vocales frontales con labios redondeados",
+          "explanation": "No tienen equivalente exacto en español.",
+          "audio": "öh",
+          "slow_audio": "öh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿EI e IE se leen igual?",
+          "target": "ei · ie",
+          "options": [
+            "No, representan sonidos distintos",
+            "Sí",
+            "Solo en nombres"
+          ],
+          "answer": "No, representan sonidos distintos",
+          "explanation": "Confundirlas cambia muchas palabras.",
+          "audio": "ih",
+          "slow_audio": "ih",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se comportan EU y ÄU?",
+          "target": "eu · äu",
+          "options": [
+            "Suelen compartir un diptongo parecido a oi",
+            "Se leen letra por letra",
+            "Son silenciosas"
+          ],
+          "answer": "Suelen compartir un diptongo parecido a oi",
+          "explanation": "ÄU aparece a menudo en palabras relacionadas con AU.",
+          "audio": "üh",
+          "slow_audio": "üh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿CH alemán tiene un único sonido?",
+          "target": "ich · Bach",
+          "options": [
+            "No, cambia según el contexto",
+            "Sí, siempre como ch española",
+            "No se pronuncia"
+          ],
+          "answer": "No, cambia según el contexto",
+          "explanation": "Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele empezar SCH?",
+          "target": "Schule · Spiel · Straße",
+          "options": [
+            "Con un sonido parecido a sh",
+            "Como sk",
+            "Como s muda"
+          ],
+          "answer": "Con un sonido parecido a sh",
+          "explanation": "En otras posiciones SP y ST pueden conservar s.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena normalmente D al final?",
+          "target": "Tag · Hund",
+          "options": [
+            "Más cerca de t",
+            "Como d muy sonora",
+            "No suena"
+          ],
+          "answer": "Más cerca de t",
+          "explanation": "Este ensordecimiento es regular.",
+          "audio": "geh",
+          "slow_audio": "geh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sonido representa ß?",
+          "target": "ß",
+          "options": [
+            "Una s sorda larga",
+            "Una b",
+            "Una vocal"
+          ],
+          "answer": "Una s sorda larga",
+          "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
+          "audio": "eszett",
+          "slow_audio": "eszett",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Debes añadir vocales entre consonantes alemanas?",
+          "target": "Strumpf",
+          "options": [
+            "No",
+            "Sí, siempre",
+            "Solo tras S"
+          ],
+          "answer": "No",
+          "explanation": "Divide por morfemas o sílabas, no por cada letra.",
+          "audio": "teh",
+          "slow_audio": "teh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "german-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Qué conviene memorizar junto con una palabra?",
+          "target": "ARbeiten",
+          "options": [
+            "Su sílaba acentuada",
+            "Solo su primera letra",
+            "El nombre de cada letra"
+          ],
+          "answer": "Su sílaba acentuada",
+          "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
+          "audio": "err",
+          "slow_audio": "err",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

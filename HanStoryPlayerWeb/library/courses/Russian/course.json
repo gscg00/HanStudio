@@ -3,7 +3,7 @@
   "title": "Ruso: de cero a conversaciones intermedias",
   "language": "Russian",
   "languageCode": "ru",
-  "version": 10,
+  "version": 11,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Domina el cirílico y las estructuras que abren la lectura.",
   "vocabularyGoal": 300,
@@ -15,6 +15,7 @@
       "title": "Fundamentos para empezar",
       "description": "Lectura, pronunciación y estructuras esenciales.",
       "unitIds": [
+        "reading-foundations",
         "reading",
         "survival",
         "essentials",
@@ -112,10 +113,21 @@
   ],
   "unlockRules": {
     "minimumScore": 85,
-    "masteryScore": 95
+    "masteryScore": 95,
+    "requireReadingMastery": true,
+    "readingUnitId": "reading-foundations"
   },
   "recommendedBooks": [],
   "units": [
+    {
+      "id": "reading-foundations",
+      "world": 0,
+      "mapLabel": "MUNDO 0",
+      "title": "Lectura inicial: el cirílico",
+      "description": "Reconoce letras cirílicas, falsas amigas, signos, acento y cambios de sonido antes de leer palabras.",
+      "icon": "Я",
+      "manifest": "units/reading-foundations.json"
+    },
     {
       "id": "reading",
       "world": 1,

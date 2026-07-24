@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el cirílico",
+  "description": "Reconoce letras cirílicas, falsas amigas, signos, acento y cambios de sonido antes de leer palabras.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "russian-reading-00-01",
+      "title": "Un alfabeto distinto",
+      "description": "Aprende cirílico como sistema sonoro, sin transliteración permanente.",
+      "activities": [
+        {
+          "id": "russian-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende cirílico como sistema sonoro, sin transliteración permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "Cirílico representa sonidos",
+          "target": "А · Б · В",
+          "options": [],
+          "answer": "",
+          "explanation": "La transliteración puede ayudar una vez, pero debe desaparecer pronto.",
+          "audio": "а",
+          "slow_audio": "а",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Cada símbolo es una letra, no un dibujo.",
+          "memory_hint": "Relaciona directamente letra y sonido.",
+          "teaching_points": [
+            "А se parece y suena como a.",
+            "Б representa b.",
+            "В representa v."
+          ]
+        },
+        {
+          "id": "russian-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes asociar directamente?",
+          "target": "А · Б · В",
+          "options": [
+            "La letra cirílica con su sonido",
+            "La letra solo con una latina",
+            "La palabra con una imagen sin sonido"
+          ],
+          "answer": "La letra cirílica con su sonido",
+          "explanation": "La transliteración puede ayudar una vez, pero debe desaparecer pronto.",
+          "audio": "а",
+          "slow_audio": "а",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Lee de izquierda a derecha",
+          "target": "мама",
+          "options": [],
+          "answer": "",
+          "explanation": "Aunque cambien las formas, la dirección coincide con el español.",
+          "audio": "эм",
+          "slow_audio": "эм",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El ruso se lee de izquierda a derecha.",
+          "memory_hint": "Segmenta en letras y sílabas.",
+          "teaching_points": [
+            "Identifica cada letra.",
+            "Forma la sílaba.",
+            "Une la palabra."
+          ]
+        },
+        {
+          "id": "russian-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿En qué dirección se lee ruso?",
+          "target": "мама",
+          "options": [
+            "De izquierda a derecha",
+            "De derecha a izquierda",
+            "De arriba abajo"
+          ],
+          "answer": "De izquierda a derecha",
+          "explanation": "Aunque cambien las formas, la dirección coincide con el español.",
+          "audio": "эм",
+          "slow_audio": "эм",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-02",
+      "title": "Falsas amigas visuales",
+      "description": "No leas letras por su parecido latino.",
+      "activities": [
+        {
+          "id": "russian-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "No leas letras por su parecido latino.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "В, Н y Р",
+          "target": "В = v · Н = n · Р = r",
+          "options": [],
+          "answer": "",
+          "explanation": "Estas tres letras causan errores muy frecuentes.",
+          "audio": "вэ",
+          "slow_audio": "вэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Su forma engaña a lectores del alfabeto latino.",
+          "memory_hint": "Aprende sonido, no apariencia.",
+          "teaching_points": [
+            "В no es B latina.",
+            "Н no es H latina.",
+            "Р no es P latina."
+          ]
+        },
+        {
+          "id": "russian-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena Р rusa?",
+          "target": "В = v · Н = n · Р = r",
+          "options": [
+            "Como r",
+            "Como p",
+            "Como b"
+          ],
+          "answer": "Como r",
+          "explanation": "Estas tres letras causan errores muy frecuentes.",
+          "audio": "вэ",
+          "slow_audio": "вэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "С, У y Х",
+          "target": "С = s · У = u · Х = j/kh",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconocerlas automáticamente es esencial para leer.",
+          "audio": "эс",
+          "slow_audio": "эс",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "También parecen letras latinas con otro valor.",
+          "memory_hint": "Detente y nombra el sonido ruso.",
+          "teaching_points": [
+            "С no es c/k.",
+            "У no es y.",
+            "Х no es x española."
+          ]
+        },
+        {
+          "id": "russian-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena С rusa?",
+          "target": "С = s · У = u · Х = j/kh",
+          "options": [
+            "Como s",
+            "Como k",
+            "Como u"
+          ],
+          "answer": "Como s",
+          "explanation": "Reconocerlas automáticamente es esencial para leer.",
+          "audio": "эс",
+          "slow_audio": "эс",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-03",
+      "title": "Vocales pares",
+      "description": "Algunas vocales también indican palatalización.",
+      "activities": [
+        {
+          "id": "russian-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Algunas vocales también indican palatalización.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "А/Я, О/Ё, У/Ю",
+          "target": "а я · о ё · у ю",
+          "options": [],
+          "answer": "",
+          "explanation": "Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.",
+          "audio": "я",
+          "slow_audio": "я",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Я, Ё y Ю pueden incluir un deslizamiento y suavizar la consonante previa.",
+          "memory_hint": "Aprende los pares.",
+          "teaching_points": [
+            "А ↔ Я.",
+            "О ↔ Ё.",
+            "У ↔ Ю."
+          ]
+        },
+        {
+          "id": "russian-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar Я, Ё y Ю tras consonante?",
+          "target": "а я · о ё · у ю",
+          "options": [
+            "Que la consonante se suaviza",
+            "Que la palabra termina",
+            "Que la vocal es muda"
+          ],
+          "answer": "Que la consonante se suaviza",
+          "explanation": "Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.",
+          "audio": "я",
+          "slow_audio": "я",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "Э/Е e Ы/И",
+          "target": "э е · ы и",
+          "options": [],
+          "answer": "",
+          "explanation": "Estos pares ayudan a anticipar la articulación de la consonante.",
+          "audio": "э",
+          "slow_audio": "э",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Е e И suelen acompañar consonantes suaves; Ы requiere un sonido propio.",
+          "memory_hint": "No conviertas Ы en i española.",
+          "teaching_points": [
+            "Э: vocal sin y inicial.",
+            "Е puede sonar ye o suavizar.",
+            "Ы es central/posterior."
+          ]
+        },
+        {
+          "id": "russian-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Ы suena exactamente como I española?",
+          "target": "э е · ы и",
+          "options": [
+            "No",
+            "Sí",
+            "No se pronuncia"
+          ],
+          "answer": "No",
+          "explanation": "Estos pares ayudan a anticipar la articulación de la consonante.",
+          "audio": "э",
+          "slow_audio": "э",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-04",
+      "title": "Consonantes suaves y duras",
+      "description": "La calidad de la consonante forma parte de la palabra.",
+      "activities": [
+        {
+          "id": "russian-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La calidad de la consonante forma parte de la palabra.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "Consonante suave",
+          "target": "нь · ть",
+          "options": [],
+          "answer": "",
+          "explanation": "La suavidad puede distinguir palabras.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La lengua se acerca al paladar al producir una consonante suave.",
+          "memory_hint": "No añadas una i completa después.",
+          "teaching_points": [
+            "Vocales suaves pueden indicarla.",
+            "Ь también puede indicarla.",
+            "Es una cualidad consonántica."
+          ]
+        },
+        {
+          "id": "russian-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes recordar sobre una consonante suave?",
+          "target": "нь · ть",
+          "options": [
+            "Que se palataliza",
+            "Que se pronuncia más bajo",
+            "Que desaparece"
+          ],
+          "answer": "Que se palataliza",
+          "explanation": "La suavidad puede distinguir palabras.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ж, Ш, Ц",
+          "target": "ж · ш · ц",
+          "options": [],
+          "answer": "",
+          "explanation": "La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Estas consonantes siguen patrones propios de dureza.",
+          "memory_hint": "Apréndelas como categorías especiales.",
+          "teaching_points": [
+            "Ж y Ш suelen ser duras.",
+            "Ц suele ser dura.",
+            "No todo depende de la vocal escrita."
+          ]
+        },
+        {
+          "id": "russian-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Todas las consonantes se suavizan de la misma manera?",
+          "target": "ж · ш · ц",
+          "options": [
+            "No",
+            "Sí",
+            "Solo las vocales cambian"
+          ],
+          "answer": "No",
+          "explanation": "La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-05",
+      "title": "Ь y Ъ",
+      "description": "Los signos no tienen sonido independiente.",
+      "activities": [
+        {
+          "id": "russian-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Los signos no tienen sonido independiente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "Signo blando Ь",
+          "target": "ь",
+          "options": [],
+          "answer": "",
+          "explanation": "Su función se entiende dentro de la palabra.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ь modifica la consonante anterior o separa sonidos.",
+          "memory_hint": "No intentes pronunciarlo solo.",
+          "teaching_points": [
+            "Puede indicar suavidad.",
+            "Puede separar consonante y vocal iotada.",
+            "No aporta una vocal propia."
+          ]
+        },
+        {
+          "id": "russian-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Tiene Ь un sonido independiente?",
+          "target": "ь",
+          "options": [
+            "No",
+            "Sí, una i",
+            "Sí, una b"
+          ],
+          "answer": "No",
+          "explanation": "Su función se entiende dentro de la palabra.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Signo duro Ъ",
+          "target": "ъ",
+          "options": [],
+          "answer": "",
+          "explanation": "Aparece en menos palabras que Ь.",
+          "audio": "твёрдый знак",
+          "slow_audio": "твёрдый знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ъ separa una consonante de una vocal iotada y mantiene su inicio y.",
+          "memory_hint": "Es una señal ortográfica, no un sonido.",
+          "teaching_points": [
+            "Marca separación.",
+            "No se pronuncia solo.",
+            "Conserva el deslizamiento de е/ё/ю/я."
+          ]
+        },
+        {
+          "id": "russian-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace Ъ?",
+          "target": "ъ",
+          "options": [
+            "Marca separación sin sonido propio",
+            "Suena como k",
+            "Suaviza siempre"
+          ],
+          "answer": "Marca separación sin sonido propio",
+          "explanation": "Aparece en menos palabras que Ь.",
+          "audio": "твёрдый знак",
+          "slow_audio": "твёрдый знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-06",
+      "title": "Acento y cambios sonoros",
+      "description": "La escritura no marca siempre el acento.",
+      "activities": [
+        {
+          "id": "russian-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La escritura no marca siempre el acento.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Acento impredecible",
+          "target": "замок",
+          "options": [],
+          "answer": "",
+          "explanation": "El acento puede cambiar significado y forma de las vocales.",
+          "audio": "о",
+          "slow_audio": "о",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La sílaba tónica debe aprenderse con cada palabra.",
+          "memory_hint": "Guarda palabra, audio y acento juntos.",
+          "teaching_points": [
+            "Una sílaba es fuerte.",
+            "Las vocales átonas se reducen.",
+            "Los textos normales no escriben el acento."
+          ]
+        },
+        {
+          "id": "russian-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes memorizar con una palabra rusa?",
+          "target": "замок",
+          "options": [
+            "Su acento",
+            "Solo la primera letra",
+            "Una transliteración"
+          ],
+          "answer": "Su acento",
+          "explanation": "El acento puede cambiar significado y forma de las vocales.",
+          "audio": "о",
+          "slow_audio": "о",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ensordecimiento final",
+          "target": "д/т · б/п · г/к",
+          "options": [],
+          "answer": "",
+          "explanation": "También hay asimilación entre consonantes vecinas.",
+          "audio": "дэ",
+          "slow_audio": "дэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Consonantes sonoras al final suelen hacerse sordas.",
+          "memory_hint": "La escritura conserva la consonante original.",
+          "teaching_points": [
+            "д final se acerca a т.",
+            "б final se acerca a п.",
+            "г final se acerca a к."
+          ]
+        },
+        {
+          "id": "russian-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿La consonante escrita final siempre conserva su sonoridad?",
+          "target": "д/т · б/п · г/к",
+          "options": [
+            "No",
+            "Sí",
+            "Nunca se pronuncia"
+          ],
+          "answer": "No",
+          "explanation": "También hay asimilación entre consonantes vecinas.",
+          "audio": "дэ",
+          "slow_audio": "дэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "russian-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes asociar directamente?",
+          "target": "А · Б · В",
+          "options": [
+            "La letra cirílica con su sonido",
+            "La letra solo con una latina",
+            "La palabra con una imagen sin sonido"
+          ],
+          "answer": "La letra cirílica con su sonido",
+          "explanation": "La transliteración puede ayudar una vez, pero debe desaparecer pronto.",
+          "audio": "а",
+          "slow_audio": "а",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena С rusa?",
+          "target": "С = s · У = u · Х = j/kh",
+          "options": [
+            "Como s",
+            "Como k",
+            "Como u"
+          ],
+          "answer": "Como s",
+          "explanation": "Reconocerlas automáticamente es esencial para leer.",
+          "audio": "эс",
+          "slow_audio": "эс",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar Я, Ё y Ю tras consonante?",
+          "target": "а я · о ё · у ю",
+          "options": [
+            "Que la consonante se suaviza",
+            "Que la palabra termina",
+            "Que la vocal es muda"
+          ],
+          "answer": "Que la consonante se suaviza",
+          "explanation": "Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.",
+          "audio": "я",
+          "slow_audio": "я",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Todas las consonantes se suavizan de la misma manera?",
+          "target": "ж · ш · ц",
+          "options": [
+            "No",
+            "Sí",
+            "Solo las vocales cambian"
+          ],
+          "answer": "No",
+          "explanation": "La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Tiene Ь un sonido independiente?",
+          "target": "ь",
+          "options": [
+            "No",
+            "Sí, una i",
+            "Sí, una b"
+          ],
+          "answer": "No",
+          "explanation": "Su función se entiende dentro de la palabra.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿La consonante escrita final siempre conserva su sonoridad?",
+          "target": "д/т · б/п · г/к",
+          "options": [
+            "No",
+            "Sí",
+            "Nunca se pronuncia"
+          ],
+          "answer": "No",
+          "explanation": "También hay asimilación entre consonantes vecinas.",
+          "audio": "дэ",
+          "slow_audio": "дэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "russian-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "russian-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes asociar directamente?",
+          "target": "А · Б · В",
+          "options": [
+            "La letra cirílica con su sonido",
+            "La letra solo con una latina",
+            "La palabra con una imagen sin sonido"
+          ],
+          "answer": "La letra cirílica con su sonido",
+          "explanation": "La transliteración puede ayudar una vez, pero debe desaparecer pronto.",
+          "audio": "а",
+          "slow_audio": "а",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿En qué dirección se lee ruso?",
+          "target": "мама",
+          "options": [
+            "De izquierda a derecha",
+            "De derecha a izquierda",
+            "De arriba abajo"
+          ],
+          "answer": "De izquierda a derecha",
+          "explanation": "Aunque cambien las formas, la dirección coincide con el español.",
+          "audio": "эм",
+          "slow_audio": "эм",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena Р rusa?",
+          "target": "В = v · Н = n · Р = r",
+          "options": [
+            "Como r",
+            "Como p",
+            "Como b"
+          ],
+          "answer": "Como r",
+          "explanation": "Estas tres letras causan errores muy frecuentes.",
+          "audio": "вэ",
+          "slow_audio": "вэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suena С rusa?",
+          "target": "С = s · У = u · Х = j/kh",
+          "options": [
+            "Como s",
+            "Como k",
+            "Como u"
+          ],
+          "answer": "Como s",
+          "explanation": "Reconocerlas automáticamente es esencial para leer.",
+          "audio": "эс",
+          "slow_audio": "эс",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar Я, Ё y Ю tras consonante?",
+          "target": "а я · о ё · у ю",
+          "options": [
+            "Que la consonante se suaviza",
+            "Que la palabra termina",
+            "Que la vocal es muda"
+          ],
+          "answer": "Que la consonante se suaviza",
+          "explanation": "Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.",
+          "audio": "я",
+          "slow_audio": "я",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Ы suena exactamente como I española?",
+          "target": "э е · ы и",
+          "options": [
+            "No",
+            "Sí",
+            "No se pronuncia"
+          ],
+          "answer": "No",
+          "explanation": "Estos pares ayudan a anticipar la articulación de la consonante.",
+          "audio": "э",
+          "slow_audio": "э",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes recordar sobre una consonante suave?",
+          "target": "нь · ть",
+          "options": [
+            "Que se palataliza",
+            "Que se pronuncia más bajo",
+            "Que desaparece"
+          ],
+          "answer": "Que se palataliza",
+          "explanation": "La suavidad puede distinguir palabras.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Todas las consonantes se suavizan de la misma manera?",
+          "target": "ж · ш · ц",
+          "options": [
+            "No",
+            "Sí",
+            "Solo las vocales cambian"
+          ],
+          "answer": "No",
+          "explanation": "La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Tiene Ь un sonido independiente?",
+          "target": "ь",
+          "options": [
+            "No",
+            "Sí, una i",
+            "Sí, una b"
+          ],
+          "answer": "No",
+          "explanation": "Su función se entiende dentro de la palabra.",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace Ъ?",
+          "target": "ъ",
+          "options": [
+            "Marca separación sin sonido propio",
+            "Suena como k",
+            "Suaviza siempre"
+          ],
+          "answer": "Marca separación sin sonido propio",
+          "explanation": "Aparece en menos palabras que Ь.",
+          "audio": "твёрдый знак",
+          "slow_audio": "твёрдый знак",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes memorizar con una palabra rusa?",
+          "target": "замок",
+          "options": [
+            "Su acento",
+            "Solo la primera letra",
+            "Una transliteración"
+          ],
+          "answer": "Su acento",
+          "explanation": "El acento puede cambiar significado y forma de las vocales.",
+          "audio": "о",
+          "slow_audio": "о",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "russian-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿La consonante escrita final siempre conserva su sonoridad?",
+          "target": "д/т · б/п · г/к",
+          "options": [
+            "No",
+            "Sí",
+            "Nunca se pronuncia"
+          ],
+          "answer": "No",
+          "explanation": "También hay asimilación entre consonantes vecinas.",
+          "audio": "дэ",
+          "slow_audio": "дэ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

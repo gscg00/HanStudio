@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el portugués",
+  "description": "Domina vocales, nasalización, dígrafos y variación consonántica antes de leer textos.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "portuguese-reading-00-01",
+      "title": "Letras y vocales",
+      "description": "Comprende que la escritura es regular, pero las vocales varían.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Comprende que la escritura es regular, pero las vocales varían.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "Vocales abiertas y cerradas",
+          "target": "é/ê · ó/ô",
+          "options": [],
+          "answer": "",
+          "explanation": "La variedad regional también influye.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Los acentos pueden distinguir apertura vocálica.",
+          "memory_hint": "No trates cada E u O como un único sonido.",
+          "teaching_points": [
+            "é/ó suelen ser abiertas.",
+            "ê/ô suelen ser cerradas.",
+            "El acento ayuda a leer."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar é/ê y ó/ô?",
+          "target": "é/ê · ó/ô",
+          "options": [
+            "Diferencias de apertura vocálica",
+            "Que son mudas",
+            "Consonantes dobles"
+          ],
+          "answer": "Diferencias de apertura vocálica",
+          "explanation": "La variedad regional también influye.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Vocales no acentuadas",
+          "target": "e · o finales",
+          "options": [],
+          "answer": "",
+          "explanation": "No existe una única pronunciación idéntica en todo el mundo lusófono.",
+          "audio": "ó",
+          "slow_audio": "ó",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "En muchas variedades, e y o finales se elevan y no suenan como en español.",
+          "memory_hint": "Escucha el modelo de la variedad elegida.",
+          "teaching_points": [
+            "e final puede acercarse a i.",
+            "o final puede acercarse a u.",
+            "La región modifica detalles."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Debes leer siempre E y O como en español?",
+          "target": "e · o finales",
+          "options": [
+            "No, su sonido depende de posición y variedad",
+            "Sí",
+            "Nunca se pronuncian"
+          ],
+          "answer": "No, su sonido depende de posición y variedad",
+          "explanation": "No existe una única pronunciación idéntica en todo el mundo lusófono.",
+          "audio": "ó",
+          "slow_audio": "ó",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-02",
+      "title": "Nasalización",
+      "description": "Reconoce vocales nasales y la tilde.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce vocales nasales y la tilde.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Ã y Õ",
+          "target": "ã · õ",
+          "options": [],
+          "answer": "",
+          "explanation": "La nasalidad pertenece a la vocal.",
+          "audio": "eme",
+          "slow_audio": "eme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La tilde indica una vocal nasal.",
+          "memory_hint": "Deja pasar aire por la nariz sin añadir n fuerte.",
+          "teaching_points": [
+            "ã es nasal.",
+            "õ es nasal.",
+            "No son a/o españolas seguidas de n."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica la tilde en Ã u Õ?",
+          "target": "ã · õ",
+          "options": [
+            "Que la vocal es nasal",
+            "Que es más fuerte",
+            "Que no se pronuncia"
+          ],
+          "answer": "Que la vocal es nasal",
+          "explanation": "La nasalidad pertenece a la vocal.",
+          "audio": "eme",
+          "slow_audio": "eme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "M y N tras vocal",
+          "target": "am · em · om",
+          "options": [],
+          "answer": "",
+          "explanation": "Compara la posición dentro de la sílaba.",
+          "audio": "ene",
+          "slow_audio": "ene",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Al final de sílaba, m/n suelen nasalizar la vocal.",
+          "memory_hint": "No cierres siempre con una consonante española completa.",
+          "teaching_points": [
+            "bem contiene vocal nasal.",
+            "bom contiene vocal nasal.",
+            "La consonante puede no oírse separada."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden hacer M o N después de una vocal?",
+          "target": "am · em · om",
+          "options": [
+            "Nasalizarla",
+            "Volverla muda",
+            "Duplicarla"
+          ],
+          "answer": "Nasalizarla",
+          "explanation": "Compara la posición dentro de la sílaba.",
+          "audio": "ene",
+          "slow_audio": "ene",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-03",
+      "title": "Dígrafos",
+      "description": "Dos letras pueden representar un sonido.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Dos letras pueden representar un sonido.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "NH y LH",
+          "target": "nh · lh",
+          "options": [],
+          "answer": "",
+          "explanation": "No se leen como letras independientes.",
+          "audio": "ele",
+          "slow_audio": "ele",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "NH se acerca a ñ; LH es una lateral palatal.",
+          "memory_hint": "Aprende el grupo completo.",
+          "teaching_points": [
+            "ninho contiene nh.",
+            "filho contiene lh.",
+            "Cada grupo representa una unidad."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo debes tratar NH o LH?",
+          "target": "nh · lh",
+          "options": [
+            "Como grupos sonoros, no letras separadas",
+            "Como dos sílabas",
+            "Ignorando la H"
+          ],
+          "answer": "Como grupos sonoros, no letras separadas",
+          "explanation": "No se leen como letras independientes.",
+          "audio": "ele",
+          "slow_audio": "ele",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "CH",
+          "target": "ch",
+          "options": [],
+          "answer": "",
+          "explanation": "Es un dígrafo frecuente en palabras comunes.",
+          "audio": "cê",
+          "slow_audio": "cê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "CH suele sonar parecido a sh.",
+          "memory_hint": "No uses automáticamente la ch española.",
+          "teaching_points": [
+            "chave empieza con sonido sh.",
+            "Las dos letras forman una unidad.",
+            "Escucha la variedad objetivo."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar CH portugués?",
+          "target": "ch",
+          "options": [
+            "Parecido a sh",
+            "Como k",
+            "Como rr"
+          ],
+          "answer": "Parecido a sh",
+          "explanation": "Es un dígrafo frecuente en palabras comunes.",
+          "audio": "cê",
+          "slow_audio": "cê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-04",
+      "title": "R, RR y S",
+      "description": "La posición cambia la realización.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La posición cambia la realización.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "R inicial y RR",
+          "target": "rua · carro",
+          "options": [],
+          "answer": "",
+          "explanation": "Una sola r entre vocales suele ser más suave.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "R inicial y RR suelen tener un sonido fuerte, variable por región.",
+          "memory_hint": "Distingue caro de carro.",
+          "teaching_points": [
+            "r inicial: fuerte.",
+            "rr: fuerte.",
+            "r intervocálica: suave."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿CARO y CARRO tienen la misma R?",
+          "target": "rua · carro",
+          "options": [
+            "No",
+            "Sí",
+            "La R es muda"
+          ],
+          "answer": "No",
+          "explanation": "Una sola r entre vocales suele ser más suave.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "S entre vocales",
+          "target": "casa",
+          "options": [],
+          "answer": "",
+          "explanation": "La posición explica casa frente a massa.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "S entre vocales suele sonar z; SS conserva s sorda.",
+          "memory_hint": "Mira las letras vecinas.",
+          "teaching_points": [
+            "s intervocálica: frecuente sonido z.",
+            "ss: s sorda.",
+            "s final varía por región."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar S entre vocales?",
+          "target": "casa",
+          "options": [
+            "Como z",
+            "Siempre como sh",
+            "No suena"
+          ],
+          "answer": "Como z",
+          "explanation": "La posición explica casa frente a massa.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-05",
+      "title": "C, G y X",
+      "description": "Aprende patrones contextuales y palabras especiales.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende patrones contextuales y palabras especiales.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "C y G ante E/I",
+          "target": "ce/ci · ge/gi",
+          "options": [],
+          "answer": "",
+          "explanation": "Ante a/o/u conservan sonidos más duros.",
+          "audio": "gê",
+          "slow_audio": "gê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "C suele sonar s y G suele sonar zh ante e/i.",
+          "memory_hint": "Mira la vocal siguiente.",
+          "teaching_points": [
+            "ce/ci: s.",
+            "ge/gi: sonido semejante a zh.",
+            "ca/co/cu y ga/go/gu: duros."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué determina el sonido de C o G?",
+          "target": "ce/ci · ge/gi",
+          "options": [
+            "La vocal siguiente",
+            "La longitud de la palabra",
+            "El artículo"
+          ],
+          "answer": "La vocal siguiente",
+          "explanation": "Ante a/o/u conservan sonidos más duros.",
+          "audio": "gê",
+          "slow_audio": "gê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "X tiene varios sonidos",
+          "target": "x",
+          "options": [],
+          "answer": "",
+          "explanation": "No existe una sola regla que cubra todos los casos.",
+          "audio": "xis",
+          "slow_audio": "xis",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "X puede sonar sh, s, z o ks según la palabra.",
+          "memory_hint": "Aprende su sonido junto con cada palabra.",
+          "teaching_points": [
+            "xícara empieza con sh.",
+            "táxi contiene ks.",
+            "exame puede contener z."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Debes asumir un solo sonido para X?",
+          "target": "x",
+          "options": [
+            "No, se aprende según la palabra",
+            "Sí, siempre ks",
+            "X es muda"
+          ],
+          "answer": "No, se aprende según la palabra",
+          "explanation": "No existe una sola regla que cubra todos los casos.",
+          "audio": "xis",
+          "slow_audio": "xis",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-06",
+      "title": "Acento y ritmo",
+      "description": "Usa marcas gráficas y termina de unir sílabas.",
+      "activities": [
+        {
+          "id": "portuguese-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Usa marcas gráficas y termina de unir sílabas.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Sílaba tónica",
+          "target": "palavra",
+          "options": [],
+          "answer": "",
+          "explanation": "Agudo, circunflejo y tilde aportan información distinta.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Las palabras siguen patrones de acento y los signos marcan excepciones.",
+          "memory_hint": "Identifica la sílaba fuerte antes de leer fluido.",
+          "teaching_points": [
+            "Marca una sílaba principal.",
+            "No acentúes todas igual.",
+            "Respeta los signos."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué guía el ritmo de una palabra?",
+          "target": "palavra",
+          "options": [
+            "Su sílaba tónica",
+            "El nombre de la primera letra",
+            "La traducción"
+          ],
+          "answer": "Su sílaba tónica",
+          "explanation": "Agudo, circunflejo y tilde aportan información distinta.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Variedades legítimas",
+          "target": "Brasil · Portugal",
+          "options": [],
+          "answer": "",
+          "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La pronunciación brasileña y europea difiere en varios detalles.",
+          "memory_hint": "Mantén una voz coherente por curso.",
+          "teaching_points": [
+            "Vocales no acentuadas cambian.",
+            "R y S varían.",
+            "La comprensión mejora con exposición."
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Existe una única pronunciación mundial del portugués?",
+          "target": "Brasil · Portugal",
+          "options": [
+            "No, hay variedades legítimas",
+            "Sí",
+            "Solo cambia la ortografía"
+          ],
+          "answer": "No, hay variedades legítimas",
+          "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "portuguese-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar é/ê y ó/ô?",
+          "target": "é/ê · ó/ô",
+          "options": [
+            "Diferencias de apertura vocálica",
+            "Que son mudas",
+            "Consonantes dobles"
+          ],
+          "answer": "Diferencias de apertura vocálica",
+          "explanation": "La variedad regional también influye.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden hacer M o N después de una vocal?",
+          "target": "am · em · om",
+          "options": [
+            "Nasalizarla",
+            "Volverla muda",
+            "Duplicarla"
+          ],
+          "answer": "Nasalizarla",
+          "explanation": "Compara la posición dentro de la sílaba.",
+          "audio": "ene",
+          "slow_audio": "ene",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo debes tratar NH o LH?",
+          "target": "nh · lh",
+          "options": [
+            "Como grupos sonoros, no letras separadas",
+            "Como dos sílabas",
+            "Ignorando la H"
+          ],
+          "answer": "Como grupos sonoros, no letras separadas",
+          "explanation": "No se leen como letras independientes.",
+          "audio": "ele",
+          "slow_audio": "ele",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar S entre vocales?",
+          "target": "casa",
+          "options": [
+            "Como z",
+            "Siempre como sh",
+            "No suena"
+          ],
+          "answer": "Como z",
+          "explanation": "La posición explica casa frente a massa.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué determina el sonido de C o G?",
+          "target": "ce/ci · ge/gi",
+          "options": [
+            "La vocal siguiente",
+            "La longitud de la palabra",
+            "El artículo"
+          ],
+          "answer": "La vocal siguiente",
+          "explanation": "Ante a/o/u conservan sonidos más duros.",
+          "audio": "gê",
+          "slow_audio": "gê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Existe una única pronunciación mundial del portugués?",
+          "target": "Brasil · Portugal",
+          "options": [
+            "No, hay variedades legítimas",
+            "Sí",
+            "Solo cambia la ortografía"
+          ],
+          "answer": "No, hay variedades legítimas",
+          "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "portuguese-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "portuguese-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden indicar é/ê y ó/ô?",
+          "target": "é/ê · ó/ô",
+          "options": [
+            "Diferencias de apertura vocálica",
+            "Que son mudas",
+            "Consonantes dobles"
+          ],
+          "answer": "Diferencias de apertura vocálica",
+          "explanation": "La variedad regional también influye.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Debes leer siempre E y O como en español?",
+          "target": "e · o finales",
+          "options": [
+            "No, su sonido depende de posición y variedad",
+            "Sí",
+            "Nunca se pronuncian"
+          ],
+          "answer": "No, su sonido depende de posición y variedad",
+          "explanation": "No existe una única pronunciación idéntica en todo el mundo lusófono.",
+          "audio": "ó",
+          "slow_audio": "ó",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica la tilde en Ã u Õ?",
+          "target": "ã · õ",
+          "options": [
+            "Que la vocal es nasal",
+            "Que es más fuerte",
+            "Que no se pronuncia"
+          ],
+          "answer": "Que la vocal es nasal",
+          "explanation": "La nasalidad pertenece a la vocal.",
+          "audio": "eme",
+          "slow_audio": "eme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué pueden hacer M o N después de una vocal?",
+          "target": "am · em · om",
+          "options": [
+            "Nasalizarla",
+            "Volverla muda",
+            "Duplicarla"
+          ],
+          "answer": "Nasalizarla",
+          "explanation": "Compara la posición dentro de la sílaba.",
+          "audio": "ene",
+          "slow_audio": "ene",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo debes tratar NH o LH?",
+          "target": "nh · lh",
+          "options": [
+            "Como grupos sonoros, no letras separadas",
+            "Como dos sílabas",
+            "Ignorando la H"
+          ],
+          "answer": "Como grupos sonoros, no letras separadas",
+          "explanation": "No se leen como letras independientes.",
+          "audio": "ele",
+          "slow_audio": "ele",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar CH portugués?",
+          "target": "ch",
+          "options": [
+            "Parecido a sh",
+            "Como k",
+            "Como rr"
+          ],
+          "answer": "Parecido a sh",
+          "explanation": "Es un dígrafo frecuente en palabras comunes.",
+          "audio": "cê",
+          "slow_audio": "cê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿CARO y CARRO tienen la misma R?",
+          "target": "rua · carro",
+          "options": [
+            "No",
+            "Sí",
+            "La R es muda"
+          ],
+          "answer": "No",
+          "explanation": "Una sola r entre vocales suele ser más suave.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar S entre vocales?",
+          "target": "casa",
+          "options": [
+            "Como z",
+            "Siempre como sh",
+            "No suena"
+          ],
+          "answer": "Como z",
+          "explanation": "La posición explica casa frente a massa.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Qué determina el sonido de C o G?",
+          "target": "ce/ci · ge/gi",
+          "options": [
+            "La vocal siguiente",
+            "La longitud de la palabra",
+            "El artículo"
+          ],
+          "answer": "La vocal siguiente",
+          "explanation": "Ante a/o/u conservan sonidos más duros.",
+          "audio": "gê",
+          "slow_audio": "gê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Debes asumir un solo sonido para X?",
+          "target": "x",
+          "options": [
+            "No, se aprende según la palabra",
+            "Sí, siempre ks",
+            "X es muda"
+          ],
+          "answer": "No, se aprende según la palabra",
+          "explanation": "No existe una sola regla que cubra todos los casos.",
+          "audio": "xis",
+          "slow_audio": "xis",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Qué guía el ritmo de una palabra?",
+          "target": "palavra",
+          "options": [
+            "Su sílaba tónica",
+            "El nombre de la primera letra",
+            "La traducción"
+          ],
+          "answer": "Su sílaba tónica",
+          "explanation": "Agudo, circunflejo y tilde aportan información distinta.",
+          "audio": "é",
+          "slow_audio": "é",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "portuguese-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Existe una única pronunciación mundial del portugués?",
+          "target": "Brasil · Portugal",
+          "options": [
+            "No, hay variedades legítimas",
+            "Sí",
+            "Solo cambia la ortografía"
+          ],
+          "answer": "No, hay variedades legítimas",
+          "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

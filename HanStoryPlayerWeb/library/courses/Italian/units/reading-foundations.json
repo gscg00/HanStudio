@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se lee el italiano",
+  "description": "Aprovecha su ortografía regular y domina C, G, H, grupos especiales, dobles y acento.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "italian-reading-00-01",
+      "title": "Vocales y lectura directa",
+      "description": "El italiano se lee de forma bastante regular.",
+      "activities": [
+        {
+          "id": "italian-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "El italiano se lee de forma bastante regular.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "Cinco letras vocálicas",
+          "target": "a · e · i · o · u",
+          "options": [],
+          "answer": "",
+          "explanation": "E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Las vocales se mantienen claras y no suelen reducirse tanto como en inglés.",
+          "memory_hint": "Pronuncia cada núcleo vocálico.",
+          "teaching_points": [
+            "No borres vocales finales.",
+            "Mantén sonidos definidos.",
+            "Escucha la apertura de e/o."
+          ]
+        },
+        {
+          "id": "italian-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer con las vocales italianas?",
+          "target": "a · e · i · o · u",
+          "options": [
+            "Pronunciarlas con claridad",
+            "Reducirlas todas",
+            "Omitir las finales"
+          ],
+          "answer": "Pronunciarlas con claridad",
+          "explanation": "E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Una letra, un patrón",
+          "target": "casa",
+          "options": [],
+          "answer": "",
+          "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La mayoría de las palabras permite predecir la pronunciación con reglas estables.",
+          "memory_hint": "Aprende las excepciones junto a cada palabra.",
+          "teaching_points": [
+            "Segmenta en sílabas.",
+            "Aplica grupos conocidos.",
+            "Une con ritmo."
+          ]
+        },
+        {
+          "id": "italian-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Es relativamente regular la ortografía italiana?",
+          "target": "casa",
+          "options": [
+            "Sí, aunque tiene reglas y excepciones",
+            "No, es impredecible",
+            "Solo en nombres"
+          ],
+          "answer": "Sí, aunque tiene reglas y excepciones",
+          "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-02",
+      "title": "C y G",
+      "description": "La vocal siguiente decide sonidos duros o suaves.",
+      "activities": [
+        {
+          "id": "italian-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La vocal siguiente decide sonidos duros o suaves.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "C dura y suave",
+          "target": "ca/co/cu · ce/ci",
+          "options": [],
+          "answer": "",
+          "explanation": "Esta regla explica casa frente a cena.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "C ante a, o, u suena k; ante e, i suena ch.",
+          "memory_hint": "Mira siempre la vocal siguiente.",
+          "teaching_points": [
+            "ca/co/cu: sonido k.",
+            "ce/ci: sonido ch.",
+            "El contexto decide."
+          ]
+        },
+        {
+          "id": "italian-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar C ante E o I?",
+          "target": "ca/co/cu · ce/ci",
+          "options": [
+            "Como ch",
+            "Como k",
+            "No suena"
+          ],
+          "answer": "Como ch",
+          "explanation": "Esta regla explica casa frente a cena.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "G dura y suave",
+          "target": "ga/go/gu · ge/gi",
+          "options": [],
+          "answer": "",
+          "explanation": "Compara gatto y gelato.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "G ante a, o, u es dura; ante e, i suena parecido a y/dj.",
+          "memory_hint": "Mira la vocal siguiente.",
+          "teaching_points": [
+            "ga/go/gu: g dura.",
+            "ge/gi: sonido suave.",
+            "La regla es paralela a C."
+          ]
+        },
+        {
+          "id": "italian-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar G ante E o I?",
+          "target": "ga/go/gu · ge/gi",
+          "options": [
+            "Con un sonido suave parecido a y/dj",
+            "Como k",
+            "Siempre muda"
+          ],
+          "answer": "Con un sonido suave parecido a y/dj",
+          "explanation": "Compara gatto y gelato.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-03",
+      "title": "H que cambia el grupo",
+      "description": "CH y GH conservan el sonido duro.",
+      "activities": [
+        {
+          "id": "italian-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "CH y GH conservan el sonido duro.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "CHE y CHI",
+          "target": "che · chi",
+          "options": [],
+          "answer": "",
+          "explanation": "Compara ce con che y ci con chi.",
+          "audio": "acca",
+          "slow_audio": "acca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "H evita que C se suavice ante e/i.",
+          "memory_hint": "CH se lee k, no ch española.",
+          "teaching_points": [
+            "che: ke.",
+            "chi: ki.",
+            "H no aporta un sonido separado."
+          ]
+        },
+        {
+          "id": "italian-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace H en CHE o CHI?",
+          "target": "che · chi",
+          "options": [
+            "Mantiene el sonido duro k",
+            "Convierte C en s",
+            "Forma una vocal"
+          ],
+          "answer": "Mantiene el sonido duro k",
+          "explanation": "Compara ce con che y ci con chi.",
+          "audio": "acca",
+          "slow_audio": "acca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "GHE y GHI",
+          "target": "ghe · ghi",
+          "options": [],
+          "answer": "",
+          "explanation": "Compara gelato con spaghetti.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "H mantiene la G dura ante e/i.",
+          "memory_hint": "No pronuncies H por separado.",
+          "teaching_points": [
+            "ghe: ge dura.",
+            "ghi: gi dura.",
+            "H funciona como señal ortográfica."
+          ]
+        },
+        {
+          "id": "italian-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace H en GHE o GHI?",
+          "target": "ghe · ghi",
+          "options": [
+            "Mantiene la G dura",
+            "Vuelve muda la palabra",
+            "Duplica la vocal"
+          ],
+          "answer": "Mantiene la G dura",
+          "explanation": "Compara gelato con spaghetti.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-04",
+      "title": "GN, GLI y SC",
+      "description": "Reconoce grupos que representan sonidos propios.",
+      "activities": [
+        {
+          "id": "italian-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce grupos que representan sonidos propios.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "GN",
+          "target": "gn: bagno",
+          "options": [],
+          "answer": "",
+          "explanation": "No produzcas g seguida de n.",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "GN se acerca a la ñ española.",
+          "memory_hint": "Lee las dos letras como una unidad.",
+          "teaching_points": [
+            "bagno contiene sonido parecido a ñ.",
+            "El grupo permanece unido.",
+            "Practica dentro de palabras."
+          ]
+        },
+        {
+          "id": "italian-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee normalmente GN?",
+          "target": "gn: bagno",
+          "options": [
+            "Como un sonido parecido a ñ",
+            "Como g + n separadas",
+            "Como ch"
+          ],
+          "answer": "Como un sonido parecido a ñ",
+          "explanation": "No produzcas g seguida de n.",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "GLI y SCI",
+          "target": "gli · sci",
+          "options": [],
+          "answer": "",
+          "explanation": "Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "GLI tiene un sonido palatal; SCI ante e/i se aproxima a sh.",
+          "memory_hint": "Aprende cada grupo como unidad.",
+          "teaching_points": [
+            "famiglia contiene gli.",
+            "scena contiene sonido sh.",
+            "La vocal siguiente importa."
+          ]
+        },
+        {
+          "id": "italian-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar GLI letra por letra?",
+          "target": "gli · sci",
+          "options": [
+            "No, funciona como grupo",
+            "Sí, siempre",
+            "Solo la G es muda"
+          ],
+          "answer": "No, funciona como grupo",
+          "explanation": "Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-05",
+      "title": "Consonantes dobles",
+      "description": "La duración consonántica puede cambiar significado.",
+      "activities": [
+        {
+          "id": "italian-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La duración consonántica puede cambiar significado.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "Una o dos consonantes",
+          "target": "pala · palla",
+          "options": [],
+          "answer": "",
+          "explanation": "No es solo una diferencia ortográfica.",
+          "audio": "pi",
+          "slow_audio": "pi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La consonante doble se mantiene más tiempo y corta la transición.",
+          "memory_hint": "Haz una breve retención antes de liberar.",
+          "teaching_points": [
+            "pala y palla contrastan.",
+            "La vocal anterior puede sentirse más corta.",
+            "Escucha pares mínimos."
+          ]
+        },
+        {
+          "id": "italian-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Las consonantes dobles cambian la pronunciación?",
+          "target": "pala · palla",
+          "options": [
+            "Sí, se sostienen más tiempo",
+            "No",
+            "Solo en canto"
+          ],
+          "answer": "Sí, se sostienen más tiempo",
+          "explanation": "No es solo una diferencia ortográfica.",
+          "audio": "pi",
+          "slow_audio": "pi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ritmo silábico",
+          "target": "italiano",
+          "options": [],
+          "answer": "",
+          "explanation": "El ritmo italiano es más silábico que el inglés.",
+          "audio": "ti",
+          "slow_audio": "ti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Cada sílaba conserva claridad y las dobles afectan el ritmo.",
+          "memory_hint": "No borres vocales no acentuadas.",
+          "teaching_points": [
+            "Cuenta sílabas.",
+            "Mantén vocales claras.",
+            "Marca la consonante doble."
+          ]
+        },
+        {
+          "id": "italian-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Debes eliminar las vocales no acentuadas?",
+          "target": "italiano",
+          "options": [
+            "No, suelen conservarse claras",
+            "Sí, todas",
+            "Solo las finales"
+          ],
+          "answer": "No, suelen conservarse claras",
+          "explanation": "El ritmo italiano es más silábico que el inglés.",
+          "audio": "ti",
+          "slow_audio": "ti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-06",
+      "title": "Acento y apóstrofo",
+      "description": "Reconoce la sílaba fuerte y las elisiones.",
+      "activities": [
+        {
+          "id": "italian-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Reconoce la sílaba fuerte y las elisiones.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Acento léxico",
+          "target": "parola",
+          "options": [],
+          "answer": "",
+          "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Muchas palabras acentúan la penúltima sílaba, pero no todas.",
+          "memory_hint": "Aprende el acento junto con la palabra.",
+          "teaching_points": [
+            "città lleva acento escrito.",
+            "La sílaba fuerte guía el ritmo.",
+            "Hay patrones y excepciones."
+          ]
+        },
+        {
+          "id": "italian-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes memorizar junto con una palabra italiana?",
+          "target": "parola",
+          "options": [
+            "Su sílaba acentuada",
+            "Solo su traducción",
+            "El nombre de cada letra"
+          ],
+          "answer": "Su sílaba acentuada",
+          "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Apóstrofo",
+          "target": "l’acqua",
+          "options": [],
+          "answer": "",
+          "explanation": "No hagas una pausa larga en el apóstrofo.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El apóstrofo marca que se ha omitido una vocal.",
+          "memory_hint": "Une las partes al leer.",
+          "teaching_points": [
+            "la + acqua → l’acqua.",
+            "La elisión evita choque vocálico.",
+            "Se lee como una unidad fluida."
+          ]
+        },
+        {
+          "id": "italian-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica normalmente el apóstrofo?",
+          "target": "l’acqua",
+          "options": [
+            "Una vocal omitida y unión fluida",
+            "Una pregunta",
+            "Una consonante doble"
+          ],
+          "answer": "Una vocal omitida y unión fluida",
+          "explanation": "No hagas una pausa larga en el apóstrofo.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "italian-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer con las vocales italianas?",
+          "target": "a · e · i · o · u",
+          "options": [
+            "Pronunciarlas con claridad",
+            "Reducirlas todas",
+            "Omitir las finales"
+          ],
+          "answer": "Pronunciarlas con claridad",
+          "explanation": "E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar G ante E o I?",
+          "target": "ga/go/gu · ge/gi",
+          "options": [
+            "Con un sonido suave parecido a y/dj",
+            "Como k",
+            "Siempre muda"
+          ],
+          "answer": "Con un sonido suave parecido a y/dj",
+          "explanation": "Compara gatto y gelato.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace H en CHE o CHI?",
+          "target": "che · chi",
+          "options": [
+            "Mantiene el sonido duro k",
+            "Convierte C en s",
+            "Forma una vocal"
+          ],
+          "answer": "Mantiene el sonido duro k",
+          "explanation": "Compara ce con che y ci con chi.",
+          "audio": "acca",
+          "slow_audio": "acca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar GLI letra por letra?",
+          "target": "gli · sci",
+          "options": [
+            "No, funciona como grupo",
+            "Sí, siempre",
+            "Solo la G es muda"
+          ],
+          "answer": "No, funciona como grupo",
+          "explanation": "Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Las consonantes dobles cambian la pronunciación?",
+          "target": "pala · palla",
+          "options": [
+            "Sí, se sostienen más tiempo",
+            "No",
+            "Solo en canto"
+          ],
+          "answer": "Sí, se sostienen más tiempo",
+          "explanation": "No es solo una diferencia ortográfica.",
+          "audio": "pi",
+          "slow_audio": "pi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica normalmente el apóstrofo?",
+          "target": "l’acqua",
+          "options": [
+            "Una vocal omitida y unión fluida",
+            "Una pregunta",
+            "Una consonante doble"
+          ],
+          "answer": "Una vocal omitida y unión fluida",
+          "explanation": "No hagas una pausa larga en el apóstrofo.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "italian-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "italian-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes hacer con las vocales italianas?",
+          "target": "a · e · i · o · u",
+          "options": [
+            "Pronunciarlas con claridad",
+            "Reducirlas todas",
+            "Omitir las finales"
+          ],
+          "answer": "Pronunciarlas con claridad",
+          "explanation": "E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Es relativamente regular la ortografía italiana?",
+          "target": "casa",
+          "options": [
+            "Sí, aunque tiene reglas y excepciones",
+            "No, es impredecible",
+            "Solo en nombres"
+          ],
+          "answer": "Sí, aunque tiene reglas y excepciones",
+          "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar C ante E o I?",
+          "target": "ca/co/cu · ce/ci",
+          "options": [
+            "Como ch",
+            "Como k",
+            "No suena"
+          ],
+          "answer": "Como ch",
+          "explanation": "Esta regla explica casa frente a cena.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo suele sonar G ante E o I?",
+          "target": "ga/go/gu · ge/gi",
+          "options": [
+            "Con un sonido suave parecido a y/dj",
+            "Como k",
+            "Siempre muda"
+          ],
+          "answer": "Con un sonido suave parecido a y/dj",
+          "explanation": "Compara gatto y gelato.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace H en CHE o CHI?",
+          "target": "che · chi",
+          "options": [
+            "Mantiene el sonido duro k",
+            "Convierte C en s",
+            "Forma una vocal"
+          ],
+          "answer": "Mantiene el sonido duro k",
+          "explanation": "Compara ce con che y ci con chi.",
+          "audio": "acca",
+          "slow_audio": "acca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué hace H en GHE o GHI?",
+          "target": "ghe · ghi",
+          "options": [
+            "Mantiene la G dura",
+            "Vuelve muda la palabra",
+            "Duplica la vocal"
+          ],
+          "answer": "Mantiene la G dura",
+          "explanation": "Compara gelato con spaghetti.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee normalmente GN?",
+          "target": "gn: bagno",
+          "options": [
+            "Como un sonido parecido a ñ",
+            "Como g + n separadas",
+            "Como ch"
+          ],
+          "answer": "Como un sonido parecido a ñ",
+          "explanation": "No produzcas g seguida de n.",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar GLI letra por letra?",
+          "target": "gli · sci",
+          "options": [
+            "No, funciona como grupo",
+            "Sí, siempre",
+            "Solo la G es muda"
+          ],
+          "answer": "No, funciona como grupo",
+          "explanation": "Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Las consonantes dobles cambian la pronunciación?",
+          "target": "pala · palla",
+          "options": [
+            "Sí, se sostienen más tiempo",
+            "No",
+            "Solo en canto"
+          ],
+          "answer": "Sí, se sostienen más tiempo",
+          "explanation": "No es solo una diferencia ortográfica.",
+          "audio": "pi",
+          "slow_audio": "pi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Debes eliminar las vocales no acentuadas?",
+          "target": "italiano",
+          "options": [
+            "No, suelen conservarse claras",
+            "Sí, todas",
+            "Solo las finales"
+          ],
+          "answer": "No, suelen conservarse claras",
+          "explanation": "El ritmo italiano es más silábico que el inglés.",
+          "audio": "ti",
+          "slow_audio": "ti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debes memorizar junto con una palabra italiana?",
+          "target": "parola",
+          "options": [
+            "Su sílaba acentuada",
+            "Solo su traducción",
+            "El nombre de cada letra"
+          ],
+          "answer": "Su sílaba acentuada",
+          "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "italian-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Qué indica normalmente el apóstrofo?",
+          "target": "l’acqua",
+          "options": [
+            "Una vocal omitida y unión fluida",
+            "Una pregunta",
+            "Una consonante doble"
+          ],
+          "answer": "Una vocal omitida y unión fluida",
+          "explanation": "No hagas una pausa larga en el apóstrofo.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

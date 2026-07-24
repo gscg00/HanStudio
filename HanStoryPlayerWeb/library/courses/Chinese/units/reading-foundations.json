@@ -1,0 +1,1170 @@
+{
+  "id": "reading-foundations",
+  "title": "Cómo se empieza a leer chino",
+  "description": "Usa pinyin y tonos para aprender pronunciación, pero centra la lectura en caracteres y retira la ayuda gradualmente.",
+  "requirements": [],
+  "reward": {
+    "xp": 220,
+    "badge": "Lector inicial"
+  },
+  "lessons": [
+    {
+      "id": "chinese-reading-00-01",
+      "title": "Caracteres y pinyin",
+      "description": "Comprende que pinyin es una guía de sonido, no el texto final.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-01-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Comprende que pinyin es una guía de sonido, no el texto final.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-01-a-teach",
+          "type": "teach_concept",
+          "prompt": "El carácter lleva significado",
+          "target": "你",
+          "options": [],
+          "answer": "",
+          "explanation": "El mandarín no usa un alfabeto para escribir palabras corrientes.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "你 es el carácter que aprenderás a reconocer directamente.",
+          "memory_hint": "Mira primero el carácter; revela pinyin solo como ayuda.",
+          "teaching_points": [
+            "你: carácter.",
+            "nǐ: pronunciación en pinyin.",
+            "«tú»: significado."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-01-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debe reconocer primero el lector?",
+          "target": "你",
+          "options": [
+            "El carácter chino",
+            "Solo el pinyin",
+            "La traducción española"
+          ],
+          "answer": "El carácter chino",
+          "explanation": "El mandarín no usa un alfabeto para escribir palabras corrientes.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-01-b-teach",
+          "type": "teach_concept",
+          "prompt": "Pinyin es una herramienta",
+          "target": "nǐ",
+          "options": [],
+          "answer": "",
+          "explanation": "Los propios estudiantes chinos aprenden pinyin, pero los textos normales usan caracteres.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Pinyin registra pronunciación y tono con letras latinas.",
+          "memory_hint": "Úsalo para escuchar y luego ocúltalo.",
+          "teaching_points": [
+            "Ayuda con inicial y final.",
+            "Marca el tono.",
+            "No sustituye a los caracteres."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Para qué sirve pinyin?",
+          "target": "nǐ",
+          "options": [
+            "Para aprender pronunciación y tonos",
+            "Para reemplazar siempre los caracteres",
+            "Para traducir"
+          ],
+          "answer": "Para aprender pronunciación y tonos",
+          "explanation": "Los propios estudiantes chinos aprenden pinyin, pero los textos normales usan caracteres.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-02",
+      "title": "Los cuatro tonos",
+      "description": "La altura melódica forma parte de cada sílaba.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-02-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La altura melódica forma parte de cada sílaba.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-02-a-teach",
+          "type": "teach_concept",
+          "prompt": "Primer y segundo tono",
+          "target": "mā · má",
+          "options": [],
+          "answer": "",
+          "explanation": "No basta pronunciar las mismas consonantes y vocales.",
+          "audio": "mā",
+          "slow_audio": "mā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El primero es alto y sostenido; el segundo asciende.",
+          "memory_hint": "Sigue el contorno completo.",
+          "teaching_points": [
+            "mā: alto y estable.",
+            "má: ascendente.",
+            "La marca se coloca sobre la vocal."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-02-a-question",
+          "type": "select_translation",
+          "prompt": "¿Son iguales mā y má?",
+          "target": "mā · má",
+          "options": [
+            "No, tienen tonos diferentes",
+            "Sí",
+            "Solo cambia la escritura"
+          ],
+          "answer": "No, tienen tonos diferentes",
+          "explanation": "No basta pronunciar las mismas consonantes y vocales.",
+          "audio": "mā",
+          "slow_audio": "mā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-02-b-teach",
+          "type": "teach_concept",
+          "prompt": "Tercer y cuarto tono",
+          "target": "mǎ · mà",
+          "options": [],
+          "answer": "",
+          "explanation": "El tercer tono suele realizarse parcialmente dentro de frases.",
+          "audio": "mǎ",
+          "slow_audio": "mǎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "El tercero baja y se recupera en forma aislada; el cuarto cae con firmeza.",
+          "memory_hint": "Aprende el contorno y sus cambios en habla real.",
+          "teaching_points": [
+            "mǎ: tono bajo/descendente-ascendente.",
+            "mà: caída fuerte.",
+            "El contexto modifica detalles."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-02-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue mǎ de mà?",
+          "target": "mǎ · mà",
+          "options": [
+            "El contorno tonal",
+            "La consonante inicial",
+            "El número de sílabas"
+          ],
+          "answer": "El contorno tonal",
+          "explanation": "El tercer tono suele realizarse parcialmente dentro de frases.",
+          "audio": "mǎ",
+          "slow_audio": "mǎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-03",
+      "title": "Iniciales y aspiración",
+      "description": "La diferencia b/p, d/t y g/k es principalmente aspiración.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-03-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La diferencia b/p, d/t y g/k es principalmente aspiración.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-03-a-teach",
+          "type": "teach_concept",
+          "prompt": "B/P y D/T",
+          "target": "bā · pā · dā · tā",
+          "options": [],
+          "answer": "",
+          "explanation": "Acerca una mano para sentir la aspiración.",
+          "audio": "bā",
+          "slow_audio": "bā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "P y T llevan una salida de aire más fuerte que B y D.",
+          "memory_hint": "No lo reduzcas a sonora/sorda como español.",
+          "teaching_points": [
+            "b/d: poca aspiración.",
+            "p/t: más aspiración.",
+            "La vocal puede ser igual."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-03-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue especialmente P de B en pinyin?",
+          "target": "bā · pā · dā · tā",
+          "options": [
+            "La aspiración",
+            "El tono siempre",
+            "La longitud escrita"
+          ],
+          "answer": "La aspiración",
+          "explanation": "Acerca una mano para sentir la aspiración.",
+          "audio": "bā",
+          "slow_audio": "bā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-03-b-teach",
+          "type": "teach_concept",
+          "prompt": "G/K",
+          "target": "gē · kē",
+          "options": [],
+          "answer": "",
+          "explanation": "Ambas son sordas en mandarín estándar; cambia el aire.",
+          "audio": "gē",
+          "slow_audio": "gē",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "K es más aspirada que G.",
+          "memory_hint": "Conserva la lengua en posición posterior.",
+          "teaching_points": [
+            "g: poca aspiración.",
+            "k: más aspiración.",
+            "No añadas una vocal."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-03-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué caracteriza K frente a G?",
+          "target": "gē · kē",
+          "options": [
+            "Más aspiración",
+            "Menos aire",
+            "Un tono fijo"
+          ],
+          "answer": "Más aspiración",
+          "explanation": "Ambas son sordas en mandarín estándar; cambia el aire.",
+          "audio": "gē",
+          "slow_audio": "gē",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-04",
+      "title": "J, Q, X y retroflejas",
+      "description": "Aprende posiciones que no corresponden al español.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-04-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende posiciones que no corresponden al español.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-04-a-teach",
+          "type": "teach_concept",
+          "prompt": "J/Q/X",
+          "target": "jī · qī · xī",
+          "options": [],
+          "answer": "",
+          "explanation": "Estas iniciales aparecen con vocales frontales.",
+          "audio": "jī",
+          "slow_audio": "jī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La lengua se acerca al paladar; Q es aspirada y X más fricativa.",
+          "memory_hint": "No leas X como ks.",
+          "teaching_points": [
+            "j: africada sin mucha aspiración.",
+            "q: africada aspirada.",
+            "x: fricativa suave."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-04-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee X en pinyin?",
+          "target": "jī · qī · xī",
+          "options": [
+            "Como una fricativa palatal, no ks",
+            "Como ks",
+            "Como j española fuerte"
+          ],
+          "answer": "Como una fricativa palatal, no ks",
+          "explanation": "Estas iniciales aparecen con vocales frontales.",
+          "audio": "jī",
+          "slow_audio": "jī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-04-b-teach",
+          "type": "teach_concept",
+          "prompt": "ZH/CH/SH/R",
+          "target": "zhī · chī · shī · rì",
+          "options": [],
+          "answer": "",
+          "explanation": "Son iniciales retroflejas frecuentes.",
+          "audio": "zhī",
+          "slow_audio": "zhī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La punta de la lengua se retrae; CH añade aspiración.",
+          "memory_hint": "Aprende el grupo completo, no cada letra.",
+          "teaching_points": [
+            "zh: africada retrofleja.",
+            "ch: versión aspirada.",
+            "sh/r: sonidos retroflejos."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-04-b-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar ZH o CH en dos sonidos?",
+          "target": "zhī · chī · shī · rì",
+          "options": [
+            "No, son iniciales completas",
+            "Sí",
+            "La H es muda siempre"
+          ],
+          "answer": "No, son iniciales completas",
+          "explanation": "Son iniciales retroflejas frecuentes.",
+          "audio": "zhī",
+          "slow_audio": "zhī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-05",
+      "title": "Finales y sílaba",
+      "description": "Combina inicial, final y tono como una sola unidad.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-05-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Combina inicial, final y tono como una sola unidad.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-05-a-teach",
+          "type": "teach_concept",
+          "prompt": "Estructura de sílaba",
+          "target": "m + a + tono",
+          "options": [],
+          "answer": "",
+          "explanation": "Algunas sílabas no tienen consonante inicial.",
+          "audio": "má",
+          "slow_audio": "má",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Una sílaba puede tener inicial, final y tono.",
+          "memory_hint": "No separes el tono del resto.",
+          "teaching_points": [
+            "Inicial: m.",
+            "Final: a.",
+            "Tono: segundo."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-05-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué tres partes analizas en má?",
+          "target": "m + a + tono",
+          "options": [
+            "Inicial, final y tono",
+            "Dos caracteres y traducción",
+            "Solo consonante"
+          ],
+          "answer": "Inicial, final y tono",
+          "explanation": "Algunas sílabas no tienen consonante inicial.",
+          "audio": "má",
+          "slow_audio": "má",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-05-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ü tras J/Q/X/Y",
+          "target": "ju · qu · xu · yu",
+          "options": [],
+          "answer": "",
+          "explanation": "En nü y lü la diéresis se conserva para evitar ambigüedad.",
+          "audio": "qī",
+          "slow_audio": "qī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "La diéresis suele omitirse después de j, q, x, y, pero el sonido sigue siendo ü.",
+          "memory_hint": "No conviertas automáticamente u en u española.",
+          "teaching_points": [
+            "ju contiene sonido ü.",
+            "lü escribe diéresis.",
+            "El contexto ortográfico importa."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-05-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué vocal contiene normalmente JU en pinyin?",
+          "target": "ju · qu · xu · yu",
+          "options": [
+            "El sonido ü",
+            "Una u española pura",
+            "No tiene vocal"
+          ],
+          "answer": "El sonido ü",
+          "explanation": "En nü y lü la diéresis se conserva para evitar ambigüedad.",
+          "audio": "qī",
+          "slow_audio": "qī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-06",
+      "title": "Leer caracteres",
+      "description": "Construye memoria visual sin depender de pinyin.",
+      "activities": [
+        {
+          "id": "chinese-reading-00-06-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Construye memoria visual sin depender de pinyin.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-06-a-teach",
+          "type": "teach_concept",
+          "prompt": "Componentes recurrentes",
+          "target": "好 = 女 + 子",
+          "options": [],
+          "answer": "",
+          "explanation": "La pista puede ser semántica, fonética o histórica; no siempre es literal.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Muchos caracteres contienen componentes que aportan pistas.",
+          "memory_hint": "Observa estructura y orden de trazos.",
+          "teaching_points": [
+            "Divide visualmente.",
+            "Identifica componentes.",
+            "Vuelve a reconocer el carácter completo."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-06-a-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo conviene memorizar un carácter?",
+          "target": "好 = 女 + 子",
+          "options": [
+            "Por su forma, componentes, sonido y significado",
+            "Solo por pinyin",
+            "Como dibujo sin sonido"
+          ],
+          "answer": "Por su forma, componentes, sonido y significado",
+          "explanation": "La pista puede ser semántica, fonética o histórica; no siempre es literal.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-06-b-teach",
+          "type": "teach_concept",
+          "prompt": "Ocultar pinyin gradualmente",
+          "target": "你好",
+          "options": [],
+          "answer": "",
+          "explanation": "Así pinyin ayuda sin convertirse en muleta.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Primero intenta leer 你好; muestra nǐ hǎo solo si lo necesitas.",
+          "memory_hint": "Los ojos deben volver siempre a los caracteres.",
+          "teaching_points": [
+            "Mira caracteres.",
+            "Intenta recordar.",
+            "Revela pinyin al tocar."
+          ]
+        },
+        {
+          "id": "chinese-reading-00-06-b-question",
+          "type": "select_translation",
+          "prompt": "¿Cuándo conviene mostrar pinyin después de las primeras lecciones?",
+          "target": "你好",
+          "options": [
+            "Solo como ayuda opcional",
+            "Siempre en tamaño mayor",
+            "Nunca, ni para aprender tonos"
+          ],
+          "answer": "Solo como ayuda opcional",
+          "explanation": "Así pinyin ayuda sin convertirse en muleta.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-review",
+      "title": "Repaso: reglas de lectura",
+      "description": "Recupera las reglas esenciales antes de la prueba.",
+      "isReview": true,
+      "activities": [
+        {
+          "id": "chinese-reading-00-review-intro",
+          "type": "lesson_intro",
+          "prompt": "Repaso acumulativo",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Recuerda cada regla sin mirar una transcripción permanente.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-review-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debe reconocer primero el lector?",
+          "target": "你",
+          "options": [
+            "El carácter chino",
+            "Solo el pinyin",
+            "La traducción española"
+          ],
+          "answer": "El carácter chino",
+          "explanation": "El mandarín no usa un alfabeto para escribir palabras corrientes.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-review-2-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue mǎ de mà?",
+          "target": "mǎ · mà",
+          "options": [
+            "El contorno tonal",
+            "La consonante inicial",
+            "El número de sílabas"
+          ],
+          "answer": "El contorno tonal",
+          "explanation": "El tercer tono suele realizarse parcialmente dentro de frases.",
+          "audio": "mǎ",
+          "slow_audio": "mǎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-review-3-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue especialmente P de B en pinyin?",
+          "target": "bā · pā · dā · tā",
+          "options": [
+            "La aspiración",
+            "El tono siempre",
+            "La longitud escrita"
+          ],
+          "answer": "La aspiración",
+          "explanation": "Acerca una mano para sentir la aspiración.",
+          "audio": "bā",
+          "slow_audio": "bā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-review-4-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar ZH o CH en dos sonidos?",
+          "target": "zhī · chī · shī · rì",
+          "options": [
+            "No, son iniciales completas",
+            "Sí",
+            "La H es muda siempre"
+          ],
+          "answer": "No, son iniciales completas",
+          "explanation": "Son iniciales retroflejas frecuentes.",
+          "audio": "zhī",
+          "slow_audio": "zhī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-review-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué tres partes analizas en má?",
+          "target": "m + a + tono",
+          "options": [
+            "Inicial, final y tono",
+            "Dos caracteres y traducción",
+            "Solo consonante"
+          ],
+          "answer": "Inicial, final y tono",
+          "explanation": "Algunas sílabas no tienen consonante inicial.",
+          "audio": "má",
+          "slow_audio": "má",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-review-6-question",
+          "type": "select_translation",
+          "prompt": "¿Cuándo conviene mostrar pinyin después de las primeras lecciones?",
+          "target": "你好",
+          "options": [
+            "Solo como ayuda opcional",
+            "Siempre en tamaño mayor",
+            "Nunca, ni para aprender tonos"
+          ],
+          "answer": "Solo como ayuda opcional",
+          "explanation": "Así pinyin ayuda sin convertirse en muleta.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "chinese-reading-00-test",
+      "title": "Prueba: preparado para aprender a leer",
+      "description": "Demuestra dominio total de las reglas iniciales.",
+      "isTest": true,
+      "isUnitFinal": true,
+      "passingScore": 100,
+      "activities": [
+        {
+          "id": "chinese-reading-00-test-intro",
+          "type": "lesson_intro",
+          "prompt": "Prueba de dominio",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Necesitas 100 %. Si fallas una regla, la repasas y vuelves a intentarlo.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-00-test-1-question",
+          "type": "select_translation",
+          "prompt": "¿Qué debe reconocer primero el lector?",
+          "target": "你",
+          "options": [
+            "El carácter chino",
+            "Solo el pinyin",
+            "La traducción española"
+          ],
+          "answer": "El carácter chino",
+          "explanation": "El mandarín no usa un alfabeto para escribir palabras corrientes.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-2-question",
+          "type": "select_translation",
+          "prompt": "¿Para qué sirve pinyin?",
+          "target": "nǐ",
+          "options": [
+            "Para aprender pronunciación y tonos",
+            "Para reemplazar siempre los caracteres",
+            "Para traducir"
+          ],
+          "answer": "Para aprender pronunciación y tonos",
+          "explanation": "Los propios estudiantes chinos aprenden pinyin, pero los textos normales usan caracteres.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-3-question",
+          "type": "select_translation",
+          "prompt": "¿Son iguales mā y má?",
+          "target": "mā · má",
+          "options": [
+            "No, tienen tonos diferentes",
+            "Sí",
+            "Solo cambia la escritura"
+          ],
+          "answer": "No, tienen tonos diferentes",
+          "explanation": "No basta pronunciar las mismas consonantes y vocales.",
+          "audio": "mā",
+          "slow_audio": "mā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-4-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue mǎ de mà?",
+          "target": "mǎ · mà",
+          "options": [
+            "El contorno tonal",
+            "La consonante inicial",
+            "El número de sílabas"
+          ],
+          "answer": "El contorno tonal",
+          "explanation": "El tercer tono suele realizarse parcialmente dentro de frases.",
+          "audio": "mǎ",
+          "slow_audio": "mǎ",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-5-question",
+          "type": "select_translation",
+          "prompt": "¿Qué distingue especialmente P de B en pinyin?",
+          "target": "bā · pā · dā · tā",
+          "options": [
+            "La aspiración",
+            "El tono siempre",
+            "La longitud escrita"
+          ],
+          "answer": "La aspiración",
+          "explanation": "Acerca una mano para sentir la aspiración.",
+          "audio": "bā",
+          "slow_audio": "bā",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-6-question",
+          "type": "select_translation",
+          "prompt": "¿Qué caracteriza K frente a G?",
+          "target": "gē · kē",
+          "options": [
+            "Más aspiración",
+            "Menos aire",
+            "Un tono fijo"
+          ],
+          "answer": "Más aspiración",
+          "explanation": "Ambas son sordas en mandarín estándar; cambia el aire.",
+          "audio": "gē",
+          "slow_audio": "gē",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-7-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo se lee X en pinyin?",
+          "target": "jī · qī · xī",
+          "options": [
+            "Como una fricativa palatal, no ks",
+            "Como ks",
+            "Como j española fuerte"
+          ],
+          "answer": "Como una fricativa palatal, no ks",
+          "explanation": "Estas iniciales aparecen con vocales frontales.",
+          "audio": "jī",
+          "slow_audio": "jī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-8-question",
+          "type": "select_translation",
+          "prompt": "¿Debes separar ZH o CH en dos sonidos?",
+          "target": "zhī · chī · shī · rì",
+          "options": [
+            "No, son iniciales completas",
+            "Sí",
+            "La H es muda siempre"
+          ],
+          "answer": "No, son iniciales completas",
+          "explanation": "Son iniciales retroflejas frecuentes.",
+          "audio": "zhī",
+          "slow_audio": "zhī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-9-question",
+          "type": "select_translation",
+          "prompt": "¿Qué tres partes analizas en má?",
+          "target": "m + a + tono",
+          "options": [
+            "Inicial, final y tono",
+            "Dos caracteres y traducción",
+            "Solo consonante"
+          ],
+          "answer": "Inicial, final y tono",
+          "explanation": "Algunas sílabas no tienen consonante inicial.",
+          "audio": "má",
+          "slow_audio": "má",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-10-question",
+          "type": "select_translation",
+          "prompt": "¿Qué vocal contiene normalmente JU en pinyin?",
+          "target": "ju · qu · xu · yu",
+          "options": [
+            "El sonido ü",
+            "Una u española pura",
+            "No tiene vocal"
+          ],
+          "answer": "El sonido ü",
+          "explanation": "En nü y lü la diéresis se conserva para evitar ambigüedad.",
+          "audio": "qī",
+          "slow_audio": "qī",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-11-question",
+          "type": "select_translation",
+          "prompt": "¿Cómo conviene memorizar un carácter?",
+          "target": "好 = 女 + 子",
+          "options": [
+            "Por su forma, componentes, sonido y significado",
+            "Solo por pinyin",
+            "Como dibujo sin sonido"
+          ],
+          "answer": "Por su forma, componentes, sonido y significado",
+          "explanation": "La pista puede ser semántica, fonética o histórica; no siempre es literal.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "chinese-reading-00-test-12-question",
+          "type": "select_translation",
+          "prompt": "¿Cuándo conviene mostrar pinyin después de las primeras lecciones?",
+          "target": "你好",
+          "options": [
+            "Solo como ayuda opcional",
+            "Siempre en tamaño mayor",
+            "Nunca, ni para aprender tonos"
+          ],
+          "answer": "Solo como ayuda opcional",
+          "explanation": "Así pinyin ayuda sin convertirse en muleta.",
+          "audio": "nǐ hǎo",
+          "slow_audio": "nǐ hǎo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

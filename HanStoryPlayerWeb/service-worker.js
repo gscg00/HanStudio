@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v100';
+const SHELL='hanstory-shell-v101';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -25,6 +25,15 @@ const ASSETS=[
   './src/japanese_course_logic.js','./src/guided_course_config.js','./src/guided_course_logic.js',
   './manifest.webmanifest','./library/library.json',
   './library/courses/Korean/units/hangul-foundations.json',
+  './library/courses/English/units/reading-foundations.json',
+  './library/courses/Russian/units/reading-foundations.json',
+  './library/courses/Italian/units/reading-foundations.json',
+  './library/courses/French/units/reading-foundations.json',
+  './library/courses/German/units/reading-foundations.json',
+  './library/courses/Chinese/units/reading-foundations.json',
+  './library/courses/Portuguese/units/reading-foundations.json',
+  './library/courses/Arabic/units/reading-foundations.json',
+  './library/courses/Japanese/units/reading-foundations.json',
   './library/courses/Japanese/course.json','./library/courses/Japanese/units/hiragana-01.json',
   './library/courses/Japanese/units/katakana.json','./library/courses/Japanese/units/rhythm.json',
   './library/courses/Japanese/units/first-words.json','./library/courses/Japanese/units/first-sentences.json',

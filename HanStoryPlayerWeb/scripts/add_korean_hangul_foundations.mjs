@@ -188,6 +188,7 @@ const lessons=[
     description:'Demuestra que comprendes bloques, sonidos básicos y batchim.',
     isTest:true,
     isUnitFinal:true,
+    passingScore:100,
     xpReward:30,
     activities:[
       intro('korean-hangul-00-test','Prueba final','Todo lo que aparece aquí fue enseñado en las lecciones anteriores.'),
@@ -213,7 +214,7 @@ const unit={
 fs.writeFileSync(unitPath,`${JSON.stringify(unit,null,2)}\n`);
 
 const course=JSON.parse(fs.readFileSync(coursePath,'utf8'));
-course.version=Math.max(11,Number(course.version||1)+1);
+course.version=Math.max(11,Number(course.version||1));
 const summary={
   id:'hangul-foundations',world:0,mapLabel:'MUNDO 0',title:'Aprende a leer hangeul',
   description:'Comprende cómo las letras forman bloques antes de memorizar sonidos y palabras.',
@@ -222,6 +223,7 @@ const summary={
 course.units=[summary,...course.units.filter(item=>item.id!==summary.id)];
 const foundations=course.levels.find(level=>level.id==='foundations');
 if(foundations)foundations.unitIds=[summary.id,...foundations.unitIds.filter(id=>id!==summary.id)];
+course.unlockRules={...(course.unlockRules||{}),requireReadingMastery:true,readingUnitId:'hangul-foundations'};
 fs.writeFileSync(coursePath,`${JSON.stringify(course,null,2)}\n`);
 
 console.log(`Coreano: añadido ${summary.title} con ${lessons.length} pasos; curso v${course.version}.`);

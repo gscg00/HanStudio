@@ -3,7 +3,7 @@
   "title": "Italiano: de cero a conversaciones intermedias",
   "language": "Italian",
   "languageCode": "it",
-  "version": 10,
+  "version": 11,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Aprende a leer y comunicarte con una base italiana clara.",
   "vocabularyGoal": 300,
@@ -15,6 +15,7 @@
       "title": "Fundamentos para empezar",
       "description": "Lectura, pronunciación y estructuras esenciales.",
       "unitIds": [
+        "reading-foundations",
         "reading",
         "survival",
         "essentials",
@@ -112,10 +113,21 @@
   ],
   "unlockRules": {
     "minimumScore": 85,
-    "masteryScore": 95
+    "masteryScore": 95,
+    "requireReadingMastery": true,
+    "readingUnitId": "reading-foundations"
   },
   "recommendedBooks": [],
   "units": [
+    {
+      "id": "reading-foundations",
+      "world": 0,
+      "mapLabel": "MUNDO 0",
+      "title": "Lectura inicial: el italiano",
+      "description": "Aprovecha su ortografía regular y domina C, G, H, grupos especiales, dobles y acento.",
+      "icon": "GLI",
+      "manifest": "units/reading-foundations.json"
+    },
     {
       "id": "reading",
       "world": 1,
