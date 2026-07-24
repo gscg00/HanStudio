@@ -350,7 +350,17 @@ const teach=(id,concept)=>activity(`${id}-teach`,'teach_concept',concept.title,c
   gradable:false,meaning:'',teaching_kind:'rule',sound_hint:concept.sound,
   memory_hint:concept.memory,teaching_points:concept.points,
 });
-const question=(id,concept)=>activity(`${id}-question`,'select_translation',concept.question,concept.target,[concept.answer,...concept.distractors],concept.answer,concept.explanation,concept.audio);
+const isListeningQuestion=prompt=>/(?:acabas|acabaste) de escuchar|¿?qué (?:letra|grafema|símbolo|sonido|sílaba|palabra|frase|vocal)\b.*\b(?:escuchas|oyes|oíste)\b/i.test(String(prompt||''));
+const question=(id,concept)=>activity(
+  `${id}-question`,
+  isListeningQuestion(concept.question)?'listening_choice':'select_translation',
+  concept.question,
+  concept.target,
+  [concept.answer,...concept.distractors],
+  concept.answer,
+  concept.explanation,
+  concept.audio,
+);
 
 const makeLesson=(spec,lesson,index)=>{
   const id=`${spec.slug}-reading-00-${String(index+1).padStart(2,'0')}`;

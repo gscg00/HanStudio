@@ -216,6 +216,32 @@ def test_student_facing_lessons_do_not_expose_internal_services():
     assert "audio elevenlabs preparado" not in legacy_app
 
 
+def test_listening_questions_never_reveal_the_answer_as_the_target():
+    auditory_prompt = "acabas de escuchar"
+    found = 0
+    for language_dir in COURSES.iterdir():
+        units_dir = language_dir / "units"
+        if not units_dir.is_dir():
+            continue
+        for unit_path in units_dir.glob("*.json"):
+            unit = load(unit_path)
+            for lesson in unit.get("lessons", []):
+                for activity in lesson.get("activities", []):
+                    if auditory_prompt not in activity.get("prompt", "").lower():
+                        continue
+                    found += 1
+                    assert activity["type"] == "listening_choice", (
+                        language_dir.name,
+                        unit_path.name,
+                        activity["id"],
+                    )
+    assert found >= 20
+    app = (ROOT / "src/japanese_course_app.js").read_text(encoding="utf-8")
+    assert "isAudioRecognitionActivity" in app
+    assert "needsAudio=isAudioRecognitionActivity(activity)" in app
+    assert "activityLabel=needsAudio?'Comprensión auditiva'" in app
+
+
 def test_xp_catalog_offline_cache_and_per_lesson_mastery_are_wired():
     sql = (
         ROOT / "supabase/migrations/015_reading_foundations_all_languages.sql"
