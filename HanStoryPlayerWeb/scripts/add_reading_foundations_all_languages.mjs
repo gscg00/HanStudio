@@ -39,26 +39,39 @@ const specs={
   },
   French:{
     slug:'french',name:'Francés',icon:'É',title:'Cómo se lee el francés',
-    description:'Domina acentos, grupos vocálicos, sonidos nasales y letras finales antes de leer frases.',
+    description:'Aprende primero letras, grafemas y sílabas: una forma escrita y un sonido por tarjeta, antes de estudiar palabras o frases.',
     lessons:[
-      L('Letras y acentos','Los acentos forman parte de la lectura.',
-        C('É y È orientan el sonido','é · è','e','É suele ser más cerrada y è más abierta.','No ignores el acento escrito.','Los acentos ayudan a distinguir el sonido y, a veces, el significado.',['é: vocal cerrada.','è/ê: vocal más abierta.','El acento no es decoración.'],'¿Qué indican é y è?','Orientan hacia sonidos vocálicos distintos',['Solo énfasis visual','Que la letra es muda']),
-        C('Ç cambia C','ç','cé','Ç delante de a, o, u representa un sonido s.','La cedilla evita el sonido k.','Compara ca y ça para reconocer su función.',['c + a suele sonar k.','ç + a suena s.','La cedilla aparece bajo c.'],'¿Cómo suele sonar ç?','Como s',['Como k','No suena'])),
-      L('Grupos vocálicos','Lee varias letras como una sola unidad.',
-        C('OU no es U','ou · u','u','OU suele aproximarse a u española; U francesa es frontal y redondeada.','No leas ambas como la misma vocal.','La diferencia distingue muchas palabras.',['ou: labios redondeados y lengua atrás.','u: labios redondeados y lengua adelante.','Escucha pares contrastivos.'],'¿OU y U francesas suenan igual?','No, representan vocales distintas',['Sí, siempre','Solo cambian al escribir']),
-        C('AU y EAU','au · eau','o','Ambos grupos suelen representar un sonido cercano a o.','Reconoce el bloque completo.','No pronuncies cada vocal por separado.',['au funciona como una unidad.','eau también funciona como unidad.','La palabra conserva una sola vocal audible.'],'¿Cómo lees normalmente EAU?','Como un grupo vocálico, cercano a o',['Como tres vocales separadas','Como e muda únicamente'])),
-      L('Vocales nasales','Reconoce cuando n o m nasalizan la vocal.',
-        C('AN / EN','an · en','enne','La vocal se nasaliza y la n normalmente no forma una sílaba aparte.','Deja salir aire por la nariz.','El patrón cambia si después aparece otra vocal.',['an/en forman una vocal nasal frecuente.','No añadas una n española fuerte.','Observa la letra siguiente.'],'¿Qué ocurre normalmente en AN o EN?','La vocal se nasaliza',['Se pronuncian dos sílabas','La vocal desaparece']),
-        C('ON / IN','on · in','o','Son dos vocales nasales diferentes.','Apréndelas con audio y contraste.','La escritura agrupa vocal y consonante nasal.',['on es redondeada y nasal.','in es más frontal.','No leas la consonante final como en español.'],'¿ON e IN representan el mismo sonido?','No, son vocales nasales distintas',['Sí','Solo cambia el volumen'])),
-      L('Finales silenciosos','Muchas consonantes finales no se pronuncian.',
-        C('La última letra puede callar','petit · grand','té','No leas automáticamente toda consonante final.','Confirma la pronunciación con el audio.','C, R, F y L se oyen con más frecuencia que otras finales, pero hay excepciones.',['Muchas d, t, s, x finales callan.','Algunas finales sí se oyen.','Aprende palabras y patrones.'],'¿Debes pronunciar toda consonante final francesa?','No, muchas son silenciosas',['Sí, todas','Solo en plural']),
-        C('E final','e final','e','La e final suele ser muda y puede afectar la consonante anterior.','No añadas una e española al final.','En poesía o variedades regionales puede comportarse de otra manera.',['Suele no formar sílaba.','Puede hacer audible una consonante previa.','El contexto importa.'],'¿La e final suele formar una sílaba fuerte?','No, normalmente es muda',['Sí, siempre','Solo después de vocal'])),
-      L('Liaison y encadenamiento','Aprende cuándo una consonante reaparece al unir palabras.',
-        C('Liaison','les amis','elle','Una consonante final normalmente muda puede enlazarse con una vocal siguiente.','Lee el grupo de palabras, no cada palabra aislada.','La liaison es obligatoria en algunos contextos, opcional o prohibida en otros.',['les amis enlaza con sonido z.','No toda frontera permite liaison.','Escucha expresiones completas.'],'¿Qué es la liaison?','Enlazar una consonante final con la vocal siguiente',['Eliminar todas las vocales','Separar más las palabras']),
-        C('Ritmo por grupos','un groupe rythmique','erre','El francés organiza el ritmo en grupos y suele acentuar el final del grupo.','Evita acentuar cada palabra como en español.','La lectura natural une palabras gramaticalmente relacionadas.',['Forma grupos breves.','Mantén fluidez dentro del grupo.','Marca suavemente su final.'],'¿Dónde recae normalmente la prominencia francesa?','Al final de un grupo rítmico',['En la primera letra de cada palabra','En todas las sílabas'])),
-      L('Leer sin deletrear','Combina reglas y escucha antes de traducir.',
-        C('Busca unidades gráficas','ch · ph · gn','gé','Un grupo puede representar un sonido único.','Señala primero los grupos conocidos.','CH, PH y GN no deben separarse en nombres de letras.',['ch suele sonar sh.','ph suele sonar f.','gn se parece a ñ.'],'¿Cómo empiezas a leer una palabra francesa?','Reconociendo grupos de letras frecuentes',['Nombrando cada letra','Ignorando los acentos']),
-        C('Verifica con audio','Bonjour !','Bonjour !','La ortografía orienta, pero el audio confirma el patrón real.','Lee, escucha y corrige la hipótesis.','Con exposición, los patrones se vuelven automáticos.',['Haz una primera lectura.','Escucha el modelo.','Compara y ajusta.'],'¿Qué función tiene el audio al aprender a leer?','Confirmar y ajustar la lectura',['Sustituir para siempre el texto','Traducir automáticamente'])),
+      L('Reconocer las letras','Aprende el nombre de una letra para identificarla; todavía no estás leyendo palabras.',
+        C('Letra A','A','a','Escucha únicamente el nombre de A.','Una tarjeta, una letra, un audio.','El nombre permite señalar la letra escrita. Más adelante la combinarás para producir sílabas.',['Forma escrita: A/a.','Nombre francés: a.','No hay una palabra escondida en esta tarjeta.'],'¿Qué letra acabas de escuchar?','A',['B','C']),
+        C('Letra B','B','bé','Escucha únicamente el nombre de B.','No confundas el nombre con una sílaba.','B se llama «bé». Cuando se combine con una vocal, escucharás el sonido dentro de una sílaba.',['Forma escrita: B/b.','Nombre francés: bé.','El sonido se practicará después con vocales.'],'¿Qué letra acabas de escuchar?','B',['D','P']),
+        C('Letra C','C','cé','Escucha únicamente el nombre de C.','C puede cambiar de sonido según la vocal siguiente.','Por ahora reconoce su nombre. Después estudiarás ca y ce por separado.',['Forma escrita: C/c.','Nombre francés: cé.','El contexto decide su sonido.'],'¿Qué letra acabas de escuchar?','C',['G','S'])),
+      L('Vocales claras','Une una consonante conocida con una sola vocal.',
+        C('A dentro de una sílaba','a → ma','ma','Escucha la vocal a dentro de ma.','Mira a mientras oyes ma.','La consonante sirve de apoyo para que ElevenLabs produzca la vocal de forma natural. El objetivo de esta tarjeta es a.',['m + a → ma.','La vocal central es a.','No se presenta vocabulario todavía.'],'¿Qué vocal aparece en la sílaba ma?','a',['i','o']),
+        C('I dentro de una sílaba','i → mi','mi','Escucha la vocal i dentro de mi.','Mira i mientras oyes mi.','Esta tarjeta presenta una sola relación escrita y sonora.',['m + i → mi.','La vocal central es i.','No necesitas memorizar una palabra.'],'¿Qué vocal aparece en la sílaba mi?','i',['a','u']),
+        C('O dentro de una sílaba','o → mo','mo','Escucha la vocal o dentro de mo.','Redondea los labios suavemente.','Practica primero la sílaba; el vocabulario llegará después.',['m + o → mo.','La vocal central es o.','Mantén un solo impulso de voz.'],'¿Qué vocal aparece en la sílaba mo?','o',['e','i'])),
+      L('É y È por separado','Los acentos orientan hacia vocales distintas; cada una tiene su propio audio.',
+        C('É cerrada','é → mé','mé','É suele ser una vocal más cerrada.','Asocia é solo con este audio antes de contrastarla.','El acento agudo forma parte del grafema. No es decoración.',['Grafema: é.','Sílaba de apoyo: mé.','La boca queda relativamente cerrada.'],'¿Qué grafema practicas en mé?','é',['è','ê']),
+        C('È abierta','è → mè','mè','È suele ser una vocal más abierta.','Compárala con é únicamente después de aprender cada una.','El acento grave orienta la apertura de esta e.',['Grafema: è.','Sílaba de apoyo: mè.','La mandíbula se abre algo más.'],'¿Qué grafema practicas en mè?','è',['é','ê'])),
+      L('U y OU por separado','Estas dos grafías no representan la misma vocal.',
+        C('U francesa','u → mu','mu','La u francesa es frontal y redondeada.','Coloca la lengua como para i y redondea los labios.','Esta vocal no equivale exactamente a la u española.',['Grafema: u.','Sílaba: mu.','Lengua adelante; labios redondos.'],'¿Qué grafema practicas en mu?','u',['ou','o']),
+        C('Grupo OU','ou → mou','mou','OU suele acercarse a la u española.','Reconoce ou como una sola unidad gráfica.','Las dos letras colaboran para representar una vocal.',['Grafema: ou.','Sílaba: mou.','No pronuncies o y u por separado.'],'¿Qué grupo practicas en mou?','ou',['u','au'])),
+      L('Construir sílabas','Combina una consonante y una vocal sin recurrir todavía a palabras completas.',
+        C('M + A','m + a → ma','ma','Une m y a en un solo impulso.','No digas «emme-a».','Leer una sílaba significa producir sonidos, no nombres de letras.',['m aporta la consonante.','a aporta la vocal.','Juntas forman ma.'],'¿Qué sílaba forman m y a?','ma',['mi','la']),
+        C('F + I','f + i → fi','fi','Une f y i sin insertar otra vocal.','Mantén aire continuo en f y pasa a i.','El resultado es una sílaba, no una palabra que debas memorizar.',['f aporta fricción.','i aporta la vocal.','Juntas forman fi.'],'¿Qué sílaba forman f e i?','fi',['fa','mi']),
+        C('L + U','l + u → lu','lu','Une l con la u francesa.','La lengua toca detrás de los dientes para l.','Después conserva labios redondeados para u.',['l aporta la consonante.','u aporta la vocal frontal redondeada.','Juntas forman lu.'],'¿Qué sílaba forman l y u?','lu',['la','lou'])),
+      L('C y G según la vocal','Aprende cada combinación por separado.',
+        C('C ante A','c + a → ca','ca','Ante a, c suele representar un sonido k.','Asocia ca con un solo audio.','La vocal siguiente ayuda a predecir el sonido de c.',['Grafema consonántico: c.','Vocal siguiente: a.','Resultado: ca con sonido k.'],'¿Qué sílaba acabas de practicar?','ca',['ce','ga']),
+        C('C ante E','c + e → ce','ce','Ante e, c suele representar un sonido s.','No uses automáticamente el sonido de ca.','El cambio de vocal modifica la lectura de c.',['Grafema consonántico: c.','Vocal siguiente: e.','Resultado: ce con sonido s.'],'¿Qué sílaba acabas de practicar?','ce',['ca','ge']),
+        C('G ante A','g + a → ga','ga','Ante a, g conserva un sonido duro.','Practica ga como una sola sílaba.','No la separes en nombres de letras.',['Grafema consonántico: g.','Vocal siguiente: a.','Resultado: ga.'],'¿Qué sílaba acabas de practicar?','ga',['ge','ca']),
+        C('G ante E','g + e → ge','ge','Ante e, g suele representar un sonido suave.','Compárala con ga después de dominar ambas tarjetas.','La vocal siguiente vuelve a decidir la lectura.',['Grafema consonántico: g.','Vocal siguiente: e.','Resultado: ge con sonido suave.'],'¿Qué sílaba acabas de practicar?','ge',['ga','ce'])),
+      L('Grupos consonánticos','Un grupo escrito puede representar una sola consonante.',
+        C('Grupo CH','ch + a → cha','cha','CH suele producir un sonido parecido a sh.','Mira ch como una unidad.','El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.',['Grupo: ch.','Vocal de apoyo: a.','Resultado: cha.'],'¿Qué grupo aparece en cha?','ch',['ph','gn']),
+        C('Grupo PH','ph + i → phi','phi','PH suele representar el sonido f.','Mira ph como una unidad.','No pronuncies p y h por separado.',['Grupo: ph.','Vocal de apoyo: i.','Resultado: phi, con sonido f.'],'¿Qué grupo aparece en phi?','ph',['ch','gn']),
+        C('Grupo GN','gn + a → gna','gna','GN suele acercarse a la ñ española.','Mira gn como una unidad.','No produzcas g y n como dos consonantes separadas.',['Grupo: gn.','Vocal de apoyo: a.','Resultado: gna.'],'¿Qué grupo aparece en gna?','gn',['ch','ph'])),
+      L('Primeras vocales nasales','Aprende cada grafema nasal con su propio audio.',
+        C('Grafema AN','an','an','AN suele representar una vocal nasal.','Escucha an sin añadir una n española fuerte.','La consonante nasal modifica la vocal; no forma aquí otra sílaba.',['Grafema: an.','Un solo núcleo nasal.','El contexto posterior puede cambiar la regla.'],'¿Qué grafema nasal acabas de escuchar?','an',['on','un']),
+        C('Grafema ON','on','on','ON representa otra vocal nasal, más redondeada.','No la confundas con an.','Esta tarjeta contiene únicamente on y su audio.',['Grafema: on.','Labios más redondeados.','La n no se separa como sílaba.'],'¿Qué grafema nasal acabas de escuchar?','on',['an','un']),
+        C('Grafema UN','un','un','UN representa una vocal nasal frontal y redondeada.','Apréndela por contraste, sin transcripción permanente.','La pronunciación varía algo según la región, pero sigue siendo distinta de on.',['Grafema: un.','Vocal nasal.','No equivale a «un» español.'],'¿Qué grafema nasal acabas de escuchar?','un',['an','on'])),
     ],
   },
   German:{
@@ -159,26 +172,43 @@ const specs={
   },
   Chinese:{
     slug:'chinese',name:'Chino',icon:'汉',title:'Cómo se empieza a leer chino',
-    description:'Usa pinyin y tonos para aprender pronunciación, pero centra la lectura en caracteres y retira la ayuda gradualmente.',
+    description:'Aprende primero iniciales, finales y tonos con pinyin; después reconoce caracteres y retira la ayuda gradualmente.',
     lessons:[
-      L('Caracteres y pinyin','Comprende que pinyin es una guía de sonido, no el texto final.',
-        C('El carácter lleva significado','你','nǐ hǎo','你 es el carácter que aprenderás a reconocer directamente.','Mira primero el carácter; revela pinyin solo como ayuda.','El mandarín no usa un alfabeto para escribir palabras corrientes.',['你: carácter.','nǐ: pronunciación en pinyin.','«tú»: significado.'],'¿Qué debe reconocer primero el lector?','El carácter chino',['Solo el pinyin','La traducción española']),
-        C('Pinyin es una herramienta','nǐ','nǐ hǎo','Pinyin registra pronunciación y tono con letras latinas.','Úsalo para escuchar y luego ocúltalo.','Los propios estudiantes chinos aprenden pinyin, pero los textos normales usan caracteres.',['Ayuda con inicial y final.','Marca el tono.','No sustituye a los caracteres.'],'¿Para qué sirve pinyin?','Para aprender pronunciación y tonos',['Para reemplazar siempre los caracteres','Para traducir'])),
+      L('Construir una sílaba en pinyin','Pinyin organiza la pronunciación en inicial, final y tono.',
+        C('Inicial M y final A','m + a → mā','mā','Escucha una sola sílaba: mā.','Separa visualmente m y a; después vuelve a unirlas.','Pinyin es la guía oficial de pronunciación. No es el sistema principal de lectura de textos chinos.',['Inicial: m.','Final: a.','Marca: primer tono.'],'¿Qué partes forman mā?','Inicial m, final a y primer tono',['Dos caracteres','Una traducción y un radical']),
+        C('Inicial N y final I','n + i → nǐ','nǐ','Escucha una sola sílaba: nǐ.','Relaciona la marca ˇ con el tercer tono.','Todavía no necesitas reconocer caracteres: primero estabiliza el sistema sonoro.',['Inicial: n.','Final: i.','Marca: tercer tono.'],'¿Qué partes forman nǐ?','Inicial n, final i y tercer tono',['Inicial m y final a','Un carácter sin tono'])),
       L('Los cuatro tonos','La altura melódica forma parte de cada sílaba.',
-        C('Primer y segundo tono','mā · má','mā','El primero es alto y sostenido; el segundo asciende.','Sigue el contorno completo.','No basta pronunciar las mismas consonantes y vocales.',['mā: alto y estable.','má: ascendente.','La marca se coloca sobre la vocal.'],'¿Son iguales mā y má?','No, tienen tonos diferentes',['Sí','Solo cambia la escritura']),
-        C('Tercer y cuarto tono','mǎ · mà','mǎ','El tercero baja y se recupera en forma aislada; el cuarto cae con firmeza.','Aprende el contorno y sus cambios en habla real.','El tercer tono suele realizarse parcialmente dentro de frases.',['mǎ: tono bajo/descendente-ascendente.','mà: caída fuerte.','El contexto modifica detalles.'],'¿Qué distingue mǎ de mà?','El contorno tonal',['La consonante inicial','El número de sílabas'])),
+        C('Primer tono','mā','mā','El primer tono es alto y sostenido.','Mantén la altura estable.','Cada tono tendrá una tarjeta y un audio propios.',['Marca: ¯.','Contorno alto y plano.','Sílaba: mā.'],'¿Qué tono acabas de escuchar?','Primer tono: alto y sostenido',['Segundo tono: ascendente','Cuarto tono: descendente']),
+        C('Segundo tono','má','má','El segundo tono asciende.','Sigue la subida hasta el final.','No lo conviertas en una simple subida interrogativa española.',['Marca: ´.','Contorno ascendente.','Sílaba: má.'],'¿Qué tono acabas de escuchar?','Segundo tono: ascendente',['Primer tono: plano','Cuarto tono: descendente']),
+        C('Tercer tono','mǎ','mǎ','Aislado, el tercer tono baja y puede recuperarse.','En habla continua suele realizarse parcialmente.','Aprende primero su contorno de referencia y luego sus cambios contextuales.',['Marca: ˇ.','Contorno bajo.','Sílaba: mǎ.'],'¿Qué tono acabas de escuchar?','Tercer tono: bajo y con recuperación posible',['Primer tono: plano','Segundo tono: ascendente']),
+        C('Cuarto tono','mà','mà','El cuarto tono cae con firmeza.','Comienza alto y termina bajo.','La caída pertenece a la sílaba; no es enfado obligatorio.',['Marca: `.','Contorno descendente.','Sílaba: mà.'],'¿Qué tono acabas de escuchar?','Cuarto tono: caída firme',['Primer tono: plano','Segundo tono: ascendente'])),
       L('Iniciales y aspiración','La diferencia b/p, d/t y g/k es principalmente aspiración.',
-        C('B/P y D/T','bā · pā · dā · tā','bā','P y T llevan una salida de aire más fuerte que B y D.','No lo reduzcas a sonora/sorda como español.','Acerca una mano para sentir la aspiración.',['b/d: poca aspiración.','p/t: más aspiración.','La vocal puede ser igual.'],'¿Qué distingue especialmente P de B en pinyin?','La aspiración',['El tono siempre','La longitud escrita']),
-        C('G/K','gē · kē','gē','K es más aspirada que G.','Conserva la lengua en posición posterior.','Ambas son sordas en mandarín estándar; cambia el aire.',['g: poca aspiración.','k: más aspiración.','No añadas una vocal.'],'¿Qué caracteriza K frente a G?','Más aspiración',['Menos aire','Un tono fijo'])),
+        C('Inicial B','bā','bā','B en pinyin lleva poca aspiración.','Acerca una mano a la boca y siente poco aire.','No equivale exactamente a la b sonora española.',['Inicial: b.','Poca aspiración.','Sílaba: bā.'],'¿Qué inicial acabas de practicar?','b, con poca aspiración',['p, con más aspiración','m, nasal']),
+        C('Inicial P','pā','pā','P en pinyin lleva una salida de aire clara.','Acerca una mano a la boca para comprobarla.','El contraste principal con b es la aspiración.',['Inicial: p.','Más aspiración.','Sílaba: pā.'],'¿Qué inicial acabas de practicar?','p, con más aspiración',['b, con poca aspiración','m, nasal']),
+        C('Inicial D','dā','dā','D en pinyin lleva poca aspiración.','La punta de la lengua toca la zona dental/alveolar.','Compárala después con tā.',['Inicial: d.','Poca aspiración.','Sílaba: dā.'],'¿Qué inicial acabas de practicar?','d, con poca aspiración',['t, con más aspiración','g, posterior']),
+        C('Inicial T','tā','tā','T en pinyin añade una salida de aire marcada.','Siente el aire tras soltar la lengua.','La aspiración la separa de d.',['Inicial: t.','Más aspiración.','Sílaba: tā.'],'¿Qué inicial acabas de practicar?','t, con más aspiración',['d, con poca aspiración','k, posterior']),
+        C('Inicial G','gē','gē','G en pinyin es posterior y poco aspirada.','No añadas una vocal extra.','En mandarín estándar no funciona como la g sonora española.',['Inicial: g.','Poca aspiración.','Sílaba: gē.'],'¿Qué inicial acabas de practicar?','g, posterior y poco aspirada',['k, más aspirada','j, palatal']),
+        C('Inicial K','kē','kē','K en pinyin es posterior y más aspirada.','Siente el aire al soltarla.','Practícala por separado antes del contraste g/k.',['Inicial: k.','Más aspiración.','Sílaba: kē.'],'¿Qué inicial acabas de practicar?','k, posterior y aspirada',['g, poco aspirada','q, palatal'])),
       L('J, Q, X y retroflejas','Aprende posiciones que no corresponden al español.',
-        C('J/Q/X','jī · qī · xī','jī','La lengua se acerca al paladar; Q es aspirada y X más fricativa.','No leas X como ks.','Estas iniciales aparecen con vocales frontales.',['j: africada sin mucha aspiración.','q: africada aspirada.','x: fricativa suave.'],'¿Cómo se lee X en pinyin?','Como una fricativa palatal, no ks',['Como ks','Como j española fuerte']),
-        C('ZH/CH/SH/R','zhī · chī · shī · rì','zhī','La punta de la lengua se retrae; CH añade aspiración.','Aprende el grupo completo, no cada letra.','Son iniciales retroflejas frecuentes.',['zh: africada retrofleja.','ch: versión aspirada.','sh/r: sonidos retroflejos.'],'¿Debes separar ZH o CH en dos sonidos?','No, son iniciales completas',['Sí','La H es muda siempre'])),
-      L('Finales y sílaba','Combina inicial, final y tono como una sola unidad.',
-        C('Estructura de sílaba','m + a + tono','má','Una sílaba puede tener inicial, final y tono.','No separes el tono del resto.','Algunas sílabas no tienen consonante inicial.',['Inicial: m.','Final: a.','Tono: segundo.'],'¿Qué tres partes analizas en má?','Inicial, final y tono',['Dos caracteres y traducción','Solo consonante']),
-        C('Ü tras J/Q/X/Y','ju · qu · xu · yu','qī','La diéresis suele omitirse después de j, q, x, y, pero el sonido sigue siendo ü.','No conviertas automáticamente u en u española.','En nü y lü la diéresis se conserva para evitar ambigüedad.',['ju contiene sonido ü.','lü escribe diéresis.','El contexto ortográfico importa.'],'¿Qué vocal contiene normalmente JU en pinyin?','El sonido ü',['Una u española pura','No tiene vocal'])),
-      L('Leer caracteres','Construye memoria visual sin depender de pinyin.',
-        C('Componentes recurrentes','好 = 女 + 子','nǐ hǎo','Muchos caracteres contienen componentes que aportan pistas.','Observa estructura y orden de trazos.','La pista puede ser semántica, fonética o histórica; no siempre es literal.',['Divide visualmente.','Identifica componentes.','Vuelve a reconocer el carácter completo.'],'¿Cómo conviene memorizar un carácter?','Por su forma, componentes, sonido y significado',['Solo por pinyin','Como dibujo sin sonido']),
-        C('Ocultar pinyin gradualmente','你好','nǐ hǎo','Primero intenta leer 你好; muestra nǐ hǎo solo si lo necesitas.','Los ojos deben volver siempre a los caracteres.','Así pinyin ayuda sin convertirse en muleta.',['Mira caracteres.','Intenta recordar.','Revela pinyin al tocar.'],'¿Cuándo conviene mostrar pinyin después de las primeras lecciones?','Solo como ayuda opcional',['Siempre en tamaño mayor','Nunca, ni para aprender tonos'])),
+        C('Inicial J','jī','jī','J es una inicial palatal con poca aspiración.','Mantén la lengua hacia el paladar.','Aprende j antes de compararla con q y x.',['Inicial: j.','Poca aspiración.','Sílaba: jī.'],'¿Qué inicial acabas de practicar?','j',['q','x']),
+        C('Inicial Q','qī','qī','Q es palatal y aspirada.','Siente la salida de aire.','No se lee como la letra q española.',['Inicial: q.','Más aspiración.','Sílaba: qī.'],'¿Qué inicial acabas de practicar?','q',['j','x']),
+        C('Inicial X','xī','xī','X es una fricativa palatal suave.','No la leas como ks.','Deja pasar aire por un canal estrecho cerca del paladar.',['Inicial: x.','Sonido fricativo.','Sílaba: xī.'],'¿Qué inicial acabas de practicar?','x, como fricativa palatal',['x como ks','q aspirada'])),
+      L('Iniciales retroflejas','ZH, CH, SH y R son iniciales completas, no letras sueltas.',
+        C('Inicial ZH','zhī','zhī','ZH es una africada retrofleja poco aspirada.','Retrae ligeramente la punta de la lengua.','Lee zh como una unidad.',['Inicial: zh.','Retrofleja.','Sílaba: zhī.'],'¿Qué inicial acabas de practicar?','zh',['ch','sh']),
+        C('Inicial CH','chī','chī','CH es la contraparte aspirada de zh.','Mantén la posición y añade aire.','Lee ch como una unidad.',['Inicial: ch.','Retrofleja y aspirada.','Sílaba: chī.'],'¿Qué inicial acabas de practicar?','ch',['zh','sh']),
+        C('Inicial SH','shī','shī','SH es una fricativa retrofleja.','Mantén un flujo de aire continuo.','No separes s y h.',['Inicial: sh.','Retrofleja y fricativa.','Sílaba: shī.'],'¿Qué inicial acabas de practicar?','sh',['zh','ch']),
+        C('Inicial R','rì','rì','R usa una posición retrofleja y no equivale a la erre vibrante española.','No hagas vibrar repetidamente la lengua.','Apréndela por audio antes de verla dentro de palabras.',['Inicial: r.','Posición retrofleja.','Sílaba: rì.'],'¿Qué inicial acabas de practicar?','r',['l','sh'])),
+      L('Finales y Ü','Practica finales antes de añadir caracteres.',
+        C('Final A','a → mā','mā','A es la final de mā.','Identifica la parte vocálica después de la inicial.','El tono se marca sobre la vocal correspondiente.',['Inicial: m.','Final: a.','Primer tono.'],'¿Cuál es la final de mā?','a',['i','ü']),
+        C('Final I','i → nǐ','nǐ','I es la final de nǐ.','Mira la marca tonal sobre i.','La sílaba conserva inicial, final y tono.',['Inicial: n.','Final: i.','Tercer tono.'],'¿Cuál es la final de nǐ?','i',['a','u']),
+        C('Final Ü','ü → nǚ','nǚ','Ü es una vocal frontal con labios redondeados.','Forma i con la lengua y redondea los labios.','Tras j, q, x e y los puntos pueden omitirse en la escritura pinyin; el sonido sigue siendo ü.',['Inicial: n.','Final: ü.','Tercer tono.'],'¿Cuál es la final de nǚ?','ü',['u','i'])),
+      L('Primeros caracteres','Solo después de la base sonora comienzas a reconocer formas y significados.',
+        C('Carácter 你','你','nǐ','你 se pronuncia nǐ y significa «tú».','Mira primero el carácter y usa pinyin como apoyo temporal.','Ahora el audio coincide exactamente con el carácter mostrado.',['Carácter: 你.','Pinyin: nǐ.','Significado: tú.'],'¿Qué significa 你?','tú',['hola','persona']),
+        C('Carácter 好','好','hǎo','好 se pronuncia hǎo y expresa «bien/bueno».','Relaciona forma, audio y significado.','No memorices únicamente el pinyin.',['Carácter: 好.','Pinyin: hǎo.','Significado: bien/bueno.'],'¿Qué significa 好?','bien / bueno',['tú','persona']),
+        C('Carácter 人','人','rén','人 se pronuncia rén y significa «persona».','Reconoce su forma completa antes de escribirla.','La escritura manual se añadirá con su orden de trazos.',['Carácter: 人.','Pinyin: rén.','Significado: persona.'],'¿Qué significa 人?','persona',['bien','tú'])),
+      L('Componentes y retiro del pinyin','Construye memoria visual sin convertir pinyin en texto principal.',
+        C('Componentes recurrentes','女 + 子 → 好','hǎo','好 contiene componentes que ayudan a analizar su forma.','Observa las partes y vuelve al carácter completo.','Los componentes pueden aportar pistas semánticas, fonéticas o históricas; no siempre son una traducción literal.',['Izquierda: 女.','Derecha: 子.','Carácter completo: 好.'],'¿Qué debes volver a reconocer después de analizar componentes?','El carácter completo 好',['Solo el pinyin','Una traducción sin carácter']),
+        C('Ocultar pinyin gradualmente','你好','nǐ hǎo','Primero intenta reconocer 你好; muestra nǐ hǎo solo si lo necesitas.','Los ojos deben volver siempre a los caracteres.','HSK University recomienda pinyin y tonos primero, y después añadir caracteres gradualmente.',['Mira caracteres.','Intenta recordar.','Revela pinyin como ayuda opcional.'],'¿Cuándo conviene mostrar pinyin después de esta base?','Solo como ayuda opcional',['Siempre en tamaño mayor','Nunca, ni al aprender pronunciación'])),
     ],
   },
   Arabic:{
@@ -247,15 +277,17 @@ const makeLesson=(spec,lesson,index)=>{
   const id=`${spec.slug}-reading-00-${String(index+1).padStart(2,'0')}`;
   return{id,title:lesson.title,description:lesson.description,activities:[
     intro(id,'Primero comprende la regla',lesson.description),
-    teach(`${id}-a`,lesson.concepts[0]),question(`${id}-a`,lesson.concepts[0]),
-    teach(`${id}-b`,lesson.concepts[1]),question(`${id}-b`,lesson.concepts[1]),
+    ...lesson.concepts.flatMap((concept,conceptIndex)=>{
+      const suffix=String.fromCharCode(97+conceptIndex);
+      return[teach(`${id}-${suffix}`,concept),question(`${id}-${suffix}`,concept)];
+    }),
   ]};
 };
 const makeReview=(spec,lessons)=>{
   const id=`${spec.slug}-reading-00-review`;
   return{id,title:'Repaso: reglas de lectura',description:'Recupera las reglas esenciales antes de la prueba.',isReview:true,activities:[
     intro(id,'Repaso acumulativo','Recuerda cada regla sin mirar una transcripción permanente.'),
-    ...lessons.map((lesson,index)=>question(`${id}-${index+1}`,lesson.concepts[index%2])),
+    ...lessons.map((lesson,index)=>question(`${id}-${index+1}`,lesson.concepts[index%lesson.concepts.length])),
   ]};
 };
 const makeTest=(spec,lessons)=>{
@@ -271,7 +303,7 @@ for(const [directory,spec] of Object.entries(specs)){
   const root=path.join(coursesRoot,directory),coursePath=path.join(root,'course.json');
   const manifest=JSON.parse(fs.readFileSync(path.join(root,'audio_manifest.json'),'utf8')).items||{};
   const missing=[...new Set(spec.lessons.flatMap(lesson=>lesson.concepts.map(concept=>concept.audio)).filter(audio=>audio&&!manifest[audio]))];
-  if(missing.length)throw new Error(`${directory}: faltan audios ${missing.join(', ')}`);
+  if(missing.length)console.warn(`${directory}: faltan audios por generar: ${missing.join(', ')}`);
   const normal=spec.lessons.map((lesson,index)=>makeLesson(spec,lesson,index));
   const unit={id:'reading-foundations',title:spec.title,description:spec.description,requirements:[],reward:{xp:220,badge:'Lector inicial'},lessons:[...normal,makeReview(spec,spec.lessons),makeTest(spec,spec.lessons)]};
   const unitPath=path.join(root,'units','reading-foundations.json');
@@ -282,7 +314,8 @@ for(const [directory,spec] of Object.entries(specs)){
   course.units=[summary,...(course.units||[]).filter(unit=>unit.id!=='reading-foundations')];
   if(foundations)foundations.unitIds=['reading-foundations',...(foundations.unitIds||[]).filter(id=>id!=='reading-foundations')];
   course.unlockRules={...(course.unlockRules||{}),requireReadingMastery:true,readingUnitId:'reading-foundations'};
-  course.version=Math.max(11,Number(course.version||0));
+  const contentVersion=['French','Chinese'].includes(directory)?12:11;
+  course.version=Math.max(contentVersion,Number(course.version||0));
   fs.writeFileSync(coursePath,JSON.stringify(course,null,2)+'\n');
 
   for(const lesson of unit.lessons){

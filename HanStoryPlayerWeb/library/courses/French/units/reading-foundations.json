@@ -1,7 +1,7 @@
 {
   "id": "reading-foundations",
   "title": "Cómo se lee el francés",
-  "description": "Domina acentos, grupos vocálicos, sonidos nasales y letras finales antes de leer frases.",
+  "description": "Aprende primero letras, grafemas y sílabas: una forma escrita y un sonido por tarjeta, antes de estudiar palabras o frases.",
   "requirements": [],
   "reward": {
     "xp": 220,
@@ -10,8 +10,8 @@
   "lessons": [
     {
       "id": "french-reading-00-01",
-      "title": "Letras y acentos",
-      "description": "Los acentos forman parte de la lectura.",
+      "title": "Reconocer las letras",
+      "description": "Aprende el nombre de una letra para identificarla; todavía no estás leyendo palabras.",
       "activities": [
         {
           "id": "french-reading-00-01-intro",
@@ -20,7 +20,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Los acentos forman parte de la lectura.",
+          "explanation": "Aprende el nombre de una letra para identificarla; todavía no estás leyendo palabras.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -34,13 +34,13 @@
         {
           "id": "french-reading-00-01-a-teach",
           "type": "teach_concept",
-          "prompt": "É y È orientan el sonido",
-          "target": "é · è",
+          "prompt": "Letra A",
+          "target": "A",
           "options": [],
           "answer": "",
-          "explanation": "Los acentos ayudan a distinguir el sonido y, a veces, el significado.",
-          "audio": "e",
-          "slow_audio": "e",
+          "explanation": "El nombre permite señalar la letra escrita. Más adelante la combinarás para producir sílabas.",
+          "audio": "a",
+          "slow_audio": "a",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -50,28 +50,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "É suele ser más cerrada y è más abierta.",
-          "memory_hint": "No ignores el acento escrito.",
+          "sound_hint": "Escucha únicamente el nombre de A.",
+          "memory_hint": "Una tarjeta, una letra, un audio.",
           "teaching_points": [
-            "é: vocal cerrada.",
-            "è/ê: vocal más abierta.",
-            "El acento no es decoración."
+            "Forma escrita: A/a.",
+            "Nombre francés: a.",
+            "No hay una palabra escondida en esta tarjeta."
           ]
         },
         {
           "id": "french-reading-00-01-a-question",
           "type": "select_translation",
-          "prompt": "¿Qué indican é y è?",
-          "target": "é · è",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
           "options": [
-            "Orientan hacia sonidos vocálicos distintos",
-            "Solo énfasis visual",
-            "Que la letra es muda"
+            "A",
+            "B",
+            "C"
           ],
-          "answer": "Orientan hacia sonidos vocálicos distintos",
-          "explanation": "Los acentos ayudan a distinguir el sonido y, a veces, el significado.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "A",
+          "explanation": "El nombre permite señalar la letra escrita. Más adelante la combinarás para producir sílabas.",
+          "audio": "a",
+          "slow_audio": "a",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -82,11 +82,59 @@
         {
           "id": "french-reading-00-01-b-teach",
           "type": "teach_concept",
-          "prompt": "Ç cambia C",
-          "target": "ç",
+          "prompt": "Letra B",
+          "target": "B",
           "options": [],
           "answer": "",
-          "explanation": "Compara ca y ça para reconocer su función.",
+          "explanation": "B se llama «bé». Cuando se combine con una vocal, escucharás el sonido dentro de una sílaba.",
+          "audio": "bé",
+          "slow_audio": "bé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Escucha únicamente el nombre de B.",
+          "memory_hint": "No confundas el nombre con una sílaba.",
+          "teaching_points": [
+            "Forma escrita: B/b.",
+            "Nombre francés: bé.",
+            "El sonido se practicará después con vocales."
+          ]
+        },
+        {
+          "id": "french-reading-00-01-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "B",
+            "D",
+            "P"
+          ],
+          "answer": "B",
+          "explanation": "B se llama «bé». Cuando se combine con una vocal, escucharás el sonido dentro de una sílaba.",
+          "audio": "bé",
+          "slow_audio": "bé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-01-c-teach",
+          "type": "teach_concept",
+          "prompt": "Letra C",
+          "target": "C",
+          "options": [],
+          "answer": "",
+          "explanation": "Por ahora reconoce su nombre. Después estudiarás ca y ce por separado.",
           "audio": "cé",
           "slow_audio": "cé",
           "image": null,
@@ -98,26 +146,26 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "Ç delante de a, o, u representa un sonido s.",
-          "memory_hint": "La cedilla evita el sonido k.",
+          "sound_hint": "Escucha únicamente el nombre de C.",
+          "memory_hint": "C puede cambiar de sonido según la vocal siguiente.",
           "teaching_points": [
-            "c + a suele sonar k.",
-            "ç + a suena s.",
-            "La cedilla aparece bajo c."
+            "Forma escrita: C/c.",
+            "Nombre francés: cé.",
+            "El contexto decide su sonido."
           ]
         },
         {
-          "id": "french-reading-00-01-b-question",
+          "id": "french-reading-00-01-c-question",
           "type": "select_translation",
-          "prompt": "¿Cómo suele sonar ç?",
-          "target": "ç",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
           "options": [
-            "Como s",
-            "Como k",
-            "No suena"
+            "C",
+            "G",
+            "S"
           ],
-          "answer": "Como s",
-          "explanation": "Compara ca y ça para reconocer su función.",
+          "answer": "C",
+          "explanation": "Por ahora reconoce su nombre. Después estudiarás ca y ce por separado.",
           "audio": "cé",
           "slow_audio": "cé",
           "image": null,
@@ -131,8 +179,8 @@
     },
     {
       "id": "french-reading-00-02",
-      "title": "Grupos vocálicos",
-      "description": "Lee varias letras como una sola unidad.",
+      "title": "Vocales claras",
+      "description": "Une una consonante conocida con una sola vocal.",
       "activities": [
         {
           "id": "french-reading-00-02-intro",
@@ -141,7 +189,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Lee varias letras como una sola unidad.",
+          "explanation": "Une una consonante conocida con una sola vocal.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -155,13 +203,13 @@
         {
           "id": "french-reading-00-02-a-teach",
           "type": "teach_concept",
-          "prompt": "OU no es U",
-          "target": "ou · u",
+          "prompt": "A dentro de una sílaba",
+          "target": "a → ma",
           "options": [],
           "answer": "",
-          "explanation": "La diferencia distingue muchas palabras.",
-          "audio": "u",
-          "slow_audio": "u",
+          "explanation": "La consonante sirve de apoyo para que ElevenLabs produzca la vocal de forma natural. El objetivo de esta tarjeta es a.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -171,28 +219,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "OU suele aproximarse a u española; U francesa es frontal y redondeada.",
-          "memory_hint": "No leas ambas como la misma vocal.",
+          "sound_hint": "Escucha la vocal a dentro de ma.",
+          "memory_hint": "Mira a mientras oyes ma.",
           "teaching_points": [
-            "ou: labios redondeados y lengua atrás.",
-            "u: labios redondeados y lengua adelante.",
-            "Escucha pares contrastivos."
+            "m + a → ma.",
+            "La vocal central es a.",
+            "No se presenta vocabulario todavía."
           ]
         },
         {
           "id": "french-reading-00-02-a-question",
           "type": "select_translation",
-          "prompt": "¿OU y U francesas suenan igual?",
-          "target": "ou · u",
+          "prompt": "¿Qué vocal aparece en la sílaba ma?",
+          "target": "a → ma",
           "options": [
-            "No, representan vocales distintas",
-            "Sí, siempre",
-            "Solo cambian al escribir"
+            "a",
+            "i",
+            "o"
           ],
-          "answer": "No, representan vocales distintas",
-          "explanation": "La diferencia distingue muchas palabras.",
-          "audio": "u",
-          "slow_audio": "u",
+          "answer": "a",
+          "explanation": "La consonante sirve de apoyo para que ElevenLabs produzca la vocal de forma natural. El objetivo de esta tarjeta es a.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -203,13 +251,13 @@
         {
           "id": "french-reading-00-02-b-teach",
           "type": "teach_concept",
-          "prompt": "AU y EAU",
-          "target": "au · eau",
+          "prompt": "I dentro de una sílaba",
+          "target": "i → mi",
           "options": [],
           "answer": "",
-          "explanation": "No pronuncies cada vocal por separado.",
-          "audio": "o",
-          "slow_audio": "o",
+          "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
+          "audio": "mi",
+          "slow_audio": "mi",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -219,28 +267,76 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "Ambos grupos suelen representar un sonido cercano a o.",
-          "memory_hint": "Reconoce el bloque completo.",
+          "sound_hint": "Escucha la vocal i dentro de mi.",
+          "memory_hint": "Mira i mientras oyes mi.",
           "teaching_points": [
-            "au funciona como una unidad.",
-            "eau también funciona como unidad.",
-            "La palabra conserva una sola vocal audible."
+            "m + i → mi.",
+            "La vocal central es i.",
+            "No necesitas memorizar una palabra."
           ]
         },
         {
           "id": "french-reading-00-02-b-question",
           "type": "select_translation",
-          "prompt": "¿Cómo lees normalmente EAU?",
-          "target": "au · eau",
+          "prompt": "¿Qué vocal aparece en la sílaba mi?",
+          "target": "i → mi",
           "options": [
-            "Como un grupo vocálico, cercano a o",
-            "Como tres vocales separadas",
-            "Como e muda únicamente"
+            "i",
+            "a",
+            "u"
           ],
-          "answer": "Como un grupo vocálico, cercano a o",
-          "explanation": "No pronuncies cada vocal por separado.",
-          "audio": "o",
-          "slow_audio": "o",
+          "answer": "i",
+          "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
+          "audio": "mi",
+          "slow_audio": "mi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-02-c-teach",
+          "type": "teach_concept",
+          "prompt": "O dentro de una sílaba",
+          "target": "o → mo",
+          "options": [],
+          "answer": "",
+          "explanation": "Practica primero la sílaba; el vocabulario llegará después.",
+          "audio": "mo",
+          "slow_audio": "mo",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Escucha la vocal o dentro de mo.",
+          "memory_hint": "Redondea los labios suavemente.",
+          "teaching_points": [
+            "m + o → mo.",
+            "La vocal central es o.",
+            "Mantén un solo impulso de voz."
+          ]
+        },
+        {
+          "id": "french-reading-00-02-c-question",
+          "type": "select_translation",
+          "prompt": "¿Qué vocal aparece en la sílaba mo?",
+          "target": "o → mo",
+          "options": [
+            "o",
+            "e",
+            "i"
+          ],
+          "answer": "o",
+          "explanation": "Practica primero la sílaba; el vocabulario llegará después.",
+          "audio": "mo",
+          "slow_audio": "mo",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -252,8 +348,8 @@
     },
     {
       "id": "french-reading-00-03",
-      "title": "Vocales nasales",
-      "description": "Reconoce cuando n o m nasalizan la vocal.",
+      "title": "É y È por separado",
+      "description": "Los acentos orientan hacia vocales distintas; cada una tiene su propio audio.",
       "activities": [
         {
           "id": "french-reading-00-03-intro",
@@ -262,7 +358,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Reconoce cuando n o m nasalizan la vocal.",
+          "explanation": "Los acentos orientan hacia vocales distintas; cada una tiene su propio audio.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -276,13 +372,13 @@
         {
           "id": "french-reading-00-03-a-teach",
           "type": "teach_concept",
-          "prompt": "AN / EN",
-          "target": "an · en",
+          "prompt": "É cerrada",
+          "target": "é → mé",
           "options": [],
           "answer": "",
-          "explanation": "El patrón cambia si después aparece otra vocal.",
-          "audio": "enne",
-          "slow_audio": "enne",
+          "explanation": "El acento agudo forma parte del grafema. No es decoración.",
+          "audio": "mé",
+          "slow_audio": "mé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -292,28 +388,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "La vocal se nasaliza y la n normalmente no forma una sílaba aparte.",
-          "memory_hint": "Deja salir aire por la nariz.",
+          "sound_hint": "É suele ser una vocal más cerrada.",
+          "memory_hint": "Asocia é solo con este audio antes de contrastarla.",
           "teaching_points": [
-            "an/en forman una vocal nasal frecuente.",
-            "No añadas una n española fuerte.",
-            "Observa la letra siguiente."
+            "Grafema: é.",
+            "Sílaba de apoyo: mé.",
+            "La boca queda relativamente cerrada."
           ]
         },
         {
           "id": "french-reading-00-03-a-question",
           "type": "select_translation",
-          "prompt": "¿Qué ocurre normalmente en AN o EN?",
-          "target": "an · en",
+          "prompt": "¿Qué grafema practicas en mé?",
+          "target": "é → mé",
           "options": [
-            "La vocal se nasaliza",
-            "Se pronuncian dos sílabas",
-            "La vocal desaparece"
+            "é",
+            "è",
+            "ê"
           ],
-          "answer": "La vocal se nasaliza",
-          "explanation": "El patrón cambia si después aparece otra vocal.",
-          "audio": "enne",
-          "slow_audio": "enne",
+          "answer": "é",
+          "explanation": "El acento agudo forma parte del grafema. No es decoración.",
+          "audio": "mé",
+          "slow_audio": "mé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -324,13 +420,13 @@
         {
           "id": "french-reading-00-03-b-teach",
           "type": "teach_concept",
-          "prompt": "ON / IN",
-          "target": "on · in",
+          "prompt": "È abierta",
+          "target": "è → mè",
           "options": [],
           "answer": "",
-          "explanation": "La escritura agrupa vocal y consonante nasal.",
-          "audio": "o",
-          "slow_audio": "o",
+          "explanation": "El acento grave orienta la apertura de esta e.",
+          "audio": "mè",
+          "slow_audio": "mè",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -340,28 +436,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "Son dos vocales nasales diferentes.",
-          "memory_hint": "Apréndelas con audio y contraste.",
+          "sound_hint": "È suele ser una vocal más abierta.",
+          "memory_hint": "Compárala con é únicamente después de aprender cada una.",
           "teaching_points": [
-            "on es redondeada y nasal.",
-            "in es más frontal.",
-            "No leas la consonante final como en español."
+            "Grafema: è.",
+            "Sílaba de apoyo: mè.",
+            "La mandíbula se abre algo más."
           ]
         },
         {
           "id": "french-reading-00-03-b-question",
           "type": "select_translation",
-          "prompt": "¿ON e IN representan el mismo sonido?",
-          "target": "on · in",
+          "prompt": "¿Qué grafema practicas en mè?",
+          "target": "è → mè",
           "options": [
-            "No, son vocales nasales distintas",
-            "Sí",
-            "Solo cambia el volumen"
+            "è",
+            "é",
+            "ê"
           ],
-          "answer": "No, son vocales nasales distintas",
-          "explanation": "La escritura agrupa vocal y consonante nasal.",
-          "audio": "o",
-          "slow_audio": "o",
+          "answer": "è",
+          "explanation": "El acento grave orienta la apertura de esta e.",
+          "audio": "mè",
+          "slow_audio": "mè",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -373,8 +469,8 @@
     },
     {
       "id": "french-reading-00-04",
-      "title": "Finales silenciosos",
-      "description": "Muchas consonantes finales no se pronuncian.",
+      "title": "U y OU por separado",
+      "description": "Estas dos grafías no representan la misma vocal.",
       "activities": [
         {
           "id": "french-reading-00-04-intro",
@@ -383,7 +479,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Muchas consonantes finales no se pronuncian.",
+          "explanation": "Estas dos grafías no representan la misma vocal.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -397,13 +493,13 @@
         {
           "id": "french-reading-00-04-a-teach",
           "type": "teach_concept",
-          "prompt": "La última letra puede callar",
-          "target": "petit · grand",
+          "prompt": "U francesa",
+          "target": "u → mu",
           "options": [],
           "answer": "",
-          "explanation": "C, R, F y L se oyen con más frecuencia que otras finales, pero hay excepciones.",
-          "audio": "té",
-          "slow_audio": "té",
+          "explanation": "Esta vocal no equivale exactamente a la u española.",
+          "audio": "mu",
+          "slow_audio": "mu",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -413,28 +509,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "No leas automáticamente toda consonante final.",
-          "memory_hint": "Confirma la pronunciación con el audio.",
+          "sound_hint": "La u francesa es frontal y redondeada.",
+          "memory_hint": "Coloca la lengua como para i y redondea los labios.",
           "teaching_points": [
-            "Muchas d, t, s, x finales callan.",
-            "Algunas finales sí se oyen.",
-            "Aprende palabras y patrones."
+            "Grafema: u.",
+            "Sílaba: mu.",
+            "Lengua adelante; labios redondos."
           ]
         },
         {
           "id": "french-reading-00-04-a-question",
           "type": "select_translation",
-          "prompt": "¿Debes pronunciar toda consonante final francesa?",
-          "target": "petit · grand",
+          "prompt": "¿Qué grafema practicas en mu?",
+          "target": "u → mu",
           "options": [
-            "No, muchas son silenciosas",
-            "Sí, todas",
-            "Solo en plural"
+            "u",
+            "ou",
+            "o"
           ],
-          "answer": "No, muchas son silenciosas",
-          "explanation": "C, R, F y L se oyen con más frecuencia que otras finales, pero hay excepciones.",
-          "audio": "té",
-          "slow_audio": "té",
+          "answer": "u",
+          "explanation": "Esta vocal no equivale exactamente a la u española.",
+          "audio": "mu",
+          "slow_audio": "mu",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -445,13 +541,13 @@
         {
           "id": "french-reading-00-04-b-teach",
           "type": "teach_concept",
-          "prompt": "E final",
-          "target": "e final",
+          "prompt": "Grupo OU",
+          "target": "ou → mou",
           "options": [],
           "answer": "",
-          "explanation": "En poesía o variedades regionales puede comportarse de otra manera.",
-          "audio": "e",
-          "slow_audio": "e",
+          "explanation": "Las dos letras colaboran para representar una vocal.",
+          "audio": "mou",
+          "slow_audio": "mou",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -461,28 +557,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "La e final suele ser muda y puede afectar la consonante anterior.",
-          "memory_hint": "No añadas una e española al final.",
+          "sound_hint": "OU suele acercarse a la u española.",
+          "memory_hint": "Reconoce ou como una sola unidad gráfica.",
           "teaching_points": [
-            "Suele no formar sílaba.",
-            "Puede hacer audible una consonante previa.",
-            "El contexto importa."
+            "Grafema: ou.",
+            "Sílaba: mou.",
+            "No pronuncies o y u por separado."
           ]
         },
         {
           "id": "french-reading-00-04-b-question",
           "type": "select_translation",
-          "prompt": "¿La e final suele formar una sílaba fuerte?",
-          "target": "e final",
+          "prompt": "¿Qué grupo practicas en mou?",
+          "target": "ou → mou",
           "options": [
-            "No, normalmente es muda",
-            "Sí, siempre",
-            "Solo después de vocal"
+            "ou",
+            "u",
+            "au"
           ],
-          "answer": "No, normalmente es muda",
-          "explanation": "En poesía o variedades regionales puede comportarse de otra manera.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "ou",
+          "explanation": "Las dos letras colaboran para representar una vocal.",
+          "audio": "mou",
+          "slow_audio": "mou",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -494,8 +590,8 @@
     },
     {
       "id": "french-reading-00-05",
-      "title": "Liaison y encadenamiento",
-      "description": "Aprende cuándo una consonante reaparece al unir palabras.",
+      "title": "Construir sílabas",
+      "description": "Combina una consonante y una vocal sin recurrir todavía a palabras completas.",
       "activities": [
         {
           "id": "french-reading-00-05-intro",
@@ -504,7 +600,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Aprende cuándo una consonante reaparece al unir palabras.",
+          "explanation": "Combina una consonante y una vocal sin recurrir todavía a palabras completas.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -518,13 +614,13 @@
         {
           "id": "french-reading-00-05-a-teach",
           "type": "teach_concept",
-          "prompt": "Liaison",
-          "target": "les amis",
+          "prompt": "M + A",
+          "target": "m + a → ma",
           "options": [],
           "answer": "",
-          "explanation": "La liaison es obligatoria en algunos contextos, opcional o prohibida en otros.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "explanation": "Leer una sílaba significa producir sonidos, no nombres de letras.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -534,28 +630,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "Una consonante final normalmente muda puede enlazarse con una vocal siguiente.",
-          "memory_hint": "Lee el grupo de palabras, no cada palabra aislada.",
+          "sound_hint": "Une m y a en un solo impulso.",
+          "memory_hint": "No digas «emme-a».",
           "teaching_points": [
-            "les amis enlaza con sonido z.",
-            "No toda frontera permite liaison.",
-            "Escucha expresiones completas."
+            "m aporta la consonante.",
+            "a aporta la vocal.",
+            "Juntas forman ma."
           ]
         },
         {
           "id": "french-reading-00-05-a-question",
           "type": "select_translation",
-          "prompt": "¿Qué es la liaison?",
-          "target": "les amis",
+          "prompt": "¿Qué sílaba forman m y a?",
+          "target": "m + a → ma",
           "options": [
-            "Enlazar una consonante final con la vocal siguiente",
-            "Eliminar todas las vocales",
-            "Separar más las palabras"
+            "ma",
+            "mi",
+            "la"
           ],
-          "answer": "Enlazar una consonante final con la vocal siguiente",
-          "explanation": "La liaison es obligatoria en algunos contextos, opcional o prohibida en otros.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "answer": "ma",
+          "explanation": "Leer una sílaba significa producir sonidos, no nombres de letras.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -566,13 +662,13 @@
         {
           "id": "french-reading-00-05-b-teach",
           "type": "teach_concept",
-          "prompt": "Ritmo por grupos",
-          "target": "un groupe rythmique",
+          "prompt": "F + I",
+          "target": "f + i → fi",
           "options": [],
           "answer": "",
-          "explanation": "La lectura natural une palabras gramaticalmente relacionadas.",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
+          "audio": "fi",
+          "slow_audio": "fi",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -582,28 +678,76 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "El francés organiza el ritmo en grupos y suele acentuar el final del grupo.",
-          "memory_hint": "Evita acentuar cada palabra como en español.",
+          "sound_hint": "Une f y i sin insertar otra vocal.",
+          "memory_hint": "Mantén aire continuo en f y pasa a i.",
           "teaching_points": [
-            "Forma grupos breves.",
-            "Mantén fluidez dentro del grupo.",
-            "Marca suavemente su final."
+            "f aporta fricción.",
+            "i aporta la vocal.",
+            "Juntas forman fi."
           ]
         },
         {
           "id": "french-reading-00-05-b-question",
           "type": "select_translation",
-          "prompt": "¿Dónde recae normalmente la prominencia francesa?",
-          "target": "un groupe rythmique",
+          "prompt": "¿Qué sílaba forman f e i?",
+          "target": "f + i → fi",
           "options": [
-            "Al final de un grupo rítmico",
-            "En la primera letra de cada palabra",
-            "En todas las sílabas"
+            "fi",
+            "fa",
+            "mi"
           ],
-          "answer": "Al final de un grupo rítmico",
-          "explanation": "La lectura natural une palabras gramaticalmente relacionadas.",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "answer": "fi",
+          "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
+          "audio": "fi",
+          "slow_audio": "fi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-05-c-teach",
+          "type": "teach_concept",
+          "prompt": "L + U",
+          "target": "l + u → lu",
+          "options": [],
+          "answer": "",
+          "explanation": "Después conserva labios redondeados para u.",
+          "audio": "lu",
+          "slow_audio": "lu",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Une l con la u francesa.",
+          "memory_hint": "La lengua toca detrás de los dientes para l.",
+          "teaching_points": [
+            "l aporta la consonante.",
+            "u aporta la vocal frontal redondeada.",
+            "Juntas forman lu."
+          ]
+        },
+        {
+          "id": "french-reading-00-05-c-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba forman l y u?",
+          "target": "l + u → lu",
+          "options": [
+            "lu",
+            "la",
+            "lou"
+          ],
+          "answer": "lu",
+          "explanation": "Después conserva labios redondeados para u.",
+          "audio": "lu",
+          "slow_audio": "lu",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -615,8 +759,8 @@
     },
     {
       "id": "french-reading-00-06",
-      "title": "Leer sin deletrear",
-      "description": "Combina reglas y escucha antes de traducir.",
+      "title": "C y G según la vocal",
+      "description": "Aprende cada combinación por separado.",
       "activities": [
         {
           "id": "french-reading-00-06-intro",
@@ -625,7 +769,7 @@
           "target": "",
           "options": [],
           "answer": "",
-          "explanation": "Combina reglas y escucha antes de traducir.",
+          "explanation": "Aprende cada combinación por separado.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -639,13 +783,13 @@
         {
           "id": "french-reading-00-06-a-teach",
           "type": "teach_concept",
-          "prompt": "Busca unidades gráficas",
-          "target": "ch · ph · gn",
+          "prompt": "C ante A",
+          "target": "c + a → ca",
           "options": [],
           "answer": "",
-          "explanation": "CH, PH y GN no deben separarse en nombres de letras.",
-          "audio": "gé",
-          "slow_audio": "gé",
+          "explanation": "La vocal siguiente ayuda a predecir el sonido de c.",
+          "audio": "ca",
+          "slow_audio": "ca",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -655,28 +799,28 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "Un grupo puede representar un sonido único.",
-          "memory_hint": "Señala primero los grupos conocidos.",
+          "sound_hint": "Ante a, c suele representar un sonido k.",
+          "memory_hint": "Asocia ca con un solo audio.",
           "teaching_points": [
-            "ch suele sonar sh.",
-            "ph suele sonar f.",
-            "gn se parece a ñ."
+            "Grafema consonántico: c.",
+            "Vocal siguiente: a.",
+            "Resultado: ca con sonido k."
           ]
         },
         {
           "id": "french-reading-00-06-a-question",
           "type": "select_translation",
-          "prompt": "¿Cómo empiezas a leer una palabra francesa?",
-          "target": "ch · ph · gn",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "c + a → ca",
           "options": [
-            "Reconociendo grupos de letras frecuentes",
-            "Nombrando cada letra",
-            "Ignorando los acentos"
+            "ca",
+            "ce",
+            "ga"
           ],
-          "answer": "Reconociendo grupos de letras frecuentes",
-          "explanation": "CH, PH y GN no deben separarse en nombres de letras.",
-          "audio": "gé",
-          "slow_audio": "gé",
+          "answer": "ca",
+          "explanation": "La vocal siguiente ayuda a predecir el sonido de c.",
+          "audio": "ca",
+          "slow_audio": "ca",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -687,13 +831,13 @@
         {
           "id": "french-reading-00-06-b-teach",
           "type": "teach_concept",
-          "prompt": "Verifica con audio",
-          "target": "Bonjour !",
+          "prompt": "C ante E",
+          "target": "c + e → ce",
           "options": [],
           "answer": "",
-          "explanation": "Con exposición, los patrones se vuelven automáticos.",
-          "audio": "Bonjour !",
-          "slow_audio": "Bonjour !",
+          "explanation": "El cambio de vocal modifica la lectura de c.",
+          "audio": "ce",
+          "slow_audio": "ce",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -703,28 +847,462 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "La ortografía orienta, pero el audio confirma el patrón real.",
-          "memory_hint": "Lee, escucha y corrige la hipótesis.",
+          "sound_hint": "Ante e, c suele representar un sonido s.",
+          "memory_hint": "No uses automáticamente el sonido de ca.",
           "teaching_points": [
-            "Haz una primera lectura.",
-            "Escucha el modelo.",
-            "Compara y ajusta."
+            "Grafema consonántico: c.",
+            "Vocal siguiente: e.",
+            "Resultado: ce con sonido s."
           ]
         },
         {
           "id": "french-reading-00-06-b-question",
           "type": "select_translation",
-          "prompt": "¿Qué función tiene el audio al aprender a leer?",
-          "target": "Bonjour !",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "c + e → ce",
           "options": [
-            "Confirmar y ajustar la lectura",
-            "Sustituir para siempre el texto",
-            "Traducir automáticamente"
+            "ce",
+            "ca",
+            "ge"
           ],
-          "answer": "Confirmar y ajustar la lectura",
-          "explanation": "Con exposición, los patrones se vuelven automáticos.",
-          "audio": "Bonjour !",
-          "slow_audio": "Bonjour !",
+          "answer": "ce",
+          "explanation": "El cambio de vocal modifica la lectura de c.",
+          "audio": "ce",
+          "slow_audio": "ce",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-06-c-teach",
+          "type": "teach_concept",
+          "prompt": "G ante A",
+          "target": "g + a → ga",
+          "options": [],
+          "answer": "",
+          "explanation": "No la separes en nombres de letras.",
+          "audio": "ga",
+          "slow_audio": "ga",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ante a, g conserva un sonido duro.",
+          "memory_hint": "Practica ga como una sola sílaba.",
+          "teaching_points": [
+            "Grafema consonántico: g.",
+            "Vocal siguiente: a.",
+            "Resultado: ga."
+          ]
+        },
+        {
+          "id": "french-reading-00-06-c-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "g + a → ga",
+          "options": [
+            "ga",
+            "ge",
+            "ca"
+          ],
+          "answer": "ga",
+          "explanation": "No la separes en nombres de letras.",
+          "audio": "ga",
+          "slow_audio": "ga",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-06-d-teach",
+          "type": "teach_concept",
+          "prompt": "G ante E",
+          "target": "g + e → ge",
+          "options": [],
+          "answer": "",
+          "explanation": "La vocal siguiente vuelve a decidir la lectura.",
+          "audio": "ge",
+          "slow_audio": "ge",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "Ante e, g suele representar un sonido suave.",
+          "memory_hint": "Compárala con ga después de dominar ambas tarjetas.",
+          "teaching_points": [
+            "Grafema consonántico: g.",
+            "Vocal siguiente: e.",
+            "Resultado: ge con sonido suave."
+          ]
+        },
+        {
+          "id": "french-reading-00-06-d-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "g + e → ge",
+          "options": [
+            "ge",
+            "ga",
+            "ce"
+          ],
+          "answer": "ge",
+          "explanation": "La vocal siguiente vuelve a decidir la lectura.",
+          "audio": "ge",
+          "slow_audio": "ge",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-reading-00-07",
+      "title": "Grupos consonánticos",
+      "description": "Un grupo escrito puede representar una sola consonante.",
+      "activities": [
+        {
+          "id": "french-reading-00-07-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Un grupo escrito puede representar una sola consonante.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-reading-00-07-a-teach",
+          "type": "teach_concept",
+          "prompt": "Grupo CH",
+          "target": "ch + a → cha",
+          "options": [],
+          "answer": "",
+          "explanation": "El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "CH suele producir un sonido parecido a sh.",
+          "memory_hint": "Mira ch como una unidad.",
+          "teaching_points": [
+            "Grupo: ch.",
+            "Vocal de apoyo: a.",
+            "Resultado: cha."
+          ]
+        },
+        {
+          "id": "french-reading-00-07-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en cha?",
+          "target": "ch + a → cha",
+          "options": [
+            "ch",
+            "ph",
+            "gn"
+          ],
+          "answer": "ch",
+          "explanation": "El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-07-b-teach",
+          "type": "teach_concept",
+          "prompt": "Grupo PH",
+          "target": "ph + i → phi",
+          "options": [],
+          "answer": "",
+          "explanation": "No pronuncies p y h por separado.",
+          "audio": "phi",
+          "slow_audio": "phi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "PH suele representar el sonido f.",
+          "memory_hint": "Mira ph como una unidad.",
+          "teaching_points": [
+            "Grupo: ph.",
+            "Vocal de apoyo: i.",
+            "Resultado: phi, con sonido f."
+          ]
+        },
+        {
+          "id": "french-reading-00-07-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en phi?",
+          "target": "ph + i → phi",
+          "options": [
+            "ph",
+            "ch",
+            "gn"
+          ],
+          "answer": "ph",
+          "explanation": "No pronuncies p y h por separado.",
+          "audio": "phi",
+          "slow_audio": "phi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-07-c-teach",
+          "type": "teach_concept",
+          "prompt": "Grupo GN",
+          "target": "gn + a → gna",
+          "options": [],
+          "answer": "",
+          "explanation": "No produzcas g y n como dos consonantes separadas.",
+          "audio": "gna",
+          "slow_audio": "gna",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "GN suele acercarse a la ñ española.",
+          "memory_hint": "Mira gn como una unidad.",
+          "teaching_points": [
+            "Grupo: gn.",
+            "Vocal de apoyo: a.",
+            "Resultado: gna."
+          ]
+        },
+        {
+          "id": "french-reading-00-07-c-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en gna?",
+          "target": "gn + a → gna",
+          "options": [
+            "gn",
+            "ch",
+            "ph"
+          ],
+          "answer": "gn",
+          "explanation": "No produzcas g y n como dos consonantes separadas.",
+          "audio": "gna",
+          "slow_audio": "gna",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": "french-reading-00-08",
+      "title": "Primeras vocales nasales",
+      "description": "Aprende cada grafema nasal con su propio audio.",
+      "activities": [
+        {
+          "id": "french-reading-00-08-intro",
+          "type": "lesson_intro",
+          "prompt": "Primero comprende la regla",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "Aprende cada grafema nasal con su propio audio.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-reading-00-08-a-teach",
+          "type": "teach_concept",
+          "prompt": "Grafema AN",
+          "target": "an",
+          "options": [],
+          "answer": "",
+          "explanation": "La consonante nasal modifica la vocal; no forma aquí otra sílaba.",
+          "audio": "an",
+          "slow_audio": "an",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "AN suele representar una vocal nasal.",
+          "memory_hint": "Escucha an sin añadir una n española fuerte.",
+          "teaching_points": [
+            "Grafema: an.",
+            "Un solo núcleo nasal.",
+            "El contexto posterior puede cambiar la regla."
+          ]
+        },
+        {
+          "id": "french-reading-00-08-a-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "an",
+          "options": [
+            "an",
+            "on",
+            "un"
+          ],
+          "answer": "an",
+          "explanation": "La consonante nasal modifica la vocal; no forma aquí otra sílaba.",
+          "audio": "an",
+          "slow_audio": "an",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-08-b-teach",
+          "type": "teach_concept",
+          "prompt": "Grafema ON",
+          "target": "on",
+          "options": [],
+          "answer": "",
+          "explanation": "Esta tarjeta contiene únicamente on y su audio.",
+          "audio": "on",
+          "slow_audio": "on",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ON representa otra vocal nasal, más redondeada.",
+          "memory_hint": "No la confundas con an.",
+          "teaching_points": [
+            "Grafema: on.",
+            "Labios más redondeados.",
+            "La n no se separa como sílaba."
+          ]
+        },
+        {
+          "id": "french-reading-00-08-b-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "on",
+          "options": [
+            "on",
+            "an",
+            "un"
+          ],
+          "answer": "on",
+          "explanation": "Esta tarjeta contiene únicamente on y su audio.",
+          "audio": "on",
+          "slow_audio": "on",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-08-c-teach",
+          "type": "teach_concept",
+          "prompt": "Grafema UN",
+          "target": "un",
+          "options": [],
+          "answer": "",
+          "explanation": "La pronunciación varía algo según la región, pero sigue siendo distinta de on.",
+          "audio": "un",
+          "slow_audio": "un",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "UN representa una vocal nasal frontal y redondeada.",
+          "memory_hint": "Apréndela por contraste, sin transcripción permanente.",
+          "teaching_points": [
+            "Grafema: un.",
+            "Vocal nasal.",
+            "No equivale a «un» español."
+          ]
+        },
+        {
+          "id": "french-reading-00-08-c-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "un",
+          "options": [
+            "un",
+            "an",
+            "on"
+          ],
+          "answer": "un",
+          "explanation": "La pronunciación varía algo según la región, pero sigue siendo distinta de on.",
+          "audio": "un",
+          "slow_audio": "un",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -761,17 +1339,17 @@
         {
           "id": "french-reading-00-review-1-question",
           "type": "select_translation",
-          "prompt": "¿Qué indican é y è?",
-          "target": "é · è",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
           "options": [
-            "Orientan hacia sonidos vocálicos distintos",
-            "Solo énfasis visual",
-            "Que la letra es muda"
+            "A",
+            "B",
+            "C"
           ],
-          "answer": "Orientan hacia sonidos vocálicos distintos",
-          "explanation": "Los acentos ayudan a distinguir el sonido y, a veces, el significado.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "A",
+          "explanation": "El nombre permite señalar la letra escrita. Más adelante la combinarás para producir sílabas.",
+          "audio": "a",
+          "slow_audio": "a",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -782,17 +1360,17 @@
         {
           "id": "french-reading-00-review-2-question",
           "type": "select_translation",
-          "prompt": "¿Cómo lees normalmente EAU?",
-          "target": "au · eau",
+          "prompt": "¿Qué vocal aparece en la sílaba mi?",
+          "target": "i → mi",
           "options": [
-            "Como un grupo vocálico, cercano a o",
-            "Como tres vocales separadas",
-            "Como e muda únicamente"
+            "i",
+            "a",
+            "u"
           ],
-          "answer": "Como un grupo vocálico, cercano a o",
-          "explanation": "No pronuncies cada vocal por separado.",
-          "audio": "o",
-          "slow_audio": "o",
+          "answer": "i",
+          "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
+          "audio": "mi",
+          "slow_audio": "mi",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -803,17 +1381,17 @@
         {
           "id": "french-reading-00-review-3-question",
           "type": "select_translation",
-          "prompt": "¿Qué ocurre normalmente en AN o EN?",
-          "target": "an · en",
+          "prompt": "¿Qué grafema practicas en mé?",
+          "target": "é → mé",
           "options": [
-            "La vocal se nasaliza",
-            "Se pronuncian dos sílabas",
-            "La vocal desaparece"
+            "é",
+            "è",
+            "ê"
           ],
-          "answer": "La vocal se nasaliza",
-          "explanation": "El patrón cambia si después aparece otra vocal.",
-          "audio": "enne",
-          "slow_audio": "enne",
+          "answer": "é",
+          "explanation": "El acento agudo forma parte del grafema. No es decoración.",
+          "audio": "mé",
+          "slow_audio": "mé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -824,17 +1402,17 @@
         {
           "id": "french-reading-00-review-4-question",
           "type": "select_translation",
-          "prompt": "¿La e final suele formar una sílaba fuerte?",
-          "target": "e final",
+          "prompt": "¿Qué grupo practicas en mou?",
+          "target": "ou → mou",
           "options": [
-            "No, normalmente es muda",
-            "Sí, siempre",
-            "Solo después de vocal"
+            "ou",
+            "u",
+            "au"
           ],
-          "answer": "No, normalmente es muda",
-          "explanation": "En poesía o variedades regionales puede comportarse de otra manera.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "ou",
+          "explanation": "Las dos letras colaboran para representar una vocal.",
+          "audio": "mou",
+          "slow_audio": "mou",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -845,17 +1423,17 @@
         {
           "id": "french-reading-00-review-5-question",
           "type": "select_translation",
-          "prompt": "¿Qué es la liaison?",
-          "target": "les amis",
+          "prompt": "¿Qué sílaba forman f e i?",
+          "target": "f + i → fi",
           "options": [
-            "Enlazar una consonante final con la vocal siguiente",
-            "Eliminar todas las vocales",
-            "Separar más las palabras"
+            "fi",
+            "fa",
+            "mi"
           ],
-          "answer": "Enlazar una consonante final con la vocal siguiente",
-          "explanation": "La liaison es obligatoria en algunos contextos, opcional o prohibida en otros.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "answer": "fi",
+          "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
+          "audio": "fi",
+          "slow_audio": "fi",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -866,17 +1444,59 @@
         {
           "id": "french-reading-00-review-6-question",
           "type": "select_translation",
-          "prompt": "¿Qué función tiene el audio al aprender a leer?",
-          "target": "Bonjour !",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "c + e → ce",
           "options": [
-            "Confirmar y ajustar la lectura",
-            "Sustituir para siempre el texto",
-            "Traducir automáticamente"
+            "ce",
+            "ca",
+            "ge"
           ],
-          "answer": "Confirmar y ajustar la lectura",
-          "explanation": "Con exposición, los patrones se vuelven automáticos.",
-          "audio": "Bonjour !",
-          "slow_audio": "Bonjour !",
+          "answer": "ce",
+          "explanation": "El cambio de vocal modifica la lectura de c.",
+          "audio": "ce",
+          "slow_audio": "ce",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-review-7-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en cha?",
+          "target": "ch + a → cha",
+          "options": [
+            "ch",
+            "ph",
+            "gn"
+          ],
+          "answer": "ch",
+          "explanation": "El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-review-8-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "on",
+          "options": [
+            "on",
+            "an",
+            "un"
+          ],
+          "answer": "on",
+          "explanation": "Esta tarjeta contiene únicamente on y su audio.",
+          "audio": "on",
+          "slow_audio": "on",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -915,17 +1535,17 @@
         {
           "id": "french-reading-00-test-1-question",
           "type": "select_translation",
-          "prompt": "¿Qué indican é y è?",
-          "target": "é · è",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
           "options": [
-            "Orientan hacia sonidos vocálicos distintos",
-            "Solo énfasis visual",
-            "Que la letra es muda"
+            "A",
+            "B",
+            "C"
           ],
-          "answer": "Orientan hacia sonidos vocálicos distintos",
-          "explanation": "Los acentos ayudan a distinguir el sonido y, a veces, el significado.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "A",
+          "explanation": "El nombre permite señalar la letra escrita. Más adelante la combinarás para producir sílabas.",
+          "audio": "a",
+          "slow_audio": "a",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -936,17 +1556,17 @@
         {
           "id": "french-reading-00-test-2-question",
           "type": "select_translation",
-          "prompt": "¿Cómo suele sonar ç?",
-          "target": "ç",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
           "options": [
-            "Como s",
-            "Como k",
-            "No suena"
+            "B",
+            "D",
+            "P"
           ],
-          "answer": "Como s",
-          "explanation": "Compara ca y ça para reconocer su función.",
-          "audio": "cé",
-          "slow_audio": "cé",
+          "answer": "B",
+          "explanation": "B se llama «bé». Cuando se combine con una vocal, escucharás el sonido dentro de una sílaba.",
+          "audio": "bé",
+          "slow_audio": "bé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -957,17 +1577,17 @@
         {
           "id": "french-reading-00-test-3-question",
           "type": "select_translation",
-          "prompt": "¿OU y U francesas suenan igual?",
-          "target": "ou · u",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
           "options": [
-            "No, representan vocales distintas",
-            "Sí, siempre",
-            "Solo cambian al escribir"
+            "C",
+            "G",
+            "S"
           ],
-          "answer": "No, representan vocales distintas",
-          "explanation": "La diferencia distingue muchas palabras.",
-          "audio": "u",
-          "slow_audio": "u",
+          "answer": "C",
+          "explanation": "Por ahora reconoce su nombre. Después estudiarás ca y ce por separado.",
+          "audio": "cé",
+          "slow_audio": "cé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -978,17 +1598,17 @@
         {
           "id": "french-reading-00-test-4-question",
           "type": "select_translation",
-          "prompt": "¿Cómo lees normalmente EAU?",
-          "target": "au · eau",
+          "prompt": "¿Qué vocal aparece en la sílaba ma?",
+          "target": "a → ma",
           "options": [
-            "Como un grupo vocálico, cercano a o",
-            "Como tres vocales separadas",
-            "Como e muda únicamente"
+            "a",
+            "i",
+            "o"
           ],
-          "answer": "Como un grupo vocálico, cercano a o",
-          "explanation": "No pronuncies cada vocal por separado.",
-          "audio": "o",
-          "slow_audio": "o",
+          "answer": "a",
+          "explanation": "La consonante sirve de apoyo para que ElevenLabs produzca la vocal de forma natural. El objetivo de esta tarjeta es a.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -999,17 +1619,17 @@
         {
           "id": "french-reading-00-test-5-question",
           "type": "select_translation",
-          "prompt": "¿Qué ocurre normalmente en AN o EN?",
-          "target": "an · en",
+          "prompt": "¿Qué vocal aparece en la sílaba mi?",
+          "target": "i → mi",
           "options": [
-            "La vocal se nasaliza",
-            "Se pronuncian dos sílabas",
-            "La vocal desaparece"
+            "i",
+            "a",
+            "u"
           ],
-          "answer": "La vocal se nasaliza",
-          "explanation": "El patrón cambia si después aparece otra vocal.",
-          "audio": "enne",
-          "slow_audio": "enne",
+          "answer": "i",
+          "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
+          "audio": "mi",
+          "slow_audio": "mi",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1020,17 +1640,17 @@
         {
           "id": "french-reading-00-test-6-question",
           "type": "select_translation",
-          "prompt": "¿ON e IN representan el mismo sonido?",
-          "target": "on · in",
+          "prompt": "¿Qué vocal aparece en la sílaba mo?",
+          "target": "o → mo",
           "options": [
-            "No, son vocales nasales distintas",
-            "Sí",
-            "Solo cambia el volumen"
+            "o",
+            "e",
+            "i"
           ],
-          "answer": "No, son vocales nasales distintas",
-          "explanation": "La escritura agrupa vocal y consonante nasal.",
-          "audio": "o",
-          "slow_audio": "o",
+          "answer": "o",
+          "explanation": "Practica primero la sílaba; el vocabulario llegará después.",
+          "audio": "mo",
+          "slow_audio": "mo",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1041,17 +1661,17 @@
         {
           "id": "french-reading-00-test-7-question",
           "type": "select_translation",
-          "prompt": "¿Debes pronunciar toda consonante final francesa?",
-          "target": "petit · grand",
+          "prompt": "¿Qué grafema practicas en mé?",
+          "target": "é → mé",
           "options": [
-            "No, muchas son silenciosas",
-            "Sí, todas",
-            "Solo en plural"
+            "é",
+            "è",
+            "ê"
           ],
-          "answer": "No, muchas son silenciosas",
-          "explanation": "C, R, F y L se oyen con más frecuencia que otras finales, pero hay excepciones.",
-          "audio": "té",
-          "slow_audio": "té",
+          "answer": "é",
+          "explanation": "El acento agudo forma parte del grafema. No es decoración.",
+          "audio": "mé",
+          "slow_audio": "mé",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1062,17 +1682,17 @@
         {
           "id": "french-reading-00-test-8-question",
           "type": "select_translation",
-          "prompt": "¿La e final suele formar una sílaba fuerte?",
-          "target": "e final",
+          "prompt": "¿Qué grafema practicas en mè?",
+          "target": "è → mè",
           "options": [
-            "No, normalmente es muda",
-            "Sí, siempre",
-            "Solo después de vocal"
+            "è",
+            "é",
+            "ê"
           ],
-          "answer": "No, normalmente es muda",
-          "explanation": "En poesía o variedades regionales puede comportarse de otra manera.",
-          "audio": "e",
-          "slow_audio": "e",
+          "answer": "è",
+          "explanation": "El acento grave orienta la apertura de esta e.",
+          "audio": "mè",
+          "slow_audio": "mè",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1083,17 +1703,17 @@
         {
           "id": "french-reading-00-test-9-question",
           "type": "select_translation",
-          "prompt": "¿Qué es la liaison?",
-          "target": "les amis",
+          "prompt": "¿Qué grafema practicas en mu?",
+          "target": "u → mu",
           "options": [
-            "Enlazar una consonante final con la vocal siguiente",
-            "Eliminar todas las vocales",
-            "Separar más las palabras"
+            "u",
+            "ou",
+            "o"
           ],
-          "answer": "Enlazar una consonante final con la vocal siguiente",
-          "explanation": "La liaison es obligatoria en algunos contextos, opcional o prohibida en otros.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "answer": "u",
+          "explanation": "Esta vocal no equivale exactamente a la u española.",
+          "audio": "mu",
+          "slow_audio": "mu",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1104,17 +1724,17 @@
         {
           "id": "french-reading-00-test-10-question",
           "type": "select_translation",
-          "prompt": "¿Dónde recae normalmente la prominencia francesa?",
-          "target": "un groupe rythmique",
+          "prompt": "¿Qué grupo practicas en mou?",
+          "target": "ou → mou",
           "options": [
-            "Al final de un grupo rítmico",
-            "En la primera letra de cada palabra",
-            "En todas las sílabas"
+            "ou",
+            "u",
+            "au"
           ],
-          "answer": "Al final de un grupo rítmico",
-          "explanation": "La lectura natural une palabras gramaticalmente relacionadas.",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "answer": "ou",
+          "explanation": "Las dos letras colaboran para representar una vocal.",
+          "audio": "mou",
+          "slow_audio": "mou",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1125,17 +1745,17 @@
         {
           "id": "french-reading-00-test-11-question",
           "type": "select_translation",
-          "prompt": "¿Cómo empiezas a leer una palabra francesa?",
-          "target": "ch · ph · gn",
+          "prompt": "¿Qué sílaba forman m y a?",
+          "target": "m + a → ma",
           "options": [
-            "Reconociendo grupos de letras frecuentes",
-            "Nombrando cada letra",
-            "Ignorando los acentos"
+            "ma",
+            "mi",
+            "la"
           ],
-          "answer": "Reconociendo grupos de letras frecuentes",
-          "explanation": "CH, PH y GN no deben separarse en nombres de letras.",
-          "audio": "gé",
-          "slow_audio": "gé",
+          "answer": "ma",
+          "explanation": "Leer una sílaba significa producir sonidos, no nombres de letras.",
+          "audio": "ma",
+          "slow_audio": "ma",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1146,17 +1766,248 @@
         {
           "id": "french-reading-00-test-12-question",
           "type": "select_translation",
-          "prompt": "¿Qué función tiene el audio al aprender a leer?",
-          "target": "Bonjour !",
+          "prompt": "¿Qué sílaba forman f e i?",
+          "target": "f + i → fi",
           "options": [
-            "Confirmar y ajustar la lectura",
-            "Sustituir para siempre el texto",
-            "Traducir automáticamente"
+            "fi",
+            "fa",
+            "mi"
           ],
-          "answer": "Confirmar y ajustar la lectura",
-          "explanation": "Con exposición, los patrones se vuelven automáticos.",
-          "audio": "Bonjour !",
-          "slow_audio": "Bonjour !",
+          "answer": "fi",
+          "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
+          "audio": "fi",
+          "slow_audio": "fi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-13-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba forman l y u?",
+          "target": "l + u → lu",
+          "options": [
+            "lu",
+            "la",
+            "lou"
+          ],
+          "answer": "lu",
+          "explanation": "Después conserva labios redondeados para u.",
+          "audio": "lu",
+          "slow_audio": "lu",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-14-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "c + a → ca",
+          "options": [
+            "ca",
+            "ce",
+            "ga"
+          ],
+          "answer": "ca",
+          "explanation": "La vocal siguiente ayuda a predecir el sonido de c.",
+          "audio": "ca",
+          "slow_audio": "ca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-15-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "c + e → ce",
+          "options": [
+            "ce",
+            "ca",
+            "ge"
+          ],
+          "answer": "ce",
+          "explanation": "El cambio de vocal modifica la lectura de c.",
+          "audio": "ce",
+          "slow_audio": "ce",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-16-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "g + a → ga",
+          "options": [
+            "ga",
+            "ge",
+            "ca"
+          ],
+          "answer": "ga",
+          "explanation": "No la separes en nombres de letras.",
+          "audio": "ga",
+          "slow_audio": "ga",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-17-question",
+          "type": "select_translation",
+          "prompt": "¿Qué sílaba acabas de practicar?",
+          "target": "g + e → ge",
+          "options": [
+            "ge",
+            "ga",
+            "ce"
+          ],
+          "answer": "ge",
+          "explanation": "La vocal siguiente vuelve a decidir la lectura.",
+          "audio": "ge",
+          "slow_audio": "ge",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-18-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en cha?",
+          "target": "ch + a → cha",
+          "options": [
+            "ch",
+            "ph",
+            "gn"
+          ],
+          "answer": "ch",
+          "explanation": "El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-19-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en phi?",
+          "target": "ph + i → phi",
+          "options": [
+            "ph",
+            "ch",
+            "gn"
+          ],
+          "answer": "ph",
+          "explanation": "No pronuncies p y h por separado.",
+          "audio": "phi",
+          "slow_audio": "phi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-20-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grupo aparece en gna?",
+          "target": "gn + a → gna",
+          "options": [
+            "gn",
+            "ch",
+            "ph"
+          ],
+          "answer": "gn",
+          "explanation": "No produzcas g y n como dos consonantes separadas.",
+          "audio": "gna",
+          "slow_audio": "gna",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-21-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "an",
+          "options": [
+            "an",
+            "on",
+            "un"
+          ],
+          "answer": "an",
+          "explanation": "La consonante nasal modifica la vocal; no forma aquí otra sílaba.",
+          "audio": "an",
+          "slow_audio": "an",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-22-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "on",
+          "options": [
+            "on",
+            "an",
+            "un"
+          ],
+          "answer": "on",
+          "explanation": "Esta tarjeta contiene únicamente on y su audio.",
+          "audio": "on",
+          "slow_audio": "on",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10
+        },
+        {
+          "id": "french-reading-00-test-23-question",
+          "type": "select_translation",
+          "prompt": "¿Qué grafema nasal acabas de escuchar?",
+          "target": "un",
+          "options": [
+            "un",
+            "an",
+            "on"
+          ],
+          "answer": "un",
+          "explanation": "La pronunciación varía algo según la región, pero sigue siendo distinta de on.",
+          "audio": "un",
+          "slow_audio": "un",
           "image": null,
           "writing_asset": null,
           "tags": [

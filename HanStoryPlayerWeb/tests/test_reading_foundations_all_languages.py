@@ -10,7 +10,7 @@ LANGUAGES = (
 )
 REQUIRED_CONTENT = {
     "English": ("TH", "la letra no es su nombre"),
-    "French": ("liaison", "nasales"),
+    "French": ("sílabas", "una forma escrita y un sonido"),
     "German": ("ß", "EI"),
     "Italian": ("GLI", "consonantes dobles"),
     "Portuguese": ("nasal", "NH"),
@@ -44,7 +44,8 @@ def test_every_language_starts_with_its_reading_foundations_world():
 def test_reading_foundations_teach_before_testing_and_require_full_mastery():
     for language in LANGUAGES:
         unit = load(COURSES / language / "units/reading-foundations.json")
-        assert len(unit["lessons"]) == 8, language
+        expected_steps = 10 if language in {"French", "Chinese"} else 8
+        assert len(unit["lessons"]) == expected_steps, language
         tests = [lesson for lesson in unit["lessons"] if lesson.get("isTest")]
         assert len(tests) == 1, language
         assert tests[0].get("isUnitFinal") is True, language
@@ -79,6 +80,36 @@ def test_each_reading_system_has_language_specific_content():
         ensure_ascii=False,
     ).lower()
     assert "ocultar" in chinese or "ocúltalo" in chinese
+
+
+def test_french_foundations_use_one_grapheme_or_syllable_per_audio():
+    unit_text = json.dumps(
+        load(COURSES / "French/units/reading-foundations.json"),
+        ensure_ascii=False,
+    ).lower()
+    for content_that_belongs_later in (
+        "bonjour", "liaison", "les amis", "groupe rythmique", "petit", "grand",
+    ):
+        assert content_that_belongs_later not in unit_text
+    unit = load(COURSES / "French/units/reading-foundations.json")
+    for lesson in unit["lessons"]:
+        if lesson.get("isReview") or lesson.get("isTest"):
+            continue
+        for activity in lesson["activities"]:
+            if activity["type"] != "teach_concept":
+                continue
+            assert " · " not in activity["target"], activity["id"]
+            assert activity["audio"], activity["id"]
+
+
+def test_chinese_teaches_pinyin_and_tones_before_characters():
+    unit = load(COURSES / "Chinese/units/reading-foundations.json")
+    first_six = json.dumps(unit["lessons"][:6], ensure_ascii=False)
+    last_two = json.dumps(unit["lessons"][6:8], ensure_ascii=False)
+    assert "m + a → mā" in first_six
+    assert "primer tono" in first_six.lower()
+    assert "你" not in first_six
+    assert "你" in last_two and "好" in last_two and "人" in last_two
 
 
 def test_answers_and_referenced_audio_are_valid():
