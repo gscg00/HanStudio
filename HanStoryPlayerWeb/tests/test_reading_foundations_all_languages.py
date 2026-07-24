@@ -190,6 +190,32 @@ def test_answers_and_referenced_audio_are_valid():
                     assert (COURSES / language / manifest[audio_key]).is_file()
 
 
+def test_student_facing_lessons_do_not_expose_internal_services():
+    forbidden = (
+        "elevenlabs",
+        "eleven_v3",
+        "language_code",
+        "language override",
+        "voice_id",
+        "supabase",
+        "openai",
+    )
+    for language_dir in COURSES.iterdir():
+        units_dir = language_dir / "units"
+        if not units_dir.is_dir():
+            continue
+        for unit_path in units_dir.glob("*.json"):
+            visible_content = unit_path.read_text(encoding="utf-8").lower()
+            for internal_term in forbidden:
+                assert internal_term not in visible_content, (
+                    language_dir.name,
+                    unit_path.name,
+                    internal_term,
+                )
+    legacy_app = (ROOT / "src/app.js").read_text(encoding="utf-8").lower()
+    assert "audio elevenlabs preparado" not in legacy_app
+
+
 def test_xp_catalog_offline_cache_and_per_lesson_mastery_are_wired():
     sql = (
         ROOT / "supabase/migrations/015_reading_foundations_all_languages.sql"
