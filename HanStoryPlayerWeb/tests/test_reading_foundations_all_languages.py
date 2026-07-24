@@ -188,6 +188,45 @@ def test_answers_and_referenced_audio_are_valid():
                         continue
                     assert audio_key in manifest, (language, activity["id"], audio_key)
                     assert (COURSES / language / manifest[audio_key]).is_file()
+                for example in activity.get("audio_examples", []):
+                    assert example["label"], activity["id"]
+                    assert example["text"], activity["id"]
+                    assert example["meaning"], activity["id"]
+                    assert example["audio"] in manifest, (
+                        language,
+                        activity["id"],
+                        example["audio"],
+                    )
+                    assert (
+                        COURSES / language / manifest[example["audio"]]
+                    ).is_file()
+
+
+def test_english_comparison_cards_offer_each_example_separately():
+    unit = load(COURSES / "English/units/reading-foundations.json")
+    activities = {
+        activity["id"]: activity
+        for lesson in unit["lessons"]
+        for activity in lesson["activities"]
+    }
+    expected = {
+        "english-reading-00-07-a-teach": {"ay", "car"},
+        "english-reading-00-07-b-teach": {"car", "city"},
+        "english-reading-00-08-b-teach": {"name", "cake"},
+        "english-reading-00-09-a-teach": {"book", "very"},
+        "english-reading-00-10-a-teach": {"think", "this"},
+        "english-reading-00-10-b-teach": {"ship", "chair"},
+        "english-reading-00-11-a-teach": {"know", "write"},
+    }
+    for activity_id, audio_keys in expected.items():
+        examples = activities[activity_id].get("audio_examples", [])
+        assert len(examples) >= 2, activity_id
+        assert {example["audio"] for example in examples} == audio_keys
+
+    app = (ROOT / "src/japanese_course_app.js").read_text(encoding="utf-8")
+    assert "teachingAudioExamples(activity)" in app
+    assert "data-jp-audio-key" in app
+    assert "button?.dataset.jpAudioKey" in app
 
 
 def test_student_facing_lessons_do_not_expose_internal_services():

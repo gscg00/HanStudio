@@ -1448,12 +1448,26 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "A se llama «ei», pero en cat representa otro sonido.",
+          "sound_hint": "A se llama «ei», pero dentro de una palabra puede representar otro sonido.",
           "memory_hint": "Pregunta siempre: ¿nombre de letra o sonido dentro de palabra?",
           "teaching_points": [
             "A es la letra escrita.",
             "«ei» es su nombre.",
             "El sonido se aprende dentro de palabras."
+          ],
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "A",
+              "meaning": "se llama «ei»",
+              "audio": "ay"
+            },
+            {
+              "label": "DENTRO DE UNA PALABRA",
+              "text": "car",
+              "meaning": "auto",
+              "audio": "car"
+            }
           ]
         },
         {
@@ -1481,7 +1495,7 @@
           "id": "english-reading-00-07-b-teach",
           "type": "teach_concept",
           "prompt": "El contexto decide",
-          "target": "C: cat / city",
+          "target": "C: car / city",
           "options": [],
           "answer": "",
           "explanation": "Muchas correspondencias inglesas dependen de las letras vecinas.",
@@ -1502,13 +1516,27 @@
             "c + a/o/u suele sonar k.",
             "c + e/i/y suele sonar s.",
             "Aprende patrones, no reglas absolutas."
+          ],
+          "audio_examples": [
+            {
+              "label": "C CON SONIDO K",
+              "text": "car",
+              "meaning": "auto",
+              "audio": "car"
+            },
+            {
+              "label": "C CON SONIDO S",
+              "text": "city",
+              "meaning": "ciudad",
+              "audio": "city"
+            }
           ]
         },
         {
           "id": "english-reading-00-07-b-question",
           "type": "select_translation",
           "prompt": "¿Puede C tener más de un sonido?",
-          "target": "C: cat / city",
+          "target": "C: car / city",
           "options": [
             "Sí, depende del contexto",
             "No, siempre suena igual",
@@ -1605,7 +1633,7 @@
           "target": "a_e: name",
           "options": [],
           "answer": "",
-          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
           "audio": "ay",
           "slow_audio": "ay",
           "image": null,
@@ -1620,9 +1648,23 @@
           "sound_hint": "En muchos patrones consonante + e final, la primera vocal cambia.",
           "memory_hint": "La e final suele modificar y no sonar.",
           "teaching_points": [
-            "cap y cape no tienen la misma vocal.",
+            "En name y cake, la a tiene sonido largo.",
             "La e final suele ser silenciosa.",
             "Hay excepciones que se aprenden con uso."
+          ],
+          "audio_examples": [
+            {
+              "label": "A LARGA + E SILENCIOSA",
+              "text": "name",
+              "meaning": "nombre",
+              "audio": "name"
+            },
+            {
+              "label": "OTRO EJEMPLO",
+              "text": "cake",
+              "meaning": "pastel",
+              "audio": "cake"
+            }
           ]
         },
         {
@@ -1636,7 +1678,7 @@
             "Duplica la consonante"
           ],
           "answer": "Modifica la vocal anterior y no suena",
-          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
           "audio": "ay",
           "slow_audio": "ay",
           "image": null,
@@ -1696,6 +1738,20 @@
             "B usa los dos labios.",
             "V usa dientes y labio inferior.",
             "Escucha y observa la articulación."
+          ],
+          "audio_examples": [
+            {
+              "label": "SONIDO B",
+              "text": "book",
+              "meaning": "libro",
+              "audio": "book"
+            },
+            {
+              "label": "SONIDO V",
+              "text": "very",
+              "meaning": "muy",
+              "audio": "very"
+            }
           ]
         },
         {
@@ -1817,6 +1873,20 @@
             "Puede ser sorda en think.",
             "Puede ser sonora en this.",
             "Se articula con la lengua y los dientes."
+          ],
+          "audio_examples": [
+            {
+              "label": "TH SORDA",
+              "text": "think",
+              "meaning": "pensar",
+              "audio": "think"
+            },
+            {
+              "label": "TH SONORA",
+              "text": "this",
+              "meaning": "esto",
+              "audio": "this"
+            }
           ]
         },
         {
@@ -1865,6 +1935,20 @@
             "sh: aire continuo.",
             "ch: cierre y liberación.",
             "Busca el grupo completo."
+          ],
+          "audio_examples": [
+            {
+              "label": "SONIDO SH",
+              "text": "ship",
+              "meaning": "barco",
+              "audio": "ship"
+            },
+            {
+              "label": "SONIDO CH",
+              "text": "chair",
+              "meaning": "silla",
+              "audio": "chair"
+            }
           ]
         },
         {
@@ -1917,7 +2001,7 @@
           "id": "english-reading-00-11-a-teach",
           "type": "teach_concept",
           "prompt": "No todo se pronuncia",
-          "target": "kn · wr · mb",
+          "target": "kn · wr",
           "options": [],
           "answer": "",
           "explanation": "La ortografía inglesa conserva huellas históricas.",
@@ -1932,19 +2016,33 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "En know, write y lamb hay letras silenciosas.",
+          "sound_hint": "En know y write hay letras iniciales silenciosas.",
           "memory_hint": "Aprende la forma escrita junto con el audio.",
           "teaching_points": [
             "kn inicial suele perder k.",
             "wr inicial suele perder w.",
-            "mb final suele perder b."
+            "La letra silenciosa se escribe, pero no se oye."
+          ],
+          "audio_examples": [
+            {
+              "label": "K SILENCIOSA",
+              "text": "know",
+              "meaning": "saber",
+              "audio": "know"
+            },
+            {
+              "label": "W SILENCIOSA",
+              "text": "write",
+              "meaning": "escribir",
+              "audio": "write"
+            }
           ]
         },
         {
           "id": "english-reading-00-11-a-question",
           "type": "select_translation",
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
-          "target": "kn · wr · mb",
+          "target": "kn · wr",
           "options": [
             "No, algunas son silenciosas",
             "Sí, sin excepción",
@@ -2314,7 +2412,7 @@
             "Duplica la consonante"
           ],
           "answer": "Modifica la vocal anterior y no suena",
-          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
           "audio": "ay",
           "slow_audio": "ay",
           "image": null,
@@ -2370,7 +2468,7 @@
           "id": "english-reading-00-review-11-question",
           "type": "select_translation",
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
-          "target": "kn · wr · mb",
+          "target": "kn · wr",
           "options": [
             "No, algunas son silenciosas",
             "Sí, sin excepción",
@@ -3007,7 +3105,7 @@
           "id": "english-reading-00-test-28-question",
           "type": "select_translation",
           "prompt": "¿Puede C tener más de un sonido?",
-          "target": "C: cat / city",
+          "target": "C: car / city",
           "options": [
             "Sí, depende del contexto",
             "No, siempre suena igual",
@@ -3056,7 +3154,7 @@
             "Duplica la consonante"
           ],
           "answer": "Modifica la vocal anterior y no suena",
-          "explanation": "El patrón de la e silenciosa ayuda a leer pares como cap/cape.",
+          "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
           "audio": "ay",
           "slow_audio": "ay",
           "image": null,
@@ -3154,7 +3252,7 @@
           "id": "english-reading-00-test-35-question",
           "type": "select_translation",
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
-          "target": "kn · wr · mb",
+          "target": "kn · wr",
           "options": [
             "No, algunas son silenciosas",
             "Sí, sin excepción",

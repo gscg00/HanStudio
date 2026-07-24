@@ -24,6 +24,31 @@
 .jp-teach-note{width:min(560px,100%);margin:1rem auto;padding:.8rem 1rem;border-radius:14px;background:#f3eadc;color:#6a5c4b;text-align:center}
 .jp-teaching .jp-listen-row{margin:1rem 0 0}
 .jp-teaching .jp-listen-row button{min-width:120px}
+.jp-audio-examples{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:.7rem;
+  width:min(640px,100%);
+  margin:.7rem auto 0;
+}
+.jp-audio-example{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.8rem;
+  min-width:0;
+  padding:.75rem .85rem;
+  text-align:left;
+  background:#fffdf8;
+  border:1px solid #173f3520;
+  border-radius:16px;
+}
+.jp-audio-example>div:first-child{display:grid;gap:.08rem;min-width:0}
+.jp-audio-example span{color:var(--jp-orange);font-size:.65rem;font-weight:900;letter-spacing:.12em}
+.jp-audio-example strong{font-size:1.15rem;overflow-wrap:anywhere}
+.jp-audio-example small{color:var(--jp-muted)}
+.jp-audio-example .jp-listen-row{flex:0 0 auto;margin:0}
+.jp-audio-example .jp-listen-row button{min-width:auto;padding:.55rem .7rem}
 .jp-teaching .jp-check{position:sticky;bottom:0;background:var(--jp-paper)}
 @media(max-width:650px){.jp-teach-symbol{min-height:100px}.guided-course .jp-target.jp-target-medium{font-size:clamp(2rem,10vw,3rem)}.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.65rem,8vw,2.5rem)}.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.25rem,6vw,1.9rem)}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
@@ -80,4 +105,6 @@
   .jp-activity-top{padding-top:max(.65rem,env(safe-area-inset-top))}
   .jp-question{padding-inline:.8rem}
   .jp-feedback,.jp-check{padding-bottom:max(.75rem,env(safe-area-inset-bottom))}
+  .jp-audio-examples{grid-template-columns:1fr}
+  .jp-audio-example{padding:.65rem .75rem}
 }

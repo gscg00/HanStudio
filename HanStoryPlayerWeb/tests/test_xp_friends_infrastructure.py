@@ -8,7 +8,8 @@ SQL = (ROOT / "supabase/migrations/002_xp_and_friends.sql").read_text(encoding="
 STORY_SQL = (ROOT / "supabase/migrations/003_story_lesson_xp.sql").read_text(encoding="utf-8").lower()
 GUIDED_SQL = "\n".join(
     path.read_text(encoding="utf-8").lower()
-    for path in sorted((ROOT / "supabase/migrations").glob("*_catalog.sql"))
+    for path in sorted((ROOT / "supabase/migrations").glob("*.sql"))
+    if path.name[:3].isdigit() and int(path.name[:3]) >= 4
 )
 
 
@@ -59,6 +60,12 @@ class XpFriendsInfrastructureTests(unittest.TestCase):
         self.assertIn("xpService.awardLessonXP", japanese)
         self.assertIn("data-complete-zero-stage", app)
         self.assertNotIn("markZeroStage", app)
+
+    def test_account_does_not_claim_full_sync_when_xp_is_pending(self):
+        ui = (ROOT / "src/account_ui.js").read_text(encoding="utf-8")
+        self.assertIn("effectiveSyncStatus(){return xpService.error?'error':this.sync.status;}", ui)
+        self.assertIn("Progreso guardado · recompensa pendiente", ui)
+        self.assertIn("esc(this.effectiveSyncStatus())", ui)
 
     def test_story_lessons_award_xp_only_at_audio_boundaries(self):
         app = (ROOT / "src/app.js").read_text(encoding="utf-8")

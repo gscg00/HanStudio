@@ -1,9 +1,15 @@
 # Activar XP central y Amigos
 
-Esta versión necesita estas migraciones, en este orden, antes de publicar el nuevo Web Player:
+Esta versión necesita las migraciones del directorio `supabase/migrations` en orden numérico antes de publicar contenido nuevo. En particular:
 
 1. `supabase/migrations/002_xp_and_friends.sql`
 2. `supabase/migrations/003_story_lesson_xp.sql`
+3. `supabase/migrations/004_guided_course_catalog.sql` a `013_all_languages_b12_complete_catalog.sql`
+4. `supabase/migrations/014_korean_hangul_foundations_catalog.sql`
+5. `supabase/migrations/015_reading_foundations_all_languages.sql`
+6. `supabase/migrations/016_korean_complete_basic_hangul_catalog.sql`
+
+Las migraciones de catálogo son idempotentes: pueden ejecutarse nuevamente sin duplicar XP. Si la cuenta muestra «recompensa pendiente», ejecuta las migraciones de catálogo que todavía falten y pulsa **Sincronizar ahora**. Los eventos pendientes conservan su identificador, por lo que el servidor concederá cada recompensa una sola vez.
 
 ## Aplicar la migración
 
