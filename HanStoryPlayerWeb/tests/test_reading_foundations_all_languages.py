@@ -20,6 +20,15 @@ REQUIRED_CONTENT = {
     "Japanese": ("rōmaji", "hiragana"),
 }
 TEACHING_TYPES = {"lesson_intro", "teach_concept"}
+ALPHABET_INVENTORIES = {
+    "English": list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"),
+    "French": list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"),
+    "German": [*list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "Ä", "Ö", "Ü", "ß"],
+    "Italian": list("ABCDEFGHILMNOPQRSTUVZ"),
+    "Portuguese": list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"),
+    "Russian": list("АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"),
+    "Arabic": list("ابتثجحخدذرزسشصضطظعغفقكلمنهوي"),
+}
 
 
 def load(path: Path):
@@ -44,8 +53,7 @@ def test_every_language_starts_with_its_reading_foundations_world():
 def test_reading_foundations_teach_before_testing_and_require_full_mastery():
     for language in LANGUAGES:
         unit = load(COURSES / language / "units/reading-foundations.json")
-        expected_steps = 10 if language in {"French", "Chinese"} else 8
-        assert len(unit["lessons"]) == expected_steps, language
+        assert len(unit["lessons"]) >= 8, language
         tests = [lesson for lesson in unit["lessons"] if lesson.get("isTest")]
         assert len(tests) == 1, language
         assert tests[0].get("isUnitFinal") is True, language
@@ -60,6 +68,30 @@ def test_reading_foundations_teach_before_testing_and_require_full_mastery():
                 and activity["type"] not in TEACHING_TYPES
             )
             assert first_gradable >= 2, (language, lesson["id"])
+
+
+def test_alphabet_languages_cover_their_complete_basic_inventory():
+    for language, inventory in ALPHABET_INVENTORIES.items():
+        unit = load(COURSES / language / "units/reading-foundations.json")
+        taught = {
+            activity.get("target")
+            for lesson in unit["lessons"]
+            for activity in lesson["activities"]
+            if activity.get("id", "").startswith(f"{language.lower()}-reading-00-")
+            and activity.get("type") == "teach_concept"
+        }
+        assert not (set(inventory) - taught), (
+            language,
+            sorted(set(inventory) - taught),
+        )
+
+
+def test_intro_slogan_is_presented_only_at_the_start_of_each_stage():
+    app = (ROOT / "src/japanese_course_app.js").read_text(encoding="utf-8")
+    assert "isStageOpeningLesson" in app
+    assert "lessonActivitiesForPresentation" in app
+    assert "activities.slice(1)" in app
+    assert "level.unitIds[0]===unit?.id" in app
 
 
 def test_each_reading_system_has_language_specific_content():
@@ -110,6 +142,32 @@ def test_chinese_teaches_pinyin_and_tones_before_characters():
     assert "primer tono" in first_six.lower()
     assert "你" not in first_six
     assert "你" in last_two and "好" in last_two and "人" in last_two
+
+
+def test_japanese_and_chinese_use_the_right_reading_foundation():
+    japanese_course = load(COURSES / "Japanese/course.json")
+    japanese_units = [item["id"] for item in japanese_course["units"]]
+    assert japanese_units.index("hiragana-01") < japanese_units.index("first-words")
+    assert japanese_units.index("katakana") < japanese_units.index("first-words")
+    japanese_scripts = {
+        "hiragana-01.json": "あいうえおかきくけこさしすせそたちつてとなにぬねの"
+        "はひふへほまみむめもやゆよらりるれろわをん",
+        "katakana.json": "アイウエオカキクケコサシスセソタチツテトナニヌネノ"
+        "ハヒフヘホマミムメモヤユヨラリルレロワヲン",
+    }
+    for filename, inventory in japanese_scripts.items():
+        unit_text = json.dumps(
+            load(COURSES / f"Japanese/units/{filename}"),
+            ensure_ascii=False,
+        )
+        assert not (set(inventory) - set(unit_text)), filename
+
+    chinese_text = json.dumps(
+        load(COURSES / "Chinese/units/reading-foundations.json"),
+        ensure_ascii=False,
+    ).lower()
+    for item in ("b/p", "d/t", "g/k", "j, q, x", "zh, ch, sh", "cuatro tonos"):
+        assert item.lower() in chinese_text, item
 
 
 def test_answers_and_referenced_audio_are_valid():

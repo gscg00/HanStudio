@@ -261,6 +261,85 @@ const specs={
   },
 };
 
+const alphabetInventories={
+  English:[
+    ['A','ay'],['B','bee'],['C','see'],['D','dee'],['E','ee'],['F','eff'],['G','gee'],
+    ['H','aitch'],['I','eye'],['J','jay'],['K','kay'],['L','el'],['M','em'],['N','en'],
+    ['O','oh'],['P','pee'],['Q','cue'],['R','ar'],['S','ess'],['T','tee'],['U','you'],
+    ['V','vee'],['W','double you'],['X','ex'],['Y','why'],['Z','zee'],
+  ],
+  French:[
+    ['A','a'],['B','bé'],['C','cé'],['D','dé'],['E','e'],['F','effe'],['G','gé'],
+    ['H','ache'],['I','i'],['J','ji'],['K','ka'],['L','elle'],['M','emme'],['N','enne'],
+    ['O','o'],['P','pé'],['Q','cu'],['R','erre'],['S','esse'],['T','té'],['U','u'],
+    ['V','vé'],['W','double vé'],['X','ix'],['Y','i grec'],['Z','zède'],
+  ],
+  German:[
+    ['A','ah'],['B','beh'],['C','tseh'],['D','deh'],['E','eh'],['F','eff'],['G','geh'],
+    ['H','hah'],['I','ih'],['J','yot'],['K','kah'],['L','ell'],['M','emm'],['N','enn'],
+    ['O','oh'],['P','peh'],['Q','kuh'],['R','err'],['S','ess'],['T','teh'],['U','uh'],
+    ['V','fau'],['W','veh'],['X','iks'],['Y','üpsilon'],['Z','tsett'],['Ä','äh'],['Ö','öh'],
+    ['Ü','üh'],['ß','eszett'],
+  ],
+  Italian:[
+    ['A','a'],['B','bi'],['C','ci'],['D','di'],['E','e'],['F','effe'],['G','gi'],
+    ['H','acca'],['I','i'],['L','elle'],['M','emme'],['N','enne'],['O','o'],['P','pi'],
+    ['Q','cu'],['R','erre'],['S','esse'],['T','ti'],['U','u'],['V','vi'],['Z','zeta'],
+  ],
+  Portuguese:[
+    ['A','á'],['B','bê'],['C','cê'],['D','dê'],['E','é'],['F','efe'],['G','gê'],
+    ['H','agá'],['I','i'],['J','jota'],['K','cá'],['L','ele'],['M','eme'],['N','ene'],
+    ['O','ó'],['P','pê'],['Q','quê'],['R','erre'],['S','esse'],['T','tê'],['U','u'],
+    ['V','vê'],['W','dáblio'],['X','xis'],['Y','ípsilon'],['Z','zê'],
+  ],
+  Russian:[
+    ['А','а'],['Б','бэ'],['В','вэ'],['Г','гэ'],['Д','дэ'],['Е','е'],['Ё','ё'],
+    ['Ж','жэ'],['З','зэ'],['И','и'],['Й','и краткое'],['К','ка'],['Л','эл'],['М','эм'],
+    ['Н','эн'],['О','о'],['П','пэ'],['Р','эр'],['С','эс'],['Т','тэ'],['У','у'],
+    ['Ф','эф'],['Х','ха'],['Ц','цэ'],['Ч','чэ'],['Ш','ша'],['Щ','ща'],
+    ['Ъ','твёрдый знак'],['Ы','ы'],['Ь','мягкий знак'],['Э','э'],['Ю','ю'],['Я','я'],
+  ],
+  Arabic:[
+    ['ا','ألف'],['ب','باء'],['ت','تاء'],['ث','ثاء'],['ج','جيم'],['ح','حاء'],['خ','خاء'],
+    ['د','دال'],['ذ','ذال'],['ر','راء'],['ز','زاي'],['س','سين'],['ش','شين'],['ص','صاد'],
+    ['ض','ضاد'],['ط','طاء'],['ظ','ظاء'],['ع','عين'],['غ','غين'],['ف','فاء'],['ق','قاف'],
+    ['ك','كاف'],['ل','لام'],['م','ميم'],['ن','نون'],['ه','هاء'],['و','واو'],['ي','ياء'],
+  ],
+};
+
+const alphabetLessons=(directory,inventory)=>{
+  const languageName=specs[directory].name,groupSize=directory==='Russian'||directory==='Arabic'?4:5;
+  return Array.from({length:Math.ceil(inventory.length/groupSize)},(_,groupIndex)=>{
+    const group=inventory.slice(groupIndex*groupSize,(groupIndex+1)*groupSize);
+    const letters=group.map(([letter])=>letter);
+    return L(
+      `Alfabeto ${groupIndex+1} · ${letters[0]}–${letters.at(-1)}`,
+      `Reconoce por vista y oído ${letters.join(', ')} antes de continuar.`,
+      ...group.map(([letter,audio],index)=>{
+        const absolute=groupIndex*groupSize+index;
+        const alternatives=[
+          inventory[(absolute+1)%inventory.length][0],
+          inventory[(absolute+2)%inventory.length][0],
+        ];
+        return C(
+          `Letra ${letter}`,letter,audio,
+          `Escucha el nombre de ${letter} en ${languageName}.`,
+          'Mira la forma mientras escuchas; después intenta reconocerla sin ayuda.',
+          `Esta tarjeta enseña únicamente la identidad y el nombre de ${letter}. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.`,
+          [`Forma escrita: ${letter}.`,`Nombre en ${languageName}: ${audio}.`,'El nombre de la letra no sustituye sus sonidos dentro de una palabra.'],
+          '¿Qué letra acabas de escuchar?',letter,alternatives,
+        );
+      }),
+    );
+  });
+};
+
+for(const[directory,inventory]of Object.entries(alphabetInventories)){
+  const spec=specs[directory];
+  const existing=directory==='French'?spec.lessons.filter(lesson=>lesson.title!=='Reconocer las letras'):spec.lessons;
+  spec.lessons=[...alphabetLessons(directory,inventory),...existing];
+}
+
 const activity=(id,type,prompt,target='',options=[],answer='',explanation='',audio='',extra={})=>({
   id,type,prompt,target,options,answer,explanation,audio,slow_audio:audio,
   image:null,writing_asset:null,tags:['reading-foundations'],xp:extra.gradable===false?2:10,

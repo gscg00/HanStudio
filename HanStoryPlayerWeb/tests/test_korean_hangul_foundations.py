@@ -24,6 +24,10 @@ def test_hangul_foundations_is_the_first_world_and_first_foundations_unit():
     assert foundations["unitIds"][0] == "hangul-foundations"
     assert course["unlockRules"]["requireReadingMastery"] is True
     assert course["unlockRules"]["readingUnitId"] == "hangul-foundations"
+    assert course["unlockRules"]["readingUnitIds"] == [
+        "hangul-foundations",
+        "reading",
+    ]
     assert (COURSE_ROOT / summary["manifest"]).is_file()
 
 
@@ -66,6 +70,28 @@ def test_hangul_foundations_covers_blocks_vowel_layout_batchim_and_first_words()
     }
     assert not (required - {item for item in required if item in unit_text})
     assert "romanización" not in unit_text.lower()
+
+
+def test_korean_requires_all_24_basic_hangul_letters_before_vocabulary():
+    reading_unit = load(COURSE_ROOT / "units/reading.json")
+    reading = json.dumps(reading_unit, ensure_ascii=False)
+    basic_consonants = set("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ")
+    basic_vowels = set("ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ")
+    assert not (basic_consonants - set(reading))
+    assert not (basic_vowels - set(reading))
+
+    app = (ROOT / "src/japanese_course_app.js").read_text(encoding="utf-8")
+    assert "readingGateUnits()" in app
+    assert "gates.every" in app
+
+    sql = (
+        ROOT
+        / "supabase/migrations/016_korean_complete_basic_hangul_catalog.sql"
+    ).read_text(encoding="utf-8").lower()
+    for lesson in reading_unit["lessons"]:
+        assert lesson["id"].lower() in sql
+    assert "korean-reading-test-07" in sql
+    assert "active=false" in sql
 
 
 def test_hangul_foundations_answers_and_audio_are_valid():

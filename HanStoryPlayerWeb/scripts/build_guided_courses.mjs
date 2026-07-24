@@ -37,7 +37,26 @@ const unique=items=>{const seen=new Set;return items.filter(item=>{item.target=c
 const bookItems=language=>{const words=[],phrases=[];for(const entry of library.books.filter(book=>book.target_language===language)){const manifestPath=path.join(web,'library',entry.manifest);if(!fs.existsSync(manifestPath))continue;const manifest=JSON.parse(fs.readFileSync(manifestPath,'utf8'));for(const track of manifest.tracks||[]){const item={target:track.text,meaning:track.translation,hint:track.translation};if(track.type==='word')words.push(item);else if(track.type==='phrase')phrases.push(item);}const explanationPath=path.join(path.dirname(manifestPath),'explanations','track_explanations.json');if(fs.existsSync(explanationPath)){const data=JSON.parse(fs.readFileSync(explanationPath,'utf8'));for(const explanation of Object.values(data.items||{}))for(const part of explanation.breakdown||[])words.push({target:part.part,meaning:part.meaning_es,hint:part.meaning_es});}}
 return{words:unique(words),phrases:unique(phrases)};};
 const zeroItems=(language,stageIds=null)=>{const stages=ZERO_COURSES[language]?.stages||[],result=[];for(const stage of stages.filter(stage=>!stageIds||stageIds.includes(stage.id)))for(const item of stage.items||[]){if(item.details?.length)for(const detail of item.details)result.push({target:detail.text,meaning:detail.meaning,hint:detail.explanation||detail.hint||detail.meaning,group_hint:item.explanation||''});else{const explainsRule=['combinations','dangerous','structure'].includes(stage.id),spoken=item.speak||item.symbol,characterFirst=language==='Chinese'&&hasHan(item.symbol),target=explainsRule?item.symbol:characterFirst?item.symbol:spoken;result.push({target,meaning:item.quizAnswer||item.explanation||item.example||item.hint,hint:item.explanation||item.hint,...(characterFirst?{audio:spoken,pinyin:spoken}:{}),...(explainsRule?{audio:spoken,meaningPrompt:`¿Qué debes recordar sobre «${target}»?`,teaching_kind:'rule',rule_kind:stage.id,teaching_explanation:item.explanation||'',pronunciation_hint:item.pronunciation||'',formation_hint:item.example||'',teaching_points:item.teachingPoints||[]}:{})});}}return unique(result);};
-const beginnerItems=language=>unique((BEGINNER_COURSES[language]?.groups||[]).flatMap(group=>group.items.map(item=>({target:item.speak||item.symbol,display:item.symbol,meaning:item.hint||item.example,hint:`${item.symbol}: ${item.hint||item.example}`,group:group.title}))));
+const beginnerItems=language=>{
+  const seen=new Set;
+  return (BEGINNER_COURSES[language]?.groups||[]).flatMap(group=>
+    group.items.map(item=>({
+      target:clean(item.speak||item.symbol),
+      display:clean(item.symbol),
+      meaning:clean(item.hint||item.example),
+      hint:`${item.symbol}: ${item.hint||item.example}`,
+      group:group.title,
+    }))
+  ).filter(item=>{
+    if(!item.target||!item.display||!item.meaning)return false;
+    // En lectura importa la grafía: ㅇ y ㅏ pueden compartir el audio 아,
+    // pero son dos letras distintas que el alumno debe dominar.
+    const key=item.display.toLocaleLowerCase();
+    if(seen.has(key))return false;
+    seen.add(key);
+    return true;
+  });
+};
 const seedItems=language=>{const seedPath=path.join(web,'library','courses',language,'vocabulary_seed.json');if(!fs.existsSync(seedPath))return[];const data=JSON.parse(fs.readFileSync(seedPath,'utf8'));return unique((data.items||[]).map(item=>({target:item.target,meaning:item.meaning,hint:item.example?`${item.meaning}. Ejemplo: ${item.example}${item.example_meaning?` — ${item.example_meaning}`:''}`:item.meaning,example:item.example||'',example_meaning:item.example_meaning||'',category:item.category||''})));};
 const pickOptions=(pool,item,index)=>{const meanings=pool.map(value=>value.meaning).filter(Boolean),options=[item.meaning];for(let offset=1;options.length<3&&offset<meanings.length+2;offset++){const candidate=meanings[(index+offset*7)%meanings.length];if(candidate&&!options.includes(candidate))options.push(candidate);}return options.sort((a,b)=>((a.length+index)%5)-((b.length+index)%5));};
 const pickWrittenOptions=(pool,item,index)=>{const written=pool.map(value=>value.display||value.target).filter(Boolean),correct=item.display||item.target,options=[correct];for(let offset=1;options.length<3&&offset<written.length+2;offset++){const candidate=written[(index+offset*7)%written.length];if(candidate&&!options.includes(candidate))options.push(candidate);}return options.sort((a,b)=>((String(a).length+index)%5)-((String(b).length+index)%5));};

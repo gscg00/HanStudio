@@ -223,7 +223,12 @@ const summary={
 course.units=[summary,...course.units.filter(item=>item.id!==summary.id)];
 const foundations=course.levels.find(level=>level.id==='foundations');
 if(foundations)foundations.unitIds=[summary.id,...foundations.unitIds.filter(id=>id!==summary.id)];
-course.unlockRules={...(course.unlockRules||{}),requireReadingMastery:true,readingUnitId:'hangul-foundations'};
+course.unlockRules={
+  ...(course.unlockRules||{}),
+  requireReadingMastery:true,
+  readingUnitId:'hangul-foundations',
+  readingUnitIds:['hangul-foundations','reading'],
+};
 fs.writeFileSync(coursePath,`${JSON.stringify(course,null,2)}\n`);
 
 console.log(`Coreano: añadido ${summary.title} con ${lessons.length} pasos; curso v${course.version}.`);
