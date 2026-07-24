@@ -3,7 +3,7 @@
   "title": "Coreano: de cero a conversaciones intermedias",
   "language": "Korean",
   "languageCode": "ko",
-  "version": 10,
+  "version": 11,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Aprende los fundamentos y continúa con conversaciones guiadas antes de leer historias.",
   "vocabularyGoal": 300,
@@ -15,6 +15,7 @@
       "title": "Fundamentos para empezar",
       "description": "Lectura, pronunciación y estructuras esenciales.",
       "unitIds": [
+        "hangul-foundations",
         "reading",
         "survival",
         "essentials",
@@ -147,6 +148,15 @@
     }
   ],
   "units": [
+    {
+      "id": "hangul-foundations",
+      "world": 0,
+      "mapLabel": "MUNDO 0",
+      "title": "Aprende a leer hangeul",
+      "description": "Comprende cómo las letras forman bloques antes de memorizar sonidos y palabras.",
+      "manifest": "units/hangul-foundations.json",
+      "icon": "한"
+    },
     {
       "id": "reading",
       "world": 1,
