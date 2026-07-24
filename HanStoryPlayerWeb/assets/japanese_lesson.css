@@ -1,5 +1,10 @@
 .jp-teaching .jp-question{justify-content:center}
 .jp-teach-symbol{min-height:130px;margin:.35rem 0}
+.jp-teaching .jp-teach-symbol,
+.jp-teaching .jp-teach-meaning{flex:0 0 auto}
+.guided-course .jp-target.jp-target-medium{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.08}
+.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.9rem,5.5vw,3.5rem);line-height:1.08;overflow-wrap:break-word;word-break:keep-all}
+.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.45rem,4vw,2.6rem);line-height:1.12;overflow-wrap:break-word;word-break:keep-all}
 .jp-teach-detail{width:min(560px,100%);margin:.25rem auto;text-align:center;color:var(--jp-muted);font-size:1rem}
 .jp-teach-detail.sound{color:var(--jp-green);font-weight:800;font-size:1.15rem}
 .jp-teach-meaning{display:flex;flex-direction:column;align-items:center;gap:.2rem;width:min(560px,100%);margin:.2rem auto .55rem;padding:.65rem 1rem;border:1px solid #df6c3840;border-radius:15px;background:#fff0e8;text-align:center}
@@ -20,7 +25,7 @@
 .jp-teaching .jp-listen-row{margin:1rem 0 0}
 .jp-teaching .jp-listen-row button{min-width:120px}
 .jp-teaching .jp-check{position:sticky;bottom:0;background:var(--jp-paper)}
-@media(max-width:650px){.jp-teach-symbol{min-height:100px}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
+@media(max-width:650px){.jp-teach-symbol{min-height:100px}.guided-course .jp-target.jp-target-medium{font-size:clamp(2rem,10vw,3rem)}.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.65rem,8vw,2.5rem)}.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.25rem,6vw,1.9rem)}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
 .jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
 .jp-lesson-row.review small{color:#647b72}

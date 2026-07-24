@@ -221,3 +221,15 @@ def test_course_player_renders_a_dedicated_spanish_meaning_block():
     assert "jp-rich-teaching" in source
     assert ".jp-teach-points" in styles
     assert ".jp-rich-teaching .jp-teach-symbol" in styles
+
+
+def test_course_player_scales_long_targets_without_covering_the_meaning():
+    source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+    styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
+    assert "targetSizeClass" in source
+    assert "jp-target-medium" in source
+    assert "jp-target-long" in source
+    assert "jp-target-very-long" in source
+    assert ".jp-target.jp-target-long" in styles
+    assert ".jp-target.jp-target-very-long" in styles
+    assert ".jp-teaching .jp-teach-meaning{flex:0 0 auto}" in styles
