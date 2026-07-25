@@ -27,9 +27,9 @@ How much is it?|How much is it?|jau mach is it|How much is it?|¿Cuánto cuesta?
 do not → don't|I don't know.|ai dóunt nóu|I don't know.|Las contracciones son normales al hablar.
 I am → I'm|I'm ready.|aim rédi|I'm ready.|El verbo be cambia según la persona.
 question with do|Do you speak English?|du yu spík ínglish|Do you speak English?|Do ayuda a formar preguntas.`),
-    stage('English','repeat','7. Escucha y repite',`Nice to meet you.|Nice to meet you.|nais tu mít yu|Nice to meet you.|Escucha, deja una pausa y repite.
-Can you help me?|Can you help me?|can yu jelp mi|Can you help me?|Practica la unión natural de las palabras.
-I would like water.|I would like water.|ai wud laik uóter|I would like water.|Repite sin separar cada palabra.`)
+    stage('English','repeat','7. Escucha y repite',`Nice to meet you.|Nice to meet you.|nais tu mít yu|Nice to meet you.|Escucha, deja una pausa y repite.||Mucho gusto.
+Can you help me?|Can you help me?|can yu jelp mi|Can you help me?|Practica la unión natural de las palabras.||¿Puedes ayudarme?
+I would like water.|I would like water.|ai wud laik uóter|I would like water.|Repite sin separar cada palabra.||Quisiera agua.`)
   ],quiz:quiz('English',[['meaning','I don\'t understand.','No entiendo.','Tengo hambre.','Hasta luego.'],['sound','TH','think','red','very'],['symbol','Listen: “water”','water','where','what']])},
 
   Korean:{stages:[
