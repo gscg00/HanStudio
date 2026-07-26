@@ -48,8 +48,8 @@ def test_survival_meaning_questions_use_spanish_answers():
 
 
 def test_pronunciation_rules_are_not_mislabeled_as_word_meanings():
-    activity = find_target("German", "essentials", "Bär")
-    assert activity["prompt"] == "¿Qué debes recordar sobre «Bär»?"
+    activity = find_target("German", "essentials", "ä")
+    assert activity["prompt"] == "¿Qué debes recordar sobre «ä»?"
     assert activity["answer"] == "Ä se acerca a una e abierta."
 
 

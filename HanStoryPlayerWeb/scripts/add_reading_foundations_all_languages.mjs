@@ -346,11 +346,11 @@ const activity=(id,type,prompt,target='',options=[],answer='',explanation='',aud
   ...extra,
 });
 const intro=(id,title,text)=>activity(`${id}-intro`,'lesson_intro',title,'',[],'',text,'',{gradable:false});
-const teach=(id,concept)=>activity(`${id}-teach`,'teach_concept',concept.title,concept.target,[],'',concept.explanation,concept.audio,{
-  gradable:false,meaning:'',teaching_kind:'rule',sound_hint:concept.sound,
+const teach=(id,concept)=>{const semantic=/^¿?qué significa\b/i.test(concept.question);return activity(`${id}-teach`,'teach_concept',concept.title,concept.target,[],'',concept.explanation,concept.audio,{
+  gradable:false,meaning:semantic?concept.answer:'',teaching_kind:semantic?'concept':'rule',sound_hint:concept.sound,
   memory_hint:concept.memory,teaching_points:concept.points,
   ...(concept.audioExamples?.length?{audio_examples:concept.audioExamples}:{}),
-});
+});};
 const isListeningQuestion=prompt=>/(?:acabas|acabaste) de escuchar|¿?qué (?:letra|grafema|símbolo|sonido|sílaba|palabra|frase|vocal)\b.*\b(?:escuchas|oyes|oíste)\b/i.test(String(prompt||''));
 const question=(id,concept)=>activity(
   `${id}-question`,
