@@ -1779,6 +1779,238 @@
       ]
     },
     {
+      "id": "chinese-b1-2-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "chinese-b1-2-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "继续以前，我想先说明一个细节。",
+          "accepted_answers": [
+            "继续以前，我想先说明一个细节。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «继续以前，我想先说明一个细节。».",
+          "audio": "继续以前，我想先说明一个细节。",
+          "slow_audio": "继续以前，我想先说明一个细节。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "这让我想起一次相似的经历。",
+          "accepted_answers": [
+            "这让我想起一次相似的经历。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «这让我想起一次相似的经历。»: Eso me recuerda una experiencia parecida.",
+          "audio": "这让我想起一次相似的经历。",
+          "slow_audio": "这让我想起一次相似的经历。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "options": [
+            "。",
+            "以",
+            "，",
+            "明",
+            "个",
+            "说",
+            "续",
+            "先",
+            "节",
+            "想",
+            "细",
+            "继",
+            "我",
+            "前",
+            "一"
+          ],
+          "joiner": "",
+          "answer": "继续以前，我想先说明一个细节。",
+          "accepted_answers": [
+            "继续以前，我想先说明一个细节。"
+          ],
+          "explanation": "La forma completa es «继续以前，我想先说明一个细节。».",
+          "audio": "继续以前，我想先说明一个细节。",
+          "slow_audio": "继续以前，我想先说明一个细节。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "这让我想起一次相似的经＿。",
+          "answer": "历",
+          "accepted_answers": [
+            "历"
+          ],
+          "explanation": "La forma completa es «这让我想起一次相似的经历。»: Eso me recuerda una experiencia parecida.",
+          "audio": "这让我想起一次相似的经历。",
+          "slow_audio": "这让我想起一次相似的经历。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "target": "A veces es difícil perdonar.",
+          "answer": "有时候原谅别人很难。",
+          "accepted_answers": [
+            "有时候原谅别人很难。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «有时候原谅别人很难。».",
+          "audio": "有时候原谅别人很难。",
+          "slow_audio": "有时候原谅别人很难。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "target": "Eso me recuerda una experiencia parecida.",
+          "answer": "这让我想起一次相似的经历。",
+          "accepted_answers": [
+            "这让我想起一次相似的经历。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «这让我想起一次相似的经历。». También puedes escribirlo.",
+          "audio": "这让我想起一次相似的经历。",
+          "slow_audio": "这让我想起一次相似的经历。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "继续以前，我想先说明一个细节。",
+              "accepted_answers": [
+                "继续以前，我想先说明一个细节。"
+              ],
+              "audio": "继续以前，我想先说明一个细节。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Eso me recuerda una experiencia parecida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "这让我想起一次相似的经历。",
+              "accepted_answers": [
+                "这让我想起一次相似的经历。"
+              ],
+              "audio": "这让我想起一次相似的经历。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «A veces es difícil perdonar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "有时候原谅别人很难。",
+              "accepted_answers": [
+                "有时候原谅别人很难。"
+              ],
+              "audio": "有时候原谅别人很难。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "chinese-b12-conversation-test",
       "title": "Prueba · Conversaciones extensas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

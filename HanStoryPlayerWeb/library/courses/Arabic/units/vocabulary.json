@@ -21467,6 +21467,206 @@
       ]
     },
     {
+      "id": "arabic-vocabulary-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-vocabulary-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-vocabulary-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «no / negación»",
+          "target": "no / negación",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "لا",
+          "accepted_answers": [
+            "لا"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «لا».",
+          "audio": "لا",
+          "slow_audio": "لا",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-vocabulary-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "هذا",
+          "accepted_answers": [
+            "هذا"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «هذا»: esto (masculino)",
+          "audio": "هذا",
+          "slow_audio": "هذا",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-vocabulary-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «no / negación»",
+          "target": "no / negación",
+          "options": [
+            "لا"
+          ],
+          "joiner": "",
+          "answer": "لا",
+          "accepted_answers": [
+            "لا"
+          ],
+          "explanation": "La forma completa es «لا».",
+          "audio": "لا",
+          "slow_audio": "لا",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-vocabulary-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "هذ＿",
+          "answer": "ا",
+          "accepted_answers": [
+            "ا"
+          ],
+          "explanation": "La forma completa es «هذا»: esto (masculino)",
+          "audio": "هذا",
+          "slow_audio": "هذا",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-vocabulary-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «esto (femenino)»",
+          "target": "esto (femenino)",
+          "answer": "هذه",
+          "accepted_answers": [
+            "هذه"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «هذه».",
+          "audio": "هذه",
+          "slow_audio": "هذه",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-vocabulary-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «esto (masculino)»",
+          "target": "esto (masculino)",
+          "answer": "هذا",
+          "accepted_answers": [
+            "هذا"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «هذا». También puedes escribirlo.",
+          "audio": "هذا",
+          "slow_audio": "هذا",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-vocabulary-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «no / negación»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "لا",
+              "accepted_answers": [
+                "لا"
+              ],
+              "audio": "لا",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «esto (masculino)»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "هذا",
+              "accepted_answers": [
+                "هذا"
+              ],
+              "audio": "هذا",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-vocabulary-test-44",
       "title": "Prueba · Vocabulario frecuente",
       "description": "Prueba de dominio de la unidad.",

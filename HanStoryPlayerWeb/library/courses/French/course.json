@@ -529,5 +529,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "Dialogue"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

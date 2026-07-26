@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "german-a2-1-past-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-1-past-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-1-past-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «No pude encontrar mis llaves.»",
+          "target": "No pude encontrar mis llaves.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Ich konnte meine Schlüssel nicht finden.",
+          "accepted_answers": [
+            "Ich konnte meine Schlüssel nicht finden."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Ich konnte meine Schlüssel nicht finden.».",
+          "audio": "Ich konnte meine Schlüssel nicht finden.",
+          "slow_audio": "Ich konnte meine Schlüssel nicht finden.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-past-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Was ist passiert?",
+          "accepted_answers": [
+            "Was ist passiert?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Was ist passiert?»: ¿Qué pasó?",
+          "audio": "Was ist passiert?",
+          "slow_audio": "Was ist passiert?",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-past-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No pude encontrar mis llaves.»",
+          "target": "No pude encontrar mis llaves.",
+          "options": [
+            "finden.",
+            "konnte",
+            "meine",
+            "Schlüssel",
+            "Ich",
+            "nicht"
+          ],
+          "joiner": " ",
+          "answer": "Ich konnte meine Schlüssel nicht finden.",
+          "accepted_answers": [
+            "Ich konnte meine Schlüssel nicht finden."
+          ],
+          "explanation": "La forma completa es «Ich konnte meine Schlüssel nicht finden.».",
+          "audio": "Ich konnte meine Schlüssel nicht finden.",
+          "slow_audio": "Ich konnte meine Schlüssel nicht finden.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-past-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Was ist ___?",
+          "answer": "passiert",
+          "accepted_answers": [
+            "passiert"
+          ],
+          "explanation": "La forma completa es «Was ist passiert?»: ¿Qué pasó?",
+          "audio": "Was ist passiert?",
+          "slow_audio": "Was ist passiert?",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-past-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «ocurrió»",
+          "target": "ocurrió",
+          "answer": "ist passiert",
+          "accepted_answers": [
+            "ist passiert"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «ist passiert».",
+          "audio": "ist passiert",
+          "slow_audio": "ist passiert",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-past-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "target": "¿Qué pasó?",
+          "answer": "Was ist passiert?",
+          "accepted_answers": [
+            "Was ist passiert?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Was ist passiert?». También puedes escribirlo.",
+          "audio": "Was ist passiert?",
+          "slow_audio": "Was ist passiert?",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-past-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No pude encontrar mis llaves.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich konnte meine Schlüssel nicht finden.",
+              "accepted_answers": [
+                "Ich konnte meine Schlüssel nicht finden."
+              ],
+              "audio": "Ich konnte meine Schlüssel nicht finden.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Qué pasó?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Was ist passiert?",
+              "accepted_answers": [
+                "Was ist passiert?"
+              ],
+              "audio": "Was ist passiert?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a21-past-test",
       "title": "Prueba · Lo que pasó",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

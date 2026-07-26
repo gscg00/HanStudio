@@ -2841,6 +2841,115 @@
       ]
     },
     {
+      "id": "french-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «ch + a → cha»",
+          "target": "ch + a → cha",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "ch + a → cha",
+          "accepted_answers": [
+            "ch + a → cha"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ch + a → cha».",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "ph + i → phi",
+          "accepted_answers": [
+            "ph + i → phi"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «ph + i → phi»: No pronuncies p y h por separado.",
+          "audio": "phi",
+          "slow_audio": "phi",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "ch + a → cha",
+          "options": [
+            "ch",
+            "→",
+            "cha",
+            "a",
+            "+"
+          ],
+          "joiner": " ",
+          "answer": "ch + a → cha",
+          "accepted_answers": [
+            "ch + a → cha"
+          ],
+          "explanation": "La forma completa es «ch + a → cha».",
+          "audio": "cha",
+          "slow_audio": "cha",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "ph + i → ___",
+          "answer": "phi",
+          "accepted_answers": [
+            "phi"
+          ],
+          "explanation": "La forma completa es «ph + i → phi»: No pronuncies p y h por separado.",
+          "audio": "phi",
+          "slow_audio": "phi",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "french-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

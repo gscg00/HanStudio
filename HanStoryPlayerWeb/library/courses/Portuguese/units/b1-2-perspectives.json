@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "portuguese-b1-2-perspectives-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-2-perspectives-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Nem todos tiveram as mesmas oportunidades.",
+          "accepted_answers": [
+            "Nem todos tiveram as mesmas oportunidades."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Nem todos tiveram as mesmas oportunidades.».",
+          "audio": "Nem todos tiveram as mesmas oportunidades.",
+          "slow_audio": "Nem todos tiveram as mesmas oportunidades.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "A experiência influencia a nossa opinião.",
+          "accepted_answers": [
+            "A experiência influencia a nossa opinião."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «A experiência influencia a nossa opinião.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "A experiência influencia a nossa opinião.",
+          "slow_audio": "A experiência influencia a nossa opinião.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "options": [
+            "Nem",
+            "as",
+            "todos",
+            "oportunidades.",
+            "tiveram",
+            "mesmas"
+          ],
+          "joiner": " ",
+          "answer": "Nem todos tiveram as mesmas oportunidades.",
+          "accepted_answers": [
+            "Nem todos tiveram as mesmas oportunidades."
+          ],
+          "explanation": "La forma completa es «Nem todos tiveram as mesmas oportunidades.».",
+          "audio": "Nem todos tiveram as mesmas oportunidades.",
+          "slow_audio": "Nem todos tiveram as mesmas oportunidades.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "A experiência influencia a nossa ___.",
+          "answer": "opinião",
+          "accepted_answers": [
+            "opinião"
+          ],
+          "explanation": "La forma completa es «A experiência influencia a nossa opinião.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "A experiência influencia a nossa opinião.",
+          "slow_audio": "A experiência influencia a nossa opinião.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "target": "Entonces me di cuenta de mi error.",
+          "answer": "Foi então que percebi o meu erro.",
+          "accepted_answers": [
+            "Foi então que percebi o meu erro."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Foi então que percebi o meu erro.».",
+          "audio": "Foi então que percebi o meu erro.",
+          "slow_audio": "Foi então que percebi o meu erro.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "target": "La experiencia personal influye en nuestra opinión.",
+          "answer": "A experiência influencia a nossa opinião.",
+          "accepted_answers": [
+            "A experiência influencia a nossa opinião."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «A experiência influencia a nossa opinião.». También puedes escribirlo.",
+          "audio": "A experiência influencia a nossa opinião.",
+          "slow_audio": "A experiência influencia a nossa opinião.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-perspectives-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No todos tuvieron las mismas oportunidades.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Nem todos tiveram as mesmas oportunidades.",
+              "accepted_answers": [
+                "Nem todos tiveram as mesmas oportunidades."
+              ],
+              "audio": "Nem todos tiveram as mesmas oportunidades.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La experiencia personal influye en nuestra opinión.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "A experiência influencia a nossa opinião.",
+              "accepted_answers": [
+                "A experiência influencia a nossa opinião."
+              ],
+              "audio": "A experiência influencia a nossa opinião.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b12-perspectives-test",
       "title": "Prueba · Perspectivas y argumentos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

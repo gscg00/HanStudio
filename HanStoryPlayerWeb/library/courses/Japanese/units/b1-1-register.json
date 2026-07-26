@@ -1779,6 +1779,246 @@
       ]
     },
     {
+      "id": "japanese-b1-1-register-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "japanese-b1-1-register-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-b1-1-register-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «Gracias por avisarme con tiempo.»",
+          "target": "Gracias por avisarme con tiempo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "早めに知らせていただき、ありがとうございます。",
+          "accepted_answers": [
+            "早めに知らせていただき、ありがとうございます。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «早めに知らせていただき、ありがとうございます。».",
+          "audio": "早めに知らせていただき、ありがとうございます。",
+          "slow_audio": "早めに知らせていただき、ありがとうございます。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-1-register-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "予約がキャンセルされたことをお知らせいたします。",
+          "accepted_answers": [
+            "予約がキャンセルされたことをお知らせいたします。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «予約がキャンセルされたことをお知らせいたします。»: Lamento informarle de que la cita se canceló.",
+          "audio": "予約がキャンセルされたことをお知らせいたします。",
+          "slow_audio": "予約がキャンセルされたことをお知らせいたします。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-1-register-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Gracias por avisarme con tiempo.»",
+          "target": "Gracias por avisarme con tiempo.",
+          "options": [
+            "せ",
+            "り",
+            "た",
+            "き",
+            "ざ",
+            "早",
+            "に",
+            "知",
+            "。",
+            "い",
+            "め",
+            "ご",
+            "と",
+            "あ",
+            "て",
+            "う",
+            "ら",
+            "い",
+            "、",
+            "が",
+            "だ",
+            "す",
+            "ま"
+          ],
+          "joiner": "",
+          "answer": "早めに知らせていただき、ありがとうございます。",
+          "accepted_answers": [
+            "早めに知らせていただき、ありがとうございます。"
+          ],
+          "explanation": "La forma completa es «早めに知らせていただき、ありがとうございます。».",
+          "audio": "早めに知らせていただき、ありがとうございます。",
+          "slow_audio": "早めに知らせていただき、ありがとうございます。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-1-register-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "予約がキャンセルされたことをお知らせいたしま＿。",
+          "answer": "す",
+          "accepted_answers": [
+            "す"
+          ],
+          "explanation": "La forma completa es «予約がキャンセルされたことをお知らせいたします。»: Lamento informarle de que la cita se canceló.",
+          "audio": "予約がキャンセルされたことをお知らせいたします。",
+          "slow_audio": "予約がキャンセルされたことをお知らせいたします。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-1-register-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "target": "Vamos a dividir el trabajo.",
+          "answer": "仕事を分けましょう。",
+          "accepted_answers": [
+            "仕事を分けましょう。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «仕事を分けましょう。».",
+          "audio": "仕事を分けましょう。",
+          "slow_audio": "仕事を分けましょう。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-1-register-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "target": "Lamento informarle de que la cita se canceló.",
+          "answer": "予約がキャンセルされたことをお知らせいたします。",
+          "accepted_answers": [
+            "予約がキャンセルされたことをお知らせいたします。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «予約がキャンセルされたことをお知らせいたします。». También puedes escribirlo.",
+          "audio": "予約がキャンセルされたことをお知らせいたします。",
+          "slow_audio": "予約がキャンセルされたことをお知らせいたします。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-1-register-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Gracias por avisarme con tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "早めに知らせていただき、ありがとうございます。",
+              "accepted_answers": [
+                "早めに知らせていただき、ありがとうございます。"
+              ],
+              "audio": "早めに知らせていただき、ありがとうございます。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Lamento informarle de que la cita se canceló.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "予約がキャンセルされたことをお知らせいたします。",
+              "accepted_answers": [
+                "予約がキャンセルされたことをお知らせいたします。"
+              ],
+              "audio": "予約がキャンセルされたことをお知らせいたします。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «Vamos a dividir el trabajo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "仕事を分けましょう。",
+              "accepted_answers": [
+                "仕事を分けましょう。"
+              ],
+              "audio": "仕事を分けましょう。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "japanese-b11-register-test",
       "title": "Prueba · Registro y cortesía",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,213 @@
       ]
     },
     {
+      "id": "french-b1-1-cause-effect-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-b1-1-cause-effect-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «Como resultado, el proyecto se retrasó.»",
+          "target": "Como resultado, el proyecto se retrasó.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Par conséquent, le projet a pris du retard.",
+          "accepted_answers": [
+            "Par conséquent, le projet a pris du retard."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Par conséquent, le projet a pris du retard.».",
+          "audio": "Par conséquent, le projet a pris du retard.",
+          "slow_audio": "Par conséquent, le projet a pris du retard.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "accepted_answers": [
+            "Bien qu’elle soit fatiguée, elle a terminé le travail."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Bien qu’elle soit fatiguée, elle a terminé le travail.»: Aunque estaba cansada, terminó el trabajo.",
+          "audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "slow_audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Como resultado, el proyecto se retrasó.»",
+          "target": "Como resultado, el proyecto se retrasó.",
+          "options": [
+            "du",
+            "retard.",
+            "conséquent,",
+            "projet",
+            "pris",
+            "Par",
+            "a",
+            "le"
+          ],
+          "joiner": " ",
+          "answer": "Par conséquent, le projet a pris du retard.",
+          "accepted_answers": [
+            "Par conséquent, le projet a pris du retard."
+          ],
+          "explanation": "La forma completa es «Par conséquent, le projet a pris du retard.».",
+          "audio": "Par conséquent, le projet a pris du retard.",
+          "slow_audio": "Par conséquent, le projet a pris du retard.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Bien qu’elle soit fatiguée, elle a terminé le ___.",
+          "answer": "travail",
+          "accepted_answers": [
+            "travail"
+          ],
+          "explanation": "La forma completa es «Bien qu’elle soit fatiguée, elle a terminé le travail.»: Aunque estaba cansada, terminó el trabajo.",
+          "audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "slow_audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "target": "¿Tú qué opinas?",
+          "answer": "Qu’est-ce que tu en penses ?",
+          "accepted_answers": [
+            "Qu’est-ce que tu en penses ?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Qu’est-ce que tu en penses ?».",
+          "audio": "Qu’est-ce que tu en penses ?",
+          "slow_audio": "Qu’est-ce que tu en penses ?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "target": "Aunque estaba cansada, terminó el trabajo.",
+          "answer": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "accepted_answers": [
+            "Bien qu’elle soit fatiguée, elle a terminé le travail."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Bien qu’elle soit fatiguée, elle a terminé le travail.». También puedes escribirlo.",
+          "audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "slow_audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-cause-effect-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Como resultado, el proyecto se retrasó.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Par conséquent, le projet a pris du retard.",
+              "accepted_answers": [
+                "Par conséquent, le projet a pris du retard."
+              ],
+              "audio": "Par conséquent, le projet a pris du retard.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Aunque estaba cansada, terminó el trabajo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+              "accepted_answers": [
+                "Bien qu’elle soit fatiguée, elle a terminé le travail."
+              ],
+              "audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-b11-cause-effect-test",
       "title": "Prueba · Causas y consecuencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

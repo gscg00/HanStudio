@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "portuguese-b1-2-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "portuguese-b1-2-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Primeiro, quero esclarecer um detalhe.",
+          "accepted_answers": [
+            "Primeiro, quero esclarecer um detalhe."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Primeiro, quero esclarecer um detalhe.».",
+          "audio": "Primeiro, quero esclarecer um detalhe.",
+          "slow_audio": "Primeiro, quero esclarecer um detalhe.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Isso lembra-me uma experiência parecida.",
+          "accepted_answers": [
+            "Isso lembra-me uma experiência parecida."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Isso lembra-me uma experiência parecida.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Isso lembra-me uma experiência parecida.",
+          "slow_audio": "Isso lembra-me uma experiência parecida.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "options": [
+            "detalhe.",
+            "esclarecer",
+            "Primeiro,",
+            "quero",
+            "um"
+          ],
+          "joiner": " ",
+          "answer": "Primeiro, quero esclarecer um detalhe.",
+          "accepted_answers": [
+            "Primeiro, quero esclarecer um detalhe."
+          ],
+          "explanation": "La forma completa es «Primeiro, quero esclarecer um detalhe.».",
+          "audio": "Primeiro, quero esclarecer um detalhe.",
+          "slow_audio": "Primeiro, quero esclarecer um detalhe.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Isso lembra-me uma experiência ___.",
+          "answer": "parecida",
+          "accepted_answers": [
+            "parecida"
+          ],
+          "explanation": "La forma completa es «Isso lembra-me uma experiência parecida.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Isso lembra-me uma experiência parecida.",
+          "slow_audio": "Isso lembra-me uma experiência parecida.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "target": "A veces es difícil perdonar.",
+          "answer": "Às vezes é difícil perdoar.",
+          "accepted_answers": [
+            "Às vezes é difícil perdoar."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Às vezes é difícil perdoar.».",
+          "audio": "Às vezes é difícil perdoar.",
+          "slow_audio": "Às vezes é difícil perdoar.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "target": "Eso me recuerda una experiencia parecida.",
+          "answer": "Isso lembra-me uma experiência parecida.",
+          "accepted_answers": [
+            "Isso lembra-me uma experiência parecida."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Isso lembra-me uma experiência parecida.». También puedes escribirlo.",
+          "audio": "Isso lembra-me uma experiência parecida.",
+          "slow_audio": "Isso lembra-me uma experiência parecida.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Primeiro, quero esclarecer um detalhe.",
+              "accepted_answers": [
+                "Primeiro, quero esclarecer um detalhe."
+              ],
+              "audio": "Primeiro, quero esclarecer um detalhe.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Eso me recuerda una experiencia parecida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Isso lembra-me uma experiência parecida.",
+              "accepted_answers": [
+                "Isso lembra-me uma experiência parecida."
+              ],
+              "audio": "Isso lembra-me uma experiência parecida.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «A veces es difícil perdonar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Às vezes é difícil perdoar.",
+              "accepted_answers": [
+                "Às vezes é difícil perdoar."
+              ],
+              "audio": "Às vezes é difícil perdoar.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "portuguese-b12-conversation-test",
       "title": "Prueba · Conversaciones extensas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

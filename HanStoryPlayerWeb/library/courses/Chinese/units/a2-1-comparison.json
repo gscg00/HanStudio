@@ -1779,6 +1779,214 @@
       ]
     },
     {
+      "id": "chinese-a2-1-comparison-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a2-1-comparison-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "这个选择对我更好。",
+          "accepted_answers": [
+            "这个选择对我更好。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «这个选择对我更好。».",
+          "audio": "这个选择对我更好。",
+          "slow_audio": "这个选择对我更好。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "今天的天气比昨天差。",
+          "accepted_answers": [
+            "今天的天气比昨天差。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «今天的天气比昨天差。»: Hoy hace peor tiempo que ayer.",
+          "audio": "今天的天气比昨天差。",
+          "slow_audio": "今天的天气比昨天差。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "options": [
+            "。",
+            "更",
+            "对",
+            "选",
+            "个",
+            "我",
+            "这",
+            "择",
+            "好"
+          ],
+          "joiner": "",
+          "answer": "这个选择对我更好。",
+          "accepted_answers": [
+            "这个选择对我更好。"
+          ],
+          "explanation": "La forma completa es «这个选择对我更好。».",
+          "audio": "这个选择对我更好。",
+          "slow_audio": "这个选择对我更好。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "今天的天气比昨天＿。",
+          "answer": "差",
+          "accepted_answers": [
+            "差"
+          ],
+          "explanation": "La forma completa es «今天的天气比昨天差。»: Hoy hace peor tiempo que ayer.",
+          "audio": "今天的天气比昨天差。",
+          "slow_audio": "今天的天气比昨天差。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "高",
+          "accepted_answers": [
+            "高"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «高».",
+          "audio": "高",
+          "slow_audio": "高",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "target": "Hoy hace peor tiempo que ayer.",
+          "answer": "今天的天气比昨天差。",
+          "accepted_answers": [
+            "今天的天气比昨天差。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «今天的天气比昨天差。». También puedes escribirlo.",
+          "audio": "今天的天气比昨天差。",
+          "slow_audio": "今天的天气比昨天差。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-comparison-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Esta opción es mejor para mí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "这个选择对我更好。",
+              "accepted_answers": [
+                "这个选择对我更好。"
+              ],
+              "audio": "这个选择对我更好。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Hoy hace peor tiempo que ayer.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "今天的天气比昨天差。",
+              "accepted_answers": [
+                "今天的天气比昨天差。"
+              ],
+              "audio": "今天的天气比昨天差。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a21-comparison-test",
       "title": "Prueba · Describir y comparar",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

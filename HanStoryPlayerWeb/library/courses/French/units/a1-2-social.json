@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "french-a1-2-social-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "french-a1-2-social-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a1-2-social-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «¿Dónde quedamos?»",
+          "target": "¿Dónde quedamos?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "On se retrouve où ?",
+          "accepted_answers": [
+            "On se retrouve où ?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «On se retrouve où ?».",
+          "audio": "On se retrouve où ?",
+          "slow_audio": "On se retrouve où ?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-social-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Je suis libre après six heures.",
+          "accepted_answers": [
+            "Je suis libre après six heures."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Je suis libre après six heures.»: Estoy libre después de las seis.",
+          "audio": "Je suis libre après six heures.",
+          "slow_audio": "Je suis libre après six heures.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-social-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Dónde quedamos?»",
+          "target": "¿Dónde quedamos?",
+          "options": [
+            "où",
+            "retrouve",
+            "On",
+            "se",
+            "?"
+          ],
+          "joiner": " ",
+          "answer": "On se retrouve où ?",
+          "accepted_answers": [
+            "On se retrouve où ?"
+          ],
+          "explanation": "La forma completa es «On se retrouve où ?».",
+          "audio": "On se retrouve où ?",
+          "slow_audio": "On se retrouve où ?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-social-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Je suis libre après six ___.",
+          "answer": "heures",
+          "accepted_answers": [
+            "heures"
+          ],
+          "explanation": "La forma completa es «Je suis libre après six heures.»: Estoy libre después de las seis.",
+          "audio": "Je suis libre après six heures.",
+          "slow_audio": "Je suis libre après six heures.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-social-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «fin de semana»",
+          "target": "fin de semana",
+          "answer": "week-end",
+          "accepted_answers": [
+            "week-end"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «week-end».",
+          "audio": "week-end",
+          "slow_audio": "week-end",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-social-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "target": "Estoy libre después de las seis.",
+          "answer": "Je suis libre après six heures.",
+          "accepted_answers": [
+            "Je suis libre après six heures."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Je suis libre après six heures.». También puedes escribirlo.",
+          "audio": "Je suis libre après six heures.",
+          "slow_audio": "Je suis libre après six heures.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-social-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Dónde quedamos?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "On se retrouve où ?",
+              "accepted_answers": [
+                "On se retrouve où ?"
+              ],
+              "audio": "On se retrouve où ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Estoy libre después de las seis.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Je suis libre après six heures.",
+              "accepted_answers": [
+                "Je suis libre après six heures."
+              ],
+              "audio": "Je suis libre après six heures.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «fin de semana»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "week-end",
+              "accepted_answers": [
+                "week-end"
+              ],
+              "audio": "week-end",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "french-a12-social-test",
       "title": "Prueba · Invitaciones y planes",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

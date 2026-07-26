@@ -3,7 +3,7 @@
   "title": "Ruso: de cero a conversaciones intermedias",
   "language": "Russian",
   "languageCode": "ru",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Domina el cirílico y las estructuras que abren la lectura.",
   "vocabularyGoal": 300,
@@ -516,5 +516,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "Разговор"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

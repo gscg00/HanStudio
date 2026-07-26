@@ -3,7 +3,7 @@
   "title": "Inglés: de cero a conversaciones intermedias",
   "language": "English",
   "languageCode": "en",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Pronuncia, comprende y empieza a leer historias en inglés.",
   "vocabularyGoal": 300,
@@ -535,5 +535,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "Talk"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

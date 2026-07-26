@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "arabic-b1-2-negotiation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-b1-2-negotiation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "ما البديل المتاح لنا؟",
+          "accepted_answers": [
+            "ما البديل المتاح لنا؟"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ما البديل المتاح لنا؟».",
+          "audio": "ما البديل المتاح لنا؟",
+          "slow_audio": "ما البديل المتاح لنا؟",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "نتنازل في السعر، لكن ليس في الجودة.",
+          "accepted_answers": [
+            "نتنازل في السعر، لكن ليس في الجودة."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «نتنازل في السعر، لكن ليس في الجودة.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "slow_audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "options": [
+            "المتاح",
+            "لنا؟",
+            "ما",
+            "البديل"
+          ],
+          "joiner": " ",
+          "answer": "ما البديل المتاح لنا؟",
+          "accepted_answers": [
+            "ما البديل المتاح لنا؟"
+          ],
+          "explanation": "La forma completa es «ما البديل المتاح لنا؟».",
+          "audio": "ما البديل المتاح لنا؟",
+          "slow_audio": "ما البديل المتاح لنا؟",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "نتنازل في السعر، لكن ليس في ___.",
+          "answer": "الجودة",
+          "accepted_answers": [
+            "الجودة"
+          ],
+          "explanation": "La forma completa es «نتنازل في السعر، لكن ليس في الجودة.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "slow_audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "target": "Entre amigos podemos hablar de manera más directa.",
+          "answer": "يمكننا التحدث بصورة مباشرة أكثر بين الأصدقاء.",
+          "accepted_answers": [
+            "يمكننا التحدث بصورة مباشرة أكثر بين الأصدقاء."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «يمكننا التحدث بصورة مباشرة أكثر بين الأصدقاء.».",
+          "audio": "يمكننا التحدث بصورة مباشرة أكثر بين الأصدقاء.",
+          "slow_audio": "يمكننا التحدث بصورة مباشرة أكثر بين الأصدقاء.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "target": "Podemos ceder en el precio, pero no en la calidad.",
+          "answer": "نتنازل في السعر، لكن ليس في الجودة.",
+          "accepted_answers": [
+            "نتنازل في السعر، لكن ليس في الجودة."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «نتنازل في السعر، لكن ليس في الجودة.». También puedes escribirlo.",
+          "audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "slow_audio": "نتنازل في السعر، لكن ليس في الجودة.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-negotiation-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Qué alternativa nos queda?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "ما البديل المتاح لنا؟",
+              "accepted_answers": [
+                "ما البديل المتاح لنا؟"
+              ],
+              "audio": "ما البديل المتاح لنا؟",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Podemos ceder en el precio, pero no en la calidad.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "نتنازل في السعر، لكن ليس في الجودة.",
+              "accepted_answers": [
+                "نتنازل في السعر، لكن ليس في الجودة."
+              ],
+              "audio": "نتنازل في السعر، لكن ليس في الجودة.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-b12-negotiation-test",
       "title": "Prueba · Decisiones y negociación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

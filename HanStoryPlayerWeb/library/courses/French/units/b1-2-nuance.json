@@ -1779,6 +1779,213 @@
       ]
     },
     {
+      "id": "french-b1-2-nuance-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-b1-2-nuance-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-b1-2-nuance-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Cela ne veut pas dire que c’est impossible.",
+          "accepted_answers": [
+            "Cela ne veut pas dire que c’est impossible."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Cela ne veut pas dire que c’est impossible.».",
+          "audio": "Cela ne veut pas dire que c’est impossible.",
+          "slow_audio": "Cela ne veut pas dire que c’est impossible.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-nuance-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Cela devrait marcher si tous participent.",
+          "accepted_answers": [
+            "Cela devrait marcher si tous participent."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Cela devrait marcher si tous participent.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Cela devrait marcher si tous participent.",
+          "slow_audio": "Cela devrait marcher si tous participent.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-nuance-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "options": [
+            "Cela",
+            "impossible.",
+            "ne",
+            "c’est",
+            "que",
+            "dire",
+            "veut",
+            "pas"
+          ],
+          "joiner": " ",
+          "answer": "Cela ne veut pas dire que c’est impossible.",
+          "accepted_answers": [
+            "Cela ne veut pas dire que c’est impossible."
+          ],
+          "explanation": "La forma completa es «Cela ne veut pas dire que c’est impossible.».",
+          "audio": "Cela ne veut pas dire que c’est impossible.",
+          "slow_audio": "Cela ne veut pas dire que c’est impossible.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-nuance-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Cela devrait marcher si tous ___.",
+          "answer": "participent",
+          "accepted_answers": [
+            "participent"
+          ],
+          "explanation": "La forma completa es «Cela devrait marcher si tous participent.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Cela devrait marcher si tous participent.",
+          "slow_audio": "Cela devrait marcher si tous participent.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-nuance-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "target": "La recomiendo porque los personajes parecen reales.",
+          "answer": "Je le recommande parce que les personnages semblent réels.",
+          "accepted_answers": [
+            "Je le recommande parce que les personnages semblent réels."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Je le recommande parce que les personnages semblent réels.».",
+          "audio": "Je le recommande parce que les personnages semblent réels.",
+          "slow_audio": "Je le recommande parce que les personnages semblent réels.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-nuance-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "target": "Probablemente funcione, siempre que todos participen.",
+          "answer": "Cela devrait marcher si tous participent.",
+          "accepted_answers": [
+            "Cela devrait marcher si tous participent."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Cela devrait marcher si tous participent.». También puedes escribirlo.",
+          "audio": "Cela devrait marcher si tous participent.",
+          "slow_audio": "Cela devrait marcher si tous participent.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-nuance-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No necesariamente significa que sea imposible.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Cela ne veut pas dire que c’est impossible.",
+              "accepted_answers": [
+                "Cela ne veut pas dire que c’est impossible."
+              ],
+              "audio": "Cela ne veut pas dire que c’est impossible.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Probablemente funcione, siempre que todos participen.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Cela devrait marcher si tous participent.",
+              "accepted_answers": [
+                "Cela devrait marcher si tous participent."
+              ],
+              "audio": "Cela devrait marcher si tous participent.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-b12-nuance-test",
       "title": "Prueba · Opiniones con matices",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

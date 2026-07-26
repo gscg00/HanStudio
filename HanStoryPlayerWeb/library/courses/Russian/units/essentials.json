@@ -2868,6 +2868,206 @@
       ]
     },
     {
+      "id": "russian-essentials-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-essentials-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-essentials-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Sale aire por la parte posterior.»",
+          "target": "Sale aire por la parte posterior.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Х",
+          "accepted_answers": [
+            "Х"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Х».",
+          "audio": "хорошо",
+          "slow_audio": "хорошо",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-essentials-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Щ",
+          "accepted_answers": [
+            "Щ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Щ»: Es más larga y frontal que Ш.",
+          "audio": "щука",
+          "slow_audio": "щука",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-essentials-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Sale aire por la parte posterior.»",
+          "target": "Sale aire por la parte posterior.",
+          "options": [
+            "Х"
+          ],
+          "joiner": "",
+          "answer": "Х",
+          "accepted_answers": [
+            "Х"
+          ],
+          "explanation": "La forma completa es «Х».",
+          "audio": "хорошо",
+          "slow_audio": "хорошо",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-essentials-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "Щ",
+          "accepted_answers": [
+            "Щ"
+          ],
+          "explanation": "La forma completa es «Щ»: Es más larga y frontal que Ш.",
+          "audio": "щука",
+          "slow_audio": "щука",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-essentials-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Debe vibrar, como la erre española.»",
+          "target": "Debe vibrar, como la erre española.",
+          "answer": "Р",
+          "accepted_answers": [
+            "Р"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Р».",
+          "audio": "рука",
+          "slow_audio": "рука",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-essentials-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Es más larga y frontal que Ш.»",
+          "target": "Es más larga y frontal que Ш.",
+          "answer": "Щ",
+          "accepted_answers": [
+            "Щ"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Щ». También puedes escribirlo.",
+          "audio": "щука",
+          "slow_audio": "щука",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-essentials-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Sale aire por la parte posterior.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Х",
+              "accepted_answers": [
+                "Х"
+              ],
+              "audio": "хорошо",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Es más larga y frontal que Ш.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Щ",
+              "accepted_answers": [
+                "Щ"
+              ],
+              "audio": "щука",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-essentials-test-11",
       "title": "Prueba · Pronombres y verbos esenciales",
       "description": "Prueba de dominio de la unidad.",

@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "italian-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Dovresti dirgli come ti senti.",
+          "accepted_answers": [
+            "Dovresti dirgli come ti senti."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Dovresti dirgli come ti senti.».",
+          "audio": "Dovresti dirgli come ti senti.",
+          "slow_audio": "Dovresti dirgli come ti senti.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "accepted_answers": [
+            "Da allora ci fidiamo di più l’uno dell’altro."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Da allora ci fidiamo di più l’uno dell’altro.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "slow_audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "come",
+            "senti.",
+            "dirgli",
+            "Dovresti",
+            "ti"
+          ],
+          "joiner": " ",
+          "answer": "Dovresti dirgli come ti senti.",
+          "accepted_answers": [
+            "Dovresti dirgli come ti senti."
+          ],
+          "explanation": "La forma completa es «Dovresti dirgli come ti senti.».",
+          "audio": "Dovresti dirgli come ti senti.",
+          "slow_audio": "Dovresti dirgli come ti senti.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Da allora ci fidiamo di più l’uno ___.",
+          "answer": "dell’altro",
+          "accepted_answers": [
+            "dell’altro"
+          ],
+          "explanation": "La forma completa es «Da allora ci fidiamo di più l’uno dell’altro.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "slow_audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "per questo",
+          "accepted_answers": [
+            "per questo"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «per questo».",
+          "audio": "per questo",
+          "slow_audio": "per questo",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "accepted_answers": [
+            "Da allora ci fidiamo di più l’uno dell’altro."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Da allora ci fidiamo di più l’uno dell’altro.». También puedes escribirlo.",
+          "audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "slow_audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Dovresti dirgli come ti senti.",
+              "accepted_answers": [
+                "Dovresti dirgli come ti senti."
+              ],
+              "audio": "Dovresti dirgli come ti senti.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Da allora ci fidiamo di più l’uno dell’altro.",
+              "accepted_answers": [
+                "Da allora ci fidiamo di più l’uno dell’altro."
+              ],
+              "audio": "Da allora ci fidiamo di più l’uno dell’altro.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

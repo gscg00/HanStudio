@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "arabic-a1-2-weather-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a1-2-weather-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a1-2-weather-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "أحتاج إلى معطف.",
+          "accepted_answers": [
+            "أحتاج إلى معطف."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «أحتاج إلى معطف.».",
+          "audio": "أحتاج إلى معطف.",
+          "slow_audio": "أحتاج إلى معطف.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-weather-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "يتغير الطقس بسرعة.",
+          "accepted_answers": [
+            "يتغير الطقس بسرعة."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «يتغير الطقس بسرعة.»: El tiempo cambia rápido.",
+          "audio": "يتغير الطقس بسرعة.",
+          "slow_audio": "يتغير الطقس بسرعة.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-weather-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "options": [
+            "معطف.",
+            "أحتاج",
+            "إلى"
+          ],
+          "joiner": " ",
+          "answer": "أحتاج إلى معطف.",
+          "accepted_answers": [
+            "أحتاج إلى معطف."
+          ],
+          "explanation": "La forma completa es «أحتاج إلى معطف.».",
+          "audio": "أحتاج إلى معطف.",
+          "slow_audio": "أحتاج إلى معطف.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-weather-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "يتغير الطقس ___.",
+          "answer": "بسرعة",
+          "accepted_answers": [
+            "بسرعة"
+          ],
+          "explanation": "La forma completa es «يتغير الطقس بسرعة.»: El tiempo cambia rápido.",
+          "audio": "يتغير الطقس بسرعة.",
+          "slow_audio": "يتغير الطقس بسرعة.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-weather-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «abrigo»",
+          "target": "abrigo",
+          "answer": "معطف",
+          "accepted_answers": [
+            "معطف"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «معطف».",
+          "audio": "معطف",
+          "slow_audio": "معطف",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-weather-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "target": "El tiempo cambia rápido.",
+          "answer": "يتغير الطقس بسرعة.",
+          "accepted_answers": [
+            "يتغير الطقس بسرعة."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «يتغير الطقس بسرعة.». También puedes escribirlo.",
+          "audio": "يتغير الطقس بسرعة.",
+          "slow_audio": "يتغير الطقس بسرعة.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-weather-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito un abrigo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "أحتاج إلى معطف.",
+              "accepted_answers": [
+                "أحتاج إلى معطف."
+              ],
+              "audio": "أحتاج إلى معطف.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "يتغير الطقس بسرعة.",
+              "accepted_answers": [
+                "يتغير الطقس بسرعة."
+              ],
+              "audio": "يتغير الطقس بسرعة.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a12-weather-test",
       "title": "Prueba · Clima y ropa",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

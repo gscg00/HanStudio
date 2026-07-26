@@ -2093,6 +2093,229 @@
       ]
     },
     {
+      "id": "german-story-bridge-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "german-story-bridge-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-story-bridge-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Necesitamos manzanas, pan y queso.»",
+          "target": "Necesitamos manzanas, pan y queso.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Wir brauchen Äpfel, Brot und Käse.",
+          "accepted_answers": [
+            "Wir brauchen Äpfel, Brot und Käse."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Wir brauchen Äpfel, Brot und Käse.».",
+          "audio": "Wir brauchen Äpfel, Brot und Käse.",
+          "slow_audio": "Wir brauchen Äpfel, Brot und Käse.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-story-bridge-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Wie viele Äpfel sollen wir kaufen?",
+          "accepted_answers": [
+            "Wie viele Äpfel sollen wir kaufen?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Wie viele Äpfel sollen wir kaufen?»: ¿Cuántas manzanas debemos comprar?",
+          "audio": "Wie viele Äpfel sollen wir kaufen?",
+          "slow_audio": "Wie viele Äpfel sollen wir kaufen?",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-story-bridge-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesitamos manzanas, pan y queso.»",
+          "target": "Necesitamos manzanas, pan y queso.",
+          "options": [
+            "und",
+            "Wir",
+            "Käse.",
+            "Brot",
+            "Äpfel,",
+            "brauchen"
+          ],
+          "joiner": " ",
+          "answer": "Wir brauchen Äpfel, Brot und Käse.",
+          "accepted_answers": [
+            "Wir brauchen Äpfel, Brot und Käse."
+          ],
+          "explanation": "La forma completa es «Wir brauchen Äpfel, Brot und Käse.».",
+          "audio": "Wir brauchen Äpfel, Brot und Käse.",
+          "slow_audio": "Wir brauchen Äpfel, Brot und Käse.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-story-bridge-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Wie viele Äpfel sollen wir ___?",
+          "answer": "kaufen",
+          "accepted_answers": [
+            "kaufen"
+          ],
+          "explanation": "La forma completa es «Wie viele Äpfel sollen wir kaufen?»: ¿Cuántas manzanas debemos comprar?",
+          "audio": "Wie viele Äpfel sollen wir kaufen?",
+          "slow_audio": "Wie viele Äpfel sollen wir kaufen?",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-story-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Dos kilos, por favor.»",
+          "target": "Dos kilos, por favor.",
+          "answer": "Zwei Kilo, bitte.",
+          "accepted_answers": [
+            "Zwei Kilo, bitte."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Zwei Kilo, bitte.».",
+          "audio": "Zwei Kilo, bitte.",
+          "slow_audio": "Zwei Kilo, bitte.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-story-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Cuántas manzanas debemos comprar?»",
+          "target": "¿Cuántas manzanas debemos comprar?",
+          "answer": "Wie viele Äpfel sollen wir kaufen?",
+          "accepted_answers": [
+            "Wie viele Äpfel sollen wir kaufen?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Wie viele Äpfel sollen wir kaufen?». También puedes escribirlo.",
+          "audio": "Wie viele Äpfel sollen wir kaufen?",
+          "slow_audio": "Wie viele Äpfel sollen wir kaufen?",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-story-bridge-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesitamos manzanas, pan y queso.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Wir brauchen Äpfel, Brot und Käse.",
+              "accepted_answers": [
+                "Wir brauchen Äpfel, Brot und Käse."
+              ],
+              "audio": "Wir brauchen Äpfel, Brot und Käse.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Cuántas manzanas debemos comprar?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Wie viele Äpfel sollen wir kaufen?",
+              "accepted_answers": [
+                "Wie viele Äpfel sollen wir kaufen?"
+              ],
+              "audio": "Wie viele Äpfel sollen wir kaufen?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «Dos kilos, por favor.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Zwei Kilo, bitte.",
+              "accepted_answers": [
+                "Zwei Kilo, bitte."
+              ],
+              "audio": "Zwei Kilo, bitte.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "german-story-bridge-test-08",
       "title": "Prueba · Puente hacia las historias",
       "description": "Prueba de dominio de la unidad.",

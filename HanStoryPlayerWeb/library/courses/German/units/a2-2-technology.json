@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "german-a2-2-technology-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-2-technology-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-2-technology-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Necesito cargar el teléfono.»",
+          "target": "Necesito cargar el teléfono.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Ich muss mein Handy aufladen.",
+          "accepted_answers": [
+            "Ich muss mein Handy aufladen."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Ich muss mein Handy aufladen.».",
+          "audio": "Ich muss mein Handy aufladen.",
+          "slow_audio": "Ich muss mein Handy aufladen.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-technology-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Die App lässt sich nicht öffnen.",
+          "accepted_answers": [
+            "Die App lässt sich nicht öffnen."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Die App lässt sich nicht öffnen.»: La aplicación no se abre.",
+          "audio": "Die App lässt sich nicht öffnen.",
+          "slow_audio": "Die App lässt sich nicht öffnen.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-technology-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito cargar el teléfono.»",
+          "target": "Necesito cargar el teléfono.",
+          "options": [
+            "Ich",
+            "Handy",
+            "mein",
+            "muss",
+            "aufladen."
+          ],
+          "joiner": " ",
+          "answer": "Ich muss mein Handy aufladen.",
+          "accepted_answers": [
+            "Ich muss mein Handy aufladen."
+          ],
+          "explanation": "La forma completa es «Ich muss mein Handy aufladen.».",
+          "audio": "Ich muss mein Handy aufladen.",
+          "slow_audio": "Ich muss mein Handy aufladen.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-technology-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Die App lässt sich nicht ___.",
+          "answer": "öffnen",
+          "accepted_answers": [
+            "öffnen"
+          ],
+          "explanation": "La forma completa es «Die App lässt sich nicht öffnen.»: La aplicación no se abre.",
+          "audio": "Die App lässt sich nicht öffnen.",
+          "slow_audio": "Die App lässt sich nicht öffnen.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-technology-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «roto»",
+          "target": "roto",
+          "answer": "kaputt",
+          "accepted_answers": [
+            "kaputt"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «kaputt».",
+          "audio": "kaputt",
+          "slow_audio": "kaputt",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-technology-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "target": "La aplicación no se abre.",
+          "answer": "Die App lässt sich nicht öffnen.",
+          "accepted_answers": [
+            "Die App lässt sich nicht öffnen."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Die App lässt sich nicht öffnen.». También puedes escribirlo.",
+          "audio": "Die App lässt sich nicht öffnen.",
+          "slow_audio": "Die App lässt sich nicht öffnen.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-technology-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito cargar el teléfono.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich muss mein Handy aufladen.",
+              "accepted_answers": [
+                "Ich muss mein Handy aufladen."
+              ],
+              "audio": "Ich muss mein Handy aufladen.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La aplicación no se abre.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Die App lässt sich nicht öffnen.",
+              "accepted_answers": [
+                "Die App lässt sich nicht öffnen."
+              ],
+              "audio": "Die App lässt sich nicht öffnen.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a22-technology-test",
       "title": "Prueba · Tecnología y comunicación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "portuguese-b1-2-projects-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-2-projects-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Vamos prever os riscos antes de começar.",
+          "accepted_answers": [
+            "Vamos prever os riscos antes de começar."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Vamos prever os riscos antes de começar.».",
+          "audio": "Vamos prever os riscos antes de começar.",
+          "slow_audio": "Vamos prever os riscos antes de começar.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Revemos o progresso no fim da semana.",
+          "accepted_answers": [
+            "Revemos o progresso no fim da semana."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Revemos o progresso no fim da semana.»: Revisaremos los avances al final de la semana.",
+          "audio": "Revemos o progresso no fim da semana.",
+          "slow_audio": "Revemos o progresso no fim da semana.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "options": [
+            "antes",
+            "os",
+            "riscos",
+            "prever",
+            "começar.",
+            "de",
+            "Vamos"
+          ],
+          "joiner": " ",
+          "answer": "Vamos prever os riscos antes de começar.",
+          "accepted_answers": [
+            "Vamos prever os riscos antes de começar."
+          ],
+          "explanation": "La forma completa es «Vamos prever os riscos antes de começar.».",
+          "audio": "Vamos prever os riscos antes de começar.",
+          "slow_audio": "Vamos prever os riscos antes de começar.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Revemos o progresso no fim da ___.",
+          "answer": "semana",
+          "accepted_answers": [
+            "semana"
+          ],
+          "explanation": "La forma completa es «Revemos o progresso no fim da semana.»: Revisaremos los avances al final de la semana.",
+          "audio": "Revemos o progresso no fim da semana.",
+          "slow_audio": "Revemos o progresso no fim da semana.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "target": "Quiero participar como voluntario.",
+          "answer": "Quero participar como voluntário.",
+          "accepted_answers": [
+            "Quero participar como voluntário."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Quero participar como voluntário.».",
+          "audio": "Quero participar como voluntário.",
+          "slow_audio": "Quero participar como voluntário.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "target": "Revisaremos los avances al final de la semana.",
+          "answer": "Revemos o progresso no fim da semana.",
+          "accepted_answers": [
+            "Revemos o progresso no fim da semana."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Revemos o progresso no fim da semana.». También puedes escribirlo.",
+          "audio": "Revemos o progresso no fim da semana.",
+          "slow_audio": "Revemos o progresso no fim da semana.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-projects-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Conviene prever los riesgos antes de empezar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Vamos prever os riscos antes de começar.",
+              "accepted_answers": [
+                "Vamos prever os riscos antes de começar."
+              ],
+              "audio": "Vamos prever os riscos antes de começar.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Revisaremos los avances al final de la semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Revemos o progresso no fim da semana.",
+              "accepted_answers": [
+                "Revemos o progresso no fim da semana."
+              ],
+              "audio": "Revemos o progresso no fim da semana.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b12-projects-test",
       "title": "Prueba · Proyectos y colaboración",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

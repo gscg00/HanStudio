@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v107';
+const SHELL='hanstory-shell-v112';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -23,6 +23,7 @@ const ASSETS=[
   './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/user_settings.js','./src/xp_service.js','./src/friends_service.js',
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
   './src/japanese_course_logic.js','./src/guided_course_config.js','./src/guided_course_logic.js',
+  './src/guided_course_answers.js','./src/guided_speech_recognition.js',
   './manifest.webmanifest','./library/library.json',
   './library/courses/Korean/units/hangul-foundations.json',
   './library/courses/English/units/reading-foundations.json',

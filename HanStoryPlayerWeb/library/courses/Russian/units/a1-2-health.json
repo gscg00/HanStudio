@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "russian-a1-2-health-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-a1-2-health-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a1-2-health-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Tengo alergia a la penicilina.»",
+          "target": "Tengo alergia a la penicilina.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "У меня аллергия на пенициллин.",
+          "accepted_answers": [
+            "У меня аллергия на пенициллин."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «У меня аллергия на пенициллин.».",
+          "audio": "У меня аллергия на пенициллин.",
+          "slow_audio": "У меня аллергия на пенициллин.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-health-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Принимайте это два раза в день.",
+          "accepted_answers": [
+            "Принимайте это два раза в день."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Принимайте это два раза в день.»: Tome esto dos veces al día.",
+          "audio": "Принимайте это два раза в день.",
+          "slow_audio": "Принимайте это два раза в день.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-health-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Tengo alergia a la penicilina.»",
+          "target": "Tengo alergia a la penicilina.",
+          "options": [
+            "пенициллин.",
+            "У",
+            "меня",
+            "аллергия",
+            "на"
+          ],
+          "joiner": " ",
+          "answer": "У меня аллергия на пенициллин.",
+          "accepted_answers": [
+            "У меня аллергия на пенициллин."
+          ],
+          "explanation": "La forma completa es «У меня аллергия на пенициллин.».",
+          "audio": "У меня аллергия на пенициллин.",
+          "slow_audio": "У меня аллергия на пенициллин.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-health-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Принимайте это два раза в ___.",
+          "answer": "день",
+          "accepted_answers": [
+            "день"
+          ],
+          "explanation": "La forma completa es «Принимайте это два раза в день.»: Tome esto dos veces al día.",
+          "audio": "Принимайте это два раза в день.",
+          "slow_audio": "Принимайте это два раза в день.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-health-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «médico»",
+          "target": "médico",
+          "answer": "врач",
+          "accepted_answers": [
+            "врач"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «врач».",
+          "audio": "врач",
+          "slow_audio": "врач",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-health-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "target": "Tome esto dos veces al día.",
+          "answer": "Принимайте это два раза в день.",
+          "accepted_answers": [
+            "Принимайте это два раза в день."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Принимайте это два раза в день.». También puedes escribirlo.",
+          "audio": "Принимайте это два раза в день.",
+          "slow_audio": "Принимайте это два раза в день.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-health-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Tengo alergia a la penicilina.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "У меня аллергия на пенициллин.",
+              "accepted_answers": [
+                "У меня аллергия на пенициллин."
+              ],
+              "audio": "У меня аллергия на пенициллин.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Tome esto dos veces al día.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Принимайте это два раза в день.",
+              "accepted_answers": [
+                "Принимайте это два раза в день."
+              ],
+              "audio": "Принимайте это два раза в день.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-a12-health-test",
       "title": "Prueba · Cuerpo y necesidades",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "italian-a1-1-home-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-a1-1-home-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a1-1-home-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "La chiave è sul tavolo.",
+          "accepted_answers": [
+            "La chiave è sul tavolo."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «La chiave è sul tavolo.».",
+          "audio": "La chiave è sul tavolo.",
+          "slow_audio": "La chiave è sul tavolo.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-home-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "La mia camera è piccola.",
+          "accepted_answers": [
+            "La mia camera è piccola."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «La mia camera è piccola.»: Mi habitación es pequeña.",
+          "audio": "La mia camera è piccola.",
+          "slow_audio": "La mia camera è piccola.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-home-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "options": [
+            "chiave",
+            "è",
+            "sul",
+            "La",
+            "tavolo."
+          ],
+          "joiner": " ",
+          "answer": "La chiave è sul tavolo.",
+          "accepted_answers": [
+            "La chiave è sul tavolo."
+          ],
+          "explanation": "La forma completa es «La chiave è sul tavolo.».",
+          "audio": "La chiave è sul tavolo.",
+          "slow_audio": "La chiave è sul tavolo.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-home-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "La mia camera è ___.",
+          "answer": "piccola",
+          "accepted_answers": [
+            "piccola"
+          ],
+          "explanation": "La forma completa es «La mia camera è piccola.»: Mi habitación es pequeña.",
+          "audio": "La mia camera è piccola.",
+          "slow_audio": "La mia camera è piccola.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-home-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «puerta»",
+          "target": "puerta",
+          "answer": "porta",
+          "accepted_answers": [
+            "porta"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «porta».",
+          "audio": "porta",
+          "slow_audio": "porta",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-home-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "target": "Mi habitación es pequeña.",
+          "answer": "La mia camera è piccola.",
+          "accepted_answers": [
+            "La mia camera è piccola."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «La mia camera è piccola.». También puedes escribirlo.",
+          "audio": "La mia camera è piccola.",
+          "slow_audio": "La mia camera è piccola.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-home-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La llave está sobre la mesa.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "La chiave è sul tavolo.",
+              "accepted_answers": [
+                "La chiave è sul tavolo."
+              ],
+              "audio": "La chiave è sul tavolo.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Mi habitación es pequeña.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "La mia camera è piccola.",
+              "accepted_answers": [
+                "La mia camera è piccola."
+              ],
+              "audio": "La mia camera è piccola.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-a11-home-test",
       "title": "Prueba · Casa y pertenencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

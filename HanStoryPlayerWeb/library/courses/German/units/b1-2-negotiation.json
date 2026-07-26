@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "german-b1-2-negotiation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-b1-2-negotiation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-b1-2-negotiation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Welche Alternative bleibt uns?",
+          "accepted_answers": [
+            "Welche Alternative bleibt uns?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Welche Alternative bleibt uns?».",
+          "audio": "Welche Alternative bleibt uns?",
+          "slow_audio": "Welche Alternative bleibt uns?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-negotiation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "accepted_answers": [
+            "Beim Preis geben wir nach, bei der Qualität nicht."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Beim Preis geben wir nach, bei der Qualität nicht.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "slow_audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-negotiation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "options": [
+            "Alternative",
+            "bleibt",
+            "uns?",
+            "Welche"
+          ],
+          "joiner": " ",
+          "answer": "Welche Alternative bleibt uns?",
+          "accepted_answers": [
+            "Welche Alternative bleibt uns?"
+          ],
+          "explanation": "La forma completa es «Welche Alternative bleibt uns?».",
+          "audio": "Welche Alternative bleibt uns?",
+          "slow_audio": "Welche Alternative bleibt uns?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-negotiation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Beim Preis geben wir nach, bei der Qualität ___.",
+          "answer": "nicht",
+          "accepted_answers": [
+            "nicht"
+          ],
+          "explanation": "La forma completa es «Beim Preis geben wir nach, bei der Qualität nicht.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "slow_audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-negotiation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "target": "Entre amigos podemos hablar de manera más directa.",
+          "answer": "Unter Freunden können wir direkter sprechen.",
+          "accepted_answers": [
+            "Unter Freunden können wir direkter sprechen."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Unter Freunden können wir direkter sprechen.».",
+          "audio": "Unter Freunden können wir direkter sprechen.",
+          "slow_audio": "Unter Freunden können wir direkter sprechen.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-negotiation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "target": "Podemos ceder en el precio, pero no en la calidad.",
+          "answer": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "accepted_answers": [
+            "Beim Preis geben wir nach, bei der Qualität nicht."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Beim Preis geben wir nach, bei der Qualität nicht.». También puedes escribirlo.",
+          "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "slow_audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-negotiation-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Qué alternativa nos queda?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Welche Alternative bleibt uns?",
+              "accepted_answers": [
+                "Welche Alternative bleibt uns?"
+              ],
+              "audio": "Welche Alternative bleibt uns?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Podemos ceder en el precio, pero no en la calidad.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Beim Preis geben wir nach, bei der Qualität nicht.",
+              "accepted_answers": [
+                "Beim Preis geben wir nach, bei der Qualität nicht."
+              ],
+              "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-b12-negotiation-test",
       "title": "Prueba · Decisiones y negociación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

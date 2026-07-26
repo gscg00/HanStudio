@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "arabic-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "accepted_answers": [
+            "في هذه الأثناء، اتصلت أختي بالشرطة."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «في هذه الأثناء، اتصلت أختي بالشرطة.».",
+          "audio": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "slow_audio": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "في النهاية، انتهى كل شيء على ما يرام.",
+          "accepted_answers": [
+            "في النهاية، انتهى كل شيء على ما يرام."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «في النهاية، انتهى كل شيء على ما يرام.»: Al final, todo salió bien.",
+          "audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "slow_audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "الأثناء،",
+            "بالشرطة.",
+            "في",
+            "اتصلت",
+            "هذه",
+            "أختي"
+          ],
+          "joiner": " ",
+          "answer": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "accepted_answers": [
+            "في هذه الأثناء، اتصلت أختي بالشرطة."
+          ],
+          "explanation": "La forma completa es «في هذه الأثناء، اتصلت أختي بالشرطة.».",
+          "audio": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "slow_audio": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "في النهاية، انتهى كل شيء على ما ___.",
+          "answer": "يرام",
+          "accepted_answers": [
+            "يرام"
+          ],
+          "explanation": "La forma completa es «في النهاية، انتهى كل شيء على ما يرام.»: Al final, todo salió bien.",
+          "audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "slow_audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "هل سبق أن ذهبت إلى هناك؟",
+          "accepted_answers": [
+            "هل سبق أن ذهبت إلى هناك؟"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «هل سبق أن ذهبت إلى هناك؟».",
+          "audio": "هل سبق أن ذهبت إلى هناك؟",
+          "slow_audio": "هل سبق أن ذهبت إلى هناك؟",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "في النهاية، انتهى كل شيء على ما يرام.",
+          "accepted_answers": [
+            "في النهاية، انتهى كل شيء على ما يرام."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «في النهاية، انتهى كل شيء على ما يرام.». También puedes escribirlo.",
+          "audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "slow_audio": "في النهاية، انتهى كل شيء على ما يرام.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+              "accepted_answers": [
+                "في هذه الأثناء، اتصلت أختي بالشرطة."
+              ],
+              "audio": "في هذه الأثناء، اتصلت أختي بالشرطة.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "في النهاية، انتهى كل شيء على ما يرام.",
+              "accepted_answers": [
+                "في النهاية، انتهى كل شيء على ما يرام."
+              ],
+              "audio": "في النهاية، انتهى كل شيء على ما يرام.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

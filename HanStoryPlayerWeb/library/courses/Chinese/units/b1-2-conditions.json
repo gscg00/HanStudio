@@ -1779,6 +1779,220 @@
       ]
     },
     {
+      "id": "chinese-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "万一你需要帮助，就给我打电话。",
+          "accepted_answers": [
+            "万一你需要帮助，就给我打电话。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «万一你需要帮助，就给我打电话。».",
+          "audio": "万一你需要帮助，就给我打电话。",
+          "slow_audio": "万一你需要帮助，就给我打电话。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "如果你当时解释清楚，我就会同意。",
+          "accepted_answers": [
+            "如果你当时解释清楚，我就会同意。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «如果你当时解释清楚，我就会同意。»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "如果你当时解释清楚，我就会同意。",
+          "slow_audio": "如果你当时解释清楚，我就会同意。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "一",
+            "需",
+            "话",
+            "助",
+            "要",
+            "。",
+            "你",
+            "，",
+            "打",
+            "就",
+            "我",
+            "电",
+            "给",
+            "万",
+            "帮"
+          ],
+          "joiner": "",
+          "answer": "万一你需要帮助，就给我打电话。",
+          "accepted_answers": [
+            "万一你需要帮助，就给我打电话。"
+          ],
+          "explanation": "La forma completa es «万一你需要帮助，就给我打电话。».",
+          "audio": "万一你需要帮助，就给我打电话。",
+          "slow_audio": "万一你需要帮助，就给我打电话。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "如果你当时解释清楚，我就会同＿。",
+          "answer": "意",
+          "accepted_answers": [
+            "意"
+          ],
+          "explanation": "La forma completa es «如果你当时解释清楚，我就会同意。»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "如果你当时解释清楚，我就会同意。",
+          "slow_audio": "如果你当时解释清楚，我就会同意。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "多亏你的帮助，我们解决了问题。",
+          "accepted_answers": [
+            "多亏你的帮助，我们解决了问题。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «多亏你的帮助，我们解决了问题。».",
+          "audio": "多亏你的帮助，我们解决了问题。",
+          "slow_audio": "多亏你的帮助，我们解决了问题。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "如果你当时解释清楚，我就会同意。",
+          "accepted_answers": [
+            "如果你当时解释清楚，我就会同意。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «如果你当时解释清楚，我就会同意。». También puedes escribirlo.",
+          "audio": "如果你当时解释清楚，我就会同意。",
+          "slow_audio": "如果你当时解释清楚，我就会同意。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "万一你需要帮助，就给我打电话。",
+              "accepted_answers": [
+                "万一你需要帮助，就给我打电话。"
+              ],
+              "audio": "万一你需要帮助，就给我打电话。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "如果你当时解释清楚，我就会同意。",
+              "accepted_answers": [
+                "如果你当时解释清楚，我就会同意。"
+              ],
+              "audio": "如果你当时解释清楚，我就会同意。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

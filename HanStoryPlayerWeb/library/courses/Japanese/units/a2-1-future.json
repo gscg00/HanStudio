@@ -1779,6 +1779,218 @@
       ]
     },
     {
+      "id": "japanese-a2-1-future-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-a2-1-future-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a2-1-future-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "部屋を予約するつもりです。",
+          "accepted_answers": [
+            "部屋を予約するつもりです。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «部屋を予約するつもりです。».",
+          "audio": "部屋を予約するつもりです。",
+          "slow_audio": "部屋を予約するつもりです。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-future-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "着いたら電話します。",
+          "accepted_answers": [
+            "着いたら電話します。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «着いたら電話します。»: Te llamaré cuando llegue.",
+          "audio": "着いたら電話します。",
+          "slow_audio": "着いたら電話します。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-future-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "options": [
+            "部",
+            "約",
+            "で",
+            "つ",
+            "す",
+            "を",
+            "す",
+            "屋",
+            "る",
+            "り",
+            "予",
+            "も",
+            "。"
+          ],
+          "joiner": "",
+          "answer": "部屋を予約するつもりです。",
+          "accepted_answers": [
+            "部屋を予約するつもりです。"
+          ],
+          "explanation": "La forma completa es «部屋を予約するつもりです。».",
+          "audio": "部屋を予約するつもりです。",
+          "slow_audio": "部屋を予約するつもりです。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-future-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "着いたら電話しま＿。",
+          "answer": "す",
+          "accepted_answers": [
+            "す"
+          ],
+          "explanation": "La forma completa es «着いたら電話します。»: Te llamaré cuando llegue.",
+          "audio": "着いたら電話します。",
+          "slow_audio": "着いたら電話します。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-future-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «reservar»",
+          "target": "reservar",
+          "answer": "予約する",
+          "accepted_answers": [
+            "予約する"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «予約する».",
+          "audio": "予約する",
+          "slow_audio": "予約する",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-future-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "target": "Te llamaré cuando llegue.",
+          "answer": "着いたら電話します。",
+          "accepted_answers": [
+            "着いたら電話します。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «着いたら電話します。». También puedes escribirlo.",
+          "audio": "着いたら電話します。",
+          "slow_audio": "着いたら電話します。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-future-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Pienso reservar una habitación.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "部屋を予約するつもりです。",
+              "accepted_answers": [
+                "部屋を予約するつもりです。"
+              ],
+              "audio": "部屋を予約するつもりです。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Te llamaré cuando llegue.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "着いたら電話します。",
+              "accepted_answers": [
+                "着いたら電話します。"
+              ],
+              "audio": "着いたら電話します。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-a21-future-test",
       "title": "Prueba · Planes y futuro",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

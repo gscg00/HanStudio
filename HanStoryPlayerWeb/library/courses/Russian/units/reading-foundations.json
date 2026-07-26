@@ -2885,6 +2885,113 @@
       ]
     },
     {
+      "id": "russian-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «нь · ть»",
+          "target": "нь · ть",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "нь · ть",
+          "accepted_answers": [
+            "нь · ть"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «нь · ть».",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "ж · ш · ц",
+          "accepted_answers": [
+            "ж · ш · ц"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «ж · ш · ц»: La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "нь · ть",
+          "options": [
+            "нь",
+            "ть",
+            "·"
+          ],
+          "joiner": " ",
+          "answer": "нь · ть",
+          "accepted_answers": [
+            "нь · ть"
+          ],
+          "explanation": "La forma completa es «нь · ть».",
+          "audio": "мягкий знак",
+          "slow_audio": "мягкий знак",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "ж · ш · ___",
+          "answer": "ц",
+          "accepted_answers": [
+            "ц"
+          ],
+          "explanation": "La forma completa es «ж · ш · ц»: La ortografía de vocales posteriores tiene reglas convencionales.",
+          "audio": "жэ",
+          "slow_audio": "жэ",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "russian-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

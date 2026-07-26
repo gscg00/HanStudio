@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "english-a1-2-weather-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a1-2-weather-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a1-2-weather-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "I need a coat.",
+          "accepted_answers": [
+            "I need a coat."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «I need a coat.».",
+          "audio": "I need a coat.",
+          "slow_audio": "I need a coat.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-weather-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "The weather changes quickly.",
+          "accepted_answers": [
+            "The weather changes quickly."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «The weather changes quickly.»: El tiempo cambia rápido.",
+          "audio": "The weather changes quickly.",
+          "slow_audio": "The weather changes quickly.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-weather-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "options": [
+            "a",
+            "need",
+            "coat.",
+            "I"
+          ],
+          "joiner": " ",
+          "answer": "I need a coat.",
+          "accepted_answers": [
+            "I need a coat."
+          ],
+          "explanation": "La forma completa es «I need a coat.».",
+          "audio": "I need a coat.",
+          "slow_audio": "I need a coat.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-weather-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "The weather changes ___.",
+          "answer": "quickly",
+          "accepted_answers": [
+            "quickly"
+          ],
+          "explanation": "La forma completa es «The weather changes quickly.»: El tiempo cambia rápido.",
+          "audio": "The weather changes quickly.",
+          "slow_audio": "The weather changes quickly.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-weather-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «abrigo»",
+          "target": "abrigo",
+          "answer": "coat",
+          "accepted_answers": [
+            "coat"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «coat».",
+          "audio": "coat",
+          "slow_audio": "coat",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-weather-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "target": "El tiempo cambia rápido.",
+          "answer": "The weather changes quickly.",
+          "accepted_answers": [
+            "The weather changes quickly."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «The weather changes quickly.». También puedes escribirlo.",
+          "audio": "The weather changes quickly.",
+          "slow_audio": "The weather changes quickly.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-weather-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito un abrigo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I need a coat.",
+              "accepted_answers": [
+                "I need a coat."
+              ],
+              "audio": "I need a coat.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The weather changes quickly.",
+              "accepted_answers": [
+                "The weather changes quickly."
+              ],
+              "audio": "The weather changes quickly.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a12-weather-test",
       "title": "Prueba · Clima y ropa",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

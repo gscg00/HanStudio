@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "english-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "You should tell him how you feel.",
+          "accepted_answers": [
+            "You should tell him how you feel."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «You should tell him how you feel.».",
+          "audio": "You should tell him how you feel.",
+          "slow_audio": "You should tell him how you feel.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Since then, we trust each other more.",
+          "accepted_answers": [
+            "Since then, we trust each other more."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Since then, we trust each other more.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Since then, we trust each other more.",
+          "slow_audio": "Since then, we trust each other more.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "him",
+            "feel.",
+            "tell",
+            "You",
+            "should",
+            "how",
+            "you"
+          ],
+          "joiner": " ",
+          "answer": "You should tell him how you feel.",
+          "accepted_answers": [
+            "You should tell him how you feel."
+          ],
+          "explanation": "La forma completa es «You should tell him how you feel.».",
+          "audio": "You should tell him how you feel.",
+          "slow_audio": "You should tell him how you feel.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Since then, we trust each other ___.",
+          "answer": "more",
+          "accepted_answers": [
+            "more"
+          ],
+          "explanation": "La forma completa es «Since then, we trust each other more.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Since then, we trust each other more.",
+          "slow_audio": "Since then, we trust each other more.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "that is why",
+          "accepted_answers": [
+            "that is why"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «that is why».",
+          "audio": "that is why",
+          "slow_audio": "that is why",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "Since then, we trust each other more.",
+          "accepted_answers": [
+            "Since then, we trust each other more."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Since then, we trust each other more.». También puedes escribirlo.",
+          "audio": "Since then, we trust each other more.",
+          "slow_audio": "Since then, we trust each other more.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "You should tell him how you feel.",
+              "accepted_answers": [
+                "You should tell him how you feel."
+              ],
+              "audio": "You should tell him how you feel.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Since then, we trust each other more.",
+              "accepted_answers": [
+                "Since then, we trust each other more."
+              ],
+              "audio": "Since then, we trust each other more.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

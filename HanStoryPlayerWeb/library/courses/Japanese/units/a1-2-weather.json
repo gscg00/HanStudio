@@ -1779,6 +1779,214 @@
       ]
     },
     {
+      "id": "japanese-a1-2-weather-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-a1-2-weather-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a1-2-weather-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "コートが必要です。",
+          "accepted_answers": [
+            "コートが必要です。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «コートが必要です。».",
+          "audio": "コートが必要です。",
+          "slow_audio": "コートが必要です。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-weather-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "天気はすぐ変わります。",
+          "accepted_answers": [
+            "天気はすぐ変わります。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «天気はすぐ変わります。»: El tiempo cambia rápido.",
+          "audio": "天気はすぐ変わります。",
+          "slow_audio": "天気はすぐ変わります。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-weather-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "options": [
+            "す",
+            "コ",
+            "が",
+            "要",
+            "ー",
+            "。",
+            "必",
+            "で",
+            "ト"
+          ],
+          "joiner": "",
+          "answer": "コートが必要です。",
+          "accepted_answers": [
+            "コートが必要です。"
+          ],
+          "explanation": "La forma completa es «コートが必要です。».",
+          "audio": "コートが必要です。",
+          "slow_audio": "コートが必要です。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-weather-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "天気はすぐ変わりま＿。",
+          "answer": "す",
+          "accepted_answers": [
+            "す"
+          ],
+          "explanation": "La forma completa es «天気はすぐ変わります。»: El tiempo cambia rápido.",
+          "audio": "天気はすぐ変わります。",
+          "slow_audio": "天気はすぐ変わります。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-weather-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «abrigo»",
+          "target": "abrigo",
+          "answer": "コート",
+          "accepted_answers": [
+            "コート"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «コート».",
+          "audio": "コート",
+          "slow_audio": "コート",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-weather-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "target": "El tiempo cambia rápido.",
+          "answer": "天気はすぐ変わります。",
+          "accepted_answers": [
+            "天気はすぐ変わります。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «天気はすぐ変わります。». También puedes escribirlo.",
+          "audio": "天気はすぐ変わります。",
+          "slow_audio": "天気はすぐ変わります。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-weather-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito un abrigo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "コートが必要です。",
+              "accepted_answers": [
+                "コートが必要です。"
+              ],
+              "audio": "コートが必要です。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "天気はすぐ変わります。",
+              "accepted_answers": [
+                "天気はすぐ変わります。"
+              ],
+              "audio": "天気はすぐ変わります。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-a12-weather-test",
       "title": "Prueba · Clima y ropa",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

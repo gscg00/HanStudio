@@ -1779,6 +1779,230 @@
       ]
     },
     {
+      "id": "english-b1-2-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "english-b1-2-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-2-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "First, I want to clarify one detail.",
+          "accepted_answers": [
+            "First, I want to clarify one detail."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «First, I want to clarify one detail.».",
+          "audio": "First, I want to clarify one detail.",
+          "slow_audio": "First, I want to clarify one detail.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "That reminds me of a similar experience.",
+          "accepted_answers": [
+            "That reminds me of a similar experience."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «That reminds me of a similar experience.»: Eso me recuerda una experiencia parecida.",
+          "audio": "That reminds me of a similar experience.",
+          "slow_audio": "That reminds me of a similar experience.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "options": [
+            "detail.",
+            "clarify",
+            "First,",
+            "want",
+            "one",
+            "I",
+            "to"
+          ],
+          "joiner": " ",
+          "answer": "First, I want to clarify one detail.",
+          "accepted_answers": [
+            "First, I want to clarify one detail."
+          ],
+          "explanation": "La forma completa es «First, I want to clarify one detail.».",
+          "audio": "First, I want to clarify one detail.",
+          "slow_audio": "First, I want to clarify one detail.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "That reminds me of a similar ___.",
+          "answer": "experience",
+          "accepted_answers": [
+            "experience"
+          ],
+          "explanation": "La forma completa es «That reminds me of a similar experience.»: Eso me recuerda una experiencia parecida.",
+          "audio": "That reminds me of a similar experience.",
+          "slow_audio": "That reminds me of a similar experience.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "target": "A veces es difícil perdonar.",
+          "answer": "Sometimes it is difficult to forgive.",
+          "accepted_answers": [
+            "Sometimes it is difficult to forgive."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Sometimes it is difficult to forgive.».",
+          "audio": "Sometimes it is difficult to forgive.",
+          "slow_audio": "Sometimes it is difficult to forgive.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "target": "Eso me recuerda una experiencia parecida.",
+          "answer": "That reminds me of a similar experience.",
+          "accepted_answers": [
+            "That reminds me of a similar experience."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «That reminds me of a similar experience.». También puedes escribirlo.",
+          "audio": "That reminds me of a similar experience.",
+          "slow_audio": "That reminds me of a similar experience.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "First, I want to clarify one detail.",
+              "accepted_answers": [
+                "First, I want to clarify one detail."
+              ],
+              "audio": "First, I want to clarify one detail.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Eso me recuerda una experiencia parecida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "That reminds me of a similar experience.",
+              "accepted_answers": [
+                "That reminds me of a similar experience."
+              ],
+              "audio": "That reminds me of a similar experience.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «A veces es difícil perdonar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Sometimes it is difficult to forgive.",
+              "accepted_answers": [
+                "Sometimes it is difficult to forgive."
+              ],
+              "audio": "Sometimes it is difficult to forgive.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "english-b12-conversation-test",
       "title": "Prueba · Conversaciones extensas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -3,7 +3,7 @@
   "title": "Coreano: de cero a conversaciones intermedias",
   "language": "Korean",
   "languageCode": "ko",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Aprende los fundamentos y continúa con conversaciones guiadas antes de leer historias.",
   "vocabularyGoal": 300,
@@ -551,5 +551,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "대화"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

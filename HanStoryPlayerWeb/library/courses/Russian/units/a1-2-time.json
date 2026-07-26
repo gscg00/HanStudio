@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "russian-a1-2-time-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-a1-2-time-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a1-2-time-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Llego a las ocho.»",
+          "target": "Llego a las ocho.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Я приеду в восемь.",
+          "accepted_answers": [
+            "Я приеду в восемь."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Я приеду в восемь.».",
+          "audio": "Я приеду в восемь.",
+          "slow_audio": "Я приеду в восемь.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-time-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Встреча на следующей неделе.",
+          "accepted_answers": [
+            "Встреча на следующей неделе."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Встреча на следующей неделе.»: La cita es la próxima semana.",
+          "audio": "Встреча на следующей неделе.",
+          "slow_audio": "Встреча на следующей неделе.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-time-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Llego a las ocho.»",
+          "target": "Llego a las ocho.",
+          "options": [
+            "Я",
+            "в",
+            "приеду",
+            "восемь."
+          ],
+          "joiner": " ",
+          "answer": "Я приеду в восемь.",
+          "accepted_answers": [
+            "Я приеду в восемь."
+          ],
+          "explanation": "La forma completa es «Я приеду в восемь.».",
+          "audio": "Я приеду в восемь.",
+          "slow_audio": "Я приеду в восемь.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-time-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Встреча на следующей ___.",
+          "answer": "неделе",
+          "accepted_answers": [
+            "неделе"
+          ],
+          "explanation": "La forma completa es «Встреча на следующей неделе.»: La cita es la próxima semana.",
+          "audio": "Встреча на следующей неделе.",
+          "slow_audio": "Встреча на следующей неделе.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-time-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «temprano»",
+          "target": "temprano",
+          "answer": "рано",
+          "accepted_answers": [
+            "рано"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «рано».",
+          "audio": "рано",
+          "slow_audio": "рано",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-time-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "target": "La cita es la próxima semana.",
+          "answer": "Встреча на следующей неделе.",
+          "accepted_answers": [
+            "Встреча на следующей неделе."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Встреча на следующей неделе.». También puedes escribirlo.",
+          "audio": "Встреча на следующей неделе.",
+          "slow_audio": "Встреча на следующей неделе.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-time-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Llego a las ocho.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Я приеду в восемь.",
+              "accepted_answers": [
+                "Я приеду в восемь."
+              ],
+              "audio": "Я приеду в восемь.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La cita es la próxima semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Встреча на следующей неделе.",
+              "accepted_answers": [
+                "Встреча на следующей неделе."
+              ],
+              "audio": "Встреча на следующей неделе.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-a12-time-test",
       "title": "Prueba · Fechas, horas y citas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

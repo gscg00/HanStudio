@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "italian-b1-1-society-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-b1-1-society-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-1-society-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "L’inquinamento danneggia la nostra salute.",
+          "accepted_answers": [
+            "L’inquinamento danneggia la nostra salute."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «L’inquinamento danneggia la nostra salute.».",
+          "audio": "L’inquinamento danneggia la nostra salute.",
+          "slow_audio": "L’inquinamento danneggia la nostra salute.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-society-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Il comune ha annunciato un nuovo piano.",
+          "accepted_answers": [
+            "Il comune ha annunciato un nuovo piano."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Il comune ha annunciato un nuovo piano.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "Il comune ha annunciato un nuovo piano.",
+          "slow_audio": "Il comune ha annunciato un nuovo piano.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-society-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "options": [
+            "la",
+            "nostra",
+            "salute.",
+            "L’inquinamento",
+            "danneggia"
+          ],
+          "joiner": " ",
+          "answer": "L’inquinamento danneggia la nostra salute.",
+          "accepted_answers": [
+            "L’inquinamento danneggia la nostra salute."
+          ],
+          "explanation": "La forma completa es «L’inquinamento danneggia la nostra salute.».",
+          "audio": "L’inquinamento danneggia la nostra salute.",
+          "slow_audio": "L’inquinamento danneggia la nostra salute.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-society-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Il comune ha annunciato un nuovo ___.",
+          "answer": "piano",
+          "accepted_answers": [
+            "piano"
+          ],
+          "explanation": "La forma completa es «Il comune ha annunciato un nuovo piano.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "Il comune ha annunciato un nuovo piano.",
+          "slow_audio": "Il comune ha annunciato un nuovo piano.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-society-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "alto",
+          "accepted_answers": [
+            "alto"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «alto».",
+          "audio": "alto",
+          "slow_audio": "alto",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-society-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "target": "El ayuntamiento anunció un nuevo plan.",
+          "answer": "Il comune ha annunciato un nuovo piano.",
+          "accepted_answers": [
+            "Il comune ha annunciato un nuovo piano."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Il comune ha annunciato un nuovo piano.». También puedes escribirlo.",
+          "audio": "Il comune ha annunciato un nuovo piano.",
+          "slow_audio": "Il comune ha annunciato un nuovo piano.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-society-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La contaminación afecta a nuestra salud.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "L’inquinamento danneggia la nostra salute.",
+              "accepted_answers": [
+                "L’inquinamento danneggia la nostra salute."
+              ],
+              "audio": "L’inquinamento danneggia la nostra salute.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El ayuntamiento anunció un nuevo plan.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Il comune ha annunciato un nuovo piano.",
+              "accepted_answers": [
+                "Il comune ha annunciato un nuovo piano."
+              ],
+              "audio": "Il comune ha annunciato un nuovo piano.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-b11-society-test",
       "title": "Prueba · Sociedad y entorno",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

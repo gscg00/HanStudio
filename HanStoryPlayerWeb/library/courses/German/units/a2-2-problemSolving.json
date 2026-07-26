@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "german-a2-2-problemSolving-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "german-a2-2-problemSolving-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Das wird das Problem nicht lösen.",
+          "accepted_answers": [
+            "Das wird das Problem nicht lösen."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Das wird das Problem nicht lösen.».",
+          "audio": "Das wird das Problem nicht lösen.",
+          "slow_audio": "Das wird das Problem nicht lösen.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Wir brauchen mehr Informationen.",
+          "accepted_answers": [
+            "Wir brauchen mehr Informationen."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Wir brauchen mehr Informationen.»: Necesitamos más información.",
+          "audio": "Wir brauchen mehr Informationen.",
+          "slow_audio": "Wir brauchen mehr Informationen.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "options": [
+            "lösen.",
+            "Problem",
+            "das",
+            "nicht",
+            "wird",
+            "Das"
+          ],
+          "joiner": " ",
+          "answer": "Das wird das Problem nicht lösen.",
+          "accepted_answers": [
+            "Das wird das Problem nicht lösen."
+          ],
+          "explanation": "La forma completa es «Das wird das Problem nicht lösen.».",
+          "audio": "Das wird das Problem nicht lösen.",
+          "slow_audio": "Das wird das Problem nicht lösen.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Wir brauchen mehr ___.",
+          "answer": "Informationen",
+          "accepted_answers": [
+            "Informationen"
+          ],
+          "explanation": "La forma completa es «Wir brauchen mehr Informationen.»: Necesitamos más información.",
+          "audio": "Wir brauchen mehr Informationen.",
+          "slow_audio": "Wir brauchen mehr Informationen.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "target": "¿Cuándo estará listo?",
+          "answer": "Wann wird es fertig sein?",
+          "accepted_answers": [
+            "Wann wird es fertig sein?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Wann wird es fertig sein?».",
+          "audio": "Wann wird es fertig sein?",
+          "slow_audio": "Wann wird es fertig sein?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "target": "Necesitamos más información.",
+          "answer": "Wir brauchen mehr Informationen.",
+          "accepted_answers": [
+            "Wir brauchen mehr Informationen."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Wir brauchen mehr Informationen.». También puedes escribirlo.",
+          "audio": "Wir brauchen mehr Informationen.",
+          "slow_audio": "Wir brauchen mehr Informationen.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-problemSolving-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Eso no resolverá el problema.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Das wird das Problem nicht lösen.",
+              "accepted_answers": [
+                "Das wird das Problem nicht lösen."
+              ],
+              "audio": "Das wird das Problem nicht lösen.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesitamos más información.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Wir brauchen mehr Informationen.",
+              "accepted_answers": [
+                "Wir brauchen mehr Informationen."
+              ],
+              "audio": "Wir brauchen mehr Informationen.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuándo estará listo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Wann wird es fertig sein?",
+              "accepted_answers": [
+                "Wann wird es fertig sein?"
+              ],
+              "audio": "Wann wird es fertig sein?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "german-a22-problemSolving-test",
       "title": "Prueba · Resolver imprevistos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -2093,6 +2093,229 @@
       ]
     },
     {
+      "id": "french-story-bridge-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "french-story-bridge-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-story-bridge-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «¿Cómo vas a la universidad?»",
+          "target": "¿Cómo vas a la universidad?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Comment tu vas à l’université ?",
+          "accepted_answers": [
+            "Comment tu vas à l’université ?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Comment tu vas à l’université ?».",
+          "audio": "Comment tu vas à l’université ?",
+          "slow_audio": "Comment tu vas à l’université ?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-story-bridge-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Je prends le bus tous les matins.",
+          "accepted_answers": [
+            "Je prends le bus tous les matins."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Je prends le bus tous les matins.»: Tomo el autobús todas las mañanas.",
+          "audio": "Je prends le bus tous les matins.",
+          "slow_audio": "Je prends le bus tous les matins.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-story-bridge-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Cómo vas a la universidad?»",
+          "target": "¿Cómo vas a la universidad?",
+          "options": [
+            "?",
+            "à",
+            "l’université",
+            "vas",
+            "Comment",
+            "tu"
+          ],
+          "joiner": " ",
+          "answer": "Comment tu vas à l’université ?",
+          "accepted_answers": [
+            "Comment tu vas à l’université ?"
+          ],
+          "explanation": "La forma completa es «Comment tu vas à l’université ?».",
+          "audio": "Comment tu vas à l’université ?",
+          "slow_audio": "Comment tu vas à l’université ?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-story-bridge-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Je prends le bus tous les ___.",
+          "answer": "matins",
+          "accepted_answers": [
+            "matins"
+          ],
+          "explanation": "La forma completa es «Je prends le bus tous les matins.»: Tomo el autobús todas las mañanas.",
+          "audio": "Je prends le bus tous les matins.",
+          "slow_audio": "Je prends le bus tous les matins.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-story-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuánto dura el trayecto?»",
+          "target": "¿Cuánto dura el trayecto?",
+          "answer": "Le trajet dure combien de temps ?",
+          "accepted_answers": [
+            "Le trajet dure combien de temps ?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Le trajet dure combien de temps ?».",
+          "audio": "Le trajet dure combien de temps ?",
+          "slow_audio": "Le trajet dure combien de temps ?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-story-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Tomo el autobús todas las mañanas.»",
+          "target": "Tomo el autobús todas las mañanas.",
+          "answer": "Je prends le bus tous les matins.",
+          "accepted_answers": [
+            "Je prends le bus tous les matins."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Je prends le bus tous les matins.». También puedes escribirlo.",
+          "audio": "Je prends le bus tous les matins.",
+          "slow_audio": "Je prends le bus tous les matins.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-story-bridge-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Cómo vas a la universidad?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Comment tu vas à l’université ?",
+              "accepted_answers": [
+                "Comment tu vas à l’université ?"
+              ],
+              "audio": "Comment tu vas à l’université ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Tomo el autobús todas las mañanas.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Je prends le bus tous les matins.",
+              "accepted_answers": [
+                "Je prends le bus tous les matins."
+              ],
+              "audio": "Je prends le bus tous les matins.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuánto dura el trayecto?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Le trajet dure combien de temps ?",
+              "accepted_answers": [
+                "Le trajet dure combien de temps ?"
+              ],
+              "audio": "Le trajet dure combien de temps ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "french-story-bridge-test-08",
       "title": "Prueba · Puente hacia las historias",
       "description": "Prueba de dominio de la unidad.",

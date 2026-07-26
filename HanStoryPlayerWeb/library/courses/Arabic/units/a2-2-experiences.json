@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "arabic-a2-2-experiences-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a2-2-experiences-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "فاتني القطار مرة.",
+          "accepted_answers": [
+            "فاتني القطار مرة."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «فاتني القطار مرة.».",
+          "audio": "فاتني القطار مرة.",
+          "slow_audio": "فاتني القطار مرة.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "كانت المرة الأولى.",
+          "accepted_answers": [
+            "كانت المرة الأولى."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «كانت المرة الأولى.»: Fue la primera vez.",
+          "audio": "كانت المرة الأولى.",
+          "slow_audio": "كانت المرة الأولى.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "options": [
+            "القطار",
+            "مرة.",
+            "فاتني"
+          ],
+          "joiner": " ",
+          "answer": "فاتني القطار مرة.",
+          "accepted_answers": [
+            "فاتني القطار مرة."
+          ],
+          "explanation": "La forma completa es «فاتني القطار مرة.».",
+          "audio": "فاتني القطار مرة.",
+          "slow_audio": "فاتني القطار مرة.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "كانت المرة ___.",
+          "answer": "الأولى",
+          "accepted_answers": [
+            "الأولى"
+          ],
+          "explanation": "La forma completa es «كانت المرة الأولى.»: Fue la primera vez.",
+          "audio": "كانت المرة الأولى.",
+          "slow_audio": "كانت المرة الأولى.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "target": "Fue una experiencia interesante.",
+          "answer": "كانت تجربة ممتعة.",
+          "accepted_answers": [
+            "كانت تجربة ممتعة."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «كانت تجربة ممتعة.».",
+          "audio": "كانت تجربة ممتعة.",
+          "slow_audio": "كانت تجربة ممتعة.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "target": "Fue la primera vez.",
+          "answer": "كانت المرة الأولى.",
+          "accepted_answers": [
+            "كانت المرة الأولى."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «كانت المرة الأولى.». También puedes escribirlo.",
+          "audio": "كانت المرة الأولى.",
+          "slow_audio": "كانت المرة الأولى.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-2-experiences-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Una vez perdí el tren.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "فاتني القطار مرة.",
+              "accepted_answers": [
+                "فاتني القطار مرة."
+              ],
+              "audio": "فاتني القطار مرة.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Fue la primera vez.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "كانت المرة الأولى.",
+              "accepted_answers": [
+                "كانت المرة الأولى."
+              ],
+              "audio": "كانت المرة الأولى.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a22-experiences-test",
       "title": "Prueba · Viajes y experiencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

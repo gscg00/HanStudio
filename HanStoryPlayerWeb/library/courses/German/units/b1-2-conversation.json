@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "german-b1-2-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "german-b1-2-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-b1-2-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Zuerst möchte ich etwas klären.",
+          "accepted_answers": [
+            "Zuerst möchte ich etwas klären."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Zuerst möchte ich etwas klären.».",
+          "audio": "Zuerst möchte ich etwas klären.",
+          "slow_audio": "Zuerst möchte ich etwas klären.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "accepted_answers": [
+            "Das erinnert mich an eine ähnliche Erfahrung."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Das erinnert mich an eine ähnliche Erfahrung.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "slow_audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "options": [
+            "ich",
+            "Zuerst",
+            "klären.",
+            "möchte",
+            "etwas"
+          ],
+          "joiner": " ",
+          "answer": "Zuerst möchte ich etwas klären.",
+          "accepted_answers": [
+            "Zuerst möchte ich etwas klären."
+          ],
+          "explanation": "La forma completa es «Zuerst möchte ich etwas klären.».",
+          "audio": "Zuerst möchte ich etwas klären.",
+          "slow_audio": "Zuerst möchte ich etwas klären.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Das erinnert mich an eine ähnliche ___.",
+          "answer": "Erfahrung",
+          "accepted_answers": [
+            "Erfahrung"
+          ],
+          "explanation": "La forma completa es «Das erinnert mich an eine ähnliche Erfahrung.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "slow_audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "target": "A veces es difícil perdonar.",
+          "answer": "Manchmal ist es schwer zu verzeihen.",
+          "accepted_answers": [
+            "Manchmal ist es schwer zu verzeihen."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Manchmal ist es schwer zu verzeihen.».",
+          "audio": "Manchmal ist es schwer zu verzeihen.",
+          "slow_audio": "Manchmal ist es schwer zu verzeihen.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "target": "Eso me recuerda una experiencia parecida.",
+          "answer": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "accepted_answers": [
+            "Das erinnert mich an eine ähnliche Erfahrung."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Das erinnert mich an eine ähnliche Erfahrung.». También puedes escribirlo.",
+          "audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "slow_audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Zuerst möchte ich etwas klären.",
+              "accepted_answers": [
+                "Zuerst möchte ich etwas klären."
+              ],
+              "audio": "Zuerst möchte ich etwas klären.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Eso me recuerda una experiencia parecida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Das erinnert mich an eine ähnliche Erfahrung.",
+              "accepted_answers": [
+                "Das erinnert mich an eine ähnliche Erfahrung."
+              ],
+              "audio": "Das erinnert mich an eine ähnliche Erfahrung.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «A veces es difícil perdonar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Manchmal ist es schwer zu verzeihen.",
+              "accepted_answers": [
+                "Manchmal ist es schwer zu verzeihen."
+              ],
+              "audio": "Manchmal ist es schwer zu verzeihen.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "german-b12-conversation-test",
       "title": "Prueba · Conversaciones extensas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

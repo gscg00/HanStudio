@@ -1779,6 +1779,215 @@
       ]
     },
     {
+      "id": "chinese-a2-1-services-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a2-1-services-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a2-1-services-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «¿Me puede dar un recibo?»",
+          "target": "¿Me puede dar un recibo?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "可以给我一张收据吗？",
+          "accepted_answers": [
+            "可以给我一张收据吗？"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «可以给我一张收据吗？».",
+          "audio": "可以给我一张收据吗？",
+          "slow_audio": "可以给我一张收据吗？",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-services-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "我需要今天修好。",
+          "accepted_answers": [
+            "我需要今天修好。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «我需要今天修好。»: Necesito que lo reparen hoy.",
+          "audio": "我需要今天修好。",
+          "slow_audio": "我需要今天修好。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-services-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Me puede dar un recibo?»",
+          "target": "¿Me puede dar un recibo?",
+          "options": [
+            "可",
+            "一",
+            "据",
+            "我",
+            "给",
+            "吗",
+            "收",
+            "以",
+            "？",
+            "张"
+          ],
+          "joiner": "",
+          "answer": "可以给我一张收据吗？",
+          "accepted_answers": [
+            "可以给我一张收据吗？"
+          ],
+          "explanation": "La forma completa es «可以给我一张收据吗？».",
+          "audio": "可以给我一张收据吗？",
+          "slow_audio": "可以给我一张收据吗？",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-services-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "我需要今天修＿。",
+          "answer": "好",
+          "accepted_answers": [
+            "好"
+          ],
+          "explanation": "La forma completa es «我需要今天修好。»: Necesito que lo reparen hoy.",
+          "audio": "我需要今天修好。",
+          "slow_audio": "我需要今天修好。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-services-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «roto»",
+          "target": "roto",
+          "answer": "坏了",
+          "accepted_answers": [
+            "坏了"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «坏了».",
+          "audio": "坏了",
+          "slow_audio": "坏了",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-services-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "target": "Necesito que lo reparen hoy.",
+          "answer": "我需要今天修好。",
+          "accepted_answers": [
+            "我需要今天修好。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «我需要今天修好。». También puedes escribirlo.",
+          "audio": "我需要今天修好。",
+          "slow_audio": "我需要今天修好。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-services-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Me puede dar un recibo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "可以给我一张收据吗？",
+              "accepted_answers": [
+                "可以给我一张收据吗？"
+              ],
+              "audio": "可以给我一张收据吗？",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesito que lo reparen hoy.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "我需要今天修好。",
+              "accepted_answers": [
+                "我需要今天修好。"
+              ],
+              "audio": "我需要今天修好。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a21-services-test",
       "title": "Prueba · Servicios y problemas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

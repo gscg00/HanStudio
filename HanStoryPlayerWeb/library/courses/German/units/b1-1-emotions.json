@@ -1779,6 +1779,213 @@
       ]
     },
     {
+      "id": "german-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Du solltest ihm sagen, wie du dich fühlst.",
+          "accepted_answers": [
+            "Du solltest ihm sagen, wie du dich fühlst."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Du solltest ihm sagen, wie du dich fühlst.».",
+          "audio": "Du solltest ihm sagen, wie du dich fühlst.",
+          "slow_audio": "Du solltest ihm sagen, wie du dich fühlst.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Seitdem vertrauen wir einander mehr.",
+          "accepted_answers": [
+            "Seitdem vertrauen wir einander mehr."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Seitdem vertrauen wir einander mehr.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Seitdem vertrauen wir einander mehr.",
+          "slow_audio": "Seitdem vertrauen wir einander mehr.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "dich",
+            "du",
+            "fühlst.",
+            "wie",
+            "ihm",
+            "sagen,",
+            "Du",
+            "solltest"
+          ],
+          "joiner": " ",
+          "answer": "Du solltest ihm sagen, wie du dich fühlst.",
+          "accepted_answers": [
+            "Du solltest ihm sagen, wie du dich fühlst."
+          ],
+          "explanation": "La forma completa es «Du solltest ihm sagen, wie du dich fühlst.».",
+          "audio": "Du solltest ihm sagen, wie du dich fühlst.",
+          "slow_audio": "Du solltest ihm sagen, wie du dich fühlst.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Seitdem vertrauen wir einander ___.",
+          "answer": "mehr",
+          "accepted_answers": [
+            "mehr"
+          ],
+          "explanation": "La forma completa es «Seitdem vertrauen wir einander mehr.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Seitdem vertrauen wir einander mehr.",
+          "slow_audio": "Seitdem vertrauen wir einander mehr.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "deshalb",
+          "accepted_answers": [
+            "deshalb"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «deshalb».",
+          "audio": "deshalb",
+          "slow_audio": "deshalb",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "Seitdem vertrauen wir einander mehr.",
+          "accepted_answers": [
+            "Seitdem vertrauen wir einander mehr."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Seitdem vertrauen wir einander mehr.». También puedes escribirlo.",
+          "audio": "Seitdem vertrauen wir einander mehr.",
+          "slow_audio": "Seitdem vertrauen wir einander mehr.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Du solltest ihm sagen, wie du dich fühlst.",
+              "accepted_answers": [
+                "Du solltest ihm sagen, wie du dich fühlst."
+              ],
+              "audio": "Du solltest ihm sagen, wie du dich fühlst.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Seitdem vertrauen wir einander mehr.",
+              "accepted_answers": [
+                "Seitdem vertrauen wir einander mehr."
+              ],
+              "audio": "Seitdem vertrauen wir einander mehr.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

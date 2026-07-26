@@ -4210,6 +4210,207 @@
       ]
     },
     {
+      "id": "chinese-reading-bridge-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-reading-bridge-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-reading-bridge-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «escuela»",
+          "target": "escuela",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "学校",
+          "accepted_answers": [
+            "学校"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «学校».",
+          "audio": "学校",
+          "slow_audio": "学校",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-reading-bridge-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "车站",
+          "accepted_answers": [
+            "车站"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «车站»: estación",
+          "audio": "车站",
+          "slow_audio": "车站",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-reading-bridge-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «escuela»",
+          "target": "escuela",
+          "options": [
+            "校",
+            "学"
+          ],
+          "joiner": "",
+          "answer": "学校",
+          "accepted_answers": [
+            "学校"
+          ],
+          "explanation": "La forma completa es «学校».",
+          "audio": "学校",
+          "slow_audio": "学校",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-reading-bridge-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "车＿",
+          "answer": "站",
+          "accepted_answers": [
+            "站"
+          ],
+          "explanation": "La forma completa es «车站»: estación",
+          "audio": "车站",
+          "slow_audio": "车站",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-reading-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «qué»",
+          "target": "qué",
+          "answer": "什么",
+          "accepted_answers": [
+            "什么"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «什么».",
+          "audio": "什么",
+          "slow_audio": "什么",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-reading-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «estación»",
+          "target": "estación",
+          "answer": "车站",
+          "accepted_answers": [
+            "车站"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «车站». También puedes escribirlo.",
+          "audio": "车站",
+          "slow_audio": "车站",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-reading-bridge-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «escuela»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "学校",
+              "accepted_answers": [
+                "学校"
+              ],
+              "audio": "学校",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «estación»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "车站",
+              "accepted_answers": [
+                "车站"
+              ],
+              "audio": "车站",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-reading-bridge-test-16",
       "title": "Prueba · Escucha y lectura guiada",
       "description": "Prueba de dominio de la unidad.",

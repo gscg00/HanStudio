@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "portuguese-a2-2-opinions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-a2-2-opinions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Gosto porque é simples.",
+          "accepted_answers": [
+            "Gosto porque é simples."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Gosto porque é simples.».",
+          "audio": "Gosto porque é simples.",
+          "slow_audio": "Gosto porque é simples.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Não gosto, embora seja útil.",
+          "accepted_answers": [
+            "Não gosto, embora seja útil."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Não gosto, embora seja útil.»: No me gusta, aunque es útil.",
+          "audio": "Não gosto, embora seja útil.",
+          "slow_audio": "Não gosto, embora seja útil.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "options": [
+            "porque",
+            "é",
+            "Gosto",
+            "simples."
+          ],
+          "joiner": " ",
+          "answer": "Gosto porque é simples.",
+          "accepted_answers": [
+            "Gosto porque é simples."
+          ],
+          "explanation": "La forma completa es «Gosto porque é simples.».",
+          "audio": "Gosto porque é simples.",
+          "slow_audio": "Gosto porque é simples.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Não gosto, embora seja ___.",
+          "answer": "útil",
+          "accepted_answers": [
+            "útil"
+          ],
+          "explanation": "La forma completa es «Não gosto, embora seja útil.»: No me gusta, aunque es útil.",
+          "audio": "Não gosto, embora seja útil.",
+          "slow_audio": "Não gosto, embora seja útil.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "por isso",
+          "accepted_answers": [
+            "por isso"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «por isso».",
+          "audio": "por isso",
+          "slow_audio": "por isso",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "target": "No me gusta, aunque es útil.",
+          "answer": "Não gosto, embora seja útil.",
+          "accepted_answers": [
+            "Não gosto, embora seja útil."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Não gosto, embora seja útil.». También puedes escribirlo.",
+          "audio": "Não gosto, embora seja útil.",
+          "slow_audio": "Não gosto, embora seja útil.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-opinions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Me gusta porque es sencillo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Gosto porque é simples.",
+              "accepted_answers": [
+                "Gosto porque é simples."
+              ],
+              "audio": "Gosto porque é simples.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «No me gusta, aunque es útil.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Não gosto, embora seja útil.",
+              "accepted_answers": [
+                "Não gosto, embora seja útil."
+              ],
+              "audio": "Não gosto, embora seja útil.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-a22-opinions-test",
       "title": "Prueba · Opiniones y razones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

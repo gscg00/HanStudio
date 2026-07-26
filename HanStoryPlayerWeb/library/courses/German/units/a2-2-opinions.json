@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "german-a2-2-opinions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-2-opinions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-2-opinions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Es gefällt mir, weil es einfach ist.",
+          "accepted_answers": [
+            "Es gefällt mir, weil es einfach ist."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Es gefällt mir, weil es einfach ist.».",
+          "audio": "Es gefällt mir, weil es einfach ist.",
+          "slow_audio": "Es gefällt mir, weil es einfach ist.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-opinions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "accepted_answers": [
+            "Es gefällt mir nicht, obwohl es nützlich ist."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Es gefällt mir nicht, obwohl es nützlich ist.»: No me gusta, aunque es útil.",
+          "audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "slow_audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-opinions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "options": [
+            "mir,",
+            "gefällt",
+            "es",
+            "Es",
+            "ist.",
+            "einfach",
+            "weil"
+          ],
+          "joiner": " ",
+          "answer": "Es gefällt mir, weil es einfach ist.",
+          "accepted_answers": [
+            "Es gefällt mir, weil es einfach ist."
+          ],
+          "explanation": "La forma completa es «Es gefällt mir, weil es einfach ist.».",
+          "audio": "Es gefällt mir, weil es einfach ist.",
+          "slow_audio": "Es gefällt mir, weil es einfach ist.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-opinions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Es gefällt mir nicht, obwohl es nützlich ___.",
+          "answer": "ist",
+          "accepted_answers": [
+            "ist"
+          ],
+          "explanation": "La forma completa es «Es gefällt mir nicht, obwohl es nützlich ist.»: No me gusta, aunque es útil.",
+          "audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "slow_audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-opinions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "deshalb",
+          "accepted_answers": [
+            "deshalb"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «deshalb».",
+          "audio": "deshalb",
+          "slow_audio": "deshalb",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-2-opinions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "target": "No me gusta, aunque es útil.",
+          "answer": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "accepted_answers": [
+            "Es gefällt mir nicht, obwohl es nützlich ist."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Es gefällt mir nicht, obwohl es nützlich ist.». También puedes escribirlo.",
+          "audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "slow_audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-2-opinions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Me gusta porque es sencillo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Es gefällt mir, weil es einfach ist.",
+              "accepted_answers": [
+                "Es gefällt mir, weil es einfach ist."
+              ],
+              "audio": "Es gefällt mir, weil es einfach ist.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «No me gusta, aunque es útil.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Es gefällt mir nicht, obwohl es nützlich ist.",
+              "accepted_answers": [
+                "Es gefällt mir nicht, obwohl es nützlich ist."
+              ],
+              "audio": "Es gefällt mir nicht, obwohl es nützlich ist.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a22-opinions-test",
       "title": "Prueba · Opiniones y razones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

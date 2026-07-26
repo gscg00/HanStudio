@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "portuguese-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Entretanto, a minha irmã telefonou à polícia.",
+          "accepted_answers": [
+            "Entretanto, a minha irmã telefonou à polícia."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Entretanto, a minha irmã telefonou à polícia.».",
+          "audio": "Entretanto, a minha irmã telefonou à polícia.",
+          "slow_audio": "Entretanto, a minha irmã telefonou à polícia.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "No fim, tudo acabou bem.",
+          "accepted_answers": [
+            "No fim, tudo acabou bem."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «No fim, tudo acabou bem.»: Al final, todo salió bien.",
+          "audio": "No fim, tudo acabou bem.",
+          "slow_audio": "No fim, tudo acabou bem.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "à",
+            "minha",
+            "Entretanto,",
+            "a",
+            "irmã",
+            "polícia.",
+            "telefonou"
+          ],
+          "joiner": " ",
+          "answer": "Entretanto, a minha irmã telefonou à polícia.",
+          "accepted_answers": [
+            "Entretanto, a minha irmã telefonou à polícia."
+          ],
+          "explanation": "La forma completa es «Entretanto, a minha irmã telefonou à polícia.».",
+          "audio": "Entretanto, a minha irmã telefonou à polícia.",
+          "slow_audio": "Entretanto, a minha irmã telefonou à polícia.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "No fim, tudo acabou ___.",
+          "answer": "bem",
+          "accepted_answers": [
+            "bem"
+          ],
+          "explanation": "La forma completa es «No fim, tudo acabou bem.»: Al final, todo salió bien.",
+          "audio": "No fim, tudo acabou bem.",
+          "slow_audio": "No fim, tudo acabou bem.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Já estiveste lá?",
+          "accepted_answers": [
+            "Já estiveste lá?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Já estiveste lá?».",
+          "audio": "Já estiveste lá?",
+          "slow_audio": "Já estiveste lá?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "No fim, tudo acabou bem.",
+          "accepted_answers": [
+            "No fim, tudo acabou bem."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «No fim, tudo acabou bem.». También puedes escribirlo.",
+          "audio": "No fim, tudo acabou bem.",
+          "slow_audio": "No fim, tudo acabou bem.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Entretanto, a minha irmã telefonou à polícia.",
+              "accepted_answers": [
+                "Entretanto, a minha irmã telefonou à polícia."
+              ],
+              "audio": "Entretanto, a minha irmã telefonou à polícia.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "No fim, tudo acabou bem.",
+              "accepted_answers": [
+                "No fim, tudo acabou bem."
+              ],
+              "audio": "No fim, tudo acabou bem.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "italian-a2-1-comparison-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-a2-1-comparison-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a2-1-comparison-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Questa opzione è migliore per me.",
+          "accepted_answers": [
+            "Questa opzione è migliore per me."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Questa opzione è migliore per me.».",
+          "audio": "Questa opzione è migliore per me.",
+          "slow_audio": "Questa opzione è migliore per me.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-comparison-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Oggi il tempo è peggiore di ieri.",
+          "accepted_answers": [
+            "Oggi il tempo è peggiore di ieri."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Oggi il tempo è peggiore di ieri.»: Hoy hace peor tiempo que ayer.",
+          "audio": "Oggi il tempo è peggiore di ieri.",
+          "slow_audio": "Oggi il tempo è peggiore di ieri.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-comparison-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "options": [
+            "me.",
+            "Questa",
+            "migliore",
+            "opzione",
+            "per",
+            "è"
+          ],
+          "joiner": " ",
+          "answer": "Questa opzione è migliore per me.",
+          "accepted_answers": [
+            "Questa opzione è migliore per me."
+          ],
+          "explanation": "La forma completa es «Questa opzione è migliore per me.».",
+          "audio": "Questa opzione è migliore per me.",
+          "slow_audio": "Questa opzione è migliore per me.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-comparison-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Oggi il tempo è peggiore di ___.",
+          "answer": "ieri",
+          "accepted_answers": [
+            "ieri"
+          ],
+          "explanation": "La forma completa es «Oggi il tempo è peggiore di ieri.»: Hoy hace peor tiempo que ayer.",
+          "audio": "Oggi il tempo è peggiore di ieri.",
+          "slow_audio": "Oggi il tempo è peggiore di ieri.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-comparison-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "alto",
+          "accepted_answers": [
+            "alto"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «alto».",
+          "audio": "alto",
+          "slow_audio": "alto",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-comparison-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "target": "Hoy hace peor tiempo que ayer.",
+          "answer": "Oggi il tempo è peggiore di ieri.",
+          "accepted_answers": [
+            "Oggi il tempo è peggiore di ieri."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Oggi il tempo è peggiore di ieri.». También puedes escribirlo.",
+          "audio": "Oggi il tempo è peggiore di ieri.",
+          "slow_audio": "Oggi il tempo è peggiore di ieri.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-comparison-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Esta opción es mejor para mí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Questa opzione è migliore per me.",
+              "accepted_answers": [
+                "Questa opzione è migliore per me."
+              ],
+              "audio": "Questa opzione è migliore per me.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Hoy hace peor tiempo que ayer.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Oggi il tempo è peggiore di ieri.",
+              "accepted_answers": [
+                "Oggi il tempo è peggiore di ieri."
+              ],
+              "audio": "Oggi il tempo è peggiore di ieri.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-a21-comparison-test",
       "title": "Prueba · Describir y comparar",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

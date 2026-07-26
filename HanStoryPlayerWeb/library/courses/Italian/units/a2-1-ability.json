@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "italian-a2-1-ability-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-a2-1-ability-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a2-1-ability-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Aquí se puede tomar fotos.»",
+          "target": "Aquí se puede tomar fotos.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Qui si possono fare fotografie.",
+          "accepted_answers": [
+            "Qui si possono fare fotografie."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Qui si possono fare fotografie.».",
+          "audio": "Qui si possono fare fotografie.",
+          "slow_audio": "Qui si possono fare fotografie.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-ability-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Qui è vietato fumare.",
+          "accepted_answers": [
+            "Qui è vietato fumare."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Qui è vietato fumare.»: No se puede fumar aquí.",
+          "audio": "Qui è vietato fumare.",
+          "slow_audio": "Qui è vietato fumare.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-ability-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Aquí se puede tomar fotos.»",
+          "target": "Aquí se puede tomar fotos.",
+          "options": [
+            "fotografie.",
+            "fare",
+            "possono",
+            "Qui",
+            "si"
+          ],
+          "joiner": " ",
+          "answer": "Qui si possono fare fotografie.",
+          "accepted_answers": [
+            "Qui si possono fare fotografie."
+          ],
+          "explanation": "La forma completa es «Qui si possono fare fotografie.».",
+          "audio": "Qui si possono fare fotografie.",
+          "slow_audio": "Qui si possono fare fotografie.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-ability-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Qui è vietato ___.",
+          "answer": "fumare",
+          "accepted_answers": [
+            "fumare"
+          ],
+          "explanation": "La forma completa es «Qui è vietato fumare.»: No se puede fumar aquí.",
+          "audio": "Qui è vietato fumare.",
+          "slow_audio": "Qui è vietato fumare.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-ability-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «necesario»",
+          "target": "necesario",
+          "answer": "necessario",
+          "accepted_answers": [
+            "necessario"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «necessario».",
+          "audio": "necessario",
+          "slow_audio": "necessario",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a2-1-ability-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "target": "No se puede fumar aquí.",
+          "answer": "Qui è vietato fumare.",
+          "accepted_answers": [
+            "Qui è vietato fumare."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Qui è vietato fumare.». También puedes escribirlo.",
+          "audio": "Qui è vietato fumare.",
+          "slow_audio": "Qui è vietato fumare.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a2-1-ability-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Aquí se puede tomar fotos.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Qui si possono fare fotografie.",
+              "accepted_answers": [
+                "Qui si possono fare fotografie."
+              ],
+              "audio": "Qui si possono fare fotografie.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «No se puede fumar aquí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Qui è vietato fumare.",
+              "accepted_answers": [
+                "Qui è vietato fumare."
+              ],
+              "audio": "Qui è vietato fumare.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-a21-ability-test",
       "title": "Prueba · Capacidad y obligación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

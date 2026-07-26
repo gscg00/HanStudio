@@ -4353,6 +4353,210 @@
       ]
     },
     {
+      "id": "korean-reading-bridge-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-reading-bridge-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-reading-bridge-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Es una cara que veo por primera vez. ¿De dónde vienes?»",
+          "target": "Es una cara que veo por primera vez. ¿De dónde vienes?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "accepted_answers": [
+            "처음 보는 얼굴이네요. 어디에서 왔어요?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «처음 보는 얼굴이네요. 어디에서 왔어요?».",
+          "audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "slow_audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-reading-bridge-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "accepted_answers": [
+            "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.»: Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
+          "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "slow_audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-reading-bridge-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Es una cara que veo por primera vez. ¿De dónde vienes?»",
+          "target": "Es una cara que veo por primera vez. ¿De dónde vienes?",
+          "options": [
+            "어디에서",
+            "왔어요?",
+            "처음",
+            "얼굴이네요.",
+            "보는"
+          ],
+          "joiner": " ",
+          "answer": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "accepted_answers": [
+            "처음 보는 얼굴이네요. 어디에서 왔어요?"
+          ],
+          "explanation": "La forma completa es «처음 보는 얼굴이네요. 어디에서 왔어요?».",
+          "audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "slow_audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-reading-bridge-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "저는... 먼 곳에서 왔어요. 아직 설명하기 ___.",
+          "answer": "어려워요",
+          "accepted_answers": [
+            "어려워요"
+          ],
+          "explanation": "La forma completa es «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.»: Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
+          "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "slow_audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-reading-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Ya veo. Soy Joon. Ayudo con el trabajo en esta aldea.»",
+          "target": "Ya veo. Soy Joon. Ayudo con el trabajo en esta aldea.",
+          "answer": "그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요.",
+          "accepted_answers": [
+            "그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요.».",
+          "audio": "그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요.",
+          "slow_audio": "그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-reading-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.»",
+          "target": "Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
+          "answer": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "accepted_answers": [
+            "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.». También puedes escribirlo.",
+          "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "slow_audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-reading-bridge-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Es una cara que veo por primera vez. ¿De dónde vienes?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+              "accepted_answers": [
+                "처음 보는 얼굴이네요. 어디에서 왔어요?"
+              ],
+              "audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+              "accepted_answers": [
+                "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요."
+              ],
+              "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-reading-bridge-test-16",
       "title": "Prueba · Escucha y lectura guiada",
       "description": "Prueba de dominio de la unidad.",

@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "german-a1-2-shopping-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a1-2-shopping-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-shopping-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Kann ich mit Karte zahlen?",
+          "accepted_answers": [
+            "Kann ich mit Karte zahlen?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Kann ich mit Karte zahlen?».",
+          "audio": "Kann ich mit Karte zahlen?",
+          "slow_audio": "Kann ich mit Karte zahlen?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-shopping-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Ich habe nur Bargeld.",
+          "accepted_answers": [
+            "Ich habe nur Bargeld."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Ich habe nur Bargeld.»: Solo tengo efectivo.",
+          "audio": "Ich habe nur Bargeld.",
+          "slow_audio": "Ich habe nur Bargeld.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-shopping-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "options": [
+            "zahlen?",
+            "Karte",
+            "mit",
+            "Kann",
+            "ich"
+          ],
+          "joiner": " ",
+          "answer": "Kann ich mit Karte zahlen?",
+          "accepted_answers": [
+            "Kann ich mit Karte zahlen?"
+          ],
+          "explanation": "La forma completa es «Kann ich mit Karte zahlen?».",
+          "audio": "Kann ich mit Karte zahlen?",
+          "slow_audio": "Kann ich mit Karte zahlen?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-shopping-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Ich habe nur ___.",
+          "answer": "Bargeld",
+          "accepted_answers": [
+            "Bargeld"
+          ],
+          "explanation": "La forma completa es «Ich habe nur Bargeld.»: Solo tengo efectivo.",
+          "audio": "Ich habe nur Bargeld.",
+          "slow_audio": "Ich habe nur Bargeld.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-shopping-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «tarjeta»",
+          "target": "tarjeta",
+          "answer": "Karte",
+          "accepted_answers": [
+            "Karte"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Karte».",
+          "audio": "Karte",
+          "slow_audio": "Karte",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-shopping-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "target": "Solo tengo efectivo.",
+          "answer": "Ich habe nur Bargeld.",
+          "accepted_answers": [
+            "Ich habe nur Bargeld."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Ich habe nur Bargeld.». También puedes escribirlo.",
+          "audio": "Ich habe nur Bargeld.",
+          "slow_audio": "Ich habe nur Bargeld.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-shopping-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Puedo pagar con tarjeta?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Kann ich mit Karte zahlen?",
+              "accepted_answers": [
+                "Kann ich mit Karte zahlen?"
+              ],
+              "audio": "Kann ich mit Karte zahlen?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Solo tengo efectivo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich habe nur Bargeld.",
+              "accepted_answers": [
+                "Ich habe nur Bargeld."
+              ],
+              "audio": "Ich habe nur Bargeld.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a12-shopping-test",
       "title": "Prueba · Compras y precios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

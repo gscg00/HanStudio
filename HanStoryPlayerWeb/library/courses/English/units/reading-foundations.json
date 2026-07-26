@@ -2509,6 +2509,111 @@
       ]
     },
     {
+      "id": "english-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «TH»",
+          "target": "TH",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "TH",
+          "accepted_answers": [
+            "TH"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «TH».",
+          "audio": "tee",
+          "slow_audio": "tee",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "SH · CH",
+          "accepted_answers": [
+            "SH · CH"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «SH · CH»: Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "TH",
+          "options": [
+            "TH"
+          ],
+          "joiner": "",
+          "answer": "TH",
+          "accepted_answers": [
+            "TH"
+          ],
+          "explanation": "La forma completa es «TH».",
+          "audio": "tee",
+          "slow_audio": "tee",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "SH · ___",
+          "answer": "CH",
+          "accepted_answers": [
+            "CH"
+          ],
+          "explanation": "La forma completa es «SH · CH»: Dividir estos grupos produce una pronunciación artificial.",
+          "audio": "see",
+          "slow_audio": "see",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "english-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

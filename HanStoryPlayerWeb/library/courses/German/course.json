@@ -3,7 +3,7 @@
   "title": "Alemán: de cero a conversaciones intermedias",
   "language": "German",
   "languageCode": "de",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Comprende la lectura y el orden de la oración alemana.",
   "vocabularyGoal": 300,
@@ -523,5 +523,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "Gespräch"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

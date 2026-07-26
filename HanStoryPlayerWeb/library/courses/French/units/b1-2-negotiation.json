@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "french-b1-2-negotiation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-b1-2-negotiation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-b1-2-negotiation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Quelle autre option nous reste ?",
+          "accepted_answers": [
+            "Quelle autre option nous reste ?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Quelle autre option nous reste ?».",
+          "audio": "Quelle autre option nous reste ?",
+          "slow_audio": "Quelle autre option nous reste ?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-negotiation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "On peut céder sur le prix, pas la qualité.",
+          "accepted_answers": [
+            "On peut céder sur le prix, pas la qualité."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «On peut céder sur le prix, pas la qualité.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "On peut céder sur le prix, pas la qualité.",
+          "slow_audio": "On peut céder sur le prix, pas la qualité.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-negotiation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "options": [
+            "?",
+            "option",
+            "reste",
+            "nous",
+            "Quelle",
+            "autre"
+          ],
+          "joiner": " ",
+          "answer": "Quelle autre option nous reste ?",
+          "accepted_answers": [
+            "Quelle autre option nous reste ?"
+          ],
+          "explanation": "La forma completa es «Quelle autre option nous reste ?».",
+          "audio": "Quelle autre option nous reste ?",
+          "slow_audio": "Quelle autre option nous reste ?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-negotiation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "On peut céder sur le prix, pas la ___.",
+          "answer": "qualité",
+          "accepted_answers": [
+            "qualité"
+          ],
+          "explanation": "La forma completa es «On peut céder sur le prix, pas la qualité.»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "On peut céder sur le prix, pas la qualité.",
+          "slow_audio": "On peut céder sur le prix, pas la qualité.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-negotiation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "target": "Entre amigos podemos hablar de manera más directa.",
+          "answer": "Entre amis, on peut parler plus directement.",
+          "accepted_answers": [
+            "Entre amis, on peut parler plus directement."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Entre amis, on peut parler plus directement.».",
+          "audio": "Entre amis, on peut parler plus directement.",
+          "slow_audio": "Entre amis, on peut parler plus directement.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-negotiation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "target": "Podemos ceder en el precio, pero no en la calidad.",
+          "answer": "On peut céder sur le prix, pas la qualité.",
+          "accepted_answers": [
+            "On peut céder sur le prix, pas la qualité."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «On peut céder sur le prix, pas la qualité.». También puedes escribirlo.",
+          "audio": "On peut céder sur le prix, pas la qualité.",
+          "slow_audio": "On peut céder sur le prix, pas la qualité.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-negotiation-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Qué alternativa nos queda?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Quelle autre option nous reste ?",
+              "accepted_answers": [
+                "Quelle autre option nous reste ?"
+              ],
+              "audio": "Quelle autre option nous reste ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Podemos ceder en el precio, pero no en la calidad.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "On peut céder sur le prix, pas la qualité.",
+              "accepted_answers": [
+                "On peut céder sur le prix, pas la qualité."
+              ],
+              "audio": "On peut céder sur le prix, pas la qualité.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-b12-negotiation-test",
       "title": "Prueba · Decisiones y negociación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

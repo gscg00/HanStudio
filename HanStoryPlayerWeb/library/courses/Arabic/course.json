@@ -3,7 +3,7 @@
   "title": "Árabe: de cero a conversaciones intermedias",
   "language": "Arabic",
   "languageCode": "ar",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Aprende el alfabeto conectado y las frases más esenciales.",
   "vocabularyGoal": 300,
@@ -516,5 +516,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "حوار"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

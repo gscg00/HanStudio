@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "german-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Inzwischen rief meine Schwester die Polizei.",
+          "accepted_answers": [
+            "Inzwischen rief meine Schwester die Polizei."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Inzwischen rief meine Schwester die Polizei.».",
+          "audio": "Inzwischen rief meine Schwester die Polizei.",
+          "slow_audio": "Inzwischen rief meine Schwester die Polizei.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Am Ende ging alles gut aus.",
+          "accepted_answers": [
+            "Am Ende ging alles gut aus."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Am Ende ging alles gut aus.»: Al final, todo salió bien.",
+          "audio": "Am Ende ging alles gut aus.",
+          "slow_audio": "Am Ende ging alles gut aus.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "Polizei.",
+            "Schwester",
+            "Inzwischen",
+            "die",
+            "meine",
+            "rief"
+          ],
+          "joiner": " ",
+          "answer": "Inzwischen rief meine Schwester die Polizei.",
+          "accepted_answers": [
+            "Inzwischen rief meine Schwester die Polizei."
+          ],
+          "explanation": "La forma completa es «Inzwischen rief meine Schwester die Polizei.».",
+          "audio": "Inzwischen rief meine Schwester die Polizei.",
+          "slow_audio": "Inzwischen rief meine Schwester die Polizei.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Am Ende ging alles gut ___.",
+          "answer": "aus",
+          "accepted_answers": [
+            "aus"
+          ],
+          "explanation": "La forma completa es «Am Ende ging alles gut aus.»: Al final, todo salió bien.",
+          "audio": "Am Ende ging alles gut aus.",
+          "slow_audio": "Am Ende ging alles gut aus.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Warst du schon einmal dort?",
+          "accepted_answers": [
+            "Warst du schon einmal dort?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Warst du schon einmal dort?».",
+          "audio": "Warst du schon einmal dort?",
+          "slow_audio": "Warst du schon einmal dort?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "Am Ende ging alles gut aus.",
+          "accepted_answers": [
+            "Am Ende ging alles gut aus."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Am Ende ging alles gut aus.». También puedes escribirlo.",
+          "audio": "Am Ende ging alles gut aus.",
+          "slow_audio": "Am Ende ging alles gut aus.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Inzwischen rief meine Schwester die Polizei.",
+              "accepted_answers": [
+                "Inzwischen rief meine Schwester die Polizei."
+              ],
+              "audio": "Inzwischen rief meine Schwester die Polizei.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Am Ende ging alles gut aus.",
+              "accepted_answers": [
+                "Am Ende ging alles gut aus."
+              ],
+              "audio": "Am Ende ging alles gut aus.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

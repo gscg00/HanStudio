@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "italian-b1-2-perspectives-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-b1-2-perspectives-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Non tutti hanno avuto le stesse opportunità.",
+          "accepted_answers": [
+            "Non tutti hanno avuto le stesse opportunità."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Non tutti hanno avuto le stesse opportunità.».",
+          "audio": "Non tutti hanno avuto le stesse opportunità.",
+          "slow_audio": "Non tutti hanno avuto le stesse opportunità.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "L’esperienza influenza la nostra opinione.",
+          "accepted_answers": [
+            "L’esperienza influenza la nostra opinione."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «L’esperienza influenza la nostra opinione.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "L’esperienza influenza la nostra opinione.",
+          "slow_audio": "L’esperienza influenza la nostra opinione.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "options": [
+            "avuto",
+            "Non",
+            "opportunità.",
+            "hanno",
+            "stesse",
+            "le",
+            "tutti"
+          ],
+          "joiner": " ",
+          "answer": "Non tutti hanno avuto le stesse opportunità.",
+          "accepted_answers": [
+            "Non tutti hanno avuto le stesse opportunità."
+          ],
+          "explanation": "La forma completa es «Non tutti hanno avuto le stesse opportunità.».",
+          "audio": "Non tutti hanno avuto le stesse opportunità.",
+          "slow_audio": "Non tutti hanno avuto le stesse opportunità.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "L’esperienza influenza la nostra ___.",
+          "answer": "opinione",
+          "accepted_answers": [
+            "opinione"
+          ],
+          "explanation": "La forma completa es «L’esperienza influenza la nostra opinione.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "L’esperienza influenza la nostra opinione.",
+          "slow_audio": "L’esperienza influenza la nostra opinione.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "target": "Entonces me di cuenta de mi error.",
+          "answer": "Allora mi sono reso conto del mio errore.",
+          "accepted_answers": [
+            "Allora mi sono reso conto del mio errore."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Allora mi sono reso conto del mio errore.».",
+          "audio": "Allora mi sono reso conto del mio errore.",
+          "slow_audio": "Allora mi sono reso conto del mio errore.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "target": "La experiencia personal influye en nuestra opinión.",
+          "answer": "L’esperienza influenza la nostra opinione.",
+          "accepted_answers": [
+            "L’esperienza influenza la nostra opinione."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «L’esperienza influenza la nostra opinione.». También puedes escribirlo.",
+          "audio": "L’esperienza influenza la nostra opinione.",
+          "slow_audio": "L’esperienza influenza la nostra opinione.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-perspectives-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No todos tuvieron las mismas oportunidades.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Non tutti hanno avuto le stesse opportunità.",
+              "accepted_answers": [
+                "Non tutti hanno avuto le stesse opportunità."
+              ],
+              "audio": "Non tutti hanno avuto le stesse opportunità.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La experiencia personal influye en nuestra opinión.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "L’esperienza influenza la nostra opinione.",
+              "accepted_answers": [
+                "L’esperienza influenza la nostra opinione."
+              ],
+              "audio": "L’esperienza influenza la nostra opinione.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-b12-perspectives-test",
       "title": "Prueba · Perspectivas y argumentos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

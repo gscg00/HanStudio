@@ -33475,6 +33475,207 @@
       ]
     },
     {
+      "id": "french-vocabulary-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-vocabulary-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-vocabulary-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «los padres»",
+          "target": "los padres",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "les parents",
+          "accepted_answers": [
+            "les parents"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «les parents».",
+          "audio": "les parents",
+          "slow_audio": "les parents",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-vocabulary-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "téléphoner",
+          "accepted_answers": [
+            "téléphoner"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «téléphoner»: llamar por teléfono",
+          "audio": "téléphoner",
+          "slow_audio": "téléphoner",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-vocabulary-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «los padres»",
+          "target": "los padres",
+          "options": [
+            "parents",
+            "les"
+          ],
+          "joiner": " ",
+          "answer": "les parents",
+          "accepted_answers": [
+            "les parents"
+          ],
+          "explanation": "La forma completa es «les parents».",
+          "audio": "les parents",
+          "slow_audio": "les parents",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-vocabulary-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "téléphone＿",
+          "answer": "r",
+          "accepted_answers": [
+            "r"
+          ],
+          "explanation": "La forma completa es «téléphoner»: llamar por teléfono",
+          "audio": "téléphoner",
+          "slow_audio": "téléphoner",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-vocabulary-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «cada semana»",
+          "target": "cada semana",
+          "answer": "chaque semaine",
+          "accepted_answers": [
+            "chaque semaine"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «chaque semaine».",
+          "audio": "chaque semaine",
+          "slow_audio": "chaque semaine",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-vocabulary-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «llamar por teléfono»",
+          "target": "llamar por teléfono",
+          "answer": "téléphoner",
+          "accepted_answers": [
+            "téléphoner"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «téléphoner». También puedes escribirlo.",
+          "audio": "téléphoner",
+          "slow_audio": "téléphoner",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-vocabulary-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «los padres»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "les parents",
+              "accepted_answers": [
+                "les parents"
+              ],
+              "audio": "les parents",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «llamar por teléfono»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "téléphoner",
+              "accepted_answers": [
+                "téléphoner"
+              ],
+              "audio": "téléphoner",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-vocabulary-test-67",
       "title": "Prueba · Vocabulario frecuente",
       "description": "Prueba de dominio de la unidad.",

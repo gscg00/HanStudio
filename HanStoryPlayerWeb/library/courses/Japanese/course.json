@@ -2,7 +2,7 @@
   "courseId": "japanese-from-zero",
   "title": "Japonés: de cero a conversaciones intermedias",
   "language": "Japanese",
-  "version": 11,
+  "version": 12,
   "levels": [
     {
       "id": "foundations",
@@ -537,5 +537,15 @@
       "icon": "対話"
     }
   ],
-  "routeLabel": "RUTA GUIADA · DE CERO A B1"
+  "routeLabel": "RUTA GUIADA · DE CERO A B1",
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

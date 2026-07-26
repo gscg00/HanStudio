@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-a1-1-home-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a1-1-home-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a1-1-home-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "The key is on the table.",
+          "accepted_answers": [
+            "The key is on the table."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «The key is on the table.».",
+          "audio": "The key is on the table.",
+          "slow_audio": "The key is on the table.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-home-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "My room is small.",
+          "accepted_answers": [
+            "My room is small."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «My room is small.»: Mi habitación es pequeña.",
+          "audio": "My room is small.",
+          "slow_audio": "My room is small.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-home-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "options": [
+            "The",
+            "key",
+            "the",
+            "table.",
+            "is",
+            "on"
+          ],
+          "joiner": " ",
+          "answer": "The key is on the table.",
+          "accepted_answers": [
+            "The key is on the table."
+          ],
+          "explanation": "La forma completa es «The key is on the table.».",
+          "audio": "The key is on the table.",
+          "slow_audio": "The key is on the table.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-home-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "My room is ___.",
+          "answer": "small",
+          "accepted_answers": [
+            "small"
+          ],
+          "explanation": "La forma completa es «My room is small.»: Mi habitación es pequeña.",
+          "audio": "My room is small.",
+          "slow_audio": "My room is small.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-home-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «puerta»",
+          "target": "puerta",
+          "answer": "door",
+          "accepted_answers": [
+            "door"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «door».",
+          "audio": "door",
+          "slow_audio": "door",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-home-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "target": "Mi habitación es pequeña.",
+          "answer": "My room is small.",
+          "accepted_answers": [
+            "My room is small."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «My room is small.». También puedes escribirlo.",
+          "audio": "My room is small.",
+          "slow_audio": "My room is small.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-home-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La llave está sobre la mesa.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The key is on the table.",
+              "accepted_answers": [
+                "The key is on the table."
+              ],
+              "audio": "The key is on the table.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Mi habitación es pequeña.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "My room is small.",
+              "accepted_answers": [
+                "My room is small."
+              ],
+              "audio": "My room is small.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a11-home-test",
       "title": "Prueba · Casa y pertenencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "korean-a2-2-problemSolving-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "korean-a2-2-problemSolving-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "그것으로는 문제가 해결되지 않을 거예요.",
+          "accepted_answers": [
+            "그것으로는 문제가 해결되지 않을 거예요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «그것으로는 문제가 해결되지 않을 거예요.».",
+          "audio": "그것으로는 문제가 해결되지 않을 거예요.",
+          "slow_audio": "그것으로는 문제가 해결되지 않을 거예요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "더 많은 정보가 필요해요.",
+          "accepted_answers": [
+            "더 많은 정보가 필요해요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «더 많은 정보가 필요해요.»: Necesitamos más información.",
+          "audio": "더 많은 정보가 필요해요.",
+          "slow_audio": "더 많은 정보가 필요해요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "options": [
+            "거예요.",
+            "해결되지",
+            "그것으로는",
+            "않을",
+            "문제가"
+          ],
+          "joiner": " ",
+          "answer": "그것으로는 문제가 해결되지 않을 거예요.",
+          "accepted_answers": [
+            "그것으로는 문제가 해결되지 않을 거예요."
+          ],
+          "explanation": "La forma completa es «그것으로는 문제가 해결되지 않을 거예요.».",
+          "audio": "그것으로는 문제가 해결되지 않을 거예요.",
+          "slow_audio": "그것으로는 문제가 해결되지 않을 거예요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "더 많은 정보가 ___.",
+          "answer": "필요해요",
+          "accepted_answers": [
+            "필요해요"
+          ],
+          "explanation": "La forma completa es «더 많은 정보가 필요해요.»: Necesitamos más información.",
+          "audio": "더 많은 정보가 필요해요.",
+          "slow_audio": "더 많은 정보가 필요해요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "target": "¿Cuándo estará listo?",
+          "answer": "언제 준비될까요?",
+          "accepted_answers": [
+            "언제 준비될까요?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «언제 준비될까요?».",
+          "audio": "언제 준비될까요?",
+          "slow_audio": "언제 준비될까요?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "target": "Necesitamos más información.",
+          "answer": "더 많은 정보가 필요해요.",
+          "accepted_answers": [
+            "더 많은 정보가 필요해요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «더 많은 정보가 필요해요.». También puedes escribirlo.",
+          "audio": "더 많은 정보가 필요해요.",
+          "slow_audio": "더 많은 정보가 필요해요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a2-2-problemSolving-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Eso no resolverá el problema.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "그것으로는 문제가 해결되지 않을 거예요.",
+              "accepted_answers": [
+                "그것으로는 문제가 해결되지 않을 거예요."
+              ],
+              "audio": "그것으로는 문제가 해결되지 않을 거예요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesitamos más información.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "더 많은 정보가 필요해요.",
+              "accepted_answers": [
+                "더 많은 정보가 필요해요."
+              ],
+              "audio": "더 많은 정보가 필요해요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuándo estará listo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "언제 준비될까요?",
+              "accepted_answers": [
+                "언제 준비될까요?"
+              ],
+              "audio": "언제 준비될까요?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "korean-a22-problemSolving-test",
       "title": "Prueba · Resolver imprevistos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

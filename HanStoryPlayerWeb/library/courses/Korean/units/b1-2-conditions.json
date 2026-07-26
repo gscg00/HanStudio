@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "korean-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "accepted_answers": [
+            "도움이 필요할 경우에는 저에게 전화하세요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «도움이 필요할 경우에는 저에게 전화하세요.».",
+          "audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "slow_audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "설명해 줬다면 동의했을 거예요.",
+          "accepted_answers": [
+            "설명해 줬다면 동의했을 거예요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «설명해 줬다면 동의했을 거예요.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "설명해 줬다면 동의했을 거예요.",
+          "slow_audio": "설명해 줬다면 동의했을 거예요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "도움이",
+            "전화하세요.",
+            "저에게",
+            "필요할",
+            "경우에는"
+          ],
+          "joiner": " ",
+          "answer": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "accepted_answers": [
+            "도움이 필요할 경우에는 저에게 전화하세요."
+          ],
+          "explanation": "La forma completa es «도움이 필요할 경우에는 저에게 전화하세요.».",
+          "audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "slow_audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "설명해 줬다면 동의했을 ___.",
+          "answer": "거예요",
+          "accepted_answers": [
+            "거예요"
+          ],
+          "explanation": "La forma completa es «설명해 줬다면 동의했을 거예요.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "설명해 줬다면 동의했을 거예요.",
+          "slow_audio": "설명해 줬다면 동의했을 거예요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "도와준 덕분에 문제를 해결했어요.",
+          "accepted_answers": [
+            "도와준 덕분에 문제를 해결했어요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «도와준 덕분에 문제를 해결했어요.».",
+          "audio": "도와준 덕분에 문제를 해결했어요.",
+          "slow_audio": "도와준 덕분에 문제를 해결했어요.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "설명해 줬다면 동의했을 거예요.",
+          "accepted_answers": [
+            "설명해 줬다면 동의했을 거예요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «설명해 줬다면 동의했을 거예요.». También puedes escribirlo.",
+          "audio": "설명해 줬다면 동의했을 거예요.",
+          "slow_audio": "설명해 줬다면 동의했을 거예요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "도움이 필요할 경우에는 저에게 전화하세요.",
+              "accepted_answers": [
+                "도움이 필요할 경우에는 저에게 전화하세요."
+              ],
+              "audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "설명해 줬다면 동의했을 거예요.",
+              "accepted_answers": [
+                "설명해 줬다면 동의했을 거예요."
+              ],
+              "audio": "설명해 줬다면 동의했을 거예요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

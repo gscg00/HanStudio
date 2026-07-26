@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "german-b1-2-projects-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-b1-2-projects-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-b1-2-projects-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Prüfen wir die Risiken vor dem Start.",
+          "accepted_answers": [
+            "Prüfen wir die Risiken vor dem Start."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Prüfen wir die Risiken vor dem Start.».",
+          "audio": "Prüfen wir die Risiken vor dem Start.",
+          "slow_audio": "Prüfen wir die Risiken vor dem Start.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-projects-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Am Wochenende prüfen wir den Fortschritt.",
+          "accepted_answers": [
+            "Am Wochenende prüfen wir den Fortschritt."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Am Wochenende prüfen wir den Fortschritt.»: Revisaremos los avances al final de la semana.",
+          "audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "slow_audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-projects-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "options": [
+            "dem",
+            "die",
+            "Prüfen",
+            "Risiken",
+            "vor",
+            "wir",
+            "Start."
+          ],
+          "joiner": " ",
+          "answer": "Prüfen wir die Risiken vor dem Start.",
+          "accepted_answers": [
+            "Prüfen wir die Risiken vor dem Start."
+          ],
+          "explanation": "La forma completa es «Prüfen wir die Risiken vor dem Start.».",
+          "audio": "Prüfen wir die Risiken vor dem Start.",
+          "slow_audio": "Prüfen wir die Risiken vor dem Start.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-projects-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Am Wochenende prüfen wir den ___.",
+          "answer": "Fortschritt",
+          "accepted_answers": [
+            "Fortschritt"
+          ],
+          "explanation": "La forma completa es «Am Wochenende prüfen wir den Fortschritt.»: Revisaremos los avances al final de la semana.",
+          "audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "slow_audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-projects-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "target": "Quiero participar como voluntario.",
+          "answer": "Ich möchte mich ehrenamtlich beteiligen.",
+          "accepted_answers": [
+            "Ich möchte mich ehrenamtlich beteiligen."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Ich möchte mich ehrenamtlich beteiligen.».",
+          "audio": "Ich möchte mich ehrenamtlich beteiligen.",
+          "slow_audio": "Ich möchte mich ehrenamtlich beteiligen.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-b1-2-projects-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "target": "Revisaremos los avances al final de la semana.",
+          "answer": "Am Wochenende prüfen wir den Fortschritt.",
+          "accepted_answers": [
+            "Am Wochenende prüfen wir den Fortschritt."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Am Wochenende prüfen wir den Fortschritt.». También puedes escribirlo.",
+          "audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "slow_audio": "Am Wochenende prüfen wir den Fortschritt.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-b1-2-projects-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Conviene prever los riesgos antes de empezar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Prüfen wir die Risiken vor dem Start.",
+              "accepted_answers": [
+                "Prüfen wir die Risiken vor dem Start."
+              ],
+              "audio": "Prüfen wir die Risiken vor dem Start.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Revisaremos los avances al final de la semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Am Wochenende prüfen wir den Fortschritt.",
+              "accepted_answers": [
+                "Am Wochenende prüfen wir den Fortschritt."
+              ],
+              "audio": "Am Wochenende prüfen wir den Fortschritt.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-b12-projects-test",
       "title": "Prueba · Proyectos y colaboración",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,219 @@
       ]
     },
     {
+      "id": "japanese-a2-2-experiences-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-a2-2-experiences-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "一度、電車に乗り遅れました。",
+          "accepted_answers": [
+            "一度、電車に乗り遅れました。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «一度、電車に乗り遅れました。».",
+          "audio": "一度、電車に乗り遅れました。",
+          "slow_audio": "一度、電車に乗り遅れました。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "初めてでした。",
+          "accepted_answers": [
+            "初めてでした。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «初めてでした。»: Fue la primera vez.",
+          "audio": "初めてでした。",
+          "slow_audio": "初めてでした。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "options": [
+            "り",
+            "し",
+            "一",
+            "乗",
+            "ま",
+            "度",
+            "。",
+            "れ",
+            "に",
+            "、",
+            "車",
+            "遅",
+            "電",
+            "た"
+          ],
+          "joiner": "",
+          "answer": "一度、電車に乗り遅れました。",
+          "accepted_answers": [
+            "一度、電車に乗り遅れました。"
+          ],
+          "explanation": "La forma completa es «一度、電車に乗り遅れました。».",
+          "audio": "一度、電車に乗り遅れました。",
+          "slow_audio": "一度、電車に乗り遅れました。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "初めてでし＿。",
+          "answer": "た",
+          "accepted_answers": [
+            "た"
+          ],
+          "explanation": "La forma completa es «初めてでした。»: Fue la primera vez.",
+          "audio": "初めてでした。",
+          "slow_audio": "初めてでした。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "target": "Fue una experiencia interesante.",
+          "answer": "おもしろい経験でした。",
+          "accepted_answers": [
+            "おもしろい経験でした。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «おもしろい経験でした。».",
+          "audio": "おもしろい経験でした。",
+          "slow_audio": "おもしろい経験でした。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "target": "Fue la primera vez.",
+          "answer": "初めてでした。",
+          "accepted_answers": [
+            "初めてでした。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «初めてでした。». También puedes escribirlo.",
+          "audio": "初めてでした。",
+          "slow_audio": "初めてでした。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-2-experiences-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Una vez perdí el tren.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "一度、電車に乗り遅れました。",
+              "accepted_answers": [
+                "一度、電車に乗り遅れました。"
+              ],
+              "audio": "一度、電車に乗り遅れました。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Fue la primera vez.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "初めてでした。",
+              "accepted_answers": [
+                "初めてでした。"
+              ],
+              "audio": "初めてでした。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-a22-experiences-test",
       "title": "Prueba · Viajes y experiencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -50,6 +50,39 @@
 .jp-audio-example .jp-listen-row{flex:0 0 auto;margin:0}
 .jp-audio-example .jp-listen-row button{min-width:auto;padding:.55rem .7rem}
 .jp-teaching .jp-check{position:sticky;bottom:0;background:var(--jp-paper)}
+
+/* Producción activa: escribir, construir, hablar y sostener un diálogo. */
+.jp-production .jp-question{justify-content:flex-start;gap:.65rem}
+.jp-production .jp-question h1{margin:.15rem 0 .45rem}
+.jp-production .jp-listen-row{margin-top:.35rem}
+.jp-production-target{width:min(620px,100%);padding:.9rem 1rem;border-radius:16px;background:#f2eee5;color:var(--jp-green);font-size:clamp(1.25rem,4vw,2rem);font-weight:750;line-height:1.25;text-align:center}
+.jp-production-instruction{max-width:620px;margin:.15rem auto;color:var(--jp-muted);text-align:center}
+.jp-production-input{box-sizing:border-box;width:min(620px,100%);min-height:58px;padding:.9rem 1rem;border:2px solid #173f3530;border-radius:16px;background:#fff;color:var(--jp-green);font:650 1.15rem/1.4 system-ui,sans-serif;resize:vertical}
+.jp-production-input:focus{border-color:var(--jp-orange);outline:3px solid color-mix(in srgb,var(--jp-orange) 18%,transparent)}
+.jp-block-answer{display:flex;align-items:center;justify-content:center;width:min(620px,100%);min-height:68px;padding:.7rem;border-bottom:3px solid #d9d4ca;font-size:clamp(1.35rem,4vw,2rem);text-align:center}
+.jp-block-answer span{color:var(--jp-muted);font-size:.95rem}
+.jp-word-bank{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;width:min(650px,100%)}
+.jp-word-bank button{min-height:48px;padding:.65rem .9rem;background:#fff;border:2px solid #d8d5cd;border-bottom-width:4px;font-size:1.05rem}
+.jp-word-bank button:disabled{opacity:.35;transform:translateY(2px)}
+.jp-clear-production{padding:.45rem .75rem}
+.jp-speech-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.55rem;width:min(620px,100%)}
+.jp-speech-tools span,.jp-speech-tools small{flex-basis:100%;color:var(--jp-muted);text-align:center}
+.jp-speech-tools span.error{color:#a43f2e}
+.jp-speech-tools button:first-child{min-height:48px}
+.jp-dialogue .jp-question{width:min(760px,100%)}
+.jp-dialogue-script{display:grid;gap:.65rem;width:100%}
+.jp-dialogue-turn{display:grid;grid-template-columns:auto 1fr auto;gap:.4rem .7rem;align-items:start;width:min(620px,92%);padding:.8rem 1rem;border-radius:18px;background:#f2eee5;text-align:left}
+.jp-dialogue-turn.model{justify-self:start}
+.jp-dialogue-turn.learner{justify-self:end;background:#fff0e8}
+.jp-dialogue-turn>span{grid-row:1/3;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--jp-green);color:#fff;font-size:.7rem;font-weight:900}
+.jp-dialogue-turn.learner>span{background:var(--jp-orange)}
+.jp-dialogue-turn p{margin:.2rem 0;font-weight:700}
+.jp-dialogue-turn small{grid-column:2;color:var(--jp-muted)}
+.jp-dialogue-turn .jp-production-input,.jp-dialogue-turn .jp-speech-tools{grid-column:2/-1;width:100%}
+.jp-dialogue-tools{grid-column:2/-1;display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;width:100%}
+.jp-dialogue-tools>.jp-speech-tools{flex:1 1 260px;width:auto}
+.jp-dialogue-tools>button{min-height:46px}
+.jp-dialogue-turn>button{grid-column:3;grid-row:1/3}
 @media(max-width:650px){.jp-teach-symbol{min-height:100px}.guided-course .jp-target.jp-target-medium{font-size:clamp(2rem,10vw,3rem)}.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.65rem,8vw,2.5rem)}.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.25rem,6vw,1.9rem)}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
 .jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
@@ -58,8 +91,9 @@
 /* La actividad ocupa una pantalla: el progreso y la acción nunca se pierden al desplazarse. */
 .jp-app:has(> .jp-activity) .jp-app-nav{margin-bottom:.5rem}
 .jp-activity{
-  height:min(780px,calc(100dvh - .5rem));
-  min-height:min(480px,calc(100dvh - .5rem));
+  box-sizing:border-box;
+  height:min(780px,calc(100dvh - 105px));
+  min-height:min(480px,calc(100dvh - 105px));
 }
 .jp-activity-top,
 .jp-feedback,
@@ -107,4 +141,9 @@
   .jp-feedback,.jp-check{padding-bottom:max(.75rem,env(safe-area-inset-bottom))}
   .jp-audio-examples{grid-template-columns:1fr}
   .jp-audio-example{padding:.65rem .75rem}
+  .jp-production .jp-question{padding-top:.7rem}
+  .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
+  .jp-production-input{font-size:1rem}
+  .jp-dialogue-turn{width:100%;grid-template-columns:auto 1fr}
+  .jp-dialogue-turn>button{grid-column:2;grid-row:auto;justify-self:start}
 }

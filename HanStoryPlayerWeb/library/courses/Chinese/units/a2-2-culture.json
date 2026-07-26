@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "chinese-a2-2-culture-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a2-2-culture-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a2-2-culture-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Hay que respetar las normas.»",
+          "target": "Hay que respetar las normas.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "应该遵守规定。",
+          "accepted_answers": [
+            "应该遵守规定。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «应该遵守规定。».",
+          "audio": "应该遵守规定。",
+          "slow_audio": "应该遵守规定。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-culture-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "这里通常做什么？",
+          "accepted_answers": [
+            "这里通常做什么？"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «这里通常做什么？»: ¿Qué se suele hacer aquí?",
+          "audio": "这里通常做什么？",
+          "slow_audio": "这里通常做什么？",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-culture-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Hay que respetar las normas.»",
+          "target": "Hay que respetar las normas.",
+          "options": [
+            "遵",
+            "应",
+            "定",
+            "该",
+            "规",
+            "。",
+            "守"
+          ],
+          "joiner": "",
+          "answer": "应该遵守规定。",
+          "accepted_answers": [
+            "应该遵守规定。"
+          ],
+          "explanation": "La forma completa es «应该遵守规定。».",
+          "audio": "应该遵守规定。",
+          "slow_audio": "应该遵守规定。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-culture-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "这里通常做什＿？",
+          "answer": "么",
+          "accepted_answers": [
+            "么"
+          ],
+          "explanation": "La forma completa es «这里通常做什么？»: ¿Qué se suele hacer aquí?",
+          "audio": "这里通常做什么？",
+          "slow_audio": "这里通常做什么？",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-culture-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "高",
+          "accepted_answers": [
+            "高"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «高».",
+          "audio": "高",
+          "slow_audio": "高",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-culture-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Qué se suele hacer aquí?»",
+          "target": "¿Qué se suele hacer aquí?",
+          "answer": "这里通常做什么？",
+          "accepted_answers": [
+            "这里通常做什么？"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «这里通常做什么？». También puedes escribirlo.",
+          "audio": "这里通常做什么？",
+          "slow_audio": "这里通常做什么？",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-culture-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Hay que respetar las normas.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "应该遵守规定。",
+              "accepted_answers": [
+                "应该遵守规定。"
+              ],
+              "audio": "应该遵守规定。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Qué se suele hacer aquí?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "这里通常做什么？",
+              "accepted_answers": [
+                "这里通常做什么？"
+              ],
+              "audio": "这里通常做什么？",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a22-culture-test",
       "title": "Prueba · Costumbres y cultura",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

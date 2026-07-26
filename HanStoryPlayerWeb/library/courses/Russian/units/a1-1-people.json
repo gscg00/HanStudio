@@ -1779,6 +1779,207 @@
       ]
     },
     {
+      "id": "russian-a1-1-people-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-a1-1-people-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a1-1-people-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «¿Quién es?»",
+          "target": "¿Quién es?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Кто это?",
+          "accepted_answers": [
+            "Кто это?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Кто это?».",
+          "audio": "Кто это?",
+          "slow_audio": "Кто это?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-people-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Сколько вам лет?",
+          "accepted_answers": [
+            "Сколько вам лет?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Сколько вам лет?»: ¿Cuántos años tienes?",
+          "audio": "Сколько вам лет?",
+          "slow_audio": "Сколько вам лет?",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-people-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Quién es?»",
+          "target": "¿Quién es?",
+          "options": [
+            "это?",
+            "Кто"
+          ],
+          "joiner": " ",
+          "answer": "Кто это?",
+          "accepted_answers": [
+            "Кто это?"
+          ],
+          "explanation": "La forma completa es «Кто это?».",
+          "audio": "Кто это?",
+          "slow_audio": "Кто это?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-people-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Сколько вам ___?",
+          "answer": "лет",
+          "accepted_answers": [
+            "лет"
+          ],
+          "explanation": "La forma completa es «Сколько вам лет?»: ¿Cuántos años tienes?",
+          "audio": "Сколько вам лет?",
+          "slow_audio": "Сколько вам лет?",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-people-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «mujer»",
+          "target": "mujer",
+          "answer": "женщина",
+          "accepted_answers": [
+            "женщина"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «женщина».",
+          "audio": "женщина",
+          "slow_audio": "женщина",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-people-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "target": "¿Cuántos años tienes?",
+          "answer": "Сколько вам лет?",
+          "accepted_answers": [
+            "Сколько вам лет?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Сколько вам лет?». También puedes escribirlo.",
+          "audio": "Сколько вам лет?",
+          "slow_audio": "Сколько вам лет?",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-people-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Quién es?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Кто это?",
+              "accepted_answers": [
+                "Кто это?"
+              ],
+              "audio": "Кто это?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Cuántos años tienes?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Сколько вам лет?",
+              "accepted_answers": [
+                "Сколько вам лет?"
+              ],
+              "audio": "Сколько вам лет?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-a11-people-test",
       "title": "Prueba · Familia y personas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

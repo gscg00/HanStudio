@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "portuguese-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Deves dizer-lhe como te sentes.",
+          "accepted_answers": [
+            "Deves dizer-lhe como te sentes."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Deves dizer-lhe como te sentes.».",
+          "audio": "Deves dizer-lhe como te sentes.",
+          "slow_audio": "Deves dizer-lhe como te sentes.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Desde então, confiamos mais um no outro.",
+          "accepted_answers": [
+            "Desde então, confiamos mais um no outro."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Desde então, confiamos mais um no outro.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Desde então, confiamos mais um no outro.",
+          "slow_audio": "Desde então, confiamos mais um no outro.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "dizer-lhe",
+            "sentes.",
+            "como",
+            "te",
+            "Deves"
+          ],
+          "joiner": " ",
+          "answer": "Deves dizer-lhe como te sentes.",
+          "accepted_answers": [
+            "Deves dizer-lhe como te sentes."
+          ],
+          "explanation": "La forma completa es «Deves dizer-lhe como te sentes.».",
+          "audio": "Deves dizer-lhe como te sentes.",
+          "slow_audio": "Deves dizer-lhe como te sentes.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Desde então, confiamos mais um no ___.",
+          "answer": "outro",
+          "accepted_answers": [
+            "outro"
+          ],
+          "explanation": "La forma completa es «Desde então, confiamos mais um no outro.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "Desde então, confiamos mais um no outro.",
+          "slow_audio": "Desde então, confiamos mais um no outro.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "por isso",
+          "accepted_answers": [
+            "por isso"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «por isso».",
+          "audio": "por isso",
+          "slow_audio": "por isso",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "Desde então, confiamos mais um no outro.",
+          "accepted_answers": [
+            "Desde então, confiamos mais um no outro."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Desde então, confiamos mais um no outro.». También puedes escribirlo.",
+          "audio": "Desde então, confiamos mais um no outro.",
+          "slow_audio": "Desde então, confiamos mais um no outro.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Deves dizer-lhe como te sentes.",
+              "accepted_answers": [
+                "Deves dizer-lhe como te sentes."
+              ],
+              "audio": "Deves dizer-lhe como te sentes.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Desde então, confiamos mais um no outro.",
+              "accepted_answers": [
+                "Desde então, confiamos mais um no outro."
+              ],
+              "audio": "Desde então, confiamos mais um no outro.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

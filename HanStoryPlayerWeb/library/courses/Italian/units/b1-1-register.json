@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "italian-b1-1-register-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "italian-b1-1-register-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-1-register-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Gracias por avisarme con tiempo.»",
+          "target": "Gracias por avisarme con tiempo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Grazie per avermi avvisato in anticipo.",
+          "accepted_answers": [
+            "Grazie per avermi avvisato in anticipo."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Grazie per avermi avvisato in anticipo.».",
+          "audio": "Grazie per avermi avvisato in anticipo.",
+          "slow_audio": "Grazie per avermi avvisato in anticipo.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-register-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "accepted_answers": [
+            "Mi dispiace informarla che l’appuntamento è stato cancellato."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Mi dispiace informarla che l’appuntamento è stato cancellato.»: Lamento informarle de que la cita se canceló.",
+          "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "slow_audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-register-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Gracias por avisarme con tiempo.»",
+          "target": "Gracias por avisarme con tiempo.",
+          "options": [
+            "Grazie",
+            "per",
+            "anticipo.",
+            "avvisato",
+            "avermi",
+            "in"
+          ],
+          "joiner": " ",
+          "answer": "Grazie per avermi avvisato in anticipo.",
+          "accepted_answers": [
+            "Grazie per avermi avvisato in anticipo."
+          ],
+          "explanation": "La forma completa es «Grazie per avermi avvisato in anticipo.».",
+          "audio": "Grazie per avermi avvisato in anticipo.",
+          "slow_audio": "Grazie per avermi avvisato in anticipo.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-register-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Mi dispiace informarla che l’appuntamento è stato ___.",
+          "answer": "cancellato",
+          "accepted_answers": [
+            "cancellato"
+          ],
+          "explanation": "La forma completa es «Mi dispiace informarla che l’appuntamento è stato cancellato.»: Lamento informarle de que la cita se canceló.",
+          "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "slow_audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-register-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "target": "Vamos a dividir el trabajo.",
+          "answer": "Dividiamo il lavoro.",
+          "accepted_answers": [
+            "Dividiamo il lavoro."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Dividiamo il lavoro.».",
+          "audio": "Dividiamo il lavoro.",
+          "slow_audio": "Dividiamo il lavoro.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-register-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "target": "Lamento informarle de que la cita se canceló.",
+          "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "accepted_answers": [
+            "Mi dispiace informarla che l’appuntamento è stato cancellato."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Mi dispiace informarla che l’appuntamento è stato cancellato.». También puedes escribirlo.",
+          "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "slow_audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-register-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Gracias por avisarme con tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Grazie per avermi avvisato in anticipo.",
+              "accepted_answers": [
+                "Grazie per avermi avvisato in anticipo."
+              ],
+              "audio": "Grazie per avermi avvisato in anticipo.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Lamento informarle de que la cita se canceló.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+              "accepted_answers": [
+                "Mi dispiace informarla che l’appuntamento è stato cancellato."
+              ],
+              "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «Vamos a dividir el trabajo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Dividiamo il lavoro.",
+              "accepted_answers": [
+                "Dividiamo il lavoro."
+              ],
+              "audio": "Dividiamo il lavoro.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "italian-b11-register-test",
       "title": "Prueba · Registro y cortesía",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

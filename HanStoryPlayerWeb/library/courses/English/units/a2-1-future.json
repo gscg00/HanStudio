@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-a2-1-future-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a2-1-future-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a2-1-future-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "I plan to book a room.",
+          "accepted_answers": [
+            "I plan to book a room."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «I plan to book a room.».",
+          "audio": "I plan to book a room.",
+          "slow_audio": "I plan to book a room.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-future-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "I will call you when I arrive.",
+          "accepted_answers": [
+            "I will call you when I arrive."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «I will call you when I arrive.»: Te llamaré cuando llegue.",
+          "audio": "I will call you when I arrive.",
+          "slow_audio": "I will call you when I arrive.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-future-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "options": [
+            "a",
+            "room.",
+            "plan",
+            "to",
+            "book",
+            "I"
+          ],
+          "joiner": " ",
+          "answer": "I plan to book a room.",
+          "accepted_answers": [
+            "I plan to book a room."
+          ],
+          "explanation": "La forma completa es «I plan to book a room.».",
+          "audio": "I plan to book a room.",
+          "slow_audio": "I plan to book a room.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-future-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "I will call you when I ___.",
+          "answer": "arrive",
+          "accepted_answers": [
+            "arrive"
+          ],
+          "explanation": "La forma completa es «I will call you when I arrive.»: Te llamaré cuando llegue.",
+          "audio": "I will call you when I arrive.",
+          "slow_audio": "I will call you when I arrive.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-future-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «reservar»",
+          "target": "reservar",
+          "answer": "to book",
+          "accepted_answers": [
+            "to book"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «to book».",
+          "audio": "to book",
+          "slow_audio": "to book",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-future-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "target": "Te llamaré cuando llegue.",
+          "answer": "I will call you when I arrive.",
+          "accepted_answers": [
+            "I will call you when I arrive."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «I will call you when I arrive.». También puedes escribirlo.",
+          "audio": "I will call you when I arrive.",
+          "slow_audio": "I will call you when I arrive.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-future-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Pienso reservar una habitación.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I plan to book a room.",
+              "accepted_answers": [
+                "I plan to book a room."
+              ],
+              "audio": "I plan to book a room.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Te llamaré cuando llegue.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I will call you when I arrive.",
+              "accepted_answers": [
+                "I will call you when I arrive."
+              ],
+              "audio": "I will call you when I arrive.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a21-future-test",
       "title": "Prueba · Planes y futuro",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

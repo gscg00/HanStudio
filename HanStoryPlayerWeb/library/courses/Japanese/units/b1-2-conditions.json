@@ -1779,6 +1779,226 @@
       ]
     },
     {
+      "id": "japanese-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "助けが必要な場合は、私に電話してください。",
+          "accepted_answers": [
+            "助けが必要な場合は、私に電話してください。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «助けが必要な場合は、私に電話してください。».",
+          "audio": "助けが必要な場合は、私に電話してください。",
+          "slow_audio": "助けが必要な場合は、私に電話してください。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "説明してくれていたら、賛成したでしょう。",
+          "accepted_answers": [
+            "説明してくれていたら、賛成したでしょう。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «説明してくれていたら、賛成したでしょう。»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "説明してくれていたら、賛成したでしょう。",
+          "slow_audio": "説明してくれていたら、賛成したでしょう。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "合",
+            "だ",
+            "場",
+            "要",
+            "話",
+            "は",
+            "私",
+            "い",
+            "し",
+            "が",
+            "な",
+            "て",
+            "。",
+            "さ",
+            "く",
+            "に",
+            "電",
+            "け",
+            "助",
+            "必",
+            "、"
+          ],
+          "joiner": "",
+          "answer": "助けが必要な場合は、私に電話してください。",
+          "accepted_answers": [
+            "助けが必要な場合は、私に電話してください。"
+          ],
+          "explanation": "La forma completa es «助けが必要な場合は、私に電話してください。».",
+          "audio": "助けが必要な場合は、私に電話してください。",
+          "slow_audio": "助けが必要な場合は、私に電話してください。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "説明してくれていたら、賛成したでしょ＿。",
+          "answer": "う",
+          "accepted_answers": [
+            "う"
+          ],
+          "explanation": "La forma completa es «説明してくれていたら、賛成したでしょう。»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "説明してくれていたら、賛成したでしょう。",
+          "slow_audio": "説明してくれていたら、賛成したでしょう。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "手伝ってくれたおかげで、問題を解決できました。",
+          "accepted_answers": [
+            "手伝ってくれたおかげで、問題を解決できました。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «手伝ってくれたおかげで、問題を解決できました。».",
+          "audio": "手伝ってくれたおかげで、問題を解決できました。",
+          "slow_audio": "手伝ってくれたおかげで、問題を解決できました。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "説明してくれていたら、賛成したでしょう。",
+          "accepted_answers": [
+            "説明してくれていたら、賛成したでしょう。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «説明してくれていたら、賛成したでしょう。». También puedes escribirlo.",
+          "audio": "説明してくれていたら、賛成したでしょう。",
+          "slow_audio": "説明してくれていたら、賛成したでしょう。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "助けが必要な場合は、私に電話してください。",
+              "accepted_answers": [
+                "助けが必要な場合は、私に電話してください。"
+              ],
+              "audio": "助けが必要な場合は、私に電話してください。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "説明してくれていたら、賛成したでしょう。",
+              "accepted_answers": [
+                "説明してくれていたら、賛成したでしょう。"
+              ],
+              "audio": "説明してくれていたら、賛成したでしょう。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

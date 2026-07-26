@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "german-a1-2-transport-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a1-2-transport-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-2-transport-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «¿Tengo que hacer transbordo?»",
+          "target": "¿Tengo que hacer transbordo?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Muss ich umsteigen?",
+          "accepted_answers": [
+            "Muss ich umsteigen?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Muss ich umsteigen?».",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-transport-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Der Zug hat Verspätung.",
+          "accepted_answers": [
+            "Der Zug hat Verspätung."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Der Zug hat Verspätung.»: El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-transport-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Tengo que hacer transbordo?»",
+          "target": "¿Tengo que hacer transbordo?",
+          "options": [
+            "Muss",
+            "umsteigen?",
+            "ich"
+          ],
+          "joiner": " ",
+          "answer": "Muss ich umsteigen?",
+          "accepted_answers": [
+            "Muss ich umsteigen?"
+          ],
+          "explanation": "La forma completa es «Muss ich umsteigen?».",
+          "audio": "Muss ich umsteigen?",
+          "slow_audio": "Muss ich umsteigen?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-transport-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Der Zug hat ___.",
+          "answer": "Verspätung",
+          "accepted_answers": [
+            "Verspätung"
+          ],
+          "explanation": "La forma completa es «Der Zug hat Verspätung.»: El tren lleva retraso.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-transport-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «aeropuerto»",
+          "target": "aeropuerto",
+          "answer": "Flughafen",
+          "accepted_answers": [
+            "Flughafen"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Flughafen».",
+          "audio": "Flughafen",
+          "slow_audio": "Flughafen",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-2-transport-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "target": "El tren lleva retraso.",
+          "answer": "Der Zug hat Verspätung.",
+          "accepted_answers": [
+            "Der Zug hat Verspätung."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Der Zug hat Verspätung.». También puedes escribirlo.",
+          "audio": "Der Zug hat Verspätung.",
+          "slow_audio": "Der Zug hat Verspätung.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-2-transport-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Tengo que hacer transbordo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Muss ich umsteigen?",
+              "accepted_answers": [
+                "Muss ich umsteigen?"
+              ],
+              "audio": "Muss ich umsteigen?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tren lleva retraso.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Der Zug hat Verspätung.",
+              "accepted_answers": [
+                "Der Zug hat Verspätung."
+              ],
+              "audio": "Der Zug hat Verspätung.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a12-transport-test",
       "title": "Prueba · Transporte y trayectos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

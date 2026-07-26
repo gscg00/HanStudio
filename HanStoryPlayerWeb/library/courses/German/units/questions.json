@@ -586,6 +586,207 @@
       ]
     },
     {
+      "id": "german-questions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-questions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-questions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «cuándo»",
+          "target": "cuándo",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "wann",
+          "accepted_answers": [
+            "wann"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «wann».",
+          "audio": "wann",
+          "slow_audio": "wann",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-questions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "wie",
+          "accepted_answers": [
+            "wie"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «wie»: cómo",
+          "audio": "wie",
+          "slow_audio": "wie",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-questions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «cuándo»",
+          "target": "cuándo",
+          "options": [
+            "nn",
+            "wa"
+          ],
+          "joiner": "",
+          "answer": "wann",
+          "accepted_answers": [
+            "wann"
+          ],
+          "explanation": "La forma completa es «wann».",
+          "audio": "wann",
+          "slow_audio": "wann",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-questions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "wi＿",
+          "answer": "e",
+          "accepted_answers": [
+            "e"
+          ],
+          "explanation": "La forma completa es «wie»: cómo",
+          "audio": "wie",
+          "slow_audio": "wie",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-questions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por qué»",
+          "target": "por qué",
+          "answer": "warum",
+          "accepted_answers": [
+            "warum"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «warum».",
+          "audio": "warum",
+          "slow_audio": "warum",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-questions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «cómo»",
+          "target": "cómo",
+          "answer": "wie",
+          "accepted_answers": [
+            "wie"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «wie». También puedes escribirlo.",
+          "audio": "wie",
+          "slow_audio": "wie",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-questions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «cuándo»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "wann",
+              "accepted_answers": [
+                "wann"
+              ],
+              "audio": "wann",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «cómo»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "wie",
+              "accepted_answers": [
+                "wie"
+              ],
+              "audio": "wie",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-questions-test-03",
       "title": "Prueba · Preguntas y estructura",
       "description": "Prueba de dominio de la unidad.",

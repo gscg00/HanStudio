@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "portuguese-a2-2-experiences-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-a2-2-experiences-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Uma vez perdi o comboio.",
+          "accepted_answers": [
+            "Uma vez perdi o comboio."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Uma vez perdi o comboio.».",
+          "audio": "Uma vez perdi o comboio.",
+          "slow_audio": "Uma vez perdi o comboio.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Foi a primeira vez.",
+          "accepted_answers": [
+            "Foi a primeira vez."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Foi a primeira vez.»: Fue la primera vez.",
+          "audio": "Foi a primeira vez.",
+          "slow_audio": "Foi a primeira vez.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Una vez perdí el tren.»",
+          "target": "Una vez perdí el tren.",
+          "options": [
+            "vez",
+            "Uma",
+            "perdi",
+            "o",
+            "comboio."
+          ],
+          "joiner": " ",
+          "answer": "Uma vez perdi o comboio.",
+          "accepted_answers": [
+            "Uma vez perdi o comboio."
+          ],
+          "explanation": "La forma completa es «Uma vez perdi o comboio.».",
+          "audio": "Uma vez perdi o comboio.",
+          "slow_audio": "Uma vez perdi o comboio.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Foi a primeira ___.",
+          "answer": "vez",
+          "accepted_answers": [
+            "vez"
+          ],
+          "explanation": "La forma completa es «Foi a primeira vez.»: Fue la primera vez.",
+          "audio": "Foi a primeira vez.",
+          "slow_audio": "Foi a primeira vez.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "target": "Fue una experiencia interesante.",
+          "answer": "Foi uma experiência interessante.",
+          "accepted_answers": [
+            "Foi uma experiência interessante."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Foi uma experiência interessante.».",
+          "audio": "Foi uma experiência interessante.",
+          "slow_audio": "Foi uma experiência interessante.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "target": "Fue la primera vez.",
+          "answer": "Foi a primeira vez.",
+          "accepted_answers": [
+            "Foi a primeira vez."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Foi a primeira vez.». También puedes escribirlo.",
+          "audio": "Foi a primeira vez.",
+          "slow_audio": "Foi a primeira vez.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-2-experiences-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Una vez perdí el tren.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Uma vez perdi o comboio.",
+              "accepted_answers": [
+                "Uma vez perdi o comboio."
+              ],
+              "audio": "Uma vez perdi o comboio.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Fue la primera vez.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Foi a primeira vez.",
+              "accepted_answers": [
+                "Foi a primeira vez."
+              ],
+              "audio": "Foi a primeira vez.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-a22-experiences-test",
       "title": "Prueba · Viajes y experiencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

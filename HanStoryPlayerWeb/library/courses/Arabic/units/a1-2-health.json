@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "arabic-a1-2-health-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a1-2-health-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a1-2-health-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Tengo alergia a la penicilina.»",
+          "target": "Tengo alergia a la penicilina.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "لدي حساسية من البنسلين.",
+          "accepted_answers": [
+            "لدي حساسية من البنسلين."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «لدي حساسية من البنسلين.».",
+          "audio": "لدي حساسية من البنسلين.",
+          "slow_audio": "لدي حساسية من البنسلين.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-health-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "يؤخذ هذا مرتين في اليوم.",
+          "accepted_answers": [
+            "يؤخذ هذا مرتين في اليوم."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «يؤخذ هذا مرتين في اليوم.»: Tome esto dos veces al día.",
+          "audio": "يؤخذ هذا مرتين في اليوم.",
+          "slow_audio": "يؤخذ هذا مرتين في اليوم.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-health-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Tengo alergia a la penicilina.»",
+          "target": "Tengo alergia a la penicilina.",
+          "options": [
+            "حساسية",
+            "من",
+            "البنسلين.",
+            "لدي"
+          ],
+          "joiner": " ",
+          "answer": "لدي حساسية من البنسلين.",
+          "accepted_answers": [
+            "لدي حساسية من البنسلين."
+          ],
+          "explanation": "La forma completa es «لدي حساسية من البنسلين.».",
+          "audio": "لدي حساسية من البنسلين.",
+          "slow_audio": "لدي حساسية من البنسلين.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-health-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "يؤخذ هذا مرتين في ___.",
+          "answer": "اليوم",
+          "accepted_answers": [
+            "اليوم"
+          ],
+          "explanation": "La forma completa es «يؤخذ هذا مرتين في اليوم.»: Tome esto dos veces al día.",
+          "audio": "يؤخذ هذا مرتين في اليوم.",
+          "slow_audio": "يؤخذ هذا مرتين في اليوم.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-health-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «médico»",
+          "target": "médico",
+          "answer": "طبيب",
+          "accepted_answers": [
+            "طبيب"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «طبيب».",
+          "audio": "طبيب",
+          "slow_audio": "طبيب",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-health-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "target": "Tome esto dos veces al día.",
+          "answer": "يؤخذ هذا مرتين في اليوم.",
+          "accepted_answers": [
+            "يؤخذ هذا مرتين في اليوم."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «يؤخذ هذا مرتين في اليوم.». También puedes escribirlo.",
+          "audio": "يؤخذ هذا مرتين في اليوم.",
+          "slow_audio": "يؤخذ هذا مرتين في اليوم.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-health-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Tengo alergia a la penicilina.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "لدي حساسية من البنسلين.",
+              "accepted_answers": [
+                "لدي حساسية من البنسلين."
+              ],
+              "audio": "لدي حساسية من البنسلين.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Tome esto dos veces al día.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "يؤخذ هذا مرتين في اليوم.",
+              "accepted_answers": [
+                "يؤخذ هذا مرتين في اليوم."
+              ],
+              "audio": "يؤخذ هذا مرتين في اليوم.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a12-health-test",
       "title": "Prueba · Cuerpo y necesidades",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

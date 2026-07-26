@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "russian-a2-1-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "russian-a2-1-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a2-1-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Кроме того, мне нужно купить продукты.",
+          "accepted_answers": [
+            "Кроме того, мне нужно купить продукты."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Кроме того, мне нужно купить продукты.».",
+          "audio": "Кроме того, мне нужно купить продукты.",
+          "slow_audio": "Кроме того, мне нужно купить продукты.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-1-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Однако сегодня у меня нет времени.",
+          "accepted_answers": [
+            "Однако сегодня у меня нет времени."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Однако сегодня у меня нет времени.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "Однако сегодня у меня нет времени.",
+          "slow_audio": "Однако сегодня у меня нет времени.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-1-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "options": [
+            "продукты.",
+            "нужно",
+            "купить",
+            "Кроме",
+            "мне",
+            "того,"
+          ],
+          "joiner": " ",
+          "answer": "Кроме того, мне нужно купить продукты.",
+          "accepted_answers": [
+            "Кроме того, мне нужно купить продукты."
+          ],
+          "explanation": "La forma completa es «Кроме того, мне нужно купить продукты.».",
+          "audio": "Кроме того, мне нужно купить продукты.",
+          "slow_audio": "Кроме того, мне нужно купить продукты.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-1-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Однако сегодня у меня нет ___.",
+          "answer": "времени",
+          "accepted_answers": [
+            "времени"
+          ],
+          "explanation": "La forma completa es «Однако сегодня у меня нет времени.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "Однако сегодня у меня нет времени.",
+          "slow_audio": "Однако сегодня у меня нет времени.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-1-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "поэтому",
+          "accepted_answers": [
+            "поэтому"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «поэтому».",
+          "audio": "поэтому",
+          "slow_audio": "поэтому",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-1-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "target": "Sin embargo, hoy no tengo tiempo.",
+          "answer": "Однако сегодня у меня нет времени.",
+          "accepted_answers": [
+            "Однако сегодня у меня нет времени."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Однако сегодня у меня нет времени.». También puedes escribirlo.",
+          "audio": "Однако сегодня у меня нет времени.",
+          "slow_audio": "Однако сегодня у меня нет времени.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-1-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Además, necesito comprar comida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Кроме того, мне нужно купить продукты.",
+              "accepted_answers": [
+                "Кроме того, мне нужно купить продукты."
+              ],
+              "audio": "Кроме того, мне нужно купить продукты.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Sin embargo, hoy no tengo tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Однако сегодня у меня нет времени.",
+              "accepted_answers": [
+                "Однако сегодня у меня нет времени."
+              ],
+              "audio": "Однако сегодня у меня нет времени.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «por eso»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "поэтому",
+              "accepted_answers": [
+                "поэтому"
+              ],
+              "audio": "поэтому",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "russian-a21-conversation-test",
       "title": "Prueba · Conversaciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

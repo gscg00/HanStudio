@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "arabic-a2-1-comparison-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a2-1-comparison-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "هذا الخيار أفضل لي.",
+          "accepted_answers": [
+            "هذا الخيار أفضل لي."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «هذا الخيار أفضل لي.».",
+          "audio": "هذا الخيار أفضل لي.",
+          "slow_audio": "هذا الخيار أفضل لي.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "الطقس اليوم أسوأ من الأمس.",
+          "accepted_answers": [
+            "الطقس اليوم أسوأ من الأمس."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «الطقس اليوم أسوأ من الأمس.»: Hoy hace peor tiempo que ayer.",
+          "audio": "الطقس اليوم أسوأ من الأمس.",
+          "slow_audio": "الطقس اليوم أسوأ من الأمس.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "options": [
+            "هذا",
+            "لي.",
+            "الخيار",
+            "أفضل"
+          ],
+          "joiner": " ",
+          "answer": "هذا الخيار أفضل لي.",
+          "accepted_answers": [
+            "هذا الخيار أفضل لي."
+          ],
+          "explanation": "La forma completa es «هذا الخيار أفضل لي.».",
+          "audio": "هذا الخيار أفضل لي.",
+          "slow_audio": "هذا الخيار أفضل لي.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "الطقس اليوم أسوأ من ___.",
+          "answer": "الأمس",
+          "accepted_answers": [
+            "الأمس"
+          ],
+          "explanation": "La forma completa es «الطقس اليوم أسوأ من الأمس.»: Hoy hace peor tiempo que ayer.",
+          "audio": "الطقس اليوم أسوأ من الأمس.",
+          "slow_audio": "الطقس اليوم أسوأ من الأمس.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "مرتفع",
+          "accepted_answers": [
+            "مرتفع"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «مرتفع».",
+          "audio": "مرتفع",
+          "slow_audio": "مرتفع",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "target": "Hoy hace peor tiempo que ayer.",
+          "answer": "الطقس اليوم أسوأ من الأمس.",
+          "accepted_answers": [
+            "الطقس اليوم أسوأ من الأمس."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «الطقس اليوم أسوأ من الأمس.». También puedes escribirlo.",
+          "audio": "الطقس اليوم أسوأ من الأمس.",
+          "slow_audio": "الطقس اليوم أسوأ من الأمس.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-comparison-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Esta opción es mejor para mí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "هذا الخيار أفضل لي.",
+              "accepted_answers": [
+                "هذا الخيار أفضل لي."
+              ],
+              "audio": "هذا الخيار أفضل لي.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Hoy hace peor tiempo que ayer.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "الطقس اليوم أسوأ من الأمس.",
+              "accepted_answers": [
+                "الطقس اليوم أسوأ من الأمس."
+              ],
+              "audio": "الطقس اليوم أسوأ من الأمس.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a21-comparison-test",
       "title": "Prueba · Describir y comparar",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "english-a2-2-problemSolving-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "english-a2-2-problemSolving-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "That will not solve the problem.",
+          "accepted_answers": [
+            "That will not solve the problem."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «That will not solve the problem.».",
+          "audio": "That will not solve the problem.",
+          "slow_audio": "That will not solve the problem.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "We need more information.",
+          "accepted_answers": [
+            "We need more information."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «We need more information.»: Necesitamos más información.",
+          "audio": "We need more information.",
+          "slow_audio": "We need more information.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "options": [
+            "That",
+            "the",
+            "will",
+            "not",
+            "problem.",
+            "solve"
+          ],
+          "joiner": " ",
+          "answer": "That will not solve the problem.",
+          "accepted_answers": [
+            "That will not solve the problem."
+          ],
+          "explanation": "La forma completa es «That will not solve the problem.».",
+          "audio": "That will not solve the problem.",
+          "slow_audio": "That will not solve the problem.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "We need more ___.",
+          "answer": "information",
+          "accepted_answers": [
+            "information"
+          ],
+          "explanation": "La forma completa es «We need more information.»: Necesitamos más información.",
+          "audio": "We need more information.",
+          "slow_audio": "We need more information.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "target": "¿Cuándo estará listo?",
+          "answer": "When will it be ready?",
+          "accepted_answers": [
+            "When will it be ready?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «When will it be ready?».",
+          "audio": "When will it be ready?",
+          "slow_audio": "When will it be ready?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "target": "Necesitamos más información.",
+          "answer": "We need more information.",
+          "accepted_answers": [
+            "We need more information."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «We need more information.». También puedes escribirlo.",
+          "audio": "We need more information.",
+          "slow_audio": "We need more information.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-problemSolving-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Eso no resolverá el problema.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "That will not solve the problem.",
+              "accepted_answers": [
+                "That will not solve the problem."
+              ],
+              "audio": "That will not solve the problem.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesitamos más información.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "We need more information.",
+              "accepted_answers": [
+                "We need more information."
+              ],
+              "audio": "We need more information.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuándo estará listo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "When will it be ready?",
+              "accepted_answers": [
+                "When will it be ready?"
+              ],
+              "audio": "When will it be ready?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "english-a22-problemSolving-test",
       "title": "Prueba · Resolver imprevistos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

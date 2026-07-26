@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-b1-1-media-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-b1-1-media-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-1-media-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «El desenlace me sorprendió mucho.»",
+          "target": "El desenlace me sorprendió mucho.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "The ending surprised me a lot.",
+          "accepted_answers": [
+            "The ending surprised me a lot."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «The ending surprised me a lot.».",
+          "audio": "The ending surprised me a lot.",
+          "slow_audio": "The ending surprised me a lot.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-media-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "The director shows two points of view.",
+          "accepted_answers": [
+            "The director shows two points of view."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «The director shows two points of view.»: La directora muestra dos puntos de vista.",
+          "audio": "The director shows two points of view.",
+          "slow_audio": "The director shows two points of view.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-media-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «El desenlace me sorprendió mucho.»",
+          "target": "El desenlace me sorprendió mucho.",
+          "options": [
+            "The",
+            "lot.",
+            "a",
+            "me",
+            "surprised",
+            "ending"
+          ],
+          "joiner": " ",
+          "answer": "The ending surprised me a lot.",
+          "accepted_answers": [
+            "The ending surprised me a lot."
+          ],
+          "explanation": "La forma completa es «The ending surprised me a lot.».",
+          "audio": "The ending surprised me a lot.",
+          "slow_audio": "The ending surprised me a lot.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-media-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "The director shows two points of ___.",
+          "answer": "view",
+          "accepted_answers": [
+            "view"
+          ],
+          "explanation": "La forma completa es «The director shows two points of view.»: La directora muestra dos puntos de vista.",
+          "audio": "The director shows two points of view.",
+          "slow_audio": "The director shows two points of view.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-media-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "target": "Me sorprendió esta costumbre.",
+          "answer": "This custom surprised me.",
+          "accepted_answers": [
+            "This custom surprised me."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «This custom surprised me.».",
+          "audio": "This custom surprised me.",
+          "slow_audio": "This custom surprised me.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-media-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "target": "La directora muestra dos puntos de vista.",
+          "answer": "The director shows two points of view.",
+          "accepted_answers": [
+            "The director shows two points of view."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «The director shows two points of view.». También puedes escribirlo.",
+          "audio": "The director shows two points of view.",
+          "slow_audio": "The director shows two points of view.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-media-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «El desenlace me sorprendió mucho.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The ending surprised me a lot.",
+              "accepted_answers": [
+                "The ending surprised me a lot."
+              ],
+              "audio": "The ending surprised me a lot.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La directora muestra dos puntos de vista.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The director shows two points of view.",
+              "accepted_answers": [
+                "The director shows two points of view."
+              ],
+              "audio": "The director shows two points of view.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-b11-media-test",
       "title": "Prueba · Historias, cine y medios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

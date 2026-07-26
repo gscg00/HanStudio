@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "japanese-a1-1-people-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-a1-1-people-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a1-1-people-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «¿Quién es?»",
+          "target": "¿Quién es?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "だれですか。",
+          "accepted_answers": [
+            "だれですか。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «だれですか。».",
+          "audio": "だれですか。",
+          "slow_audio": "だれですか。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-people-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "何歳ですか。",
+          "accepted_answers": [
+            "何歳ですか。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «何歳ですか。»: ¿Cuántos años tienes?",
+          "audio": "何歳ですか。",
+          "slow_audio": "何歳ですか。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-people-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Quién es?»",
+          "target": "¿Quién es?",
+          "options": [
+            "。",
+            "れ",
+            "だ",
+            "で",
+            "す",
+            "か"
+          ],
+          "joiner": "",
+          "answer": "だれですか。",
+          "accepted_answers": [
+            "だれですか。"
+          ],
+          "explanation": "La forma completa es «だれですか。».",
+          "audio": "だれですか。",
+          "slow_audio": "だれですか。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-people-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "何歳です＿。",
+          "answer": "か",
+          "accepted_answers": [
+            "か"
+          ],
+          "explanation": "La forma completa es «何歳ですか。»: ¿Cuántos años tienes?",
+          "audio": "何歳ですか。",
+          "slow_audio": "何歳ですか。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-people-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «mujer»",
+          "target": "mujer",
+          "answer": "女の人",
+          "accepted_answers": [
+            "女の人"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «女の人».",
+          "audio": "女の人",
+          "slow_audio": "女の人",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-people-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "target": "¿Cuántos años tienes?",
+          "answer": "何歳ですか。",
+          "accepted_answers": [
+            "何歳ですか。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «何歳ですか。». También puedes escribirlo.",
+          "audio": "何歳ですか。",
+          "slow_audio": "何歳ですか。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-people-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Quién es?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "だれですか。",
+              "accepted_answers": [
+                "だれですか。"
+              ],
+              "audio": "だれですか。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Cuántos años tienes?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "何歳ですか。",
+              "accepted_answers": [
+                "何歳ですか。"
+              ],
+              "audio": "何歳ですか。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-a11-people-test",
       "title": "Prueba · Familia y personas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

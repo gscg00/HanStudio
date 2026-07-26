@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "french-a2-2-problemSolving-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "french-a2-2-problemSolving-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Ça ne résoudra pas le problème.",
+          "accepted_answers": [
+            "Ça ne résoudra pas le problème."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Ça ne résoudra pas le problème.».",
+          "audio": "Ça ne résoudra pas le problème.",
+          "slow_audio": "Ça ne résoudra pas le problème.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Il nous faut plus d’informations.",
+          "accepted_answers": [
+            "Il nous faut plus d’informations."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Il nous faut plus d’informations.»: Necesitamos más información.",
+          "audio": "Il nous faut plus d’informations.",
+          "slow_audio": "Il nous faut plus d’informations.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "options": [
+            "pas",
+            "ne",
+            "Ça",
+            "le",
+            "résoudra",
+            "problème."
+          ],
+          "joiner": " ",
+          "answer": "Ça ne résoudra pas le problème.",
+          "accepted_answers": [
+            "Ça ne résoudra pas le problème."
+          ],
+          "explanation": "La forma completa es «Ça ne résoudra pas le problème.».",
+          "audio": "Ça ne résoudra pas le problème.",
+          "slow_audio": "Ça ne résoudra pas le problème.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Il nous faut plus ___.",
+          "answer": "d’informations",
+          "accepted_answers": [
+            "d’informations"
+          ],
+          "explanation": "La forma completa es «Il nous faut plus d’informations.»: Necesitamos más información.",
+          "audio": "Il nous faut plus d’informations.",
+          "slow_audio": "Il nous faut plus d’informations.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "target": "¿Cuándo estará listo?",
+          "answer": "Quand est-ce que ce sera prêt ?",
+          "accepted_answers": [
+            "Quand est-ce que ce sera prêt ?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Quand est-ce que ce sera prêt ?».",
+          "audio": "Quand est-ce que ce sera prêt ?",
+          "slow_audio": "Quand est-ce que ce sera prêt ?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "target": "Necesitamos más información.",
+          "answer": "Il nous faut plus d’informations.",
+          "accepted_answers": [
+            "Il nous faut plus d’informations."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Il nous faut plus d’informations.». También puedes escribirlo.",
+          "audio": "Il nous faut plus d’informations.",
+          "slow_audio": "Il nous faut plus d’informations.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a2-2-problemSolving-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Eso no resolverá el problema.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Ça ne résoudra pas le problème.",
+              "accepted_answers": [
+                "Ça ne résoudra pas le problème."
+              ],
+              "audio": "Ça ne résoudra pas le problème.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesitamos más información.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Il nous faut plus d’informations.",
+              "accepted_answers": [
+                "Il nous faut plus d’informations."
+              ],
+              "audio": "Il nous faut plus d’informations.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuándo estará listo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Quand est-ce que ce sera prêt ?",
+              "accepted_answers": [
+                "Quand est-ce que ce sera prêt ?"
+              ],
+              "audio": "Quand est-ce que ce sera prêt ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "french-a22-problemSolving-test",
       "title": "Prueba · Resolver imprevistos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

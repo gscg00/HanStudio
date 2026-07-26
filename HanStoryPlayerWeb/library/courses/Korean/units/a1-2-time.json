@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "korean-a1-2-time-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-a1-2-time-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a1-2-time-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Llego a las ocho.»",
+          "target": "Llego a las ocho.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "여덟 시에 도착해요.",
+          "accepted_answers": [
+            "여덟 시에 도착해요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «여덟 시에 도착해요.».",
+          "audio": "여덟 시에 도착해요.",
+          "slow_audio": "여덟 시에 도착해요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-2-time-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "약속은 다음 주예요.",
+          "accepted_answers": [
+            "약속은 다음 주예요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «약속은 다음 주예요.»: La cita es la próxima semana.",
+          "audio": "약속은 다음 주예요.",
+          "slow_audio": "약속은 다음 주예요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-2-time-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Llego a las ocho.»",
+          "target": "Llego a las ocho.",
+          "options": [
+            "시에",
+            "도착해요.",
+            "여덟"
+          ],
+          "joiner": " ",
+          "answer": "여덟 시에 도착해요.",
+          "accepted_answers": [
+            "여덟 시에 도착해요."
+          ],
+          "explanation": "La forma completa es «여덟 시에 도착해요.».",
+          "audio": "여덟 시에 도착해요.",
+          "slow_audio": "여덟 시에 도착해요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-2-time-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "약속은 다음 ___.",
+          "answer": "주예요",
+          "accepted_answers": [
+            "주예요"
+          ],
+          "explanation": "La forma completa es «약속은 다음 주예요.»: La cita es la próxima semana.",
+          "audio": "약속은 다음 주예요.",
+          "slow_audio": "약속은 다음 주예요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-2-time-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «temprano»",
+          "target": "temprano",
+          "answer": "일찍",
+          "accepted_answers": [
+            "일찍"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «일찍».",
+          "audio": "일찍",
+          "slow_audio": "일찍",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-2-time-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "target": "La cita es la próxima semana.",
+          "answer": "약속은 다음 주예요.",
+          "accepted_answers": [
+            "약속은 다음 주예요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «약속은 다음 주예요.». También puedes escribirlo.",
+          "audio": "약속은 다음 주예요.",
+          "slow_audio": "약속은 다음 주예요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-2-time-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Llego a las ocho.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "여덟 시에 도착해요.",
+              "accepted_answers": [
+                "여덟 시에 도착해요."
+              ],
+              "audio": "여덟 시에 도착해요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La cita es la próxima semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "약속은 다음 주예요.",
+              "accepted_answers": [
+                "약속은 다음 주예요."
+              ],
+              "audio": "약속은 다음 주예요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-a12-time-test",
       "title": "Prueba · Fechas, horas y citas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

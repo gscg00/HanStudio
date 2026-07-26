@@ -1779,6 +1779,214 @@
       ]
     },
     {
+      "id": "chinese-b1-1-cause-effect-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-b1-1-cause-effect-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Como resultado, el proyecto se retrasó.»",
+          "target": "Como resultado, el proyecto se retrasó.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "结果，项目推迟了。",
+          "accepted_answers": [
+            "结果，项目推迟了。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «结果，项目推迟了。».",
+          "audio": "结果，项目推迟了。",
+          "slow_audio": "结果，项目推迟了。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "虽然她很累，但是她完成了工作。",
+          "accepted_answers": [
+            "虽然她很累，但是她完成了工作。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «虽然她很累，但是她完成了工作。»: Aunque estaba cansada, terminó el trabajo.",
+          "audio": "虽然她很累，但是她完成了工作。",
+          "slow_audio": "虽然她很累，但是她完成了工作。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Como resultado, el proyecto se retrasó.»",
+          "target": "Como resultado, el proyecto se retrasó.",
+          "options": [
+            "了",
+            "果",
+            "项",
+            "推",
+            "迟",
+            "，",
+            "目",
+            "。",
+            "结"
+          ],
+          "joiner": "",
+          "answer": "结果，项目推迟了。",
+          "accepted_answers": [
+            "结果，项目推迟了。"
+          ],
+          "explanation": "La forma completa es «结果，项目推迟了。».",
+          "audio": "结果，项目推迟了。",
+          "slow_audio": "结果，项目推迟了。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "虽然她很累，但是她完成了工＿。",
+          "answer": "作",
+          "accepted_answers": [
+            "作"
+          ],
+          "explanation": "La forma completa es «虽然她很累，但是她完成了工作。»: Aunque estaba cansada, terminó el trabajo.",
+          "audio": "虽然她很累，但是她完成了工作。",
+          "slow_audio": "虽然她很累，但是她完成了工作。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "target": "¿Tú qué opinas?",
+          "answer": "你觉得怎么样？",
+          "accepted_answers": [
+            "你觉得怎么样？"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «你觉得怎么样？».",
+          "audio": "你觉得怎么样？",
+          "slow_audio": "你觉得怎么样？",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "target": "Aunque estaba cansada, terminó el trabajo.",
+          "answer": "虽然她很累，但是她完成了工作。",
+          "accepted_answers": [
+            "虽然她很累，但是她完成了工作。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «虽然她很累，但是她完成了工作。». También puedes escribirlo.",
+          "audio": "虽然她很累，但是她完成了工作。",
+          "slow_audio": "虽然她很累，但是她完成了工作。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-cause-effect-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Como resultado, el proyecto se retrasó.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "结果，项目推迟了。",
+              "accepted_answers": [
+                "结果，项目推迟了。"
+              ],
+              "audio": "结果，项目推迟了。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Aunque estaba cansada, terminó el trabajo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "虽然她很累，但是她完成了工作。",
+              "accepted_answers": [
+                "虽然她很累，但是她完成了工作。"
+              ],
+              "audio": "虽然她很累，但是她完成了工作。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-b11-cause-effect-test",
       "title": "Prueba · Causas y consecuencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

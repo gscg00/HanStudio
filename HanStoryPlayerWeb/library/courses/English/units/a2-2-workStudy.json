@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "english-a2-2-workStudy-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a2-2-workStudy-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a2-2-workStudy-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Esta lección me resulta difícil.»",
+          "target": "Esta lección me resulta difícil.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "I find this lesson difficult.",
+          "accepted_answers": [
+            "I find this lesson difficult."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «I find this lesson difficult.».",
+          "audio": "I find this lesson difficult.",
+          "slow_audio": "I find this lesson difficult.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-workStudy-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "I want to improve my writing.",
+          "accepted_answers": [
+            "I want to improve my writing."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «I want to improve my writing.»: Quiero mejorar mi escritura.",
+          "audio": "I want to improve my writing.",
+          "slow_audio": "I want to improve my writing.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-workStudy-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Esta lección me resulta difícil.»",
+          "target": "Esta lección me resulta difícil.",
+          "options": [
+            "lesson",
+            "difficult.",
+            "this",
+            "I",
+            "find"
+          ],
+          "joiner": " ",
+          "answer": "I find this lesson difficult.",
+          "accepted_answers": [
+            "I find this lesson difficult."
+          ],
+          "explanation": "La forma completa es «I find this lesson difficult.».",
+          "audio": "I find this lesson difficult.",
+          "slow_audio": "I find this lesson difficult.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-workStudy-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "I want to improve my ___.",
+          "answer": "writing",
+          "accepted_answers": [
+            "writing"
+          ],
+          "explanation": "La forma completa es «I want to improve my writing.»: Quiero mejorar mi escritura.",
+          "audio": "I want to improve my writing.",
+          "slow_audio": "I want to improve my writing.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-workStudy-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «necesario»",
+          "target": "necesario",
+          "answer": "necessary",
+          "accepted_answers": [
+            "necessary"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «necessary».",
+          "audio": "necessary",
+          "slow_audio": "necessary",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-workStudy-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "target": "Quiero mejorar mi escritura.",
+          "answer": "I want to improve my writing.",
+          "accepted_answers": [
+            "I want to improve my writing."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «I want to improve my writing.». También puedes escribirlo.",
+          "audio": "I want to improve my writing.",
+          "slow_audio": "I want to improve my writing.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-workStudy-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Esta lección me resulta difícil.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I find this lesson difficult.",
+              "accepted_answers": [
+                "I find this lesson difficult."
+              ],
+              "audio": "I find this lesson difficult.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Quiero mejorar mi escritura.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I want to improve my writing.",
+              "accepted_answers": [
+                "I want to improve my writing."
+              ],
+              "audio": "I want to improve my writing.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a22-workStudy-test",
       "title": "Prueba · Trabajo y estudio",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

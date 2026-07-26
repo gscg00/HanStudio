@@ -4176,6 +4176,208 @@
       ]
     },
     {
+      "id": "italian-time-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-time-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-time-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «escuela»",
+          "target": "escuela",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "scuola",
+          "accepted_answers": [
+            "scuola"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «scuola».",
+          "audio": "scuola",
+          "slow_audio": "scuola",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-time-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "stazione",
+          "accepted_answers": [
+            "stazione"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «stazione»: estación",
+          "audio": "stazione",
+          "slow_audio": "stazione",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-time-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «escuela»",
+          "target": "escuela",
+          "options": [
+            "scu",
+            "la",
+            "o"
+          ],
+          "joiner": "",
+          "answer": "scuola",
+          "accepted_answers": [
+            "scuola"
+          ],
+          "explanation": "La forma completa es «scuola».",
+          "audio": "scuola",
+          "slow_audio": "scuola",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-time-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "stazion＿",
+          "answer": "e",
+          "accepted_answers": [
+            "e"
+          ],
+          "explanation": "La forma completa es «stazione»: estación",
+          "audio": "stazione",
+          "slow_audio": "stazione",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-time-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «qué»",
+          "target": "qué",
+          "answer": "che cosa",
+          "accepted_answers": [
+            "che cosa"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «che cosa».",
+          "audio": "che cosa",
+          "slow_audio": "che cosa",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-time-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «estación»",
+          "target": "estación",
+          "answer": "stazione",
+          "accepted_answers": [
+            "stazione"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «stazione». También puedes escribirlo.",
+          "audio": "stazione",
+          "slow_audio": "stazione",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-time-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «escuela»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "scuola",
+              "accepted_answers": [
+                "scuola"
+              ],
+              "audio": "scuola",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «estación»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "stazione",
+              "accepted_answers": [
+                "stazione"
+              ],
+              "audio": "stazione",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-time-test-16",
       "title": "Prueba · Números, tiempo y vida diaria",
       "description": "Prueba de dominio de la unidad.",

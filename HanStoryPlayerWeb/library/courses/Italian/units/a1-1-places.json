@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "italian-a1-1-places-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "italian-a1-1-places-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-a1-1-places-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "La stazione è a sinistra.",
+          "accepted_answers": [
+            "La stazione è a sinistra."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «La stazione è a sinistra.».",
+          "audio": "La stazione è a sinistra.",
+          "slow_audio": "La stazione è a sinistra.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-places-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Vado a scuola.",
+          "accepted_answers": [
+            "Vado a scuola."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Vado a scuola.»: Voy a la escuela.",
+          "audio": "Vado a scuola.",
+          "slow_audio": "Vado a scuola.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-places-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "options": [
+            "a",
+            "La",
+            "sinistra.",
+            "è",
+            "stazione"
+          ],
+          "joiner": " ",
+          "answer": "La stazione è a sinistra.",
+          "accepted_answers": [
+            "La stazione è a sinistra."
+          ],
+          "explanation": "La forma completa es «La stazione è a sinistra.».",
+          "audio": "La stazione è a sinistra.",
+          "slow_audio": "La stazione è a sinistra.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-places-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Vado a ___.",
+          "answer": "scuola",
+          "accepted_answers": [
+            "scuola"
+          ],
+          "explanation": "La forma completa es «Vado a scuola.»: Voy a la escuela.",
+          "audio": "Vado a scuola.",
+          "slow_audio": "Vado a scuola.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-places-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «izquierda»",
+          "target": "izquierda",
+          "answer": "sinistra",
+          "accepted_answers": [
+            "sinistra"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «sinistra».",
+          "audio": "sinistra",
+          "slow_audio": "sinistra",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-a1-1-places-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "target": "Voy a la escuela.",
+          "answer": "Vado a scuola.",
+          "accepted_answers": [
+            "Vado a scuola."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Vado a scuola.». También puedes escribirlo.",
+          "audio": "Vado a scuola.",
+          "slow_audio": "Vado a scuola.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-a1-1-places-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La estación está a la izquierda.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "La stazione è a sinistra.",
+              "accepted_answers": [
+                "La stazione è a sinistra."
+              ],
+              "audio": "La stazione è a sinistra.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Voy a la escuela.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Vado a scuola.",
+              "accepted_answers": [
+                "Vado a scuola."
+              ],
+              "audio": "Vado a scuola.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «izquierda»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "sinistra",
+              "accepted_answers": [
+                "sinistra"
+              ],
+              "audio": "sinistra",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "italian-a11-places-test",
       "title": "Prueba · Lugares y direcciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

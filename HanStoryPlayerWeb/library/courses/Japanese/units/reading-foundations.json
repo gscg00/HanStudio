@@ -887,6 +887,113 @@
       ]
     },
     {
+      "id": "japanese-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «か→が · は→ぱ»",
+          "target": "か→が · は→ぱ",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "か→が · は→ぱ",
+          "accepted_answers": [
+            "か→が · は→ぱ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «か→が · は→ぱ».",
+          "audio": "が",
+          "slow_audio": "が",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "きゃ · っ",
+          "accepted_answers": [
+            "きゃ · っ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «きゃ · っ»: No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "か→が · は→ぱ",
+          "options": [
+            "·",
+            "か→が",
+            "は→ぱ"
+          ],
+          "joiner": " ",
+          "answer": "か→が · は→ぱ",
+          "accepted_answers": [
+            "か→が · は→ぱ"
+          ],
+          "explanation": "La forma completa es «か→が · は→ぱ».",
+          "audio": "が",
+          "slow_audio": "が",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "きゃ · ___",
+          "answer": "っ",
+          "accepted_answers": [
+            "っ"
+          ],
+          "explanation": "La forma completa es «きゃ · っ»: No leas el kana pequeño como una mora completa independiente.",
+          "audio": "きゃ",
+          "slow_audio": "きゃ",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "japanese-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

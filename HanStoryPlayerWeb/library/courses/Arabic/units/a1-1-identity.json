@@ -1777,6 +1777,207 @@
       ]
     },
     {
+      "id": "arabic-a1-1-identity-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a1-1-identity-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a1-1-identity-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «¿Cómo te llamas?»",
+          "target": "¿Cómo te llamas?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "ما اسمك؟",
+          "accepted_answers": [
+            "ما اسمك؟"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ما اسمك؟».",
+          "audio": "ما اسمك؟",
+          "slow_audio": "ما اسمك؟",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-1-identity-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "أنا من المكسيك.",
+          "accepted_answers": [
+            "أنا من المكسيك."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «أنا من المكسيك.»: Soy de México.",
+          "audio": "أنا من المكسيك.",
+          "slow_audio": "أنا من المكسيك.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-1-identity-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Cómo te llamas?»",
+          "target": "¿Cómo te llamas?",
+          "options": [
+            "اسمك؟",
+            "ما"
+          ],
+          "joiner": " ",
+          "answer": "ما اسمك؟",
+          "accepted_answers": [
+            "ما اسمك؟"
+          ],
+          "explanation": "La forma completa es «ما اسمك؟».",
+          "audio": "ما اسمك؟",
+          "slow_audio": "ما اسمك؟",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-1-identity-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "أنا من ___.",
+          "answer": "المكسيك",
+          "accepted_answers": [
+            "المكسيك"
+          ],
+          "explanation": "La forma completa es «أنا من المكسيك.»: Soy de México.",
+          "audio": "أنا من المكسيك.",
+          "slow_audio": "أنا من المكسيك.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-1-identity-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «idioma»",
+          "target": "idioma",
+          "answer": "لغة",
+          "accepted_answers": [
+            "لغة"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «لغة».",
+          "audio": "لغة",
+          "slow_audio": "لغة",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-1-identity-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Soy de México.»",
+          "target": "Soy de México.",
+          "answer": "أنا من المكسيك.",
+          "accepted_answers": [
+            "أنا من المكسيك."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «أنا من المكسيك.». También puedes escribirlo.",
+          "audio": "أنا من المكسيك.",
+          "slow_audio": "أنا من المكسيك.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-1-identity-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Cómo te llamas?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "ما اسمك؟",
+              "accepted_answers": [
+                "ما اسمك؟"
+              ],
+              "audio": "ما اسمك؟",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Soy de México.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "أنا من المكسيك.",
+              "accepted_answers": [
+                "أنا من المكسيك."
+              ],
+              "audio": "أنا من المكسيك.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a11-identity-test",
       "title": "Prueba · Identidad y saludos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

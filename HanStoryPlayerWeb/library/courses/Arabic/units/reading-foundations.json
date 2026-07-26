@@ -2553,6 +2553,113 @@
       ]
     },
     {
+      "id": "arabic-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «َ ِ ُ»",
+          "target": "َ ِ ُ",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "َ ِ ُ",
+          "accepted_answers": [
+            "َ ِ ُ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «َ ِ ُ».",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "ْ ّ",
+          "accepted_answers": [
+            "ْ ّ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «ْ ّ»: Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "َ ِ ُ",
+          "options": [
+            "ِ",
+            "ُ",
+            "َ"
+          ],
+          "joiner": " ",
+          "answer": "َ ِ ُ",
+          "accepted_answers": [
+            "َ ِ ُ"
+          ],
+          "explanation": "La forma completa es «َ ِ ُ».",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "ْ ___",
+          "answer": "ّ",
+          "accepted_answers": [
+            "ّ"
+          ],
+          "explanation": "La forma completa es «ْ ّ»: Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "arabic-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

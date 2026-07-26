@@ -1779,6 +1779,232 @@
       ]
     },
     {
+      "id": "japanese-a1-1-places-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "japanese-a1-1-places-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a1-1-places-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "駅は左にあります。",
+          "accepted_answers": [
+            "駅は左にあります。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «駅は左にあります。».",
+          "audio": "駅は左にあります。",
+          "slow_audio": "駅は左にあります。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-places-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "学校へ行きます。",
+          "accepted_answers": [
+            "学校へ行きます。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «学校へ行きます。»: Voy a la escuela.",
+          "audio": "学校へ行きます。",
+          "slow_audio": "学校へ行きます。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-places-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "options": [
+            "す",
+            "に",
+            "ま",
+            "り",
+            "は",
+            "駅",
+            "。",
+            "あ",
+            "左"
+          ],
+          "joiner": "",
+          "answer": "駅は左にあります。",
+          "accepted_answers": [
+            "駅は左にあります。"
+          ],
+          "explanation": "La forma completa es «駅は左にあります。».",
+          "audio": "駅は左にあります。",
+          "slow_audio": "駅は左にあります。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-places-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "学校へ行きま＿。",
+          "answer": "す",
+          "accepted_answers": [
+            "す"
+          ],
+          "explanation": "La forma completa es «学校へ行きます。»: Voy a la escuela.",
+          "audio": "学校へ行きます。",
+          "slow_audio": "学校へ行きます。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-places-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «izquierda»",
+          "target": "izquierda",
+          "answer": "左",
+          "accepted_answers": [
+            "左"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «左».",
+          "audio": "左",
+          "slow_audio": "左",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-1-places-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "target": "Voy a la escuela.",
+          "answer": "学校へ行きます。",
+          "accepted_answers": [
+            "学校へ行きます。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «学校へ行きます。». También puedes escribirlo.",
+          "audio": "学校へ行きます。",
+          "slow_audio": "学校へ行きます。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-1-places-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La estación está a la izquierda.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "駅は左にあります。",
+              "accepted_answers": [
+                "駅は左にあります。"
+              ],
+              "audio": "駅は左にあります。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Voy a la escuela.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "学校へ行きます。",
+              "accepted_answers": [
+                "学校へ行きます。"
+              ],
+              "audio": "学校へ行きます。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «izquierda»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "左",
+              "accepted_answers": [
+                "左"
+              ],
+              "audio": "左",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "japanese-a11-places-test",
       "title": "Prueba · Lugares y direcciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

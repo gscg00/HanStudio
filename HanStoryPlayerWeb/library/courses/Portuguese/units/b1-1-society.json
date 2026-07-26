@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "portuguese-b1-1-society-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-1-society-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-1-society-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "A poluição afeta a nossa saúde.",
+          "accepted_answers": [
+            "A poluição afeta a nossa saúde."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «A poluição afeta a nossa saúde.».",
+          "audio": "A poluição afeta a nossa saúde.",
+          "slow_audio": "A poluição afeta a nossa saúde.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-society-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "A câmara anunciou um novo plano.",
+          "accepted_answers": [
+            "A câmara anunciou um novo plano."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «A câmara anunciou um novo plano.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "A câmara anunciou um novo plano.",
+          "slow_audio": "A câmara anunciou um novo plano.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-society-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "options": [
+            "poluição",
+            "afeta",
+            "saúde.",
+            "a",
+            "nossa",
+            "A"
+          ],
+          "joiner": " ",
+          "answer": "A poluição afeta a nossa saúde.",
+          "accepted_answers": [
+            "A poluição afeta a nossa saúde."
+          ],
+          "explanation": "La forma completa es «A poluição afeta a nossa saúde.».",
+          "audio": "A poluição afeta a nossa saúde.",
+          "slow_audio": "A poluição afeta a nossa saúde.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-society-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "A câmara anunciou um novo ___.",
+          "answer": "plano",
+          "accepted_answers": [
+            "plano"
+          ],
+          "explanation": "La forma completa es «A câmara anunciou um novo plano.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "A câmara anunciou um novo plano.",
+          "slow_audio": "A câmara anunciou um novo plano.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-society-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "alto",
+          "accepted_answers": [
+            "alto"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «alto».",
+          "audio": "alto",
+          "slow_audio": "alto",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-1-society-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "target": "El ayuntamiento anunció un nuevo plan.",
+          "answer": "A câmara anunciou um novo plano.",
+          "accepted_answers": [
+            "A câmara anunciou um novo plano."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «A câmara anunciou um novo plano.». También puedes escribirlo.",
+          "audio": "A câmara anunciou um novo plano.",
+          "slow_audio": "A câmara anunciou um novo plano.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-1-society-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La contaminación afecta a nuestra salud.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "A poluição afeta a nossa saúde.",
+              "accepted_answers": [
+                "A poluição afeta a nossa saúde."
+              ],
+              "audio": "A poluição afeta a nossa saúde.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El ayuntamiento anunció un nuevo plan.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "A câmara anunciou um novo plano.",
+              "accepted_answers": [
+                "A câmara anunciou um novo plano."
+              ],
+              "audio": "A câmara anunciou um novo plano.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b11-society-test",
       "title": "Prueba · Sociedad y entorno",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

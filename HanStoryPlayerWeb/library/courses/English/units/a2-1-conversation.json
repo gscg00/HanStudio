@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "english-a2-1-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "english-a2-1-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a2-1-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Besides, I need to buy food.",
+          "accepted_answers": [
+            "Besides, I need to buy food."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Besides, I need to buy food.».",
+          "audio": "Besides, I need to buy food.",
+          "slow_audio": "Besides, I need to buy food.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "However, I do not have time today.",
+          "accepted_answers": [
+            "However, I do not have time today."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «However, I do not have time today.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "However, I do not have time today.",
+          "slow_audio": "However, I do not have time today.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "options": [
+            "to",
+            "Besides,",
+            "buy",
+            "food.",
+            "I",
+            "need"
+          ],
+          "joiner": " ",
+          "answer": "Besides, I need to buy food.",
+          "accepted_answers": [
+            "Besides, I need to buy food."
+          ],
+          "explanation": "La forma completa es «Besides, I need to buy food.».",
+          "audio": "Besides, I need to buy food.",
+          "slow_audio": "Besides, I need to buy food.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "However, I do not have time ___.",
+          "answer": "today",
+          "accepted_answers": [
+            "today"
+          ],
+          "explanation": "La forma completa es «However, I do not have time today.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "However, I do not have time today.",
+          "slow_audio": "However, I do not have time today.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "that is why",
+          "accepted_answers": [
+            "that is why"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «that is why».",
+          "audio": "that is why",
+          "slow_audio": "that is why",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-1-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "target": "Sin embargo, hoy no tengo tiempo.",
+          "answer": "However, I do not have time today.",
+          "accepted_answers": [
+            "However, I do not have time today."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «However, I do not have time today.». También puedes escribirlo.",
+          "audio": "However, I do not have time today.",
+          "slow_audio": "However, I do not have time today.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-1-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Además, necesito comprar comida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Besides, I need to buy food.",
+              "accepted_answers": [
+                "Besides, I need to buy food."
+              ],
+              "audio": "Besides, I need to buy food.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Sin embargo, hoy no tengo tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "However, I do not have time today.",
+              "accepted_answers": [
+                "However, I do not have time today."
+              ],
+              "audio": "However, I do not have time today.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «por eso»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "that is why",
+              "accepted_answers": [
+                "that is why"
+              ],
+              "audio": "that is why",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "english-a21-conversation-test",
       "title": "Prueba · Conversaciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

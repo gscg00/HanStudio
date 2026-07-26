@@ -2929,6 +2929,206 @@
       ]
     },
     {
+      "id": "german-essentials-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-essentials-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-essentials-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Después de i/e es más frontal.»",
+          "target": "Después de i/e es más frontal.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "ch",
+          "accepted_answers": [
+            "ch"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ch».",
+          "audio": "ich",
+          "slow_audio": "ich",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-essentials-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "R",
+          "accepted_answers": [
+            "R"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «R»: Ambas variantes pueden ser correctas.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-essentials-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Después de i/e es más frontal.»",
+          "target": "Después de i/e es más frontal.",
+          "options": [
+            "ch"
+          ],
+          "joiner": "",
+          "answer": "ch",
+          "accepted_answers": [
+            "ch"
+          ],
+          "explanation": "La forma completa es «ch».",
+          "audio": "ich",
+          "slow_audio": "ich",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-essentials-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "R",
+          "accepted_answers": [
+            "R"
+          ],
+          "explanation": "La forma completa es «R»: Ambas variantes pueden ser correctas.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-essentials-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «V suele sonar f; W suele sonar v.»",
+          "target": "V suele sonar f; W suele sonar v.",
+          "answer": "V / W",
+          "accepted_answers": [
+            "V / W"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «V / W».",
+          "audio": "Vater / Wasser",
+          "slow_audio": "Vater / Wasser",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-essentials-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Ambas variantes pueden ser correctas.»",
+          "target": "Ambas variantes pueden ser correctas.",
+          "answer": "R",
+          "accepted_answers": [
+            "R"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «R». También puedes escribirlo.",
+          "audio": "rot",
+          "slow_audio": "rot",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-essentials-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Después de i/e es más frontal.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "ch",
+              "accepted_answers": [
+                "ch"
+              ],
+              "audio": "ich",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Ambas variantes pueden ser correctas.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "R",
+              "accepted_answers": [
+                "R"
+              ],
+              "audio": "rot",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-essentials-test-11",
       "title": "Prueba · Pronombres y verbos esenciales",
       "description": "Prueba de dominio de la unidad.",

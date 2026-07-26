@@ -33475,6 +33475,208 @@
       ]
     },
     {
+      "id": "korean-vocabulary-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-vocabulary-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-vocabulary-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «así, de esa manera»",
+          "target": "así, de esa manera",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "그렇게",
+          "accepted_answers": [
+            "그렇게"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «그렇게».",
+          "audio": "그렇게",
+          "slow_audio": "그렇게",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-vocabulary-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "생각해요",
+          "accepted_answers": [
+            "생각해요"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «생각해요»: piensa / piensa así",
+          "audio": "생각해요",
+          "slow_audio": "생각해요",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-vocabulary-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «así, de esa manera»",
+          "target": "así, de esa manera",
+          "options": [
+            "게",
+            "그",
+            "렇"
+          ],
+          "joiner": "",
+          "answer": "그렇게",
+          "accepted_answers": [
+            "그렇게"
+          ],
+          "explanation": "La forma completa es «그렇게».",
+          "audio": "그렇게",
+          "slow_audio": "그렇게",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-vocabulary-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "생각해＿",
+          "answer": "요",
+          "accepted_answers": [
+            "요"
+          ],
+          "explanation": "La forma completa es «생각해요»: piensa / piensa así",
+          "audio": "생각해요",
+          "slow_audio": "생각해요",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-vocabulary-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «si sigues el camino / si vas siguiendo el camino»",
+          "target": "si sigues el camino / si vas siguiendo el camino",
+          "answer": "길을 따라가면",
+          "accepted_answers": [
+            "길을 따라가면"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «길을 따라가면».",
+          "audio": "길을 따라가면",
+          "slow_audio": "길을 따라가면",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-vocabulary-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «piensa / piensa así»",
+          "target": "piensa / piensa así",
+          "answer": "생각해요",
+          "accepted_answers": [
+            "생각해요"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «생각해요». También puedes escribirlo.",
+          "audio": "생각해요",
+          "slow_audio": "생각해요",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-vocabulary-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «así, de esa manera»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "그렇게",
+              "accepted_answers": [
+                "그렇게"
+              ],
+              "audio": "그렇게",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «piensa / piensa así»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "생각해요",
+              "accepted_answers": [
+                "생각해요"
+              ],
+              "audio": "생각해요",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-vocabulary-test-67",
       "title": "Prueba · Vocabulario frecuente",
       "description": "Prueba de dominio de la unidad.",

@@ -1779,6 +1779,223 @@
       ]
     },
     {
+      "id": "japanese-b1-2-negotiation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-b1-2-negotiation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "ほかにどんな選択肢が残っていますか。",
+          "accepted_answers": [
+            "ほかにどんな選択肢が残っていますか。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ほかにどんな選択肢が残っていますか。».",
+          "audio": "ほかにどんな選択肢が残っていますか。",
+          "slow_audio": "ほかにどんな選択肢が残っていますか。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "価格は譲れますが、品質は譲れません。",
+          "accepted_answers": [
+            "価格は譲れますが、品質は譲れません。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «価格は譲れますが、品質は譲れません。»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "価格は譲れますが、品質は譲れません。",
+          "slow_audio": "価格は譲れますが、品質は譲れません。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Qué alternativa nos queda?»",
+          "target": "¿Qué alternativa nos queda?",
+          "options": [
+            "っ",
+            "。",
+            "肢",
+            "な",
+            "に",
+            "が",
+            "ん",
+            "て",
+            "か",
+            "ほ",
+            "ど",
+            "い",
+            "択",
+            "す",
+            "ま",
+            "か",
+            "選",
+            "残"
+          ],
+          "joiner": "",
+          "answer": "ほかにどんな選択肢が残っていますか。",
+          "accepted_answers": [
+            "ほかにどんな選択肢が残っていますか。"
+          ],
+          "explanation": "La forma completa es «ほかにどんな選択肢が残っていますか。».",
+          "audio": "ほかにどんな選択肢が残っていますか。",
+          "slow_audio": "ほかにどんな選択肢が残っていますか。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "価格は譲れますが、品質は譲れませ＿。",
+          "answer": "ん",
+          "accepted_answers": [
+            "ん"
+          ],
+          "explanation": "La forma completa es «価格は譲れますが、品質は譲れません。»: Podemos ceder en el precio, pero no en la calidad.",
+          "audio": "価格は譲れますが、品質は譲れません。",
+          "slow_audio": "価格は譲れますが、品質は譲れません。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "target": "Entre amigos podemos hablar de manera más directa.",
+          "answer": "友達同士なら、もっと直接話せます。",
+          "accepted_answers": [
+            "友達同士なら、もっと直接話せます。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «友達同士なら、もっと直接話せます。».",
+          "audio": "友達同士なら、もっと直接話せます。",
+          "slow_audio": "友達同士なら、もっと直接話せます。",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "target": "Podemos ceder en el precio, pero no en la calidad.",
+          "answer": "価格は譲れますが、品質は譲れません。",
+          "accepted_answers": [
+            "価格は譲れますが、品質は譲れません。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «価格は譲れますが、品質は譲れません。». También puedes escribirlo.",
+          "audio": "価格は譲れますが、品質は譲れません。",
+          "slow_audio": "価格は譲れますが、品質は譲れません。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-b1-2-negotiation-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Qué alternativa nos queda?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "ほかにどんな選択肢が残っていますか。",
+              "accepted_answers": [
+                "ほかにどんな選択肢が残っていますか。"
+              ],
+              "audio": "ほかにどんな選択肢が残っていますか。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Podemos ceder en el precio, pero no en la calidad.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "価格は譲れますが、品質は譲れません。",
+              "accepted_answers": [
+                "価格は譲れますが、品質は譲れません。"
+              ],
+              "audio": "価格は譲れますが、品質は譲れません。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "japanese-b12-negotiation-test",
       "title": "Prueba · Decisiones y negociación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

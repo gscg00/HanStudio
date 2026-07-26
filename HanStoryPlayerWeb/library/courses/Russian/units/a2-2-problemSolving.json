@@ -1779,6 +1779,227 @@
       ]
     },
     {
+      "id": "russian-a2-2-problemSolving-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "russian-a2-2-problemSolving-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Это не решит проблему.",
+          "accepted_answers": [
+            "Это не решит проблему."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Это не решит проблему.».",
+          "audio": "Это не решит проблему.",
+          "slow_audio": "Это не решит проблему.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Нам нужно больше информации.",
+          "accepted_answers": [
+            "Нам нужно больше информации."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Нам нужно больше информации.»: Necesitamos más información.",
+          "audio": "Нам нужно больше информации.",
+          "slow_audio": "Нам нужно больше информации.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Eso no resolverá el problema.»",
+          "target": "Eso no resolverá el problema.",
+          "options": [
+            "проблему.",
+            "не",
+            "решит",
+            "Это"
+          ],
+          "joiner": " ",
+          "answer": "Это не решит проблему.",
+          "accepted_answers": [
+            "Это не решит проблему."
+          ],
+          "explanation": "La forma completa es «Это не решит проблему.».",
+          "audio": "Это не решит проблему.",
+          "slow_audio": "Это не решит проблему.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Нам нужно больше ___.",
+          "answer": "информации",
+          "accepted_answers": [
+            "информации"
+          ],
+          "explanation": "La forma completa es «Нам нужно больше информации.»: Necesitamos más información.",
+          "audio": "Нам нужно больше информации.",
+          "slow_audio": "Нам нужно больше информации.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "target": "¿Cuándo estará listo?",
+          "answer": "Когда это будет готово?",
+          "accepted_answers": [
+            "Когда это будет готово?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Когда это будет готово?».",
+          "audio": "Когда это будет готово?",
+          "slow_audio": "Когда это будет готово?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "target": "Necesitamos más información.",
+          "answer": "Нам нужно больше информации.",
+          "accepted_answers": [
+            "Нам нужно больше информации."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Нам нужно больше информации.». También puedes escribirlo.",
+          "audio": "Нам нужно больше информации.",
+          "slow_audio": "Нам нужно больше информации.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a2-2-problemSolving-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Eso no resolverá el problema.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Это не решит проблему.",
+              "accepted_answers": [
+                "Это не решит проблему."
+              ],
+              "audio": "Это не решит проблему.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesitamos más información.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Нам нужно больше информации.",
+              "accepted_answers": [
+                "Нам нужно больше информации."
+              ],
+              "audio": "Нам нужно больше информации.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «¿Cuándo estará listo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Когда это будет готово?",
+              "accepted_answers": [
+                "Когда это будет готово?"
+              ],
+              "audio": "Когда это будет готово?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "russian-a22-problemSolving-test",
       "title": "Prueba · Resolver imprevistos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

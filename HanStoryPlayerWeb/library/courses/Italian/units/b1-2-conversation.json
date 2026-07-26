@@ -1779,6 +1779,228 @@
       ]
     },
     {
+      "id": "italian-b1-2-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "italian-b1-2-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-2-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Prima vorrei chiarire un dettaglio.",
+          "accepted_answers": [
+            "Prima vorrei chiarire un dettaglio."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Prima vorrei chiarire un dettaglio.».",
+          "audio": "Prima vorrei chiarire un dettaglio.",
+          "slow_audio": "Prima vorrei chiarire un dettaglio.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Questo mi ricorda un’esperienza simile.",
+          "accepted_answers": [
+            "Questo mi ricorda un’esperienza simile."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Questo mi ricorda un’esperienza simile.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Questo mi ricorda un’esperienza simile.",
+          "slow_audio": "Questo mi ricorda un’esperienza simile.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
+          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "options": [
+            "chiarire",
+            "un",
+            "dettaglio.",
+            "vorrei",
+            "Prima"
+          ],
+          "joiner": " ",
+          "answer": "Prima vorrei chiarire un dettaglio.",
+          "accepted_answers": [
+            "Prima vorrei chiarire un dettaglio."
+          ],
+          "explanation": "La forma completa es «Prima vorrei chiarire un dettaglio.».",
+          "audio": "Prima vorrei chiarire un dettaglio.",
+          "slow_audio": "Prima vorrei chiarire un dettaglio.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Questo mi ricorda un’esperienza ___.",
+          "answer": "simile",
+          "accepted_answers": [
+            "simile"
+          ],
+          "explanation": "La forma completa es «Questo mi ricorda un’esperienza simile.»: Eso me recuerda una experiencia parecida.",
+          "audio": "Questo mi ricorda un’esperienza simile.",
+          "slow_audio": "Questo mi ricorda un’esperienza simile.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "target": "A veces es difícil perdonar.",
+          "answer": "A volte è difficile perdonare.",
+          "accepted_answers": [
+            "A volte è difficile perdonare."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «A volte è difficile perdonare.».",
+          "audio": "A volte è difficile perdonare.",
+          "slow_audio": "A volte è difficile perdonare.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-2-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "target": "Eso me recuerda una experiencia parecida.",
+          "answer": "Questo mi ricorda un’esperienza simile.",
+          "accepted_answers": [
+            "Questo mi ricorda un’esperienza simile."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Questo mi ricorda un’esperienza simile.». También puedes escribirlo.",
+          "audio": "Questo mi ricorda un’esperienza simile.",
+          "slow_audio": "Questo mi ricorda un’esperienza simile.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-2-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Prima vorrei chiarire un dettaglio.",
+              "accepted_answers": [
+                "Prima vorrei chiarire un dettaglio."
+              ],
+              "audio": "Prima vorrei chiarire un dettaglio.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Eso me recuerda una experiencia parecida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Questo mi ricorda un’esperienza simile.",
+              "accepted_answers": [
+                "Questo mi ricorda un’esperienza simile."
+              ],
+              "audio": "Questo mi ricorda un’esperienza simile.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «A veces es difícil perdonar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "A volte è difficile perdonare.",
+              "accepted_answers": [
+                "A volte è difficile perdonare."
+              ],
+              "audio": "A volte è difficile perdonare.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "italian-b12-conversation-test",
       "title": "Prueba · Conversaciones extensas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

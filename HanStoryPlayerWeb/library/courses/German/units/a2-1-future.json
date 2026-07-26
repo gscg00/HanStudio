@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "german-a2-1-future-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-1-future-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-1-future-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Ich möchte ein Zimmer reservieren.",
+          "accepted_answers": [
+            "Ich möchte ein Zimmer reservieren."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Ich möchte ein Zimmer reservieren.».",
+          "audio": "Ich möchte ein Zimmer reservieren.",
+          "slow_audio": "Ich möchte ein Zimmer reservieren.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-future-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Ich rufe dich an, wenn ich ankomme.",
+          "accepted_answers": [
+            "Ich rufe dich an, wenn ich ankomme."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Ich rufe dich an, wenn ich ankomme.»: Te llamaré cuando llegue.",
+          "audio": "Ich rufe dich an, wenn ich ankomme.",
+          "slow_audio": "Ich rufe dich an, wenn ich ankomme.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-future-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "options": [
+            "Zimmer",
+            "möchte",
+            "ein",
+            "Ich",
+            "reservieren."
+          ],
+          "joiner": " ",
+          "answer": "Ich möchte ein Zimmer reservieren.",
+          "accepted_answers": [
+            "Ich möchte ein Zimmer reservieren."
+          ],
+          "explanation": "La forma completa es «Ich möchte ein Zimmer reservieren.».",
+          "audio": "Ich möchte ein Zimmer reservieren.",
+          "slow_audio": "Ich möchte ein Zimmer reservieren.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-future-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Ich rufe dich an, wenn ich ___.",
+          "answer": "ankomme",
+          "accepted_answers": [
+            "ankomme"
+          ],
+          "explanation": "La forma completa es «Ich rufe dich an, wenn ich ankomme.»: Te llamaré cuando llegue.",
+          "audio": "Ich rufe dich an, wenn ich ankomme.",
+          "slow_audio": "Ich rufe dich an, wenn ich ankomme.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-future-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «reservar»",
+          "target": "reservar",
+          "answer": "reservieren",
+          "accepted_answers": [
+            "reservieren"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «reservieren».",
+          "audio": "reservieren",
+          "slow_audio": "reservieren",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-future-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "target": "Te llamaré cuando llegue.",
+          "answer": "Ich rufe dich an, wenn ich ankomme.",
+          "accepted_answers": [
+            "Ich rufe dich an, wenn ich ankomme."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Ich rufe dich an, wenn ich ankomme.». También puedes escribirlo.",
+          "audio": "Ich rufe dich an, wenn ich ankomme.",
+          "slow_audio": "Ich rufe dich an, wenn ich ankomme.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-future-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Pienso reservar una habitación.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich möchte ein Zimmer reservieren.",
+              "accepted_answers": [
+                "Ich möchte ein Zimmer reservieren."
+              ],
+              "audio": "Ich möchte ein Zimmer reservieren.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Te llamaré cuando llegue.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich rufe dich an, wenn ich ankomme.",
+              "accepted_answers": [
+                "Ich rufe dich an, wenn ich ankomme."
+              ],
+              "audio": "Ich rufe dich an, wenn ich ankomme.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a21-future-test",
       "title": "Prueba · Planes y futuro",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

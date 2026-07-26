@@ -1779,6 +1779,232 @@
       ]
     },
     {
+      "id": "japanese-a1-2-social-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "japanese-a1-2-social-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a1-2-social-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «¿Dónde quedamos?»",
+          "target": "¿Dónde quedamos?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "どこで会いますか。",
+          "accepted_answers": [
+            "どこで会いますか。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «どこで会いますか。».",
+          "audio": "どこで会いますか。",
+          "slow_audio": "どこで会いますか。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-social-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "六時以降は時間があります。",
+          "accepted_answers": [
+            "六時以降は時間があります。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «六時以降は時間があります。»: Estoy libre después de las seis.",
+          "audio": "六時以降は時間があります。",
+          "slow_audio": "六時以降は時間があります。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-social-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Dónde quedamos?»",
+          "target": "¿Dónde quedamos?",
+          "options": [
+            "で",
+            "ど",
+            "こ",
+            "か",
+            "会",
+            "ま",
+            "す",
+            "い",
+            "。"
+          ],
+          "joiner": "",
+          "answer": "どこで会いますか。",
+          "accepted_answers": [
+            "どこで会いますか。"
+          ],
+          "explanation": "La forma completa es «どこで会いますか。».",
+          "audio": "どこで会いますか。",
+          "slow_audio": "どこで会いますか。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-social-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "六時以降は時間がありま＿。",
+          "answer": "す",
+          "accepted_answers": [
+            "す"
+          ],
+          "explanation": "La forma completa es «六時以降は時間があります。»: Estoy libre después de las seis.",
+          "audio": "六時以降は時間があります。",
+          "slow_audio": "六時以降は時間があります。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-social-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «fin de semana»",
+          "target": "fin de semana",
+          "answer": "週末",
+          "accepted_answers": [
+            "週末"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «週末».",
+          "audio": "週末",
+          "slow_audio": "週末",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a1-2-social-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "target": "Estoy libre después de las seis.",
+          "answer": "六時以降は時間があります。",
+          "accepted_answers": [
+            "六時以降は時間があります。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «六時以降は時間があります。». También puedes escribirlo.",
+          "audio": "六時以降は時間があります。",
+          "slow_audio": "六時以降は時間があります。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a1-2-social-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Dónde quedamos?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "どこで会いますか。",
+              "accepted_answers": [
+                "どこで会いますか。"
+              ],
+              "audio": "どこで会いますか。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Estoy libre después de las seis.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "六時以降は時間があります。",
+              "accepted_answers": [
+                "六時以降は時間があります。"
+              ],
+              "audio": "六時以降は時間があります。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «fin de semana»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "週末",
+              "accepted_answers": [
+                "週末"
+              ],
+              "audio": "週末",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "japanese-a12-social-test",
       "title": "Prueba · Invitaciones y planes",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

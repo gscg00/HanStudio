@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "korean-b1-1-media-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-b1-1-media-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-b1-1-media-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «El desenlace me sorprendió mucho.»",
+          "target": "El desenlace me sorprendió mucho.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "결말이 정말 놀라웠어요.",
+          "accepted_answers": [
+            "결말이 정말 놀라웠어요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «결말이 정말 놀라웠어요.».",
+          "audio": "결말이 정말 놀라웠어요.",
+          "slow_audio": "결말이 정말 놀라웠어요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-media-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "감독은 두 가지 관점을 보여 줘요.",
+          "accepted_answers": [
+            "감독은 두 가지 관점을 보여 줘요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «감독은 두 가지 관점을 보여 줘요.»: La directora muestra dos puntos de vista.",
+          "audio": "감독은 두 가지 관점을 보여 줘요.",
+          "slow_audio": "감독은 두 가지 관점을 보여 줘요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-media-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «El desenlace me sorprendió mucho.»",
+          "target": "El desenlace me sorprendió mucho.",
+          "options": [
+            "놀라웠어요.",
+            "결말이",
+            "정말"
+          ],
+          "joiner": " ",
+          "answer": "결말이 정말 놀라웠어요.",
+          "accepted_answers": [
+            "결말이 정말 놀라웠어요."
+          ],
+          "explanation": "La forma completa es «결말이 정말 놀라웠어요.».",
+          "audio": "결말이 정말 놀라웠어요.",
+          "slow_audio": "결말이 정말 놀라웠어요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-media-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "감독은 두 가지 관점을 보여 ___.",
+          "answer": "줘요",
+          "accepted_answers": [
+            "줘요"
+          ],
+          "explanation": "La forma completa es «감독은 두 가지 관점을 보여 줘요.»: La directora muestra dos puntos de vista.",
+          "audio": "감독은 두 가지 관점을 보여 줘요.",
+          "slow_audio": "감독은 두 가지 관점을 보여 줘요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-media-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "target": "Me sorprendió esta costumbre.",
+          "answer": "이 관습이 놀라웠어요.",
+          "accepted_answers": [
+            "이 관습이 놀라웠어요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «이 관습이 놀라웠어요.».",
+          "audio": "이 관습이 놀라웠어요.",
+          "slow_audio": "이 관습이 놀라웠어요.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-media-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "target": "La directora muestra dos puntos de vista.",
+          "answer": "감독은 두 가지 관점을 보여 줘요.",
+          "accepted_answers": [
+            "감독은 두 가지 관점을 보여 줘요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «감독은 두 가지 관점을 보여 줘요.». También puedes escribirlo.",
+          "audio": "감독은 두 가지 관점을 보여 줘요.",
+          "slow_audio": "감독은 두 가지 관점을 보여 줘요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-media-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «El desenlace me sorprendió mucho.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "결말이 정말 놀라웠어요.",
+              "accepted_answers": [
+                "결말이 정말 놀라웠어요."
+              ],
+              "audio": "결말이 정말 놀라웠어요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La directora muestra dos puntos de vista.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "감독은 두 가지 관점을 보여 줘요.",
+              "accepted_answers": [
+                "감독은 두 가지 관점을 보여 줘요."
+              ],
+              "audio": "감독은 두 가지 관점을 보여 줘요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-b11-media-test",
       "title": "Prueba · Historias, cine y medios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

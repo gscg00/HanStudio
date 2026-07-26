@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "portuguese-b1-2-nuance-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-b1-2-nuance-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Isso não significa que seja impossível.",
+          "accepted_answers": [
+            "Isso não significa que seja impossível."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Isso não significa que seja impossível.».",
+          "audio": "Isso não significa que seja impossível.",
+          "slow_audio": "Isso não significa que seja impossível.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Deve funcionar se todos participarem.",
+          "accepted_answers": [
+            "Deve funcionar se todos participarem."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Deve funcionar se todos participarem.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Deve funcionar se todos participarem.",
+          "slow_audio": "Deve funcionar se todos participarem.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "options": [
+            "significa",
+            "impossível.",
+            "que",
+            "seja",
+            "Isso",
+            "não"
+          ],
+          "joiner": " ",
+          "answer": "Isso não significa que seja impossível.",
+          "accepted_answers": [
+            "Isso não significa que seja impossível."
+          ],
+          "explanation": "La forma completa es «Isso não significa que seja impossível.».",
+          "audio": "Isso não significa que seja impossível.",
+          "slow_audio": "Isso não significa que seja impossível.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Deve funcionar se todos ___.",
+          "answer": "participarem",
+          "accepted_answers": [
+            "participarem"
+          ],
+          "explanation": "La forma completa es «Deve funcionar se todos participarem.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Deve funcionar se todos participarem.",
+          "slow_audio": "Deve funcionar se todos participarem.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "target": "La recomiendo porque los personajes parecen reales.",
+          "answer": "Recomendo-o porque as personagens parecem reais.",
+          "accepted_answers": [
+            "Recomendo-o porque as personagens parecem reais."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Recomendo-o porque as personagens parecem reais.».",
+          "audio": "Recomendo-o porque as personagens parecem reais.",
+          "slow_audio": "Recomendo-o porque as personagens parecem reais.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "target": "Probablemente funcione, siempre que todos participen.",
+          "answer": "Deve funcionar se todos participarem.",
+          "accepted_answers": [
+            "Deve funcionar se todos participarem."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Deve funcionar se todos participarem.». También puedes escribirlo.",
+          "audio": "Deve funcionar se todos participarem.",
+          "slow_audio": "Deve funcionar se todos participarem.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-b1-2-nuance-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No necesariamente significa que sea imposible.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Isso não significa que seja impossível.",
+              "accepted_answers": [
+                "Isso não significa que seja impossível."
+              ],
+              "audio": "Isso não significa que seja impossível.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Probablemente funcione, siempre que todos participen.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Deve funcionar se todos participarem.",
+              "accepted_answers": [
+                "Deve funcionar se todos participarem."
+              ],
+              "audio": "Deve funcionar se todos participarem.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-b12-nuance-test",
       "title": "Prueba · Opiniones con matices",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

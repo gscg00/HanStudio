@@ -775,6 +775,112 @@
           "xp": 15
         }
       ]
+    },
+    {
+      "id": "japanese-rhythm-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-rhythm-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-rhythm-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «ほん»",
+          "target": "ほん",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "ほん",
+          "accepted_answers": [
+            "ほん"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ほん».",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-rhythm-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "さんぽ",
+          "accepted_answers": [
+            "さんぽ"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «さんぽ»: Paseo.",
+          "audio": "さんぽ",
+          "slow_audio": "さんぽ",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-rhythm-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "ほん",
+          "options": [
+            "ん",
+            "ほ"
+          ],
+          "joiner": "",
+          "answer": "ほん",
+          "accepted_answers": [
+            "ほん"
+          ],
+          "explanation": "La forma completa es «ほん».",
+          "audio": "ほん",
+          "slow_audio": "ほん",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-rhythm-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "さん＿",
+          "answer": "ぽ",
+          "accepted_answers": [
+            "ぽ"
+          ],
+          "explanation": "La forma completa es «さんぽ»: Paseo.",
+          "audio": "さんぽ",
+          "slow_audio": "さんぽ",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        }
+      ]
     }
   ]
 }

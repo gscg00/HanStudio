@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "korean-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "그동안 제 여동생은 경찰에 전화했어요.",
+          "accepted_answers": [
+            "그동안 제 여동생은 경찰에 전화했어요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «그동안 제 여동생은 경찰에 전화했어요.».",
+          "audio": "그동안 제 여동생은 경찰에 전화했어요.",
+          "slow_audio": "그동안 제 여동생은 경찰에 전화했어요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "결국 모든 일이 잘 끝났어요.",
+          "accepted_answers": [
+            "결국 모든 일이 잘 끝났어요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «결국 모든 일이 잘 끝났어요.»: Al final, todo salió bien.",
+          "audio": "결국 모든 일이 잘 끝났어요.",
+          "slow_audio": "결국 모든 일이 잘 끝났어요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "경찰에",
+            "전화했어요.",
+            "여동생은",
+            "그동안",
+            "제"
+          ],
+          "joiner": " ",
+          "answer": "그동안 제 여동생은 경찰에 전화했어요.",
+          "accepted_answers": [
+            "그동안 제 여동생은 경찰에 전화했어요."
+          ],
+          "explanation": "La forma completa es «그동안 제 여동생은 경찰에 전화했어요.».",
+          "audio": "그동안 제 여동생은 경찰에 전화했어요.",
+          "slow_audio": "그동안 제 여동생은 경찰에 전화했어요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "결국 모든 일이 잘 ___.",
+          "answer": "끝났어요",
+          "accepted_answers": [
+            "끝났어요"
+          ],
+          "explanation": "La forma completa es «결국 모든 일이 잘 끝났어요.»: Al final, todo salió bien.",
+          "audio": "결국 모든 일이 잘 끝났어요.",
+          "slow_audio": "결국 모든 일이 잘 끝났어요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "거기에 가 본 적이 있어요?",
+          "accepted_answers": [
+            "거기에 가 본 적이 있어요?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «거기에 가 본 적이 있어요?».",
+          "audio": "거기에 가 본 적이 있어요?",
+          "slow_audio": "거기에 가 본 적이 있어요?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "결국 모든 일이 잘 끝났어요.",
+          "accepted_answers": [
+            "결국 모든 일이 잘 끝났어요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «결국 모든 일이 잘 끝났어요.». También puedes escribirlo.",
+          "audio": "결국 모든 일이 잘 끝났어요.",
+          "slow_audio": "결국 모든 일이 잘 끝났어요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "그동안 제 여동생은 경찰에 전화했어요.",
+              "accepted_answers": [
+                "그동안 제 여동생은 경찰에 전화했어요."
+              ],
+              "audio": "그동안 제 여동생은 경찰에 전화했어요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "결국 모든 일이 잘 끝났어요.",
+              "accepted_answers": [
+                "결국 모든 일이 잘 끝났어요."
+              ],
+              "audio": "결국 모든 일이 잘 끝났어요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

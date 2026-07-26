@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "arabic-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "accepted_answers": [
+            "إذا احتجت إلى مساعدة، اتصل بي."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «إذا احتجت إلى مساعدة، اتصل بي.».",
+          "audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "slow_audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "كنت سأوافق لو شرحت الأمر.",
+          "accepted_answers": [
+            "كنت سأوافق لو شرحت الأمر."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «كنت سأوافق لو شرحت الأمر.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "كنت سأوافق لو شرحت الأمر.",
+          "slow_audio": "كنت سأوافق لو شرحت الأمر.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "إلى",
+            "بي.",
+            "إذا",
+            "اتصل",
+            "مساعدة،",
+            "احتجت"
+          ],
+          "joiner": " ",
+          "answer": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "accepted_answers": [
+            "إذا احتجت إلى مساعدة، اتصل بي."
+          ],
+          "explanation": "La forma completa es «إذا احتجت إلى مساعدة، اتصل بي.».",
+          "audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "slow_audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "كنت سأوافق لو شرحت ___.",
+          "answer": "الأمر",
+          "accepted_answers": [
+            "الأمر"
+          ],
+          "explanation": "La forma completa es «كنت سأوافق لو شرحت الأمر.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "كنت سأوافق لو شرحت الأمر.",
+          "slow_audio": "كنت سأوافق لو شرحت الأمر.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "بفضل مساعدتك، حللنا المشكلة.",
+          "accepted_answers": [
+            "بفضل مساعدتك، حللنا المشكلة."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «بفضل مساعدتك، حللنا المشكلة.».",
+          "audio": "بفضل مساعدتك، حللنا المشكلة.",
+          "slow_audio": "بفضل مساعدتك، حللنا المشكلة.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "كنت سأوافق لو شرحت الأمر.",
+          "accepted_answers": [
+            "كنت سأوافق لو شرحت الأمر."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «كنت سأوافق لو شرحت الأمر.». También puedes escribirlo.",
+          "audio": "كنت سأوافق لو شرحت الأمر.",
+          "slow_audio": "كنت سأوافق لو شرحت الأمر.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "إذا احتجت إلى مساعدة، اتصل بي.",
+              "accepted_answers": [
+                "إذا احتجت إلى مساعدة، اتصل بي."
+              ],
+              "audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "كنت سأوافق لو شرحت الأمر.",
+              "accepted_answers": [
+                "كنت سأوافق لو شرحت الأمر."
+              ],
+              "audio": "كنت سأوافق لو شرحت الأمر.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

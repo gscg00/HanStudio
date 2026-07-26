@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "portuguese-a2-1-past-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-a2-1-past-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-a2-1-past-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «No pude encontrar mis llaves.»",
+          "target": "No pude encontrar mis llaves.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Não consegui encontrar as chaves.",
+          "accepted_answers": [
+            "Não consegui encontrar as chaves."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Não consegui encontrar as chaves.».",
+          "audio": "Não consegui encontrar as chaves.",
+          "slow_audio": "Não consegui encontrar as chaves.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-past-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "O que aconteceu?",
+          "accepted_answers": [
+            "O que aconteceu?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «O que aconteceu?»: ¿Qué pasó?",
+          "audio": "O que aconteceu?",
+          "slow_audio": "O que aconteceu?",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-past-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No pude encontrar mis llaves.»",
+          "target": "No pude encontrar mis llaves.",
+          "options": [
+            "chaves.",
+            "encontrar",
+            "consegui",
+            "Não",
+            "as"
+          ],
+          "joiner": " ",
+          "answer": "Não consegui encontrar as chaves.",
+          "accepted_answers": [
+            "Não consegui encontrar as chaves."
+          ],
+          "explanation": "La forma completa es «Não consegui encontrar as chaves.».",
+          "audio": "Não consegui encontrar as chaves.",
+          "slow_audio": "Não consegui encontrar as chaves.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-past-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "O que ___?",
+          "answer": "aconteceu",
+          "accepted_answers": [
+            "aconteceu"
+          ],
+          "explanation": "La forma completa es «O que aconteceu?»: ¿Qué pasó?",
+          "audio": "O que aconteceu?",
+          "slow_audio": "O que aconteceu?",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-past-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «ocurrió»",
+          "target": "ocurrió",
+          "answer": "aconteceu",
+          "accepted_answers": [
+            "aconteceu"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «aconteceu».",
+          "audio": "aconteceu",
+          "slow_audio": "aconteceu",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-past-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "target": "¿Qué pasó?",
+          "answer": "O que aconteceu?",
+          "accepted_answers": [
+            "O que aconteceu?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «O que aconteceu?». También puedes escribirlo.",
+          "audio": "O que aconteceu?",
+          "slow_audio": "O que aconteceu?",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-past-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No pude encontrar mis llaves.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Não consegui encontrar as chaves.",
+              "accepted_answers": [
+                "Não consegui encontrar as chaves."
+              ],
+              "audio": "Não consegui encontrar as chaves.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «¿Qué pasó?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "O que aconteceu?",
+              "accepted_answers": [
+                "O que aconteceu?"
+              ],
+              "audio": "O que aconteceu?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-a21-past-test",
       "title": "Prueba · Lo que pasó",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

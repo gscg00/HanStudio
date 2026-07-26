@@ -1779,6 +1779,241 @@
       ]
     },
     {
+      "id": "japanese-a2-1-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "japanese-a2-1-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "それに、食べ物を買う必要があります。",
+          "accepted_answers": [
+            "それに、食べ物を買う必要があります。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «それに、食べ物を買う必要があります。».",
+          "audio": "それに、食べ物を買う必要があります。",
+          "slow_audio": "それに、食べ物を買う必要があります。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "しかし、今日は時間がありません。",
+          "accepted_answers": [
+            "しかし、今日は時間がありません。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «しかし、今日は時間がありません。»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "しかし、今日は時間がありません。",
+          "slow_audio": "しかし、今日は時間がありません。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "options": [
+            "う",
+            "あ",
+            "買",
+            "を",
+            "べ",
+            "物",
+            "必",
+            "り",
+            "、",
+            "。",
+            "食",
+            "ま",
+            "要",
+            "れ",
+            "す",
+            "に",
+            "が",
+            "そ"
+          ],
+          "joiner": "",
+          "answer": "それに、食べ物を買う必要があります。",
+          "accepted_answers": [
+            "それに、食べ物を買う必要があります。"
+          ],
+          "explanation": "La forma completa es «それに、食べ物を買う必要があります。».",
+          "audio": "それに、食べ物を買う必要があります。",
+          "slow_audio": "それに、食べ物を買う必要があります。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "しかし、今日は時間がありませ＿。",
+          "answer": "ん",
+          "accepted_answers": [
+            "ん"
+          ],
+          "explanation": "La forma completa es «しかし、今日は時間がありません。»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "しかし、今日は時間がありません。",
+          "slow_audio": "しかし、今日は時間がありません。",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "だから",
+          "accepted_answers": [
+            "だから"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «だから».",
+          "audio": "だから",
+          "slow_audio": "だから",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "target": "Sin embargo, hoy no tengo tiempo.",
+          "answer": "しかし、今日は時間がありません。",
+          "accepted_answers": [
+            "しかし、今日は時間がありません。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «しかし、今日は時間がありません。». También puedes escribirlo.",
+          "audio": "しかし、今日は時間がありません。",
+          "slow_audio": "しかし、今日は時間がありません。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-a2-1-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Además, necesito comprar comida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "それに、食べ物を買う必要があります。",
+              "accepted_answers": [
+                "それに、食べ物を買う必要があります。"
+              ],
+              "audio": "それに、食べ物を買う必要があります。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Sin embargo, hoy no tengo tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "しかし、今日は時間がありません。",
+              "accepted_answers": [
+                "しかし、今日は時間がありません。"
+              ],
+              "audio": "しかし、今日は時間がありません。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «por eso»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "だから",
+              "accepted_answers": [
+                "だから"
+              ],
+              "audio": "だから",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "japanese-a21-conversation-test",
       "title": "Prueba · Conversaciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

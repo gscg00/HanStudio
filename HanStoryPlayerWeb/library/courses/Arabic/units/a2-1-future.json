@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "arabic-a2-1-future-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a2-1-future-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a2-1-future-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "أنوي حجز غرفة.",
+          "accepted_answers": [
+            "أنوي حجز غرفة."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «أنوي حجز غرفة.».",
+          "audio": "أنوي حجز غرفة.",
+          "slow_audio": "أنوي حجز غرفة.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-future-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "سأتصل بك عندما أصل.",
+          "accepted_answers": [
+            "سأتصل بك عندما أصل."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «سأتصل بك عندما أصل.»: Te llamaré cuando llegue.",
+          "audio": "سأتصل بك عندما أصل.",
+          "slow_audio": "سأتصل بك عندما أصل.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-future-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Pienso reservar una habitación.»",
+          "target": "Pienso reservar una habitación.",
+          "options": [
+            "حجز",
+            "أنوي",
+            "غرفة."
+          ],
+          "joiner": " ",
+          "answer": "أنوي حجز غرفة.",
+          "accepted_answers": [
+            "أنوي حجز غرفة."
+          ],
+          "explanation": "La forma completa es «أنوي حجز غرفة.».",
+          "audio": "أنوي حجز غرفة.",
+          "slow_audio": "أنوي حجز غرفة.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-future-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "سأتصل بك عندما ___.",
+          "answer": "أصل",
+          "accepted_answers": [
+            "أصل"
+          ],
+          "explanation": "La forma completa es «سأتصل بك عندما أصل.»: Te llamaré cuando llegue.",
+          "audio": "سأتصل بك عندما أصل.",
+          "slow_audio": "سأتصل بك عندما أصل.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-future-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «reservar»",
+          "target": "reservar",
+          "answer": "يحجز",
+          "accepted_answers": [
+            "يحجز"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «يحجز».",
+          "audio": "يحجز",
+          "slow_audio": "يحجز",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a2-1-future-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "target": "Te llamaré cuando llegue.",
+          "answer": "سأتصل بك عندما أصل.",
+          "accepted_answers": [
+            "سأتصل بك عندما أصل."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «سأتصل بك عندما أصل.». También puedes escribirlo.",
+          "audio": "سأتصل بك عندما أصل.",
+          "slow_audio": "سأتصل بك عندما أصل.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a2-1-future-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Pienso reservar una habitación.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "أنوي حجز غرفة.",
+              "accepted_answers": [
+                "أنوي حجز غرفة."
+              ],
+              "audio": "أنوي حجز غرفة.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Te llamaré cuando llegue.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "سأتصل بك عندما أصل.",
+              "accepted_answers": [
+                "سأتصل بك عندما أصل."
+              ],
+              "audio": "سأتصل بك عندما أصل.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a21-future-test",
       "title": "Prueba · Planes y futuro",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

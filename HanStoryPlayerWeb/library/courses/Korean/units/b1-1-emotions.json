@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "korean-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "어떻게 느끼는지 말하는 게 좋아요.",
+          "accepted_answers": [
+            "어떻게 느끼는지 말하는 게 좋아요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «어떻게 느끼는지 말하는 게 좋아요.».",
+          "audio": "어떻게 느끼는지 말하는 게 좋아요.",
+          "slow_audio": "어떻게 느끼는지 말하는 게 좋아요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "그 이후로 서로를 더 믿게 됐어요.",
+          "accepted_answers": [
+            "그 이후로 서로를 더 믿게 됐어요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «그 이후로 서로를 더 믿게 됐어요.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "slow_audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "느끼는지",
+            "말하는",
+            "좋아요.",
+            "어떻게",
+            "게"
+          ],
+          "joiner": " ",
+          "answer": "어떻게 느끼는지 말하는 게 좋아요.",
+          "accepted_answers": [
+            "어떻게 느끼는지 말하는 게 좋아요."
+          ],
+          "explanation": "La forma completa es «어떻게 느끼는지 말하는 게 좋아요.».",
+          "audio": "어떻게 느끼는지 말하는 게 좋아요.",
+          "slow_audio": "어떻게 느끼는지 말하는 게 좋아요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "그 이후로 서로를 더 믿게 ___.",
+          "answer": "됐어요",
+          "accepted_answers": [
+            "됐어요"
+          ],
+          "explanation": "La forma completa es «그 이후로 서로를 더 믿게 됐어요.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "slow_audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "그래서",
+          "accepted_answers": [
+            "그래서"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «그래서».",
+          "audio": "그래서",
+          "slow_audio": "그래서",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "그 이후로 서로를 더 믿게 됐어요.",
+          "accepted_answers": [
+            "그 이후로 서로를 더 믿게 됐어요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «그 이후로 서로를 더 믿게 됐어요.». También puedes escribirlo.",
+          "audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "slow_audio": "그 이후로 서로를 더 믿게 됐어요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "어떻게 느끼는지 말하는 게 좋아요.",
+              "accepted_answers": [
+                "어떻게 느끼는지 말하는 게 좋아요."
+              ],
+              "audio": "어떻게 느끼는지 말하는 게 좋아요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "그 이후로 서로를 더 믿게 됐어요.",
+              "accepted_answers": [
+                "그 이후로 서로를 더 믿게 됐어요."
+              ],
+              "audio": "그 이후로 서로를 더 믿게 됐어요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

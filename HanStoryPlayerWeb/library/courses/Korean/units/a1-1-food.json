@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "korean-a1-1-food-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-a1-1-food-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-a1-1-food-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Bebo té por la mañana.»",
+          "target": "Bebo té por la mañana.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "저는 아침에 차를 마셔요.",
+          "accepted_answers": [
+            "저는 아침에 차를 마셔요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «저는 아침에 차를 마셔요.».",
+          "audio": "저는 아침에 차를 마셔요.",
+          "slow_audio": "저는 아침에 차를 마셔요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-1-food-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "밥을 조금 주세요.",
+          "accepted_answers": [
+            "밥을 조금 주세요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «밥을 조금 주세요.»: Quiero un poco de arroz.",
+          "audio": "밥을 조금 주세요.",
+          "slow_audio": "밥을 조금 주세요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-1-food-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Bebo té por la mañana.»",
+          "target": "Bebo té por la mañana.",
+          "options": [
+            "아침에",
+            "차를",
+            "저는",
+            "마셔요."
+          ],
+          "joiner": " ",
+          "answer": "저는 아침에 차를 마셔요.",
+          "accepted_answers": [
+            "저는 아침에 차를 마셔요."
+          ],
+          "explanation": "La forma completa es «저는 아침에 차를 마셔요.».",
+          "audio": "저는 아침에 차를 마셔요.",
+          "slow_audio": "저는 아침에 차를 마셔요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-1-food-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "밥을 조금 ___.",
+          "answer": "주세요",
+          "accepted_answers": [
+            "주세요"
+          ],
+          "explanation": "La forma completa es «밥을 조금 주세요.»: Quiero un poco de arroz.",
+          "audio": "밥을 조금 주세요.",
+          "slow_audio": "밥을 조금 주세요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-1-food-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «carne»",
+          "target": "carne",
+          "answer": "고기",
+          "accepted_answers": [
+            "고기"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «고기».",
+          "audio": "고기",
+          "slow_audio": "고기",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-a1-1-food-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "target": "Quiero un poco de arroz.",
+          "answer": "밥을 조금 주세요.",
+          "accepted_answers": [
+            "밥을 조금 주세요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «밥을 조금 주세요.». También puedes escribirlo.",
+          "audio": "밥을 조금 주세요.",
+          "slow_audio": "밥을 조금 주세요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-a1-1-food-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Bebo té por la mañana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "저는 아침에 차를 마셔요.",
+              "accepted_answers": [
+                "저는 아침에 차를 마셔요."
+              ],
+              "audio": "저는 아침에 차를 마셔요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Quiero un poco de arroz.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "밥을 조금 주세요.",
+              "accepted_answers": [
+                "밥을 조금 주세요."
+              ],
+              "audio": "밥을 조금 주세요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-a11-food-test",
       "title": "Prueba · Comida y bebida",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

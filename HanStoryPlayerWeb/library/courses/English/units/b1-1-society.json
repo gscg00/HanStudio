@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "english-b1-1-society-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-b1-1-society-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-1-society-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Pollution affects our health.",
+          "accepted_answers": [
+            "Pollution affects our health."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Pollution affects our health.».",
+          "audio": "Pollution affects our health.",
+          "slow_audio": "Pollution affects our health.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-society-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "The council announced a new plan.",
+          "accepted_answers": [
+            "The council announced a new plan."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «The council announced a new plan.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "The council announced a new plan.",
+          "slow_audio": "The council announced a new plan.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-society-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "options": [
+            "affects",
+            "Pollution",
+            "our",
+            "health."
+          ],
+          "joiner": " ",
+          "answer": "Pollution affects our health.",
+          "accepted_answers": [
+            "Pollution affects our health."
+          ],
+          "explanation": "La forma completa es «Pollution affects our health.».",
+          "audio": "Pollution affects our health.",
+          "slow_audio": "Pollution affects our health.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-society-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "The council announced a new ___.",
+          "answer": "plan",
+          "accepted_answers": [
+            "plan"
+          ],
+          "explanation": "La forma completa es «The council announced a new plan.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "The council announced a new plan.",
+          "slow_audio": "The council announced a new plan.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-society-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "tall",
+          "accepted_answers": [
+            "tall"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «tall».",
+          "audio": "tall",
+          "slow_audio": "tall",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-society-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "target": "El ayuntamiento anunció un nuevo plan.",
+          "answer": "The council announced a new plan.",
+          "accepted_answers": [
+            "The council announced a new plan."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «The council announced a new plan.». También puedes escribirlo.",
+          "audio": "The council announced a new plan.",
+          "slow_audio": "The council announced a new plan.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-society-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La contaminación afecta a nuestra salud.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Pollution affects our health.",
+              "accepted_answers": [
+                "Pollution affects our health."
+              ],
+              "audio": "Pollution affects our health.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El ayuntamiento anunció un nuevo plan.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The council announced a new plan.",
+              "accepted_answers": [
+                "The council announced a new plan."
+              ],
+              "audio": "The council announced a new plan.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-b11-society-test",
       "title": "Prueba · Sociedad y entorno",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

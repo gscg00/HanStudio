@@ -1779,6 +1779,229 @@
       ]
     },
     {
+      "id": "portuguese-a2-1-conversation-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "portuguese-a2-1-conversation-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Além disso, preciso de comprar comida.",
+          "accepted_answers": [
+            "Além disso, preciso de comprar comida."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Além disso, preciso de comprar comida.».",
+          "audio": "Além disso, preciso de comprar comida.",
+          "slow_audio": "Além disso, preciso de comprar comida.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "No entanto, hoje não tenho tempo.",
+          "accepted_answers": [
+            "No entanto, hoje não tenho tempo."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «No entanto, hoje não tenho tempo.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "No entanto, hoje não tenho tempo.",
+          "slow_audio": "No entanto, hoje não tenho tempo.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Además, necesito comprar comida.»",
+          "target": "Además, necesito comprar comida.",
+          "options": [
+            "comprar",
+            "de",
+            "disso,",
+            "comida.",
+            "preciso",
+            "Além"
+          ],
+          "joiner": " ",
+          "answer": "Além disso, preciso de comprar comida.",
+          "accepted_answers": [
+            "Além disso, preciso de comprar comida."
+          ],
+          "explanation": "La forma completa es «Além disso, preciso de comprar comida.».",
+          "audio": "Além disso, preciso de comprar comida.",
+          "slow_audio": "Além disso, preciso de comprar comida.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "No entanto, hoje não tenho ___.",
+          "answer": "tempo",
+          "accepted_answers": [
+            "tempo"
+          ],
+          "explanation": "La forma completa es «No entanto, hoje não tenho tempo.»: Sin embargo, hoy no tengo tiempo.",
+          "audio": "No entanto, hoje não tenho tempo.",
+          "slow_audio": "No entanto, hoje não tenho tempo.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "por isso",
+          "accepted_answers": [
+            "por isso"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «por isso».",
+          "audio": "por isso",
+          "slow_audio": "por isso",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "target": "Sin embargo, hoy no tengo tiempo.",
+          "answer": "No entanto, hoje não tenho tempo.",
+          "accepted_answers": [
+            "No entanto, hoje não tenho tempo."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «No entanto, hoje não tenho tempo.». También puedes escribirlo.",
+          "audio": "No entanto, hoje não tenho tempo.",
+          "slow_audio": "No entanto, hoje não tenho tempo.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a2-1-conversation-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Además, necesito comprar comida.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Além disso, preciso de comprar comida.",
+              "accepted_answers": [
+                "Além disso, preciso de comprar comida."
+              ],
+              "audio": "Além disso, preciso de comprar comida.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Sin embargo, hoy no tengo tiempo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "No entanto, hoje não tenho tempo.",
+              "accepted_answers": [
+                "No entanto, hoje não tenho tempo."
+              ],
+              "audio": "No entanto, hoje não tenho tempo.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «por eso»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "por isso",
+              "accepted_answers": [
+                "por isso"
+              ],
+              "audio": "por isso",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "portuguese-a21-conversation-test",
       "title": "Prueba · Conversaciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

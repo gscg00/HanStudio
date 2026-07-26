@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "russian-b1-2-nuance-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-b1-2-nuance-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-b1-2-nuance-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Это не значит, что всё невозможно.",
+          "accepted_answers": [
+            "Это не значит, что всё невозможно."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Это не значит, что всё невозможно.».",
+          "audio": "Это не значит, что всё невозможно.",
+          "slow_audio": "Это не значит, что всё невозможно.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-nuance-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Вероятно, всё получится, если участвуют все.",
+          "accepted_answers": [
+            "Вероятно, всё получится, если участвуют все."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Вероятно, всё получится, если участвуют все.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Вероятно, всё получится, если участвуют все.",
+          "slow_audio": "Вероятно, всё получится, если участвуют все.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-nuance-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No necesariamente significa que sea imposible.»",
+          "target": "No necesariamente significa que sea imposible.",
+          "options": [
+            "значит,",
+            "Это",
+            "что",
+            "всё",
+            "невозможно.",
+            "не"
+          ],
+          "joiner": " ",
+          "answer": "Это не значит, что всё невозможно.",
+          "accepted_answers": [
+            "Это не значит, что всё невозможно."
+          ],
+          "explanation": "La forma completa es «Это не значит, что всё невозможно.».",
+          "audio": "Это не значит, что всё невозможно.",
+          "slow_audio": "Это не значит, что всё невозможно.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-nuance-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Вероятно, всё получится, если участвуют ___.",
+          "answer": "все",
+          "accepted_answers": [
+            "все"
+          ],
+          "explanation": "La forma completa es «Вероятно, всё получится, если участвуют все.»: Probablemente funcione, siempre que todos participen.",
+          "audio": "Вероятно, всё получится, если участвуют все.",
+          "slow_audio": "Вероятно, всё получится, если участвуют все.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-nuance-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "target": "La recomiendo porque los personajes parecen reales.",
+          "answer": "Я советую его, потому что герои кажутся настоящими.",
+          "accepted_answers": [
+            "Я советую его, потому что герои кажутся настоящими."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Я советую его, потому что герои кажутся настоящими.».",
+          "audio": "Я советую его, потому что герои кажутся настоящими.",
+          "slow_audio": "Я советую его, потому что герои кажутся настоящими.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-nuance-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "target": "Probablemente funcione, siempre que todos participen.",
+          "answer": "Вероятно, всё получится, если участвуют все.",
+          "accepted_answers": [
+            "Вероятно, всё получится, если участвуют все."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Вероятно, всё получится, если участвуют все.». También puedes escribirlo.",
+          "audio": "Вероятно, всё получится, если участвуют все.",
+          "slow_audio": "Вероятно, всё получится, если участвуют все.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-nuance-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No necesariamente significa que sea imposible.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Это не значит, что всё невозможно.",
+              "accepted_answers": [
+                "Это не значит, что всё невозможно."
+              ],
+              "audio": "Это не значит, что всё невозможно.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Probablemente funcione, siempre que todos participen.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Вероятно, всё получится, если участвуют все.",
+              "accepted_answers": [
+                "Вероятно, всё получится, если участвуют все."
+              ],
+              "audio": "Вероятно, всё получится, если участвуют все.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-b12-nuance-test",
       "title": "Prueba · Opiniones con matices",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -3072,6 +3072,115 @@
       ]
     },
     {
+      "id": "french-essentials-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-essentials-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-essentials-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «liaison»",
+          "target": "liaison",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "liaison",
+          "accepted_answers": [
+            "liaison"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «liaison».",
+          "audio": "les amis",
+          "slow_audio": "les amis",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-essentials-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "R",
+          "accepted_answers": [
+            "R"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «R»: No vibra como la erre española.",
+          "audio": "rue",
+          "slow_audio": "rue",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-essentials-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "liaison",
+          "options": [
+            "n",
+            "li",
+            "a",
+            "so",
+            "i"
+          ],
+          "joiner": "",
+          "answer": "liaison",
+          "accepted_answers": [
+            "liaison"
+          ],
+          "explanation": "La forma completa es «liaison».",
+          "audio": "les amis",
+          "slow_audio": "les amis",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-essentials-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "R",
+          "accepted_answers": [
+            "R"
+          ],
+          "explanation": "La forma completa es «R»: No vibra como la erre española.",
+          "audio": "rue",
+          "slow_audio": "rue",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "french-essentials-test-12",
       "title": "Prueba · Pronombres y verbos esenciales",
       "description": "Prueba de dominio de la unidad.",

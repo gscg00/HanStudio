@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "korean-b1-2-projects-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "korean-b1-2-projects-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "korean-b1-2-projects-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en coreano: «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "accepted_answers": [
+            "시작하기 전에 위험을 예상하는 것이 좋아요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «시작하기 전에 위험을 예상하는 것이 좋아요.».",
+          "audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "slow_audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-projects-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "주말에 진행 상황을 검토할 거예요.",
+          "accepted_answers": [
+            "주말에 진행 상황을 검토할 거예요."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «주말에 진행 상황을 검토할 거예요.»: Revisaremos los avances al final de la semana.",
+          "audio": "주말에 진행 상황을 검토할 거예요.",
+          "slow_audio": "주말에 진행 상황을 검토할 거예요.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-projects-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "options": [
+            "예상하는",
+            "좋아요.",
+            "시작하기",
+            "전에",
+            "것이",
+            "위험을"
+          ],
+          "joiner": " ",
+          "answer": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "accepted_answers": [
+            "시작하기 전에 위험을 예상하는 것이 좋아요."
+          ],
+          "explanation": "La forma completa es «시작하기 전에 위험을 예상하는 것이 좋아요.».",
+          "audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "slow_audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-projects-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "주말에 진행 상황을 검토할 ___.",
+          "answer": "거예요",
+          "accepted_answers": [
+            "거예요"
+          ],
+          "explanation": "La forma completa es «주말에 진행 상황을 검토할 거예요.»: Revisaremos los avances al final de la semana.",
+          "audio": "주말에 진행 상황을 검토할 거예요.",
+          "slow_audio": "주말에 진행 상황을 검토할 거예요.",
+          "tags": [
+            "production",
+            "completion",
+            "korean"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-projects-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "target": "Quiero participar como voluntario.",
+          "answer": "자원봉사자로 참여하고 싶어요.",
+          "accepted_answers": [
+            "자원봉사자로 참여하고 싶어요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «자원봉사자로 참여하고 싶어요.».",
+          "audio": "자원봉사자로 참여하고 싶어요.",
+          "slow_audio": "자원봉사자로 참여하고 싶어요.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "korean-b1-2-projects-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "target": "Revisaremos los avances al final de la semana.",
+          "answer": "주말에 진행 상황을 검토할 거예요.",
+          "accepted_answers": [
+            "주말에 진행 상황을 검토할 거예요."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «주말에 진행 상황을 검토할 거예요.». También puedes escribirlo.",
+          "audio": "주말에 진행 상황을 검토할 거예요.",
+          "slow_audio": "주말에 진행 상황을 검토할 거예요.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "korean-b1-2-projects-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Conviene prever los riesgos antes de empezar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+              "accepted_answers": [
+                "시작하기 전에 위험을 예상하는 것이 좋아요."
+              ],
+              "audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Revisaremos los avances al final de la semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en coreano.",
+              "answer": "주말에 진행 상황을 검토할 거예요.",
+              "accepted_answers": [
+                "주말에 진행 상황을 검토할 거예요."
+              ],
+              "audio": "주말에 진행 상황을 검토할 거예요.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "korean-b12-projects-test",
       "title": "Prueba · Proyectos y colaboración",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

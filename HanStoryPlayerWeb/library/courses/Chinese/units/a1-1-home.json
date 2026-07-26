@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "chinese-a1-1-home-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a1-1-home-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a1-1-home-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "钥匙在桌子上。",
+          "accepted_answers": [
+            "钥匙在桌子上。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «钥匙在桌子上。».",
+          "audio": "钥匙在桌子上。",
+          "slow_audio": "钥匙在桌子上。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-1-home-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "我的房间很小。",
+          "accepted_answers": [
+            "我的房间很小。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «我的房间很小。»: Mi habitación es pequeña.",
+          "audio": "我的房间很小。",
+          "slow_audio": "我的房间很小。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-1-home-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La llave está sobre la mesa.»",
+          "target": "La llave está sobre la mesa.",
+          "options": [
+            "子",
+            "匙",
+            "钥",
+            "上",
+            "在",
+            "。",
+            "桌"
+          ],
+          "joiner": "",
+          "answer": "钥匙在桌子上。",
+          "accepted_answers": [
+            "钥匙在桌子上。"
+          ],
+          "explanation": "La forma completa es «钥匙在桌子上。».",
+          "audio": "钥匙在桌子上。",
+          "slow_audio": "钥匙在桌子上。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-1-home-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "我的房间很＿。",
+          "answer": "小",
+          "accepted_answers": [
+            "小"
+          ],
+          "explanation": "La forma completa es «我的房间很小。»: Mi habitación es pequeña.",
+          "audio": "我的房间很小。",
+          "slow_audio": "我的房间很小。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-1-home-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «puerta»",
+          "target": "puerta",
+          "answer": "门",
+          "accepted_answers": [
+            "门"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «门».",
+          "audio": "门",
+          "slow_audio": "门",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-1-home-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "target": "Mi habitación es pequeña.",
+          "answer": "我的房间很小。",
+          "accepted_answers": [
+            "我的房间很小。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «我的房间很小。». También puedes escribirlo.",
+          "audio": "我的房间很小。",
+          "slow_audio": "我的房间很小。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-1-home-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La llave está sobre la mesa.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "钥匙在桌子上。",
+              "accepted_answers": [
+                "钥匙在桌子上。"
+              ],
+              "audio": "钥匙在桌子上。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Mi habitación es pequeña.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "我的房间很小。",
+              "accepted_answers": [
+                "我的房间很小。"
+              ],
+              "audio": "我的房间很小。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a11-home-test",
       "title": "Prueba · Casa y pertenencias",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

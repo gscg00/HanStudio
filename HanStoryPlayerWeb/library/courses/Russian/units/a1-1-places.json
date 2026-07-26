@@ -1779,6 +1779,225 @@
       ]
     },
     {
+      "id": "russian-a1-1-places-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "russian-a1-1-places-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a1-1-places-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Вокзал слева.",
+          "accepted_answers": [
+            "Вокзал слева."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Вокзал слева.».",
+          "audio": "Вокзал слева.",
+          "slow_audio": "Вокзал слева.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-places-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Я иду в школу.",
+          "accepted_answers": [
+            "Я иду в школу."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Я иду в школу.»: Voy a la escuela.",
+          "audio": "Я иду в школу.",
+          "slow_audio": "Я иду в школу.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-places-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "options": [
+            "слева.",
+            "Вокзал"
+          ],
+          "joiner": " ",
+          "answer": "Вокзал слева.",
+          "accepted_answers": [
+            "Вокзал слева."
+          ],
+          "explanation": "La forma completa es «Вокзал слева.».",
+          "audio": "Вокзал слева.",
+          "slow_audio": "Вокзал слева.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-places-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Я иду в ___.",
+          "answer": "школу",
+          "accepted_answers": [
+            "школу"
+          ],
+          "explanation": "La forma completa es «Я иду в школу.»: Voy a la escuela.",
+          "audio": "Я иду в школу.",
+          "slow_audio": "Я иду в школу.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-places-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «izquierda»",
+          "target": "izquierda",
+          "answer": "налево",
+          "accepted_answers": [
+            "налево"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «налево».",
+          "audio": "налево",
+          "slow_audio": "налево",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-1-places-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "target": "Voy a la escuela.",
+          "answer": "Я иду в школу.",
+          "accepted_answers": [
+            "Я иду в школу."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Я иду в школу.». También puedes escribirlo.",
+          "audio": "Я иду в школу.",
+          "slow_audio": "Я иду в школу.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-1-places-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La estación está a la izquierda.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Вокзал слева.",
+              "accepted_answers": [
+                "Вокзал слева."
+              ],
+              "audio": "Вокзал слева.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Voy a la escuela.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Я иду в школу.",
+              "accepted_answers": [
+                "Я иду в школу."
+              ],
+              "audio": "Я иду в школу.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «izquierda»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "налево",
+              "accepted_answers": [
+                "налево"
+              ],
+              "audio": "налево",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "russian-a11-places-test",
       "title": "Prueba · Lugares y direcciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

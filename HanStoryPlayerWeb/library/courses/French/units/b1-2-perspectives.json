@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "french-b1-2-perspectives-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-b1-2-perspectives-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-b1-2-perspectives-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Tous n’ont pas eu les mêmes chances.",
+          "accepted_answers": [
+            "Tous n’ont pas eu les mêmes chances."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Tous n’ont pas eu les mêmes chances.».",
+          "audio": "Tous n’ont pas eu les mêmes chances.",
+          "slow_audio": "Tous n’ont pas eu les mêmes chances.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-perspectives-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "L’expérience influence notre opinion.",
+          "accepted_answers": [
+            "L’expérience influence notre opinion."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «L’expérience influence notre opinion.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "L’expérience influence notre opinion.",
+          "slow_audio": "L’expérience influence notre opinion.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-perspectives-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «No todos tuvieron las mismas oportunidades.»",
+          "target": "No todos tuvieron las mismas oportunidades.",
+          "options": [
+            "Tous",
+            "chances.",
+            "mêmes",
+            "eu",
+            "pas",
+            "n’ont",
+            "les"
+          ],
+          "joiner": " ",
+          "answer": "Tous n’ont pas eu les mêmes chances.",
+          "accepted_answers": [
+            "Tous n’ont pas eu les mêmes chances."
+          ],
+          "explanation": "La forma completa es «Tous n’ont pas eu les mêmes chances.».",
+          "audio": "Tous n’ont pas eu les mêmes chances.",
+          "slow_audio": "Tous n’ont pas eu les mêmes chances.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-perspectives-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "L’expérience influence notre ___.",
+          "answer": "opinion",
+          "accepted_answers": [
+            "opinion"
+          ],
+          "explanation": "La forma completa es «L’expérience influence notre opinion.»: La experiencia personal influye en nuestra opinión.",
+          "audio": "L’expérience influence notre opinion.",
+          "slow_audio": "L’expérience influence notre opinion.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-perspectives-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "target": "Entonces me di cuenta de mi error.",
+          "answer": "C’est alors que j’ai compris mon erreur.",
+          "accepted_answers": [
+            "C’est alors que j’ai compris mon erreur."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «C’est alors que j’ai compris mon erreur.».",
+          "audio": "C’est alors que j’ai compris mon erreur.",
+          "slow_audio": "C’est alors que j’ai compris mon erreur.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-2-perspectives-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "target": "La experiencia personal influye en nuestra opinión.",
+          "answer": "L’expérience influence notre opinion.",
+          "accepted_answers": [
+            "L’expérience influence notre opinion."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «L’expérience influence notre opinion.». También puedes escribirlo.",
+          "audio": "L’expérience influence notre opinion.",
+          "slow_audio": "L’expérience influence notre opinion.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-2-perspectives-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «No todos tuvieron las mismas oportunidades.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Tous n’ont pas eu les mêmes chances.",
+              "accepted_answers": [
+                "Tous n’ont pas eu les mêmes chances."
+              ],
+              "audio": "Tous n’ont pas eu les mêmes chances.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La experiencia personal influye en nuestra opinión.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "L’expérience influence notre opinion.",
+              "accepted_answers": [
+                "L’expérience influence notre opinion."
+              ],
+              "audio": "L’expérience influence notre opinion.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-b12-perspectives-test",
       "title": "Prueba · Perspectivas y argumentos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

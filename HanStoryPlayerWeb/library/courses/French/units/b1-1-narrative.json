@@ -1779,6 +1779,214 @@
       ]
     },
     {
+      "id": "french-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Pendant ce temps, ma sœur a appelé la police.",
+          "accepted_answers": [
+            "Pendant ce temps, ma sœur a appelé la police."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Pendant ce temps, ma sœur a appelé la police.».",
+          "audio": "Pendant ce temps, ma sœur a appelé la police.",
+          "slow_audio": "Pendant ce temps, ma sœur a appelé la police.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Finalement, tout s’est bien terminé.",
+          "accepted_answers": [
+            "Finalement, tout s’est bien terminé."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Finalement, tout s’est bien terminé.»: Al final, todo salió bien.",
+          "audio": "Finalement, tout s’est bien terminé.",
+          "slow_audio": "Finalement, tout s’est bien terminé.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "temps,",
+            "la",
+            "police.",
+            "appelé",
+            "ma",
+            "sœur",
+            "Pendant",
+            "ce",
+            "a"
+          ],
+          "joiner": " ",
+          "answer": "Pendant ce temps, ma sœur a appelé la police.",
+          "accepted_answers": [
+            "Pendant ce temps, ma sœur a appelé la police."
+          ],
+          "explanation": "La forma completa es «Pendant ce temps, ma sœur a appelé la police.».",
+          "audio": "Pendant ce temps, ma sœur a appelé la police.",
+          "slow_audio": "Pendant ce temps, ma sœur a appelé la police.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Finalement, tout s’est bien ___.",
+          "answer": "terminé",
+          "accepted_answers": [
+            "terminé"
+          ],
+          "explanation": "La forma completa es «Finalement, tout s’est bien terminé.»: Al final, todo salió bien.",
+          "audio": "Finalement, tout s’est bien terminé.",
+          "slow_audio": "Finalement, tout s’est bien terminé.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Tu es déjà allé là-bas ?",
+          "accepted_answers": [
+            "Tu es déjà allé là-bas ?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Tu es déjà allé là-bas ?».",
+          "audio": "Tu es déjà allé là-bas ?",
+          "slow_audio": "Tu es déjà allé là-bas ?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "Finalement, tout s’est bien terminé.",
+          "accepted_answers": [
+            "Finalement, tout s’est bien terminé."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Finalement, tout s’est bien terminé.». También puedes escribirlo.",
+          "audio": "Finalement, tout s’est bien terminé.",
+          "slow_audio": "Finalement, tout s’est bien terminé.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Pendant ce temps, ma sœur a appelé la police.",
+              "accepted_answers": [
+                "Pendant ce temps, ma sœur a appelé la police."
+              ],
+              "audio": "Pendant ce temps, ma sœur a appelé la police.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Finalement, tout s’est bien terminé.",
+              "accepted_answers": [
+                "Finalement, tout s’est bien terminé."
+              ],
+              "audio": "Finalement, tout s’est bien terminé.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

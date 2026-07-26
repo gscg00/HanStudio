@@ -1779,6 +1779,213 @@
       ]
     },
     {
+      "id": "italian-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en italiano: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "accepted_answers": [
+            "Nel frattempo, mia sorella ha chiamato la polizia."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Nel frattempo, mia sorella ha chiamato la polizia.».",
+          "audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "slow_audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Alla fine, è andato tutto bene.",
+          "accepted_answers": [
+            "Alla fine, è andato tutto bene."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Alla fine, è andato tutto bene.»: Al final, todo salió bien.",
+          "audio": "Alla fine, è andato tutto bene.",
+          "slow_audio": "Alla fine, è andato tutto bene.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "la",
+            "chiamato",
+            "sorella",
+            "ha",
+            "mia",
+            "frattempo,",
+            "Nel",
+            "polizia."
+          ],
+          "joiner": " ",
+          "answer": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "accepted_answers": [
+            "Nel frattempo, mia sorella ha chiamato la polizia."
+          ],
+          "explanation": "La forma completa es «Nel frattempo, mia sorella ha chiamato la polizia.».",
+          "audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "slow_audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Alla fine, è andato tutto ___.",
+          "answer": "bene",
+          "accepted_answers": [
+            "bene"
+          ],
+          "explanation": "La forma completa es «Alla fine, è andato tutto bene.»: Al final, todo salió bien.",
+          "audio": "Alla fine, è andato tutto bene.",
+          "slow_audio": "Alla fine, è andato tutto bene.",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Sei mai stato lì?",
+          "accepted_answers": [
+            "Sei mai stato lì?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Sei mai stato lì?».",
+          "audio": "Sei mai stato lì?",
+          "slow_audio": "Sei mai stato lì?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "Alla fine, è andato tutto bene.",
+          "accepted_answers": [
+            "Alla fine, è andato tutto bene."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Alla fine, è andato tutto bene.». También puedes escribirlo.",
+          "audio": "Alla fine, è andato tutto bene.",
+          "slow_audio": "Alla fine, è andato tutto bene.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Nel frattempo, mia sorella ha chiamato la polizia.",
+              "accepted_answers": [
+                "Nel frattempo, mia sorella ha chiamato la polizia."
+              ],
+              "audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en italiano.",
+              "answer": "Alla fine, è andato tutto bene.",
+              "accepted_answers": [
+                "Alla fine, è andato tutto bene."
+              ],
+              "audio": "Alla fine, è andato tutto bene.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "italian-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

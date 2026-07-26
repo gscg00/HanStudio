@@ -1779,6 +1779,227 @@
       ]
     },
     {
+      "id": "german-a1-1-places-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 35,
+      "activities": [
+        {
+          "id": "german-a1-1-places-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a1-1-places-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Der Bahnhof ist links.",
+          "accepted_answers": [
+            "Der Bahnhof ist links."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Der Bahnhof ist links.».",
+          "audio": "Der Bahnhof ist links.",
+          "slow_audio": "Der Bahnhof ist links.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-1-places-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Ich gehe zur Schule.",
+          "accepted_answers": [
+            "Ich gehe zur Schule."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Ich gehe zur Schule.»: Voy a la escuela.",
+          "audio": "Ich gehe zur Schule.",
+          "slow_audio": "Ich gehe zur Schule.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-1-places-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La estación está a la izquierda.»",
+          "target": "La estación está a la izquierda.",
+          "options": [
+            "links.",
+            "ist",
+            "Bahnhof",
+            "Der"
+          ],
+          "joiner": " ",
+          "answer": "Der Bahnhof ist links.",
+          "accepted_answers": [
+            "Der Bahnhof ist links."
+          ],
+          "explanation": "La forma completa es «Der Bahnhof ist links.».",
+          "audio": "Der Bahnhof ist links.",
+          "slow_audio": "Der Bahnhof ist links.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-1-places-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Ich gehe zur ___.",
+          "answer": "Schule",
+          "accepted_answers": [
+            "Schule"
+          ],
+          "explanation": "La forma completa es «Ich gehe zur Schule.»: Voy a la escuela.",
+          "audio": "Ich gehe zur Schule.",
+          "slow_audio": "Ich gehe zur Schule.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-1-places-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «izquierda»",
+          "target": "izquierda",
+          "answer": "links",
+          "accepted_answers": [
+            "links"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «links».",
+          "audio": "links",
+          "slow_audio": "links",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a1-1-places-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "target": "Voy a la escuela.",
+          "answer": "Ich gehe zur Schule.",
+          "accepted_answers": [
+            "Ich gehe zur Schule."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Ich gehe zur Schule.». También puedes escribirlo.",
+          "audio": "Ich gehe zur Schule.",
+          "slow_audio": "Ich gehe zur Schule.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a1-1-places-production-dialogue",
+          "type": "stage_scenario",
+          "prompt": "Misión final de la etapa",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La estación está a la izquierda.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Der Bahnhof ist links.",
+              "accepted_answers": [
+                "Der Bahnhof ist links."
+              ],
+              "audio": "Der Bahnhof ist links.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Voy a la escuela.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich gehe zur Schule.",
+              "accepted_answers": [
+                "Ich gehe zur Schule."
+              ],
+              "audio": "Ich gehe zur Schule.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 3",
+              "translation": "Quieres expresar: «izquierda»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "links",
+              "accepted_answers": [
+                "links"
+              ],
+              "audio": "links",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 3,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "stage-final"
+          ],
+          "xp": 30
+        }
+      ]
+    },
+    {
       "id": "german-a11-places-test",
       "title": "Prueba · Lugares y direcciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

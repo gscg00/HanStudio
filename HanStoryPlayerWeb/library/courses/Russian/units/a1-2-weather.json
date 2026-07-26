@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "russian-a1-2-weather-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-a1-2-weather-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-a1-2-weather-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Мне нужно пальто.",
+          "accepted_answers": [
+            "Мне нужно пальто."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Мне нужно пальто.».",
+          "audio": "Мне нужно пальто.",
+          "slow_audio": "Мне нужно пальто.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-weather-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Погода быстро меняется.",
+          "accepted_answers": [
+            "Погода быстро меняется."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Погода быстро меняется.»: El tiempo cambia rápido.",
+          "audio": "Погода быстро меняется.",
+          "slow_audio": "Погода быстро меняется.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-weather-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "options": [
+            "пальто.",
+            "Мне",
+            "нужно"
+          ],
+          "joiner": " ",
+          "answer": "Мне нужно пальто.",
+          "accepted_answers": [
+            "Мне нужно пальто."
+          ],
+          "explanation": "La forma completa es «Мне нужно пальто.».",
+          "audio": "Мне нужно пальто.",
+          "slow_audio": "Мне нужно пальто.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-weather-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Погода быстро ___.",
+          "answer": "меняется",
+          "accepted_answers": [
+            "меняется"
+          ],
+          "explanation": "La forma completa es «Погода быстро меняется.»: El tiempo cambia rápido.",
+          "audio": "Погода быстро меняется.",
+          "slow_audio": "Погода быстро меняется.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-weather-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «abrigo»",
+          "target": "abrigo",
+          "answer": "пальто",
+          "accepted_answers": [
+            "пальто"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «пальто».",
+          "audio": "пальто",
+          "slow_audio": "пальто",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-a1-2-weather-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "target": "El tiempo cambia rápido.",
+          "answer": "Погода быстро меняется.",
+          "accepted_answers": [
+            "Погода быстро меняется."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Погода быстро меняется.». También puedes escribirlo.",
+          "audio": "Погода быстро меняется.",
+          "slow_audio": "Погода быстро меняется.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-a1-2-weather-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito un abrigo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Мне нужно пальто.",
+              "accepted_answers": [
+                "Мне нужно пальто."
+              ],
+              "audio": "Мне нужно пальто.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Погода быстро меняется.",
+              "accepted_answers": [
+                "Погода быстро меняется."
+              ],
+              "audio": "Погода быстро меняется.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-a12-weather-test",
       "title": "Prueba · Clima y ropa",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

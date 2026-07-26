@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Call me if you need help.",
+          "accepted_answers": [
+            "Call me if you need help."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Call me if you need help.».",
+          "audio": "Call me if you need help.",
+          "slow_audio": "Call me if you need help.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "I'd have agreed if you'd explained it.",
+          "accepted_answers": [
+            "I'd have agreed if you'd explained it."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «I'd have agreed if you'd explained it.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "I'd have agreed if you'd explained it.",
+          "slow_audio": "I'd have agreed if you'd explained it.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "Call",
+            "need",
+            "if",
+            "you",
+            "help.",
+            "me"
+          ],
+          "joiner": " ",
+          "answer": "Call me if you need help.",
+          "accepted_answers": [
+            "Call me if you need help."
+          ],
+          "explanation": "La forma completa es «Call me if you need help.».",
+          "audio": "Call me if you need help.",
+          "slow_audio": "Call me if you need help.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "I'd have agreed if you'd explained ___.",
+          "answer": "it",
+          "accepted_answers": [
+            "it"
+          ],
+          "explanation": "La forma completa es «I'd have agreed if you'd explained it.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "I'd have agreed if you'd explained it.",
+          "slow_audio": "I'd have agreed if you'd explained it.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "Thanks to your help, we solved the problem.",
+          "accepted_answers": [
+            "Thanks to your help, we solved the problem."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Thanks to your help, we solved the problem.».",
+          "audio": "Thanks to your help, we solved the problem.",
+          "slow_audio": "Thanks to your help, we solved the problem.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "I'd have agreed if you'd explained it.",
+          "accepted_answers": [
+            "I'd have agreed if you'd explained it."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «I'd have agreed if you'd explained it.». También puedes escribirlo.",
+          "audio": "I'd have agreed if you'd explained it.",
+          "slow_audio": "I'd have agreed if you'd explained it.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Call me if you need help.",
+              "accepted_answers": [
+                "Call me if you need help."
+              ],
+              "audio": "Call me if you need help.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I'd have agreed if you'd explained it.",
+              "accepted_answers": [
+                "I'd have agreed if you'd explained it."
+              ],
+              "audio": "I'd have agreed if you'd explained it.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -23796,6 +23796,206 @@
       ]
     },
     {
+      "id": "chinese-vocabulary-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-vocabulary-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-vocabulary-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «usted»",
+          "target": "usted",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "您",
+          "accepted_answers": [
+            "您"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «您».",
+          "audio": "您",
+          "slow_audio": "您",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-vocabulary-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "能 / 可以",
+          "accepted_answers": [
+            "能 / 可以"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «能 / 可以»: poder",
+          "audio": "能 / 可以",
+          "slow_audio": "能 / 可以",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-vocabulary-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «usted»",
+          "target": "usted",
+          "options": [
+            "您"
+          ],
+          "joiner": "",
+          "answer": "您",
+          "accepted_answers": [
+            "您"
+          ],
+          "explanation": "La forma completa es «您».",
+          "audio": "您",
+          "slow_audio": "您",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-vocabulary-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "能 / ___",
+          "answer": "可以",
+          "accepted_answers": [
+            "可以"
+          ],
+          "explanation": "La forma completa es «能 / 可以»: poder",
+          "audio": "能 / 可以",
+          "slow_audio": "能 / 可以",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-vocabulary-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «cómo»",
+          "target": "cómo",
+          "answer": "怎么",
+          "accepted_answers": [
+            "怎么"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «怎么».",
+          "audio": "怎么",
+          "slow_audio": "怎么",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-vocabulary-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «poder»",
+          "target": "poder",
+          "answer": "能 / 可以",
+          "accepted_answers": [
+            "能 / 可以"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «能 / 可以». También puedes escribirlo.",
+          "audio": "能 / 可以",
+          "slow_audio": "能 / 可以",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-vocabulary-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «usted»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "您",
+              "accepted_answers": [
+                "您"
+              ],
+              "audio": "您",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «poder»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "能 / 可以",
+              "accepted_answers": [
+                "能 / 可以"
+              ],
+              "audio": "能 / 可以",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-vocabulary-test-48",
       "title": "Prueba · Vocabulario frecuente",
       "description": "Prueba de dominio de la unidad.",

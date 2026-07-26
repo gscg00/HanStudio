@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "german-a2-1-services-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-1-services-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-1-services-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «¿Me puede dar un recibo?»",
+          "target": "¿Me puede dar un recibo?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Können Sie mir eine Quittung geben?",
+          "accepted_answers": [
+            "Können Sie mir eine Quittung geben?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Können Sie mir eine Quittung geben?».",
+          "audio": "Können Sie mir eine Quittung geben?",
+          "slow_audio": "Können Sie mir eine Quittung geben?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-services-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Ich brauche die Reparatur noch heute.",
+          "accepted_answers": [
+            "Ich brauche die Reparatur noch heute."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Ich brauche die Reparatur noch heute.»: Necesito que lo reparen hoy.",
+          "audio": "Ich brauche die Reparatur noch heute.",
+          "slow_audio": "Ich brauche die Reparatur noch heute.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-services-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Me puede dar un recibo?»",
+          "target": "¿Me puede dar un recibo?",
+          "options": [
+            "mir",
+            "geben?",
+            "Können",
+            "Quittung",
+            "eine",
+            "Sie"
+          ],
+          "joiner": " ",
+          "answer": "Können Sie mir eine Quittung geben?",
+          "accepted_answers": [
+            "Können Sie mir eine Quittung geben?"
+          ],
+          "explanation": "La forma completa es «Können Sie mir eine Quittung geben?».",
+          "audio": "Können Sie mir eine Quittung geben?",
+          "slow_audio": "Können Sie mir eine Quittung geben?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-services-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Ich brauche die Reparatur noch ___.",
+          "answer": "heute",
+          "accepted_answers": [
+            "heute"
+          ],
+          "explanation": "La forma completa es «Ich brauche die Reparatur noch heute.»: Necesito que lo reparen hoy.",
+          "audio": "Ich brauche die Reparatur noch heute.",
+          "slow_audio": "Ich brauche die Reparatur noch heute.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-services-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «roto»",
+          "target": "roto",
+          "answer": "kaputt",
+          "accepted_answers": [
+            "kaputt"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «kaputt».",
+          "audio": "kaputt",
+          "slow_audio": "kaputt",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-services-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "target": "Necesito que lo reparen hoy.",
+          "answer": "Ich brauche die Reparatur noch heute.",
+          "accepted_answers": [
+            "Ich brauche die Reparatur noch heute."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Ich brauche die Reparatur noch heute.». También puedes escribirlo.",
+          "audio": "Ich brauche die Reparatur noch heute.",
+          "slow_audio": "Ich brauche die Reparatur noch heute.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-services-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Me puede dar un recibo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Können Sie mir eine Quittung geben?",
+              "accepted_answers": [
+                "Können Sie mir eine Quittung geben?"
+              ],
+              "audio": "Können Sie mir eine Quittung geben?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Necesito que lo reparen hoy.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Ich brauche die Reparatur noch heute.",
+              "accepted_answers": [
+                "Ich brauche die Reparatur noch heute."
+              ],
+              "audio": "Ich brauche die Reparatur noch heute.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a21-services-test",
       "title": "Prueba · Servicios y problemas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

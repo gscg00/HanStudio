@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "chinese-a1-2-weather-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a1-2-weather-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a1-2-weather-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "我要一件外套。",
+          "accepted_answers": [
+            "我要一件外套。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «我要一件外套。».",
+          "audio": "我要一件外套。",
+          "slow_audio": "我要一件外套。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-2-weather-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "天气变化很快。",
+          "accepted_answers": [
+            "天气变化很快。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «天气变化很快。»: El tiempo cambia rápido.",
+          "audio": "天气变化很快。",
+          "slow_audio": "天气变化很快。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-2-weather-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito un abrigo.»",
+          "target": "Necesito un abrigo.",
+          "options": [
+            "要",
+            "一",
+            "外",
+            "。",
+            "件",
+            "套",
+            "我"
+          ],
+          "joiner": "",
+          "answer": "我要一件外套。",
+          "accepted_answers": [
+            "我要一件外套。"
+          ],
+          "explanation": "La forma completa es «我要一件外套。».",
+          "audio": "我要一件外套。",
+          "slow_audio": "我要一件外套。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-2-weather-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "天气变化很＿。",
+          "answer": "快",
+          "accepted_answers": [
+            "快"
+          ],
+          "explanation": "La forma completa es «天气变化很快。»: El tiempo cambia rápido.",
+          "audio": "天气变化很快。",
+          "slow_audio": "天气变化很快。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-2-weather-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «abrigo»",
+          "target": "abrigo",
+          "answer": "外套",
+          "accepted_answers": [
+            "外套"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «外套».",
+          "audio": "外套",
+          "slow_audio": "外套",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a1-2-weather-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "target": "El tiempo cambia rápido.",
+          "answer": "天气变化很快。",
+          "accepted_answers": [
+            "天气变化很快。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «天气变化很快。». También puedes escribirlo.",
+          "audio": "天气变化很快。",
+          "slow_audio": "天气变化很快。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a1-2-weather-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito un abrigo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "我要一件外套。",
+              "accepted_answers": [
+                "我要一件外套。"
+              ],
+              "audio": "我要一件外套。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "天气变化很快。",
+              "accepted_answers": [
+                "天气变化很快。"
+              ],
+              "audio": "天气变化很快。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a12-weather-test",
       "title": "Prueba · Clima y ropa",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

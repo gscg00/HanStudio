@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "russian-b1-1-society-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-b1-1-society-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-b1-1-society-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Загрязнение влияет на наше здоровье.",
+          "accepted_answers": [
+            "Загрязнение влияет на наше здоровье."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Загрязнение влияет на наше здоровье.».",
+          "audio": "Загрязнение влияет на наше здоровье.",
+          "slow_audio": "Загрязнение влияет на наше здоровье.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-society-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Городские власти объявили о новом плане.",
+          "accepted_answers": [
+            "Городские власти объявили о новом плане."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Городские власти объявили о новом плане.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "Городские власти объявили о новом плане.",
+          "slow_audio": "Городские власти объявили о новом плане.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-society-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «La contaminación afecta a nuestra salud.»",
+          "target": "La contaminación afecta a nuestra salud.",
+          "options": [
+            "на",
+            "влияет",
+            "наше",
+            "Загрязнение",
+            "здоровье."
+          ],
+          "joiner": " ",
+          "answer": "Загрязнение влияет на наше здоровье.",
+          "accepted_answers": [
+            "Загрязнение влияет на наше здоровье."
+          ],
+          "explanation": "La forma completa es «Загрязнение влияет на наше здоровье.».",
+          "audio": "Загрязнение влияет на наше здоровье.",
+          "slow_audio": "Загрязнение влияет на наше здоровье.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-society-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Городские власти объявили о новом ___.",
+          "answer": "плане",
+          "accepted_answers": [
+            "плане"
+          ],
+          "explanation": "La forma completa es «Городские власти объявили о новом плане.»: El ayuntamiento anunció un nuevo plan.",
+          "audio": "Городские власти объявили о новом плане.",
+          "slow_audio": "Городские власти объявили о новом плане.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-society-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "высокий",
+          "accepted_answers": [
+            "высокий"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «высокий».",
+          "audio": "высокий",
+          "slow_audio": "высокий",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-society-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "target": "El ayuntamiento anunció un nuevo plan.",
+          "answer": "Городские власти объявили о новом плане.",
+          "accepted_answers": [
+            "Городские власти объявили о новом плане."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Городские власти объявили о новом плане.». También puedes escribirlo.",
+          "audio": "Городские власти объявили о новом плане.",
+          "slow_audio": "Городские власти объявили о новом плане.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-society-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «La contaminación afecta a nuestra salud.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Загрязнение влияет на наше здоровье.",
+              "accepted_answers": [
+                "Загрязнение влияет на наше здоровье."
+              ],
+              "audio": "Загрязнение влияет на наше здоровье.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El ayuntamiento anunció un nuevo plan.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Городские власти объявили о новом плане.",
+              "accepted_answers": [
+                "Городские власти объявили о новом плане."
+              ],
+              "audio": "Городские власти объявили о новом плане.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-b11-society-test",
       "title": "Prueba · Sociedad y entorno",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

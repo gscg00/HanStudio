@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "portuguese-a1-2-shopping-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-a1-2-shopping-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Posso pagar com cartão?",
+          "accepted_answers": [
+            "Posso pagar com cartão?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Posso pagar com cartão?».",
+          "audio": "Posso pagar com cartão?",
+          "slow_audio": "Posso pagar com cartão?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Só tenho dinheiro.",
+          "accepted_answers": [
+            "Só tenho dinheiro."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Só tenho dinheiro.»: Solo tengo efectivo.",
+          "audio": "Só tenho dinheiro.",
+          "slow_audio": "Só tenho dinheiro.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "options": [
+            "pagar",
+            "com",
+            "cartão?",
+            "Posso"
+          ],
+          "joiner": " ",
+          "answer": "Posso pagar com cartão?",
+          "accepted_answers": [
+            "Posso pagar com cartão?"
+          ],
+          "explanation": "La forma completa es «Posso pagar com cartão?».",
+          "audio": "Posso pagar com cartão?",
+          "slow_audio": "Posso pagar com cartão?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Só tenho ___.",
+          "answer": "dinheiro",
+          "accepted_answers": [
+            "dinheiro"
+          ],
+          "explanation": "La forma completa es «Só tenho dinheiro.»: Solo tengo efectivo.",
+          "audio": "Só tenho dinheiro.",
+          "slow_audio": "Só tenho dinheiro.",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «tarjeta»",
+          "target": "tarjeta",
+          "answer": "cartão",
+          "accepted_answers": [
+            "cartão"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «cartão».",
+          "audio": "cartão",
+          "slow_audio": "cartão",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "target": "Solo tengo efectivo.",
+          "answer": "Só tenho dinheiro.",
+          "accepted_answers": [
+            "Só tenho dinheiro."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Só tenho dinheiro.». También puedes escribirlo.",
+          "audio": "Só tenho dinheiro.",
+          "slow_audio": "Só tenho dinheiro.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-a1-2-shopping-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Puedo pagar con tarjeta?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Posso pagar com cartão?",
+              "accepted_answers": [
+                "Posso pagar com cartão?"
+              ],
+              "audio": "Posso pagar com cartão?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Solo tengo efectivo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "Só tenho dinheiro.",
+              "accepted_answers": [
+                "Só tenho dinheiro."
+              ],
+              "audio": "Só tenho dinheiro.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-a12-shopping-test",
       "title": "Prueba · Compras y precios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

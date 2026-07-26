@@ -1779,6 +1779,208 @@
       ]
     },
     {
+      "id": "french-a1-2-transport-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "french-a1-2-transport-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "french-a1-2-transport-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en francés: «¿Tengo que hacer transbordo?»",
+          "target": "¿Tengo que hacer transbordo?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Dois-je changer ?",
+          "accepted_answers": [
+            "Dois-je changer ?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Dois-je changer ?».",
+          "audio": "Dois-je changer ?",
+          "slow_audio": "Dois-je changer ?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-transport-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Le train est en retard.",
+          "accepted_answers": [
+            "Le train est en retard."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Le train est en retard.»: El tren lleva retraso.",
+          "audio": "Le train est en retard.",
+          "slow_audio": "Le train est en retard.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-transport-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Tengo que hacer transbordo?»",
+          "target": "¿Tengo que hacer transbordo?",
+          "options": [
+            "?",
+            "changer",
+            "Dois-je"
+          ],
+          "joiner": " ",
+          "answer": "Dois-je changer ?",
+          "accepted_answers": [
+            "Dois-je changer ?"
+          ],
+          "explanation": "La forma completa es «Dois-je changer ?».",
+          "audio": "Dois-je changer ?",
+          "slow_audio": "Dois-je changer ?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-transport-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Le train est en ___.",
+          "answer": "retard",
+          "accepted_answers": [
+            "retard"
+          ],
+          "explanation": "La forma completa es «Le train est en retard.»: El tren lleva retraso.",
+          "audio": "Le train est en retard.",
+          "slow_audio": "Le train est en retard.",
+          "tags": [
+            "production",
+            "completion",
+            "french"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-transport-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «aeropuerto»",
+          "target": "aeropuerto",
+          "answer": "aéroport",
+          "accepted_answers": [
+            "aéroport"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «aéroport».",
+          "audio": "aéroport",
+          "slow_audio": "aéroport",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "french-a1-2-transport-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "target": "El tren lleva retraso.",
+          "answer": "Le train est en retard.",
+          "accepted_answers": [
+            "Le train est en retard."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Le train est en retard.». También puedes escribirlo.",
+          "audio": "Le train est en retard.",
+          "slow_audio": "Le train est en retard.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "french-a1-2-transport-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Tengo que hacer transbordo?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Dois-je changer ?",
+              "accepted_answers": [
+                "Dois-je changer ?"
+              ],
+              "audio": "Dois-je changer ?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «El tren lleva retraso.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en francés.",
+              "answer": "Le train est en retard.",
+              "accepted_answers": [
+                "Le train est en retard."
+              ],
+              "audio": "Le train est en retard.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "french-a12-transport-test",
       "title": "Prueba · Transporte y trayectos",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

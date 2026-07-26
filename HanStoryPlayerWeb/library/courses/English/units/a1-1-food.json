@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-a1-1-food-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a1-1-food-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a1-1-food-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Bebo té por la mañana.»",
+          "target": "Bebo té por la mañana.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "I drink tea in the morning.",
+          "accepted_answers": [
+            "I drink tea in the morning."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «I drink tea in the morning.».",
+          "audio": "I drink tea in the morning.",
+          "slow_audio": "I drink tea in the morning.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-food-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "I want some rice.",
+          "accepted_answers": [
+            "I want some rice."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «I want some rice.»: Quiero un poco de arroz.",
+          "audio": "I want some rice.",
+          "slow_audio": "I want some rice.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-food-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Bebo té por la mañana.»",
+          "target": "Bebo té por la mañana.",
+          "options": [
+            "I",
+            "drink",
+            "in",
+            "morning.",
+            "the",
+            "tea"
+          ],
+          "joiner": " ",
+          "answer": "I drink tea in the morning.",
+          "accepted_answers": [
+            "I drink tea in the morning."
+          ],
+          "explanation": "La forma completa es «I drink tea in the morning.».",
+          "audio": "I drink tea in the morning.",
+          "slow_audio": "I drink tea in the morning.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-food-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "I want some ___.",
+          "answer": "rice",
+          "accepted_answers": [
+            "rice"
+          ],
+          "explanation": "La forma completa es «I want some rice.»: Quiero un poco de arroz.",
+          "audio": "I want some rice.",
+          "slow_audio": "I want some rice.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-food-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «carne»",
+          "target": "carne",
+          "answer": "meat",
+          "accepted_answers": [
+            "meat"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «meat».",
+          "audio": "meat",
+          "slow_audio": "meat",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-1-food-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "target": "Quiero un poco de arroz.",
+          "answer": "I want some rice.",
+          "accepted_answers": [
+            "I want some rice."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «I want some rice.». También puedes escribirlo.",
+          "audio": "I want some rice.",
+          "slow_audio": "I want some rice.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-1-food-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Bebo té por la mañana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I drink tea in the morning.",
+              "accepted_answers": [
+                "I drink tea in the morning."
+              ],
+              "audio": "I drink tea in the morning.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Quiero un poco de arroz.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I want some rice.",
+              "accepted_answers": [
+                "I want some rice."
+              ],
+              "audio": "I want some rice.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a11-food-test",
       "title": "Prueba · Comida y bebida",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

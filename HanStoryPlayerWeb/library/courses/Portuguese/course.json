@@ -3,7 +3,7 @@
   "title": "Portugués: de cero a conversaciones intermedias",
   "language": "Portuguese",
   "languageCode": "pt",
-  "version": 11,
+  "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
   "tagline": "Afina la pronunciación y empieza a leer portugués real.",
   "vocabularyGoal": 300,
@@ -516,5 +516,15 @@
       "manifest": "units/b1-2-conversation.json",
       "icon": "Diálogo"
     }
-  ]
+  ],
+  "productionPractice": {
+    "schemaVersion": 1,
+    "inputModes": [
+      "keyboard",
+      "blocks",
+      "microphone"
+    ],
+    "speechOptional": true,
+    "audioPolicy": "reuse-existing-only"
+  }
 }

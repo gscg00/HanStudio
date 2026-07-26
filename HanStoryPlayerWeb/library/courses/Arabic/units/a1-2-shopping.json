@@ -1779,6 +1779,209 @@
       ]
     },
     {
+      "id": "arabic-a1-2-shopping-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-a1-2-shopping-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "هل يمكنني الدفع بالبطاقة؟",
+          "accepted_answers": [
+            "هل يمكنني الدفع بالبطاقة؟"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «هل يمكنني الدفع بالبطاقة؟».",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "لدي نقد فقط.",
+          "accepted_answers": [
+            "لدي نقد فقط."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «لدي نقد فقط.»: Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "options": [
+            "يمكنني",
+            "بالبطاقة؟",
+            "هل",
+            "الدفع"
+          ],
+          "joiner": " ",
+          "answer": "هل يمكنني الدفع بالبطاقة؟",
+          "accepted_answers": [
+            "هل يمكنني الدفع بالبطاقة؟"
+          ],
+          "explanation": "La forma completa es «هل يمكنني الدفع بالبطاقة؟».",
+          "audio": "هل يمكنني الدفع بالبطاقة؟",
+          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "لدي نقد ___.",
+          "answer": "فقط",
+          "accepted_answers": [
+            "فقط"
+          ],
+          "explanation": "La forma completa es «لدي نقد فقط.»: Solo tengo efectivo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «tarjeta»",
+          "target": "tarjeta",
+          "answer": "بطاقة",
+          "accepted_answers": [
+            "بطاقة"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «بطاقة».",
+          "audio": "بطاقة",
+          "slow_audio": "بطاقة",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "target": "Solo tengo efectivo.",
+          "answer": "لدي نقد فقط.",
+          "accepted_answers": [
+            "لدي نقد فقط."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «لدي نقد فقط.». También puedes escribirlo.",
+          "audio": "لدي نقد فقط.",
+          "slow_audio": "لدي نقد فقط.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-a1-2-shopping-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Puedo pagar con tarjeta?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "هل يمكنني الدفع بالبطاقة؟",
+              "accepted_answers": [
+                "هل يمكنني الدفع بالبطاقة؟"
+              ],
+              "audio": "هل يمكنني الدفع بالبطاقة؟",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Solo tengo efectivo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "لدي نقد فقط.",
+              "accepted_answers": [
+                "لدي نقد فقط."
+              ],
+              "audio": "لدي نقد فقط.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-a12-shopping-test",
       "title": "Prueba · Compras y precios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

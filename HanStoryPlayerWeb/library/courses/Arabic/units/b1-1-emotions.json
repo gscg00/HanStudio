@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "arabic-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "يجب أن تخبره بما تشعر به.",
+          "accepted_answers": [
+            "يجب أن تخبره بما تشعر به."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «يجب أن تخبره بما تشعر به.».",
+          "audio": "يجب أن تخبره بما تشعر به.",
+          "slow_audio": "يجب أن تخبره بما تشعر به.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "accepted_answers": [
+            "منذ ذلك الحين، نثق ببعضنا أكثر."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «منذ ذلك الحين، نثق ببعضنا أكثر.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "slow_audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "تشعر",
+            "يجب",
+            "به.",
+            "تخبره",
+            "أن",
+            "بما"
+          ],
+          "joiner": " ",
+          "answer": "يجب أن تخبره بما تشعر به.",
+          "accepted_answers": [
+            "يجب أن تخبره بما تشعر به."
+          ],
+          "explanation": "La forma completa es «يجب أن تخبره بما تشعر به.».",
+          "audio": "يجب أن تخبره بما تشعر به.",
+          "slow_audio": "يجب أن تخبره بما تشعر به.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "منذ ذلك الحين، نثق ببعضنا ___.",
+          "answer": "أكثر",
+          "accepted_answers": [
+            "أكثر"
+          ],
+          "explanation": "La forma completa es «منذ ذلك الحين، نثق ببعضنا أكثر.»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "slow_audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "لذلك",
+          "accepted_answers": [
+            "لذلك"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «لذلك».",
+          "audio": "لذلك",
+          "slow_audio": "لذلك",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "accepted_answers": [
+            "منذ ذلك الحين، نثق ببعضنا أكثر."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «منذ ذلك الحين، نثق ببعضنا أكثر.». También puedes escribirlo.",
+          "audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "slow_audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "يجب أن تخبره بما تشعر به.",
+              "accepted_answers": [
+                "يجب أن تخبره بما تشعر به."
+              ],
+              "audio": "يجب أن تخبره بما تشعر به.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+              "accepted_answers": [
+                "منذ ذلك الحين، نثق ببعضنا أكثر."
+              ],
+              "audio": "منذ ذلك الحين، نثق ببعضنا أكثر.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

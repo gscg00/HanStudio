@@ -1857,6 +1857,206 @@
       ]
     },
     {
+      "id": "portuguese-reading-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "portuguese-reading-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "portuguese-reading-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en portugués: «U: u»",
+          "target": "U: u",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "U",
+          "accepted_answers": [
+            "U"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «U».",
+          "audio": "u",
+          "slow_audio": "u",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-reading-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "V",
+          "accepted_answers": [
+            "V"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «V»: V: ve",
+          "audio": "vê",
+          "slow_audio": "vê",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-reading-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «U: u»",
+          "target": "U: u",
+          "options": [
+            "U"
+          ],
+          "joiner": "",
+          "answer": "U",
+          "accepted_answers": [
+            "U"
+          ],
+          "explanation": "La forma completa es «U».",
+          "audio": "u",
+          "slow_audio": "u",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-reading-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "V",
+          "accepted_answers": [
+            "V"
+          ],
+          "explanation": "La forma completa es «V»: V: ve",
+          "audio": "vê",
+          "slow_audio": "vê",
+          "tags": [
+            "production",
+            "completion",
+            "portuguese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-reading-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «W: dablio»",
+          "target": "W: dablio",
+          "answer": "W",
+          "accepted_answers": [
+            "W"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «W».",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "portuguese-reading-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «V: ve»",
+          "target": "V: ve",
+          "answer": "V",
+          "accepted_answers": [
+            "V"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «V». También puedes escribirlo.",
+          "audio": "vê",
+          "slow_audio": "vê",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "portuguese-reading-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «U: u»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "U",
+              "accepted_answers": [
+                "U"
+              ],
+              "audio": "u",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «V: ve»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en portugués.",
+              "answer": "V",
+              "accepted_answers": [
+                "V"
+              ],
+              "audio": "vê",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "portuguese-reading-test-08",
       "title": "Prueba · Sonidos y lectura",
       "description": "Prueba de dominio de la unidad.",

@@ -1975,6 +1975,206 @@
       ]
     },
     {
+      "id": "arabic-reading-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "arabic-reading-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "arabic-reading-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en árabe: «ل: l»",
+          "target": "ل: l",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "ل",
+          "accepted_answers": [
+            "ل"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «ل».",
+          "audio": "لام",
+          "slow_audio": "لام",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "م",
+          "accepted_answers": [
+            "م"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «م»: م: m",
+          "audio": "ميم",
+          "slow_audio": "ميم",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «ل: l»",
+          "target": "ل: l",
+          "options": [
+            "ل"
+          ],
+          "joiner": "",
+          "answer": "ل",
+          "accepted_answers": [
+            "ل"
+          ],
+          "explanation": "La forma completa es «ل».",
+          "audio": "لام",
+          "slow_audio": "لام",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-reading-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "م",
+          "accepted_answers": [
+            "م"
+          ],
+          "explanation": "La forma completa es «م»: م: m",
+          "audio": "ميم",
+          "slow_audio": "ميم",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-reading-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «ن: n»",
+          "target": "ن: n",
+          "answer": "ن",
+          "accepted_answers": [
+            "ن"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «ن».",
+          "audio": "نون",
+          "slow_audio": "نون",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «م: m»",
+          "target": "م: m",
+          "answer": "م",
+          "accepted_answers": [
+            "م"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «م». También puedes escribirlo.",
+          "audio": "ميم",
+          "slow_audio": "ميم",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-reading-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «ل: l»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "ل",
+              "accepted_answers": [
+                "ل"
+              ],
+              "audio": "لام",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «م: m»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en árabe.",
+              "answer": "م",
+              "accepted_answers": [
+                "م"
+              ],
+              "audio": "ميم",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "arabic-reading-test-08",
       "title": "Prueba · Sonidos y lectura",
       "description": "Prueba de dominio de la unidad.",

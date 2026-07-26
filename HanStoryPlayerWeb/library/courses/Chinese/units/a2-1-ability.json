@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "chinese-a2-1-ability-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a2-1-ability-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a2-1-ability-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Aquí se puede tomar fotos.»",
+          "target": "Aquí se puede tomar fotos.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "这里可以拍照。",
+          "accepted_answers": [
+            "这里可以拍照。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «这里可以拍照。».",
+          "audio": "这里可以拍照。",
+          "slow_audio": "这里可以拍照。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-ability-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "这里不能抽烟。",
+          "accepted_answers": [
+            "这里不能抽烟。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «这里不能抽烟。»: No se puede fumar aquí.",
+          "audio": "这里不能抽烟。",
+          "slow_audio": "这里不能抽烟。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-ability-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Aquí se puede tomar fotos.»",
+          "target": "Aquí se puede tomar fotos.",
+          "options": [
+            "以",
+            "拍",
+            "里",
+            "。",
+            "照",
+            "可",
+            "这"
+          ],
+          "joiner": "",
+          "answer": "这里可以拍照。",
+          "accepted_answers": [
+            "这里可以拍照。"
+          ],
+          "explanation": "La forma completa es «这里可以拍照。».",
+          "audio": "这里可以拍照。",
+          "slow_audio": "这里可以拍照。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-ability-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "这里不能抽＿。",
+          "answer": "烟",
+          "accepted_answers": [
+            "烟"
+          ],
+          "explanation": "La forma completa es «这里不能抽烟。»: No se puede fumar aquí.",
+          "audio": "这里不能抽烟。",
+          "slow_audio": "这里不能抽烟。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-ability-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «necesario»",
+          "target": "necesario",
+          "answer": "必要",
+          "accepted_answers": [
+            "必要"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «必要».",
+          "audio": "必要",
+          "slow_audio": "必要",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-1-ability-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "target": "No se puede fumar aquí.",
+          "answer": "这里不能抽烟。",
+          "accepted_answers": [
+            "这里不能抽烟。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «这里不能抽烟。». También puedes escribirlo.",
+          "audio": "这里不能抽烟。",
+          "slow_audio": "这里不能抽烟。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-1-ability-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Aquí se puede tomar fotos.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "这里可以拍照。",
+              "accepted_answers": [
+                "这里可以拍照。"
+              ],
+              "audio": "这里可以拍照。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «No se puede fumar aquí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "这里不能抽烟。",
+              "accepted_answers": [
+                "这里不能抽烟。"
+              ],
+              "audio": "这里不能抽烟。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a21-ability-test",
       "title": "Prueba · Capacidad y obligación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

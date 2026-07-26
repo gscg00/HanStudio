@@ -1779,6 +1779,216 @@
       ]
     },
     {
+      "id": "chinese-b1-1-emotions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-b1-1-emotions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "你应该告诉他你的感受。",
+          "accepted_answers": [
+            "你应该告诉他你的感受。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «你应该告诉他你的感受。».",
+          "audio": "你应该告诉他你的感受。",
+          "slow_audio": "你应该告诉他你的感受。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "从那以后，我们更信任对方了。",
+          "accepted_answers": [
+            "从那以后，我们更信任对方了。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «从那以后，我们更信任对方了。»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "从那以后，我们更信任对方了。",
+          "slow_audio": "从那以后，我们更信任对方了。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Deberías decirle cómo te sientes.»",
+          "target": "Deberías decirle cómo te sientes.",
+          "options": [
+            "诉",
+            "应",
+            "告",
+            "受",
+            "感",
+            "你",
+            "。",
+            "你",
+            "的",
+            "他",
+            "该"
+          ],
+          "joiner": "",
+          "answer": "你应该告诉他你的感受。",
+          "accepted_answers": [
+            "你应该告诉他你的感受。"
+          ],
+          "explanation": "La forma completa es «你应该告诉他你的感受。».",
+          "audio": "你应该告诉他你的感受。",
+          "slow_audio": "你应该告诉他你的感受。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "从那以后，我们更信任对方＿。",
+          "answer": "了",
+          "accepted_answers": [
+            "了"
+          ],
+          "explanation": "La forma completa es «从那以后，我们更信任对方了。»: Desde entonces, confiamos más el uno en el otro.",
+          "audio": "从那以后，我们更信任对方了。",
+          "slow_audio": "从那以后，我们更信任对方了。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "所以",
+          "accepted_answers": [
+            "所以"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «所以».",
+          "audio": "所以",
+          "slow_audio": "所以",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Desde entonces, confiamos más el uno en el otro.»",
+          "target": "Desde entonces, confiamos más el uno en el otro.",
+          "answer": "从那以后，我们更信任对方了。",
+          "accepted_answers": [
+            "从那以后，我们更信任对方了。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «从那以后，我们更信任对方了。». También puedes escribirlo.",
+          "audio": "从那以后，我们更信任对方了。",
+          "slow_audio": "从那以后，我们更信任对方了。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-b1-1-emotions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Deberías decirle cómo te sientes.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "你应该告诉他你的感受。",
+              "accepted_answers": [
+                "你应该告诉他你的感受。"
+              ],
+              "audio": "你应该告诉他你的感受。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Desde entonces, confiamos más el uno en el otro.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "从那以后，我们更信任对方了。",
+              "accepted_answers": [
+                "从那以后，我们更信任对方了。"
+              ],
+              "audio": "从那以后，我们更信任对方了。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-b11-emotions-test",
       "title": "Prueba · Relaciones y emociones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

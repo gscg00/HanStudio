@@ -4359,6 +4359,111 @@
       ]
     },
     {
+      "id": "english-survival-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-survival-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-survival-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «who»",
+          "target": "who",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "who",
+          "accepted_answers": [
+            "who"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «who».",
+          "audio": "who",
+          "slow_audio": "who",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-survival-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "where",
+          "accepted_answers": [
+            "where"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «where»: dónde",
+          "audio": "where",
+          "slow_audio": "where",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-survival-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "who",
+          "options": [
+            "who"
+          ],
+          "joiner": "",
+          "answer": "who",
+          "accepted_answers": [
+            "who"
+          ],
+          "explanation": "La forma completa es «who».",
+          "audio": "who",
+          "slow_audio": "who",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-survival-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "wher＿",
+          "answer": "e",
+          "accepted_answers": [
+            "e"
+          ],
+          "explanation": "La forma completa es «where»: dónde",
+          "audio": "where",
+          "slow_audio": "where",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "english-survival-test-16",
       "title": "Prueba · Comunicación esencial",
       "description": "Prueba de dominio de la unidad.",

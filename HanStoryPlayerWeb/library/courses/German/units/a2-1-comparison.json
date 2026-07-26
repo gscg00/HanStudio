@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "german-a2-1-comparison-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-a2-1-comparison-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-a2-1-comparison-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Diese Möglichkeit ist besser für mich.",
+          "accepted_answers": [
+            "Diese Möglichkeit ist besser für mich."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Diese Möglichkeit ist besser für mich.».",
+          "audio": "Diese Möglichkeit ist besser für mich.",
+          "slow_audio": "Diese Möglichkeit ist besser für mich.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-comparison-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Heute ist das Wetter schlechter als gestern.",
+          "accepted_answers": [
+            "Heute ist das Wetter schlechter als gestern."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Heute ist das Wetter schlechter als gestern.»: Hoy hace peor tiempo que ayer.",
+          "audio": "Heute ist das Wetter schlechter als gestern.",
+          "slow_audio": "Heute ist das Wetter schlechter als gestern.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-comparison-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Esta opción es mejor para mí.»",
+          "target": "Esta opción es mejor para mí.",
+          "options": [
+            "besser",
+            "für",
+            "ist",
+            "Möglichkeit",
+            "mich.",
+            "Diese"
+          ],
+          "joiner": " ",
+          "answer": "Diese Möglichkeit ist besser für mich.",
+          "accepted_answers": [
+            "Diese Möglichkeit ist besser für mich."
+          ],
+          "explanation": "La forma completa es «Diese Möglichkeit ist besser für mich.».",
+          "audio": "Diese Möglichkeit ist besser für mich.",
+          "slow_audio": "Diese Möglichkeit ist besser für mich.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-comparison-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Heute ist das Wetter schlechter als ___.",
+          "answer": "gestern",
+          "accepted_answers": [
+            "gestern"
+          ],
+          "explanation": "La forma completa es «Heute ist das Wetter schlechter als gestern.»: Hoy hace peor tiempo que ayer.",
+          "audio": "Heute ist das Wetter schlechter als gestern.",
+          "slow_audio": "Heute ist das Wetter schlechter als gestern.",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-comparison-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «alto»",
+          "target": "alto",
+          "answer": "hoch",
+          "accepted_answers": [
+            "hoch"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «hoch».",
+          "audio": "hoch",
+          "slow_audio": "hoch",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-a2-1-comparison-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "target": "Hoy hace peor tiempo que ayer.",
+          "answer": "Heute ist das Wetter schlechter als gestern.",
+          "accepted_answers": [
+            "Heute ist das Wetter schlechter als gestern."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Heute ist das Wetter schlechter als gestern.». También puedes escribirlo.",
+          "audio": "Heute ist das Wetter schlechter als gestern.",
+          "slow_audio": "Heute ist das Wetter schlechter als gestern.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-a2-1-comparison-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Esta opción es mejor para mí.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Diese Möglichkeit ist besser für mich.",
+              "accepted_answers": [
+                "Diese Möglichkeit ist besser für mich."
+              ],
+              "audio": "Diese Möglichkeit ist besser für mich.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Hoy hace peor tiempo que ayer.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Heute ist das Wetter schlechter als gestern.",
+              "accepted_answers": [
+                "Heute ist das Wetter schlechter als gestern."
+              ],
+              "audio": "Heute ist das Wetter schlechter als gestern.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-a21-comparison-test",
       "title": "Prueba · Describir y comparar",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

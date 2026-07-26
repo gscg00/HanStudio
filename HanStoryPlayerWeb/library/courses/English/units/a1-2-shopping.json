@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "english-a1-2-shopping-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a1-2-shopping-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a1-2-shopping-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Can I pay by card?",
+          "accepted_answers": [
+            "Can I pay by card?"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Can I pay by card?».",
+          "audio": "Can I pay by card?",
+          "slow_audio": "Can I pay by card?",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-shopping-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "I only have cash.",
+          "accepted_answers": [
+            "I only have cash."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «I only have cash.»: Solo tengo efectivo.",
+          "audio": "I only have cash.",
+          "slow_audio": "I only have cash.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-shopping-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «¿Puedo pagar con tarjeta?»",
+          "target": "¿Puedo pagar con tarjeta?",
+          "options": [
+            "I",
+            "Can",
+            "card?",
+            "pay",
+            "by"
+          ],
+          "joiner": " ",
+          "answer": "Can I pay by card?",
+          "accepted_answers": [
+            "Can I pay by card?"
+          ],
+          "explanation": "La forma completa es «Can I pay by card?».",
+          "audio": "Can I pay by card?",
+          "slow_audio": "Can I pay by card?",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-shopping-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "I only have ___.",
+          "answer": "cash",
+          "accepted_answers": [
+            "cash"
+          ],
+          "explanation": "La forma completa es «I only have cash.»: Solo tengo efectivo.",
+          "audio": "I only have cash.",
+          "slow_audio": "I only have cash.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-shopping-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «tarjeta»",
+          "target": "tarjeta",
+          "answer": "card",
+          "accepted_answers": [
+            "card"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «card».",
+          "audio": "card",
+          "slow_audio": "card",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a1-2-shopping-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "target": "Solo tengo efectivo.",
+          "answer": "I only have cash.",
+          "accepted_answers": [
+            "I only have cash."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «I only have cash.». También puedes escribirlo.",
+          "audio": "I only have cash.",
+          "slow_audio": "I only have cash.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a1-2-shopping-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «¿Puedo pagar con tarjeta?»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Can I pay by card?",
+              "accepted_answers": [
+                "Can I pay by card?"
+              ],
+              "audio": "Can I pay by card?",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Solo tengo efectivo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I only have cash.",
+              "accepted_answers": [
+                "I only have cash."
+              ],
+              "audio": "I only have cash.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a12-shopping-test",
       "title": "Prueba · Compras y precios",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

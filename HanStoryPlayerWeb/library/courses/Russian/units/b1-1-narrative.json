@@ -1779,6 +1779,212 @@
       ]
     },
     {
+      "id": "russian-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Тем временем моя сестра позвонила в полицию.",
+          "accepted_answers": [
+            "Тем временем моя сестра позвонила в полицию."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Тем временем моя сестра позвонила в полицию.».",
+          "audio": "Тем временем моя сестра позвонила в полицию.",
+          "slow_audio": "Тем временем моя сестра позвонила в полицию.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "В конце концов всё закончилось хорошо.",
+          "accepted_answers": [
+            "В конце концов всё закончилось хорошо."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «В конце концов всё закончилось хорошо.»: Al final, todo salió bien.",
+          "audio": "В конце концов всё закончилось хорошо.",
+          "slow_audio": "В конце концов всё закончилось хорошо.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "Тем",
+            "сестра",
+            "позвонила",
+            "полицию.",
+            "в",
+            "временем",
+            "моя"
+          ],
+          "joiner": " ",
+          "answer": "Тем временем моя сестра позвонила в полицию.",
+          "accepted_answers": [
+            "Тем временем моя сестра позвонила в полицию."
+          ],
+          "explanation": "La forma completa es «Тем временем моя сестра позвонила в полицию.».",
+          "audio": "Тем временем моя сестра позвонила в полицию.",
+          "slow_audio": "Тем временем моя сестра позвонила в полицию.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "В конце концов всё закончилось ___.",
+          "answer": "хорошо",
+          "accepted_answers": [
+            "хорошо"
+          ],
+          "explanation": "La forma completa es «В конце концов всё закончилось хорошо.»: Al final, todo salió bien.",
+          "audio": "В конце концов всё закончилось хорошо.",
+          "slow_audio": "В конце концов всё закончилось хорошо.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Ты когда-нибудь там был?",
+          "accepted_answers": [
+            "Ты когда-нибудь там был?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Ты когда-нибудь там был?».",
+          "audio": "Ты когда-нибудь там был?",
+          "slow_audio": "Ты когда-нибудь там был?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "В конце концов всё закончилось хорошо.",
+          "accepted_answers": [
+            "В конце концов всё закончилось хорошо."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «В конце концов всё закончилось хорошо.». También puedes escribirlo.",
+          "audio": "В конце концов всё закончилось хорошо.",
+          "slow_audio": "В конце концов всё закончилось хорошо.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Тем временем моя сестра позвонила в полицию.",
+              "accepted_answers": [
+                "Тем временем моя сестра позвонила в полицию."
+              ],
+              "audio": "Тем временем моя сестра позвонила в полицию.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "В конце концов всё закончилось хорошо.",
+              "accepted_answers": [
+                "В конце концов всё закончилось хорошо."
+              ],
+              "audio": "В конце концов всё закончилось хорошо.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

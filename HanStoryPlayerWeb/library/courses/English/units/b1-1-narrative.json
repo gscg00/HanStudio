@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-b1-1-narrative-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-b1-1-narrative-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-b1-1-narrative-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Meanwhile, my sister called the police.",
+          "accepted_answers": [
+            "Meanwhile, my sister called the police."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Meanwhile, my sister called the police.».",
+          "audio": "Meanwhile, my sister called the police.",
+          "slow_audio": "Meanwhile, my sister called the police.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-narrative-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "In the end, everything turned out well.",
+          "accepted_answers": [
+            "In the end, everything turned out well."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «In the end, everything turned out well.»: Al final, todo salió bien.",
+          "audio": "In the end, everything turned out well.",
+          "slow_audio": "In the end, everything turned out well.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-narrative-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Mientras tanto, mi hermana llamó a la policía.»",
+          "target": "Mientras tanto, mi hermana llamó a la policía.",
+          "options": [
+            "sister",
+            "police.",
+            "Meanwhile,",
+            "my",
+            "the",
+            "called"
+          ],
+          "joiner": " ",
+          "answer": "Meanwhile, my sister called the police.",
+          "accepted_answers": [
+            "Meanwhile, my sister called the police."
+          ],
+          "explanation": "La forma completa es «Meanwhile, my sister called the police.».",
+          "audio": "Meanwhile, my sister called the police.",
+          "slow_audio": "Meanwhile, my sister called the police.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-narrative-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "In the end, everything turned out ___.",
+          "answer": "well",
+          "accepted_answers": [
+            "well"
+          ],
+          "explanation": "La forma completa es «In the end, everything turned out well.»: Al final, todo salió bien.",
+          "audio": "In the end, everything turned out well.",
+          "slow_audio": "In the end, everything turned out well.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-narrative-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "target": "¿Alguna vez has estado allí?",
+          "answer": "Have you ever been there?",
+          "accepted_answers": [
+            "Have you ever been there?"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Have you ever been there?».",
+          "audio": "Have you ever been there?",
+          "slow_audio": "Have you ever been there?",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-b1-1-narrative-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "target": "Al final, todo salió bien.",
+          "answer": "In the end, everything turned out well.",
+          "accepted_answers": [
+            "In the end, everything turned out well."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «In the end, everything turned out well.». También puedes escribirlo.",
+          "audio": "In the end, everything turned out well.",
+          "slow_audio": "In the end, everything turned out well.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-b1-1-narrative-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Mientras tanto, mi hermana llamó a la policía.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "Meanwhile, my sister called the police.",
+              "accepted_answers": [
+                "Meanwhile, my sister called the police."
+              ],
+              "audio": "Meanwhile, my sister called the police.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Al final, todo salió bien.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "In the end, everything turned out well.",
+              "accepted_answers": [
+                "In the end, everything turned out well."
+              ],
+              "audio": "In the end, everything turned out well.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-b11-narrative-test",
       "title": "Prueba · Narraciones conectadas",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

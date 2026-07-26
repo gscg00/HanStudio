@@ -2125,6 +2125,112 @@
       ]
     },
     {
+      "id": "italian-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "italian-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "italian-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «gn: bagno»",
+          "target": "gn: bagno",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "gn: bagno",
+          "accepted_answers": [
+            "gn: bagno"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «gn: bagno».",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "gli · sci",
+          "accepted_answers": [
+            "gli · sci"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «gli · sci»: Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "gn: bagno",
+          "options": [
+            "bagno",
+            "gn:"
+          ],
+          "joiner": " ",
+          "answer": "gn: bagno",
+          "accepted_answers": [
+            "gn: bagno"
+          ],
+          "explanation": "La forma completa es «gn: bagno».",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "gli · ___",
+          "answer": "sci",
+          "accepted_answers": [
+            "sci"
+          ],
+          "explanation": "La forma completa es «gli · sci»: Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "italian-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

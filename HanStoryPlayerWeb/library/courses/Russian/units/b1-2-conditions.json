@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "russian-b1-2-conditions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-b1-2-conditions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-b1-2-conditions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Если нужна помощь, позвони мне.",
+          "accepted_answers": [
+            "Если нужна помощь, позвони мне."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Если нужна помощь, позвони мне.».",
+          "audio": "Если нужна помощь, позвони мне.",
+          "slow_audio": "Если нужна помощь, позвони мне.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-conditions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Я бы согласился, если бы ты всё объяснил.",
+          "accepted_answers": [
+            "Я бы согласился, если бы ты всё объяснил."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Я бы согласился, если бы ты всё объяснил.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "Я бы согласился, если бы ты всё объяснил.",
+          "slow_audio": "Я бы согласился, если бы ты всё объяснил.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-conditions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
+          "target": "En caso de que necesites ayuda, llámame.",
+          "options": [
+            "нужна",
+            "помощь,",
+            "позвони",
+            "мне.",
+            "Если"
+          ],
+          "joiner": " ",
+          "answer": "Если нужна помощь, позвони мне.",
+          "accepted_answers": [
+            "Если нужна помощь, позвони мне."
+          ],
+          "explanation": "La forma completa es «Если нужна помощь, позвони мне.».",
+          "audio": "Если нужна помощь, позвони мне.",
+          "slow_audio": "Если нужна помощь, позвони мне.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-conditions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "Я бы согласился, если бы ты всё ___.",
+          "answer": "объяснил",
+          "accepted_answers": [
+            "объяснил"
+          ],
+          "explanation": "La forma completa es «Я бы согласился, если бы ты всё объяснил.»: Habría aceptado si me lo hubieras explicado.",
+          "audio": "Я бы согласился, если бы ты всё объяснил.",
+          "slow_audio": "Я бы согласился, если бы ты всё объяснил.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-conditions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "target": "Gracias a tu ayuda, resolvimos el problema.",
+          "answer": "Благодаря твоей помощи мы решили проблему.",
+          "accepted_answers": [
+            "Благодаря твоей помощи мы решили проблему."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Благодаря твоей помощи мы решили проблему.».",
+          "audio": "Благодаря твоей помощи мы решили проблему.",
+          "slow_audio": "Благодаря твоей помощи мы решили проблему.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-conditions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "target": "Habría aceptado si me lo hubieras explicado.",
+          "answer": "Я бы согласился, если бы ты всё объяснил.",
+          "accepted_answers": [
+            "Я бы согласился, если бы ты всё объяснил."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Я бы согласился, если бы ты всё объяснил.». También puedes escribirlo.",
+          "audio": "Я бы согласился, если бы ты всё объяснил.",
+          "slow_audio": "Я бы согласился, если бы ты всё объяснил.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-conditions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Если нужна помощь, позвони мне.",
+              "accepted_answers": [
+                "Если нужна помощь, позвони мне."
+              ],
+              "audio": "Если нужна помощь, позвони мне.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Habría aceptado si me lo hubieras explicado.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "Я бы согласился, если бы ты всё объяснил.",
+              "accepted_answers": [
+                "Я бы согласился, если бы ты всё объяснил."
+              ],
+              "audio": "Я бы согласился, если бы ты всё объяснил.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-b12-conditions-test",
       "title": "Prueba · Hipótesis y condiciones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

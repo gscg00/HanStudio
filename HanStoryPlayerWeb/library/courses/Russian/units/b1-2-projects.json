@@ -1779,6 +1779,210 @@
       ]
     },
     {
+      "id": "russian-b1-2-projects-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "russian-b1-2-projects-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "russian-b1-2-projects-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en ruso: «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "До начала стоит предусмотреть риски.",
+          "accepted_answers": [
+            "До начала стоит предусмотреть риски."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «До начала стоит предусмотреть риски.».",
+          "audio": "До начала стоит предусмотреть риски.",
+          "slow_audio": "До начала стоит предусмотреть риски.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-projects-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "В конце недели проверим результаты.",
+          "accepted_answers": [
+            "В конце недели проверим результаты."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «В конце недели проверим результаты.»: Revisaremos los avances al final de la semana.",
+          "audio": "В конце недели проверим результаты.",
+          "slow_audio": "В конце недели проверим результаты.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-projects-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Conviene prever los riesgos antes de empezar.»",
+          "target": "Conviene prever los riesgos antes de empezar.",
+          "options": [
+            "предусмотреть",
+            "риски.",
+            "стоит",
+            "До",
+            "начала"
+          ],
+          "joiner": " ",
+          "answer": "До начала стоит предусмотреть риски.",
+          "accepted_answers": [
+            "До начала стоит предусмотреть риски."
+          ],
+          "explanation": "La forma completa es «До начала стоит предусмотреть риски.».",
+          "audio": "До начала стоит предусмотреть риски.",
+          "slow_audio": "До начала стоит предусмотреть риски.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-projects-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "В конце недели проверим ___.",
+          "answer": "результаты",
+          "accepted_answers": [
+            "результаты"
+          ],
+          "explanation": "La forma completa es «В конце недели проверим результаты.»: Revisaremos los avances al final de la semana.",
+          "audio": "В конце недели проверим результаты.",
+          "slow_audio": "В конце недели проверим результаты.",
+          "tags": [
+            "production",
+            "completion",
+            "russian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-projects-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "target": "Quiero participar como voluntario.",
+          "answer": "Я хочу участвовать как волонтёр.",
+          "accepted_answers": [
+            "Я хочу участвовать как волонтёр."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Я хочу участвовать как волонтёр.».",
+          "audio": "Я хочу участвовать как волонтёр.",
+          "slow_audio": "Я хочу участвовать как волонтёр.",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "russian-b1-2-projects-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "target": "Revisaremos los avances al final de la semana.",
+          "answer": "В конце недели проверим результаты.",
+          "accepted_answers": [
+            "В конце недели проверим результаты."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «В конце недели проверим результаты.». También puedes escribirlo.",
+          "audio": "В конце недели проверим результаты.",
+          "slow_audio": "В конце недели проверим результаты.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "russian-b1-2-projects-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Conviene prever los riesgos antes de empezar.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "До начала стоит предусмотреть риски.",
+              "accepted_answers": [
+                "До начала стоит предусмотреть риски."
+              ],
+              "audio": "До начала стоит предусмотреть риски.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Revisaremos los avances al final de la semana.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en ruso.",
+              "answer": "В конце недели проверим результаты.",
+              "accepted_answers": [
+                "В конце недели проверим результаты."
+              ],
+              "audio": "В конце недели проверим результаты.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "russian-b12-projects-test",
       "title": "Prueba · Proyectos y colaboración",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

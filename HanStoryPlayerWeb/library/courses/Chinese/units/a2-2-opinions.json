@@ -1779,6 +1779,216 @@
       ]
     },
     {
+      "id": "chinese-a2-2-opinions-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "chinese-a2-2-opinions-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en chino: «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "我喜欢它，因为很简单。",
+          "accepted_answers": [
+            "我喜欢它，因为很简单。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «我喜欢它，因为很简单。».",
+          "audio": "我喜欢它，因为很简单。",
+          "slow_audio": "我喜欢它，因为很简单。",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "虽然有用，但是我不喜欢。",
+          "accepted_answers": [
+            "虽然有用，但是我不喜欢。"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «虽然有用，但是我不喜欢。»: No me gusta, aunque es útil.",
+          "audio": "虽然有用，但是我不喜欢。",
+          "slow_audio": "虽然有用，但是我不喜欢。",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Me gusta porque es sencillo.»",
+          "target": "Me gusta porque es sencillo.",
+          "options": [
+            "简",
+            "。",
+            "很",
+            "它",
+            "因",
+            "喜",
+            "我",
+            "单",
+            "欢",
+            "，",
+            "为"
+          ],
+          "joiner": "",
+          "answer": "我喜欢它，因为很简单。",
+          "accepted_answers": [
+            "我喜欢它，因为很简单。"
+          ],
+          "explanation": "La forma completa es «我喜欢它，因为很简单。».",
+          "audio": "我喜欢它，因为很简单。",
+          "slow_audio": "我喜欢它，因为很简单。",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "虽然有用，但是我不喜＿。",
+          "answer": "欢",
+          "accepted_answers": [
+            "欢"
+          ],
+          "explanation": "La forma completa es «虽然有用，但是我不喜欢。»: No me gusta, aunque es útil.",
+          "audio": "虽然有用，但是我不喜欢。",
+          "slow_audio": "虽然有用，但是我不喜欢。",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «por eso»",
+          "target": "por eso",
+          "answer": "所以",
+          "accepted_answers": [
+            "所以"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «所以».",
+          "audio": "所以",
+          "slow_audio": "所以",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "target": "No me gusta, aunque es útil.",
+          "answer": "虽然有用，但是我不喜欢。",
+          "accepted_answers": [
+            "虽然有用，但是我不喜欢。"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «虽然有用，但是我不喜欢。». También puedes escribirlo.",
+          "audio": "虽然有用，但是我不喜欢。",
+          "slow_audio": "虽然有用，但是我不喜欢。",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-a2-2-opinions-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Me gusta porque es sencillo.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "我喜欢它，因为很简单。",
+              "accepted_answers": [
+                "我喜欢它，因为很简单。"
+              ],
+              "audio": "我喜欢它，因为很简单。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «No me gusta, aunque es útil.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en chino.",
+              "answer": "虽然有用，但是我不喜欢。",
+              "accepted_answers": [
+                "虽然有用，但是我不喜欢。"
+              ],
+              "audio": "虽然有用，但是我不喜欢。",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "chinese-a22-opinions-test",
       "title": "Prueba · Opiniones y razones",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

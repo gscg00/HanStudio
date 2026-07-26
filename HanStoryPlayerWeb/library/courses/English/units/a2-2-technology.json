@@ -1779,6 +1779,211 @@
       ]
     },
     {
+      "id": "english-a2-2-technology-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "english-a2-2-technology-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "english-a2-2-technology-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en inglés: «Necesito cargar el teléfono.»",
+          "target": "Necesito cargar el teléfono.",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "I need to charge my phone.",
+          "accepted_answers": [
+            "I need to charge my phone."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «I need to charge my phone.».",
+          "audio": "I need to charge my phone.",
+          "slow_audio": "I need to charge my phone.",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-technology-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "The app will not open.",
+          "accepted_answers": [
+            "The app will not open."
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «The app will not open.»: La aplicación no se abre.",
+          "audio": "The app will not open.",
+          "slow_audio": "The app will not open.",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-technology-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Necesito cargar el teléfono.»",
+          "target": "Necesito cargar el teléfono.",
+          "options": [
+            "I",
+            "need",
+            "phone.",
+            "to",
+            "my",
+            "charge"
+          ],
+          "joiner": " ",
+          "answer": "I need to charge my phone.",
+          "accepted_answers": [
+            "I need to charge my phone."
+          ],
+          "explanation": "La forma completa es «I need to charge my phone.».",
+          "audio": "I need to charge my phone.",
+          "slow_audio": "I need to charge my phone.",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-technology-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "The app will not ___.",
+          "answer": "open",
+          "accepted_answers": [
+            "open"
+          ],
+          "explanation": "La forma completa es «The app will not open.»: La aplicación no se abre.",
+          "audio": "The app will not open.",
+          "slow_audio": "The app will not open.",
+          "tags": [
+            "production",
+            "completion",
+            "english"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-technology-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «roto»",
+          "target": "roto",
+          "answer": "broken",
+          "accepted_answers": [
+            "broken"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «broken».",
+          "audio": "broken",
+          "slow_audio": "broken",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "english-a2-2-technology-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "target": "La aplicación no se abre.",
+          "answer": "The app will not open.",
+          "accepted_answers": [
+            "The app will not open."
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «The app will not open.». También puedes escribirlo.",
+          "audio": "The app will not open.",
+          "slow_audio": "The app will not open.",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "english-a2-2-technology-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Necesito cargar el teléfono.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "I need to charge my phone.",
+              "accepted_answers": [
+                "I need to charge my phone."
+              ],
+              "audio": "I need to charge my phone.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «La aplicación no se abre.»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en inglés.",
+              "answer": "The app will not open.",
+              "accepted_answers": [
+                "The app will not open."
+              ],
+              "audio": "The app will not open.",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "english-a22-technology-test",
       "title": "Prueba · Tecnología y comunicación",
       "description": "Comprueba los 16 contenidos de la unidad sin presentación previa.",

@@ -2603,6 +2603,113 @@
       ]
     },
     {
+      "id": "german-reading-foundations-production-checkpoint",
+      "title": "Producción de lectura",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-reading-foundations-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-foundations-production-translate",
+          "type": "typed_translation",
+          "prompt": "Copia este símbolo o grupo: «eu · äu»",
+          "target": "eu · äu",
+          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "answer": "eu · äu",
+          "accepted_answers": [
+            "eu · äu"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «eu · äu».",
+          "audio": "üh",
+          "slow_audio": "üh",
+          "tags": [
+            "production",
+            "copying"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-reading-foundations-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "ich · Bach",
+          "accepted_answers": [
+            "ich · Bach"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «ich · Bach»: Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-reading-foundations-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "eu · äu",
+          "options": [
+            "eu",
+            "äu",
+            "·"
+          ],
+          "joiner": " ",
+          "answer": "eu · äu",
+          "accepted_answers": [
+            "eu · äu"
+          ],
+          "explanation": "La forma completa es «eu · äu».",
+          "audio": "üh",
+          "slow_audio": "üh",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-reading-foundations-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "ich · ___",
+          "answer": "Bach",
+          "accepted_answers": [
+            "Bach"
+          ],
+          "explanation": "La forma completa es «ich · Bach»: Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        }
+      ]
+    },
+    {
       "id": "german-reading-00-test",
       "title": "Prueba: preparado para aprender a leer",
       "description": "Demuestra dominio total de las reglas iniciales.",

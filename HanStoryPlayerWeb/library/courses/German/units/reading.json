@@ -2093,6 +2093,206 @@
       ]
     },
     {
+      "id": "german-reading-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "german-reading-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "german-reading-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en alemán: «Y: üpsilon»",
+          "target": "Y: üpsilon",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "Y",
+          "accepted_answers": [
+            "Y"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «Y».",
+          "audio": "üpsilon",
+          "slow_audio": "üpsilon",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-reading-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "Z",
+          "accepted_answers": [
+            "Z"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «Z»: Z: tset",
+          "audio": "tsett",
+          "slow_audio": "tsett",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-reading-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «Y: üpsilon»",
+          "target": "Y: üpsilon",
+          "options": [
+            "Y"
+          ],
+          "joiner": "",
+          "answer": "Y",
+          "accepted_answers": [
+            "Y"
+          ],
+          "explanation": "La forma completa es «Y».",
+          "audio": "üpsilon",
+          "slow_audio": "üpsilon",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-reading-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "＿",
+          "answer": "Z",
+          "accepted_answers": [
+            "Z"
+          ],
+          "explanation": "La forma completa es «Z»: Z: tset",
+          "audio": "tsett",
+          "slow_audio": "tsett",
+          "tags": [
+            "production",
+            "completion",
+            "german"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-reading-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «Ä: e abierta»",
+          "target": "Ä: e abierta",
+          "answer": "Ä",
+          "accepted_answers": [
+            "Ä"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «Ä».",
+          "audio": "äh",
+          "slow_audio": "äh",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "german-reading-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «Z: tset»",
+          "target": "Z: tset",
+          "answer": "Z",
+          "accepted_answers": [
+            "Z"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «Z». También puedes escribirlo.",
+          "audio": "tsett",
+          "slow_audio": "tsett",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "german-reading-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «Y: üpsilon»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Y",
+              "accepted_answers": [
+                "Y"
+              ],
+              "audio": "üpsilon",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «Z: tset»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en alemán.",
+              "answer": "Z",
+              "accepted_answers": [
+                "Z"
+              ],
+              "audio": "tsett",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "german-reading-test-08",
       "title": "Prueba · Sonidos y lectura",
       "description": "Prueba de dominio de la unidad.",

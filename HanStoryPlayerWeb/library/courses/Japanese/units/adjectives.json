@@ -1879,6 +1879,209 @@
       ]
     },
     {
+      "id": "japanese-adjectives-production-checkpoint",
+      "title": "Producción y diálogo",
+      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
+      "generatedProduction": true,
+      "isUnitFinal": true,
+      "xpReward": 25,
+      "activities": [
+        {
+          "id": "japanese-adjectives-production-intro",
+          "type": "lesson_intro",
+          "prompt": "Ahora te toca producir",
+          "target": "",
+          "answer": "",
+          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production"
+          ],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "japanese-adjectives-production-translate",
+          "type": "typed_translation",
+          "prompt": "Escribe en japonés: «peligroso»",
+          "target": "peligroso",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "answer": "あぶない",
+          "accepted_answers": [
+            "あぶない"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Una respuesta correcta es «あぶない».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "tags": [
+            "production",
+            "translation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-adjectives-production-dictation",
+          "type": "dictation",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "target": "",
+          "answer": "あたらしい",
+          "accepted_answers": [
+            "あたらしい"
+          ],
+          "allow_minor_typos": true,
+          "explanation": "Escuchaste «あたらしい»: nuevo",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "tags": [
+            "production",
+            "dictation"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-adjectives-production-blocks",
+          "type": "build_with_blocks",
+          "prompt": "Construye la forma que significa «peligroso»",
+          "target": "peligroso",
+          "options": [
+            "ぶ",
+            "い",
+            "あ",
+            "な"
+          ],
+          "joiner": "",
+          "answer": "あぶない",
+          "accepted_answers": [
+            "あぶない"
+          ],
+          "explanation": "La forma completa es «あぶない».",
+          "audio": "あぶない",
+          "slow_audio": "あぶない",
+          "tags": [
+            "production",
+            "blocks"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-adjectives-production-complete",
+          "type": "complete_without_options",
+          "prompt": "Completa el elemento que falta",
+          "target": "あたらし＿",
+          "answer": "い",
+          "accepted_answers": [
+            "い"
+          ],
+          "explanation": "La forma completa es «あたらしい»: nuevo",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "tags": [
+            "production",
+            "completion",
+            "japanese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-adjectives-production-open",
+          "type": "open_question",
+          "prompt": "Responde sin opciones: «rojo»",
+          "target": "rojo",
+          "answer": "あかい",
+          "accepted_answers": [
+            "あかい"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «あかい».",
+          "audio": "あかい",
+          "slow_audio": "あかい",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "japanese-adjectives-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «nuevo»",
+          "target": "nuevo",
+          "answer": "あたらしい",
+          "accepted_answers": [
+            "あたらしい"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «あたらしい». También puedes escribirlo.",
+          "audio": "あたらしい",
+          "slow_audio": "あたらしい",
+          "tags": [
+            "production",
+            "speaking",
+            "optional"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "japanese-adjectives-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «peligroso»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "あぶない",
+              "accepted_answers": [
+                "あぶない"
+              ],
+              "audio": "あぶない",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «nuevo»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Responde en japonés.",
+              "answer": "あたらしい",
+              "accepted_answers": [
+                "あたらしい"
+              ],
+              "audio": "あたらしい",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
+        }
+      ]
+    },
+    {
       "id": "jp-book1-adjectives-checkpoint",
       "title": "Prueba de dominio",
       "description": "Repaso acumulativo obligatorio.",
