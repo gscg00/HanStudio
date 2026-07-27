@@ -2145,7 +2145,7 @@
             "هناك"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «هناك»: allí",
+          "explanation": "Escuchaste «هناك». El ejemplo practica: allí",
           "audio": "هناك",
           "slow_audio": "هناك",
           "tags": [
@@ -2168,8 +2168,8 @@
             "هنا"
           ],
           "explanation": "La forma completa es «هنا».",
-          "audio": "هنا",
-          "slow_audio": "هنا",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2186,8 +2186,8 @@
             "ك"
           ],
           "explanation": "La forma completa es «هناك»: allí",
-          "audio": "هناك",
-          "slow_audio": "هناك",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2198,7 +2198,7 @@
         {
           "id": "arabic-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ahora»",
+          "prompt": "Produce el ejemplo que demuestra: «ahora»",
           "target": "ahora",
           "answer": "الآن",
           "accepted_answers": [
@@ -2218,7 +2218,7 @@
         {
           "id": "arabic-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «allí»",
+          "prompt": "Di en voz alta: «هناك»",
           "target": "allí",
           "answer": "هناك",
           "accepted_answers": [
@@ -2252,7 +2252,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هنا",
               "accepted_answers": [
                 "هنا"
@@ -2270,7 +2270,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هناك",
               "accepted_answers": [
                 "هناك"

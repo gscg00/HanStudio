@@ -1831,7 +1831,7 @@
             "날씨가 빨리 변해요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «날씨가 빨리 변해요.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «날씨가 빨리 변해요.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "날씨가 빨리 변해요.",
           "slow_audio": "날씨가 빨리 변해요.",
           "tags": [
@@ -1855,8 +1855,8 @@
             "코트가 필요해요."
           ],
           "explanation": "La forma completa es «코트가 필요해요.».",
-          "audio": "코트가 필요해요.",
-          "slow_audio": "코트가 필요해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "변해요"
           ],
           "explanation": "La forma completa es «날씨가 빨리 변해요.»: El tiempo cambia rápido.",
-          "audio": "날씨가 빨리 변해요.",
-          "slow_audio": "날씨가 빨리 변해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "korean-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "코트",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "korean-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «날씨가 빨리 변해요.»",
           "target": "El tiempo cambia rápido.",
           "answer": "날씨가 빨리 변해요.",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "코트가 필요해요.",
               "accepted_answers": [
                 "코트가 필요해요."
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "날씨가 빨리 변해요.",
               "accepted_answers": [
                 "날씨가 빨리 변해요."

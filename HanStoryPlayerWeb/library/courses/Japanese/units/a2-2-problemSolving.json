@@ -1831,7 +1831,7 @@
             "もっと情報が必要です。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «もっと情報が必要です。»: Necesitamos más información.",
+          "explanation": "Escuchaste «もっと情報が必要です。». El ejemplo practica: Necesitamos más información.",
           "audio": "もっと情報が必要です。",
           "slow_audio": "もっと情報が必要です。",
           "tags": [
@@ -1867,8 +1867,8 @@
             "それでは問題は解決しません。"
           ],
           "explanation": "La forma completa es «それでは問題は解決しません。».",
-          "audio": "それでは問題は解決しません。",
-          "slow_audio": "それでは問題は解決しません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1885,8 +1885,8 @@
             "す"
           ],
           "explanation": "La forma completa es «もっと情報が必要です。»: Necesitamos más información.",
-          "audio": "もっと情報が必要です。",
-          "slow_audio": "もっと情報が必要です。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1897,7 +1897,7 @@
         {
           "id": "japanese-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "いつできますか。",
           "accepted_answers": [
@@ -1917,7 +1917,7 @@
         {
           "id": "japanese-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «もっと情報が必要です。»",
           "target": "Necesitamos más información.",
           "answer": "もっと情報が必要です。",
           "accepted_answers": [
@@ -1951,7 +1951,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "それでは問題は解決しません。",
               "accepted_answers": [
                 "それでは問題は解決しません。"
@@ -1969,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "もっと情報が必要です。",
               "accepted_answers": [
                 "もっと情報が必要です。"
@@ -1987,7 +1987,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "いつできますか。",
               "accepted_answers": [
                 "いつできますか。"

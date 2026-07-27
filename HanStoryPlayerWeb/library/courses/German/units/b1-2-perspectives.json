@@ -1831,7 +1831,7 @@
             "Erfahrung beeinflusst unsere Meinung."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Erfahrung beeinflusst unsere Meinung.»: La experiencia personal influye en nuestra opinión.",
+          "explanation": "Escuchaste «Erfahrung beeinflusst unsere Meinung.». El ejemplo practica: La experiencia personal influye en nuestra opinión.",
           "audio": "Erfahrung beeinflusst unsere Meinung.",
           "slow_audio": "Erfahrung beeinflusst unsere Meinung.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Nicht alle hatten die gleichen Chancen."
           ],
           "explanation": "La forma completa es «Nicht alle hatten die gleichen Chancen.».",
-          "audio": "Nicht alle hatten die gleichen Chancen.",
-          "slow_audio": "Nicht alle hatten die gleichen Chancen.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "Meinung"
           ],
           "explanation": "La forma completa es «Erfahrung beeinflusst unsere Meinung.»: La experiencia personal influye en nuestra opinión.",
-          "audio": "Erfahrung beeinflusst unsere Meinung.",
-          "slow_audio": "Erfahrung beeinflusst unsere Meinung.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-b1-2-perspectives-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entonces me di cuenta de mi error.»",
           "target": "Entonces me di cuenta de mi error.",
           "answer": "Dann erkannte ich meinen Fehler.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-b1-2-perspectives-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "prompt": "Di en voz alta: «Erfahrung beeinflusst unsere Meinung.»",
           "target": "La experiencia personal influye en nuestra opinión.",
           "answer": "Erfahrung beeinflusst unsere Meinung.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Nicht alle hatten die gleichen Chancen.",
               "accepted_answers": [
                 "Nicht alle hatten die gleichen Chancen."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Erfahrung beeinflusst unsere Meinung.",
               "accepted_answers": [
                 "Erfahrung beeinflusst unsere Meinung."

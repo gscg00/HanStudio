@@ -1831,7 +1831,7 @@
             "كم عمرك؟"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «كم عمرك؟»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «كم عمرك؟». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "كم عمرك؟",
           "slow_audio": "كم عمرك؟",
           "tags": [
@@ -1855,8 +1855,8 @@
             "من هذا؟"
           ],
           "explanation": "La forma completa es «من هذا؟».",
-          "audio": "من هذا؟",
-          "slow_audio": "من هذا؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "عمرك"
           ],
           "explanation": "La forma completa es «كم عمرك؟»: ¿Cuántos años tienes?",
-          "audio": "كم عمرك؟",
-          "slow_audio": "كم عمرك؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "arabic-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "امرأة",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "arabic-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «كم عمرك؟»",
           "target": "¿Cuántos años tienes?",
           "answer": "كم عمرك؟",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "من هذا؟",
               "accepted_answers": [
                 "من هذا؟"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "كم عمرك؟",
               "accepted_answers": [
                 "كم عمرك؟"

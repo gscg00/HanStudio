@@ -1831,7 +1831,7 @@
             "O comboio está atrasado."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «O comboio está atrasado.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «O comboio está atrasado.». El ejemplo practica: El tren lleva retraso.",
           "audio": "O comboio está atrasado.",
           "slow_audio": "O comboio está atrasado.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Tenho de mudar?"
           ],
           "explanation": "La forma completa es «Tenho de mudar?».",
-          "audio": "Tenho de mudar?",
-          "slow_audio": "Tenho de mudar?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "atrasado"
           ],
           "explanation": "La forma completa es «O comboio está atrasado.»: El tren lleva retraso.",
-          "audio": "O comboio está atrasado.",
-          "slow_audio": "O comboio está atrasado.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "portuguese-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "aeroporto",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "portuguese-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «O comboio está atrasado.»",
           "target": "El tren lleva retraso.",
           "answer": "O comboio está atrasado.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Tenho de mudar?",
               "accepted_answers": [
                 "Tenho de mudar?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O comboio está atrasado.",
               "accepted_answers": [
                 "O comboio está atrasado."

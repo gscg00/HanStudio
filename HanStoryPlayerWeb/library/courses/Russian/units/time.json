@@ -4228,7 +4228,7 @@
             "вокзал"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «вокзал»: estación",
+          "explanation": "Escuchaste «вокзал». El ejemplo practica: estación",
           "audio": "вокзал",
           "slow_audio": "вокзал",
           "tags": [
@@ -4251,8 +4251,8 @@
             "школа"
           ],
           "explanation": "La forma completa es «школа».",
-          "audio": "школа",
-          "slow_audio": "школа",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4269,8 +4269,8 @@
             "л"
           ],
           "explanation": "La forma completa es «вокзал»: estación",
-          "audio": "вокзал",
-          "slow_audio": "вокзал",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4281,7 +4281,7 @@
         {
           "id": "russian-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "что",
           "accepted_answers": [
@@ -4301,7 +4301,7 @@
         {
           "id": "russian-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «вокзал»",
           "target": "estación",
           "answer": "вокзал",
           "accepted_answers": [
@@ -4335,7 +4335,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "школа",
               "accepted_answers": [
                 "школа"
@@ -4353,7 +4353,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "вокзал",
               "accepted_answers": [
                 "вокзал"

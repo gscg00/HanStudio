@@ -1831,7 +1831,7 @@
             "这个药一天吃两次。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «这个药一天吃两次。»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «这个药一天吃两次。». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "这个药一天吃两次。",
           "slow_audio": "这个药一天吃两次。",
           "tags": [
@@ -1861,8 +1861,8 @@
             "我对青霉素过敏。"
           ],
           "explanation": "La forma completa es «我对青霉素过敏。».",
-          "audio": "我对青霉素过敏。",
-          "slow_audio": "我对青霉素过敏。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "次"
           ],
           "explanation": "La forma completa es «这个药一天吃两次。»: Tome esto dos veces al día.",
-          "audio": "这个药一天吃两次。",
-          "slow_audio": "这个药一天吃两次。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "chinese-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "医生",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "chinese-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «这个药一天吃两次。»",
           "target": "Tome esto dos veces al día.",
           "answer": "这个药一天吃两次。",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我对青霉素过敏。",
               "accepted_answers": [
                 "我对青霉素过敏。"
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这个药一天吃两次。",
               "accepted_answers": [
                 "这个药一天吃两次。"

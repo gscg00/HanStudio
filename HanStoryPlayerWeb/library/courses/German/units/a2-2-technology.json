@@ -1831,7 +1831,7 @@
             "Die App lässt sich nicht öffnen."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Die App lässt sich nicht öffnen.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «Die App lässt sich nicht öffnen.». El ejemplo practica: La aplicación no se abre.",
           "audio": "Die App lässt sich nicht öffnen.",
           "slow_audio": "Die App lässt sich nicht öffnen.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Ich muss mein Handy aufladen."
           ],
           "explanation": "La forma completa es «Ich muss mein Handy aufladen.».",
-          "audio": "Ich muss mein Handy aufladen.",
-          "slow_audio": "Ich muss mein Handy aufladen.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "öffnen"
           ],
           "explanation": "La forma completa es «Die App lässt sich nicht öffnen.»: La aplicación no se abre.",
-          "audio": "Die App lässt sich nicht öffnen.",
-          "slow_audio": "Die App lässt sich nicht öffnen.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "kaputt",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «Die App lässt sich nicht öffnen.»",
           "target": "La aplicación no se abre.",
           "answer": "Die App lässt sich nicht öffnen.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich muss mein Handy aufladen.",
               "accepted_answers": [
                 "Ich muss mein Handy aufladen."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Die App lässt sich nicht öffnen.",
               "accepted_answers": [
                 "Die App lässt sich nicht öffnen."

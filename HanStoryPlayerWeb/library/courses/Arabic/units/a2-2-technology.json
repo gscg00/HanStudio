@@ -1831,7 +1831,7 @@
             "التطبيق لا يفتح."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «التطبيق لا يفتح.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «التطبيق لا يفتح.». El ejemplo practica: La aplicación no se abre.",
           "audio": "التطبيق لا يفتح.",
           "slow_audio": "التطبيق لا يفتح.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "أحتاج إلى شحن هاتفي."
           ],
           "explanation": "La forma completa es «أحتاج إلى شحن هاتفي.».",
-          "audio": "أحتاج إلى شحن هاتفي.",
-          "slow_audio": "أحتاج إلى شحن هاتفي.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "يفتح"
           ],
           "explanation": "La forma completa es «التطبيق لا يفتح.»: La aplicación no se abre.",
-          "audio": "التطبيق لا يفتح.",
-          "slow_audio": "التطبيق لا يفتح.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "arabic-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "مكسور",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "arabic-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «التطبيق لا يفتح.»",
           "target": "La aplicación no se abre.",
           "answer": "التطبيق لا يفتح.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أحتاج إلى شحن هاتفي.",
               "accepted_answers": [
                 "أحتاج إلى شحن هاتفي."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "التطبيق لا يفتح.",
               "accepted_answers": [
                 "التطبيق لا يفتح."

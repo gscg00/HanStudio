@@ -1831,7 +1831,7 @@
             "初めてでした。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «初めてでした。»: Fue la primera vez.",
+          "explanation": "Escuchaste «初めてでした。». El ejemplo practica: Fue la primera vez.",
           "audio": "初めてでした。",
           "slow_audio": "初めてでした。",
           "tags": [
@@ -1867,8 +1867,8 @@
             "一度、電車に乗り遅れました。"
           ],
           "explanation": "La forma completa es «一度、電車に乗り遅れました。».",
-          "audio": "一度、電車に乗り遅れました。",
-          "slow_audio": "一度、電車に乗り遅れました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1885,8 +1885,8 @@
             "た"
           ],
           "explanation": "La forma completa es «初めてでした。»: Fue la primera vez.",
-          "audio": "初めてでした。",
-          "slow_audio": "初めてでした。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1897,7 +1897,7 @@
         {
           "id": "japanese-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "おもしろい経験でした。",
           "accepted_answers": [
@@ -1917,7 +1917,7 @@
         {
           "id": "japanese-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «初めてでした。»",
           "target": "Fue la primera vez.",
           "answer": "初めてでした。",
           "accepted_answers": [
@@ -1951,7 +1951,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "一度、電車に乗り遅れました。",
               "accepted_answers": [
                 "一度、電車に乗り遅れました。"
@@ -1969,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "初めてでした。",
               "accepted_answers": [
                 "初めてでした。"

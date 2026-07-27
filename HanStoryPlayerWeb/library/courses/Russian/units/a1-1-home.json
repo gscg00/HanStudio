@@ -1831,7 +1831,7 @@
             "Моя комната маленькая."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Моя комната маленькая.»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «Моя комната маленькая.». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "Моя комната маленькая.",
           "slow_audio": "Моя комната маленькая.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Ключ лежит на столе."
           ],
           "explanation": "La forma completa es «Ключ лежит на столе.».",
-          "audio": "Ключ лежит на столе.",
-          "slow_audio": "Ключ лежит на столе.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "маленькая"
           ],
           "explanation": "La forma completa es «Моя комната маленькая.»: Mi habitación es pequeña.",
-          "audio": "Моя комната маленькая.",
-          "slow_audio": "Моя комната маленькая.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "дверь",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «Моя комната маленькая.»",
           "target": "Mi habitación es pequeña.",
           "answer": "Моя комната маленькая.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Ключ лежит на столе.",
               "accepted_answers": [
                 "Ключ лежит на столе."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Моя комната маленькая.",
               "accepted_answers": [
                 "Моя комната маленькая."

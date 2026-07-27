@@ -1573,8 +1573,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «R».",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -1586,12 +1586,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "S",
+          "answer": "esse",
           "accepted_answers": [
-            "S"
+            "esse"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «S»: S: ese",
+          "explanation": "Escuchaste «esse». El ejemplo practica: S: ese",
           "audio": "esse",
           "slow_audio": "esse",
           "tags": [
@@ -1614,8 +1614,8 @@
             "R"
           ],
           "explanation": "La forma completa es «R».",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1632,8 +1632,8 @@
             "S"
           ],
           "explanation": "La forma completa es «S»: S: ese",
-          "audio": "esse",
-          "slow_audio": "esse",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1644,15 +1644,15 @@
         {
           "id": "italian-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «T: ti»",
+          "prompt": "Produce el ejemplo que demuestra: «T: ti»",
           "target": "T: ti",
-          "answer": "T",
+          "answer": "ti",
           "accepted_answers": [
-            "T"
+            "ti"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «T».",
+          "explanation": "Una respuesta adecuada es «ti».",
           "audio": "ti",
           "slow_audio": "ti",
           "tags": [
@@ -1664,16 +1664,16 @@
         {
           "id": "italian-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «S: ese»",
+          "prompt": "Di en voz alta: «esse»",
           "target": "S: ese",
-          "answer": "S",
+          "answer": "esse",
           "accepted_answers": [
-            "S"
+            "esse"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «S». También puedes escribirlo.",
+          "explanation": "El modelo es «esse». También puedes escribirlo.",
           "audio": "esse",
           "slow_audio": "esse",
           "tags": [
@@ -1698,10 +1698,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
-              "answer": "R",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "erre",
               "accepted_answers": [
-                "R"
+                "erre"
               ],
               "audio": "erre",
               "allow_minor_typos": true,
@@ -1716,10 +1716,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
-              "answer": "S",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "esse",
               "accepted_answers": [
-                "S"
+                "esse"
               ],
               "audio": "esse",
               "allow_minor_typos": true,

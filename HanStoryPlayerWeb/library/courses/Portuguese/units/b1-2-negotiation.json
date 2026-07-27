@@ -1831,7 +1831,7 @@
             "Cedemos no preço, não na qualidade."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Cedemos no preço, não na qualidade.»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «Cedemos no preço, não na qualidade.». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "Cedemos no preço, não na qualidade.",
           "slow_audio": "Cedemos no preço, não na qualidade.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Que outra alternativa nos resta?"
           ],
           "explanation": "La forma completa es «Que outra alternativa nos resta?».",
-          "audio": "Que outra alternativa nos resta?",
-          "slow_audio": "Que outra alternativa nos resta?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "qualidade"
           ],
           "explanation": "La forma completa es «Cedemos no preço, não na qualidade.»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "Cedemos no preço, não na qualidade.",
-          "slow_audio": "Cedemos no preço, não na qualidade.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "Entre amigos, podemos falar de forma mais direta.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «Cedemos no preço, não na qualidade.»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "Cedemos no preço, não na qualidade.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Que outra alternativa nos resta?",
               "accepted_answers": [
                 "Que outra alternativa nos resta?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Cedemos no preço, não na qualidade.",
               "accepted_answers": [
                 "Cedemos no preço, não na qualidade."

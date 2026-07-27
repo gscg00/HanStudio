@@ -1831,7 +1831,7 @@
             "The train is delayed."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The train is delayed.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «The train is delayed.». El ejemplo practica: El tren lleva retraso.",
           "audio": "The train is delayed.",
           "slow_audio": "The train is delayed.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Do I need to change?"
           ],
           "explanation": "La forma completa es «Do I need to change?».",
-          "audio": "Do I need to change?",
-          "slow_audio": "Do I need to change?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "delayed"
           ],
           "explanation": "La forma completa es «The train is delayed.»: El tren lleva retraso.",
-          "audio": "The train is delayed.",
-          "slow_audio": "The train is delayed.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "english-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "airport",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "english-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «The train is delayed.»",
           "target": "El tren lleva retraso.",
           "answer": "The train is delayed.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Do I need to change?",
               "accepted_answers": [
                 "Do I need to change?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The train is delayed.",
               "accepted_answers": [
                 "The train is delayed."

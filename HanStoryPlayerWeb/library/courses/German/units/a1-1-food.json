@@ -1831,7 +1831,7 @@
             "Ich möchte etwas Reis."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich möchte etwas Reis.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Ich möchte etwas Reis.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "Ich möchte etwas Reis.",
           "slow_audio": "Ich möchte etwas Reis.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Ich trinke morgens Tee."
           ],
           "explanation": "La forma completa es «Ich trinke morgens Tee.».",
-          "audio": "Ich trinke morgens Tee.",
-          "slow_audio": "Ich trinke morgens Tee.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "Reis"
           ],
           "explanation": "La forma completa es «Ich möchte etwas Reis.»: Quiero un poco de arroz.",
-          "audio": "Ich möchte etwas Reis.",
-          "slow_audio": "Ich möchte etwas Reis.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "german-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "Fleisch",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "german-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «Ich möchte etwas Reis.»",
           "target": "Quiero un poco de arroz.",
           "answer": "Ich möchte etwas Reis.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich trinke morgens Tee.",
               "accepted_answers": [
                 "Ich trinke morgens Tee."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich möchte etwas Reis.",
               "accepted_answers": [
                 "Ich möchte etwas Reis."

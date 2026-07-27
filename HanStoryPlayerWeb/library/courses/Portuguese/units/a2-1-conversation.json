@@ -1831,7 +1831,7 @@
             "No entanto, hoje não tenho tempo."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «No entanto, hoje não tenho tempo.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «No entanto, hoje não tenho tempo.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "No entanto, hoje não tenho tempo.",
           "slow_audio": "No entanto, hoje não tenho tempo.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Além disso, preciso de comprar comida."
           ],
           "explanation": "La forma completa es «Além disso, preciso de comprar comida.».",
-          "audio": "Além disso, preciso de comprar comida.",
-          "slow_audio": "Além disso, preciso de comprar comida.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "tempo"
           ],
           "explanation": "La forma completa es «No entanto, hoje não tenho tempo.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "No entanto, hoje não tenho tempo.",
-          "slow_audio": "No entanto, hoje não tenho tempo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "por isso",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «No entanto, hoje não tenho tempo.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "No entanto, hoje não tenho tempo.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Além disso, preciso de comprar comida.",
               "accepted_answers": [
                 "Além disso, preciso de comprar comida."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "No entanto, hoje não tenho tempo.",
               "accepted_answers": [
                 "No entanto, hoje não tenho tempo."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "por isso",
               "accepted_answers": [
                 "por isso"

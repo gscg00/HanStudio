@@ -1831,7 +1831,7 @@
             "Ich hätte zugestimmt, wenn du es erklärt hättest."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich hätte zugestimmt, wenn du es erklärt hättest.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «Ich hätte zugestimmt, wenn du es erklärt hättest.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
           "slow_audio": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Falls du Hilfe brauchst, ruf mich an."
           ],
           "explanation": "La forma completa es «Falls du Hilfe brauchst, ruf mich an.».",
-          "audio": "Falls du Hilfe brauchst, ruf mich an.",
-          "slow_audio": "Falls du Hilfe brauchst, ruf mich an.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "hättest"
           ],
           "explanation": "La forma completa es «Ich hätte zugestimmt, wenn du es erklärt hättest.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
-          "slow_audio": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "german-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Dank deiner Hilfe haben wir das Problem gelöst.",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "german-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «Ich hätte zugestimmt, wenn du es erklärt hättest.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Falls du Hilfe brauchst, ruf mich an.",
               "accepted_answers": [
                 "Falls du Hilfe brauchst, ruf mich an."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich hätte zugestimmt, wenn du es erklärt hättest.",
               "accepted_answers": [
                 "Ich hätte zugestimmt, wenn du es erklärt hättest."

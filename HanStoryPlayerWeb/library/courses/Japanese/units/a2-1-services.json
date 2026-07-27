@@ -1831,7 +1831,7 @@
             "今日中に修理してください。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «今日中に修理してください。»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «今日中に修理してください。». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "今日中に修理してください。",
           "slow_audio": "今日中に修理してください。",
           "tags": [
@@ -1865,8 +1865,8 @@
             "領収書をいただけますか。"
           ],
           "explanation": "La forma completa es «領収書をいただけますか。».",
-          "audio": "領収書をいただけますか。",
-          "slow_audio": "領収書をいただけますか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1883,8 +1883,8 @@
             "い"
           ],
           "explanation": "La forma completa es «今日中に修理してください。»: Necesito que lo reparen hoy.",
-          "audio": "今日中に修理してください。",
-          "slow_audio": "今日中に修理してください。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1895,7 +1895,7 @@
         {
           "id": "japanese-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "壊れた",
           "accepted_answers": [
@@ -1915,7 +1915,7 @@
         {
           "id": "japanese-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «今日中に修理してください。»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "今日中に修理してください。",
           "accepted_answers": [
@@ -1949,7 +1949,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "領収書をいただけますか。",
               "accepted_answers": [
                 "領収書をいただけますか。"
@@ -1967,7 +1967,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "今日中に修理してください。",
               "accepted_answers": [
                 "今日中に修理してください。"

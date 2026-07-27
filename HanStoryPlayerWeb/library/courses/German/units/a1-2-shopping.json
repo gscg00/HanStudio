@@ -1831,7 +1831,7 @@
             "Ich habe nur Bargeld."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich habe nur Bargeld.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «Ich habe nur Bargeld.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "Ich habe nur Bargeld.",
           "slow_audio": "Ich habe nur Bargeld.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Kann ich mit Karte zahlen?"
           ],
           "explanation": "La forma completa es «Kann ich mit Karte zahlen?».",
-          "audio": "Kann ich mit Karte zahlen?",
-          "slow_audio": "Kann ich mit Karte zahlen?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "Bargeld"
           ],
           "explanation": "La forma completa es «Ich habe nur Bargeld.»: Solo tengo efectivo.",
-          "audio": "Ich habe nur Bargeld.",
-          "slow_audio": "Ich habe nur Bargeld.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "Karte",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «Ich habe nur Bargeld.»",
           "target": "Solo tengo efectivo.",
           "answer": "Ich habe nur Bargeld.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Kann ich mit Karte zahlen?",
               "accepted_answers": [
                 "Kann ich mit Karte zahlen?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich habe nur Bargeld.",
               "accepted_answers": [
                 "Ich habe nur Bargeld."

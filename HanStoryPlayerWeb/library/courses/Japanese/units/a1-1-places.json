@@ -1831,7 +1831,7 @@
             "学校へ行きます。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «学校へ行きます。»: Voy a la escuela.",
+          "explanation": "Escuchaste «学校へ行きます。». El ejemplo practica: Voy a la escuela.",
           "audio": "学校へ行きます。",
           "slow_audio": "学校へ行きます。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "駅は左にあります。"
           ],
           "explanation": "La forma completa es «駅は左にあります。».",
-          "audio": "駅は左にあります。",
-          "slow_audio": "駅は左にあります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "す"
           ],
           "explanation": "La forma completa es «学校へ行きます。»: Voy a la escuela.",
-          "audio": "学校へ行きます。",
-          "slow_audio": "学校へ行きます。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "japanese-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "左",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "japanese-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «学校へ行きます。»",
           "target": "Voy a la escuela.",
           "answer": "学校へ行きます。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "駅は左にあります。",
               "accepted_answers": [
                 "駅は左にあります。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "学校へ行きます。",
               "accepted_answers": [
                 "学校へ行きます。"
@@ -1982,7 +1982,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "左",
               "accepted_answers": [
                 "左"

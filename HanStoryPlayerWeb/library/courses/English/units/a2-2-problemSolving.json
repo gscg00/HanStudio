@@ -1831,7 +1831,7 @@
             "We need more information."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «We need more information.»: Necesitamos más información.",
+          "explanation": "Escuchaste «We need more information.». El ejemplo practica: Necesitamos más información.",
           "audio": "We need more information.",
           "slow_audio": "We need more information.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "That will not solve the problem."
           ],
           "explanation": "La forma completa es «That will not solve the problem.».",
-          "audio": "That will not solve the problem.",
-          "slow_audio": "That will not solve the problem.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "information"
           ],
           "explanation": "La forma completa es «We need more information.»: Necesitamos más información.",
-          "audio": "We need more information.",
-          "slow_audio": "We need more information.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "When will it be ready?",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «We need more information.»",
           "target": "Necesitamos más información.",
           "answer": "We need more information.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "That will not solve the problem.",
               "accepted_answers": [
                 "That will not solve the problem."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "We need more information.",
               "accepted_answers": [
                 "We need more information."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "When will it be ready?",
               "accepted_answers": [
                 "When will it be ready?"

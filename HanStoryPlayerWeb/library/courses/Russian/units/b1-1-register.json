@@ -1831,7 +1831,7 @@
             "С сожалением сообщаю, что встречу отменили."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «С сожалением сообщаю, что встречу отменили.»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «С сожалением сообщаю, что встречу отменили.». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "С сожалением сообщаю, что встречу отменили.",
           "slow_audio": "С сожалением сообщаю, что встречу отменили.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Спасибо, что предупредили меня заранее."
           ],
           "explanation": "La forma completa es «Спасибо, что предупредили меня заранее.».",
-          "audio": "Спасибо, что предупредили меня заранее.",
-          "slow_audio": "Спасибо, что предупредили меня заранее.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "отменили"
           ],
           "explanation": "La forma completa es «С сожалением сообщаю, что встречу отменили.»: Lamento informarle de que la cita se canceló.",
-          "audio": "С сожалением сообщаю, что встречу отменили.",
-          "slow_audio": "С сожалением сообщаю, что встречу отменили.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Давайте разделим работу.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «С сожалением сообщаю, что встречу отменили.»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "С сожалением сообщаю, что встречу отменили.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Спасибо, что предупредили меня заранее.",
               "accepted_answers": [
                 "Спасибо, что предупредили меня заранее."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "С сожалением сообщаю, что встречу отменили.",
               "accepted_answers": [
                 "С сожалением сообщаю, что встречу отменили."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Давайте разделим работу.",
               "accepted_answers": [
                 "Давайте разделим работу."

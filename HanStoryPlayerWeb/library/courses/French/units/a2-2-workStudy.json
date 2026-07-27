@@ -1831,7 +1831,7 @@
             "Je veux améliorer mon écriture."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je veux améliorer mon écriture.»: Quiero mejorar mi escritura.",
+          "explanation": "Escuchaste «Je veux améliorer mon écriture.». El ejemplo practica: Quiero mejorar mi escritura.",
           "audio": "Je veux améliorer mon écriture.",
           "slow_audio": "Je veux améliorer mon écriture.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Je trouve cette leçon difficile."
           ],
           "explanation": "La forma completa es «Je trouve cette leçon difficile.».",
-          "audio": "Je trouve cette leçon difficile.",
-          "slow_audio": "Je trouve cette leçon difficile.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "écriture"
           ],
           "explanation": "La forma completa es «Je veux améliorer mon écriture.»: Quiero mejorar mi escritura.",
-          "audio": "Je veux améliorer mon écriture.",
-          "slow_audio": "Je veux améliorer mon écriture.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-a2-2-workStudy-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "nécessaire",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-a2-2-workStudy-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "prompt": "Di en voz alta: «Je veux améliorer mon écriture.»",
           "target": "Quiero mejorar mi escritura.",
           "answer": "Je veux améliorer mon écriture.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je trouve cette leçon difficile.",
               "accepted_answers": [
                 "Je trouve cette leçon difficile."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je veux améliorer mon écriture.",
               "accepted_answers": [
                 "Je veux améliorer mon écriture."

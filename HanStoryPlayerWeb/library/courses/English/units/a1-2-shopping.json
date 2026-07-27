@@ -1831,7 +1831,7 @@
             "I only have cash."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I only have cash.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «I only have cash.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "I only have cash.",
           "slow_audio": "I only have cash.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Can I pay by card?"
           ],
           "explanation": "La forma completa es «Can I pay by card?».",
-          "audio": "Can I pay by card?",
-          "slow_audio": "Can I pay by card?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "cash"
           ],
           "explanation": "La forma completa es «I only have cash.»: Solo tengo efectivo.",
-          "audio": "I only have cash.",
-          "slow_audio": "I only have cash.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "english-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "card",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "english-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «I only have cash.»",
           "target": "Solo tengo efectivo.",
           "answer": "I only have cash.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Can I pay by card?",
               "accepted_answers": [
                 "Can I pay by card?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I only have cash.",
               "accepted_answers": [
                 "I only have cash."

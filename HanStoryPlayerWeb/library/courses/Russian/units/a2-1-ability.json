@@ -1831,7 +1831,7 @@
             "Здесь нельзя курить."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Здесь нельзя курить.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «Здесь нельзя курить.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "Здесь нельзя курить.",
           "slow_audio": "Здесь нельзя курить.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Здесь можно фотографировать."
           ],
           "explanation": "La forma completa es «Здесь можно фотографировать.».",
-          "audio": "Здесь можно фотографировать.",
-          "slow_audio": "Здесь можно фотографировать.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "курить"
           ],
           "explanation": "La forma completa es «Здесь нельзя курить.»: No se puede fumar aquí.",
-          "audio": "Здесь нельзя курить.",
-          "slow_audio": "Здесь нельзя курить.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "russian-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "необходимо",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "russian-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «Здесь нельзя курить.»",
           "target": "No se puede fumar aquí.",
           "answer": "Здесь нельзя курить.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Здесь можно фотографировать.",
               "accepted_answers": [
                 "Здесь можно фотографировать."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Здесь нельзя курить.",
               "accepted_answers": [
                 "Здесь нельзя курить."

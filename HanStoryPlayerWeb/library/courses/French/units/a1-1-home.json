@@ -1831,7 +1831,7 @@
             "Ma chambre est petite."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ma chambre est petite.»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «Ma chambre est petite.». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "Ma chambre est petite.",
           "slow_audio": "Ma chambre est petite.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "La clé est sur la table."
           ],
           "explanation": "La forma completa es «La clé est sur la table.».",
-          "audio": "La clé est sur la table.",
-          "slow_audio": "La clé est sur la table.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "petite"
           ],
           "explanation": "La forma completa es «Ma chambre est petite.»: Mi habitación es pequeña.",
-          "audio": "Ma chambre est petite.",
-          "slow_audio": "Ma chambre est petite.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "porte",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «Ma chambre est petite.»",
           "target": "Mi habitación es pequeña.",
           "answer": "Ma chambre est petite.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La clé est sur la table.",
               "accepted_answers": [
                 "La clé est sur la table."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Ma chambre est petite.",
               "accepted_answers": [
                 "Ma chambre est petite."

@@ -1831,7 +1831,7 @@
             "У меня только наличные."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «У меня только наличные.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «У меня только наличные.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "У меня только наличные.",
           "slow_audio": "У меня только наличные.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Можно оплатить картой?"
           ],
           "explanation": "La forma completa es «Можно оплатить картой?».",
-          "audio": "Можно оплатить картой?",
-          "slow_audio": "Можно оплатить картой?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "наличные"
           ],
           "explanation": "La forma completa es «У меня только наличные.»: Solo tengo efectivo.",
-          "audio": "У меня только наличные.",
-          "slow_audio": "У меня только наличные.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "russian-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "карта",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "russian-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «У меня только наличные.»",
           "target": "Solo tengo efectivo.",
           "answer": "У меня только наличные.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Можно оплатить картой?",
               "accepted_answers": [
                 "Можно оплатить картой?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "У меня только наличные.",
               "accepted_answers": [
                 "У меня только наличные."

@@ -1831,7 +1831,7 @@
             "这里不能抽烟。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «这里不能抽烟。»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «这里不能抽烟。». El ejemplo practica: No se puede fumar aquí.",
           "audio": "这里不能抽烟。",
           "slow_audio": "这里不能抽烟。",
           "tags": [
@@ -1860,8 +1860,8 @@
             "这里可以拍照。"
           ],
           "explanation": "La forma completa es «这里可以拍照。».",
-          "audio": "这里可以拍照。",
-          "slow_audio": "这里可以拍照。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "烟"
           ],
           "explanation": "La forma completa es «这里不能抽烟。»: No se puede fumar aquí.",
-          "audio": "这里不能抽烟。",
-          "slow_audio": "这里不能抽烟。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "chinese-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "必要",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "chinese-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «这里不能抽烟。»",
           "target": "No se puede fumar aquí.",
           "answer": "这里不能抽烟。",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这里可以拍照。",
               "accepted_answers": [
                 "这里可以拍照。"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这里不能抽烟。",
               "accepted_answers": [
                 "这里不能抽烟。"

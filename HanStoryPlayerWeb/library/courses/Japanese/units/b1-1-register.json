@@ -1831,7 +1831,7 @@
             "予約がキャンセルされたことをお知らせいたします。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «予約がキャンセルされたことをお知らせいたします。»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «予約がキャンセルされたことをお知らせいたします。». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "予約がキャンセルされたことをお知らせいたします。",
           "slow_audio": "予約がキャンセルされたことをお知らせいたします。",
           "tags": [
@@ -1876,8 +1876,8 @@
             "早めに知らせていただき、ありがとうございます。"
           ],
           "explanation": "La forma completa es «早めに知らせていただき、ありがとうございます。».",
-          "audio": "早めに知らせていただき、ありがとうございます。",
-          "slow_audio": "早めに知らせていただき、ありがとうございます。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1894,8 +1894,8 @@
             "す"
           ],
           "explanation": "La forma completa es «予約がキャンセルされたことをお知らせいたします。»: Lamento informarle de que la cita se canceló.",
-          "audio": "予約がキャンセルされたことをお知らせいたします。",
-          "slow_audio": "予約がキャンセルされたことをお知らせいたします。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1906,7 +1906,7 @@
         {
           "id": "japanese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "仕事を分けましょう。",
           "accepted_answers": [
@@ -1926,7 +1926,7 @@
         {
           "id": "japanese-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «予約がキャンセルされたことをお知らせいたします。»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "予約がキャンセルされたことをお知らせいたします。",
           "accepted_answers": [
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "早めに知らせていただき、ありがとうございます。",
               "accepted_answers": [
                 "早めに知らせていただき、ありがとうございます。"
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "予約がキャンセルされたことをお知らせいたします。",
               "accepted_answers": [
                 "予約がキャンセルされたことをお知らせいたします。"
@@ -1996,7 +1996,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "仕事を分けましょう。",
               "accepted_answers": [
                 "仕事を分けましょう。"

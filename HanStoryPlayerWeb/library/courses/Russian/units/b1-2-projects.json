@@ -1831,7 +1831,7 @@
             "В конце недели проверим результаты."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «В конце недели проверим результаты.»: Revisaremos los avances al final de la semana.",
+          "explanation": "Escuchaste «В конце недели проверим результаты.». El ejemplo practica: Revisaremos los avances al final de la semana.",
           "audio": "В конце недели проверим результаты.",
           "slow_audio": "В конце недели проверим результаты.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "До начала стоит предусмотреть риски."
           ],
           "explanation": "La forma completa es «До начала стоит предусмотреть риски.».",
-          "audio": "До начала стоит предусмотреть риски.",
-          "slow_audio": "До начала стоит предусмотреть риски.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "результаты"
           ],
           "explanation": "La forma completa es «В конце недели проверим результаты.»: Revisaremos los avances al final de la semana.",
-          "audio": "В конце недели проверим результаты.",
-          "slow_audio": "В конце недели проверим результаты.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-b1-2-projects-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "prompt": "Produce el ejemplo que demuestra: «Quiero participar como voluntario.»",
           "target": "Quiero participar como voluntario.",
           "answer": "Я хочу участвовать как волонтёр.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-b1-2-projects-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "prompt": "Di en voz alta: «В конце недели проверим результаты.»",
           "target": "Revisaremos los avances al final de la semana.",
           "answer": "В конце недели проверим результаты.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "До начала стоит предусмотреть риски.",
               "accepted_answers": [
                 "До начала стоит предусмотреть риски."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "В конце недели проверим результаты.",
               "accepted_answers": [
                 "В конце недели проверим результаты."

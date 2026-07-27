@@ -1831,7 +1831,7 @@
             "J’ai besoin qu’on le répare aujourd’hui."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «J’ai besoin qu’on le répare aujourd’hui.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «J’ai besoin qu’on le répare aujourd’hui.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "J’ai besoin qu’on le répare aujourd’hui.",
           "slow_audio": "J’ai besoin qu’on le répare aujourd’hui.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Vous pouvez me donner un reçu ?"
           ],
           "explanation": "La forma completa es «Vous pouvez me donner un reçu ?».",
-          "audio": "Vous pouvez me donner un reçu ?",
-          "slow_audio": "Vous pouvez me donner un reçu ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "aujourd’hui"
           ],
           "explanation": "La forma completa es «J’ai besoin qu’on le répare aujourd’hui.»: Necesito que lo reparen hoy.",
-          "audio": "J’ai besoin qu’on le répare aujourd’hui.",
-          "slow_audio": "J’ai besoin qu’on le répare aujourd’hui.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "french-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "cassé",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "french-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «J’ai besoin qu’on le répare aujourd’hui.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "J’ai besoin qu’on le répare aujourd’hui.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Vous pouvez me donner un reçu ?",
               "accepted_answers": [
                 "Vous pouvez me donner un reçu ?"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’ai besoin qu’on le répare aujourd’hui.",
               "accepted_answers": [
                 "J’ai besoin qu’on le répare aujourd’hui."

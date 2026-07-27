@@ -1831,7 +1831,7 @@
             "Ich möchte mein Schreiben verbessern."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich möchte mein Schreiben verbessern.»: Quiero mejorar mi escritura.",
+          "explanation": "Escuchaste «Ich möchte mein Schreiben verbessern.». El ejemplo practica: Quiero mejorar mi escritura.",
           "audio": "Ich möchte mein Schreiben verbessern.",
           "slow_audio": "Ich möchte mein Schreiben verbessern.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Diese Lektion fällt mir schwer."
           ],
           "explanation": "La forma completa es «Diese Lektion fällt mir schwer.».",
-          "audio": "Diese Lektion fällt mir schwer.",
-          "slow_audio": "Diese Lektion fällt mir schwer.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "verbessern"
           ],
           "explanation": "La forma completa es «Ich möchte mein Schreiben verbessern.»: Quiero mejorar mi escritura.",
-          "audio": "Ich möchte mein Schreiben verbessern.",
-          "slow_audio": "Ich möchte mein Schreiben verbessern.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a2-2-workStudy-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "notwendig",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a2-2-workStudy-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "prompt": "Di en voz alta: «Ich möchte mein Schreiben verbessern.»",
           "target": "Quiero mejorar mi escritura.",
           "answer": "Ich möchte mein Schreiben verbessern.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Diese Lektion fällt mir schwer.",
               "accepted_answers": [
                 "Diese Lektion fällt mir schwer."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich möchte mein Schreiben verbessern.",
               "accepted_answers": [
                 "Ich möchte mein Schreiben verbessern."

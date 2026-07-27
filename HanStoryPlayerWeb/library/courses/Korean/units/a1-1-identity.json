@@ -1829,7 +1829,7 @@
             "저는 멕시코에서 왔어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «저는 멕시코에서 왔어요.»: Soy de México.",
+          "explanation": "Escuchaste «저는 멕시코에서 왔어요.». El ejemplo practica: Soy de México.",
           "audio": "저는 멕시코에서 왔어요.",
           "slow_audio": "저는 멕시코에서 왔어요.",
           "tags": [
@@ -1853,8 +1853,8 @@
             "이름이 뭐예요?"
           ],
           "explanation": "La forma completa es «이름이 뭐예요?».",
-          "audio": "이름이 뭐예요?",
-          "slow_audio": "이름이 뭐예요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1871,8 +1871,8 @@
             "왔어요"
           ],
           "explanation": "La forma completa es «저는 멕시코에서 왔어요.»: Soy de México.",
-          "audio": "저는 멕시코에서 왔어요.",
-          "slow_audio": "저는 멕시코에서 왔어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1883,7 +1883,7 @@
         {
           "id": "korean-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "언어",
           "accepted_answers": [
@@ -1903,7 +1903,7 @@
         {
           "id": "korean-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «저는 멕시코에서 왔어요.»",
           "target": "Soy de México.",
           "answer": "저는 멕시코에서 왔어요.",
           "accepted_answers": [
@@ -1937,7 +1937,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "이름이 뭐예요?",
               "accepted_answers": [
                 "이름이 뭐예요?"
@@ -1955,7 +1955,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "저는 멕시코에서 왔어요.",
               "accepted_answers": [
                 "저는 멕시코에서 왔어요."

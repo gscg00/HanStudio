@@ -1831,7 +1831,7 @@
             "You must not smoke here."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «You must not smoke here.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «You must not smoke here.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "You must not smoke here.",
           "slow_audio": "You must not smoke here.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "You can take photos here."
           ],
           "explanation": "La forma completa es «You can take photos here.».",
-          "audio": "You can take photos here.",
-          "slow_audio": "You can take photos here.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "here"
           ],
           "explanation": "La forma completa es «You must not smoke here.»: No se puede fumar aquí.",
-          "audio": "You must not smoke here.",
-          "slow_audio": "You must not smoke here.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "english-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "necessary",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "english-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «You must not smoke here.»",
           "target": "No se puede fumar aquí.",
           "answer": "You must not smoke here.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "You can take photos here.",
               "accepted_answers": [
                 "You can take photos here."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "You must not smoke here.",
               "accepted_answers": [
                 "You must not smoke here."

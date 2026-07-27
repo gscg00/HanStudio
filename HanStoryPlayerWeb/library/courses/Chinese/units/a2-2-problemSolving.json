@@ -1831,7 +1831,7 @@
             "我们需要更多信息。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我们需要更多信息。»: Necesitamos más información.",
+          "explanation": "Escuchaste «我们需要更多信息。». El ejemplo practica: Necesitamos más información.",
           "audio": "我们需要更多信息。",
           "slow_audio": "我们需要更多信息。",
           "tags": [
@@ -1861,8 +1861,8 @@
             "那不能解决问题。"
           ],
           "explanation": "La forma completa es «那不能解决问题。».",
-          "audio": "那不能解决问题。",
-          "slow_audio": "那不能解决问题。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "息"
           ],
           "explanation": "La forma completa es «我们需要更多信息。»: Necesitamos más información.",
-          "audio": "我们需要更多信息。",
-          "slow_audio": "我们需要更多信息。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "chinese-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "什么时候能准备好？",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "chinese-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «我们需要更多信息。»",
           "target": "Necesitamos más información.",
           "answer": "我们需要更多信息。",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "那不能解决问题。",
               "accepted_answers": [
                 "那不能解决问题。"
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我们需要更多信息。",
               "accepted_answers": [
                 "我们需要更多信息。"
@@ -1981,7 +1981,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "什么时候能准备好？",
               "accepted_answers": [
                 "什么时候能准备好？"

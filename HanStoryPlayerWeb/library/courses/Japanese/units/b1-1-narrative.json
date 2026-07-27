@@ -1831,7 +1831,7 @@
             "最後には、すべてうまくいきました。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «最後には、すべてうまくいきました。»: Al final, todo salió bien.",
+          "explanation": "Escuchaste «最後には、すべてうまくいきました。». El ejemplo practica: Al final, todo salió bien.",
           "audio": "最後には、すべてうまくいきました。",
           "slow_audio": "最後には、すべてうまくいきました。",
           "tags": [
@@ -1870,8 +1870,8 @@
             "その間に、妹が警察に電話しました。"
           ],
           "explanation": "La forma completa es «その間に、妹が警察に電話しました。».",
-          "audio": "その間に、妹が警察に電話しました。",
-          "slow_audio": "その間に、妹が警察に電話しました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1888,8 +1888,8 @@
             "た"
           ],
           "explanation": "La forma completa es «最後には、すべてうまくいきました。»: Al final, todo salió bien.",
-          "audio": "最後には、すべてうまくいきました。",
-          "slow_audio": "最後には、すべてうまくいきました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1900,7 +1900,7 @@
         {
           "id": "japanese-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "そこへ行ったことがありますか。",
           "accepted_answers": [
@@ -1920,7 +1920,7 @@
         {
           "id": "japanese-b1-1-narrative-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "prompt": "Di en voz alta: «最後には、すべてうまくいきました。»",
           "target": "Al final, todo salió bien.",
           "answer": "最後には、すべてうまくいきました。",
           "accepted_answers": [
@@ -1954,7 +1954,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "その間に、妹が警察に電話しました。",
               "accepted_answers": [
                 "その間に、妹が警察に電話しました。"
@@ -1972,7 +1972,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "最後には、すべてうまくいきました。",
               "accepted_answers": [
                 "最後には、すべてうまくいきました。"

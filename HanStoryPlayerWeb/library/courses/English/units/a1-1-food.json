@@ -1831,7 +1831,7 @@
             "I want some rice."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I want some rice.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «I want some rice.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "I want some rice.",
           "slow_audio": "I want some rice.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "I drink tea in the morning."
           ],
           "explanation": "La forma completa es «I drink tea in the morning.».",
-          "audio": "I drink tea in the morning.",
-          "slow_audio": "I drink tea in the morning.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "rice"
           ],
           "explanation": "La forma completa es «I want some rice.»: Quiero un poco de arroz.",
-          "audio": "I want some rice.",
-          "slow_audio": "I want some rice.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "meat",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «I want some rice.»",
           "target": "Quiero un poco de arroz.",
           "answer": "I want some rice.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I drink tea in the morning.",
               "accepted_answers": [
                 "I drink tea in the morning."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I want some rice.",
               "accepted_answers": [
                 "I want some rice."

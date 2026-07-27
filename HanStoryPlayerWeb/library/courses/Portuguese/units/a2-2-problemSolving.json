@@ -1831,7 +1831,7 @@
             "Precisamos de mais informações."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Precisamos de mais informações.»: Necesitamos más información.",
+          "explanation": "Escuchaste «Precisamos de mais informações.». El ejemplo practica: Necesitamos más información.",
           "audio": "Precisamos de mais informações.",
           "slow_audio": "Precisamos de mais informações.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Isso não vai resolver o problema."
           ],
           "explanation": "La forma completa es «Isso não vai resolver o problema.».",
-          "audio": "Isso não vai resolver o problema.",
-          "slow_audio": "Isso não vai resolver o problema.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "informações"
           ],
           "explanation": "La forma completa es «Precisamos de mais informações.»: Necesitamos más información.",
-          "audio": "Precisamos de mais informações.",
-          "slow_audio": "Precisamos de mais informações.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "Quando estará pronto?",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «Precisamos de mais informações.»",
           "target": "Necesitamos más información.",
           "answer": "Precisamos de mais informações.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Isso não vai resolver o problema.",
               "accepted_answers": [
                 "Isso não vai resolver o problema."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Precisamos de mais informações.",
               "accepted_answers": [
                 "Precisamos de mais informações."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Quando estará pronto?",
               "accepted_answers": [
                 "Quando estará pronto?"

@@ -2963,8 +2963,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «ch».",
-          "audio": "ich",
-          "slow_audio": "ich",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -2976,12 +2976,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "R",
+          "answer": "rot",
           "accepted_answers": [
-            "R"
+            "rot"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «R»: Ambas variantes pueden ser correctas.",
+          "explanation": "Escuchaste «rot». El ejemplo practica: Ambas variantes pueden ser correctas.",
           "audio": "rot",
           "slow_audio": "rot",
           "tags": [
@@ -3004,8 +3004,8 @@
             "ch"
           ],
           "explanation": "La forma completa es «ch».",
-          "audio": "ich",
-          "slow_audio": "ich",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -3022,8 +3022,8 @@
             "R"
           ],
           "explanation": "La forma completa es «R»: Ambas variantes pueden ser correctas.",
-          "audio": "rot",
-          "slow_audio": "rot",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -3034,15 +3034,15 @@
         {
           "id": "german-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «V suele sonar f; W suele sonar v.»",
+          "prompt": "Produce el ejemplo que demuestra: «V suele sonar f; W suele sonar v.»",
           "target": "V suele sonar f; W suele sonar v.",
-          "answer": "V / W",
+          "answer": "Vater / Wasser",
           "accepted_answers": [
-            "V / W"
+            "Vater / Wasser"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «V / W».",
+          "explanation": "Una respuesta adecuada es «Vater / Wasser».",
           "audio": "Vater / Wasser",
           "slow_audio": "Vater / Wasser",
           "tags": [
@@ -3054,16 +3054,16 @@
         {
           "id": "german-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Ambas variantes pueden ser correctas.»",
+          "prompt": "Di en voz alta: «rot»",
           "target": "Ambas variantes pueden ser correctas.",
-          "answer": "R",
+          "answer": "rot",
           "accepted_answers": [
-            "R"
+            "rot"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «R». También puedes escribirlo.",
+          "explanation": "El modelo es «rot». También puedes escribirlo.",
           "audio": "rot",
           "slow_audio": "rot",
           "tags": [
@@ -3088,10 +3088,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
-              "answer": "ch",
+              "prompt": "Di o escribe este ejemplo en alemán.",
+              "answer": "ich",
               "accepted_answers": [
-                "ch"
+                "ich"
               ],
               "audio": "ich",
               "allow_minor_typos": true,
@@ -3106,10 +3106,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
-              "answer": "R",
+              "prompt": "Di o escribe este ejemplo en alemán.",
+              "answer": "rot",
               "accepted_answers": [
-                "R"
+                "rot"
               ],
               "audio": "rot",
               "allow_minor_typos": true,

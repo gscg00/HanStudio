@@ -520,7 +520,7 @@
             "onde"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «onde»: dónde",
+          "explanation": "Escuchaste «onde». El ejemplo practica: dónde",
           "audio": "onde",
           "slow_audio": "onde",
           "tags": [
@@ -545,8 +545,8 @@
             "quem"
           ],
           "explanation": "La forma completa es «quem».",
-          "audio": "quem",
-          "slow_audio": "quem",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -563,8 +563,8 @@
             "e"
           ],
           "explanation": "La forma completa es «onde»: dónde",
-          "audio": "onde",
-          "slow_audio": "onde",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -575,7 +575,7 @@
         {
           "id": "portuguese-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "quando",
           "accepted_answers": [
@@ -595,7 +595,7 @@
         {
           "id": "portuguese-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «onde»",
           "target": "dónde",
           "answer": "onde",
           "accepted_answers": [
@@ -629,7 +629,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "quem",
               "accepted_answers": [
                 "quem"
@@ -647,7 +647,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "onde",
               "accepted_answers": [
                 "onde"

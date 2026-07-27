@@ -1831,7 +1831,7 @@
             "نحتاج إلى مزيد من المعلومات."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «نحتاج إلى مزيد من المعلومات.»: Necesitamos más información.",
+          "explanation": "Escuchaste «نحتاج إلى مزيد من المعلومات.». El ejemplo practica: Necesitamos más información.",
           "audio": "نحتاج إلى مزيد من المعلومات.",
           "slow_audio": "نحتاج إلى مزيد من المعلومات.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "هذا لن يحل المشكلة."
           ],
           "explanation": "La forma completa es «هذا لن يحل المشكلة.».",
-          "audio": "هذا لن يحل المشكلة.",
-          "slow_audio": "هذا لن يحل المشكلة.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "المعلومات"
           ],
           "explanation": "La forma completa es «نحتاج إلى مزيد من المعلومات.»: Necesitamos más información.",
-          "audio": "نحتاج إلى مزيد من المعلومات.",
-          "slow_audio": "نحتاج إلى مزيد من المعلومات.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "arabic-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "متى سيكون جاهزًا؟",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "arabic-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «نحتاج إلى مزيد من المعلومات.»",
           "target": "Necesitamos más información.",
           "answer": "نحتاج إلى مزيد من المعلومات.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هذا لن يحل المشكلة.",
               "accepted_answers": [
                 "هذا لن يحل المشكلة."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "نحتاج إلى مزيد من المعلومات.",
               "accepted_answers": [
                 "نحتاج إلى مزيد من المعلومات."
@@ -1977,7 +1977,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "متى سيكون جاهزًا؟",
               "accepted_answers": [
                 "متى سيكون جاهزًا؟"

@@ -1831,7 +1831,7 @@
             "I will call you when I arrive."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I will call you when I arrive.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «I will call you when I arrive.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "I will call you when I arrive.",
           "slow_audio": "I will call you when I arrive.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "I plan to book a room."
           ],
           "explanation": "La forma completa es «I plan to book a room.».",
-          "audio": "I plan to book a room.",
-          "slow_audio": "I plan to book a room.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "arrive"
           ],
           "explanation": "La forma completa es «I will call you when I arrive.»: Te llamaré cuando llegue.",
-          "audio": "I will call you when I arrive.",
-          "slow_audio": "I will call you when I arrive.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "to book",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «I will call you when I arrive.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "I will call you when I arrive.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I plan to book a room.",
               "accepted_answers": [
                 "I plan to book a room."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I will call you when I arrive.",
               "accepted_answers": [
                 "I will call you when I arrive."

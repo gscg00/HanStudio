@@ -1831,7 +1831,7 @@
             "처음이었어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «처음이었어요.»: Fue la primera vez.",
+          "explanation": "Escuchaste «처음이었어요.». El ejemplo practica: Fue la primera vez.",
           "audio": "처음이었어요.",
           "slow_audio": "처음이었어요.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "한 번 기차를 놓친 적이 있어요."
           ],
           "explanation": "La forma completa es «한 번 기차를 놓친 적이 있어요.».",
-          "audio": "한 번 기차를 놓친 적이 있어요.",
-          "slow_audio": "한 번 기차를 놓친 적이 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "요"
           ],
           "explanation": "La forma completa es «처음이었어요.»: Fue la primera vez.",
-          "audio": "처음이었어요.",
-          "slow_audio": "처음이었어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "korean-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "흥미로운 경험이었어요.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "korean-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «처음이었어요.»",
           "target": "Fue la primera vez.",
           "answer": "처음이었어요.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "한 번 기차를 놓친 적이 있어요.",
               "accepted_answers": [
                 "한 번 기차를 놓친 적이 있어요."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "처음이었어요.",
               "accepted_answers": [
                 "처음이었어요."

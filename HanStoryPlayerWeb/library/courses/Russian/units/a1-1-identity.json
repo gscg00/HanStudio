@@ -1829,7 +1829,7 @@
             "Я из Мексики."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я из Мексики.»: Soy de México.",
+          "explanation": "Escuchaste «Я из Мексики.». El ejemplo practica: Soy de México.",
           "audio": "Я из Мексики.",
           "slow_audio": "Я из Мексики.",
           "tags": [
@@ -1854,8 +1854,8 @@
             "Как вас зовут?"
           ],
           "explanation": "La forma completa es «Как вас зовут?».",
-          "audio": "Как вас зовут?",
-          "slow_audio": "Как вас зовут?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1872,8 +1872,8 @@
             "Мексики"
           ],
           "explanation": "La forma completa es «Я из Мексики.»: Soy de México.",
-          "audio": "Я из Мексики.",
-          "slow_audio": "Я из Мексики.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1884,7 +1884,7 @@
         {
           "id": "russian-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "язык",
           "accepted_answers": [
@@ -1904,7 +1904,7 @@
         {
           "id": "russian-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «Я из Мексики.»",
           "target": "Soy de México.",
           "answer": "Я из Мексики.",
           "accepted_answers": [
@@ -1938,7 +1938,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Как вас зовут?",
               "accepted_answers": [
                 "Как вас зовут?"
@@ -1956,7 +1956,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я из Мексики.",
               "accepted_answers": [
                 "Я из Мексики."

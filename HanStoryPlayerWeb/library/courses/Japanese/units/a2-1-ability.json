@@ -1831,7 +1831,7 @@
             "ここでたばこを吸ってはいけません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ここでたばこを吸ってはいけません。»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «ここでたばこを吸ってはいけません。». El ejemplo practica: No se puede fumar aquí.",
           "audio": "ここでたばこを吸ってはいけません。",
           "slow_audio": "ここでたばこを吸ってはいけません。",
           "tags": [
@@ -1868,8 +1868,8 @@
             "ここで写真を撮ってもいいです。"
           ],
           "explanation": "La forma completa es «ここで写真を撮ってもいいです。».",
-          "audio": "ここで写真を撮ってもいいです。",
-          "slow_audio": "ここで写真を撮ってもいいです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1886,8 +1886,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «ここでたばこを吸ってはいけません。»: No se puede fumar aquí.",
-          "audio": "ここでたばこを吸ってはいけません。",
-          "slow_audio": "ここでたばこを吸ってはいけません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1898,7 +1898,7 @@
         {
           "id": "japanese-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "必要な",
           "accepted_answers": [
@@ -1918,7 +1918,7 @@
         {
           "id": "japanese-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «ここでたばこを吸ってはいけません。»",
           "target": "No se puede fumar aquí.",
           "answer": "ここでたばこを吸ってはいけません。",
           "accepted_answers": [
@@ -1952,7 +1952,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ここで写真を撮ってもいいです。",
               "accepted_answers": [
                 "ここで写真を撮ってもいいです。"
@@ -1970,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ここでたばこを吸ってはいけません。",
               "accepted_answers": [
                 "ここでたばこを吸ってはいけません。"

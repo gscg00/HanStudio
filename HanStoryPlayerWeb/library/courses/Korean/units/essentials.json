@@ -3292,8 +3292,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «은/는».",
-          "audio": "저는 학생이에요.",
-          "slow_audio": "저는 학생이에요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -3305,12 +3305,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "이/가",
+          "answer": "물이 있어요.",
           "accepted_answers": [
-            "이/가"
+            "물이 있어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «이/가»: Marca el sujeto o información nueva.",
+          "explanation": "Escuchaste «물이 있어요.». El ejemplo practica: Marca el sujeto o información nueva.",
           "audio": "물이 있어요.",
           "slow_audio": "물이 있어요.",
           "tags": [
@@ -3335,8 +3335,8 @@
             "은/는"
           ],
           "explanation": "La forma completa es «은/는».",
-          "audio": "저는 학생이에요.",
-          "slow_audio": "저는 학생이에요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -3353,8 +3353,8 @@
             "가"
           ],
           "explanation": "La forma completa es «이/가»: Marca el sujeto o información nueva.",
-          "audio": "물이 있어요.",
-          "slow_audio": "물이 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -3365,15 +3365,15 @@
         {
           "id": "korean-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Marca el objeto directo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Marca el objeto directo.»",
           "target": "Marca el objeto directo.",
-          "answer": "을/를",
+          "answer": "물을 마셔요.",
           "accepted_answers": [
-            "을/를"
+            "물을 마셔요."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «을/를».",
+          "explanation": "Una respuesta adecuada es «물을 마셔요.».",
           "audio": "물을 마셔요.",
           "slow_audio": "물을 마셔요.",
           "tags": [
@@ -3385,16 +3385,16 @@
         {
           "id": "korean-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Marca el sujeto o información nueva.»",
+          "prompt": "Di en voz alta: «물이 있어요.»",
           "target": "Marca el sujeto o información nueva.",
-          "answer": "이/가",
+          "answer": "물이 있어요.",
           "accepted_answers": [
-            "이/가"
+            "물이 있어요."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «이/가». También puedes escribirlo.",
+          "explanation": "El modelo es «물이 있어요.». También puedes escribirlo.",
           "audio": "물이 있어요.",
           "slow_audio": "물이 있어요.",
           "tags": [
@@ -3419,10 +3419,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
-              "answer": "은/는",
+              "prompt": "Di o escribe este ejemplo en coreano.",
+              "answer": "저는 학생이에요.",
               "accepted_answers": [
-                "은/는"
+                "저는 학생이에요."
               ],
               "audio": "저는 학생이에요.",
               "allow_minor_typos": true,
@@ -3437,10 +3437,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
-              "answer": "이/가",
+              "prompt": "Di o escribe este ejemplo en coreano.",
+              "answer": "물이 있어요.",
               "accepted_answers": [
-                "이/가"
+                "물이 있어요."
               ],
               "audio": "물이 있어요.",
               "allow_minor_typos": true,

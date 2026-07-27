@@ -1831,7 +1831,7 @@
             "Принимайте это два раза в день."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Принимайте это два раза в день.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Принимайте это два раза в день.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Принимайте это два раза в день.",
           "slow_audio": "Принимайте это два раза в день.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "У меня аллергия на пенициллин."
           ],
           "explanation": "La forma completa es «У меня аллергия на пенициллин.».",
-          "audio": "У меня аллергия на пенициллин.",
-          "slow_audio": "У меня аллергия на пенициллин.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "день"
           ],
           "explanation": "La forma completa es «Принимайте это два раза в день.»: Tome esto dos veces al día.",
-          "audio": "Принимайте это два раза в день.",
-          "slow_audio": "Принимайте это два раза в день.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "врач",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Принимайте это два раза в день.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Принимайте это два раза в день.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "У меня аллергия на пенициллин.",
               "accepted_answers": [
                 "У меня аллергия на пенициллин."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Принимайте это два раза в день.",
               "accepted_answers": [
                 "Принимайте это два раза в день."

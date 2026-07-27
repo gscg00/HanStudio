@@ -1831,7 +1831,7 @@
             "O tempo muda depressa."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «O tempo muda depressa.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «O tempo muda depressa.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "O tempo muda depressa.",
           "slow_audio": "O tempo muda depressa.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Preciso de um casaco."
           ],
           "explanation": "La forma completa es «Preciso de um casaco.».",
-          "audio": "Preciso de um casaco.",
-          "slow_audio": "Preciso de um casaco.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "depressa"
           ],
           "explanation": "La forma completa es «O tempo muda depressa.»: El tiempo cambia rápido.",
-          "audio": "O tempo muda depressa.",
-          "slow_audio": "O tempo muda depressa.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "casaco",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «O tempo muda depressa.»",
           "target": "El tiempo cambia rápido.",
           "answer": "O tempo muda depressa.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Preciso de um casaco.",
               "accepted_answers": [
                 "Preciso de um casaco."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O tempo muda depressa.",
               "accepted_answers": [
                 "O tempo muda depressa."

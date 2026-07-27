@@ -1831,7 +1831,7 @@
             "最后，一切都顺利解决了。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «最后，一切都顺利解决了。»: Al final, todo salió bien.",
+          "explanation": "Escuchaste «最后，一切都顺利解决了。». El ejemplo practica: Al final, todo salió bien.",
           "audio": "最后，一切都顺利解决了。",
           "slow_audio": "最后，一切都顺利解决了。",
           "tags": [
@@ -1869,8 +1869,8 @@
             "与此同时，我妹妹给警察打了电话。"
           ],
           "explanation": "La forma completa es «与此同时，我妹妹给警察打了电话。».",
-          "audio": "与此同时，我妹妹给警察打了电话。",
-          "slow_audio": "与此同时，我妹妹给警察打了电话。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1887,8 +1887,8 @@
             "了"
           ],
           "explanation": "La forma completa es «最后，一切都顺利解决了。»: Al final, todo salió bien.",
-          "audio": "最后，一切都顺利解决了。",
-          "slow_audio": "最后，一切都顺利解决了。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1899,7 +1899,7 @@
         {
           "id": "chinese-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "你去过那里吗？",
           "accepted_answers": [
@@ -1919,7 +1919,7 @@
         {
           "id": "chinese-b1-1-narrative-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "prompt": "Di en voz alta: «最后，一切都顺利解决了。»",
           "target": "Al final, todo salió bien.",
           "answer": "最后，一切都顺利解决了。",
           "accepted_answers": [
@@ -1953,7 +1953,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "与此同时，我妹妹给警察打了电话。",
               "accepted_answers": [
                 "与此同时，我妹妹给警察打了电话。"
@@ -1971,7 +1971,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "最后，一切都顺利解决了。",
               "accepted_answers": [
                 "最后，一切都顺利解决了。"

@@ -697,7 +697,7 @@
             "أنتم"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أنتم»: ustedes",
+          "explanation": "Escuchaste «أنتم». El ejemplo practica: ustedes",
           "audio": "أنتم",
           "slow_audio": "أنتم",
           "tags": [
@@ -720,8 +720,8 @@
             "نحن"
           ],
           "explanation": "La forma completa es «نحن».",
-          "audio": "نحن",
-          "slow_audio": "نحن",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -738,8 +738,8 @@
             "م"
           ],
           "explanation": "La forma completa es «أنتم»: ustedes",
-          "audio": "أنتم",
-          "slow_audio": "أنتم",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -750,7 +750,7 @@
         {
           "id": "arabic-reading-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ellos»",
+          "prompt": "Produce el ejemplo que demuestra: «ellos»",
           "target": "ellos",
           "answer": "هم",
           "accepted_answers": [
@@ -770,7 +770,7 @@
         {
           "id": "arabic-reading-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «ustedes»",
+          "prompt": "Di en voz alta: «أنتم»",
           "target": "ustedes",
           "answer": "أنتم",
           "accepted_answers": [
@@ -804,7 +804,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "نحن",
               "accepted_answers": [
                 "نحن"
@@ -822,7 +822,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أنتم",
               "accepted_answers": [
                 "أنتم"

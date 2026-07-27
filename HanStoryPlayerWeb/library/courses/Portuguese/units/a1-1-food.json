@@ -1831,7 +1831,7 @@
             "Quero um pouco de arroz."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quero um pouco de arroz.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Quero um pouco de arroz.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "Quero um pouco de arroz.",
           "slow_audio": "Quero um pouco de arroz.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Bebo chá de manhã."
           ],
           "explanation": "La forma completa es «Bebo chá de manhã.».",
-          "audio": "Bebo chá de manhã.",
-          "slow_audio": "Bebo chá de manhã.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "arroz"
           ],
           "explanation": "La forma completa es «Quero um pouco de arroz.»: Quiero un poco de arroz.",
-          "audio": "Quero um pouco de arroz.",
-          "slow_audio": "Quero um pouco de arroz.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "carne",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «Quero um pouco de arroz.»",
           "target": "Quiero un poco de arroz.",
           "answer": "Quero um pouco de arroz.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Bebo chá de manhã.",
               "accepted_answers": [
                 "Bebo chá de manhã."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Quero um pouco de arroz.",
               "accepted_answers": [
                 "Quero um pouco de arroz."

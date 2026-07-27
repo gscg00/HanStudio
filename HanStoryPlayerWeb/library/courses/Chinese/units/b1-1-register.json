@@ -1831,7 +1831,7 @@
             "很遗憾地通知您，预约已经取消。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «很遗憾地通知您，预约已经取消。»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «很遗憾地通知您，预约已经取消。». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "很遗憾地通知您，预约已经取消。",
           "slow_audio": "很遗憾地通知您，预约已经取消。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "谢谢您提前告诉我。"
           ],
           "explanation": "La forma completa es «谢谢您提前告诉我。».",
-          "audio": "谢谢您提前告诉我。",
-          "slow_audio": "谢谢您提前告诉我。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "消"
           ],
           "explanation": "La forma completa es «很遗憾地通知您，预约已经取消。»: Lamento informarle de que la cita se canceló.",
-          "audio": "很遗憾地通知您，预约已经取消。",
-          "slow_audio": "很遗憾地通知您，预约已经取消。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "chinese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "我们把工作分开做吧。",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "chinese-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «很遗憾地通知您，预约已经取消。»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "很遗憾地通知您，预约已经取消。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "谢谢您提前告诉我。",
               "accepted_answers": [
                 "谢谢您提前告诉我。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "很遗憾地通知您，预约已经取消。",
               "accepted_answers": [
                 "很遗憾地通知您，预约已经取消。"
@@ -1982,7 +1982,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我们把工作分开做吧。",
               "accepted_answers": [
                 "我们把工作分开做吧。"

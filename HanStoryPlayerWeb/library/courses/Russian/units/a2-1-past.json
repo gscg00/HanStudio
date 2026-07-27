@@ -1831,7 +1831,7 @@
             "Что случилось?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Что случилось?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «Что случилось?». El ejemplo practica: ¿Qué pasó?",
           "audio": "Что случилось?",
           "slow_audio": "Что случилось?",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Я не смог найти ключи."
           ],
           "explanation": "La forma completa es «Я не смог найти ключи.».",
-          "audio": "Я не смог найти ключи.",
-          "slow_audio": "Я не смог найти ключи.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "случилось"
           ],
           "explanation": "La forma completa es «Что случилось?»: ¿Qué pasó?",
-          "audio": "Что случилось?",
-          "slow_audio": "Что случилось?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "произошло",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «Что случилось?»",
           "target": "¿Qué pasó?",
           "answer": "Что случилось?",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я не смог найти ключи.",
               "accepted_answers": [
                 "Я не смог найти ключи."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Что случилось?",
               "accepted_answers": [
                 "Что случилось?"

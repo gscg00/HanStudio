@@ -1831,7 +1831,7 @@
             "Alla fine, è andato tutto bene."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Alla fine, è andato tutto bene.»: Al final, todo salió bien.",
+          "explanation": "Escuchaste «Alla fine, è andato tutto bene.». El ejemplo practica: Al final, todo salió bien.",
           "audio": "Alla fine, è andato tutto bene.",
           "slow_audio": "Alla fine, è andato tutto bene.",
           "tags": [
@@ -1861,8 +1861,8 @@
             "Nel frattempo, mia sorella ha chiamato la polizia."
           ],
           "explanation": "La forma completa es «Nel frattempo, mia sorella ha chiamato la polizia.».",
-          "audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
-          "slow_audio": "Nel frattempo, mia sorella ha chiamato la polizia.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "bene"
           ],
           "explanation": "La forma completa es «Alla fine, è andato tutto bene.»: Al final, todo salió bien.",
-          "audio": "Alla fine, è andato tutto bene.",
-          "slow_audio": "Alla fine, è andato tutto bene.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "italian-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "Sei mai stato lì?",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "italian-b1-1-narrative-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "prompt": "Di en voz alta: «Alla fine, è andato tutto bene.»",
           "target": "Al final, todo salió bien.",
           "answer": "Alla fine, è andato tutto bene.",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Nel frattempo, mia sorella ha chiamato la polizia.",
               "accepted_answers": [
                 "Nel frattempo, mia sorella ha chiamato la polizia."
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Alla fine, è andato tutto bene.",
               "accepted_answers": [
                 "Alla fine, è andato tutto bene."

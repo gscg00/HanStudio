@@ -1831,7 +1831,7 @@
             "市政府宣布了一项新计划。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «市政府宣布了一项新计划。»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «市政府宣布了一项新计划。». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "市政府宣布了一项新计划。",
           "slow_audio": "市政府宣布了一项新计划。",
           "tags": [
@@ -1864,8 +1864,8 @@
             "污染会影响我们的健康。"
           ],
           "explanation": "La forma completa es «污染会影响我们的健康。».",
-          "audio": "污染会影响我们的健康。",
-          "slow_audio": "污染会影响我们的健康。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1882,8 +1882,8 @@
             "划"
           ],
           "explanation": "La forma completa es «市政府宣布了一项新计划。»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "市政府宣布了一项新计划。",
-          "slow_audio": "市政府宣布了一项新计划。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1894,7 +1894,7 @@
         {
           "id": "chinese-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高",
           "accepted_answers": [
@@ -1914,7 +1914,7 @@
         {
           "id": "chinese-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «市政府宣布了一项新计划。»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "市政府宣布了一项新计划。",
           "accepted_answers": [
@@ -1948,7 +1948,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "污染会影响我们的健康。",
               "accepted_answers": [
                 "污染会影响我们的健康。"
@@ -1966,7 +1966,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "市政府宣布了一项新计划。",
               "accepted_answers": [
                 "市政府宣布了一项新计划。"

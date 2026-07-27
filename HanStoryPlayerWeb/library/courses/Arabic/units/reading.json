@@ -2009,8 +2009,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «ل».",
-          "audio": "لام",
-          "slow_audio": "لام",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -2022,12 +2022,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "م",
+          "answer": "ميم",
           "accepted_answers": [
-            "م"
+            "ميم"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «م»: م: m",
+          "explanation": "Escuchaste «ميم». El ejemplo practica: م: m",
           "audio": "ميم",
           "slow_audio": "ميم",
           "tags": [
@@ -2050,8 +2050,8 @@
             "ل"
           ],
           "explanation": "La forma completa es «ل».",
-          "audio": "لام",
-          "slow_audio": "لام",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2068,8 +2068,8 @@
             "م"
           ],
           "explanation": "La forma completa es «م»: م: m",
-          "audio": "ميم",
-          "slow_audio": "ميم",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2080,15 +2080,15 @@
         {
           "id": "arabic-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ن: n»",
+          "prompt": "Produce el ejemplo que demuestra: «ن: n»",
           "target": "ن: n",
-          "answer": "ن",
+          "answer": "نون",
           "accepted_answers": [
-            "ن"
+            "نون"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «ن».",
+          "explanation": "Una respuesta adecuada es «نون».",
           "audio": "نون",
           "slow_audio": "نون",
           "tags": [
@@ -2100,16 +2100,16 @@
         {
           "id": "arabic-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «م: m»",
+          "prompt": "Di en voz alta: «ميم»",
           "target": "م: m",
-          "answer": "م",
+          "answer": "ميم",
           "accepted_answers": [
-            "م"
+            "ميم"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «م». También puedes escribirlo.",
+          "explanation": "El modelo es «ميم». También puedes escribirlo.",
           "audio": "ميم",
           "slow_audio": "ميم",
           "tags": [
@@ -2134,10 +2134,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
-              "answer": "ل",
+              "prompt": "Di o escribe este ejemplo en árabe.",
+              "answer": "لام",
               "accepted_answers": [
-                "ل"
+                "لام"
               ],
               "audio": "لام",
               "allow_minor_typos": true,
@@ -2152,10 +2152,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
-              "answer": "م",
+              "prompt": "Di o escribe este ejemplo en árabe.",
+              "answer": "ميم",
               "accepted_answers": [
-                "م"
+                "ميم"
               ],
               "audio": "ميم",
               "allow_minor_typos": true,

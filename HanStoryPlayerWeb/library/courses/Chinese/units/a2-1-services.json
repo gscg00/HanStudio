@@ -1831,7 +1831,7 @@
             "我需要今天修好。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我需要今天修好。»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «我需要今天修好。». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "我需要今天修好。",
           "slow_audio": "我需要今天修好。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "可以给我一张收据吗？"
           ],
           "explanation": "La forma completa es «可以给我一张收据吗？».",
-          "audio": "可以给我一张收据吗？",
-          "slow_audio": "可以给我一张收据吗？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "好"
           ],
           "explanation": "La forma completa es «我需要今天修好。»: Necesito que lo reparen hoy.",
-          "audio": "我需要今天修好。",
-          "slow_audio": "我需要今天修好。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "chinese-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "坏了",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "chinese-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «我需要今天修好。»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "我需要今天修好。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "可以给我一张收据吗？",
               "accepted_answers": [
                 "可以给我一张收据吗？"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我需要今天修好。",
               "accepted_answers": [
                 "我需要今天修好。"

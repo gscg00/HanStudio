@@ -1831,7 +1831,7 @@
             "Beim Preis geben wir nach, bei der Qualität nicht."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Beim Preis geben wir nach, bei der Qualität nicht.»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «Beim Preis geben wir nach, bei der Qualität nicht.». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
           "slow_audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Welche Alternative bleibt uns?"
           ],
           "explanation": "La forma completa es «Welche Alternative bleibt uns?».",
-          "audio": "Welche Alternative bleibt uns?",
-          "slow_audio": "Welche Alternative bleibt uns?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "nicht"
           ],
           "explanation": "La forma completa es «Beim Preis geben wir nach, bei der Qualität nicht.»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
-          "slow_audio": "Beim Preis geben wir nach, bei der Qualität nicht.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "german-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "Unter Freunden können wir direkter sprechen.",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "german-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «Beim Preis geben wir nach, bei der Qualität nicht.»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "Beim Preis geben wir nach, bei der Qualität nicht.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Welche Alternative bleibt uns?",
               "accepted_answers": [
                 "Welche Alternative bleibt uns?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Beim Preis geben wir nach, bei der Qualität nicht.",
               "accepted_answers": [
                 "Beim Preis geben wir nach, bei der Qualität nicht."

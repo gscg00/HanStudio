@@ -1831,7 +1831,7 @@
             "虽然她很累，但是她完成了工作。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «虽然她很累，但是她完成了工作。»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «虽然她很累，但是她完成了工作。». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "虽然她很累，但是她完成了工作。",
           "slow_audio": "虽然她很累，但是她完成了工作。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "结果，项目推迟了。"
           ],
           "explanation": "La forma completa es «结果，项目推迟了。».",
-          "audio": "结果，项目推迟了。",
-          "slow_audio": "结果，项目推迟了。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "作"
           ],
           "explanation": "La forma completa es «虽然她很累，但是她完成了工作。»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "虽然她很累，但是她完成了工作。",
-          "slow_audio": "虽然她很累，但是她完成了工作。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "chinese-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "你觉得怎么样？",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "chinese-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «虽然她很累，但是她完成了工作。»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "虽然她很累，但是她完成了工作。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "结果，项目推迟了。",
               "accepted_answers": [
                 "结果，项目推迟了。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "虽然她很累，但是她完成了工作。",
               "accepted_answers": [
                 "虽然她很累，但是她完成了工作。"

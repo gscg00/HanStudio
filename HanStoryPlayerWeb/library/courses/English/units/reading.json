@@ -1891,8 +1891,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «U».",
-          "audio": "you",
-          "slow_audio": "you",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -1904,12 +1904,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "V",
+          "answer": "vee",
           "accepted_answers": [
-            "V"
+            "vee"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «V»: V: vi, con dientes sobre labio",
+          "explanation": "Escuchaste «vee». El ejemplo practica: V: vi, con dientes sobre labio",
           "audio": "vee",
           "slow_audio": "vee",
           "tags": [
@@ -1932,8 +1932,8 @@
             "U"
           ],
           "explanation": "La forma completa es «U».",
-          "audio": "you",
-          "slow_audio": "you",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1950,8 +1950,8 @@
             "V"
           ],
           "explanation": "La forma completa es «V»: V: vi, con dientes sobre labio",
-          "audio": "vee",
-          "slow_audio": "vee",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1962,15 +1962,15 @@
         {
           "id": "english-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «W: dábol iu»",
+          "prompt": "Produce el ejemplo que demuestra: «W: dábol iu»",
           "target": "W: dábol iu",
-          "answer": "W",
+          "answer": "double you",
           "accepted_answers": [
-            "W"
+            "double you"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «W».",
+          "explanation": "Una respuesta adecuada es «double you».",
           "audio": "double you",
           "slow_audio": "double you",
           "tags": [
@@ -1982,16 +1982,16 @@
         {
           "id": "english-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «V: vi, con dientes sobre labio»",
+          "prompt": "Di en voz alta: «vee»",
           "target": "V: vi, con dientes sobre labio",
-          "answer": "V",
+          "answer": "vee",
           "accepted_answers": [
-            "V"
+            "vee"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «V». También puedes escribirlo.",
+          "explanation": "El modelo es «vee». También puedes escribirlo.",
           "audio": "vee",
           "slow_audio": "vee",
           "tags": [
@@ -2016,10 +2016,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
-              "answer": "U",
+              "prompt": "Di o escribe este ejemplo en inglés.",
+              "answer": "you",
               "accepted_answers": [
-                "U"
+                "you"
               ],
               "audio": "you",
               "allow_minor_typos": true,
@@ -2034,10 +2034,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
-              "answer": "V",
+              "prompt": "Di o escribe este ejemplo en inglés.",
+              "answer": "vee",
               "accepted_answers": [
-                "V"
+                "vee"
               ],
               "audio": "vee",
               "allow_minor_typos": true,

@@ -1831,7 +1831,7 @@
             "That reminds me of a similar experience."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «That reminds me of a similar experience.»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «That reminds me of a similar experience.». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "That reminds me of a similar experience.",
           "slow_audio": "That reminds me of a similar experience.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "First, I want to clarify one detail."
           ],
           "explanation": "La forma completa es «First, I want to clarify one detail.».",
-          "audio": "First, I want to clarify one detail.",
-          "slow_audio": "First, I want to clarify one detail.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "experience"
           ],
           "explanation": "La forma completa es «That reminds me of a similar experience.»: Eso me recuerda una experiencia parecida.",
-          "audio": "That reminds me of a similar experience.",
-          "slow_audio": "That reminds me of a similar experience.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "english-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "Sometimes it is difficult to forgive.",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "english-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «That reminds me of a similar experience.»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "That reminds me of a similar experience.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "First, I want to clarify one detail.",
               "accepted_answers": [
                 "First, I want to clarify one detail."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "That reminds me of a similar experience.",
               "accepted_answers": [
                 "That reminds me of a similar experience."
@@ -1980,7 +1980,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Sometimes it is difficult to forgive.",
               "accepted_answers": [
                 "Sometimes it is difficult to forgive."

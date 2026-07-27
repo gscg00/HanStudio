@@ -1829,7 +1829,7 @@
             "أنا من المكسيك."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أنا من المكسيك.»: Soy de México.",
+          "explanation": "Escuchaste «أنا من المكسيك.». El ejemplo practica: Soy de México.",
           "audio": "أنا من المكسيك.",
           "slow_audio": "أنا من المكسيك.",
           "tags": [
@@ -1853,8 +1853,8 @@
             "ما اسمك؟"
           ],
           "explanation": "La forma completa es «ما اسمك؟».",
-          "audio": "ما اسمك؟",
-          "slow_audio": "ما اسمك؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1871,8 +1871,8 @@
             "المكسيك"
           ],
           "explanation": "La forma completa es «أنا من المكسيك.»: Soy de México.",
-          "audio": "أنا من المكسيك.",
-          "slow_audio": "أنا من المكسيك.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1883,7 +1883,7 @@
         {
           "id": "arabic-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "لغة",
           "accepted_answers": [
@@ -1903,7 +1903,7 @@
         {
           "id": "arabic-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «أنا من المكسيك.»",
           "target": "Soy de México.",
           "answer": "أنا من المكسيك.",
           "accepted_answers": [
@@ -1937,7 +1937,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "ما اسمك؟",
               "accepted_answers": [
                 "ما اسمك؟"
@@ -1955,7 +1955,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أنا من المكسيك.",
               "accepted_answers": [
                 "أنا من المكسيك."

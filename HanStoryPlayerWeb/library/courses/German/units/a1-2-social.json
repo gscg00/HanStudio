@@ -1831,7 +1831,7 @@
             "Ich habe nach sechs Uhr Zeit."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich habe nach sechs Uhr Zeit.»: Estoy libre después de las seis.",
+          "explanation": "Escuchaste «Ich habe nach sechs Uhr Zeit.». El ejemplo practica: Estoy libre después de las seis.",
           "audio": "Ich habe nach sechs Uhr Zeit.",
           "slow_audio": "Ich habe nach sechs Uhr Zeit.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Wo treffen wir uns?"
           ],
           "explanation": "La forma completa es «Wo treffen wir uns?».",
-          "audio": "Wo treffen wir uns?",
-          "slow_audio": "Wo treffen wir uns?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "Zeit"
           ],
           "explanation": "La forma completa es «Ich habe nach sechs Uhr Zeit.»: Estoy libre después de las seis.",
-          "audio": "Ich habe nach sechs Uhr Zeit.",
-          "slow_audio": "Ich habe nach sechs Uhr Zeit.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "german-a1-2-social-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «fin de semana»",
+          "prompt": "Produce el ejemplo que demuestra: «fin de semana»",
           "target": "fin de semana",
           "answer": "Wochenende",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "german-a1-2-social-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "prompt": "Di en voz alta: «Ich habe nach sechs Uhr Zeit.»",
           "target": "Estoy libre después de las seis.",
           "answer": "Ich habe nach sechs Uhr Zeit.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wo treffen wir uns?",
               "accepted_answers": [
                 "Wo treffen wir uns?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich habe nach sechs Uhr Zeit.",
               "accepted_answers": [
                 "Ich habe nach sechs Uhr Zeit."
@@ -1977,7 +1977,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wochenende",
               "accepted_answers": [
                 "Wochenende"

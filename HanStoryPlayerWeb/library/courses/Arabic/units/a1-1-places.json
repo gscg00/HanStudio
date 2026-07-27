@@ -1831,7 +1831,7 @@
             "أذهب إلى المدرسة."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أذهب إلى المدرسة.»: Voy a la escuela.",
+          "explanation": "Escuchaste «أذهب إلى المدرسة.». El ejemplo practica: Voy a la escuela.",
           "audio": "أذهب إلى المدرسة.",
           "slow_audio": "أذهب إلى المدرسة.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "المحطة على اليسار."
           ],
           "explanation": "La forma completa es «المحطة على اليسار.».",
-          "audio": "المحطة على اليسار.",
-          "slow_audio": "المحطة على اليسار.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "المدرسة"
           ],
           "explanation": "La forma completa es «أذهب إلى المدرسة.»: Voy a la escuela.",
-          "audio": "أذهب إلى المدرسة.",
-          "slow_audio": "أذهب إلى المدرسة.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "arabic-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "يسار",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "arabic-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «أذهب إلى المدرسة.»",
           "target": "Voy a la escuela.",
           "answer": "أذهب إلى المدرسة.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "المحطة على اليسار.",
               "accepted_answers": [
                 "المحطة على اليسار."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أذهب إلى المدرسة.",
               "accepted_answers": [
                 "أذهب إلى المدرسة."
@@ -1976,7 +1976,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "يسار",
               "accepted_answers": [
                 "يسار"

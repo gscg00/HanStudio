@@ -1831,7 +1831,7 @@
             "Je voudrais du riz."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je voudrais du riz.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Je voudrais du riz.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Je bois du thé le matin."
           ],
           "explanation": "La forma completa es «Je bois du thé le matin.».",
-          "audio": "Je bois du thé le matin.",
-          "slow_audio": "Je bois du thé le matin.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "riz"
           ],
           "explanation": "La forma completa es «Je voudrais du riz.»: Quiero un poco de arroz.",
-          "audio": "Je voudrais du riz.",
-          "slow_audio": "Je voudrais du riz.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "viande",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «Je voudrais du riz.»",
           "target": "Quiero un poco de arroz.",
           "answer": "Je voudrais du riz.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je bois du thé le matin.",
               "accepted_answers": [
                 "Je bois du thé le matin."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je voudrais du riz.",
               "accepted_answers": [
                 "Je voudrais du riz."

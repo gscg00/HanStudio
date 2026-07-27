@@ -1831,7 +1831,7 @@
             "ماذا حدث؟"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ماذا حدث؟»: ¿Qué pasó?",
+          "explanation": "Escuchaste «ماذا حدث؟». El ejemplo practica: ¿Qué pasó?",
           "audio": "ماذا حدث؟",
           "slow_audio": "ماذا حدث؟",
           "tags": [
@@ -1858,8 +1858,8 @@
             "لم أستطع أن أجد مفاتيحي."
           ],
           "explanation": "La forma completa es «لم أستطع أن أجد مفاتيحي.».",
-          "audio": "لم أستطع أن أجد مفاتيحي.",
-          "slow_audio": "لم أستطع أن أجد مفاتيحي.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "حدث"
           ],
           "explanation": "La forma completa es «ماذا حدث؟»: ¿Qué pasó?",
-          "audio": "ماذا حدث؟",
-          "slow_audio": "ماذا حدث؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "arabic-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "حدث",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "arabic-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «ماذا حدث؟»",
           "target": "¿Qué pasó?",
           "answer": "ماذا حدث؟",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لم أستطع أن أجد مفاتيحي.",
               "accepted_answers": [
                 "لم أستطع أن أجد مفاتيحي."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "ماذا حدث؟",
               "accepted_answers": [
                 "ماذا حدث؟"

@@ -4411,7 +4411,7 @@
             "où"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «où»: dónde",
+          "explanation": "Escuchaste «où». El ejemplo practica: dónde",
           "audio": "où",
           "slow_audio": "où",
           "tags": [
@@ -4435,8 +4435,8 @@
             "qui"
           ],
           "explanation": "La forma completa es «qui».",
-          "audio": "qui",
-          "slow_audio": "qui",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4453,8 +4453,8 @@
             "ù"
           ],
           "explanation": "La forma completa es «où»: dónde",
-          "audio": "où",
-          "slow_audio": "où",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4465,7 +4465,7 @@
         {
           "id": "french-survival-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "quand",
           "accepted_answers": [
@@ -4485,7 +4485,7 @@
         {
           "id": "french-survival-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «où»",
           "target": "dónde",
           "answer": "où",
           "accepted_answers": [
@@ -4519,7 +4519,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "qui",
               "accepted_answers": [
                 "qui"
@@ -4537,7 +4537,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "où",
               "accepted_answers": [
                 "où"

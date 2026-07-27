@@ -1831,7 +1831,7 @@
             "Il treno è in ritardo."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il treno è in ritardo.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «Il treno è in ritardo.». El ejemplo practica: El tren lleva retraso.",
           "audio": "Il treno è in ritardo.",
           "slow_audio": "Il treno è in ritardo.",
           "tags": [
@@ -1855,8 +1855,8 @@
             "Devo cambiare?"
           ],
           "explanation": "La forma completa es «Devo cambiare?».",
-          "audio": "Devo cambiare?",
-          "slow_audio": "Devo cambiare?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "ritardo"
           ],
           "explanation": "La forma completa es «Il treno è in ritardo.»: El tren lleva retraso.",
-          "audio": "Il treno è in ritardo.",
-          "slow_audio": "Il treno è in ritardo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "italian-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "aeroporto",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "italian-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «Il treno è in ritardo.»",
           "target": "El tren lleva retraso.",
           "answer": "Il treno è in ritardo.",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Devo cambiare?",
               "accepted_answers": [
                 "Devo cambiare?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Il treno è in ritardo.",
               "accepted_answers": [
                 "Il treno è in ritardo."

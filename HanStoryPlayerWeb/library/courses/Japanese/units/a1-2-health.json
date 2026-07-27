@@ -1831,7 +1831,7 @@
             "この薬を一日二回飲んでください。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «この薬を一日二回飲んでください。»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «この薬を一日二回飲んでください。». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "この薬を一日二回飲んでください。",
           "slow_audio": "この薬を一日二回飲んでください。",
           "tags": [
@@ -1869,8 +1869,8 @@
             "ペニシリンアレルギーがあります。"
           ],
           "explanation": "La forma completa es «ペニシリンアレルギーがあります。».",
-          "audio": "ペニシリンアレルギーがあります。",
-          "slow_audio": "ペニシリンアレルギーがあります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1887,8 +1887,8 @@
             "い"
           ],
           "explanation": "La forma completa es «この薬を一日二回飲んでください。»: Tome esto dos veces al día.",
-          "audio": "この薬を一日二回飲んでください。",
-          "slow_audio": "この薬を一日二回飲んでください。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1899,7 +1899,7 @@
         {
           "id": "japanese-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "医者",
           "accepted_answers": [
@@ -1919,7 +1919,7 @@
         {
           "id": "japanese-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «この薬を一日二回飲んでください。»",
           "target": "Tome esto dos veces al día.",
           "answer": "この薬を一日二回飲んでください。",
           "accepted_answers": [
@@ -1953,7 +1953,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ペニシリンアレルギーがあります。",
               "accepted_answers": [
                 "ペニシリンアレルギーがあります。"
@@ -1971,7 +1971,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "この薬を一日二回飲んでください。",
               "accepted_answers": [
                 "この薬を一日二回飲んでください。"

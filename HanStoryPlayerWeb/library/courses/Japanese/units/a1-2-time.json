@@ -1831,7 +1831,7 @@
             "約束は来週です。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «約束は来週です。»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «約束は来週です。». El ejemplo practica: La cita es la próxima semana.",
           "audio": "約束は来週です。",
           "slow_audio": "約束は来週です。",
           "tags": [
@@ -1861,8 +1861,8 @@
             "八時に着きます。"
           ],
           "explanation": "La forma completa es «八時に着きます。».",
-          "audio": "八時に着きます。",
-          "slow_audio": "八時に着きます。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "す"
           ],
           "explanation": "La forma completa es «約束は来週です。»: La cita es la próxima semana.",
-          "audio": "約束は来週です。",
-          "slow_audio": "約束は来週です。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "japanese-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "早く",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "japanese-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «約束は来週です。»",
           "target": "La cita es la próxima semana.",
           "answer": "約束は来週です。",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "八時に着きます。",
               "accepted_answers": [
                 "八時に着きます。"
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "約束は来週です。",
               "accepted_answers": [
                 "約束は来週です。"

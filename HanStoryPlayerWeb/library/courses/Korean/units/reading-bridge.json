@@ -4405,7 +4405,7 @@
             "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.»: Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
+          "explanation": "Escuchaste «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.». El ejemplo practica: Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
           "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
           "slow_audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
           "tags": [
@@ -4432,8 +4432,8 @@
             "처음 보는 얼굴이네요. 어디에서 왔어요?"
           ],
           "explanation": "La forma completa es «처음 보는 얼굴이네요. 어디에서 왔어요?».",
-          "audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
-          "slow_audio": "처음 보는 얼굴이네요. 어디에서 왔어요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4450,8 +4450,8 @@
             "어려워요"
           ],
           "explanation": "La forma completa es «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.»: Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
-          "audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
-          "slow_audio": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4462,7 +4462,7 @@
         {
           "id": "korean-reading-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Ya veo. Soy Joon. Ayudo con el trabajo en esta aldea.»",
+          "prompt": "Produce el ejemplo que demuestra: «Ya veo. Soy Joon. Ayudo con el trabajo en esta aldea.»",
           "target": "Ya veo. Soy Joon. Ayudo con el trabajo en esta aldea.",
           "answer": "그렇군요. 저는 주온이에요. 이 마을에서 일을 도와요.",
           "accepted_answers": [
@@ -4482,7 +4482,7 @@
         {
           "id": "korean-reading-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.»",
+          "prompt": "Di en voz alta: «저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.»",
           "target": "Yo... vengo de un lugar lejano. Todavía es difícil explicarlo.",
           "answer": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
           "accepted_answers": [
@@ -4516,7 +4516,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "처음 보는 얼굴이네요. 어디에서 왔어요?",
               "accepted_answers": [
                 "처음 보는 얼굴이네요. 어디에서 왔어요?"
@@ -4534,7 +4534,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.",
               "accepted_answers": [
                 "저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요."

@@ -1831,7 +1831,7 @@
             "Studio nel pomeriggio."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Studio nel pomeriggio.»: Estudio por la tarde.",
+          "explanation": "Escuchaste «Studio nel pomeriggio.». El ejemplo practica: Estudio por la tarde.",
           "audio": "Studio nel pomeriggio.",
           "slow_audio": "Studio nel pomeriggio.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Mi alzo alle sette."
           ],
           "explanation": "La forma completa es «Mi alzo alle sette.».",
-          "audio": "Mi alzo alle sette.",
-          "slow_audio": "Mi alzo alle sette.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "pomeriggio"
           ],
           "explanation": "La forma completa es «Studio nel pomeriggio.»: Estudio por la tarde.",
-          "audio": "Studio nel pomeriggio.",
-          "slow_audio": "Studio nel pomeriggio.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "italian-a1-1-routine-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mañana»",
+          "prompt": "Produce el ejemplo que demuestra: «mañana»",
           "target": "mañana",
           "answer": "mattina",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "italian-a1-1-routine-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estudio por la tarde.»",
+          "prompt": "Di en voz alta: «Studio nel pomeriggio.»",
           "target": "Estudio por la tarde.",
           "answer": "Studio nel pomeriggio.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Mi alzo alle sette.",
               "accepted_answers": [
                 "Mi alzo alle sette."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Studio nel pomeriggio.",
               "accepted_answers": [
                 "Studio nel pomeriggio."

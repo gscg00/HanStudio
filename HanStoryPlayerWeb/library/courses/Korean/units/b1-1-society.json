@@ -1831,7 +1831,7 @@
             "시청이 새로운 계획을 발표했어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «시청이 새로운 계획을 발표했어요.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «시청이 새로운 계획을 발표했어요.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "시청이 새로운 계획을 발표했어요.",
           "slow_audio": "시청이 새로운 계획을 발표했어요.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "오염은 우리 건강에 영향을 줘요."
           ],
           "explanation": "La forma completa es «오염은 우리 건강에 영향을 줘요.».",
-          "audio": "오염은 우리 건강에 영향을 줘요.",
-          "slow_audio": "오염은 우리 건강에 영향을 줘요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "발표했어요"
           ],
           "explanation": "La forma completa es «시청이 새로운 계획을 발표했어요.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "시청이 새로운 계획을 발표했어요.",
-          "slow_audio": "시청이 새로운 계획을 발표했어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "korean-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "높다",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "korean-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «시청이 새로운 계획을 발표했어요.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "시청이 새로운 계획을 발표했어요.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "오염은 우리 건강에 영향을 줘요.",
               "accepted_answers": [
                 "오염은 우리 건강에 영향을 줘요."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "시청이 새로운 계획을 발표했어요.",
               "accepted_answers": [
                 "시청이 새로운 계획을 발표했어요."

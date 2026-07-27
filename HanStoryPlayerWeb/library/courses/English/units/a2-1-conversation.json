@@ -1831,7 +1831,7 @@
             "However, I do not have time today."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «However, I do not have time today.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «However, I do not have time today.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "However, I do not have time today.",
           "slow_audio": "However, I do not have time today.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Besides, I need to buy food."
           ],
           "explanation": "La forma completa es «Besides, I need to buy food.».",
-          "audio": "Besides, I need to buy food.",
-          "slow_audio": "Besides, I need to buy food.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "today"
           ],
           "explanation": "La forma completa es «However, I do not have time today.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "However, I do not have time today.",
-          "slow_audio": "However, I do not have time today.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "that is why",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «However, I do not have time today.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "However, I do not have time today.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Besides, I need to buy food.",
               "accepted_answers": [
                 "Besides, I need to buy food."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "However, I do not have time today.",
               "accepted_answers": [
                 "However, I do not have time today."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "that is why",
               "accepted_answers": [
                 "that is why"

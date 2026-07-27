@@ -1831,7 +1831,7 @@
             "What happened?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «What happened?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «What happened?». El ejemplo practica: ¿Qué pasó?",
           "audio": "What happened?",
           "slow_audio": "What happened?",
           "tags": [
@@ -1859,8 +1859,8 @@
             "I could not find my keys."
           ],
           "explanation": "La forma completa es «I could not find my keys.».",
-          "audio": "I could not find my keys.",
-          "slow_audio": "I could not find my keys.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "happened"
           ],
           "explanation": "La forma completa es «What happened?»: ¿Qué pasó?",
-          "audio": "What happened?",
-          "slow_audio": "What happened?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "happened",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «What happened?»",
           "target": "¿Qué pasó?",
           "answer": "What happened?",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I could not find my keys.",
               "accepted_answers": [
                 "I could not find my keys."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "What happened?",
               "accepted_answers": [
                 "What happened?"

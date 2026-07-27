@@ -1831,7 +1831,7 @@
             "Embora estivesse cansada, terminou o trabalho."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Embora estivesse cansada, terminou o trabalho.»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «Embora estivesse cansada, terminou o trabalho.». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "Embora estivesse cansada, terminou o trabalho.",
           "slow_audio": "Embora estivesse cansada, terminou o trabalho.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Como resultado, o projeto atrasou-se."
           ],
           "explanation": "La forma completa es «Como resultado, o projeto atrasou-se.».",
-          "audio": "Como resultado, o projeto atrasou-se.",
-          "slow_audio": "Como resultado, o projeto atrasou-se.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "trabalho"
           ],
           "explanation": "La forma completa es «Embora estivesse cansada, terminou o trabalho.»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "Embora estivesse cansada, terminou o trabalho.",
-          "slow_audio": "Embora estivesse cansada, terminou o trabalho.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "O que achas?",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «Embora estivesse cansada, terminou o trabalho.»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "Embora estivesse cansada, terminou o trabalho.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Como resultado, o projeto atrasou-se.",
               "accepted_answers": [
                 "Como resultado, o projeto atrasou-se."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Embora estivesse cansada, terminou o trabalho.",
               "accepted_answers": [
                 "Embora estivesse cansada, terminou o trabalho."

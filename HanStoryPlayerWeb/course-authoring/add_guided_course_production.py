@@ -112,8 +112,10 @@ def blank_activity(base: dict, prefix: str, language: str) -> dict:
         "answer": missing,
         "accepted_answers": [missing],
         "explanation": f"La forma completa es «{text}»: {base['meaning']}",
-        "audio": base["audio"],
-        "slow_audio": base["slow_audio"],
+        # Esta actividad pide sólo el fragmento ausente. No se ofrece como
+        # "modelo" el audio de una oración completa distinta a la respuesta.
+        "audio": "",
+        "slow_audio": "",
         "tags": ["production", "completion", language.lower()],
         "xp": 15,
     }
@@ -135,9 +137,9 @@ def dialogue_activity(selected: list[dict], prefix: str, stage_final: bool, lang
                 {
                     "role": "learner",
                     "speaker": "TÚ",
-                    "prompt": f"Responde en {LANGUAGE_LABELS[language]}.",
-                    "answer": reply["target"],
-                    "accepted_answers": [reply["target"]],
+                    "prompt": f"Di o escribe este ejemplo en {LANGUAGE_LABELS[language]}.",
+                    "answer": reply["audio"],
+                    "accepted_answers": [reply["audio"]],
                     "audio": reply["audio"],
                     "allow_minor_typos": True,
                     "speech_enabled": True,
@@ -167,12 +169,17 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
     options, joiner = blocks(first["target"], language)
     prefix = f"{language.lower()}-{unit['id']}-production"
     reading_only = is_reading_focus(unit, selected)
+    reading_answer = first["target"].rsplit("=", 1)[1].strip() if reading_only and "=" in first["target"] else first["target"]
     first_prompt = (
-        f"Copia este símbolo o grupo: «{first['target']}»"
+        f"Escribe la sílaba que forma este bloque: «{first['target']}»"
+        if reading_only and "=" in first["target"]
+        else f"Copia este símbolo o grupo: «{first['target']}»"
         if reading_only
         else f"Escribe en {LANGUAGE_LABELS[language]}: «{first['meaning']}»"
     )
     first_visible = first["target"] if reading_only else first["meaning"]
+    typed_answer = reading_answer if reading_only else first["target"]
+    typed_audio_matches = first["audio"] == typed_answer
     block_prompt = (
         "Reconstruye el símbolo, sílaba o grupo en el orden correcto"
         if reading_only
@@ -202,12 +209,12 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
                 if reading_only
                 else "Escribe la idea completa sin mirar opciones."
             ),
-            "answer": first["target"],
-            "accepted_answers": [first["target"]],
+            "answer": typed_answer,
+            "accepted_answers": [typed_answer],
             "allow_minor_typos": True,
-            "explanation": f"Una respuesta correcta es «{first['target']}».",
-            "audio": first["audio"],
-            "slow_audio": first["slow_audio"],
+            "explanation": f"Una respuesta correcta es «{typed_answer}».",
+            "audio": first["audio"] if typed_audio_matches else "",
+            "slow_audio": first["slow_audio"] if typed_audio_matches else "",
             "tags": ["production", "copying" if reading_only else "translation"],
             "xp": 20,
         },
@@ -216,10 +223,10 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
             "type": "dictation",
             "prompt": "Escucha y escribe exactamente lo que oyes",
             "target": "",
-            "answer": second["target"],
-            "accepted_answers": [second["target"]],
+            "answer": second["audio"],
+            "accepted_answers": [second["audio"]],
             "allow_minor_typos": True,
-            "explanation": f"Escuchaste «{second['target']}»: {second['meaning']}",
+            "explanation": f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}",
             "audio": second["audio"],
             "slow_audio": second["slow_audio"],
             "tags": ["production", "dictation"],
@@ -235,8 +242,8 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
             "answer": first["target"],
             "accepted_answers": [first["target"]],
             "explanation": f"La forma completa es «{first['target']}».",
-            "audio": first["audio"],
-            "slow_audio": first["slow_audio"],
+            "audio": "",
+            "slow_audio": "",
             "tags": ["production", "blocks"],
             "xp": 15,
         },
@@ -249,13 +256,13 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
                 {
                     "id": f"{prefix}-open",
                     "type": "open_question",
-                    "prompt": f"Responde sin opciones: «{third['meaning']}»",
+                    "prompt": f"Produce el ejemplo que demuestra: «{third['meaning']}»",
                     "target": third["meaning"],
-                    "answer": third["target"],
-                    "accepted_answers": [third["target"]],
+                    "answer": third["audio"],
+                    "accepted_answers": [third["audio"]],
                     "allow_minor_typos": True,
                     "speech_enabled": True,
-                    "explanation": f"Una respuesta adecuada es «{third['target']}».",
+                    "explanation": f"Una respuesta adecuada es «{third['audio']}».",
                     "audio": third["audio"],
                     "slow_audio": third["slow_audio"],
                     "tags": ["production", "open-answer"],
@@ -264,14 +271,14 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
                 {
                     "id": f"{prefix}-speak",
                     "type": "speak_and_transcribe",
-                    "prompt": f"Di en voz alta: «{second['meaning']}»",
+                    "prompt": f"Di en voz alta: «{second['audio']}»",
                     "target": second["meaning"],
-                    "answer": second["target"],
-                    "accepted_answers": [second["target"]],
+                    "answer": second["audio"],
+                    "accepted_answers": [second["audio"]],
                     "allow_minor_typos": True,
                     "speech_enabled": True,
                     "optional": True,
-                    "explanation": f"El modelo es «{second['target']}». También puedes escribirlo.",
+                    "explanation": f"El modelo es «{second['audio']}». También puedes escribirlo.",
                     "audio": second["audio"],
                     "slow_audio": second["slow_audio"],
                     "tags": ["production", "speaking", "optional"],

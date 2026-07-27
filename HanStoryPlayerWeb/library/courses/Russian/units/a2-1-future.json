@@ -1831,7 +1831,7 @@
             "Я позвоню тебе, когда приеду."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я позвоню тебе, когда приеду.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «Я позвоню тебе, когда приеду.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "Я позвоню тебе, когда приеду.",
           "slow_audio": "Я позвоню тебе, когда приеду.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Я собираюсь забронировать номер."
           ],
           "explanation": "La forma completa es «Я собираюсь забронировать номер.».",
-          "audio": "Я собираюсь забронировать номер.",
-          "slow_audio": "Я собираюсь забронировать номер.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "приеду"
           ],
           "explanation": "La forma completa es «Я позвоню тебе, когда приеду.»: Te llamaré cuando llegue.",
-          "audio": "Я позвоню тебе, когда приеду.",
-          "slow_audio": "Я позвоню тебе, когда приеду.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "бронировать",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «Я позвоню тебе, когда приеду.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "Я позвоню тебе, когда приеду.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я собираюсь забронировать номер.",
               "accepted_answers": [
                 "Я собираюсь забронировать номер."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я позвоню тебе, когда приеду.",
               "accepted_answers": [
                 "Я позвоню тебе, когда приеду."

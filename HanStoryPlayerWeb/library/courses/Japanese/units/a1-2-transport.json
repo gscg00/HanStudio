@@ -1831,7 +1831,7 @@
             "電車が遅れています。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «電車が遅れています。»: El tren lleva retraso.",
+          "explanation": "Escuchaste «電車が遅れています。». El ejemplo practica: El tren lleva retraso.",
           "audio": "電車が遅れています。",
           "slow_audio": "電車が遅れています。",
           "tags": [
@@ -1864,8 +1864,8 @@
             "乗り換えが必要ですか。"
           ],
           "explanation": "La forma completa es «乗り換えが必要ですか。».",
-          "audio": "乗り換えが必要ですか。",
-          "slow_audio": "乗り換えが必要ですか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1882,8 +1882,8 @@
             "す"
           ],
           "explanation": "La forma completa es «電車が遅れています。»: El tren lleva retraso.",
-          "audio": "電車が遅れています。",
-          "slow_audio": "電車が遅れています。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1894,7 +1894,7 @@
         {
           "id": "japanese-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "空港",
           "accepted_answers": [
@@ -1914,7 +1914,7 @@
         {
           "id": "japanese-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «電車が遅れています。»",
           "target": "El tren lleva retraso.",
           "answer": "電車が遅れています。",
           "accepted_answers": [
@@ -1948,7 +1948,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "乗り換えが必要ですか。",
               "accepted_answers": [
                 "乗り換えが必要ですか。"
@@ -1966,7 +1966,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "電車が遅れています。",
               "accepted_answers": [
                 "電車が遅れています。"

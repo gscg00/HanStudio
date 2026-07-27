@@ -4228,7 +4228,7 @@
             "station"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «station»: estación",
+          "explanation": "Escuchaste «station». El ejemplo practica: estación",
           "audio": "station",
           "slow_audio": "station",
           "tags": [
@@ -4253,8 +4253,8 @@
             "school"
           ],
           "explanation": "La forma completa es «school».",
-          "audio": "school",
-          "slow_audio": "school",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4271,8 +4271,8 @@
             "n"
           ],
           "explanation": "La forma completa es «station»: estación",
-          "audio": "station",
-          "slow_audio": "station",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4283,7 +4283,7 @@
         {
           "id": "english-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "what",
           "accepted_answers": [
@@ -4303,7 +4303,7 @@
         {
           "id": "english-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «station»",
           "target": "estación",
           "answer": "station",
           "accepted_answers": [
@@ -4337,7 +4337,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "school",
               "accepted_answers": [
                 "school"
@@ -4355,7 +4355,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "station",
               "accepted_answers": [
                 "station"

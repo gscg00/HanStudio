@@ -1831,7 +1831,7 @@
             "天気はすぐ変わります。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «天気はすぐ変わります。»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «天気はすぐ変わります。». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "天気はすぐ変わります。",
           "slow_audio": "天気はすぐ変わります。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "コートが必要です。"
           ],
           "explanation": "La forma completa es «コートが必要です。».",
-          "audio": "コートが必要です。",
-          "slow_audio": "コートが必要です。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "す"
           ],
           "explanation": "La forma completa es «天気はすぐ変わります。»: El tiempo cambia rápido.",
-          "audio": "天気はすぐ変わります。",
-          "slow_audio": "天気はすぐ変わります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "japanese-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "コート",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "japanese-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «天気はすぐ変わります。»",
           "target": "El tiempo cambia rápido.",
           "answer": "天気はすぐ変わります。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "コートが必要です。",
               "accepted_answers": [
                 "コートが必要です。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "天気はすぐ変わります。",
               "accepted_answers": [
                 "天気はすぐ変わります。"

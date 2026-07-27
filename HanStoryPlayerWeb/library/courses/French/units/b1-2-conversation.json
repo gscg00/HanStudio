@@ -1831,7 +1831,7 @@
             "Cela me rappelle une expérience similaire."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Cela me rappelle une expérience similaire.»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «Cela me rappelle une expérience similaire.». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "Cela me rappelle une expérience similaire.",
           "slow_audio": "Cela me rappelle une expérience similaire.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Je veux d’abord préciser un détail."
           ],
           "explanation": "La forma completa es «Je veux d’abord préciser un détail.».",
-          "audio": "Je veux d’abord préciser un détail.",
-          "slow_audio": "Je veux d’abord préciser un détail.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "similaire"
           ],
           "explanation": "La forma completa es «Cela me rappelle une expérience similaire.»: Eso me recuerda una experiencia parecida.",
-          "audio": "Cela me rappelle une expérience similaire.",
-          "slow_audio": "Cela me rappelle une expérience similaire.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "Il est parfois difficile de pardonner.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «Cela me rappelle une expérience similaire.»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "Cela me rappelle une expérience similaire.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je veux d’abord préciser un détail.",
               "accepted_answers": [
                 "Je veux d’abord préciser un détail."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Cela me rappelle une expérience similaire.",
               "accepted_answers": [
                 "Cela me rappelle une expérience similaire."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Il est parfois difficile de pardonner.",
               "accepted_answers": [
                 "Il est parfois difficile de pardonner."

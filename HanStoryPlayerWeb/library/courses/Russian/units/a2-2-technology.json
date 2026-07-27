@@ -1831,7 +1831,7 @@
             "Приложение не открывается."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Приложение не открывается.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «Приложение не открывается.». El ejemplo practica: La aplicación no se abre.",
           "audio": "Приложение не открывается.",
           "slow_audio": "Приложение не открывается.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Мне нужно зарядить телефон."
           ],
           "explanation": "La forma completa es «Мне нужно зарядить телефон.».",
-          "audio": "Мне нужно зарядить телефон.",
-          "slow_audio": "Мне нужно зарядить телефон.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "открывается"
           ],
           "explanation": "La forma completa es «Приложение не открывается.»: La aplicación no se abre.",
-          "audio": "Приложение не открывается.",
-          "slow_audio": "Приложение не открывается.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "сломанный",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «Приложение не открывается.»",
           "target": "La aplicación no se abre.",
           "answer": "Приложение не открывается.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне нужно зарядить телефон.",
               "accepted_answers": [
                 "Мне нужно зарядить телефон."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Приложение не открывается.",
               "accepted_answers": [
                 "Приложение не открывается."

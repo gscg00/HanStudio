@@ -638,7 +638,7 @@
             "wie"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «wie»: cómo",
+          "explanation": "Escuchaste «wie». El ejemplo practica: cómo",
           "audio": "wie",
           "slow_audio": "wie",
           "tags": [
@@ -662,8 +662,8 @@
             "wann"
           ],
           "explanation": "La forma completa es «wann».",
-          "audio": "wann",
-          "slow_audio": "wann",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -680,8 +680,8 @@
             "e"
           ],
           "explanation": "La forma completa es «wie»: cómo",
-          "audio": "wie",
-          "slow_audio": "wie",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -692,7 +692,7 @@
         {
           "id": "german-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "warum",
           "accepted_answers": [
@@ -712,7 +712,7 @@
         {
           "id": "german-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «wie»",
           "target": "cómo",
           "answer": "wie",
           "accepted_answers": [
@@ -746,7 +746,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "wann",
               "accepted_answers": [
                 "wann"
@@ -764,7 +764,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "wie",
               "accepted_answers": [
                 "wie"

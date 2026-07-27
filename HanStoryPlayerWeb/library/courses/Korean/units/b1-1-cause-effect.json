@@ -1831,7 +1831,7 @@
             "피곤했지만 일을 끝냈어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «피곤했지만 일을 끝냈어요.»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «피곤했지만 일을 끝냈어요.». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "피곤했지만 일을 끝냈어요.",
           "slow_audio": "피곤했지만 일을 끝냈어요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "그 결과 프로젝트가 늦어졌어요."
           ],
           "explanation": "La forma completa es «그 결과 프로젝트가 늦어졌어요.».",
-          "audio": "그 결과 프로젝트가 늦어졌어요.",
-          "slow_audio": "그 결과 프로젝트가 늦어졌어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "끝냈어요"
           ],
           "explanation": "La forma completa es «피곤했지만 일을 끝냈어요.»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "피곤했지만 일을 끝냈어요.",
-          "slow_audio": "피곤했지만 일을 끝냈어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "어떻게 생각해요?",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «피곤했지만 일을 끝냈어요.»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "피곤했지만 일을 끝냈어요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "그 결과 프로젝트가 늦어졌어요.",
               "accepted_answers": [
                 "그 결과 프로젝트가 늦어졌어요."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "피곤했지만 일을 끝냈어요.",
               "accepted_answers": [
                 "피곤했지만 일을 끝냈어요."

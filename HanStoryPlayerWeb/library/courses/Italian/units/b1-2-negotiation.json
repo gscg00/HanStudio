@@ -1831,7 +1831,7 @@
             "Cediamo sul prezzo, non sulla qualità."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Cediamo sul prezzo, non sulla qualità.»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «Cediamo sul prezzo, non sulla qualità.». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "Cediamo sul prezzo, non sulla qualità.",
           "slow_audio": "Cediamo sul prezzo, non sulla qualità.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Quale altra scelta ci rimane?"
           ],
           "explanation": "La forma completa es «Quale altra scelta ci rimane?».",
-          "audio": "Quale altra scelta ci rimane?",
-          "slow_audio": "Quale altra scelta ci rimane?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "qualità"
           ],
           "explanation": "La forma completa es «Cediamo sul prezzo, non sulla qualità.»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "Cediamo sul prezzo, non sulla qualità.",
-          "slow_audio": "Cediamo sul prezzo, non sulla qualità.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "Tra amici possiamo parlare in modo più diretto.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «Cediamo sul prezzo, non sulla qualità.»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "Cediamo sul prezzo, non sulla qualità.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Quale altra scelta ci rimane?",
               "accepted_answers": [
                 "Quale altra scelta ci rimane?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Cediamo sul prezzo, non sulla qualità.",
               "accepted_answers": [
                 "Cediamo sul prezzo, non sulla qualità."

@@ -1831,7 +1831,7 @@
             "J’ai le regret de vous informer que le rendez-vous a été annulé."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «J’ai le regret de vous informer que le rendez-vous a été annulé.»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «J’ai le regret de vous informer que le rendez-vous a été annulé.». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
           "slow_audio": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Merci de m’avoir prévenu à l’avance."
           ],
           "explanation": "La forma completa es «Merci de m’avoir prévenu à l’avance.».",
-          "audio": "Merci de m’avoir prévenu à l’avance.",
-          "slow_audio": "Merci de m’avoir prévenu à l’avance.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "annulé"
           ],
           "explanation": "La forma completa es «J’ai le regret de vous informer que le rendez-vous a été annulé.»: Lamento informarle de que la cita se canceló.",
-          "audio": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
-          "slow_audio": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "On va partager le travail.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «J’ai le regret de vous informer que le rendez-vous a été annulé.»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Merci de m’avoir prévenu à l’avance.",
               "accepted_answers": [
                 "Merci de m’avoir prévenu à l’avance."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
               "accepted_answers": [
                 "J’ai le regret de vous informer que le rendez-vous a été annulé."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "On va partager le travail.",
               "accepted_answers": [
                 "On va partager le travail."

@@ -1831,7 +1831,7 @@
             "個人的な経験は意見に影響します。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «個人的な経験は意見に影響します。»: La experiencia personal influye en nuestra opinión.",
+          "explanation": "Escuchaste «個人的な経験は意見に影響します。». El ejemplo practica: La experiencia personal influye en nuestra opinión.",
           "audio": "個人的な経験は意見に影響します。",
           "slow_audio": "個人的な経験は意見に影響します。",
           "tags": [
@@ -1874,8 +1874,8 @@
             "全員に同じ機会があったわけではありません。"
           ],
           "explanation": "La forma completa es «全員に同じ機会があったわけではありません。».",
-          "audio": "全員に同じ機会があったわけではありません。",
-          "slow_audio": "全員に同じ機会があったわけではありません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1892,8 +1892,8 @@
             "す"
           ],
           "explanation": "La forma completa es «個人的な経験は意見に影響します。»: La experiencia personal influye en nuestra opinión.",
-          "audio": "個人的な経験は意見に影響します。",
-          "slow_audio": "個人的な経験は意見に影響します。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1904,7 +1904,7 @@
         {
           "id": "japanese-b1-2-perspectives-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entonces me di cuenta de mi error.»",
           "target": "Entonces me di cuenta de mi error.",
           "answer": "その時、自分の間違いに気づきました。",
           "accepted_answers": [
@@ -1924,7 +1924,7 @@
         {
           "id": "japanese-b1-2-perspectives-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "prompt": "Di en voz alta: «個人的な経験は意見に影響します。»",
           "target": "La experiencia personal influye en nuestra opinión.",
           "answer": "個人的な経験は意見に影響します。",
           "accepted_answers": [
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "全員に同じ機会があったわけではありません。",
               "accepted_answers": [
                 "全員に同じ機会があったわけではありません。"
@@ -1976,7 +1976,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "個人的な経験は意見に影響します。",
               "accepted_answers": [
                 "個人的な経験は意見に影響します。"

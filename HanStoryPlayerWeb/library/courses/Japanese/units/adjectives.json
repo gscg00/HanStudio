@@ -1931,7 +1931,7 @@
             "あたらしい"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «あたらしい»: nuevo",
+          "explanation": "Escuchaste «あたらしい». El ejemplo practica: nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "tags": [
@@ -1957,8 +1957,8 @@
             "あぶない"
           ],
           "explanation": "La forma completa es «あぶない».",
-          "audio": "あぶない",
-          "slow_audio": "あぶない",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1975,8 +1975,8 @@
             "い"
           ],
           "explanation": "La forma completa es «あたらしい»: nuevo",
-          "audio": "あたらしい",
-          "slow_audio": "あたらしい",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1987,7 +1987,7 @@
         {
           "id": "japanese-adjectives-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «rojo»",
+          "prompt": "Produce el ejemplo que demuestra: «rojo»",
           "target": "rojo",
           "answer": "あかい",
           "accepted_answers": [
@@ -2007,7 +2007,7 @@
         {
           "id": "japanese-adjectives-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «nuevo»",
+          "prompt": "Di en voz alta: «あたらしい»",
           "target": "nuevo",
           "answer": "あたらしい",
           "accepted_answers": [
@@ -2041,7 +2041,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "あぶない",
               "accepted_answers": [
                 "あぶない"
@@ -2059,7 +2059,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "あたらしい",
               "accepted_answers": [
                 "あたらしい"

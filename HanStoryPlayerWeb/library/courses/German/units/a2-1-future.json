@@ -1831,7 +1831,7 @@
             "Ich rufe dich an, wenn ich ankomme."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich rufe dich an, wenn ich ankomme.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «Ich rufe dich an, wenn ich ankomme.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "Ich rufe dich an, wenn ich ankomme.",
           "slow_audio": "Ich rufe dich an, wenn ich ankomme.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Ich möchte ein Zimmer reservieren."
           ],
           "explanation": "La forma completa es «Ich möchte ein Zimmer reservieren.».",
-          "audio": "Ich möchte ein Zimmer reservieren.",
-          "slow_audio": "Ich möchte ein Zimmer reservieren.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "ankomme"
           ],
           "explanation": "La forma completa es «Ich rufe dich an, wenn ich ankomme.»: Te llamaré cuando llegue.",
-          "audio": "Ich rufe dich an, wenn ich ankomme.",
-          "slow_audio": "Ich rufe dich an, wenn ich ankomme.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "reservieren",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «Ich rufe dich an, wenn ich ankomme.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "Ich rufe dich an, wenn ich ankomme.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich möchte ein Zimmer reservieren.",
               "accepted_answers": [
                 "Ich möchte ein Zimmer reservieren."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich rufe dich an, wenn ich ankomme.",
               "accepted_answers": [
                 "Ich rufe dich an, wenn ich ankomme."

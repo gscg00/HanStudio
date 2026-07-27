@@ -1831,7 +1831,7 @@
             "I go to school."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I go to school.»: Voy a la escuela.",
+          "explanation": "Escuchaste «I go to school.». El ejemplo practica: Voy a la escuela.",
           "audio": "I go to school.",
           "slow_audio": "I go to school.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "The station is on the left."
           ],
           "explanation": "La forma completa es «The station is on the left.».",
-          "audio": "The station is on the left.",
-          "slow_audio": "The station is on the left.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "school"
           ],
           "explanation": "La forma completa es «I go to school.»: Voy a la escuela.",
-          "audio": "I go to school.",
-          "slow_audio": "I go to school.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "left",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «I go to school.»",
           "target": "Voy a la escuela.",
           "answer": "I go to school.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The station is on the left.",
               "accepted_answers": [
                 "The station is on the left."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I go to school.",
               "accepted_answers": [
                 "I go to school."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "left",
               "accepted_answers": [
                 "left"

@@ -1831,7 +1831,7 @@
             "Qu’est-ce qui s’est passé ?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Qu’est-ce qui s’est passé ?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «Qu’est-ce qui s’est passé ?». El ejemplo practica: ¿Qué pasó?",
           "audio": "Qu’est-ce qui s’est passé ?",
           "slow_audio": "Qu’est-ce qui s’est passé ?",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Je n’ai pas pu trouver mes clés."
           ],
           "explanation": "La forma completa es «Je n’ai pas pu trouver mes clés.».",
-          "audio": "Je n’ai pas pu trouver mes clés.",
-          "slow_audio": "Je n’ai pas pu trouver mes clés.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "passé"
           ],
           "explanation": "La forma completa es «Qu’est-ce qui s’est passé ?»: ¿Qué pasó?",
-          "audio": "Qu’est-ce qui s’est passé ?",
-          "slow_audio": "Qu’est-ce qui s’est passé ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "french-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "est arrivé",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "french-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «Qu’est-ce qui s’est passé ?»",
           "target": "¿Qué pasó?",
           "answer": "Qu’est-ce qui s’est passé ?",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je n’ai pas pu trouver mes clés.",
               "accepted_answers": [
                 "Je n’ai pas pu trouver mes clés."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Qu’est-ce qui s’est passé ?",
               "accepted_answers": [
                 "Qu’est-ce qui s’est passé ?"

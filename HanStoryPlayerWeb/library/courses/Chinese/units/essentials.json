@@ -3114,8 +3114,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «g / k».",
-          "audio": "gē / kē",
-          "slow_audio": "gē / kē",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -3127,12 +3127,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "j / q / x",
+          "answer": "jī / qī / xī",
           "accepted_answers": [
-            "j / q / x"
+            "jī / qī / xī"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «j / q / x»: No equivalen exactamente a y, ch y sh.",
+          "explanation": "Escuchaste «jī / qī / xī». El ejemplo practica: No equivalen exactamente a y, ch y sh.",
           "audio": "jī / qī / xī",
           "slow_audio": "jī / qī / xī",
           "tags": [
@@ -3157,8 +3157,8 @@
             "g / k"
           ],
           "explanation": "La forma completa es «g / k».",
-          "audio": "gē / kē",
-          "slow_audio": "gē / kē",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -3175,8 +3175,8 @@
             "x"
           ],
           "explanation": "La forma completa es «j / q / x»: No equivalen exactamente a y, ch y sh.",
-          "audio": "jī / qī / xī",
-          "slow_audio": "jī / qī / xī",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -3187,15 +3187,15 @@
         {
           "id": "chinese-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Son sonidos retroflejos.»",
+          "prompt": "Produce el ejemplo que demuestra: «Son sonidos retroflejos.»",
           "target": "Son sonidos retroflejos.",
-          "answer": "zh / ch / sh / r",
+          "answer": "zhī / chī / shī / rì",
           "accepted_answers": [
-            "zh / ch / sh / r"
+            "zhī / chī / shī / rì"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «zh / ch / sh / r».",
+          "explanation": "Una respuesta adecuada es «zhī / chī / shī / rì».",
           "audio": "zhī / chī / shī / rì",
           "slow_audio": "zhī / chī / shī / rì",
           "tags": [
@@ -3207,16 +3207,16 @@
         {
           "id": "chinese-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No equivalen exactamente a y, ch y sh.»",
+          "prompt": "Di en voz alta: «jī / qī / xī»",
           "target": "No equivalen exactamente a y, ch y sh.",
-          "answer": "j / q / x",
+          "answer": "jī / qī / xī",
           "accepted_answers": [
-            "j / q / x"
+            "jī / qī / xī"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «j / q / x». También puedes escribirlo.",
+          "explanation": "El modelo es «jī / qī / xī». También puedes escribirlo.",
           "audio": "jī / qī / xī",
           "slow_audio": "jī / qī / xī",
           "tags": [
@@ -3241,10 +3241,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
-              "answer": "g / k",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "gē / kē",
               "accepted_answers": [
-                "g / k"
+                "gē / kē"
               ],
               "audio": "gē / kē",
               "allow_minor_typos": true,
@@ -3259,10 +3259,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
-              "answer": "j / q / x",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "jī / qī / xī",
               "accepted_answers": [
-                "j / q / x"
+                "jī / qī / xī"
               ],
               "audio": "jī / qī / xī",
               "allow_minor_typos": true,

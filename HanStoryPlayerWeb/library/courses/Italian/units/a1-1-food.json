@@ -1831,7 +1831,7 @@
             "Vorrei un po’ di riso."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Vorrei un po’ di riso.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Bevo tè al mattino."
           ],
           "explanation": "La forma completa es «Bevo tè al mattino.».",
-          "audio": "Bevo tè al mattino.",
-          "slow_audio": "Bevo tè al mattino.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "riso"
           ],
           "explanation": "La forma completa es «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
-          "audio": "Vorrei un po’ di riso.",
-          "slow_audio": "Vorrei un po’ di riso.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "italian-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "carne",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "italian-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «Vorrei un po’ di riso.»",
           "target": "Quiero un poco de arroz.",
           "answer": "Vorrei un po’ di riso.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Bevo tè al mattino.",
               "accepted_answers": [
                 "Bevo tè al mattino."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Vorrei un po’ di riso.",
               "accepted_answers": [
                 "Vorrei un po’ di riso."

@@ -1831,7 +1831,7 @@
             "하지만 오늘은 시간이 없어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «하지만 오늘은 시간이 없어요.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «하지만 오늘은 시간이 없어요.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "하지만 오늘은 시간이 없어요.",
           "slow_audio": "하지만 오늘은 시간이 없어요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "게다가 음식을 사야 해요."
           ],
           "explanation": "La forma completa es «게다가 음식을 사야 해요.».",
-          "audio": "게다가 음식을 사야 해요.",
-          "slow_audio": "게다가 음식을 사야 해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "없어요"
           ],
           "explanation": "La forma completa es «하지만 오늘은 시간이 없어요.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "하지만 오늘은 시간이 없어요.",
-          "slow_audio": "하지만 오늘은 시간이 없어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "그래서",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «하지만 오늘은 시간이 없어요.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "하지만 오늘은 시간이 없어요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "게다가 음식을 사야 해요.",
               "accepted_answers": [
                 "게다가 음식을 사야 해요."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "하지만 오늘은 시간이 없어요.",
               "accepted_answers": [
                 "하지만 오늘은 시간이 없어요."
@@ -1977,7 +1977,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "그래서",
               "accepted_answers": [
                 "그래서"

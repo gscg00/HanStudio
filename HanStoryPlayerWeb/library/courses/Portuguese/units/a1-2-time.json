@@ -1831,7 +1831,7 @@
             "O compromisso é na próxima semana."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «O compromisso é na próxima semana.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «O compromisso é na próxima semana.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "O compromisso é na próxima semana.",
           "slow_audio": "O compromisso é na próxima semana.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Chego às oito."
           ],
           "explanation": "La forma completa es «Chego às oito.».",
-          "audio": "Chego às oito.",
-          "slow_audio": "Chego às oito.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "semana"
           ],
           "explanation": "La forma completa es «O compromisso é na próxima semana.»: La cita es la próxima semana.",
-          "audio": "O compromisso é na próxima semana.",
-          "slow_audio": "O compromisso é na próxima semana.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "portuguese-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "cedo",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "portuguese-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «O compromisso é na próxima semana.»",
           "target": "La cita es la próxima semana.",
           "answer": "O compromisso é na próxima semana.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Chego às oito.",
               "accepted_answers": [
                 "Chego às oito."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O compromisso é na próxima semana.",
               "accepted_answers": [
                 "O compromisso é na próxima semana."

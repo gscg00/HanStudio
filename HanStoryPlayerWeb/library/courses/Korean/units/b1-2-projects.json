@@ -1831,7 +1831,7 @@
             "주말에 진행 상황을 검토할 거예요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «주말에 진행 상황을 검토할 거예요.»: Revisaremos los avances al final de la semana.",
+          "explanation": "Escuchaste «주말에 진행 상황을 검토할 거예요.». El ejemplo practica: Revisaremos los avances al final de la semana.",
           "audio": "주말에 진행 상황을 검토할 거예요.",
           "slow_audio": "주말에 진행 상황을 검토할 거예요.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "시작하기 전에 위험을 예상하는 것이 좋아요."
           ],
           "explanation": "La forma completa es «시작하기 전에 위험을 예상하는 것이 좋아요.».",
-          "audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
-          "slow_audio": "시작하기 전에 위험을 예상하는 것이 좋아요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "거예요"
           ],
           "explanation": "La forma completa es «주말에 진행 상황을 검토할 거예요.»: Revisaremos los avances al final de la semana.",
-          "audio": "주말에 진행 상황을 검토할 거예요.",
-          "slow_audio": "주말에 진행 상황을 검토할 거예요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "korean-b1-2-projects-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "prompt": "Produce el ejemplo que demuestra: «Quiero participar como voluntario.»",
           "target": "Quiero participar como voluntario.",
           "answer": "자원봉사자로 참여하고 싶어요.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "korean-b1-2-projects-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "prompt": "Di en voz alta: «주말에 진행 상황을 검토할 거예요.»",
           "target": "Revisaremos los avances al final de la semana.",
           "answer": "주말에 진행 상황을 검토할 거예요.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "시작하기 전에 위험을 예상하는 것이 좋아요.",
               "accepted_answers": [
                 "시작하기 전에 위험을 예상하는 것이 좋아요."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "주말에 진행 상황을 검토할 거예요.",
               "accepted_answers": [
                 "주말에 진행 상황을 검토할 거예요."

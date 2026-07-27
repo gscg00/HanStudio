@@ -1831,7 +1831,7 @@
             "Я хочу немного риса."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я хочу немного риса.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Я хочу немного риса.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "Я хочу немного риса.",
           "slow_audio": "Я хочу немного риса.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Утром я пью чай."
           ],
           "explanation": "La forma completa es «Утром я пью чай.».",
-          "audio": "Утром я пью чай.",
-          "slow_audio": "Утром я пью чай.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "риса"
           ],
           "explanation": "La forma completa es «Я хочу немного риса.»: Quiero un poco de arroz.",
-          "audio": "Я хочу немного риса.",
-          "slow_audio": "Я хочу немного риса.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "мясо",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «Я хочу немного риса.»",
           "target": "Quiero un poco de arroz.",
           "answer": "Я хочу немного риса.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Утром я пью чай.",
               "accepted_answers": [
                 "Утром я пью чай."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я хочу немного риса.",
               "accepted_answers": [
                 "Я хочу немного риса."

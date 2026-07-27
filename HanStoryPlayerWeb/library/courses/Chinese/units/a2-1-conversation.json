@@ -1831,7 +1831,7 @@
             "不过，我今天没有时间。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «不过，我今天没有时间。»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «不过，我今天没有时间。». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "不过，我今天没有时间。",
           "slow_audio": "不过，我今天没有时间。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "另外，我还要买食物。"
           ],
           "explanation": "La forma completa es «另外，我还要买食物。».",
-          "audio": "另外，我还要买食物。",
-          "slow_audio": "另外，我还要买食物。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "间"
           ],
           "explanation": "La forma completa es «不过，我今天没有时间。»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "不过，我今天没有时间。",
-          "slow_audio": "不过，我今天没有时间。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "chinese-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "所以",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "chinese-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «不过，我今天没有时间。»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "不过，我今天没有时间。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "另外，我还要买食物。",
               "accepted_answers": [
                 "另外，我还要买食物。"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "不过，我今天没有时间。",
               "accepted_answers": [
                 "不过，我今天没有时间。"
@@ -1983,7 +1983,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "所以",
               "accepted_answers": [
                 "所以"

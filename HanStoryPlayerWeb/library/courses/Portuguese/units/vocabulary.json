@@ -21578,7 +21578,7 @@
             "não"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «não»: no / negación",
+          "explanation": "Escuchaste «não». El ejemplo practica: no / negación",
           "audio": "não",
           "slow_audio": "não",
           "tags": [
@@ -21602,8 +21602,8 @@
             "por que"
           ],
           "explanation": "La forma completa es «por que».",
-          "audio": "por que",
-          "slow_audio": "por que",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -21620,8 +21620,8 @@
             "o"
           ],
           "explanation": "La forma completa es «não»: no / negación",
-          "audio": "não",
-          "slow_audio": "não",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -21632,7 +21632,7 @@
         {
           "id": "portuguese-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «esto»",
+          "prompt": "Produce el ejemplo que demuestra: «esto»",
           "target": "esto",
           "answer": "isto",
           "accepted_answers": [
@@ -21652,7 +21652,7 @@
         {
           "id": "portuguese-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «no / negación»",
+          "prompt": "Di en voz alta: «não»",
           "target": "no / negación",
           "answer": "não",
           "accepted_answers": [
@@ -21686,7 +21686,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "por que",
               "accepted_answers": [
                 "por que"
@@ -21704,7 +21704,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "não",
               "accepted_answers": [
                 "não"

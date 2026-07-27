@@ -1831,7 +1831,7 @@
             "O meu quarto é pequeno."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «O meu quarto é pequeno.»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «O meu quarto é pequeno.». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "O meu quarto é pequeno.",
           "slow_audio": "O meu quarto é pequeno.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "A chave está em cima da mesa."
           ],
           "explanation": "La forma completa es «A chave está em cima da mesa.».",
-          "audio": "A chave está em cima da mesa.",
-          "slow_audio": "A chave está em cima da mesa.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "pequeno"
           ],
           "explanation": "La forma completa es «O meu quarto é pequeno.»: Mi habitación es pequeña.",
-          "audio": "O meu quarto é pequeno.",
-          "slow_audio": "O meu quarto é pequeno.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "portuguese-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "porta",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "portuguese-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «O meu quarto é pequeno.»",
           "target": "Mi habitación es pequeña.",
           "answer": "O meu quarto é pequeno.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "A chave está em cima da mesa.",
               "accepted_answers": [
                 "A chave está em cima da mesa."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O meu quarto é pequeno.",
               "accepted_answers": [
                 "O meu quarto é pequeno."

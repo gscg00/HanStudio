@@ -1831,7 +1831,7 @@
             "On peut céder sur le prix, pas la qualité."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «On peut céder sur le prix, pas la qualité.»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «On peut céder sur le prix, pas la qualité.». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "On peut céder sur le prix, pas la qualité.",
           "slow_audio": "On peut céder sur le prix, pas la qualité.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Quelle autre option nous reste ?"
           ],
           "explanation": "La forma completa es «Quelle autre option nous reste ?».",
-          "audio": "Quelle autre option nous reste ?",
-          "slow_audio": "Quelle autre option nous reste ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "qualité"
           ],
           "explanation": "La forma completa es «On peut céder sur le prix, pas la qualité.»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "On peut céder sur le prix, pas la qualité.",
-          "slow_audio": "On peut céder sur le prix, pas la qualité.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "Entre amis, on peut parler plus directement.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «On peut céder sur le prix, pas la qualité.»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "On peut céder sur le prix, pas la qualité.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Quelle autre option nous reste ?",
               "accepted_answers": [
                 "Quelle autre option nous reste ?"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "On peut céder sur le prix, pas la qualité.",
               "accepted_answers": [
                 "On peut céder sur le prix, pas la qualité."

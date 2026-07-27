@@ -1831,7 +1831,7 @@
             "Prenez ceci deux fois par jour."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Prenez ceci deux fois par jour.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Prenez ceci deux fois par jour.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Prenez ceci deux fois par jour.",
           "slow_audio": "Prenez ceci deux fois par jour.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Je suis allergique à la pénicilline."
           ],
           "explanation": "La forma completa es «Je suis allergique à la pénicilline.».",
-          "audio": "Je suis allergique à la pénicilline.",
-          "slow_audio": "Je suis allergique à la pénicilline.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "jour"
           ],
           "explanation": "La forma completa es «Prenez ceci deux fois par jour.»: Tome esto dos veces al día.",
-          "audio": "Prenez ceci deux fois par jour.",
-          "slow_audio": "Prenez ceci deux fois par jour.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "médecin",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Prenez ceci deux fois par jour.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Prenez ceci deux fois par jour.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je suis allergique à la pénicilline.",
               "accepted_answers": [
                 "Je suis allergique à la pénicilline."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Prenez ceci deux fois par jour.",
               "accepted_answers": [
                 "Prenez ceci deux fois par jour."

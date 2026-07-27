@@ -1831,7 +1831,7 @@
             "Погода быстро меняется."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Погода быстро меняется.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «Погода быстро меняется.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "Погода быстро меняется.",
           "slow_audio": "Погода быстро меняется.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Мне нужно пальто."
           ],
           "explanation": "La forma completa es «Мне нужно пальто.».",
-          "audio": "Мне нужно пальто.",
-          "slow_audio": "Мне нужно пальто.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "меняется"
           ],
           "explanation": "La forma completa es «Погода быстро меняется.»: El tiempo cambia rápido.",
-          "audio": "Погода быстро меняется.",
-          "slow_audio": "Погода быстро меняется.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "russian-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "пальто",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "russian-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «Погода быстро меняется.»",
           "target": "El tiempo cambia rápido.",
           "answer": "Погода быстро меняется.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне нужно пальто.",
               "accepted_answers": [
                 "Мне нужно пальто."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Погода быстро меняется.",
               "accepted_answers": [
                 "Погода быстро меняется."

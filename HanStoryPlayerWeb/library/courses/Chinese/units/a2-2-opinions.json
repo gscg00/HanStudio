@@ -1831,7 +1831,7 @@
             "虽然有用，但是我不喜欢。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «虽然有用，但是我不喜欢。»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «虽然有用，但是我不喜欢。». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "虽然有用，但是我不喜欢。",
           "slow_audio": "虽然有用，但是我不喜欢。",
           "tags": [
@@ -1864,8 +1864,8 @@
             "我喜欢它，因为很简单。"
           ],
           "explanation": "La forma completa es «我喜欢它，因为很简单。».",
-          "audio": "我喜欢它，因为很简单。",
-          "slow_audio": "我喜欢它，因为很简单。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1882,8 +1882,8 @@
             "欢"
           ],
           "explanation": "La forma completa es «虽然有用，但是我不喜欢。»: No me gusta, aunque es útil.",
-          "audio": "虽然有用，但是我不喜欢。",
-          "slow_audio": "虽然有用，但是我不喜欢。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1894,7 +1894,7 @@
         {
           "id": "chinese-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "所以",
           "accepted_answers": [
@@ -1914,7 +1914,7 @@
         {
           "id": "chinese-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «虽然有用，但是我不喜欢。»",
           "target": "No me gusta, aunque es útil.",
           "answer": "虽然有用，但是我不喜欢。",
           "accepted_answers": [
@@ -1948,7 +1948,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我喜欢它，因为很简单。",
               "accepted_answers": [
                 "我喜欢它，因为很简单。"
@@ -1966,7 +1966,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "虽然有用，但是我不喜欢。",
               "accepted_answers": [
                 "虽然有用，但是我不喜欢。"

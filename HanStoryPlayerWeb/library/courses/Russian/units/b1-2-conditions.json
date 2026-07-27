@@ -1831,7 +1831,7 @@
             "Я бы согласился, если бы ты всё объяснил."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я бы согласился, если бы ты всё объяснил.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «Я бы согласился, если бы ты всё объяснил.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "Я бы согласился, если бы ты всё объяснил.",
           "slow_audio": "Я бы согласился, если бы ты всё объяснил.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Если нужна помощь, позвони мне."
           ],
           "explanation": "La forma completa es «Если нужна помощь, позвони мне.».",
-          "audio": "Если нужна помощь, позвони мне.",
-          "slow_audio": "Если нужна помощь, позвони мне.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "объяснил"
           ],
           "explanation": "La forma completa es «Я бы согласился, если бы ты всё объяснил.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "Я бы согласился, если бы ты всё объяснил.",
-          "slow_audio": "Я бы согласился, если бы ты всё объяснил.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Благодаря твоей помощи мы решили проблему.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «Я бы согласился, если бы ты всё объяснил.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "Я бы согласился, если бы ты всё объяснил.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Если нужна помощь, позвони мне.",
               "accepted_answers": [
                 "Если нужна помощь, позвони мне."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я бы согласился, если бы ты всё объяснил.",
               "accepted_answers": [
                 "Я бы согласился, если бы ты всё объяснил."

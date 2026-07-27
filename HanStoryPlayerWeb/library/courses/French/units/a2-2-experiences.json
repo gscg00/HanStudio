@@ -1831,7 +1831,7 @@
             "C’était la première fois."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «C’était la première fois.»: Fue la primera vez.",
+          "explanation": "Escuchaste «C’était la première fois.». El ejemplo practica: Fue la primera vez.",
           "audio": "C’était la première fois.",
           "slow_audio": "C’était la première fois.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Une fois, j’ai raté le train."
           ],
           "explanation": "La forma completa es «Une fois, j’ai raté le train.».",
-          "audio": "Une fois, j’ai raté le train.",
-          "slow_audio": "Une fois, j’ai raté le train.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "fois"
           ],
           "explanation": "La forma completa es «C’était la première fois.»: Fue la primera vez.",
-          "audio": "C’était la première fois.",
-          "slow_audio": "C’était la première fois.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "C’était une expérience intéressante.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «C’était la première fois.»",
           "target": "Fue la primera vez.",
           "answer": "C’était la première fois.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Une fois, j’ai raté le train.",
               "accepted_answers": [
                 "Une fois, j’ai raté le train."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "C’était la première fois.",
               "accepted_answers": [
                 "C’était la première fois."

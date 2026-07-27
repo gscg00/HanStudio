@@ -1831,7 +1831,7 @@
             "Il est interdit de fumer ici."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il est interdit de fumer ici.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «Il est interdit de fumer ici.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "Il est interdit de fumer ici.",
           "slow_audio": "Il est interdit de fumer ici.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "On peut prendre des photos ici."
           ],
           "explanation": "La forma completa es «On peut prendre des photos ici.».",
-          "audio": "On peut prendre des photos ici.",
-          "slow_audio": "On peut prendre des photos ici.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "ici"
           ],
           "explanation": "La forma completa es «Il est interdit de fumer ici.»: No se puede fumar aquí.",
-          "audio": "Il est interdit de fumer ici.",
-          "slow_audio": "Il est interdit de fumer ici.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "nécessaire",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «Il est interdit de fumer ici.»",
           "target": "No se puede fumar aquí.",
           "answer": "Il est interdit de fumer ici.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "On peut prendre des photos ici.",
               "accepted_answers": [
                 "On peut prendre des photos ici."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Il est interdit de fumer ici.",
               "accepted_answers": [
                 "Il est interdit de fumer ici."

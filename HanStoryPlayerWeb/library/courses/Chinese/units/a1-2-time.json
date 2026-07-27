@@ -1831,7 +1831,7 @@
             "约会在下个星期。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «约会在下个星期。»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «约会在下个星期。». El ejemplo practica: La cita es la próxima semana.",
           "audio": "约会在下个星期。",
           "slow_audio": "约会在下个星期。",
           "tags": [
@@ -1858,8 +1858,8 @@
             "我八点到。"
           ],
           "explanation": "La forma completa es «我八点到。».",
-          "audio": "我八点到。",
-          "slow_audio": "我八点到。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "期"
           ],
           "explanation": "La forma completa es «约会在下个星期。»: La cita es la próxima semana.",
-          "audio": "约会在下个星期。",
-          "slow_audio": "约会在下个星期。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "chinese-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "早",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "chinese-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «约会在下个星期。»",
           "target": "La cita es la próxima semana.",
           "answer": "约会在下个星期。",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我八点到。",
               "accepted_answers": [
                 "我八点到。"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "约会在下个星期。",
               "accepted_answers": [
                 "约会在下个星期。"

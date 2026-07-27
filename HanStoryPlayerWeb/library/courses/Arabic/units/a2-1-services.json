@@ -1831,7 +1831,7 @@
             "أحتاج إلى إصلاحه اليوم."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أحتاج إلى إصلاحه اليوم.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «أحتاج إلى إصلاحه اليوم.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "أحتاج إلى إصلاحه اليوم.",
           "slow_audio": "أحتاج إلى إصلاحه اليوم.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "هل يمكن أن تعطيني إيصالًا؟"
           ],
           "explanation": "La forma completa es «هل يمكن أن تعطيني إيصالًا؟».",
-          "audio": "هل يمكن أن تعطيني إيصالًا؟",
-          "slow_audio": "هل يمكن أن تعطيني إيصالًا؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "اليوم"
           ],
           "explanation": "La forma completa es «أحتاج إلى إصلاحه اليوم.»: Necesito que lo reparen hoy.",
-          "audio": "أحتاج إلى إصلاحه اليوم.",
-          "slow_audio": "أحتاج إلى إصلاحه اليوم.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "arabic-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "مكسور",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "arabic-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «أحتاج إلى إصلاحه اليوم.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "أحتاج إلى إصلاحه اليوم.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هل يمكن أن تعطيني إيصالًا؟",
               "accepted_answers": [
                 "هل يمكن أن تعطيني إيصالًا؟"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أحتاج إلى إصلاحه اليوم.",
               "accepted_answers": [
                 "أحتاج إلى إصلاحه اليوم."

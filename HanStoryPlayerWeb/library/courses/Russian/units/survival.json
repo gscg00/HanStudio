@@ -4411,7 +4411,7 @@
             "где"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «где»: dónde",
+          "explanation": "Escuchaste «где». El ejemplo practica: dónde",
           "audio": "где",
           "slow_audio": "где",
           "tags": [
@@ -4434,8 +4434,8 @@
             "кто"
           ],
           "explanation": "La forma completa es «кто».",
-          "audio": "кто",
-          "slow_audio": "кто",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4452,8 +4452,8 @@
             "е"
           ],
           "explanation": "La forma completa es «где»: dónde",
-          "audio": "где",
-          "slow_audio": "где",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4464,7 +4464,7 @@
         {
           "id": "russian-survival-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "когда",
           "accepted_answers": [
@@ -4484,7 +4484,7 @@
         {
           "id": "russian-survival-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «где»",
           "target": "dónde",
           "answer": "где",
           "accepted_answers": [
@@ -4518,7 +4518,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "кто",
               "accepted_answers": [
                 "кто"
@@ -4536,7 +4536,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "где",
               "accepted_answers": [
                 "где"

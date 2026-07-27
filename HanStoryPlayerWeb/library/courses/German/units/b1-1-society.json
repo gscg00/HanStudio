@@ -1831,7 +1831,7 @@
             "Die Stadtverwaltung hat einen neuen Plan angekündigt."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Die Stadtverwaltung hat einen neuen Plan angekündigt.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «Die Stadtverwaltung hat einen neuen Plan angekündigt.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
           "slow_audio": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Umweltverschmutzung schadet unserer Gesundheit."
           ],
           "explanation": "La forma completa es «Umweltverschmutzung schadet unserer Gesundheit.».",
-          "audio": "Umweltverschmutzung schadet unserer Gesundheit.",
-          "slow_audio": "Umweltverschmutzung schadet unserer Gesundheit.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "angekündigt"
           ],
           "explanation": "La forma completa es «Die Stadtverwaltung hat einen neuen Plan angekündigt.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
-          "slow_audio": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "german-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "hoch",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "german-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «Die Stadtverwaltung hat einen neuen Plan angekündigt.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Umweltverschmutzung schadet unserer Gesundheit.",
               "accepted_answers": [
                 "Umweltverschmutzung schadet unserer Gesundheit."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Die Stadtverwaltung hat einen neuen Plan angekündigt.",
               "accepted_answers": [
                 "Die Stadtverwaltung hat einen neuen Plan angekündigt."

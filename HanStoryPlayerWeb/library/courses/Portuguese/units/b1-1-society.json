@@ -1831,7 +1831,7 @@
             "A câmara anunciou um novo plano."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «A câmara anunciou um novo plano.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «A câmara anunciou um novo plano.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "A câmara anunciou um novo plano.",
           "slow_audio": "A câmara anunciou um novo plano.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "A poluição afeta a nossa saúde."
           ],
           "explanation": "La forma completa es «A poluição afeta a nossa saúde.».",
-          "audio": "A poluição afeta a nossa saúde.",
-          "slow_audio": "A poluição afeta a nossa saúde.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "plano"
           ],
           "explanation": "La forma completa es «A câmara anunciou um novo plano.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "A câmara anunciou um novo plano.",
-          "slow_audio": "A câmara anunciou um novo plano.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "alto",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «A câmara anunciou um novo plano.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "A câmara anunciou um novo plano.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "A poluição afeta a nossa saúde.",
               "accepted_answers": [
                 "A poluição afeta a nossa saúde."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "A câmara anunciou um novo plano.",
               "accepted_answers": [
                 "A câmara anunciou um novo plano."

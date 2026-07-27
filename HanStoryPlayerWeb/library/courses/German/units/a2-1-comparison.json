@@ -1831,7 +1831,7 @@
             "Heute ist das Wetter schlechter als gestern."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Heute ist das Wetter schlechter als gestern.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «Heute ist das Wetter schlechter als gestern.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "Heute ist das Wetter schlechter als gestern.",
           "slow_audio": "Heute ist das Wetter schlechter als gestern.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Diese Möglichkeit ist besser für mich."
           ],
           "explanation": "La forma completa es «Diese Möglichkeit ist besser für mich.».",
-          "audio": "Diese Möglichkeit ist besser für mich.",
-          "slow_audio": "Diese Möglichkeit ist besser für mich.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "gestern"
           ],
           "explanation": "La forma completa es «Heute ist das Wetter schlechter als gestern.»: Hoy hace peor tiempo que ayer.",
-          "audio": "Heute ist das Wetter schlechter als gestern.",
-          "slow_audio": "Heute ist das Wetter schlechter als gestern.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "hoch",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «Heute ist das Wetter schlechter als gestern.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "Heute ist das Wetter schlechter als gestern.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Diese Möglichkeit ist besser für mich.",
               "accepted_answers": [
                 "Diese Möglichkeit ist besser für mich."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Heute ist das Wetter schlechter als gestern.",
               "accepted_answers": [
                 "Heute ist das Wetter schlechter als gestern."

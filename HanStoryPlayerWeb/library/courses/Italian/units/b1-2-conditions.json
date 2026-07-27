@@ -1831,7 +1831,7 @@
             "Avrei accettato se me lo avessi spiegato."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Avrei accettato se me lo avessi spiegato.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «Avrei accettato se me lo avessi spiegato.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "Avrei accettato se me lo avessi spiegato.",
           "slow_audio": "Avrei accettato se me lo avessi spiegato.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Se hai bisogno di aiuto, chiamami."
           ],
           "explanation": "La forma completa es «Se hai bisogno di aiuto, chiamami.».",
-          "audio": "Se hai bisogno di aiuto, chiamami.",
-          "slow_audio": "Se hai bisogno di aiuto, chiamami.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "spiegato"
           ],
           "explanation": "La forma completa es «Avrei accettato se me lo avessi spiegato.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "Avrei accettato se me lo avessi spiegato.",
-          "slow_audio": "Avrei accettato se me lo avessi spiegato.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "italian-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Grazie al tuo aiuto, abbiamo risolto il problema.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "italian-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «Avrei accettato se me lo avessi spiegato.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "Avrei accettato se me lo avessi spiegato.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Se hai bisogno di aiuto, chiamami.",
               "accepted_answers": [
                 "Se hai bisogno di aiuto, chiamami."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Avrei accettato se me lo avessi spiegato.",
               "accepted_answers": [
                 "Avrei accettato se me lo avessi spiegato."

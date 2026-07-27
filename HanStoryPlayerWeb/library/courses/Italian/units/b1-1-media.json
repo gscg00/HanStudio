@@ -1831,7 +1831,7 @@
             "La regista mostra due punti di vista."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «La regista mostra due punti di vista.»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «La regista mostra due punti di vista.». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "La regista mostra due punti di vista.",
           "slow_audio": "La regista mostra due punti di vista.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Il finale mi ha sorpreso molto."
           ],
           "explanation": "La forma completa es «Il finale mi ha sorpreso molto.».",
-          "audio": "Il finale mi ha sorpreso molto.",
-          "slow_audio": "Il finale mi ha sorpreso molto.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "vista"
           ],
           "explanation": "La forma completa es «La regista mostra due punti di vista.»: La directora muestra dos puntos de vista.",
-          "audio": "La regista mostra due punti di vista.",
-          "slow_audio": "La regista mostra due punti di vista.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "italian-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "Questa usanza mi ha sorpreso.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "italian-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «La regista mostra due punti di vista.»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "La regista mostra due punti di vista.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Il finale mi ha sorpreso molto.",
               "accepted_answers": [
                 "Il finale mi ha sorpreso molto."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "La regista mostra due punti di vista.",
               "accepted_answers": [
                 "La regista mostra due punti di vista."

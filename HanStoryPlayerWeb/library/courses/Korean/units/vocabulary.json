@@ -33527,7 +33527,7 @@
             "생각해요"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «생각해요»: piensa / piensa así",
+          "explanation": "Escuchaste «생각해요». El ejemplo practica: piensa / piensa así",
           "audio": "생각해요",
           "slow_audio": "생각해요",
           "tags": [
@@ -33552,8 +33552,8 @@
             "그렇게"
           ],
           "explanation": "La forma completa es «그렇게».",
-          "audio": "그렇게",
-          "slow_audio": "그렇게",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -33570,8 +33570,8 @@
             "요"
           ],
           "explanation": "La forma completa es «생각해요»: piensa / piensa así",
-          "audio": "생각해요",
-          "slow_audio": "생각해요",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -33582,7 +33582,7 @@
         {
           "id": "korean-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «si sigues el camino / si vas siguiendo el camino»",
+          "prompt": "Produce el ejemplo que demuestra: «si sigues el camino / si vas siguiendo el camino»",
           "target": "si sigues el camino / si vas siguiendo el camino",
           "answer": "길을 따라가면",
           "accepted_answers": [
@@ -33602,7 +33602,7 @@
         {
           "id": "korean-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «piensa / piensa así»",
+          "prompt": "Di en voz alta: «생각해요»",
           "target": "piensa / piensa así",
           "answer": "생각해요",
           "accepted_answers": [
@@ -33636,7 +33636,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "그렇게",
               "accepted_answers": [
                 "그렇게"
@@ -33654,7 +33654,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "생각해요",
               "accepted_answers": [
                 "생각해요"

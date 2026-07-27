@@ -1831,7 +1831,7 @@
             "No fim, tudo acabou bem."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «No fim, tudo acabou bem.»: Al final, todo salió bien.",
+          "explanation": "Escuchaste «No fim, tudo acabou bem.». El ejemplo practica: Al final, todo salió bien.",
           "audio": "No fim, tudo acabou bem.",
           "slow_audio": "No fim, tudo acabou bem.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Entretanto, a minha irmã telefonou à polícia."
           ],
           "explanation": "La forma completa es «Entretanto, a minha irmã telefonou à polícia.».",
-          "audio": "Entretanto, a minha irmã telefonou à polícia.",
-          "slow_audio": "Entretanto, a minha irmã telefonou à polícia.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "bem"
           ],
           "explanation": "La forma completa es «No fim, tudo acabou bem.»: Al final, todo salió bien.",
-          "audio": "No fim, tudo acabou bem.",
-          "slow_audio": "No fim, tudo acabou bem.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "portuguese-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "Já estiveste lá?",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "portuguese-b1-1-narrative-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "prompt": "Di en voz alta: «No fim, tudo acabou bem.»",
           "target": "Al final, todo salió bien.",
           "answer": "No fim, tudo acabou bem.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Entretanto, a minha irmã telefonou à polícia.",
               "accepted_answers": [
                 "Entretanto, a minha irmã telefonou à polícia."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "No fim, tudo acabou bem.",
               "accepted_answers": [
                 "No fim, tudo acabou bem."

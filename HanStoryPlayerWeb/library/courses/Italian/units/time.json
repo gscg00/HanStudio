@@ -4228,7 +4228,7 @@
             "stazione"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «stazione»: estación",
+          "explanation": "Escuchaste «stazione». El ejemplo practica: estación",
           "audio": "stazione",
           "slow_audio": "stazione",
           "tags": [
@@ -4253,8 +4253,8 @@
             "scuola"
           ],
           "explanation": "La forma completa es «scuola».",
-          "audio": "scuola",
-          "slow_audio": "scuola",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4271,8 +4271,8 @@
             "e"
           ],
           "explanation": "La forma completa es «stazione»: estación",
-          "audio": "stazione",
-          "slow_audio": "stazione",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4283,7 +4283,7 @@
         {
           "id": "italian-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "che cosa",
           "accepted_answers": [
@@ -4303,7 +4303,7 @@
         {
           "id": "italian-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «stazione»",
           "target": "estación",
           "answer": "stazione",
           "accepted_answers": [
@@ -4337,7 +4337,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "scuola",
               "accepted_answers": [
                 "scuola"
@@ -4355,7 +4355,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "stazione",
               "accepted_answers": [
                 "stazione"

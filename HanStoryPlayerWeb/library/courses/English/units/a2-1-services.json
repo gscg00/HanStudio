@@ -1831,7 +1831,7 @@
             "I need it repaired today."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I need it repaired today.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «I need it repaired today.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "I need it repaired today.",
           "slow_audio": "I need it repaired today.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Could you give me a receipt?"
           ],
           "explanation": "La forma completa es «Could you give me a receipt?».",
-          "audio": "Could you give me a receipt?",
-          "slow_audio": "Could you give me a receipt?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "today"
           ],
           "explanation": "La forma completa es «I need it repaired today.»: Necesito que lo reparen hoy.",
-          "audio": "I need it repaired today.",
-          "slow_audio": "I need it repaired today.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "broken",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «I need it repaired today.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "I need it repaired today.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Could you give me a receipt?",
               "accepted_answers": [
                 "Could you give me a receipt?"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I need it repaired today.",
               "accepted_answers": [
                 "I need it repaired today."

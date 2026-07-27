@@ -1831,7 +1831,7 @@
             "这里通常做什么？"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «这里通常做什么？»: ¿Qué se suele hacer aquí?",
+          "explanation": "Escuchaste «这里通常做什么？». El ejemplo practica: ¿Qué se suele hacer aquí?",
           "audio": "这里通常做什么？",
           "slow_audio": "这里通常做什么？",
           "tags": [
@@ -1860,8 +1860,8 @@
             "应该遵守规定。"
           ],
           "explanation": "La forma completa es «应该遵守规定。».",
-          "audio": "应该遵守规定。",
-          "slow_audio": "应该遵守规定。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "么"
           ],
           "explanation": "La forma completa es «这里通常做什么？»: ¿Qué se suele hacer aquí?",
-          "audio": "这里通常做什么？",
-          "slow_audio": "这里通常做什么？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "chinese-a2-2-culture-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "chinese-a2-2-culture-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué se suele hacer aquí?»",
+          "prompt": "Di en voz alta: «这里通常做什么？»",
           "target": "¿Qué se suele hacer aquí?",
           "answer": "这里通常做什么？",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "应该遵守规定。",
               "accepted_answers": [
                 "应该遵守规定。"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这里通常做什么？",
               "accepted_answers": [
                 "这里通常做什么？"

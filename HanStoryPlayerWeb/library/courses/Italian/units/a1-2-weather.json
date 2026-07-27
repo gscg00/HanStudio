@@ -1831,7 +1831,7 @@
             "Il tempo cambia rapidamente."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il tempo cambia rapidamente.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «Il tempo cambia rapidamente.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "Il tempo cambia rapidamente.",
           "slow_audio": "Il tempo cambia rapidamente.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Ho bisogno di un cappotto."
           ],
           "explanation": "La forma completa es «Ho bisogno di un cappotto.».",
-          "audio": "Ho bisogno di un cappotto.",
-          "slow_audio": "Ho bisogno di un cappotto.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "rapidamente"
           ],
           "explanation": "La forma completa es «Il tempo cambia rapidamente.»: El tiempo cambia rápido.",
-          "audio": "Il tempo cambia rapidamente.",
-          "slow_audio": "Il tempo cambia rapidamente.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "cappotto",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «Il tempo cambia rapidamente.»",
           "target": "El tiempo cambia rápido.",
           "answer": "Il tempo cambia rapidamente.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Ho bisogno di un cappotto.",
               "accepted_answers": [
                 "Ho bisogno di un cappotto."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Il tempo cambia rapidamente.",
               "accepted_answers": [
                 "Il tempo cambia rapidamente."

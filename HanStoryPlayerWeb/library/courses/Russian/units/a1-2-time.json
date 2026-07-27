@@ -1831,7 +1831,7 @@
             "Встреча на следующей неделе."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Встреча на следующей неделе.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «Встреча на следующей неделе.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "Встреча на следующей неделе.",
           "slow_audio": "Встреча на следующей неделе.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Я приеду в восемь."
           ],
           "explanation": "La forma completa es «Я приеду в восемь.».",
-          "audio": "Я приеду в восемь.",
-          "slow_audio": "Я приеду в восемь.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "неделе"
           ],
           "explanation": "La forma completa es «Встреча на следующей неделе.»: La cita es la próxima semana.",
-          "audio": "Встреча на следующей неделе.",
-          "slow_audio": "Встреча на следующей неделе.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "рано",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «Встреча на следующей неделе.»",
           "target": "La cita es la próxima semana.",
           "answer": "Встреча на следующей неделе.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я приеду в восемь.",
               "accepted_answers": [
                 "Я приеду в восемь."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Встреча на следующей неделе.",
               "accepted_answers": [
                 "Встреча на следующей неделе."

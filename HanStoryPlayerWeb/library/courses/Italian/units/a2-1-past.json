@@ -1831,7 +1831,7 @@
             "Che cosa è successo?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Che cosa è successo?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «Che cosa è successo?». El ejemplo practica: ¿Qué pasó?",
           "audio": "Che cosa è successo?",
           "slow_audio": "Che cosa è successo?",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Non sono riuscito a trovare le chiavi."
           ],
           "explanation": "La forma completa es «Non sono riuscito a trovare le chiavi.».",
-          "audio": "Non sono riuscito a trovare le chiavi.",
-          "slow_audio": "Non sono riuscito a trovare le chiavi.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "successo"
           ],
           "explanation": "La forma completa es «Che cosa è successo?»: ¿Qué pasó?",
-          "audio": "Che cosa è successo?",
-          "slow_audio": "Che cosa è successo?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "italian-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "è successo",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "italian-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «Che cosa è successo?»",
           "target": "¿Qué pasó?",
           "answer": "Che cosa è successo?",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Non sono riuscito a trovare le chiavi.",
               "accepted_answers": [
                 "Non sono riuscito a trovare le chiavi."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Che cosa è successo?",
               "accepted_answers": [
                 "Che cosa è successo?"

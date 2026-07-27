@@ -1831,7 +1831,7 @@
             "Era la prima volta."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Era la prima volta.»: Fue la primera vez.",
+          "explanation": "Escuchaste «Era la prima volta.». El ejemplo practica: Fue la primera vez.",
           "audio": "Era la prima volta.",
           "slow_audio": "Era la prima volta.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Una volta ho perso il treno."
           ],
           "explanation": "La forma completa es «Una volta ho perso il treno.».",
-          "audio": "Una volta ho perso il treno.",
-          "slow_audio": "Una volta ho perso il treno.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "volta"
           ],
           "explanation": "La forma completa es «Era la prima volta.»: Fue la primera vez.",
-          "audio": "Era la prima volta.",
-          "slow_audio": "Era la prima volta.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "italian-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "È stata un’esperienza interessante.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "italian-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «Era la prima volta.»",
           "target": "Fue la primera vez.",
           "answer": "Era la prima volta.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Una volta ho perso il treno.",
               "accepted_answers": [
                 "Una volta ho perso il treno."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Era la prima volta.",
               "accepted_answers": [
                 "Era la prima volta."

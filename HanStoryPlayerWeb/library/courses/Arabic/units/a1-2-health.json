@@ -1831,7 +1831,7 @@
             "يؤخذ هذا مرتين في اليوم."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «يؤخذ هذا مرتين في اليوم.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «يؤخذ هذا مرتين في اليوم.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "يؤخذ هذا مرتين في اليوم.",
           "slow_audio": "يؤخذ هذا مرتين في اليوم.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "لدي حساسية من البنسلين."
           ],
           "explanation": "La forma completa es «لدي حساسية من البنسلين.».",
-          "audio": "لدي حساسية من البنسلين.",
-          "slow_audio": "لدي حساسية من البنسلين.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "اليوم"
           ],
           "explanation": "La forma completa es «يؤخذ هذا مرتين في اليوم.»: Tome esto dos veces al día.",
-          "audio": "يؤخذ هذا مرتين في اليوم.",
-          "slow_audio": "يؤخذ هذا مرتين في اليوم.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "arabic-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "طبيب",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "arabic-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «يؤخذ هذا مرتين في اليوم.»",
           "target": "Tome esto dos veces al día.",
           "answer": "يؤخذ هذا مرتين في اليوم.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لدي حساسية من البنسلين.",
               "accepted_answers": [
                 "لدي حساسية من البنسلين."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "يؤخذ هذا مرتين في اليوم.",
               "accepted_answers": [
                 "يؤخذ هذا مرتين في اليوم."

@@ -1831,7 +1831,7 @@
             "Je n’aime pas, même si c’est utile."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je n’aime pas, même si c’est utile.»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «Je n’aime pas, même si c’est utile.». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "Je n’aime pas, même si c’est utile.",
           "slow_audio": "Je n’aime pas, même si c’est utile.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Ça me plaît parce que c’est simple."
           ],
           "explanation": "La forma completa es «Ça me plaît parce que c’est simple.».",
-          "audio": "Ça me plaît parce que c’est simple.",
-          "slow_audio": "Ça me plaît parce que c’est simple.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "utile"
           ],
           "explanation": "La forma completa es «Je n’aime pas, même si c’est utile.»: No me gusta, aunque es útil.",
-          "audio": "Je n’aime pas, même si c’est utile.",
-          "slow_audio": "Je n’aime pas, même si c’est utile.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "french-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "c’est pourquoi",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "french-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «Je n’aime pas, même si c’est utile.»",
           "target": "No me gusta, aunque es útil.",
           "answer": "Je n’aime pas, même si c’est utile.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Ça me plaît parce que c’est simple.",
               "accepted_answers": [
                 "Ça me plaît parce que c’est simple."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je n’aime pas, même si c’est utile.",
               "accepted_answers": [
                 "Je n’aime pas, même si c’est utile."

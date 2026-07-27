@@ -1831,7 +1831,7 @@
             "The weather changes quickly."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The weather changes quickly.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «The weather changes quickly.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "The weather changes quickly.",
           "slow_audio": "The weather changes quickly.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "I need a coat."
           ],
           "explanation": "La forma completa es «I need a coat.».",
-          "audio": "I need a coat.",
-          "slow_audio": "I need a coat.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "quickly"
           ],
           "explanation": "La forma completa es «The weather changes quickly.»: El tiempo cambia rápido.",
-          "audio": "The weather changes quickly.",
-          "slow_audio": "The weather changes quickly.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "english-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "coat",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "english-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «The weather changes quickly.»",
           "target": "El tiempo cambia rápido.",
           "answer": "The weather changes quickly.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I need a coat.",
               "accepted_answers": [
                 "I need a coat."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The weather changes quickly.",
               "accepted_answers": [
                 "The weather changes quickly."

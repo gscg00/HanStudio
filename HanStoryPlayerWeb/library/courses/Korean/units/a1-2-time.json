@@ -1831,7 +1831,7 @@
             "약속은 다음 주예요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «약속은 다음 주예요.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «약속은 다음 주예요.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "약속은 다음 주예요.",
           "slow_audio": "약속은 다음 주예요.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "여덟 시에 도착해요."
           ],
           "explanation": "La forma completa es «여덟 시에 도착해요.».",
-          "audio": "여덟 시에 도착해요.",
-          "slow_audio": "여덟 시에 도착해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "주예요"
           ],
           "explanation": "La forma completa es «약속은 다음 주예요.»: La cita es la próxima semana.",
-          "audio": "약속은 다음 주예요.",
-          "slow_audio": "약속은 다음 주예요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "korean-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "일찍",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "korean-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «약속은 다음 주예요.»",
           "target": "La cita es la próxima semana.",
           "answer": "약속은 다음 주예요.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "여덟 시에 도착해요.",
               "accepted_answers": [
                 "여덟 시에 도착해요."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "약속은 다음 주예요.",
               "accepted_answers": [
                 "약속은 다음 주예요."

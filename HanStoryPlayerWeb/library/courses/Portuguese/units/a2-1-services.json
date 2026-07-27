@@ -1831,7 +1831,7 @@
             "Preciso que o reparem hoje."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Preciso que o reparem hoje.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «Preciso que o reparem hoje.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "Preciso que o reparem hoje.",
           "slow_audio": "Preciso que o reparem hoje.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Pode dar-me um recibo?"
           ],
           "explanation": "La forma completa es «Pode dar-me um recibo?».",
-          "audio": "Pode dar-me um recibo?",
-          "slow_audio": "Pode dar-me um recibo?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "hoje"
           ],
           "explanation": "La forma completa es «Preciso que o reparem hoje.»: Necesito que lo reparen hoy.",
-          "audio": "Preciso que o reparem hoje.",
-          "slow_audio": "Preciso que o reparem hoje.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "avariado",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «Preciso que o reparem hoje.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "Preciso que o reparem hoje.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Pode dar-me um recibo?",
               "accepted_answers": [
                 "Pode dar-me um recibo?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Preciso que o reparem hoje.",
               "accepted_answers": [
                 "Preciso que o reparem hoje."

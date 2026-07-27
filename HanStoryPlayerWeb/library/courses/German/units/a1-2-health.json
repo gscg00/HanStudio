@@ -1831,7 +1831,7 @@
             "Nehmen Sie das zweimal täglich."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Nehmen Sie das zweimal täglich.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Nehmen Sie das zweimal täglich.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Nehmen Sie das zweimal täglich.",
           "slow_audio": "Nehmen Sie das zweimal täglich.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Ich bin allergisch gegen Penicillin."
           ],
           "explanation": "La forma completa es «Ich bin allergisch gegen Penicillin.».",
-          "audio": "Ich bin allergisch gegen Penicillin.",
-          "slow_audio": "Ich bin allergisch gegen Penicillin.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "täglich"
           ],
           "explanation": "La forma completa es «Nehmen Sie das zweimal täglich.»: Tome esto dos veces al día.",
-          "audio": "Nehmen Sie das zweimal täglich.",
-          "slow_audio": "Nehmen Sie das zweimal täglich.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "Arzt",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Nehmen Sie das zweimal täglich.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Nehmen Sie das zweimal täglich.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich bin allergisch gegen Penicillin.",
               "accepted_answers": [
                 "Ich bin allergisch gegen Penicillin."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Nehmen Sie das zweimal täglich.",
               "accepted_answers": [
                 "Nehmen Sie das zweimal täglich."

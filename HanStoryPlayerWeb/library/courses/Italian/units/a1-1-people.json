@@ -1831,7 +1831,7 @@
             "Quanti anni hai?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quanti anni hai?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Quanti anni hai?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "Quanti anni hai?",
           "slow_audio": "Quanti anni hai?",
           "tags": [
@@ -1855,8 +1855,8 @@
             "Chi è?"
           ],
           "explanation": "La forma completa es «Chi è?».",
-          "audio": "Chi è?",
-          "slow_audio": "Chi è?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "hai"
           ],
           "explanation": "La forma completa es «Quanti anni hai?»: ¿Cuántos años tienes?",
-          "audio": "Quanti anni hai?",
-          "slow_audio": "Quanti anni hai?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "italian-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "donna",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "italian-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «Quanti anni hai?»",
           "target": "¿Cuántos años tienes?",
           "answer": "Quanti anni hai?",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Chi è?",
               "accepted_answers": [
                 "Chi è?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Quanti anni hai?",
               "accepted_answers": [
                 "Quanti anni hai?"

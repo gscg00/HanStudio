@@ -1831,7 +1831,7 @@
             "Уступим в цене, но не в качестве."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Уступим в цене, но не в качестве.»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «Уступим в цене, но не в качестве.». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "Уступим в цене, но не в качестве.",
           "slow_audio": "Уступим в цене, но не в качестве.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Какая ещё возможность остаётся?"
           ],
           "explanation": "La forma completa es «Какая ещё возможность остаётся?».",
-          "audio": "Какая ещё возможность остаётся?",
-          "slow_audio": "Какая ещё возможность остаётся?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "качестве"
           ],
           "explanation": "La forma completa es «Уступим в цене, но не в качестве.»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "Уступим в цене, но не в качестве.",
-          "slow_audio": "Уступим в цене, но не в качестве.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "С друзьями можно говорить более прямо.",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «Уступим в цене, но не в качестве.»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "Уступим в цене, но не в качестве.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Какая ещё возможность остаётся?",
               "accepted_answers": [
                 "Какая ещё возможность остаётся?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Уступим в цене, но не в качестве.",
               "accepted_answers": [
                 "Уступим в цене, но не в качестве."

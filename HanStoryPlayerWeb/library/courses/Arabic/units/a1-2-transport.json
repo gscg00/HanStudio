@@ -1831,7 +1831,7 @@
             "القطار متأخر."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «القطار متأخر.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «القطار متأخر.». El ejemplo practica: El tren lleva retraso.",
           "audio": "القطار متأخر.",
           "slow_audio": "القطار متأخر.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "هل يجب أن أغيّر وسيلة النقل؟"
           ],
           "explanation": "La forma completa es «هل يجب أن أغيّر وسيلة النقل؟».",
-          "audio": "هل يجب أن أغيّر وسيلة النقل؟",
-          "slow_audio": "هل يجب أن أغيّر وسيلة النقل؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "متأخر"
           ],
           "explanation": "La forma completa es «القطار متأخر.»: El tren lleva retraso.",
-          "audio": "القطار متأخر.",
-          "slow_audio": "القطار متأخر.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "arabic-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "مطار",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "arabic-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «القطار متأخر.»",
           "target": "El tren lleva retraso.",
           "answer": "القطار متأخر.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هل يجب أن أغيّر وسيلة النقل؟",
               "accepted_answers": [
                 "هل يجب أن أغيّر وسيلة النقل؟"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "القطار متأخر.",
               "accepted_answers": [
                 "القطار متأخر."

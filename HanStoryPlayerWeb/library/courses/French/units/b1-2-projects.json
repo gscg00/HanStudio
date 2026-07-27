@@ -1831,7 +1831,7 @@
             "Nous ferons le point ce week-end."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Nous ferons le point ce week-end.»: Revisaremos los avances al final de la semana.",
+          "explanation": "Escuchaste «Nous ferons le point ce week-end.». El ejemplo practica: Revisaremos los avances al final de la semana.",
           "audio": "Nous ferons le point ce week-end.",
           "slow_audio": "Nous ferons le point ce week-end.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Prévoyons les risques avant de commencer."
           ],
           "explanation": "La forma completa es «Prévoyons les risques avant de commencer.».",
-          "audio": "Prévoyons les risques avant de commencer.",
-          "slow_audio": "Prévoyons les risques avant de commencer.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "week-end"
           ],
           "explanation": "La forma completa es «Nous ferons le point ce week-end.»: Revisaremos los avances al final de la semana.",
-          "audio": "Nous ferons le point ce week-end.",
-          "slow_audio": "Nous ferons le point ce week-end.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-b1-2-projects-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "prompt": "Produce el ejemplo que demuestra: «Quiero participar como voluntario.»",
           "target": "Quiero participar como voluntario.",
           "answer": "Je veux participer comme bénévole.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-b1-2-projects-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "prompt": "Di en voz alta: «Nous ferons le point ce week-end.»",
           "target": "Revisaremos los avances al final de la semana.",
           "answer": "Nous ferons le point ce week-end.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Prévoyons les risques avant de commencer.",
               "accepted_answers": [
                 "Prévoyons les risques avant de commencer."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Nous ferons le point ce week-end.",
               "accepted_answers": [
                 "Nous ferons le point ce week-end."

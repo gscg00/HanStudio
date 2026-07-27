@@ -1831,7 +1831,7 @@
             "現金しかありません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «現金しかありません。»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «現金しかありません。». El ejemplo practica: Solo tengo efectivo.",
           "audio": "現金しかありません。",
           "slow_audio": "現金しかありません。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "カードで払えますか。"
           ],
           "explanation": "La forma completa es «カードで払えますか。».",
-          "audio": "カードで払えますか。",
-          "slow_audio": "カードで払えますか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «現金しかありません。»: Solo tengo efectivo.",
-          "audio": "現金しかありません。",
-          "slow_audio": "現金しかありません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "japanese-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "カード",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "japanese-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «現金しかありません。»",
           "target": "Solo tengo efectivo.",
           "answer": "現金しかありません。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "カードで払えますか。",
               "accepted_answers": [
                 "カードで払えますか。"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "現金しかありません。",
               "accepted_answers": [
                 "現金しかありません。"

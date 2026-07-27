@@ -1831,7 +1831,7 @@
             "Hoje o tempo está pior do que ontem."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Hoje o tempo está pior do que ontem.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «Hoje o tempo está pior do que ontem.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "Hoje o tempo está pior do que ontem.",
           "slow_audio": "Hoje o tempo está pior do que ontem.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Esta opção é melhor para mim."
           ],
           "explanation": "La forma completa es «Esta opção é melhor para mim.».",
-          "audio": "Esta opção é melhor para mim.",
-          "slow_audio": "Esta opção é melhor para mim.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "ontem"
           ],
           "explanation": "La forma completa es «Hoje o tempo está pior do que ontem.»: Hoy hace peor tiempo que ayer.",
-          "audio": "Hoje o tempo está pior do que ontem.",
-          "slow_audio": "Hoje o tempo está pior do que ontem.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "alto",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «Hoje o tempo está pior do que ontem.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "Hoje o tempo está pior do que ontem.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Esta opção é melhor para mim.",
               "accepted_answers": [
                 "Esta opção é melhor para mim."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Hoje o tempo está pior do que ontem.",
               "accepted_answers": [
                 "Hoje o tempo está pior do que ontem."

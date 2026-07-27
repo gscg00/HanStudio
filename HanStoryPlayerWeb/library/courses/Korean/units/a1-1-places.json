@@ -1831,7 +1831,7 @@
             "저는 학교에 가요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «저는 학교에 가요.»: Voy a la escuela.",
+          "explanation": "Escuchaste «저는 학교에 가요.». El ejemplo practica: Voy a la escuela.",
           "audio": "저는 학교에 가요.",
           "slow_audio": "저는 학교에 가요.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "역은 왼쪽에 있어요."
           ],
           "explanation": "La forma completa es «역은 왼쪽에 있어요.».",
-          "audio": "역은 왼쪽에 있어요.",
-          "slow_audio": "역은 왼쪽에 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "가요"
           ],
           "explanation": "La forma completa es «저는 학교에 가요.»: Voy a la escuela.",
-          "audio": "저는 학교에 가요.",
-          "slow_audio": "저는 학교에 가요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "korean-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "왼쪽",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "korean-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «저는 학교에 가요.»",
           "target": "Voy a la escuela.",
           "answer": "저는 학교에 가요.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "역은 왼쪽에 있어요.",
               "accepted_answers": [
                 "역은 왼쪽에 있어요."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "저는 학교에 가요.",
               "accepted_answers": [
                 "저는 학교에 가요."
@@ -1976,7 +1976,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "왼쪽",
               "accepted_answers": [
                 "왼쪽"

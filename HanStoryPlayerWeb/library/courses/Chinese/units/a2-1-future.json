@@ -1831,7 +1831,7 @@
             "我到了以后给你打电话。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我到了以后给你打电话。»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «我到了以后给你打电话。». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "我到了以后给你打电话。",
           "slow_audio": "我到了以后给你打电话。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "我打算预订一个房间。"
           ],
           "explanation": "La forma completa es «我打算预订一个房间。».",
-          "audio": "我打算预订一个房间。",
-          "slow_audio": "我打算预订一个房间。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "话"
           ],
           "explanation": "La forma completa es «我到了以后给你打电话。»: Te llamaré cuando llegue.",
-          "audio": "我到了以后给你打电话。",
-          "slow_audio": "我到了以后给你打电话。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "chinese-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "预订",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "chinese-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «我到了以后给你打电话。»",
           "target": "Te llamaré cuando llegue.",
           "answer": "我到了以后给你打电话。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我打算预订一个房间。",
               "accepted_answers": [
                 "我打算预订一个房间。"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我到了以后给你打电话。",
               "accepted_answers": [
                 "我到了以后给你打电话。"

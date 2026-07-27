@@ -1831,7 +1831,7 @@
             "Личный опыт влияет на наше мнение."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Личный опыт влияет на наше мнение.»: La experiencia personal influye en nuestra opinión.",
+          "explanation": "Escuchaste «Личный опыт влияет на наше мнение.». El ejemplo practica: La experiencia personal influye en nuestra opinión.",
           "audio": "Личный опыт влияет на наше мнение.",
           "slow_audio": "Личный опыт влияет на наше мнение.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Не у всех были одинаковые возможности."
           ],
           "explanation": "La forma completa es «Не у всех были одинаковые возможности.».",
-          "audio": "Не у всех были одинаковые возможности.",
-          "slow_audio": "Не у всех были одинаковые возможности.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "мнение"
           ],
           "explanation": "La forma completa es «Личный опыт влияет на наше мнение.»: La experiencia personal influye en nuestra opinión.",
-          "audio": "Личный опыт влияет на наше мнение.",
-          "slow_audio": "Личный опыт влияет на наше мнение.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "russian-b1-2-perspectives-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entonces me di cuenta de mi error.»",
           "target": "Entonces me di cuenta de mi error.",
           "answer": "Тогда я понял свою ошибку.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "russian-b1-2-perspectives-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "prompt": "Di en voz alta: «Личный опыт влияет на наше мнение.»",
           "target": "La experiencia personal influye en nuestra opinión.",
           "answer": "Личный опыт влияет на наше мнение.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Не у всех были одинаковые возможности.",
               "accepted_answers": [
                 "Не у всех были одинаковые возможности."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Личный опыт влияет на наше мнение.",
               "accepted_answers": [
                 "Личный опыт влияет на наше мнение."

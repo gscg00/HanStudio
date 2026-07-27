@@ -1831,7 +1831,7 @@
             "那是第一次。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «那是第一次。»: Fue la primera vez.",
+          "explanation": "Escuchaste «那是第一次。». El ejemplo practica: Fue la primera vez.",
           "audio": "那是第一次。",
           "slow_audio": "那是第一次。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "有一次我没赶上火车。"
           ],
           "explanation": "La forma completa es «有一次我没赶上火车。».",
-          "audio": "有一次我没赶上火车。",
-          "slow_audio": "有一次我没赶上火车。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "次"
           ],
           "explanation": "La forma completa es «那是第一次。»: Fue la primera vez.",
-          "audio": "那是第一次。",
-          "slow_audio": "那是第一次。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "chinese-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "这是一次有意思的经历。",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "chinese-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «那是第一次。»",
           "target": "Fue la primera vez.",
           "answer": "那是第一次。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "有一次我没赶上火车。",
               "accepted_answers": [
                 "有一次我没赶上火车。"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "那是第一次。",
               "accepted_answers": [
                 "那是第一次。"

@@ -1831,7 +1831,7 @@
             "Cependant, je n’ai pas le temps aujourd’hui."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Cependant, je n’ai pas le temps aujourd’hui.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «Cependant, je n’ai pas le temps aujourd’hui.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "Cependant, je n’ai pas le temps aujourd’hui.",
           "slow_audio": "Cependant, je n’ai pas le temps aujourd’hui.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "En plus, je dois acheter à manger."
           ],
           "explanation": "La forma completa es «En plus, je dois acheter à manger.».",
-          "audio": "En plus, je dois acheter à manger.",
-          "slow_audio": "En plus, je dois acheter à manger.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "aujourd’hui"
           ],
           "explanation": "La forma completa es «Cependant, je n’ai pas le temps aujourd’hui.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "Cependant, je n’ai pas le temps aujourd’hui.",
-          "slow_audio": "Cependant, je n’ai pas le temps aujourd’hui.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "french-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "c’est pourquoi",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "french-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «Cependant, je n’ai pas le temps aujourd’hui.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "Cependant, je n’ai pas le temps aujourd’hui.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "En plus, je dois acheter à manger.",
               "accepted_answers": [
                 "En plus, je dois acheter à manger."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Cependant, je n’ai pas le temps aujourd’hui.",
               "accepted_answers": [
                 "Cependant, je n’ai pas le temps aujourd’hui."
@@ -1980,7 +1980,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "c’est pourquoi",
               "accepted_answers": [
                 "c’est pourquoi"

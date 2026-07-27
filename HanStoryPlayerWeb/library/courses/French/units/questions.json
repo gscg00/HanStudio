@@ -638,7 +638,7 @@
             "comment"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «comment»: cómo",
+          "explanation": "Escuchaste «comment». El ejemplo practica: cómo",
           "audio": "comment",
           "slow_audio": "comment",
           "tags": [
@@ -663,8 +663,8 @@
             "quand"
           ],
           "explanation": "La forma completa es «quand».",
-          "audio": "quand",
-          "slow_audio": "quand",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -681,8 +681,8 @@
             "t"
           ],
           "explanation": "La forma completa es «comment»: cómo",
-          "audio": "comment",
-          "slow_audio": "comment",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -693,7 +693,7 @@
         {
           "id": "french-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "pourquoi",
           "accepted_answers": [
@@ -713,7 +713,7 @@
         {
           "id": "french-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «comment»",
           "target": "cómo",
           "answer": "comment",
           "accepted_answers": [
@@ -747,7 +747,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "quand",
               "accepted_answers": [
                 "quand"
@@ -765,7 +765,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "comment",
               "accepted_answers": [
                 "comment"

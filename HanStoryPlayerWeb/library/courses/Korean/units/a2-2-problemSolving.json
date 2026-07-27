@@ -1831,7 +1831,7 @@
             "더 많은 정보가 필요해요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «더 많은 정보가 필요해요.»: Necesitamos más información.",
+          "explanation": "Escuchaste «더 많은 정보가 필요해요.». El ejemplo practica: Necesitamos más información.",
           "audio": "더 많은 정보가 필요해요.",
           "slow_audio": "더 많은 정보가 필요해요.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "그것으로는 문제가 해결되지 않을 거예요."
           ],
           "explanation": "La forma completa es «그것으로는 문제가 해결되지 않을 거예요.».",
-          "audio": "그것으로는 문제가 해결되지 않을 거예요.",
-          "slow_audio": "그것으로는 문제가 해결되지 않을 거예요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "필요해요"
           ],
           "explanation": "La forma completa es «더 많은 정보가 필요해요.»: Necesitamos más información.",
-          "audio": "더 많은 정보가 필요해요.",
-          "slow_audio": "더 많은 정보가 필요해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "korean-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "언제 준비될까요?",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "korean-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «더 많은 정보가 필요해요.»",
           "target": "Necesitamos más información.",
           "answer": "더 많은 정보가 필요해요.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "그것으로는 문제가 해결되지 않을 거예요.",
               "accepted_answers": [
                 "그것으로는 문제가 해결되지 않을 거예요."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "더 많은 정보가 필요해요.",
               "accepted_answers": [
                 "더 많은 정보가 필요해요."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "언제 준비될까요?",
               "accepted_answers": [
                 "언제 준비될까요?"

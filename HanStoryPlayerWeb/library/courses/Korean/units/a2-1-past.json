@@ -1831,7 +1831,7 @@
             "무슨 일이 있었어요?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «무슨 일이 있었어요?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «무슨 일이 있었어요?». El ejemplo practica: ¿Qué pasó?",
           "audio": "무슨 일이 있었어요?",
           "slow_audio": "무슨 일이 있었어요?",
           "tags": [
@@ -1857,8 +1857,8 @@
             "열쇠를 찾을 수 없었어요."
           ],
           "explanation": "La forma completa es «열쇠를 찾을 수 없었어요.».",
-          "audio": "열쇠를 찾을 수 없었어요.",
-          "slow_audio": "열쇠를 찾을 수 없었어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "있었어요"
           ],
           "explanation": "La forma completa es «무슨 일이 있었어요?»: ¿Qué pasó?",
-          "audio": "무슨 일이 있었어요?",
-          "slow_audio": "무슨 일이 있었어요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "일어났어요",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «무슨 일이 있었어요?»",
           "target": "¿Qué pasó?",
           "answer": "무슨 일이 있었어요?",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "열쇠를 찾을 수 없었어요.",
               "accepted_answers": [
                 "열쇠를 찾을 수 없었어요."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "무슨 일이 있었어요?",
               "accepted_answers": [
                 "무슨 일이 있었어요?"

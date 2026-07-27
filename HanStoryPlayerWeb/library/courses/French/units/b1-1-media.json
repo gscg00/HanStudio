@@ -1831,7 +1831,7 @@
             "La réalisatrice montre deux points de vue."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «La réalisatrice montre deux points de vue.»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «La réalisatrice montre deux points de vue.». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "La réalisatrice montre deux points de vue.",
           "slow_audio": "La réalisatrice montre deux points de vue.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "La fin m’a beaucoup surpris."
           ],
           "explanation": "La forma completa es «La fin m’a beaucoup surpris.».",
-          "audio": "La fin m’a beaucoup surpris.",
-          "slow_audio": "La fin m’a beaucoup surpris.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "vue"
           ],
           "explanation": "La forma completa es «La réalisatrice montre deux points de vue.»: La directora muestra dos puntos de vista.",
-          "audio": "La réalisatrice montre deux points de vue.",
-          "slow_audio": "La réalisatrice montre deux points de vue.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "Cette coutume m’a surpris.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «La réalisatrice montre deux points de vue.»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "La réalisatrice montre deux points de vue.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La fin m’a beaucoup surpris.",
               "accepted_answers": [
                 "La fin m’a beaucoup surpris."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La réalisatrice montre deux points de vue.",
               "accepted_answers": [
                 "La réalisatrice montre deux points de vue."

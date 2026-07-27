@@ -1831,7 +1831,7 @@
             "J’étudie l’après-midi."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «J’étudie l’après-midi.»: Estudio por la tarde.",
+          "explanation": "Escuchaste «J’étudie l’après-midi.». El ejemplo practica: Estudio por la tarde.",
           "audio": "J’étudie l’après-midi.",
           "slow_audio": "J’étudie l’après-midi.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Je me lève à sept heures."
           ],
           "explanation": "La forma completa es «Je me lève à sept heures.».",
-          "audio": "Je me lève à sept heures.",
-          "slow_audio": "Je me lève à sept heures.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "l’après-midi"
           ],
           "explanation": "La forma completa es «J’étudie l’après-midi.»: Estudio por la tarde.",
-          "audio": "J’étudie l’après-midi.",
-          "slow_audio": "J’étudie l’après-midi.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a1-1-routine-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mañana»",
+          "prompt": "Produce el ejemplo que demuestra: «mañana»",
           "target": "mañana",
           "answer": "matin",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a1-1-routine-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estudio por la tarde.»",
+          "prompt": "Di en voz alta: «J’étudie l’après-midi.»",
           "target": "Estudio por la tarde.",
           "answer": "J’étudie l’après-midi.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je me lève à sept heures.",
               "accepted_answers": [
                 "Je me lève à sept heures."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’étudie l’après-midi.",
               "accepted_answers": [
                 "J’étudie l’après-midi."

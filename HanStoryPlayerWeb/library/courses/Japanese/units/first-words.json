@@ -6124,7 +6124,7 @@
             "に"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «に»: dos",
+          "explanation": "Escuchaste «に». El ejemplo practica: dos",
           "audio": "に",
           "slow_audio": "に",
           "tags": [
@@ -6148,8 +6148,8 @@
             "いち"
           ],
           "explanation": "La forma completa es «いち».",
-          "audio": "いち",
-          "slow_audio": "いち",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -6166,8 +6166,8 @@
             "に"
           ],
           "explanation": "La forma completa es «に»: dos",
-          "audio": "に",
-          "slow_audio": "に",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -6178,7 +6178,7 @@
         {
           "id": "japanese-first-words-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tres»",
+          "prompt": "Produce el ejemplo que demuestra: «tres»",
           "target": "tres",
           "answer": "さん",
           "accepted_answers": [
@@ -6198,7 +6198,7 @@
         {
           "id": "japanese-first-words-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dos»",
+          "prompt": "Di en voz alta: «に»",
           "target": "dos",
           "answer": "に",
           "accepted_answers": [
@@ -6232,7 +6232,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "いち",
               "accepted_answers": [
                 "いち"
@@ -6250,7 +6250,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "に",
               "accepted_answers": [
                 "に"

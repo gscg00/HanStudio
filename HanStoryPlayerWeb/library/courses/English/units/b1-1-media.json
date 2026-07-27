@@ -1831,7 +1831,7 @@
             "The director shows two points of view."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The director shows two points of view.»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «The director shows two points of view.». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "The director shows two points of view.",
           "slow_audio": "The director shows two points of view.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "The ending surprised me a lot."
           ],
           "explanation": "La forma completa es «The ending surprised me a lot.».",
-          "audio": "The ending surprised me a lot.",
-          "slow_audio": "The ending surprised me a lot.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "view"
           ],
           "explanation": "La forma completa es «The director shows two points of view.»: La directora muestra dos puntos de vista.",
-          "audio": "The director shows two points of view.",
-          "slow_audio": "The director shows two points of view.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "This custom surprised me.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «The director shows two points of view.»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "The director shows two points of view.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The ending surprised me a lot.",
               "accepted_answers": [
                 "The ending surprised me a lot."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The director shows two points of view.",
               "accepted_answers": [
                 "The director shows two points of view."

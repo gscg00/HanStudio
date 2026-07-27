@@ -1831,7 +1831,7 @@
             "今天的天气比昨天差。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «今天的天气比昨天差。»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «今天的天气比昨天差。». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "今天的天气比昨天差。",
           "slow_audio": "今天的天气比昨天差。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "这个选择对我更好。"
           ],
           "explanation": "La forma completa es «这个选择对我更好。».",
-          "audio": "这个选择对我更好。",
-          "slow_audio": "这个选择对我更好。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "差"
           ],
           "explanation": "La forma completa es «今天的天气比昨天差。»: Hoy hace peor tiempo que ayer.",
-          "audio": "今天的天气比昨天差。",
-          "slow_audio": "今天的天气比昨天差。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "chinese-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "chinese-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «今天的天气比昨天差。»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "今天的天气比昨天差。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这个选择对我更好。",
               "accepted_answers": [
                 "这个选择对我更好。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "今天的天气比昨天差。",
               "accepted_answers": [
                 "今天的天气比昨天差。"

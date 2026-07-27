@@ -1831,7 +1831,7 @@
             "Нам нужно больше информации."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Нам нужно больше информации.»: Necesitamos más información.",
+          "explanation": "Escuchaste «Нам нужно больше информации.». El ejemplo practica: Necesitamos más información.",
           "audio": "Нам нужно больше информации.",
           "slow_audio": "Нам нужно больше информации.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Это не решит проблему."
           ],
           "explanation": "La forma completa es «Это не решит проблему.».",
-          "audio": "Это не решит проблему.",
-          "slow_audio": "Это не решит проблему.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "информации"
           ],
           "explanation": "La forma completa es «Нам нужно больше информации.»: Necesitamos más información.",
-          "audio": "Нам нужно больше информации.",
-          "slow_audio": "Нам нужно больше информации.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "Когда это будет готово?",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «Нам нужно больше информации.»",
           "target": "Necesitamos más información.",
           "answer": "Нам нужно больше информации.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Это не решит проблему.",
               "accepted_answers": [
                 "Это не решит проблему."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Нам нужно больше информации.",
               "accepted_answers": [
                 "Нам нужно больше информации."
@@ -1977,7 +1977,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Когда это будет готово?",
               "accepted_answers": [
                 "Когда это будет готово?"

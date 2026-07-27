@@ -1831,7 +1831,7 @@
             "Ti chiamerò quando arrivo."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ti chiamerò quando arrivo.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «Ti chiamerò quando arrivo.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "Ti chiamerò quando arrivo.",
           "slow_audio": "Ti chiamerò quando arrivo.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Penso di prenotare una camera."
           ],
           "explanation": "La forma completa es «Penso di prenotare una camera.».",
-          "audio": "Penso di prenotare una camera.",
-          "slow_audio": "Penso di prenotare una camera.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "arrivo"
           ],
           "explanation": "La forma completa es «Ti chiamerò quando arrivo.»: Te llamaré cuando llegue.",
-          "audio": "Ti chiamerò quando arrivo.",
-          "slow_audio": "Ti chiamerò quando arrivo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "prenotare",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «Ti chiamerò quando arrivo.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "Ti chiamerò quando arrivo.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Penso di prenotare una camera.",
               "accepted_answers": [
                 "Penso di prenotare una camera."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Ti chiamerò quando arrivo.",
               "accepted_answers": [
                 "Ti chiamerò quando arrivo."

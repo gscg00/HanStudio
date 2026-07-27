@@ -1831,7 +1831,7 @@
             "ご飯を少しください。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ご飯を少しください。»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «ご飯を少しください。». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "ご飯を少しください。",
           "slow_audio": "ご飯を少しください。",
           "tags": [
@@ -1863,8 +1863,8 @@
             "朝、お茶を飲みます。"
           ],
           "explanation": "La forma completa es «朝、お茶を飲みます。».",
-          "audio": "朝、お茶を飲みます。",
-          "slow_audio": "朝、お茶を飲みます。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1881,8 +1881,8 @@
             "い"
           ],
           "explanation": "La forma completa es «ご飯を少しください。»: Quiero un poco de arroz.",
-          "audio": "ご飯を少しください。",
-          "slow_audio": "ご飯を少しください。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1893,7 +1893,7 @@
         {
           "id": "japanese-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "肉",
           "accepted_answers": [
@@ -1913,7 +1913,7 @@
         {
           "id": "japanese-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «ご飯を少しください。»",
           "target": "Quiero un poco de arroz.",
           "answer": "ご飯を少しください。",
           "accepted_answers": [
@@ -1947,7 +1947,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "朝、お茶を飲みます。",
               "accepted_answers": [
                 "朝、お茶を飲みます。"
@@ -1965,7 +1965,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ご飯を少しください。",
               "accepted_answers": [
                 "ご飯を少しください。"

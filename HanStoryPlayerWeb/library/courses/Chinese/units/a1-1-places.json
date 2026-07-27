@@ -1831,7 +1831,7 @@
             "我去学校。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我去学校。»: Voy a la escuela.",
+          "explanation": "Escuchaste «我去学校。». El ejemplo practica: Voy a la escuela.",
           "audio": "我去学校。",
           "slow_audio": "我去学校。",
           "tags": [
@@ -1859,8 +1859,8 @@
             "车站在左边。"
           ],
           "explanation": "La forma completa es «车站在左边。».",
-          "audio": "车站在左边。",
-          "slow_audio": "车站在左边。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "校"
           ],
           "explanation": "La forma completa es «我去学校。»: Voy a la escuela.",
-          "audio": "我去学校。",
-          "slow_audio": "我去学校。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "chinese-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "左边",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "chinese-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «我去学校。»",
           "target": "Voy a la escuela.",
           "answer": "我去学校。",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "车站在左边。",
               "accepted_answers": [
                 "车站在左边。"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我去学校。",
               "accepted_answers": [
                 "我去学校。"
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "左边",
               "accepted_answers": [
                 "左边"

@@ -1831,7 +1831,7 @@
             "Questo mi ricorda un’esperienza simile."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Questo mi ricorda un’esperienza simile.»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «Questo mi ricorda un’esperienza simile.». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "Questo mi ricorda un’esperienza simile.",
           "slow_audio": "Questo mi ricorda un’esperienza simile.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Prima vorrei chiarire un dettaglio."
           ],
           "explanation": "La forma completa es «Prima vorrei chiarire un dettaglio.».",
-          "audio": "Prima vorrei chiarire un dettaglio.",
-          "slow_audio": "Prima vorrei chiarire un dettaglio.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "simile"
           ],
           "explanation": "La forma completa es «Questo mi ricorda un’esperienza simile.»: Eso me recuerda una experiencia parecida.",
-          "audio": "Questo mi ricorda un’esperienza simile.",
-          "slow_audio": "Questo mi ricorda un’esperienza simile.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "A volte è difficile perdonare.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «Questo mi ricorda un’esperienza simile.»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "Questo mi ricorda un’esperienza simile.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Prima vorrei chiarire un dettaglio.",
               "accepted_answers": [
                 "Prima vorrei chiarire un dettaglio."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Questo mi ricorda un’esperienza simile.",
               "accepted_answers": [
                 "Questo mi ricorda un’esperienza simile."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "A volte è difficile perdonare.",
               "accepted_answers": [
                 "A volte è difficile perdonare."

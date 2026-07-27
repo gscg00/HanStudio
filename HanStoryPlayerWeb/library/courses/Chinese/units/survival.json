@@ -4445,7 +4445,7 @@
             "哪里"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «哪里»: dónde",
+          "explanation": "Escuchaste «哪里». El ejemplo practica: dónde",
           "audio": "哪里",
           "slow_audio": "哪里",
           "tags": [
@@ -4468,8 +4468,8 @@
             "谁"
           ],
           "explanation": "La forma completa es «谁».",
-          "audio": "谁",
-          "slow_audio": "谁",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4486,8 +4486,8 @@
             "里"
           ],
           "explanation": "La forma completa es «哪里»: dónde",
-          "audio": "哪里",
-          "slow_audio": "哪里",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4498,7 +4498,7 @@
         {
           "id": "chinese-survival-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "什么时候",
           "accepted_answers": [
@@ -4518,7 +4518,7 @@
         {
           "id": "chinese-survival-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «哪里»",
           "target": "dónde",
           "answer": "哪里",
           "accepted_answers": [
@@ -4552,7 +4552,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "谁",
               "accepted_answers": [
                 "谁"
@@ -4570,7 +4570,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "哪里",
               "accepted_answers": [
                 "哪里"

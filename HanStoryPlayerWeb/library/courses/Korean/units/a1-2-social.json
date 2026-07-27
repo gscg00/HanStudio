@@ -1831,7 +1831,7 @@
             "여섯 시 이후에 시간이 있어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «여섯 시 이후에 시간이 있어요.»: Estoy libre después de las seis.",
+          "explanation": "Escuchaste «여섯 시 이후에 시간이 있어요.». El ejemplo practica: Estoy libre después de las seis.",
           "audio": "여섯 시 이후에 시간이 있어요.",
           "slow_audio": "여섯 시 이후에 시간이 있어요.",
           "tags": [
@@ -1855,8 +1855,8 @@
             "어디에서 만날까요?"
           ],
           "explanation": "La forma completa es «어디에서 만날까요?».",
-          "audio": "어디에서 만날까요?",
-          "slow_audio": "어디에서 만날까요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "있어요"
           ],
           "explanation": "La forma completa es «여섯 시 이후에 시간이 있어요.»: Estoy libre después de las seis.",
-          "audio": "여섯 시 이후에 시간이 있어요.",
-          "slow_audio": "여섯 시 이후에 시간이 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "korean-a1-2-social-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «fin de semana»",
+          "prompt": "Produce el ejemplo que demuestra: «fin de semana»",
           "target": "fin de semana",
           "answer": "주말",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "korean-a1-2-social-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "prompt": "Di en voz alta: «여섯 시 이후에 시간이 있어요.»",
           "target": "Estoy libre después de las seis.",
           "answer": "여섯 시 이후에 시간이 있어요.",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "어디에서 만날까요?",
               "accepted_answers": [
                 "어디에서 만날까요?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "여섯 시 이후에 시간이 있어요.",
               "accepted_answers": [
                 "여섯 시 이후에 시간이 있어요."
@@ -1975,7 +1975,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "주말",
               "accepted_answers": [
                 "주말"

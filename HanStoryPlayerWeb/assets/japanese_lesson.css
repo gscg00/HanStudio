@@ -144,8 +144,10 @@
 .jp-question{
   min-height:0;
   overflow-y:auto;
-  overscroll-behavior:contain;
+  overscroll-behavior-y:auto;
   scrollbar-gutter:stable;
+  -webkit-overflow-scrolling:touch;
+  touch-action:pan-y;
 }
 .jp-feedback,
 .jp-check{box-shadow:0 -8px 22px #173f3508}
@@ -180,6 +182,7 @@
   .jp-audio-examples{grid-template-columns:1fr}
   .jp-audio-example{padding:.65rem .75rem}
   .jp-production .jp-question{padding-top:.7rem}
+  .jp-production .jp-question:has(.jp-virtual-keyboard){padding-bottom:calc(min(55dvh,440px) + 1rem)}
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
   .jp-virtual-keyboard{position:fixed;z-index:50;right:0;bottom:0;left:0;width:100%;max-height:min(55dvh,440px);padding:calc(.55rem + env(safe-area-inset-top)) .5rem max(.6rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1;box-shadow:0 -12px 30px #173f3540}

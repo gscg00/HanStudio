@@ -1831,7 +1831,7 @@
             "Es klappt wohl, wenn alle mitmachen."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Es klappt wohl, wenn alle mitmachen.»: Probablemente funcione, siempre que todos participen.",
+          "explanation": "Escuchaste «Es klappt wohl, wenn alle mitmachen.». El ejemplo practica: Probablemente funcione, siempre que todos participen.",
           "audio": "Es klappt wohl, wenn alle mitmachen.",
           "slow_audio": "Es klappt wohl, wenn alle mitmachen.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Das heißt nicht, dass es unmöglich ist."
           ],
           "explanation": "La forma completa es «Das heißt nicht, dass es unmöglich ist.».",
-          "audio": "Das heißt nicht, dass es unmöglich ist.",
-          "slow_audio": "Das heißt nicht, dass es unmöglich ist.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "mitmachen"
           ],
           "explanation": "La forma completa es «Es klappt wohl, wenn alle mitmachen.»: Probablemente funcione, siempre que todos participen.",
-          "audio": "Es klappt wohl, wenn alle mitmachen.",
-          "slow_audio": "Es klappt wohl, wenn alle mitmachen.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "german-b1-2-nuance-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "prompt": "Produce el ejemplo que demuestra: «La recomiendo porque los personajes parecen reales.»",
           "target": "La recomiendo porque los personajes parecen reales.",
           "answer": "Ich empfehle ihn, weil die Figuren echt wirken.",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "german-b1-2-nuance-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "prompt": "Di en voz alta: «Es klappt wohl, wenn alle mitmachen.»",
           "target": "Probablemente funcione, siempre que todos participen.",
           "answer": "Es klappt wohl, wenn alle mitmachen.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Das heißt nicht, dass es unmöglich ist.",
               "accepted_answers": [
                 "Das heißt nicht, dass es unmöglich ist."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Es klappt wohl, wenn alle mitmachen.",
               "accepted_answers": [
                 "Es klappt wohl, wenn alle mitmachen."

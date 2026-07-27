@@ -1831,7 +1831,7 @@
             "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
           "slow_audio": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
           "tags": [
@@ -1862,8 +1862,8 @@
             "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben."
           ],
           "explanation": "La forma completa es «Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben.».",
-          "audio": "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben.",
-          "slow_audio": "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "wurde"
           ],
           "explanation": "La forma completa es «Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.»: Lamento informarle de que la cita se canceló.",
-          "audio": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
-          "slow_audio": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "german-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Teilen wir die Arbeit auf.",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "german-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben.",
               "accepted_answers": [
                 "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben."
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
               "accepted_answers": [
                 "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde."
@@ -1982,7 +1982,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Teilen wir die Arbeit auf.",
               "accepted_answers": [
                 "Teilen wir die Arbeit auf."

@@ -1831,7 +1831,7 @@
             "Take this twice a day."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Take this twice a day.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Take this twice a day.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Take this twice a day.",
           "slow_audio": "Take this twice a day.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "I am allergic to penicillin."
           ],
           "explanation": "La forma completa es «I am allergic to penicillin.».",
-          "audio": "I am allergic to penicillin.",
-          "slow_audio": "I am allergic to penicillin.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "day"
           ],
           "explanation": "La forma completa es «Take this twice a day.»: Tome esto dos veces al día.",
-          "audio": "Take this twice a day.",
-          "slow_audio": "Take this twice a day.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "english-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "doctor",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "english-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Take this twice a day.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Take this twice a day.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I am allergic to penicillin.",
               "accepted_answers": [
                 "I am allergic to penicillin."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Take this twice a day.",
               "accepted_answers": [
                 "Take this twice a day."

@@ -1831,7 +1831,7 @@
             "이 약을 하루에 두 번 드세요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «이 약을 하루에 두 번 드세요.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «이 약을 하루에 두 번 드세요.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "이 약을 하루에 두 번 드세요.",
           "slow_audio": "이 약을 하루에 두 번 드세요.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "페니실린 알레르기가 있어요."
           ],
           "explanation": "La forma completa es «페니실린 알레르기가 있어요.».",
-          "audio": "페니실린 알레르기가 있어요.",
-          "slow_audio": "페니실린 알레르기가 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "드세요"
           ],
           "explanation": "La forma completa es «이 약을 하루에 두 번 드세요.»: Tome esto dos veces al día.",
-          "audio": "이 약을 하루에 두 번 드세요.",
-          "slow_audio": "이 약을 하루에 두 번 드세요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "korean-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "의사",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "korean-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «이 약을 하루에 두 번 드세요.»",
           "target": "Tome esto dos veces al día.",
           "answer": "이 약을 하루에 두 번 드세요.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "페니실린 알레르기가 있어요.",
               "accepted_answers": [
                 "페니실린 알레르기가 있어요."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "이 약을 하루에 두 번 드세요.",
               "accepted_answers": [
                 "이 약을 하루에 두 번 드세요."

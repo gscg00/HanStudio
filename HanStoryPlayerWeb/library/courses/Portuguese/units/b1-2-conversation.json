@@ -1831,7 +1831,7 @@
             "Isso lembra-me uma experiência parecida."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Isso lembra-me uma experiência parecida.»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «Isso lembra-me uma experiência parecida.». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "Isso lembra-me uma experiência parecida.",
           "slow_audio": "Isso lembra-me uma experiência parecida.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Primeiro, quero esclarecer um detalhe."
           ],
           "explanation": "La forma completa es «Primeiro, quero esclarecer um detalhe.».",
-          "audio": "Primeiro, quero esclarecer um detalhe.",
-          "slow_audio": "Primeiro, quero esclarecer um detalhe.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "parecida"
           ],
           "explanation": "La forma completa es «Isso lembra-me uma experiência parecida.»: Eso me recuerda una experiencia parecida.",
-          "audio": "Isso lembra-me uma experiência parecida.",
-          "slow_audio": "Isso lembra-me uma experiência parecida.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "Às vezes é difícil perdoar.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «Isso lembra-me uma experiência parecida.»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "Isso lembra-me uma experiência parecida.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Primeiro, quero esclarecer um detalhe.",
               "accepted_answers": [
                 "Primeiro, quero esclarecer um detalhe."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Isso lembra-me uma experiência parecida.",
               "accepted_answers": [
                 "Isso lembra-me uma experiência parecida."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Às vezes é difícil perdoar.",
               "accepted_answers": [
                 "Às vezes é difícil perdoar."

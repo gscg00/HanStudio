@@ -1829,7 +1829,7 @@
             "メキシコから来ました。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «メキシコから来ました。»: Soy de México.",
+          "explanation": "Escuchaste «メキシコから来ました。». El ejemplo practica: Soy de México.",
           "audio": "メキシコから来ました。",
           "slow_audio": "メキシコから来ました。",
           "tags": [
@@ -1860,8 +1860,8 @@
             "お名前は何ですか。"
           ],
           "explanation": "La forma completa es «お名前は何ですか。».",
-          "audio": "お名前は何ですか。",
-          "slow_audio": "お名前は何ですか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "た"
           ],
           "explanation": "La forma completa es «メキシコから来ました。»: Soy de México.",
-          "audio": "メキシコから来ました。",
-          "slow_audio": "メキシコから来ました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "japanese-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "言葉",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "japanese-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «メキシコから来ました。»",
           "target": "Soy de México.",
           "answer": "メキシコから来ました。",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "お名前は何ですか。",
               "accepted_answers": [
                 "お名前は何ですか。"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "メキシコから来ました。",
               "accepted_answers": [
                 "メキシコから来ました。"

@@ -1831,7 +1831,7 @@
             "Поезд задерживается."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Поезд задерживается.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «Поезд задерживается.». El ejemplo practica: El tren lleva retraso.",
           "audio": "Поезд задерживается.",
           "slow_audio": "Поезд задерживается.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Мне нужно сделать пересадку?"
           ],
           "explanation": "La forma completa es «Мне нужно сделать пересадку?».",
-          "audio": "Мне нужно сделать пересадку?",
-          "slow_audio": "Мне нужно сделать пересадку?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "задерживается"
           ],
           "explanation": "La forma completa es «Поезд задерживается.»: El tren lleva retraso.",
-          "audio": "Поезд задерживается.",
-          "slow_audio": "Поезд задерживается.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "аэропорт",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «Поезд задерживается.»",
           "target": "El tren lleva retraso.",
           "answer": "Поезд задерживается.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне нужно сделать пересадку?",
               "accepted_answers": [
                 "Мне нужно сделать пересадку?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Поезд задерживается.",
               "accepted_answers": [
                 "Поезд задерживается."

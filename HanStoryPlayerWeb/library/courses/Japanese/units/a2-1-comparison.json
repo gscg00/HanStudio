@@ -1831,7 +1831,7 @@
             "今日は昨日より天気が悪いです。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «今日は昨日より天気が悪いです。»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «今日は昨日より天気が悪いです。». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "今日は昨日より天気が悪いです。",
           "slow_audio": "今日は昨日より天気が悪いです。",
           "tags": [
@@ -1869,8 +1869,8 @@
             "この選択のほうが私にはいいです。"
           ],
           "explanation": "La forma completa es «この選択のほうが私にはいいです。».",
-          "audio": "この選択のほうが私にはいいです。",
-          "slow_audio": "この選択のほうが私にはいいです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1887,8 +1887,8 @@
             "す"
           ],
           "explanation": "La forma completa es «今日は昨日より天気が悪いです。»: Hoy hace peor tiempo que ayer.",
-          "audio": "今日は昨日より天気が悪いです。",
-          "slow_audio": "今日は昨日より天気が悪いです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1899,7 +1899,7 @@
         {
           "id": "japanese-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高い",
           "accepted_answers": [
@@ -1919,7 +1919,7 @@
         {
           "id": "japanese-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «今日は昨日より天気が悪いです。»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "今日は昨日より天気が悪いです。",
           "accepted_answers": [
@@ -1953,7 +1953,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "この選択のほうが私にはいいです。",
               "accepted_answers": [
                 "この選択のほうが私にはいいです。"
@@ -1971,7 +1971,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "今日は昨日より天気が悪いです。",
               "accepted_answers": [
                 "今日は昨日より天気が悪いです。"

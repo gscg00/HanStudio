@@ -1831,7 +1831,7 @@
             "Quel âge avez-vous ?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quel âge avez-vous ?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Quel âge avez-vous ?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "Quel âge avez-vous ?",
           "slow_audio": "Quel âge avez-vous ?",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Qui est-ce ?"
           ],
           "explanation": "La forma completa es «Qui est-ce ?».",
-          "audio": "Qui est-ce ?",
-          "slow_audio": "Qui est-ce ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "avez-vous"
           ],
           "explanation": "La forma completa es «Quel âge avez-vous ?»: ¿Cuántos años tienes?",
-          "audio": "Quel âge avez-vous ?",
-          "slow_audio": "Quel âge avez-vous ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "french-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "femme",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "french-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «Quel âge avez-vous ?»",
           "target": "¿Cuántos años tienes?",
           "answer": "Quel âge avez-vous ?",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Qui est-ce ?",
               "accepted_answers": [
                 "Qui est-ce ?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Quel âge avez-vous ?",
               "accepted_answers": [
                 "Quel âge avez-vous ?"

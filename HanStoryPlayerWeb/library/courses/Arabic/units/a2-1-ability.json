@@ -1831,7 +1831,7 @@
             "التدخين ممنوع هنا."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «التدخين ممنوع هنا.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «التدخين ممنوع هنا.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "التدخين ممنوع هنا.",
           "slow_audio": "التدخين ممنوع هنا.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "يُسمح بالتصوير هنا."
           ],
           "explanation": "La forma completa es «يُسمح بالتصوير هنا.».",
-          "audio": "يُسمح بالتصوير هنا.",
-          "slow_audio": "يُسمح بالتصوير هنا.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "هنا"
           ],
           "explanation": "La forma completa es «التدخين ممنوع هنا.»: No se puede fumar aquí.",
-          "audio": "التدخين ممنوع هنا.",
-          "slow_audio": "التدخين ممنوع هنا.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "arabic-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "ضروري",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "arabic-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «التدخين ممنوع هنا.»",
           "target": "No se puede fumar aquí.",
           "answer": "التدخين ممنوع هنا.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "يُسمح بالتصوير هنا.",
               "accepted_answers": [
                 "يُسمح بالتصوير هنا."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "التدخين ممنوع هنا.",
               "accepted_answers": [
                 "التدخين ممنوع هنا."

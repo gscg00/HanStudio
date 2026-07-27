@@ -1831,7 +1831,7 @@
             "My room is small."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «My room is small.»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «My room is small.». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "My room is small.",
           "slow_audio": "My room is small.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "The key is on the table."
           ],
           "explanation": "La forma completa es «The key is on the table.».",
-          "audio": "The key is on the table.",
-          "slow_audio": "The key is on the table.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "small"
           ],
           "explanation": "La forma completa es «My room is small.»: Mi habitación es pequeña.",
-          "audio": "My room is small.",
-          "slow_audio": "My room is small.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "door",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «My room is small.»",
           "target": "Mi habitación es pequeña.",
           "answer": "My room is small.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The key is on the table.",
               "accepted_answers": [
                 "The key is on the table."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "My room is small.",
               "accepted_answers": [
                 "My room is small."

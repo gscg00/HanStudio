@@ -1831,7 +1831,7 @@
             "Non mi piace, anche se è utile."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Non mi piace, anche se è utile.»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «Non mi piace, anche se è utile.». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "Non mi piace, anche se è utile.",
           "slow_audio": "Non mi piace, anche se è utile.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Mi piace perché è semplice."
           ],
           "explanation": "La forma completa es «Mi piace perché è semplice.».",
-          "audio": "Mi piace perché è semplice.",
-          "slow_audio": "Mi piace perché è semplice.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "utile"
           ],
           "explanation": "La forma completa es «Non mi piace, anche se è utile.»: No me gusta, aunque es útil.",
-          "audio": "Non mi piace, anche se è utile.",
-          "slow_audio": "Non mi piace, anche se è utile.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "per questo",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «Non mi piace, anche se è utile.»",
           "target": "No me gusta, aunque es útil.",
           "answer": "Non mi piace, anche se è utile.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Mi piace perché è semplice.",
               "accepted_answers": [
                 "Mi piace perché è semplice."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Non mi piace, anche se è utile.",
               "accepted_answers": [
                 "Non mi piace, anche se è utile."

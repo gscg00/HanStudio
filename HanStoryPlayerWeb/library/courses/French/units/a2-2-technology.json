@@ -1831,7 +1831,7 @@
             "L’application ne s’ouvre pas."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «L’application ne s’ouvre pas.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «L’application ne s’ouvre pas.». El ejemplo practica: La aplicación no se abre.",
           "audio": "L’application ne s’ouvre pas.",
           "slow_audio": "L’application ne s’ouvre pas.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Je dois recharger mon téléphone."
           ],
           "explanation": "La forma completa es «Je dois recharger mon téléphone.».",
-          "audio": "Je dois recharger mon téléphone.",
-          "slow_audio": "Je dois recharger mon téléphone.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "pas"
           ],
           "explanation": "La forma completa es «L’application ne s’ouvre pas.»: La aplicación no se abre.",
-          "audio": "L’application ne s’ouvre pas.",
-          "slow_audio": "L’application ne s’ouvre pas.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "cassé",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «L’application ne s’ouvre pas.»",
           "target": "La aplicación no se abre.",
           "answer": "L’application ne s’ouvre pas.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je dois recharger mon téléphone.",
               "accepted_answers": [
                 "Je dois recharger mon téléphone."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "L’application ne s’ouvre pas.",
               "accepted_answers": [
                 "L’application ne s’ouvre pas."

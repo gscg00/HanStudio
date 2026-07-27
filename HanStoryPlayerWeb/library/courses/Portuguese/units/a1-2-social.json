@@ -1831,7 +1831,7 @@
             "Tenho tempo depois das seis."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Tenho tempo depois das seis.»: Estoy libre después de las seis.",
+          "explanation": "Escuchaste «Tenho tempo depois das seis.». El ejemplo practica: Estoy libre después de las seis.",
           "audio": "Tenho tempo depois das seis.",
           "slow_audio": "Tenho tempo depois das seis.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Onde nos encontramos?"
           ],
           "explanation": "La forma completa es «Onde nos encontramos?».",
-          "audio": "Onde nos encontramos?",
-          "slow_audio": "Onde nos encontramos?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "seis"
           ],
           "explanation": "La forma completa es «Tenho tempo depois das seis.»: Estoy libre después de las seis.",
-          "audio": "Tenho tempo depois das seis.",
-          "slow_audio": "Tenho tempo depois das seis.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "portuguese-a1-2-social-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «fin de semana»",
+          "prompt": "Produce el ejemplo que demuestra: «fin de semana»",
           "target": "fin de semana",
           "answer": "fim de semana",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "portuguese-a1-2-social-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "prompt": "Di en voz alta: «Tenho tempo depois das seis.»",
           "target": "Estoy libre después de las seis.",
           "answer": "Tenho tempo depois das seis.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Onde nos encontramos?",
               "accepted_answers": [
                 "Onde nos encontramos?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Tenho tempo depois das seis.",
               "accepted_answers": [
                 "Tenho tempo depois das seis."
@@ -1976,7 +1976,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "fim de semana",
               "accepted_answers": [
                 "fim de semana"

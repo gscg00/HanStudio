@@ -2145,7 +2145,7 @@
             "Je prends le bus tous les matins."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je prends le bus tous les matins.»: Tomo el autobús todas las mañanas.",
+          "explanation": "Escuchaste «Je prends le bus tous les matins.». El ejemplo practica: Tomo el autobús todas las mañanas.",
           "audio": "Je prends le bus tous les matins.",
           "slow_audio": "Je prends le bus tous les matins.",
           "tags": [
@@ -2173,8 +2173,8 @@
             "Comment tu vas à l’université ?"
           ],
           "explanation": "La forma completa es «Comment tu vas à l’université ?».",
-          "audio": "Comment tu vas à l’université ?",
-          "slow_audio": "Comment tu vas à l’université ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2191,8 +2191,8 @@
             "matins"
           ],
           "explanation": "La forma completa es «Je prends le bus tous les matins.»: Tomo el autobús todas las mañanas.",
-          "audio": "Je prends le bus tous les matins.",
-          "slow_audio": "Je prends le bus tous les matins.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2203,7 +2203,7 @@
         {
           "id": "french-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuánto dura el trayecto?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuánto dura el trayecto?»",
           "target": "¿Cuánto dura el trayecto?",
           "answer": "Le trajet dure combien de temps ?",
           "accepted_answers": [
@@ -2223,7 +2223,7 @@
         {
           "id": "french-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tomo el autobús todas las mañanas.»",
+          "prompt": "Di en voz alta: «Je prends le bus tous les matins.»",
           "target": "Tomo el autobús todas las mañanas.",
           "answer": "Je prends le bus tous les matins.",
           "accepted_answers": [
@@ -2257,7 +2257,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Comment tu vas à l’université ?",
               "accepted_answers": [
                 "Comment tu vas à l’université ?"
@@ -2275,7 +2275,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je prends le bus tous les matins.",
               "accepted_answers": [
                 "Je prends le bus tous les matins."
@@ -2293,7 +2293,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Le trajet dure combien de temps ?",
               "accepted_answers": [
                 "Le trajet dure combien de temps ?"

@@ -2902,8 +2902,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Х».",
-          "audio": "хорошо",
-          "slow_audio": "хорошо",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -2915,12 +2915,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "Щ",
+          "answer": "щука",
           "accepted_answers": [
-            "Щ"
+            "щука"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Щ»: Es más larga y frontal que Ш.",
+          "explanation": "Escuchaste «щука». El ejemplo practica: Es más larga y frontal que Ш.",
           "audio": "щука",
           "slow_audio": "щука",
           "tags": [
@@ -2943,8 +2943,8 @@
             "Х"
           ],
           "explanation": "La forma completa es «Х».",
-          "audio": "хорошо",
-          "slow_audio": "хорошо",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2961,8 +2961,8 @@
             "Щ"
           ],
           "explanation": "La forma completa es «Щ»: Es más larga y frontal que Ш.",
-          "audio": "щука",
-          "slow_audio": "щука",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2973,15 +2973,15 @@
         {
           "id": "russian-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Debe vibrar, como la erre española.»",
+          "prompt": "Produce el ejemplo que demuestra: «Debe vibrar, como la erre española.»",
           "target": "Debe vibrar, como la erre española.",
-          "answer": "Р",
+          "answer": "рука",
           "accepted_answers": [
-            "Р"
+            "рука"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «Р».",
+          "explanation": "Una respuesta adecuada es «рука».",
           "audio": "рука",
           "slow_audio": "рука",
           "tags": [
@@ -2993,16 +2993,16 @@
         {
           "id": "russian-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Es más larga y frontal que Ш.»",
+          "prompt": "Di en voz alta: «щука»",
           "target": "Es más larga y frontal que Ш.",
-          "answer": "Щ",
+          "answer": "щука",
           "accepted_answers": [
-            "Щ"
+            "щука"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «Щ». También puedes escribirlo.",
+          "explanation": "El modelo es «щука». También puedes escribirlo.",
           "audio": "щука",
           "slow_audio": "щука",
           "tags": [
@@ -3027,10 +3027,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
-              "answer": "Х",
+              "prompt": "Di o escribe este ejemplo en ruso.",
+              "answer": "хорошо",
               "accepted_answers": [
-                "Х"
+                "хорошо"
               ],
               "audio": "хорошо",
               "allow_minor_typos": true,
@@ -3045,10 +3045,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
-              "answer": "Щ",
+              "prompt": "Di o escribe este ejemplo en ruso.",
+              "answer": "щука",
               "accepted_answers": [
-                "Щ"
+                "щука"
               ],
               "audio": "щука",
               "allow_minor_typos": true,

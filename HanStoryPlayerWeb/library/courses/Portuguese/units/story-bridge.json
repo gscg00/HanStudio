@@ -697,7 +697,7 @@
             "vocês"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «vocês»: ustedes",
+          "explanation": "Escuchaste «vocês». El ejemplo practica: ustedes",
           "audio": "vocês",
           "slow_audio": "vocês",
           "tags": [
@@ -720,8 +720,8 @@
             "nós"
           ],
           "explanation": "La forma completa es «nós».",
-          "audio": "nós",
-          "slow_audio": "nós",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -738,8 +738,8 @@
             "s"
           ],
           "explanation": "La forma completa es «vocês»: ustedes",
-          "audio": "vocês",
-          "slow_audio": "vocês",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -750,7 +750,7 @@
         {
           "id": "portuguese-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ellos / ellas»",
+          "prompt": "Produce el ejemplo que demuestra: «ellos / ellas»",
           "target": "ellos / ellas",
           "answer": "eles / elas",
           "accepted_answers": [
@@ -770,7 +770,7 @@
         {
           "id": "portuguese-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «ustedes»",
+          "prompt": "Di en voz alta: «vocês»",
           "target": "ustedes",
           "answer": "vocês",
           "accepted_answers": [
@@ -804,7 +804,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "nós",
               "accepted_answers": [
                 "nós"
@@ -822,7 +822,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "vocês",
               "accepted_answers": [
                 "vocês"
@@ -840,7 +840,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "eles / elas",
               "accepted_answers": [
                 "eles / elas"

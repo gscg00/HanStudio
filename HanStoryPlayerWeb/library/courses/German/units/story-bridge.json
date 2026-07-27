@@ -2145,7 +2145,7 @@
             "Wie viele Äpfel sollen wir kaufen?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Wie viele Äpfel sollen wir kaufen?»: ¿Cuántas manzanas debemos comprar?",
+          "explanation": "Escuchaste «Wie viele Äpfel sollen wir kaufen?». El ejemplo practica: ¿Cuántas manzanas debemos comprar?",
           "audio": "Wie viele Äpfel sollen wir kaufen?",
           "slow_audio": "Wie viele Äpfel sollen wir kaufen?",
           "tags": [
@@ -2173,8 +2173,8 @@
             "Wir brauchen Äpfel, Brot und Käse."
           ],
           "explanation": "La forma completa es «Wir brauchen Äpfel, Brot und Käse.».",
-          "audio": "Wir brauchen Äpfel, Brot und Käse.",
-          "slow_audio": "Wir brauchen Äpfel, Brot und Käse.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2191,8 +2191,8 @@
             "kaufen"
           ],
           "explanation": "La forma completa es «Wie viele Äpfel sollen wir kaufen?»: ¿Cuántas manzanas debemos comprar?",
-          "audio": "Wie viele Äpfel sollen wir kaufen?",
-          "slow_audio": "Wie viele Äpfel sollen wir kaufen?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2203,7 +2203,7 @@
         {
           "id": "german-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Dos kilos, por favor.»",
+          "prompt": "Produce el ejemplo que demuestra: «Dos kilos, por favor.»",
           "target": "Dos kilos, por favor.",
           "answer": "Zwei Kilo, bitte.",
           "accepted_answers": [
@@ -2223,7 +2223,7 @@
         {
           "id": "german-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántas manzanas debemos comprar?»",
+          "prompt": "Di en voz alta: «Wie viele Äpfel sollen wir kaufen?»",
           "target": "¿Cuántas manzanas debemos comprar?",
           "answer": "Wie viele Äpfel sollen wir kaufen?",
           "accepted_answers": [
@@ -2257,7 +2257,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wir brauchen Äpfel, Brot und Käse.",
               "accepted_answers": [
                 "Wir brauchen Äpfel, Brot und Käse."
@@ -2275,7 +2275,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wie viele Äpfel sollen wir kaufen?",
               "accepted_answers": [
                 "Wie viele Äpfel sollen wir kaufen?"
@@ -2293,7 +2293,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Zwei Kilo, bitte.",
               "accepted_answers": [
                 "Zwei Kilo, bitte."

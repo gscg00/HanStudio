@@ -1831,7 +1831,7 @@
             "저는 오후에 공부해요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «저는 오후에 공부해요.»: Estudio por la tarde.",
+          "explanation": "Escuchaste «저는 오후에 공부해요.». El ejemplo practica: Estudio por la tarde.",
           "audio": "저는 오후에 공부해요.",
           "slow_audio": "저는 오후에 공부해요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "저는 일곱 시에 일어나요."
           ],
           "explanation": "La forma completa es «저는 일곱 시에 일어나요.».",
-          "audio": "저는 일곱 시에 일어나요.",
-          "slow_audio": "저는 일곱 시에 일어나요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "공부해요"
           ],
           "explanation": "La forma completa es «저는 오후에 공부해요.»: Estudio por la tarde.",
-          "audio": "저는 오후에 공부해요.",
-          "slow_audio": "저는 오후에 공부해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a1-1-routine-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mañana»",
+          "prompt": "Produce el ejemplo que demuestra: «mañana»",
           "target": "mañana",
           "answer": "아침",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a1-1-routine-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estudio por la tarde.»",
+          "prompt": "Di en voz alta: «저는 오후에 공부해요.»",
           "target": "Estudio por la tarde.",
           "answer": "저는 오후에 공부해요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "저는 일곱 시에 일어나요.",
               "accepted_answers": [
                 "저는 일곱 시에 일어나요."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "저는 오후에 공부해요.",
               "accepted_answers": [
                 "저는 오후에 공부해요."

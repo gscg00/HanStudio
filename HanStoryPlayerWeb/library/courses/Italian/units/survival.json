@@ -4411,7 +4411,7 @@
             "dove"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «dove»: dónde",
+          "explanation": "Escuchaste «dove». El ejemplo practica: dónde",
           "audio": "dove",
           "slow_audio": "dove",
           "tags": [
@@ -4434,8 +4434,8 @@
             "chi"
           ],
           "explanation": "La forma completa es «chi».",
-          "audio": "chi",
-          "slow_audio": "chi",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4452,8 +4452,8 @@
             "e"
           ],
           "explanation": "La forma completa es «dove»: dónde",
-          "audio": "dove",
-          "slow_audio": "dove",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4464,7 +4464,7 @@
         {
           "id": "italian-survival-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "quando",
           "accepted_answers": [
@@ -4484,7 +4484,7 @@
         {
           "id": "italian-survival-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «dove»",
           "target": "dónde",
           "answer": "dove",
           "accepted_answers": [
@@ -4518,7 +4518,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "chi",
               "accepted_answers": [
                 "chi"
@@ -4536,7 +4536,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "dove",
               "accepted_answers": [
                 "dove"

@@ -1831,7 +1831,7 @@
             "Je t’appellerai quand j’arriverai."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je t’appellerai quand j’arriverai.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «Je t’appellerai quand j’arriverai.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "Je t’appellerai quand j’arriverai.",
           "slow_audio": "Je t’appellerai quand j’arriverai.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Je compte réserver une chambre."
           ],
           "explanation": "La forma completa es «Je compte réserver une chambre.».",
-          "audio": "Je compte réserver une chambre.",
-          "slow_audio": "Je compte réserver une chambre.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "j’arriverai"
           ],
           "explanation": "La forma completa es «Je t’appellerai quand j’arriverai.»: Te llamaré cuando llegue.",
-          "audio": "Je t’appellerai quand j’arriverai.",
-          "slow_audio": "Je t’appellerai quand j’arriverai.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "réserver",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «Je t’appellerai quand j’arriverai.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "Je t’appellerai quand j’arriverai.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je compte réserver une chambre.",
               "accepted_answers": [
                 "Je compte réserver une chambre."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je t’appellerai quand j’arriverai.",
               "accepted_answers": [
                 "Je t’appellerai quand j’arriverai."

@@ -21519,7 +21519,7 @@
             "هذا"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «هذا»: esto (masculino)",
+          "explanation": "Escuchaste «هذا». El ejemplo practica: esto (masculino)",
           "audio": "هذا",
           "slow_audio": "هذا",
           "tags": [
@@ -21542,8 +21542,8 @@
             "لا"
           ],
           "explanation": "La forma completa es «لا».",
-          "audio": "لا",
-          "slow_audio": "لا",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -21560,8 +21560,8 @@
             "ا"
           ],
           "explanation": "La forma completa es «هذا»: esto (masculino)",
-          "audio": "هذا",
-          "slow_audio": "هذا",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -21572,7 +21572,7 @@
         {
           "id": "arabic-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «esto (femenino)»",
+          "prompt": "Produce el ejemplo que demuestra: «esto (femenino)»",
           "target": "esto (femenino)",
           "answer": "هذه",
           "accepted_answers": [
@@ -21592,7 +21592,7 @@
         {
           "id": "arabic-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «esto (masculino)»",
+          "prompt": "Di en voz alta: «هذا»",
           "target": "esto (masculino)",
           "answer": "هذا",
           "accepted_answers": [
@@ -21626,7 +21626,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لا",
               "accepted_answers": [
                 "لا"
@@ -21644,7 +21644,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هذا",
               "accepted_answers": [
                 "هذا"

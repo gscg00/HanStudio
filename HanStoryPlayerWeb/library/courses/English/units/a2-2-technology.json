@@ -1831,7 +1831,7 @@
             "The app will not open."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The app will not open.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «The app will not open.». El ejemplo practica: La aplicación no se abre.",
           "audio": "The app will not open.",
           "slow_audio": "The app will not open.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "I need to charge my phone."
           ],
           "explanation": "La forma completa es «I need to charge my phone.».",
-          "audio": "I need to charge my phone.",
-          "slow_audio": "I need to charge my phone.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "open"
           ],
           "explanation": "La forma completa es «The app will not open.»: La aplicación no se abre.",
-          "audio": "The app will not open.",
-          "slow_audio": "The app will not open.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "broken",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «The app will not open.»",
           "target": "La aplicación no se abre.",
           "answer": "The app will not open.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I need to charge my phone.",
               "accepted_answers": [
                 "I need to charge my phone."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The app will not open.",
               "accepted_answers": [
                 "The app will not open."

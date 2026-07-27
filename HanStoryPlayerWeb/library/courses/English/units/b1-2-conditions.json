@@ -1831,7 +1831,7 @@
             "I'd have agreed if you'd explained it."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I'd have agreed if you'd explained it.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «I'd have agreed if you'd explained it.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "I'd have agreed if you'd explained it.",
           "slow_audio": "I'd have agreed if you'd explained it.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Call me if you need help."
           ],
           "explanation": "La forma completa es «Call me if you need help.».",
-          "audio": "Call me if you need help.",
-          "slow_audio": "Call me if you need help.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "it"
           ],
           "explanation": "La forma completa es «I'd have agreed if you'd explained it.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "I'd have agreed if you'd explained it.",
-          "slow_audio": "I'd have agreed if you'd explained it.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Thanks to your help, we solved the problem.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «I'd have agreed if you'd explained it.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "I'd have agreed if you'd explained it.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Call me if you need help.",
               "accepted_answers": [
                 "Call me if you need help."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I'd have agreed if you'd explained it.",
               "accepted_answers": [
                 "I'd have agreed if you'd explained it."

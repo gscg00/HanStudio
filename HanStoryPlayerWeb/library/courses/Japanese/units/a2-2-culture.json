@@ -1831,7 +1831,7 @@
             "ここでは普通、何をしますか。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ここでは普通、何をしますか。»: ¿Qué se suele hacer aquí?",
+          "explanation": "Escuchaste «ここでは普通、何をしますか。». El ejemplo practica: ¿Qué se suele hacer aquí?",
           "audio": "ここでは普通、何をしますか。",
           "slow_audio": "ここでは普通、何をしますか。",
           "tags": [
@@ -1868,8 +1868,8 @@
             "規則を守らなければなりません。"
           ],
           "explanation": "La forma completa es «規則を守らなければなりません。».",
-          "audio": "規則を守らなければなりません。",
-          "slow_audio": "規則を守らなければなりません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1886,8 +1886,8 @@
             "か"
           ],
           "explanation": "La forma completa es «ここでは普通、何をしますか。»: ¿Qué se suele hacer aquí?",
-          "audio": "ここでは普通、何をしますか。",
-          "slow_audio": "ここでは普通、何をしますか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1898,7 +1898,7 @@
         {
           "id": "japanese-a2-2-culture-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高い",
           "accepted_answers": [
@@ -1918,7 +1918,7 @@
         {
           "id": "japanese-a2-2-culture-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué se suele hacer aquí?»",
+          "prompt": "Di en voz alta: «ここでは普通、何をしますか。»",
           "target": "¿Qué se suele hacer aquí?",
           "answer": "ここでは普通、何をしますか。",
           "accepted_answers": [
@@ -1952,7 +1952,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "規則を守らなければなりません。",
               "accepted_answers": [
                 "規則を守らなければなりません。"
@@ -1970,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ここでは普通、何をしますか。",
               "accepted_answers": [
                 "ここでは普通、何をしますか。"

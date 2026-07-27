@@ -2145,7 +2145,7 @@
             "ali"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ali»: allí",
+          "explanation": "Escuchaste «ali». El ejemplo practica: allí",
           "audio": "ali",
           "slow_audio": "ali",
           "tags": [
@@ -2170,8 +2170,8 @@
             "aqui"
           ],
           "explanation": "La forma completa es «aqui».",
-          "audio": "aqui",
-          "slow_audio": "aqui",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2188,8 +2188,8 @@
             "i"
           ],
           "explanation": "La forma completa es «ali»: allí",
-          "audio": "ali",
-          "slow_audio": "ali",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2200,7 +2200,7 @@
         {
           "id": "portuguese-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ahora»",
+          "prompt": "Produce el ejemplo que demuestra: «ahora»",
           "target": "ahora",
           "answer": "agora",
           "accepted_answers": [
@@ -2220,7 +2220,7 @@
         {
           "id": "portuguese-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «allí»",
+          "prompt": "Di en voz alta: «ali»",
           "target": "allí",
           "answer": "ali",
           "accepted_answers": [
@@ -2254,7 +2254,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "aqui",
               "accepted_answers": [
                 "aqui"
@@ -2272,7 +2272,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "ali",
               "accepted_answers": [
                 "ali"

@@ -1831,7 +1831,7 @@
             "Vou para a escola."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Vou para a escola.»: Voy a la escuela.",
+          "explanation": "Escuchaste «Vou para a escola.». El ejemplo practica: Voy a la escuela.",
           "audio": "Vou para a escola.",
           "slow_audio": "Vou para a escola.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "A estação fica à esquerda."
           ],
           "explanation": "La forma completa es «A estação fica à esquerda.».",
-          "audio": "A estação fica à esquerda.",
-          "slow_audio": "A estação fica à esquerda.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "escola"
           ],
           "explanation": "La forma completa es «Vou para a escola.»: Voy a la escuela.",
-          "audio": "Vou para a escola.",
-          "slow_audio": "Vou para a escola.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "esquerda",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «Vou para a escola.»",
           "target": "Voy a la escuela.",
           "answer": "Vou para a escola.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "A estação fica à esquerda.",
               "accepted_answers": [
                 "A estação fica à esquerda."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Vou para a escola.",
               "accepted_answers": [
                 "Vou para a escola."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "esquerda",
               "accepted_answers": [
                 "esquerda"

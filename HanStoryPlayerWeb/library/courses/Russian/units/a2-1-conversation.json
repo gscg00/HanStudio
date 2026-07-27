@@ -1831,7 +1831,7 @@
             "Однако сегодня у меня нет времени."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Однако сегодня у меня нет времени.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «Однако сегодня у меня нет времени.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "Однако сегодня у меня нет времени.",
           "slow_audio": "Однако сегодня у меня нет времени.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Кроме того, мне нужно купить продукты."
           ],
           "explanation": "La forma completa es «Кроме того, мне нужно купить продукты.».",
-          "audio": "Кроме того, мне нужно купить продукты.",
-          "slow_audio": "Кроме того, мне нужно купить продукты.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "времени"
           ],
           "explanation": "La forma completa es «Однако сегодня у меня нет времени.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "Однако сегодня у меня нет времени.",
-          "slow_audio": "Однако сегодня у меня нет времени.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "russian-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "поэтому",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "russian-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «Однако сегодня у меня нет времени.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "Однако сегодня у меня нет времени.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Кроме того, мне нужно купить продукты.",
               "accepted_answers": [
                 "Кроме того, мне нужно купить продукты."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Однако сегодня у меня нет времени.",
               "accepted_answers": [
                 "Однако сегодня у меня нет времени."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "поэтому",
               "accepted_answers": [
                 "поэтому"

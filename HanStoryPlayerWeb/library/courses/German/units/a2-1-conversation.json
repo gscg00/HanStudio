@@ -1831,7 +1831,7 @@
             "Allerdings habe ich heute keine Zeit."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Allerdings habe ich heute keine Zeit.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «Allerdings habe ich heute keine Zeit.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "Allerdings habe ich heute keine Zeit.",
           "slow_audio": "Allerdings habe ich heute keine Zeit.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Außerdem muss ich Essen kaufen."
           ],
           "explanation": "La forma completa es «Außerdem muss ich Essen kaufen.».",
-          "audio": "Außerdem muss ich Essen kaufen.",
-          "slow_audio": "Außerdem muss ich Essen kaufen.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "Zeit"
           ],
           "explanation": "La forma completa es «Allerdings habe ich heute keine Zeit.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "Allerdings habe ich heute keine Zeit.",
-          "slow_audio": "Allerdings habe ich heute keine Zeit.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "deshalb",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «Allerdings habe ich heute keine Zeit.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "Allerdings habe ich heute keine Zeit.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Außerdem muss ich Essen kaufen.",
               "accepted_answers": [
                 "Außerdem muss ich Essen kaufen."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Allerdings habe ich heute keine Zeit.",
               "accepted_answers": [
                 "Allerdings habe ich heute keine Zeit."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "deshalb",
               "accepted_answers": [
                 "deshalb"

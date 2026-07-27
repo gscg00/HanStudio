@@ -1831,7 +1831,7 @@
             "Le rendez-vous est la semaine prochaine."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Le rendez-vous est la semaine prochaine.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «Le rendez-vous est la semaine prochaine.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "Le rendez-vous est la semaine prochaine.",
           "slow_audio": "Le rendez-vous est la semaine prochaine.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "J’arrive à huit heures."
           ],
           "explanation": "La forma completa es «J’arrive à huit heures.».",
-          "audio": "J’arrive à huit heures.",
-          "slow_audio": "J’arrive à huit heures.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "prochaine"
           ],
           "explanation": "La forma completa es «Le rendez-vous est la semaine prochaine.»: La cita es la próxima semana.",
-          "audio": "Le rendez-vous est la semaine prochaine.",
-          "slow_audio": "Le rendez-vous est la semaine prochaine.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "french-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "tôt",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "french-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «Le rendez-vous est la semaine prochaine.»",
           "target": "La cita es la próxima semana.",
           "answer": "Le rendez-vous est la semaine prochaine.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’arrive à huit heures.",
               "accepted_answers": [
                 "J’arrive à huit heures."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Le rendez-vous est la semaine prochaine.",
               "accepted_answers": [
                 "Le rendez-vous est la semaine prochaine."

@@ -1831,7 +1831,7 @@
             "Le train est en retard."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Le train est en retard.»: El tren lleva retraso.",
+          "explanation": "Escuchaste «Le train est en retard.». El ejemplo practica: El tren lleva retraso.",
           "audio": "Le train est en retard.",
           "slow_audio": "Le train est en retard.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Dois-je changer ?"
           ],
           "explanation": "La forma completa es «Dois-je changer ?».",
-          "audio": "Dois-je changer ?",
-          "slow_audio": "Dois-je changer ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "retard"
           ],
           "explanation": "La forma completa es «Le train est en retard.»: El tren lleva retraso.",
-          "audio": "Le train est en retard.",
-          "slow_audio": "Le train est en retard.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "french-a1-2-transport-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «aeropuerto»",
+          "prompt": "Produce el ejemplo que demuestra: «aeropuerto»",
           "target": "aeropuerto",
           "answer": "aéroport",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "french-a1-2-transport-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tren lleva retraso.»",
+          "prompt": "Di en voz alta: «Le train est en retard.»",
           "target": "El tren lleva retraso.",
           "answer": "Le train est en retard.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Dois-je changer ?",
               "accepted_answers": [
                 "Dois-je changer ?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Le train est en retard.",
               "accepted_answers": [
                 "Le train est en retard."

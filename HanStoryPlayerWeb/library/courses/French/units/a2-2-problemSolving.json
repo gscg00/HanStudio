@@ -1831,7 +1831,7 @@
             "Il nous faut plus d’informations."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il nous faut plus d’informations.»: Necesitamos más información.",
+          "explanation": "Escuchaste «Il nous faut plus d’informations.». El ejemplo practica: Necesitamos más información.",
           "audio": "Il nous faut plus d’informations.",
           "slow_audio": "Il nous faut plus d’informations.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Ça ne résoudra pas le problème."
           ],
           "explanation": "La forma completa es «Ça ne résoudra pas le problème.».",
-          "audio": "Ça ne résoudra pas le problème.",
-          "slow_audio": "Ça ne résoudra pas le problème.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "d’informations"
           ],
           "explanation": "La forma completa es «Il nous faut plus d’informations.»: Necesitamos más información.",
-          "audio": "Il nous faut plus d’informations.",
-          "slow_audio": "Il nous faut plus d’informations.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a2-2-problemSolving-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Cuándo estará listo?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Cuándo estará listo?»",
           "target": "¿Cuándo estará listo?",
           "answer": "Quand est-ce que ce sera prêt ?",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a2-2-problemSolving-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesitamos más información.»",
+          "prompt": "Di en voz alta: «Il nous faut plus d’informations.»",
           "target": "Necesitamos más información.",
           "answer": "Il nous faut plus d’informations.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Ça ne résoudra pas le problème.",
               "accepted_answers": [
                 "Ça ne résoudra pas le problème."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Il nous faut plus d’informations.",
               "accepted_answers": [
                 "Il nous faut plus d’informations."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Quand est-ce que ce sera prêt ?",
               "accepted_answers": [
                 "Quand est-ce que ce sera prêt ?"

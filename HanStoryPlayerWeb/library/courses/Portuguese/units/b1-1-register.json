@@ -1831,7 +1831,7 @@
             "Lamento informar que a marcação foi cancelada."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Lamento informar que a marcação foi cancelada.»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «Lamento informar que a marcação foi cancelada.». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "Lamento informar que a marcação foi cancelada.",
           "slow_audio": "Lamento informar que a marcação foi cancelada.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Obrigado por me avisar com antecedência."
           ],
           "explanation": "La forma completa es «Obrigado por me avisar com antecedência.».",
-          "audio": "Obrigado por me avisar com antecedência.",
-          "slow_audio": "Obrigado por me avisar com antecedência.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "cancelada"
           ],
           "explanation": "La forma completa es «Lamento informar que a marcação foi cancelada.»: Lamento informarle de que la cita se canceló.",
-          "audio": "Lamento informar que a marcação foi cancelada.",
-          "slow_audio": "Lamento informar que a marcação foi cancelada.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Vamos dividir o trabalho.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «Lamento informar que a marcação foi cancelada.»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "Lamento informar que a marcação foi cancelada.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Obrigado por me avisar com antecedência.",
               "accepted_answers": [
                 "Obrigado por me avisar com antecedência."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Lamento informar que a marcação foi cancelada.",
               "accepted_answers": [
                 "Lamento informar que a marcação foi cancelada."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Vamos dividir o trabalho.",
               "accepted_answers": [
                 "Vamos dividir o trabalho."

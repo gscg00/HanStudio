@@ -3106,8 +3106,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «dobles».",
-          "audio": "pala / palla",
-          "slow_audio": "pala / palla",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -3119,12 +3119,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "R",
+          "answer": "Roma",
           "accepted_answers": [
-            "R"
+            "Roma"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «R»: Vibra como en español.",
+          "explanation": "Escuchaste «Roma». El ejemplo practica: Vibra como en español.",
           "audio": "Roma",
           "slow_audio": "Roma",
           "tags": [
@@ -3149,8 +3149,8 @@
             "dobles"
           ],
           "explanation": "La forma completa es «dobles».",
-          "audio": "pala / palla",
-          "slow_audio": "pala / palla",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -3167,8 +3167,8 @@
             "R"
           ],
           "explanation": "La forma completa es «R»: Vibra como en español.",
-          "audio": "Roma",
-          "slow_audio": "Roma",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -3179,15 +3179,15 @@
         {
           "id": "italian-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Puede ser sonora o sorda.»",
+          "prompt": "Produce el ejemplo que demuestra: «Puede ser sonora o sorda.»",
           "target": "Puede ser sonora o sorda.",
-          "answer": "Z",
+          "answer": "zero / pizza",
           "accepted_answers": [
-            "Z"
+            "zero / pizza"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «Z».",
+          "explanation": "Una respuesta adecuada es «zero / pizza».",
           "audio": "zero / pizza",
           "slow_audio": "zero / pizza",
           "tags": [
@@ -3199,16 +3199,16 @@
         {
           "id": "italian-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Vibra como en español.»",
+          "prompt": "Di en voz alta: «Roma»",
           "target": "Vibra como en español.",
-          "answer": "R",
+          "answer": "Roma",
           "accepted_answers": [
-            "R"
+            "Roma"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «R». También puedes escribirlo.",
+          "explanation": "El modelo es «Roma». También puedes escribirlo.",
           "audio": "Roma",
           "slow_audio": "Roma",
           "tags": [
@@ -3233,10 +3233,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
-              "answer": "dobles",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "pala / palla",
               "accepted_answers": [
-                "dobles"
+                "pala / palla"
               ],
               "audio": "pala / palla",
               "allow_minor_typos": true,
@@ -3251,10 +3251,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
-              "answer": "R",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "Roma",
               "accepted_answers": [
-                "R"
+                "Roma"
               ],
               "audio": "Roma",
               "allow_minor_typos": true,

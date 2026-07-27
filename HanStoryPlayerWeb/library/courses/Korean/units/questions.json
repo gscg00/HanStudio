@@ -638,7 +638,7 @@
             "어떻게"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «어떻게»: cómo",
+          "explanation": "Escuchaste «어떻게». El ejemplo practica: cómo",
           "audio": "어떻게",
           "slow_audio": "어떻게",
           "tags": [
@@ -662,8 +662,8 @@
             "언제"
           ],
           "explanation": "La forma completa es «언제».",
-          "audio": "언제",
-          "slow_audio": "언제",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -680,8 +680,8 @@
             "게"
           ],
           "explanation": "La forma completa es «어떻게»: cómo",
-          "audio": "어떻게",
-          "slow_audio": "어떻게",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -692,7 +692,7 @@
         {
           "id": "korean-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "왜",
           "accepted_answers": [
@@ -712,7 +712,7 @@
         {
           "id": "korean-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «어떻게»",
           "target": "cómo",
           "answer": "어떻게",
           "accepted_answers": [
@@ -746,7 +746,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "언제",
               "accepted_answers": [
                 "언제"
@@ -764,7 +764,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "어떻게",
               "accepted_answers": [
                 "어떻게"

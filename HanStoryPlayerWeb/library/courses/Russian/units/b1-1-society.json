@@ -1831,7 +1831,7 @@
             "Городские власти объявили о новом плане."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Городские власти объявили о новом плане.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «Городские власти объявили о новом плане.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "Городские власти объявили о новом плане.",
           "slow_audio": "Городские власти объявили о новом плане.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Загрязнение влияет на наше здоровье."
           ],
           "explanation": "La forma completa es «Загрязнение влияет на наше здоровье.».",
-          "audio": "Загрязнение влияет на наше здоровье.",
-          "slow_audio": "Загрязнение влияет на наше здоровье.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "плане"
           ],
           "explanation": "La forma completa es «Городские власти объявили о новом плане.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "Городские власти объявили о новом плане.",
-          "slow_audio": "Городские власти объявили о новом плане.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "высокий",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «Городские власти объявили о новом плане.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "Городские власти объявили о новом плане.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Загрязнение влияет на наше здоровье.",
               "accepted_answers": [
                 "Загрязнение влияет на наше здоровье."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Городские власти объявили о новом плане.",
               "accepted_answers": [
                 "Городские власти объявили о новом плане."

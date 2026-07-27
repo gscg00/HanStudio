@@ -1831,7 +1831,7 @@
             "Ho solo contanti."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ho solo contanti.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «Ho solo contanti.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "Ho solo contanti.",
           "slow_audio": "Ho solo contanti.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Posso pagare con la carta?"
           ],
           "explanation": "La forma completa es «Posso pagare con la carta?».",
-          "audio": "Posso pagare con la carta?",
-          "slow_audio": "Posso pagare con la carta?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "contanti"
           ],
           "explanation": "La forma completa es «Ho solo contanti.»: Solo tengo efectivo.",
-          "audio": "Ho solo contanti.",
-          "slow_audio": "Ho solo contanti.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "carta",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «Ho solo contanti.»",
           "target": "Solo tengo efectivo.",
           "answer": "Ho solo contanti.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Posso pagare con la carta?",
               "accepted_answers": [
                 "Posso pagare con la carta?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Ho solo contanti.",
               "accepted_answers": [
                 "Ho solo contanti."

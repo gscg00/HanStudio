@@ -1831,7 +1831,7 @@
             "疲れていましたが、仕事を終えました。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «疲れていましたが、仕事を終えました。»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «疲れていましたが、仕事を終えました。». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "疲れていましたが、仕事を終えました。",
           "slow_audio": "疲れていましたが、仕事を終えました。",
           "tags": [
@@ -1867,8 +1867,8 @@
             "その結果、計画が遅れました。"
           ],
           "explanation": "La forma completa es «その結果、計画が遅れました。».",
-          "audio": "その結果、計画が遅れました。",
-          "slow_audio": "その結果、計画が遅れました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1885,8 +1885,8 @@
             "た"
           ],
           "explanation": "La forma completa es «疲れていましたが、仕事を終えました。»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "疲れていましたが、仕事を終えました。",
-          "slow_audio": "疲れていましたが、仕事を終えました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1897,7 +1897,7 @@
         {
           "id": "japanese-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "どう思いますか。",
           "accepted_answers": [
@@ -1917,7 +1917,7 @@
         {
           "id": "japanese-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «疲れていましたが、仕事を終えました。»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "疲れていましたが、仕事を終えました。",
           "accepted_answers": [
@@ -1951,7 +1951,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "その結果、計画が遅れました。",
               "accepted_answers": [
                 "その結果、計画が遅れました。"
@@ -1969,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "疲れていましたが、仕事を終えました。",
               "accepted_answers": [
                 "疲れていましたが、仕事を終えました。"

@@ -1831,7 +1831,7 @@
             "Режиссёр показывает две точки зрения."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Режиссёр показывает две точки зрения.»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «Режиссёр показывает две точки зрения.». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "Режиссёр показывает две точки зрения.",
           "slow_audio": "Режиссёр показывает две точки зрения.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Концовка меня очень удивила."
           ],
           "explanation": "La forma completa es «Концовка меня очень удивила.».",
-          "audio": "Концовка меня очень удивила.",
-          "slow_audio": "Концовка меня очень удивила.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "зрения"
           ],
           "explanation": "La forma completa es «Режиссёр показывает две точки зрения.»: La directora muestra dos puntos de vista.",
-          "audio": "Режиссёр показывает две точки зрения.",
-          "slow_audio": "Режиссёр показывает две точки зрения.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "Этот обычай меня удивил.",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «Режиссёр показывает две точки зрения.»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "Режиссёр показывает две точки зрения.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Концовка меня очень удивила.",
               "accepted_answers": [
                 "Концовка меня очень удивила."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Режиссёр показывает две точки зрения.",
               "accepted_answers": [
                 "Режиссёр показывает две точки зрения."

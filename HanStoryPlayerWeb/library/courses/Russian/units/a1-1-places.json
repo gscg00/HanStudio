@@ -1831,7 +1831,7 @@
             "Я иду в школу."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я иду в школу.»: Voy a la escuela.",
+          "explanation": "Escuchaste «Я иду в школу.». El ejemplo practica: Voy a la escuela.",
           "audio": "Я иду в школу.",
           "slow_audio": "Я иду в школу.",
           "tags": [
@@ -1855,8 +1855,8 @@
             "Вокзал слева."
           ],
           "explanation": "La forma completa es «Вокзал слева.».",
-          "audio": "Вокзал слева.",
-          "slow_audio": "Вокзал слева.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "школу"
           ],
           "explanation": "La forma completa es «Я иду в школу.»: Voy a la escuela.",
-          "audio": "Я иду в школу.",
-          "slow_audio": "Я иду в школу.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "russian-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "налево",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "russian-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «Я иду в школу.»",
           "target": "Voy a la escuela.",
           "answer": "Я иду в школу.",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Вокзал слева.",
               "accepted_answers": [
                 "Вокзал слева."
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я иду в школу.",
               "accepted_answers": [
                 "Я иду в школу."
@@ -1975,7 +1975,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "налево",
               "accepted_answers": [
                 "налево"

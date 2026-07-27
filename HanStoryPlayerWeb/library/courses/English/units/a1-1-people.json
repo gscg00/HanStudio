@@ -1831,7 +1831,7 @@
             "How old are you?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «How old are you?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «How old are you?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "How old are you?",
           "slow_audio": "How old are you?",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Who is that?"
           ],
           "explanation": "La forma completa es «Who is that?».",
-          "audio": "Who is that?",
-          "slow_audio": "Who is that?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "you"
           ],
           "explanation": "La forma completa es «How old are you?»: ¿Cuántos años tienes?",
-          "audio": "How old are you?",
-          "slow_audio": "How old are you?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "english-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "woman",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "english-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «How old are you?»",
           "target": "¿Cuántos años tienes?",
           "answer": "How old are you?",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Who is that?",
               "accepted_answers": [
                 "Who is that?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "How old are you?",
               "accepted_answers": [
                 "How old are you?"

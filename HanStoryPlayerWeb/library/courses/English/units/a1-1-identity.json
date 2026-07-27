@@ -1829,7 +1829,7 @@
             "I am from Mexico."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I am from Mexico.»: Soy de México.",
+          "explanation": "Escuchaste «I am from Mexico.». El ejemplo practica: Soy de México.",
           "audio": "I am from Mexico.",
           "slow_audio": "I am from Mexico.",
           "tags": [
@@ -1855,8 +1855,8 @@
             "What is your name?"
           ],
           "explanation": "La forma completa es «What is your name?».",
-          "audio": "What is your name?",
-          "slow_audio": "What is your name?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "Mexico"
           ],
           "explanation": "La forma completa es «I am from Mexico.»: Soy de México.",
-          "audio": "I am from Mexico.",
-          "slow_audio": "I am from Mexico.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "english-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "language",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "english-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «I am from Mexico.»",
           "target": "Soy de México.",
           "answer": "I am from Mexico.",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "What is your name?",
               "accepted_answers": [
                 "What is your name?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I am from Mexico.",
               "accepted_answers": [
                 "I am from Mexico."

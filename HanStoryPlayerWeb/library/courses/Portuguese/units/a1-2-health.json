@@ -1831,7 +1831,7 @@
             "Tome isto duas vezes por dia."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Tome isto duas vezes por dia.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Tome isto duas vezes por dia.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Tome isto duas vezes por dia.",
           "slow_audio": "Tome isto duas vezes por dia.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Tenho alergia à penicilina."
           ],
           "explanation": "La forma completa es «Tenho alergia à penicilina.».",
-          "audio": "Tenho alergia à penicilina.",
-          "slow_audio": "Tenho alergia à penicilina.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "dia"
           ],
           "explanation": "La forma completa es «Tome isto duas vezes por dia.»: Tome esto dos veces al día.",
-          "audio": "Tome isto duas vezes por dia.",
-          "slow_audio": "Tome isto duas vezes por dia.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "médico",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Tome isto duas vezes por dia.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Tome isto duas vezes por dia.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Tenho alergia à penicilina.",
               "accepted_answers": [
                 "Tenho alergia à penicilina."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Tome isto duas vezes por dia.",
               "accepted_answers": [
                 "Tome isto duas vezes por dia."

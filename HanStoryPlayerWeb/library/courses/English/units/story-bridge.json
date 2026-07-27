@@ -2145,7 +2145,7 @@
             "Is there a place to study?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Is there a place to study?»: ¿Hay un lugar para estudiar?",
+          "explanation": "Escuchaste «Is there a place to study?». El ejemplo practica: ¿Hay un lugar para estudiar?",
           "audio": "Is there a place to study?",
           "slow_audio": "Is there a place to study?",
           "tags": [
@@ -2171,8 +2171,8 @@
             "There are also computers."
           ],
           "explanation": "La forma completa es «There are also computers.».",
-          "audio": "There are also computers.",
-          "slow_audio": "There are also computers.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2189,8 +2189,8 @@
             "study"
           ],
           "explanation": "La forma completa es «Is there a place to study?»: ¿Hay un lugar para estudiar?",
-          "audio": "Is there a place to study?",
-          "slow_audio": "Is there a place to study?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2201,7 +2201,7 @@
         {
           "id": "english-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Sí. Es muy tranquilo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Sí. Es muy tranquilo.»",
           "target": "Sí. Es muy tranquilo.",
           "answer": "Yes. It is very quiet.",
           "accepted_answers": [
@@ -2221,7 +2221,7 @@
         {
           "id": "english-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Hay un lugar para estudiar?»",
+          "prompt": "Di en voz alta: «Is there a place to study?»",
           "target": "¿Hay un lugar para estudiar?",
           "answer": "Is there a place to study?",
           "accepted_answers": [
@@ -2255,7 +2255,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "There are also computers.",
               "accepted_answers": [
                 "There are also computers."
@@ -2273,7 +2273,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Is there a place to study?",
               "accepted_answers": [
                 "Is there a place to study?"
@@ -2291,7 +2291,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Yes. It is very quiet.",
               "accepted_answers": [
                 "Yes. It is very quiet."

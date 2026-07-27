@@ -1831,7 +1831,7 @@
             "Estudo à tarde."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Estudo à tarde.»: Estudio por la tarde.",
+          "explanation": "Escuchaste «Estudo à tarde.». El ejemplo practica: Estudio por la tarde.",
           "audio": "Estudo à tarde.",
           "slow_audio": "Estudo à tarde.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Levanto-me às sete."
           ],
           "explanation": "La forma completa es «Levanto-me às sete.».",
-          "audio": "Levanto-me às sete.",
-          "slow_audio": "Levanto-me às sete.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "tarde"
           ],
           "explanation": "La forma completa es «Estudo à tarde.»: Estudio por la tarde.",
-          "audio": "Estudo à tarde.",
-          "slow_audio": "Estudo à tarde.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "portuguese-a1-1-routine-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mañana»",
+          "prompt": "Produce el ejemplo que demuestra: «mañana»",
           "target": "mañana",
           "answer": "manhã",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "portuguese-a1-1-routine-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estudio por la tarde.»",
+          "prompt": "Di en voz alta: «Estudo à tarde.»",
           "target": "Estudio por la tarde.",
           "answer": "Estudo à tarde.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Levanto-me às sete.",
               "accepted_answers": [
                 "Levanto-me às sete."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Estudo à tarde.",
               "accepted_answers": [
                 "Estudo à tarde."

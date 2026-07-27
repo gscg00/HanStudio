@@ -1831,7 +1831,7 @@
             "I do not like it, although it is useful."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «I do not like it, although it is useful.»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «I do not like it, although it is useful.». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "I do not like it, although it is useful.",
           "slow_audio": "I do not like it, although it is useful.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "I like it because it is simple."
           ],
           "explanation": "La forma completa es «I like it because it is simple.».",
-          "audio": "I like it because it is simple.",
-          "slow_audio": "I like it because it is simple.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "useful"
           ],
           "explanation": "La forma completa es «I do not like it, although it is useful.»: No me gusta, aunque es útil.",
-          "audio": "I do not like it, although it is useful.",
-          "slow_audio": "I do not like it, although it is useful.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "english-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "that is why",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "english-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «I do not like it, although it is useful.»",
           "target": "No me gusta, aunque es útil.",
           "answer": "I do not like it, although it is useful.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I like it because it is simple.",
               "accepted_answers": [
                 "I like it because it is simple."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I do not like it, although it is useful.",
               "accepted_answers": [
                 "I do not like it, although it is useful."

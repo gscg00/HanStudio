@@ -1831,7 +1831,7 @@
             "Quantos anos tem?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quantos anos tem?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Quantos anos tem?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "tags": [
@@ -1855,8 +1855,8 @@
             "Quem é?"
           ],
           "explanation": "La forma completa es «Quem é?».",
-          "audio": "Quem é?",
-          "slow_audio": "Quem é?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "tem"
           ],
           "explanation": "La forma completa es «Quantos anos tem?»: ¿Cuántos años tienes?",
-          "audio": "Quantos anos tem?",
-          "slow_audio": "Quantos anos tem?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "portuguese-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "mulher",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "portuguese-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «Quantos anos tem?»",
           "target": "¿Cuántos años tienes?",
           "answer": "Quantos anos tem?",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Quem é?",
               "accepted_answers": [
                 "Quem é?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Quantos anos tem?",
               "accepted_answers": [
                 "Quantos anos tem?"

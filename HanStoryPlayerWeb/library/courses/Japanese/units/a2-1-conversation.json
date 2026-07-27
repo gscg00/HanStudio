@@ -1831,7 +1831,7 @@
             "しかし、今日は時間がありません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «しかし、今日は時間がありません。»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «しかし、今日は時間がありません。». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "しかし、今日は時間がありません。",
           "slow_audio": "しかし、今日は時間がありません。",
           "tags": [
@@ -1871,8 +1871,8 @@
             "それに、食べ物を買う必要があります。"
           ],
           "explanation": "La forma completa es «それに、食べ物を買う必要があります。».",
-          "audio": "それに、食べ物を買う必要があります。",
-          "slow_audio": "それに、食べ物を買う必要があります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1889,8 +1889,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «しかし、今日は時間がありません。»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "しかし、今日は時間がありません。",
-          "slow_audio": "しかし、今日は時間がありません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1901,7 +1901,7 @@
         {
           "id": "japanese-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "だから",
           "accepted_answers": [
@@ -1921,7 +1921,7 @@
         {
           "id": "japanese-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «しかし、今日は時間がありません。»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "しかし、今日は時間がありません。",
           "accepted_answers": [
@@ -1955,7 +1955,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "それに、食べ物を買う必要があります。",
               "accepted_answers": [
                 "それに、食べ物を買う必要があります。"
@@ -1973,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "しかし、今日は時間がありません。",
               "accepted_answers": [
                 "しかし、今日は時間がありません。"
@@ -1991,7 +1991,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "だから",
               "accepted_answers": [
                 "だから"

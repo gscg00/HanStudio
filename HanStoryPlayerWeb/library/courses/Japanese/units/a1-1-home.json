@@ -1831,7 +1831,7 @@
             "私の部屋は小さいです。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «私の部屋は小さいです。»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «私の部屋は小さいです。». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "私の部屋は小さいです。",
           "slow_audio": "私の部屋は小さいです。",
           "tags": [
@@ -1867,8 +1867,8 @@
             "鍵はテーブルの上にあります。"
           ],
           "explanation": "La forma completa es «鍵はテーブルの上にあります。».",
-          "audio": "鍵はテーブルの上にあります。",
-          "slow_audio": "鍵はテーブルの上にあります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1885,8 +1885,8 @@
             "す"
           ],
           "explanation": "La forma completa es «私の部屋は小さいです。»: Mi habitación es pequeña.",
-          "audio": "私の部屋は小さいです。",
-          "slow_audio": "私の部屋は小さいです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1897,7 +1897,7 @@
         {
           "id": "japanese-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "ドア",
           "accepted_answers": [
@@ -1917,7 +1917,7 @@
         {
           "id": "japanese-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «私の部屋は小さいです。»",
           "target": "Mi habitación es pequeña.",
           "answer": "私の部屋は小さいです。",
           "accepted_answers": [
@@ -1951,7 +1951,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "鍵はテーブルの上にあります。",
               "accepted_answers": [
                 "鍵はテーブルの上にあります。"
@@ -1969,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "私の部屋は小さいです。",
               "accepted_answers": [
                 "私の部屋は小さいです。"

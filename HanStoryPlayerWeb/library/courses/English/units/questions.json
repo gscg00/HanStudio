@@ -638,7 +638,7 @@
             "how"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «how»: cómo",
+          "explanation": "Escuchaste «how». El ejemplo practica: cómo",
           "audio": "how",
           "slow_audio": "how",
           "tags": [
@@ -662,8 +662,8 @@
             "when"
           ],
           "explanation": "La forma completa es «when».",
-          "audio": "when",
-          "slow_audio": "when",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -680,8 +680,8 @@
             "w"
           ],
           "explanation": "La forma completa es «how»: cómo",
-          "audio": "how",
-          "slow_audio": "how",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -692,7 +692,7 @@
         {
           "id": "english-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "why",
           "accepted_answers": [
@@ -712,7 +712,7 @@
         {
           "id": "english-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «how»",
           "target": "cómo",
           "answer": "how",
           "accepted_answers": [
@@ -746,7 +746,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "when",
               "accepted_answers": [
                 "when"
@@ -764,7 +764,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "how",
               "accepted_answers": [
                 "how"

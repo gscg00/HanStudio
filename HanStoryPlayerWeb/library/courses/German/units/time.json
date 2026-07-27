@@ -4228,7 +4228,7 @@
             "Bahnhof"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Bahnhof»: estación",
+          "explanation": "Escuchaste «Bahnhof». El ejemplo practica: estación",
           "audio": "Bahnhof",
           "slow_audio": "Bahnhof",
           "tags": [
@@ -4252,8 +4252,8 @@
             "Schule"
           ],
           "explanation": "La forma completa es «Schule».",
-          "audio": "Schule",
-          "slow_audio": "Schule",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4270,8 +4270,8 @@
             "f"
           ],
           "explanation": "La forma completa es «Bahnhof»: estación",
-          "audio": "Bahnhof",
-          "slow_audio": "Bahnhof",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4282,7 +4282,7 @@
         {
           "id": "german-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "was",
           "accepted_answers": [
@@ -4302,7 +4302,7 @@
         {
           "id": "german-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «Bahnhof»",
           "target": "estación",
           "answer": "Bahnhof",
           "accepted_answers": [
@@ -4336,7 +4336,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Schule",
               "accepted_answers": [
                 "Schule"
@@ -4354,7 +4354,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Bahnhof",
               "accepted_answers": [
                 "Bahnhof"

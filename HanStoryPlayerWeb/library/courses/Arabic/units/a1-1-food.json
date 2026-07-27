@@ -1831,7 +1831,7 @@
             "أريد قليلًا من الأرز."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أريد قليلًا من الأرز.»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «أريد قليلًا من الأرز.». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "أريد قليلًا من الأرز.",
           "slow_audio": "أريد قليلًا من الأرز.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "أشرب الشاي في الصباح."
           ],
           "explanation": "La forma completa es «أشرب الشاي في الصباح.».",
-          "audio": "أشرب الشاي في الصباح.",
-          "slow_audio": "أشرب الشاي في الصباح.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "الأرز"
           ],
           "explanation": "La forma completa es «أريد قليلًا من الأرز.»: Quiero un poco de arroz.",
-          "audio": "أريد قليلًا من الأرز.",
-          "slow_audio": "أريد قليلًا من الأرز.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "arabic-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "لحم",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "arabic-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «أريد قليلًا من الأرز.»",
           "target": "Quiero un poco de arroz.",
           "answer": "أريد قليلًا من الأرز.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أشرب الشاي في الصباح.",
               "accepted_answers": [
                 "أشرب الشاي في الصباح."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أريد قليلًا من الأرز.",
               "accepted_answers": [
                 "أريد قليلًا من الأرز."

@@ -1831,7 +1831,7 @@
             "La mairie a annoncé un nouveau projet."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «La mairie a annoncé un nouveau projet.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «La mairie a annoncé un nouveau projet.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "La mairie a annoncé un nouveau projet.",
           "slow_audio": "La mairie a annoncé un nouveau projet.",
           "tags": [
@@ -1861,8 +1861,8 @@
             "La pollution a des effets sur notre santé."
           ],
           "explanation": "La forma completa es «La pollution a des effets sur notre santé.».",
-          "audio": "La pollution a des effets sur notre santé.",
-          "slow_audio": "La pollution a des effets sur notre santé.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "projet"
           ],
           "explanation": "La forma completa es «La mairie a annoncé un nouveau projet.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "La mairie a annoncé un nouveau projet.",
-          "slow_audio": "La mairie a annoncé un nouveau projet.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "french-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "haut",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "french-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «La mairie a annoncé un nouveau projet.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "La mairie a annoncé un nouveau projet.",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La pollution a des effets sur notre santé.",
               "accepted_answers": [
                 "La pollution a des effets sur notre santé."
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La mairie a annoncé un nouveau projet.",
               "accepted_answers": [
                 "La mairie a annoncé un nouveau projet."

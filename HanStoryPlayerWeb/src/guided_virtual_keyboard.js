@@ -72,6 +72,16 @@ const LANGUAGE_PAGES={
 const isHan=value=>/[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/u.test(value);
 const isJapaneseKanji=value=>isHan(value);
 const uniqueCharacters=(text,predicate)=>[...new Set([...String(text||'')].filter(character=>predicate(character)))];
+const isRequiredSign=value=>/[^\p{L}\p{N}\s]/u.test(value);
+
+function activityAnswerText(activity){
+  const direct=[activity?.answer,...(activity?.accepted_answers||[])];
+  const turns=(activity?.turns||[]).flatMap(turn=>[
+    turn?.answer,
+    ...(turn?.accepted_answers||[])
+  ]);
+  return[...direct,...turns].filter(Boolean).join('');
+}
 
 export function decomposeHangulText(value){
   const output=[];
@@ -128,7 +138,7 @@ export function applyVirtualKey(value,key,language){
 
 export function virtualKeyboardLayout(language,lessonActivities=[]){
   const pages=(LANGUAGE_PAGES[language]||LANGUAGE_PAGES.English).map(item=>({...item,rows:item.rows.map(row=>[...row])}));
-  const lessonText=(lessonActivities||[]).flatMap(activity=>[activity.answer,...(activity.accepted_answers||[])]).join('');
+  const lessonText=(lessonActivities||[]).map(activityAnswerText).join('');
   if(language==='Chinese'){
     const characters=uniqueCharacters(lessonText,isHan).slice(0,60);
     if(characters.length)pages.unshift(page('lesson-characters','Caracteres',Array.from({length:Math.ceil(characters.length/10)},(_,index)=>characters.slice(index*10,index*10+10))));
@@ -137,5 +147,8 @@ export function virtualKeyboardLayout(language,lessonActivities=[]){
     const characters=uniqueCharacters(lessonText,isJapaneseKanji).slice(0,60);
     if(characters.length)pages.unshift(page('lesson-kanji','Kanji de la lección',Array.from({length:Math.ceil(characters.length/10)},(_,index)=>characters.slice(index*10,index*10+10))));
   }
+  const available=new Set(pages.flatMap(item=>item.rows.flat()));
+  const requiredSigns=uniqueCharacters(lessonText,isRequiredSign).filter(character=>!available.has(character)).slice(0,30);
+  if(requiredSigns.length)pages.push(page('lesson-signs','Signos',Array.from({length:Math.ceil(requiredSigns.length/10)},(_,index)=>requiredSigns.slice(index*10,index*10+10))));
   return{language,pages};
 }

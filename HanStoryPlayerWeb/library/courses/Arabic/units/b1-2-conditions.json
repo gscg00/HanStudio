@@ -1831,7 +1831,7 @@
             "كنت سأوافق لو شرحت الأمر."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «كنت سأوافق لو شرحت الأمر.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «كنت سأوافق لو شرحت الأمر.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "كنت سأوافق لو شرحت الأمر.",
           "slow_audio": "كنت سأوافق لو شرحت الأمر.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "إذا احتجت إلى مساعدة، اتصل بي."
           ],
           "explanation": "La forma completa es «إذا احتجت إلى مساعدة، اتصل بي.».",
-          "audio": "إذا احتجت إلى مساعدة، اتصل بي.",
-          "slow_audio": "إذا احتجت إلى مساعدة، اتصل بي.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "الأمر"
           ],
           "explanation": "La forma completa es «كنت سأوافق لو شرحت الأمر.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "كنت سأوافق لو شرحت الأمر.",
-          "slow_audio": "كنت سأوافق لو شرحت الأمر.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "arabic-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "بفضل مساعدتك، حللنا المشكلة.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "arabic-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «كنت سأوافق لو شرحت الأمر.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "كنت سأوافق لو شرحت الأمر.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "إذا احتجت إلى مساعدة، اتصل بي.",
               "accepted_answers": [
                 "إذا احتجت إلى مساعدة، اتصل بي."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "كنت سأوافق لو شرحت الأمر.",
               "accepted_answers": [
                 "كنت سأوافق لو شرحت الأمر."

@@ -1831,7 +1831,7 @@
             "Tuttavia, oggi non ho tempo."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Tuttavia, oggi non ho tempo.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «Tuttavia, oggi non ho tempo.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "Tuttavia, oggi non ho tempo.",
           "slow_audio": "Tuttavia, oggi non ho tempo.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Inoltre, devo comprare da mangiare."
           ],
           "explanation": "La forma completa es «Inoltre, devo comprare da mangiare.».",
-          "audio": "Inoltre, devo comprare da mangiare.",
-          "slow_audio": "Inoltre, devo comprare da mangiare.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "tempo"
           ],
           "explanation": "La forma completa es «Tuttavia, oggi non ho tempo.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "Tuttavia, oggi non ho tempo.",
-          "slow_audio": "Tuttavia, oggi non ho tempo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "per questo",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «Tuttavia, oggi non ho tempo.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "Tuttavia, oggi non ho tempo.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Inoltre, devo comprare da mangiare.",
               "accepted_answers": [
                 "Inoltre, devo comprare da mangiare."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Tuttavia, oggi non ho tempo.",
               "accepted_answers": [
                 "Tuttavia, oggi non ho tempo."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "per questo",
               "accepted_answers": [
                 "per questo"

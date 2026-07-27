@@ -4405,7 +4405,7 @@
             "Is he strict?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Is he strict?»: ¿Es estricto?",
+          "explanation": "Escuchaste «Is he strict?». El ejemplo practica: ¿Es estricto?",
           "audio": "Is he strict?",
           "slow_audio": "Is he strict?",
           "tags": [
@@ -4431,8 +4431,8 @@
             "He is also funny."
           ],
           "explanation": "La forma completa es «He is also funny.».",
-          "audio": "He is also funny.",
-          "slow_audio": "He is also funny.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4449,8 +4449,8 @@
             "strict"
           ],
           "explanation": "La forma completa es «Is he strict?»: ¿Es estricto?",
-          "audio": "Is he strict?",
-          "slow_audio": "Is he strict?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4461,7 +4461,7 @@
         {
           "id": "english-reading-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «No.»",
+          "prompt": "Produce el ejemplo que demuestra: «No.»",
           "target": "No.",
           "answer": "No, he isn't.",
           "accepted_answers": [
@@ -4481,7 +4481,7 @@
         {
           "id": "english-reading-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Es estricto?»",
+          "prompt": "Di en voz alta: «Is he strict?»",
           "target": "¿Es estricto?",
           "answer": "Is he strict?",
           "accepted_answers": [
@@ -4515,7 +4515,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "He is also funny.",
               "accepted_answers": [
                 "He is also funny."
@@ -4533,7 +4533,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Is he strict?",
               "accepted_answers": [
                 "Is he strict?"

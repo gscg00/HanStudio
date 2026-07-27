@@ -1831,7 +1831,7 @@
             "週末に進み具合を確認します。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «週末に進み具合を確認します。»: Revisaremos los avances al final de la semana.",
+          "explanation": "Escuchaste «週末に進み具合を確認します。». El ejemplo practica: Revisaremos los avances al final de la semana.",
           "audio": "週末に進み具合を確認します。",
           "slow_audio": "週末に進み具合を確認します。",
           "tags": [
@@ -1873,8 +1873,8 @@
             "始める前に、危険を予想しておくべきです。"
           ],
           "explanation": "La forma completa es «始める前に、危険を予想しておくべきです。».",
-          "audio": "始める前に、危険を予想しておくべきです。",
-          "slow_audio": "始める前に、危険を予想しておくべきです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1891,8 +1891,8 @@
             "す"
           ],
           "explanation": "La forma completa es «週末に進み具合を確認します。»: Revisaremos los avances al final de la semana.",
-          "audio": "週末に進み具合を確認します。",
-          "slow_audio": "週末に進み具合を確認します。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1903,7 +1903,7 @@
         {
           "id": "japanese-b1-2-projects-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "prompt": "Produce el ejemplo que demuestra: «Quiero participar como voluntario.»",
           "target": "Quiero participar como voluntario.",
           "answer": "ボランティアとして参加したいです。",
           "accepted_answers": [
@@ -1923,7 +1923,7 @@
         {
           "id": "japanese-b1-2-projects-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "prompt": "Di en voz alta: «週末に進み具合を確認します。»",
           "target": "Revisaremos los avances al final de la semana.",
           "answer": "週末に進み具合を確認します。",
           "accepted_answers": [
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "始める前に、危険を予想しておくべきです。",
               "accepted_answers": [
                 "始める前に、危険を予想しておくべきです。"
@@ -1975,7 +1975,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "週末に進み具合を確認します。",
               "accepted_answers": [
                 "週末に進み具合を確認します。"

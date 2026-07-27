@@ -1831,7 +1831,7 @@
             "Это напоминает мне похожий случай."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Это напоминает мне похожий случай.»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «Это напоминает мне похожий случай.». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "Это напоминает мне похожий случай.",
           "slow_audio": "Это напоминает мне похожий случай.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Перед продолжением я хочу кое-что уточнить."
           ],
           "explanation": "La forma completa es «Перед продолжением я хочу кое-что уточнить.».",
-          "audio": "Перед продолжением я хочу кое-что уточнить.",
-          "slow_audio": "Перед продолжением я хочу кое-что уточнить.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "случай"
           ],
           "explanation": "La forma completa es «Это напоминает мне похожий случай.»: Eso me recuerda una experiencia parecida.",
-          "audio": "Это напоминает мне похожий случай.",
-          "slow_audio": "Это напоминает мне похожий случай.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "russian-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "Иногда трудно простить.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "russian-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «Это напоминает мне похожий случай.»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "Это напоминает мне похожий случай.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Перед продолжением я хочу кое-что уточнить.",
               "accepted_answers": [
                 "Перед продолжением я хочу кое-что уточнить."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Это напоминает мне похожий случай.",
               "accepted_answers": [
                 "Это напоминает мне похожий случай."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Иногда трудно простить.",
               "accepted_answers": [
                 "Иногда трудно простить."

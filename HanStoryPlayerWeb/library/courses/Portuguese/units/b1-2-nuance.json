@@ -1831,7 +1831,7 @@
             "Deve funcionar se todos participarem."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Deve funcionar se todos participarem.»: Probablemente funcione, siempre que todos participen.",
+          "explanation": "Escuchaste «Deve funcionar se todos participarem.». El ejemplo practica: Probablemente funcione, siempre que todos participen.",
           "audio": "Deve funcionar se todos participarem.",
           "slow_audio": "Deve funcionar se todos participarem.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Isso não significa que seja impossível."
           ],
           "explanation": "La forma completa es «Isso não significa que seja impossível.».",
-          "audio": "Isso não significa que seja impossível.",
-          "slow_audio": "Isso não significa que seja impossível.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "participarem"
           ],
           "explanation": "La forma completa es «Deve funcionar se todos participarem.»: Probablemente funcione, siempre que todos participen.",
-          "audio": "Deve funcionar se todos participarem.",
-          "slow_audio": "Deve funcionar se todos participarem.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "portuguese-b1-2-nuance-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "prompt": "Produce el ejemplo que demuestra: «La recomiendo porque los personajes parecen reales.»",
           "target": "La recomiendo porque los personajes parecen reales.",
           "answer": "Recomendo-o porque as personagens parecem reais.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "portuguese-b1-2-nuance-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "prompt": "Di en voz alta: «Deve funcionar se todos participarem.»",
           "target": "Probablemente funcione, siempre que todos participen.",
           "answer": "Deve funcionar se todos participarem.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Isso não significa que seja impossível.",
               "accepted_answers": [
                 "Isso não significa que seja impossível."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Deve funcionar se todos participarem.",
               "accepted_answers": [
                 "Deve funcionar se todos participarem."

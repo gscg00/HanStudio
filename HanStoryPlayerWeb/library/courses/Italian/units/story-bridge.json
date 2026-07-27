@@ -2145,7 +2145,7 @@
             "Sono le tre."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Sono le tre.»: Son las tres",
+          "explanation": "Escuchaste «Sono le tre.». El ejemplo practica: Son las tres",
           "audio": "Sono le tre.",
           "slow_audio": "Sono le tre.",
           "tags": [
@@ -2170,8 +2170,8 @@
             "Che ore sono?"
           ],
           "explanation": "La forma completa es «Che ore sono?».",
-          "audio": "Che ore sono?",
-          "slow_audio": "Che ore sono?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2188,8 +2188,8 @@
             "tre"
           ],
           "explanation": "La forma completa es «Sono le tre.»: Son las tres",
-          "audio": "Sono le tre.",
-          "slow_audio": "Sono le tre.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2200,7 +2200,7 @@
         {
           "id": "italian-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «lunes»",
+          "prompt": "Produce el ejemplo que demuestra: «lunes»",
           "target": "lunes",
           "answer": "lunedì",
           "accepted_answers": [
@@ -2220,7 +2220,7 @@
         {
           "id": "italian-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Son las tres»",
+          "prompt": "Di en voz alta: «Sono le tre.»",
           "target": "Son las tres",
           "answer": "Sono le tre.",
           "accepted_answers": [
@@ -2254,7 +2254,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Che ore sono?",
               "accepted_answers": [
                 "Che ore sono?"
@@ -2272,7 +2272,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Sono le tre.",
               "accepted_answers": [
                 "Sono le tre."
@@ -2290,7 +2290,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "lunedì",
               "accepted_answers": [
                 "lunedì"

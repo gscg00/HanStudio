@@ -1831,7 +1831,7 @@
             "Oggi il tempo è peggiore di ieri."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Oggi il tempo è peggiore di ieri.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «Oggi il tempo è peggiore di ieri.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "Oggi il tempo è peggiore di ieri.",
           "slow_audio": "Oggi il tempo è peggiore di ieri.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Questa opzione è migliore per me."
           ],
           "explanation": "La forma completa es «Questa opzione è migliore per me.».",
-          "audio": "Questa opzione è migliore per me.",
-          "slow_audio": "Questa opzione è migliore per me.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "ieri"
           ],
           "explanation": "La forma completa es «Oggi il tempo è peggiore di ieri.»: Hoy hace peor tiempo que ayer.",
-          "audio": "Oggi il tempo è peggiore di ieri.",
-          "slow_audio": "Oggi il tempo è peggiore di ieri.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "italian-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "alto",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "italian-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «Oggi il tempo è peggiore di ieri.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "Oggi il tempo è peggiore di ieri.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Questa opzione è migliore per me.",
               "accepted_answers": [
                 "Questa opzione è migliore per me."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Oggi il tempo è peggiore di ieri.",
               "accepted_answers": [
                 "Oggi il tempo è peggiore di ieri."

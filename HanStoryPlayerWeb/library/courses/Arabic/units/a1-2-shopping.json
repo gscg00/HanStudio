@@ -1831,7 +1831,7 @@
             "لدي نقد فقط."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «لدي نقد فقط.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «لدي نقد فقط.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "لدي نقد فقط.",
           "slow_audio": "لدي نقد فقط.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "هل يمكنني الدفع بالبطاقة؟"
           ],
           "explanation": "La forma completa es «هل يمكنني الدفع بالبطاقة؟».",
-          "audio": "هل يمكنني الدفع بالبطاقة؟",
-          "slow_audio": "هل يمكنني الدفع بالبطاقة؟",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "فقط"
           ],
           "explanation": "La forma completa es «لدي نقد فقط.»: Solo tengo efectivo.",
-          "audio": "لدي نقد فقط.",
-          "slow_audio": "لدي نقد فقط.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "arabic-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "بطاقة",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "arabic-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «لدي نقد فقط.»",
           "target": "Solo tengo efectivo.",
           "answer": "لدي نقد فقط.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "هل يمكنني الدفع بالبطاقة؟",
               "accepted_answers": [
                 "هل يمكنني الدفع بالبطاقة؟"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لدي نقد فقط.",
               "accepted_answers": [
                 "لدي نقد فقط."

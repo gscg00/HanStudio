@@ -1831,7 +1831,7 @@
             "A realizadora mostra dois pontos de vista."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «A realizadora mostra dois pontos de vista.»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «A realizadora mostra dois pontos de vista.». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "A realizadora mostra dois pontos de vista.",
           "slow_audio": "A realizadora mostra dois pontos de vista.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "O final surpreendeu-me muito."
           ],
           "explanation": "La forma completa es «O final surpreendeu-me muito.».",
-          "audio": "O final surpreendeu-me muito.",
-          "slow_audio": "O final surpreendeu-me muito.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "vista"
           ],
           "explanation": "La forma completa es «A realizadora mostra dois pontos de vista.»: La directora muestra dos puntos de vista.",
-          "audio": "A realizadora mostra dois pontos de vista.",
-          "slow_audio": "A realizadora mostra dois pontos de vista.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "Este costume surpreendeu-me.",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «A realizadora mostra dois pontos de vista.»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "A realizadora mostra dois pontos de vista.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O final surpreendeu-me muito.",
               "accepted_answers": [
                 "O final surpreendeu-me muito."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "A realizadora mostra dois pontos de vista.",
               "accepted_answers": [
                 "A realizadora mostra dois pontos de vista."

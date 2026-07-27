@@ -1831,7 +1831,7 @@
             "Сколько вам лет?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Сколько вам лет?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Сколько вам лет?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "Сколько вам лет?",
           "slow_audio": "Сколько вам лет?",
           "tags": [
@@ -1855,8 +1855,8 @@
             "Кто это?"
           ],
           "explanation": "La forma completa es «Кто это?».",
-          "audio": "Кто это?",
-          "slow_audio": "Кто это?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1873,8 +1873,8 @@
             "лет"
           ],
           "explanation": "La forma completa es «Сколько вам лет?»: ¿Cuántos años tienes?",
-          "audio": "Сколько вам лет?",
-          "slow_audio": "Сколько вам лет?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1885,7 +1885,7 @@
         {
           "id": "russian-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "женщина",
           "accepted_answers": [
@@ -1905,7 +1905,7 @@
         {
           "id": "russian-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «Сколько вам лет?»",
           "target": "¿Cuántos años tienes?",
           "answer": "Сколько вам лет?",
           "accepted_answers": [
@@ -1939,7 +1939,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Кто это?",
               "accepted_answers": [
                 "Кто это?"
@@ -1957,7 +1957,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Сколько вам лет?",
               "accepted_answers": [
                 "Сколько вам лет?"

@@ -1831,7 +1831,7 @@
             "لكن ليس لدي وقت اليوم."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «لكن ليس لدي وقت اليوم.»: Sin embargo, hoy no tengo tiempo.",
+          "explanation": "Escuchaste «لكن ليس لدي وقت اليوم.». El ejemplo practica: Sin embargo, hoy no tengo tiempo.",
           "audio": "لكن ليس لدي وقت اليوم.",
           "slow_audio": "لكن ليس لدي وقت اليوم.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "بالإضافة إلى ذلك، أحتاج إلى شراء الطعام."
           ],
           "explanation": "La forma completa es «بالإضافة إلى ذلك، أحتاج إلى شراء الطعام.».",
-          "audio": "بالإضافة إلى ذلك، أحتاج إلى شراء الطعام.",
-          "slow_audio": "بالإضافة إلى ذلك، أحتاج إلى شراء الطعام.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "اليوم"
           ],
           "explanation": "La forma completa es «لكن ليس لدي وقت اليوم.»: Sin embargo, hoy no tengo tiempo.",
-          "audio": "لكن ليس لدي وقت اليوم.",
-          "slow_audio": "لكن ليس لدي وقت اليوم.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "arabic-a2-1-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "لذلك",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "arabic-a2-1-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Sin embargo, hoy no tengo tiempo.»",
+          "prompt": "Di en voz alta: «لكن ليس لدي وقت اليوم.»",
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "لكن ليس لدي وقت اليوم.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "بالإضافة إلى ذلك، أحتاج إلى شراء الطعام.",
               "accepted_answers": [
                 "بالإضافة إلى ذلك، أحتاج إلى شراء الطعام."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لكن ليس لدي وقت اليوم.",
               "accepted_answers": [
                 "لكن ليس لدي وقت اليوم."
@@ -1980,7 +1980,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لذلك",
               "accepted_answers": [
                 "لذلك"

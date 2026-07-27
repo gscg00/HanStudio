@@ -1831,7 +1831,7 @@
             "The appointment is next week."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The appointment is next week.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «The appointment is next week.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "The appointment is next week.",
           "slow_audio": "The appointment is next week.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "I arrive at eight."
           ],
           "explanation": "La forma completa es «I arrive at eight.».",
-          "audio": "I arrive at eight.",
-          "slow_audio": "I arrive at eight.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "week"
           ],
           "explanation": "La forma completa es «The appointment is next week.»: La cita es la próxima semana.",
-          "audio": "The appointment is next week.",
-          "slow_audio": "The appointment is next week.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "english-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "early",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "english-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «The appointment is next week.»",
           "target": "La cita es la próxima semana.",
           "answer": "The appointment is next week.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "I arrive at eight.",
               "accepted_answers": [
                 "I arrive at eight."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The appointment is next week.",
               "accepted_answers": [
                 "The appointment is next week."

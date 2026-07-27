@@ -1831,7 +1831,7 @@
             "发生什么事了？"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «发生什么事了？»: ¿Qué pasó?",
+          "explanation": "Escuchaste «发生什么事了？». El ejemplo practica: ¿Qué pasó?",
           "audio": "发生什么事了？",
           "slow_audio": "发生什么事了？",
           "tags": [
@@ -1860,8 +1860,8 @@
             "我没找到钥匙。"
           ],
           "explanation": "La forma completa es «我没找到钥匙。».",
-          "audio": "我没找到钥匙。",
-          "slow_audio": "我没找到钥匙。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "了"
           ],
           "explanation": "La forma completa es «发生什么事了？»: ¿Qué pasó?",
-          "audio": "发生什么事了？",
-          "slow_audio": "发生什么事了？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "chinese-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "发生了",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "chinese-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «发生什么事了？»",
           "target": "¿Qué pasó?",
           "answer": "发生什么事了？",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我没找到钥匙。",
               "accepted_answers": [
                 "我没找到钥匙。"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "发生什么事了？",
               "accepted_answers": [
                 "发生什么事了？"

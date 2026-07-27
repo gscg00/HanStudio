@@ -2462,7 +2462,7 @@
             "마"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «마»: 마: ma",
+          "explanation": "Escuchaste «마». El ejemplo practica: 마: ma",
           "audio": "마",
           "slow_audio": "마",
           "tags": [
@@ -2485,8 +2485,8 @@
             "다"
           ],
           "explanation": "La forma completa es «다».",
-          "audio": "다",
-          "slow_audio": "다",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2503,8 +2503,8 @@
             "마"
           ],
           "explanation": "La forma completa es «마»: 마: ma",
-          "audio": "마",
-          "slow_audio": "마",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2515,7 +2515,7 @@
         {
           "id": "korean-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «바: ba/pa suave»",
+          "prompt": "Produce el ejemplo que demuestra: «바: ba/pa suave»",
           "target": "바: ba/pa suave",
           "answer": "바",
           "accepted_answers": [
@@ -2535,7 +2535,7 @@
         {
           "id": "korean-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «마: ma»",
+          "prompt": "Di en voz alta: «마»",
           "target": "마: ma",
           "answer": "마",
           "accepted_answers": [
@@ -2569,7 +2569,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "다",
               "accepted_answers": [
                 "다"
@@ -2587,7 +2587,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "마",
               "accepted_answers": [
                 "마"

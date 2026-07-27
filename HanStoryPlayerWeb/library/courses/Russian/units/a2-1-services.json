@@ -1831,7 +1831,7 @@
             "Мне нужно починить это сегодня."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Мне нужно починить это сегодня.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «Мне нужно починить это сегодня.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "Мне нужно починить это сегодня.",
           "slow_audio": "Мне нужно починить это сегодня.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Дайте мне чек, пожалуйста."
           ],
           "explanation": "La forma completa es «Дайте мне чек, пожалуйста.».",
-          "audio": "Дайте мне чек, пожалуйста.",
-          "slow_audio": "Дайте мне чек, пожалуйста.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "сегодня"
           ],
           "explanation": "La forma completa es «Мне нужно починить это сегодня.»: Necesito que lo reparen hoy.",
-          "audio": "Мне нужно починить это сегодня.",
-          "slow_audio": "Мне нужно починить это сегодня.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "russian-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "сломанный",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "russian-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «Мне нужно починить это сегодня.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "Мне нужно починить это сегодня.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Дайте мне чек, пожалуйста.",
               "accepted_answers": [
                 "Дайте мне чек, пожалуйста."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне нужно починить это сегодня.",
               "accepted_answers": [
                 "Мне нужно починить это сегодня."

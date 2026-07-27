@@ -1831,7 +1831,7 @@
             "J’aurais accepté si tu me l’avais expliqué."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «J’aurais accepté si tu me l’avais expliqué.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «J’aurais accepté si tu me l’avais expliqué.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "J’aurais accepté si tu me l’avais expliqué.",
           "slow_audio": "J’aurais accepté si tu me l’avais expliqué.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Si tu as besoin d’aide, appelle-moi."
           ],
           "explanation": "La forma completa es «Si tu as besoin d’aide, appelle-moi.».",
-          "audio": "Si tu as besoin d’aide, appelle-moi.",
-          "slow_audio": "Si tu as besoin d’aide, appelle-moi.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "expliqué"
           ],
           "explanation": "La forma completa es «J’aurais accepté si tu me l’avais expliqué.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "J’aurais accepté si tu me l’avais expliqué.",
-          "slow_audio": "J’aurais accepté si tu me l’avais expliqué.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Grâce à ton aide, nous avons résolu le problème.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «J’aurais accepté si tu me l’avais expliqué.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "J’aurais accepté si tu me l’avais expliqué.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Si tu as besoin d’aide, appelle-moi.",
               "accepted_answers": [
                 "Si tu as besoin d’aide, appelle-moi."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’aurais accepté si tu me l’avais expliqué.",
               "accepted_answers": [
                 "J’aurais accepté si tu me l’avais expliqué."

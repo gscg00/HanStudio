@@ -1831,7 +1831,7 @@
             "Je vais à l’école."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je vais à l’école.»: Voy a la escuela.",
+          "explanation": "Escuchaste «Je vais à l’école.». El ejemplo practica: Voy a la escuela.",
           "audio": "Je vais à l’école.",
           "slow_audio": "Je vais à l’école.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "La gare est à gauche."
           ],
           "explanation": "La forma completa es «La gare est à gauche.».",
-          "audio": "La gare est à gauche.",
-          "slow_audio": "La gare est à gauche.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "l’école"
           ],
           "explanation": "La forma completa es «Je vais à l’école.»: Voy a la escuela.",
-          "audio": "Je vais à l’école.",
-          "slow_audio": "Je vais à l’école.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "gauche",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «Je vais à l’école.»",
           "target": "Voy a la escuela.",
           "answer": "Je vais à l’école.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "La gare est à gauche.",
               "accepted_answers": [
                 "La gare est à gauche."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je vais à l’école.",
               "accepted_answers": [
                 "Je vais à l’école."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "gauche",
               "accepted_answers": [
                 "gauche"

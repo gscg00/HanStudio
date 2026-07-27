@@ -31477,7 +31477,7 @@
             "machen"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «machen»: hacer",
+          "explanation": "Escuchaste «machen». El ejemplo practica: hacer",
           "audio": "machen",
           "slow_audio": "machen",
           "tags": [
@@ -31502,8 +31502,8 @@
             "können"
           ],
           "explanation": "La forma completa es «können».",
-          "audio": "können",
-          "slow_audio": "können",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -31520,8 +31520,8 @@
             "n"
           ],
           "explanation": "La forma completa es «machen»: hacer",
-          "audio": "machen",
-          "slow_audio": "machen",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -31532,7 +31532,7 @@
         {
           "id": "german-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cómo»",
+          "prompt": "Produce el ejemplo que demuestra: «cómo»",
           "target": "cómo",
           "answer": "wie",
           "accepted_answers": [
@@ -31552,7 +31552,7 @@
         {
           "id": "german-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «hacer»",
+          "prompt": "Di en voz alta: «machen»",
           "target": "hacer",
           "answer": "machen",
           "accepted_answers": [
@@ -31586,7 +31586,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "können",
               "accepted_answers": [
                 "können"
@@ -31604,7 +31604,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "machen",
               "accepted_answers": [
                 "machen"

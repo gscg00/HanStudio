@@ -1831,7 +1831,7 @@
             "La mia camera è piccola."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «La mia camera è piccola.»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «La mia camera è piccola.». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "La mia camera è piccola.",
           "slow_audio": "La mia camera è piccola.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "La chiave è sul tavolo."
           ],
           "explanation": "La forma completa es «La chiave è sul tavolo.».",
-          "audio": "La chiave è sul tavolo.",
-          "slow_audio": "La chiave è sul tavolo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "piccola"
           ],
           "explanation": "La forma completa es «La mia camera è piccola.»: Mi habitación es pequeña.",
-          "audio": "La mia camera è piccola.",
-          "slow_audio": "La mia camera è piccola.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "porta",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «La mia camera è piccola.»",
           "target": "Mi habitación es pequeña.",
           "answer": "La mia camera è piccola.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "La chiave è sul tavolo.",
               "accepted_answers": [
                 "La chiave è sul tavolo."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "La mia camera è piccola.",
               "accepted_answers": [
                 "La mia camera è piccola."

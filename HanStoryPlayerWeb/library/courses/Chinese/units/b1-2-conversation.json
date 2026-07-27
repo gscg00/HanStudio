@@ -1831,7 +1831,7 @@
             "这让我想起一次相似的经历。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «这让我想起一次相似的经历。»: Eso me recuerda una experiencia parecida.",
+          "explanation": "Escuchaste «这让我想起一次相似的经历。». El ejemplo practica: Eso me recuerda una experiencia parecida.",
           "audio": "这让我想起一次相似的经历。",
           "slow_audio": "这让我想起一次相似的经历。",
           "tags": [
@@ -1868,8 +1868,8 @@
             "继续以前，我想先说明一个细节。"
           ],
           "explanation": "La forma completa es «继续以前，我想先说明一个细节。».",
-          "audio": "继续以前，我想先说明一个细节。",
-          "slow_audio": "继续以前，我想先说明一个细节。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1886,8 +1886,8 @@
             "历"
           ],
           "explanation": "La forma completa es «这让我想起一次相似的经历。»: Eso me recuerda una experiencia parecida.",
-          "audio": "这让我想起一次相似的经历。",
-          "slow_audio": "这让我想起一次相似的经历。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1898,7 +1898,7 @@
         {
           "id": "chinese-b1-2-conversation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «A veces es difícil perdonar.»",
+          "prompt": "Produce el ejemplo que demuestra: «A veces es difícil perdonar.»",
           "target": "A veces es difícil perdonar.",
           "answer": "有时候原谅别人很难。",
           "accepted_answers": [
@@ -1918,7 +1918,7 @@
         {
           "id": "chinese-b1-2-conversation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Eso me recuerda una experiencia parecida.»",
+          "prompt": "Di en voz alta: «这让我想起一次相似的经历。»",
           "target": "Eso me recuerda una experiencia parecida.",
           "answer": "这让我想起一次相似的经历。",
           "accepted_answers": [
@@ -1952,7 +1952,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "继续以前，我想先说明一个细节。",
               "accepted_answers": [
                 "继续以前，我想先说明一个细节。"
@@ -1970,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "这让我想起一次相似的经历。",
               "accepted_answers": [
                 "这让我想起一次相似的经历。"
@@ -1988,7 +1988,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "有时候原谅别人很难。",
               "accepted_answers": [
                 "有时候原谅别人很难。"

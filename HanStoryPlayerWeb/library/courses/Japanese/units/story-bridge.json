@@ -784,7 +784,7 @@
             "かぎはどこですか。はこのなかをみてください。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «かぎはどこですか。はこのなかをみてください。»: Pregunta por una llave y recibe una indicación.",
+          "explanation": "Escuchaste «かぎはどこですか。はこのなかをみてください。». El ejemplo practica: Pregunta por una llave y recibe una indicación.",
           "audio": "かぎはどこですか。はこのなかをみてください。",
           "slow_audio": "かぎはどこですか。はこのなかをみてください。",
           "tags": [
@@ -832,8 +832,8 @@
             "ここはとしょかんです。ほんはつくえのうえにあります。"
           ],
           "explanation": "La forma completa es «ここはとしょかんです。ほんはつくえのうえにあります。».",
-          "audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
-          "slow_audio": "ここはとしょかんです。ほんはつくえのうえにあります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -850,8 +850,8 @@
             "い"
           ],
           "explanation": "La forma completa es «かぎはどこですか。はこのなかをみてください。»: Pregunta por una llave y recibe una indicación.",
-          "audio": "かぎはどこですか。はこのなかをみてください。",
-          "slow_audio": "かぎはどこですか。はこのなかをみてください。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -862,7 +862,7 @@
         {
           "id": "japanese-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Se prohíbe abrir una puerta y se explica el motivo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Se prohíbe abrir una puerta y se explica el motivo.»",
           "target": "Se prohíbe abrir una puerta y se explica el motivo.",
           "answer": "そのドアをあけないでください。あぶないですから。",
           "accepted_answers": [
@@ -882,7 +882,7 @@
         {
           "id": "japanese-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Pregunta por una llave y recibe una indicación.»",
+          "prompt": "Di en voz alta: «かぎはどこですか。はこのなかをみてください。»",
           "target": "Pregunta por una llave y recibe una indicación.",
           "answer": "かぎはどこですか。はこのなかをみてください。",
           "accepted_answers": [
@@ -916,7 +916,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ここはとしょかんです。ほんはつくえのうえにあります。",
               "accepted_answers": [
                 "ここはとしょかんです。ほんはつくえのうえにあります。"
@@ -934,7 +934,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "かぎはどこですか。はこのなかをみてください。",
               "accepted_answers": [
                 "かぎはどこですか。はこのなかをみてください。"
@@ -952,7 +952,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "そのドアをあけないでください。あぶないですから。",
               "accepted_answers": [
                 "そのドアをあけないでください。あぶないですから。"

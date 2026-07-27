@@ -1831,7 +1831,7 @@
             "何がありましたか。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «何がありましたか。»: ¿Qué pasó?",
+          "explanation": "Escuchaste «何がありましたか。». El ejemplo practica: ¿Qué pasó?",
           "audio": "何がありましたか。",
           "slow_audio": "何がありましたか。",
           "tags": [
@@ -1871,8 +1871,8 @@
             "鍵を見つけることができませんでした。"
           ],
           "explanation": "La forma completa es «鍵を見つけることができませんでした。».",
-          "audio": "鍵を見つけることができませんでした。",
-          "slow_audio": "鍵を見つけることができませんでした。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1889,8 +1889,8 @@
             "か"
           ],
           "explanation": "La forma completa es «何がありましたか。»: ¿Qué pasó?",
-          "audio": "何がありましたか。",
-          "slow_audio": "何がありましたか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1901,7 +1901,7 @@
         {
           "id": "japanese-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "起こりました",
           "accepted_answers": [
@@ -1921,7 +1921,7 @@
         {
           "id": "japanese-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «何がありましたか。»",
           "target": "¿Qué pasó?",
           "answer": "何がありましたか。",
           "accepted_answers": [
@@ -1955,7 +1955,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "鍵を見つけることができませんでした。",
               "accepted_answers": [
                 "鍵を見つけることができませんでした。"
@@ -1973,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "何がありましたか。",
               "accepted_answers": [
                 "何がありましたか。"

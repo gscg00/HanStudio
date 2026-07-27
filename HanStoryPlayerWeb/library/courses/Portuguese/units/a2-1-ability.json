@@ -1831,7 +1831,7 @@
             "Aqui não se pode fumar."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Aqui não se pode fumar.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «Aqui não se pode fumar.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "Aqui não se pode fumar.",
           "slow_audio": "Aqui não se pode fumar.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Aqui pode tirar fotografias."
           ],
           "explanation": "La forma completa es «Aqui pode tirar fotografias.».",
-          "audio": "Aqui pode tirar fotografias.",
-          "slow_audio": "Aqui pode tirar fotografias.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "fumar"
           ],
           "explanation": "La forma completa es «Aqui não se pode fumar.»: No se puede fumar aquí.",
-          "audio": "Aqui não se pode fumar.",
-          "slow_audio": "Aqui não se pode fumar.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "necessário",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «Aqui não se pode fumar.»",
           "target": "No se puede fumar aquí.",
           "answer": "Aqui não se pode fumar.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Aqui pode tirar fotografias.",
               "accepted_answers": [
                 "Aqui pode tirar fotografias."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Aqui não se pode fumar.",
               "accepted_answers": [
                 "Aqui não se pode fumar."

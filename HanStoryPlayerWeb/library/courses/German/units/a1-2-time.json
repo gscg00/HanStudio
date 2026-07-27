@@ -1831,7 +1831,7 @@
             "Der Termin ist nächste Woche."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Der Termin ist nächste Woche.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «Der Termin ist nächste Woche.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "Der Termin ist nächste Woche.",
           "slow_audio": "Der Termin ist nächste Woche.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Ich komme um acht Uhr an."
           ],
           "explanation": "La forma completa es «Ich komme um acht Uhr an.».",
-          "audio": "Ich komme um acht Uhr an.",
-          "slow_audio": "Ich komme um acht Uhr an.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "Woche"
           ],
           "explanation": "La forma completa es «Der Termin ist nächste Woche.»: La cita es la próxima semana.",
-          "audio": "Der Termin ist nächste Woche.",
-          "slow_audio": "Der Termin ist nächste Woche.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "früh",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «Der Termin ist nächste Woche.»",
           "target": "La cita es la próxima semana.",
           "answer": "Der Termin ist nächste Woche.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich komme um acht Uhr an.",
               "accepted_answers": [
                 "Ich komme um acht Uhr an."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Der Termin ist nächste Woche.",
               "accepted_answers": [
                 "Der Termin ist nächste Woche."

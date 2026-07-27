@@ -1831,7 +1831,7 @@
             "글쓰기 실력을 향상하고 싶어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «글쓰기 실력을 향상하고 싶어요.»: Quiero mejorar mi escritura.",
+          "explanation": "Escuchaste «글쓰기 실력을 향상하고 싶어요.». El ejemplo practica: Quiero mejorar mi escritura.",
           "audio": "글쓰기 실력을 향상하고 싶어요.",
           "slow_audio": "글쓰기 실력을 향상하고 싶어요.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "이 수업은 어려운 것 같아요."
           ],
           "explanation": "La forma completa es «이 수업은 어려운 것 같아요.».",
-          "audio": "이 수업은 어려운 것 같아요.",
-          "slow_audio": "이 수업은 어려운 것 같아요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "싶어요"
           ],
           "explanation": "La forma completa es «글쓰기 실력을 향상하고 싶어요.»: Quiero mejorar mi escritura.",
-          "audio": "글쓰기 실력을 향상하고 싶어요.",
-          "slow_audio": "글쓰기 실력을 향상하고 싶어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "korean-a2-2-workStudy-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "필수다",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "korean-a2-2-workStudy-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "prompt": "Di en voz alta: «글쓰기 실력을 향상하고 싶어요.»",
           "target": "Quiero mejorar mi escritura.",
           "answer": "글쓰기 실력을 향상하고 싶어요.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "이 수업은 어려운 것 같아요.",
               "accepted_answers": [
                 "이 수업은 어려운 것 같아요."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "글쓰기 실력을 향상하고 싶어요.",
               "accepted_answers": [
                 "글쓰기 실력을 향상하고 싶어요."

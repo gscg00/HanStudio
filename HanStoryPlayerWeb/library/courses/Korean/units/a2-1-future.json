@@ -1831,7 +1831,7 @@
             "도착하면 전화할게요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «도착하면 전화할게요.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «도착하면 전화할게요.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "도착하면 전화할게요.",
           "slow_audio": "도착하면 전화할게요.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "방을 예약하려고 해요."
           ],
           "explanation": "La forma completa es «방을 예약하려고 해요.».",
-          "audio": "방을 예약하려고 해요.",
-          "slow_audio": "방을 예약하려고 해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "전화할게요"
           ],
           "explanation": "La forma completa es «도착하면 전화할게요.»: Te llamaré cuando llegue.",
-          "audio": "도착하면 전화할게요.",
-          "slow_audio": "도착하면 전화할게요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "korean-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "예약하다",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "korean-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «도착하면 전화할게요.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "도착하면 전화할게요.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "방을 예약하려고 해요.",
               "accepted_answers": [
                 "방을 예약하려고 해요."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "도착하면 전화할게요.",
               "accepted_answers": [
                 "도착하면 전화할게요."

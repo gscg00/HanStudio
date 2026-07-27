@@ -1891,8 +1891,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «U».",
-          "audio": "u",
-          "slow_audio": "u",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -1904,12 +1904,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "V",
+          "answer": "vê",
           "accepted_answers": [
-            "V"
+            "vê"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «V»: V: ve",
+          "explanation": "Escuchaste «vê». El ejemplo practica: V: ve",
           "audio": "vê",
           "slow_audio": "vê",
           "tags": [
@@ -1932,8 +1932,8 @@
             "U"
           ],
           "explanation": "La forma completa es «U».",
-          "audio": "u",
-          "slow_audio": "u",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1950,8 +1950,8 @@
             "V"
           ],
           "explanation": "La forma completa es «V»: V: ve",
-          "audio": "vê",
-          "slow_audio": "vê",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1962,15 +1962,15 @@
         {
           "id": "portuguese-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «W: dablio»",
+          "prompt": "Produce el ejemplo que demuestra: «W: dablio»",
           "target": "W: dablio",
-          "answer": "W",
+          "answer": "dáblio",
           "accepted_answers": [
-            "W"
+            "dáblio"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «W».",
+          "explanation": "Una respuesta adecuada es «dáblio».",
           "audio": "dáblio",
           "slow_audio": "dáblio",
           "tags": [
@@ -1982,16 +1982,16 @@
         {
           "id": "portuguese-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «V: ve»",
+          "prompt": "Di en voz alta: «vê»",
           "target": "V: ve",
-          "answer": "V",
+          "answer": "vê",
           "accepted_answers": [
-            "V"
+            "vê"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «V». También puedes escribirlo.",
+          "explanation": "El modelo es «vê». También puedes escribirlo.",
           "audio": "vê",
           "slow_audio": "vê",
           "tags": [
@@ -2016,10 +2016,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
-              "answer": "U",
+              "prompt": "Di o escribe este ejemplo en portugués.",
+              "answer": "u",
               "accepted_answers": [
-                "U"
+                "u"
               ],
               "audio": "u",
               "allow_minor_typos": true,
@@ -2034,10 +2034,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
-              "answer": "V",
+              "prompt": "Di o escribe este ejemplo en portugués.",
+              "answer": "vê",
               "accepted_answers": [
-                "V"
+                "vê"
               ],
               "audio": "vê",
               "allow_minor_typos": true,

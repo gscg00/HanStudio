@@ -520,7 +520,7 @@
             "أين"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أين»: dónde",
+          "explanation": "Escuchaste «أين». El ejemplo practica: dónde",
           "audio": "أين",
           "slow_audio": "أين",
           "tags": [
@@ -543,8 +543,8 @@
             "من"
           ],
           "explanation": "La forma completa es «من».",
-          "audio": "من",
-          "slow_audio": "من",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -561,8 +561,8 @@
             "ن"
           ],
           "explanation": "La forma completa es «أين»: dónde",
-          "audio": "أين",
-          "slow_audio": "أين",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -573,7 +573,7 @@
         {
           "id": "arabic-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cuándo»",
+          "prompt": "Produce el ejemplo que demuestra: «cuándo»",
           "target": "cuándo",
           "answer": "متى",
           "accepted_answers": [
@@ -593,7 +593,7 @@
         {
           "id": "arabic-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «dónde»",
+          "prompt": "Di en voz alta: «أين»",
           "target": "dónde",
           "answer": "أين",
           "accepted_answers": [
@@ -627,7 +627,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "من",
               "accepted_answers": [
                 "من"
@@ -645,7 +645,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أين",
               "accepted_answers": [
                 "أين"

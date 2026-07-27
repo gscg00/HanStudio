@@ -1831,7 +1831,7 @@
             "你多大？"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «你多大？»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «你多大？». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "你多大？",
           "slow_audio": "你多大？",
           "tags": [
@@ -1857,8 +1857,8 @@
             "他是谁？"
           ],
           "explanation": "La forma completa es «他是谁？».",
-          "audio": "他是谁？",
-          "slow_audio": "他是谁？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "大"
           ],
           "explanation": "La forma completa es «你多大？»: ¿Cuántos años tienes?",
-          "audio": "你多大？",
-          "slow_audio": "你多大？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "chinese-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "女人",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "chinese-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «你多大？»",
           "target": "¿Cuántos años tienes?",
           "answer": "你多大？",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "他是谁？",
               "accepted_answers": [
                 "他是谁？"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "你多大？",
               "accepted_answers": [
                 "你多大？"

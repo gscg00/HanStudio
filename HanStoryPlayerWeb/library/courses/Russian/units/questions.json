@@ -638,7 +638,7 @@
             "как"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «как»: cómo",
+          "explanation": "Escuchaste «как». El ejemplo practica: cómo",
           "audio": "как",
           "slow_audio": "как",
           "tags": [
@@ -661,8 +661,8 @@
             "когда"
           ],
           "explanation": "La forma completa es «когда».",
-          "audio": "когда",
-          "slow_audio": "когда",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -679,8 +679,8 @@
             "к"
           ],
           "explanation": "La forma completa es «как»: cómo",
-          "audio": "как",
-          "slow_audio": "как",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -691,7 +691,7 @@
         {
           "id": "russian-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "почему",
           "accepted_answers": [
@@ -711,7 +711,7 @@
         {
           "id": "russian-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «как»",
           "target": "cómo",
           "answer": "как",
           "accepted_answers": [
@@ -745,7 +745,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "когда",
               "accepted_answers": [
                 "когда"
@@ -763,7 +763,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "как",
               "accepted_answers": [
                 "как"

@@ -1831,7 +1831,7 @@
             "我的房间很小。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我的房间很小。»: Mi habitación es pequeña.",
+          "explanation": "Escuchaste «我的房间很小。». El ejemplo practica: Mi habitación es pequeña.",
           "audio": "我的房间很小。",
           "slow_audio": "我的房间很小。",
           "tags": [
@@ -1860,8 +1860,8 @@
             "钥匙在桌子上。"
           ],
           "explanation": "La forma completa es «钥匙在桌子上。».",
-          "audio": "钥匙在桌子上。",
-          "slow_audio": "钥匙在桌子上。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "小"
           ],
           "explanation": "La forma completa es «我的房间很小。»: Mi habitación es pequeña.",
-          "audio": "我的房间很小。",
-          "slow_audio": "我的房间很小。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "chinese-a1-1-home-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «puerta»",
+          "prompt": "Produce el ejemplo que demuestra: «puerta»",
           "target": "puerta",
           "answer": "门",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "chinese-a1-1-home-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Mi habitación es pequeña.»",
+          "prompt": "Di en voz alta: «我的房间很小。»",
           "target": "Mi habitación es pequeña.",
           "answer": "我的房间很小。",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "钥匙在桌子上。",
               "accepted_answers": [
                 "钥匙在桌子上。"
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我的房间很小。",
               "accepted_answers": [
                 "我的房间很小。"

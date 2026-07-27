@@ -1831,7 +1831,7 @@
             "여기에서는 보통 무엇을 해요?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «여기에서는 보통 무엇을 해요?»: ¿Qué se suele hacer aquí?",
+          "explanation": "Escuchaste «여기에서는 보통 무엇을 해요?». El ejemplo practica: ¿Qué se suele hacer aquí?",
           "audio": "여기에서는 보통 무엇을 해요?",
           "slow_audio": "여기에서는 보통 무엇을 해요?",
           "tags": [
@@ -1856,8 +1856,8 @@
             "규칙을 존중해야 해요."
           ],
           "explanation": "La forma completa es «규칙을 존중해야 해요.».",
-          "audio": "규칙을 존중해야 해요.",
-          "slow_audio": "규칙을 존중해야 해요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "해요"
           ],
           "explanation": "La forma completa es «여기에서는 보통 무엇을 해요?»: ¿Qué se suele hacer aquí?",
-          "audio": "여기에서는 보통 무엇을 해요?",
-          "slow_audio": "여기에서는 보통 무엇을 해요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "korean-a2-2-culture-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "높다",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "korean-a2-2-culture-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué se suele hacer aquí?»",
+          "prompt": "Di en voz alta: «여기에서는 보통 무엇을 해요?»",
           "target": "¿Qué se suele hacer aquí?",
           "answer": "여기에서는 보통 무엇을 해요?",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "규칙을 존중해야 해요.",
               "accepted_answers": [
                 "규칙을 존중해야 해요."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "여기에서는 보통 무엇을 해요?",
               "accepted_answers": [
                 "여기에서는 보통 무엇을 해요?"

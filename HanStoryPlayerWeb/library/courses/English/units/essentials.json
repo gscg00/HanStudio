@@ -2965,8 +2965,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «H».",
-          "audio": "house",
-          "slow_audio": "house",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -2978,12 +2978,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "short / long vowels",
+          "answer": "ship / sheep",
           "accepted_answers": [
-            "short / long vowels"
+            "ship / sheep"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «short / long vowels»: La duración y posición distinguen palabras.",
+          "explanation": "Escuchaste «ship / sheep». El ejemplo practica: La duración y posición distinguen palabras.",
           "audio": "ship / sheep",
           "slow_audio": "ship / sheep",
           "tags": [
@@ -3006,8 +3006,8 @@
             "H"
           ],
           "explanation": "La forma completa es «H».",
-          "audio": "house",
-          "slow_audio": "house",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -3024,8 +3024,8 @@
             "vowels"
           ],
           "explanation": "La forma completa es «short / long vowels»: La duración y posición distinguen palabras.",
-          "audio": "ship / sheep",
-          "slow_audio": "ship / sheep",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -3036,15 +3036,15 @@
         {
           "id": "english-essentials-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «El orden común es sujeto, verbo y objeto.»",
+          "prompt": "Produce el ejemplo que demuestra: «El orden común es sujeto, verbo y objeto.»",
           "target": "El orden común es sujeto, verbo y objeto.",
-          "answer": "I + verb + object",
+          "answer": "I like coffee.",
           "accepted_answers": [
-            "I + verb + object"
+            "I like coffee."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «I + verb + object».",
+          "explanation": "Una respuesta adecuada es «I like coffee.».",
           "audio": "I like coffee.",
           "slow_audio": "I like coffee.",
           "tags": [
@@ -3056,16 +3056,16 @@
         {
           "id": "english-essentials-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La duración y posición distinguen palabras.»",
+          "prompt": "Di en voz alta: «ship / sheep»",
           "target": "La duración y posición distinguen palabras.",
-          "answer": "short / long vowels",
+          "answer": "ship / sheep",
           "accepted_answers": [
-            "short / long vowels"
+            "ship / sheep"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «short / long vowels». También puedes escribirlo.",
+          "explanation": "El modelo es «ship / sheep». También puedes escribirlo.",
           "audio": "ship / sheep",
           "slow_audio": "ship / sheep",
           "tags": [
@@ -3090,10 +3090,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
-              "answer": "H",
+              "prompt": "Di o escribe este ejemplo en inglés.",
+              "answer": "house",
               "accepted_answers": [
-                "H"
+                "house"
               ],
               "audio": "house",
               "allow_minor_typos": true,
@@ -3108,10 +3108,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
-              "answer": "short / long vowels",
+              "prompt": "Di o escribe este ejemplo en inglés.",
+              "answer": "ship / sheep",
               "accepted_answers": [
-                "short / long vowels"
+                "ship / sheep"
               ],
               "audio": "ship / sheep",
               "allow_minor_typos": true,

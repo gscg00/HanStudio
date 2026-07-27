@@ -23973,7 +23973,7 @@
             "perché"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «perché»: por qué",
+          "explanation": "Escuchaste «perché». El ejemplo practica: por qué",
           "audio": "perché",
           "slow_audio": "perché",
           "tags": [
@@ -23997,8 +23997,8 @@
             "come"
           ],
           "explanation": "La forma completa es «come».",
-          "audio": "come",
-          "slow_audio": "come",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -24015,8 +24015,8 @@
             "é"
           ],
           "explanation": "La forma completa es «perché»: por qué",
-          "audio": "perché",
-          "slow_audio": "perché",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -24027,7 +24027,7 @@
         {
           "id": "italian-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «no / negación»",
+          "prompt": "Produce el ejemplo que demuestra: «no / negación»",
           "target": "no / negación",
           "answer": "non",
           "accepted_answers": [
@@ -24047,7 +24047,7 @@
         {
           "id": "italian-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «por qué»",
+          "prompt": "Di en voz alta: «perché»",
           "target": "por qué",
           "answer": "perché",
           "accepted_answers": [
@@ -24081,7 +24081,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "come",
               "accepted_answers": [
                 "come"
@@ -24099,7 +24099,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "perché",
               "accepted_answers": [
                 "perché"

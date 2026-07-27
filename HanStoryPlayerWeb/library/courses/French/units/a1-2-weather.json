@@ -1831,7 +1831,7 @@
             "Le temps change vite."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Le temps change vite.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «Le temps change vite.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "Le temps change vite.",
           "slow_audio": "Le temps change vite.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "J’ai besoin d’un manteau."
           ],
           "explanation": "La forma completa es «J’ai besoin d’un manteau.».",
-          "audio": "J’ai besoin d’un manteau.",
-          "slow_audio": "J’ai besoin d’un manteau.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "vite"
           ],
           "explanation": "La forma completa es «Le temps change vite.»: El tiempo cambia rápido.",
-          "audio": "Le temps change vite.",
-          "slow_audio": "Le temps change vite.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "french-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "manteau",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "french-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «Le temps change vite.»",
           "target": "El tiempo cambia rápido.",
           "answer": "Le temps change vite.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "J’ai besoin d’un manteau.",
               "accepted_answers": [
                 "J’ai besoin d’un manteau."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Le temps change vite.",
               "accepted_answers": [
                 "Le temps change vite."

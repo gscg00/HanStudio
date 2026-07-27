@@ -1831,7 +1831,7 @@
             "Ho bisogno che lo riparino oggi."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ho bisogno che lo riparino oggi.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «Ho bisogno che lo riparino oggi.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "Ho bisogno che lo riparino oggi.",
           "slow_audio": "Ho bisogno che lo riparino oggi.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Può darmi una ricevuta?"
           ],
           "explanation": "La forma completa es «Può darmi una ricevuta?».",
-          "audio": "Può darmi una ricevuta?",
-          "slow_audio": "Può darmi una ricevuta?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "oggi"
           ],
           "explanation": "La forma completa es «Ho bisogno che lo riparino oggi.»: Necesito que lo reparen hoy.",
-          "audio": "Ho bisogno che lo riparino oggi.",
-          "slow_audio": "Ho bisogno che lo riparino oggi.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "italian-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "rotto",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "italian-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «Ho bisogno che lo riparino oggi.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "Ho bisogno che lo riparino oggi.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Può darmi una ricevuta?",
               "accepted_answers": [
                 "Può darmi una ricevuta?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Ho bisogno che lo riparino oggi.",
               "accepted_answers": [
                 "Ho bisogno che lo riparino oggi."

@@ -1831,7 +1831,7 @@
             "Só tenho dinheiro."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Só tenho dinheiro.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «Só tenho dinheiro.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "Só tenho dinheiro.",
           "slow_audio": "Só tenho dinheiro.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Posso pagar com cartão?"
           ],
           "explanation": "La forma completa es «Posso pagar com cartão?».",
-          "audio": "Posso pagar com cartão?",
-          "slow_audio": "Posso pagar com cartão?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "dinheiro"
           ],
           "explanation": "La forma completa es «Só tenho dinheiro.»: Solo tengo efectivo.",
-          "audio": "Só tenho dinheiro.",
-          "slow_audio": "Só tenho dinheiro.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "cartão",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «Só tenho dinheiro.»",
           "target": "Solo tengo efectivo.",
           "answer": "Só tenho dinheiro.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Posso pagar com cartão?",
               "accepted_answers": [
                 "Posso pagar com cartão?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Só tenho dinheiro.",
               "accepted_answers": [
                 "Só tenho dinheiro."

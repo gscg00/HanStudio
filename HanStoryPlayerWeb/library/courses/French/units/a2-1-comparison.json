@@ -1831,7 +1831,7 @@
             "Il fait moins beau aujourd’hui qu’hier."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il fait moins beau aujourd’hui qu’hier.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «Il fait moins beau aujourd’hui qu’hier.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "Il fait moins beau aujourd’hui qu’hier.",
           "slow_audio": "Il fait moins beau aujourd’hui qu’hier.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Cette option est meilleure pour moi."
           ],
           "explanation": "La forma completa es «Cette option est meilleure pour moi.».",
-          "audio": "Cette option est meilleure pour moi.",
-          "slow_audio": "Cette option est meilleure pour moi.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "qu’hier"
           ],
           "explanation": "La forma completa es «Il fait moins beau aujourd’hui qu’hier.»: Hoy hace peor tiempo que ayer.",
-          "audio": "Il fait moins beau aujourd’hui qu’hier.",
-          "slow_audio": "Il fait moins beau aujourd’hui qu’hier.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "french-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "haut",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "french-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «Il fait moins beau aujourd’hui qu’hier.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "Il fait moins beau aujourd’hui qu’hier.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Cette option est meilleure pour moi.",
               "accepted_answers": [
                 "Cette option est meilleure pour moi."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Il fait moins beau aujourd’hui qu’hier.",
               "accepted_answers": [
                 "Il fait moins beau aujourd’hui qu’hier."

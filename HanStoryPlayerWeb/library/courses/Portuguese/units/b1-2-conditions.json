@@ -1831,7 +1831,7 @@
             "Teria concordado se me tivesses explicado."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Teria concordado se me tivesses explicado.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «Teria concordado se me tivesses explicado.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "Teria concordado se me tivesses explicado.",
           "slow_audio": "Teria concordado se me tivesses explicado.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Se precisares de ajuda, telefona-me."
           ],
           "explanation": "La forma completa es «Se precisares de ajuda, telefona-me.».",
-          "audio": "Se precisares de ajuda, telefona-me.",
-          "slow_audio": "Se precisares de ajuda, telefona-me.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "explicado"
           ],
           "explanation": "La forma completa es «Teria concordado se me tivesses explicado.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "Teria concordado se me tivesses explicado.",
-          "slow_audio": "Teria concordado se me tivesses explicado.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "Graças à tua ajuda, resolvemos o problema.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «Teria concordado se me tivesses explicado.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "Teria concordado se me tivesses explicado.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Se precisares de ajuda, telefona-me.",
               "accepted_answers": [
                 "Se precisares de ajuda, telefona-me."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Teria concordado se me tivesses explicado.",
               "accepted_answers": [
                 "Teria concordado se me tivesses explicado."

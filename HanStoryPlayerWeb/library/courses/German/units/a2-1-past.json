@@ -1831,7 +1831,7 @@
             "Was ist passiert?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Was ist passiert?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «Was ist passiert?». El ejemplo practica: ¿Qué pasó?",
           "audio": "Was ist passiert?",
           "slow_audio": "Was ist passiert?",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Ich konnte meine Schlüssel nicht finden."
           ],
           "explanation": "La forma completa es «Ich konnte meine Schlüssel nicht finden.».",
-          "audio": "Ich konnte meine Schlüssel nicht finden.",
-          "slow_audio": "Ich konnte meine Schlüssel nicht finden.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "passiert"
           ],
           "explanation": "La forma completa es «Was ist passiert?»: ¿Qué pasó?",
-          "audio": "Was ist passiert?",
-          "slow_audio": "Was ist passiert?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "ist passiert",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «Was ist passiert?»",
           "target": "¿Qué pasó?",
           "answer": "Was ist passiert?",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich konnte meine Schlüssel nicht finden.",
               "accepted_answers": [
                 "Ich konnte meine Schlüssel nicht finden."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Was ist passiert?",
               "accepted_answers": [
                 "Was ist passiert?"

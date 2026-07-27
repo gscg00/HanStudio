@@ -1831,7 +1831,7 @@
             "L’applicazione non si apre."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «L’applicazione non si apre.»: La aplicación no se abre.",
+          "explanation": "Escuchaste «L’applicazione non si apre.». El ejemplo practica: La aplicación no se abre.",
           "audio": "L’applicazione non si apre.",
           "slow_audio": "L’applicazione non si apre.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Devo caricare il telefono."
           ],
           "explanation": "La forma completa es «Devo caricare il telefono.».",
-          "audio": "Devo caricare il telefono.",
-          "slow_audio": "Devo caricare il telefono.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "apre"
           ],
           "explanation": "La forma completa es «L’applicazione non si apre.»: La aplicación no se abre.",
-          "audio": "L’applicazione non si apre.",
-          "slow_audio": "L’applicazione non si apre.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "italian-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "rotto",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "italian-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «L’applicazione non si apre.»",
           "target": "La aplicación no se abre.",
           "answer": "L’applicazione non si apre.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Devo caricare il telefono.",
               "accepted_answers": [
                 "Devo caricare il telefono."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "L’applicazione non si apre.",
               "accepted_answers": [
                 "L’applicazione non si apre."

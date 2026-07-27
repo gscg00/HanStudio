@@ -1831,7 +1831,7 @@
             "오늘 수리해 주세요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «오늘 수리해 주세요.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «오늘 수리해 주세요.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "오늘 수리해 주세요.",
           "slow_audio": "오늘 수리해 주세요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "영수증을 주실 수 있어요?"
           ],
           "explanation": "La forma completa es «영수증을 주실 수 있어요?».",
-          "audio": "영수증을 주실 수 있어요?",
-          "slow_audio": "영수증을 주실 수 있어요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "주세요"
           ],
           "explanation": "La forma completa es «오늘 수리해 주세요.»: Necesito que lo reparen hoy.",
-          "audio": "오늘 수리해 주세요.",
-          "slow_audio": "오늘 수리해 주세요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "고장 난",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «오늘 수리해 주세요.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "오늘 수리해 주세요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "영수증을 주실 수 있어요?",
               "accepted_answers": [
                 "영수증을 주실 수 있어요?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "오늘 수리해 주세요.",
               "accepted_answers": [
                 "오늘 수리해 주세요."

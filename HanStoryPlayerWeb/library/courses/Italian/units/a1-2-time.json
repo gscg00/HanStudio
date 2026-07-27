@@ -1831,7 +1831,7 @@
             "L’appuntamento è la prossima settimana."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «L’appuntamento è la prossima settimana.»: La cita es la próxima semana.",
+          "explanation": "Escuchaste «L’appuntamento è la prossima settimana.». El ejemplo practica: La cita es la próxima semana.",
           "audio": "L’appuntamento è la prossima settimana.",
           "slow_audio": "L’appuntamento è la prossima settimana.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Arrivo alle otto."
           ],
           "explanation": "La forma completa es «Arrivo alle otto.».",
-          "audio": "Arrivo alle otto.",
-          "slow_audio": "Arrivo alle otto.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "settimana"
           ],
           "explanation": "La forma completa es «L’appuntamento è la prossima settimana.»: La cita es la próxima semana.",
-          "audio": "L’appuntamento è la prossima settimana.",
-          "slow_audio": "L’appuntamento è la prossima settimana.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "italian-a1-2-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «temprano»",
+          "prompt": "Produce el ejemplo que demuestra: «temprano»",
           "target": "temprano",
           "answer": "presto",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "italian-a1-2-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La cita es la próxima semana.»",
+          "prompt": "Di en voz alta: «L’appuntamento è la prossima settimana.»",
           "target": "La cita es la próxima semana.",
           "answer": "L’appuntamento è la prossima settimana.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Arrivo alle otto.",
               "accepted_answers": [
                 "Arrivo alle otto."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "L’appuntamento è la prossima settimana.",
               "accepted_answers": [
                 "L’appuntamento è la prossima settimana."

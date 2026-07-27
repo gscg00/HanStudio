@@ -1831,7 +1831,7 @@
             "価格は譲れますが、品質は譲れません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «価格は譲れますが、品質は譲れません。»: Podemos ceder en el precio, pero no en la calidad.",
+          "explanation": "Escuchaste «価格は譲れますが、品質は譲れません。». El ejemplo practica: Podemos ceder en el precio, pero no en la calidad.",
           "audio": "価格は譲れますが、品質は譲れません。",
           "slow_audio": "価格は譲れますが、品質は譲れません。",
           "tags": [
@@ -1871,8 +1871,8 @@
             "ほかにどんな選択肢が残っていますか。"
           ],
           "explanation": "La forma completa es «ほかにどんな選択肢が残っていますか。».",
-          "audio": "ほかにどんな選択肢が残っていますか。",
-          "slow_audio": "ほかにどんな選択肢が残っていますか。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1889,8 +1889,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «価格は譲れますが、品質は譲れません。»: Podemos ceder en el precio, pero no en la calidad.",
-          "audio": "価格は譲れますが、品質は譲れません。",
-          "slow_audio": "価格は譲れますが、品質は譲れません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1901,7 +1901,7 @@
         {
           "id": "japanese-b1-2-negotiation-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entre amigos podemos hablar de manera más directa.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entre amigos podemos hablar de manera más directa.»",
           "target": "Entre amigos podemos hablar de manera más directa.",
           "answer": "友達同士なら、もっと直接話せます。",
           "accepted_answers": [
@@ -1921,7 +1921,7 @@
         {
           "id": "japanese-b1-2-negotiation-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Podemos ceder en el precio, pero no en la calidad.»",
+          "prompt": "Di en voz alta: «価格は譲れますが、品質は譲れません。»",
           "target": "Podemos ceder en el precio, pero no en la calidad.",
           "answer": "価格は譲れますが、品質は譲れません。",
           "accepted_answers": [
@@ -1955,7 +1955,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "ほかにどんな選択肢が残っていますか。",
               "accepted_answers": [
                 "ほかにどんな選択肢が残っていますか。"
@@ -1973,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "価格は譲れますが、品質は譲れません。",
               "accepted_answers": [
                 "価格は譲れますが、品質は譲れません。"

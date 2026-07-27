@@ -1831,7 +1831,7 @@
             "Telefono-te quando chegar."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Telefono-te quando chegar.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «Telefono-te quando chegar.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "Telefono-te quando chegar.",
           "slow_audio": "Telefono-te quando chegar.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Penso reservar um quarto."
           ],
           "explanation": "La forma completa es «Penso reservar um quarto.».",
-          "audio": "Penso reservar um quarto.",
-          "slow_audio": "Penso reservar um quarto.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "chegar"
           ],
           "explanation": "La forma completa es «Telefono-te quando chegar.»: Te llamaré cuando llegue.",
-          "audio": "Telefono-te quando chegar.",
-          "slow_audio": "Telefono-te quando chegar.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "reservar",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «Telefono-te quando chegar.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "Telefono-te quando chegar.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Penso reservar um quarto.",
               "accepted_answers": [
                 "Penso reservar um quarto."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Telefono-te quando chegar.",
               "accepted_answers": [
                 "Telefono-te quando chegar."

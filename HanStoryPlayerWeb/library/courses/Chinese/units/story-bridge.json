@@ -2145,7 +2145,7 @@
             "三点。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «三点。»: Son las tres",
+          "explanation": "Escuchaste «三点。». El ejemplo practica: Son las tres",
           "audio": "三点。",
           "slow_audio": "三点。",
           "tags": [
@@ -2170,8 +2170,8 @@
             "几点？"
           ],
           "explanation": "La forma completa es «几点？».",
-          "audio": "几点？",
-          "slow_audio": "几点？",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2188,8 +2188,8 @@
             "点"
           ],
           "explanation": "La forma completa es «三点。»: Son las tres",
-          "audio": "三点。",
-          "slow_audio": "三点。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2200,7 +2200,7 @@
         {
           "id": "chinese-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «lunes»",
+          "prompt": "Produce el ejemplo que demuestra: «lunes»",
           "target": "lunes",
           "answer": "星期一",
           "accepted_answers": [
@@ -2220,7 +2220,7 @@
         {
           "id": "chinese-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Son las tres»",
+          "prompt": "Di en voz alta: «三点。»",
           "target": "Son las tres",
           "answer": "三点。",
           "accepted_answers": [
@@ -2254,7 +2254,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "几点？",
               "accepted_answers": [
                 "几点？"
@@ -2272,7 +2272,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "三点。",
               "accepted_answers": [
                 "三点。"
@@ -2290,7 +2290,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "星期一",
               "accepted_answers": [
                 "星期一"

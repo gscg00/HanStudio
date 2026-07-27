@@ -1831,7 +1831,7 @@
             "Ich brauche die Reparatur noch heute."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich brauche die Reparatur noch heute.»: Necesito que lo reparen hoy.",
+          "explanation": "Escuchaste «Ich brauche die Reparatur noch heute.». El ejemplo practica: Necesito que lo reparen hoy.",
           "audio": "Ich brauche die Reparatur noch heute.",
           "slow_audio": "Ich brauche die Reparatur noch heute.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Können Sie mir eine Quittung geben?"
           ],
           "explanation": "La forma completa es «Können Sie mir eine Quittung geben?».",
-          "audio": "Können Sie mir eine Quittung geben?",
-          "slow_audio": "Können Sie mir eine Quittung geben?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "heute"
           ],
           "explanation": "La forma completa es «Ich brauche die Reparatur noch heute.»: Necesito que lo reparen hoy.",
-          "audio": "Ich brauche die Reparatur noch heute.",
-          "slow_audio": "Ich brauche die Reparatur noch heute.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a2-1-services-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "kaputt",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a2-1-services-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Necesito que lo reparen hoy.»",
+          "prompt": "Di en voz alta: «Ich brauche die Reparatur noch heute.»",
           "target": "Necesito que lo reparen hoy.",
           "answer": "Ich brauche die Reparatur noch heute.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Können Sie mir eine Quittung geben?",
               "accepted_answers": [
                 "Können Sie mir eine Quittung geben?"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich brauche die Reparatur noch heute.",
               "accepted_answers": [
                 "Ich brauche die Reparatur noch heute."

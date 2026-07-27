@@ -1831,7 +1831,7 @@
             "Wie alt sind Sie?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Wie alt sind Sie?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Wie alt sind Sie?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "Wie alt sind Sie?",
           "slow_audio": "Wie alt sind Sie?",
           "tags": [
@@ -1856,8 +1856,8 @@
             "Wer ist das?"
           ],
           "explanation": "La forma completa es «Wer ist das?».",
-          "audio": "Wer ist das?",
-          "slow_audio": "Wer ist das?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "Sie"
           ],
           "explanation": "La forma completa es «Wie alt sind Sie?»: ¿Cuántos años tienes?",
-          "audio": "Wie alt sind Sie?",
-          "slow_audio": "Wie alt sind Sie?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "german-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "Frau",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "german-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «Wie alt sind Sie?»",
           "target": "¿Cuántos años tienes?",
           "answer": "Wie alt sind Sie?",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wer ist das?",
               "accepted_answers": [
                 "Wer ist das?"
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Wie alt sind Sie?",
               "accepted_answers": [
                 "Wie alt sind Sie?"

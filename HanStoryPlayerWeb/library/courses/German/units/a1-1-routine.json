@@ -1831,7 +1831,7 @@
             "Ich lerne am Nachmittag."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ich lerne am Nachmittag.»: Estudio por la tarde.",
+          "explanation": "Escuchaste «Ich lerne am Nachmittag.». El ejemplo practica: Estudio por la tarde.",
           "audio": "Ich lerne am Nachmittag.",
           "slow_audio": "Ich lerne am Nachmittag.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Ich stehe um sieben Uhr auf."
           ],
           "explanation": "La forma completa es «Ich stehe um sieben Uhr auf.».",
-          "audio": "Ich stehe um sieben Uhr auf.",
-          "slow_audio": "Ich stehe um sieben Uhr auf.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "Nachmittag"
           ],
           "explanation": "La forma completa es «Ich lerne am Nachmittag.»: Estudio por la tarde.",
-          "audio": "Ich lerne am Nachmittag.",
-          "slow_audio": "Ich lerne am Nachmittag.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a1-1-routine-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mañana»",
+          "prompt": "Produce el ejemplo que demuestra: «mañana»",
           "target": "mañana",
           "answer": "Morgen",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a1-1-routine-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estudio por la tarde.»",
+          "prompt": "Di en voz alta: «Ich lerne am Nachmittag.»",
           "target": "Estudio por la tarde.",
           "answer": "Ich lerne am Nachmittag.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich stehe um sieben Uhr auf.",
               "accepted_answers": [
                 "Ich stehe um sieben Uhr auf."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Ich lerne am Nachmittag.",
               "accepted_answers": [
                 "Ich lerne am Nachmittag."

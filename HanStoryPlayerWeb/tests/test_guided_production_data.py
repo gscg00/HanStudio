@@ -132,6 +132,23 @@ class GuidedProductionDataTests(unittest.TestCase):
                             self.assertTrue(activity.get("answer"), activity["id"])
                             self.assertTrue(activity.get("accepted_answers"), activity["id"])
 
+    def test_model_audio_always_matches_an_accepted_response(self):
+        for language, directory, course in self.iter_courses():
+            for summary in course["units"]:
+                unit = json.loads((directory / summary["manifest"]).read_text(encoding="utf-8"))
+                for lesson in unit["lessons"]:
+                    if not lesson.get("generatedProduction"):
+                        continue
+                    for activity in lesson.get("activities", []):
+                        accepted = {activity.get("answer"), *(activity.get("accepted_answers") or [])}
+                        if activity.get("audio"):
+                            self.assertIn(activity["audio"], accepted, activity["id"])
+                        for turn in activity.get("turns", []):
+                            if turn.get("role") != "learner" or not turn.get("audio"):
+                                continue
+                            turn_accepted = {turn.get("answer"), *(turn.get("accepted_answers") or [])}
+                            self.assertIn(turn["audio"], turn_accepted, activity["id"])
+
     def test_guided_situations_do_not_fake_unrelated_conversations(self):
         for language, directory, course in self.iter_courses():
             for summary in course["units"]:
@@ -199,7 +216,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v115", source)
+        self.assertIn("hanstory-shell-v117", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)

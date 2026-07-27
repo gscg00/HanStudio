@@ -1831,7 +1831,7 @@
             "Vado a scuola."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Vado a scuola.»: Voy a la escuela.",
+          "explanation": "Escuchaste «Vado a scuola.». El ejemplo practica: Voy a la escuela.",
           "audio": "Vado a scuola.",
           "slow_audio": "Vado a scuola.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "La stazione è a sinistra."
           ],
           "explanation": "La forma completa es «La stazione è a sinistra.».",
-          "audio": "La stazione è a sinistra.",
-          "slow_audio": "La stazione è a sinistra.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "scuola"
           ],
           "explanation": "La forma completa es «Vado a scuola.»: Voy a la escuela.",
-          "audio": "Vado a scuola.",
-          "slow_audio": "Vado a scuola.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-a1-1-places-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «izquierda»",
+          "prompt": "Produce el ejemplo que demuestra: «izquierda»",
           "target": "izquierda",
           "answer": "sinistra",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-a1-1-places-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Voy a la escuela.»",
+          "prompt": "Di en voz alta: «Vado a scuola.»",
           "target": "Voy a la escuela.",
           "answer": "Vado a scuola.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "La stazione è a sinistra.",
               "accepted_answers": [
                 "La stazione è a sinistra."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Vado a scuola.",
               "accepted_answers": [
                 "Vado a scuola."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "sinistra",
               "accepted_answers": [
                 "sinistra"

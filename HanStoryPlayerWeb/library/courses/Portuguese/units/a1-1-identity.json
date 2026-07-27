@@ -1829,7 +1829,7 @@
             "Sou do México."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Sou do México.»: Soy de México.",
+          "explanation": "Escuchaste «Sou do México.». El ejemplo practica: Soy de México.",
           "audio": "Sou do México.",
           "slow_audio": "Sou do México.",
           "tags": [
@@ -1854,8 +1854,8 @@
             "Como se chama?"
           ],
           "explanation": "La forma completa es «Como se chama?».",
-          "audio": "Como se chama?",
-          "slow_audio": "Como se chama?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1872,8 +1872,8 @@
             "México"
           ],
           "explanation": "La forma completa es «Sou do México.»: Soy de México.",
-          "audio": "Sou do México.",
-          "slow_audio": "Sou do México.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1884,7 +1884,7 @@
         {
           "id": "portuguese-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «idioma»",
+          "prompt": "Produce el ejemplo que demuestra: «idioma»",
           "target": "idioma",
           "answer": "língua",
           "accepted_answers": [
@@ -1904,7 +1904,7 @@
         {
           "id": "portuguese-a1-1-identity-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Soy de México.»",
+          "prompt": "Di en voz alta: «Sou do México.»",
           "target": "Soy de México.",
           "answer": "Sou do México.",
           "accepted_answers": [
@@ -1938,7 +1938,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Como se chama?",
               "accepted_answers": [
                 "Como se chama?"
@@ -1956,7 +1956,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Sou do México.",
               "accepted_answers": [
                 "Sou do México."

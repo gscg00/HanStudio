@@ -1831,7 +1831,7 @@
             "Es war das erste Mal."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Es war das erste Mal.»: Fue la primera vez.",
+          "explanation": "Escuchaste «Es war das erste Mal.». El ejemplo practica: Fue la primera vez.",
           "audio": "Es war das erste Mal.",
           "slow_audio": "Es war das erste Mal.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Einmal habe ich den Zug verpasst."
           ],
           "explanation": "La forma completa es «Einmal habe ich den Zug verpasst.».",
-          "audio": "Einmal habe ich den Zug verpasst.",
-          "slow_audio": "Einmal habe ich den Zug verpasst.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "Mal"
           ],
           "explanation": "La forma completa es «Es war das erste Mal.»: Fue la primera vez.",
-          "audio": "Es war das erste Mal.",
-          "slow_audio": "Es war das erste Mal.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "german-a2-2-experiences-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Fue una experiencia interesante.»",
+          "prompt": "Produce el ejemplo que demuestra: «Fue una experiencia interesante.»",
           "target": "Fue una experiencia interesante.",
           "answer": "Es war eine interessante Erfahrung.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "german-a2-2-experiences-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Fue la primera vez.»",
+          "prompt": "Di en voz alta: «Es war das erste Mal.»",
           "target": "Fue la primera vez.",
           "answer": "Es war das erste Mal.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Einmal habe ich den Zug verpasst.",
               "accepted_answers": [
                 "Einmal habe ich den Zug verpasst."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Es war das erste Mal.",
               "accepted_answers": [
                 "Es war das erste Mal."

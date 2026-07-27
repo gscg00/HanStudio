@@ -1831,7 +1831,7 @@
             "몇 살이에요?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «몇 살이에요?»: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «몇 살이에요?». El ejemplo practica: ¿Cuántos años tienes?",
           "audio": "몇 살이에요?",
           "slow_audio": "몇 살이에요?",
           "tags": [
@@ -1858,8 +1858,8 @@
             "누구예요?"
           ],
           "explanation": "La forma completa es «누구예요?».",
-          "audio": "누구예요?",
-          "slow_audio": "누구예요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "살이에요"
           ],
           "explanation": "La forma completa es «몇 살이에요?»: ¿Cuántos años tienes?",
-          "audio": "몇 살이에요?",
-          "slow_audio": "몇 살이에요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "korean-a1-1-people-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «mujer»",
+          "prompt": "Produce el ejemplo que demuestra: «mujer»",
           "target": "mujer",
           "answer": "여자",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "korean-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Cuántos años tienes?»",
+          "prompt": "Di en voz alta: «몇 살이에요?»",
           "target": "¿Cuántos años tienes?",
           "answer": "몇 살이에요?",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "누구예요?",
               "accepted_answers": [
                 "누구예요?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "몇 살이에요?",
               "accepted_answers": [
                 "몇 살이에요?"

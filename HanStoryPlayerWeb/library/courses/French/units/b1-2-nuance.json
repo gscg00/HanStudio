@@ -1831,7 +1831,7 @@
             "Cela devrait marcher si tous participent."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Cela devrait marcher si tous participent.»: Probablemente funcione, siempre que todos participen.",
+          "explanation": "Escuchaste «Cela devrait marcher si tous participent.». El ejemplo practica: Probablemente funcione, siempre que todos participen.",
           "audio": "Cela devrait marcher si tous participent.",
           "slow_audio": "Cela devrait marcher si tous participent.",
           "tags": [
@@ -1861,8 +1861,8 @@
             "Cela ne veut pas dire que c’est impossible."
           ],
           "explanation": "La forma completa es «Cela ne veut pas dire que c’est impossible.».",
-          "audio": "Cela ne veut pas dire que c’est impossible.",
-          "slow_audio": "Cela ne veut pas dire que c’est impossible.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "participent"
           ],
           "explanation": "La forma completa es «Cela devrait marcher si tous participent.»: Probablemente funcione, siempre que todos participen.",
-          "audio": "Cela devrait marcher si tous participent.",
-          "slow_audio": "Cela devrait marcher si tous participent.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "french-b1-2-nuance-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «La recomiendo porque los personajes parecen reales.»",
+          "prompt": "Produce el ejemplo que demuestra: «La recomiendo porque los personajes parecen reales.»",
           "target": "La recomiendo porque los personajes parecen reales.",
           "answer": "Je le recommande parce que les personnages semblent réels.",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "french-b1-2-nuance-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Probablemente funcione, siempre que todos participen.»",
+          "prompt": "Di en voz alta: «Cela devrait marcher si tous participent.»",
           "target": "Probablemente funcione, siempre que todos participen.",
           "answer": "Cela devrait marcher si tous participent.",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Cela ne veut pas dire que c’est impossible.",
               "accepted_answers": [
                 "Cela ne veut pas dire que c’est impossible."
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Cela devrait marcher si tous participent.",
               "accepted_answers": [
                 "Cela devrait marcher si tous participent."

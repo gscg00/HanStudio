@@ -2503,8 +2503,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Ъ».",
-          "audio": "твёрдый знак",
-          "slow_audio": "твёрдый знак",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -2516,12 +2516,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "Ы",
+          "answer": "ы",
           "accepted_answers": [
-            "Ы"
+            "ы"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Ы»: Ы: i posterior; no existe igual en español",
+          "explanation": "Escuchaste «ы». El ejemplo practica: Ы: i posterior; no existe igual en español",
           "audio": "ы",
           "slow_audio": "ы",
           "tags": [
@@ -2544,8 +2544,8 @@
             "Ъ"
           ],
           "explanation": "La forma completa es «Ъ».",
-          "audio": "твёрдый знак",
-          "slow_audio": "твёрдый знак",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2562,8 +2562,8 @@
             "Ы"
           ],
           "explanation": "La forma completa es «Ы»: Ы: i posterior; no existe igual en español",
-          "audio": "ы",
-          "slow_audio": "ы",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2574,15 +2574,15 @@
         {
           "id": "russian-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Ь: suaviza la consonante»",
+          "prompt": "Produce el ejemplo que demuestra: «Ь: suaviza la consonante»",
           "target": "Ь: suaviza la consonante",
-          "answer": "Ь",
+          "answer": "мягкий знак",
           "accepted_answers": [
-            "Ь"
+            "мягкий знак"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «Ь».",
+          "explanation": "Una respuesta adecuada es «мягкий знак».",
           "audio": "мягкий знак",
           "slow_audio": "мягкий знак",
           "tags": [
@@ -2594,16 +2594,16 @@
         {
           "id": "russian-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Ы: i posterior; no existe igual en español»",
+          "prompt": "Di en voz alta: «ы»",
           "target": "Ы: i posterior; no existe igual en español",
-          "answer": "Ы",
+          "answer": "ы",
           "accepted_answers": [
-            "Ы"
+            "ы"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «Ы». También puedes escribirlo.",
+          "explanation": "El modelo es «ы». También puedes escribirlo.",
           "audio": "ы",
           "slow_audio": "ы",
           "tags": [
@@ -2628,10 +2628,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
-              "answer": "Ъ",
+              "prompt": "Di o escribe este ejemplo en ruso.",
+              "answer": "твёрдый знак",
               "accepted_answers": [
-                "Ъ"
+                "твёрдый знак"
               ],
               "audio": "твёрдый знак",
               "allow_minor_typos": true,
@@ -2646,10 +2646,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
-              "answer": "Ы",
+              "prompt": "Di o escribe este ejemplo en ruso.",
+              "answer": "ы",
               "accepted_answers": [
-                "Ы"
+                "ы"
               ],
               "audio": "ы",
               "allow_minor_typos": true,

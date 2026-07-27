@@ -4262,7 +4262,7 @@
             "车站"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «车站»: estación",
+          "explanation": "Escuchaste «车站». El ejemplo practica: estación",
           "audio": "车站",
           "slow_audio": "车站",
           "tags": [
@@ -4286,8 +4286,8 @@
             "学校"
           ],
           "explanation": "La forma completa es «学校».",
-          "audio": "学校",
-          "slow_audio": "学校",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4304,8 +4304,8 @@
             "站"
           ],
           "explanation": "La forma completa es «车站»: estación",
-          "audio": "车站",
-          "slow_audio": "车站",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4316,7 +4316,7 @@
         {
           "id": "chinese-reading-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "什么",
           "accepted_answers": [
@@ -4336,7 +4336,7 @@
         {
           "id": "chinese-reading-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «车站»",
           "target": "estación",
           "answer": "车站",
           "accepted_answers": [
@@ -4370,7 +4370,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "学校",
               "accepted_answers": [
                 "学校"
@@ -4388,7 +4388,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "车站",
               "accepted_answers": [
                 "车站"

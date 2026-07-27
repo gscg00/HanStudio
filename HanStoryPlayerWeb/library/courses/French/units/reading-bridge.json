@@ -4405,7 +4405,7 @@
             "Je fais de la photographie et du vélo."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je fais de la photographie et du vélo.»: Practico fotografía y ciclismo.",
+          "explanation": "Escuchaste «Je fais de la photographie et du vélo.». El ejemplo practica: Practico fotografía y ciclismo.",
           "audio": "Je fais de la photographie et du vélo.",
           "slow_audio": "Je fais de la photographie et du vélo.",
           "tags": [
@@ -4436,8 +4436,8 @@
             "Qu’est-ce que tu fais pendant ton temps libre ?"
           ],
           "explanation": "La forma completa es «Qu’est-ce que tu fais pendant ton temps libre ?».",
-          "audio": "Qu’est-ce que tu fais pendant ton temps libre ?",
-          "slow_audio": "Qu’est-ce que tu fais pendant ton temps libre ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4454,8 +4454,8 @@
             "vélo"
           ],
           "explanation": "La forma completa es «Je fais de la photographie et du vélo.»: Practico fotografía y ciclismo.",
-          "audio": "Je fais de la photographie et du vélo.",
-          "slow_audio": "Je fais de la photographie et du vélo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4466,7 +4466,7 @@
         {
           "id": "french-reading-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿También practicas natación?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿También practicas natación?»",
           "target": "¿También practicas natación?",
           "answer": "Tu fais aussi de la natation ?",
           "accepted_answers": [
@@ -4486,7 +4486,7 @@
         {
           "id": "french-reading-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Practico fotografía y ciclismo.»",
+          "prompt": "Di en voz alta: «Je fais de la photographie et du vélo.»",
           "target": "Practico fotografía y ciclismo.",
           "answer": "Je fais de la photographie et du vélo.",
           "accepted_answers": [
@@ -4520,7 +4520,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Qu’est-ce que tu fais pendant ton temps libre ?",
               "accepted_answers": [
                 "Qu’est-ce que tu fais pendant ton temps libre ?"
@@ -4538,7 +4538,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je fais de la photographie et du vélo.",
               "accepted_answers": [
                 "Je fais de la photographie et du vélo."

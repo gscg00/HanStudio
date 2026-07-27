@@ -1831,7 +1831,7 @@
             "설명해 줬다면 동의했을 거예요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «설명해 줬다면 동의했을 거예요.»: Habría aceptado si me lo hubieras explicado.",
+          "explanation": "Escuchaste «설명해 줬다면 동의했을 거예요.». El ejemplo practica: Habría aceptado si me lo hubieras explicado.",
           "audio": "설명해 줬다면 동의했을 거예요.",
           "slow_audio": "설명해 줬다면 동의했을 거예요.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "도움이 필요할 경우에는 저에게 전화하세요."
           ],
           "explanation": "La forma completa es «도움이 필요할 경우에는 저에게 전화하세요.».",
-          "audio": "도움이 필요할 경우에는 저에게 전화하세요.",
-          "slow_audio": "도움이 필요할 경우에는 저에게 전화하세요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "거예요"
           ],
           "explanation": "La forma completa es «설명해 줬다면 동의했을 거예요.»: Habría aceptado si me lo hubieras explicado.",
-          "audio": "설명해 줬다면 동의했을 거예요.",
-          "slow_audio": "설명해 줬다면 동의했을 거예요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "korean-b1-2-conditions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Gracias a tu ayuda, resolvimos el problema.»",
+          "prompt": "Produce el ejemplo que demuestra: «Gracias a tu ayuda, resolvimos el problema.»",
           "target": "Gracias a tu ayuda, resolvimos el problema.",
           "answer": "도와준 덕분에 문제를 해결했어요.",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "korean-b1-2-conditions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Habría aceptado si me lo hubieras explicado.»",
+          "prompt": "Di en voz alta: «설명해 줬다면 동의했을 거예요.»",
           "target": "Habría aceptado si me lo hubieras explicado.",
           "answer": "설명해 줬다면 동의했을 거예요.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "도움이 필요할 경우에는 저에게 전화하세요.",
               "accepted_answers": [
                 "도움이 필요할 경우에는 저에게 전화하세요."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "설명해 줬다면 동의했을 거예요.",
               "accepted_answers": [
                 "설명해 줬다면 동의했을 거예요."

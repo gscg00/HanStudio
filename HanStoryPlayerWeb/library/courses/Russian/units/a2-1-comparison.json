@@ -1831,7 +1831,7 @@
             "Сегодня погода хуже, чем вчера."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Сегодня погода хуже, чем вчера.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «Сегодня погода хуже, чем вчера.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "Сегодня погода хуже, чем вчера.",
           "slow_audio": "Сегодня погода хуже, чем вчера.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Этот вариант лучше для меня."
           ],
           "explanation": "La forma completa es «Этот вариант лучше для меня.».",
-          "audio": "Этот вариант лучше для меня.",
-          "slow_audio": "Этот вариант лучше для меня.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "вчера"
           ],
           "explanation": "La forma completa es «Сегодня погода хуже, чем вчера.»: Hoy hace peor tiempo que ayer.",
-          "audio": "Сегодня погода хуже, чем вчера.",
-          "slow_audio": "Сегодня погода хуже, чем вчера.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "высокий",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «Сегодня погода хуже, чем вчера.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "Сегодня погода хуже, чем вчера.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Этот вариант лучше для меня.",
               "accepted_answers": [
                 "Этот вариант лучше для меня."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Сегодня погода хуже, чем вчера.",
               "accepted_answers": [
                 "Сегодня погода хуже, чем вчера."

@@ -1831,7 +1831,7 @@
             "我要一点米饭。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «我要一点米饭。»: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «我要一点米饭。». El ejemplo practica: Quiero un poco de arroz.",
           "audio": "我要一点米饭。",
           "slow_audio": "我要一点米饭。",
           "tags": [
@@ -1859,8 +1859,8 @@
             "我早上喝茶。"
           ],
           "explanation": "La forma completa es «我早上喝茶。».",
-          "audio": "我早上喝茶。",
-          "slow_audio": "我早上喝茶。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "饭"
           ],
           "explanation": "La forma completa es «我要一点米饭。»: Quiero un poco de arroz.",
-          "audio": "我要一点米饭。",
-          "slow_audio": "我要一点米饭。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "chinese-a1-1-food-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «carne»",
+          "prompt": "Produce el ejemplo que demuestra: «carne»",
           "target": "carne",
           "answer": "肉",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "chinese-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero un poco de arroz.»",
+          "prompt": "Di en voz alta: «我要一点米饭。»",
           "target": "Quiero un poco de arroz.",
           "answer": "我要一点米饭。",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我早上喝茶。",
               "accepted_answers": [
                 "我早上喝茶。"
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我要一点米饭。",
               "accepted_answers": [
                 "我要一点米饭。"

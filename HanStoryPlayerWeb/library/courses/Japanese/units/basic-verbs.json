@@ -4081,7 +4081,7 @@
             "さがします"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «さがします»: buscar",
+          "explanation": "Escuchaste «さがします». El ejemplo practica: buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "tags": [
@@ -4108,8 +4108,8 @@
             "いそぎます"
           ],
           "explanation": "La forma completa es «いそぎます».",
-          "audio": "いそぎます",
-          "slow_audio": "いそぎます",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4126,8 +4126,8 @@
             "す"
           ],
           "explanation": "La forma completa es «さがします»: buscar",
-          "audio": "さがします",
-          "slow_audio": "さがします",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4138,7 +4138,7 @@
         {
           "id": "japanese-basic-verbs-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «comprar»",
+          "prompt": "Produce el ejemplo que demuestra: «comprar»",
           "target": "comprar",
           "answer": "かいます",
           "accepted_answers": [
@@ -4158,7 +4158,7 @@
         {
           "id": "japanese-basic-verbs-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «buscar»",
+          "prompt": "Di en voz alta: «さがします»",
           "target": "buscar",
           "answer": "さがします",
           "accepted_answers": [
@@ -4192,7 +4192,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "いそぎます",
               "accepted_answers": [
                 "いそぎます"
@@ -4210,7 +4210,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "さがします",
               "accepted_answers": [
                 "さがします"

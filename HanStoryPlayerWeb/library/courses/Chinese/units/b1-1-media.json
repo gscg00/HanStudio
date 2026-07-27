@@ -1831,7 +1831,7 @@
             "导演展示了两种观点。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «导演展示了两种观点。»: La directora muestra dos puntos de vista.",
+          "explanation": "Escuchaste «导演展示了两种观点。». El ejemplo practica: La directora muestra dos puntos de vista.",
           "audio": "导演展示了两种观点。",
           "slow_audio": "导演展示了两种观点。",
           "tags": [
@@ -1862,8 +1862,8 @@
             "结局让我非常惊讶。"
           ],
           "explanation": "La forma completa es «结局让我非常惊讶。».",
-          "audio": "结局让我非常惊讶。",
-          "slow_audio": "结局让我非常惊讶。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "点"
           ],
           "explanation": "La forma completa es «导演展示了两种观点。»: La directora muestra dos puntos de vista.",
-          "audio": "导演展示了两种观点。",
-          "slow_audio": "导演展示了两种观点。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "chinese-b1-1-media-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Me sorprendió esta costumbre.»",
+          "prompt": "Produce el ejemplo que demuestra: «Me sorprendió esta costumbre.»",
           "target": "Me sorprendió esta costumbre.",
           "answer": "这个习惯让我很惊讶。",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "chinese-b1-1-media-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La directora muestra dos puntos de vista.»",
+          "prompt": "Di en voz alta: «导演展示了两种观点。»",
           "target": "La directora muestra dos puntos de vista.",
           "answer": "导演展示了两种观点。",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "结局让我非常惊讶。",
               "accepted_answers": [
                 "结局让我非常惊讶。"
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "导演展示了两种观点。",
               "accepted_answers": [
                 "导演展示了两种观点。"

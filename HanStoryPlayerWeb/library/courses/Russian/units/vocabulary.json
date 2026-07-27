@@ -23910,7 +23910,7 @@
             "как"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «как»: cómo",
+          "explanation": "Escuchaste «как». El ejemplo practica: cómo",
           "audio": "как",
           "slow_audio": "как",
           "tags": [
@@ -23933,8 +23933,8 @@
             "делать"
           ],
           "explanation": "La forma completa es «делать».",
-          "audio": "делать",
-          "slow_audio": "делать",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -23951,8 +23951,8 @@
             "к"
           ],
           "explanation": "La forma completa es «как»: cómo",
-          "audio": "как",
-          "slow_audio": "как",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -23963,7 +23963,7 @@
         {
           "id": "russian-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "почему",
           "accepted_answers": [
@@ -23983,7 +23983,7 @@
         {
           "id": "russian-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «как»",
           "target": "cómo",
           "answer": "как",
           "accepted_answers": [
@@ -24017,7 +24017,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "делать",
               "accepted_answers": [
                 "делать"
@@ -24035,7 +24035,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "как",
               "accepted_answers": [
                 "как"

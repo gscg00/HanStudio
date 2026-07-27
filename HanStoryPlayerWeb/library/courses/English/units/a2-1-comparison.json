@@ -1831,7 +1831,7 @@
             "The weather is worse today than yesterday."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The weather is worse today than yesterday.»: Hoy hace peor tiempo que ayer.",
+          "explanation": "Escuchaste «The weather is worse today than yesterday.». El ejemplo practica: Hoy hace peor tiempo que ayer.",
           "audio": "The weather is worse today than yesterday.",
           "slow_audio": "The weather is worse today than yesterday.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "This option is better for me."
           ],
           "explanation": "La forma completa es «This option is better for me.».",
-          "audio": "This option is better for me.",
-          "slow_audio": "This option is better for me.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "yesterday"
           ],
           "explanation": "La forma completa es «The weather is worse today than yesterday.»: Hoy hace peor tiempo que ayer.",
-          "audio": "The weather is worse today than yesterday.",
-          "slow_audio": "The weather is worse today than yesterday.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "english-a2-1-comparison-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "tall",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "english-a2-1-comparison-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Hoy hace peor tiempo que ayer.»",
+          "prompt": "Di en voz alta: «The weather is worse today than yesterday.»",
           "target": "Hoy hace peor tiempo que ayer.",
           "answer": "The weather is worse today than yesterday.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "This option is better for me.",
               "accepted_answers": [
                 "This option is better for me."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The weather is worse today than yesterday.",
               "accepted_answers": [
                 "The weather is worse today than yesterday."

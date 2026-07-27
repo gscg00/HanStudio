@@ -1831,7 +1831,7 @@
             "役に立ちますが、好きではありません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «役に立ちますが、好きではありません。»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «役に立ちますが、好きではありません。». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "役に立ちますが、好きではありません。",
           "slow_audio": "役に立ちますが、好きではありません。",
           "tags": [
@@ -1867,8 +1867,8 @@
             "簡単なので気に入っています。"
           ],
           "explanation": "La forma completa es «簡単なので気に入っています。».",
-          "audio": "簡単なので気に入っています。",
-          "slow_audio": "簡単なので気に入っています。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1885,8 +1885,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «役に立ちますが、好きではありません。»: No me gusta, aunque es útil.",
-          "audio": "役に立ちますが、好きではありません。",
-          "slow_audio": "役に立ちますが、好きではありません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1897,7 +1897,7 @@
         {
           "id": "japanese-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "だから",
           "accepted_answers": [
@@ -1917,7 +1917,7 @@
         {
           "id": "japanese-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «役に立ちますが、好きではありません。»",
           "target": "No me gusta, aunque es útil.",
           "answer": "役に立ちますが、好きではありません。",
           "accepted_answers": [
@@ -1951,7 +1951,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "簡単なので気に入っています。",
               "accepted_answers": [
                 "簡単なので気に入っています。"
@@ -1969,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "役に立ちますが、好きではありません。",
               "accepted_answers": [
                 "役に立ちますが、好きではありません。"

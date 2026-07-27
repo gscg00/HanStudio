@@ -1831,7 +1831,7 @@
             "Je suis libre après six heures."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je suis libre après six heures.»: Estoy libre después de las seis.",
+          "explanation": "Escuchaste «Je suis libre après six heures.». El ejemplo practica: Estoy libre después de las seis.",
           "audio": "Je suis libre après six heures.",
           "slow_audio": "Je suis libre après six heures.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "On se retrouve où ?"
           ],
           "explanation": "La forma completa es «On se retrouve où ?».",
-          "audio": "On se retrouve où ?",
-          "slow_audio": "On se retrouve où ?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "heures"
           ],
           "explanation": "La forma completa es «Je suis libre après six heures.»: Estoy libre después de las seis.",
-          "audio": "Je suis libre après six heures.",
-          "slow_audio": "Je suis libre après six heures.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "french-a1-2-social-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «fin de semana»",
+          "prompt": "Produce el ejemplo que demuestra: «fin de semana»",
           "target": "fin de semana",
           "answer": "week-end",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "french-a1-2-social-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Estoy libre después de las seis.»",
+          "prompt": "Di en voz alta: «Je suis libre après six heures.»",
           "target": "Estoy libre después de las seis.",
           "answer": "Je suis libre après six heures.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "On se retrouve où ?",
               "accepted_answers": [
                 "On se retrouve où ?"
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Je suis libre après six heures.",
               "accepted_answers": [
                 "Je suis libre après six heures."
@@ -1978,7 +1978,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "week-end",
               "accepted_answers": [
                 "week-end"

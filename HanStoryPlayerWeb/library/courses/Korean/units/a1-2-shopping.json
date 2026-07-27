@@ -1831,7 +1831,7 @@
             "현금만 있어요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «현금만 있어요.»: Solo tengo efectivo.",
+          "explanation": "Escuchaste «현금만 있어요.». El ejemplo practica: Solo tengo efectivo.",
           "audio": "현금만 있어요.",
           "slow_audio": "현금만 있어요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "카드로 결제할 수 있어요?"
           ],
           "explanation": "La forma completa es «카드로 결제할 수 있어요?».",
-          "audio": "카드로 결제할 수 있어요?",
-          "slow_audio": "카드로 결제할 수 있어요?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "있어요"
           ],
           "explanation": "La forma completa es «현금만 있어요.»: Solo tengo efectivo.",
-          "audio": "현금만 있어요.",
-          "slow_audio": "현금만 있어요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a1-2-shopping-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «tarjeta»",
+          "prompt": "Produce el ejemplo que demuestra: «tarjeta»",
           "target": "tarjeta",
           "answer": "카드",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a1-2-shopping-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Solo tengo efectivo.»",
+          "prompt": "Di en voz alta: «현금만 있어요.»",
           "target": "Solo tengo efectivo.",
           "answer": "현금만 있어요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "카드로 결제할 수 있어요?",
               "accepted_answers": [
                 "카드로 결제할 수 있어요?"
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "현금만 있어요.",
               "accepted_answers": [
                 "현금만 있어요."

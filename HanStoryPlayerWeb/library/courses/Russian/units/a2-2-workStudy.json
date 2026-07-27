@@ -1831,7 +1831,7 @@
             "Я хочу лучше писать."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Я хочу лучше писать.»: Quiero mejorar mi escritura.",
+          "explanation": "Escuchaste «Я хочу лучше писать.». El ejemplo practica: Quiero mejorar mi escritura.",
           "audio": "Я хочу лучше писать.",
           "slow_audio": "Я хочу лучше писать.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Этот урок кажется мне трудным."
           ],
           "explanation": "La forma completa es «Этот урок кажется мне трудным.».",
-          "audio": "Этот урок кажется мне трудным.",
-          "slow_audio": "Этот урок кажется мне трудным.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "писать"
           ],
           "explanation": "La forma completa es «Я хочу лучше писать.»: Quiero mejorar mi escritura.",
-          "audio": "Я хочу лучше писать.",
-          "slow_audio": "Я хочу лучше писать.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "russian-a2-2-workStudy-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "необходимо",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "russian-a2-2-workStudy-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "prompt": "Di en voz alta: «Я хочу лучше писать.»",
           "target": "Quiero mejorar mi escritura.",
           "answer": "Я хочу лучше писать.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Этот урок кажется мне трудным.",
               "accepted_answers": [
                 "Этот урок кажется мне трудным."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Я хочу лучше писать.",
               "accepted_answers": [
                 "Я хочу лучше писать."

@@ -1831,7 +1831,7 @@
             "يتغير الطقس بسرعة."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «يتغير الطقس بسرعة.»: El tiempo cambia rápido.",
+          "explanation": "Escuchaste «يتغير الطقس بسرعة.». El ejemplo practica: El tiempo cambia rápido.",
           "audio": "يتغير الطقس بسرعة.",
           "slow_audio": "يتغير الطقس بسرعة.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "أحتاج إلى معطف."
           ],
           "explanation": "La forma completa es «أحتاج إلى معطف.».",
-          "audio": "أحتاج إلى معطف.",
-          "slow_audio": "أحتاج إلى معطف.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "بسرعة"
           ],
           "explanation": "La forma completa es «يتغير الطقس بسرعة.»: El tiempo cambia rápido.",
-          "audio": "يتغير الطقس بسرعة.",
-          "slow_audio": "يتغير الطقس بسرعة.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "arabic-a1-2-weather-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «abrigo»",
+          "prompt": "Produce el ejemplo que demuestra: «abrigo»",
           "target": "abrigo",
           "answer": "معطف",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "arabic-a1-2-weather-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El tiempo cambia rápido.»",
+          "prompt": "Di en voz alta: «يتغير الطقس بسرعة.»",
           "target": "El tiempo cambia rápido.",
           "answer": "يتغير الطقس بسرعة.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أحتاج إلى معطف.",
               "accepted_answers": [
                 "أحتاج إلى معطف."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "يتغير الطقس بسرعة.",
               "accepted_answers": [
                 "يتغير الطقس بسرعة."

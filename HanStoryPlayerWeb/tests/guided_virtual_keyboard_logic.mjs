@@ -31,6 +31,10 @@ assert.equal(korean.pages.length,1,'El teclado coreano debe ser una única dispo
 assert.equal(korean.pages[0].rows.length,3,'La disposición principal coreana debe caber sin una fila extra');
 assert.ok(korean.pages[0].rows.flat().includes('ㅁ'));
 assert.ok(korean.pages[0].rows.flat().includes('ㅜ'));
+const koreanWithParticle=virtualKeyboardLayout('Korean',[{answer:'은/는'}]);
+assert.ok(koreanWithParticle.pages.find(page=>page.id==='lesson-signs')?.rows.flat().includes('/'),'Debe ofrecer la diagonal exigida por la respuesta');
+const koreanDialogueSigns=virtualKeyboardLayout('Korean',[{turns:[{role:'learner',answer:'네, 물이 있어요.'}]}]);
+assert.ok(koreanDialogueSigns.pages.find(page=>page.id==='lesson-signs')?.rows.flat().includes(','),'Debe revisar también las respuestas anidadas del diálogo');
 
 const hangulUnit=JSON.parse(readFileSync(new URL('../library/courses/Korean/units/hangul-foundations.json',import.meta.url),'utf8'));
 const mun=hangulUnit.lessons.flatMap(lesson=>lesson.activities).find(activity=>activity.id==='korean-hangul-foundations-production-translate');

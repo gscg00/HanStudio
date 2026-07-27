@@ -1831,7 +1831,7 @@
             "The council announced a new plan."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «The council announced a new plan.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «The council announced a new plan.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "The council announced a new plan.",
           "slow_audio": "The council announced a new plan.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Pollution affects our health."
           ],
           "explanation": "La forma completa es «Pollution affects our health.».",
-          "audio": "Pollution affects our health.",
-          "slow_audio": "Pollution affects our health.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "plan"
           ],
           "explanation": "La forma completa es «The council announced a new plan.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "The council announced a new plan.",
-          "slow_audio": "The council announced a new plan.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "english-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "tall",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "english-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «The council announced a new plan.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "The council announced a new plan.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "Pollution affects our health.",
               "accepted_answers": [
                 "Pollution affects our health."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en inglés.",
+              "prompt": "Di o escribe este ejemplo en inglés.",
               "answer": "The council announced a new plan.",
               "accepted_answers": [
                 "The council announced a new plan."

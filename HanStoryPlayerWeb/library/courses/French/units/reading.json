@@ -1891,8 +1891,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «U».",
-          "audio": "u",
-          "slow_audio": "u",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -1904,12 +1904,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "V",
+          "answer": "vé",
           "accepted_answers": [
-            "V"
+            "vé"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «V»: V: ve",
+          "explanation": "Escuchaste «vé». El ejemplo practica: V: ve",
           "audio": "vé",
           "slow_audio": "vé",
           "tags": [
@@ -1932,8 +1932,8 @@
             "U"
           ],
           "explanation": "La forma completa es «U».",
-          "audio": "u",
-          "slow_audio": "u",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1950,8 +1950,8 @@
             "V"
           ],
           "explanation": "La forma completa es «V»: V: ve",
-          "audio": "vé",
-          "slow_audio": "vé",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1962,15 +1962,15 @@
         {
           "id": "french-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «W: doble ve»",
+          "prompt": "Produce el ejemplo que demuestra: «W: doble ve»",
           "target": "W: doble ve",
-          "answer": "W",
+          "answer": "double vé",
           "accepted_answers": [
-            "W"
+            "double vé"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «W».",
+          "explanation": "Una respuesta adecuada es «double vé».",
           "audio": "double vé",
           "slow_audio": "double vé",
           "tags": [
@@ -1982,16 +1982,16 @@
         {
           "id": "french-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «V: ve»",
+          "prompt": "Di en voz alta: «vé»",
           "target": "V: ve",
-          "answer": "V",
+          "answer": "vé",
           "accepted_answers": [
-            "V"
+            "vé"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «V». También puedes escribirlo.",
+          "explanation": "El modelo es «vé». También puedes escribirlo.",
           "audio": "vé",
           "slow_audio": "vé",
           "tags": [
@@ -2016,10 +2016,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
-              "answer": "U",
+              "prompt": "Di o escribe este ejemplo en francés.",
+              "answer": "u",
               "accepted_answers": [
-                "U"
+                "u"
               ],
               "audio": "u",
               "allow_minor_typos": true,
@@ -2034,10 +2034,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
-              "answer": "V",
+              "prompt": "Di o escribe este ejemplo en francés.",
+              "answer": "vé",
               "accepted_answers": [
-                "V"
+                "vé"
               ],
               "audio": "vé",
               "allow_minor_typos": true,

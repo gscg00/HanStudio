@@ -1831,7 +1831,7 @@
             "Prenda questo due volte al giorno."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Prenda questo due volte al giorno.»: Tome esto dos veces al día.",
+          "explanation": "Escuchaste «Prenda questo due volte al giorno.». El ejemplo practica: Tome esto dos veces al día.",
           "audio": "Prenda questo due volte al giorno.",
           "slow_audio": "Prenda questo due volte al giorno.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Ho un’allergia alla penicillina."
           ],
           "explanation": "La forma completa es «Ho un’allergia alla penicillina.».",
-          "audio": "Ho un’allergia alla penicillina.",
-          "slow_audio": "Ho un’allergia alla penicillina.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "giorno"
           ],
           "explanation": "La forma completa es «Prenda questo due volte al giorno.»: Tome esto dos veces al día.",
-          "audio": "Prenda questo due volte al giorno.",
-          "slow_audio": "Prenda questo due volte al giorno.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "italian-a1-2-health-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «médico»",
+          "prompt": "Produce el ejemplo que demuestra: «médico»",
           "target": "médico",
           "answer": "medico",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "italian-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Tome esto dos veces al día.»",
+          "prompt": "Di en voz alta: «Prenda questo due volte al giorno.»",
           "target": "Tome esto dos veces al día.",
           "answer": "Prenda questo due volte al giorno.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Ho un’allergia alla penicillina.",
               "accepted_answers": [
                 "Ho un’allergia alla penicillina."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Prenda questo due volte al giorno.",
               "accepted_answers": [
                 "Prenda questo due volte al giorno."

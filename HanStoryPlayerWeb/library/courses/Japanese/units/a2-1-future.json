@@ -1831,7 +1831,7 @@
             "着いたら電話します。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «着いたら電話します。»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «着いたら電話します。». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "着いたら電話します。",
           "slow_audio": "着いたら電話します。",
           "tags": [
@@ -1866,8 +1866,8 @@
             "部屋を予約するつもりです。"
           ],
           "explanation": "La forma completa es «部屋を予約するつもりです。».",
-          "audio": "部屋を予約するつもりです。",
-          "slow_audio": "部屋を予約するつもりです。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1884,8 +1884,8 @@
             "す"
           ],
           "explanation": "La forma completa es «着いたら電話します。»: Te llamaré cuando llegue.",
-          "audio": "着いたら電話します。",
-          "slow_audio": "着いたら電話します。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1896,7 +1896,7 @@
         {
           "id": "japanese-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "予約する",
           "accepted_answers": [
@@ -1916,7 +1916,7 @@
         {
           "id": "japanese-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «着いたら電話します。»",
           "target": "Te llamaré cuando llegue.",
           "answer": "着いたら電話します。",
           "accepted_answers": [
@@ -1950,7 +1950,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "部屋を予約するつもりです。",
               "accepted_answers": [
                 "部屋を予約するつもりです。"
@@ -1968,7 +1968,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "着いたら電話します。",
               "accepted_answers": [
                 "着いたら電話します。"

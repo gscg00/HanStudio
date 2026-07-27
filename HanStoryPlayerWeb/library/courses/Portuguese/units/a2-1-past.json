@@ -1831,7 +1831,7 @@
             "O que aconteceu?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «O que aconteceu?»: ¿Qué pasó?",
+          "explanation": "Escuchaste «O que aconteceu?». El ejemplo practica: ¿Qué pasó?",
           "audio": "O que aconteceu?",
           "slow_audio": "O que aconteceu?",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Não consegui encontrar as chaves."
           ],
           "explanation": "La forma completa es «Não consegui encontrar as chaves.».",
-          "audio": "Não consegui encontrar as chaves.",
-          "slow_audio": "Não consegui encontrar as chaves.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "aconteceu"
           ],
           "explanation": "La forma completa es «O que aconteceu?»: ¿Qué pasó?",
-          "audio": "O que aconteceu?",
-          "slow_audio": "O que aconteceu?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "portuguese-a2-1-past-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «ocurrió»",
+          "prompt": "Produce el ejemplo que demuestra: «ocurrió»",
           "target": "ocurrió",
           "answer": "aconteceu",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "portuguese-a2-1-past-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «¿Qué pasó?»",
+          "prompt": "Di en voz alta: «O que aconteceu?»",
           "target": "¿Qué pasó?",
           "answer": "O que aconteceu?",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Não consegui encontrar as chaves.",
               "accepted_answers": [
                 "Não consegui encontrar as chaves."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "O que aconteceu?",
               "accepted_answers": [
                 "O que aconteceu?"

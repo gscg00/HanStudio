@@ -1314,8 +1314,8 @@
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «q».",
-          "audio": "qī",
-          "slow_audio": "qī",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "translation"
@@ -1327,12 +1327,12 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "x",
+          "answer": "xī",
           "accepted_answers": [
-            "x"
+            "xī"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «x»: x: sh muy suave, lengua adelante",
+          "explanation": "Escuchaste «xī». El ejemplo practica: x: sh muy suave, lengua adelante",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [
@@ -1355,8 +1355,8 @@
             "q"
           ],
           "explanation": "La forma completa es «q».",
-          "audio": "qī",
-          "slow_audio": "qī",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1373,8 +1373,8 @@
             "x"
           ],
           "explanation": "La forma completa es «x»: x: sh muy suave, lengua adelante",
-          "audio": "xī",
-          "slow_audio": "xī",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1385,15 +1385,15 @@
         {
           "id": "chinese-reading-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «zh: ch retrofleja, lengua atrás»",
+          "prompt": "Produce el ejemplo que demuestra: «zh: ch retrofleja, lengua atrás»",
           "target": "zh: ch retrofleja, lengua atrás",
-          "answer": "zh",
+          "answer": "zhī",
           "accepted_answers": [
-            "zh"
+            "zhī"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «zh».",
+          "explanation": "Una respuesta adecuada es «zhī».",
           "audio": "zhī",
           "slow_audio": "zhī",
           "tags": [
@@ -1405,16 +1405,16 @@
         {
           "id": "chinese-reading-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «x: sh muy suave, lengua adelante»",
+          "prompt": "Di en voz alta: «xī»",
           "target": "x: sh muy suave, lengua adelante",
-          "answer": "x",
+          "answer": "xī",
           "accepted_answers": [
-            "x"
+            "xī"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «x». También puedes escribirlo.",
+          "explanation": "El modelo es «xī». También puedes escribirlo.",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [
@@ -1439,10 +1439,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
-              "answer": "q",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "qī",
               "accepted_answers": [
-                "q"
+                "qī"
               ],
               "audio": "qī",
               "allow_minor_typos": true,
@@ -1457,10 +1457,10 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
-              "answer": "x",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "xī",
               "accepted_answers": [
-                "x"
+                "xī"
               ],
               "audio": "xī",
               "allow_minor_typos": true,

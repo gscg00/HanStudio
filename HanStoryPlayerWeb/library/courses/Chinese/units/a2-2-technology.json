@@ -1831,7 +1831,7 @@
             "应用打不开。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «应用打不开。»: La aplicación no se abre.",
+          "explanation": "Escuchaste «应用打不开。». El ejemplo practica: La aplicación no se abre.",
           "audio": "应用打不开。",
           "slow_audio": "应用打不开。",
           "tags": [
@@ -1861,8 +1861,8 @@
             "我得给手机充电。"
           ],
           "explanation": "La forma completa es «我得给手机充电。».",
-          "audio": "我得给手机充电。",
-          "slow_audio": "我得给手机充电。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1879,8 +1879,8 @@
             "开"
           ],
           "explanation": "La forma completa es «应用打不开。»: La aplicación no se abre.",
-          "audio": "应用打不开。",
-          "slow_audio": "应用打不开。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1891,7 +1891,7 @@
         {
           "id": "chinese-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "坏了",
           "accepted_answers": [
@@ -1911,7 +1911,7 @@
         {
           "id": "chinese-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «应用打不开。»",
           "target": "La aplicación no se abre.",
           "answer": "应用打不开。",
           "accepted_answers": [
@@ -1945,7 +1945,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "我得给手机充电。",
               "accepted_answers": [
                 "我得给手机充电。"
@@ -1963,7 +1963,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "应用打不开。",
               "accepted_answers": [
                 "应用打不开。"

@@ -1831,7 +1831,7 @@
             "سأتصل بك عندما أصل."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «سأتصل بك عندما أصل.»: Te llamaré cuando llegue.",
+          "explanation": "Escuchaste «سأتصل بك عندما أصل.». El ejemplo practica: Te llamaré cuando llegue.",
           "audio": "سأتصل بك عندما أصل.",
           "slow_audio": "سأتصل بك عندما أصل.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "أنوي حجز غرفة."
           ],
           "explanation": "La forma completa es «أنوي حجز غرفة.».",
-          "audio": "أنوي حجز غرفة.",
-          "slow_audio": "أنوي حجز غرفة.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "أصل"
           ],
           "explanation": "La forma completa es «سأتصل بك عندما أصل.»: Te llamaré cuando llegue.",
-          "audio": "سأتصل بك عندما أصل.",
-          "slow_audio": "سأتصل بك عندما أصل.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "arabic-a2-1-future-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «reservar»",
+          "prompt": "Produce el ejemplo que demuestra: «reservar»",
           "target": "reservar",
           "answer": "يحجز",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "arabic-a2-1-future-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Te llamaré cuando llegue.»",
+          "prompt": "Di en voz alta: «سأتصل بك عندما أصل.»",
           "target": "Te llamaré cuando llegue.",
           "answer": "سأتصل بك عندما أصل.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أنوي حجز غرفة.",
               "accepted_answers": [
                 "أنوي حجز غرفة."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "سأتصل بك عندما أصل.",
               "accepted_answers": [
                 "سأتصل بك عندما أصل."

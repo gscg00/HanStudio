@@ -2145,7 +2145,7 @@
             "감사합니다."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «감사합니다.»: Gracias.",
+          "explanation": "Escuchaste «감사합니다.». El ejemplo practica: Gracias.",
           "audio": "감사합니다.",
           "slow_audio": "감사합니다.",
           "tags": [
@@ -2169,8 +2169,8 @@
             "네?"
           ],
           "explanation": "La forma completa es «네?».",
-          "audio": "네?",
-          "slow_audio": "네?",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -2187,8 +2187,8 @@
             "다"
           ],
           "explanation": "La forma completa es «감사합니다.»: Gracias.",
-          "audio": "감사합니다.",
-          "slow_audio": "감사합니다.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2199,7 +2199,7 @@
         {
           "id": "korean-story-bridge-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Está bien.»",
+          "prompt": "Produce el ejemplo que demuestra: «Está bien.»",
           "target": "Está bien.",
           "answer": "괜찮아요.",
           "accepted_answers": [
@@ -2219,7 +2219,7 @@
         {
           "id": "korean-story-bridge-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Gracias.»",
+          "prompt": "Di en voz alta: «감사합니다.»",
           "target": "Gracias.",
           "answer": "감사합니다.",
           "accepted_answers": [
@@ -2253,7 +2253,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "네?",
               "accepted_answers": [
                 "네?"
@@ -2271,7 +2271,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "감사합니다.",
               "accepted_answers": [
                 "감사합니다."
@@ -2289,7 +2289,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "괜찮아요.",
               "accepted_answers": [
                 "괜찮아요."

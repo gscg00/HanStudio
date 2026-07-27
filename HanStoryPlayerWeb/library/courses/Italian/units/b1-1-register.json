@@ -1831,7 +1831,7 @@
             "Mi dispiace informarla che l’appuntamento è stato cancellato."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Mi dispiace informarla che l’appuntamento è stato cancellato.»: Lamento informarle de que la cita se canceló.",
+          "explanation": "Escuchaste «Mi dispiace informarla che l’appuntamento è stato cancellato.». El ejemplo practica: Lamento informarle de que la cita se canceló.",
           "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
           "slow_audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
           "tags": [
@@ -1859,8 +1859,8 @@
             "Grazie per avermi avvisato in anticipo."
           ],
           "explanation": "La forma completa es «Grazie per avermi avvisato in anticipo.».",
-          "audio": "Grazie per avermi avvisato in anticipo.",
-          "slow_audio": "Grazie per avermi avvisato in anticipo.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1877,8 +1877,8 @@
             "cancellato"
           ],
           "explanation": "La forma completa es «Mi dispiace informarla che l’appuntamento è stato cancellato.»: Lamento informarle de que la cita se canceló.",
-          "audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
-          "slow_audio": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1889,7 +1889,7 @@
         {
           "id": "italian-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Vamos a dividir el trabajo.»",
+          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Dividiamo il lavoro.",
           "accepted_answers": [
@@ -1909,7 +1909,7 @@
         {
           "id": "italian-b1-1-register-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Lamento informarle de que la cita se canceló.»",
+          "prompt": "Di en voz alta: «Mi dispiace informarla che l’appuntamento è stato cancellato.»",
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
           "accepted_answers": [
@@ -1943,7 +1943,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Grazie per avermi avvisato in anticipo.",
               "accepted_answers": [
                 "Grazie per avermi avvisato in anticipo."
@@ -1961,7 +1961,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
               "accepted_answers": [
                 "Mi dispiace informarla che l’appuntamento è stato cancellato."
@@ -1979,7 +1979,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Dividiamo il lavoro.",
               "accepted_answers": [
                 "Dividiamo il lavoro."

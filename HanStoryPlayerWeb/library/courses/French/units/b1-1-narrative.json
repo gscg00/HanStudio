@@ -1831,7 +1831,7 @@
             "Finalement, tout s’est bien terminé."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Finalement, tout s’est bien terminé.»: Al final, todo salió bien.",
+          "explanation": "Escuchaste «Finalement, tout s’est bien terminé.». El ejemplo practica: Al final, todo salió bien.",
           "audio": "Finalement, tout s’est bien terminé.",
           "slow_audio": "Finalement, tout s’est bien terminé.",
           "tags": [
@@ -1862,8 +1862,8 @@
             "Pendant ce temps, ma sœur a appelé la police."
           ],
           "explanation": "La forma completa es «Pendant ce temps, ma sœur a appelé la police.».",
-          "audio": "Pendant ce temps, ma sœur a appelé la police.",
-          "slow_audio": "Pendant ce temps, ma sœur a appelé la police.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1880,8 +1880,8 @@
             "terminé"
           ],
           "explanation": "La forma completa es «Finalement, tout s’est bien terminé.»: Al final, todo salió bien.",
-          "audio": "Finalement, tout s’est bien terminé.",
-          "slow_audio": "Finalement, tout s’est bien terminé.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1892,7 +1892,7 @@
         {
           "id": "french-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Alguna vez has estado allí?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "Tu es déjà allé là-bas ?",
           "accepted_answers": [
@@ -1912,7 +1912,7 @@
         {
           "id": "french-b1-1-narrative-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Al final, todo salió bien.»",
+          "prompt": "Di en voz alta: «Finalement, tout s’est bien terminé.»",
           "target": "Al final, todo salió bien.",
           "answer": "Finalement, tout s’est bien terminé.",
           "accepted_answers": [
@@ -1946,7 +1946,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Pendant ce temps, ma sœur a appelé la police.",
               "accepted_answers": [
                 "Pendant ce temps, ma sœur a appelé la police."
@@ -1964,7 +1964,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "Finalement, tout s’est bien terminé.",
               "accepted_answers": [
                 "Finalement, tout s’est bien terminé."

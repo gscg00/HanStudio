@@ -1831,7 +1831,7 @@
             "Obwohl sie müde war, beendete sie die Arbeit."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Obwohl sie müde war, beendete sie die Arbeit.»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «Obwohl sie müde war, beendete sie die Arbeit.». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "Obwohl sie müde war, beendete sie die Arbeit.",
           "slow_audio": "Obwohl sie müde war, beendete sie die Arbeit.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "Dadurch verzögerte sich das Projekt."
           ],
           "explanation": "La forma completa es «Dadurch verzögerte sich das Projekt.».",
-          "audio": "Dadurch verzögerte sich das Projekt.",
-          "slow_audio": "Dadurch verzögerte sich das Projekt.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "Arbeit"
           ],
           "explanation": "La forma completa es «Obwohl sie müde war, beendete sie die Arbeit.»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "Obwohl sie müde war, beendete sie die Arbeit.",
-          "slow_audio": "Obwohl sie müde war, beendete sie die Arbeit.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "german-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "Was meinst du dazu?",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "german-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «Obwohl sie müde war, beendete sie die Arbeit.»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "Obwohl sie müde war, beendete sie die Arbeit.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Dadurch verzögerte sich das Projekt.",
               "accepted_answers": [
                 "Dadurch verzögerte sich das Projekt."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en alemán.",
+              "prompt": "Di o escribe este ejemplo en alemán.",
               "answer": "Obwohl sie müde war, beendete sie die Arbeit.",
               "accepted_answers": [
                 "Obwohl sie müde war, beendete sie die Arbeit."

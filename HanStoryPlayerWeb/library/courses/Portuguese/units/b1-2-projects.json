@@ -1831,7 +1831,7 @@
             "Revemos o progresso no fim da semana."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Revemos o progresso no fim da semana.»: Revisaremos los avances al final de la semana.",
+          "explanation": "Escuchaste «Revemos o progresso no fim da semana.». El ejemplo practica: Revisaremos los avances al final de la semana.",
           "audio": "Revemos o progresso no fim da semana.",
           "slow_audio": "Revemos o progresso no fim da semana.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Vamos prever os riscos antes de começar."
           ],
           "explanation": "La forma completa es «Vamos prever os riscos antes de começar.».",
-          "audio": "Vamos prever os riscos antes de começar.",
-          "slow_audio": "Vamos prever os riscos antes de começar.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "semana"
           ],
           "explanation": "La forma completa es «Revemos o progresso no fim da semana.»: Revisaremos los avances al final de la semana.",
-          "audio": "Revemos o progresso no fim da semana.",
-          "slow_audio": "Revemos o progresso no fim da semana.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "portuguese-b1-2-projects-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Quiero participar como voluntario.»",
+          "prompt": "Produce el ejemplo que demuestra: «Quiero participar como voluntario.»",
           "target": "Quiero participar como voluntario.",
           "answer": "Quero participar como voluntário.",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "portuguese-b1-2-projects-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Revisaremos los avances al final de la semana.»",
+          "prompt": "Di en voz alta: «Revemos o progresso no fim da semana.»",
           "target": "Revisaremos los avances al final de la semana.",
           "answer": "Revemos o progresso no fim da semana.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Vamos prever os riscos antes de começar.",
               "accepted_answers": [
                 "Vamos prever os riscos antes de começar."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Revemos o progresso no fim da semana.",
               "accepted_answers": [
                 "Revemos o progresso no fim da semana."

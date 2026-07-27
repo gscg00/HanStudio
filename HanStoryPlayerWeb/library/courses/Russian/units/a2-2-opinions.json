@@ -1831,7 +1831,7 @@
             "Мне это не нравится, хотя это полезно."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Мне это не нравится, хотя это полезно.»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «Мне это не нравится, хотя это полезно.». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "Мне это не нравится, хотя это полезно.",
           "slow_audio": "Мне это не нравится, хотя это полезно.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Мне это нравится, потому что это просто."
           ],
           "explanation": "La forma completa es «Мне это нравится, потому что это просто.».",
-          "audio": "Мне это нравится, потому что это просто.",
-          "slow_audio": "Мне это нравится, потому что это просто.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "полезно"
           ],
           "explanation": "La forma completa es «Мне это не нравится, хотя это полезно.»: No me gusta, aunque es útil.",
-          "audio": "Мне это не нравится, хотя это полезно.",
-          "slow_audio": "Мне это не нравится, хотя это полезно.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "russian-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "поэтому",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "russian-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «Мне это не нравится, хотя это полезно.»",
           "target": "No me gusta, aunque es útil.",
           "answer": "Мне это не нравится, хотя это полезно.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне это нравится, потому что это просто.",
               "accepted_answers": [
                 "Мне это нравится, потому что это просто."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en ruso.",
+              "prompt": "Di o escribe este ejemplo en ruso.",
               "answer": "Мне это не нравится, хотя это полезно.",
               "accepted_answers": [
                 "Мне это не нравится, хотя это полезно."

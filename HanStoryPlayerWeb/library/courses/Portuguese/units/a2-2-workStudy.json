@@ -1831,7 +1831,7 @@
             "Quero melhorar a minha escrita."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quero melhorar a minha escrita.»: Quiero mejorar mi escritura.",
+          "explanation": "Escuchaste «Quero melhorar a minha escrita.». El ejemplo practica: Quiero mejorar mi escritura.",
           "audio": "Quero melhorar a minha escrita.",
           "slow_audio": "Quero melhorar a minha escrita.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "Esta lição parece-me difícil."
           ],
           "explanation": "La forma completa es «Esta lição parece-me difícil.».",
-          "audio": "Esta lição parece-me difícil.",
-          "slow_audio": "Esta lição parece-me difícil.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "escrita"
           ],
           "explanation": "La forma completa es «Quero melhorar a minha escrita.»: Quiero mejorar mi escritura.",
-          "audio": "Quero melhorar a minha escrita.",
-          "slow_audio": "Quero melhorar a minha escrita.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "portuguese-a2-2-workStudy-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "necessário",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "portuguese-a2-2-workStudy-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Quiero mejorar mi escritura.»",
+          "prompt": "Di en voz alta: «Quero melhorar a minha escrita.»",
           "target": "Quiero mejorar mi escritura.",
           "answer": "Quero melhorar a minha escrita.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Esta lição parece-me difícil.",
               "accepted_answers": [
                 "Esta lição parece-me difícil."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en portugués.",
+              "prompt": "Di o escribe este ejemplo en portugués.",
               "answer": "Quero melhorar a minha escrita.",
               "accepted_answers": [
                 "Quero melhorar a minha escrita."

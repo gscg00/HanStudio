@@ -1831,7 +1831,7 @@
             "アプリが開きません。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «アプリが開きません。»: La aplicación no se abre.",
+          "explanation": "Escuchaste «アプリが開きません。». El ejemplo practica: La aplicación no se abre.",
           "audio": "アプリが開きません。",
           "slow_audio": "アプリが開きません。",
           "tags": [
@@ -1870,8 +1870,8 @@
             "携帯電話を充電する必要があります。"
           ],
           "explanation": "La forma completa es «携帯電話を充電する必要があります。».",
-          "audio": "携帯電話を充電する必要があります。",
-          "slow_audio": "携帯電話を充電する必要があります。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1888,8 +1888,8 @@
             "ん"
           ],
           "explanation": "La forma completa es «アプリが開きません。»: La aplicación no se abre.",
-          "audio": "アプリが開きません。",
-          "slow_audio": "アプリが開きません。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1900,7 +1900,7 @@
         {
           "id": "japanese-a2-2-technology-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «roto»",
+          "prompt": "Produce el ejemplo que demuestra: «roto»",
           "target": "roto",
           "answer": "壊れた",
           "accepted_answers": [
@@ -1920,7 +1920,7 @@
         {
           "id": "japanese-a2-2-technology-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La aplicación no se abre.»",
+          "prompt": "Di en voz alta: «アプリが開きません。»",
           "target": "La aplicación no se abre.",
           "answer": "アプリが開きません。",
           "accepted_answers": [
@@ -1954,7 +1954,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "携帯電話を充電する必要があります。",
               "accepted_answers": [
                 "携帯電話を充電する必要があります。"
@@ -1972,7 +1972,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "アプリが開きません。",
               "accepted_answers": [
                 "アプリが開きません。"

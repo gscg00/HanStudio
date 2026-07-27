@@ -638,7 +638,7 @@
             "come"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «come»: cómo",
+          "explanation": "Escuchaste «come». El ejemplo practica: cómo",
           "audio": "come",
           "slow_audio": "come",
           "tags": [
@@ -663,8 +663,8 @@
             "quando"
           ],
           "explanation": "La forma completa es «quando».",
-          "audio": "quando",
-          "slow_audio": "quando",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -681,8 +681,8 @@
             "e"
           ],
           "explanation": "La forma completa es «come»: cómo",
-          "audio": "come",
-          "slow_audio": "come",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -693,7 +693,7 @@
         {
           "id": "italian-questions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por qué»",
+          "prompt": "Produce el ejemplo que demuestra: «por qué»",
           "target": "por qué",
           "answer": "perché",
           "accepted_answers": [
@@ -713,7 +713,7 @@
         {
           "id": "italian-questions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «cómo»",
+          "prompt": "Di en voz alta: «come»",
           "target": "cómo",
           "answer": "come",
           "accepted_answers": [
@@ -747,7 +747,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "quando",
               "accepted_answers": [
                 "quando"
@@ -765,7 +765,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "come",
               "accepted_answers": [
                 "come"

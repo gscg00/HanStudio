@@ -1831,7 +1831,7 @@
             "个人经历会影响我们的看法。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «个人经历会影响我们的看法。»: La experiencia personal influye en nuestra opinión.",
+          "explanation": "Escuchaste «个人经历会影响我们的看法。». El ejemplo practica: La experiencia personal influye en nuestra opinión.",
           "audio": "个人经历会影响我们的看法。",
           "slow_audio": "个人经历会影响我们的看法。",
           "tags": [
@@ -1866,8 +1866,8 @@
             "不是每个人都有同样的机会。"
           ],
           "explanation": "La forma completa es «不是每个人都有同样的机会。».",
-          "audio": "不是每个人都有同样的机会。",
-          "slow_audio": "不是每个人都有同样的机会。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1884,8 +1884,8 @@
             "法"
           ],
           "explanation": "La forma completa es «个人经历会影响我们的看法。»: La experiencia personal influye en nuestra opinión.",
-          "audio": "个人经历会影响我们的看法。",
-          "slow_audio": "个人经历会影响我们的看法。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1896,7 +1896,7 @@
         {
           "id": "chinese-b1-2-perspectives-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «Entonces me di cuenta de mi error.»",
+          "prompt": "Produce el ejemplo que demuestra: «Entonces me di cuenta de mi error.»",
           "target": "Entonces me di cuenta de mi error.",
           "answer": "那时我才发现自己的错误。",
           "accepted_answers": [
@@ -1916,7 +1916,7 @@
         {
           "id": "chinese-b1-2-perspectives-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «La experiencia personal influye en nuestra opinión.»",
+          "prompt": "Di en voz alta: «个人经历会影响我们的看法。»",
           "target": "La experiencia personal influye en nuestra opinión.",
           "answer": "个人经历会影响我们的看法。",
           "accepted_answers": [
@@ -1950,7 +1950,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "不是每个人都有同样的机会。",
               "accepted_answers": [
                 "不是每个人都有同样的机会。"
@@ -1968,7 +1968,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en chino.",
+              "prompt": "Di o escribe este ejemplo en chino.",
               "answer": "个人经历会影响我们的看法。",
               "accepted_answers": [
                 "个人经历会影响我们的看法。"

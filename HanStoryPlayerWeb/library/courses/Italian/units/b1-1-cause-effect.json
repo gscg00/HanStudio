@@ -1831,7 +1831,7 @@
             "Sebbene fosse stanca, ha finito il lavoro."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Sebbene fosse stanca, ha finito il lavoro.»: Aunque estaba cansada, terminó el trabajo.",
+          "explanation": "Escuchaste «Sebbene fosse stanca, ha finito il lavoro.». El ejemplo practica: Aunque estaba cansada, terminó el trabajo.",
           "audio": "Sebbene fosse stanca, ha finito il lavoro.",
           "slow_audio": "Sebbene fosse stanca, ha finito il lavoro.",
           "tags": [
@@ -1860,8 +1860,8 @@
             "Di conseguenza, il progetto è stato ritardato."
           ],
           "explanation": "La forma completa es «Di conseguenza, il progetto è stato ritardato.».",
-          "audio": "Di conseguenza, il progetto è stato ritardato.",
-          "slow_audio": "Di conseguenza, il progetto è stato ritardato.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1878,8 +1878,8 @@
             "lavoro"
           ],
           "explanation": "La forma completa es «Sebbene fosse stanca, ha finito il lavoro.»: Aunque estaba cansada, terminó el trabajo.",
-          "audio": "Sebbene fosse stanca, ha finito il lavoro.",
-          "slow_audio": "Sebbene fosse stanca, ha finito il lavoro.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1890,7 +1890,7 @@
         {
           "id": "italian-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «¿Tú qué opinas?»",
+          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "Tu che cosa ne pensi?",
           "accepted_answers": [
@@ -1910,7 +1910,7 @@
         {
           "id": "italian-b1-1-cause-effect-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Aunque estaba cansada, terminó el trabajo.»",
+          "prompt": "Di en voz alta: «Sebbene fosse stanca, ha finito il lavoro.»",
           "target": "Aunque estaba cansada, terminó el trabajo.",
           "answer": "Sebbene fosse stanca, ha finito il lavoro.",
           "accepted_answers": [
@@ -1944,7 +1944,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Di conseguenza, il progetto è stato ritardato.",
               "accepted_answers": [
                 "Di conseguenza, il progetto è stato ritardato."
@@ -1962,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Sebbene fosse stanca, ha finito il lavoro.",
               "accepted_answers": [
                 "Sebbene fosse stanca, ha finito il lavoro."

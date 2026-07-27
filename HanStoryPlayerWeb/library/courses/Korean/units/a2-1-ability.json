@@ -1831,7 +1831,7 @@
             "여기에서 담배를 피우면 안 돼요."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «여기에서 담배를 피우면 안 돼요.»: No se puede fumar aquí.",
+          "explanation": "Escuchaste «여기에서 담배를 피우면 안 돼요.». El ejemplo practica: No se puede fumar aquí.",
           "audio": "여기에서 담배를 피우면 안 돼요.",
           "slow_audio": "여기에서 담배를 피우면 안 돼요.",
           "tags": [
@@ -1857,8 +1857,8 @@
             "여기에서 사진을 찍어도 돼요."
           ],
           "explanation": "La forma completa es «여기에서 사진을 찍어도 돼요.».",
-          "audio": "여기에서 사진을 찍어도 돼요.",
-          "slow_audio": "여기에서 사진을 찍어도 돼요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1875,8 +1875,8 @@
             "돼요"
           ],
           "explanation": "La forma completa es «여기에서 담배를 피우면 안 돼요.»: No se puede fumar aquí.",
-          "audio": "여기에서 담배를 피우면 안 돼요.",
-          "slow_audio": "여기에서 담배를 피우면 안 돼요.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1887,7 +1887,7 @@
         {
           "id": "korean-a2-1-ability-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «necesario»",
+          "prompt": "Produce el ejemplo que demuestra: «necesario»",
           "target": "necesario",
           "answer": "필수다",
           "accepted_answers": [
@@ -1907,7 +1907,7 @@
         {
           "id": "korean-a2-1-ability-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No se puede fumar aquí.»",
+          "prompt": "Di en voz alta: «여기에서 담배를 피우면 안 돼요.»",
           "target": "No se puede fumar aquí.",
           "answer": "여기에서 담배를 피우면 안 돼요.",
           "accepted_answers": [
@@ -1941,7 +1941,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "여기에서 사진을 찍어도 돼요.",
               "accepted_answers": [
                 "여기에서 사진을 찍어도 돼요."
@@ -1959,7 +1959,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en coreano.",
+              "prompt": "Di o escribe este ejemplo en coreano.",
               "answer": "여기에서 담배를 피우면 안 돼요.",
               "accepted_answers": [
                 "여기에서 담배를 피우면 안 돼요."

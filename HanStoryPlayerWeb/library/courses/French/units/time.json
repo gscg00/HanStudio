@@ -4228,7 +4228,7 @@
             "gare"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «gare»: estación",
+          "explanation": "Escuchaste «gare». El ejemplo practica: estación",
           "audio": "gare",
           "slow_audio": "gare",
           "tags": [
@@ -4253,8 +4253,8 @@
             "école"
           ],
           "explanation": "La forma completa es «école».",
-          "audio": "école",
-          "slow_audio": "école",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -4271,8 +4271,8 @@
             "e"
           ],
           "explanation": "La forma completa es «gare»: estación",
-          "audio": "gare",
-          "slow_audio": "gare",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -4283,7 +4283,7 @@
         {
           "id": "french-time-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «qué»",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
           "target": "qué",
           "answer": "quoi",
           "accepted_answers": [
@@ -4303,7 +4303,7 @@
         {
           "id": "french-time-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «estación»",
+          "prompt": "Di en voz alta: «gare»",
           "target": "estación",
           "answer": "gare",
           "accepted_answers": [
@@ -4337,7 +4337,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "école",
               "accepted_answers": [
                 "école"
@@ -4355,7 +4355,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "gare",
               "accepted_answers": [
                 "gare"

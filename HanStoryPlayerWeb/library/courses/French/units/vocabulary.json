@@ -33527,7 +33527,7 @@
             "téléphoner"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «téléphoner»: llamar por teléfono",
+          "explanation": "Escuchaste «téléphoner». El ejemplo practica: llamar por teléfono",
           "audio": "téléphoner",
           "slow_audio": "téléphoner",
           "tags": [
@@ -33551,8 +33551,8 @@
             "les parents"
           ],
           "explanation": "La forma completa es «les parents».",
-          "audio": "les parents",
-          "slow_audio": "les parents",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -33569,8 +33569,8 @@
             "r"
           ],
           "explanation": "La forma completa es «téléphoner»: llamar por teléfono",
-          "audio": "téléphoner",
-          "slow_audio": "téléphoner",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -33581,7 +33581,7 @@
         {
           "id": "french-vocabulary-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «cada semana»",
+          "prompt": "Produce el ejemplo que demuestra: «cada semana»",
           "target": "cada semana",
           "answer": "chaque semaine",
           "accepted_answers": [
@@ -33601,7 +33601,7 @@
         {
           "id": "french-vocabulary-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «llamar por teléfono»",
+          "prompt": "Di en voz alta: «téléphoner»",
           "target": "llamar por teléfono",
           "answer": "téléphoner",
           "accepted_answers": [
@@ -33635,7 +33635,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "les parents",
               "accepted_answers": [
                 "les parents"
@@ -33653,7 +33653,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en francés.",
+              "prompt": "Di o escribe este ejemplo en francés.",
               "answer": "téléphoner",
               "accepted_answers": [
                 "téléphoner"

@@ -1831,7 +1831,7 @@
             "لا يعجبني رغم أنه مفيد."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «لا يعجبني رغم أنه مفيد.»: No me gusta, aunque es útil.",
+          "explanation": "Escuchaste «لا يعجبني رغم أنه مفيد.». El ejemplo practica: No me gusta, aunque es útil.",
           "audio": "لا يعجبني رغم أنه مفيد.",
           "slow_audio": "لا يعجبني رغم أنه مفيد.",
           "tags": [
@@ -1856,8 +1856,8 @@
             "أعجبني لأنه بسيط."
           ],
           "explanation": "La forma completa es «أعجبني لأنه بسيط.».",
-          "audio": "أعجبني لأنه بسيط.",
-          "slow_audio": "أعجبني لأنه بسيط.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1874,8 +1874,8 @@
             "مفيد"
           ],
           "explanation": "La forma completa es «لا يعجبني رغم أنه مفيد.»: No me gusta, aunque es útil.",
-          "audio": "لا يعجبني رغم أنه مفيد.",
-          "slow_audio": "لا يعجبني رغم أنه مفيد.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1886,7 +1886,7 @@
         {
           "id": "arabic-a2-2-opinions-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «por eso»",
+          "prompt": "Produce el ejemplo que demuestra: «por eso»",
           "target": "por eso",
           "answer": "لذلك",
           "accepted_answers": [
@@ -1906,7 +1906,7 @@
         {
           "id": "arabic-a2-2-opinions-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «No me gusta, aunque es útil.»",
+          "prompt": "Di en voz alta: «لا يعجبني رغم أنه مفيد.»",
           "target": "No me gusta, aunque es útil.",
           "answer": "لا يعجبني رغم أنه مفيد.",
           "accepted_answers": [
@@ -1940,7 +1940,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "أعجبني لأنه بسيط.",
               "accepted_answers": [
                 "أعجبني لأنه بسيط."
@@ -1958,7 +1958,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en árabe.",
+              "prompt": "Di o escribe este ejemplo en árabe.",
               "answer": "لا يعجبني رغم أنه مفيد.",
               "accepted_answers": [
                 "لا يعجبني رغم أنه مفيد."

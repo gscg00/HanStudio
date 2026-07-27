@@ -1831,7 +1831,7 @@
             "Il comune ha annunciato un nuovo piano."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Il comune ha annunciato un nuovo piano.»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «Il comune ha annunciato un nuovo piano.». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "Il comune ha annunciato un nuovo piano.",
           "slow_audio": "Il comune ha annunciato un nuovo piano.",
           "tags": [
@@ -1858,8 +1858,8 @@
             "L’inquinamento danneggia la nostra salute."
           ],
           "explanation": "La forma completa es «L’inquinamento danneggia la nostra salute.».",
-          "audio": "L’inquinamento danneggia la nostra salute.",
-          "slow_audio": "L’inquinamento danneggia la nostra salute.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1876,8 +1876,8 @@
             "piano"
           ],
           "explanation": "La forma completa es «Il comune ha annunciato un nuovo piano.»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "Il comune ha annunciato un nuovo piano.",
-          "slow_audio": "Il comune ha annunciato un nuovo piano.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1888,7 +1888,7 @@
         {
           "id": "italian-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "alto",
           "accepted_answers": [
@@ -1908,7 +1908,7 @@
         {
           "id": "italian-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «Il comune ha annunciato un nuovo piano.»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "Il comune ha annunciato un nuovo piano.",
           "accepted_answers": [
@@ -1942,7 +1942,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "L’inquinamento danneggia la nostra salute.",
               "accepted_answers": [
                 "L’inquinamento danneggia la nostra salute."
@@ -1960,7 +1960,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en italiano.",
+              "prompt": "Di o escribe este ejemplo en italiano.",
               "answer": "Il comune ha annunciato un nuovo piano.",
               "accepted_answers": [
                 "Il comune ha annunciato un nuovo piano."

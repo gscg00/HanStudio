@@ -1831,7 +1831,7 @@
             "市役所は新しい計画を発表しました。"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «市役所は新しい計画を発表しました。»: El ayuntamiento anunció un nuevo plan.",
+          "explanation": "Escuchaste «市役所は新しい計画を発表しました。». El ejemplo practica: El ayuntamiento anunció un nuevo plan.",
           "audio": "市役所は新しい計画を発表しました。",
           "slow_audio": "市役所は新しい計画を発表しました。",
           "tags": [
@@ -1869,8 +1869,8 @@
             "汚染は私たちの健康に影響します。"
           ],
           "explanation": "La forma completa es «汚染は私たちの健康に影響します。».",
-          "audio": "汚染は私たちの健康に影響します。",
-          "slow_audio": "汚染は私たちの健康に影響します。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "blocks"
@@ -1887,8 +1887,8 @@
             "た"
           ],
           "explanation": "La forma completa es «市役所は新しい計画を発表しました。»: El ayuntamiento anunció un nuevo plan.",
-          "audio": "市役所は新しい計画を発表しました。",
-          "slow_audio": "市役所は新しい計画を発表しました。",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -1899,7 +1899,7 @@
         {
           "id": "japanese-b1-1-society-production-open",
           "type": "open_question",
-          "prompt": "Responde sin opciones: «alto»",
+          "prompt": "Produce el ejemplo que demuestra: «alto»",
           "target": "alto",
           "answer": "高い",
           "accepted_answers": [
@@ -1919,7 +1919,7 @@
         {
           "id": "japanese-b1-1-society-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «El ayuntamiento anunció un nuevo plan.»",
+          "prompt": "Di en voz alta: «市役所は新しい計画を発表しました。»",
           "target": "El ayuntamiento anunció un nuevo plan.",
           "answer": "市役所は新しい計画を発表しました。",
           "accepted_answers": [
@@ -1953,7 +1953,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "汚染は私たちの健康に影響します。",
               "accepted_answers": [
                 "汚染は私たちの健康に影響します。"
@@ -1971,7 +1971,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Responde en japonés.",
+              "prompt": "Di o escribe este ejemplo en japonés.",
               "answer": "市役所は新しい計画を発表しました。",
               "accepted_answers": [
                 "市役所は新しい計画を発表しました。"
