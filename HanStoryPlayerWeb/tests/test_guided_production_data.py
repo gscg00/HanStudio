@@ -168,8 +168,16 @@ class GuidedProductionDataTests(unittest.TestCase):
                     continue
                 typed = next(activity for activity in generated["activities"] if activity["type"] == "typed_translation")
                 blocks = next(activity for activity in generated["activities"] if activity["type"] == "build_with_blocks")
-                self.assertTrue(typed["prompt"].startswith("Copia este símbolo o grupo:"), typed["id"])
-                self.assertEqual(typed["target"], typed["answer"], typed["id"])
+                self.assertTrue(
+                    typed["prompt"].startswith(("Copia este símbolo o grupo:", "Escribe la sílaba que forma este bloque:")),
+                    typed["id"],
+                )
+                if "=" in typed.get("target", ""):
+                    final_symbol = typed["target"].rsplit("=", 1)[1].strip()
+                    self.assertEqual(final_symbol, typed["answer"], typed["id"])
+                    self.assertIn(final_symbol, typed.get("accepted_answers", []), typed["id"])
+                else:
+                    self.assertEqual(typed["target"], typed["answer"], typed["id"])
                 self.assertTrue(blocks["prompt"].startswith("Reconstruye el símbolo"), blocks["id"])
 
     def test_pronunciation_focused_units_do_not_turn_explanations_into_dialogue(self):

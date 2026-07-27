@@ -1662,15 +1662,16 @@
         {
           "id": "korean-hangul-foundations-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «ㅁ + ㅜ + ㄴ = 문»",
+          "prompt": "Escribe la sílaba que forma este bloque: «ㅁ + ㅜ + ㄴ = 문»",
           "target": "ㅁ + ㅜ + ㄴ = 문",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
-          "answer": "ㅁ + ㅜ + ㄴ = 문",
+          "instruction": "Observa cómo se agrupan las letras y escribe solo la sílaba final.",
+          "answer": "문",
           "accepted_answers": [
+            "문",
             "ㅁ + ㅜ + ㄴ = 문"
           ],
           "allow_minor_typos": true,
-          "explanation": "Una respuesta correcta es «ㅁ + ㅜ + ㄴ = 문».",
+          "explanation": "La sílaba final es «문»: ㅁ + ㅜ + ㄴ forman un solo bloque.",
           "audio": "문",
           "slow_audio": "문",
           "tags": [
@@ -1684,12 +1685,13 @@
           "type": "dictation",
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "answer": "ㅂ + ㅏ + ㅂ = 밥",
+          "answer": "밥",
           "accepted_answers": [
+            "밥",
             "ㅂ + ㅏ + ㅂ = 밥"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «ㅂ + ㅏ + ㅂ = 밥»: Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
+          "explanation": "Escuchaste «밥»: ㅂ + ㅏ + ㅂ forman esta sílaba. Evita leer «바브»: el batchim cierra el bloque y no añade una vocal española.",
           "audio": "밥",
           "slow_audio": "밥",
           "tags": [
