@@ -100,6 +100,22 @@
 .jp-dialogue-tools>.jp-speech-tools{flex:1 1 260px;width:auto}
 .jp-dialogue-tools>button{min-height:46px}
 .jp-dialogue-turn>button{grid-column:3;grid-row:1/3}
+.jp-dialogue-chat{width:min(680px,100%);overflow:hidden;border:1px solid #173f3526;border-radius:22px;background:#e9eee9;box-shadow:0 8px 22px #173f3510}
+.jp-dialogue-chat>header{display:flex;align-items:center;justify-content:space-between;gap:.7rem;padding:.65rem .9rem;background:var(--jp-green);color:#fff;text-align:left}
+.jp-dialogue-chat>header span{font-size:.74rem;color:#d6f0df;font-weight:750}
+.jp-dialogue-chat>header strong{font-size:.9rem}
+.jp-dialogue-chat .jp-dialogue-script{box-sizing:border-box;min-height:170px;padding:.85rem;gap:.7rem;background:linear-gradient(135deg,#edf2ed,#f7f5ef)}
+.jp-dialogue-turn{position:relative;max-width:84%;box-shadow:0 2px 7px #173f3514}
+.jp-dialogue-turn.model{border-bottom-left-radius:5px}
+.jp-dialogue-turn.learner{border-bottom-right-radius:5px}
+.jp-dialogue-turn.model::after,.jp-dialogue-turn.learner::after{content:"";position:absolute;bottom:0;width:12px;height:14px;background:inherit}
+.jp-dialogue-turn.model::after{left:-6px;clip-path:polygon(100% 0,100% 100%,0 100%)}
+.jp-dialogue-turn.learner::after{right:-6px;clip-path:polygon(0 0,100% 100%,0 100%)}
+.jp-speech-meter{display:flex!important;flex-basis:auto!important;align-items:center;gap:3px;min-height:32px;padding:.25rem .55rem;border-radius:999px;background:#e7f1ea;color:var(--jp-green)!important;font-size:.8rem!important;font-weight:700}
+.jp-speech-meter i{display:block;width:3px;height:10px;border-radius:99px;background:#3b9b74;animation:jp-listening-wave .85s ease-in-out infinite alternate}
+.jp-speech-meter i:nth-child(2){height:17px;animation-delay:.16s}.jp-speech-meter i:nth-child(3){height:12px;animation-delay:.32s}
+.jp-speech-meter em{margin-left:.25rem;font-style:normal}
+@keyframes jp-listening-wave{from{transform:scaleY(.45);opacity:.48}to{transform:scaleY(1.08);opacity:1}}
 @media(max-width:650px){.jp-teach-symbol{min-height:100px}.guided-course .jp-target.jp-target-medium{font-size:clamp(2rem,10vw,3rem)}.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.65rem,8vw,2.5rem)}.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.25rem,6vw,1.9rem)}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
 .jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
@@ -161,11 +177,27 @@
   .jp-production .jp-question{padding-top:.7rem}
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
-  .jp-virtual-keyboard{padding:.6rem}
-  .jp-virtual-keyboard header{align-items:flex-start;flex-direction:column;gap:.1rem}
-  .jp-keyboard-keys{max-height:34dvh}
-  .jp-keyboard-row{grid-template-columns:repeat(auto-fit,minmax(34px,1fr));gap:.25rem}
-  .jp-keyboard-row button{min-height:40px;font-size:1rem}
+  .jp-virtual-keyboard{position:fixed;z-index:50;right:0;bottom:0;left:0;width:100%;max-height:min(55dvh,440px);padding:calc(.55rem + env(safe-area-inset-top)) .5rem max(.6rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1;box-shadow:0 -12px 30px #173f3540}
+  .jp-virtual-keyboard header{display:none}
+  .jp-virtual-keyboard .jp-keyboard-tabs{margin:.05rem .1rem .45rem}
+  .jp-virtual-keyboard .jp-keyboard-tabs button{min-height:32px;padding:.25rem .5rem;border-radius:8px;background:#c8cbd0;font-size:.72rem}
+  .jp-virtual-keyboard .jp-keyboard-tabs button.active{background:#fff;color:var(--jp-green)}
+  .jp-keyboard-keys{max-height:calc(55dvh - 112px);gap:.42rem;overflow-y:auto}
+  .jp-keyboard-row{grid-template-columns:repeat(auto-fit,minmax(30px,1fr));gap:.32rem}
+  .jp-keyboard-row button{min-height:48px;padding:.2rem;border:0;border-radius:7px;background:#fff;box-shadow:0 2px 0 #aeb1b7;color:#111;font-size:1.12rem}
+  .jp-keyboard-row button:active,.jp-keyboard-row button.is-pressed{transform:translateY(2px);box-shadow:none;background:#efeff2}
+  .jp-virtual-keyboard footer{grid-template-columns:1fr 1.25fr 1fr;gap:.38rem;margin-top:.5rem}
+  .jp-virtual-keyboard footer button{min-height:46px;border:0;border-radius:8px;background:#c6c9ce;box-shadow:0 2px 0 #a8abb1;color:#183f36;font-weight:750}
+  .jp-virtual-keyboard footer button:nth-child(2){font-size:1.25rem}
+  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(1){grid-template-columns:repeat(10,minmax(0,1fr))}
+  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(2){grid-template-columns:repeat(9,minmax(0,1fr));margin-inline:4%}
+  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(3){grid-template-columns:repeat(7,minmax(0,1fr));margin-inline:11%}
+  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(4){grid-template-columns:repeat(auto-fit,minmax(28px,1fr));gap:.25rem}
+  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(4) button{min-height:38px;font-size:.93rem}
   .jp-dialogue-turn{width:100%;grid-template-columns:auto 1fr}
   .jp-dialogue-turn>button{grid-column:2;grid-row:auto;justify-self:start}
+  .jp-dialogue-chat{border-radius:16px}
+  .jp-dialogue-chat .jp-dialogue-script{padding:.65rem}
+  .jp-dialogue-turn{max-width:94%;padding:.7rem .75rem}
+  .jp-speech-meter{width:100%;justify-content:center}
 }
