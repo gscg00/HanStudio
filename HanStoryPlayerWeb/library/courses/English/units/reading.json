@@ -1858,7 +1858,7 @@
     },
     {
       "id": "english-reading-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -1882,9 +1882,9 @@
         {
           "id": "english-reading-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en inglés: «U: iu»",
-          "target": "U: iu",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «U»",
+          "target": "U",
+          "instruction": "Escribe exactamente «U». No escribas cómo suena ni su explicación.",
           "answer": "U",
           "accepted_answers": [
             "U"
@@ -1895,34 +1895,36 @@
           "slow_audio": "",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "english-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "vee",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "V",
           "accepted_answers": [
-            "vee"
+            "V"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «vee». El ejemplo practica: V: vi, con dientes sobre labio",
+          "explanation": "Escuchaste «vee». La respuesta que debías escribir era «V».",
           "audio": "vee",
           "slow_audio": "vee",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "english-reading-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «U: iu»",
-          "target": "U: iu",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "U",
           "options": [
             "U"
           ],
@@ -1943,116 +1945,23 @@
         {
           "id": "english-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«vee» → __",
+          "instruction": "Escribe solamente «V», no una guía de pronunciación.",
           "answer": "V",
           "accepted_answers": [
             "V"
           ],
-          "explanation": "La forma completa es «V»: V: vi, con dientes sobre labio",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "english"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "english-reading-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «W: dábol iu»",
-          "target": "W: dábol iu",
-          "answer": "double you",
-          "accepted_answers": [
-            "double you"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «double you».",
-          "audio": "double you",
-          "slow_audio": "double you",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "english-reading-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «vee»",
-          "target": "V: vi, con dientes sobre labio",
-          "answer": "vee",
-          "accepted_answers": [
-            "vee"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «vee». También puedes escribirlo.",
+          "explanation": "«vee» corresponde a «V». V: vi, con dientes sobre labio",
           "audio": "vee",
           "slow_audio": "vee",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "english"
           ],
           "xp": 15
-        },
-        {
-          "id": "english-reading-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «U: iu»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
-              "answer": "you",
-              "accepted_answers": [
-                "you"
-              ],
-              "audio": "you",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «V: vi, con dientes sobre labio»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
-              "answer": "vee",
-              "accepted_answers": [
-                "vee"
-              ],
-              "audio": "vee",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

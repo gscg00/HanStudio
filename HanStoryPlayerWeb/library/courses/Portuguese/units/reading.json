@@ -1858,7 +1858,7 @@
     },
     {
       "id": "portuguese-reading-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -1882,9 +1882,9 @@
         {
           "id": "portuguese-reading-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en portugués: «U: u»",
-          "target": "U: u",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «U»",
+          "target": "U",
+          "instruction": "Escribe exactamente «U». No escribas cómo suena ni su explicación.",
           "answer": "U",
           "accepted_answers": [
             "U"
@@ -1895,34 +1895,36 @@
           "slow_audio": "",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "portuguese-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "vê",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "V",
           "accepted_answers": [
-            "vê"
+            "V"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «vê». El ejemplo practica: V: ve",
+          "explanation": "Escuchaste «vê». La respuesta que debías escribir era «V».",
           "audio": "vê",
           "slow_audio": "vê",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "portuguese-reading-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «U: u»",
-          "target": "U: u",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "U",
           "options": [
             "U"
           ],
@@ -1943,116 +1945,23 @@
         {
           "id": "portuguese-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«vê» → __",
+          "instruction": "Escribe solamente «V», no una guía de pronunciación.",
           "answer": "V",
           "accepted_answers": [
             "V"
           ],
-          "explanation": "La forma completa es «V»: V: ve",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "portuguese"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "portuguese-reading-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «W: dablio»",
-          "target": "W: dablio",
-          "answer": "dáblio",
-          "accepted_answers": [
-            "dáblio"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «dáblio».",
-          "audio": "dáblio",
-          "slow_audio": "dáblio",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "portuguese-reading-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «vê»",
-          "target": "V: ve",
-          "answer": "vê",
-          "accepted_answers": [
-            "vê"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «vê». También puedes escribirlo.",
+          "explanation": "«vê» corresponde a «V». V: ve",
           "audio": "vê",
           "slow_audio": "vê",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "portuguese"
           ],
           "xp": 15
-        },
-        {
-          "id": "portuguese-reading-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «U: u»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en portugués.",
-              "answer": "u",
-              "accepted_answers": [
-                "u"
-              ],
-              "audio": "u",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «V: ve»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en portugués.",
-              "answer": "vê",
-              "accepted_answers": [
-                "vê"
-              ],
-              "audio": "vê",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

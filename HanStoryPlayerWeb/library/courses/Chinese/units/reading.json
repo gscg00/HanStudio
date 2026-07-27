@@ -1281,7 +1281,7 @@
     },
     {
       "id": "chinese-reading-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -1305,9 +1305,9 @@
         {
           "id": "chinese-reading-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en chino: «q: chi con mucho aire»",
-          "target": "q: chi con mucho aire",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «q»",
+          "target": "q",
+          "instruction": "Escribe exactamente «q». No escribas cómo suena ni su explicación.",
           "answer": "q",
           "accepted_answers": [
             "q"
@@ -1318,34 +1318,36 @@
           "slow_audio": "",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "chinese-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "xī",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "x",
           "accepted_answers": [
-            "xī"
+            "x"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «xī». El ejemplo practica: x: sh muy suave, lengua adelante",
+          "explanation": "Escuchaste «xī». La respuesta que debías escribir era «x».",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "chinese-reading-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «q: chi con mucho aire»",
-          "target": "q: chi con mucho aire",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "q",
           "options": [
             "q"
           ],
@@ -1366,116 +1368,23 @@
         {
           "id": "chinese-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«xī» → __",
+          "instruction": "Escribe solamente «x», no una guía de pronunciación.",
           "answer": "x",
           "accepted_answers": [
             "x"
           ],
-          "explanation": "La forma completa es «x»: x: sh muy suave, lengua adelante",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "chinese"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "chinese-reading-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «zh: ch retrofleja, lengua atrás»",
-          "target": "zh: ch retrofleja, lengua atrás",
-          "answer": "zhī",
-          "accepted_answers": [
-            "zhī"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «zhī».",
-          "audio": "zhī",
-          "slow_audio": "zhī",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "chinese-reading-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «xī»",
-          "target": "x: sh muy suave, lengua adelante",
-          "answer": "xī",
-          "accepted_answers": [
-            "xī"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «xī». También puedes escribirlo.",
+          "explanation": "«xī» corresponde a «x». x: sh muy suave, lengua adelante",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "chinese"
           ],
           "xp": 15
-        },
-        {
-          "id": "chinese-reading-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «q: chi con mucho aire»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en chino.",
-              "answer": "qī",
-              "accepted_answers": [
-                "qī"
-              ],
-              "audio": "qī",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «x: sh muy suave, lengua adelante»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en chino.",
-              "answer": "xī",
-              "accepted_answers": [
-                "xī"
-              ],
-              "audio": "xī",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

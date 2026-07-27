@@ -1662,9 +1662,9 @@
         {
           "id": "korean-hangul-foundations-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe la sílaba que forma este bloque: «ㅁ + ㅜ + ㄴ = 문»",
-          "target": "ㅁ + ㅜ + ㄴ = 문",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «문»",
+          "target": "문",
+          "instruction": "Escribe exactamente «문». No escribas cómo suena ni su explicación.",
           "answer": "문",
           "accepted_answers": [
             "문"
@@ -1682,19 +1682,21 @@
         {
           "id": "korean-hangul-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
           "answer": "밥",
           "accepted_answers": [
             "밥"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «밥». El ejemplo practica: Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
+          "explanation": "Escuchaste «밥». La respuesta que debías escribir era «밥».",
           "audio": "밥",
           "slow_audio": "밥",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -1702,22 +1704,16 @@
           "id": "korean-hangul-foundations-production-blocks",
           "type": "build_with_blocks",
           "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
-          "target": "ㅁ + ㅜ + ㄴ = 문",
+          "target": "문",
           "options": [
-            "ㅜ",
-            "+",
-            "ㄴ",
-            "문",
-            "=",
-            "ㅁ",
-            "+"
+            "문"
           ],
-          "joiner": " ",
-          "answer": "ㅁ + ㅜ + ㄴ = 문",
+          "joiner": "",
+          "answer": "문",
           "accepted_answers": [
-            "ㅁ + ㅜ + ㄴ = 문"
+            "문"
           ],
-          "explanation": "La forma completa es «ㅁ + ㅜ + ㄴ = 문».",
+          "explanation": "La forma completa es «문».",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -1729,18 +1725,20 @@
         {
           "id": "korean-hangul-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "ㅂ + ㅏ + ㅂ = ___",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«밥» → __",
+          "instruction": "Escribe solamente «밥», no una guía de pronunciación.",
           "answer": "밥",
           "accepted_answers": [
             "밥"
           ],
-          "explanation": "La forma completa es «ㅂ + ㅏ + ㅂ = 밥»: Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«밥» corresponde a «밥». Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
+          "audio": "밥",
+          "slow_audio": "밥",
           "tags": [
             "production",
             "completion",
+            "reading",
             "korean"
           ],
           "xp": 15

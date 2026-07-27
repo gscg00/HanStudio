@@ -2411,7 +2411,7 @@
     },
     {
       "id": "korean-reading-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -2435,9 +2435,9 @@
         {
           "id": "korean-reading-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en coreano: «다: da/ta suave»",
-          "target": "다: da/ta suave",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «다»",
+          "target": "다",
+          "instruction": "Escribe exactamente «다». No escribas cómo suena ni su explicación.",
           "answer": "다",
           "accepted_answers": [
             "다"
@@ -2448,34 +2448,36 @@
           "slow_audio": "다",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "korean-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
           "answer": "마",
           "accepted_answers": [
             "마"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «마». El ejemplo practica: 마: ma",
+          "explanation": "Escuchaste «마». La respuesta que debías escribir era «마».",
           "audio": "마",
           "slow_audio": "마",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "korean-reading-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «다: da/ta suave»",
-          "target": "다: da/ta suave",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "다",
           "options": [
             "다"
           ],
@@ -2496,116 +2498,23 @@
         {
           "id": "korean-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«마» → __",
+          "instruction": "Escribe solamente «마», no una guía de pronunciación.",
           "answer": "마",
           "accepted_answers": [
             "마"
           ],
-          "explanation": "La forma completa es «마»: 마: ma",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "korean"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "korean-reading-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «바: ba/pa suave»",
-          "target": "바: ba/pa suave",
-          "answer": "바",
-          "accepted_answers": [
-            "바"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «바».",
-          "audio": "바",
-          "slow_audio": "바",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "korean-reading-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «마»",
-          "target": "마: ma",
-          "answer": "마",
-          "accepted_answers": [
-            "마"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «마». También puedes escribirlo.",
+          "explanation": "«마» corresponde a «마». 마: ma",
           "audio": "마",
           "slow_audio": "마",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "korean"
           ],
           "xp": 15
-        },
-        {
-          "id": "korean-reading-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «다: da/ta suave»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en coreano.",
-              "answer": "다",
-              "accepted_answers": [
-                "다"
-              ],
-              "audio": "다",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «마: ma»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en coreano.",
-              "answer": "마",
-              "accepted_answers": [
-                "마"
-              ],
-              "audio": "마",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

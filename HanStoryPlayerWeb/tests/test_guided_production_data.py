@@ -164,13 +164,30 @@ class GuidedProductionDataTests(unittest.TestCase):
                         continue
                     for activity in lesson.get("activities", []):
                         accepted = {activity.get("answer"), *(activity.get("accepted_answers") or [])}
-                        if activity.get("audio"):
+                        if activity.get("audio") and "reading" not in activity.get("tags", []):
                             self.assertIn(activity["audio"], accepted, activity["id"])
                         for turn in activity.get("turns", []):
                             if turn.get("role") != "learner" or not turn.get("audio"):
                                 continue
                             turn_accepted = {turn.get("answer"), *(turn.get("accepted_answers") or [])}
                             self.assertIn(turn["audio"], turn_accepted, activity["id"])
+
+    def test_reading_production_is_explicit_about_what_to_write(self):
+        """A reading checkpoint must never ask learners to type a vague dash or a phonetic hint."""
+        for language, directory, course in self.iter_courses():
+            for summary in course["units"]:
+                unit = json.loads((directory / summary["manifest"]).read_text(encoding="utf-8"))
+                for lesson in unit["lessons"]:
+                    if not lesson.get("generatedProduction"):
+                        continue
+                    for activity in lesson.get("activities", []):
+                        if "reading" not in activity.get("tags", []):
+                            continue
+                        if activity["type"] not in {"typed_translation", "dictation", "complete_without_options"}:
+                            continue
+                        self.assertTrue(activity.get("answer"), activity["id"])
+                        self.assertTrue(activity.get("instruction"), activity["id"])
+                        self.assertNotEqual(activity.get("target"), "—", activity["id"])
 
     def test_guided_situations_do_not_fake_unrelated_conversations(self):
         for language, directory, course in self.iter_courses():
@@ -185,7 +202,7 @@ class GuidedProductionDataTests(unittest.TestCase):
                             if turn["role"] == "model":
                                 self.assertEqual("GUÍA", turn["speaker"], activity["id"])
                                 self.assertTrue(turn["text"].startswith("Situación "), activity["id"])
-                                self.assertTrue(turn["translation"].startswith("Quieres expresar:"), activity["id"])
+                                self.assertTrue(turn["translation"].startswith(("Quieres expresar:", "Quieres decir ")), activity["id"])
                                 self.assertNotIn("audio", turn, activity["id"])
                             else:
                                 self.assertEqual("TÚ", turn["speaker"], activity["id"])
@@ -209,7 +226,7 @@ class GuidedProductionDataTests(unittest.TestCase):
                 typed = next(activity for activity in generated["activities"] if activity["type"] == "typed_translation")
                 blocks = next(activity for activity in generated["activities"] if activity["type"] == "build_with_blocks")
                 self.assertTrue(
-                    typed["prompt"].startswith(("Copia este símbolo o grupo:", "Escribe la sílaba que forma este bloque:")),
+                    typed["prompt"].startswith("Copia solo esta letra, sílaba o grupo:"),
                     typed["id"],
                 )
                 if "=" in typed.get("target", ""):
@@ -228,7 +245,7 @@ class GuidedProductionDataTests(unittest.TestCase):
         self.assertNotIn("guided_dialogue", types)
         self.assertNotIn("speak_and_transcribe", types)
         typed = next(activity for activity in generated["activities"] if activity["type"] == "typed_translation")
-        self.assertTrue(typed["prompt"].startswith("Copia este símbolo o grupo:"), typed["id"])
+        self.assertTrue(typed["prompt"].startswith("Copia solo esta letra, sílaba o grupo:"), typed["id"])
 
     def test_final_tests_remain_the_last_unit_step(self):
         for language, directory, course in self.iter_courses():
@@ -239,7 +256,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v123", source)
+        self.assertIn("hanstory-shell-v124", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)

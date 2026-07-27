@@ -2094,7 +2094,7 @@
     },
     {
       "id": "german-reading-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -2118,9 +2118,9 @@
         {
           "id": "german-reading-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en alemán: «Y: üpsilon»",
-          "target": "Y: üpsilon",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «Y»",
+          "target": "Y",
+          "instruction": "Escribe exactamente «Y». No escribas cómo suena ni su explicación.",
           "answer": "Y",
           "accepted_answers": [
             "Y"
@@ -2131,34 +2131,36 @@
           "slow_audio": "",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "german-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "tsett",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "Z",
           "accepted_answers": [
-            "tsett"
+            "Z"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «tsett». El ejemplo practica: Z: tset",
+          "explanation": "Escuchaste «tsett». La respuesta que debías escribir era «Z».",
           "audio": "tsett",
           "slow_audio": "tsett",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "german-reading-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Y: üpsilon»",
-          "target": "Y: üpsilon",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "Y",
           "options": [
             "Y"
           ],
@@ -2179,116 +2181,23 @@
         {
           "id": "german-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«tsett» → __",
+          "instruction": "Escribe solamente «Z», no una guía de pronunciación.",
           "answer": "Z",
           "accepted_answers": [
             "Z"
           ],
-          "explanation": "La forma completa es «Z»: Z: tset",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "german"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "german-reading-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Ä: e abierta»",
-          "target": "Ä: e abierta",
-          "answer": "äh",
-          "accepted_answers": [
-            "äh"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «äh».",
-          "audio": "äh",
-          "slow_audio": "äh",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "german-reading-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «tsett»",
-          "target": "Z: tset",
-          "answer": "tsett",
-          "accepted_answers": [
-            "tsett"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «tsett». También puedes escribirlo.",
+          "explanation": "«tsett» corresponde a «Z». Z: tset",
           "audio": "tsett",
           "slow_audio": "tsett",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "german"
           ],
           "xp": 15
-        },
-        {
-          "id": "german-reading-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «Y: üpsilon»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
-              "answer": "üpsilon",
-              "accepted_answers": [
-                "üpsilon"
-              ],
-              "audio": "üpsilon",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Z: tset»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
-              "answer": "tsett",
-              "accepted_answers": [
-                "tsett"
-              ],
-              "audio": "tsett",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

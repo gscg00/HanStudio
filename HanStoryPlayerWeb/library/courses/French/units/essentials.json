@@ -3097,9 +3097,9 @@
         {
           "id": "french-essentials-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «liaison»",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «liaison»",
           "target": "liaison",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "instruction": "Escribe exactamente «liaison». No escribas cómo suena ni su explicación.",
           "answer": "liaison",
           "accepted_answers": [
             "liaison"
@@ -3117,19 +3117,21 @@
         {
           "id": "french-essentials-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "rue",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "R",
           "accepted_answers": [
-            "rue"
+            "R"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «rue». El ejemplo practica: No vibra como la erre española.",
+          "explanation": "Escuchaste «rue». La respuesta que debías escribir era «R».",
           "audio": "rue",
           "slow_audio": "rue",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -3162,18 +3164,20 @@
         {
           "id": "french-essentials-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "＿",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«rue» → __",
+          "instruction": "Escribe solamente «R», no una guía de pronunciación.",
           "answer": "R",
           "accepted_answers": [
             "R"
           ],
-          "explanation": "La forma completa es «R»: No vibra como la erre española.",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«rue» corresponde a «R». No vibra como la erre española.",
+          "audio": "rue",
+          "slow_audio": "rue",
           "tags": [
             "production",
             "completion",
+            "reading",
             "french"
           ],
           "xp": 15

@@ -2628,9 +2628,9 @@
         {
           "id": "german-reading-foundations-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «eu · äu»",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «eu · äu»",
           "target": "eu · äu",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "instruction": "Escribe exactamente «eu · äu». No escribas cómo suena ni su explicación.",
           "answer": "eu · äu",
           "accepted_answers": [
             "eu · äu"
@@ -2648,19 +2648,21 @@
         {
           "id": "german-reading-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "hah",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "ich · Bach",
           "accepted_answers": [
-            "hah"
+            "ich · Bach"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «hah». El ejemplo practica: Uno es más frontal y otro más posterior.",
+          "explanation": "Escuchaste «hah». La respuesta que debías escribir era «ich · Bach».",
           "audio": "hah",
           "slow_audio": "hah",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -2691,18 +2693,20 @@
         {
           "id": "german-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "ich · ___",
-          "answer": "Bach",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«hah» → __",
+          "instruction": "Escribe solamente «ich · Bach», no una guía de pronunciación.",
+          "answer": "ich · Bach",
           "accepted_answers": [
-            "Bach"
+            "ich · Bach"
           ],
-          "explanation": "La forma completa es «ich · Bach»: Uno es más frontal y otro más posterior.",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«hah» corresponde a «ich · Bach». Uno es más frontal y otro más posterior.",
+          "audio": "hah",
+          "slow_audio": "hah",
           "tags": [
             "production",
             "completion",
+            "reading",
             "german"
           ],
           "xp": 15

@@ -2150,9 +2150,9 @@
         {
           "id": "italian-reading-foundations-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «gn: bagno»",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «gn: bagno»",
           "target": "gn: bagno",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "instruction": "Escribe exactamente «gn: bagno». No escribas cómo suena ni su explicación.",
           "answer": "gn: bagno",
           "accepted_answers": [
             "gn: bagno"
@@ -2170,19 +2170,21 @@
         {
           "id": "italian-reading-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "elle",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "gli · sci",
           "accepted_answers": [
-            "elle"
+            "gli · sci"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «elle». El ejemplo practica: Son patrones frecuentes que no conviene deletrear.",
+          "explanation": "Escuchaste «elle». La respuesta que debías escribir era «gli · sci».",
           "audio": "elle",
           "slow_audio": "elle",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -2212,18 +2214,20 @@
         {
           "id": "italian-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "gli · ___",
-          "answer": "sci",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«elle» → __",
+          "instruction": "Escribe solamente «gli · sci», no una guía de pronunciación.",
+          "answer": "gli · sci",
           "accepted_answers": [
-            "sci"
+            "gli · sci"
           ],
-          "explanation": "La forma completa es «gli · sci»: Son patrones frecuentes que no conviene deletrear.",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«elle» corresponde a «gli · sci». Son patrones frecuentes que no conviene deletrear.",
+          "audio": "elle",
+          "slow_audio": "elle",
           "tags": [
             "production",
             "completion",
+            "reading",
             "italian"
           ],
           "xp": 15

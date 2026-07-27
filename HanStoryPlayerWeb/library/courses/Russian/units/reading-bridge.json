@@ -4177,7 +4177,7 @@
     },
     {
       "id": "russian-reading-bridge-production-checkpoint",
-      "title": "Producción y diálogo",
+      "title": "Producción de lectura",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -4201,9 +4201,9 @@
         {
           "id": "russian-reading-bridge-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en ruso: «escuela»",
-          "target": "escuela",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «школа»",
+          "target": "школа",
+          "instruction": "Escribe exactamente «школа». No escribas cómo suena ni su explicación.",
           "answer": "школа",
           "accepted_answers": [
             "школа"
@@ -4214,34 +4214,36 @@
           "slow_audio": "школа",
           "tags": [
             "production",
-            "translation"
+            "copying"
           ],
           "xp": 20
         },
         {
           "id": "russian-reading-bridge-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
           "answer": "вокзал",
           "accepted_answers": [
             "вокзал"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «вокзал». El ejemplo practica: estación",
+          "explanation": "Escuchaste «вокзал». La respuesta que debías escribir era «вокзал».",
           "audio": "вокзал",
           "slow_audio": "вокзал",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
         {
           "id": "russian-reading-bridge-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «escuela»",
-          "target": "escuela",
+          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
+          "target": "школа",
           "options": [
             "школа"
           ],
@@ -4262,116 +4264,23 @@
         {
           "id": "russian-reading-bridge-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "вокза＿",
-          "answer": "л",
-          "accepted_answers": [
-            "л"
-          ],
-          "explanation": "La forma completa es «вокзал»: estación",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "russian"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "russian-reading-bridge-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «qué»",
-          "target": "qué",
-          "answer": "что",
-          "accepted_answers": [
-            "что"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «что».",
-          "audio": "что",
-          "slow_audio": "что",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "russian-reading-bridge-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «вокзал»",
-          "target": "estación",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«вокзал» → __",
+          "instruction": "Escribe solamente «вокзал», no una guía de pronunciación.",
           "answer": "вокзал",
           "accepted_answers": [
             "вокзал"
           ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «вокзал». También puedes escribirlo.",
+          "explanation": "«вокзал» corresponde a «вокзал». estación",
           "audio": "вокзал",
           "slow_audio": "вокзал",
           "tags": [
             "production",
-            "speaking",
-            "optional"
+            "completion",
+            "reading",
+            "russian"
           ],
           "xp": 15
-        },
-        {
-          "id": "russian-reading-bridge-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «escuela»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
-              "answer": "школа",
-              "accepted_answers": [
-                "школа"
-              ],
-              "audio": "школа",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «estación»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
-              "answer": "вокзал",
-              "accepted_answers": [
-                "вокзал"
-              ],
-              "audio": "вокзал",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },

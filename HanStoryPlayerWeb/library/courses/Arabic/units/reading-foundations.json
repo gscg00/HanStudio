@@ -2578,9 +2578,9 @@
         {
           "id": "arabic-reading-foundations-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «َ ِ ُ»",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «َ ِ ُ»",
           "target": "َ ِ ُ",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "instruction": "Escribe exactamente «َ ِ ُ». No escribas cómo suena ni su explicación.",
           "answer": "َ ِ ُ",
           "accepted_answers": [
             "َ ِ ُ"
@@ -2598,19 +2598,21 @@
         {
           "id": "arabic-reading-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
-          "answer": "شين",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "answer": "ْ ّ",
           "accepted_answers": [
-            "شين"
+            "ْ ّ"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «شين». El ejemplo practica: Cambian la estructura silábica y pueden cambiar significado.",
+          "explanation": "Escuchaste «شين». La respuesta que debías escribir era «ْ ّ».",
           "audio": "شين",
           "slow_audio": "شين",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -2641,18 +2643,20 @@
         {
           "id": "arabic-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "ْ ___",
-          "answer": "ّ",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«شين» → __",
+          "instruction": "Escribe solamente «ْ ّ», no una guía de pronunciación.",
+          "answer": "ْ ّ",
           "accepted_answers": [
-            "ّ"
+            "ْ ّ"
           ],
-          "explanation": "La forma completa es «ْ ّ»: Cambian la estructura silábica y pueden cambiar significado.",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«شين» corresponde a «ْ ّ». Cambian la estructura silábica y pueden cambiar significado.",
+          "audio": "شين",
+          "slow_audio": "شين",
           "tags": [
             "production",
             "completion",
+            "reading",
             "arabic"
           ],
           "xp": 15

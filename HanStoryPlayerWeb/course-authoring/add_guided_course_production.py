@@ -27,7 +27,7 @@ LANGUAGE_LABELS = {
     "Russian": "ruso",
 }
 SCRIPT_HEAVY = {"Chinese", "Japanese"}
-READING_MARKERS = ("reading-foundations", "hangul", "hiragana", "katakana", "rhythm")
+READING_MARKERS = ("reading-foundations", "reading", "hangul", "hiragana", "katakana", "rhythm")
 READING_LANGUAGE_MARKERS = (
     "se pronuncia",
     "sonido",
@@ -92,7 +92,29 @@ def blocks(text: str, language: str) -> tuple[list[str], str]:
     return shuffled, joiner
 
 
-def blank_activity(base: dict, prefix: str, language: str) -> dict:
+def reading_form(base: dict) -> str:
+    """La forma que el alumno debe escribir, no la explicación de su sonido."""
+    target = str(base["target"])
+    return target.rsplit("=", 1)[1].strip() if "=" in target else target
+
+
+def blank_activity(base: dict, prefix: str, language: str, reading_only: bool = False) -> dict:
+    if reading_only:
+        answer = reading_form(base)
+        return {
+            "id": f"{prefix}-complete",
+            "type": "complete_without_options",
+            "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+            "target": f"«{base['audio']}» → __",
+            "instruction": f"Escribe solamente «{answer}», no una guía de pronunciación.",
+            "answer": answer,
+            "accepted_answers": [answer],
+            "explanation": f"«{base['audio']}» corresponde a «{answer}». {base['meaning']}",
+            "audio": base["audio"],
+            "slow_audio": base["slow_audio"],
+            "tags": ["production", "completion", "reading", language.lower()],
+            "xp": 15,
+        }
     text = base["target"]
     core = text.rstrip(TRAILING_PUNCTUATION)
     suffix = text[len(core) :]
@@ -166,18 +188,18 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
         return None
     selected = source[-min(6, len(source)) :]
     first, second = selected[0], selected[1]
-    options, joiner = blocks(first["target"], language)
-    prefix = f"{language.lower()}-{unit['id']}-production"
     reading_only = is_reading_focus(unit, selected)
-    reading_answer = first["target"].rsplit("=", 1)[1].strip() if reading_only and "=" in first["target"] else first["target"]
+    first_form = reading_form(first) if reading_only else first["target"]
+    second_form = reading_form(second) if reading_only else second["target"]
+    options, joiner = blocks(first_form, language)
+    prefix = f"{language.lower()}-{unit['id']}-production"
+    reading_answer = first_form
     first_prompt = (
-        f"Escribe la sílaba que forma este bloque: «{first['target']}»"
-        if reading_only and "=" in first["target"]
-        else f"Copia este símbolo o grupo: «{first['target']}»"
+        f"Copia solo esta letra, sílaba o grupo: «{first_form}»"
         if reading_only
         else f"Escribe en {LANGUAGE_LABELS[language]}: «{first['meaning']}»"
     )
-    first_visible = first["target"] if reading_only else first["meaning"]
+    first_visible = first_form if reading_only else first["meaning"]
     typed_answer = reading_answer if reading_only else first["target"]
     typed_audio_matches = first["audio"] == typed_answer
     block_prompt = (
@@ -205,7 +227,7 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
             "prompt": first_prompt,
             "target": first_visible,
             "instruction": (
-                "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos."
+                f"Escribe exactamente «{first_form}». No escribas cómo suena ni su explicación."
                 if reading_only
                 else "Escribe la idea completa sin mirar opciones."
             ),
@@ -221,33 +243,34 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
         {
             "id": f"{prefix}-dictation",
             "type": "dictation",
-            "prompt": "Escucha y escribe exactamente lo que oyes",
+            "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido" if reading_only else "Escucha y escribe exactamente lo que oyes",
             "target": "",
-            "answer": second["audio"],
-            "accepted_answers": [second["audio"]],
+            "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación." if reading_only else "Escribe exactamente lo que oyes.",
+            "answer": second_form if reading_only else second["audio"],
+            "accepted_answers": [second_form if reading_only else second["audio"]],
             "allow_minor_typos": True,
-            "explanation": f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}",
+            "explanation": f"Escuchaste «{second['audio']}». La respuesta que debías escribir era «{second_form}»." if reading_only else f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}",
             "audio": second["audio"],
             "slow_audio": second["slow_audio"],
-            "tags": ["production", "dictation"],
+            "tags": ["production", "dictation", *( ["reading"] if reading_only else [] )],
             "xp": 20,
         },
         {
             "id": f"{prefix}-blocks",
             "type": "build_with_blocks",
             "prompt": block_prompt,
-            "target": first_visible,
+            "target": first_form if reading_only else first_visible,
             "options": options,
             "joiner": joiner,
-            "answer": first["target"],
-            "accepted_answers": [first["target"]],
-            "explanation": f"La forma completa es «{first['target']}».",
+            "answer": first_form,
+            "accepted_answers": [first_form],
+            "explanation": f"La forma completa es «{first_form}».",
             "audio": "",
             "slow_audio": "",
             "tags": ["production", "blocks"],
             "xp": 15,
         },
-        blank_activity(second, prefix, language),
+        blank_activity(second, prefix, language, reading_only),
     ]
     if not reading_only:
         third = selected[min(2, len(selected) - 1)]

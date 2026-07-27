@@ -187,25 +187,25 @@
   /* El teclado se monta como hermano de la actividad. Así iOS no lo recorta
      dentro de la tarjeta ni deja que encabezados de la página lo cubran. */
   .japanese-guided-course.jp-course-keyboard-open{position:relative;z-index:2147483000}
-  .japanese-guided-course.jp-course-keyboard-open .jp-production .jp-question{padding-bottom:calc(min(55dvh,440px) + 2rem);scroll-padding-block:1rem calc(min(55dvh,440px) + 1rem)}
-  .japanese-guided-course.jp-course-keyboard-open .jp-production-input{scroll-margin-bottom:calc(min(55dvh,440px) + 1rem);user-select:text;-webkit-user-select:text;caret-color:var(--jp-green)}
+  .japanese-guided-course.jp-course-keyboard-open .jp-production .jp-question{padding-bottom:calc(min(45dvh,360px) + 2rem);scroll-padding-block:1rem calc(min(45dvh,360px) + 1rem)}
+  .japanese-guided-course.jp-course-keyboard-open .jp-production-input{scroll-margin-bottom:calc(min(45dvh,360px) + 1rem);user-select:text;-webkit-user-select:text;caret-color:var(--jp-green)}
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
-  .japanese-guided-course.jp-course-keyboard-open>.jp-virtual-keyboard{position:fixed;z-index:2147483646;right:0;bottom:0;left:0;width:100%;max-height:min(55dvh,440px);padding:calc(.55rem + env(safe-area-inset-top)) .5rem max(.6rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1;box-shadow:0 -12px 30px #173f3540;isolation:isolate}
-  .jp-virtual-keyboard header{display:flex;justify-content:flex-end;margin:0 0 .25rem}
+  .japanese-guided-course.jp-course-keyboard-open>.jp-virtual-keyboard{position:fixed;z-index:2147483646;right:0;bottom:0;left:0;width:100%;max-height:min(45dvh,360px);padding:.35rem .5rem max(.55rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1!important;box-shadow:0 -12px 30px #173f3540;isolation:isolate}
+  .jp-virtual-keyboard header{position:absolute;top:.35rem;right:.5rem;z-index:2;display:block;margin:0}
   .jp-virtual-keyboard header strong{display:none}
   .jp-keyboard-physical-help{display:none}
-  .jp-virtual-keyboard header button{min-height:27px;padding:.15rem .55rem;border:0;border-radius:99px;background:#c6c9ce;font-size:.72rem}
-  .jp-virtual-keyboard .jp-keyboard-tabs{margin:.05rem .1rem .45rem}
+  .jp-virtual-keyboard header button{width:30px;min-height:30px;padding:0;border:0;border-radius:50%;background:#c6c9ce;font-size:1rem;line-height:1}
+  .jp-virtual-keyboard .jp-keyboard-tabs{margin:.05rem 2.55rem .4rem .1rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button{min-height:32px;padding:.25rem .5rem;border-radius:8px;background:#c8cbd0;font-size:.72rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button.active{background:#fff;color:var(--jp-green)}
-  .jp-keyboard-keys{max-height:calc(55dvh - 138px);gap:.42rem;overflow-y:auto}
+  .jp-keyboard-keys{max-height:calc(45dvh - 122px);gap:.38rem;overflow-y:auto}
   .jp-keyboard-row{grid-template-columns:repeat(auto-fit,minmax(30px,1fr));gap:.32rem}
-  .jp-keyboard-row button{min-height:48px;padding:.2rem;border:0;border-radius:7px;background:#fff;box-shadow:0 2px 0 #aeb1b7;color:#111;font-size:1.12rem}
+  .jp-keyboard-row button{min-height:42px;padding:.15rem;border:0;border-radius:7px;background:#fff;box-shadow:0 2px 0 #aeb1b7;color:#111;font-size:1.05rem}
   .jp-keyboard-row button:active,.jp-keyboard-row button.is-pressed{transform:translateY(2px);box-shadow:none;background:#efeff2}
   .jp-virtual-keyboard footer{grid-template-columns:1.25fr 1fr 1fr;gap:.38rem;margin-top:.45rem}
   .jp-virtual-keyboard footer.has-shift{grid-template-columns:.7fr 1.25fr .85fr .85fr}
-  .jp-virtual-keyboard footer button{min-height:46px;border:0;border-radius:8px;background:#c6c9ce;box-shadow:0 2px 0 #a8abb1;color:#183f36;font-weight:750}
+  .jp-virtual-keyboard footer button{min-height:40px;border:0;border-radius:8px;background:#c6c9ce;box-shadow:0 2px 0 #a8abb1;color:#183f36;font-weight:750}
   .jp-virtual-keyboard footer button:last-child{background:#1677ed;color:#fff;box-shadow:0 2px 0 #1261bd;font-size:1.25rem}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(1){grid-template-columns:repeat(10,minmax(0,1fr))}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(2){grid-template-columns:repeat(9,minmax(0,1fr));margin-inline:4%}

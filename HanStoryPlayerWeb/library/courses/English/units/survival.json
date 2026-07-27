@@ -4384,9 +4384,9 @@
         {
           "id": "english-survival-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia este símbolo o grupo: «who»",
+          "prompt": "Copia solo esta letra, sílaba o grupo: «who»",
           "target": "who",
-          "instruction": "Obsérvalo, cópialo y fíjate en el orden de sus letras o trazos.",
+          "instruction": "Escribe exactamente «who». No escribas cómo suena ni su explicación.",
           "answer": "who",
           "accepted_answers": [
             "who"
@@ -4404,19 +4404,21 @@
         {
           "id": "english-survival-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
+          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
           "target": "",
+          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
           "answer": "where",
           "accepted_answers": [
             "where"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «where». El ejemplo practica: dónde",
+          "explanation": "Escuchaste «where». La respuesta que debías escribir era «where».",
           "audio": "where",
           "slow_audio": "where",
           "tags": [
             "production",
-            "dictation"
+            "dictation",
+            "reading"
           ],
           "xp": 20
         },
@@ -4445,18 +4447,20 @@
         {
           "id": "english-survival-production-complete",
           "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "wher＿",
-          "answer": "e",
+          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "target": "«where» → __",
+          "instruction": "Escribe solamente «where», no una guía de pronunciación.",
+          "answer": "where",
           "accepted_answers": [
-            "e"
+            "where"
           ],
-          "explanation": "La forma completa es «where»: dónde",
-          "audio": "",
-          "slow_audio": "",
+          "explanation": "«where» corresponde a «where». dónde",
+          "audio": "where",
+          "slow_audio": "where",
           "tags": [
             "production",
             "completion",
+            "reading",
             "english"
           ],
           "xp": 15
