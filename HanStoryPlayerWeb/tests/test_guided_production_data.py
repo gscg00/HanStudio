@@ -121,6 +121,29 @@ class GuidedProductionDataTests(unittest.TestCase):
                 self.assertGreaterEqual(len(learner_turns), 3, scenario["id"])
                 self.assertTrue(all(turn.get("answer") for turn in learner_turns), scenario["id"])
 
+    def test_every_guided_dialogue_has_visible_turns_and_writable_responses(self):
+        for language, directory, course in self.iter_courses():
+            for summary in course["units"]:
+                unit = json.loads((directory / summary["manifest"]).read_text(encoding="utf-8"))
+                for lesson in unit["lessons"]:
+                    for activity in lesson.get("activities", []):
+                        if activity["type"] not in {"guided_dialogue", "stage_scenario"}:
+                            continue
+                        turns = activity.get("turns") or []
+                        model_turns = [turn for turn in turns if turn.get("role") == "model"]
+                        learner_turns = [turn for turn in turns if turn.get("role") == "learner"]
+                        self.assertTrue(model_turns, activity["id"])
+                        self.assertTrue(learner_turns, activity["id"])
+                        self.assertTrue(all(str(turn.get("text", "")).strip() for turn in model_turns), activity["id"])
+                        self.assertTrue(
+                            all(
+                                str(turn.get("prompt", "")).strip()
+                                and str(turn.get("answer") or (turn.get("accepted_answers") or [""])[0]).strip()
+                                for turn in learner_turns
+                            ),
+                            activity["id"],
+                        )
+
     def test_optional_speaking_has_written_fallback(self):
         for language, directory, course in self.iter_courses():
             for summary in course["units"]:
@@ -216,7 +239,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v118", source)
+        self.assertIn("hanstory-shell-v119", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)
@@ -235,6 +258,12 @@ class GuidedProductionDataTests(unittest.TestCase):
         self.assertIn("Usar teclado del curso", source)
         self.assertIn("toggle-keyboard", source)
         self.assertIn("applyVirtualKey", source)
+
+    def test_invalid_dialogues_are_skipped_instead_of_blocking_a_lesson(self):
+        source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+        self.assertIn("hasUsableDialogue(activity)", source)
+        self.assertIn("renderUnavailableDialogue(activity,total)", source)
+        self.assertIn("no tiene respuestas disponibles", source)
 
 
 if __name__ == "__main__":
