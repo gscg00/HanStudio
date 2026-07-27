@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import{
+  applyVirtualKeyAtSelection,
   applyVirtualKey,
   composeHangulTokens,
   decomposeHangulText,
@@ -14,6 +15,9 @@ assert.equal(composeHangulTokens(['ㅎ','ㅏ','ㄴ','ㄱ','ㅡ','ㄹ']),'한글'
 assert.deepEqual(decomposeHangulText('문'),['ㅁ','ㅜ','ㄴ']);
 assert.equal(applyVirtualKey('문',VIRTUAL_KEY_BACKSPACE,'Korean'),'무');
 assert.equal(['ㅁ','ㅜ','ㄴ'].reduce((value,key)=>applyVirtualKey(value,key,'Korean'),''),'문');
+assert.deepEqual(applyVirtualKeyAtSelection('abc','Z','English',1,2),{value:'aZc',cursor:2},'Debe sustituir la selección sin borrar la respuesta entera');
+assert.deepEqual(applyVirtualKeyAtSelection('문자',VIRTUAL_KEY_BACKSPACE,'Korean',1,2),{value:'문',cursor:1},'Debe borrar únicamente el carácter coreano seleccionado');
+assert.deepEqual(applyVirtualKeyAtSelection('문',VIRTUAL_KEY_BACKSPACE,'Korean',1,1),{value:'무',cursor:1},'El retroceso coreano conserva la composición gradual');
 
 for(const language of['English','French','German','Italian','Portuguese','Russian','Korean','Japanese','Chinese','Arabic']){
   const layout=virtualKeyboardLayout(language,[]);

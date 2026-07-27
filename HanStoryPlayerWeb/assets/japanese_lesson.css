@@ -105,7 +105,7 @@
 .jp-dialogue-tools>.jp-speech-tools{flex:1 1 260px;width:auto}
 .jp-dialogue-tools>button{min-height:46px}
 .jp-dialogue-turn>button{grid-column:3;grid-row:1/3}
-.jp-dialogue-chat{width:min(680px,100%);overflow:hidden;border:1px solid #173f3526;border-radius:22px;background:#e9eee9;box-shadow:0 8px 22px #173f3510}
+.jp-dialogue-chat{flex:0 0 auto;width:min(680px,100%);overflow:hidden;border:1px solid #173f3526;border-radius:22px;background:#e9eee9;box-shadow:0 8px 22px #173f3510}
 .jp-dialogue-chat>header{display:flex;align-items:center;justify-content:space-between;gap:.7rem;padding:.65rem .9rem;background:var(--jp-green);color:#fff;text-align:left}
 .jp-dialogue-chat>header span{font-size:.74rem;color:#d6f0df;font-weight:750}
 .jp-dialogue-chat>header strong{font-size:.9rem}
@@ -185,7 +185,8 @@
   /* El teclado se monta como hermano de la actividad. Así iOS no lo recorta
      dentro de la tarjeta ni deja que encabezados de la página lo cubran. */
   .japanese-guided-course.jp-course-keyboard-open{position:relative;z-index:2147483000}
-  .japanese-guided-course.jp-course-keyboard-open .jp-production .jp-question{padding-bottom:calc(min(55dvh,440px) + 1rem)}
+  .japanese-guided-course.jp-course-keyboard-open .jp-production .jp-question{padding-bottom:calc(min(55dvh,440px) + 2rem);scroll-padding-block:1rem calc(min(55dvh,440px) + 1rem)}
+  .japanese-guided-course.jp-course-keyboard-open .jp-production-input{scroll-margin-bottom:calc(min(55dvh,440px) + 1rem);user-select:text;-webkit-user-select:text;caret-color:var(--jp-green)}
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
   .japanese-guided-course.jp-course-keyboard-open>.jp-virtual-keyboard{position:fixed;z-index:2147483646;right:0;bottom:0;left:0;width:100%;max-height:min(55dvh,440px);padding:calc(.55rem + env(safe-area-inset-top)) .5rem max(.6rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1;box-shadow:0 -12px 30px #173f3540;isolation:isolate}

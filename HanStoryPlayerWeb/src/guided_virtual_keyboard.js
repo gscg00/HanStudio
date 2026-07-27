@@ -136,6 +136,29 @@ export function applyVirtualKey(value,key,language){
   return`${current}${key}`;
 }
 
+// Igual que applyVirtualKey, pero conserva la posición del cursor. Esto hace que
+// el teclado del curso se comporte como un campo normal: puede insertar en medio
+// de una respuesta o sustituir solamente la selección actual.
+export function applyVirtualKeyAtSelection(value,key,language,start,end=start){
+  const current=String(value||'');
+  const characters=[...current];
+  const safeStart=Math.max(0,Math.min(Number.isFinite(start)?start:characters.length,characters.length));
+  const safeEnd=Math.max(safeStart,Math.min(Number.isFinite(end)?end:safeStart,characters.length));
+  const before=characters.slice(0,safeStart).join('');
+  const after=characters.slice(safeEnd).join('');
+
+  if(key===VIRTUAL_KEY_CLEAR)return{value:'',cursor:0};
+  if(key===VIRTUAL_KEY_BACKSPACE){
+    if(safeStart!==safeEnd)return{value:`${before}${after}`,cursor:safeStart};
+    if(!before)return{value:current,cursor:0};
+    const nextBefore=applyVirtualKey(before,key,language);
+    return{value:`${nextBefore}${after}`,cursor:[...nextBefore].length};
+  }
+
+  const nextBefore=applyVirtualKey(before,key,language);
+  return{value:`${nextBefore}${after}`,cursor:[...nextBefore].length};
+}
+
 export function virtualKeyboardLayout(language,lessonActivities=[]){
   const pages=(LANGUAGE_PAGES[language]||LANGUAGE_PAGES.English).map(item=>({...item,rows:item.rows.map(row=>[...row])}));
   const lessonText=(lessonActivities||[]).map(activityAnswerText).join('');

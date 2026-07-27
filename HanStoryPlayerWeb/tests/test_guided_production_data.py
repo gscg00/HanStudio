@@ -239,7 +239,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v119", source)
+        self.assertIn("hanstory-shell-v122", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)
@@ -258,6 +258,16 @@ class GuidedProductionDataTests(unittest.TestCase):
         self.assertIn("Usar teclado del curso", source)
         self.assertIn("toggle-keyboard", source)
         self.assertIn("applyVirtualKey", source)
+        self.assertIn("applyVirtualKeyAtSelection", source)
+        self.assertIn("captureKeyboardCursor", source)
+        self.assertIn("revealKeyboardTarget", source)
+
+    def test_dialogue_card_cannot_shrink_and_clip_its_answers(self):
+        css = (ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
+        source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+        dialogue_rule = css.split(".jp-dialogue-chat{", 1)[1].split("}", 1)[0]
+        self.assertIn("flex:0 0 auto", dialogue_rule)
+        self.assertIn("overflow:hidden", dialogue_rule)
 
     def test_invalid_dialogues_are_skipped_instead_of_blocking_a_lesson(self):
         source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
