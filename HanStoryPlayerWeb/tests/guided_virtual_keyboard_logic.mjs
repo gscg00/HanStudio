@@ -4,6 +4,7 @@ import{
   applyVirtualKey,
   composeHangulTokens,
   decomposeHangulText,
+  virtualKeyFromPhysicalInput,
   VIRTUAL_KEY_BACKSPACE,
   virtualKeyboardLayout
 }from'../src/guided_virtual_keyboard.js';
@@ -18,6 +19,10 @@ assert.equal(['ㅁ','ㅜ','ㄴ'].reduce((value,key)=>applyVirtualKey(value,key,'
 assert.deepEqual(applyVirtualKeyAtSelection('abc','Z','English',1,2),{value:'aZc',cursor:2},'Debe sustituir la selección sin borrar la respuesta entera');
 assert.deepEqual(applyVirtualKeyAtSelection('문자',VIRTUAL_KEY_BACKSPACE,'Korean',1,2),{value:'문',cursor:1},'Debe borrar únicamente el carácter coreano seleccionado');
 assert.deepEqual(applyVirtualKeyAtSelection('문',VIRTUAL_KEY_BACKSPACE,'Korean',1,1),{value:'무',cursor:1},'El retroceso coreano conserva la composición gradual');
+assert.equal(virtualKeyFromPhysicalInput('Korean',{key:'q',code:'KeyQ'}),'ㅂ','El teclado físico latino debe controlar el 2-set coreano');
+assert.equal(virtualKeyFromPhysicalInput('Korean',{key:'Q',code:'KeyQ',shiftKey:true}),'ㅃ','Mayús debe activar las variantes coreanas');
+assert.equal(virtualKeyFromPhysicalInput('Russian',{key:'f',code:'KeyF'}),'а','El teclado físico debe poder controlar el cirílico');
+assert.equal(virtualKeyFromPhysicalInput('Arabic',{key:'g',code:'KeyG'}),'ل','El teclado físico debe poder controlar el árabe');
 
 for(const language of['English','French','German','Italian','Portuguese','Russian','Korean','Japanese','Chinese','Arabic']){
   const layout=virtualKeyboardLayout(language,[]);

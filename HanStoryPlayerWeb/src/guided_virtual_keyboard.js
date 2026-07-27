@@ -69,6 +69,38 @@ const LANGUAGE_PAGES={
   ]
 };
 
+// Equivalencias de un teclado físico latino para los alfabetos que normalmente
+// no vienen instalados en el equipo. No sustituye el teclado del sistema: solo
+// controla el teclado visible del curso cuando este está abierto.
+const PHYSICAL_LAYOUTS={
+  Korean:{
+    KeyQ:'ㅂ',KeyW:'ㅈ',KeyE:'ㄷ',KeyR:'ㄱ',KeyT:'ㅅ',KeyY:'ㅛ',KeyU:'ㅕ',KeyI:'ㅑ',KeyO:'ㅐ',KeyP:'ㅔ',
+    KeyA:'ㅁ',KeyS:'ㄴ',KeyD:'ㅇ',KeyF:'ㄹ',KeyG:'ㅎ',KeyH:'ㅗ',KeyJ:'ㅓ',KeyK:'ㅏ',KeyL:'ㅣ',
+    KeyZ:'ㅋ',KeyX:'ㅌ',KeyC:'ㅊ',KeyV:'ㅍ',KeyB:'ㅠ',KeyN:'ㅜ',KeyM:'ㅡ'
+  },
+  Russian:{
+    KeyQ:'й',KeyW:'ц',KeyE:'у',KeyR:'к',KeyT:'е',KeyY:'н',KeyU:'г',KeyI:'ш',KeyO:'щ',KeyP:'з',BracketLeft:'х',BracketRight:'ъ',
+    KeyA:'ф',KeyS:'ы',KeyD:'в',KeyF:'а',KeyG:'п',KeyH:'р',KeyJ:'о',KeyK:'л',KeyL:'д',Semicolon:'ж',Quote:'э',
+    KeyZ:'я',KeyX:'ч',KeyC:'с',KeyV:'м',KeyB:'и',KeyN:'т',KeyM:'ь',Comma:'б',Period:'ю',Backquote:'ё'
+  },
+  Arabic:{
+    KeyQ:'ض',KeyW:'ص',KeyE:'ث',KeyR:'ق',KeyT:'ف',KeyY:'غ',KeyU:'ع',KeyI:'ه',KeyO:'خ',KeyP:'ح',BracketLeft:'ج',BracketRight:'د',
+    KeyA:'ش',KeyS:'س',KeyD:'ي',KeyF:'ب',KeyG:'ل',KeyH:'ا',KeyJ:'ت',KeyK:'ن',KeyL:'م',Semicolon:'ك',Quote:'ط',
+    KeyZ:'ئ',KeyX:'ء',KeyC:'ؤ',KeyV:'ر',KeyB:'ى',KeyN:'ة',KeyM:'و',Comma:'ز',Period:'ظ',Slash:'؟'
+  }
+};
+
+const KOREAN_SHIFT={KeyQ:'ㅃ',KeyW:'ㅉ',KeyE:'ㄸ',KeyR:'ㄲ',KeyT:'ㅆ',KeyO:'ㅒ',KeyP:'ㅖ'};
+
+export function virtualKeyFromPhysicalInput(language,{key='',code='',shiftKey=false}={}){
+  if(key==='Backspace')return VIRTUAL_KEY_BACKSPACE;
+  if(key===' ')return VIRTUAL_KEY_SPACE;
+  if(key==='Enter')return '__submit__';
+  const mapped=language==='Korean'?((shiftKey?KOREAN_SHIFT[code]:null)||PHYSICAL_LAYOUTS.Korean[code]):PHYSICAL_LAYOUTS[language]?.[code];
+  if(mapped)return mapped;
+  return String(key).length===1?String(key):'';
+}
+
 const isHan=value=>/[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/u.test(value);
 const isJapaneseKanji=value=>isHan(value);
 const uniqueCharacters=(text,predicate)=>[...new Set([...String(text||'')].filter(character=>predicate(character)))];
