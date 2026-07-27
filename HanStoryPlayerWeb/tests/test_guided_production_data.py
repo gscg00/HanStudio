@@ -191,9 +191,10 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v112", source)
+        self.assertIn("hanstory-shell-v113", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
+        self.assertIn("./src/guided_virtual_keyboard.js", source)
         self.assertNotIn("localStorage.clear", source)
         self.assertNotIn("indexedDB.deleteDatabase", source)
 
@@ -203,6 +204,12 @@ class GuidedProductionDataTests(unittest.TestCase):
         choose_block = source.split("chooseBlock(value,index)", 1)[1].split("handleInput(event)", 1)[0]
         self.assertNotIn("playKeyAudio", choose_answer)
         self.assertNotIn("playKeyAudio", choose_block)
+
+    def test_typed_exercises_offer_the_course_keyboard(self):
+        source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+        self.assertIn("Usar teclado del curso", source)
+        self.assertIn("toggle-keyboard", source)
+        self.assertIn("applyVirtualKey", source)
 
 
 if __name__ == "__main__":
