@@ -48,13 +48,11 @@ const LANGUAGE_PAGES={
     page('cyrillic-upper','АБВ',rows([...'ЙЦУКЕНГШЩЗХЪ'],[...'ФЫВАПРОЛДЖЭ'],[...'ЯЧСМИТЬБЮ'],['Ё']))
   ],
   Korean:[
-    // Disposición 2-set: consonantes y vocales comparten el mismo teclado, como en un móvil coreano.
-    // La última fila reúne las teclas ampliadas necesarias para las lecciones sin obligar a cambiar de pantalla.
+    // Disposición 2-set: compacta, como en un móvil coreano. Las variantes salen con ⇧.
     page('korean-2set','한국어',rows(
       ['ㅂ','ㅈ','ㄷ','ㄱ','ㅅ','ㅛ','ㅕ','ㅑ','ㅐ','ㅔ'],
       ['ㅁ','ㄴ','ㅇ','ㄹ','ㅎ','ㅗ','ㅓ','ㅏ','ㅣ'],
-      ['ㅋ','ㅌ','ㅊ','ㅍ','ㅠ','ㅜ','ㅡ'],
-      ['ㄲ','ㄸ','ㅃ','ㅆ','ㅉ','ㅒ','ㅖ','ㅘ','ㅙ','ㅚ','ㅝ','ㅞ','ㅟ','ㅢ']
+      ['ㅋ','ㅌ','ㅊ','ㅍ','ㅠ','ㅜ','ㅡ']
     ))
   ],
   Japanese:[

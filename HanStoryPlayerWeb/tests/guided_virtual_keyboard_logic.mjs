@@ -28,6 +28,7 @@ assert.ok(japanese.pages[0].rows.flat().includes('日'));
 
 const korean=virtualKeyboardLayout('Korean',[]);
 assert.equal(korean.pages.length,1,'El teclado coreano debe ser una única disposición táctil');
+assert.equal(korean.pages[0].rows.length,3,'La disposición principal coreana debe caber sin una fila extra');
 assert.ok(korean.pages[0].rows.flat().includes('ㅁ'));
 assert.ok(korean.pages[0].rows.flat().includes('ㅜ'));
 

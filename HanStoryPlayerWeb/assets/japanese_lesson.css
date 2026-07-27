@@ -66,7 +66,7 @@
 .jp-virtual-keyboard{box-sizing:border-box;width:100%;padding:.75rem;border:1px solid #173f3533;border-radius:18px;background:#f2eee5;box-shadow:0 8px 24px #173f3512}
 .jp-virtual-keyboard header{display:flex;align-items:baseline;justify-content:space-between;gap:.7rem;margin-bottom:.55rem;text-align:left}
 .jp-virtual-keyboard header strong{font-size:.95rem}
-.jp-virtual-keyboard header small{color:var(--jp-muted);font-size:.75rem}
+.jp-virtual-keyboard header button{min-height:34px;padding:.3rem .55rem;background:#fff;border:1px solid #173f3530;color:var(--jp-green);font-size:.8rem}
 .jp-keyboard-tabs{display:flex;gap:.35rem;margin-bottom:.6rem;overflow-x:auto;scrollbar-width:thin}
 .jp-keyboard-tabs button{flex:0 0 auto;min-height:38px;padding:.35rem .65rem;background:#fff;border:1px solid #173f3525;font-size:.8rem}
 .jp-keyboard-tabs button.active{background:var(--jp-green);color:#fff}
@@ -74,8 +74,13 @@
 .jp-keyboard-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(38px,1fr));gap:.3rem}
 .jp-keyboard-row button{min-width:0;min-height:42px;padding:.3rem;background:#fff;border:1px solid #d2cec5;border-bottom-width:3px;border-radius:10px;color:var(--jp-green);font-size:1.05rem;font-weight:750}
 .jp-keyboard-row button:active,.jp-keyboard-row button.is-pressed{transform:translateY(2px);border-bottom-width:1px;background:#fff0e8}
+.jp-keyboard-status{min-height:24px;margin-top:.45rem;color:var(--jp-muted);font-size:.82rem;text-align:center;transition:color .18s,transform .18s}
+.jp-keyboard-status strong{color:var(--jp-green);font-size:1rem}
+.jp-keyboard-status.is-updated{color:#3d8e70;transform:scale(1.03)}
 .jp-virtual-keyboard footer{display:grid;grid-template-columns:1fr auto 1fr;gap:.35rem;margin-top:.6rem}
 .jp-virtual-keyboard footer button{min-height:42px;padding:.4rem .7rem;background:#fff;border:1px solid #d2cec5}
+.jp-virtual-keyboard footer.has-shift{grid-template-columns:auto 1fr auto auto}
+.jp-virtual-keyboard footer.has-shift button:first-child[aria-pressed="true"]{background:var(--jp-green);color:#fff}
 .jp-block-answer{display:flex;align-items:center;justify-content:center;width:min(620px,100%);min-height:68px;padding:.7rem;border-bottom:3px solid #d9d4ca;font-size:clamp(1.35rem,4vw,2rem);text-align:center}
 .jp-block-answer span{color:var(--jp-muted);font-size:.95rem}
 .jp-word-bank{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;width:min(650px,100%)}
@@ -178,22 +183,24 @@
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
   .jp-virtual-keyboard{position:fixed;z-index:50;right:0;bottom:0;left:0;width:100%;max-height:min(55dvh,440px);padding:calc(.55rem + env(safe-area-inset-top)) .5rem max(.6rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1;box-shadow:0 -12px 30px #173f3540}
-  .jp-virtual-keyboard header{display:none}
+  .jp-virtual-keyboard header{display:flex;justify-content:flex-end;margin:0 0 .25rem}
+  .jp-virtual-keyboard header strong{display:none}
+  .jp-virtual-keyboard header button{min-height:27px;padding:.15rem .55rem;border:0;border-radius:99px;background:#c6c9ce;font-size:.72rem}
   .jp-virtual-keyboard .jp-keyboard-tabs{margin:.05rem .1rem .45rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button{min-height:32px;padding:.25rem .5rem;border-radius:8px;background:#c8cbd0;font-size:.72rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button.active{background:#fff;color:var(--jp-green)}
-  .jp-keyboard-keys{max-height:calc(55dvh - 112px);gap:.42rem;overflow-y:auto}
+  .jp-keyboard-keys{max-height:calc(55dvh - 138px);gap:.42rem;overflow-y:auto}
   .jp-keyboard-row{grid-template-columns:repeat(auto-fit,minmax(30px,1fr));gap:.32rem}
   .jp-keyboard-row button{min-height:48px;padding:.2rem;border:0;border-radius:7px;background:#fff;box-shadow:0 2px 0 #aeb1b7;color:#111;font-size:1.12rem}
   .jp-keyboard-row button:active,.jp-keyboard-row button.is-pressed{transform:translateY(2px);box-shadow:none;background:#efeff2}
-  .jp-virtual-keyboard footer{grid-template-columns:1fr 1.25fr 1fr;gap:.38rem;margin-top:.5rem}
+  .jp-virtual-keyboard footer{grid-template-columns:1.25fr 1fr 1fr;gap:.38rem;margin-top:.45rem}
+  .jp-virtual-keyboard footer.has-shift{grid-template-columns:.7fr 1.25fr .85fr .85fr}
   .jp-virtual-keyboard footer button{min-height:46px;border:0;border-radius:8px;background:#c6c9ce;box-shadow:0 2px 0 #a8abb1;color:#183f36;font-weight:750}
-  .jp-virtual-keyboard footer button:nth-child(2){font-size:1.25rem}
+  .jp-virtual-keyboard footer button:last-child{background:#1677ed;color:#fff;box-shadow:0 2px 0 #1261bd;font-size:1.25rem}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(1){grid-template-columns:repeat(10,minmax(0,1fr))}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(2){grid-template-columns:repeat(9,minmax(0,1fr));margin-inline:4%}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(3){grid-template-columns:repeat(7,minmax(0,1fr));margin-inline:11%}
-  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(4){grid-template-columns:repeat(auto-fit,minmax(28px,1fr));gap:.25rem}
-  .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(4) button{min-height:38px;font-size:.93rem}
+  .jp-keyboard-status{min-height:20px;margin-top:.25rem;font-size:.76rem}
   .jp-dialogue-turn{width:100%;grid-template-columns:auto 1fr}
   .jp-dialogue-turn>button{grid-column:2;grid-row:auto;justify-self:start}
   .jp-dialogue-chat{border-radius:16px}
