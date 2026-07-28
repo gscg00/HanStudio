@@ -256,7 +256,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v124", source)
+        self.assertIn("hanstory-shell-v125", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)
@@ -278,6 +278,8 @@ class GuidedProductionDataTests(unittest.TestCase):
         self.assertIn("applyVirtualKeyAtSelection", source)
         self.assertIn("captureKeyboardCursor", source)
         self.assertIn("revealKeyboardTarget", source)
+        self.assertIn("if(this.usesMobileCourseKeyboard())this.revealKeyboardTarget(target)", source)
+        self.assertIn("this.restoreKeyboardCursor(target,this.usesMobileCourseKeyboard())", source)
 
     def test_dialogue_card_cannot_shrink_and_clip_its_answers(self):
         css = (ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")

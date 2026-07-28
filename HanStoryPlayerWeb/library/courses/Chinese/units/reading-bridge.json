@@ -4211,7 +4211,7 @@
     },
     {
       "id": "chinese-reading-bridge-production-checkpoint",
-      "title": "Producción de lectura",
+      "title": "Producción y diálogo",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -4235,9 +4235,9 @@
         {
           "id": "chinese-reading-bridge-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia solo esta letra, sílaba o grupo: «学校»",
-          "target": "学校",
-          "instruction": "Escribe exactamente «学校». No escribas cómo suena ni su explicación.",
+          "prompt": "Escribe en chino: «escuela»",
+          "target": "escuela",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "学校",
           "accepted_answers": [
             "学校"
@@ -4248,36 +4248,35 @@
           "slow_audio": "学校",
           "tags": [
             "production",
-            "copying"
+            "translation"
           ],
           "xp": 20
         },
         {
           "id": "chinese-reading-bridge-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "Escribe exactamente lo que oyes.",
           "answer": "车站",
           "accepted_answers": [
             "车站"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «车站». La respuesta que debías escribir era «车站».",
+          "explanation": "Escuchaste «车站». El ejemplo practica: estación",
           "audio": "车站",
           "slow_audio": "车站",
           "tags": [
             "production",
-            "dictation",
-            "reading"
+            "dictation"
           ],
           "xp": 20
         },
         {
           "id": "chinese-reading-bridge-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
-          "target": "学校",
+          "prompt": "Construye la forma que significa «escuela»",
+          "target": "escuela",
           "options": [
             "校",
             "学"
@@ -4299,23 +4298,116 @@
         {
           "id": "chinese-reading-bridge-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«车站» → __",
-          "instruction": "Escribe solamente «车站», no una guía de pronunciación.",
+          "prompt": "Completa el elemento que falta",
+          "target": "车＿",
+          "answer": "站",
+          "accepted_answers": [
+            "站"
+          ],
+          "explanation": "La forma completa es «车站»: estación",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production",
+            "completion",
+            "chinese"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "chinese-reading-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
+          "target": "qué",
+          "answer": "什么",
+          "accepted_answers": [
+            "什么"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «什么».",
+          "audio": "什么",
+          "slow_audio": "什么",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "chinese-reading-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «车站»",
+          "target": "estación",
           "answer": "车站",
           "accepted_answers": [
             "车站"
           ],
-          "explanation": "«车站» corresponde a «车站». estación",
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «车站». También puedes escribirlo.",
           "audio": "车站",
           "slow_audio": "车站",
           "tags": [
             "production",
-            "completion",
-            "reading",
-            "chinese"
+            "speaking",
+            "optional"
           ],
           "xp": 15
+        },
+        {
+          "id": "chinese-reading-bridge-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «escuela»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "学校",
+              "accepted_answers": [
+                "学校"
+              ],
+              "audio": "学校",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «estación»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en chino.",
+              "answer": "车站",
+              "accepted_answers": [
+                "车站"
+              ],
+              "audio": "车站",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
         }
       ]
     },

@@ -64,10 +64,10 @@
 .jp-keyboard-toggle{min-height:44px;padding:.55rem .85rem;background:#fff;border:1px solid #173f3533;color:var(--jp-green)}
 .jp-keyboard-toggle[aria-expanded="true"]{background:#e6eee9;border-color:#688b80}
 .jp-virtual-keyboard{box-sizing:border-box;width:100%;padding:.75rem;border:1px solid #173f3533;border-radius:18px;background:#f2eee5;box-shadow:0 8px 24px #173f3512}
-.jp-virtual-keyboard header{display:flex;align-items:baseline;justify-content:space-between;gap:.7rem;margin-bottom:.55rem;text-align:left}
-.jp-virtual-keyboard header strong{font-size:.95rem}
+.jp-keyboard-header{display:flex;align-items:baseline;justify-content:space-between;gap:.7rem;margin-bottom:.55rem;text-align:left}
+.jp-keyboard-header strong{font-size:.95rem}
 .jp-keyboard-physical-help{display:block;margin-top:.12rem;color:var(--jp-muted);font-size:.72rem;font-weight:500}
-.jp-virtual-keyboard header button{min-height:34px;padding:.3rem .55rem;background:#fff;border:1px solid #173f3530;color:var(--jp-green);font-size:.8rem}
+.jp-keyboard-header button{min-height:34px;padding:.3rem .55rem;background:#fff;border:1px solid #173f3530;color:var(--jp-green);font-size:.8rem}
 .jp-keyboard-tabs{display:flex;gap:.35rem;margin-bottom:.6rem;overflow-x:auto;scrollbar-width:thin}
 .jp-keyboard-tabs button{flex:0 0 auto;min-height:38px;padding:.35rem .65rem;background:#fff;border:1px solid #173f3525;font-size:.8rem}
 .jp-keyboard-tabs button.active{background:var(--jp-green);color:#fff}
@@ -192,10 +192,10 @@
   .jp-production .jp-question h1{font-size:clamp(1.45rem,7vw,2rem)}
   .jp-production-input{font-size:1rem}
   .japanese-guided-course.jp-course-keyboard-open>.jp-virtual-keyboard{position:fixed;z-index:2147483646;right:0;bottom:0;left:0;width:100%;max-height:min(45dvh,360px);padding:.35rem .5rem max(.55rem,env(safe-area-inset-bottom));border:none;border-radius:22px 22px 0 0;background:#d9dce1!important;box-shadow:0 -12px 30px #173f3540;isolation:isolate}
-  .jp-virtual-keyboard header{position:absolute;top:.35rem;right:.5rem;z-index:2;display:block;margin:0}
-  .jp-virtual-keyboard header strong{display:none}
+  .jp-keyboard-header{position:absolute;top:.35rem;right:.5rem;z-index:2;display:block;margin:0;padding:0;background:transparent;color:inherit}
+  .jp-keyboard-header strong{display:none}
   .jp-keyboard-physical-help{display:none}
-  .jp-virtual-keyboard header button{width:30px;min-height:30px;padding:0;border:0;border-radius:50%;background:#c6c9ce;font-size:1rem;line-height:1}
+  .jp-keyboard-header button{width:30px;min-height:30px;padding:0;border:0;border-radius:50%;background:#c6c9ce;font-size:1rem;line-height:1}
   .jp-virtual-keyboard .jp-keyboard-tabs{margin:.05rem 2.55rem .4rem .1rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button{min-height:32px;padding:.25rem .5rem;border-radius:8px;background:#c8cbd0;font-size:.72rem}
   .jp-virtual-keyboard .jp-keyboard-tabs button.active{background:#fff;color:var(--jp-green)}

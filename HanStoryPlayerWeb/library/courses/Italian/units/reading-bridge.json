@@ -4177,7 +4177,7 @@
     },
     {
       "id": "italian-reading-bridge-production-checkpoint",
-      "title": "Producción de lectura",
+      "title": "Producción y diálogo",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -4201,9 +4201,9 @@
         {
           "id": "italian-reading-bridge-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia solo esta letra, sílaba o grupo: «scuola»",
-          "target": "scuola",
-          "instruction": "Escribe exactamente «scuola». No escribas cómo suena ni su explicación.",
+          "prompt": "Escribe en italiano: «escuela»",
+          "target": "escuela",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "scuola",
           "accepted_answers": [
             "scuola"
@@ -4214,36 +4214,35 @@
           "slow_audio": "scuola",
           "tags": [
             "production",
-            "copying"
+            "translation"
           ],
           "xp": 20
         },
         {
           "id": "italian-reading-bridge-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "Escribe exactamente lo que oyes.",
           "answer": "stazione",
           "accepted_answers": [
             "stazione"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «stazione». La respuesta que debías escribir era «stazione».",
+          "explanation": "Escuchaste «stazione». El ejemplo practica: estación",
           "audio": "stazione",
           "slow_audio": "stazione",
           "tags": [
             "production",
-            "dictation",
-            "reading"
+            "dictation"
           ],
           "xp": 20
         },
         {
           "id": "italian-reading-bridge-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
-          "target": "scuola",
+          "prompt": "Construye la forma que significa «escuela»",
+          "target": "escuela",
           "options": [
             "scu",
             "la",
@@ -4266,23 +4265,116 @@
         {
           "id": "italian-reading-bridge-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«stazione» → __",
-          "instruction": "Escribe solamente «stazione», no una guía de pronunciación.",
+          "prompt": "Completa el elemento que falta",
+          "target": "stazion＿",
+          "answer": "e",
+          "accepted_answers": [
+            "e"
+          ],
+          "explanation": "La forma completa es «stazione»: estación",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production",
+            "completion",
+            "italian"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "italian-reading-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Produce el ejemplo que demuestra: «qué»",
+          "target": "qué",
+          "answer": "che cosa",
+          "accepted_answers": [
+            "che cosa"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «che cosa».",
+          "audio": "che cosa",
+          "slow_audio": "che cosa",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "italian-reading-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «stazione»",
+          "target": "estación",
           "answer": "stazione",
           "accepted_answers": [
             "stazione"
           ],
-          "explanation": "«stazione» corresponde a «stazione». estación",
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «stazione». También puedes escribirlo.",
           "audio": "stazione",
           "slow_audio": "stazione",
           "tags": [
             "production",
-            "completion",
-            "reading",
-            "italian"
+            "speaking",
+            "optional"
           ],
           "xp": 15
+        },
+        {
+          "id": "italian-reading-bridge-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «escuela»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "scuola",
+              "accepted_answers": [
+                "scuola"
+              ],
+              "audio": "scuola",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «estación»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en italiano.",
+              "answer": "stazione",
+              "accepted_answers": [
+                "stazione"
+              ],
+              "audio": "stazione",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
         }
       ]
     },

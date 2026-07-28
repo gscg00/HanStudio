@@ -646,7 +646,7 @@
     },
     {
       "id": "arabic-reading-bridge-production-checkpoint",
-      "title": "Producción de lectura",
+      "title": "Producción y diálogo",
       "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
       "generatedProduction": true,
       "isUnitFinal": true,
@@ -670,9 +670,9 @@
         {
           "id": "arabic-reading-bridge-production-translate",
           "type": "typed_translation",
-          "prompt": "Copia solo esta letra, sílaba o grupo: «نحن»",
-          "target": "نحن",
-          "instruction": "Escribe exactamente «نحن». No escribas cómo suena ni su explicación.",
+          "prompt": "Escribe en árabe: «nosotros»",
+          "target": "nosotros",
+          "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "نحن",
           "accepted_answers": [
             "نحن"
@@ -683,36 +683,35 @@
           "slow_audio": "نحن",
           "tags": [
             "production",
-            "copying"
+            "translation"
           ],
           "xp": 20
         },
         {
           "id": "arabic-reading-bridge-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "Escribe exactamente lo que oyes.",
           "answer": "أنتم",
           "accepted_answers": [
             "أنتم"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «أنتم». La respuesta que debías escribir era «أنتم».",
+          "explanation": "Escuchaste «أنتم». El ejemplo practica: ustedes",
           "audio": "أنتم",
           "slow_audio": "أنتم",
           "tags": [
             "production",
-            "dictation",
-            "reading"
+            "dictation"
           ],
           "xp": 20
         },
         {
           "id": "arabic-reading-bridge-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Reconstruye el símbolo, sílaba o grupo en el orden correcto",
-          "target": "نحن",
+          "prompt": "Construye la forma que significa «nosotros»",
+          "target": "nosotros",
           "options": [
             "نحن"
           ],
@@ -733,23 +732,116 @@
         {
           "id": "arabic-reading-bridge-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«أنتم» → __",
-          "instruction": "Escribe solamente «أنتم», no una guía de pronunciación.",
+          "prompt": "Completa el elemento que falta",
+          "target": "أنت＿",
+          "answer": "م",
+          "accepted_answers": [
+            "م"
+          ],
+          "explanation": "La forma completa es «أنتم»: ustedes",
+          "audio": "",
+          "slow_audio": "",
+          "tags": [
+            "production",
+            "completion",
+            "arabic"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "arabic-reading-bridge-production-open",
+          "type": "open_question",
+          "prompt": "Produce el ejemplo que demuestra: «ellos»",
+          "target": "ellos",
+          "answer": "هم",
+          "accepted_answers": [
+            "هم"
+          ],
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "explanation": "Una respuesta adecuada es «هم».",
+          "audio": "هم",
+          "slow_audio": "هم",
+          "tags": [
+            "production",
+            "open-answer"
+          ],
+          "xp": 20
+        },
+        {
+          "id": "arabic-reading-bridge-production-speak",
+          "type": "speak_and_transcribe",
+          "prompt": "Di en voz alta: «أنتم»",
+          "target": "ustedes",
           "answer": "أنتم",
           "accepted_answers": [
             "أنتم"
           ],
-          "explanation": "«أنتم» corresponde a «أنتم». ustedes",
+          "allow_minor_typos": true,
+          "speech_enabled": true,
+          "optional": true,
+          "explanation": "El modelo es «أنتم». También puedes escribirlo.",
           "audio": "أنتم",
           "slow_audio": "أنتم",
           "tags": [
             "production",
-            "completion",
-            "reading",
-            "arabic"
+            "speaking",
+            "optional"
           ],
           "xp": 15
+        },
+        {
+          "id": "arabic-reading-bridge-production-dialogue",
+          "type": "guided_dialogue",
+          "prompt": "Ensayo guiado de la unidad",
+          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "turns": [
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 1",
+              "translation": "Quieres expresar: «nosotros»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en árabe.",
+              "answer": "نحن",
+              "accepted_answers": [
+                "نحن"
+              ],
+              "audio": "نحن",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            },
+            {
+              "role": "model",
+              "speaker": "GUÍA",
+              "text": "Situación 2",
+              "translation": "Quieres expresar: «ustedes»."
+            },
+            {
+              "role": "learner",
+              "speaker": "TÚ",
+              "prompt": "Di o escribe este ejemplo en árabe.",
+              "answer": "أنتم",
+              "accepted_answers": [
+                "أنتم"
+              ],
+              "audio": "أنتم",
+              "allow_minor_typos": true,
+              "speech_enabled": true
+            }
+          ],
+          "minimum_correct": 2,
+          "answer": "",
+          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
+          "tags": [
+            "production",
+            "dialogue",
+            "unit-dialogue"
+          ],
+          "xp": 20
         }
       ]
     },

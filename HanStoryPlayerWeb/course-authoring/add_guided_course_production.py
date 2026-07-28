@@ -27,7 +27,7 @@ LANGUAGE_LABELS = {
     "Russian": "ruso",
 }
 SCRIPT_HEAVY = {"Chinese", "Japanese"}
-READING_MARKERS = ("reading-foundations", "reading", "hangul", "hiragana", "katakana", "rhythm")
+READING_MARKERS = ("reading-foundations", "hangul", "hiragana", "katakana", "rhythm")
 READING_LANGUAGE_MARKERS = (
     "se pronuncia",
     "sonido",
@@ -48,7 +48,9 @@ def dump(path: Path, value: dict) -> None:
 
 
 def is_reading_focus(unit: dict, selected: list[dict]) -> bool:
-    if any(marker in unit["id"] for marker in READING_MARKERS):
+    # "reading-bridge" contains stories and phrases; only the standalone
+    # reading unit belongs to the alphabet/symbol production flow.
+    if unit["id"] == "reading" or any(marker in unit["id"] for marker in READING_MARKERS):
         return True
     explanatory = sum(
         any(marker in pair["meaning"].lower() for marker in READING_LANGUAGE_MARKERS)
