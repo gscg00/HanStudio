@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "library" / "courses"
-OUTPUT = ROOT / "supabase" / "migrations" / "004_guided_course_catalog.sql"
+OUTPUT = ROOT / "supabase" / "migrations" / "017_refresh_guided_course_catalog.sql"
 REWARDS = {"normal": 20, "short": 10, "test": 30, "unitFinal": 50, "review": 5}
 
 

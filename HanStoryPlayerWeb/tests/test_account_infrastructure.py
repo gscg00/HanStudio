@@ -29,9 +29,11 @@ class AccountInfrastructureTests(unittest.TestCase):
 
     def test_only_public_configuration_fields_are_used(self):
         config = (ROOT / "src/config.example.js").read_text(encoding="utf-8")
-        self.assertEqual(config.count("export const"), 2)
+        self.assertEqual(config.count("export const"), 3)
         self.assertIn("SUPABASE_URL", config)
         self.assertIn("SUPABASE_PUBLISHABLE_KEY", config)
+        self.assertIn("ADMIN_EMAILS", config)
+        self.assertNotIn("SERVICE_ROLE", config)
 
     def test_blocked_indexeddb_never_hides_language_cards(self):
         storage = (ROOT / "src/storage.js").read_text(encoding="utf-8")
@@ -53,7 +55,15 @@ class AccountInfrastructureTests(unittest.TestCase):
         self.assertIn("ownerSnapshot('guest')", sync)
         self.assertIn("this.activeOwner===owner", sync)
         self.assertIn("await this.pullAndMerge()", sync)
+        self.assertIn("await this.flush()", sync)
+        self.assertIn("enqueueDifferences(records,remote,userId)", sync)
         self.assertNotIn("this.pendingChoice={", sync)
+
+    def test_synced_records_are_not_requeued_on_every_session_restore(self):
+        sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
+        self.assertIn("const needsUpload=", sync)
+        self.assertIn("stable(record.value||{})!==stable(remote.value||{})", sync)
+        self.assertNotIn("for(const record of merged)await this.enqueue(record,userId)", sync)
 
     def test_offline_session_restoration_keeps_the_account_owner(self):
         sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
