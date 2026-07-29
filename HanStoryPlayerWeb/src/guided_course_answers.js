@@ -28,9 +28,25 @@ function levenshtein(a,b){
   return row[b.length];
 }
 
+function finalComposition(value){
+  const text=String(value??'').trim();
+  // Algunas tarjetas muestran una fórmula didáctica ("ch + a → cha" o
+  // "ㅁ + ㅜ + ㄴ = 문"), pero el estudiante debe escribir solamente el
+  // resultado. Conservamos la fórmula como respuesta compatible y añadimos
+  // automáticamente su resultado final como respuesta válida.
+  const match=text.match(/(?:→|=)\s*([^=→]+)\s*$/u);
+  return match?.[1]?.trim()||'';
+}
+
 function acceptedAnswers(activity){
   const values=[activity.answer,...(activity.accepted_answers||[])].filter(value=>value!==undefined&&value!==null);
-  return [...new Set(values.map(String))];
+  return [...new Set(values.flatMap(value=>{
+    const raw=String(value);
+    const final=finalComposition(raw);
+    // El resultado va primero: si falla, el mensaje muestra lo que realmente
+    // se pidió escribir y no la fórmula usada solo como apoyo visual.
+    return final&&final!==raw?[final,raw]:[raw];
+  }))];
 }
 
 export function evaluateGuidedAnswer(activity,given,language=''){

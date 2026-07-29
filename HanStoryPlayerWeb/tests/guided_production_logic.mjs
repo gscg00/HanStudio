@@ -31,6 +31,14 @@ const translation = {
 assert.equal(evaluateGuidedAnswer(translation, "ich verstehe nicht", "German").correct, true);
 assert.equal(evaluateGuidedAnswer(translation, "ich verstehe", "German").correct, false);
 
+// Las fórmulas visuales se usan para explicar una combinación, pero la
+// respuesta que se escribe debe ser únicamente el resultado final.
+const frenchCombination={type:"complete_without_options",answer:"ch + a → cha"};
+assert.equal(evaluateGuidedAnswer(frenchCombination,"cha","French").correct,true);
+assert.equal(evaluateGuidedAnswer(frenchCombination,"ch + a → cha","French").correct,true);
+const koreanCombination={type:"complete_without_options",answer:"ㅁ + ㅜ + ㄴ = 문"};
+assert.equal(evaluateGuidedAnswer(koreanCombination,"문","Korean").correct,true);
+
 const optionalSpeaking = {
   id: "speaking",
   type: "speak_and_transcribe",
