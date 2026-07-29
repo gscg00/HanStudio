@@ -1682,15 +1682,15 @@
         {
           "id": "korean-hangul-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente la grafía o grupo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio reproduce «밥». Escribe exactamente «밥».",
           "answer": "밥",
           "accepted_answers": [
             "밥"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «밥». La respuesta que debías escribir era «밥».",
+          "explanation": "Escuchaste «밥». La respuesta es «밥».",
           "audio": "밥",
           "slow_audio": "밥",
           "tags": [
@@ -1725,14 +1725,14 @@
         {
           "id": "korean-hangul-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«밥» → __",
-          "instruction": "Escribe solamente «밥», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «밥», no una guía de pronunciación.",
           "answer": "밥",
           "accepted_answers": [
             "밥"
           ],
-          "explanation": "«밥» corresponde a «밥». Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
+          "explanation": "Escuchaste «밥». Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.",
           "audio": "밥",
           "slow_audio": "밥",
           "tags": [

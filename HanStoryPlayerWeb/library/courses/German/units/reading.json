@@ -2138,15 +2138,15 @@
         {
           "id": "german-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio dice el nombre «tsett». Escribe solo la letra «Z».",
           "answer": "Z",
           "accepted_answers": [
             "Z"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «tsett». La respuesta que debías escribir era «Z».",
+          "explanation": "El nombre «tsett» se escribe «Z».",
           "audio": "tsett",
           "slow_audio": "tsett",
           "tags": [
@@ -2181,14 +2181,14 @@
         {
           "id": "german-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«tsett» → __",
-          "instruction": "Escribe solamente «Z», no una guía de pronunciación.",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
+          "target": "Nombre «tsett» → grafía: __",
+          "instruction": "El audio dice el nombre «tsett». Escribe solo la letra «Z».",
           "answer": "Z",
           "accepted_answers": [
             "Z"
           ],
-          "explanation": "«tsett» corresponde a «Z». Z: tset",
+          "explanation": "El nombre «tsett» se escribe «Z». Z: tset",
           "audio": "tsett",
           "slow_audio": "tsett",
           "tags": [

@@ -2169,18 +2169,18 @@
         },
         {
           "id": "italian-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «gli · sci»",
+          "target": "gli · sci",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «gli · sci».",
           "answer": "gli · sci",
           "accepted_answers": [
             "gli · sci"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «elle». La respuesta que debías escribir era «gli · sci».",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "explanation": "Escuchaste el ejemplo «elle». La grafía que se practica es «gli · sci».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2214,14 +2214,14 @@
         {
           "id": "italian-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«elle» → __",
-          "instruction": "Escribe solamente «gli · sci», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «gli · sci», no una guía de pronunciación.",
           "answer": "gli · sci",
           "accepted_answers": [
             "gli · sci"
           ],
-          "explanation": "«elle» corresponde a «gli · sci». Son patrones frecuentes que no conviene deletrear.",
+          "explanation": "Escuchaste «gli · sci». Son patrones frecuentes que no conviene deletrear.",
           "audio": "elle",
           "slow_audio": "elle",
           "tags": [

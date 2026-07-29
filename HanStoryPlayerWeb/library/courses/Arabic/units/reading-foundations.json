@@ -2597,18 +2597,18 @@
         },
         {
           "id": "arabic-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «ْ ّ»",
+          "target": "ْ ّ",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ْ ّ».",
           "answer": "ْ ّ",
           "accepted_answers": [
             "ْ ّ"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «شين». La respuesta que debías escribir era «ْ ّ».",
-          "audio": "شين",
-          "slow_audio": "شين",
+          "explanation": "Escuchaste el ejemplo «شين». La grafía que se practica es «ْ ّ».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2643,14 +2643,14 @@
         {
           "id": "arabic-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«شين» → __",
-          "instruction": "Escribe solamente «ْ ّ», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «ْ ّ», no una guía de pronunciación.",
           "answer": "ْ ّ",
           "accepted_answers": [
             "ْ ّ"
           ],
-          "explanation": "«شين» corresponde a «ْ ّ». Cambian la estructura silábica y pueden cambiar significado.",
+          "explanation": "Escuchaste «ْ ّ». Cambian la estructura silábica y pueden cambiar significado.",
           "audio": "شين",
           "slow_audio": "شين",
           "tags": [

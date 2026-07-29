@@ -1744,15 +1744,15 @@
         {
           "id": "chinese-reading-foundations-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio dice el nombre «nǐ». Escribe solo la letra «你».",
           "answer": "你",
           "accepted_answers": [
             "你"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «nǐ». La respuesta que debías escribir era «你».",
+          "explanation": "El nombre «nǐ» se escribe «你».",
           "audio": "nǐ",
           "slow_audio": "nǐ",
           "tags": [
@@ -1789,14 +1789,14 @@
         {
           "id": "chinese-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«nǐ» → __",
-          "instruction": "Escribe solamente «你», no una guía de pronunciación.",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
+          "target": "Nombre «nǐ» → grafía: __",
+          "instruction": "El audio dice el nombre «nǐ». Escribe solo la letra «你».",
           "answer": "你",
           "accepted_answers": [
             "你"
           ],
-          "explanation": "«nǐ» corresponde a «你». tú",
+          "explanation": "El nombre «nǐ» se escribe «你». tú",
           "audio": "nǐ",
           "slow_audio": "nǐ",
           "tags": [

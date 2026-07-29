@@ -2647,18 +2647,18 @@
         },
         {
           "id": "german-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «ich · Bach»",
+          "target": "ich · Bach",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ich · Bach».",
           "answer": "ich · Bach",
           "accepted_answers": [
             "ich · Bach"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «hah». La respuesta que debías escribir era «ich · Bach».",
-          "audio": "hah",
-          "slow_audio": "hah",
+          "explanation": "Escuchaste el ejemplo «hah». La grafía que se practica es «ich · Bach».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2693,14 +2693,14 @@
         {
           "id": "german-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«hah» → __",
-          "instruction": "Escribe solamente «ich · Bach», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «ich · Bach», no una guía de pronunciación.",
           "answer": "ich · Bach",
           "accepted_answers": [
             "ich · Bach"
           ],
-          "explanation": "«hah» corresponde a «ich · Bach». Uno es más frontal y otro más posterior.",
+          "explanation": "Escuchaste «ich · Bach». Uno es más frontal y otro más posterior.",
           "audio": "hah",
           "slow_audio": "hah",
           "tags": [

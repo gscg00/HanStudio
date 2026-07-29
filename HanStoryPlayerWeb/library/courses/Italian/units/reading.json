@@ -1584,15 +1584,15 @@
         {
           "id": "italian-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio dice el nombre «esse». Escribe solo la letra «S».",
           "answer": "S",
           "accepted_answers": [
             "S"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «esse». La respuesta que debías escribir era «S».",
+          "explanation": "El nombre «esse» se escribe «S».",
           "audio": "esse",
           "slow_audio": "esse",
           "tags": [
@@ -1627,14 +1627,14 @@
         {
           "id": "italian-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«esse» → __",
-          "instruction": "Escribe solamente «S», no una guía de pronunciación.",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
+          "target": "Nombre «esse» → grafía: __",
+          "instruction": "El audio dice el nombre «esse». Escribe solo la letra «S».",
           "answer": "S",
           "accepted_answers": [
             "S"
           ],
-          "explanation": "«esse» corresponde a «S». S: ese",
+          "explanation": "El nombre «esse» se escribe «S». S: ese",
           "audio": "esse",
           "slow_audio": "esse",
           "tags": [

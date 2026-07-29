@@ -1325,15 +1325,15 @@
         {
           "id": "chinese-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio dice el nombre «xī». Escribe solo la letra «x».",
           "answer": "x",
           "accepted_answers": [
             "x"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «xī». La respuesta que debías escribir era «x».",
+          "explanation": "El nombre «xī» se escribe «x».",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [
@@ -1368,14 +1368,14 @@
         {
           "id": "chinese-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«xī» → __",
-          "instruction": "Escribe solamente «x», no una guía de pronunciación.",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
+          "target": "Nombre «xī» → grafía: __",
+          "instruction": "El audio dice el nombre «xī». Escribe solo la letra «x».",
           "answer": "x",
           "accepted_answers": [
             "x"
           ],
-          "explanation": "«xī» corresponde a «x». x: sh muy suave, lengua adelante",
+          "explanation": "El nombre «xī» se escribe «x». x: sh muy suave, lengua adelante",
           "audio": "xī",
           "slow_audio": "xī",
           "tags": [

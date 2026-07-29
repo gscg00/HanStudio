@@ -931,18 +931,18 @@
         },
         {
           "id": "japanese-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «きゃ · っ»",
+          "target": "きゃ · っ",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «きゃ · っ».",
           "answer": "きゃ · っ",
           "accepted_answers": [
             "きゃ · っ"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «きゃ». La respuesta que debías escribir era «きゃ · っ».",
-          "audio": "きゃ",
-          "slow_audio": "きゃ",
+          "explanation": "Escuchaste el ejemplo «きゃ». La grafía que se practica es «きゃ · っ».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -977,14 +977,14 @@
         {
           "id": "japanese-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«きゃ» → __",
-          "instruction": "Escribe solamente «きゃ · っ», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «きゃ · っ», no una guía de pronunciación.",
           "answer": "きゃ · っ",
           "accepted_answers": [
             "きゃ · っ"
           ],
-          "explanation": "«きゃ» corresponde a «きゃ · っ». No leas el kana pequeño como una mora completa independiente.",
+          "explanation": "Escuchaste «きゃ · っ». No leas el kana pequeño como una mora completa independiente.",
           "audio": "きゃ",
           "slow_audio": "きゃ",
           "tags": [

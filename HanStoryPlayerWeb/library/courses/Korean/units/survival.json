@@ -4404,15 +4404,15 @@
         {
           "id": "korean-survival-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente la grafía o grupo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio reproduce «어디». Escribe exactamente «어디».",
           "answer": "어디",
           "accepted_answers": [
             "어디"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «어디». La respuesta que debías escribir era «어디».",
+          "explanation": "Escuchaste «어디». La respuesta es «어디».",
           "audio": "어디",
           "slow_audio": "어디",
           "tags": [
@@ -4448,14 +4448,14 @@
         {
           "id": "korean-survival-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«어디» → __",
-          "instruction": "Escribe solamente «어디», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «어디», no una guía de pronunciación.",
           "answer": "어디",
           "accepted_answers": [
             "어디"
           ],
-          "explanation": "«어디» corresponde a «어디». dónde",
+          "explanation": "Escuchaste «어디». dónde",
           "audio": "어디",
           "slow_audio": "어디",
           "tags": [

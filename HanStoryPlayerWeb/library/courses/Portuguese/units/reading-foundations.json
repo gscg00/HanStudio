@@ -2455,18 +2455,18 @@
         },
         {
           "id": "portuguese-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «casa»",
+          "target": "casa",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «casa».",
           "answer": "casa",
           "accepted_answers": [
             "casa"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «esse». La respuesta que debías escribir era «casa».",
-          "audio": "esse",
-          "slow_audio": "esse",
+          "explanation": "Escuchaste el ejemplo «esse». La grafía que se practica es «casa».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2501,14 +2501,14 @@
         {
           "id": "portuguese-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«esse» → __",
-          "instruction": "Escribe solamente «casa», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «casa», no una guía de pronunciación.",
           "answer": "casa",
           "accepted_answers": [
             "casa"
           ],
-          "explanation": "«esse» corresponde a «casa». La posición explica casa frente a massa.",
+          "explanation": "Escuchaste «casa». La posición explica casa frente a massa.",
           "audio": "esse",
           "slow_audio": "esse",
           "tags": [

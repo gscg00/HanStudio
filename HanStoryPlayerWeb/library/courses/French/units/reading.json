@@ -1902,15 +1902,15 @@
         {
           "id": "french-reading-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio dice el nombre «vé». Escribe solo la letra «V».",
           "answer": "V",
           "accepted_answers": [
             "V"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «vé». La respuesta que debías escribir era «V».",
+          "explanation": "El nombre «vé» se escribe «V».",
           "audio": "vé",
           "slow_audio": "vé",
           "tags": [
@@ -1945,14 +1945,14 @@
         {
           "id": "french-reading-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-          "target": "«vé» → __",
-          "instruction": "Escribe solamente «V», no una guía de pronunciación.",
+          "prompt": "Escucha el nombre de la letra y escribe su grafía",
+          "target": "Nombre «vé» → grafía: __",
+          "instruction": "El audio dice el nombre «vé». Escribe solo la letra «V».",
           "answer": "V",
           "accepted_answers": [
             "V"
           ],
-          "explanation": "«vé» corresponde a «V». V: ve",
+          "explanation": "El nombre «vé» se escribe «V». V: ve",
           "audio": "vé",
           "slow_audio": "vé",
           "tags": [

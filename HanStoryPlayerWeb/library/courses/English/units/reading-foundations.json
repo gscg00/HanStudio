@@ -2553,18 +2553,18 @@
         },
         {
           "id": "english-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «SH · CH»",
+          "target": "SH · CH",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «SH · CH».",
           "answer": "SH · CH",
           "accepted_answers": [
             "SH · CH"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «see». La respuesta que debías escribir era «SH · CH».",
-          "audio": "see",
-          "slow_audio": "see",
+          "explanation": "Escuchaste el ejemplo «see». La grafía que se practica es «SH · CH».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2597,14 +2597,14 @@
         {
           "id": "english-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«see» → __",
-          "instruction": "Escribe solamente «SH · CH», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «SH · CH», no una guía de pronunciación.",
           "answer": "SH · CH",
           "accepted_answers": [
             "SH · CH"
           ],
-          "explanation": "«see» corresponde a «SH · CH». Dividir estos grupos produce una pronunciación artificial.",
+          "explanation": "Escuchaste «SH · CH». Dividir estos grupos produce una pronunciación artificial.",
           "audio": "see",
           "slow_audio": "see",
           "tags": [

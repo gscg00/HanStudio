@@ -100,18 +100,25 @@ def reading_form(base: dict) -> str:
     return target.rsplit("=", 1)[1].strip() if "=" in target else target
 
 
+def is_letter_name_activity(base: dict) -> bool:
+    """True when the audio says a letter name but the answer is its glyph."""
+    form = reading_form(base)
+    return len(form) == 1 and form.isalpha() and str(base.get("audio", "")).strip() != form
+
+
 def blank_activity(base: dict, prefix: str, language: str, reading_only: bool = False) -> dict:
     if reading_only:
         answer = reading_form(base)
+        letter_name = is_letter_name_activity(base)
         return {
             "id": f"{prefix}-complete",
             "type": "complete_without_options",
-            "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
-            "target": f"«{base['audio']}» → __",
-            "instruction": f"Escribe solamente «{answer}», no una guía de pronunciación.",
+            "prompt": "Escucha el nombre de la letra y escribe su grafía" if letter_name else "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
+            "target": f"Nombre «{base['audio']}» → grafía: __" if letter_name else f"«{base['audio']}» → __",
+            "instruction": f"El audio dice el nombre «{base['audio']}». Escribe solo la letra «{answer}»." if letter_name else f"Escribe exactamente «{answer}», no una guía de pronunciación.",
             "answer": answer,
             "accepted_answers": [answer],
-            "explanation": f"«{base['audio']}» corresponde a «{answer}». {base['meaning']}",
+            "explanation": f"El nombre «{base['audio']}» se escribe «{answer}». {base['meaning']}" if letter_name else f"Escuchaste «{answer}». {base['meaning']}",
             "audio": base["audio"],
             "slow_audio": base["slow_audio"],
             "tags": ["production", "completion", "reading", language.lower()],
@@ -204,6 +211,29 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
     first_visible = first_form if reading_only else first["meaning"]
     typed_answer = reading_answer if reading_only else first["target"]
     typed_audio_matches = first["audio"] == typed_answer
+    second_is_letter_name = reading_only and is_letter_name_activity(second)
+    second_audio_matches_form = str(second["audio"]).strip().casefold() == second_form.casefold()
+    ambiguous_reading_audio = reading_only and not second_is_letter_name and not second_audio_matches_form
+    dictation_answer = second_form if reading_only else second["audio"]
+    dictation_prompt = (
+        f"Copia exactamente esta grafía o comparación: «{second_form}»" if ambiguous_reading_audio
+        else "Escucha el nombre de la letra y escribe su grafía" if second_is_letter_name
+        else "Escucha y escribe exactamente la grafía o grupo que oyes" if reading_only
+        else "Escucha y escribe exactamente lo que oyes"
+    )
+    dictation_instruction = (
+        f"Esta comparación tiene ejemplos de audio separados. Copia exactamente «{second_form}»." if ambiguous_reading_audio
+        else f"El audio dice el nombre «{second['audio']}». Escribe solo la letra «{second_form}»." if second_is_letter_name
+        else f"El audio reproduce «{second_form}». Escribe exactamente «{second_form}»." if reading_only and second_audio_matches_form
+        else f"En este ejercicio el audio es el ejemplo «{second['audio']}». Escribe exactamente «{second_form}»." if reading_only
+        else "Escribe exactamente lo que oyes."
+    )
+    dictation_explanation = (
+        f"El nombre «{second['audio']}» se escribe «{second_form}»." if second_is_letter_name
+        else f"Escuchaste «{second_form}». La respuesta es «{second_form}»." if reading_only and second_audio_matches_form
+        else f"Escuchaste el ejemplo «{second['audio']}». La grafía que se practica es «{second_form}»." if reading_only
+        else f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}"
+    )
     block_prompt = (
         "Reconstruye el símbolo, sílaba o grupo en el orden correcto"
         if reading_only
@@ -244,16 +274,19 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
         },
         {
             "id": f"{prefix}-dictation",
-            "type": "dictation",
-            "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido" if reading_only else "Escucha y escribe exactamente lo que oyes",
-            "target": "",
-            "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación." if reading_only else "Escribe exactamente lo que oyes.",
-            "answer": second_form if reading_only else second["audio"],
-            "accepted_answers": [second_form if reading_only else second["audio"]],
+            # Nunca convertimos un ejemplo de palabra (p. ej. Bach) en un
+            # dictado cuya respuesta sea otra grafía (p. ej. CH). Si no hay
+            # correspondencia uno a uno, el alumno sólo copia la grafía.
+            "type": "typed_translation" if ambiguous_reading_audio else "dictation",
+            "prompt": dictation_prompt,
+            "target": second_form if ambiguous_reading_audio else "",
+            "instruction": dictation_instruction,
+            "answer": dictation_answer,
+            "accepted_answers": [dictation_answer],
             "allow_minor_typos": True,
-            "explanation": f"Escuchaste «{second['audio']}». La respuesta que debías escribir era «{second_form}»." if reading_only else f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}",
-            "audio": second["audio"],
-            "slow_audio": second["slow_audio"],
+            "explanation": dictation_explanation,
+            "audio": "" if ambiguous_reading_audio else second["audio"],
+            "slow_audio": "" if ambiguous_reading_audio else second["slow_audio"],
             "tags": ["production", "dictation", *( ["reading"] if reading_only else [] )],
             "xp": 20,
         },

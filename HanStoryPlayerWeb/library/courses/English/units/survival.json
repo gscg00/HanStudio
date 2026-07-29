@@ -4404,15 +4404,15 @@
         {
           "id": "english-survival-production-dictation",
           "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
+          "prompt": "Escucha y escribe exactamente la grafía o grupo que oyes",
           "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "instruction": "El audio reproduce «where». Escribe exactamente «where».",
           "answer": "where",
           "accepted_answers": [
             "where"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «where». La respuesta que debías escribir era «where».",
+          "explanation": "Escuchaste «where». La respuesta es «where».",
           "audio": "where",
           "slow_audio": "where",
           "tags": [
@@ -4447,14 +4447,14 @@
         {
           "id": "english-survival-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«where» → __",
-          "instruction": "Escribe solamente «where», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «where», no una guía de pronunciación.",
           "answer": "where",
           "accepted_answers": [
             "where"
           ],
-          "explanation": "«where» corresponde a «where». dónde",
+          "explanation": "Escuchaste «where». dónde",
           "audio": "where",
           "slow_audio": "where",
           "tags": [

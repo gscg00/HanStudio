@@ -2929,18 +2929,18 @@
         },
         {
           "id": "russian-reading-foundations-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe solo la letra o grupo que corresponde al sonido",
-          "target": "",
-          "instruction": "Escribe la letra o grupo que oyes; no escribas la ayuda de pronunciación.",
+          "type": "typed_translation",
+          "prompt": "Copia exactamente esta grafía o comparación: «ж · ш · ц»",
+          "target": "ж · ш · ц",
+          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ж · ш · ц».",
           "answer": "ж · ш · ц",
           "accepted_answers": [
             "ж · ш · ц"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «жэ». La respuesta que debías escribir era «ж · ш · ц».",
-          "audio": "жэ",
-          "slow_audio": "жэ",
+          "explanation": "Escuchaste el ejemplo «жэ». La grafía que se practica es «ж · ш · ц».",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "dictation",
@@ -2975,14 +2975,14 @@
         {
           "id": "russian-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha el nombre o sonido y escribe solo la letra o grupo correspondiente",
+          "prompt": "Escucha el sonido y escribe exactamente la grafía o grupo que oyes",
           "target": "«жэ» → __",
-          "instruction": "Escribe solamente «ж · ш · ц», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «ж · ш · ц», no una guía de pronunciación.",
           "answer": "ж · ш · ц",
           "accepted_answers": [
             "ж · ш · ц"
           ],
-          "explanation": "«жэ» corresponde a «ж · ш · ц». La ortografía de vocales posteriores tiene reglas convencionales.",
+          "explanation": "Escuchaste «ж · ш · ц». La ortografía de vocales posteriores tiene reglas convencionales.",
           "audio": "жэ",
           "slow_audio": "жэ",
           "tags": [
