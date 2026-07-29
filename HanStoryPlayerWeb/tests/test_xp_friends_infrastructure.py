@@ -5,7 +5,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SQL = (ROOT / "supabase/migrations/002_xp_and_friends.sql").read_text(encoding="utf-8").lower()
-STORY_SQL = (ROOT / "supabase/migrations/003_story_lesson_xp.sql").read_text(encoding="utf-8").lower()
+STORY_SQL = "\n".join(
+    path.read_text(encoding="utf-8").lower()
+    for path in sorted((ROOT / "supabase/migrations").glob("*.sql"))
+    if "story_catalog" in path.name or path.name == "003_story_lesson_xp.sql"
+)
 GUIDED_SQL = "\n".join(
     path.read_text(encoding="utf-8").lower()
     for path in sorted((ROOT / "supabase/migrations").glob("*.sql"))

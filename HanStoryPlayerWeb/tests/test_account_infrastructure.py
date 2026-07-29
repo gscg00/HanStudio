@@ -65,6 +65,14 @@ class AccountInfrastructureTests(unittest.TestCase):
         self.assertIn("stable(record.value||{})!==stable(remote.value||{})", sync)
         self.assertNotIn("for(const record of merged)await this.enqueue(record,userId)", sync)
 
+    def test_sync_queue_discards_sent_events_and_ignores_stale_counter_reads(self):
+        sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
+        storage = (ROOT / "src/storage.js").read_text(encoding="utf-8")
+        self.assertIn("removeAllByIndex('syncQueue','status','synced')", sync)
+        self.assertIn("remove('syncQueue',event.eventId,{sync:false})", sync)
+        self.assertIn("version!==this.emitVersion", sync)
+        self.assertIn("export async function removeAllByIndex", storage)
+
     def test_offline_session_restoration_keeps_the_account_owner(self):
         sync = (ROOT / "src/sync_service.js").read_text(encoding="utf-8")
         self.assertIn("if(!navigator.onLine||this.auth.error)", sync)
