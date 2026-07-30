@@ -19,7 +19,8 @@ class ReviewDailyLimitTests(unittest.TestCase):
         app = (ROOT / "src/japanese_course_app.js").read_text(encoding="utf-8")
         self.assertIn("DEFAULT_DAILY_REVIEW_LIMIT=20", settings)
         self.assertIn("[10,20,30,50,100]", settings)
-        self.assertIn("Math.min(12,allowance.remaining)", app)
+        self.assertIn("reviewItemsForSession(this.progress,allowance.remaining)", app)
+        self.assertNotIn("Math.min(12,allowance.remaining)", app)
         self.assertIn("Límite diario completado", app)
 
     def test_account_exposes_and_syncs_the_setting(self):
@@ -27,6 +28,8 @@ class ReviewDailyLimitTests(unittest.TestCase):
         store = (ROOT / "src/local_progress_store.js").read_text(encoding="utf-8")
         worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
         self.assertIn("Máximo de tarjetas al día", account)
+        self.assertIn("todas las tarjetas disponibles", account)
+        self.assertNotIn("máximo de 12 tarjetas", account)
         self.assertIn("saveUserSettings", account)
         self.assertIn("settings:global", store)
         self.assertIn("./src/user_settings.js", worker)

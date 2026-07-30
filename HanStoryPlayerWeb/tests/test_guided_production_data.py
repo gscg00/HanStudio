@@ -1,4 +1,5 @@
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -78,6 +79,44 @@ class GuidedProductionDataTests(unittest.TestCase):
                         for turn in activity.get("turns", []):
                             if turn.get("audio"):
                                 self.assertIn(turn["audio"], manifest, f"{activity['id']} dialogue audio")
+
+    def test_every_listening_option_resolves_to_published_audio(self):
+        selected_audio_prompt = re.compile(
+            r"forma escrita correcta|letra o símbolo correcto|qué "
+            r"(?:letra|grafema|símbolo|sílaba|palabra|frase|vocal)\b.*\b"
+            r"(?:escuchas|oyes|oíste)\b",
+            re.IGNORECASE,
+        )
+        for language, directory, course in self.iter_courses():
+            manifest = json.loads((directory / "audio_manifest.json").read_text(encoding="utf-8"))["items"]
+            activities = []
+            for summary in course["units"]:
+                unit = json.loads((directory / summary["manifest"]).read_text(encoding="utf-8"))
+                activities.extend(
+                    activity
+                    for lesson in unit["lessons"]
+                    for activity in lesson.get("activities", [])
+                )
+            audio_by_value = {}
+            for activity in activities:
+                if not activity.get("audio"):
+                    continue
+                for value in (activity.get("target"), activity.get("answer")):
+                    if str(value or "").strip():
+                        audio_by_value.setdefault(str(value), activity["audio"])
+            for activity in activities:
+                prompt = str(activity.get("prompt", ""))
+                if activity.get("type") != "audio_to_kana" and not selected_audio_prompt.search(prompt):
+                    continue
+                explicit = activity.get("option_audio") or activity.get("optionAudio") or {}
+                for option in activity.get("options", []):
+                    key = (
+                        explicit.get(option)
+                        or audio_by_value.get(str(option))
+                        or (activity.get("audio") if str(option) == str(activity.get("answer")) else "")
+                        or (str(option) if str(option) in manifest else "")
+                    )
+                    self.assertIn(key, manifest, f"{language}/{activity['id']} opción {option}")
 
     def test_generated_content_has_no_internal_labels_or_sentinel_values(self):
         forbidden = ("elevenlabs", "language override", "service_role", "client_secret", "__skipped__")
@@ -256,7 +295,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v127", source)
+        self.assertIn("hanstory-shell-v128", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)

@@ -9,6 +9,7 @@ import {
   speechLanguageCode,
   speechRecognitionSupport,
 } from "../src/guided_speech_recognition.js";
+import { resolveGuidedOptionAudioKey, reviewItemsForSession } from "../src/japanese_course_app.js";
 
 assert.equal(normalizeGuidedAnswer("  ¡Ça va!  ", { language: "French", keepSpaces: true }), "ca va");
 assert.equal(normalizeGuidedAnswer("أَهْلًا", { language: "Arabic" }), "اهلا");
@@ -20,6 +21,29 @@ assert.equal(speechLanguageCode("Japanese"), "ja-JP");
 assert.equal(speechLanguageCode("Chinese"), "zh-CN");
 assert.equal(speechLanguageCode("Arabic"), "ar-SA");
 assert.equal(speechRecognitionSupport().supported, false);
+
+const listeningChoice = {
+  answer: "ㄷ",
+  audio: "다",
+  options: ["ㄷ", "ㅍ", "ㅜ"],
+};
+const courseAudioActivities = [
+  { target: "ㄷ", audio: "다" },
+  { target: "ㅍ", audio: "파" },
+  { target: "ㅜ", audio: "우" },
+];
+const courseAudioManifest = { 다: "audio/da.m4a", 파: "audio/pa.m4a", 우: "audio/u.m4a" };
+assert.equal(resolveGuidedOptionAudioKey(listeningChoice, "ㄷ", courseAudioActivities, courseAudioManifest), "다");
+assert.equal(resolveGuidedOptionAudioKey(listeningChoice, "ㅍ", courseAudioActivities, courseAudioManifest), "파");
+assert.equal(resolveGuidedOptionAudioKey(listeningChoice, "ㅜ", courseAudioActivities, courseAudioManifest), "우");
+
+const reviewNow = new Date("2026-07-30T12:00:00Z");
+const dueReviews = Array.from({ length: 25 }, (_, index) => ({
+  activityId: `review-${index}`,
+  dueAt: "2026-07-29T12:00:00Z",
+}));
+assert.equal(reviewItemsForSession({ mistakes: dueReviews }, 20, reviewNow).length, 20);
+assert.equal(reviewItemsForSession({ mistakes: dueReviews }, 8, reviewNow).length, 8);
 
 const translation = {
   id: "translation",

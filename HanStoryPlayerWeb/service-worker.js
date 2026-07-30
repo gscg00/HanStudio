@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v127';
+const SHELL='hanstory-shell-v129';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -21,7 +21,7 @@ const ASSETS=[
   './src/app.js','./src/storage.js','./src/branding.js','./src/config.example.js','./src/config.local.js','./src/public_config.js',
   './src/auth_service.js','./src/local_progress_store.js','./src/cloud_progress_store.js',
   './src/progress_merge.js','./src/sync_service.js','./src/account_ui.js','./src/user_settings.js','./src/xp_service.js','./src/friends_service.js',
-  './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js',
+  './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js','./src/guided_phrase_support.js',
   './src/japanese_course_logic.js','./src/guided_course_config.js','./src/guided_course_logic.js',
   './src/guided_course_answers.js','./src/guided_speech_recognition.js','./src/guided_virtual_keyboard.js',
   './manifest.webmanifest','./library/library.json',
