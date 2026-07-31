@@ -6,8 +6,11 @@ import{BEGINNER_COURSES}from'../src/beginner_courses.js';
 import{ZERO_COURSES}from'../src/data/zero_courses.js';
 import{GUIDED_COURSES}from'../src/guided_course_config.js';
 import{PHRASE_SUPPORT_BY_LANGUAGE}from'../src/guided_phrase_metadata.js';
+import{syncGuidedBookAudio}from'./sync_guided_book_audio.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url)),web=path.resolve(here,'..'),library=JSON.parse(fs.readFileSync(path.join(web,'library/library.json'),'utf8'));
+const generatedPhraseSupportPath=path.join(web,'course-authoring/generated_phrase_support.json');
+const generatedPhraseSupport=fs.existsSync(generatedPhraseSupportPath)?JSON.parse(fs.readFileSync(generatedPhraseSupportPath,'utf8')).records||{}:{};
 const unitPlan=[
   ['reading','Sonidos y lectura','Pronunciación y reglas básicas de lectura.','Aa'],
   ['survival','Comunicación esencial','Saludos, cortesía y expresiones para desenvolverte.','☀'],
@@ -33,10 +36,12 @@ Arabic:`أنا|yo\nأنتَ / أنتِ|tú\nهو|él\nهي|ella\nنحن|nosotros
 
 const parseLines=text=>String(text||'').trim().split('\n').filter(Boolean).map(line=>{const[target,meaning]=line.split('|');return{target:target.trim(),meaning:meaning.trim(),hint:meaning.trim()};});
 const clean=value=>String(value||'').replace(/\s+/g,' ').trim();
+const isStandaloneOwnerName=value=>/^(?:sa[uú]l|사울)[.!?…]*$/iu.test(clean(value));
 const hasHan=value=>/[\u3400-\u9fff]/u.test(String(value||''));
 const unique=items=>{const seen=new Set;return items.filter(item=>{item.target=clean(item.target);item.meaning=clean(item.meaning);if(!item.target||!item.meaning){return false;}const key=item.target.toLocaleLowerCase();if(seen.has(key))return false;seen.add(key);return true;});};
 const phraseFields=item=>({word_breakdown:item.word_breakdown||item.wordBreakdown||[],usage_note:item.usage_note||item.usageNote||'',context_note:item.context_note||item.contextNote||'',audio_examples:item.audio_examples||item.audioExamples||[]});
-const enrichPhrase=(language,item)=>({...item,...(PHRASE_SUPPORT_BY_LANGUAGE[language]?.[clean(item.target)]||{})});
+const phraseSupportKey=(language,target,meaning)=>[language,clean(target),clean(meaning)].join('|').toLocaleLowerCase();
+const enrichPhrase=(language,item)=>({...item,...(generatedPhraseSupport[phraseSupportKey(language,item.target,item.meaning)]||{}),...(PHRASE_SUPPORT_BY_LANGUAGE[language]?.[clean(item.target)]||{})});
 const explanationFields=explanation=>{const breakdown=(explanation?.breakdown||[]).map(part=>({text:clean(part?.text||part?.part),meaning:clean(part?.meaning_es||part?.meaning||part?.translation),note:clean(part?.function_es||part?.explanation_es||part?.note)})).filter(part=>part.text&&part.meaning);return{word_breakdown:breakdown,usage_note:clean(explanation?.usage_notes_es||explanation?.explanation_es),context_note:clean(explanation?.literal_note_es)};};
 const mergePhraseFields=(source,override)=>({word_breakdown:override.word_breakdown.length?override.word_breakdown:source.word_breakdown,usage_note:override.usage_note||source.usage_note,context_note:override.context_note||source.context_note,audio_examples:override.audio_examples});
 // Los libros publicados pueden mezclar pistas recién importadas con pistas que
@@ -45,7 +50,7 @@ const mergePhraseFields=(source,override)=>({word_breakdown:override.word_breakd
 const phraseSupportScore=item=>(item.word_breakdown?.length?4:0)+(item.usage_note?2:0)+(item.context_note?1:0);
 const prioritizeExplainedPhrases=items=>[...items].sort((left,right)=>phraseSupportScore(right)-phraseSupportScore(left));
 const bookItems=language=>{const words=[],phrases=[];for(const entry of library.books.filter(book=>book.target_language===language)){const manifestPath=path.join(web,'library',entry.manifest);if(!fs.existsSync(manifestPath))continue;const manifest=JSON.parse(fs.readFileSync(manifestPath,'utf8'));const explanationPath=path.join(path.dirname(manifestPath),'explanations','track_explanations.json');let explanations={};if(fs.existsSync(explanationPath)){const data=JSON.parse(fs.readFileSync(explanationPath,'utf8'));explanations=data.items||{};}
-for(const track of manifest.tracks||[]){const explanation=explanations[String(track.id||track.source_track_id||'')];const source=explanationFields(explanation);const trackFields=phraseFields(track);const phraseMeta=mergePhraseFields(source,trackFields);const item=enrichPhrase(language,{target:track.text,meaning:track.translation||explanation?.natural_meaning_es||explanation?.translation||'',hint:track.translation||explanation?.natural_meaning_es||'',...phraseMeta});if(track.type==='word')words.push(item);else if(track.type==='phrase')phrases.push(item);}
+for(const track of manifest.tracks||[]){const explanation=explanations[String(track.id||track.source_track_id||'')];const source=explanationFields(explanation);const trackFields=phraseFields(track);const phraseMeta=mergePhraseFields(source,trackFields);const item=enrichPhrase(language,{target:track.text,meaning:track.translation||explanation?.natural_meaning_es||explanation?.translation||'',hint:track.translation||explanation?.natural_meaning_es||'',...phraseMeta});if(track.type==='word')words.push(item);else if(track.type==='phrase'&&!isStandaloneOwnerName(item.target))phrases.push(item);}
 for(const explanation of Object.values(explanations))for(const part of explanation.breakdown||[])words.push({target:part.text||part.part,meaning:part.meaning_es,hint:part.meaning_es});}
 return{words:unique(words),phrases:unique(phrases)};};
 const zeroItems=(language,stageIds=null)=>{const stages=ZERO_COURSES[language]?.stages||[],result=[];for(const stage of stages.filter(stage=>!stageIds||stageIds.includes(stage.id)))for(const item of stage.items||[]){if(item.details?.length)for(const detail of item.details)result.push({target:detail.text,meaning:detail.meaning,hint:detail.explanation||detail.hint||detail.meaning,group_hint:item.explanation||'',...phraseFields(detail),...phraseFields(item)});else{const explainsRule=['combinations','dangerous','structure'].includes(stage.id),spoken=item.speak||item.symbol,characterFirst=language==='Chinese'&&hasHan(item.symbol),target=explainsRule?item.symbol:characterFirst?item.symbol:spoken;result.push({target,meaning:item.quizAnswer||item.explanation||item.example||item.hint,hint:item.explanation||item.hint,...phraseFields(item),...(characterFirst?{audio:spoken,pinyin:spoken}:{}),...(explainsRule?{audio:spoken,meaningPrompt:`¿Qué debes recordar sobre «${target}»?`,teaching_kind:'rule',rule_kind:stage.id,teaching_explanation:item.explanation||'',pronunciation_hint:item.pronunciation||'',formation_hint:item.example||'',teaching_points:item.teachingPoints||[]}:{})});}}return unique(result);};
@@ -93,3 +98,5 @@ for(const[language,definition]of Object.entries(GUIDED_COURSES)){
   const manifestPath=path.join(root,'audio_manifest.json');if(!fs.existsSync(manifestPath))fs.writeFileSync(manifestPath,JSON.stringify({schema_version:1,provider:'ElevenLabs',language,language_code:definition.languageCode,model_id:'eleven_v3',items:{}},null,2)+'\n');
   console.log(`${language}: ${summaries.length} mundos · ${summaries.reduce((sum,item)=>sum+JSON.parse(fs.readFileSync(path.join(root,item.manifest))).lessons.length,0)} pasos · ${vocabulary.length}/300 palabras preparadas`);
 }
+
+for(const result of syncGuidedBookAudio(Object.keys(GUIDED_COURSES)))if(result.reused)console.log(`${result.language}: ${result.reused} audios existentes enlazados al curso guiado`);

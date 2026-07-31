@@ -295,12 +295,28 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v131", source)
+        self.assertIn("hanstory-shell-v132", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)
         self.assertNotIn("localStorage.clear", source)
         self.assertNotIn("indexedDB.deleteDatabase", source)
+
+    def test_korean_reuses_existing_book_audio_without_exposing_name_only_activity(self):
+        directory = COURSES / "Korean"
+        manifest = json.loads((directory / "audio_manifest.json").read_text(encoding="utf-8"))["items"]
+        for key in ("깼어요?", "한국어를 몰라요."):
+            self.assertIn(key, manifest)
+            self.assertTrue((directory / manifest[key]).is_file(), key)
+        unit = json.loads((directory / "units/reading-bridge.json").read_text(encoding="utf-8"))
+        activities = [
+            activity
+            for lesson in unit["lessons"]
+            for activity in lesson.get("activities", [])
+        ]
+        self.assertFalse(
+            any("사울?" in (activity.get("target"), activity.get("answer"), activity.get("audio"), activity.get("slow_audio")) for activity in activities)
+        )
 
     def test_building_blocks_never_play_partial_audio(self):
         source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
