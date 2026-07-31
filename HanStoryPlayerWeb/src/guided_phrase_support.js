@@ -22,3 +22,17 @@ export const phraseUsageNote=record=>clean(
 );
 
 export const phraseContextNote=record=>clean(record?.context_note||record?.contextNote);
+
+// Audio examples are deliberately author-supplied.  Do not infer an audio
+// filename from a word mentioned in an explanation: that can make a learner
+// hear a different sound from the example shown on screen.
+export const phraseAudioExamples=record=>{
+  const source=record?.audio_examples||record?.audioExamples||[];
+  return(Array.isArray(source)?source:[]).map(item=>({
+    label:clean(item?.label)||'EJEMPLO',
+    text:clean(item?.text||item?.target),
+    meaning:clean(item?.meaning||item?.translation),
+    audio:clean(item?.audio),
+    slow_audio:clean(item?.slow_audio||item?.slowAudio),
+  })).filter(item=>item.text&&item.audio);
+};

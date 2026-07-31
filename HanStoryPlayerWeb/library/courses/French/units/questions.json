@@ -48,7 +48,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-01-1-meaning",
@@ -107,7 +111,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-01-2-meaning",
@@ -166,7 +174,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-01-3-meaning",
@@ -225,7 +237,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-01-4-meaning",
@@ -284,7 +300,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-01-5-meaning",
@@ -366,7 +386,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-02-1-meaning",
@@ -425,7 +449,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": ""
+          "group_hint": "",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-02-2-meaning",
@@ -484,7 +512,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": "Informal: Comment tu t'appelles ?"
+          "group_hint": "Informal: Comment tu t'appelles ?",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-02-3-meaning",
@@ -543,7 +575,11 @@
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
-          "group_hint": "heure cambia a heures desde las dos."
+          "group_hint": "heure cambia a heures desde las dos.",
+          "word_breakdown": [],
+          "usage_note": "",
+          "context_note": "",
+          "audio_examples": []
         },
         {
           "id": "french-questions-02-4-meaning",
@@ -582,209 +618,6 @@
           "writing_asset": null,
           "tags": [],
           "xp": 10
-        }
-      ]
-    },
-    {
-      "id": "french-questions-production-checkpoint",
-      "title": "Producción y diálogo",
-      "description": "Escribe, construye y responde usando lo aprendido en esta unidad.",
-      "generatedProduction": true,
-      "isUnitFinal": true,
-      "xpReward": 25,
-      "activities": [
-        {
-          "id": "french-questions-production-intro",
-          "type": "lesson_intro",
-          "prompt": "Ahora te toca producir",
-          "target": "",
-          "answer": "",
-          "explanation": "Usarás lo aprendido sin depender de respuestas visibles.",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production"
-          ],
-          "xp": 2,
-          "gradable": false
-        },
-        {
-          "id": "french-questions-production-translate",
-          "type": "typed_translation",
-          "prompt": "Escribe en francés: «cuándo»",
-          "target": "cuándo",
-          "instruction": "Escribe la idea completa sin mirar opciones.",
-          "answer": "quand",
-          "accepted_answers": [
-            "quand"
-          ],
-          "allow_minor_typos": true,
-          "explanation": "Una respuesta correcta es «quand».",
-          "audio": "quand",
-          "slow_audio": "quand",
-          "tags": [
-            "production",
-            "translation"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "french-questions-production-dictation",
-          "type": "dictation",
-          "prompt": "Escucha y escribe exactamente lo que oyes",
-          "target": "",
-          "instruction": "Escribe exactamente lo que oyes.",
-          "answer": "comment",
-          "accepted_answers": [
-            "comment"
-          ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste «comment». El ejemplo practica: cómo",
-          "audio": "comment",
-          "slow_audio": "comment",
-          "tags": [
-            "production",
-            "dictation"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "french-questions-production-blocks",
-          "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «cuándo»",
-          "target": "cuándo",
-          "options": [
-            "a",
-            "nd",
-            "qu"
-          ],
-          "joiner": "",
-          "answer": "quand",
-          "accepted_answers": [
-            "quand"
-          ],
-          "explanation": "La forma completa es «quand».",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "blocks"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "french-questions-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Completa el elemento que falta",
-          "target": "commen＿",
-          "answer": "t",
-          "accepted_answers": [
-            "t"
-          ],
-          "explanation": "La forma completa es «comment»: cómo",
-          "audio": "",
-          "slow_audio": "",
-          "tags": [
-            "production",
-            "completion",
-            "french"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "french-questions-production-open",
-          "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «por qué»",
-          "target": "por qué",
-          "answer": "pourquoi",
-          "accepted_answers": [
-            "pourquoi"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "explanation": "Una respuesta adecuada es «pourquoi».",
-          "audio": "pourquoi",
-          "slow_audio": "pourquoi",
-          "tags": [
-            "production",
-            "open-answer"
-          ],
-          "xp": 20
-        },
-        {
-          "id": "french-questions-production-speak",
-          "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «comment»",
-          "target": "cómo",
-          "answer": "comment",
-          "accepted_answers": [
-            "comment"
-          ],
-          "allow_minor_typos": true,
-          "speech_enabled": true,
-          "optional": true,
-          "explanation": "El modelo es «comment». También puedes escribirlo.",
-          "audio": "comment",
-          "slow_audio": "comment",
-          "tags": [
-            "production",
-            "speaking",
-            "optional"
-          ],
-          "xp": 15
-        },
-        {
-          "id": "french-questions-production-dialogue",
-          "type": "guided_dialogue",
-          "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
-          "turns": [
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «cuándo»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
-              "answer": "quand",
-              "accepted_answers": [
-                "quand"
-              ],
-              "audio": "quand",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            },
-            {
-              "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «cómo»."
-            },
-            {
-              "role": "learner",
-              "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
-              "answer": "comment",
-              "accepted_answers": [
-                "comment"
-              ],
-              "audio": "comment",
-              "allow_minor_typos": true,
-              "speech_enabled": true
-            }
-          ],
-          "minimum_correct": 2,
-          "answer": "",
-          "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
-          "tags": [
-            "production",
-            "dialogue",
-            "unit-dialogue"
-          ],
-          "xp": 20
         }
       ]
     },
