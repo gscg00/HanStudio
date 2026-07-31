@@ -226,7 +226,7 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
         else f"El audio dice el nombre «{second['audio']}». Escribe solo la letra «{second_form}»." if second_is_letter_name
         else f"El audio reproduce «{second_form}». Escribe exactamente «{second_form}»." if reading_only and second_audio_matches_form
         else f"En este ejercicio el audio es el ejemplo «{second['audio']}». Escribe exactamente «{second_form}»." if reading_only
-        else "Escribe exactamente lo que oyes."
+        else "Escribe lo que oyes. La puntuación es opcional."
     )
     dictation_explanation = (
         f"El nombre «{second['audio']}» se escribe «{second_form}»." if second_is_letter_name

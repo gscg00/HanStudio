@@ -54,6 +54,9 @@ const translation = {
 };
 assert.equal(evaluateGuidedAnswer(translation, "ich verstehe nicht", "German").correct, true);
 assert.equal(evaluateGuidedAnswer(translation, "ich verstehe", "German").correct, false);
+const koreanDictation={type:'dictation',answer:'저는... 먼 곳에서 왔어요. 아직 설명하기 어려워요.'};
+assert.equal(evaluateGuidedAnswer(koreanDictation,'저는 먼 곳에서 왔어요 아직 설명하기 어려워요','Korean').correct,true,'Los puntos suspensivos y la puntuación deben ser opcionales en el dictado');
+assert.equal(evaluateGuidedAnswer(koreanDictation,'저는 가까운 곳에서 왔어요 아직 설명하기 어려워요','Korean').correct,false,'Ignorar la puntuación no debe aceptar palabras distintas');
 
 // Las fórmulas visuales se usan para explicar una combinación, pero la
 // respuesta que se escribe debe ser únicamente el resultado final.

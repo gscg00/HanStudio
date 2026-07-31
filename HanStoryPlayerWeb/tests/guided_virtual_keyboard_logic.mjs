@@ -16,9 +16,16 @@ assert.equal(composeHangulTokens(['ㅎ','ㅏ','ㄴ','ㄱ','ㅡ','ㄹ']),'한글'
 assert.deepEqual(decomposeHangulText('문'),['ㅁ','ㅜ','ㄴ']);
 assert.equal(applyVirtualKey('문',VIRTUAL_KEY_BACKSPACE,'Korean'),'무');
 assert.equal(['ㅁ','ㅜ','ㄴ'].reduce((value,key)=>applyVirtualKey(value,key,'Korean'),''),'문');
+assert.equal(['ㅇ','ㅗ','ㅏ','ㅆ'].reduce((value,key)=>applyVirtualKey(value,key,'Korean'),''),'왔','Debe componer vocales dobles y consonantes finales');
+assert.equal(['ㄱ','ㅏ','ㄴ','ㅏ'].reduce((value,key)=>applyVirtualKey(value,key,'Korean'),''),'가나','Una vocal posterior debe mover la consonante final a la sílaba siguiente');
+assert.equal(['ㄷ','ㅏ','ㄹ','ㄱ','ㅏ'].reduce((value,key)=>applyVirtualKey(value,key,'Korean'),''),'달가','Una vocal posterior debe dividir una consonante final compuesta');
+assert.equal(applyVirtualKey('왔',VIRTUAL_KEY_BACKSPACE,'Korean'),'와','El retroceso debe retirar primero la consonante final');
+assert.equal(applyVirtualKey('와',VIRTUAL_KEY_BACKSPACE,'Korean'),'오','El retroceso debe deshacer después la vocal compuesta');
 assert.deepEqual(applyVirtualKeyAtSelection('abc','Z','English',1,2),{value:'aZc',cursor:2},'Debe sustituir la selección sin borrar la respuesta entera');
 assert.deepEqual(applyVirtualKeyAtSelection('문자',VIRTUAL_KEY_BACKSPACE,'Korean',1,2),{value:'문',cursor:1},'Debe borrar únicamente el carácter coreano seleccionado');
 assert.deepEqual(applyVirtualKeyAtSelection('문',VIRTUAL_KEY_BACKSPACE,'Korean',1,1),{value:'무',cursor:1},'El retroceso coreano conserva la composición gradual');
+assert.deepEqual(applyVirtualKeyAtSelection('처음 보는 얼굴이네요 어디에서 오','ㅏ','Korean',18,18),{value:'처음 보는 얼굴이네요 어디에서 와',cursor:18},'Debe componer una vocal en la posición actual del cursor');
+assert.deepEqual(applyVirtualKeyAtSelection('처음 보는 얼굴이네요 어디에서 와','ㅆ','Korean',18,18),{value:'처음 보는 얼굴이네요 어디에서 왔',cursor:18},'Debe añadir la consonante final sin separar los jamos');
 assert.equal(virtualKeyFromPhysicalInput('Korean',{key:'q',code:'KeyQ'}),'ㅂ','El teclado físico latino debe controlar el 2-set coreano');
 assert.equal(virtualKeyFromPhysicalInput('Korean',{key:'Q',code:'KeyQ',shiftKey:true}),'ㅃ','Mayús debe activar las variantes coreanas');
 assert.equal(virtualKeyFromPhysicalInput('Russian',{key:'f',code:'KeyF'}),'а','El teclado físico debe poder controlar el cirílico');

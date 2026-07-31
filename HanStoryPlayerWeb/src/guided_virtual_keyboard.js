@@ -7,6 +7,23 @@ const JUNGSEONG=['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','�
 const JONGSEONG=['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
 const CONSONANTS=new Set([...CHOSEONG,...JONGSEONG.slice(1)]);
 const VOWELS=new Set(JUNGSEONG);
+const COMPOUND_VOWELS=new Map([
+  ['ㅗㅏ','ㅘ'],['ㅗㅐ','ㅙ'],['ㅗㅣ','ㅚ'],
+  ['ㅜㅓ','ㅝ'],['ㅜㅔ','ㅞ'],['ㅜㅣ','ㅟ'],
+  ['ㅡㅣ','ㅢ'],['ㅘㅣ','ㅙ'],['ㅝㅣ','ㅞ']
+]);
+const SPLIT_COMPOUND_VOWELS=new Map([
+  ['ㅘ',['ㅗ','ㅏ']],['ㅙ',['ㅗ','ㅐ']],['ㅚ',['ㅗ','ㅣ']],
+  ['ㅝ',['ㅜ','ㅓ']],['ㅞ',['ㅜ','ㅔ']],['ㅟ',['ㅜ','ㅣ']],['ㅢ',['ㅡ','ㅣ']]
+]);
+const COMPOUND_FINALS=new Map([
+  ['ㄱㅅ','ㄳ'],['ㄴㅈ','ㄵ'],['ㄴㅎ','ㄶ'],
+  ['ㄹㄱ','ㄺ'],['ㄹㅁ','ㄻ'],['ㄹㅂ','ㄼ'],['ㄹㅅ','ㄽ'],['ㄹㅌ','ㄾ'],['ㄹㅍ','ㄿ'],['ㄹㅎ','ㅀ'],
+  ['ㅂㅅ','ㅄ']
+]);
+const SPLIT_COMPOUND_FINALS=new Map([...COMPOUND_FINALS].map(([pair,combined])=>[combined,[...pair]]));
+const HANGUL_BASE=0xac00;
+const HANGUL_END=0xd7a3;
 
 const rows=(...values)=>values;
 const latinLower=rows(
@@ -130,6 +147,25 @@ export function decomposeHangulText(value){
   return output;
 }
 
+function decomposeHangulSyllable(character){
+  const code=String(character||'').codePointAt(0);
+  if(!Number.isFinite(code)||code<HANGUL_BASE||code>HANGUL_END)return null;
+  const offset=code-HANGUL_BASE;
+  return{
+    initial:CHOSEONG[Math.floor(offset/(28*21))],
+    vowel:JUNGSEONG[Math.floor(offset/28)%21],
+    final:JONGSEONG[offset%28]
+  };
+}
+
+function composeHangulSyllable(initial,vowel,final=''){
+  const initialIndex=CHOSEONG.indexOf(initial);
+  const vowelIndex=JUNGSEONG.indexOf(vowel);
+  const finalIndex=JONGSEONG.indexOf(final);
+  if(initialIndex<0||vowelIndex<0||finalIndex<0)return`${initial}${vowel}${final}`;
+  return String.fromCodePoint(HANGUL_BASE+(initialIndex*21+vowelIndex)*28+finalIndex);
+}
+
 export function composeHangulTokens(tokens){
   const input=[...tokens];
   let output='';
@@ -153,15 +189,88 @@ export function composeHangulTokens(tokens){
   return output;
 }
 
+function appendKoreanKey(current,key){
+  const characters=[...String(current||'')];
+  const previous=characters.at(-1);
+  const syllable=decomposeHangulSyllable(previous);
+
+  if(VOWELS.has(key)){
+    if(syllable){
+      if(syllable.final){
+        const splitFinal=SPLIT_COMPOUND_FINALS.get(syllable.final);
+        const remainingFinal=splitFinal?.[0]||'';
+        const nextInitial=splitFinal?.[1]||syllable.final;
+        if(CHOSEONG.includes(nextInitial)){
+          characters[characters.length-1]=composeHangulSyllable(syllable.initial,syllable.vowel,remainingFinal);
+          characters.push(composeHangulSyllable(nextInitial,key));
+          return characters.join('');
+        }
+      }else{
+        const combinedVowel=COMPOUND_VOWELS.get(`${syllable.vowel}${key}`);
+        if(combinedVowel){
+          characters[characters.length-1]=composeHangulSyllable(syllable.initial,combinedVowel);
+          return characters.join('');
+        }
+      }
+    }
+
+    if(CHOSEONG.includes(previous)){
+      characters[characters.length-1]=composeHangulSyllable(previous,key);
+      return characters.join('');
+    }
+
+    const combinedVowel=COMPOUND_VOWELS.get(`${previous||''}${key}`);
+    if(combinedVowel){
+      characters[characters.length-1]=combinedVowel;
+      return characters.join('');
+    }
+  }
+
+  if(CONSONANTS.has(key)&&syllable){
+    if(!syllable.final&&JONGSEONG.includes(key)){
+      characters[characters.length-1]=composeHangulSyllable(syllable.initial,syllable.vowel,key);
+      return characters.join('');
+    }
+    const combinedFinal=COMPOUND_FINALS.get(`${syllable.final}${key}`);
+    if(combinedFinal){
+      characters[characters.length-1]=composeHangulSyllable(syllable.initial,syllable.vowel,combinedFinal);
+      return characters.join('');
+    }
+  }
+
+  characters.push(key);
+  return characters.join('');
+}
+
+function backspaceKorean(current){
+  const characters=[...String(current||'')];
+  const previous=characters.at(-1);
+  if(!previous)return'';
+  const syllable=decomposeHangulSyllable(previous);
+  if(!syllable){
+    characters.pop();
+    return characters.join('');
+  }
+
+  if(syllable.final){
+    const splitFinal=SPLIT_COMPOUND_FINALS.get(syllable.final);
+    characters[characters.length-1]=composeHangulSyllable(syllable.initial,syllable.vowel,splitFinal?.[0]||'');
+  }else{
+    const splitVowel=SPLIT_COMPOUND_VOWELS.get(syllable.vowel);
+    characters[characters.length-1]=splitVowel
+      ?composeHangulSyllable(syllable.initial,splitVowel[0])
+      :syllable.initial;
+  }
+  return characters.join('');
+}
+
 export function applyVirtualKey(value,key,language){
   const current=String(value||'');
   if(key===VIRTUAL_KEY_CLEAR)return'';
   if(language==='Korean'){
-    const tokens=decomposeHangulText(current);
-    if(key===VIRTUAL_KEY_BACKSPACE)tokens.pop();
-    else if(key===VIRTUAL_KEY_SPACE)tokens.push(' ');
-    else tokens.push(key);
-    return composeHangulTokens(tokens);
+    if(key===VIRTUAL_KEY_BACKSPACE)return backspaceKorean(current);
+    if(key===VIRTUAL_KEY_SPACE)return`${current} `;
+    return appendKoreanKey(current,key);
   }
   if(key===VIRTUAL_KEY_BACKSPACE)return[...current].slice(0,-1).join('');
   if(key===VIRTUAL_KEY_SPACE)return`${current} `;
