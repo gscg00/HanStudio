@@ -2,6 +2,44 @@
 .jp-teach-symbol{min-height:130px;margin:.35rem 0}
 .jp-teaching .jp-teach-symbol,
 .jp-teaching .jp-teach-meaning{flex:0 0 auto}
+.guided-course .jp-target.jp-target-audio{
+  appearance:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.18em;
+  width:fit-content;
+  max-width:100%;
+  padding:.08em .2em;
+  border:0;
+  border-radius:24px;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  cursor:pointer;
+  transition:background .16s ease,transform .16s ease;
+}
+.guided-course .jp-target.jp-target-audio:hover{background:#173f3509}
+.guided-course .jp-target.jp-target-audio:active{transform:scale(.985)}
+.guided-course .jp-target.jp-target-audio:focus-visible{outline:3px solid var(--jp-orange);outline-offset:5px}
+.jp-target-audio .jp-target-text{min-width:0}
+.jp-target-audio .jp-target-play{
+  display:grid;
+  place-items:center;
+  flex:0 0 38px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:var(--jp-orange);
+  box-shadow:0 4px 0 #b74b22;
+  color:#fff;
+  font:800 .78rem/1 system-ui,sans-serif;
+}
+.jp-target-audio.is-loading .jp-target-play{opacity:.65}
+.jp-target-audio.is-playing{background:#e7f1ea}
+.jp-target-audio.is-playing .jp-target-play{animation:jp-target-audio-pulse .72s ease-in-out infinite alternate}
+.jp-target-audio.is-error .jp-target-play{background:#b3261e;box-shadow:0 4px 0 #7d1c16}
+@keyframes jp-target-audio-pulse{from{transform:scale(.92)}to{transform:scale(1.08)}}
 .guided-course .jp-target.jp-target-medium{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.08}
 .guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.9rem,5.5vw,3.5rem);line-height:1.08;overflow-wrap:break-word;word-break:keep-all}
 .guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.45rem,4vw,2.6rem);line-height:1.12;overflow-wrap:break-word;word-break:keep-all}
@@ -124,6 +162,7 @@
 .jp-speech-meter em{margin-left:.25rem;font-style:normal}
 @keyframes jp-listening-wave{from{transform:scaleY(.45);opacity:.48}to{transform:scaleY(1.08);opacity:1}}
 @media(max-width:650px){.jp-teach-symbol{min-height:100px}.guided-course .jp-target.jp-target-medium{font-size:clamp(2rem,10vw,3rem)}.guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.65rem,8vw,2.5rem)}.guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.25rem,6vw,1.9rem)}.jp-teaching .jp-question{padding-bottom:.75rem}.jp-teaching .jp-check{padding-bottom:max(1.2rem,env(safe-area-inset-bottom))}.jp-teach-points{margin:.35rem auto;padding:.65rem .8rem}.jp-teach-points ul{gap:.2rem}.jp-teach-points li{font-size:.88rem}.jp-rich-teaching .jp-question{padding-top:.55rem}.jp-rich-teaching .jp-question h1{font-size:1.45rem}.guided-course .jp-rich-teaching .jp-teach-symbol{font-size:clamp(1.45rem,7vw,2rem);margin:.1rem 0 .3rem}.jp-rich-teaching .jp-teach-detail{font-size:.9rem}.jp-rich-teaching .jp-teach-detail.sound{font-size:.95rem}.jp-rich-teaching .jp-teach-points{padding:.5rem .7rem}.jp-rich-teaching .jp-teach-note{font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){.jp-target-audio.is-playing .jp-target-play{animation:none}}
 .jp-lesson-row.review{margin-inline:clamp(.4rem,3vw,2rem);background:#f7f4ec;border-style:dashed}
 .jp-lesson-row.review.review>span{width:42px;height:42px;background:#8aa095;color:white}
 .jp-lesson-row.review small{color:#647b72}

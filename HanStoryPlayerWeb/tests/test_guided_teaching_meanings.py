@@ -233,3 +233,18 @@ def test_course_player_scales_long_targets_without_covering_the_meaning():
     assert ".jp-target.jp-target-long" in styles
     assert ".jp-target.jp-target-very-long" in styles
     assert ".jp-teaching .jp-teach-meaning{flex:0 0 auto}" in styles
+
+
+def test_teaching_target_is_the_primary_audio_control_without_duplicate_model_card():
+    source = (WEB_ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+    styles = (WEB_ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
+
+    assert "jp-target-audio" in source
+    assert 'data-jp-audio-source="prompt"' in source
+    assert "Toca la palabra o frase para escucharla." in source
+    assert "AUDIO DEL MODELO" not in source
+    assert ".jp-target.jp-target-audio" in styles
+    assert ".jp-target-audio.is-playing" in styles
+    # Las comparaciones explícitas conservan controles separados para cada ejemplo.
+    assert "phraseAudioExamples(activity)" in source
+    assert "jp-audio-examples" in source
