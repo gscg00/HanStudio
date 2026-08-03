@@ -249,6 +249,11 @@
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(1){grid-template-columns:repeat(10,minmax(0,1fr))}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(2){grid-template-columns:repeat(9,minmax(0,1fr));margin-inline:4%}
   .jp-virtual-keyboard[data-keyboard-language="Korean"] .jp-keyboard-row:nth-child(3){grid-template-columns:repeat(7,minmax(0,1fr));margin-inline:11%}
+  .jp-virtual-keyboard[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"] .jp-keyboard-row{gap:.2rem}
+  .jp-virtual-keyboard[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"] .jp-keyboard-row:nth-child(1){grid-template-columns:repeat(12,minmax(0,1fr))}
+  .jp-virtual-keyboard[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"] .jp-keyboard-row:nth-child(2){grid-template-columns:repeat(11,minmax(0,1fr));margin-inline:2%}
+  .jp-virtual-keyboard[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"] .jp-keyboard-row:nth-child(3){grid-template-columns:repeat(10,minmax(0,1fr));margin-inline:5%}
+  .jp-virtual-keyboard[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"] .jp-keyboard-row button{font-size:.95rem}
   .jp-keyboard-status{min-height:20px;margin-top:.25rem;font-size:.76rem}
   .jp-dialogue-turn{width:100%;grid-template-columns:auto 1fr}
   .jp-dialogue-turn>button{grid-column:2;grid-row:auto;justify-self:start}

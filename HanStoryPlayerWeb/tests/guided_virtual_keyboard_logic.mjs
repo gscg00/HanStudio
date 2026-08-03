@@ -47,6 +47,10 @@ assert.equal(korean.pages.length,1,'El teclado coreano debe ser una única dispo
 assert.equal(korean.pages[0].rows.length,3,'La disposición principal coreana debe caber sin una fila extra');
 assert.ok(korean.pages[0].rows.flat().includes('ㅁ'));
 assert.ok(korean.pages[0].rows.flat().includes('ㅜ'));
+const russian=virtualKeyboardLayout('Russian',[]);
+assert.deepEqual(russian.pages[0].rows.map(row=>row.length),[12,11,10],'El teclado ruso debe ocupar solo tres filas en móvil');
+assert.ok(russian.pages[0].rows.flat().includes('ъ'));
+assert.ok(russian.pages[0].rows.flat().includes('ё'));
 const koreanWithParticle=virtualKeyboardLayout('Korean',[{answer:'은/는'}]);
 assert.ok(koreanWithParticle.pages.find(page=>page.id==='lesson-signs')?.rows.flat().includes('/'),'Debe ofrecer la diagonal exigida por la respuesta');
 const koreanDialogueSigns=virtualKeyboardLayout('Korean',[{turns:[{role:'learner',answer:'네, 물이 있어요.'}]}]);

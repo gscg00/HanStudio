@@ -295,7 +295,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v132", source)
+        self.assertIn("hanstory-shell-v133", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)
@@ -348,6 +348,14 @@ class GuidedProductionDataTests(unittest.TestCase):
         activity_rule = source.split(".jp-activity{", 1)[1].split("}", 1)[0]
         self.assertIn("calc(100dvh - 24px)", activity_rule)
         self.assertNotIn("calc(100dvh - 105px)", activity_rule)
+
+    def test_russian_mobile_keyboard_uses_three_non_wrapping_rows(self):
+        css = (ROOT / "assets" / "japanese_lesson.css").read_text(encoding="utf-8")
+        source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
+        self.assertIn('data-keyboard-page="${esc(active.id)}"', source)
+        self.assertIn('[data-keyboard-language="Russian"][data-keyboard-page^="cyrillic-"]', css)
+        for columns in (12, 11, 10):
+            self.assertIn(f"grid-template-columns:repeat({columns},minmax(0,1fr))", css)
 
     def test_invalid_dialogues_are_skipped_instead_of_blocking_a_lesson(self):
         source = (ROOT / "src" / "japanese_course_app.js").read_text(encoding="utf-8")
