@@ -35,6 +35,11 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def iter_reading_units(language: str):
+    """Yield the published reading-foundations unit for a course language."""
+    yield load(COURSES / language / "units/reading-foundations.json")
+
+
 def test_every_language_starts_with_its_reading_foundations_world():
     for language in LANGUAGES:
         course = load(COURSES / language / "course.json")
@@ -227,6 +232,68 @@ def test_english_comparison_cards_offer_each_example_separately():
     assert "teachingAudioExamples(activity)" in app
     assert "data-jp-audio-key" in app
     assert "button?.dataset.jpAudioKey" in app
+
+
+def test_german_and_russian_comparisons_offer_every_sound_separately():
+    expected = {
+        "German": {
+            "Ö y Ü": ["öh", "üh"],
+            "EI e IE": ["mein", "ih"],
+            "CH tiene variantes": ["ich", "Bach"],
+            "SCH y ST inicial": ["Schule", "Straße"],
+        },
+        "Russian": {
+            "В, Н y Р": ["вэ", "эн", "эр"],
+            "С, У y Х": ["эс", "у", "ха"],
+            "А/Я, О/Ё, У/Ю": ["а", "я", "о", "ё", "у", "ю"],
+            "Э/Е e Ы/И": ["э", "е", "ы", "и"],
+            "Ж, Ш, Ц": ["жэ", "ша", "цэ"],
+        },
+    }
+
+    for language, cards in expected.items():
+        activities = {
+            activity["prompt"]: activity
+            for unit in iter_reading_units(language)
+            for lesson in unit.get("lessons", [])
+            for activity in lesson.get("activities", [])
+            if activity.get("type") == "teach_concept"
+        }
+        for title, audio_keys in cards.items():
+            activity = activities[title]
+            examples = activity.get("audio_examples", [])
+            assert [example["audio"] for example in examples] == audio_keys
+            assert len({example["audio"] for example in examples}) == len(audio_keys)
+            assert not activity.get("audio")
+
+
+def test_visual_pronunciation_rules_do_not_play_a_misleading_single_audio():
+    expected = {
+        "German": {"B, D, G finales"},
+        "Russian": {"Acento impredecible", "Ensordecimiento final"},
+    }
+
+    for language, titles in expected.items():
+        activities = {
+            activity["prompt"]: activity
+            for unit in iter_reading_units(language)
+            for lesson in unit.get("lessons", [])
+            for activity in lesson.get("activities", [])
+            if activity.get("type") == "teach_concept"
+        }
+        for title in titles:
+            activity = activities[title]
+            assert not activity.get("audio")
+            assert not activity.get("audio_examples")
+
+
+def test_non_listening_questions_never_play_an_unrelated_model_audio():
+    for language in LANGUAGES:
+        for unit in iter_reading_units(language):
+            for lesson in unit.get("lessons", []):
+                for activity in lesson.get("activities", []):
+                    if activity.get("type") == "select_translation":
+                        assert not activity.get("audio"), (language, activity.get("id"))
 
 
 def test_student_facing_lessons_do_not_expose_internal_services():

@@ -1,4 +1,5 @@
 import{all,get,put}from'./storage.js';
+import{reviewConceptKey}from'./guided_course_logic.js';
 
 export const DEFAULT_DAILY_REVIEW_LIMIT=20;
 export const DAILY_REVIEW_LIMIT_OPTIONS=Object.freeze([10,20,30,50,100]);
@@ -24,13 +25,20 @@ export async function saveUserSettings(changes={}){
   return next;
 }
 
-export async function reviewsCompletedToday(now=new Date()){
-  const today=localDateKey(now),courses=(await all('metadata').catch(()=>[])).filter(value=>value?.id==='jp-guided-progress-v1'||String(value?.id||'').startsWith('guided:'));
-  const reviewed=new Set();
-  for(const course of courses)for(const item of course.mistakes||[]){
-    if(!item.lastReviewedAt)continue;
-    const reviewedAt=new Date(item.lastReviewedAt);
-    if(!Number.isNaN(reviewedAt.valueOf())&&localDateKey(reviewedAt)===today)reviewed.add(`${course.id}:${item.activityId}`);
+export function countReviewsCompletedToday(courses,courseId='',now=new Date()){
+  const today=localDateKey(now),reviewed=new Set();
+  for(const course of courses||[]){
+    if(courseId&&course.id!==courseId)continue;
+    for(const item of course.mistakes||[]){
+      if(!item.lastReviewedAt)continue;
+      const reviewedAt=new Date(item.lastReviewedAt);
+      if(!Number.isNaN(reviewedAt.valueOf())&&localDateKey(reviewedAt)===today)reviewed.add(`${course.id}:${reviewConceptKey(item)}`);
+    }
   }
   return reviewed.size;
+}
+
+export async function reviewsCompletedToday(courseId='',now=new Date()){
+  const courses=(await all('metadata').catch(()=>[])).filter(value=>value?.id==='jp-guided-progress-v1'||String(value?.id||'').startsWith('guided:'));
+  return countReviewsCompletedToday(courses,courseId,now);
 }

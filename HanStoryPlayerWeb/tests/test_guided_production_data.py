@@ -268,16 +268,14 @@ class GuidedProductionDataTests(unittest.TestCase):
                     typed["prompt"].startswith("Copia solo esta letra, sílaba o grupo:"),
                     typed["id"],
                 )
-                if "=" in typed.get("target", ""):
-                    final_symbol = typed["target"].rsplit("=", 1)[1].strip()
-                    self.assertEqual(final_symbol, typed["answer"], typed["id"])
-                    self.assertIn(final_symbol, typed.get("accepted_answers", []), typed["id"])
-                else:
-                    self.assertEqual(typed["target"], typed["answer"], typed["id"])
-                self.assertTrue(blocks["prompt"].startswith("Reconstruye el símbolo"), blocks["id"])
+                self.assertEqual(typed["target"], typed["answer"], typed["id"])
+                self.assertIn(typed["answer"], typed.get("accepted_answers", []), typed["id"])
+                self.assertNotRegex(typed["answer"], r"[=→]")
+                self.assertTrue(blocks["prompt"].startswith("Reconstruye solo el resultado final"), blocks["id"])
+                self.assertNotRegex(blocks["answer"], r"[=→]")
 
     def test_pronunciation_focused_units_do_not_turn_explanations_into_dialogue(self):
-        path = COURSES / "French" / "units" / "essentials.json"
+        path = COURSES / "French" / "units" / "reading-foundations.json"
         unit = json.loads(path.read_text(encoding="utf-8"))
         generated = next(lesson for lesson in unit["lessons"] if lesson.get("generatedProduction"))
         types = {activity["type"] for activity in generated["activities"]}
@@ -285,6 +283,16 @@ class GuidedProductionDataTests(unittest.TestCase):
         self.assertNotIn("speak_and_transcribe", types)
         typed = next(activity for activity in generated["activities"] if activity["type"] == "typed_translation")
         self.assertTrue(typed["prompt"].startswith("Copia solo esta letra, sílaba o grupo:"), typed["id"])
+
+    def test_french_foundations_accept_the_written_result_not_the_formula(self):
+        path = COURSES / "French" / "units" / "reading-foundations.json"
+        unit = json.loads(path.read_text(encoding="utf-8"))
+        generated = next(lesson for lesson in unit["lessons"] if lesson.get("generatedProduction"))
+        by_type = {activity["type"]: activity for activity in generated["activities"]}
+        self.assertEqual("cha", by_type["typed_translation"]["answer"])
+        self.assertEqual("cha", by_type["typed_translation"]["target"])
+        self.assertEqual("phi", by_type["dictation"]["answer"])
+        self.assertEqual("phi", by_type["complete_without_options"]["answer"])
 
     def test_final_tests_remain_the_last_unit_step(self):
         for language, directory, course in self.iter_courses():
@@ -295,7 +303,7 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v133", source)
+        self.assertIn("hanstory-shell-v134", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)

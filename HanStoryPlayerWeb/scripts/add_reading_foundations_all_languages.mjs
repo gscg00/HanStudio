@@ -6,9 +6,11 @@ import{fileURLToPath}from'node:url';
 const here=path.dirname(fileURLToPath(import.meta.url));
 const web=path.resolve(here,'..');
 const coursesRoot=path.join(web,'library','courses');
+const requestedDirectories=new Set(process.argv.slice(2).map(value=>value.trim().toLowerCase()).filter(Boolean));
+const shouldGenerate=directory=>requestedDirectories.size===0||requestedDirectories.has(directory.toLowerCase());
 
-const C=(title,target,audio,sound,memory,explanation,points,question,answer,distractors,audioExamples=[])=>({
-  title,target,audio,sound,memory,explanation,points,question,answer,distractors,audioExamples,
+const C=(title,target,audio,sound,memory,explanation,points,question,answer,distractors,audioExamples=[],quiz={})=>({
+  title,target,audio,sound,memory,explanation,points,question,answer,distractors,audioExamples,quiz,
 });
 const L=(title,description,...concepts)=>({title,description,concepts});
 
@@ -83,15 +85,27 @@ const specs={
         C('Las mayúsculas importan','Haus · das Haus','hah','Todos los sustantivos se escriben con mayúscula.','Una mayúscula interna suele anunciar un sustantivo.','Esta convención ayuda a reconocer la estructura de una oración.',['Haus es sustantivo.','Los nombres propios también usan mayúscula.','No cambia por estar en medio de frase.'],'¿Qué clase de palabras usa mayúscula en alemán?','Los sustantivos',['Solo los verbos','Todas las palabras'])),
       L('Umlauts','Aprende ä, ö y ü como vocales propias.',
         C('Ä no es A decorada','ä','äh','Ä suele acercarse a una e abierta.','Trátala como una vocal distinta.','El umlaut puede cambiar pronunciación y significado.',['ä tiene sonido propio.','No ignores los puntos.','Compara palabras relacionadas.'],'¿Debes leer Ä exactamente como A?','No, es una vocal distinta',['Sí','Es silenciosa']),
-        C('Ö y Ü','ö · ü','öh','Son vocales frontales con labios redondeados.','Forma la lengua para e/i y redondea los labios.','No tienen equivalente exacto en español.',['ö: frontal redondeada media.','ü: frontal redondeada alta.','Escucha y reproduce, sin añadir otra vocal.'],'¿Qué comparten Ö y Ü?','Son vocales frontales con labios redondeados',['Son consonantes','Siempre son mudas'])),
+        C('Ö y Ü','ö · ü','','Son vocales frontales con labios redondeados.','Forma la lengua para e/i y redondea los labios.','No tienen equivalente exacto en español.',['ö: frontal redondeada media.','ü: frontal redondeada alta.','Escucha cada vocal por separado.'],'¿Qué comparten Ö y Ü?','Son vocales frontales con labios redondeados',['Son consonantes','Siempre son mudas'],[
+          {label:'SONIDO Ö',text:'ö',meaning:'vocal frontal redondeada media',audio:'öh'},
+          {label:'SONIDO Ü',text:'ü',meaning:'vocal frontal redondeada alta',audio:'üh'},
+        ])),
       L('Combinaciones vocálicas','Reconoce el orden visual y el sonido resultante.',
-        C('EI e IE','ei · ie','ih','EI suele sonar parecido a ai; IE suele ser una i larga.','En EI suena la segunda idea; IE conserva i larga.','Confundirlas cambia muchas palabras.',['mein contiene ei.','Liebe contiene ie.','No pronuncies dos vocales separadas.'],'¿EI e IE se leen igual?','No, representan sonidos distintos',['Sí','Solo en nombres']),
-        C('EU y ÄU','eu · äu','üh','Ambas combinaciones suelen sonar parecido a oi.','Reconócelas como una unidad.','ÄU aparece a menudo en palabras relacionadas con AU.',['heute contiene eu.','Häuser contiene äu.','Las dos forman diptongo.'],'¿Cómo se comportan EU y ÄU?','Suelen compartir un diptongo parecido a oi',['Se leen letra por letra','Son silenciosas'])),
+        C('EI e IE','ei · ie','','EI suele sonar parecido a ai; IE suele ser una i larga.','Escucha una palabra con cada combinación.','Confundirlas cambia muchas palabras.',['mein contiene ei.','El ejemplo de ie mantiene una i larga.','No pronuncies dos vocales separadas.'],'¿EI e IE se leen igual?','No, representan sonidos distintos',['Sí','Solo en nombres'],[
+          {label:'EJEMPLO CON EI',text:'mein',meaning:'mi',audio:'mein'},
+          {label:'SONIDO IE',text:'ie',meaning:'i larga',audio:'ih'},
+        ]),
+        C('EU','eu','heute','EU suele formar un diptongo parecido a oi.','Reconoce eu como una unidad.','La combinación äu suele compartir este sonido, pero se practicará con audio propio cuando aparezca en vocabulario.',['heute contiene eu.','No se pronuncia e + u por separado.','Observa la grafía mientras escuchas heute.'],'¿Cómo se comporta EU?','Forma un diptongo parecido a oi',['Se lee letra por letra','Es silenciosa'])),
       L('Grupos consonánticos','Lee CH, SCH, SP y ST como patrones.',
-        C('CH tiene variantes','ich · Bach','hah','CH cambia según la vocal y el entorno.','Aprende el sonido de ich y el de Bach por separado.','Uno es más frontal y otro más posterior.',['ich usa un sonido suave frontal.','Bach usa uno posterior.','No es la ch española.'],'¿CH alemán tiene un único sonido?','No, cambia según el contexto',['Sí, siempre como ch española','No se pronuncia']),
-        C('SCH, SP y ST','Schule · Spiel · Straße','ess','SCH suele sonar sh; SP/ST iniciales suelen comenzar con sonido sh.','Mira el inicio de la sílaba.','En otras posiciones SP y ST pueden conservar s.',['sch funciona como grupo.','sp inicial suele sonar shp.','st inicial suele sonar sht.'],'¿Cómo suele empezar SCH?','Con un sonido parecido a sh',['Como sk','Como s muda'])),
+        C('CH tiene variantes','ich · Bach','','CH cambia según la vocal y el entorno.','Escucha ich y Bach por separado antes de compararlos.','Uno es más frontal y otro más posterior.',['ich usa un sonido suave frontal.','Bach usa uno posterior.','No es la ch española.'],'¿CH alemán tiene un único sonido?','No, cambia según el contexto',['Sí, siempre como ch española','No se pronuncia'],[
+          {label:'CH FRONTAL',text:'ich',meaning:'yo',audio:'ich'},
+          {label:'CH POSTERIOR',text:'Bach',meaning:'arroyo',audio:'Bach'},
+        ]),
+        C('SCH y ST inicial','Schule · Straße','','SCH suele sonar sh; ST al inicio suele comenzar con un sonido parecido a sht.','Escucha un ejemplo completo de cada patrón.','SP inicial se comporta de manera parecida a ST y se practicará con una palabra propia.',['Schule muestra sch.','Straße muestra st inicial.','No dividas los grupos letra por letra.'],'¿Cómo suele empezar SCH?','Con un sonido parecido a sh',['Como sk','Como s muda'],[
+          {label:'EJEMPLO CON SCH',text:'Schule',meaning:'escuela',audio:'Schule'},
+          {label:'EJEMPLO CON ST',text:'Straße',meaning:'calle',audio:'Straße'},
+        ])),
       L('Consonantes finales y ß','Reconoce cambios regulares al final de palabra.',
-        C('B, D, G finales','Tag · Hund','geh','Al final suelen sonar más sordas: p, t, k.','La escritura se conserva aunque cambie el sonido.','Este ensordecimiento es regular.',['b final se acerca a p.','d final se acerca a t.','g final se acerca a k.'],'¿Cómo suena normalmente D al final?','Más cerca de t',['Como d muy sonora','No suena']),
+        C('B, D, G finales','b→p · d→t · g→k','','Al final suelen sonar más sordas: p, t, k.','Esta tarjeta explica la regla; no presenta una palabra de ejemplo.','La escritura se conserva aunque cambie el sonido.',['b final se acerca a p.','d final se acerca a t.','g final se acerca a k.'],'¿Cómo suena normalmente D al final?','Más cerca de t',['Como d muy sonora','No suena']),
         C('ß representa s','ß','eszett','ß representa una s sorda larga y no es una B.','Asóciala con ss.','Tras ciertas vocales largas o diptongos puede escribirse ß.',['ß no es beta.','Suena como s fuerte.','En mayúsculas existe ẞ, aunque SS también aparece.'],'¿Qué sonido representa ß?','Una s sorda larga',['Una b','Una vocal'])),
       L('Sílabas y acento','Combina unidades sin añadir vocales.',
         C('Consonantes juntas','Strumpf','teh','El alemán permite grupos consonánticos largos.','No insertes vocales entre consonantes.','Divide por morfemas o sílabas, no por cada letra.',['Reconoce prefijos y raíces.','Mantén juntas las consonantes.','Practica despacio y luego une.'],'¿Debes añadir vocales entre consonantes alemanas?','No',['Sí, siempre','Solo tras S']),
@@ -154,20 +168,39 @@ const specs={
         C('Cirílico representa sonidos','А · Б · В','а','Cada símbolo es una letra, no un dibujo.','Relaciona directamente letra y sonido.','La transliteración puede ayudar una vez, pero debe desaparecer pronto.',['А se parece y suena como a.','Б representa b.','В representa v.'],'¿Qué debes asociar directamente?','La letra cirílica con su sonido',['La letra solo con una latina','La palabra con una imagen sin sonido']),
         C('Lee de izquierda a derecha','мама','эм','El ruso se lee de izquierda a derecha.','Segmenta en letras y sílabas.','Aunque cambien las formas, la dirección coincide con el español.',['Identifica cada letra.','Forma la sílaba.','Une la palabra.'],'¿En qué dirección se lee ruso?','De izquierda a derecha',['De derecha a izquierda','De arriba abajo'])),
       L('Falsas amigas visuales','No leas letras por su parecido latino.',
-        C('В, Н y Р','В = v · Н = n · Р = r','вэ','Su forma engaña a lectores del alfabeto latino.','Aprende sonido, no apariencia.','Estas tres letras causan errores muy frecuentes.',['В no es B latina.','Н no es H latina.','Р no es P latina.'],'¿Cómo suena Р rusa?','Como r',['Como p','Como b']),
-        C('С, У y Х','С = s · У = u · Х = j/kh','эс','También parecen letras latinas con otro valor.','Detente y nombra el sonido ruso.','Reconocerlas automáticamente es esencial para leer.',['С no es c/k.','У no es y.','Х no es x española.'],'¿Cómo suena С rusa?','Como s',['Como k','Como u'])),
+        C('В, Н y Р','В = v · Н = n · Р = r','','Su forma engaña a lectores del alfabeto latino.','Escucha el nombre de cada letra por separado.','Estas tres letras causan errores muy frecuentes.',['В no es B latina.','Н no es H latina.','Р no es P latina.'],'¿Cómo suena Р rusa?','Como r',['Como p','Como b'],[
+          {label:'LETRA В',text:'В',meaning:'sonido v',audio:'вэ'},
+          {label:'LETRA Н',text:'Н',meaning:'sonido n',audio:'эн'},
+          {label:'LETRA Р',text:'Р',meaning:'sonido r',audio:'эр'},
+        ]),
+        C('С, У y Х','С = s · У = u · Х = j/kh','','También parecen letras latinas con otro valor.','Escucha el nombre de cada letra por separado.','Reconocerlas automáticamente es esencial para leer.',['С no es c/k.','У no es y.','Х no es x española.'],'¿Cómo suena С rusa?','Como s',['Como k','Como u'],[
+          {label:'LETRA С',text:'С',meaning:'sonido s',audio:'эс'},
+          {label:'LETRA У',text:'У',meaning:'sonido u',audio:'у'},
+          {label:'LETRA Х',text:'Х',meaning:'sonido j/kh',audio:'ха'},
+        ])),
       L('Vocales pares','Algunas vocales también indican palatalización.',
-        C('А/Я, О/Ё, У/Ю','а я · о ё · у ю','я','Я, Ё y Ю pueden incluir un deslizamiento y suavizar la consonante previa.','Aprende los pares.','Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.',['А ↔ Я.','О ↔ Ё.','У ↔ Ю.'],'¿Qué pueden indicar Я, Ё y Ю tras consonante?','Que la consonante se suaviza',['Que la palabra termina','Que la vocal es muda']),
-        C('Э/Е e Ы/И','э е · ы и','э','Е e И suelen acompañar consonantes suaves; Ы requiere un sonido propio.','No conviertas Ы en i española.','Estos pares ayudan a anticipar la articulación de la consonante.',['Э: vocal sin y inicial.','Е puede sonar ye o suavizar.','Ы es central/posterior.'],'¿Ы suena exactamente como I española?','No',['Sí','No se pronuncia'])),
+        C('А/Я, О/Ё, У/Ю','а↔я · о↔ё · у↔ю','','Я, Ё y Ю pueden incluir un deslizamiento y suavizar la consonante previa.','Escucha cada vocal por separado; no intentes oír los seis sonidos en un solo audio.','Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.',['А ↔ Я.','О ↔ Ё.','У ↔ Ю.'],'¿Qué pueden indicar Я, Ё y Ю tras consonante?','Que la consonante se suaviza',['Que la palabra termina','Que la vocal es muda'],[
+          {label:'VOCAL А',text:'А',meaning:'a',audio:'а'}, {label:'VOCAL Я',text:'Я',meaning:'ya / suaviza',audio:'я'},
+          {label:'VOCAL О',text:'О',meaning:'o',audio:'о'}, {label:'VOCAL Ё',text:'Ё',meaning:'yo / suaviza',audio:'ё'},
+          {label:'VOCAL У',text:'У',meaning:'u',audio:'у'}, {label:'VOCAL Ю',text:'Ю',meaning:'yu / suaviza',audio:'ю'},
+        ]),
+        C('Э/Е e Ы/И','э↔е · ы↔и','','Е e И suelen acompañar consonantes suaves; Ы requiere un sonido propio.','Escucha cada vocal por separado.','Estos pares ayudan a anticipar la articulación de la consonante.',['Э: vocal sin y inicial.','Е puede sonar ye o suavizar.','Ы es central/posterior.'],'¿Ы suena exactamente como I española?','No',['Sí','No se pronuncia'],[
+          {label:'VOCAL Э',text:'Э',meaning:'e sin y inicial',audio:'э'}, {label:'VOCAL Е',text:'Е',meaning:'ye / suaviza',audio:'е'},
+          {label:'VOCAL Ы',text:'Ы',meaning:'vocal central/posterior',audio:'ы'}, {label:'VOCAL И',text:'И',meaning:'i / suaviza',audio:'и'},
+        ])),
       L('Consonantes suaves y duras','La calidad de la consonante forma parte de la palabra.',
         C('Consonante suave','нь · ть','мягкий знак','La lengua se acerca al paladar al producir una consonante suave.','No añadas una i completa después.','La suavidad puede distinguir palabras.',['Vocales suaves pueden indicarla.','Ь también puede indicarla.','Es una cualidad consonántica.'],'¿Qué debes recordar sobre una consonante suave?','Que se palataliza',['Que se pronuncia más bajo','Que desaparece']),
-        C('Ж, Ш, Ц','ж · ш · ц','жэ','Estas consonantes siguen patrones propios de dureza.','Apréndelas como categorías especiales.','La ortografía de vocales posteriores tiene reglas convencionales.',['Ж y Ш suelen ser duras.','Ц suele ser dura.','No todo depende de la vocal escrita.'],'¿Todas las consonantes se suavizan de la misma manera?','No',['Sí','Solo las vocales cambian'])),
+        C('Ж, Ш, Ц','ж · ш · ц','','Estas consonantes siguen patrones propios de dureza.','Escucha el nombre de cada letra por separado.','La ortografía de vocales posteriores tiene reglas convencionales.',['Ж y Ш suelen ser duras.','Ц suele ser dura.','No todo depende de la vocal escrita.'],'¿Todas las consonantes se suavizan de la misma manera?','No',['Sí','Solo las vocales cambian'],[
+          {label:'LETRA Ж',text:'Ж',meaning:'sonido zh',audio:'жэ'},
+          {label:'LETRA Ш',text:'Ш',meaning:'sonido sh duro',audio:'ша'},
+          {label:'LETRA Ц',text:'Ц',meaning:'sonido ts',audio:'цэ'},
+        ])),
       L('Ь y Ъ','Los signos no tienen sonido independiente.',
         C('Signo blando Ь','ь','мягкий знак','Ь modifica la consonante anterior o separa sonidos.','No intentes pronunciarlo solo.','Su función se entiende dentro de la palabra.',['Puede indicar suavidad.','Puede separar consonante y vocal iotada.','No aporta una vocal propia.'],'¿Tiene Ь un sonido independiente?','No',['Sí, una i','Sí, una b']),
         C('Signo duro Ъ','ъ','твёрдый знак','Ъ separa una consonante de una vocal iotada y mantiene su inicio y.','Es una señal ortográfica, no un sonido.','Aparece en menos palabras que Ь.',['Marca separación.','No se pronuncia solo.','Conserva el deslizamiento de е/ё/ю/я.'],'¿Qué hace Ъ?','Marca separación sin sonido propio',['Suena como k','Suaviza siempre'])),
       L('Acento y cambios sonoros','La escritura no marca siempre el acento.',
-        C('Acento impredecible','замок','о','La sílaba tónica debe aprenderse con cada palabra.','Guarda palabra, audio y acento juntos.','El acento puede cambiar significado y forma de las vocales.',['Una sílaba es fuerte.','Las vocales átonas se reducen.','Los textos normales no escriben el acento.'],'¿Qué debes memorizar con una palabra rusa?','Su acento',['Solo la primera letra','Una transliteración']),
-        C('Ensordecimiento final','д/т · б/п · г/к','дэ','Consonantes sonoras al final suelen hacerse sordas.','La escritura conserva la consonante original.','También hay asimilación entre consonantes vecinas.',['д final se acerca a т.','б final se acerca a п.','г final se acerca a к.'],'¿La consonante escrita final siempre conserva su sonoridad?','No',['Sí','Nunca se pronuncia'])),
+        C('Acento impredecible','La sílaba tónica cambia según la palabra','','La sílaba tónica debe aprenderse con cada palabra.','Esta tarjeta explica la regla; no reproduce una vocal aislada como si fuera una palabra.','El acento puede cambiar significado y forma de las vocales.',['Una sílaba es fuerte.','Las vocales átonas se reducen.','Los textos normales no escriben el acento.'],'¿Qué debes memorizar con una palabra rusa?','Su acento',['Solo la primera letra','Una transliteración']),
+        C('Ensordecimiento final','д→т · б→п · г→к','','Consonantes sonoras al final suelen hacerse sordas.','Esta tarjeta explica la regla; no reproduce el nombre aislado de Д.','También hay asimilación entre consonantes vecinas.',['д final se acerca a т.','б final se acerca a п.','г final se acerca a к.'],'¿La consonante escrita final siempre conserva su sonoridad?','No',['Sí','Nunca se pronuncia'])),
     ],
   },
   Chinese:{
@@ -345,23 +378,70 @@ const activity=(id,type,prompt,target='',options=[],answer='',explanation='',aud
   image:null,writing_asset:null,tags:['reading-foundations'],xp:extra.gradable===false?2:10,
   ...extra,
 });
+
+const finalComposition=value=>{
+  const text=String(value||'').trim();
+  if(!text) return '';
+  const parts=text.split(/(?:→|=)/u);
+  const candidate=(parts.length>1?parts.at(-1):text)
+    .replace(/[«»“”"']/gu,'')
+    .replace(/_+/gu,'')
+    .trim();
+  return candidate;
+};
+
+const normalizeProductionActivity=source=>{
+  const activity={...source};
+  const supported=new Set(['typed_translation','dictation','complete_without_options','build_with_blocks']);
+  if(!supported.has(activity.type)) return activity;
+  const rawAnswer=String(activity.answer||'');
+  const rawTarget=String(activity.target||'');
+  if(activity.type==='build_with_blocks') {
+    const answer=finalComposition(rawAnswer)||finalComposition(rawTarget);
+    if(!answer) return activity;
+    activity.answer=answer;
+    activity.target=answer;
+    activity.accepted_answers=[...new Set([answer,...(activity.accepted_answers||[]),rawAnswer].filter(Boolean))];
+    activity.prompt='Reconstruye solo el resultado final';
+    return activity;
+  }
+  if(!/[→=]/u.test(rawAnswer) && !/[→=]/u.test(rawTarget)) return activity;
+  const answer=finalComposition(rawAnswer)||finalComposition(rawTarget);
+  if(!answer) return activity;
+  activity.answer=answer;
+  activity.accepted_answers=[...new Set([answer,...(activity.accepted_answers||[]),rawAnswer].filter(Boolean))];
+  if(activity.audio) {
+    activity.prompt='Escucha y escribe solo la letra, sílaba o grupo que oyes';
+    activity.target='';
+  } else {
+    activity.prompt=`Copia solo esta letra, sílaba o grupo: «${answer}»`;
+    activity.target=answer;
+  }
+  return activity;
+};
+
+const normalizeProductionLesson=lesson=>({
+  ...lesson,
+  activities:(lesson.activities||[]).map(normalizeProductionActivity),
+});
 const intro=(id,title,text)=>activity(`${id}-intro`,'lesson_intro',title,'',[],'',text,'',{gradable:false});
-const teach=(id,concept)=>{const semantic=/^¿?qué significa\b/i.test(concept.question);return activity(`${id}-teach`,'teach_concept',concept.title,concept.target,[],'',concept.explanation,concept.audio,{
+const teach=(id,concept)=>{const semantic=/^¿?qué significa\b/i.test(concept.question),examples=concept.audioExamples||[];return activity(`${id}-teach`,'teach_concept',concept.title,concept.target,[],'',concept.explanation,examples.length?'':concept.audio,{
   gradable:false,meaning:semantic?concept.answer:'',teaching_kind:semantic?'concept':'rule',sound_hint:concept.sound,
   memory_hint:concept.memory,teaching_points:concept.points,
-  ...(concept.audioExamples?.length?{audio_examples:concept.audioExamples}:{}),
+  ...(examples.length?{audio_examples:examples}:{}),
 });};
 const isListeningQuestion=prompt=>/(?:acabas|acabaste) de escuchar|¿?qué (?:letra|grafema|símbolo|sonido|sílaba|palabra|frase|vocal)\b.*\b(?:escuchas|oyes|oíste)\b/i.test(String(prompt||''));
-const question=(id,concept)=>activity(
-  `${id}-question`,
-  isListeningQuestion(concept.question)?'listening_choice':'select_translation',
-  concept.question,
-  concept.target,
-  [concept.answer,...concept.distractors],
-  concept.answer,
-  concept.explanation,
-  concept.audio,
-);
+const question=(id,concept)=>{
+  const quiz=concept.quiz||{};
+  const prompt=quiz.prompt||concept.question;
+  const listening=quiz.type?quiz.type==='listening_choice':isListeningQuestion(prompt);
+  const type=quiz.type||(listening?'listening_choice':'select_translation');
+  const answer=quiz.answer||concept.answer;
+  const options=quiz.options||[answer,...concept.distractors];
+  const target=Object.hasOwn(quiz,'target')?quiz.target:concept.target;
+  const audio=Object.hasOwn(quiz,'audio')?quiz.audio:(listening?concept.audio:'');
+  return activity(`${id}-question`,type,prompt,target,options,answer,concept.explanation,audio);
+};
 
 const makeLesson=(spec,lesson,index)=>{
   const id=`${spec.slug}-reading-00-${String(index+1).padStart(2,'0')}`;
@@ -390,13 +470,19 @@ const makeTest=(spec,lessons)=>{
 
 const sqlRows=[];
 for(const [directory,spec] of Object.entries(specs)){
+  if(!shouldGenerate(directory))continue;
   const root=path.join(coursesRoot,directory),coursePath=path.join(root,'course.json');
   const manifest=JSON.parse(fs.readFileSync(path.join(root,'audio_manifest.json'),'utf8')).items||{};
   const missing=[...new Set(spec.lessons.flatMap(lesson=>lesson.concepts.map(concept=>concept.audio)).filter(audio=>audio&&!manifest[audio]))];
   if(missing.length)console.warn(`${directory}: faltan audios por generar: ${missing.join(', ')}`);
-  const normal=spec.lessons.map((lesson,index)=>makeLesson(spec,lesson,index));
-  const unit={id:'reading-foundations',title:spec.title,description:spec.description,requirements:[],reward:{xp:220,badge:'Lector inicial'},lessons:[...normal,makeReview(spec,spec.lessons),makeTest(spec,spec.lessons)]};
   const unitPath=path.join(root,'units','reading-foundations.json');
+  const existingUnit=fs.existsSync(unitPath)?JSON.parse(fs.readFileSync(unitPath,'utf8')):null;
+  const productionCheckpoints=(existingUnit?.lessons||[]).filter(lesson=>lesson.generatedProduction===true);
+  const normal=spec.lessons.map((lesson,index)=>makeLesson(spec,lesson,index));
+  const review=makeReview(spec,spec.lessons),test=makeTest(spec,spec.lessons);
+  const generatedIds=new Set([...normal,review,test].map(lesson=>lesson.id));
+  const preservedProduction=productionCheckpoints.filter(lesson=>!generatedIds.has(lesson.id)).map(normalizeProductionLesson);
+  const unit={id:'reading-foundations',title:spec.title,description:spec.description,requirements:[],reward:{xp:220,badge:'Lector inicial'},lessons:[...normal,review,...preservedProduction,test]};
   fs.writeFileSync(unitPath,JSON.stringify(unit,null,2)+'\n');
 
   const course=JSON.parse(fs.readFileSync(coursePath,'utf8')),foundations=course.levels?.find(level=>level.id==='foundations');
@@ -431,4 +517,8 @@ set lesson_type=excluded.lesson_type,
 
 commit;
 `;
-fs.writeFileSync(path.join(web,'supabase','migrations','015_reading_foundations_all_languages.sql'),sql);
+if(requestedDirectories.size===0){
+  fs.writeFileSync(path.join(web,'supabase','migrations','015_reading_foundations_all_languages.sql'),sql);
+}else{
+  console.log('Migración global sin cambios: la generación fue parcial.');
+}

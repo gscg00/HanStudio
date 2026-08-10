@@ -10,6 +10,7 @@ import {
   speechRecognitionSupport,
 } from "../src/guided_speech_recognition.js";
 import { resolveGuidedOptionAudioKey, reviewItemsForSession } from "../src/japanese_course_app.js";
+import { countReviewsCompletedToday } from "../src/user_settings.js";
 
 assert.equal(normalizeGuidedAnswer("  ¡Ça va!  ", { language: "French", keepSpaces: true }), "ca va");
 assert.equal(normalizeGuidedAnswer("أَهْلًا", { language: "Arabic" }), "اهلا");
@@ -41,9 +42,21 @@ const reviewNow = new Date("2026-07-30T12:00:00Z");
 const dueReviews = Array.from({ length: 25 }, (_, index) => ({
   activityId: `review-${index}`,
   dueAt: "2026-07-29T12:00:00Z",
+  activity:{id:`review-${index}`,type:'select_translation',target:`concept-${index}`,answer:`meaning-${index}`},
 }));
 assert.equal(reviewItemsForSession({ mistakes: dueReviews }, 20, reviewNow).length, 20);
 assert.equal(reviewItemsForSession({ mistakes: dueReviews }, 8, reviewNow).length, 8);
+const duplicatedReviews=[...dueReviews,{activityId:'review-duplicate',dueAt:'2026-07-29T12:00:00Z',activity:{id:'review-duplicate',type:'listening_choice',answer:'concept-0'}}];
+assert.equal(reviewItemsForSession({mistakes:duplicatedReviews},20,reviewNow).length,20,'Una variante repetida no debe ocupar otra tarjeta del cupo');
+const staleReviews=Array.from({length:5},(_,index)=>({activityId:`stale-${index}`,dueAt:'2026-07-29T12:00:00Z'}));
+assert.equal(reviewItemsForSession({mistakes:[...staleReviews,...dueReviews]},20,reviewNow).length,20,'Los registros antiguos incompletos no deben recortar una sesión de veinte');
+const reviewedAt='2026-07-30T15:00:00Z',courses=[
+  {id:'guided:korean:v1',mistakes:[{activityId:'ko-meaning',lastReviewedAt:reviewedAt,activity:{id:'ko-meaning',type:'select_translation',target:'안녕하세요'}},{activityId:'ko-listen',lastReviewedAt:reviewedAt,activity:{id:'ko-listen',type:'listening_choice',answer:'안녕하세요'}}]},
+  {id:'guided:french:v1',mistakes:[{activityId:'fr-meaning',lastReviewedAt:reviewedAt,activity:{id:'fr-meaning',type:'select_translation',target:'bonjour'}}]},
+];
+assert.equal(countReviewsCompletedToday(courses,'guided:korean:v1',reviewNow),1,'Las variantes del mismo concepto cuentan una sola vez');
+assert.equal(countReviewsCompletedToday(courses,'guided:french:v1',reviewNow),1,'Cada idioma conserva su propio cupo diario');
+assert.equal(countReviewsCompletedToday(courses,'',reviewNow),2);
 
 const translation = {
   id: "translation",
