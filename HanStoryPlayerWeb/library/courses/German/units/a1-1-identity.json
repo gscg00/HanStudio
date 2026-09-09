@@ -963,7 +963,7 @@
           "target": "Wie heißen Sie?",
           "options": [],
           "answer": "",
-          "explanation": "¿Cómo te llamas?",
+          "explanation": "¿Cómo se llama?",
           "audio": "Wie heißen Sie?",
           "slow_audio": "Wie heißen Sie?",
           "image": null,
@@ -974,7 +974,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a11-identity-03-13-meaning",
@@ -982,12 +983,12 @@
           "prompt": "¿Qué significa «Wie heißen Sie?»?",
           "target": "Wie heißen Sie?",
           "options": [
-            "¿Cómo te llamas?",
+            "¿Cómo se llama?",
             "buenos días",
             "idioma"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "«Wie heißen Sie?» significa «¿Cómo te llamas?».",
+          "answer": "¿Cómo se llama?",
+          "explanation": "«Wie heißen Sie?» significa «¿Cómo se llama?».",
           "audio": "Wie heißen Sie?",
           "slow_audio": "Wie heißen Sie?",
           "image": null,
@@ -997,7 +998,8 @@
             "identity",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a11-identity-03-13-listen",
@@ -1010,7 +1012,7 @@
             "Auf Wiedersehen"
           ],
           "answer": "Wie heißen Sie?",
-          "explanation": "La forma escuchada es «Wie heißen Sie?»: ¿Cómo te llamas?",
+          "explanation": "La forma escuchada es «Wie heißen Sie?»: ¿Cómo se llama?",
           "audio": "Wie heißen Sie?",
           "slow_audio": "Wie heißen Sie?",
           "image": null,
@@ -1020,7 +1022,8 @@
             "identity",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a11-identity-03-14-teach",
@@ -1802,8 +1805,8 @@
         {
           "id": "german-a1-1-identity-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en alemán: «¿Cómo te llamas?»",
-          "target": "¿Cómo te llamas?",
+          "prompt": "Escribe en alemán: «¿Cómo se llama?»",
+          "target": "¿Cómo se llama?",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Wie heißen Sie?",
           "accepted_answers": [
@@ -1817,7 +1820,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a1-1-identity-production-dictation",
@@ -1842,8 +1846,8 @@
         {
           "id": "german-a1-1-identity-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «¿Cómo te llamas?»",
-          "target": "¿Cómo te llamas?",
+          "prompt": "Construye la forma que significa «¿Cómo se llama?»",
+          "target": "¿Cómo se llama?",
           "options": [
             "Sie?",
             "heißen",
@@ -1861,7 +1865,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a1-1-identity-production-complete",
@@ -1885,7 +1890,7 @@
         {
           "id": "german-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «idioma»",
+          "prompt": "Di o escribe en alemán: «idioma»",
           "target": "idioma",
           "answer": "Sprache",
           "accepted_answers": [
@@ -1934,12 +1939,12 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «¿Cómo te llamas?»."
+              "translation": "Quieres expresar: «¿Cómo se llama?»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
+              "prompt": "Di o escribe en alemán: «¿Cómo se llama?»",
               "answer": "Wie heißen Sie?",
               "accepted_answers": [
                 "Wie heißen Sie?"
@@ -1957,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
+              "prompt": "Di o escribe en alemán: «Soy de México.»",
               "answer": "Ich komme aus Mexiko.",
               "accepted_answers": [
                 "Ich komme aus Mexiko."
@@ -2565,12 +2570,12 @@
           "prompt": "¿Qué significa «Wie heißen Sie?»?",
           "target": "Wie heißen Sie?",
           "options": [
-            "¿Cómo te llamas?",
+            "¿Cómo se llama?",
             "buenos días",
             "idioma"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "«Wie heißen Sie?» significa «¿Cómo te llamas?».",
+          "answer": "¿Cómo se llama?",
+          "explanation": "«Wie heißen Sie?» significa «¿Cómo se llama?».",
           "audio": "Wie heißen Sie?",
           "slow_audio": "Wie heißen Sie?",
           "image": null,
@@ -2580,7 +2585,8 @@
             "identity",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a11-identity-test-13-listen",
@@ -2593,7 +2599,7 @@
             "Auf Wiedersehen"
           ],
           "answer": "Wie heißen Sie?",
-          "explanation": "La forma escuchada es «Wie heißen Sie?»: ¿Cómo te llamas?",
+          "explanation": "La forma escuchada es «Wie heißen Sie?»: ¿Cómo se llama?",
           "audio": "Wie heißen Sie?",
           "slow_audio": "Wie heißen Sie?",
           "image": null,
@@ -2603,7 +2609,8 @@
             "identity",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sie es el tratamiento formal (o plural). La forma informal singular es «Wie heißt du?»."
         },
         {
           "id": "german-a11-identity-test-14-meaning",

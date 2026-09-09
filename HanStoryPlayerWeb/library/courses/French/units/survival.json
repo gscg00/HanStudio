@@ -689,7 +689,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "Me llamo Ana",
+          "meaning": "Me llamo Anna",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -721,12 +721,12 @@
           "prompt": "¿Qué significa «Je m'appelle Anna.»?",
           "target": "Je m'appelle Anna.",
           "options": [
-            "Me llamo Ana",
+            "Me llamo Anna",
             "cero",
             "siete"
           ],
-          "answer": "Me llamo Ana",
-          "explanation": "Me llamo Ana",
+          "answer": "Me llamo Anna",
+          "explanation": "Me llamo Anna",
           "audio": "Je m'appelle Anna.",
           "slow_audio": "Je m'appelle Anna.",
           "image": null,
@@ -745,7 +745,7 @@
             "trois"
           ],
           "answer": "Je m'appelle Anna.",
-          "explanation": "La forma escrita correcta es «Je m'appelle Anna.»: Me llamo Ana.",
+          "explanation": "La forma escrita correcta es «Je m'appelle Anna.»: Me llamo Anna.",
           "audio": "Je m'appelle Anna.",
           "slow_audio": "Je m'appelle Anna.",
           "image": null,
@@ -760,7 +760,7 @@
           "target": "Comment vous appelez-vous ?",
           "options": [],
           "answer": "",
-          "explanation": "",
+          "explanation": "¿Cómo se llama?",
           "audio": "Comment vous appelez-vous ?",
           "slow_audio": "Comment vous appelez-vous ?",
           "image": null,
@@ -768,7 +768,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "¿Cómo te llamas?",
+          "meaning": "¿Cómo se llama?",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -790,7 +790,7 @@
               "note": "verbo appeler en inversión: forma interrogativa verbo + pronombre sujeto unidos por guion"
             }
           ],
-          "usage_note": "Fórmula para preguntar el nombre con cortesía; uso formal o plural: «Comment vous appelez‑vous ?».",
+          "usage_note": "Vous marca un tratamiento formal o plural. La forma informal singular es «Comment tu t’appelles ?».",
           "context_note": "Alternativas: «Comment tu t'appelles ?» (informal) o «Vous vous appelez comment ?» (más coloquial).",
           "audio_examples": []
         },
@@ -800,18 +800,19 @@
           "prompt": "¿Qué significa «Comment vous appelez-vous ?»?",
           "target": "Comment vous appelez-vous ?",
           "options": [
-            "¿Cómo te llamas?",
+            "¿Cómo se llama?",
             "uno",
             "ocho"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "¿Cómo te llamas?",
+          "answer": "¿Cómo se llama?",
+          "explanation": "¿Cómo se llama?",
           "audio": "Comment vous appelez-vous ?",
           "slow_audio": "Comment vous appelez-vous ?",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Vous marca un tratamiento formal o plural. La forma informal singular es «Comment tu t’appelles ?»."
         },
         {
           "id": "french-survival-02-5-listen",
@@ -824,13 +825,14 @@
             "quatre"
           ],
           "answer": "Comment vous appelez-vous ?",
-          "explanation": "La forma escrita correcta es «Comment vous appelez-vous ?»: ¿Cómo te llamas?",
+          "explanation": "La forma escrita correcta es «Comment vous appelez-vous ?»: ¿Cómo se llama?",
           "audio": "Comment vous appelez-vous ?",
           "slow_audio": "Comment vous appelez-vous ?",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Vous marca un tratamiento formal o plural. La forma informal singular es «Comment tu t’appelles ?»."
         }
       ]
     },
@@ -1256,16 +1258,17 @@
           "options": [
             "Soy de México",
             "seis",
-            "¿Cómo te llamas?"
+            "¿Cómo se llama?"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "¿Cómo te llamas?",
+          "answer": "¿Cómo se llama?",
+          "explanation": "¿Cómo se llama?",
           "audio": "Comment vous appelez-vous ?",
           "slow_audio": "Comment vous appelez-vous ?",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Vous marca un tratamiento formal o plural. La forma informal singular es «Comment tu t’appelles ?»."
         },
         {
           "id": "french-survival-review-03-2-listen",
@@ -1278,13 +1281,14 @@
             "Comment vous appelez-vous ?"
           ],
           "answer": "Comment vous appelez-vous ?",
-          "explanation": "La forma escrita correcta es «Comment vous appelez-vous ?»: ¿Cómo te llamas?",
+          "explanation": "La forma escrita correcta es «Comment vous appelez-vous ?»: ¿Cómo se llama?",
           "audio": "Comment vous appelez-vous ?",
           "slow_audio": "Comment vous appelez-vous ?",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Vous marca un tratamiento formal o plural. La forma informal singular es «Comment tu t’appelles ?»."
         },
         {
           "id": "french-survival-review-03-3-meaning",
@@ -4628,7 +4632,14 @@
           "word_breakdown": [],
           "usage_note": "",
           "context_note": "",
-          "audio_examples": [],
+          "audio_examples": [
+            {
+              "label": "an / en",
+              "text": "enfant",
+              "audio": "enfant",
+              "slow_audio": "enfant"
+            }
+          ],
           "teaching_kind": "rule",
           "rule_kind": "combinations"
         },
@@ -4649,7 +4660,15 @@
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "audio_examples": [
+            {
+              "label": "an / en",
+              "text": "enfant",
+              "audio": "enfant",
+              "slow_audio": "enfant"
+            }
+          ]
         },
         {
           "id": "french-survival-12-3-listen",
@@ -4758,7 +4777,14 @@
           "word_breakdown": [],
           "usage_note": "",
           "context_note": "",
-          "audio_examples": [],
+          "audio_examples": [
+            {
+              "label": "in / ain",
+              "text": "matin",
+              "audio": "matin",
+              "slow_audio": "matin"
+            }
+          ],
           "teaching_kind": "rule",
           "rule_kind": "combinations"
         },
@@ -4779,7 +4805,15 @@
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "audio_examples": [
+            {
+              "label": "in / ain",
+              "text": "matin",
+              "audio": "matin",
+              "slow_audio": "matin"
+            }
+          ]
         },
         {
           "id": "french-survival-12-5-listen",

@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {evaluateGuidedAnswer} from '../src/guided_course_answers.js';
+const root=new URL('../',import.meta.url),entries=JSON.parse(fs.readFileSync(new URL('course-authoring/qa_register_requests.json',root),'utf8'));
+for(const [language,entry] of Object.entries(entries))test(`${language}: petición contextual enseñada, alternativas acotadas y audio existente`,()=>{
+ const unit=JSON.parse(fs.readFileSync(new URL(`library/courses/${language}/units/b1-1-register.json`,root),'utf8'));
+ const lessons=unit.lessons.filter(l=>l.activities.some(a=>a.id===`${language.toLowerCase()}-qa-register-request`));
+ assert.equal(lessons.length,1);
+ const lesson=lessons[0],index=lesson.activities.findIndex(a=>a.id===`${language.toLowerCase()}-qa-register-request`),a=lesson.activities[index];
+ assert.ok(lesson.activities.slice(0,index).some(a=>a.type==='teach_concept'&&a.target===entry.form));
+ assert.equal(lesson.activities[index-1].type,'listening_choice');
+ assert.ok(a.learning_context.includes('persona desconocida'));
+ for(const alternative of [entry.form,...entry.alternatives])assert.equal(evaluateGuidedAnswer(a,alternative,language).correct,true,alternative);
+ assert.equal(evaluateGuidedAnswer(a,entry.direct,language).correct,false);
+ assert.equal(evaluateGuidedAnswer(a,'',language).correct,false);
+ assert.equal(a.answer_policy,'registered');
+ const manifest=JSON.parse(fs.readFileSync(new URL(`library/courses/${language}/audio_manifest.json`,root),'utf8'));
+ assert.ok(JSON.stringify(manifest).includes(JSON.stringify(a.audio)),`${language}: missing audio key`);
+});

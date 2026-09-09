@@ -2,6 +2,11 @@
 import fs from'node:fs';
 import path from'node:path';
 import{fileURLToPath}from'node:url';
+import{sequenceAlphabetLessons}from'./alphabet_sequence.mjs';
+import{sequenceChineseToneLesson}from'./chinese_tone_sequence.mjs';
+import{japaneseVowelExamples,japaneseKatakanaExample}from'./japanese_intro_audio.mjs';
+import{applyJapaneseReadingExamples}from'./japanese_reading_examples.mjs';
+import{repairFoundationPedagogy}from'./foundation_pedagogy.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const web=path.resolve(here,'..');
@@ -33,9 +38,9 @@ const specs={
         C('SH y CH','SH · CH','see','Cada grupo funciona como una unidad frecuente.','Reconoce el grupo antes de leer letra por letra.','Dividir estos grupos produce una pronunciación artificial.',['sh: aire continuo.','ch: cierre y liberación.','Busca el grupo completo.'],'¿Qué debes hacer al encontrar SH o CH?','Reconocer el grupo como una unidad sonora',['Pronunciar cada nombre de letra','Ignorar la segunda letra'],[{label:'SONIDO SH',text:'ship',meaning:'barco',audio:'ship'},{label:'SONIDO CH',text:'chair',meaning:'silla',audio:'chair'}])),
       L('Letras silenciosas','Reconoce letras escritas que no siempre se oyen.',
         C('No todo se pronuncia','kn · wr','en','En know y write hay letras iniciales silenciosas.','Aprende la forma escrita junto con el audio.','La ortografía inglesa conserva huellas históricas.',['kn inicial suele perder k.','wr inicial suele perder w.','La letra silenciosa se escribe, pero no se oye.'],'¿Debes pronunciar siempre todas las letras inglesas?','No, algunas son silenciosas',['Sí, sin excepción','Solo las consonantes'],[{label:'K SILENCIOSA',text:'know',meaning:'saber',audio:'know'},{label:'W SILENCIOSA',text:'write',meaning:'escribir',audio:'write'}]),
-        C('Terminaciones','-ed · -s','ess','Una misma terminación cambia de sonido según lo anterior.','Escucha el final, no añadas una sílaba automáticamente.','-ed puede sonar t, d o id; -s puede sonar s, z o iz.',['worked termina en t.','played termina en d.','wanted termina en id.'],'¿La terminación -ed suena siempre igual?','No, cambia según el contexto',['Sí, siempre «ed»','Nunca se pronuncia'])),
+        C('Terminaciones','-ed · -s','ess','Una misma terminación cambia de sonido según lo anterior.','Escucha el final, no añadas una sílaba automáticamente.','-ed puede sonar t, d o id; -s puede sonar s, z o iz.',['worked termina en t.','played termina en d.','wanted termina en id.'],'¿La terminación -ed suena siempre igual?','No, cambia según el contexto',['Sí, siempre «ed»','Nunca se pronuncia'],[{text:'worked',meaning:'trabajó',audio:'worked'},{text:'played',meaning:'jugó',audio:'played'},{text:'wanted',meaning:'quiso',audio:'wanted'},{text:'dogs',meaning:'perros',audio:'dogs'}])),
       L('Ritmo y lectura de palabras','Lee por sílabas y conserva el acento principal.',
-        C('Acento de palabra','PREsent / preSENT','eye','La sílaba acentuada destaca más.','Marca una sílaba fuerte, no todas por igual.','El acento puede distinguir palabras y facilita la comprensión.',['Una sílaba recibe más prominencia.','Las demás se reducen con frecuencia.','Escucha la palabra completa.'],'¿Todas las sílabas inglesas tienen la misma fuerza?','No, suele haber una sílaba principal',['Sí, siempre','Solo en preguntas']),
+        C('Acento de palabra','PREsent / preSENT','eye','La sílaba acentuada destaca más.','Marca una sílaba fuerte, no todas por igual.','El acento puede distinguir palabras y facilita la comprensión.',['Una sílaba recibe más prominencia.','Las demás se reducen con frecuencia.','Escucha la palabra completa.'],'¿Todas las sílabas inglesas tienen la misma fuerza?','No, suele haber una sílaba principal',['Sí, siempre','Solo en preguntas'],[{label:'SUSTANTIVO',text:'a present',meaning:'un regalo',audio:'a present'},{label:'VERBO',text:'I present',meaning:'presento',audio:'I present'}]),
         C('No deletrees al leer','cat ≠ C-A-T','see','Une los sonidos para formar la palabra.','Los nombres de las letras sirven para deletrear, no para leer corrido.','La lectura fluida combina sonidos y patrones conocidos.',['Identifica el patrón.','Produce sus sonidos.','Únelos sin pausas artificiales.'],'¿Cómo lees una palabra conocida?','Uniendo sus sonidos y patrones',['Diciendo los nombres de cada letra','Traduciéndola antes de verla'])),
     ],
   },
@@ -81,8 +86,8 @@ const specs={
     description:'Aprende vocales, umlauts, combinaciones y consonantes para aprovechar una ortografía bastante regular.',
     lessons:[
       L('Letras y pronunciación','Separa nombre de letra y sonido de palabra.',
-        C('Leer no es deletrear','A · Name','ah','El nombre de una letra no es necesariamente su sonido dentro de una palabra.','Usa los nombres solo para deletrear.','El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.',['Letra escrita.','Sonido dentro de palabra.','Nombre usado al deletrear.'],'¿Cómo lees una palabra alemana?','Con sus sonidos, no con nombres de letras',['Deletreando siempre','Traduciéndola primero']),
-        C('Las mayúsculas importan','Haus · das Haus','hah','Todos los sustantivos se escriben con mayúscula.','Una mayúscula interna suele anunciar un sustantivo.','Esta convención ayuda a reconocer la estructura de una oración.',['Haus es sustantivo.','Los nombres propios también usan mayúscula.','No cambia por estar en medio de frase.'],'¿Qué clase de palabras usa mayúscula en alemán?','Los sustantivos',['Solo los verbos','Todas las palabras'])),
+        C('Leer no es deletrear','A · Name','ah','El nombre de una letra no es necesariamente su sonido dentro de una palabra.','Usa los nombres solo para deletrear.','El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.',['Letra escrita.','Sonido dentro de palabra.','Nombre usado al deletrear.'],'¿Cómo lees una palabra alemana?','Con sus sonidos, no con nombres de letras',['Deletreando siempre','Traduciéndola primero'],[{text:'A',meaning:'nombre de la letra',audio:'ah'},{text:'Name',meaning:'nombre',audio:'Name'}]),
+        C('Las mayúsculas importan','Haus · das Haus','hah','Todos los sustantivos se escriben con mayúscula.','Una mayúscula interna suele anunciar un sustantivo.','Esta convención ayuda a reconocer la estructura de una oración.',['Haus es sustantivo.','Los nombres propios también usan mayúscula.','No cambia por estar en medio de frase.'],'¿Qué clase de palabras usa mayúscula en alemán?','Los sustantivos',['Solo los verbos','Todas las palabras'],[{text:'Haus',meaning:'casa',audio:'Haus'},{text:'das Haus',meaning:'la casa',audio:'das Haus'}])),
       L('Umlauts','Aprende ä, ö y ü como vocales propias.',
         C('Ä no es A decorada','ä','äh','Ä suele acercarse a una e abierta.','Trátala como una vocal distinta.','El umlaut puede cambiar pronunciación y significado.',['ä tiene sonido propio.','No ignores los puntos.','Compara palabras relacionadas.'],'¿Debes leer Ä exactamente como A?','No, es una vocal distinta',['Sí','Es silenciosa']),
         C('Ö y Ü','ö · ü','','Son vocales frontales con labios redondeados.','Forma la lengua para e/i y redondea los labios.','No tienen equivalente exacto en español.',['ö: frontal redondeada media.','ü: frontal redondeada alta.','Escucha cada vocal por separado.'],'¿Qué comparten Ö y Ü?','Son vocales frontales con labios redondeados',['Son consonantes','Siempre son mudas'],[
@@ -117,19 +122,19 @@ const specs={
     description:'Aprovecha su ortografía regular y domina C, G, H, grupos especiales, dobles y acento.',
     lessons:[
       L('Vocales y lectura directa','El italiano se lee de forma bastante regular.',
-        C('Cinco letras vocálicas','a · e · i · o · u','a','Las vocales se mantienen claras y no suelen reducirse tanto como en inglés.','Pronuncia cada núcleo vocálico.','E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.',['No borres vocales finales.','Mantén sonidos definidos.','Escucha la apertura de e/o.'],'¿Qué debes hacer con las vocales italianas?','Pronunciarlas con claridad',['Reducirlas todas','Omitir las finales']),
+        C('Cinco letras vocálicas','a · e · i · o · u','a','Las vocales se mantienen claras y no suelen reducirse tanto como en inglés.','Pronuncia cada núcleo vocálico.','E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.',['No borres vocales finales.','Mantén sonidos definidos.','Escucha la apertura de e/o.'],'¿Qué debes hacer con las vocales italianas?','Pronunciarlas con claridad',['Reducirlas todas','Omitir las finales'],[{text:'a',audio:'a'},{text:'e',audio:'e'},{text:'i',audio:'i'},{text:'o',audio:'o'},{text:'u',audio:'u'}]),
         C('Una letra, un patrón','casa','ci','La mayoría de las palabras permite predecir la pronunciación con reglas estables.','Aprende las excepciones junto a cada palabra.','Esto hace posible leer pronto sin depender de una transcripción.',['Segmenta en sílabas.','Aplica grupos conocidos.','Une con ritmo.'],'¿Es relativamente regular la ortografía italiana?','Sí, aunque tiene reglas y excepciones',['No, es impredecible','Solo en nombres'])),
       L('C y G','La vocal siguiente decide sonidos duros o suaves.',
-        C('C dura y suave','ca/co/cu · ce/ci','ci','C ante a, o, u suena k; ante e, i suena ch.','Mira siempre la vocal siguiente.','Esta regla explica casa frente a cena.',['ca/co/cu: sonido k.','ce/ci: sonido ch.','El contexto decide.'],'¿Cómo suele sonar C ante E o I?','Como ch',['Como k','No suena']),
-        C('G dura y suave','ga/go/gu · ge/gi','gi','G ante a, o, u es dura; ante e, i suena parecido a y/dj.','Mira la vocal siguiente.','Compara gatto y gelato.',['ga/go/gu: g dura.','ge/gi: sonido suave.','La regla es paralela a C.'],'¿Cómo suele sonar G ante E o I?','Con un sonido suave parecido a y/dj',['Como k','Siempre muda'])),
+        C('C dura y suave','ca/co/cu · ce/ci','ci','C ante a, o, u suena k; ante e, i suena ch.','Mira siempre la vocal siguiente.','Esta regla explica casa frente a cena.',['ca/co/cu: sonido k.','ce/ci: sonido ch.','El contexto decide.'],'¿Cómo suele sonar C ante E o I?','Como ch',['Como k','No suena'],[{text:'ca',audio:'ca'},{text:'co',audio:'co'},{text:'cu',audio:'cu'},{text:'ce',audio:'ce'},{text:'ci',audio:'ci'}]),
+        C('G dura y suave','ga/go/gu · ge/gi','gi','G ante a, o, u es dura; ante e, i suena parecido a y/dj.','Mira la vocal siguiente.','Compara gatto y gelato.',['ga/go/gu: g dura.','ge/gi: sonido suave.','La regla es paralela a C.'],'¿Cómo suele sonar G ante E o I?','Con un sonido suave parecido a y/dj',['Como k','Siempre muda'],[{text:'ga',audio:'ga'},{text:'go',audio:'go'},{text:'gu',audio:'gu'},{text:'ge',audio:'ge'},{text:'gi',audio:'gi'}])),
       L('H que cambia el grupo','CH y GH conservan el sonido duro.',
-        C('CHE y CHI','che · chi','acca','H evita que C se suavice ante e/i.','CH se lee k, no ch española.','Compara ce con che y ci con chi.',['che: ke.','chi: ki.','H no aporta un sonido separado.'],'¿Qué hace H en CHE o CHI?','Mantiene el sonido duro k',['Convierte C en s','Forma una vocal']),
-        C('GHE y GHI','ghe · ghi','gi','H mantiene la G dura ante e/i.','No pronuncies H por separado.','Compara gelato con spaghetti.',['ghe: ge dura.','ghi: gi dura.','H funciona como señal ortográfica.'],'¿Qué hace H en GHE o GHI?','Mantiene la G dura',['Vuelve muda la palabra','Duplica la vocal'])),
+        C('CHE y CHI','che · chi','acca','H evita que C se suavice ante e/i.','CH se lee k, no ch española.','Compara ce con che y ci con chi.',['che: ke.','chi: ki.','H no aporta un sonido separado.'],'¿Qué hace H en CHE o CHI?','Mantiene el sonido duro k',['Convierte C en s','Forma una vocal'],[{text:'che',audio:'che'},{text:'chi',audio:'chi'}]),
+        C('GHE y GHI','ghe · ghi','gi','H mantiene la G dura ante e/i.','No pronuncies H por separado.','Compara gelato con spaghetti.',['ghe: ge dura.','ghi: gi dura.','H funciona como señal ortográfica.'],'¿Qué hace H en GHE o GHI?','Mantiene la G dura',['Vuelve muda la palabra','Duplica la vocal'],[{text:'ghe',audio:'ghe'},{text:'ghi',audio:'ghi'}])),
       L('GN, GLI y SC','Reconoce grupos que representan sonidos propios.',
-        C('GN','gn: bagno','enne','GN se acerca a la ñ española.','Lee las dos letras como una unidad.','No produzcas g seguida de n.',['bagno contiene sonido parecido a ñ.','El grupo permanece unido.','Practica dentro de palabras.'],'¿Cómo se lee normalmente GN?','Como un sonido parecido a ñ',['Como g + n separadas','Como ch']),
-        C('GLI y SCI','gli · sci','elle','GLI tiene un sonido palatal; SCI ante e/i se aproxima a sh.','Aprende cada grupo como unidad.','Son patrones frecuentes que no conviene deletrear.',['famiglia contiene gli.','scena contiene sonido sh.','La vocal siguiente importa.'],'¿Debes separar GLI letra por letra?','No, funciona como grupo',['Sí, siempre','Solo la G es muda'])),
+        C('GN','gn: bagno','bagno','GN se acerca a la ñ española.','Lee las dos letras como una unidad.','No produzcas g seguida de n.',['bagno contiene sonido parecido a ñ.','El grupo permanece unido.','Practica dentro de palabras.'],'¿Cómo se lee normalmente GN?','Como un sonido parecido a ñ',['Como g + n separadas','Como ch'],[{label:'GN DENTRO DE UNA PALABRA',text:'bagno',meaning:'baño',audio:'bagno'}]),
+        C('GLI y SCI','gli · sci','elle','En famiglia, GLI representa un solo sonido consonántico: escucha el ejemplo sin separar g y l. SC delante de e o i suena como sh; en scena aparece delante de e.','Aprende cada grupo como unidad.','Son patrones frecuentes que no conviene deletrear.',['famiglia contiene gli.','scena contiene sonido sh.','La vocal siguiente importa.'],'¿Debes separar GLI letra por letra?','No, funciona como grupo',['Sí, siempre','Solo la G es muda'],[{label:'EJEMPLO CON GLI',text:'famiglia',meaning:'familia',audio:'famiglia'},{label:'SC ANTE E',text:'scena',meaning:'escena',audio:'scena'}])),
       L('Consonantes dobles','La duración consonántica puede cambiar significado.',
-        C('Una o dos consonantes','pala · palla','pi','La consonante doble se mantiene más tiempo y corta la transición.','Haz una breve retención antes de liberar.','No es solo una diferencia ortográfica.',['pala y palla contrastan.','La vocal anterior puede sentirse más corta.','Escucha pares mínimos.'],'¿Las consonantes dobles cambian la pronunciación?','Sí, se sostienen más tiempo',['No','Solo en canto']),
+        C('Una o dos consonantes','pala · palla','pi','La consonante doble se mantiene más tiempo y corta la transición.','Haz una breve retención antes de liberar.','No es solo una diferencia ortográfica.',['pala y palla contrastan.','La vocal anterior puede sentirse más corta.','Escucha pares mínimos.'],'¿Las consonantes dobles cambian la pronunciación?','Sí, se sostienen más tiempo',['No','Solo en canto'],[{text:'pala',meaning:'pala',audio:'pala'},{text:'palla',meaning:'pelota',audio:'palla'}]),
         C('Ritmo silábico','italiano','ti','Cada sílaba conserva claridad y las dobles afectan el ritmo.','No borres vocales no acentuadas.','El ritmo italiano es más silábico que el inglés.',['Cuenta sílabas.','Mantén vocales claras.','Marca la consonante doble.'],'¿Debes eliminar las vocales no acentuadas?','No, suelen conservarse claras',['Sí, todas','Solo las finales'])),
       L('Acento y apóstrofo','Reconoce la sílaba fuerte y las elisiones.',
         C('Acento léxico','parola','erre','Muchas palabras acentúan la penúltima sílaba, pero no todas.','Aprende el acento junto con la palabra.','El acento gráfico aparece cuando es necesario, especialmente al final.',['città lleva acento escrito.','La sílaba fuerte guía el ritmo.','Hay patrones y excepciones.'],'¿Qué debes memorizar junto con una palabra italiana?','Su sílaba acentuada',['Solo su traducción','El nombre de cada letra']),
@@ -141,23 +146,23 @@ const specs={
     description:'Domina vocales, nasalización, dígrafos y variación consonántica antes de leer textos.',
     lessons:[
       L('Letras y vocales','Comprende que la escritura es regular, pero las vocales varían.',
-        C('Vocales abiertas y cerradas','é/ê · ó/ô','é','Los acentos pueden distinguir apertura vocálica.','No trates cada E u O como un único sonido.','La variedad regional también influye.',['é/ó suelen ser abiertas.','ê/ô suelen ser cerradas.','El acento ayuda a leer.'],'¿Qué pueden indicar é/ê y ó/ô?','Diferencias de apertura vocálica',['Que son mudas','Consonantes dobles']),
-        C('Vocales no acentuadas','e · o finales','ó','En muchas variedades, e y o finales se elevan y no suenan como en español.','Escucha el modelo de la variedad elegida.','No existe una única pronunciación idéntica en todo el mundo lusófono.',['e final puede acercarse a i.','o final puede acercarse a u.','La región modifica detalles.'],'¿Debes leer siempre E y O como en español?','No, su sonido depende de posición y variedad',['Sí','Nunca se pronuncian'])),
+        C('Vocales abiertas y cerradas','é/ê · ó/ô','é','Los acentos pueden distinguir apertura vocálica.','No trates cada E u O como un único sonido.','La variedad regional también influye.',['é/ó suelen ser abiertas.','ê/ô suelen ser cerradas.','El acento ayuda a leer.'],'¿Qué pueden indicar é/ê y ó/ô?','Diferencias de apertura vocálica',['Que son mudas','Consonantes dobles'],[{text:'é',audio:'é'},{text:'ê',audio:'ê'},{text:'ó',audio:'ó'},{text:'ô',audio:'ô'}]),
+        C('Vocales no acentuadas','e · o finales','ó','En muchas variedades, e y o finales se elevan y no suenan como en español.','Escucha el modelo de la variedad elegida.','No existe una única pronunciación idéntica en todo el mundo lusófono.',['e final puede acercarse a i.','o final puede acercarse a u.','La región modifica detalles.'],'¿Debes leer siempre E y O como en español?','No, su sonido depende de posición y variedad',['Sí','Nunca se pronuncian'],[{text:'e final',audio:'e'},{text:'o final',audio:'o'}])),
       L('Nasalización','Reconoce vocales nasales y la tilde.',
-        C('Ã y Õ','ã · õ','eme','La tilde indica una vocal nasal.','Deja pasar aire por la nariz sin añadir n fuerte.','La nasalidad pertenece a la vocal.',['ã es nasal.','õ es nasal.','No son a/o españolas seguidas de n.'],'¿Qué indica la tilde en Ã u Õ?','Que la vocal es nasal',['Que es más fuerte','Que no se pronuncia']),
-        C('M y N tras vocal','am · em · om','ene','Al final de sílaba, m/n suelen nasalizar la vocal.','No cierres siempre con una consonante española completa.','Compara la posición dentro de la sílaba.',['bem contiene vocal nasal.','bom contiene vocal nasal.','La consonante puede no oírse separada.'],'¿Qué pueden hacer M o N después de una vocal?','Nasalizarla',['Volverla muda','Duplicarla'])),
+        C('Ã y Õ','ã · õ','eme','La tilde indica una vocal nasal.','Deja pasar aire por la nariz sin añadir n fuerte.','La nasalidad pertenece a la vocal.',['ã es nasal.','õ es nasal.','No son a/o españolas seguidas de n.'],'¿Qué indica la tilde en Ã u Õ?','Que la vocal es nasal',['Que es más fuerte','Que no se pronuncia'],[{text:'ã',audio:'ã'},{text:'õ',audio:'õ'}]),
+        C('M y N tras vocal','am · em · om','ene','Al final de sílaba, m/n suelen nasalizar la vocal.','No cierres siempre con una consonante española completa.','Compara la posición dentro de la sílaba.',['bem contiene vocal nasal.','bom contiene vocal nasal.','La consonante puede no oírse separada.'],'¿Qué pueden hacer M o N después de una vocal?','Nasalizarla',['Volverla muda','Duplicarla'],[{text:'am',audio:'am'},{text:'em',audio:'em'},{text:'om',audio:'om'}])),
       L('Dígrafos','Dos letras pueden representar un sonido.',
-        C('NH y LH','nh · lh','ele','NH se acerca a ñ; LH es una lateral palatal.','Aprende el grupo completo.','No se leen como letras independientes.',['ninho contiene nh.','filho contiene lh.','Cada grupo representa una unidad.'],'¿Cómo debes tratar NH o LH?','Como grupos sonoros, no letras separadas',['Como dos sílabas','Ignorando la H']),
+        C('NH y LH','nh · lh','ele','NH se acerca a ñ; LH es una lateral palatal.','Aprende el grupo completo.','No se leen como letras independientes.',['ninho contiene nh.','filho contiene lh.','Cada grupo representa una unidad.'],'¿Cómo debes tratar NH o LH?','Como grupos sonoros, no letras separadas',['Como dos sílabas','Ignorando la H'],[{text:'ninho',meaning:'nido',audio:'ninho'},{text:'filho',meaning:'hijo',audio:'filho'}]),
         C('CH','ch','cê','CH suele sonar parecido a sh.','No uses automáticamente la ch española.','Es un dígrafo frecuente en palabras comunes.',['chave empieza con sonido sh.','Las dos letras forman una unidad.','Escucha la variedad objetivo.'],'¿Cómo suele sonar CH portugués?','Parecido a sh',['Como k','Como rr'])),
       L('R, RR y S','La posición cambia la realización.',
-        C('R inicial y RR','rua · carro','erre','R inicial y RR suelen tener un sonido fuerte, variable por región.','Distingue caro de carro.','Una sola r entre vocales suele ser más suave.',['r inicial: fuerte.','rr: fuerte.','r intervocálica: suave.'],'¿CARO y CARRO tienen la misma R?','No',['Sí','La R es muda']),
-        C('S entre vocales','casa','esse','S entre vocales suele sonar z; SS conserva s sorda.','Mira las letras vecinas.','La posición explica casa frente a massa.',['s intervocálica: frecuente sonido z.','ss: s sorda.','s final varía por región.'],'¿Cómo suele sonar S entre vocales?','Como z',['Siempre como sh','No suena'])),
+        C('R inicial y RR','rua · carro','erre','R inicial y RR suelen tener un sonido fuerte, variable por región.','Distingue caro de carro.','Una sola r entre vocales suele ser más suave.',['r inicial: fuerte.','rr: fuerte.','r intervocálica: suave.'],'¿CARO y CARRO tienen la misma R?','No',['Sí','La R es muda'],[{text:'rua',meaning:'calle',audio:'rua'},{text:'carro',meaning:'coche',audio:'carro'}]),
+        C('S entre vocales','casa','esse','S entre vocales suele sonar z; SS conserva s sorda.','Mira las letras vecinas.','La posición explica casa frente a massa.',['s intervocálica: frecuente sonido z.','ss: s sorda.','s final varía por región.'],'¿Cómo suele sonar S entre vocales?','Como z',['Siempre como sh','No suena'],[{label:'S ENTRE VOCALES',text:'casa',meaning:'casa',audio:'casa'}])),
       L('C, G y X','Aprende patrones contextuales y palabras especiales.',
-        C('C y G ante E/I','ce/ci · ge/gi','gê','C suele sonar s y G suele sonar zh ante e/i.','Mira la vocal siguiente.','Ante a/o/u conservan sonidos más duros.',['ce/ci: s.','ge/gi: sonido semejante a zh.','ca/co/cu y ga/go/gu: duros.'],'¿Qué determina el sonido de C o G?','La vocal siguiente',['La longitud de la palabra','El artículo']),
+        C('C y G ante E/I','ce/ci · ge/gi','gê','C suele sonar s y G suele sonar zh ante e/i.','Mira la vocal siguiente.','Ante a/o/u conservan sonidos más duros.',['ce/ci: s.','ge/gi: sonido semejante a zh.','ca/co/cu y ga/go/gu: duros.'],'¿Qué determina el sonido de C o G?','La vocal siguiente',['La longitud de la palabra','El artículo'],[{text:'ce',audio:'ce'},{text:'ci',audio:'ci'},{text:'ge',audio:'ge'},{text:'gi',audio:'gi'}]),
         C('X tiene varios sonidos','x','xis','X puede sonar sh, s, z o ks según la palabra.','Aprende su sonido junto con cada palabra.','No existe una sola regla que cubra todos los casos.',['xícara empieza con sh.','táxi contiene ks.','exame puede contener z.'],'¿Debes asumir un solo sonido para X?','No, se aprende según la palabra',['Sí, siempre ks','X es muda'])),
       L('Acento y ritmo','Usa marcas gráficas y termina de unir sílabas.',
         C('Sílaba tónica','palavra','é','Las palabras siguen patrones de acento y los signos marcan excepciones.','Identifica la sílaba fuerte antes de leer fluido.','Agudo, circunflejo y tilde aportan información distinta.',['Marca una sílaba principal.','No acentúes todas igual.','Respeta los signos.'],'¿Qué guía el ritmo de una palabra?','Su sílaba tónica',['El nombre de la primera letra','La traducción']),
-        C('Variedades legítimas','Brasil · Portugal','dáblio','La pronunciación brasileña y europea difiere en varios detalles.','Mantén una voz coherente por curso.','Las variantes no son errores; evita mezclarlas sin explicación.',['Vocales no acentuadas cambian.','R y S varían.','La comprensión mejora con exposición.'],'¿Existe una única pronunciación mundial del portugués?','No, hay variedades legítimas',['Sí','Solo cambia la ortografía'])),
+        C('Variedades legítimas','Brasil · Portugal','dáblio','La pronunciación brasileña y europea difiere en varios detalles.','Mantén una voz coherente por curso.','Las variantes no son errores; evita mezclarlas sin explicación.',['Vocales no acentuadas cambian.','R y S varían.','La comprensión mejora con exposición.'],'¿Existe una única pronunciación mundial del portugués?','No, hay variedades legítimas',['Sí','Solo cambia la ortografía'],[{text:'Brasil',audio:'Brasil'},{text:'Portugal',audio:'Portugal'}])),
     ],
   },
   Russian:{
@@ -165,7 +170,7 @@ const specs={
     description:'Reconoce letras cirílicas, falsas amigas, signos, acento y cambios de sonido antes de leer palabras.',
     lessons:[
       L('Un alfabeto distinto','Aprende cirílico como sistema sonoro, sin transliteración permanente.',
-        C('Cirílico representa sonidos','А · Б · В','а','Cada símbolo es una letra, no un dibujo.','Relaciona directamente letra y sonido.','La transliteración puede ayudar una vez, pero debe desaparecer pronto.',['А se parece y suena como a.','Б representa b.','В representa v.'],'¿Qué debes asociar directamente?','La letra cirílica con su sonido',['La letra solo con una latina','La palabra con una imagen sin sonido']),
+        C('Cirílico representa sonidos','А · Б · В','а','Cada símbolo es una letra, no un dibujo.','Relaciona directamente letra y sonido.','La transliteración puede ayudar una vez, pero debe desaparecer pronto.',['А se parece y suena como a.','Б representa b.','В representa v.'],'¿Qué debes asociar directamente?','La letra cirílica con su sonido',['La letra solo con una latina','La palabra con una imagen sin sonido'],[{text:'А',meaning:'a',audio:'а'},{text:'Б',meaning:'be',audio:'бэ'},{text:'В',meaning:'ve',audio:'вэ'}]),
         C('Lee de izquierda a derecha','мама','эм','El ruso se lee de izquierda a derecha.','Segmenta en letras y sílabas.','Aunque cambien las formas, la dirección coincide con el español.',['Identifica cada letra.','Forma la sílaba.','Une la palabra.'],'¿En qué dirección se lee ruso?','De izquierda a derecha',['De derecha a izquierda','De arriba abajo'])),
       L('Falsas amigas visuales','No leas letras por su parecido latino.',
         C('В, Н y Р','В = v · Н = n · Р = r','','Su forma engaña a lectores del alfabeto latino.','Escucha el nombre de cada letra por separado.','Estas tres letras causan errores muy frecuentes.',['В no es B latina.','Н no es H latina.','Р no es P latina.'],'¿Cómo suena Р rusa?','Como r',['Como p','Como b'],[
@@ -180,16 +185,16 @@ const specs={
         ])),
       L('Vocales pares','Algunas vocales también indican palatalización.',
         C('А/Я, О/Ё, У/Ю','а↔я · о↔ё · у↔ю','','Я, Ё y Ю pueden incluir un deslizamiento y suavizar la consonante previa.','Escucha cada vocal por separado; no intentes oír los seis sonidos en un solo audio.','Al inicio pueden sonar ya/yo/yu; tras consonante modifican su calidad.',['А ↔ Я.','О ↔ Ё.','У ↔ Ю.'],'¿Qué pueden indicar Я, Ё y Ю tras consonante?','Que la consonante se suaviza',['Que la palabra termina','Que la vocal es muda'],[
-          {label:'VOCAL А',text:'А',meaning:'a',audio:'а'}, {label:'VOCAL Я',text:'Я',meaning:'ya / suaviza',audio:'я'},
-          {label:'VOCAL О',text:'О',meaning:'o',audio:'о'}, {label:'VOCAL Ё',text:'Ё',meaning:'yo / suaviza',audio:'ё'},
-          {label:'VOCAL У',text:'У',meaning:'u',audio:'у'}, {label:'VOCAL Ю',text:'Ю',meaning:'yu / suaviza',audio:'ю'},
+          {text:'А',audio:'а'}, {text:'Я',audio:'я'},
+          {text:'О',audio:'о'}, {text:'Ё',audio:'ё'},
+          {text:'У',audio:'у'}, {text:'Ю',audio:'ю'},
         ]),
         C('Э/Е e Ы/И','э↔е · ы↔и','','Е e И suelen acompañar consonantes suaves; Ы requiere un sonido propio.','Escucha cada vocal por separado.','Estos pares ayudan a anticipar la articulación de la consonante.',['Э: vocal sin y inicial.','Е puede sonar ye o suavizar.','Ы es central/posterior.'],'¿Ы suena exactamente como I española?','No',['Sí','No se pronuncia'],[
-          {label:'VOCAL Э',text:'Э',meaning:'e sin y inicial',audio:'э'}, {label:'VOCAL Е',text:'Е',meaning:'ye / suaviza',audio:'е'},
-          {label:'VOCAL Ы',text:'Ы',meaning:'vocal central/posterior',audio:'ы'}, {label:'VOCAL И',text:'И',meaning:'i / suaviza',audio:'и'},
+          {text:'Э',audio:'э'}, {text:'Е',audio:'е'},
+          {text:'Ы',audio:'ы'}, {text:'И',audio:'и'},
         ])),
       L('Consonantes suaves y duras','La calidad de la consonante forma parte de la palabra.',
-        C('Consonante suave','нь · ть','мягкий знак','La lengua se acerca al paladar al producir una consonante suave.','No añadas una i completa después.','La suavidad puede distinguir palabras.',['Vocales suaves pueden indicarla.','Ь también puede indicarla.','Es una cualidad consonántica.'],'¿Qué debes recordar sobre una consonante suave?','Que se palataliza',['Que se pronuncia más bajo','Que desaparece']),
+        C('Consonante suave','нь · ть','мягкий знак','La lengua se acerca al paladar al producir una consonante suave.','No añadas una i completa después.','La suavidad puede distinguir palabras.',['Vocales suaves pueden indicarla.','Ь también puede indicarla.','Es una cualidad consonántica.'],'¿Qué debes recordar sobre una consonante suave?','Que se palataliza',['Que se pronuncia más bajo','Que desaparece'],[{text:'нь',audio:'нь'},{text:'ть',audio:'ть'}]),
         C('Ж, Ш, Ц','ж · ш · ц','','Estas consonantes siguen patrones propios de dureza.','Escucha el nombre de cada letra por separado.','La ortografía de vocales posteriores tiene reglas convencionales.',['Ж y Ш suelen ser duras.','Ц suele ser dura.','No todo depende de la vocal escrita.'],'¿Todas las consonantes se suavizan de la misma manera?','No',['Sí','Solo las vocales cambian'],[
           {label:'LETRA Ж',text:'Ж',meaning:'sonido zh',audio:'жэ'},
           {label:'LETRA Ш',text:'Ш',meaning:'sonido sh duro',audio:'ша'},
@@ -250,7 +255,7 @@ const specs={
     lessons:[
       L('Dirección y alfabeto','Cambia la dirección de lectura y reconoce letras, no dibujos.',
         C('De derecha a izquierda','العربية','ألف','El texto árabe se lee de derecha a izquierda.','Empieza en el extremo derecho de cada línea.','Los números pueden mantener otra dirección dentro del texto.',['Las palabras avanzan hacia la izquierda.','Las letras se conectan.','La línea siguiente comienza otra vez a la derecha.'],'¿En qué dirección se leen las palabras árabes?','De derecha a izquierda',['De izquierda a derecha','De abajo arriba']),
-        C('Letras consonánticas','ب · ت · ث','باء','Muchas letras comparten una forma base y se distinguen por puntos.','Cuenta y ubica los puntos.','Los puntos son esenciales, no adornos.',['ب: un punto abajo.','ت: dos puntos arriba.','ث: tres puntos arriba.'],'¿Qué distingue especialmente ب, ت y ث?','La cantidad y posición de puntos',['El tamaño','El color'])),
+        C('Letras consonánticas','ب · ت · ث','باء','Muchas letras comparten una forma base y se distinguen por puntos.','Cuenta y ubica los puntos.','Los puntos son esenciales, no adornos.',['ب: un punto abajo.','ت: dos puntos arriba.','ث: tres puntos arriba.'],'¿Qué distingue especialmente ب, ت y ث?','La cantidad y posición de puntos',['El tamaño','El color'],[{text:'ب',meaning:'باء',audio:'باء'},{text:'ت',meaning:'تاء',audio:'تاء'},{text:'ث',meaning:'ثاء',audio:'ثاء'}])),
       L('Letras que se conectan','La forma cambia según la posición.',
         C('Cuatro formas contextuales','عـ ـعـ ـع ع','عين','Una letra puede tener forma aislada, inicial, media y final.','Busca su esqueleto común.','No son cuatro letras distintas.',['Aislada.','Conectada al inicio/medio.','Conectada al final.'],'¿Las formas contextuales representan letras distintas?','No, son la misma letra en posiciones distintas',['Sí','Solo la final es letra']),
         C('La palabra es una cadena','كتب','كاف','Lee la cadena identificando cada forma conectada.','No memorices la silueta completa sin analizar.','Segmenta mentalmente en letras y luego une sonidos.',['Identifica ك.','Después ت.','Finalmente ب.'],'¿Cómo empiezas a leer una palabra conectada?','Identificando sus letras contextuales',['Como un dibujo único','Desde la izquierda'])),
@@ -259,10 +264,10 @@ const specs={
         C('Reconoce el espacio real','دار','راء','Distingue el corte causado por una letra del espacio entre palabras.','Mira la distancia y la estructura.','Con práctica, ambos tipos de separación se vuelven claros.',['Las letras de una palabra pueden verse en grupos.','El espacio entre palabras es mayor.','La dirección sigue igual.'],'¿Por qué una palabra árabe puede verse dividida?','Porque algunas letras no conectan hacia la izquierda',['Porque se lee por columnas','Porque faltan letras'])),
       L('Vocales cortas','Las marcas vocálicas suelen omitirse en textos normales.',
         C('Fatha, kasra y damma','َ ِ ُ','ألف','Estas marcas indican a, i y u breves.','Apréndelas en textos vocalizados antes de retirarlas.','Material infantil y didáctico suele mostrarlas.',['َ encima: a breve.','ِ debajo: i breve.','ُ encima: u breve.'],'¿Qué indican َ ِ ُ?','Vocales cortas',['Puntos de consonante','Final de oración']),
-        C('Sukun y shadda','ْ ّ','شين','Sukun indica ausencia de vocal; shadda duplica una consonante.','No ignores estas marcas al aprender.','Cambian la estructura silábica y pueden cambiar significado.',['ْ: sin vocal posterior.','ّ: consonante doble.','Se combinan con marcas vocálicas.'],'¿Qué indica shadda ّ?','Una consonante duplicada',['Una vocal larga','Una pausa de párrafo'])),
+        C('Sukun y shadda','ْ ّ','','Sukun indica ausencia de vocal; shadda duplica una consonante.','No ignores estas marcas al aprender.','Son signos ortográficos: no tienen una pronunciación aislada que un botón pueda reproducir.',['ْ: sin vocal posterior.','ّ: consonante doble.','Se combinan con marcas vocálicas.'],'¿Qué indica shadda ّ?','Una consonante duplicada',['Una vocal larga','Una pausa de párrafo'])),
       L('Vocales largas y hamza','Reconoce letras que prolongan y el ataque glotal.',
-        C('ا و ي como largas','ا · و · ي','واو','Tras la vocal correspondiente pueden indicar ā, ū, ī.','Distingue letra vocálica larga de consonante w/y.','La función depende del contexto.',['َ + ا → ā.','ُ + و → ū.','ِ + ي → ī.'],'¿Qué pueden representar ا, و, ي?','Vocales largas según el contexto',['Solo puntuación','Siempre letras mudas']),
-        C('Hamza ء','ء · أ · إ','ألف','Hamza representa un cierre glotal y puede escribirse con distintos soportes.','Reconoce el signo aunque cambie su asiento.','No es idéntica a alif, aunque a menudo aparezcan juntas.',['ء puede aparecer sola.','أ/إ usan alif como soporte.','La posición sigue reglas ortográficas.'],'¿Qué representa hamza?','Un cierre glotal',['Una vocal larga fija','El plural'])),
+        C('ا و ي como largas','ا · و · ي','واو','Tras la vocal correspondiente pueden indicar ā, ū, ī.','Distingue letra vocálica larga de consonante w/y.','La función depende del contexto.',['َ + ا → ā.','ُ + و → ū.','ِ + ي → ī.'],'¿Qué pueden representar ا, و, ي?','Vocales largas según el contexto',['Solo puntuación','Siempre letras mudas'],[{text:'ا',meaning:'ألف',audio:'ألف'},{text:'و',meaning:'واو',audio:'واو'},{text:'ي',meaning:'ياء',audio:'ياء'}]),
+        C('Hamza ء','ء · أ · إ','ألف','Hamza representa un cierre glotal y puede escribirse con distintos soportes.','Reconoce el signo aunque cambie su asiento.','No es idéntica a alif, aunque a menudo aparezcan juntas.',['ء puede aparecer sola.','أ/إ usan alif como soporte.','La posición sigue reglas ortográficas.'],'¿Qué representa hamza?','Un cierre glotal',['Una vocal larga fija','El plural'],[{text:'ء',meaning:'همزة',audio:'همزة'},{text:'أ',meaning:'ألف بهمزة',audio:'ألف'},{text:'إ',meaning:'ألف بهمزة',audio:'ألف'}])),
       L('Leer con y sin vocales','Pasa gradualmente de texto vocalizado a texto normal.',
         C('Primero con ayudas','كِتاب','تاء','Las marcas permiten comprobar la sílaba y el patrón.','Lee con marcas, escucha y repite.','Después verás la misma palabra sin todas las vocales cortas.',['Identifica consonantes.','Añade vocales marcadas.','Une la palabra.'],'¿Qué conviene usar al principio?','Texto vocalizado y audio',['Solo texto sin marcas','Transliteración permanente']),
         C('Luego reconoce patrones','كتاب','باء','En textos comunes deduces vocales por vocabulario, gramática y patrones.','No se espera adivinar palabras desconocidas sin contexto.','La lectura mejora al ampliar vocabulario y raíces.',['Reconoce la raíz.','Usa el patrón.','Confirma con contexto.'],'¿Cómo se leen textos sin todas las vocales?','Con vocabulario, patrones y contexto',['Inventando vocales al azar','Leyendo solo puntos'])),
@@ -273,10 +278,10 @@ const specs={
     description:'Comprende kana, mora, kanji y ayudas de lectura antes de memorizar hiragana y katakana.',
     lessons:[
       L('Tres sistemas de escritura','Distingue hiragana, katakana y kanji sin usar rōmaji.',
-        C('Hiragana','あ い う え お','あ','Hiragana representa moras y aparece en terminaciones y palabras japonesas.','Asocia cada signo directamente con su sonido.','El Mundo 1 enseñará el silabario completo de forma acumulativa.',['Formas curvas frecuentes.','Una mora por signo básico.','Base indispensable para leer.'],'¿Qué aprenderás primero para leer japonés?','Hiragana',['Rōmaji permanente','Solo kanji']),
-        C('Katakana y kanji','ア · 日','い','Katakana representa las mismas moras; kanji aporta significado y lecturas.','No confundas función con sonido.','Katakana se usa mucho en préstamos; kanji se combina con kana.',['ア es katakana.','日 es kanji.','Ambos pueden aparecer en una frase.'],'¿Katakana usa sonidos totalmente distintos de hiragana?','No, representa las mismas moras básicas',['Sí','No representa sonidos'])),
+        C('Hiragana','あ い う え お','あ','Hiragana representa moras y aparece en terminaciones y palabras japonesas.','Asocia cada signo directamente con su sonido.','El Mundo 1 enseñará el silabario completo de forma acumulativa.',['Formas curvas frecuentes.','Una mora por signo básico.','Base indispensable para leer.'],'¿Qué aprenderás primero para leer japonés?','Hiragana',['Rōmaji permanente','Solo kanji'],japaneseVowelExamples),
+        C('Katakana y kanji','ア · 日','い','Katakana representa las mismas moras; kanji aporta significado y lecturas.','No confundas función con sonido.','Katakana se usa mucho en préstamos; kanji se combina con kana.',['ア es katakana.','日 es kanji.','Ambos pueden aparecer en una frase.'],'¿Katakana usa sonidos totalmente distintos de hiragana?','No, representa las mismas moras básicas',['Sí','No representa sonidos'],japaneseKatakanaExample)),
       L('Moras y cinco vocales','El ritmo japonés se organiza en unidades regulares.',
-        C('Cinco vocales','あ い う え お','あ','Las vocales son estables y cada kana básico contiene una mora.','No añadas diptongos españoles.','Escucha cada vocal y conserva su duración.',['あ: a.','い: i.','う/え/お completan el sistema.'],'¿Cuántas vocales básicas organiza el kana?','Cinco',['Tres','Diez']),
+        C('Cinco vocales','あ い う え お','あ','Las vocales son estables y cada kana básico contiene una mora.','No añadas diptongos españoles.','Escucha cada vocal y conserva su duración.',['あ: a.','い: i.','う/え/お completan el sistema.'],'¿Cuántas vocales básicas organiza el kana?','Cinco',['Tres','Diez'],japaneseVowelExamples),
         C('Mora no es sílaba española','ひと','ひと','ひ・と ocupa dos moras.','Cuenta golpes rítmicos regulares.','Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.',['ひ: una mora.','と: una mora.','Mantén dos pulsos regulares.'],'¿Cuántas moras tiene «ひと»?','Dos',['Una','Tres'])),
       L('Filas del kana','Una consonante se combina con las cinco vocales.',
         C('La fila K','か き く け こ','か','La fila conserva una consonante aproximada k y cambia la vocal.','Aprende por familias, no en orden aleatorio.','El curso presenta una familia, practica y repasa anteriores.',['か: k+a.','き: k+i.','く/け/こ continúan la fila.'],'¿Qué cambia dentro de una fila de kana?','La vocal',['El sentido de lectura','El tipo de escritura']),
@@ -378,6 +383,13 @@ const activity=(id,type,prompt,target='',options=[],answer='',explanation='',aud
   image:null,writing_asset:null,tags:['reading-foundations'],xp:extra.gradable===false?2:10,
   ...extra,
 });
+const orderQuizOptions=(id,options,answer)=>{
+  if(options.length<2||!options.includes(answer))return options;
+  const suffix=id.split('-').at(-1);
+  const seed=/^[a-z]$/u.test(suffix)?suffix.codePointAt(0)-96:Number.parseInt(suffix,10)||1;
+  const position=seed%options.length,rest=options.filter(option=>option!==answer);
+  rest.splice(position,0,answer);return rest;
+};
 
 const finalComposition=value=>{
   const text=String(value||'').trim();
@@ -424,6 +436,20 @@ const normalizeProductionLesson=lesson=>({
   ...lesson,
   activities:(lesson.activities||[]).map(normalizeProductionActivity),
 });
+const annotateTtsExamples=(unit,manifest)=>({
+  ...unit,
+  lessons:(unit.lessons||[]).map(lesson=>({
+    ...lesson,
+    activities:(lesson.activities||[]).map(activity=>({
+      ...activity,
+      ...(Array.isArray(activity.audio_examples)?{
+        audio_examples:activity.audio_examples.map(example=>manifest[example.audio]
+          ? example
+          : {...example,audio_source:'tts'}),
+      }:{}),
+    })),
+  })),
+});
 const intro=(id,title,text)=>activity(`${id}-intro`,'lesson_intro',title,'',[],'',text,'',{gradable:false});
 const teach=(id,concept)=>{const semantic=/^¿?qué significa\b/i.test(concept.question),examples=concept.audioExamples||[];return activity(`${id}-teach`,'teach_concept',concept.title,concept.target,[],'',concept.explanation,examples.length?'':concept.audio,{
   gradable:false,meaning:semantic?concept.answer:'',teaching_kind:semantic?'concept':'rule',sound_hint:concept.sound,
@@ -437,10 +463,10 @@ const question=(id,concept)=>{
   const listening=quiz.type?quiz.type==='listening_choice':isListeningQuestion(prompt);
   const type=quiz.type||(listening?'listening_choice':'select_translation');
   const answer=quiz.answer||concept.answer;
-  const options=quiz.options||[answer,...concept.distractors];
+  const options=orderQuizOptions(id,quiz.options||[answer,...concept.distractors],answer);
   const target=Object.hasOwn(quiz,'target')?quiz.target:concept.target;
   const audio=Object.hasOwn(quiz,'audio')?quiz.audio:(listening?concept.audio:'');
-  return activity(`${id}-question`,type,prompt,target,options,answer,concept.explanation,audio);
+  return activity(`${id}-question`,type,prompt,target,options,answer,concept.explanation,audio,{option_order_version:3});
 };
 
 const makeLesson=(spec,lesson,index)=>{
@@ -478,11 +504,13 @@ for(const [directory,spec] of Object.entries(specs)){
   const unitPath=path.join(root,'units','reading-foundations.json');
   const existingUnit=fs.existsSync(unitPath)?JSON.parse(fs.readFileSync(unitPath,'utf8')):null;
   const productionCheckpoints=(existingUnit?.lessons||[]).filter(lesson=>lesson.generatedProduction===true);
-  const normal=spec.lessons.map((lesson,index)=>makeLesson(spec,lesson,index));
+  const normal=sequenceAlphabetLessons(spec.lessons.map((lesson,index)=>sequenceChineseToneLesson(makeLesson(spec,lesson,index))));
+  if(directory==='Japanese')applyJapaneseReadingExamples(normal);
   const review=makeReview(spec,spec.lessons),test=makeTest(spec,spec.lessons);
   const generatedIds=new Set([...normal,review,test].map(lesson=>lesson.id));
   const preservedProduction=productionCheckpoints.filter(lesson=>!generatedIds.has(lesson.id)).map(normalizeProductionLesson);
-  const unit={id:'reading-foundations',title:spec.title,description:spec.description,requirements:[],reward:{xp:220,badge:'Lector inicial'},lessons:[...normal,review,...preservedProduction,test]};
+  const unit=annotateTtsExamples({id:'reading-foundations',title:spec.title,description:spec.description,requirements:[],reward:{xp:220,badge:'Lector inicial'},lessons:[...normal,review,...preservedProduction,test]},manifest);
+  repairFoundationPedagogy(unit,directory,manifest);
   fs.writeFileSync(unitPath,JSON.stringify(unit,null,2)+'\n');
 
   const course=JSON.parse(fs.readFileSync(coursePath,'utf8')),foundations=course.levels?.find(level=>level.id==='foundations');

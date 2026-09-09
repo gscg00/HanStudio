@@ -963,7 +963,7 @@
           "target": "Как вас зовут?",
           "options": [],
           "answer": "",
-          "explanation": "¿Cómo te llamas?",
+          "explanation": "¿Cómo se llama?",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -974,7 +974,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a11-identity-03-13-meaning",
@@ -982,12 +983,12 @@
           "prompt": "¿Qué significa «Как вас зовут?»?",
           "target": "Как вас зовут?",
           "options": [
-            "¿Cómo te llamas?",
+            "¿Cómo se llama?",
             "buenos días",
             "idioma"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "«Как вас зовут?» significa «¿Cómo te llamas?».",
+          "answer": "¿Cómo se llama?",
+          "explanation": "«Как вас зовут?» significa «¿Cómo se llama?».",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -997,7 +998,8 @@
             "identity",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a11-identity-03-13-listen",
@@ -1010,7 +1012,7 @@
             "до свидания"
           ],
           "answer": "Как вас зовут?",
-          "explanation": "La forma escuchada es «Как вас зовут?»: ¿Cómo te llamas?",
+          "explanation": "La forma escuchada es «Как вас зовут?»: ¿Cómo se llama?",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -1020,7 +1022,8 @@
             "identity",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a11-identity-03-14-teach",
@@ -1802,8 +1805,8 @@
         {
           "id": "russian-a1-1-identity-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en ruso: «¿Cómo te llamas?»",
-          "target": "¿Cómo te llamas?",
+          "prompt": "Escribe en ruso: «¿Cómo se llama?»",
+          "target": "¿Cómo se llama?",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Как вас зовут?",
           "accepted_answers": [
@@ -1817,7 +1820,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a1-1-identity-production-dictation",
@@ -1842,8 +1846,8 @@
         {
           "id": "russian-a1-1-identity-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «¿Cómo te llamas?»",
-          "target": "¿Cómo te llamas?",
+          "prompt": "Construye la forma que significa «¿Cómo se llama?»",
+          "target": "¿Cómo se llama?",
           "options": [
             "зовут?",
             "Как",
@@ -1861,7 +1865,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a1-1-identity-production-complete",
@@ -1885,7 +1890,7 @@
         {
           "id": "russian-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «idioma»",
+          "prompt": "Di o escribe en ruso: «idioma»",
           "target": "idioma",
           "answer": "язык",
           "accepted_answers": [
@@ -1934,12 +1939,12 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «¿Cómo te llamas?»."
+              "translation": "Quieres expresar: «¿Cómo se llama?»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «¿Cómo se llama?»",
               "answer": "Как вас зовут?",
               "accepted_answers": [
                 "Как вас зовут?"
@@ -1957,7 +1962,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Soy de México.»",
               "answer": "Я из Мексики.",
               "accepted_answers": [
                 "Я из Мексики."
@@ -2565,12 +2570,12 @@
           "prompt": "¿Qué significa «Как вас зовут?»?",
           "target": "Как вас зовут?",
           "options": [
-            "¿Cómo te llamas?",
+            "¿Cómo se llama?",
             "buenos días",
             "idioma"
           ],
-          "answer": "¿Cómo te llamas?",
-          "explanation": "«Как вас зовут?» significa «¿Cómo te llamas?».",
+          "answer": "¿Cómo se llama?",
+          "explanation": "«Как вас зовут?» significa «¿Cómo se llama?».",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -2580,7 +2585,8 @@
             "identity",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a11-identity-test-13-listen",
@@ -2593,7 +2599,7 @@
             "до свидания"
           ],
           "answer": "Как вас зовут?",
-          "explanation": "La forma escuchada es «Как вас зовут?»: ¿Cómo te llamas?",
+          "explanation": "La forma escuchada es «Как вас зовут?»: ¿Cómo se llama?",
           "audio": "Как вас зовут?",
           "slow_audio": "Как вас зовут?",
           "image": null,
@@ -2603,7 +2609,8 @@
             "identity",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Вас se usa como tratamiento formal o plural. La forma informal singular es «Как тебя зовут?»."
         },
         {
           "id": "russian-a11-identity-test-14-meaning",

@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "german-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "A",
-          "options": [
-            "A",
-            "B",
-            "C"
-          ],
-          "answer": "A",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ah",
-          "slow_audio": "ah",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra B",
@@ -105,27 +84,6 @@
             "Nombre en Alemán: beh.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "B",
-          "options": [
-            "B",
-            "C",
-            "D"
-          ],
-          "answer": "B",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "beh",
-          "slow_audio": "beh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "german-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "C",
-          "options": [
-            "C",
-            "D",
-            "E"
-          ],
-          "answer": "C",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "tseh",
-          "slow_audio": "tseh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra D",
@@ -201,27 +138,6 @@
             "Nombre en Alemán: deh.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-01-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "D",
-          "options": [
-            "D",
-            "E",
-            "F"
-          ],
-          "answer": "D",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "deh",
-          "slow_audio": "deh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-01-e-teach",
@@ -251,14 +167,122 @@
           ]
         },
         {
+          "id": "german-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
+          "options": [
+            "B",
+            "A",
+            "C"
+          ],
+          "answer": "A",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ah",
+          "slow_audio": "ah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-01-a-teach",
+            "german-reading-00-01-b-teach",
+            "german-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "C",
+            "D",
+            "B"
+          ],
+          "answer": "B",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "beh",
+          "slow_audio": "beh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-01-b-teach",
+            "german-reading-00-01-c-teach",
+            "german-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
+          "options": [
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": "C",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "tseh",
+          "slow_audio": "tseh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-01-c-teach",
+            "german-reading-00-01-d-teach",
+            "german-reading-00-01-e-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-01-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "D",
+          "options": [
+            "E",
+            "D",
+            "A"
+          ],
+          "answer": "D",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "deh",
+          "slow_audio": "deh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-01-a-teach",
+            "german-reading-00-01-d-teach",
+            "german-reading-00-01-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-01-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
-            "F",
-            "G"
+            "A",
+            "B",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -269,7 +293,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-01-a-teach",
+            "german-reading-00-01-b-teach",
+            "german-reading-00-01-e-teach"
+          ]
         }
       ]
     },
@@ -324,27 +354,6 @@
           ]
         },
         {
-          "id": "german-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "F",
-          "options": [
-            "F",
-            "G",
-            "H"
-          ],
-          "answer": "F",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eff",
-          "slow_audio": "eff",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra G",
@@ -370,27 +379,6 @@
             "Nombre en Alemán: geh.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "G",
-          "options": [
-            "G",
-            "H",
-            "I"
-          ],
-          "answer": "G",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "geh",
-          "slow_audio": "geh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-02-c-teach",
@@ -420,27 +408,6 @@
           ]
         },
         {
-          "id": "german-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "H",
-          "options": [
-            "H",
-            "I",
-            "J"
-          ],
-          "answer": "H",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "hah",
-          "slow_audio": "hah",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-02-d-teach",
           "type": "teach_concept",
           "prompt": "Letra I",
@@ -466,27 +433,6 @@
             "Nombre en Alemán: ih.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-02-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "I",
-          "options": [
-            "I",
-            "J",
-            "K"
-          ],
-          "answer": "I",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ih",
-          "slow_audio": "ih",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-02-e-teach",
@@ -516,14 +462,122 @@
           ]
         },
         {
+          "id": "german-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "F",
+          "options": [
+            "G",
+            "F",
+            "H"
+          ],
+          "answer": "F",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "eff",
+          "slow_audio": "eff",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-02-a-teach",
+            "german-reading-00-02-b-teach",
+            "german-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "G",
+          "options": [
+            "H",
+            "I",
+            "G"
+          ],
+          "answer": "G",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "geh",
+          "slow_audio": "geh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-02-b-teach",
+            "german-reading-00-02-c-teach",
+            "german-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "H",
+          "options": [
+            "H",
+            "I",
+            "J"
+          ],
+          "answer": "H",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "hah",
+          "slow_audio": "hah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-02-c-teach",
+            "german-reading-00-02-d-teach",
+            "german-reading-00-02-e-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-02-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "I",
+          "options": [
+            "J",
+            "I",
+            "F"
+          ],
+          "answer": "I",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ih",
+          "slow_audio": "ih",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-02-a-teach",
+            "german-reading-00-02-d-teach",
+            "german-reading-00-02-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-02-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
-            "K",
-            "L"
+            "F",
+            "G",
+            "J"
           ],
           "answer": "J",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de J. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -534,7 +588,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-02-a-teach",
+            "german-reading-00-02-b-teach",
+            "german-reading-00-02-e-teach"
+          ]
         }
       ]
     },
@@ -589,27 +649,6 @@
           ]
         },
         {
-          "id": "german-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "K",
-          "options": [
-            "K",
-            "L",
-            "M"
-          ],
-          "answer": "K",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "kah",
-          "slow_audio": "kah",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra L",
@@ -635,27 +674,6 @@
             "Nombre en Alemán: ell.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "L",
-          "options": [
-            "L",
-            "M",
-            "N"
-          ],
-          "answer": "L",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ell",
-          "slow_audio": "ell",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-03-c-teach",
@@ -685,27 +703,6 @@
           ]
         },
         {
-          "id": "german-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "M",
-          "options": [
-            "M",
-            "N",
-            "O"
-          ],
-          "answer": "M",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "emm",
-          "slow_audio": "emm",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra N",
@@ -731,27 +728,6 @@
             "Nombre en Alemán: enn.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-03-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "N",
-          "options": [
-            "N",
-            "O",
-            "P"
-          ],
-          "answer": "N",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "enn",
-          "slow_audio": "enn",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-03-e-teach",
@@ -781,14 +757,122 @@
           ]
         },
         {
+          "id": "german-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "K",
+          "options": [
+            "L",
+            "K",
+            "M"
+          ],
+          "answer": "K",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "kah",
+          "slow_audio": "kah",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-03-a-teach",
+            "german-reading-00-03-b-teach",
+            "german-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "L",
+          "options": [
+            "M",
+            "N",
+            "L"
+          ],
+          "answer": "L",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ell",
+          "slow_audio": "ell",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-03-b-teach",
+            "german-reading-00-03-c-teach",
+            "german-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "M",
+          "options": [
+            "M",
+            "N",
+            "O"
+          ],
+          "answer": "M",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "emm",
+          "slow_audio": "emm",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-03-c-teach",
+            "german-reading-00-03-d-teach",
+            "german-reading-00-03-e-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-03-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "N",
+          "options": [
+            "O",
+            "N",
+            "K"
+          ],
+          "answer": "N",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "enn",
+          "slow_audio": "enn",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-03-a-teach",
+            "german-reading-00-03-d-teach",
+            "german-reading-00-03-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-03-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "O",
           "options": [
-            "O",
-            "P",
-            "Q"
+            "K",
+            "L",
+            "O"
           ],
           "answer": "O",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -799,7 +883,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-03-a-teach",
+            "german-reading-00-03-b-teach",
+            "german-reading-00-03-e-teach"
+          ]
         }
       ]
     },
@@ -854,27 +944,6 @@
           ]
         },
         {
-          "id": "german-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "P",
-          "options": [
-            "P",
-            "Q",
-            "R"
-          ],
-          "answer": "P",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "peh",
-          "slow_audio": "peh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra Q",
@@ -900,27 +969,6 @@
             "Nombre en Alemán: kuh.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Q",
-          "options": [
-            "Q",
-            "R",
-            "S"
-          ],
-          "answer": "Q",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "kuh",
-          "slow_audio": "kuh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-04-c-teach",
@@ -950,27 +998,6 @@
           ]
         },
         {
-          "id": "german-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "R",
-          "options": [
-            "R",
-            "S",
-            "T"
-          ],
-          "answer": "R",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "err",
-          "slow_audio": "err",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra S",
@@ -996,27 +1023,6 @@
             "Nombre en Alemán: ess.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-04-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "S",
-          "options": [
-            "S",
-            "T",
-            "U"
-          ],
-          "answer": "S",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ess",
-          "slow_audio": "ess",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-04-e-teach",
@@ -1046,14 +1052,122 @@
           ]
         },
         {
+          "id": "german-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "P",
+          "options": [
+            "Q",
+            "P",
+            "R"
+          ],
+          "answer": "P",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "peh",
+          "slow_audio": "peh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-04-a-teach",
+            "german-reading-00-04-b-teach",
+            "german-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Q",
+          "options": [
+            "R",
+            "S",
+            "Q"
+          ],
+          "answer": "Q",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "kuh",
+          "slow_audio": "kuh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-04-b-teach",
+            "german-reading-00-04-c-teach",
+            "german-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "R",
+          "options": [
+            "R",
+            "S",
+            "T"
+          ],
+          "answer": "R",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "err",
+          "slow_audio": "err",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-04-c-teach",
+            "german-reading-00-04-d-teach",
+            "german-reading-00-04-e-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-04-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "S",
+          "options": [
+            "T",
+            "S",
+            "P"
+          ],
+          "answer": "S",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-04-a-teach",
+            "german-reading-00-04-d-teach",
+            "german-reading-00-04-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-04-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
-            "U",
-            "V"
+            "P",
+            "Q",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1064,7 +1178,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-04-a-teach",
+            "german-reading-00-04-b-teach",
+            "german-reading-00-04-e-teach"
+          ]
         }
       ]
     },
@@ -1119,27 +1239,6 @@
           ]
         },
         {
-          "id": "german-reading-00-05-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "U",
-          "options": [
-            "U",
-            "V",
-            "W"
-          ],
-          "answer": "U",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "uh",
-          "slow_audio": "uh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-05-b-teach",
           "type": "teach_concept",
           "prompt": "Letra V",
@@ -1165,27 +1264,6 @@
             "Nombre en Alemán: fau.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-05-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "V",
-          "options": [
-            "V",
-            "W",
-            "X"
-          ],
-          "answer": "V",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "fau",
-          "slow_audio": "fau",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-05-c-teach",
@@ -1215,27 +1293,6 @@
           ]
         },
         {
-          "id": "german-reading-00-05-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "W",
-          "options": [
-            "W",
-            "X",
-            "Y"
-          ],
-          "answer": "W",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "veh",
-          "slow_audio": "veh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-05-d-teach",
           "type": "teach_concept",
           "prompt": "Letra X",
@@ -1261,27 +1318,6 @@
             "Nombre en Alemán: iks.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-05-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "X",
-          "options": [
-            "X",
-            "Y",
-            "Z"
-          ],
-          "answer": "X",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "iks",
-          "slow_audio": "iks",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-05-e-teach",
@@ -1311,14 +1347,122 @@
           ]
         },
         {
+          "id": "german-reading-00-05-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "U",
+          "options": [
+            "V",
+            "U",
+            "W"
+          ],
+          "answer": "U",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "uh",
+          "slow_audio": "uh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-05-a-teach",
+            "german-reading-00-05-b-teach",
+            "german-reading-00-05-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-05-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "V",
+          "options": [
+            "W",
+            "X",
+            "V"
+          ],
+          "answer": "V",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "fau",
+          "slow_audio": "fau",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-05-b-teach",
+            "german-reading-00-05-c-teach",
+            "german-reading-00-05-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-05-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "W",
+          "options": [
+            "W",
+            "X",
+            "Y"
+          ],
+          "answer": "W",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "veh",
+          "slow_audio": "veh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-05-c-teach",
+            "german-reading-00-05-d-teach",
+            "german-reading-00-05-e-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-05-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "X",
+          "options": [
+            "Y",
+            "X",
+            "U"
+          ],
+          "answer": "X",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "iks",
+          "slow_audio": "iks",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-05-a-teach",
+            "german-reading-00-05-d-teach",
+            "german-reading-00-05-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-05-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
-            "Z",
-            "Ä"
+            "U",
+            "V",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1329,7 +1473,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-05-a-teach",
+            "german-reading-00-05-b-teach",
+            "german-reading-00-05-e-teach"
+          ]
         }
       ]
     },
@@ -1384,27 +1534,6 @@
           ]
         },
         {
-          "id": "german-reading-00-06-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Z",
-          "options": [
-            "Z",
-            "Ä",
-            "Ö"
-          ],
-          "answer": "Z",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "tsett",
-          "slow_audio": "tsett",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-06-b-teach",
           "type": "teach_concept",
           "prompt": "Letra Ä",
@@ -1430,27 +1559,6 @@
             "Nombre en Alemán: äh.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "german-reading-00-06-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Ä",
-          "options": [
-            "Ä",
-            "Ö",
-            "Ü"
-          ],
-          "answer": "Ä",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Ä. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "äh",
-          "slow_audio": "äh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "german-reading-00-06-c-teach",
@@ -1480,27 +1588,6 @@
           ]
         },
         {
-          "id": "german-reading-00-06-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Ö",
-          "options": [
-            "Ö",
-            "Ü",
-            "ß"
-          ],
-          "answer": "Ö",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Ö. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "öh",
-          "slow_audio": "öh",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "german-reading-00-06-d-teach",
           "type": "teach_concept",
           "prompt": "Letra Ü",
@@ -1528,13 +1615,129 @@
           ]
         },
         {
+          "id": "german-reading-00-06-e-teach",
+          "type": "teach_concept",
+          "prompt": "Letra ß",
+          "target": "ß",
+          "options": [],
+          "answer": "",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ß. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ß representa una s sorda y no es una B. No significa que debas alargar la consonante.",
+          "memory_hint": "Mira la forma mientras escuchas; después intenta reconocerla sin ayuda.",
+          "teaching_points": [
+            "Forma escrita: ß.",
+            "Nombre en Alemán: eszett.",
+            "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
+          ],
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
+        },
+        {
+          "id": "german-reading-00-06-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Z",
+          "options": [
+            "Ä",
+            "Z",
+            "Ö"
+          ],
+          "answer": "Z",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "tsett",
+          "slow_audio": "tsett",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-06-a-teach",
+            "german-reading-00-06-b-teach",
+            "german-reading-00-06-c-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-06-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Ä",
+          "options": [
+            "Ö",
+            "Ü",
+            "Ä"
+          ],
+          "answer": "Ä",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Ä. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "äh",
+          "slow_audio": "äh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-06-b-teach",
+            "german-reading-00-06-c-teach",
+            "german-reading-00-06-d-teach"
+          ]
+        },
+        {
+          "id": "german-reading-00-06-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Ö",
+          "options": [
+            "Ö",
+            "Ü",
+            "ß"
+          ],
+          "answer": "Ö",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Ö. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "öh",
+          "slow_audio": "öh",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-06-c-teach",
+            "german-reading-00-06-d-teach",
+            "german-reading-00-06-e-teach"
+          ]
+        },
+        {
           "id": "german-reading-00-06-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Ü",
           "options": [
-            "Ü",
             "ß",
+            "Ü",
             "A"
           ],
           "answer": "Ü",
@@ -1546,33 +1749,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
-        },
-        {
-          "id": "german-reading-00-06-e-teach",
-          "type": "teach_concept",
-          "prompt": "Letra ß",
-          "target": "ß",
-          "options": [],
-          "answer": "",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ß. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eszett",
-          "slow_audio": "eszett",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "",
-          "teaching_kind": "rule",
-          "sound_hint": "Escucha el nombre de ß en Alemán.",
-          "memory_hint": "Mira la forma mientras escuchas; después intenta reconocerla sin ayuda.",
-          "teaching_points": [
-            "Forma escrita: ß.",
-            "Nombre en Alemán: eszett.",
-            "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-06-d-teach",
+            "german-reading-00-06-e-teach"
           ]
         },
         {
@@ -1581,20 +1762,32 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ß",
           "options": [
-            "ß",
             "A",
-            "B"
+            "B",
+            "ß"
           ],
           "answer": "ß",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ß. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eszett",
-          "slow_audio": "eszett",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "german-reading-00-06-e-teach"
+          ],
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         }
       ]
     },
@@ -1629,8 +1822,8 @@
           "options": [],
           "answer": "",
           "explanation": "El alemán tiene correspondencias más regulares que el inglés, pero debes aprender sus patrones.",
-          "audio": "ah",
-          "slow_audio": "ah",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1646,6 +1839,18 @@
             "Letra escrita.",
             "Sonido dentro de palabra.",
             "Nombre usado al deletrear."
+          ],
+          "audio_examples": [
+            {
+              "text": "A",
+              "meaning": "nombre de la letra",
+              "audio": "ah"
+            },
+            {
+              "text": "Name",
+              "meaning": "nombre",
+              "audio": "Name"
+            }
           ]
         },
         {
@@ -1654,8 +1859,8 @@
           "prompt": "¿Cómo lees una palabra alemana?",
           "target": "A · Name",
           "options": [
-            "Con sus sonidos, no con nombres de letras",
             "Deletreando siempre",
+            "Con sus sonidos, no con nombres de letras",
             "Traduciéndola primero"
           ],
           "answer": "Con sus sonidos, no con nombres de letras",
@@ -1667,7 +1872,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "A",
+              "meaning": "nombre de la letra",
+              "audio": "ah"
+            },
+            {
+              "text": "Name",
+              "meaning": "nombre",
+              "audio": "Name"
+            }
+          ]
         },
         {
           "id": "german-reading-00-07-b-teach",
@@ -1677,8 +1895,8 @@
           "options": [],
           "answer": "",
           "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
-          "audio": "hah",
-          "slow_audio": "hah",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1694,6 +1912,18 @@
             "Haus es sustantivo.",
             "Los nombres propios también usan mayúscula.",
             "No cambia por estar en medio de frase."
+          ],
+          "audio_examples": [
+            {
+              "text": "Haus",
+              "meaning": "casa",
+              "audio": "Haus"
+            },
+            {
+              "text": "das Haus",
+              "meaning": "la casa",
+              "audio": "das Haus"
+            }
           ]
         },
         {
@@ -1702,9 +1932,9 @@
           "prompt": "¿Qué clase de palabras usa mayúscula en alemán?",
           "target": "Haus · das Haus",
           "options": [
-            "Los sustantivos",
             "Solo los verbos",
-            "Todas las palabras"
+            "Todas las palabras",
+            "Los sustantivos"
           ],
           "answer": "Los sustantivos",
           "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
@@ -1715,7 +1945,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "Haus",
+              "meaning": "casa",
+              "audio": "Haus"
+            },
+            {
+              "text": "das Haus",
+              "meaning": "la casa",
+              "audio": "das Haus"
+            }
+          ]
         }
       ]
     },
@@ -1775,8 +2018,8 @@
           "prompt": "¿Debes leer Ä exactamente como A?",
           "target": "ä",
           "options": [
-            "No, es una vocal distinta",
             "Sí",
+            "No, es una vocal distinta",
             "Es silenciosa"
           ],
           "answer": "No, es una vocal distinta",
@@ -1788,7 +2031,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-08-b-teach",
@@ -1837,9 +2081,9 @@
           "prompt": "¿Qué comparten Ö y Ü?",
           "target": "ö · ü",
           "options": [
-            "Son vocales frontales con labios redondeados",
             "Son consonantes",
-            "Siempre son mudas"
+            "Siempre son mudas",
+            "Son vocales frontales con labios redondeados"
           ],
           "answer": "Son vocales frontales con labios redondeados",
           "explanation": "No tienen equivalente exacto en español.",
@@ -1850,7 +2094,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO Ö",
+              "text": "ö",
+              "meaning": "vocal frontal redondeada media",
+              "audio": "öh"
+            },
+            {
+              "label": "SONIDO Ü",
+              "text": "ü",
+              "meaning": "vocal frontal redondeada alta",
+              "audio": "üh"
+            }
+          ]
         }
       ]
     },
@@ -1924,8 +2183,8 @@
           "prompt": "¿EI e IE se leen igual?",
           "target": "ei · ie",
           "options": [
-            "No, representan sonidos distintos",
             "Sí",
+            "No, representan sonidos distintos",
             "Solo en nombres"
           ],
           "answer": "No, representan sonidos distintos",
@@ -1937,7 +2196,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON EI",
+              "text": "mein",
+              "meaning": "mi",
+              "audio": "mein"
+            },
+            {
+              "label": "SONIDO IE",
+              "text": "ie",
+              "meaning": "i larga",
+              "audio": "ih"
+            }
+          ]
         },
         {
           "id": "german-reading-00-09-b-teach",
@@ -1972,9 +2246,9 @@
           "prompt": "¿Cómo se comporta EU?",
           "target": "eu",
           "options": [
-            "Forma un diptongo parecido a oi",
             "Se lee letra por letra",
-            "Es silenciosa"
+            "Es silenciosa",
+            "Forma un diptongo parecido a oi"
           ],
           "answer": "Forma un diptongo parecido a oi",
           "explanation": "La combinación äu suele compartir este sonido, pero se practicará con audio propio cuando aparezca en vocabulario.",
@@ -1985,7 +2259,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2059,8 +2334,8 @@
           "prompt": "¿CH alemán tiene un único sonido?",
           "target": "ich · Bach",
           "options": [
-            "No, cambia según el contexto",
             "Sí, siempre como ch española",
+            "No, cambia según el contexto",
             "No se pronuncia"
           ],
           "answer": "No, cambia según el contexto",
@@ -2072,7 +2347,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "CH FRONTAL",
+              "text": "ich",
+              "meaning": "yo",
+              "audio": "ich"
+            },
+            {
+              "label": "CH POSTERIOR",
+              "text": "Bach",
+              "meaning": "arroyo",
+              "audio": "Bach"
+            }
+          ]
         },
         {
           "id": "german-reading-00-10-b-teach",
@@ -2121,9 +2411,9 @@
           "prompt": "¿Cómo suele empezar SCH?",
           "target": "Schule · Straße",
           "options": [
-            "Con un sonido parecido a sh",
             "Como sk",
-            "Como s muda"
+            "Como s muda",
+            "Con un sonido parecido a sh"
           ],
           "answer": "Con un sonido parecido a sh",
           "explanation": "SP inicial se comporta de manera parecida a ST y se practicará con una palabra propia.",
@@ -2134,7 +2424,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON SCH",
+              "text": "Schule",
+              "meaning": "escuela",
+              "audio": "Schule"
+            },
+            {
+              "label": "EJEMPLO CON ST",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         }
       ]
     },
@@ -2194,8 +2499,8 @@
           "prompt": "¿Cómo suena normalmente D al final?",
           "target": "b→p · d→t · g→k",
           "options": [
-            "Más cerca de t",
             "Como d muy sonora",
+            "Más cerca de t",
             "No suena"
           ],
           "answer": "Más cerca de t",
@@ -2207,7 +2512,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-11-b-teach",
@@ -2217,8 +2523,8 @@
           "options": [],
           "answer": "",
           "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
-          "audio": "eszett",
-          "slow_audio": "eszett",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2228,12 +2534,20 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "ß representa una s sorda larga y no es una B.",
+          "sound_hint": "ß representa una s sorda y no es una B. No significa que debas alargar la consonante.",
           "memory_hint": "Asóciala con ss.",
           "teaching_points": [
             "ß no es beta.",
             "Suena como s fuerte.",
             "En mayúsculas existe ẞ, aunque SS también aparece."
+          ],
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
           ]
         },
         {
@@ -2242,11 +2556,11 @@
           "prompt": "¿Qué sonido representa ß?",
           "target": "ß",
           "options": [
-            "Una s sorda larga",
             "Una b",
-            "Una vocal"
+            "Una vocal",
+            "Una s sorda"
           ],
-          "answer": "Una s sorda larga",
+          "answer": "Una s sorda",
           "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
           "audio": "",
           "slow_audio": "",
@@ -2255,7 +2569,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         }
       ]
     },
@@ -2290,8 +2613,8 @@
           "options": [],
           "answer": "",
           "explanation": "Divide por morfemas o sílabas, no por cada letra.",
-          "audio": "teh",
-          "slow_audio": "teh",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2307,6 +2630,15 @@
             "Reconoce prefijos y raíces.",
             "Mantén juntas las consonantes.",
             "Practica despacio y luego une."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "Strumpf",
+              "meaning": "media o calcetín",
+              "audio": "Strumpf",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2315,8 +2647,8 @@
           "prompt": "¿Debes añadir vocales entre consonantes alemanas?",
           "target": "Strumpf",
           "options": [
-            "No",
             "Sí, siempre",
+            "No",
             "Solo tras S"
           ],
           "answer": "No",
@@ -2328,7 +2660,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "Strumpf",
+              "meaning": "media o calcetín",
+              "audio": "Strumpf",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "german-reading-00-12-b-teach",
@@ -2338,8 +2680,8 @@
           "options": [],
           "answer": "",
           "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
-          "audio": "err",
-          "slow_audio": "err",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2355,6 +2697,14 @@
             "Identifica la sílaba fuerte.",
             "Reduce las no acentuadas.",
             "No existe una regla única absoluta."
+          ],
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PRIMERA SÍLABA",
+              "text": "arbeiten",
+              "meaning": "trabajar",
+              "audio": "arbeiten"
+            }
           ]
         },
         {
@@ -2363,9 +2713,9 @@
           "prompt": "¿Qué conviene memorizar junto con una palabra?",
           "target": "ARbeiten",
           "options": [
-            "Su sílaba acentuada",
             "Solo su primera letra",
-            "El nombre de cada letra"
+            "El nombre de cada letra",
+            "Su sílaba acentuada"
           ],
           "answer": "Su sílaba acentuada",
           "explanation": "Prefijos separables y préstamos pueden cambiar el patrón.",
@@ -2376,7 +2726,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PRIMERA SÍLABA",
+              "text": "arbeiten",
+              "meaning": "trabajar",
+              "audio": "arbeiten"
+            }
+          ]
         }
       ]
     },
@@ -2410,8 +2769,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2423,7 +2782,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-2-question",
@@ -2431,9 +2791,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
-            "I"
+            "I",
+            "G"
           ],
           "answer": "G",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2444,7 +2804,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-3-question",
@@ -2465,7 +2826,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-4-question",
@@ -2473,8 +2835,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -2486,7 +2848,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-5-question",
@@ -2494,9 +2857,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
-            "Ä"
+            "Ä",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2507,7 +2870,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-6-question",
@@ -2528,7 +2892,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-7-question",
@@ -2536,8 +2901,8 @@
           "prompt": "¿Cómo lees una palabra alemana?",
           "target": "A · Name",
           "options": [
-            "Con sus sonidos, no con nombres de letras",
             "Deletreando siempre",
+            "Con sus sonidos, no con nombres de letras",
             "Traduciéndola primero"
           ],
           "answer": "Con sus sonidos, no con nombres de letras",
@@ -2549,7 +2914,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "A",
+              "meaning": "nombre de la letra",
+              "audio": "ah"
+            },
+            {
+              "text": "Name",
+              "meaning": "nombre",
+              "audio": "Name"
+            }
+          ]
         },
         {
           "id": "german-reading-00-review-8-question",
@@ -2557,9 +2935,9 @@
           "prompt": "¿Qué comparten Ö y Ü?",
           "target": "ö · ü",
           "options": [
-            "Son vocales frontales con labios redondeados",
             "Son consonantes",
-            "Siempre son mudas"
+            "Siempre son mudas",
+            "Son vocales frontales con labios redondeados"
           ],
           "answer": "Son vocales frontales con labios redondeados",
           "explanation": "No tienen equivalente exacto en español.",
@@ -2570,7 +2948,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO Ö",
+              "text": "ö",
+              "meaning": "vocal frontal redondeada media",
+              "audio": "öh"
+            },
+            {
+              "label": "SONIDO Ü",
+              "text": "ü",
+              "meaning": "vocal frontal redondeada alta",
+              "audio": "üh"
+            }
+          ]
         },
         {
           "id": "german-reading-00-review-9-question",
@@ -2591,7 +2984,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON EI",
+              "text": "mein",
+              "meaning": "mi",
+              "audio": "mein"
+            },
+            {
+              "label": "SONIDO IE",
+              "text": "ie",
+              "meaning": "i larga",
+              "audio": "ih"
+            }
+          ]
         },
         {
           "id": "german-reading-00-review-10-question",
@@ -2599,8 +3007,8 @@
           "prompt": "¿Cómo suele empezar SCH?",
           "target": "Schule · Straße",
           "options": [
-            "Con un sonido parecido a sh",
             "Como sk",
+            "Con un sonido parecido a sh",
             "Como s muda"
           ],
           "answer": "Con un sonido parecido a sh",
@@ -2612,7 +3020,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON SCH",
+              "text": "Schule",
+              "meaning": "escuela",
+              "audio": "Schule"
+            },
+            {
+              "label": "EJEMPLO CON ST",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         },
         {
           "id": "german-reading-00-review-11-question",
@@ -2620,9 +3043,9 @@
           "prompt": "¿Cómo suena normalmente D al final?",
           "target": "b→p · d→t · g→k",
           "options": [
-            "Más cerca de t",
             "Como d muy sonora",
-            "No suena"
+            "No suena",
+            "Más cerca de t"
           ],
           "answer": "Más cerca de t",
           "explanation": "La escritura se conserva aunque cambie el sonido.",
@@ -2633,7 +3056,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-review-12-question",
@@ -2654,7 +3078,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PRIMERA SÍLABA",
+              "text": "arbeiten",
+              "meaning": "trabajar",
+              "audio": "arbeiten"
+            }
+          ]
         }
       ]
     },
@@ -2686,12 +3119,12 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «eu · äu»",
           "target": "eu · äu",
-          "instruction": "Escribe exactamente «eu · äu». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «eu · äu». No escribas cómo suena ni su explicación.",
           "answer": "eu · äu",
           "accepted_answers": [
             "eu · äu"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «eu · äu».",
           "audio": "",
           "slow_audio": "",
@@ -2703,24 +3136,26 @@
         },
         {
           "id": "german-reading-foundations-production-dictation",
-          "type": "typed_translation",
-          "prompt": "Copia exactamente esta grafía o comparación: «ich · Bach»",
-          "target": "ich · Bach",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ich · Bach».",
-          "answer": "ich · Bach",
+          "type": "dictation",
+          "prompt": "Escucha y escribe una de las palabras practicadas con CH",
+          "target": "",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "ich",
           "accepted_answers": [
-            "ich · Bach"
+            "ich"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «hah». La grafía que se practica es «ich · Bach».",
-          "audio": "",
-          "slow_audio": "",
+          "allow_minor_typos": false,
+          "explanation": "Escuchaste «ich» (yo), el ejemplo de CH frontal de la unidad.",
+          "audio": "ich",
+          "slow_audio": "ich",
           "tags": [
             "production",
             "dictation",
             "reading"
           ],
-          "xp": 20
+          "xp": 20,
+          "reading_audio_source_id": "german-reading-00-10-a-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         },
         {
           "id": "german-reading-foundations-production-blocks",
@@ -2748,24 +3183,27 @@
         },
         {
           "id": "german-reading-foundations-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la otra palabra practicada con CH",
           "target": "",
-          "instruction": "Escribe exactamente «ich · Bach», no una guía de pronunciación.",
-          "answer": "ich · Bach",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "Bach",
           "accepted_answers": [
-            "ich · Bach"
+            "Bach"
           ],
-          "explanation": "Escuchaste «ich · Bach». Uno es más frontal y otro más posterior.",
-          "audio": "hah",
-          "slow_audio": "hah",
+          "explanation": "Escuchaste «Bach» (arroyo), el ejemplo de CH posterior de la unidad.",
+          "audio": "Bach",
+          "slow_audio": "Bach",
           "tags": [
             "production",
             "completion",
             "reading",
             "german"
           ],
-          "xp": 15
+          "xp": 15,
+          "allow_minor_typos": false,
+          "reading_audio_source_id": "german-reading-00-10-a-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         }
       ]
     },
@@ -2801,8 +3239,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2814,7 +3252,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-2-question",
@@ -2822,9 +3261,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "B",
           "options": [
-            "B",
             "C",
-            "D"
+            "D",
+            "B"
           ],
           "answer": "B",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2835,7 +3274,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-3-question",
@@ -2856,7 +3296,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-4-question",
@@ -2864,8 +3305,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "D",
           "options": [
-            "D",
             "E",
+            "D",
             "F"
           ],
           "answer": "D",
@@ -2877,7 +3318,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-5-question",
@@ -2885,9 +3327,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
             "F",
-            "G"
+            "G",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2898,7 +3340,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-6-question",
@@ -2919,7 +3362,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-7-question",
@@ -2927,8 +3371,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
+            "G",
             "I"
           ],
           "answer": "G",
@@ -2940,7 +3384,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-8-question",
@@ -2948,9 +3393,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "H",
           "options": [
-            "H",
             "I",
-            "J"
+            "J",
+            "H"
           ],
           "answer": "H",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2961,7 +3406,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-9-question",
@@ -2982,7 +3428,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-10-question",
@@ -2990,8 +3437,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
             "K",
+            "J",
             "L"
           ],
           "answer": "J",
@@ -3003,7 +3450,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-11-question",
@@ -3011,9 +3459,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "K",
           "options": [
-            "K",
             "L",
-            "M"
+            "M",
+            "K"
           ],
           "answer": "K",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3024,7 +3472,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-12-question",
@@ -3045,7 +3494,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-13-question",
@@ -3053,8 +3503,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "M",
           "options": [
-            "M",
             "N",
+            "M",
             "O"
           ],
           "answer": "M",
@@ -3066,7 +3516,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-14-question",
@@ -3074,9 +3525,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "N",
           "options": [
-            "N",
             "O",
-            "P"
+            "P",
+            "N"
           ],
           "answer": "N",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3087,7 +3538,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-15-question",
@@ -3108,7 +3560,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-16-question",
@@ -3116,8 +3569,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "P",
           "options": [
-            "P",
             "Q",
+            "P",
             "R"
           ],
           "answer": "P",
@@ -3129,7 +3582,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-17-question",
@@ -3137,9 +3591,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Q",
           "options": [
-            "Q",
             "R",
-            "S"
+            "S",
+            "Q"
           ],
           "answer": "Q",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3150,7 +3604,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-18-question",
@@ -3171,7 +3626,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-19-question",
@@ -3179,8 +3635,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -3192,7 +3648,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-20-question",
@@ -3200,9 +3657,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
             "U",
-            "V"
+            "V",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3213,7 +3670,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-21-question",
@@ -3234,7 +3692,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-22-question",
@@ -3242,8 +3701,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
             "W",
+            "V",
             "X"
           ],
           "answer": "V",
@@ -3255,7 +3714,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-23-question",
@@ -3263,9 +3723,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "W",
           "options": [
-            "W",
             "X",
-            "Y"
+            "Y",
+            "W"
           ],
           "answer": "W",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3276,7 +3736,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-24-question",
@@ -3297,7 +3758,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-25-question",
@@ -3305,8 +3767,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
+            "Y",
             "Ä"
           ],
           "answer": "Y",
@@ -3318,7 +3780,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-26-question",
@@ -3326,9 +3789,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "Ä",
-            "Ö"
+            "Ö",
+            "Z"
           ],
           "answer": "Z",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3339,7 +3802,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-27-question",
@@ -3360,7 +3824,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-28-question",
@@ -3368,8 +3833,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Ö",
           "options": [
-            "Ö",
             "Ü",
+            "Ö",
             "ß"
           ],
           "answer": "Ö",
@@ -3381,7 +3846,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-29-question",
@@ -3389,9 +3855,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Ü",
           "options": [
-            "Ü",
             "ß",
-            "A"
+            "A",
+            "Ü"
           ],
           "answer": "Ü",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Ü. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3402,7 +3868,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-30-question",
@@ -3416,14 +3883,23 @@
           ],
           "answer": "ß",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ß. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eszett",
-          "slow_audio": "eszett",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-31-question",
@@ -3431,8 +3907,8 @@
           "prompt": "¿Cómo lees una palabra alemana?",
           "target": "A · Name",
           "options": [
-            "Con sus sonidos, no con nombres de letras",
             "Deletreando siempre",
+            "Con sus sonidos, no con nombres de letras",
             "Traduciéndola primero"
           ],
           "answer": "Con sus sonidos, no con nombres de letras",
@@ -3444,7 +3920,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "A",
+              "meaning": "nombre de la letra",
+              "audio": "ah"
+            },
+            {
+              "text": "Name",
+              "meaning": "nombre",
+              "audio": "Name"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-32-question",
@@ -3452,9 +3941,9 @@
           "prompt": "¿Qué clase de palabras usa mayúscula en alemán?",
           "target": "Haus · das Haus",
           "options": [
-            "Los sustantivos",
             "Solo los verbos",
-            "Todas las palabras"
+            "Todas las palabras",
+            "Los sustantivos"
           ],
           "answer": "Los sustantivos",
           "explanation": "Esta convención ayuda a reconocer la estructura de una oración.",
@@ -3465,7 +3954,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "Haus",
+              "meaning": "casa",
+              "audio": "Haus"
+            },
+            {
+              "text": "das Haus",
+              "meaning": "la casa",
+              "audio": "das Haus"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-33-question",
@@ -3486,7 +3988,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-34-question",
@@ -3494,8 +3997,8 @@
           "prompt": "¿Qué comparten Ö y Ü?",
           "target": "ö · ü",
           "options": [
-            "Son vocales frontales con labios redondeados",
             "Son consonantes",
+            "Son vocales frontales con labios redondeados",
             "Siempre son mudas"
           ],
           "answer": "Son vocales frontales con labios redondeados",
@@ -3507,7 +4010,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO Ö",
+              "text": "ö",
+              "meaning": "vocal frontal redondeada media",
+              "audio": "öh"
+            },
+            {
+              "label": "SONIDO Ü",
+              "text": "ü",
+              "meaning": "vocal frontal redondeada alta",
+              "audio": "üh"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-35-question",
@@ -3515,9 +4033,9 @@
           "prompt": "¿EI e IE se leen igual?",
           "target": "ei · ie",
           "options": [
-            "No, representan sonidos distintos",
             "Sí",
-            "Solo en nombres"
+            "Solo en nombres",
+            "No, representan sonidos distintos"
           ],
           "answer": "No, representan sonidos distintos",
           "explanation": "Confundirlas cambia muchas palabras.",
@@ -3528,7 +4046,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON EI",
+              "text": "mein",
+              "meaning": "mi",
+              "audio": "mein"
+            },
+            {
+              "label": "SONIDO IE",
+              "text": "ie",
+              "meaning": "i larga",
+              "audio": "ih"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-36-question",
@@ -3549,7 +4082,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-37-question",
@@ -3557,8 +4091,8 @@
           "prompt": "¿CH alemán tiene un único sonido?",
           "target": "ich · Bach",
           "options": [
-            "No, cambia según el contexto",
             "Sí, siempre como ch española",
+            "No, cambia según el contexto",
             "No se pronuncia"
           ],
           "answer": "No, cambia según el contexto",
@@ -3570,7 +4104,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "CH FRONTAL",
+              "text": "ich",
+              "meaning": "yo",
+              "audio": "ich"
+            },
+            {
+              "label": "CH POSTERIOR",
+              "text": "Bach",
+              "meaning": "arroyo",
+              "audio": "Bach"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-38-question",
@@ -3578,9 +4127,9 @@
           "prompt": "¿Cómo suele empezar SCH?",
           "target": "Schule · Straße",
           "options": [
-            "Con un sonido parecido a sh",
             "Como sk",
-            "Como s muda"
+            "Como s muda",
+            "Con un sonido parecido a sh"
           ],
           "answer": "Con un sonido parecido a sh",
           "explanation": "SP inicial se comporta de manera parecida a ST y se practicará con una palabra propia.",
@@ -3591,7 +4140,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON SCH",
+              "text": "Schule",
+              "meaning": "escuela",
+              "audio": "Schule"
+            },
+            {
+              "label": "EJEMPLO CON ST",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-39-question",
@@ -3612,7 +4176,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "german-reading-00-test-40-question",
@@ -3620,11 +4185,11 @@
           "prompt": "¿Qué sonido representa ß?",
           "target": "ß",
           "options": [
-            "Una s sorda larga",
             "Una b",
+            "Una s sorda",
             "Una vocal"
           ],
-          "answer": "Una s sorda larga",
+          "answer": "Una s sorda",
           "explanation": "Tras ciertas vocales largas o diptongos puede escribirse ß.",
           "audio": "",
           "slow_audio": "",
@@ -3633,7 +4198,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ß DENTRO DE UNA PALABRA",
+              "text": "Straße",
+              "meaning": "calle",
+              "audio": "Straße"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-41-question",
@@ -3641,9 +4215,9 @@
           "prompt": "¿Debes añadir vocales entre consonantes alemanas?",
           "target": "Strumpf",
           "options": [
-            "No",
             "Sí, siempre",
-            "Solo tras S"
+            "Solo tras S",
+            "No"
           ],
           "answer": "No",
           "explanation": "Divide por morfemas o sílabas, no por cada letra.",
@@ -3654,7 +4228,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "Strumpf",
+              "meaning": "media o calcetín",
+              "audio": "Strumpf",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "german-reading-00-test-42-question",
@@ -3675,7 +4259,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PRIMERA SÍLABA",
+              "text": "arbeiten",
+              "meaning": "trabajar",
+              "audio": "arbeiten"
+            }
+          ]
         }
       ]
     }

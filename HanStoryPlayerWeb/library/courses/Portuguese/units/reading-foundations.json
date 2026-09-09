@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "A",
-          "options": [
-            "A",
-            "B",
-            "C"
-          ],
-          "answer": "A",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "á",
-          "slow_audio": "á",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra B",
@@ -105,27 +84,6 @@
             "Nombre en Portugués: bê.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "B",
-          "options": [
-            "B",
-            "C",
-            "D"
-          ],
-          "answer": "B",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "bê",
-          "slow_audio": "bê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "C",
-          "options": [
-            "C",
-            "D",
-            "E"
-          ],
-          "answer": "C",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "cê",
-          "slow_audio": "cê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra D",
@@ -201,27 +138,6 @@
             "Nombre en Portugués: dê.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-01-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "D",
-          "options": [
-            "D",
-            "E",
-            "F"
-          ],
-          "answer": "D",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "dê",
-          "slow_audio": "dê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-01-e-teach",
@@ -251,14 +167,122 @@
           ]
         },
         {
+          "id": "portuguese-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
+          "options": [
+            "B",
+            "A",
+            "C"
+          ],
+          "answer": "A",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "á",
+          "slow_audio": "á",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-01-a-teach",
+            "portuguese-reading-00-01-b-teach",
+            "portuguese-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "C",
+            "D",
+            "B"
+          ],
+          "answer": "B",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "bê",
+          "slow_audio": "bê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-01-b-teach",
+            "portuguese-reading-00-01-c-teach",
+            "portuguese-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
+          "options": [
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": "C",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "cê",
+          "slow_audio": "cê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-01-c-teach",
+            "portuguese-reading-00-01-d-teach",
+            "portuguese-reading-00-01-e-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-01-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "D",
+          "options": [
+            "E",
+            "D",
+            "A"
+          ],
+          "answer": "D",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "dê",
+          "slow_audio": "dê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-01-a-teach",
+            "portuguese-reading-00-01-d-teach",
+            "portuguese-reading-00-01-e-teach"
+          ]
+        },
+        {
           "id": "portuguese-reading-00-01-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
-            "F",
-            "G"
+            "A",
+            "B",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -269,7 +293,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-01-a-teach",
+            "portuguese-reading-00-01-b-teach",
+            "portuguese-reading-00-01-e-teach"
+          ]
         }
       ]
     },
@@ -324,27 +354,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "F",
-          "options": [
-            "F",
-            "G",
-            "H"
-          ],
-          "answer": "F",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "efe",
-          "slow_audio": "efe",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra G",
@@ -370,27 +379,6 @@
             "Nombre en Portugués: gê.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "G",
-          "options": [
-            "G",
-            "H",
-            "I"
-          ],
-          "answer": "G",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "gê",
-          "slow_audio": "gê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-02-c-teach",
@@ -420,27 +408,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "H",
-          "options": [
-            "H",
-            "I",
-            "J"
-          ],
-          "answer": "H",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "agá",
-          "slow_audio": "agá",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-02-d-teach",
           "type": "teach_concept",
           "prompt": "Letra I",
@@ -466,27 +433,6 @@
             "Nombre en Portugués: i.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-02-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "I",
-          "options": [
-            "I",
-            "J",
-            "K"
-          ],
-          "answer": "I",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "i",
-          "slow_audio": "i",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-02-e-teach",
@@ -516,14 +462,122 @@
           ]
         },
         {
+          "id": "portuguese-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "F",
+          "options": [
+            "G",
+            "F",
+            "H"
+          ],
+          "answer": "F",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "efe",
+          "slow_audio": "efe",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-02-a-teach",
+            "portuguese-reading-00-02-b-teach",
+            "portuguese-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "G",
+          "options": [
+            "H",
+            "I",
+            "G"
+          ],
+          "answer": "G",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "gê",
+          "slow_audio": "gê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-02-b-teach",
+            "portuguese-reading-00-02-c-teach",
+            "portuguese-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "H",
+          "options": [
+            "H",
+            "I",
+            "J"
+          ],
+          "answer": "H",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "agá",
+          "slow_audio": "agá",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-02-c-teach",
+            "portuguese-reading-00-02-d-teach",
+            "portuguese-reading-00-02-e-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-02-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "I",
+          "options": [
+            "J",
+            "I",
+            "F"
+          ],
+          "answer": "I",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "i",
+          "slow_audio": "i",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-02-a-teach",
+            "portuguese-reading-00-02-d-teach",
+            "portuguese-reading-00-02-e-teach"
+          ]
+        },
+        {
           "id": "portuguese-reading-00-02-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
-            "K",
-            "L"
+            "F",
+            "G",
+            "J"
           ],
           "answer": "J",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de J. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -534,7 +588,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-02-a-teach",
+            "portuguese-reading-00-02-b-teach",
+            "portuguese-reading-00-02-e-teach"
+          ]
         }
       ]
     },
@@ -589,27 +649,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "K",
-          "options": [
-            "K",
-            "L",
-            "M"
-          ],
-          "answer": "K",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "cá",
-          "slow_audio": "cá",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra L",
@@ -635,27 +674,6 @@
             "Nombre en Portugués: ele.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "L",
-          "options": [
-            "L",
-            "M",
-            "N"
-          ],
-          "answer": "L",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ele",
-          "slow_audio": "ele",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-03-c-teach",
@@ -685,27 +703,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "M",
-          "options": [
-            "M",
-            "N",
-            "O"
-          ],
-          "answer": "M",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eme",
-          "slow_audio": "eme",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra N",
@@ -731,27 +728,6 @@
             "Nombre en Portugués: ene.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-03-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "N",
-          "options": [
-            "N",
-            "O",
-            "P"
-          ],
-          "answer": "N",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ene",
-          "slow_audio": "ene",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-03-e-teach",
@@ -781,14 +757,122 @@
           ]
         },
         {
+          "id": "portuguese-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "K",
+          "options": [
+            "L",
+            "K",
+            "M"
+          ],
+          "answer": "K",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "cá",
+          "slow_audio": "cá",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-03-a-teach",
+            "portuguese-reading-00-03-b-teach",
+            "portuguese-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "L",
+          "options": [
+            "M",
+            "N",
+            "L"
+          ],
+          "answer": "L",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ele",
+          "slow_audio": "ele",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-03-b-teach",
+            "portuguese-reading-00-03-c-teach",
+            "portuguese-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "M",
+          "options": [
+            "M",
+            "N",
+            "O"
+          ],
+          "answer": "M",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "eme",
+          "slow_audio": "eme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-03-c-teach",
+            "portuguese-reading-00-03-d-teach",
+            "portuguese-reading-00-03-e-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-03-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "N",
+          "options": [
+            "O",
+            "N",
+            "K"
+          ],
+          "answer": "N",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ene",
+          "slow_audio": "ene",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-03-a-teach",
+            "portuguese-reading-00-03-d-teach",
+            "portuguese-reading-00-03-e-teach"
+          ]
+        },
+        {
           "id": "portuguese-reading-00-03-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "O",
           "options": [
-            "O",
-            "P",
-            "Q"
+            "K",
+            "L",
+            "O"
           ],
           "answer": "O",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -799,7 +883,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-03-a-teach",
+            "portuguese-reading-00-03-b-teach",
+            "portuguese-reading-00-03-e-teach"
+          ]
         }
       ]
     },
@@ -854,27 +944,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "P",
-          "options": [
-            "P",
-            "Q",
-            "R"
-          ],
-          "answer": "P",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "pê",
-          "slow_audio": "pê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra Q",
@@ -900,27 +969,6 @@
             "Nombre en Portugués: quê.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Q",
-          "options": [
-            "Q",
-            "R",
-            "S"
-          ],
-          "answer": "Q",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "quê",
-          "slow_audio": "quê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-04-c-teach",
@@ -950,27 +998,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "R",
-          "options": [
-            "R",
-            "S",
-            "T"
-          ],
-          "answer": "R",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "erre",
-          "slow_audio": "erre",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra S",
@@ -996,27 +1023,6 @@
             "Nombre en Portugués: esse.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-04-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "S",
-          "options": [
-            "S",
-            "T",
-            "U"
-          ],
-          "answer": "S",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "esse",
-          "slow_audio": "esse",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-04-e-teach",
@@ -1046,14 +1052,122 @@
           ]
         },
         {
+          "id": "portuguese-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "P",
+          "options": [
+            "Q",
+            "P",
+            "R"
+          ],
+          "answer": "P",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "pê",
+          "slow_audio": "pê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-04-a-teach",
+            "portuguese-reading-00-04-b-teach",
+            "portuguese-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Q",
+          "options": [
+            "R",
+            "S",
+            "Q"
+          ],
+          "answer": "Q",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "quê",
+          "slow_audio": "quê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-04-b-teach",
+            "portuguese-reading-00-04-c-teach",
+            "portuguese-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "R",
+          "options": [
+            "R",
+            "S",
+            "T"
+          ],
+          "answer": "R",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-04-c-teach",
+            "portuguese-reading-00-04-d-teach",
+            "portuguese-reading-00-04-e-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-04-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "S",
+          "options": [
+            "T",
+            "S",
+            "P"
+          ],
+          "answer": "S",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-04-a-teach",
+            "portuguese-reading-00-04-d-teach",
+            "portuguese-reading-00-04-e-teach"
+          ]
+        },
+        {
           "id": "portuguese-reading-00-04-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
-            "U",
-            "V"
+            "P",
+            "Q",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1064,7 +1178,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-04-a-teach",
+            "portuguese-reading-00-04-b-teach",
+            "portuguese-reading-00-04-e-teach"
+          ]
         }
       ]
     },
@@ -1119,27 +1239,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-05-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "U",
-          "options": [
-            "U",
-            "V",
-            "W"
-          ],
-          "answer": "U",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "u",
-          "slow_audio": "u",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-05-b-teach",
           "type": "teach_concept",
           "prompt": "Letra V",
@@ -1165,27 +1264,6 @@
             "Nombre en Portugués: vê.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-05-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "V",
-          "options": [
-            "V",
-            "W",
-            "X"
-          ],
-          "answer": "V",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "vê",
-          "slow_audio": "vê",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-05-c-teach",
@@ -1215,27 +1293,6 @@
           ]
         },
         {
-          "id": "portuguese-reading-00-05-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "W",
-          "options": [
-            "W",
-            "X",
-            "Y"
-          ],
-          "answer": "W",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "dáblio",
-          "slow_audio": "dáblio",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "portuguese-reading-00-05-d-teach",
           "type": "teach_concept",
           "prompt": "Letra X",
@@ -1261,27 +1318,6 @@
             "Nombre en Portugués: xis.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "portuguese-reading-00-05-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "X",
-          "options": [
-            "X",
-            "Y",
-            "Z"
-          ],
-          "answer": "X",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "xis",
-          "slow_audio": "xis",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "portuguese-reading-00-05-e-teach",
@@ -1311,14 +1347,122 @@
           ]
         },
         {
+          "id": "portuguese-reading-00-05-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "U",
+          "options": [
+            "V",
+            "U",
+            "W"
+          ],
+          "answer": "U",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "u",
+          "slow_audio": "u",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-05-a-teach",
+            "portuguese-reading-00-05-b-teach",
+            "portuguese-reading-00-05-c-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-05-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "V",
+          "options": [
+            "W",
+            "X",
+            "V"
+          ],
+          "answer": "V",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "vê",
+          "slow_audio": "vê",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-05-b-teach",
+            "portuguese-reading-00-05-c-teach",
+            "portuguese-reading-00-05-d-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-05-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "W",
+          "options": [
+            "W",
+            "X",
+            "Y"
+          ],
+          "answer": "W",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "dáblio",
+          "slow_audio": "dáblio",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-05-c-teach",
+            "portuguese-reading-00-05-d-teach",
+            "portuguese-reading-00-05-e-teach"
+          ]
+        },
+        {
+          "id": "portuguese-reading-00-05-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "X",
+          "options": [
+            "Y",
+            "X",
+            "U"
+          ],
+          "answer": "X",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "xis",
+          "slow_audio": "xis",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-05-a-teach",
+            "portuguese-reading-00-05-d-teach",
+            "portuguese-reading-00-05-e-teach"
+          ]
+        },
+        {
           "id": "portuguese-reading-00-05-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
-            "Z",
-            "A"
+            "A",
+            "U",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1329,7 +1473,12 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-05-a-teach",
+            "portuguese-reading-00-05-e-teach"
+          ]
         }
       ]
     },
@@ -1389,8 +1538,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
+            "Z",
             "B"
           ],
           "answer": "Z",
@@ -1402,7 +1551,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "portuguese-reading-00-06-a-teach"
+          ]
         }
       ]
     },
@@ -1437,8 +1590,8 @@
           "options": [],
           "answer": "",
           "explanation": "La variedad regional también influye.",
-          "audio": "é",
-          "slow_audio": "é",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1454,6 +1607,26 @@
             "é/ó suelen ser abiertas.",
             "ê/ô suelen ser cerradas.",
             "El acento ayuda a leer."
+          ],
+          "audio_examples": [
+            {
+              "text": "é",
+              "audio": "é"
+            },
+            {
+              "text": "ê",
+              "audio": "ê",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ó",
+              "audio": "ó"
+            },
+            {
+              "text": "ô",
+              "audio": "ô",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1462,8 +1635,8 @@
           "prompt": "¿Qué pueden indicar é/ê y ó/ô?",
           "target": "é/ê · ó/ô",
           "options": [
-            "Diferencias de apertura vocálica",
             "Que son mudas",
+            "Diferencias de apertura vocálica",
             "Consonantes dobles"
           ],
           "answer": "Diferencias de apertura vocálica",
@@ -1475,7 +1648,28 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "é",
+              "audio": "é"
+            },
+            {
+              "text": "ê",
+              "audio": "ê",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ó",
+              "audio": "ó"
+            },
+            {
+              "text": "ô",
+              "audio": "ô",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-07-b-teach",
@@ -1485,8 +1679,8 @@
           "options": [],
           "answer": "",
           "explanation": "No existe una única pronunciación idéntica en todo el mundo lusófono.",
-          "audio": "ó",
-          "slow_audio": "ó",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1502,6 +1696,20 @@
             "e final puede acercarse a i.",
             "o final puede acercarse a u.",
             "La región modifica detalles."
+          ],
+          "audio_examples": [
+            {
+              "label": "E FINAL EN CONTEXTO",
+              "text": "leite",
+              "meaning": "leche",
+              "audio": "leite"
+            },
+            {
+              "label": "O FINAL EN CONTEXTO",
+              "text": "livro",
+              "meaning": "libro",
+              "audio": "livro"
+            }
           ]
         },
         {
@@ -1510,9 +1718,9 @@
           "prompt": "¿Debes leer siempre E y O como en español?",
           "target": "e · o finales",
           "options": [
-            "No, su sonido depende de posición y variedad",
             "Sí",
-            "Nunca se pronuncian"
+            "Nunca se pronuncian",
+            "No, su sonido depende de posición y variedad"
           ],
           "answer": "No, su sonido depende de posición y variedad",
           "explanation": "No existe una única pronunciación idéntica en todo el mundo lusófono.",
@@ -1523,7 +1731,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "E FINAL EN CONTEXTO",
+              "text": "leite",
+              "meaning": "leche",
+              "audio": "leite"
+            },
+            {
+              "label": "O FINAL EN CONTEXTO",
+              "text": "livro",
+              "meaning": "libro",
+              "audio": "livro"
+            }
+          ]
         }
       ]
     },
@@ -1558,8 +1781,8 @@
           "options": [],
           "answer": "",
           "explanation": "La nasalidad pertenece a la vocal.",
-          "audio": "eme",
-          "slow_audio": "eme",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1575,6 +1798,18 @@
             "ã es nasal.",
             "õ es nasal.",
             "No son a/o españolas seguidas de n."
+          ],
+          "audio_examples": [
+            {
+              "text": "ã",
+              "audio": "ã",
+              "audio_source": "tts"
+            },
+            {
+              "text": "õ",
+              "audio": "õ",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1583,8 +1818,8 @@
           "prompt": "¿Qué indica la tilde en Ã u Õ?",
           "target": "ã · õ",
           "options": [
-            "Que la vocal es nasal",
             "Que es más fuerte",
+            "Que la vocal es nasal",
             "Que no se pronuncia"
           ],
           "answer": "Que la vocal es nasal",
@@ -1596,7 +1831,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ã",
+              "audio": "ã",
+              "audio_source": "tts"
+            },
+            {
+              "text": "õ",
+              "audio": "õ",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-08-b-teach",
@@ -1606,8 +1854,8 @@
           "options": [],
           "answer": "",
           "explanation": "Compara la posición dentro de la sílaba.",
-          "audio": "ene",
-          "slow_audio": "ene",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1623,6 +1871,23 @@
             "bem contiene vocal nasal.",
             "bom contiene vocal nasal.",
             "La consonante puede no oírse separada."
+          ],
+          "audio_examples": [
+            {
+              "text": "am",
+              "audio": "am",
+              "audio_source": "tts"
+            },
+            {
+              "text": "em",
+              "audio": "em",
+              "audio_source": "tts"
+            },
+            {
+              "text": "om",
+              "audio": "om",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1631,9 +1896,9 @@
           "prompt": "¿Qué pueden hacer M o N después de una vocal?",
           "target": "am · em · om",
           "options": [
-            "Nasalizarla",
             "Volverla muda",
-            "Duplicarla"
+            "Duplicarla",
+            "Nasalizarla"
           ],
           "answer": "Nasalizarla",
           "explanation": "Compara la posición dentro de la sílaba.",
@@ -1644,7 +1909,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "am",
+              "audio": "am",
+              "audio_source": "tts"
+            },
+            {
+              "text": "em",
+              "audio": "em",
+              "audio_source": "tts"
+            },
+            {
+              "text": "om",
+              "audio": "om",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -1679,8 +1962,8 @@
           "options": [],
           "answer": "",
           "explanation": "No se leen como letras independientes.",
-          "audio": "ele",
-          "slow_audio": "ele",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1696,6 +1979,19 @@
             "ninho contiene nh.",
             "filho contiene lh.",
             "Cada grupo representa una unidad."
+          ],
+          "audio_examples": [
+            {
+              "text": "ninho",
+              "meaning": "nido",
+              "audio": "ninho",
+              "audio_source": "tts"
+            },
+            {
+              "text": "filho",
+              "meaning": "hijo",
+              "audio": "filho"
+            }
           ]
         },
         {
@@ -1704,8 +2000,8 @@
           "prompt": "¿Cómo debes tratar NH o LH?",
           "target": "nh · lh",
           "options": [
-            "Como grupos sonoros, no letras separadas",
             "Como dos sílabas",
+            "Como grupos sonoros, no letras separadas",
             "Ignorando la H"
           ],
           "answer": "Como grupos sonoros, no letras separadas",
@@ -1717,7 +2013,21 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ninho",
+              "meaning": "nido",
+              "audio": "ninho",
+              "audio_source": "tts"
+            },
+            {
+              "text": "filho",
+              "meaning": "hijo",
+              "audio": "filho"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-09-b-teach",
@@ -1727,8 +2037,8 @@
           "options": [],
           "answer": "",
           "explanation": "Es un dígrafo frecuente en palabras comunes.",
-          "audio": "cê",
-          "slow_audio": "cê",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1744,6 +2054,14 @@
             "chave empieza con sonido sh.",
             "Las dos letras forman una unidad.",
             "Escucha la variedad objetivo."
+          ],
+          "audio_examples": [
+            {
+              "label": "CH DENTRO DE UNA PALABRA",
+              "text": "chave",
+              "meaning": "llave",
+              "audio": "chave"
+            }
           ]
         },
         {
@@ -1752,9 +2070,9 @@
           "prompt": "¿Cómo suele sonar CH portugués?",
           "target": "ch",
           "options": [
-            "Parecido a sh",
             "Como k",
-            "Como rr"
+            "Como rr",
+            "Parecido a sh"
           ],
           "answer": "Parecido a sh",
           "explanation": "Es un dígrafo frecuente en palabras comunes.",
@@ -1765,7 +2083,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "CH DENTRO DE UNA PALABRA",
+              "text": "chave",
+              "meaning": "llave",
+              "audio": "chave"
+            }
+          ]
         }
       ]
     },
@@ -1800,8 +2127,8 @@
           "options": [],
           "answer": "",
           "explanation": "Una sola r entre vocales suele ser más suave.",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1817,6 +2144,18 @@
             "r inicial: fuerte.",
             "rr: fuerte.",
             "r intervocálica: suave."
+          ],
+          "audio_examples": [
+            {
+              "text": "rua",
+              "meaning": "calle",
+              "audio": "rua"
+            },
+            {
+              "text": "carro",
+              "meaning": "coche",
+              "audio": "carro"
+            }
           ]
         },
         {
@@ -1825,8 +2164,8 @@
           "prompt": "¿CARO y CARRO tienen la misma R?",
           "target": "rua · carro",
           "options": [
-            "No",
             "Sí",
+            "No",
             "La R es muda"
           ],
           "answer": "No",
@@ -1838,7 +2177,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "rua",
+              "meaning": "calle",
+              "audio": "rua"
+            },
+            {
+              "text": "carro",
+              "meaning": "coche",
+              "audio": "carro"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-10-b-teach",
@@ -1848,8 +2200,8 @@
           "options": [],
           "answer": "",
           "explanation": "La posición explica casa frente a massa.",
-          "audio": "esse",
-          "slow_audio": "esse",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1865,6 +2217,14 @@
             "s intervocálica: frecuente sonido z.",
             "ss: s sorda.",
             "s final varía por región."
+          ],
+          "audio_examples": [
+            {
+              "label": "S ENTRE VOCALES",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
           ]
         },
         {
@@ -1873,9 +2233,9 @@
           "prompt": "¿Cómo suele sonar S entre vocales?",
           "target": "casa",
           "options": [
-            "Como z",
             "Siempre como sh",
-            "No suena"
+            "No suena",
+            "Como z"
           ],
           "answer": "Como z",
           "explanation": "La posición explica casa frente a massa.",
@@ -1886,7 +2246,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "S ENTRE VOCALES",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         }
       ]
     },
@@ -1921,8 +2290,8 @@
           "options": [],
           "answer": "",
           "explanation": "Ante a/o/u conservan sonidos más duros.",
-          "audio": "gê",
-          "slow_audio": "gê",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1938,6 +2307,28 @@
             "ce/ci: s.",
             "ge/gi: sonido semejante a zh.",
             "ca/co/cu y ga/go/gu: duros."
+          ],
+          "audio_examples": [
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1946,8 +2337,8 @@
           "prompt": "¿Qué determina el sonido de C o G?",
           "target": "ce/ci · ge/gi",
           "options": [
-            "La vocal siguiente",
             "La longitud de la palabra",
+            "La vocal siguiente",
             "El artículo"
           ],
           "answer": "La vocal siguiente",
@@ -1959,7 +2350,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-11-b-teach",
@@ -1969,8 +2383,8 @@
           "options": [],
           "answer": "",
           "explanation": "No existe una sola regla que cubra todos los casos.",
-          "audio": "xis",
-          "slow_audio": "xis",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1986,6 +2400,33 @@
             "xícara empieza con sh.",
             "táxi contiene ks.",
             "exame puede contener z."
+          ],
+          "audio_examples": [
+            {
+              "label": "X CON SONIDO SH",
+              "text": "xícara",
+              "meaning": "taza",
+              "audio": "xícara"
+            },
+            {
+              "label": "X CON SONIDO S",
+              "text": "próximo",
+              "meaning": "próximo",
+              "audio": "próximo"
+            },
+            {
+              "label": "X CON SONIDO Z",
+              "text": "exame",
+              "meaning": "examen",
+              "audio": "exame",
+              "audio_source": "tts"
+            },
+            {
+              "label": "X CON SONIDO KS",
+              "text": "táxi",
+              "meaning": "taxi",
+              "audio": "táxi"
+            }
           ]
         },
         {
@@ -1994,9 +2435,9 @@
           "prompt": "¿Debes asumir un solo sonido para X?",
           "target": "x",
           "options": [
-            "No, se aprende según la palabra",
             "Sí, siempre ks",
-            "X es muda"
+            "X es muda",
+            "No, se aprende según la palabra"
           ],
           "answer": "No, se aprende según la palabra",
           "explanation": "No existe una sola regla que cubra todos los casos.",
@@ -2007,7 +2448,35 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "X CON SONIDO SH",
+              "text": "xícara",
+              "meaning": "taza",
+              "audio": "xícara"
+            },
+            {
+              "label": "X CON SONIDO S",
+              "text": "próximo",
+              "meaning": "próximo",
+              "audio": "próximo"
+            },
+            {
+              "label": "X CON SONIDO Z",
+              "text": "exame",
+              "meaning": "examen",
+              "audio": "exame",
+              "audio_source": "tts"
+            },
+            {
+              "label": "X CON SONIDO KS",
+              "text": "táxi",
+              "meaning": "taxi",
+              "audio": "táxi"
+            }
+          ]
         }
       ]
     },
@@ -2042,8 +2511,8 @@
           "options": [],
           "answer": "",
           "explanation": "Agudo, circunflejo y tilde aportan información distinta.",
-          "audio": "é",
-          "slow_audio": "é",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2059,6 +2528,15 @@
             "Marca una sílaba principal.",
             "No acentúes todas igual.",
             "Respeta los signos."
+          ],
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "palavra",
+              "meaning": "palabra",
+              "audio": "palavra",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2067,8 +2545,8 @@
           "prompt": "¿Qué guía el ritmo de una palabra?",
           "target": "palavra",
           "options": [
-            "Su sílaba tónica",
             "El nombre de la primera letra",
+            "Su sílaba tónica",
             "La traducción"
           ],
           "answer": "Su sílaba tónica",
@@ -2080,7 +2558,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "palavra",
+              "meaning": "palabra",
+              "audio": "palavra",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-12-b-teach",
@@ -2090,8 +2578,8 @@
           "options": [],
           "answer": "",
           "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
-          "audio": "dáblio",
-          "slow_audio": "dáblio",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2107,6 +2595,18 @@
             "Vocales no acentuadas cambian.",
             "R y S varían.",
             "La comprensión mejora con exposición."
+          ],
+          "audio_examples": [
+            {
+              "text": "Brasil",
+              "audio": "Brasil",
+              "audio_source": "tts"
+            },
+            {
+              "text": "Portugal",
+              "audio": "Portugal",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2115,9 +2615,9 @@
           "prompt": "¿Existe una única pronunciación mundial del portugués?",
           "target": "Brasil · Portugal",
           "options": [
-            "No, hay variedades legítimas",
             "Sí",
-            "Solo cambia la ortografía"
+            "Solo cambia la ortografía",
+            "No, hay variedades legítimas"
           ],
           "answer": "No, hay variedades legítimas",
           "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
@@ -2128,7 +2628,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "Brasil",
+              "audio": "Brasil",
+              "audio_source": "tts"
+            },
+            {
+              "text": "Portugal",
+              "audio": "Portugal",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2162,8 +2675,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2175,7 +2688,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-2-question",
@@ -2183,9 +2697,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
-            "I"
+            "I",
+            "G"
           ],
           "answer": "G",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2196,7 +2710,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-3-question",
@@ -2217,7 +2732,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-4-question",
@@ -2225,8 +2741,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -2238,7 +2754,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-5-question",
@@ -2246,9 +2763,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
-            "A"
+            "A",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2259,7 +2776,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-6-question",
@@ -2280,7 +2798,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-review-7-question",
@@ -2288,8 +2807,8 @@
           "prompt": "¿Qué pueden indicar é/ê y ó/ô?",
           "target": "é/ê · ó/ô",
           "options": [
-            "Diferencias de apertura vocálica",
             "Que son mudas",
+            "Diferencias de apertura vocálica",
             "Consonantes dobles"
           ],
           "answer": "Diferencias de apertura vocálica",
@@ -2301,7 +2820,28 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "é",
+              "audio": "é"
+            },
+            {
+              "text": "ê",
+              "audio": "ê",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ó",
+              "audio": "ó"
+            },
+            {
+              "text": "ô",
+              "audio": "ô",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-review-8-question",
@@ -2309,9 +2849,9 @@
           "prompt": "¿Qué pueden hacer M o N después de una vocal?",
           "target": "am · em · om",
           "options": [
-            "Nasalizarla",
             "Volverla muda",
-            "Duplicarla"
+            "Duplicarla",
+            "Nasalizarla"
           ],
           "answer": "Nasalizarla",
           "explanation": "Compara la posición dentro de la sílaba.",
@@ -2322,7 +2862,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "am",
+              "audio": "am",
+              "audio_source": "tts"
+            },
+            {
+              "text": "em",
+              "audio": "em",
+              "audio_source": "tts"
+            },
+            {
+              "text": "om",
+              "audio": "om",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-review-9-question",
@@ -2343,7 +2901,21 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ninho",
+              "meaning": "nido",
+              "audio": "ninho",
+              "audio_source": "tts"
+            },
+            {
+              "text": "filho",
+              "meaning": "hijo",
+              "audio": "filho"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-review-10-question",
@@ -2351,8 +2923,8 @@
           "prompt": "¿Cómo suele sonar S entre vocales?",
           "target": "casa",
           "options": [
-            "Como z",
             "Siempre como sh",
+            "Como z",
             "No suena"
           ],
           "answer": "Como z",
@@ -2364,7 +2936,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "S ENTRE VOCALES",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-review-11-question",
@@ -2372,9 +2953,9 @@
           "prompt": "¿Qué determina el sonido de C o G?",
           "target": "ce/ci · ge/gi",
           "options": [
-            "La vocal siguiente",
             "La longitud de la palabra",
-            "El artículo"
+            "El artículo",
+            "La vocal siguiente"
           ],
           "answer": "La vocal siguiente",
           "explanation": "Ante a/o/u conservan sonidos más duros.",
@@ -2385,7 +2966,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-review-12-question",
@@ -2406,7 +3010,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "Brasil",
+              "audio": "Brasil",
+              "audio_source": "tts"
+            },
+            {
+              "text": "Portugal",
+              "audio": "Portugal",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2438,12 +3055,12 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «rua · carro»",
           "target": "rua · carro",
-          "instruction": "Escribe exactamente «rua · carro». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «rua · carro». No escribas cómo suena ni su explicación.",
           "answer": "rua · carro",
           "accepted_answers": [
             "rua · carro"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «rua · carro».",
           "audio": "",
           "slow_audio": "",
@@ -2451,28 +3068,42 @@
             "production",
             "copying"
           ],
-          "xp": 20
+          "xp": 20,
+          "audio_examples": [
+            {
+              "text": "rua",
+              "meaning": "calle",
+              "audio": "rua"
+            },
+            {
+              "text": "carro",
+              "meaning": "coche",
+              "audio": "carro"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-foundations-production-dictation",
-          "type": "typed_translation",
-          "prompt": "Copia exactamente esta grafía o comparación: «casa»",
-          "target": "casa",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «casa».",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra practicada con S entre vocales",
+          "target": "",
+          "instruction": "Escribe la palabra completa que escuches.",
           "answer": "casa",
           "accepted_answers": [
             "casa"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «esse». La grafía que se practica es «casa».",
-          "audio": "",
-          "slow_audio": "",
+          "allow_minor_typos": false,
+          "explanation": "Escuchaste «casa», el ejemplo de S entre vocales.",
+          "audio": "casa",
+          "slow_audio": "casa",
           "tags": [
             "production",
             "dictation",
             "reading"
           ],
-          "xp": 20
+          "xp": 20,
+          "reading_audio_source_id": "portuguese-reading-00-10-b-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         },
         {
           "id": "portuguese-reading-foundations-production-blocks",
@@ -2496,28 +3127,42 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "audio_examples": [
+            {
+              "text": "rua",
+              "meaning": "calle",
+              "audio": "rua"
+            },
+            {
+              "text": "carro",
+              "meaning": "coche",
+              "audio": "carro"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
-          "target": "",
-          "instruction": "Escribe exactamente «casa», no una guía de pronunciación.",
-          "answer": "casa",
+          "prompt": "Completa la palabra practicada con S entre vocales",
+          "target": "ca＿a",
+          "instruction": "Escribe solo la letra que falta. Puedes escuchar la palabra completa como ayuda.",
+          "answer": "s",
           "accepted_answers": [
-            "casa"
+            "s"
           ],
-          "explanation": "Escuchaste «casa». La posición explica casa frente a massa.",
-          "audio": "esse",
-          "slow_audio": "esse",
+          "explanation": "Falta S en «casa». En este ejemplo se escribe una sola S entre las vocales.",
+          "audio": "casa",
+          "slow_audio": "casa",
           "tags": [
             "production",
             "completion",
             "reading",
             "portuguese"
           ],
-          "xp": 15
+          "xp": 15,
+          "allow_minor_typos": false,
+          "reading_audio_source_id": "portuguese-reading-00-10-b-teach"
         }
       ]
     },
@@ -2553,8 +3198,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2566,7 +3211,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-2-question",
@@ -2574,9 +3220,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "B",
           "options": [
-            "B",
             "C",
-            "D"
+            "D",
+            "B"
           ],
           "answer": "B",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2587,7 +3233,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-3-question",
@@ -2608,7 +3255,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-4-question",
@@ -2616,8 +3264,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "D",
           "options": [
-            "D",
             "E",
+            "D",
             "F"
           ],
           "answer": "D",
@@ -2629,7 +3277,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-5-question",
@@ -2637,9 +3286,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
             "F",
-            "G"
+            "G",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2650,7 +3299,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-6-question",
@@ -2671,7 +3321,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-7-question",
@@ -2679,8 +3330,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
+            "G",
             "I"
           ],
           "answer": "G",
@@ -2692,7 +3343,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-8-question",
@@ -2700,9 +3352,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "H",
           "options": [
-            "H",
             "I",
-            "J"
+            "J",
+            "H"
           ],
           "answer": "H",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2713,7 +3365,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-9-question",
@@ -2734,7 +3387,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-10-question",
@@ -2742,8 +3396,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
             "K",
+            "J",
             "L"
           ],
           "answer": "J",
@@ -2755,7 +3409,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-11-question",
@@ -2763,9 +3418,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "K",
           "options": [
-            "K",
             "L",
-            "M"
+            "M",
+            "K"
           ],
           "answer": "K",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2776,7 +3431,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-12-question",
@@ -2797,7 +3453,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-13-question",
@@ -2805,8 +3462,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "M",
           "options": [
-            "M",
             "N",
+            "M",
             "O"
           ],
           "answer": "M",
@@ -2818,7 +3475,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-14-question",
@@ -2826,9 +3484,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "N",
           "options": [
-            "N",
             "O",
-            "P"
+            "P",
+            "N"
           ],
           "answer": "N",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2839,7 +3497,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-15-question",
@@ -2860,7 +3519,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-16-question",
@@ -2868,8 +3528,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "P",
           "options": [
-            "P",
             "Q",
+            "P",
             "R"
           ],
           "answer": "P",
@@ -2881,7 +3541,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-17-question",
@@ -2889,9 +3550,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Q",
           "options": [
-            "Q",
             "R",
-            "S"
+            "S",
+            "Q"
           ],
           "answer": "Q",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2902,7 +3563,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-18-question",
@@ -2923,7 +3585,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-19-question",
@@ -2931,8 +3594,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -2944,7 +3607,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-20-question",
@@ -2952,9 +3616,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
             "U",
-            "V"
+            "V",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2965,7 +3629,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-21-question",
@@ -2986,7 +3651,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-22-question",
@@ -2994,8 +3660,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
             "W",
+            "V",
             "X"
           ],
           "answer": "V",
@@ -3007,7 +3673,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-23-question",
@@ -3015,9 +3682,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "W",
           "options": [
-            "W",
             "X",
-            "Y"
+            "Y",
+            "W"
           ],
           "answer": "W",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3028,7 +3695,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-24-question",
@@ -3049,7 +3717,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-25-question",
@@ -3057,8 +3726,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
+            "Y",
             "A"
           ],
           "answer": "Y",
@@ -3070,7 +3739,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-26-question",
@@ -3078,9 +3748,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
-            "B"
+            "B",
+            "Z"
           ],
           "answer": "Z",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3091,7 +3761,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "portuguese-reading-00-test-27-question",
@@ -3112,7 +3783,28 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "é",
+              "audio": "é"
+            },
+            {
+              "text": "ê",
+              "audio": "ê",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ó",
+              "audio": "ó"
+            },
+            {
+              "text": "ô",
+              "audio": "ô",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-28-question",
@@ -3120,8 +3812,8 @@
           "prompt": "¿Debes leer siempre E y O como en español?",
           "target": "e · o finales",
           "options": [
-            "No, su sonido depende de posición y variedad",
             "Sí",
+            "No, su sonido depende de posición y variedad",
             "Nunca se pronuncian"
           ],
           "answer": "No, su sonido depende de posición y variedad",
@@ -3133,7 +3825,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "E FINAL EN CONTEXTO",
+              "text": "leite",
+              "meaning": "leche",
+              "audio": "leite"
+            },
+            {
+              "label": "O FINAL EN CONTEXTO",
+              "text": "livro",
+              "meaning": "libro",
+              "audio": "livro"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-29-question",
@@ -3141,9 +3848,9 @@
           "prompt": "¿Qué indica la tilde en Ã u Õ?",
           "target": "ã · õ",
           "options": [
-            "Que la vocal es nasal",
             "Que es más fuerte",
-            "Que no se pronuncia"
+            "Que no se pronuncia",
+            "Que la vocal es nasal"
           ],
           "answer": "Que la vocal es nasal",
           "explanation": "La nasalidad pertenece a la vocal.",
@@ -3154,7 +3861,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ã",
+              "audio": "ã",
+              "audio_source": "tts"
+            },
+            {
+              "text": "õ",
+              "audio": "õ",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-30-question",
@@ -3175,7 +3895,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "am",
+              "audio": "am",
+              "audio_source": "tts"
+            },
+            {
+              "text": "em",
+              "audio": "em",
+              "audio_source": "tts"
+            },
+            {
+              "text": "om",
+              "audio": "om",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-31-question",
@@ -3183,8 +3921,8 @@
           "prompt": "¿Cómo debes tratar NH o LH?",
           "target": "nh · lh",
           "options": [
-            "Como grupos sonoros, no letras separadas",
             "Como dos sílabas",
+            "Como grupos sonoros, no letras separadas",
             "Ignorando la H"
           ],
           "answer": "Como grupos sonoros, no letras separadas",
@@ -3196,7 +3934,21 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ninho",
+              "meaning": "nido",
+              "audio": "ninho",
+              "audio_source": "tts"
+            },
+            {
+              "text": "filho",
+              "meaning": "hijo",
+              "audio": "filho"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-32-question",
@@ -3204,9 +3956,9 @@
           "prompt": "¿Cómo suele sonar CH portugués?",
           "target": "ch",
           "options": [
-            "Parecido a sh",
             "Como k",
-            "Como rr"
+            "Como rr",
+            "Parecido a sh"
           ],
           "answer": "Parecido a sh",
           "explanation": "Es un dígrafo frecuente en palabras comunes.",
@@ -3217,7 +3969,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "CH DENTRO DE UNA PALABRA",
+              "text": "chave",
+              "meaning": "llave",
+              "audio": "chave"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-33-question",
@@ -3238,7 +3999,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "rua",
+              "meaning": "calle",
+              "audio": "rua"
+            },
+            {
+              "text": "carro",
+              "meaning": "coche",
+              "audio": "carro"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-34-question",
@@ -3246,8 +4020,8 @@
           "prompt": "¿Cómo suele sonar S entre vocales?",
           "target": "casa",
           "options": [
-            "Como z",
             "Siempre como sh",
+            "Como z",
             "No suena"
           ],
           "answer": "Como z",
@@ -3259,7 +4033,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "S ENTRE VOCALES",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-35-question",
@@ -3267,9 +4050,9 @@
           "prompt": "¿Qué determina el sonido de C o G?",
           "target": "ce/ci · ge/gi",
           "options": [
-            "La vocal siguiente",
             "La longitud de la palabra",
-            "El artículo"
+            "El artículo",
+            "La vocal siguiente"
           ],
           "answer": "La vocal siguiente",
           "explanation": "Ante a/o/u conservan sonidos más duros.",
@@ -3280,7 +4063,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-36-question",
@@ -3301,7 +4107,35 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "X CON SONIDO SH",
+              "text": "xícara",
+              "meaning": "taza",
+              "audio": "xícara"
+            },
+            {
+              "label": "X CON SONIDO S",
+              "text": "próximo",
+              "meaning": "próximo",
+              "audio": "próximo"
+            },
+            {
+              "label": "X CON SONIDO Z",
+              "text": "exame",
+              "meaning": "examen",
+              "audio": "exame",
+              "audio_source": "tts"
+            },
+            {
+              "label": "X CON SONIDO KS",
+              "text": "táxi",
+              "meaning": "taxi",
+              "audio": "táxi"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-37-question",
@@ -3309,8 +4143,8 @@
           "prompt": "¿Qué guía el ritmo de una palabra?",
           "target": "palavra",
           "options": [
-            "Su sílaba tónica",
             "El nombre de la primera letra",
+            "Su sílaba tónica",
             "La traducción"
           ],
           "answer": "Su sílaba tónica",
@@ -3322,7 +4156,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "palavra",
+              "meaning": "palabra",
+              "audio": "palavra",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "portuguese-reading-00-test-38-question",
@@ -3330,9 +4174,9 @@
           "prompt": "¿Existe una única pronunciación mundial del portugués?",
           "target": "Brasil · Portugal",
           "options": [
-            "No, hay variedades legítimas",
             "Sí",
-            "Solo cambia la ortografía"
+            "Solo cambia la ortografía",
+            "No, hay variedades legítimas"
           ],
           "answer": "No, hay variedades legítimas",
           "explanation": "Las variantes no son errores; evita mezclarlas sin explicación.",
@@ -3343,7 +4187,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "Brasil",
+              "audio": "Brasil",
+              "audio_source": "tts"
+            },
+            {
+              "text": "Portugal",
+              "audio": "Portugal",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     }

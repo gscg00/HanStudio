@@ -87,6 +87,11 @@ def blocks(text: str, language: str) -> tuple[list[str], str]:
     else:
         tokens = [part for part in re.split(r"(?<=[aeiouyàâäéèêëîïôöùûü])", text, flags=re.I) if part]
         joiner = ""
+        # Un dígrafo o grupo consonántico como TH no contiene vocales, pero
+        # sigue teniendo más de una pieza que el alumno puede reconstruir.
+        # Evita convertir una actividad de bloques en un único clic.
+        if len(tokens) == 1 and len(text) > 1 and text.isalpha():
+            tokens = list(text)
     shuffled = list(tokens)
     random.Random(text).shuffle(shuffled)
     if shuffled == tokens and len(shuffled) > 1:
@@ -168,7 +173,7 @@ def dialogue_activity(selected: list[dict], prefix: str, stage_final: bool, lang
                 {
                     "role": "learner",
                     "speaker": "TÚ",
-                    "prompt": f"Di o escribe este ejemplo en {LANGUAGE_LABELS[language]}.",
+                    "prompt": f"Di o escribe en {LANGUAGE_LABELS[language]}: «{reply['meaning']}»",
                     "answer": reply["audio"],
                     "accepted_answers": [reply["audio"]],
                     "audio": reply["audio"],
@@ -235,7 +240,7 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
         else f"Escuchaste «{second['audio']}». El ejemplo practica: {second['meaning']}"
     )
     block_prompt = (
-        "Reconstruye el símbolo, sílaba o grupo en el orden correcto"
+        "Reconstruye solo el resultado final en el orden correcto"
         if reading_only
         else f"Construye la forma que significa «{first['meaning']}»"
     )
@@ -314,7 +319,7 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
                 {
                     "id": f"{prefix}-open",
                     "type": "open_question",
-                    "prompt": f"Produce el ejemplo que demuestra: «{third['meaning']}»",
+                    "prompt": f"Di o escribe en {LANGUAGE_LABELS[language]}: «{third['meaning']}»",
                     "target": third["meaning"],
                     "answer": third["audio"],
                     "accepted_answers": [third["audio"]],
@@ -345,6 +350,18 @@ def checkpoint(language: str, unit: dict, stage_final: bool) -> dict | None:
                 dialogue_activity(selected, prefix, stage_final, language),
             ]
         )
+    if unit["id"] == "reading-foundations":
+        specifications = json.loads((ROOT / "course-authoring" / "reading_audio_checkpoints.json").read_text(encoding="utf-8"))
+        for suffix, spec in specifications.get(language, {}).items():
+            activity = next(item for item in activities if item["id"] == f"{prefix}-{suffix}")
+            activity.update({key: value for key, value in spec.items() if key != "source_id"})
+            activity.update(type="complete_without_options" if spec.get("target") else "dictation",
+                            target=spec.get("target", ""), accepted_answers=[spec["answer"]],
+                            slow_audio=spec["audio"], allow_minor_typos=False,
+                            reading_audio_source_id=spec["source_id"])
+            activity["tags"] = [tag for tag in activity["tags"] if tag != "copying"]
+            if activity["type"] == "dictation":
+                activity["dictation_instruction"] = spec["instruction"]
     return {
         "id": f"{prefix}-checkpoint",
         "title": "Producción y diálogo" if not reading_only else "Producción de lectura",

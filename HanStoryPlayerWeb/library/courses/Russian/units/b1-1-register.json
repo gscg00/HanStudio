@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Не могли бы вы…? funciona aquí como una petición cortés, no como una afirmación de que la persona no puede ayudar. Вы se dirige en este contexto a una persona con tratamiento formal. Мне identifica a quien necesita ayuda."
         },
         {
           "id": "russian-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "russian-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Не могли бы вы мне помочь?",
+          "accepted_answers": [
+            "Не могли бы вы мне помочь?",
+            "Не могли бы вы помочь мне?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Не могли бы вы мне помочь?",
+          "slow_audio": "Не могли бы вы мне помочь?",
+          "usage_note": "Не могли бы вы…? funciona aquí como una petición cortés, no como una afirmación de que la persona no puede ayudar. Вы se dirige en este contexto a una persona con tratamiento formal. Мне identifica a quien necesita ayuda.",
+          "explanation": "Не могли бы вы…? funciona aquí como una petición cortés, no como una afirmación de que la persona no puede ayudar. Вы se dirige en este contexto a una persona con tratamiento formal. Мне identifica a quien necesita ayuda.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "russian-b11-register-01-10-teach",
@@ -1889,7 +1915,7 @@
         {
           "id": "russian-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en ruso: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Давайте разделим работу.",
           "accepted_answers": [
@@ -1943,7 +1969,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Gracias por avisarme con tiempo.»",
               "answer": "Спасибо, что предупредили меня заранее.",
               "accepted_answers": [
                 "Спасибо, что предупредили меня заранее."
@@ -1961,7 +1987,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Lamento informarle de que la cita se canceló.»",
               "answer": "С сожалением сообщаю, что встречу отменили.",
               "accepted_answers": [
                 "С сожалением сообщаю, что встречу отменили."
@@ -1979,7 +2005,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Vamos a dividir el trabajo.»",
               "answer": "Давайте разделим работу.",
               "accepted_answers": [
                 "Давайте разделим работу."

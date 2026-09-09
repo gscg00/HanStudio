@@ -1,4 +1,5 @@
-const items=(language,category,text)=>text.trim().split('\n').map((line,order)=>{const [symbol,speak,pronunciation,example,explanation,teachingPoints='',quizAnswer='']=line.split('|');return{symbol,speak,pronunciation,example,explanation,teachingPoints:teachingPoints.split(';').map(point=>point.trim()).filter(Boolean),quizAnswer,language,category,order:order+1,audio:true};});
+const splitExamples=value=>String(value||'').split('・').map(part=>part.trim()).filter(Boolean);
+const items=(language,category,text)=>text.trim().split('\n').map((line,order)=>{const [symbol,speak,pronunciation,example,explanation,teachingPoints='',quizAnswer='']=line.split('|'),speakExamples=splitExamples(speak),exampleExamples=splitExamples(example);return{symbol,speak,pronunciation,example,explanation,speakExamples,exampleExamples,teachingPoints:teachingPoints.split(';').map(point=>point.trim()).filter(Boolean),quizAnswer,language,category,order:order+1,audio:true};});
 const stage=(language,id,title,text)=>({id,title,items:items(language,id,text)});
 const quiz=(language,questions)=>({language,questions});
 
@@ -12,7 +13,7 @@ oo|food|u larga|food|Puede cambiar en palabras como book.`),
 R|red|r sin vibrar|red|La lengua no golpea el paladar.
 V / B|very / berry|v con dientes; b con ambos labios|very / berry|La posición de la boca cambia el significado.
 H|house|j muy suave, solo aire|house|No uses la j fuerte española.
-short / long vowels|ship / sheep|i breve frente a i larga|ship / sheep|La duración y posición distinguen palabras.`),
+short / long vowels|ship / sheep|i breve frente a i larga|ship / sheep|La vocal corta de ship y la vocal larga de sheep cambian la palabra; no basta con alargar cualquier vocal.`),
     stage('English','words','4. Primeras palabras',`hello|hello|jelóu|Hello!|Saludo general.
 please|please|plís|Please.|Expresa cortesía.
 thanks|thanks|zanks aproximado|Thanks!|Agradecimiento informal.
@@ -52,11 +53,11 @@ I would like water.|I would like water.|ai wud laik uóter|I would like water.|R
 잘 모르겠어요|잘 모르겠어요|chal moreugesseoyo|잘 모르겠어요|No lo entiendo bien.
 다시 말해 주세요|다시 말해 주세요|tashi malhae juseyo|다시 말해 주세요|Repítalo, por favor.
 화장실이 어디예요?|화장실이 어디예요?|hwajangsiri eodiyeyo|화장실이 어디예요?|¿Dónde está el baño?`),
-    stage('Korean','structure','6. Estructura básica del idioma',`은/는|저는 학생이에요.|eun/neun|저는 학생이에요.|Marca el tema de la conversación.
-이/가|물이 있어요.|i/ga|물이 있어요.|Marca el sujeto o información nueva.
-을/를|물을 마셔요.|eul/reul|물을 마셔요.|Marca el objeto directo.
-이에요/예요|학생이에요.|ieyo/yeyo|학생이에요.|Equivale aproximadamente a “ser”.
-있어요/없어요|시간이 있어요.|isseoyo / eopseoyo|시간이 있어요.|Expresan existencia o posesión.
+    stage('Korean','structure','6. Estructura básica del idioma',`은/는|저는 학생이에요.|eun/neun|저는 학생이에요.|Marca el tema: 은 va después de consonante y 는 después de vocal.
+이/가|물이 있어요.|i/ga|물이 있어요.|Marca el sujeto o información nueva: 이 va después de consonante y 가 después de vocal.
+을/를|물을 마셔요.|eul/reul|물을 마셔요.|Marca el objeto directo: 을 va después de consonante y 를 después de vocal.
+이에요/예요|학생이에요.|ieyo/yeyo|학생이에요.|Equivale aproximadamente a «ser»: 이에요 después de consonante y 예요 después de vocal.
+있어요/없어요|시간이 있어요.|isseoyo / eopseoyo|시간이 있어요.|Expresan existencia o posesión: 있어요 afirma y 없어요 niega.
 Tema + objeto + verbo|저는 물을 마셔요.|El verbo cierra la oración|저는 물을 마셔요. = Yo bebo agua.|En coreano, el verbo normalmente aparece al final. Las partículas muestran la función de cada palabra, así que no necesitas copiar el orden del español.|저는 = «yo» como tema (저 + 는);물을 = «agua» como objeto (물 + 을);마셔요 = «bebo»;Frase completa: «Yo bebo agua».|El verbo va al final.`),
     stage('Korean','repeat','7. Escucha y repite',`천천히 말해 주세요.|천천히 말해 주세요.|cheoncheonhi malhae juseyo|천천히 말해 주세요.|Hable más despacio, por favor.
 괜찮아요.|괜찮아요.|gwaenchanayo|괜찮아요.|Está bien.
@@ -76,7 +77,7 @@ Vocal larga|おばあさん|mantén a durante dos pulsos|おばあさん|La dura
 おう / おお|こうこう / おおきい|normalmente una o larga|こうこう|No cortes la vocal larga en dos palabras.
 Consonante doble|きって|pausa de un pulso antes de t|きって|La っ pequeña cuenta como una mora.
 ん|こんにちは|n cambia ligeramente según el sonido siguiente|ほん / さんぽ|No añadas una vocal después de ん.
-は / へ / を|こんにちは・学校へ・水を|como partículas: wa, e, o|私は学校へ行きます。|Estas tres partículas conservan su escritura histórica.
+は / へ / を|わたしは がくせいです・がっこうへ いきます・みずを のみます|como partículas: wa, e, o|私は学生です。・学校へ行きます。・水を飲みます。|Como partículas se escriben は, へ, を pero se pronuncian wa, e, o; no las leas como ha, he, wo en estas funciones.
 Vocal débil|です|la u puede oírse muy poco|です|En habla natural, i y u pueden debilitarse entre consonantes sordas.`),
     stage('Japanese','words','4. Primeras palabras',`はい|はい|jai suave|はい|Sí.
 いいえ|いいえ|i-ie|いいえ|No.
@@ -95,7 +96,7 @@ Vocal débil|です|la u puede oírse muy poco|です|En habla natural, i y u pu
     stage('Japanese','structure','6. Estructura básica del idioma',`A は B です|わたしは アナです|A wa B desu|私はアナです。|Presenta el tema y dice qué es.
 S + O + V|わたしは みずを のみます|el verbo va al final|私は水を飲みます。|El orden básico suele terminar con el verbo.
 を|みずを のみます|marca el objeto|水を飲みます。|Se escribe を y como partícula se pronuncia o.
-に / で|がっこうに いきます・がっこうで べんきょうします|destino / lugar de la acción|学校に行きます。|に marca destino; で, dónde ocurre una acción.
+に / で|がっこうに いきます・がっこうで べんきょうします|destino / lugar de la acción|学校に行きます。・学校で勉強します。|に marca destino (学校に行きます); で marca el lugar donde ocurre una acción (学校で勉強します).
 か|がくせいですか|pregunta al final|学生ですか。|か convierte la oración cortés en pregunta.
 ません|たべません|negación cortés|食べません。|Se añade a la base verbal cortés para negar.
 これ / それ / あれ|これは ほんです|esto / eso / aquello|これは本です。|Indican objetos según su distancia.`),
@@ -111,10 +112,10 @@ má|má|ma ascendente|麻 má|El segundo tono sube como una pregunta.
 mǎ|mǎ|ma baja y vuelve a subir|马 mǎ|El tercer tono baja y puede subir.
 mà|mà|ma descendente fuerte|骂 mà|El cuarto tono cae con decisión.
 ma|ma|ma breve y ligero|吗 ma|El tono neutro no lleva marca.`),
-    stage('Chinese','dangerous','3. Pronunciación peligrosa',`b / p|bā / pā|p expulsa más aire|八 / 趴|La diferencia principal es la aspiración.
+    stage('Chinese','dangerous','3. Pronunciación peligrosa',`b / p|bā / pā|b sin fuerte salida de aire; p aspirada|八 / 趴|En mandarín ambas son oclusivas sordas: p expulsa más aire y b no aspirada.
 d / t|dà / tà|t lleva más aire|大 / 踏|No dependen de sonoridad como en español.
-g / k|gē / kē|k lleva más aire|哥 / 科|Mantén la lengua atrás.
-j / q / x|jī / qī / xī|lengua alta; q con aire|机 / 七 / 西|No equivalen exactamente a y, ch y sh.
+g / k|gē / kē|g sin fuerte salida de aire; k aspirada|哥 / 科|En mandarín k expulsa más aire y g no aspirada; la lengua permanece atrás.
+j / q / x|jī / qī / xī|lengua alta; q con aire|机 / 七 / 西|Se articulan con la lengua adelantada: j no aspirada, q aspirada y x fricativa; no son exactamente y, ch y sh.
 zh / ch / sh / r|zhī / chī / shī / rì|lengua algo hacia atrás|知 / 吃 / 师 / 日|Son sonidos retroflejos.`),
     stage('Chinese','words','4. Primeras palabras',`你好|nǐ hǎo|ni jao|你好|Hola.
 谢谢|xièxie|shie shie suave|谢谢|Gracias.
@@ -129,7 +130,7 @@ zh / ch / sh / r|zhī / chī / shī / rì|lengua algo hacia atrás|知 / 吃 / �
     stage('Chinese','structure','6. Estructura básica del idioma',`S + V + O|我喝水。|wǒ hē shuǐ|我喝水。|El orden básico es sujeto, verbo y objeto.
 吗|你好吗？|ma neutro|你好吗？|Se añade al final para una pregunta sí/no.
 不|我不知道。|bù|我不知道。|Se coloca antes del verbo para negar.
-没有 conjugación|我喝 / 你喝|wǒ hē / nǐ hē|我喝水。|El verbo normalmente no cambia por persona.`),
+我喝 / 你喝|我喝 / 你喝|wǒ hē / nǐ hē|我喝水。|El verbo normalmente no cambia por persona: 我喝 es «yo bebo» y 你喝 es «tú bebes»; cambia el sujeto.`),
     stage('Chinese','repeat','7. Escucha y repite',`请说慢一点。|qǐng shuō màn yìdiǎn|ching shuo man i dien|请说慢一点。|Hable más despacio.
 你会说英语吗？|nǐ huì shuō Yīngyǔ ma|ni juei shuo ing yu ma|你会说英语吗？|¿Habla inglés?
 多少钱？|duōshao qián|duo shao chien|多少钱？|¿Cuánto cuesta?`)
@@ -156,8 +157,8 @@ Ich verstehe nicht.|Ich verstehe nicht.|ij fershtée nijt|Ich verstehe nicht.|No
 Bitte wiederholen.|Bitte wiederholen.|bite viderjólen|Bitte wiederholen.|Repita, por favor.
 Wo ist die Toilette?|Wo ist die Toilette?|vo ist di toilete|Wo ist die Toilette?|¿Dónde está el baño?
 Wie viel kostet das?|Wie viel kostet das?|vi fil kostet das|Wie viel kostet das?|¿Cuánto cuesta?`),
-    stage('German','structure','6. Estructura básica del idioma',`der / die / das|der Mann / die Frau / das Kind|der / di / das|das Buch|Los sustantivos tienen género y empiezan con mayúscula.
-verbo en posición 2|Heute lerne ich.|hoite lerne ij|Heute lerne ich.|En una oración principal el verbo conjugado ocupa la segunda posición.
+    stage('German','structure','6. Estructura básica del idioma',`der / die / das|der Mann / die Frau / das Kind|der / di / das|das Buch|El artículo concuerda con el género: der masculino, die femenino y plural, das neutro; el sustantivo empieza con mayúscula.
+verbo en posición 2|Heute lerne ich.|hoite lerne ij|Heute lerne ich.|En una oración principal el verbo conjugado ocupa la segunda posición; el verbo conjugado va en segundo lugar.
 S + V + O|Ich trinke Wasser.|ij trinke váser|Ich trinke Wasser.|El orden neutro comienza con sujeto y verbo.`),
     stage('German','repeat','7. Escucha y repite',`Sprechen Sie langsam.|Sprechen Sie langsam.|shprejen si langsam|Sprechen Sie langsam.|Hable despacio.
 Können Sie mir helfen?|Können Sie mir helfen?|könen si mir jelfen|Können Sie mir helfen?|¿Puede ayudarme?
@@ -166,7 +167,7 @@ Ich hätte gern Wasser.|Ich hätte gern Wasser.|ij jete guern váser|Ich hätte 
 
   Russian:{stages:[
     stage('Russian','combinations','2. Combinaciones básicas',`А / К / М / О / Т|А К М О Т|parecidas y similares|мама|Estas letras se parecen y conservan un sonido familiar.
-В / Н / Р / С / У / Х|В Н Р С У Х|v n r s u j|вода / нос / рука|Son falsos amigos: no suenan como sus equivalentes latinas.
+В / Н / Р / С / У / Х|В Н Р С У Х|v n r s u j|вода / нос / рука|Son falsos amigos: В suena v, Н n, Р r, С s, У u y Х como una j suave; no como sus equivalentes latinas.
 Ь|день|sin sonido propio|день|El signo blando suaviza la consonante anterior.`),
     stage('Russian','dangerous','3. Pronunciación peligrosa',`Ы|мы|i posterior|мы|Mantén la lengua atrás y los labios sin redondear.
 Ж|жук|zh sonora|жук|Se parece a la s de “vision” en inglés.
@@ -185,7 +186,7 @@ Ich hätte gern Wasser.|Ich hätte gern Wasser.|ij jete guern váser|Ich hätte 
 Где туалет?|Где туалет?|gdie tualét|Где туалет?|¿Dónde está el baño?`),
     stage('Russian','structure','6. Estructura básica del idioma',`género|он / она / оно|on / aná / anó|дом / книга / окно|Los sustantivos pueden ser masculinos, femeninos o neutros.
 sin artículo|Это книга.|éta kníga|Это книга.|El ruso no usa equivalentes directos de el/la/un/una.
-negación не|Я не знаю.|ya ne znáyu|Я не знаю.|Не se coloca antes de lo que se niega.`),
+Я не знаю.|Я не знаю.|ya ne znáyu|Я не знаю.|Не se coloca antes de lo que se niega.`),
     stage('Russian','repeat','7. Escucha y repite',`Говорите медленнее.|Говорите медленнее.|gavaríte médlenie|Говорите медленнее.|Hable más despacio.
 Вы говорите по-английски?|Вы говорите по-английски?|vy gavaríte pa anglíski|Вы говорите по-английски?|¿Habla inglés?
 Помогите, пожалуйста.|Помогите, пожалуйста.|pamagíte pazhálusta|Помогите, пожалуйста.|Ayúdeme, por favor.`)
@@ -212,8 +213,8 @@ Non capisco.|Non capisco.|non capísco|Non capisco.|No entiendo.
 Può ripetere?|Può ripetere?|puó ripétere|Può ripetere?|¿Puede repetir?
 Dov'è il bagno?|Dov'è il bagno?|dové il baño|Dov'è il bagno?|¿Dónde está el baño?
 Quanto costa?|Quanto costa?|kuánto costa|Quanto costa?|¿Cuánto cuesta?`),
-    stage('Italian','structure','6. Estructura básica del idioma',`il / lo / la|il libro / la casa|il / lo / la|il libro|Los artículos concuerdan con género y número.
-un / uno / una|un libro / una casa|un / uno / una|una casa|Los artículos indefinidos también concuerdan.
+    stage('Italian','structure','6. Estructura básica del idioma',`il / lo / la|il libro / lo zaino / la casa|il / lo / la|il libro|Il suele ir con masculino; lo aparece ante z o s + consonante; la acompaña a nombres femeninos.
+un / uno / una|un libro / uno studente / una casa|un / uno / una|una casa|Un y uno son masculinos: uno aparece ante z o s + consonante; una es femenino.
 sujeto opcional|Parlo italiano.|párlo italiano|Parlo italiano.|La terminación verbal suele indicar la persona.`),
     stage('Italian','repeat','7. Escucha y repite',`Parli più lentamente.|Parli più lentamente.|parli piú lentamente|Parli più lentamente.|Hable más despacio.
 Mi può aiutare?|Mi può aiutare?|mi puó aiutáre|Mi può aiutare?|¿Puede ayudarme?
@@ -243,7 +244,7 @@ Où sont les toilettes ?|Où sont les toilettes ?|u son le tualét|Où sont les 
 C'est combien ?|C'est combien ?|se combián|C'est combien ?|¿Cuánto cuesta?`),
     stage('French','structure','6. Estructura básica del idioma',`sujeto + verbo|Je parle français.|ye parl fransé|Je parle français.|El sujeto normalmente debe expresarse.
 ne ... pas|Je ne sais pas.|ye ne se pa|Je ne sais pas.|La negación rodea al verbo; al hablar, ne puede omitirse.
-le / la / les|le livre / la maison|le / la / le|la maison|Los artículos concuerdan en género y número.`),
+le / la / les|le livre / la maison / les livres|le / la / le|la maison|Le y la marcan singular masculino y femenino; les marca el plural, sin distinguir género.`),
     stage('French','repeat','7. Escucha y repite',`Parlez plus lentement.|Parlez plus lentement.|parlé plu lantemán|Parlez plus lentement.|Hable más despacio.
 Pouvez-vous m'aider ?|Pouvez-vous m'aider ?|puvé vu medé|Pouvez-vous m'aider ?|¿Puede ayudarme?
 Je voudrais de l'eau.|Je voudrais de l'eau.|ye vudré de lo|Je voudrais de l'eau.|Quisiera agua.`)
@@ -347,14 +348,14 @@ ZERO_COURSES.Japanese.stages.splice(-1,0,
 ませんでした|きのう いきませんでした|pasado negativo|昨日行きませんでした。|Indica que una acción no ocurrió.
 い-adjetivo|この ほんは おもしろいです|descripción directa|この本は面白いです。|Los adjetivos terminados en い pueden ir antes del nombre o al final.
 な-adjetivo|しずかな まちです|な antes del nombre|静かな町です。|Los adjetivos de tipo な usan な cuando modifican un nombre.
-あります / います|ほんが あります・ねこが います|existencia inanimada / animada|本があります。|あります se usa para cosas; います para seres animados.`),
-  stage('Japanese','time','10. Números, horas y contadores',`一・二・三|いち・に・さん|números básicos|一、二、三|Reconoce primero los números frecuentes sin transcripción latina.
+あります / います|ほんが あります・ねこが います|existencia inanimada / animada|本があります。・猫がいます。|あります se usa para cosas; います para seres animados.`),
+  stage('Japanese','time','10. Números, horas y contadores',`一・二・三|いち・に・さん|números básicos|一・二・三|Reconoce primero los números frecuentes sin transcripción latina.
 時|いま さんじです|hora|今三時です。|時 se lee じ después del número.
-分|ごふん・じゅっぷん|minutos|五分・十分|La lectura puede cambiar según el número.
+分|ごふん・じゅっぷん|minutos|五分。・十分。|La lectura puede cambiar según el número.
 人|ひとり・ふたり・さんにん|personas|一人・二人・三人|Los contadores tienen lecturas que conviene aprender como unidades.
 つ|ひとつ・ふたつ・みっつ|objetos generales|一つ・二つ・三つ|Sirve para contar cosas de forma general.
 曜日|げつようび・かようび|días de la semana|月曜日・火曜日|Cada día termina en ようび.
-何|なんじ・なんにん・なに|qué / cuántos|何時ですか。|La lectura varía según la palabra que sigue.`),
+何|なんじ・なんにん・なに|qué / cuántos|何時ですか。・何人ですか。・何ですか。|La lectura varía según la palabra que sigue.`),
   stage('Japanese','reading','11. Lectura guiada sin rōmaji',`わたしは アナです。|わたしは アナです|lee por unidades y localiza は|私はアナです。|Primero identifica palabras y partículas; después escucha la oración.
 まいにち にほんごを べんきょうします。|まいにち にほんごを べんきょうします|encuentra を y el verbo final|毎日日本語を勉強します。|“Todos los días estudio japonés”.
 きのう ともだちと えきに いきました。|きのう ともだちと えきに いきました|tiempo + compañía + destino + verbo|昨日友だちと駅に行きました。|“Ayer fui a la estación con un amigo”.

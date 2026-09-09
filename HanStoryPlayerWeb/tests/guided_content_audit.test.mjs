@@ -16,6 +16,7 @@ test("todos los cursos guiados conservan integridad estructural y pedagÃ³gica bÃ
   const report = JSON.parse(output);
 
   assert.equal(report.summary.errors, 0);
+  assert.equal(report.summary.byCode.tested_before_taught || 0, 0);
   assert.equal(report.stats.courses, 10);
   assert.ok(report.stats.lessons >= 3900);
   assert.ok(report.stats.activities >= 65000);

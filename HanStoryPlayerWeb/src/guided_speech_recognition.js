@@ -12,14 +12,15 @@ export function speechLanguageCode(language){
   return LANGUAGE_CODES[language]||'';
 }
 
-export function recognizeGuidedSpeech(language,{timeout=12000}={}){
+export function recognizeGuidedSpeech(language,{timeout=12000,signal}={}){
   const{supported,Constructor}=speechRecognitionSupport();
   if(!supported)return Promise.reject(Object.assign(new Error('Este navegador no ofrece reconocimiento de voz.'),{code:'unsupported'}));
   return new Promise((resolve,reject)=>{
     const recognition=new Constructor();
     let settled=false;
-    const timer=setTimeout(()=>{try{recognition.stop();}catch{};finishReject('timeout','No escuché una respuesta. Inténtalo de nuevo.');},timeout);
-    const cleanup=()=>clearTimeout(timer);
+    const timer=setTimeout(()=>finishReject('timeout','No escuché una respuesta. Puedes responder por escrito o intentarlo de nuevo.'),timeout);
+    const abort=()=>finishReject('cancelled','Grabación cancelada. Puedes responder por escrito.');
+    const cleanup=()=>{clearTimeout(timer);signal?.removeEventListener('abort',abort);recognition.onresult=null;recognition.onerror=null;recognition.onend=null;try{recognition.abort();}catch{}};
     const finishReject=(code,message)=>{if(settled)return;settled=true;cleanup();reject(Object.assign(new Error(message),{code}));};
     recognition.lang=speechLanguageCode(language);
     recognition.interimResults=false;
@@ -42,6 +43,8 @@ export function recognizeGuidedSpeech(language,{timeout=12000}={}){
       finishReject(event.error||'speech-error',messages[event.error]||'No pude reconocer la respuesta.');
     };
     recognition.onend=()=>{if(!settled)finishReject('no-speech','No escuché una respuesta. Inténtalo de nuevo.');};
+    if(signal?.aborted){abort();return;}
+    signal?.addEventListener('abort',abort,{once:true});
     try{recognition.start();}catch(error){finishReject('start-error',error.message);}
   });
 }

@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b11-cause-effect-03-13-meaning",
@@ -999,7 +1000,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b11-cause-effect-03-13-listen",
@@ -1022,7 +1024,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b11-cause-effect-03-14-teach",
@@ -1042,7 +1045,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-03-14-meaning",
@@ -1065,7 +1069,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-03-14-listen",
@@ -1088,7 +1093,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         }
       ]
     },
@@ -1705,7 +1711,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-review-02-14-listen",
@@ -1728,7 +1735,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-review-02-16-meaning",
@@ -1819,7 +1827,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b1-1-cause-effect-production-dictation",
@@ -1839,7 +1848,8 @@
             "production",
             "dictation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b1-1-cause-effect-production-blocks",
@@ -1864,7 +1874,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b1-1-cause-effect-production-complete",
@@ -1888,7 +1899,7 @@
         {
           "id": "russian-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
+          "prompt": "Di o escribe en ruso: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "А ты как думаешь?",
           "accepted_answers": [
@@ -1925,7 +1936,8 @@
             "speaking",
             "optional"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b1-1-cause-effect-production-dialogue",
@@ -1942,14 +1954,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Como resultado, el proyecto se retrasó.»",
               "answer": "В результате проект задержался.",
               "accepted_answers": [
                 "В результате проект задержался."
               ],
               "audio": "В результате проект задержался.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
             },
             {
               "role": "model",
@@ -1960,14 +1973,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Aunque estaba cansada, terminó el trabajo.»",
               "answer": "Хотя она устала, она закончила работу.",
               "accepted_answers": [
                 "Хотя она устала, она закончила работу."
               ],
               "audio": "Хотя она устала, она закончила работу.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
             }
           ],
           "minimum_correct": 2,
@@ -2583,7 +2597,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b11-cause-effect-test-13-listen",
@@ -2606,7 +2621,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "В результате anuncia la consecuencia. Проект es el proyecto y задержался expresa que se retrasó. La frase no nombra por sí sola la causa del retraso."
         },
         {
           "id": "russian-b11-cause-effect-test-14-meaning",
@@ -2629,7 +2645,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-test-14-listen",
@@ -2652,7 +2669,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Хотя introduce un contraste: terminó a pesar del cansancio. Она significa ella; устала y закончила son formas de pasado femeninas que concuerdan con esa persona."
         },
         {
           "id": "russian-b11-cause-effect-test-15-meaning",

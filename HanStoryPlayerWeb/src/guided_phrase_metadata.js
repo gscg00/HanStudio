@@ -2,6 +2,28 @@
 // authored data: the player must never derive glosses or audio examples from
 // a sentence automatically.
 export const PHRASE_SUPPORT_BY_LANGUAGE={
+  Japanese:{
+    // Desgloses contrastados con Irodori (Japan Foundation), Grammar Notes:
+    // https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf
+    '私の名前はアナです。':{word_breakdown:[
+      {text:'私',meaning:'yo'},{text:'の',meaning:'de / posesión',note:'Une “yo” con “nombre”: mi nombre.'},{text:'名前',meaning:'nombre'},
+      {text:'は',speech_text:'わ',meaning:'marca el tema',note:'Como partícula se escribe は y aquí se pronuncia “wa”.'},
+      {text:'アナ',meaning:'Ana'},{text:'です',meaning:'soy / es',note:'Cierre cortés de la oración.'}
+    ],usage_note:'La estructura X は Y です presenta X como tema y da información sobre él.'},
+    'お名前は何ですか。':{word_breakdown:[
+      {text:'お',meaning:'prefijo de cortesía'},{text:'名前',meaning:'nombre'},
+      {text:'は',speech_text:'わ',meaning:'marca el tema',note:'Como partícula se escribe は y aquí se pronuncia “wa”.'},
+      {text:'何',speech_text:'なん',meaning:'qué',note:'Delante de です se lee なん.'},{text:'です',meaning:'es',note:'Forma cortés.'},{text:'か',meaning:'marca de pregunta'}
+    ],usage_note:'お delante de 名前 hace la pregunta más cortés; normalmente se usa para preguntar el nombre de otra persona.'},
+    'メキシコから来ました。':{word_breakdown:[
+      {text:'メキシコ',meaning:'México'},{text:'から',meaning:'de / desde',note:'Marca el lugar de origen.'},
+      {text:'来ました',meaning:'vine / he venido',note:'Pasado cortés de 来る (venir).'}
+    ],usage_note:'La construcción [lugar] から来ました expresa de dónde viene una persona; en español suele traducirse de forma natural como “Soy de…”.'},
+    '日本語を少し話します。':{word_breakdown:[
+      {text:'日本語',meaning:'idioma japonés'},{text:'を',speech_text:'お',meaning:'marca el objeto directo',note:'Como partícula se escribe を y normalmente se pronuncia “o”.'},
+      {text:'少し',meaning:'un poco'},{text:'話します',meaning:'hablo',note:'Forma cortés de 話す (hablar).'}
+    ],usage_note:'少し limita la cantidad: indica que se habla solo un poco de japonés.'}
+  },
   Korean:{
     '사울 씨, 잘 잤어요?':{word_breakdown:[
       {text:'사울 씨',meaning:'Saul + 씨 (tratamiento respetuoso)'},{text:'잘',meaning:'bien'},{text:'잤어요',meaning:'dormiste / durmió'}

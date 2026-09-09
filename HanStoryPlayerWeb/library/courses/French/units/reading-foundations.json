@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "french-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "A",
-          "options": [
-            "A",
-            "B",
-            "C"
-          ],
-          "answer": "A",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "a",
-          "slow_audio": "a",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra B",
@@ -105,27 +84,6 @@
             "Nombre en Francés: bé.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "B",
-          "options": [
-            "B",
-            "C",
-            "D"
-          ],
-          "answer": "B",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "bé",
-          "slow_audio": "bé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "french-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "C",
-          "options": [
-            "C",
-            "D",
-            "E"
-          ],
-          "answer": "C",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "cé",
-          "slow_audio": "cé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra D",
@@ -201,27 +138,6 @@
             "Nombre en Francés: dé.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-01-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "D",
-          "options": [
-            "D",
-            "E",
-            "F"
-          ],
-          "answer": "D",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "dé",
-          "slow_audio": "dé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-01-e-teach",
@@ -251,14 +167,122 @@
           ]
         },
         {
+          "id": "french-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
+          "options": [
+            "B",
+            "A",
+            "C"
+          ],
+          "answer": "A",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-01-a-teach",
+            "french-reading-00-01-b-teach",
+            "french-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "D",
+            "C",
+            "B"
+          ],
+          "answer": "B",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "bé",
+          "slow_audio": "bé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-01-b-teach",
+            "french-reading-00-01-c-teach",
+            "french-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
+          "options": [
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": "C",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "cé",
+          "slow_audio": "cé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-01-c-teach",
+            "french-reading-00-01-d-teach",
+            "french-reading-00-01-e-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-01-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "D",
+          "options": [
+            "E",
+            "D",
+            "A"
+          ],
+          "answer": "D",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "dé",
+          "slow_audio": "dé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-01-a-teach",
+            "french-reading-00-01-d-teach",
+            "french-reading-00-01-e-teach"
+          ]
+        },
+        {
           "id": "french-reading-00-01-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
-            "F",
-            "G"
+            "A",
+            "B",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -269,7 +293,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-01-a-teach",
+            "french-reading-00-01-b-teach",
+            "french-reading-00-01-e-teach"
+          ]
         }
       ]
     },
@@ -324,27 +354,6 @@
           ]
         },
         {
-          "id": "french-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "F",
-          "options": [
-            "F",
-            "G",
-            "H"
-          ],
-          "answer": "F",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "effe",
-          "slow_audio": "effe",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra G",
@@ -370,27 +379,6 @@
             "Nombre en Francés: gé.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "G",
-          "options": [
-            "G",
-            "H",
-            "I"
-          ],
-          "answer": "G",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "gé",
-          "slow_audio": "gé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-02-c-teach",
@@ -420,27 +408,6 @@
           ]
         },
         {
-          "id": "french-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "H",
-          "options": [
-            "H",
-            "I",
-            "J"
-          ],
-          "answer": "H",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ache",
-          "slow_audio": "ache",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-02-d-teach",
           "type": "teach_concept",
           "prompt": "Letra I",
@@ -466,27 +433,6 @@
             "Nombre en Francés: i.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-02-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "I",
-          "options": [
-            "I",
-            "J",
-            "K"
-          ],
-          "answer": "I",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "i",
-          "slow_audio": "i",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-02-e-teach",
@@ -516,14 +462,122 @@
           ]
         },
         {
+          "id": "french-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "F",
+          "options": [
+            "G",
+            "F",
+            "H"
+          ],
+          "answer": "F",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "effe",
+          "slow_audio": "effe",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-02-a-teach",
+            "french-reading-00-02-b-teach",
+            "french-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "G",
+          "options": [
+            "I",
+            "H",
+            "G"
+          ],
+          "answer": "G",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "gé",
+          "slow_audio": "gé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-02-b-teach",
+            "french-reading-00-02-c-teach",
+            "french-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "H",
+          "options": [
+            "H",
+            "I",
+            "J"
+          ],
+          "answer": "H",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ache",
+          "slow_audio": "ache",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-02-c-teach",
+            "french-reading-00-02-d-teach",
+            "french-reading-00-02-e-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-02-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "I",
+          "options": [
+            "J",
+            "I",
+            "F"
+          ],
+          "answer": "I",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "i",
+          "slow_audio": "i",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-02-a-teach",
+            "french-reading-00-02-d-teach",
+            "french-reading-00-02-e-teach"
+          ]
+        },
+        {
           "id": "french-reading-00-02-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
-            "K",
-            "L"
+            "F",
+            "G",
+            "J"
           ],
           "answer": "J",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de J. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -534,7 +588,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-02-a-teach",
+            "french-reading-00-02-b-teach",
+            "french-reading-00-02-e-teach"
+          ]
         }
       ]
     },
@@ -589,27 +649,6 @@
           ]
         },
         {
-          "id": "french-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "K",
-          "options": [
-            "K",
-            "L",
-            "M"
-          ],
-          "answer": "K",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ka",
-          "slow_audio": "ka",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra L",
@@ -635,27 +674,6 @@
             "Nombre en Francés: elle.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "L",
-          "options": [
-            "L",
-            "M",
-            "N"
-          ],
-          "answer": "L",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "elle",
-          "slow_audio": "elle",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-03-c-teach",
@@ -685,27 +703,6 @@
           ]
         },
         {
-          "id": "french-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "M",
-          "options": [
-            "M",
-            "N",
-            "O"
-          ],
-          "answer": "M",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "emme",
-          "slow_audio": "emme",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra N",
@@ -731,27 +728,6 @@
             "Nombre en Francés: enne.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-03-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "N",
-          "options": [
-            "N",
-            "O",
-            "P"
-          ],
-          "answer": "N",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "enne",
-          "slow_audio": "enne",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-03-e-teach",
@@ -781,14 +757,122 @@
           ]
         },
         {
+          "id": "french-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "K",
+          "options": [
+            "L",
+            "K",
+            "M"
+          ],
+          "answer": "K",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ka",
+          "slow_audio": "ka",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-03-a-teach",
+            "french-reading-00-03-b-teach",
+            "french-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "L",
+          "options": [
+            "N",
+            "M",
+            "L"
+          ],
+          "answer": "L",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "elle",
+          "slow_audio": "elle",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-03-b-teach",
+            "french-reading-00-03-c-teach",
+            "french-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "M",
+          "options": [
+            "M",
+            "N",
+            "O"
+          ],
+          "answer": "M",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "emme",
+          "slow_audio": "emme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-03-c-teach",
+            "french-reading-00-03-d-teach",
+            "french-reading-00-03-e-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-03-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "N",
+          "options": [
+            "O",
+            "N",
+            "K"
+          ],
+          "answer": "N",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-03-a-teach",
+            "french-reading-00-03-d-teach",
+            "french-reading-00-03-e-teach"
+          ]
+        },
+        {
           "id": "french-reading-00-03-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "O",
           "options": [
-            "O",
-            "P",
-            "Q"
+            "K",
+            "L",
+            "O"
           ],
           "answer": "O",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -799,7 +883,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-03-a-teach",
+            "french-reading-00-03-b-teach",
+            "french-reading-00-03-e-teach"
+          ]
         }
       ]
     },
@@ -854,27 +944,6 @@
           ]
         },
         {
-          "id": "french-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "P",
-          "options": [
-            "P",
-            "Q",
-            "R"
-          ],
-          "answer": "P",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "pé",
-          "slow_audio": "pé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra Q",
@@ -900,27 +969,6 @@
             "Nombre en Francés: cu.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Q",
-          "options": [
-            "Q",
-            "R",
-            "S"
-          ],
-          "answer": "Q",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "cu",
-          "slow_audio": "cu",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-04-c-teach",
@@ -950,27 +998,6 @@
           ]
         },
         {
-          "id": "french-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "R",
-          "options": [
-            "R",
-            "S",
-            "T"
-          ],
-          "answer": "R",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "erre",
-          "slow_audio": "erre",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra S",
@@ -996,27 +1023,6 @@
             "Nombre en Francés: esse.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-04-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "S",
-          "options": [
-            "S",
-            "T",
-            "U"
-          ],
-          "answer": "S",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "esse",
-          "slow_audio": "esse",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-04-e-teach",
@@ -1046,14 +1052,122 @@
           ]
         },
         {
+          "id": "french-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "P",
+          "options": [
+            "Q",
+            "P",
+            "R"
+          ],
+          "answer": "P",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "pé",
+          "slow_audio": "pé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-04-a-teach",
+            "french-reading-00-04-b-teach",
+            "french-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Q",
+          "options": [
+            "S",
+            "R",
+            "Q"
+          ],
+          "answer": "Q",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "cu",
+          "slow_audio": "cu",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-04-b-teach",
+            "french-reading-00-04-c-teach",
+            "french-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "R",
+          "options": [
+            "R",
+            "S",
+            "T"
+          ],
+          "answer": "R",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-04-c-teach",
+            "french-reading-00-04-d-teach",
+            "french-reading-00-04-e-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-04-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "S",
+          "options": [
+            "T",
+            "S",
+            "P"
+          ],
+          "answer": "S",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-04-a-teach",
+            "french-reading-00-04-d-teach",
+            "french-reading-00-04-e-teach"
+          ]
+        },
+        {
           "id": "french-reading-00-04-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
-            "U",
-            "V"
+            "P",
+            "Q",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1064,7 +1178,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-04-a-teach",
+            "french-reading-00-04-b-teach",
+            "french-reading-00-04-e-teach"
+          ]
         }
       ]
     },
@@ -1119,27 +1239,6 @@
           ]
         },
         {
-          "id": "french-reading-00-05-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "U",
-          "options": [
-            "U",
-            "V",
-            "W"
-          ],
-          "answer": "U",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "u",
-          "slow_audio": "u",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-05-b-teach",
           "type": "teach_concept",
           "prompt": "Letra V",
@@ -1165,27 +1264,6 @@
             "Nombre en Francés: vé.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-05-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "V",
-          "options": [
-            "V",
-            "W",
-            "X"
-          ],
-          "answer": "V",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "vé",
-          "slow_audio": "vé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-05-c-teach",
@@ -1215,27 +1293,6 @@
           ]
         },
         {
-          "id": "french-reading-00-05-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "W",
-          "options": [
-            "W",
-            "X",
-            "Y"
-          ],
-          "answer": "W",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "double vé",
-          "slow_audio": "double vé",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "french-reading-00-05-d-teach",
           "type": "teach_concept",
           "prompt": "Letra X",
@@ -1261,27 +1318,6 @@
             "Nombre en Francés: ix.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "french-reading-00-05-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "X",
-          "options": [
-            "X",
-            "Y",
-            "Z"
-          ],
-          "answer": "X",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ix",
-          "slow_audio": "ix",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "french-reading-00-05-e-teach",
@@ -1311,14 +1347,122 @@
           ]
         },
         {
+          "id": "french-reading-00-05-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "U",
+          "options": [
+            "V",
+            "U",
+            "W"
+          ],
+          "answer": "U",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "u",
+          "slow_audio": "u",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-05-a-teach",
+            "french-reading-00-05-b-teach",
+            "french-reading-00-05-c-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-05-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "V",
+          "options": [
+            "X",
+            "W",
+            "V"
+          ],
+          "answer": "V",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "vé",
+          "slow_audio": "vé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-05-b-teach",
+            "french-reading-00-05-c-teach",
+            "french-reading-00-05-d-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-05-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "W",
+          "options": [
+            "W",
+            "X",
+            "Y"
+          ],
+          "answer": "W",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "double vé",
+          "slow_audio": "double vé",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-05-c-teach",
+            "french-reading-00-05-d-teach",
+            "french-reading-00-05-e-teach"
+          ]
+        },
+        {
+          "id": "french-reading-00-05-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "X",
+          "options": [
+            "Y",
+            "X",
+            "U"
+          ],
+          "answer": "X",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ix",
+          "slow_audio": "ix",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-05-a-teach",
+            "french-reading-00-05-d-teach",
+            "french-reading-00-05-e-teach"
+          ]
+        },
+        {
           "id": "french-reading-00-05-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
-            "Z",
-            "A"
+            "A",
+            "U",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1329,7 +1473,12 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-05-a-teach",
+            "french-reading-00-05-e-teach"
+          ]
         }
       ]
     },
@@ -1389,8 +1538,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
+            "Z",
             "B"
           ],
           "answer": "Z",
@@ -1402,7 +1551,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "french-reading-00-06-a-teach"
+          ]
         }
       ]
     },
@@ -1462,8 +1615,8 @@
           "prompt": "¿Qué vocal aparece en la sílaba ma?",
           "target": "a → ma",
           "options": [
-            "a",
             "i",
+            "a",
             "o"
           ],
           "answer": "a",
@@ -1475,7 +1628,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-07-b-teach",
@@ -1510,9 +1664,9 @@
           "prompt": "¿Qué vocal aparece en la sílaba mi?",
           "target": "i → mi",
           "options": [
-            "i",
+            "u",
             "a",
-            "u"
+            "i"
           ],
           "answer": "i",
           "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
@@ -1523,7 +1677,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-07-c-teach",
@@ -1571,7 +1726,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -1631,8 +1787,8 @@
           "prompt": "¿Qué grafema practicas en mé?",
           "target": "é → mé",
           "options": [
-            "é",
             "è",
+            "é",
             "ê"
           ],
           "answer": "é",
@@ -1644,7 +1800,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-08-b-teach",
@@ -1679,9 +1836,9 @@
           "prompt": "¿Qué grafema practicas en mè?",
           "target": "è → mè",
           "options": [
-            "è",
+            "ê",
             "é",
-            "ê"
+            "è"
           ],
           "answer": "è",
           "explanation": "El acento grave orienta la apertura de esta e.",
@@ -1692,7 +1849,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -1752,8 +1910,8 @@
           "prompt": "¿Qué grafema practicas en mu?",
           "target": "u → mu",
           "options": [
-            "u",
             "ou",
+            "u",
             "o"
           ],
           "answer": "u",
@@ -1765,7 +1923,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-09-b-teach",
@@ -1800,9 +1959,9 @@
           "prompt": "¿Qué grupo practicas en mou?",
           "target": "ou → mou",
           "options": [
-            "ou",
+            "au",
             "u",
-            "au"
+            "ou"
           ],
           "answer": "ou",
           "explanation": "Las dos letras colaboran para representar una vocal.",
@@ -1813,7 +1972,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -1873,8 +2033,8 @@
           "prompt": "¿Qué sílaba forman m y a?",
           "target": "m + a → ma",
           "options": [
-            "ma",
             "mi",
+            "ma",
             "la"
           ],
           "answer": "ma",
@@ -1886,7 +2046,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-10-b-teach",
@@ -1921,9 +2082,9 @@
           "prompt": "¿Qué sílaba forman f e i?",
           "target": "f + i → fi",
           "options": [
-            "fi",
+            "mi",
             "fa",
-            "mi"
+            "fi"
           ],
           "answer": "fi",
           "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
@@ -1934,7 +2095,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-10-c-teach",
@@ -1982,7 +2144,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2042,8 +2205,8 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "c + a → ca",
           "options": [
-            "ca",
             "ce",
+            "ca",
             "ga"
           ],
           "answer": "ca",
@@ -2055,7 +2218,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-11-b-teach",
@@ -2090,9 +2254,9 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "c + e → ce",
           "options": [
-            "ce",
+            "ge",
             "ca",
-            "ge"
+            "ce"
           ],
           "answer": "ce",
           "explanation": "El cambio de vocal modifica la lectura de c.",
@@ -2103,7 +2267,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-11-c-teach",
@@ -2151,7 +2316,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-11-d-teach",
@@ -2186,8 +2352,8 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "g + e → ge",
           "options": [
-            "ge",
             "ga",
+            "ge",
             "ce"
           ],
           "answer": "ge",
@@ -2199,7 +2365,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2259,8 +2426,8 @@
           "prompt": "¿Qué grupo aparece en cha?",
           "target": "ch + a → cha",
           "options": [
-            "ch",
             "ph",
+            "ch",
             "gn"
           ],
           "answer": "ch",
@@ -2272,7 +2439,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-12-b-teach",
@@ -2307,9 +2475,9 @@
           "prompt": "¿Qué grupo aparece en phi?",
           "target": "ph + i → phi",
           "options": [
-            "ph",
+            "gn",
             "ch",
-            "gn"
+            "ph"
           ],
           "answer": "ph",
           "explanation": "No pronuncies p y h por separado.",
@@ -2320,7 +2488,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-12-c-teach",
@@ -2368,7 +2537,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2428,8 +2598,8 @@
           "prompt": "¿Qué grafema nasal acabas de escuchar?",
           "target": "an",
           "options": [
-            "an",
             "on",
+            "an",
             "un"
           ],
           "answer": "an",
@@ -2441,7 +2611,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-13-b-teach",
@@ -2476,9 +2647,9 @@
           "prompt": "¿Qué grafema nasal acabas de escuchar?",
           "target": "on",
           "options": [
-            "on",
+            "un",
             "an",
-            "un"
+            "on"
           ],
           "answer": "on",
           "explanation": "Esta tarjeta contiene únicamente on y su audio.",
@@ -2489,7 +2660,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-13-c-teach",
@@ -2537,7 +2709,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2571,8 +2744,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2584,7 +2757,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-2-question",
@@ -2592,9 +2766,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
+            "I",
             "H",
-            "I"
+            "G"
           ],
           "answer": "G",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2605,7 +2779,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-3-question",
@@ -2626,7 +2801,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-4-question",
@@ -2634,8 +2810,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -2647,7 +2823,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-5-question",
@@ -2655,9 +2832,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
+            "A",
             "Z",
-            "A"
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2668,7 +2845,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-6-question",
@@ -2689,7 +2867,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-7-question",
@@ -2697,8 +2876,8 @@
           "prompt": "¿Qué vocal aparece en la sílaba ma?",
           "target": "a → ma",
           "options": [
-            "a",
             "i",
+            "a",
             "o"
           ],
           "answer": "a",
@@ -2710,7 +2889,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-8-question",
@@ -2718,9 +2898,9 @@
           "prompt": "¿Qué grafema practicas en mè?",
           "target": "è → mè",
           "options": [
-            "è",
+            "ê",
             "é",
-            "ê"
+            "è"
           ],
           "answer": "è",
           "explanation": "El acento grave orienta la apertura de esta e.",
@@ -2731,7 +2911,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-9-question",
@@ -2752,7 +2933,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-10-question",
@@ -2760,8 +2942,8 @@
           "prompt": "¿Qué sílaba forman m y a?",
           "target": "m + a → ma",
           "options": [
-            "ma",
             "mi",
+            "ma",
             "la"
           ],
           "answer": "ma",
@@ -2773,7 +2955,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-11-question",
@@ -2781,9 +2964,9 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "g + a → ga",
           "options": [
-            "ga",
+            "ca",
             "ge",
-            "ca"
+            "ga"
           ],
           "answer": "ga",
           "explanation": "No la separes en nombres de letras.",
@@ -2794,7 +2977,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-12-question",
@@ -2815,7 +2999,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-review-13-question",
@@ -2823,8 +3008,8 @@
           "prompt": "¿Qué grafema nasal acabas de escuchar?",
           "target": "an",
           "options": [
-            "an",
             "on",
+            "an",
             "un"
           ],
           "answer": "an",
@@ -2836,7 +3021,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2868,13 +3054,13 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «cha»",
           "target": "cha",
-          "instruction": "Escribe exactamente «ch + a → cha». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «cha». No escribas cómo suena ni su explicación.",
           "answer": "cha",
           "accepted_answers": [
             "cha",
             "ch + a → cha"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «ch + a → cha».",
           "audio": "",
           "slow_audio": "",
@@ -2886,25 +3072,26 @@
         },
         {
           "id": "french-reading-foundations-production-dictation",
-          "type": "typed_translation",
-          "prompt": "Copia solo esta letra, sílaba o grupo: «phi»",
-          "target": "phi",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ph + i → phi».",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la sílaba practicada con PH",
+          "target": "",
+          "instruction": "Usa el grupo PH que has practicado seguido de la vocal que escuches.",
           "answer": "phi",
           "accepted_answers": [
-            "phi",
-            "ph + i → phi"
+            "phi"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «phi». La grafía que se practica es «ph + i → phi».",
-          "audio": "",
-          "slow_audio": "",
+          "allow_minor_typos": false,
+          "explanation": "Escuchaste la sílaba de práctica «phi». PH representa aquí el sonido f.",
+          "audio": "phi",
+          "slow_audio": "phi",
           "tags": [
             "production",
             "dictation",
             "reading"
           ],
-          "xp": 20
+          "xp": 20,
+          "reading_audio_source_id": "french-reading-00-12-b-teach",
+          "dictation_instruction": "Usa el grupo PH que has practicado seguido de la vocal que escuches."
         },
         {
           "id": "french-reading-foundations-production-blocks",
@@ -2935,16 +3122,15 @@
         },
         {
           "id": "french-reading-foundations-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la sílaba practicada con PH",
           "target": "",
-          "instruction": "Escribe exactamente «ph + i → phi», no una guía de pronunciación.",
+          "instruction": "Usa el grupo PH que has practicado seguido de la vocal que escuches.",
           "answer": "phi",
           "accepted_answers": [
-            "phi",
-            "ph + i → phi"
+            "phi"
           ],
-          "explanation": "Escuchaste «ph + i → phi». No pronuncies p y h por separado.",
+          "explanation": "La sílaba practicada es «phi»: el grupo PH se une a i y suena como f seguido de i.",
           "audio": "phi",
           "slow_audio": "phi",
           "tags": [
@@ -2953,7 +3139,10 @@
             "reading",
             "french"
           ],
-          "xp": 15
+          "xp": 15,
+          "allow_minor_typos": false,
+          "reading_audio_source_id": "french-reading-00-12-b-teach",
+          "dictation_instruction": "Usa el grupo PH que has practicado seguido de la vocal que escuches."
         }
       ]
     },
@@ -2989,8 +3178,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -3002,7 +3191,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-2-question",
@@ -3010,9 +3200,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "B",
           "options": [
-            "B",
+            "D",
             "C",
-            "D"
+            "B"
           ],
           "answer": "B",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3023,7 +3213,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-3-question",
@@ -3044,7 +3235,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-4-question",
@@ -3052,8 +3244,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "D",
           "options": [
-            "D",
             "E",
+            "D",
             "F"
           ],
           "answer": "D",
@@ -3065,7 +3257,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-5-question",
@@ -3073,9 +3266,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
+            "G",
             "F",
-            "G"
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3086,7 +3279,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-6-question",
@@ -3107,7 +3301,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-7-question",
@@ -3115,8 +3310,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
+            "G",
             "I"
           ],
           "answer": "G",
@@ -3128,7 +3323,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-8-question",
@@ -3136,9 +3332,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "H",
           "options": [
-            "H",
+            "J",
             "I",
-            "J"
+            "H"
           ],
           "answer": "H",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3149,7 +3345,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-9-question",
@@ -3170,7 +3367,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-10-question",
@@ -3178,8 +3376,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
             "K",
+            "J",
             "L"
           ],
           "answer": "J",
@@ -3191,7 +3389,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-11-question",
@@ -3199,9 +3398,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "K",
           "options": [
-            "K",
             "L",
-            "M"
+            "M",
+            "K"
           ],
           "answer": "K",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3212,7 +3411,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-12-question",
@@ -3221,8 +3421,8 @@
           "target": "L",
           "options": [
             "L",
-            "M",
-            "N"
+            "N",
+            "M"
           ],
           "answer": "L",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3233,7 +3433,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-13-question",
@@ -3241,8 +3442,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "M",
           "options": [
-            "M",
             "N",
+            "M",
             "O"
           ],
           "answer": "M",
@@ -3254,7 +3455,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-14-question",
@@ -3262,9 +3464,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "N",
           "options": [
-            "N",
             "O",
-            "P"
+            "P",
+            "N"
           ],
           "answer": "N",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3275,7 +3477,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-15-question",
@@ -3284,8 +3487,8 @@
           "target": "O",
           "options": [
             "O",
-            "P",
-            "Q"
+            "Q",
+            "P"
           ],
           "answer": "O",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3296,7 +3499,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-16-question",
@@ -3304,8 +3508,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "P",
           "options": [
-            "P",
             "Q",
+            "P",
             "R"
           ],
           "answer": "P",
@@ -3317,7 +3521,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-17-question",
@@ -3325,9 +3530,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Q",
           "options": [
-            "Q",
             "R",
-            "S"
+            "S",
+            "Q"
           ],
           "answer": "Q",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3338,7 +3543,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-18-question",
@@ -3347,8 +3553,8 @@
           "target": "R",
           "options": [
             "R",
-            "S",
-            "T"
+            "T",
+            "S"
           ],
           "answer": "R",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3359,7 +3565,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-19-question",
@@ -3367,8 +3574,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -3380,7 +3587,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-20-question",
@@ -3388,9 +3596,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
+            "V",
             "U",
-            "V"
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3401,7 +3609,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-21-question",
@@ -3422,7 +3631,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-22-question",
@@ -3430,8 +3640,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
             "W",
+            "V",
             "X"
           ],
           "answer": "V",
@@ -3443,7 +3653,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-23-question",
@@ -3451,9 +3662,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "W",
           "options": [
-            "W",
             "X",
-            "Y"
+            "Y",
+            "W"
           ],
           "answer": "W",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3464,7 +3675,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-24-question",
@@ -3485,7 +3697,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-25-question",
@@ -3493,9 +3706,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
+            "A",
             "Y",
-            "Z",
-            "A"
+            "Z"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3506,7 +3719,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-26-question",
@@ -3514,9 +3728,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
-            "B"
+            "B",
+            "Z"
           ],
           "answer": "Z",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3527,7 +3741,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-27-question",
@@ -3548,7 +3763,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-28-question",
@@ -3556,9 +3772,9 @@
           "prompt": "¿Qué vocal aparece en la sílaba mi?",
           "target": "i → mi",
           "options": [
+            "u",
             "i",
-            "a",
-            "u"
+            "a"
           ],
           "answer": "i",
           "explanation": "Esta tarjeta presenta una sola relación escrita y sonora.",
@@ -3569,7 +3785,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-29-question",
@@ -3577,9 +3794,9 @@
           "prompt": "¿Qué vocal aparece en la sílaba mo?",
           "target": "o → mo",
           "options": [
-            "o",
             "e",
-            "i"
+            "i",
+            "o"
           ],
           "answer": "o",
           "explanation": "Practica primero la sílaba; el vocabulario llegará después.",
@@ -3590,7 +3807,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-30-question",
@@ -3599,8 +3817,8 @@
           "target": "é → mé",
           "options": [
             "é",
-            "è",
-            "ê"
+            "ê",
+            "è"
           ],
           "answer": "é",
           "explanation": "El acento agudo forma parte del grafema. No es decoración.",
@@ -3611,7 +3829,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-31-question",
@@ -3619,8 +3838,8 @@
           "prompt": "¿Qué grafema practicas en mè?",
           "target": "è → mè",
           "options": [
-            "è",
             "é",
+            "è",
             "ê"
           ],
           "answer": "è",
@@ -3632,7 +3851,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-32-question",
@@ -3640,9 +3860,9 @@
           "prompt": "¿Qué grafema practicas en mu?",
           "target": "u → mu",
           "options": [
-            "u",
             "ou",
-            "o"
+            "o",
+            "u"
           ],
           "answer": "u",
           "explanation": "Esta vocal no equivale exactamente a la u española.",
@@ -3653,7 +3873,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-33-question",
@@ -3662,8 +3883,8 @@
           "target": "ou → mou",
           "options": [
             "ou",
-            "u",
-            "au"
+            "au",
+            "u"
           ],
           "answer": "ou",
           "explanation": "Las dos letras colaboran para representar una vocal.",
@@ -3674,7 +3895,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-34-question",
@@ -3682,8 +3904,8 @@
           "prompt": "¿Qué sílaba forman m y a?",
           "target": "m + a → ma",
           "options": [
-            "ma",
             "mi",
+            "ma",
             "la"
           ],
           "answer": "ma",
@@ -3695,7 +3917,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-35-question",
@@ -3703,9 +3926,9 @@
           "prompt": "¿Qué sílaba forman f e i?",
           "target": "f + i → fi",
           "options": [
-            "fi",
             "fa",
-            "mi"
+            "mi",
+            "fi"
           ],
           "answer": "fi",
           "explanation": "El resultado es una sílaba, no una palabra que debas memorizar.",
@@ -3716,7 +3939,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-36-question",
@@ -3725,8 +3949,8 @@
           "target": "l + u → lu",
           "options": [
             "lu",
-            "la",
-            "lou"
+            "lou",
+            "la"
           ],
           "answer": "lu",
           "explanation": "Después conserva labios redondeados para u.",
@@ -3737,7 +3961,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-37-question",
@@ -3745,8 +3970,8 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "c + a → ca",
           "options": [
-            "ca",
             "ce",
+            "ca",
             "ga"
           ],
           "answer": "ca",
@@ -3758,7 +3983,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-38-question",
@@ -3766,9 +3992,9 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "c + e → ce",
           "options": [
-            "ce",
             "ca",
-            "ge"
+            "ge",
+            "ce"
           ],
           "answer": "ce",
           "explanation": "El cambio de vocal modifica la lectura de c.",
@@ -3779,7 +4005,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-39-question",
@@ -3788,8 +4015,8 @@
           "target": "g + a → ga",
           "options": [
             "ga",
-            "ge",
-            "ca"
+            "ca",
+            "ge"
           ],
           "answer": "ga",
           "explanation": "No la separes en nombres de letras.",
@@ -3800,7 +4027,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-40-question",
@@ -3808,8 +4036,8 @@
           "prompt": "¿Qué sílaba acabas de practicar?",
           "target": "g + e → ge",
           "options": [
-            "ge",
             "ga",
+            "ge",
             "ce"
           ],
           "answer": "ge",
@@ -3821,7 +4049,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-41-question",
@@ -3829,9 +4058,9 @@
           "prompt": "¿Qué grupo aparece en cha?",
           "target": "ch + a → cha",
           "options": [
-            "ch",
+            "gn",
             "ph",
-            "gn"
+            "ch"
           ],
           "answer": "ch",
           "explanation": "El audio corresponde solo a cha; ph y gn tendrán tarjetas distintas.",
@@ -3842,7 +4071,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-42-question",
@@ -3863,7 +4093,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-43-question",
@@ -3871,8 +4102,8 @@
           "prompt": "¿Qué grupo aparece en gna?",
           "target": "gn + a → gna",
           "options": [
-            "gn",
             "ch",
+            "gn",
             "ph"
           ],
           "answer": "gn",
@@ -3884,7 +4115,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-44-question",
@@ -3892,9 +4124,9 @@
           "prompt": "¿Qué grafema nasal acabas de escuchar?",
           "target": "an",
           "options": [
-            "an",
+            "un",
             "on",
-            "un"
+            "an"
           ],
           "answer": "an",
           "explanation": "La consonante nasal modifica la vocal; no forma aquí otra sílaba.",
@@ -3905,7 +4137,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-45-question",
@@ -3926,7 +4159,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "french-reading-00-test-46-question",
@@ -3934,9 +4168,9 @@
           "prompt": "¿Qué grafema nasal acabas de escuchar?",
           "target": "un",
           "options": [
+            "on",
             "un",
-            "an",
-            "on"
+            "an"
           ],
           "answer": "un",
           "explanation": "La pronunciación varía algo según la región, pero sigue siendo distinta de on.",
@@ -3947,7 +4181,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     }

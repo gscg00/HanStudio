@@ -33,7 +33,8 @@ def test_hangul_foundations_is_the_first_world_and_first_foundations_unit():
 
 def test_hangul_foundations_teaches_before_asking_the_learner_to_recognize():
     unit = load(COURSE_ROOT / "units/hangul-foundations.json")
-    assert len(unit["lessons"]) == 10
+    assert len(unit["lessons"]) == 11
+    assert sum(bool(lesson.get("generatedProduction")) for lesson in unit["lessons"]) == 1
     assert sum(bool(lesson.get("isReview")) for lesson in unit["lessons"]) == 1
     tests = [lesson for lesson in unit["lessons"] if lesson.get("isTest")]
     assert len(tests) == 1 and tests[0].get("isUnitFinal") is True
@@ -41,6 +42,17 @@ def test_hangul_foundations_teaches_before_asking_the_learner_to_recognize():
 
     for lesson in unit["lessons"]:
         if lesson.get("isReview") or lesson.get("isTest"):
+            continue
+        if lesson.get("generatedProduction"):
+            assert any(
+                activity["type"] in {
+                    "typed_translation", "dictation", "build_with_blocks",
+                    "complete_without_options", "transform_sentence",
+                    "open_question", "speak_and_transcribe",
+                    "guided_dialogue", "stage_scenario",
+                }
+                for activity in lesson["activities"]
+            )
             continue
         first_gradable = next(
             index
@@ -57,11 +69,11 @@ def test_hangul_foundations_covers_blocks_vowel_layout_batchim_and_first_words()
     )
     required = {
         "한글",
-        "ㅎ + ㅏ + ㄴ = 한",
+        "inicial + vocal + final = bloque",
         "ㅇ + ㅏ = 아",
         "ㅇ + ㅜ = 우",
         "ㄱ + ㅏ = 가",
-        "ㄱ + ㅜ = 구",
+        "ㅇ + ㅜ = 우",
         "batchim",
         "나무",
         "사람",
@@ -70,6 +82,33 @@ def test_hangul_foundations_covers_blocks_vowel_layout_batchim_and_first_words()
     }
     assert not (required - {item for item in required if item in unit_text})
     assert "romanización" not in unit_text.lower()
+
+
+def test_system_introduction_does_not_make_a_learner_read_untaught_letters():
+    unit = load(COURSE_ROOT / "units/hangul-foundations.json")
+    system = next(lesson for lesson in unit["lessons"] if lesson["id"] == "korean-hangul-00-system")
+    by_id = {activity["id"]: activity for activity in system["activities"]}
+    block = by_id["korean-hangul-00-system-block"]
+
+    assert block["target"] == "inicial + vocal + final = bloque"
+    assert not block["audio"]
+    assert "no intentes pronunciar" in block["memory_hint"].lower()
+    for activity_id in ("korean-hangul-00-system-q1", "korean-hangul-00-system-q2"):
+        activity = by_id[activity_id]
+        assert not activity["audio"]
+        assert not any(letter in activity["target"] for letter in "ㅎㅏㄴ한")
+
+
+def test_vowel_layout_questions_only_reuse_the_known_silent_support():
+    unit = load(COURSE_ROOT / "units/hangul-foundations.json")
+    activities = {
+        activity["id"]: activity
+        for lesson in unit["lessons"]
+        for activity in lesson["activities"]
+    }
+
+    assert activities["korean-hangul-00-vowels-layout"]["target"] == "ㅇ + ㅏ = 아"
+    assert activities["korean-hangul-00-vowels-horizontal-layout"]["target"] == "ㅇ + ㅜ = 우"
 
 
 def test_korean_requires_all_24_basic_hangul_letters_before_vocabulary():
@@ -116,9 +155,10 @@ def test_hangul_foundations_answers_and_audio_are_valid():
 
 def test_hangul_foundations_xp_catalog_contains_every_lesson():
     unit = load(COURSE_ROOT / "units/hangul-foundations.json")
-    sql = (
-        ROOT / "supabase/migrations/014_korean_hangul_foundations_catalog.sql"
-    ).read_text(encoding="utf-8").lower()
+    sql = "\n".join(
+        path.read_text(encoding="utf-8").lower()
+        for path in (ROOT / "supabase/migrations").glob("*.sql")
+    )
     assert "on conflict(language_id,course_id,lesson_id) do update" in sql
     for lesson in unit["lessons"]:
         assert lesson["id"].lower() in sql

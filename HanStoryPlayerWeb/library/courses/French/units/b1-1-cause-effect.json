@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b11-cause-effect-03-13-meaning",
@@ -999,7 +1000,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b11-cause-effect-03-13-listen",
@@ -1022,7 +1024,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b11-cause-effect-03-14-teach",
@@ -1042,7 +1045,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-03-14-meaning",
@@ -1065,7 +1069,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-03-14-listen",
@@ -1088,7 +1093,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         }
       ]
     },
@@ -1705,7 +1711,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-review-02-14-listen",
@@ -1728,7 +1735,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-review-02-16-meaning",
@@ -1819,7 +1827,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b1-1-cause-effect-production-dictation",
@@ -1839,7 +1848,8 @@
             "production",
             "dictation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b1-1-cause-effect-production-blocks",
@@ -1868,7 +1878,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b1-1-cause-effect-production-complete",
@@ -1892,7 +1903,7 @@
         {
           "id": "french-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
+          "prompt": "Di o escribe en francés: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "Qu’est-ce que tu en penses ?",
           "accepted_answers": [
@@ -1929,7 +1940,8 @@
             "speaking",
             "optional"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b1-1-cause-effect-production-dialogue",
@@ -1946,14 +1958,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
+              "prompt": "Di o escribe en francés: «Como resultado, el proyecto se retrasó.»",
               "answer": "Par conséquent, le projet a pris du retard.",
               "accepted_answers": [
                 "Par conséquent, le projet a pris du retard."
               ],
               "audio": "Par conséquent, le projet a pris du retard.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
             },
             {
               "role": "model",
@@ -1964,14 +1977,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
+              "prompt": "Di o escribe en francés: «Aunque estaba cansada, terminó el trabajo.»",
               "answer": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
               "accepted_answers": [
                 "Bien qu’elle soit fatiguée, elle a terminé le travail."
               ],
               "audio": "Bien qu’elle soit fatiguée, elle a terminé le travail.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
             }
           ],
           "minimum_correct": 2,
@@ -2587,7 +2601,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b11-cause-effect-test-13-listen",
@@ -2610,7 +2625,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Par conséquent introduce la consecuencia. A pris du retard significa que el proyecto se retrasó; no significa que alguien tomó físicamente un retraso."
         },
         {
           "id": "french-b11-cause-effect-test-14-meaning",
@@ -2633,7 +2649,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-test-14-listen",
@@ -2656,7 +2673,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Bien que introduce una concesión: estar cansada no impidió terminar. Elle identifica a una mujer; soit es la forma de être usada aquí después de bien que. El cansancio no se presenta como la causa de terminar."
         },
         {
           "id": "french-b11-cause-effect-test-15-meaning",

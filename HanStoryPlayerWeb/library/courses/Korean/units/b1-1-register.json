@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "도와주시겠어요? pide ayuda con cortesía y contiene la marca honorífica 시. 도와주실 수 있나요? pregunta por la posibilidad de prestar esa ayuda. La forma 도와줘 pertenece al habla de confianza y no es el modelo elegido para esta situación."
         },
         {
           "id": "korean-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "korean-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "도와주시겠어요?",
+          "accepted_answers": [
+            "도와주시겠어요?",
+            "도와주실 수 있나요?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "도와주시겠어요?",
+          "slow_audio": "도와주시겠어요?",
+          "usage_note": "도와주시겠어요? pide ayuda con cortesía y contiene la marca honorífica 시. 도와주실 수 있나요? pregunta por la posibilidad de prestar esa ayuda. La forma 도와줘 pertenece al habla de confianza y no es el modelo elegido para esta situación.",
+          "explanation": "도와주시겠어요? pide ayuda con cortesía y contiene la marca honorífica 시. 도와주실 수 있나요? pregunta por la posibilidad de prestar esa ayuda. La forma 도와줘 pertenece al habla de confianza y no es el modelo elegido para esta situación.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "korean-b11-register-01-10-teach",
@@ -1888,7 +1914,7 @@
         {
           "id": "korean-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en coreano: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "일을 나눠서 해요.",
           "accepted_answers": [
@@ -1942,7 +1968,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en coreano.",
+              "prompt": "Di o escribe en coreano: «Gracias por avisarme con tiempo.»",
               "answer": "미리 알려 주셔서 감사합니다.",
               "accepted_answers": [
                 "미리 알려 주셔서 감사합니다."
@@ -1960,7 +1986,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en coreano.",
+              "prompt": "Di o escribe en coreano: «Lamento informarle de que la cita se canceló.»",
               "answer": "약속이 취소되었음을 알려 드리게 되어 유감입니다.",
               "accepted_answers": [
                 "약속이 취소되었음을 알려 드리게 되어 유감입니다."
@@ -1978,7 +2004,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en coreano.",
+              "prompt": "Di o escribe en coreano: «Vamos a dividir el trabajo.»",
               "answer": "일을 나눠서 해요.",
               "accepted_answers": [
                 "일을 나눠서 해요."

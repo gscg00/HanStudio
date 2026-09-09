@@ -1,7 +1,7 @@
 const clean=value=>String(value??'').trim();
 
 const wordFrom=item=>clean(typeof item==='string'?item:item?.text||item?.word||item?.target||item?.form);
-const meaningFrom=item=>clean(typeof item==='object'&&(item?.meaning||item?.translation||item?.gloss||item?.label));
+const meaningFrom=item=>clean(item&&typeof item==='object'?(item.meaning||item.translation||item.gloss||item.label):'');
 
 /**
  * Optional authoring support for sentence-level activities.  Keeping this
@@ -13,7 +13,8 @@ export const phraseBreakdown=record=>{
   return(Array.isArray(source)?source:[]).map(item=>({
     text:wordFrom(item),
     meaning:meaningFrom(item),
-    note:clean(typeof item==='object'&&item?.note),
+    note:clean(item&&typeof item==='object'?item.note:''),
+    ...(item?.speech_text||item?.speechText?{speech_text:clean(item.speech_text||item.speechText)}:{}),
   })).filter(item=>item.text&&item.meaning);
 };
 
@@ -29,10 +30,13 @@ export const phraseContextNote=record=>clean(record?.context_note||record?.conte
 export const phraseAudioExamples=record=>{
   const source=record?.audio_examples||record?.audioExamples||[];
   return(Array.isArray(source)?source:[]).map(item=>({
-    label:clean(item?.label)||'EJEMPLO',
+    // A label is optional.  For a one-character sound drill, repeating a
+    // generic label above every card adds noise without adding information.
+    label:clean(item?.label),
     text:clean(item?.text||item?.target),
     meaning:clean(item?.meaning||item?.translation),
     audio:clean(item?.audio),
     slow_audio:clean(item?.slow_audio||item?.slowAudio),
+    audio_source:clean(item?.audio_source||item?.audioSource),
   })).filter(item=>item.text&&item.audio);
 };

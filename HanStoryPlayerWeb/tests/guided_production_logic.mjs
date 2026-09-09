@@ -12,8 +12,8 @@ import {
 import { resolveGuidedOptionAudioKey, reviewItemsForSession } from "../src/japanese_course_app.js";
 import { countReviewsCompletedToday } from "../src/user_settings.js";
 
-assert.equal(normalizeGuidedAnswer("  ¡Ça va!  ", { language: "French", keepSpaces: true }), "ca va");
-assert.equal(normalizeGuidedAnswer("أَهْلًا", { language: "Arabic" }), "اهلا");
+assert.equal(normalizeGuidedAnswer("  ¡Ça va!  ", { language: "French", keepSpaces: true }), "ça va");
+assert.equal(normalizeGuidedAnswer("أَهْلًا", { language: "Arabic" }), "أهلا");
 assert.equal(normalizeGuidedAnswer("안녕하세요?", { language: "Korean" }), "안녕하세요");
 assert.equal(speechLanguageCode("English"), "en-US");
 assert.equal(speechLanguageCode("French"), "fr-FR");

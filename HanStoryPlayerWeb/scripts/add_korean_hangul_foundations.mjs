@@ -2,6 +2,8 @@
 import fs from'node:fs';
 import path from'node:path';
 import{fileURLToPath}from'node:url';
+import{sequenceKoreanVowels}from'./korean_vowel_sequence.mjs';
+import{repairFoundationPedagogy}from'./foundation_pedagogy.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const web=path.resolve(here,'..');
@@ -14,20 +16,27 @@ const activity=(id,type,prompt,target='',options=[],answer='',explanation='',aud
   image:null,writing_asset:null,tags:['hangul-foundations'],xp:extra.gradable===false?2:10,
   ...extra,
 });
+const orderQuizOptions=(id,options,answer)=>{
+  if(options.length<2||!options.includes(answer))return options;
+  let hash=0;for(const char of id)hash=(hash*31+char.codePointAt(0))>>>0;
+  const position=hash%options.length,rest=options.filter(option=>option!==answer);
+  rest.splice(position,0,answer);return rest;
+};
 const intro=(lessonId,title,explanation)=>activity(
   `${lessonId}-intro`,'lesson_intro',title,'',[],'',explanation,'',{gradable:false},
 );
-const rule=(id,prompt,target,{audio='',sound='',memory='',explanation='',points=[]})=>activity(
+const rule=(id,prompt,target,{audio='',sound='',memory='',explanation='',points=[],audio_examples=[]})=>activity(
   id,'teach_concept',prompt,target,[],'',explanation,audio,{
     gradable:false,meaning:'',teaching_kind:'rule',sound_hint:sound,
     memory_hint:memory,teaching_points:points,
+    audio_examples,
   },
 );
-const choice=(id,prompt,target,options,answer,explanation,audio='')=>activity(
-  id,'select_translation',prompt,target,options,answer,explanation,audio,
+const choice=(id,prompt,target,options,answer,explanation,audio='',extra={})=>activity(
+  id,'select_translation',prompt,target,orderQuizOptions(id,options,answer),answer,explanation,audio,{option_order_version:3,...extra},
 );
 const listen=(id,prompt,options,answer,explanation,audio)=>activity(
-  id,'listening_choice',prompt,'',options,answer,explanation,audio,
+  id,'listening_choice',prompt,'',orderQuizOptions(id,options,answer),answer,explanation,audio,{option_order_version:3},
 );
 const word=(id,target,meaning,audio,points)=>activity(
   `${id}-teach`,'teach_word','Lee por bloques',target,[],'',`Lee cada bloque una sola vez y luego une la palabra: ${meaning}.`,audio,{
@@ -50,15 +59,14 @@ const lessons=[
         explanation:'Aunque un bloque pueda parecer un carácter único, está compuesto por letras que puedes identificar y leer.',
         points:['Consonantes y vocales son letras independientes.','Las letras se agrupan visualmente en cuadrados.','Cada cuadrado corresponde normalmente a una sílaba.'],
       }),
-      rule('korean-hangul-00-system-block','Lee el bloque como una sílaba','ㅎ + ㅏ + ㄴ = 한',{
-        audio:'한',
-        sound:'한 se pronuncia como una sola sílaba.',
-        memory:'Primero ㅎ, después ㅏ y al final ㄴ.',
-        explanation:'No leas los trazos por separado. Reconoce las letras dentro del bloque y pronúncialas juntas.',
-        points:['ㅎ es la consonante inicial.','ㅏ es la vocal.','ㄴ está abajo y cierra la sílaba.'],
+      rule('korean-hangul-00-system-block','Cómo se forma un bloque','inicial + vocal + final = bloque',{
+        sound:'Un bloque reúne letras y se leerá como una sola sílaba cuando ya conozcas sus sonidos.',
+        memory:'Por ahora identifica los puestos; no intentes pronunciar letras todavía.',
+        explanation:'Primero comprende la estructura. Construirás y pronunciarás bloques reales después de aprender las vocales y consonantes necesarias.',
+        points:['Una consonante puede ir al inicio.','Una vocal ocupa el segundo puesto.','Una consonante final puede cerrar el bloque.'],
       }),
-      choice('korean-hangul-00-system-q1','¿Qué representa normalmente un bloque como «한»?','한',['Una sílaba','Una oración completa','Una imagen sin sonidos'],'Una sílaba','Un bloque de hangeul suele representar una sílaba.','한'),
-      choice('korean-hangul-00-system-q2','¿Cómo debes empezar a leer hangeul?','ㅎ + ㅏ + ㄴ',['Identificando las letras del bloque','Memorizando el bloque como un dibujo','Leyendo solo la letra más grande'],'Identificando las letras del bloque','Primero identifica consonante, vocal y posible consonante final.','한'),
+      choice('korean-hangul-00-system-q1','¿Qué representa normalmente un bloque de hangeul?','consonante + vocal',['Una sílaba','Una oración completa','Una imagen sin sonidos'],'Una sílaba','Un bloque de hangeul suele representar una sílaba.','',{teaching_refs:['korean-hangul-00-system-block']}),
+      choice('korean-hangul-00-system-q2','¿Cómo debes empezar a leer hangeul?','inicial + vocal + final',['Identificando las letras del bloque','Memorizando el bloque como un dibujo','Leyendo solo la letra más grande'],'Identificando las letras del bloque','Primero identifica consonante, vocal y posible consonante final.','',{teaching_refs:['korean-hangul-00-system-block']}),
     ],
   },
   {
@@ -69,11 +77,11 @@ const lessons=[
       intro('korean-hangul-00-vowels-vertical','Vocales a la derecha','Cuando la vocal es vertical, la consonante inicial se coloca a su izquierda.'),
       rule('korean-hangul-00-vowels-a','Conoce ㅏ','ㅇ + ㅏ = 아',{audio:'아',sound:'Escucha 아: ㅏ se acerca a la «a» española.',memory:'La vocal vertical ㅏ va a la derecha de ㅇ.',explanation:'ㅇ no suena al inicio. En 아 sirve como soporte para poder escribir y pronunciar la vocal ㅏ.',points:['ㅇ inicial: silenciosa.','ㅏ: sonido cercano a «a».','Juntas forman 아.']}),
       listen('korean-hangul-00-vowels-a-listen','Escucha y elige el bloque que contiene ㅏ',['아','어','이'],'아','아 contiene la vocal ㅏ.','아'),
-      rule('korean-hangul-00-vowels-eo','Conoce ㅓ','ㅇ + ㅓ = 어',{audio:'어',sound:'Escucha 어: ㅓ es una vocal abierta que no tiene equivalente exacto en español.',memory:'No la conviertas en una «o» española.',explanation:'Relaja la boca y escucha el modelo. Lo importante al principio es distinguir 어 de 아 y 오.',points:['ㅇ inicial: silenciosa.','ㅓ: vocal abierta y posterior.','Juntas forman 어.']}),
+      rule('korean-hangul-00-vowels-eo','Conoce ㅓ','ㅇ + ㅓ = 어',{audio:'어',sound:'Escucha 어: ㅓ es una vocal abierta que no tiene equivalente exacto en español.',memory:'No la conviertas en una «o» española.',explanation:'Escucha el modelo de 어 y compáralo con 아, que ya has practicado. En esta lección conocerás también 이 antes de elegir entre las tres sílabas.',points:['ㅇ inicial: silenciosa.','ㅓ: vocal abierta y posterior.','Juntas forman 어.']}),
       listen('korean-hangul-00-vowels-eo-listen','Escucha y elige el bloque que contiene ㅓ',['오','어','아'],'어','어 contiene la vocal ㅓ.','어'),
       rule('korean-hangul-00-vowels-i','Conoce ㅣ','ㅇ + ㅣ = 이',{audio:'이',sound:'Escucha 이: ㅣ se parece a la «i» española.',memory:'ㅣ es una línea vertical y va a la derecha de ㅇ.',explanation:'Mantén un sonido breve y limpio, sin añadir otra vocal al final.',points:['ㅇ inicial: silenciosa.','ㅣ: sonido parecido a «i».','Juntas forman 이.']}),
       listen('korean-hangul-00-vowels-i-listen','Escucha y elige el bloque que contiene ㅣ',['이','아','우'],'이','이 contiene la vocal ㅣ.','이'),
-      choice('korean-hangul-00-vowels-layout','¿Dónde se coloca una vocal vertical?','ㄱ + ㅏ = 가',['A la derecha de la consonante','Debajo de la consonante','Fuera del bloque'],'A la derecha de la consonante','Las vocales verticales se colocan a la derecha de la consonante inicial.','가'),
+      choice('korean-hangul-00-vowels-layout','¿Dónde se coloca una vocal vertical?','ㅇ + ㅏ = 아',['A la derecha de la consonante','Debajo de la consonante','Fuera del bloque'],'A la derecha de la consonante','Las vocales verticales se colocan a la derecha de la consonante inicial.','아'),
     ],
   },
   {
@@ -86,9 +94,9 @@ const lessons=[
       listen('korean-hangul-00-vowels-o-listen','Escucha y elige el bloque que contiene ㅗ',['어','오','우'],'오','오 contiene la vocal ㅗ.','오'),
       rule('korean-hangul-00-vowels-u','Conoce ㅜ','ㅇ + ㅜ = 우',{audio:'우',sound:'Escucha 우: ㅜ se parece a la «u» española.',memory:'ㅜ se coloca debajo de la consonante.',explanation:'Redondea los labios y evita añadir una vocal al final.',points:['ㅇ inicial: silenciosa.','ㅜ: sonido parecido a «u».','Juntas forman 우.']}),
       listen('korean-hangul-00-vowels-u-listen','Escucha y elige el bloque que contiene ㅜ',['우','오','으'],'우','우 contiene la vocal ㅜ.','우'),
-      rule('korean-hangul-00-vowels-eu','Conoce ㅡ','ㅇ + ㅡ = 으',{audio:'으',sound:'Escucha 으: ㅡ no tiene equivalente exacto en español.',memory:'Mantén los labios sin redondear.',explanation:'Es una vocal central. Escucha varias veces y distínguela de 우; no necesitas romanizarla.',points:['ㅇ inicial: silenciosa.','ㅡ: vocal central con labios relajados.','Juntas forman 으.']}),
+      rule('korean-hangul-00-vowels-eu','Conoce ㅡ','ㅇ + ㅡ = 으',{audio:'으',sound:'Escucha 으: ㅡ no tiene equivalente exacto en español.',memory:'Mantén los labios sin redondear.',explanation:'Eleva la parte posterior de la lengua y mantén los labios sin redondear. Compara 으 con 우: en 우 los labios sí se redondean.',points:['ㅇ inicial: silenciosa.','ㅡ: lengua elevada hacia atrás y labios sin redondear.','Juntas forman 으.']}),
       listen('korean-hangul-00-vowels-eu-listen','Escucha y elige el bloque que contiene ㅡ',['이','으','우'],'으','으 contiene la vocal ㅡ.','으'),
-      choice('korean-hangul-00-vowels-horizontal-layout','¿Dónde se coloca una vocal horizontal?','ㄱ + ㅜ = 구',['Debajo de la consonante','A la izquierda de la consonante','En otro bloque'],'Debajo de la consonante','Las vocales horizontales se colocan debajo de la consonante inicial.','구'),
+      choice('korean-hangul-00-vowels-horizontal-layout','¿Dónde se coloca una vocal horizontal?','ㅇ + ㅜ = 우',['Debajo de la consonante','A la izquierda de la consonante','En otro bloque'],'Debajo de la consonante','Las vocales horizontales se colocan debajo de la consonante inicial.','우'),
     ],
   },
   {
@@ -103,7 +111,7 @@ const lessons=[
       listen('korean-hangul-00-consonants-n-listen','Escucha y elige el bloque correcto',['마','나','다'],'나','나 empieza con ㄴ.','나'),
       rule('korean-hangul-00-consonants-m','Conoce ㅁ','ㅁ + ㅏ = 마',{audio:'마',sound:'En 마, ㅁ suena como «m».',memory:'La forma cuadrada ㅁ inicia el bloque.',explanation:'Cierra los labios para producir el sonido inicial antes de pasar a ㅏ.',points:['ㅁ: sonido «m».','ㅏ: vocal.','El bloque completo es 마.']}),
       listen('korean-hangul-00-consonants-m-listen','Escucha y elige el bloque correcto',['바','마','사'],'마','마 empieza con ㅁ.','마'),
-      rule('korean-hangul-00-consonants-ng','Dos funciones de ㅇ','아 · 한',{audio:'한',sound:'ㅇ es silenciosa al inicio, pero al final suena «ng».',memory:'Compara 아, donde no inicia sonido, con 한, donde cierra la sílaba.',explanation:'La posición cambia su función. Este detalle es esencial para leer bloques completos.',points:['En 아, ㅇ inicial no suena.','En 한, ㄴ es el cierre; en 강, ㅇ final suena «ng».','No leas ㅇ siempre de la misma manera.']}),
+      rule('korean-hangul-00-consonants-ng','Dos funciones de ㅇ','아 · 한',{audio:'한',sound:'ㅇ es silenciosa al inicio, pero al final suena «ng».',memory:'Compara 아, donde no inicia sonido, con 한, donde cierra la sílaba.',explanation:'La posición cambia su función. Este detalle es esencial para leer bloques completos.',points:['En 아, ㅇ inicial no suena.','En 한, ㄴ es el cierre; en 강, ㅇ final suena «ng».','No leas ㅇ siempre de la misma manera.'],audio_examples:[{text:'아',audio:'아'},{text:'한',audio:'한'}]}),
       choice('korean-hangul-00-consonants-ng-q','¿Cuándo suena ㅇ como «ng»?','ㅇ',['Cuando está al final del bloque','Siempre que aparece','Solo cuando está a la izquierda'],'Cuando está al final del bloque','ㅇ es silenciosa al inicio y suena «ng» como consonante final.','한'),
     ],
   },
@@ -133,7 +141,7 @@ const lessons=[
       choice('korean-hangul-00-blocks-vertical-q','¿Qué bloque forman ㄱ y ㅏ?','ㄱ + ㅏ',['가','구','나'],'가','ㄱ + ㅏ forman 가.','가'),
       rule('korean-hangul-00-blocks-horizontal','Vocal horizontal: arriba y abajo','ㄱ + ㅜ = 구',{audio:'구',sound:'Lee primero ㄱ y después ㅜ.',memory:'ㅜ es horizontal: ㄱ queda arriba.',explanation:'Aunque la posición visual cambie, el orden sonoro sigue siendo consonante y vocal.',points:['Consonante inicial arriba: ㄱ.','Vocal horizontal debajo: ㅜ.','Resultado: 구.']}),
       choice('korean-hangul-00-blocks-horizontal-q','¿Qué bloque forman ㄱ y ㅜ?','ㄱ + ㅜ',['가','구','우'],'구','ㄱ + ㅜ forman 구.','구'),
-      choice('korean-hangul-00-blocks-rule-q','¿Qué decide si la vocal va a la derecha o debajo?','ㅏ / ㅜ',['La forma vertical u horizontal de la vocal','El significado de la palabra','El tamaño de la consonante'],'La forma vertical u horizontal de la vocal','La orientación de la vocal determina el diseño del bloque.'),
+      choice('korean-hangul-00-blocks-rule-q','¿Qué decide si la vocal va a la derecha o debajo?','ㅏ / ㅜ',['La forma vertical u horizontal de la vocal','El significado de la palabra','El tamaño de la consonante'],'La forma vertical u horizontal de la vocal','La orientación de la vocal determina el diseño del bloque.','',{teaching_refs:['korean-hangul-00-blocks-vertical','korean-hangul-00-blocks-horizontal']}),
     ],
   },
   {
@@ -162,7 +170,7 @@ const lessons=[
       listen('korean-hangul-00-batchim-mun-listen','Escucha y elige el bloque correcto',['문','무','눈'],'문','문 termina en ㄴ.','문'),
       rule('korean-hangul-00-batchim-bap','Lee 밥','ㅂ + ㅏ + ㅂ = 밥',{audio:'밥',sound:'La ㅂ final se cierra brevemente, sin una vocal después.',memory:'La misma letra puede aparecer al inicio y al final.',explanation:'Evita leer «바브». El batchim cierra la sílaba y no añade una vocal española.',points:['ㅂ inicial abre la sílaba.','ㅏ aporta la vocal.','ㅂ final cierra el bloque.']}),
       listen('korean-hangul-00-batchim-bap-listen','Escucha y elige el bloque correcto',['바','밥','파'],'밥','밥 tiene ㅂ como batchim.','밥'),
-      choice('korean-hangul-00-batchim-rule','¿Qué hace una consonante escrita abajo?','받침',['Cierra la sílaba','Empieza una palabra nueva','Se ignora siempre'],'Cierra la sílaba','La consonante inferior funciona como cierre silábico o batchim.'),
+      choice('korean-hangul-00-batchim-rule','¿Qué hace una consonante escrita abajo?','받침',['Cierra la sílaba','Empieza una palabra nueva','Se ignora siempre'],'Cierra la sílaba','La consonante inferior funciona como cierre silábico o batchim.','',{teaching_refs:['korean-hangul-00-batchim-han','korean-hangul-00-batchim-mun','korean-hangul-00-batchim-bap']}),
     ],
   },
   {
@@ -203,6 +211,18 @@ const lessons=[
   },
 ];
 
+for(const lesson of lessons)for(const [index,item] of lesson.activities.entries()){
+ if(item.type!=='listening_choice'||!item.id.endsWith('-listen'))continue;
+ const source=lesson.activities.slice(0,index).find(a=>a.id===item.id.slice(0,-7)&&a.type==='teach_concept'&&a.audio===item.audio);
+ if(source)item.teaching_refs=[source.id];
+}
+sequenceKoreanVowels(lessons);
+// La práctica de producción se genera en una segunda etapa. Al regenerar la
+// base del hangeul, consérvala y sitúala antes de la prueba final.
+const existingUnit=fs.existsSync(unitPath)?JSON.parse(fs.readFileSync(unitPath,'utf8')):null;
+const generatedProduction=(existingUnit?.lessons||[]).filter(lesson=>lesson.generatedProduction);
+const testIndex=lessons.findIndex(lesson=>lesson.isTest);
+lessons.splice(testIndex<0?lessons.length:testIndex,0,...generatedProduction);
 const unit={
   id:'hangul-foundations',
   title:'Cómo se lee el hangeul',
@@ -211,6 +231,7 @@ const unit={
   reward:{xp:220,badge:'Lector de bloques'},
   lessons,
 };
+repairFoundationPedagogy(unit,'Korean');
 fs.writeFileSync(unitPath,`${JSON.stringify(unit,null,2)}\n`);
 
 const course=JSON.parse(fs.readFileSync(coursePath,'utf8'));

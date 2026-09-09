@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Poderia…? presenta una petición atenuada y por favor expresa cortesía. Ajudar-me y me ajudar reflejan colocaciones del pronombre habituales en distintas variedades del portugués; esta práctica admite ambas y no identifica automáticamente una variedad como más educada."
         },
         {
           "id": "portuguese-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "portuguese-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Poderia ajudar-me, por favor?",
+          "accepted_answers": [
+            "Poderia ajudar-me, por favor?",
+            "Poderia me ajudar, por favor?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Poderia ajudar-me, por favor?",
+          "slow_audio": "Poderia ajudar-me, por favor?",
+          "usage_note": "Poderia…? presenta una petición atenuada y por favor expresa cortesía. Ajudar-me y me ajudar reflejan colocaciones del pronombre habituales en distintas variedades del portugués; esta práctica admite ambas y no identifica automáticamente una variedad como más educada.",
+          "explanation": "Poderia…? presenta una petición atenuada y por favor expresa cortesía. Ajudar-me y me ajudar reflejan colocaciones del pronombre habituales en distintas variedades del portugués; esta práctica admite ambas y no identifica automáticamente una variedad como más educada.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "portuguese-b11-register-01-10-teach",
@@ -1890,7 +1916,7 @@
         {
           "id": "portuguese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en portugués: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Vamos dividir o trabalho.",
           "accepted_answers": [
@@ -1944,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en portugués.",
+              "prompt": "Di o escribe en portugués: «Gracias por avisarme con tiempo.»",
               "answer": "Obrigado por me avisar com antecedência.",
               "accepted_answers": [
                 "Obrigado por me avisar com antecedência."
@@ -1962,7 +1988,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en portugués.",
+              "prompt": "Di o escribe en portugués: «Lamento informarle de que la cita se canceló.»",
               "answer": "Lamento informar que a marcação foi cancelada.",
               "accepted_answers": [
                 "Lamento informar que a marcação foi cancelada."
@@ -1980,7 +2006,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en portugués.",
+              "prompt": "Di o escribe en portugués: «Vamos a dividir el trabajo.»",
               "answer": "Vamos dividir o trabalho.",
               "accepted_answers": [
                 "Vamos dividir o trabalho."

@@ -32,7 +32,8 @@ def test_every_language_has_six_real_a12_units_and_42_lessons():
             unit = load(COURSES / language / summaries[unit_id]["manifest"])
             assert unit["requirements"] == [previous]
             previous = unit_id
-            assert len(unit["lessons"]) == 7
+            assert len(unit["lessons"]) == 8
+            assert sum(bool(lesson.get("generatedProduction")) for lesson in unit["lessons"]) == 1
             assert sum(bool(lesson.get("isReview")) for lesson in unit["lessons"]) == 2
             assert sum(bool(lesson.get("isTest")) for lesson in unit["lessons"]) == 1
             teaching = [
@@ -44,7 +45,7 @@ def test_every_language_has_six_real_a12_units_and_42_lessons():
             assert len(teaching) == len(set(teaching)) == 16
             all_targets.extend(teaching)
             total_lessons += len(unit["lessons"])
-        assert total_lessons == 42
+        assert total_lessons == 48
         assert len(all_targets) == len(set(all_targets)) == 96
 
 
@@ -90,9 +91,9 @@ def test_xp_catalog_contains_all_420_a12_lessons_and_remains_private():
         for unit_id in A12_IDS:
             unit = load(COURSES / language / "units" / f"{unit_id}.json")
             for lesson in unit["lessons"]:
-                assert lesson["id"].lower() in sql
+                assert lesson["id"].lower() in "\n".join(path.read_text(encoding="utf-8").lower() for path in (ROOT / "supabase/migrations").glob("*.sql"))
                 count += 1
-    assert count == 420
+    assert count == 480
 
 
 def test_service_worker_precaches_a12_manifests_for_all_courses():

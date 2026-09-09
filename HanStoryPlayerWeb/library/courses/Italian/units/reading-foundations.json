@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "A",
-          "options": [
-            "A",
-            "B",
-            "C"
-          ],
-          "answer": "A",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "a",
-          "slow_audio": "a",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra B",
@@ -105,27 +84,6 @@
             "Nombre en Italiano: bi.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "B",
-          "options": [
-            "B",
-            "C",
-            "D"
-          ],
-          "answer": "B",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "bi",
-          "slow_audio": "bi",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "C",
-          "options": [
-            "C",
-            "D",
-            "E"
-          ],
-          "answer": "C",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ci",
-          "slow_audio": "ci",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra D",
@@ -201,27 +138,6 @@
             "Nombre en Italiano: di.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-01-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "D",
-          "options": [
-            "D",
-            "E",
-            "F"
-          ],
-          "answer": "D",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "di",
-          "slow_audio": "di",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-01-e-teach",
@@ -251,14 +167,122 @@
           ]
         },
         {
+          "id": "italian-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
+          "options": [
+            "B",
+            "A",
+            "C"
+          ],
+          "answer": "A",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "a",
+          "slow_audio": "a",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-01-a-teach",
+            "italian-reading-00-01-b-teach",
+            "italian-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "C",
+            "D",
+            "B"
+          ],
+          "answer": "B",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "bi",
+          "slow_audio": "bi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-01-b-teach",
+            "italian-reading-00-01-c-teach",
+            "italian-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
+          "options": [
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": "C",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ci",
+          "slow_audio": "ci",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-01-c-teach",
+            "italian-reading-00-01-d-teach",
+            "italian-reading-00-01-e-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-01-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "D",
+          "options": [
+            "E",
+            "D",
+            "A"
+          ],
+          "answer": "D",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "di",
+          "slow_audio": "di",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-01-a-teach",
+            "italian-reading-00-01-d-teach",
+            "italian-reading-00-01-e-teach"
+          ]
+        },
+        {
           "id": "italian-reading-00-01-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
-            "F",
-            "G"
+            "A",
+            "B",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -269,7 +293,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-01-a-teach",
+            "italian-reading-00-01-b-teach",
+            "italian-reading-00-01-e-teach"
+          ]
         }
       ]
     },
@@ -324,27 +354,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "F",
-          "options": [
-            "F",
-            "G",
-            "H"
-          ],
-          "answer": "F",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "effe",
-          "slow_audio": "effe",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra G",
@@ -370,27 +379,6 @@
             "Nombre en Italiano: gi.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "G",
-          "options": [
-            "G",
-            "H",
-            "I"
-          ],
-          "answer": "G",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "gi",
-          "slow_audio": "gi",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-02-c-teach",
@@ -420,27 +408,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "H",
-          "options": [
-            "H",
-            "I",
-            "L"
-          ],
-          "answer": "H",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "acca",
-          "slow_audio": "acca",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-02-d-teach",
           "type": "teach_concept",
           "prompt": "Letra I",
@@ -466,27 +433,6 @@
             "Nombre en Italiano: i.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-02-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "I",
-          "options": [
-            "I",
-            "L",
-            "M"
-          ],
-          "answer": "I",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "i",
-          "slow_audio": "i",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-02-e-teach",
@@ -516,14 +462,122 @@
           ]
         },
         {
+          "id": "italian-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "F",
+          "options": [
+            "G",
+            "F",
+            "H"
+          ],
+          "answer": "F",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "effe",
+          "slow_audio": "effe",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-02-a-teach",
+            "italian-reading-00-02-b-teach",
+            "italian-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "G",
+          "options": [
+            "H",
+            "I",
+            "G"
+          ],
+          "answer": "G",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "gi",
+          "slow_audio": "gi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-02-b-teach",
+            "italian-reading-00-02-c-teach",
+            "italian-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "H",
+          "options": [
+            "H",
+            "I",
+            "L"
+          ],
+          "answer": "H",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "acca",
+          "slow_audio": "acca",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-02-c-teach",
+            "italian-reading-00-02-d-teach",
+            "italian-reading-00-02-e-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-02-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "I",
+          "options": [
+            "L",
+            "I",
+            "F"
+          ],
+          "answer": "I",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "i",
+          "slow_audio": "i",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-02-a-teach",
+            "italian-reading-00-02-d-teach",
+            "italian-reading-00-02-e-teach"
+          ]
+        },
+        {
           "id": "italian-reading-00-02-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "L",
           "options": [
-            "L",
-            "M",
-            "N"
+            "F",
+            "G",
+            "L"
           ],
           "answer": "L",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -534,7 +588,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-02-a-teach",
+            "italian-reading-00-02-b-teach",
+            "italian-reading-00-02-e-teach"
+          ]
         }
       ]
     },
@@ -589,27 +649,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "M",
-          "options": [
-            "M",
-            "N",
-            "O"
-          ],
-          "answer": "M",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "emme",
-          "slow_audio": "emme",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra N",
@@ -635,27 +674,6 @@
             "Nombre en Italiano: enne.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "N",
-          "options": [
-            "N",
-            "O",
-            "P"
-          ],
-          "answer": "N",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "enne",
-          "slow_audio": "enne",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-03-c-teach",
@@ -685,27 +703,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "O",
-          "options": [
-            "O",
-            "P",
-            "Q"
-          ],
-          "answer": "O",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "o",
-          "slow_audio": "o",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra P",
@@ -731,27 +728,6 @@
             "Nombre en Italiano: pi.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-03-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "P",
-          "options": [
-            "P",
-            "Q",
-            "R"
-          ],
-          "answer": "P",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "pi",
-          "slow_audio": "pi",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-03-e-teach",
@@ -781,14 +757,122 @@
           ]
         },
         {
+          "id": "italian-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "M",
+          "options": [
+            "N",
+            "M",
+            "O"
+          ],
+          "answer": "M",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "emme",
+          "slow_audio": "emme",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-03-a-teach",
+            "italian-reading-00-03-b-teach",
+            "italian-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "N",
+          "options": [
+            "O",
+            "P",
+            "N"
+          ],
+          "answer": "N",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "enne",
+          "slow_audio": "enne",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-03-b-teach",
+            "italian-reading-00-03-c-teach",
+            "italian-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "O",
+          "options": [
+            "O",
+            "P",
+            "Q"
+          ],
+          "answer": "O",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "o",
+          "slow_audio": "o",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-03-c-teach",
+            "italian-reading-00-03-d-teach",
+            "italian-reading-00-03-e-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-03-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "P",
+          "options": [
+            "Q",
+            "P",
+            "M"
+          ],
+          "answer": "P",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "pi",
+          "slow_audio": "pi",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-03-a-teach",
+            "italian-reading-00-03-d-teach",
+            "italian-reading-00-03-e-teach"
+          ]
+        },
+        {
           "id": "italian-reading-00-03-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Q",
           "options": [
-            "Q",
-            "R",
-            "S"
+            "M",
+            "N",
+            "Q"
           ],
           "answer": "Q",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -799,7 +883,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-03-a-teach",
+            "italian-reading-00-03-b-teach",
+            "italian-reading-00-03-e-teach"
+          ]
         }
       ]
     },
@@ -854,27 +944,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "R",
-          "options": [
-            "R",
-            "S",
-            "T"
-          ],
-          "answer": "R",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "erre",
-          "slow_audio": "erre",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra S",
@@ -900,27 +969,6 @@
             "Nombre en Italiano: esse.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "S",
-          "options": [
-            "S",
-            "T",
-            "U"
-          ],
-          "answer": "S",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "esse",
-          "slow_audio": "esse",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-04-c-teach",
@@ -950,27 +998,6 @@
           ]
         },
         {
-          "id": "italian-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "T",
-          "options": [
-            "T",
-            "U",
-            "V"
-          ],
-          "answer": "T",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ti",
-          "slow_audio": "ti",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "italian-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra U",
@@ -996,27 +1023,6 @@
             "Nombre en Italiano: u.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "italian-reading-00-04-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "U",
-          "options": [
-            "U",
-            "V",
-            "Z"
-          ],
-          "answer": "U",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "u",
-          "slow_audio": "u",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "italian-reading-00-04-e-teach",
@@ -1046,14 +1052,122 @@
           ]
         },
         {
+          "id": "italian-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "R",
+          "options": [
+            "S",
+            "R",
+            "T"
+          ],
+          "answer": "R",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "erre",
+          "slow_audio": "erre",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-04-a-teach",
+            "italian-reading-00-04-b-teach",
+            "italian-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "S",
+          "options": [
+            "T",
+            "U",
+            "S"
+          ],
+          "answer": "S",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "esse",
+          "slow_audio": "esse",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-04-b-teach",
+            "italian-reading-00-04-c-teach",
+            "italian-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "T",
+          "options": [
+            "T",
+            "U",
+            "V"
+          ],
+          "answer": "T",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ti",
+          "slow_audio": "ti",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-04-c-teach",
+            "italian-reading-00-04-d-teach",
+            "italian-reading-00-04-e-teach"
+          ]
+        },
+        {
+          "id": "italian-reading-00-04-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "U",
+          "options": [
+            "V",
+            "U",
+            "R"
+          ],
+          "answer": "U",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "u",
+          "slow_audio": "u",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-04-a-teach",
+            "italian-reading-00-04-d-teach",
+            "italian-reading-00-04-e-teach"
+          ]
+        },
+        {
           "id": "italian-reading-00-04-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
-            "Z",
-            "A"
+            "A",
+            "R",
+            "V"
           ],
           "answer": "V",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1064,7 +1178,12 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-04-a-teach",
+            "italian-reading-00-04-e-teach"
+          ]
         }
       ]
     },
@@ -1124,8 +1243,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
+            "Z",
             "B"
           ],
           "answer": "Z",
@@ -1137,7 +1256,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "italian-reading-00-05-a-teach"
+          ]
         }
       ]
     },
@@ -1172,8 +1295,8 @@
           "options": [],
           "answer": "",
           "explanation": "E y O pueden ser abiertas o cerradas, pero al principio prioriza una lectura clara.",
-          "audio": "a",
-          "slow_audio": "a",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1189,6 +1312,28 @@
             "No borres vocales finales.",
             "Mantén sonidos definidos.",
             "Escucha la apertura de e/o."
+          ],
+          "audio_examples": [
+            {
+              "text": "a",
+              "audio": "a"
+            },
+            {
+              "text": "e",
+              "audio": "e"
+            },
+            {
+              "text": "i",
+              "audio": "i"
+            },
+            {
+              "text": "o",
+              "audio": "o"
+            },
+            {
+              "text": "u",
+              "audio": "u"
+            }
           ]
         },
         {
@@ -1197,8 +1342,8 @@
           "prompt": "¿Qué debes hacer con las vocales italianas?",
           "target": "a · e · i · o · u",
           "options": [
-            "Pronunciarlas con claridad",
             "Reducirlas todas",
+            "Pronunciarlas con claridad",
             "Omitir las finales"
           ],
           "answer": "Pronunciarlas con claridad",
@@ -1210,7 +1355,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "a",
+              "audio": "a"
+            },
+            {
+              "text": "e",
+              "audio": "e"
+            },
+            {
+              "text": "i",
+              "audio": "i"
+            },
+            {
+              "text": "o",
+              "audio": "o"
+            },
+            {
+              "text": "u",
+              "audio": "u"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-06-b-teach",
@@ -1220,8 +1388,8 @@
           "options": [],
           "answer": "",
           "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
-          "audio": "ci",
-          "slow_audio": "ci",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1237,6 +1405,14 @@
             "Segmenta en sílabas.",
             "Aplica grupos conocidos.",
             "Une con ritmo."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
           ]
         },
         {
@@ -1245,9 +1421,9 @@
           "prompt": "¿Es relativamente regular la ortografía italiana?",
           "target": "casa",
           "options": [
-            "Sí, aunque tiene reglas y excepciones",
             "No, es impredecible",
-            "Solo en nombres"
+            "Solo en nombres",
+            "Sí, aunque tiene reglas y excepciones"
           ],
           "answer": "Sí, aunque tiene reglas y excepciones",
           "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
@@ -1258,7 +1434,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         }
       ]
     },
@@ -1293,8 +1478,8 @@
           "options": [],
           "answer": "",
           "explanation": "Esta regla explica casa frente a cena.",
-          "audio": "ci",
-          "slow_audio": "ci",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1310,6 +1495,31 @@
             "ca/co/cu: sonido k.",
             "ce/ci: sonido ch.",
             "El contexto decide."
+          ],
+          "audio_examples": [
+            {
+              "text": "ca",
+              "audio": "ca",
+              "audio_source": "tts"
+            },
+            {
+              "text": "co",
+              "audio": "co",
+              "audio_source": "tts"
+            },
+            {
+              "text": "cu",
+              "audio": "cu"
+            },
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci"
+            }
           ]
         },
         {
@@ -1318,8 +1528,8 @@
           "prompt": "¿Cómo suele sonar C ante E o I?",
           "target": "ca/co/cu · ce/ci",
           "options": [
-            "Como ch",
             "Como k",
+            "Como ch",
             "No suena"
           ],
           "answer": "Como ch",
@@ -1331,7 +1541,33 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ca",
+              "audio": "ca",
+              "audio_source": "tts"
+            },
+            {
+              "text": "co",
+              "audio": "co",
+              "audio_source": "tts"
+            },
+            {
+              "text": "cu",
+              "audio": "cu"
+            },
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-07-b-teach",
@@ -1341,8 +1577,8 @@
           "options": [],
           "answer": "",
           "explanation": "Compara gatto y gelato.",
-          "audio": "gi",
-          "slow_audio": "gi",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1358,6 +1594,32 @@
             "ga/go/gu: g dura.",
             "ge/gi: sonido suave.",
             "La regla es paralela a C."
+          ],
+          "audio_examples": [
+            {
+              "text": "ga",
+              "audio": "ga",
+              "audio_source": "tts"
+            },
+            {
+              "text": "go",
+              "audio": "go",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gu",
+              "audio": "gu",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi"
+            }
           ]
         },
         {
@@ -1366,9 +1628,9 @@
           "prompt": "¿Cómo suele sonar G ante E o I?",
           "target": "ga/go/gu · ge/gi",
           "options": [
-            "Con un sonido suave parecido a y/dj",
             "Como k",
-            "Siempre muda"
+            "Siempre muda",
+            "Con un sonido suave parecido a y/dj"
           ],
           "answer": "Con un sonido suave parecido a y/dj",
           "explanation": "Compara gatto y gelato.",
@@ -1379,7 +1641,34 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ga",
+              "audio": "ga",
+              "audio_source": "tts"
+            },
+            {
+              "text": "go",
+              "audio": "go",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gu",
+              "audio": "gu",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi"
+            }
+          ]
         }
       ]
     },
@@ -1414,8 +1703,8 @@
           "options": [],
           "answer": "",
           "explanation": "Compara ce con che y ci con chi.",
-          "audio": "acca",
-          "slow_audio": "acca",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1431,6 +1720,17 @@
             "che: ke.",
             "chi: ki.",
             "H no aporta un sonido separado."
+          ],
+          "audio_examples": [
+            {
+              "text": "che",
+              "audio": "che",
+              "audio_source": "tts"
+            },
+            {
+              "text": "chi",
+              "audio": "chi"
+            }
           ]
         },
         {
@@ -1439,8 +1739,8 @@
           "prompt": "¿Qué hace H en CHE o CHI?",
           "target": "che · chi",
           "options": [
-            "Mantiene el sonido duro k",
             "Convierte C en s",
+            "Mantiene el sonido duro k",
             "Forma una vocal"
           ],
           "answer": "Mantiene el sonido duro k",
@@ -1452,7 +1752,19 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "che",
+              "audio": "che",
+              "audio_source": "tts"
+            },
+            {
+              "text": "chi",
+              "audio": "chi"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-08-b-teach",
@@ -1462,8 +1774,8 @@
           "options": [],
           "answer": "",
           "explanation": "Compara gelato con spaghetti.",
-          "audio": "gi",
-          "slow_audio": "gi",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1479,6 +1791,18 @@
             "ghe: ge dura.",
             "ghi: gi dura.",
             "H funciona como señal ortográfica."
+          ],
+          "audio_examples": [
+            {
+              "text": "ghe",
+              "audio": "ghe",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ghi",
+              "audio": "ghi",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1487,9 +1811,9 @@
           "prompt": "¿Qué hace H en GHE o GHI?",
           "target": "ghe · ghi",
           "options": [
-            "Mantiene la G dura",
             "Vuelve muda la palabra",
-            "Duplica la vocal"
+            "Duplica la vocal",
+            "Mantiene la G dura"
           ],
           "answer": "Mantiene la G dura",
           "explanation": "Compara gelato con spaghetti.",
@@ -1500,7 +1824,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ghe",
+              "audio": "ghe",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ghi",
+              "audio": "ghi",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -1535,8 +1872,8 @@
           "options": [],
           "answer": "",
           "explanation": "No produzcas g seguida de n.",
-          "audio": "enne",
-          "slow_audio": "enne",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1552,6 +1889,14 @@
             "bagno contiene sonido parecido a ñ.",
             "El grupo permanece unido.",
             "Practica dentro de palabras."
+          ],
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
           ]
         },
         {
@@ -1560,8 +1905,8 @@
           "prompt": "¿Cómo se lee normalmente GN?",
           "target": "gn: bagno",
           "options": [
-            "Como un sonido parecido a ñ",
             "Como g + n separadas",
+            "Como un sonido parecido a ñ",
             "Como ch"
           ],
           "answer": "Como un sonido parecido a ñ",
@@ -1573,7 +1918,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-09-b-teach",
@@ -1583,8 +1937,8 @@
           "options": [],
           "answer": "",
           "explanation": "Son patrones frecuentes que no conviene deletrear.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1594,12 +1948,26 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "GLI tiene un sonido palatal; SCI ante e/i se aproxima a sh.",
+          "sound_hint": "En famiglia, GLI representa un solo sonido consonántico: escucha el ejemplo sin separar g y l. SC delante de e o i suena como sh; en scena aparece delante de e.",
           "memory_hint": "Aprende cada grupo como unidad.",
           "teaching_points": [
             "famiglia contiene gli.",
             "scena contiene sonido sh.",
             "La vocal siguiente importa."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON GLI",
+              "text": "famiglia",
+              "meaning": "familia",
+              "audio": "famiglia"
+            },
+            {
+              "label": "SC ANTE E",
+              "text": "scena",
+              "meaning": "escena",
+              "audio": "scena"
+            }
           ]
         },
         {
@@ -1608,9 +1976,9 @@
           "prompt": "¿Debes separar GLI letra por letra?",
           "target": "gli · sci",
           "options": [
-            "No, funciona como grupo",
             "Sí, siempre",
-            "Solo la G es muda"
+            "Solo la G es muda",
+            "No, funciona como grupo"
           ],
           "answer": "No, funciona como grupo",
           "explanation": "Son patrones frecuentes que no conviene deletrear.",
@@ -1621,7 +1989,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON GLI",
+              "text": "famiglia",
+              "meaning": "familia",
+              "audio": "famiglia"
+            },
+            {
+              "label": "SC ANTE E",
+              "text": "scena",
+              "meaning": "escena",
+              "audio": "scena"
+            }
+          ]
         }
       ]
     },
@@ -1656,8 +2039,8 @@
           "options": [],
           "answer": "",
           "explanation": "No es solo una diferencia ortográfica.",
-          "audio": "pi",
-          "slow_audio": "pi",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1673,6 +2056,20 @@
             "pala y palla contrastan.",
             "La vocal anterior puede sentirse más corta.",
             "Escucha pares mínimos."
+          ],
+          "audio_examples": [
+            {
+              "text": "pala",
+              "meaning": "pala",
+              "audio": "pala",
+              "audio_source": "tts"
+            },
+            {
+              "text": "palla",
+              "meaning": "pelota",
+              "audio": "palla",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1681,8 +2078,8 @@
           "prompt": "¿Las consonantes dobles cambian la pronunciación?",
           "target": "pala · palla",
           "options": [
-            "Sí, se sostienen más tiempo",
             "No",
+            "Sí, se sostienen más tiempo",
             "Solo en canto"
           ],
           "answer": "Sí, se sostienen más tiempo",
@@ -1694,7 +2091,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "pala",
+              "meaning": "pala",
+              "audio": "pala",
+              "audio_source": "tts"
+            },
+            {
+              "text": "palla",
+              "meaning": "pelota",
+              "audio": "palla",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-10-b-teach",
@@ -1704,8 +2116,8 @@
           "options": [],
           "answer": "",
           "explanation": "El ritmo italiano es más silábico que el inglés.",
-          "audio": "ti",
-          "slow_audio": "ti",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1721,6 +2133,15 @@
             "Cuenta sílabas.",
             "Mantén vocales claras.",
             "Marca la consonante doble."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "italiano",
+              "meaning": "italiano",
+              "audio": "italiano",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1729,9 +2150,9 @@
           "prompt": "¿Debes eliminar las vocales no acentuadas?",
           "target": "italiano",
           "options": [
-            "No, suelen conservarse claras",
             "Sí, todas",
-            "Solo las finales"
+            "Solo las finales",
+            "No, suelen conservarse claras"
           ],
           "answer": "No, suelen conservarse claras",
           "explanation": "El ritmo italiano es más silábico que el inglés.",
@@ -1742,7 +2163,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "italiano",
+              "meaning": "italiano",
+              "audio": "italiano",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -1777,8 +2208,8 @@
           "options": [],
           "answer": "",
           "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
-          "audio": "erre",
-          "slow_audio": "erre",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1794,6 +2225,15 @@
             "città lleva acento escrito.",
             "La sílaba fuerte guía el ritmo.",
             "Hay patrones y excepciones."
+          ],
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "parola",
+              "meaning": "palabra",
+              "audio": "parola",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1802,8 +2242,8 @@
           "prompt": "¿Qué debes memorizar junto con una palabra italiana?",
           "target": "parola",
           "options": [
-            "Su sílaba acentuada",
             "Solo su traducción",
+            "Su sílaba acentuada",
             "El nombre de cada letra"
           ],
           "answer": "Su sílaba acentuada",
@@ -1815,7 +2255,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "parola",
+              "meaning": "palabra",
+              "audio": "parola",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-11-b-teach",
@@ -1825,8 +2275,8 @@
           "options": [],
           "answer": "",
           "explanation": "No hagas una pausa larga en el apóstrofo.",
-          "audio": "a",
-          "slow_audio": "a",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1842,6 +2292,15 @@
             "la + acqua → l’acqua.",
             "La elisión evita choque vocálico.",
             "Se lee como una unidad fluida."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "l’acqua",
+              "meaning": "el agua",
+              "audio": "l’acqua",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1850,9 +2309,9 @@
           "prompt": "¿Qué indica normalmente el apóstrofo?",
           "target": "l’acqua",
           "options": [
-            "Una vocal omitida y unión fluida",
             "Una pregunta",
-            "Una consonante doble"
+            "Una consonante doble",
+            "Una vocal omitida y unión fluida"
           ],
           "answer": "Una vocal omitida y unión fluida",
           "explanation": "No hagas una pausa larga en el apóstrofo.",
@@ -1863,7 +2322,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "l’acqua",
+              "meaning": "el agua",
+              "audio": "l’acqua",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -1897,8 +2366,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -1910,7 +2379,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-review-2-question",
@@ -1918,9 +2388,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
-            "I"
+            "I",
+            "G"
           ],
           "answer": "G",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1931,7 +2401,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-review-3-question",
@@ -1952,7 +2423,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-review-4-question",
@@ -1960,8 +2432,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "U",
           "options": [
-            "U",
             "V",
+            "U",
             "Z"
           ],
           "answer": "U",
@@ -1973,7 +2445,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-review-5-question",
@@ -1981,9 +2454,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
-            "B"
+            "B",
+            "Z"
           ],
           "answer": "Z",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1994,7 +2467,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-review-6-question",
@@ -2015,7 +2489,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-review-7-question",
@@ -2023,8 +2506,8 @@
           "prompt": "¿Cómo suele sonar C ante E o I?",
           "target": "ca/co/cu · ce/ci",
           "options": [
-            "Como ch",
             "Como k",
+            "Como ch",
             "No suena"
           ],
           "answer": "Como ch",
@@ -2036,7 +2519,33 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ca",
+              "audio": "ca",
+              "audio_source": "tts"
+            },
+            {
+              "text": "co",
+              "audio": "co",
+              "audio_source": "tts"
+            },
+            {
+              "text": "cu",
+              "audio": "cu"
+            },
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-review-8-question",
@@ -2044,9 +2553,9 @@
           "prompt": "¿Qué hace H en GHE o GHI?",
           "target": "ghe · ghi",
           "options": [
-            "Mantiene la G dura",
             "Vuelve muda la palabra",
-            "Duplica la vocal"
+            "Duplica la vocal",
+            "Mantiene la G dura"
           ],
           "answer": "Mantiene la G dura",
           "explanation": "Compara gelato con spaghetti.",
@@ -2057,7 +2566,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ghe",
+              "audio": "ghe",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ghi",
+              "audio": "ghi",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-review-9-question",
@@ -2078,7 +2600,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-review-10-question",
@@ -2086,8 +2617,8 @@
           "prompt": "¿Debes eliminar las vocales no acentuadas?",
           "target": "italiano",
           "options": [
-            "No, suelen conservarse claras",
             "Sí, todas",
+            "No, suelen conservarse claras",
             "Solo las finales"
           ],
           "answer": "No, suelen conservarse claras",
@@ -2099,7 +2630,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "italiano",
+              "meaning": "italiano",
+              "audio": "italiano",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-review-11-question",
@@ -2107,9 +2648,9 @@
           "prompt": "¿Qué debes memorizar junto con una palabra italiana?",
           "target": "parola",
           "options": [
-            "Su sílaba acentuada",
             "Solo su traducción",
-            "El nombre de cada letra"
+            "El nombre de cada letra",
+            "Su sílaba acentuada"
           ],
           "answer": "Su sílaba acentuada",
           "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
@@ -2120,7 +2661,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "parola",
+              "meaning": "palabra",
+              "audio": "parola",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2152,12 +2703,12 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «gn: bagno»",
           "target": "gn: bagno",
-          "instruction": "Escribe exactamente «gn: bagno». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «gn: bagno». No escribas cómo suena ni su explicación.",
           "answer": "gn: bagno",
           "accepted_answers": [
             "gn: bagno"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «gn: bagno».",
           "audio": "",
           "slow_audio": "",
@@ -2165,28 +2716,38 @@
             "production",
             "copying"
           ],
-          "xp": 20
+          "xp": 20,
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
+          ]
         },
         {
           "id": "italian-reading-foundations-production-dictation",
-          "type": "typed_translation",
-          "prompt": "Copia exactamente esta grafía o comparación: «gli · sci»",
-          "target": "gli · sci",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «gli · sci».",
-          "answer": "gli · sci",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra practicada con GLI",
+          "target": "",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "famiglia",
           "accepted_answers": [
-            "gli · sci"
+            "famiglia"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «elle». La grafía que se practica es «gli · sci».",
-          "audio": "",
-          "slow_audio": "",
+          "allow_minor_typos": false,
+          "explanation": "Escuchaste «famiglia», el ejemplo con GLI de la unidad.",
+          "audio": "famiglia",
+          "slow_audio": "famiglia",
           "tags": [
             "production",
             "dictation",
             "reading"
           ],
-          "xp": 20
+          "xp": 20,
+          "reading_audio_source_id": "italian-reading-00-09-b-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         },
         {
           "id": "italian-reading-foundations-production-blocks",
@@ -2209,28 +2770,39 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
+          ]
         },
         {
           "id": "italian-reading-foundations-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "type": "dictation",
+          "prompt": "Escucha y escribe el ejemplo practicado de SC ante E",
           "target": "",
-          "instruction": "Escribe exactamente «gli · sci», no una guía de pronunciación.",
-          "answer": "gli · sci",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "scena",
           "accepted_answers": [
-            "gli · sci"
+            "scena"
           ],
-          "explanation": "Escuchaste «gli · sci». Son patrones frecuentes que no conviene deletrear.",
-          "audio": "elle",
-          "slow_audio": "elle",
+          "explanation": "Escuchaste «scena», el ejemplo de SC ante E de la unidad.",
+          "audio": "scena",
+          "slow_audio": "scena",
           "tags": [
             "production",
             "completion",
             "reading",
             "italian"
           ],
-          "xp": 15
+          "xp": 15,
+          "allow_minor_typos": false,
+          "reading_audio_source_id": "italian-reading-00-09-b-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         }
       ]
     },
@@ -2266,8 +2838,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2279,7 +2851,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-2-question",
@@ -2287,9 +2860,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "B",
           "options": [
-            "B",
             "C",
-            "D"
+            "D",
+            "B"
           ],
           "answer": "B",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2300,7 +2873,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-3-question",
@@ -2321,7 +2895,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-4-question",
@@ -2329,8 +2904,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "D",
           "options": [
-            "D",
             "E",
+            "D",
             "F"
           ],
           "answer": "D",
@@ -2342,7 +2917,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-5-question",
@@ -2350,9 +2926,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
             "F",
-            "G"
+            "G",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2363,7 +2939,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-6-question",
@@ -2384,7 +2961,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-7-question",
@@ -2392,8 +2970,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
+            "G",
             "I"
           ],
           "answer": "G",
@@ -2405,7 +2983,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-8-question",
@@ -2413,9 +2992,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "H",
           "options": [
-            "H",
             "I",
-            "L"
+            "L",
+            "H"
           ],
           "answer": "H",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2426,7 +3005,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-9-question",
@@ -2447,7 +3027,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-10-question",
@@ -2455,8 +3036,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "L",
           "options": [
-            "L",
             "M",
+            "L",
             "N"
           ],
           "answer": "L",
@@ -2468,7 +3049,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-11-question",
@@ -2476,9 +3058,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "M",
           "options": [
-            "M",
             "N",
-            "O"
+            "O",
+            "M"
           ],
           "answer": "M",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2489,7 +3071,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-12-question",
@@ -2510,7 +3093,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-13-question",
@@ -2518,8 +3102,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "O",
           "options": [
-            "O",
             "P",
+            "O",
             "Q"
           ],
           "answer": "O",
@@ -2531,7 +3115,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-14-question",
@@ -2539,9 +3124,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "P",
           "options": [
-            "P",
             "Q",
-            "R"
+            "R",
+            "P"
           ],
           "answer": "P",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2552,7 +3137,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-15-question",
@@ -2573,7 +3159,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-16-question",
@@ -2581,8 +3168,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "R",
           "options": [
-            "R",
             "S",
+            "R",
             "T"
           ],
           "answer": "R",
@@ -2594,7 +3181,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-17-question",
@@ -2602,9 +3190,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
-            "U"
+            "U",
+            "S"
           ],
           "answer": "S",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2615,7 +3203,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-18-question",
@@ -2636,7 +3225,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-19-question",
@@ -2644,8 +3234,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "U",
           "options": [
-            "U",
             "V",
+            "U",
             "Z"
           ],
           "answer": "U",
@@ -2657,7 +3247,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-20-question",
@@ -2665,9 +3256,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
             "Z",
-            "A"
+            "A",
+            "V"
           ],
           "answer": "V",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2678,7 +3269,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-21-question",
@@ -2699,7 +3291,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "italian-reading-00-test-22-question",
@@ -2707,8 +3300,8 @@
           "prompt": "¿Qué debes hacer con las vocales italianas?",
           "target": "a · e · i · o · u",
           "options": [
-            "Pronunciarlas con claridad",
             "Reducirlas todas",
+            "Pronunciarlas con claridad",
             "Omitir las finales"
           ],
           "answer": "Pronunciarlas con claridad",
@@ -2720,7 +3313,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "a",
+              "audio": "a"
+            },
+            {
+              "text": "e",
+              "audio": "e"
+            },
+            {
+              "text": "i",
+              "audio": "i"
+            },
+            {
+              "text": "o",
+              "audio": "o"
+            },
+            {
+              "text": "u",
+              "audio": "u"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-23-question",
@@ -2728,9 +3344,9 @@
           "prompt": "¿Es relativamente regular la ortografía italiana?",
           "target": "casa",
           "options": [
-            "Sí, aunque tiene reglas y excepciones",
             "No, es impredecible",
-            "Solo en nombres"
+            "Solo en nombres",
+            "Sí, aunque tiene reglas y excepciones"
           ],
           "answer": "Sí, aunque tiene reglas y excepciones",
           "explanation": "Esto hace posible leer pronto sin depender de una transcripción.",
@@ -2741,7 +3357,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "casa",
+              "meaning": "casa",
+              "audio": "casa"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-24-question",
@@ -2762,7 +3387,33 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ca",
+              "audio": "ca",
+              "audio_source": "tts"
+            },
+            {
+              "text": "co",
+              "audio": "co",
+              "audio_source": "tts"
+            },
+            {
+              "text": "cu",
+              "audio": "cu"
+            },
+            {
+              "text": "ce",
+              "audio": "ce",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ci",
+              "audio": "ci"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-25-question",
@@ -2770,8 +3421,8 @@
           "prompt": "¿Cómo suele sonar G ante E o I?",
           "target": "ga/go/gu · ge/gi",
           "options": [
-            "Con un sonido suave parecido a y/dj",
             "Como k",
+            "Con un sonido suave parecido a y/dj",
             "Siempre muda"
           ],
           "answer": "Con un sonido suave parecido a y/dj",
@@ -2783,7 +3434,34 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ga",
+              "audio": "ga",
+              "audio_source": "tts"
+            },
+            {
+              "text": "go",
+              "audio": "go",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gu",
+              "audio": "gu",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ge",
+              "audio": "ge",
+              "audio_source": "tts"
+            },
+            {
+              "text": "gi",
+              "audio": "gi"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-26-question",
@@ -2791,9 +3469,9 @@
           "prompt": "¿Qué hace H en CHE o CHI?",
           "target": "che · chi",
           "options": [
-            "Mantiene el sonido duro k",
             "Convierte C en s",
-            "Forma una vocal"
+            "Forma una vocal",
+            "Mantiene el sonido duro k"
           ],
           "answer": "Mantiene el sonido duro k",
           "explanation": "Compara ce con che y ci con chi.",
@@ -2804,7 +3482,19 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "che",
+              "audio": "che",
+              "audio_source": "tts"
+            },
+            {
+              "text": "chi",
+              "audio": "chi"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-27-question",
@@ -2825,7 +3515,20 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ghe",
+              "audio": "ghe",
+              "audio_source": "tts"
+            },
+            {
+              "text": "ghi",
+              "audio": "ghi",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-28-question",
@@ -2833,8 +3536,8 @@
           "prompt": "¿Cómo se lee normalmente GN?",
           "target": "gn: bagno",
           "options": [
-            "Como un sonido parecido a ñ",
             "Como g + n separadas",
+            "Como un sonido parecido a ñ",
             "Como ch"
           ],
           "answer": "Como un sonido parecido a ñ",
@@ -2846,7 +3549,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "GN DENTRO DE UNA PALABRA",
+              "text": "bagno",
+              "meaning": "baño",
+              "audio": "bagno"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-29-question",
@@ -2854,9 +3566,9 @@
           "prompt": "¿Debes separar GLI letra por letra?",
           "target": "gli · sci",
           "options": [
-            "No, funciona como grupo",
             "Sí, siempre",
-            "Solo la G es muda"
+            "Solo la G es muda",
+            "No, funciona como grupo"
           ],
           "answer": "No, funciona como grupo",
           "explanation": "Son patrones frecuentes que no conviene deletrear.",
@@ -2867,7 +3579,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO CON GLI",
+              "text": "famiglia",
+              "meaning": "familia",
+              "audio": "famiglia"
+            },
+            {
+              "label": "SC ANTE E",
+              "text": "scena",
+              "meaning": "escena",
+              "audio": "scena"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-30-question",
@@ -2888,7 +3615,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "pala",
+              "meaning": "pala",
+              "audio": "pala",
+              "audio_source": "tts"
+            },
+            {
+              "text": "palla",
+              "meaning": "pelota",
+              "audio": "palla",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-31-question",
@@ -2896,8 +3638,8 @@
           "prompt": "¿Debes eliminar las vocales no acentuadas?",
           "target": "italiano",
           "options": [
-            "No, suelen conservarse claras",
             "Sí, todas",
+            "No, suelen conservarse claras",
             "Solo las finales"
           ],
           "answer": "No, suelen conservarse claras",
@@ -2909,7 +3651,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "italiano",
+              "meaning": "italiano",
+              "audio": "italiano",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-32-question",
@@ -2917,9 +3669,9 @@
           "prompt": "¿Qué debes memorizar junto con una palabra italiana?",
           "target": "parola",
           "options": [
-            "Su sílaba acentuada",
             "Solo su traducción",
-            "El nombre de cada letra"
+            "El nombre de cada letra",
+            "Su sílaba acentuada"
           ],
           "answer": "Su sílaba acentuada",
           "explanation": "El acento gráfico aparece cuando es necesario, especialmente al final.",
@@ -2930,7 +3682,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ACENTO EN LA PENÚLTIMA SÍLABA",
+              "text": "parola",
+              "meaning": "palabra",
+              "audio": "parola",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "italian-reading-00-test-33-question",
@@ -2951,7 +3713,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "l’acqua",
+              "meaning": "el agua",
+              "audio": "l’acqua",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     }

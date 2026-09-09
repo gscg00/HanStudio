@@ -56,18 +56,19 @@
             "Consonantes y vocales son letras independientes.",
             "Las letras se agrupan visualmente en cuadrados.",
             "Cada cuadrado corresponde normalmente a una sílaba."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-system-block",
           "type": "teach_concept",
-          "prompt": "Lee el bloque como una sílaba",
-          "target": "ㅎ + ㅏ + ㄴ = 한",
+          "prompt": "Cómo se forma un bloque",
+          "target": "inicial + vocal + final = bloque",
           "options": [],
           "answer": "",
-          "explanation": "No leas los trazos por separado. Reconoce las letras dentro del bloque y pronúncialas juntas.",
-          "audio": "한",
-          "slow_audio": "한",
+          "explanation": "Primero comprende la estructura. Construirás y pronunciarás bloques reales después de aprender las vocales y consonantes necesarias.",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -77,55 +78,64 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "한 se pronuncia como una sola sílaba.",
-          "memory_hint": "Primero ㅎ, después ㅏ y al final ㄴ.",
+          "sound_hint": "Un bloque reúne letras y se leerá como una sola sílaba cuando ya conozcas sus sonidos.",
+          "memory_hint": "Por ahora identifica los puestos; no intentes pronunciar letras todavía.",
           "teaching_points": [
-            "ㅎ es la consonante inicial.",
-            "ㅏ es la vocal.",
-            "ㄴ está abajo y cierra la sílaba."
-          ]
+            "Una consonante puede ir al inicio.",
+            "Una vocal ocupa el segundo puesto.",
+            "Una consonante final puede cerrar el bloque."
+          ],
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-system-q1",
           "type": "select_translation",
-          "prompt": "¿Qué representa normalmente un bloque como «한»?",
-          "target": "한",
+          "prompt": "¿Qué representa normalmente un bloque de hangeul?",
+          "target": "consonante + vocal",
           "options": [
-            "Una sílaba",
             "Una oración completa",
+            "Una sílaba",
             "Una imagen sin sonidos"
           ],
           "answer": "Una sílaba",
           "explanation": "Un bloque de hangeul suele representar una sílaba.",
-          "audio": "한",
-          "slow_audio": "한",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-system-block"
+          ]
         },
         {
           "id": "korean-hangul-00-system-q2",
           "type": "select_translation",
           "prompt": "¿Cómo debes empezar a leer hangeul?",
-          "target": "ㅎ + ㅏ + ㄴ",
+          "target": "inicial + vocal + final",
           "options": [
-            "Identificando las letras del bloque",
             "Memorizando el bloque como un dibujo",
-            "Leyendo solo la letra más grande"
+            "Leyendo solo la letra más grande",
+            "Identificando las letras del bloque"
           ],
           "answer": "Identificando las letras del bloque",
           "explanation": "Primero identifica consonante, vocal y posible consonante final.",
-          "audio": "한",
-          "slow_audio": "한",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-system-block"
+          ]
         }
       ]
     },
@@ -177,28 +187,8 @@
             "ㅇ inicial: silenciosa.",
             "ㅏ: sonido cercano a «a».",
             "Juntas forman 아."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-vowels-a-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅏ",
-          "target": "",
-          "options": [
-            "아",
-            "어",
-            "이"
           ],
-          "answer": "아",
-          "explanation": "아 contiene la vocal ㅏ.",
-          "audio": "아",
-          "slow_audio": "아",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-vowels-eo",
@@ -207,7 +197,7 @@
           "target": "ㅇ + ㅓ = 어",
           "options": [],
           "answer": "",
-          "explanation": "Relaja la boca y escucha el modelo. Lo importante al principio es distinguir 어 de 아 y 오.",
+          "explanation": "Escucha el modelo de 어 y compáralo con 아, que ya has practicado. En esta lección conocerás también 이 antes de elegir entre las tres sílabas.",
           "audio": "어",
           "slow_audio": "어",
           "image": null,
@@ -225,28 +215,8 @@
             "ㅇ inicial: silenciosa.",
             "ㅓ: vocal abierta y posterior.",
             "Juntas forman 어."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-vowels-eo-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅓ",
-          "target": "",
-          "options": [
-            "오",
-            "어",
-            "아"
           ],
-          "answer": "어",
-          "explanation": "어 contiene la vocal ㅓ.",
-          "audio": "어",
-          "slow_audio": "어",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-vowels-i",
@@ -273,17 +243,72 @@
             "ㅇ inicial: silenciosa.",
             "ㅣ: sonido parecido a «i».",
             "Juntas forman 이."
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-vowels-a-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la sílaba que oyes",
+          "target": "",
+          "options": [
+            "아",
+            "어",
+            "이"
+          ],
+          "answer": "아",
+          "explanation": "아 contiene la vocal ㅏ.",
+          "audio": "아",
+          "slow_audio": "아",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-a",
+            "korean-hangul-00-vowels-eo",
+            "korean-hangul-00-vowels-i"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-vowels-eo-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la sílaba que oyes",
+          "target": "",
+          "options": [
+            "아",
+            "이",
+            "어"
+          ],
+          "answer": "어",
+          "explanation": "어 contiene la vocal ㅓ.",
+          "audio": "어",
+          "slow_audio": "어",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-a",
+            "korean-hangul-00-vowels-eo",
+            "korean-hangul-00-vowels-i"
           ]
         },
         {
           "id": "korean-hangul-00-vowels-i-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅣ",
+          "prompt": "Escucha y elige la sílaba que oyes",
           "target": "",
           "options": [
-            "이",
             "아",
-            "우"
+            "어",
+            "이"
           ],
           "answer": "이",
           "explanation": "이 contiene la vocal ㅣ.",
@@ -294,13 +319,19 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-a",
+            "korean-hangul-00-vowels-eo",
+            "korean-hangul-00-vowels-i"
+          ]
         },
         {
           "id": "korean-hangul-00-vowels-layout",
           "type": "select_translation",
           "prompt": "¿Dónde se coloca una vocal vertical?",
-          "target": "ㄱ + ㅏ = 가",
+          "target": "ㅇ + ㅏ = 아",
           "options": [
             "A la derecha de la consonante",
             "Debajo de la consonante",
@@ -308,14 +339,15 @@
           ],
           "answer": "A la derecha de la consonante",
           "explanation": "Las vocales verticales se colocan a la derecha de la consonante inicial.",
-          "audio": "가",
-          "slow_audio": "가",
+          "audio": "아",
+          "slow_audio": "아",
           "image": null,
           "writing_asset": null,
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -367,28 +399,8 @@
             "ㅇ inicial: silenciosa.",
             "ㅗ: sonido aproximado a «o».",
             "Juntas forman 오."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-vowels-o-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅗ",
-          "target": "",
-          "options": [
-            "어",
-            "오",
-            "우"
           ],
-          "answer": "오",
-          "explanation": "오 contiene la vocal ㅗ.",
-          "audio": "오",
-          "slow_audio": "오",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-vowels-u",
@@ -415,28 +427,8 @@
             "ㅇ inicial: silenciosa.",
             "ㅜ: sonido parecido a «u».",
             "Juntas forman 우."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-vowels-u-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅜ",
-          "target": "",
-          "options": [
-            "우",
-            "오",
-            "으"
           ],
-          "answer": "우",
-          "explanation": "우 contiene la vocal ㅜ.",
-          "audio": "우",
-          "slow_audio": "우",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-vowels-eu",
@@ -445,7 +437,7 @@
           "target": "ㅇ + ㅡ = 으",
           "options": [],
           "answer": "",
-          "explanation": "Es una vocal central. Escucha varias veces y distínguela de 우; no necesitas romanizarla.",
+          "explanation": "Eleva la parte posterior de la lengua y mantén los labios sin redondear. Compara 으 con 우: en 우 los labios sí se redondean.",
           "audio": "으",
           "slow_audio": "으",
           "image": null,
@@ -461,18 +453,72 @@
           "memory_hint": "Mantén los labios sin redondear.",
           "teaching_points": [
             "ㅇ inicial: silenciosa.",
-            "ㅡ: vocal central con labios relajados.",
+            "ㅡ: lengua elevada hacia atrás y labios sin redondear.",
             "Juntas forman 으."
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-vowels-o-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la sílaba que oyes",
+          "target": "",
+          "options": [
+            "어",
+            "우",
+            "오"
+          ],
+          "answer": "오",
+          "explanation": "오 contiene la vocal ㅗ.",
+          "audio": "오",
+          "slow_audio": "오",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-o",
+            "korean-hangul-00-vowels-u"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-vowels-u-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige la sílaba que oyes",
+          "target": "",
+          "options": [
+            "우",
+            "오",
+            "으"
+          ],
+          "answer": "우",
+          "explanation": "우 contiene la vocal ㅜ.",
+          "audio": "우",
+          "slow_audio": "우",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-o",
+            "korean-hangul-00-vowels-u",
+            "korean-hangul-00-vowels-eu"
           ]
         },
         {
           "id": "korean-hangul-00-vowels-eu-listen",
           "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque que contiene ㅡ",
+          "prompt": "Escucha y elige la sílaba que oyes",
           "target": "",
           "options": [
-            "이",
             "으",
+            "이",
             "우"
           ],
           "answer": "으",
@@ -484,28 +530,34 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-vowels-u",
+            "korean-hangul-00-vowels-eu"
+          ]
         },
         {
           "id": "korean-hangul-00-vowels-horizontal-layout",
           "type": "select_translation",
           "prompt": "¿Dónde se coloca una vocal horizontal?",
-          "target": "ㄱ + ㅜ = 구",
+          "target": "ㅇ + ㅜ = 우",
           "options": [
-            "Debajo de la consonante",
             "A la izquierda de la consonante",
+            "Debajo de la consonante",
             "En otro bloque"
           ],
           "answer": "Debajo de la consonante",
           "explanation": "Las vocales horizontales se colocan debajo de la consonante inicial.",
-          "audio": "구",
-          "slow_audio": "구",
+          "audio": "우",
+          "slow_audio": "우",
           "image": null,
           "writing_asset": null,
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -557,28 +609,8 @@
             "ㄱ: consonante inicial.",
             "ㅏ: vocal.",
             "El bloque completo es 가."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-consonants-g-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "가",
-            "나",
-            "마"
           ],
-          "answer": "가",
-          "explanation": "가 empieza con ㄱ.",
-          "audio": "가",
-          "slow_audio": "가",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-consonants-n",
@@ -605,28 +637,8 @@
             "ㄴ: sonido «n».",
             "ㅏ: vocal cercana a «a».",
             "El bloque completo es 나."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-consonants-n-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "마",
-            "나",
-            "다"
           ],
-          "answer": "나",
-          "explanation": "나 empieza con ㄴ.",
-          "audio": "나",
-          "slow_audio": "나",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-consonants-m",
@@ -653,6 +665,102 @@
             "ㅁ: sonido «m».",
             "ㅏ: vocal.",
             "El bloque completo es 마."
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-consonants-ng",
+          "type": "teach_concept",
+          "prompt": "Dos funciones de ㅇ",
+          "target": "가 · 강",
+          "options": [],
+          "answer": "",
+          "explanation": "En 아, ㅇ inicial es silenciosa. En 강, ㅇ final aporta ng: la parte posterior de la lengua cierra el paso del aire por la boca y el aire sale por la nariz.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 2,
+          "gradable": false,
+          "meaning": "",
+          "teaching_kind": "rule",
+          "sound_hint": "ㅇ es silenciosa al inicio; al final cierra la sílaba con un sonido nasal ng.",
+          "memory_hint": "Añade ㅇ debajo de 가: ㄱ + ㅏ + ㅇ = 강.",
+          "teaching_points": [
+            "가 ya contiene ㄱ y ㅏ.",
+            "강 añade ㅇ abajo, sin crear otra sílaba.",
+            "No confundas ㅇ final con ㄴ: son consonantes diferentes."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "가",
+              "meaning": "Bloque sin consonante final.",
+              "audio": "가"
+            },
+            {
+              "label": "EJEMPLO EN CONTEXTO",
+              "text": "강",
+              "meaning": "El mismo inicio, con ㅇ final.",
+              "audio": "강"
+            }
+          ]
+        },
+        {
+          "id": "korean-hangul-00-consonants-g-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "나",
+            "마",
+            "가"
+          ],
+          "answer": "가",
+          "explanation": "가 empieza con ㄱ.",
+          "audio": "가",
+          "slow_audio": "가",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-g",
+            "korean-hangul-00-consonants-n",
+            "korean-hangul-00-consonants-m"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-consonants-n-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "나",
+            "마",
+            "가"
+          ],
+          "answer": "나",
+          "explanation": "나 empieza con ㄴ.",
+          "audio": "나",
+          "slow_audio": "나",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-g",
+            "korean-hangul-00-consonants-n",
+            "korean-hangul-00-consonants-m"
           ]
         },
         {
@@ -661,9 +769,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "바",
-            "마",
-            "사"
+            "가",
+            "나",
+            "마"
           ],
           "answer": "마",
           "explanation": "마 empieza con ㅁ.",
@@ -674,33 +782,12 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
-        },
-        {
-          "id": "korean-hangul-00-consonants-ng",
-          "type": "teach_concept",
-          "prompt": "Dos funciones de ㅇ",
-          "target": "아 · 한",
-          "options": [],
-          "answer": "",
-          "explanation": "La posición cambia su función. Este detalle es esencial para leer bloques completos.",
-          "audio": "한",
-          "slow_audio": "한",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 2,
-          "gradable": false,
-          "meaning": "",
-          "teaching_kind": "rule",
-          "sound_hint": "ㅇ es silenciosa al inicio, pero al final suena «ng».",
-          "memory_hint": "Compara 아, donde no inicia sonido, con 한, donde cierra la sílaba.",
-          "teaching_points": [
-            "En 아, ㅇ inicial no suena.",
-            "En 한, ㄴ es el cierre; en 강, ㅇ final suena «ng».",
-            "No leas ㅇ siempre de la misma manera."
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-g",
+            "korean-hangul-00-consonants-n",
+            "korean-hangul-00-consonants-m"
           ]
         },
         {
@@ -709,20 +796,24 @@
           "prompt": "¿Cuándo suena ㅇ como «ng»?",
           "target": "ㅇ",
           "options": [
-            "Cuando está al final del bloque",
             "Siempre que aparece",
+            "Cuando está al final del bloque",
             "Solo cuando está a la izquierda"
           ],
           "answer": "Cuando está al final del bloque",
           "explanation": "ㅇ es silenciosa al inicio y suena «ng» como consonante final.",
-          "audio": "한",
-          "slow_audio": "한",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-ng"
+          ]
         }
       ]
     },
@@ -774,28 +865,8 @@
             "ㄷ: consonante inicial.",
             "ㅏ: vocal.",
             "El bloque completo es 다."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-consonants-d-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "나",
-            "다",
-            "라"
           ],
-          "answer": "다",
-          "explanation": "다 empieza con ㄷ.",
-          "audio": "다",
-          "slow_audio": "다",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-consonants-r",
@@ -822,28 +893,8 @@
             "ㄹ: sonido líquido breve.",
             "ㅏ: vocal.",
             "El bloque completo es 라."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-consonants-r-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "라",
-            "마",
-            "사"
           ],
-          "answer": "라",
-          "explanation": "라 empieza con ㄹ.",
-          "audio": "라",
-          "slow_audio": "라",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-consonants-b",
@@ -870,28 +921,8 @@
             "ㅂ: consonante inicial.",
             "ㅏ: vocal.",
             "El bloque completo es 바."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-consonants-b-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "마",
-            "바",
-            "파"
           ],
-          "answer": "바",
-          "explanation": "바 empieza con ㅂ.",
-          "audio": "바",
-          "slow_audio": "바",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-consonants-s",
@@ -918,6 +949,85 @@
             "ㅅ: consonante inicial.",
             "ㅏ: vocal.",
             "El bloque completo es 사."
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-consonants-d-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "다",
+            "나",
+            "라"
+          ],
+          "answer": "다",
+          "explanation": "다 empieza con ㄷ.",
+          "audio": "다",
+          "slow_audio": "다",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-d",
+            "korean-hangul-00-consonants-r"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-consonants-r-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "마",
+            "사",
+            "라"
+          ],
+          "answer": "라",
+          "explanation": "라 empieza con ㄹ.",
+          "audio": "라",
+          "slow_audio": "라",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-r",
+            "korean-hangul-00-consonants-s"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-consonants-b-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "마",
+            "다",
+            "바"
+          ],
+          "answer": "바",
+          "explanation": "바 empieza con ㅂ.",
+          "audio": "바",
+          "slow_audio": "바",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-d",
+            "korean-hangul-00-consonants-b"
           ]
         },
         {
@@ -926,9 +1036,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "자",
             "사",
-            "하"
+            "다",
+            "라"
           ],
           "answer": "사",
           "explanation": "사 empieza con ㅅ.",
@@ -939,7 +1049,13 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-consonants-d",
+            "korean-hangul-00-consonants-r",
+            "korean-hangul-00-consonants-s"
+          ]
         }
       ]
     },
@@ -991,28 +1107,8 @@
             "Consonante inicial: ㄱ.",
             "Vocal vertical a la derecha: ㅏ.",
             "Resultado: 가."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-blocks-vertical-q",
-          "type": "select_translation",
-          "prompt": "¿Qué bloque forman ㄱ y ㅏ?",
-          "target": "ㄱ + ㅏ",
-          "options": [
-            "가",
-            "구",
-            "나"
           ],
-          "answer": "가",
-          "explanation": "ㄱ + ㅏ forman 가.",
-          "audio": "가",
-          "slow_audio": "가",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-blocks-horizontal",
@@ -1039,7 +1135,30 @@
             "Consonante inicial arriba: ㄱ.",
             "Vocal horizontal debajo: ㅜ.",
             "Resultado: 구."
-          ]
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-blocks-vertical-q",
+          "type": "select_translation",
+          "prompt": "¿Qué bloque forman ㄱ y ㅏ?",
+          "target": "ㄱ + ㅏ",
+          "options": [
+            "구",
+            "가",
+            "나"
+          ],
+          "answer": "가",
+          "explanation": "ㄱ + ㅏ forman 가.",
+          "audio": "가",
+          "slow_audio": "가",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-blocks-horizontal-q",
@@ -1048,8 +1167,8 @@
           "target": "ㄱ + ㅜ",
           "options": [
             "가",
-            "구",
-            "우"
+            "우",
+            "구"
           ],
           "answer": "구",
           "explanation": "ㄱ + ㅜ forman 구.",
@@ -1060,7 +1179,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-blocks-rule-q",
@@ -1081,7 +1201,12 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-blocks-vertical",
+            "korean-hangul-00-blocks-horizontal"
+          ]
         }
       ]
     },
@@ -1115,8 +1240,8 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "어",
             "아",
+            "어",
             "오"
           ],
           "answer": "아",
@@ -1128,7 +1253,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-review-u",
@@ -1136,9 +1262,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "우",
             "오",
-            "으"
+            "으",
+            "우"
           ],
           "answer": "우",
           "explanation": "우 contiene ㅜ.",
@@ -1149,7 +1275,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-review-na",
@@ -1158,8 +1285,8 @@
           "target": "",
           "options": [
             "마",
-            "나",
-            "다"
+            "다",
+            "나"
           ],
           "answer": "나",
           "explanation": "나 se forma con ㄴ + ㅏ.",
@@ -1170,7 +1297,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-review-layout",
@@ -1179,8 +1307,8 @@
           "target": "구",
           "options": [
             "가",
-            "구",
-            "너"
+            "너",
+            "구"
           ],
           "answer": "구",
           "explanation": "구 coloca ㄱ arriba y ㅜ debajo.",
@@ -1191,7 +1319,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-review-order",
@@ -1212,7 +1341,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -1240,6 +1370,31 @@
           "gradable": false
         },
         {
+          "id": "korean-hangul-00-batchim-h",
+          "type": "teach_concept",
+          "prompt": "Conoce ㅎ antes de leer 한",
+          "target": "ㅎ + ㅏ = 하",
+          "answer": "",
+          "options": [],
+          "gradable": false,
+          "teaching_kind": "rule",
+          "meaning": "",
+          "audio": "하",
+          "slow_audio": "하",
+          "xp": 2,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "sound_hint": "ㅎ aporta una salida de aire. Escúchala con la vocal ㅏ en 하.",
+          "memory_hint": "Primero 하; después añadirás ㄴ debajo para formar 한.",
+          "explanation": "La consonante inicial ㅎ se combina con la vocal conocida ㅏ. No la leas como una h muda española.",
+          "teaching_points": [
+            "ㅎ: consonante inicial con salida de aire.",
+            "ㅏ: vocal ya aprendida.",
+            "하: una sola sílaba."
+          ]
+        },
+        {
           "id": "korean-hangul-00-batchim-han",
           "type": "teach_concept",
           "prompt": "Lee 한",
@@ -1264,28 +1419,8 @@
             "ㅎ: consonante inicial.",
             "ㅏ: vocal.",
             "ㄴ: consonante final o batchim."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-batchim-han-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "하",
-            "한",
-            "강"
           ],
-          "answer": "한",
-          "explanation": "한 termina en ㄴ.",
-          "audio": "한",
-          "slow_audio": "한",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-batchim-mun",
@@ -1312,28 +1447,8 @@
             "ㅁ: consonante inicial.",
             "ㅜ: vocal horizontal.",
             "ㄴ: batchim."
-          ]
-        },
-        {
-          "id": "korean-hangul-00-batchim-mun-listen",
-          "type": "listening_choice",
-          "prompt": "Escucha y elige el bloque correcto",
-          "target": "",
-          "options": [
-            "문",
-            "물",
-            "눈"
           ],
-          "answer": "문",
-          "explanation": "문 termina en ㄴ.",
-          "audio": "문",
-          "slow_audio": "문",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
+          "audio_examples": []
         },
         {
           "id": "korean-hangul-00-batchim-bap",
@@ -1360,6 +1475,60 @@
             "ㅂ inicial abre la sílaba.",
             "ㅏ aporta la vocal.",
             "ㅂ final cierra el bloque."
+          ],
+          "audio_examples": []
+        },
+        {
+          "id": "korean-hangul-00-batchim-han-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "하",
+            "강",
+            "한"
+          ],
+          "answer": "한",
+          "explanation": "한 termina en ㄴ.",
+          "audio": "한",
+          "slow_audio": "한",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-batchim-h",
+            "korean-hangul-00-batchim-han"
+          ]
+        },
+        {
+          "id": "korean-hangul-00-batchim-mun-listen",
+          "type": "listening_choice",
+          "prompt": "Escucha y elige el bloque correcto",
+          "target": "",
+          "options": [
+            "하",
+            "문",
+            "한"
+          ],
+          "answer": "문",
+          "explanation": "문 termina en ㄴ.",
+          "audio": "문",
+          "slow_audio": "문",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-batchim-h",
+            "korean-hangul-00-batchim-han",
+            "korean-hangul-00-batchim-mun"
           ]
         },
         {
@@ -1368,9 +1537,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "바",
             "밥",
-            "파"
+            "바",
+            "하"
           ],
           "answer": "밥",
           "explanation": "밥 tiene ㅂ como batchim.",
@@ -1381,7 +1550,12 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-batchim-h",
+            "korean-hangul-00-batchim-bap"
+          ]
         },
         {
           "id": "korean-hangul-00-batchim-rule",
@@ -1389,8 +1563,8 @@
           "prompt": "¿Qué hace una consonante escrita abajo?",
           "target": "받침",
           "options": [
-            "Cierra la sílaba",
             "Empieza una palabra nueva",
+            "Cierra la sílaba",
             "Se ignora siempre"
           ],
           "answer": "Cierra la sílaba",
@@ -1402,7 +1576,13 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-batchim-han",
+            "korean-hangul-00-batchim-mun",
+            "korean-hangul-00-batchim-bap"
+          ]
         }
       ]
     },
@@ -1455,27 +1635,6 @@
           ]
         },
         {
-          "id": "korean-hangul-00-word-tree-q",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «나무»?",
-          "target": "나무",
-          "options": [
-            "árbol",
-            "persona",
-            "leche"
-          ],
-          "answer": "árbol",
-          "explanation": "나무 significa «árbol».",
-          "audio": "나무",
-          "slow_audio": "나무",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "korean-hangul-00-word-person-teach",
           "type": "teach_word",
           "prompt": "Lee por bloques",
@@ -1499,27 +1658,6 @@
             "사 + 람 forman 사람.",
             "Significa «persona»."
           ]
-        },
-        {
-          "id": "korean-hangul-00-word-person-q",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «사람»?",
-          "target": "사람",
-          "options": [
-            "libro",
-            "persona",
-            "agua"
-          ],
-          "answer": "persona",
-          "explanation": "사람 significa «persona».",
-          "audio": "사람",
-          "slow_audio": "사람",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "korean-hangul-00-word-milk-teach",
@@ -1547,27 +1685,6 @@
           ]
         },
         {
-          "id": "korean-hangul-00-word-milk-q",
-          "type": "select_translation",
-          "prompt": "¿Qué significa «우유»?",
-          "target": "우유",
-          "options": [
-            "leche",
-            "árbol",
-            "idioma coreano"
-          ],
-          "answer": "leche",
-          "explanation": "우유 significa «leche».",
-          "audio": "우유",
-          "slow_audio": "우유",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "hangul-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "korean-hangul-00-word-korean-teach",
           "type": "teach_word",
           "prompt": "Lee por bloques",
@@ -1593,6 +1710,72 @@
           ]
         },
         {
+          "id": "korean-hangul-00-word-tree-q",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «나무»?",
+          "target": "나무",
+          "options": [
+            "persona",
+            "árbol",
+            "leche"
+          ],
+          "answer": "árbol",
+          "explanation": "나무 significa «árbol».",
+          "audio": "나무",
+          "slow_audio": "나무",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3
+        },
+        {
+          "id": "korean-hangul-00-word-person-q",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «사람»?",
+          "target": "사람",
+          "options": [
+            "persona",
+            "libro",
+            "agua"
+          ],
+          "answer": "persona",
+          "explanation": "사람 significa «persona».",
+          "audio": "사람",
+          "slow_audio": "사람",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3
+        },
+        {
+          "id": "korean-hangul-00-word-milk-q",
+          "type": "select_translation",
+          "prompt": "¿Qué significa «우유»?",
+          "target": "우유",
+          "options": [
+            "árbol",
+            "leche",
+            "idioma coreano"
+          ],
+          "answer": "leche",
+          "explanation": "우유 significa «leche».",
+          "audio": "우유",
+          "slow_audio": "우유",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "hangul-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3
+        },
+        {
           "id": "korean-hangul-00-word-korean-q",
           "type": "select_translation",
           "prompt": "¿Qué significa «한국어»?",
@@ -1611,7 +1794,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-word-korean-listen",
@@ -1632,7 +1816,13 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "korean-hangul-00-word-tree-teach",
+            "korean-hangul-00-word-person-teach",
+            "korean-hangul-00-word-korean-teach"
+          ]
         }
       ]
     },
@@ -1703,7 +1893,7 @@
         {
           "id": "korean-hangul-foundations-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Reconstruye solo el resultado final",
+          "prompt": "Reconstruye solo el resultado final en el orden correcto",
           "target": "문",
           "options": [
             "문"
@@ -1778,9 +1968,9 @@
           "prompt": "¿Qué representa normalmente cada bloque?",
           "target": "한",
           "options": [
-            "Una sílaba",
             "Una oración",
-            "Una ilustración"
+            "Una ilustración",
+            "Una sílaba"
           ],
           "answer": "Una sílaba",
           "explanation": "Cada bloque representa normalmente una sílaba.",
@@ -1791,7 +1981,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-vowel",
@@ -1799,9 +1990,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "어",
             "오",
-            "아"
+            "아",
+            "어"
           ],
           "answer": "어",
           "explanation": "El bloque pronunciado es 어.",
@@ -1812,7 +2003,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-consonant",
@@ -1820,9 +2012,9 @@
           "prompt": "Escucha y elige el bloque correcto",
           "target": "",
           "options": [
-            "마",
             "나",
-            "다"
+            "다",
+            "마"
           ],
           "answer": "마",
           "explanation": "El bloque pronunciado es 마.",
@@ -1833,7 +2025,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-layout",
@@ -1841,8 +2034,8 @@
           "prompt": "¿Qué bloque forman ㄱ y ㅜ?",
           "target": "ㄱ + ㅜ",
           "options": [
-            "구",
             "가",
+            "구",
             "우"
           ],
           "answer": "구",
@@ -1854,7 +2047,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-batchim",
@@ -1862,9 +2056,9 @@
           "prompt": "¿Dónde está el batchim en «문»?",
           "target": "문",
           "options": [
-            "Abajo: ㄴ",
             "Arriba: ㅁ",
-            "En medio: ㅜ"
+            "En medio: ㅜ",
+            "Abajo: ㄴ"
           ],
           "answer": "Abajo: ㄴ",
           "explanation": "ㄴ está abajo y cierra la sílaba 문.",
@@ -1875,7 +2069,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-word",
@@ -1883,8 +2078,8 @@
           "prompt": "¿Qué significa «사람»?",
           "target": "사람",
           "options": [
-            "persona",
             "árbol",
+            "persona",
             "leche"
           ],
           "answer": "persona",
@@ -1896,7 +2091,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "korean-hangul-00-test-reading",
@@ -1904,8 +2100,8 @@
           "prompt": "Escucha y elige la palabra correcta",
           "target": "",
           "options": [
-            "우유",
             "나무",
+            "우유",
             "한국어"
           ],
           "answer": "우유",
@@ -1917,7 +2113,8 @@
           "tags": [
             "hangul-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     }

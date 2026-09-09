@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "手伝っていただけますか es una petición deferente de ayuda. La variante negativa いただけませんか también puede funcionar como petición cortés; no significa que se solicite no ayudar. La forma breve 手伝って tiene otro grado de familiaridad."
         },
         {
           "id": "japanese-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "japanese-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "手伝っていただけますか。",
+          "accepted_answers": [
+            "手伝っていただけますか。",
+            "手伝っていただけませんか。"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "手伝っていただけますか。",
+          "slow_audio": "手伝っていただけますか。",
+          "usage_note": "手伝っていただけますか es una petición deferente de ayuda. La variante negativa いただけませんか también puede funcionar como petición cortés; no significa que se solicite no ayudar. La forma breve 手伝って tiene otro grado de familiaridad.",
+          "explanation": "手伝っていただけますか es una petición deferente de ayuda. La variante negativa いただけませんか también puede funcionar como petición cortés; no significa que se solicite no ayudar. La forma breve 手伝って tiene otro grado de familiaridad.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "japanese-b11-register-01-10-teach",
@@ -1907,7 +1933,7 @@
         {
           "id": "japanese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en japonés: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "仕事を分けましょう。",
           "accepted_answers": [
@@ -1961,7 +1987,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en japonés.",
+              "prompt": "Di o escribe en japonés: «Gracias por avisarme con tiempo.»",
               "answer": "早めに知らせていただき、ありがとうございます。",
               "accepted_answers": [
                 "早めに知らせていただき、ありがとうございます。"
@@ -1979,7 +2005,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en japonés.",
+              "prompt": "Di o escribe en japonés: «Lamento informarle de que la cita se canceló.»",
               "answer": "予約がキャンセルされたことをお知らせいたします。",
               "accepted_answers": [
                 "予約がキャンセルされたことをお知らせいたします。"
@@ -1997,7 +2023,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en japonés.",
+              "prompt": "Di o escribe en japonés: «Vamos a dividir el trabajo.»",
               "answer": "仕事を分けましょう。",
               "accepted_answers": [
                 "仕事を分けましょう。"

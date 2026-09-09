@@ -1,4 +1,5 @@
-.jp-teaching .jp-question{justify-content:center}
+.jp-teaching .jp-question{justify-content:safe center}
+.jp-teaching .jp-question>*{flex-shrink:0}
 .jp-teach-symbol{min-height:130px;margin:.35rem 0}
 .jp-teaching .jp-teach-symbol,
 .jp-teaching .jp-teach-meaning{flex:0 0 auto}
@@ -15,7 +16,7 @@
   border-radius:24px;
   background:transparent;
   color:inherit;
-  font:inherit;
+  font-family:inherit;
   cursor:pointer;
   transition:background .16s ease,transform .16s ease;
 }
@@ -43,6 +44,9 @@
 .guided-course .jp-target.jp-target-medium{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.08}
 .guided-course .jp-target.jp-target-long{min-height:0;font-size:clamp(1.9rem,5.5vw,3.5rem);line-height:1.08;overflow-wrap:break-word;word-break:keep-all}
 .guided-course .jp-target.jp-target-very-long{min-height:0;font-size:clamp(1.45rem,4vw,2.6rem);line-height:1.12;overflow-wrap:break-word;word-break:keep-all}
+/* CJK wraps between characters, respecting punctuation rather than forcing an emergency split. */
+.guided-course .jp-target:lang(ja),
+.guided-course .jp-target:lang(zh){word-break:normal;overflow-wrap:normal;line-break:strict}
 .jp-teach-detail{width:min(560px,100%);margin:.25rem auto;text-align:center;color:var(--jp-muted);font-size:1rem}
 .jp-teach-detail.sound{color:var(--jp-green);font-weight:800;font-size:1.15rem}
 .jp-teach-meaning{display:flex;flex-direction:column;align-items:center;gap:.2rem;width:min(560px,100%);margin:.2rem auto .55rem;padding:.65rem 1rem;border:1px solid #df6c3840;border-radius:15px;background:#fff0e8;text-align:center}
@@ -87,6 +91,14 @@
 .jp-audio-example small{color:var(--jp-muted)}
 .jp-audio-example .jp-listen-row{flex:0 0 auto;margin:0}
 .jp-audio-example .jp-listen-row button{min-width:auto;padding:.55rem .7rem}
+.jp-audio-example-minimal{justify-content:flex-start}
+.jp-audio-example-minimal>div:first-child{flex:0 0 auto;min-width:2rem}
+.jp-audio-example-minimal strong{font-size:1.65rem;line-height:1}
+.jp-audio-example-minimal .jp-listen-row{flex:1 1 auto;justify-content:flex-start}
+.jp-audio-example-minimal .jp-listen-row button{padding:.45rem .55rem;font-size:.9rem}
+.jp-audio-examples-compact{width:min(560px,100%);gap:.45rem}
+.jp-audio-examples-compact .jp-audio-example{padding:.55rem .65rem;gap:.5rem}
+.jp-audio-examples-compact .jp-audio-example strong{font-size:1.45rem}
 .jp-teaching .jp-check{position:sticky;bottom:0;background:var(--jp-paper)}
 
 /* Producción activa: escribir, construir, hablar y sostener un diálogo. */
@@ -169,6 +181,26 @@
 
 /* La actividad ocupa una pantalla: el progreso y la acción nunca se pierden al desplazarse. */
 .jp-app:has(> .jp-activity) .jp-app-nav{margin-bottom:.5rem}
+.jp-app-nav{flex-wrap:wrap;overflow:visible}
+.jp-app-nav button{min-width:0;flex:1 1 auto}
+.jp-learning-review{box-sizing:border-box;width:100%;margin-top:1rem;padding:1rem;border:1px solid #267149;border-radius:14px;background:#fff;text-align:left;flex-shrink:0}
+.jp-learning-review summary{cursor:pointer;font-weight:750;padding:.35rem 0;min-height:32px}
+.jp-learning-review article+article{border-top:1px solid #d9ded9;margin-top:1rem}
+.jp-learning-review p{line-height:1.5;font-size:1rem}
+.jp-learning-review dl>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:.6rem;margin:.5rem 0}
+.jp-learning-review dd{margin:0}
+.jp-learning-review small{display:block;color:#52645c;margin-top:.75rem}
+.jp-learning-review button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.jp-review-given,.jp-review-contrast{background:#f2f5ed;padding:.65rem;border-radius:8px}
+.jp-answer.correct-option{border-color:#267149;background:#e0f1e5;opacity:1}
+.jp-answer.correct-option::after{content:'✓';font-weight:900}
+.jp-question,.jp-feedback>div,.jp-unit-head>div{min-width:0;overflow-wrap:anywhere}
+@media(max-width:360px){
+  .jp-app-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jp-app-nav button:first-child{margin-right:0}
+  .jp-unit-head{flex-wrap:wrap}
+  .jp-course-hero{flex-wrap:wrap}
+}
 .jp-activity{
   box-sizing:border-box;
   height:min(780px,calc(100dvh - 24px));
@@ -186,6 +218,7 @@
   min-height:0;
   overflow-y:auto;
   overscroll-behavior-y:auto;
+  scroll-padding-block:1rem;
   scrollbar-gutter:stable;
   -webkit-overflow-scrolling:touch;
   touch-action:pan-y;

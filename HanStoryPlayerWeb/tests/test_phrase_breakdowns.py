@@ -72,7 +72,7 @@ class PhraseBreakdownTests(unittest.TestCase):
                 self.assertTrue(str(item.get("meaning", "")).strip(), key)
                 self.assertNotIn("romanization", item)
 
-    def test_word_audio_uses_target_language_browser_voice(self):
+    def test_word_audio_uses_target_language_browser_tts(self):
         player = PLAYER.read_text(encoding="utf-8")
         self.assertIn("speechLanguage", player)
         self.assertIn("speakGlossaryWord", player)

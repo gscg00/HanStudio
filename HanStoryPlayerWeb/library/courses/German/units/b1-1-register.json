@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Sie es aquí el tratamiento formal de la persona a quien pides ayuda. Könnten y würden presentan la petición de manera atenuada; bitte añade por favor. Mir indica quién recibe la ayuda."
         },
         {
           "id": "german-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "german-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Könnten Sie mir bitte helfen?",
+          "accepted_answers": [
+            "Könnten Sie mir bitte helfen?",
+            "Würden Sie mir bitte helfen?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Könnten Sie mir bitte helfen?",
+          "slow_audio": "Könnten Sie mir bitte helfen?",
+          "usage_note": "Sie es aquí el tratamiento formal de la persona a quien pides ayuda. Könnten y würden presentan la petición de manera atenuada; bitte añade por favor. Mir indica quién recibe la ayuda.",
+          "explanation": "Sie es aquí el tratamiento formal de la persona a quien pides ayuda. Könnten y würden presentan la petición de manera atenuada; bitte añade por favor. Mir indica quién recibe la ayuda.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "german-b11-register-01-10-teach",
@@ -1893,7 +1919,7 @@
         {
           "id": "german-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en alemán: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Teilen wir die Arbeit auf.",
           "accepted_answers": [
@@ -1947,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
+              "prompt": "Di o escribe en alemán: «Gracias por avisarme con tiempo.»",
               "answer": "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben.",
               "accepted_answers": [
                 "Vielen Dank, dass Sie mir rechtzeitig Bescheid gesagt haben."
@@ -1965,7 +1991,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
+              "prompt": "Di o escribe en alemán: «Lamento informarle de que la cita se canceló.»",
               "answer": "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde.",
               "accepted_answers": [
                 "Leider muss ich Ihnen mitteilen, dass der Termin abgesagt wurde."
@@ -1983,7 +2009,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en alemán.",
+              "prompt": "Di o escribe en alemán: «Vamos a dividir el trabajo.»",
               "answer": "Teilen wir die Arbeit auf.",
               "accepted_answers": [
                 "Teilen wir die Arbeit auf."

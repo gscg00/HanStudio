@@ -1,3 +1,4 @@
+import {meaningVariants} from './guided_answer_variants.js';
 const COMBINING_MARKS=/[\u0300-\u036f]/g;
 const PUNCTUATION=/[\s.,!?¿¡;:()[\]{}"'“”‘’«»…·・，。！？；：、]/g;
 const ARABIC_MARKS=/[\u0640\u064B-\u065F\u0670]/g;
@@ -8,8 +9,10 @@ function foldLatin(value){
 
 export function normalizeGuidedAnswer(value,{language='',keepSpaces=false}={}){
   let text=String(value??'').normalize('NFKC').trim().toLocaleLowerCase();
-  if(language==='Arabic')text=text.replace(ARABIC_MARKS,'').replace(/[إأآٱ]/g,'ا').replace(/ى/g,'ي');
-  if(['English','French','German','Italian','Portuguese','Spanish'].includes(language))text=foldLatin(text);
+  // Optional vocalization/tatweel may be omitted, but keep distinct letters.
+  if(language==='Arabic')text=text.replace(ARABIC_MARKS,'');
+  // Accents distinguish words (ou/où, e/è, schon/schön, avó/avô).
+  // Unicode normalization above handles equivalent encodings without erasing them.
   text=text.replace(PUNCTUATION,keepSpaces?' ':'').replace(/\s+/g,keepSpaces?' ':'').trim();
   return text;
 }
@@ -76,15 +79,18 @@ export function evaluateGuidedAnswer(activity,given,language=''){
   }
   const keepSpaces=activity.joiner===' '||['typed_translation','dictation','complete_without_options','transform_sentence','open_question','speak_and_transcribe'].includes(activity.type);
   const normalized=normalizeGuidedAnswer(given,{language,keepSpaces});
-  const candidates=acceptedAnswers(activity).map(answer=>({
+  const candidates=[...new Set([...acceptedAnswers(activity),...meaningVariants(activity,language)])].map(answer=>({
     raw:answer,
     normalized:normalizeGuidedAnswer(answer,{language,keepSpaces})
   }));
   let match=candidates.find(candidate=>candidate.normalized===normalized);
-  if(!match&&activity.allow_minor_typos&&normalized.length>=8){
+  if(!match&&activity.allow_minor_typos&&activity.answer_policy==='spelling_tolerant'&&normalized.length>=8){
     match=candidates.find(candidate=>levenshtein(candidate.normalized,normalized)<=Math.max(1,Math.floor(candidate.normalized.length*.08)));
   }
-  return{correct:Boolean(match),skipped:false,normalized,expected:candidates[0]?.raw||'',matched:match?.raw||''};
+  const accentMismatch=!match&&normalized&&['English','French','German','Italian','Portuguese','Spanish'].includes(language)
+    &&candidates.some(candidate=>foldLatin(candidate.normalized)===foldLatin(normalized));
+  const orthographyHint=accentMismatch?'Revisa los acentos y signos de las letras: pueden distinguir palabras. Compáralos con el modelo.':'';
+  return{correct:Boolean(match),skipped:false,normalized,expected:candidates[0]?.raw||'',matched:match?.raw||'',orthographyHint};
 }
 
 export function answerFeedback(activity,given,language=''){
@@ -93,12 +99,14 @@ export function answerFeedback(activity,given,language=''){
   if(result.correct){
     const dialogueMessage=result.totalTurns
       ? `${result.correctTurns} de ${result.totalTurns} respuestas comunican correctamente la idea.`
-      : 'La respuesta comunica correctamente la idea.';
-    return{...result,message:activity.success_message||dialogueMessage};
+      : `Respuesta aceptada: ${result.matched||result.expected}`;
+    return{...result,message:activity.success_message||[dialogueMessage,activity.explanation].filter(Boolean).join(' ')};
   }
   const expected=result.expected||activity.answer||'';
   const dialogueMessage=result.totalTurns
     ? `Revisa el intercambio: ${result.correctTurns} de ${result.totalTurns} respuestas fueron correctas.${expected?` Modelo: ${expected}`:''}`
     : `Respuesta esperada: ${expected}`;
-  return{...result,message:activity.error_message||dialogueMessage};
+  const constrained=['typed_translation','open_question','guided_dialogue','stage_scenario'].includes(activity.type);
+  const note=constrained?' Se compara con las expresiones registradas en esta actividad; una formulación diferente puede ser válida.':'';
+  return{...result,message:activity.error_message||[dialogueMessage+note,result.orthographyHint,activity.explanation].filter(Boolean).join(' ')};
 }

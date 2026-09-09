@@ -4,6 +4,8 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {GUIDED_COURSES} from '../src/guided_course_config.js';
 import {A11_TARGETS,A11_THEMES,validateA11Content} from '../course-authoring/a11_content.mjs';
+import {PHRASE_SUPPORT_BY_LANGUAGE} from '../src/guided_phrase_metadata.js';
+import {meaningForTarget} from '../course-authoring/meaning_overrides.mjs';
 
 validateA11Content();
 const here=path.dirname(fileURLToPath(import.meta.url));
@@ -24,51 +26,51 @@ function distractors(values,correct,index){
   const shift=index%result.length;
   return [...result.slice(shift),...result.slice(0,shift)];
 }
-function exercises({slug,theme,target,meaning,index,targets,meanings,prefix,teach}){
+function exercises({language,slug,theme,target,meaning,index,targets,meanings,prefix,teach}){
   const id=`${slug}-${prefix}-${String(index+1).padStart(2,'0')}`;
-  const values=[];
-  if(teach)values.push(activity(`${id}-teach`,'teach_concept','Aprende y escucha',{target,meaning,explanation:meaning,audio:target,gradable:false,tags:[theme,'teaching']}));
+  const values=[],phraseSupport=PHRASE_SUPPORT_BY_LANGUAGE[language]?.[String(target).trim()]||{};
+  if(teach)values.push({...activity(`${id}-teach`,'teach_concept','Aprende y escucha',{target,meaning,explanation:meaning,audio:target,gradable:false,tags:[theme,'teaching']}),...phraseSupport});
   values.push(activity(`${id}-meaning`,'select_translation',`¿Qué significa «${target}»?`,{target,options:distractors(meanings,meaning,index),answer:meaning,explanation:`«${target}» significa «${meaning}».`,audio:target,tags:[theme,'meaning']}));
   values.push(activity(`${id}-listen`,'listening_choice','Escucha y elige la forma escrita correcta',{options:distractors(targets,target,index+2),answer:target,explanation:`La forma escuchada es «${target}»: ${meaning}`,audio:target,tags:[theme,'listening']}));
   return values;
 }
-function teachingLesson({slug,theme,unitTitle,number,indices,targets,meanings}){
+function teachingLesson({language,slug,theme,unitTitle,number,indices,targets,meanings}){
   const lessonId=`${slug}-a11-${theme}-${String(number).padStart(2,'0')}`;
   const prefix=`a11-${theme}-${String(number).padStart(2,'0')}`;
   return{id:lessonId,title:`${unitTitle} · ${number}`,description:'Aprende cuatro elementos nuevos y practícalos de inmediato.',activities:[
     activity(`${lessonId}-intro`,'lesson_intro',unitTitle,{explanation:'Escucha primero. Después relaciona la forma escrita con su significado.',gradable:false,tags:[theme]}),
-    ...indices.flatMap(index=>exercises({slug,theme,target:targets[index],meaning:meanings[index],index,targets,meanings,prefix,teach:true})),
+    ...indices.flatMap(index=>exercises({language,slug,theme,target:targets[index],meaning:meanings[index],index,targets,meanings,prefix,teach:true})),
   ]};
 }
-function reviewLesson({slug,theme,number,indices,targets,meanings}){
+function reviewLesson({language,slug,theme,number,indices,targets,meanings}){
   const lessonId=`${slug}-a11-${theme}-review-${String(number).padStart(2,'0')}`;
   const prefix=`a11-${theme}-review-${String(number).padStart(2,'0')}`;
   return{id:lessonId,title:`Repaso breve · ${number}`,description:'Recupera contenidos anteriores sin añadir vocabulario nuevo.',isReview:true,activities:[
     activity(`${lessonId}-intro`,'lesson_intro','Repaso acumulativo',{explanation:'Intenta recordar antes de utilizar la pista.',gradable:false,tags:[theme,'review']}),
-    ...indices.flatMap(index=>exercises({slug,theme,target:targets[index],meaning:meanings[index],index,targets,meanings,prefix,teach:false})),
+    ...indices.flatMap(index=>exercises({language,slug,theme,target:targets[index],meaning:meanings[index],index,targets,meanings,prefix,teach:false})),
   ]};
 }
-function testLesson({slug,theme,unitTitle,targets,meanings}){
+function testLesson({language,slug,theme,unitTitle,targets,meanings}){
   const lessonId=`${slug}-a11-${theme}-test`,prefix=`a11-${theme}-test`;
   return{id:lessonId,title:`Prueba · ${unitTitle}`,description:'Comprueba los 16 contenidos de la unidad sin presentación previa.',isTest:true,isUnitFinal:true,xpReward:40,activities:[
     activity(`${lessonId}-intro`,'lesson_intro','Prueba de unidad',{explanation:'Necesitas al menos 85 % para completar la unidad.',gradable:false,tags:[theme,'test']}),
-    ...targets.flatMap((target,index)=>exercises({slug,theme,target,meaning:meanings[index],index,targets,meanings,prefix,teach:false})),
+    ...targets.flatMap((target,index)=>exercises({language,slug,theme,target,meaning:meanings[index],index,targets,meanings,prefix,teach:false})),
   ]};
 }
 function unitFor(language,theme,index){
-  const targets=A11_TARGETS[language][theme.id],meanings=theme.meanings,slug=slugs[language];
+  const targets=A11_TARGETS[language][theme.id],meanings=theme.meanings.map((meaning,i)=>meaningForTarget(language,targets[i],meaning)),slug=slugs[language];
   const id=`a1-1-${theme.id}`;
   return{
     id,title:theme.title,description:theme.objective,requirements:index?[`a1-1-${A11_THEMES[index-1].id}`]:[],
     reward:{xp:160,badge:`A1.1 · ${theme.title}`},
     lessons:[
-      teachingLesson({slug,theme:theme.id,unitTitle:theme.title,number:1,indices:[0,1,8,9],targets,meanings}),
-      teachingLesson({slug,theme:theme.id,unitTitle:theme.title,number:2,indices:[2,3,10,11],targets,meanings}),
-      reviewLesson({slug,theme:theme.id,number:1,indices:[0,2,8,10],targets,meanings}),
-      teachingLesson({slug,theme:theme.id,unitTitle:theme.title,number:3,indices:[4,5,12,13],targets,meanings}),
-      teachingLesson({slug,theme:theme.id,unitTitle:theme.title,number:4,indices:[6,7,14,15],targets,meanings}),
-      reviewLesson({slug,theme:theme.id,number:2,indices:[1,3,5,7,9,11,13,15],targets,meanings}),
-      testLesson({slug,theme:theme.id,unitTitle:theme.title,targets,meanings}),
+      teachingLesson({language,slug,theme:theme.id,unitTitle:theme.title,number:1,indices:[0,1,8,9],targets,meanings}),
+      teachingLesson({language,slug,theme:theme.id,unitTitle:theme.title,number:2,indices:[2,3,10,11],targets,meanings}),
+      reviewLesson({language,slug,theme:theme.id,number:1,indices:[0,2,8,10],targets,meanings}),
+      teachingLesson({language,slug,theme:theme.id,unitTitle:theme.title,number:3,indices:[4,5,12,13],targets,meanings}),
+      teachingLesson({language,slug,theme:theme.id,unitTitle:theme.title,number:4,indices:[6,7,14,15],targets,meanings}),
+      reviewLesson({language,slug,theme:theme.id,number:2,indices:[1,3,5,7,9,11,13,15],targets,meanings}),
+      testLesson({language,slug,theme:theme.id,unitTitle:theme.title,targets,meanings}),
     ],
   };
 }

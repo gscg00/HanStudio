@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ا",
-          "options": [
-            "ا",
-            "ب",
-            "ت"
-          ],
-          "answer": "ا",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ا. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ألف",
-          "slow_audio": "ألف",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ب",
@@ -105,27 +84,6 @@
             "Nombre en Árabe: باء.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ب",
-          "options": [
-            "ب",
-            "ت",
-            "ث"
-          ],
-          "answer": "ب",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ب. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "باء",
-          "slow_audio": "باء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ت",
-          "options": [
-            "ت",
-            "ث",
-            "ج"
-          ],
-          "answer": "ت",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ت. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "تاء",
-          "slow_audio": "تاء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra ث",
@@ -203,14 +140,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ا",
+          "options": [
+            "ب",
+            "ا",
+            "ت"
+          ],
+          "answer": "ا",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ا. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ألف",
+          "slow_audio": "ألف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-01-a-teach",
+            "arabic-reading-00-01-b-teach",
+            "arabic-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ب",
+          "options": [
+            "ت",
+            "ث",
+            "ب"
+          ],
+          "answer": "ب",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ب. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "باء",
+          "slow_audio": "باء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-01-b-teach",
+            "arabic-reading-00-01-c-teach",
+            "arabic-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ت",
+          "options": [
+            "ت",
+            "ث",
+            "ا"
+          ],
+          "answer": "ت",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ت. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "تاء",
+          "slow_audio": "تاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-01-a-teach",
+            "arabic-reading-00-01-c-teach",
+            "arabic-reading-00-01-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-01-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ث",
           "options": [
+            "ا",
             "ث",
-            "ج",
-            "ح"
+            "ب"
           ],
           "answer": "ث",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ث. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -221,7 +239,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-01-a-teach",
+            "arabic-reading-00-01-b-teach",
+            "arabic-reading-00-01-d-teach"
+          ]
         }
       ]
     },
@@ -276,27 +300,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ج",
-          "options": [
-            "ج",
-            "ح",
-            "خ"
-          ],
-          "answer": "ج",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ج. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "جيم",
-          "slow_audio": "جيم",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ح",
@@ -322,27 +325,6 @@
             "Nombre en Árabe: حاء.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ح",
-          "options": [
-            "ح",
-            "خ",
-            "د"
-          ],
-          "answer": "ح",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ح. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "حاء",
-          "slow_audio": "حاء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-02-c-teach",
@@ -372,27 +354,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "خ",
-          "options": [
-            "خ",
-            "د",
-            "ذ"
-          ],
-          "answer": "خ",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de خ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "خاء",
-          "slow_audio": "خاء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-02-d-teach",
           "type": "teach_concept",
           "prompt": "Letra د",
@@ -420,14 +381,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ج",
+          "options": [
+            "ح",
+            "ج",
+            "خ"
+          ],
+          "answer": "ج",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ج. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "جيم",
+          "slow_audio": "جيم",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-02-a-teach",
+            "arabic-reading-00-02-b-teach",
+            "arabic-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ح",
+          "options": [
+            "خ",
+            "د",
+            "ح"
+          ],
+          "answer": "ح",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ح. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "حاء",
+          "slow_audio": "حاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-02-b-teach",
+            "arabic-reading-00-02-c-teach",
+            "arabic-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "خ",
+          "options": [
+            "خ",
+            "د",
+            "ج"
+          ],
+          "answer": "خ",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de خ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "خاء",
+          "slow_audio": "خاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-02-a-teach",
+            "arabic-reading-00-02-c-teach",
+            "arabic-reading-00-02-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-02-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "د",
           "options": [
+            "ج",
             "د",
-            "ذ",
-            "ر"
+            "ح"
           ],
           "answer": "د",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de د. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -438,7 +480,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-02-a-teach",
+            "arabic-reading-00-02-b-teach",
+            "arabic-reading-00-02-d-teach"
+          ]
         }
       ]
     },
@@ -493,27 +541,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ذ",
-          "options": [
-            "ذ",
-            "ر",
-            "ز"
-          ],
-          "answer": "ذ",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ذ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ذال",
-          "slow_audio": "ذال",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ر",
@@ -539,27 +566,6 @@
             "Nombre en Árabe: راء.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ر",
-          "options": [
-            "ر",
-            "ز",
-            "س"
-          ],
-          "answer": "ر",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ر. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "راء",
-          "slow_audio": "راء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-03-c-teach",
@@ -589,27 +595,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ز",
-          "options": [
-            "ز",
-            "س",
-            "ش"
-          ],
-          "answer": "ز",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ز. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "زاي",
-          "slow_audio": "زاي",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra س",
@@ -637,14 +622,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ذ",
+          "options": [
+            "ر",
+            "ذ",
+            "ز"
+          ],
+          "answer": "ذ",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ذ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ذال",
+          "slow_audio": "ذال",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-03-a-teach",
+            "arabic-reading-00-03-b-teach",
+            "arabic-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ر",
+          "options": [
+            "ز",
+            "س",
+            "ر"
+          ],
+          "answer": "ر",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ر. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "راء",
+          "slow_audio": "راء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-03-b-teach",
+            "arabic-reading-00-03-c-teach",
+            "arabic-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ز",
+          "options": [
+            "ز",
+            "س",
+            "ذ"
+          ],
+          "answer": "ز",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ز. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "زاي",
+          "slow_audio": "زاي",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-03-a-teach",
+            "arabic-reading-00-03-c-teach",
+            "arabic-reading-00-03-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-03-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "س",
           "options": [
+            "ذ",
             "س",
-            "ش",
-            "ص"
+            "ر"
           ],
           "answer": "س",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de س. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -655,7 +721,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-03-a-teach",
+            "arabic-reading-00-03-b-teach",
+            "arabic-reading-00-03-d-teach"
+          ]
         }
       ]
     },
@@ -710,27 +782,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ش",
-          "options": [
-            "ش",
-            "ص",
-            "ض"
-          ],
-          "answer": "ش",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ش. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "شين",
-          "slow_audio": "شين",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ص",
@@ -756,27 +807,6 @@
             "Nombre en Árabe: صاد.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ص",
-          "options": [
-            "ص",
-            "ض",
-            "ط"
-          ],
-          "answer": "ص",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ص. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "صاد",
-          "slow_audio": "صاد",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-04-c-teach",
@@ -806,27 +836,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ض",
-          "options": [
-            "ض",
-            "ط",
-            "ظ"
-          ],
-          "answer": "ض",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ض. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ضاد",
-          "slow_audio": "ضاد",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra ط",
@@ -854,14 +863,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ش",
+          "options": [
+            "ص",
+            "ش",
+            "ض"
+          ],
+          "answer": "ش",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ش. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "شين",
+          "slow_audio": "شين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-04-a-teach",
+            "arabic-reading-00-04-b-teach",
+            "arabic-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ص",
+          "options": [
+            "ض",
+            "ط",
+            "ص"
+          ],
+          "answer": "ص",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ص. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "صاد",
+          "slow_audio": "صاد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-04-b-teach",
+            "arabic-reading-00-04-c-teach",
+            "arabic-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ض",
+          "options": [
+            "ض",
+            "ط",
+            "ش"
+          ],
+          "answer": "ض",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ض. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ضاد",
+          "slow_audio": "ضاد",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-04-a-teach",
+            "arabic-reading-00-04-c-teach",
+            "arabic-reading-00-04-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-04-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ط",
           "options": [
+            "ش",
             "ط",
-            "ظ",
-            "ع"
+            "ص"
           ],
           "answer": "ط",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ط. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -872,7 +962,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-04-a-teach",
+            "arabic-reading-00-04-b-teach",
+            "arabic-reading-00-04-d-teach"
+          ]
         }
       ]
     },
@@ -927,27 +1023,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-05-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ظ",
-          "options": [
-            "ظ",
-            "ع",
-            "غ"
-          ],
-          "answer": "ظ",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ظ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ظاء",
-          "slow_audio": "ظاء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-05-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ع",
@@ -973,27 +1048,6 @@
             "Nombre en Árabe: عين.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-05-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ع",
-          "options": [
-            "ع",
-            "غ",
-            "ف"
-          ],
-          "answer": "ع",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ع. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "عين",
-          "slow_audio": "عين",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-05-c-teach",
@@ -1023,27 +1077,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-05-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "غ",
-          "options": [
-            "غ",
-            "ف",
-            "ق"
-          ],
-          "answer": "غ",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de غ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "غين",
-          "slow_audio": "غين",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-05-d-teach",
           "type": "teach_concept",
           "prompt": "Letra ف",
@@ -1071,14 +1104,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-05-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ظ",
+          "options": [
+            "ع",
+            "ظ",
+            "غ"
+          ],
+          "answer": "ظ",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ظ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ظاء",
+          "slow_audio": "ظاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-05-a-teach",
+            "arabic-reading-00-05-b-teach",
+            "arabic-reading-00-05-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-05-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ع",
+          "options": [
+            "غ",
+            "ف",
+            "ع"
+          ],
+          "answer": "ع",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ع. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "عين",
+          "slow_audio": "عين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-05-b-teach",
+            "arabic-reading-00-05-c-teach",
+            "arabic-reading-00-05-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-05-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "غ",
+          "options": [
+            "غ",
+            "ف",
+            "ظ"
+          ],
+          "answer": "غ",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de غ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "غين",
+          "slow_audio": "غين",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-05-a-teach",
+            "arabic-reading-00-05-c-teach",
+            "arabic-reading-00-05-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-05-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ف",
           "options": [
+            "ظ",
             "ف",
-            "ق",
-            "ك"
+            "ع"
           ],
           "answer": "ف",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ف. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1089,7 +1203,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-05-a-teach",
+            "arabic-reading-00-05-b-teach",
+            "arabic-reading-00-05-d-teach"
+          ]
         }
       ]
     },
@@ -1144,27 +1264,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-06-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ق",
-          "options": [
-            "ق",
-            "ك",
-            "ل"
-          ],
-          "answer": "ق",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ق. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "قاف",
-          "slow_audio": "قاف",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-06-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ك",
@@ -1190,27 +1289,6 @@
             "Nombre en Árabe: كاف.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-06-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ك",
-          "options": [
-            "ك",
-            "ل",
-            "م"
-          ],
-          "answer": "ك",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ك. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "كاف",
-          "slow_audio": "كاف",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-06-c-teach",
@@ -1240,27 +1318,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-06-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ل",
-          "options": [
-            "ل",
-            "م",
-            "ن"
-          ],
-          "answer": "ل",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ل. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "لام",
-          "slow_audio": "لام",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-06-d-teach",
           "type": "teach_concept",
           "prompt": "Letra م",
@@ -1288,14 +1345,95 @@
           ]
         },
         {
+          "id": "arabic-reading-00-06-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ق",
+          "options": [
+            "ك",
+            "ق",
+            "ل"
+          ],
+          "answer": "ق",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ق. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "قاف",
+          "slow_audio": "قاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-06-a-teach",
+            "arabic-reading-00-06-b-teach",
+            "arabic-reading-00-06-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-06-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ك",
+          "options": [
+            "ل",
+            "م",
+            "ك"
+          ],
+          "answer": "ك",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ك. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "كاف",
+          "slow_audio": "كاف",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-06-b-teach",
+            "arabic-reading-00-06-c-teach",
+            "arabic-reading-00-06-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-06-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ل",
+          "options": [
+            "ل",
+            "م",
+            "ق"
+          ],
+          "answer": "ل",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ل. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "لام",
+          "slow_audio": "لام",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-06-a-teach",
+            "arabic-reading-00-06-c-teach",
+            "arabic-reading-00-06-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-06-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "م",
           "options": [
+            "ق",
             "م",
-            "ن",
-            "ه"
+            "ك"
           ],
           "answer": "م",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de م. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1306,7 +1444,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-06-a-teach",
+            "arabic-reading-00-06-b-teach",
+            "arabic-reading-00-06-d-teach"
+          ]
         }
       ]
     },
@@ -1361,27 +1505,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-07-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ن",
-          "options": [
-            "ن",
-            "ه",
-            "و"
-          ],
-          "answer": "ن",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ن. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "نون",
-          "slow_audio": "نون",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-07-b-teach",
           "type": "teach_concept",
           "prompt": "Letra ه",
@@ -1407,27 +1530,6 @@
             "Nombre en Árabe: هاء.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "arabic-reading-00-07-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "ه",
-          "options": [
-            "ه",
-            "و",
-            "ي"
-          ],
-          "answer": "ه",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ه. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "هاء",
-          "slow_audio": "هاء",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "arabic-reading-00-07-c-teach",
@@ -1457,27 +1559,6 @@
           ]
         },
         {
-          "id": "arabic-reading-00-07-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "و",
-          "options": [
-            "و",
-            "ي",
-            "ا"
-          ],
-          "answer": "و",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de و. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "واو",
-          "slow_audio": "واو",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "arabic-reading-00-07-d-teach",
           "type": "teach_concept",
           "prompt": "Letra ي",
@@ -1505,13 +1586,93 @@
           ]
         },
         {
+          "id": "arabic-reading-00-07-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ن",
+          "options": [
+            "ه",
+            "ن",
+            "و"
+          ],
+          "answer": "ن",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ن. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "نون",
+          "slow_audio": "نون",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-07-a-teach",
+            "arabic-reading-00-07-b-teach",
+            "arabic-reading-00-07-c-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-07-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "ه",
+          "options": [
+            "و",
+            "ي",
+            "ه"
+          ],
+          "answer": "ه",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ه. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "هاء",
+          "slow_audio": "هاء",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-07-b-teach",
+            "arabic-reading-00-07-c-teach",
+            "arabic-reading-00-07-d-teach"
+          ]
+        },
+        {
+          "id": "arabic-reading-00-07-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "و",
+          "options": [
+            "و",
+            "ي",
+            "ا"
+          ],
+          "answer": "و",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de و. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "واو",
+          "slow_audio": "واو",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-07-c-teach",
+            "arabic-reading-00-07-d-teach"
+          ]
+        },
+        {
           "id": "arabic-reading-00-07-d-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ي",
           "options": [
-            "ي",
             "ا",
+            "ي",
             "ب"
           ],
           "answer": "ي",
@@ -1523,7 +1684,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "arabic-reading-00-07-d-teach"
+          ]
         }
       ]
     },
@@ -1558,8 +1723,8 @@
           "options": [],
           "answer": "",
           "explanation": "Los números pueden mantener otra dirección dentro del texto.",
-          "audio": "ألف",
-          "slow_audio": "ألف",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1575,7 +1740,8 @@
             "Las palabras avanzan hacia la izquierda.",
             "Las letras se conectan.",
             "La línea siguiente comienza otra vez a la derecha."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-08-a-question",
@@ -1583,8 +1749,8 @@
           "prompt": "¿En qué dirección se leen las palabras árabes?",
           "target": "العربية",
           "options": [
-            "De derecha a izquierda",
             "De izquierda a derecha",
+            "De derecha a izquierda",
             "De abajo arriba"
           ],
           "answer": "De derecha a izquierda",
@@ -1596,7 +1762,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-08-b-teach",
@@ -1606,8 +1774,8 @@
           "options": [],
           "answer": "",
           "explanation": "Los puntos son esenciales, no adornos.",
-          "audio": "باء",
-          "slow_audio": "باء",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1623,6 +1791,23 @@
             "ب: un punto abajo.",
             "ت: dos puntos arriba.",
             "ث: tres puntos arriba."
+          ],
+          "audio_examples": [
+            {
+              "text": "ب",
+              "meaning": "باء",
+              "audio": "باء"
+            },
+            {
+              "text": "ت",
+              "meaning": "تاء",
+              "audio": "تاء"
+            },
+            {
+              "text": "ث",
+              "meaning": "ثاء",
+              "audio": "ثاء"
+            }
           ]
         },
         {
@@ -1631,9 +1816,9 @@
           "prompt": "¿Qué distingue especialmente ب, ت y ث?",
           "target": "ب · ت · ث",
           "options": [
-            "La cantidad y posición de puntos",
             "El tamaño",
-            "El color"
+            "El color",
+            "La cantidad y posición de puntos"
           ],
           "answer": "La cantidad y posición de puntos",
           "explanation": "Los puntos son esenciales, no adornos.",
@@ -1644,7 +1829,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ب",
+              "meaning": "باء",
+              "audio": "باء"
+            },
+            {
+              "text": "ت",
+              "meaning": "تاء",
+              "audio": "تاء"
+            },
+            {
+              "text": "ث",
+              "meaning": "ثاء",
+              "audio": "ثاء"
+            }
+          ]
         }
       ]
     },
@@ -1679,8 +1882,8 @@
           "options": [],
           "answer": "",
           "explanation": "No son cuatro letras distintas.",
-          "audio": "عين",
-          "slow_audio": "عين",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1696,6 +1899,14 @@
             "Aislada.",
             "Conectada al inicio/medio.",
             "Conectada al final."
+          ],
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "ع",
+              "meaning": "Nombre: عين; no es su sonido dentro de una palabra.",
+              "audio": "عين"
+            }
           ]
         },
         {
@@ -1704,8 +1915,8 @@
           "prompt": "¿Las formas contextuales representan letras distintas?",
           "target": "عـ ـعـ ـع ع",
           "options": [
-            "No, son la misma letra en posiciones distintas",
             "Sí",
+            "No, son la misma letra en posiciones distintas",
             "Solo la final es letra"
           ],
           "answer": "No, son la misma letra en posiciones distintas",
@@ -1717,7 +1928,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "ع",
+              "meaning": "Nombre: عين; no es su sonido dentro de una palabra.",
+              "audio": "عين"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-09-b-teach",
@@ -1727,8 +1947,8 @@
           "options": [],
           "answer": "",
           "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
-          "audio": "كاف",
-          "slow_audio": "كاف",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1744,7 +1964,8 @@
             "Identifica ك.",
             "Después ت.",
             "Finalmente ب."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-09-b-question",
@@ -1752,9 +1973,9 @@
           "prompt": "¿Cómo empiezas a leer una palabra conectada?",
           "target": "كتب",
           "options": [
-            "Identificando sus letras contextuales",
             "Como un dibujo único",
-            "Desde la izquierda"
+            "Desde la izquierda",
+            "Identificando sus letras contextuales"
           ],
           "answer": "Identificando sus letras contextuales",
           "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
@@ -1765,7 +1986,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         }
       ]
     },
@@ -1800,8 +2023,8 @@
           "options": [],
           "answer": "",
           "explanation": "El corte no significa que empiece otra palabra.",
-          "audio": "دال",
-          "slow_audio": "دال",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1817,7 +2040,8 @@
             "ا no conecta después.",
             "د/ذ no conectan después.",
             "ر/ز/و tampoco."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-10-a-question",
@@ -1825,8 +2049,8 @@
           "prompt": "¿Un corte tras ا siempre separa palabras?",
           "target": "ا د ذ ر ز و",
           "options": [
-            "No, puede ser la misma palabra",
             "Sí",
+            "No, puede ser la misma palabra",
             "Solo ocurre al final"
           ],
           "answer": "No, puede ser la misma palabra",
@@ -1838,7 +2062,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-10-b-teach",
@@ -1848,8 +2074,8 @@
           "options": [],
           "answer": "",
           "explanation": "Con práctica, ambos tipos de separación se vuelven claros.",
-          "audio": "راء",
-          "slow_audio": "راء",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1865,7 +2091,8 @@
             "Las letras de una palabra pueden verse en grupos.",
             "El espacio entre palabras es mayor.",
             "La dirección sigue igual."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-10-b-question",
@@ -1873,9 +2100,9 @@
           "prompt": "¿Por qué una palabra árabe puede verse dividida?",
           "target": "دار",
           "options": [
-            "Porque algunas letras no conectan hacia la izquierda",
             "Porque se lee por columnas",
-            "Porque faltan letras"
+            "Porque faltan letras",
+            "Porque algunas letras no conectan hacia la izquierda"
           ],
           "answer": "Porque algunas letras no conectan hacia la izquierda",
           "explanation": "Con práctica, ambos tipos de separación se vuelven claros.",
@@ -1886,7 +2113,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         }
       ]
     },
@@ -1921,8 +2150,8 @@
           "options": [],
           "answer": "",
           "explanation": "Material infantil y didáctico suele mostrarlas.",
-          "audio": "ألف",
-          "slow_audio": "ألف",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1938,6 +2167,29 @@
             "َ encima: a breve.",
             "ِ debajo: i breve.",
             "ُ encima: u breve."
+          ],
+          "audio_examples": [
+            {
+              "label": "FATHA SOBRE ب",
+              "text": "بَ",
+              "meaning": "b con a breve",
+              "audio": "بَ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "KASRA BAJO ب",
+              "text": "بِ",
+              "meaning": "b con i breve",
+              "audio": "بِ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "DAMMA SOBRE ب",
+              "text": "بُ",
+              "meaning": "b con u breve",
+              "audio": "بُ",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1946,8 +2198,8 @@
           "prompt": "¿Qué indican َ ِ ُ?",
           "target": "َ ِ ُ",
           "options": [
-            "Vocales cortas",
             "Puntos de consonante",
+            "Vocales cortas",
             "Final de oración"
           ],
           "answer": "Vocales cortas",
@@ -1959,7 +2211,31 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FATHA SOBRE ب",
+              "text": "بَ",
+              "meaning": "b con a breve",
+              "audio": "بَ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "KASRA BAJO ب",
+              "text": "بِ",
+              "meaning": "b con i breve",
+              "audio": "بِ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "DAMMA SOBRE ب",
+              "text": "بُ",
+              "meaning": "b con u breve",
+              "audio": "بُ",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-11-b-teach",
@@ -1968,9 +2244,9 @@
           "target": "ْ ّ",
           "options": [],
           "answer": "",
-          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
-          "audio": "شين",
-          "slow_audio": "شين",
+          "explanation": "Son signos ortográficos: no tienen una pronunciación aislada que un botón pueda reproducir.",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1994,12 +2270,12 @@
           "prompt": "¿Qué indica shadda ّ?",
           "target": "ْ ّ",
           "options": [
-            "Una consonante duplicada",
             "Una vocal larga",
-            "Una pausa de párrafo"
+            "Una pausa de párrafo",
+            "Una consonante duplicada"
           ],
           "answer": "Una consonante duplicada",
-          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "explanation": "Son signos ortográficos: no tienen una pronunciación aislada que un botón pueda reproducir.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -2007,7 +2283,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -2042,8 +2319,8 @@
           "options": [],
           "answer": "",
           "explanation": "La función depende del contexto.",
-          "audio": "واو",
-          "slow_audio": "واو",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2059,6 +2336,29 @@
             "َ + ا → ā.",
             "ُ + و → ū.",
             "ِ + ي → ī."
+          ],
+          "audio_examples": [
+            {
+              "label": "ALIF: VOCAL LARGA",
+              "text": "بَا",
+              "meaning": "b con a larga",
+              "audio": "بَا",
+              "audio_source": "tts"
+            },
+            {
+              "label": "WAW: VOCAL LARGA",
+              "text": "بُو",
+              "meaning": "b con u larga",
+              "audio": "بُو",
+              "audio_source": "tts"
+            },
+            {
+              "label": "YA: VOCAL LARGA",
+              "text": "بِي",
+              "meaning": "b con i larga",
+              "audio": "بِي",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2067,8 +2367,8 @@
           "prompt": "¿Qué pueden representar ا, و, ي?",
           "target": "ا · و · ي",
           "options": [
-            "Vocales largas según el contexto",
             "Solo puntuación",
+            "Vocales largas según el contexto",
             "Siempre letras mudas"
           ],
           "answer": "Vocales largas según el contexto",
@@ -2080,7 +2380,31 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ALIF: VOCAL LARGA",
+              "text": "بَا",
+              "meaning": "b con a larga",
+              "audio": "بَا",
+              "audio_source": "tts"
+            },
+            {
+              "label": "WAW: VOCAL LARGA",
+              "text": "بُو",
+              "meaning": "b con u larga",
+              "audio": "بُو",
+              "audio_source": "tts"
+            },
+            {
+              "label": "YA: VOCAL LARGA",
+              "text": "بِي",
+              "meaning": "b con i larga",
+              "audio": "بِي",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-12-b-teach",
@@ -2089,9 +2413,9 @@
           "target": "ء · أ · إ",
           "options": [],
           "answer": "",
-          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
-          "audio": "ألف",
-          "slow_audio": "ألف",
+          "explanation": "Hamza indica un breve cierre en la garganta antes de soltar el aire. No es el nombre alif; أ e إ usan alif como soporte escrito.",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2107,7 +2431,8 @@
             "ء puede aparecer sola.",
             "أ/إ usan alif como soporte.",
             "La posición sigue reglas ortográficas."
-          ]
+          ],
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-12-b-question",
@@ -2115,12 +2440,12 @@
           "prompt": "¿Qué representa hamza?",
           "target": "ء · أ · إ",
           "options": [
-            "Un cierre glotal",
             "Una vocal larga fija",
-            "El plural"
+            "El plural",
+            "Un cierre glotal"
           ],
           "answer": "Un cierre glotal",
-          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "explanation": "Hamza indica un breve cierre en la garganta antes de soltar el aire. No es el nombre alif; أ e إ usan alif como soporte escrito.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -2128,7 +2453,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         }
       ]
     },
@@ -2163,8 +2490,8 @@
           "options": [],
           "answer": "",
           "explanation": "Después verás la misma palabra sin todas las vocales cortas.",
-          "audio": "تاء",
-          "slow_audio": "تاء",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2180,6 +2507,15 @@
             "Identifica consonantes.",
             "Añade vocales marcadas.",
             "Une la palabra."
+          ],
+          "audio_examples": [
+            {
+              "label": "PALABRA CON VOCALES",
+              "text": "كِتَاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2188,8 +2524,8 @@
           "prompt": "¿Qué conviene usar al principio?",
           "target": "كِتاب",
           "options": [
-            "Texto vocalizado y audio",
             "Solo texto sin marcas",
+            "Texto vocalizado y audio",
             "Transliteración permanente"
           ],
           "answer": "Texto vocalizado y audio",
@@ -2201,7 +2537,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA CON VOCALES",
+              "text": "كِتَاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-13-b-teach",
@@ -2211,8 +2557,8 @@
           "options": [],
           "answer": "",
           "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
-          "audio": "باء",
-          "slow_audio": "باء",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2228,6 +2574,15 @@
             "Reconoce la raíz.",
             "Usa el patrón.",
             "Confirma con contexto."
+          ],
+          "audio_examples": [
+            {
+              "label": "LA MISMA PALABRA SIN MARCAS",
+              "text": "كتاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2236,9 +2591,9 @@
           "prompt": "¿Cómo se leen textos sin todas las vocales?",
           "target": "كتاب",
           "options": [
-            "Con vocabulario, patrones y contexto",
             "Inventando vocales al azar",
-            "Leyendo solo puntos"
+            "Leyendo solo puntos",
+            "Con vocabulario, patrones y contexto"
           ],
           "answer": "Con vocabulario, patrones y contexto",
           "explanation": "La lectura mejora al ampliar vocabulario y raíces.",
@@ -2249,7 +2604,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "LA MISMA PALABRA SIN MARCAS",
+              "text": "كتاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2283,8 +2648,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ا",
           "options": [
-            "ا",
             "ب",
+            "ا",
             "ت"
           ],
           "answer": "ا",
@@ -2296,7 +2661,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-2-question",
@@ -2304,9 +2670,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ح",
           "options": [
-            "ح",
             "خ",
-            "د"
+            "د",
+            "ح"
           ],
           "answer": "ح",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ح. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2317,7 +2683,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-3-question",
@@ -2338,7 +2705,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-4-question",
@@ -2346,8 +2714,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ط",
           "options": [
-            "ط",
             "ظ",
+            "ط",
             "ع"
           ],
           "answer": "ط",
@@ -2359,7 +2727,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-5-question",
@@ -2367,9 +2736,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ظ",
           "options": [
-            "ظ",
             "ع",
-            "غ"
+            "غ",
+            "ظ"
           ],
           "answer": "ظ",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ظ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2380,7 +2749,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-6-question",
@@ -2401,7 +2771,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-7-question",
@@ -2409,8 +2780,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "و",
           "options": [
-            "و",
             "ي",
+            "و",
             "ا"
           ],
           "answer": "و",
@@ -2422,7 +2793,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-review-8-question",
@@ -2430,9 +2802,9 @@
           "prompt": "¿Qué distingue especialmente ب, ت y ث?",
           "target": "ب · ت · ث",
           "options": [
-            "La cantidad y posición de puntos",
             "El tamaño",
-            "El color"
+            "El color",
+            "La cantidad y posición de puntos"
           ],
           "answer": "La cantidad y posición de puntos",
           "explanation": "Los puntos son esenciales, no adornos.",
@@ -2443,7 +2815,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ب",
+              "meaning": "باء",
+              "audio": "باء"
+            },
+            {
+              "text": "ت",
+              "meaning": "تاء",
+              "audio": "تاء"
+            },
+            {
+              "text": "ث",
+              "meaning": "ثاء",
+              "audio": "ثاء"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-review-9-question",
@@ -2464,7 +2854,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "ع",
+              "meaning": "Nombre: عين; no es su sonido dentro de una palabra.",
+              "audio": "عين"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-review-10-question",
@@ -2472,8 +2871,8 @@
           "prompt": "¿Por qué una palabra árabe puede verse dividida?",
           "target": "دار",
           "options": [
-            "Porque algunas letras no conectan hacia la izquierda",
             "Porque se lee por columnas",
+            "Porque algunas letras no conectan hacia la izquierda",
             "Porque faltan letras"
           ],
           "answer": "Porque algunas letras no conectan hacia la izquierda",
@@ -2485,7 +2884,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-review-11-question",
@@ -2493,9 +2894,9 @@
           "prompt": "¿Qué indican َ ِ ُ?",
           "target": "َ ِ ُ",
           "options": [
-            "Vocales cortas",
             "Puntos de consonante",
-            "Final de oración"
+            "Final de oración",
+            "Vocales cortas"
           ],
           "answer": "Vocales cortas",
           "explanation": "Material infantil y didáctico suele mostrarlas.",
@@ -2506,7 +2907,31 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FATHA SOBRE ب",
+              "text": "بَ",
+              "meaning": "b con a breve",
+              "audio": "بَ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "KASRA BAJO ب",
+              "text": "بِ",
+              "meaning": "b con i breve",
+              "audio": "بِ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "DAMMA SOBRE ب",
+              "text": "بُ",
+              "meaning": "b con u breve",
+              "audio": "بُ",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-review-12-question",
@@ -2519,7 +2944,7 @@
             "El plural"
           ],
           "answer": "Un cierre glotal",
-          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "explanation": "Hamza indica un breve cierre en la garganta antes de soltar el aire. No es el nombre alif; أ e إ usan alif como soporte escrito.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -2527,7 +2952,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-review-13-question",
@@ -2535,8 +2962,8 @@
           "prompt": "¿Qué conviene usar al principio?",
           "target": "كِتاب",
           "options": [
-            "Texto vocalizado y audio",
             "Solo texto sin marcas",
+            "Texto vocalizado y audio",
             "Transliteración permanente"
           ],
           "answer": "Texto vocalizado y audio",
@@ -2548,7 +2975,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA CON VOCALES",
+              "text": "كِتَاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2580,12 +3017,12 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «َ ِ ُ»",
           "target": "َ ِ ُ",
-          "instruction": "Escribe exactamente «َ ِ ُ». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «َ ِ ُ». No escribas cómo suena ni su explicación.",
           "answer": "َ ِ ُ",
           "accepted_answers": [
             "َ ِ ُ"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «َ ِ ُ».",
           "audio": "",
           "slow_audio": "",
@@ -2600,19 +3037,20 @@
           "type": "typed_translation",
           "prompt": "Copia exactamente esta grafía o comparación: «ْ ّ»",
           "target": "ْ ّ",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «ْ ّ».",
+          "instruction": "Copia exactamente «ْ ّ». No escribas cómo suena ni su explicación.",
           "answer": "ْ ّ",
           "accepted_answers": [
             "ْ ّ"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «شين». La grafía que se practica es «ْ ّ».",
+          "allow_minor_typos": false,
+          "explanation": "Copia exactamente los signos «ْ ّ».",
           "audio": "",
           "slow_audio": "",
           "tags": [
             "production",
             "dictation",
-            "reading"
+            "reading",
+            "copying"
           ],
           "xp": 20
         },
@@ -2643,16 +3081,16 @@
         {
           "id": "arabic-reading-foundations-production-complete",
           "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "prompt": "Completa con los signos ortográficos practicados",
           "target": "",
-          "instruction": "Escribe exactamente «ْ ّ», no una guía de pronunciación.",
+          "instruction": "Escribe exactamente «ْ ّ»; no se escuchan aislados porque no forman un sonido independiente.",
           "answer": "ْ ّ",
           "accepted_answers": [
             "ْ ّ"
           ],
-          "explanation": "Escuchaste «ْ ّ». Cambian la estructura silábica y pueden cambiar significado.",
-          "audio": "شين",
-          "slow_audio": "شين",
+          "explanation": "Sukun y shadda cambian la estructura silábica, pero no tienen una pronunciación aislada.",
+          "audio": "",
+          "slow_audio": "",
           "tags": [
             "production",
             "completion",
@@ -2695,8 +3133,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ا",
           "options": [
-            "ا",
             "ب",
+            "ا",
             "ت"
           ],
           "answer": "ا",
@@ -2708,7 +3146,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-2-question",
@@ -2716,9 +3155,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ب",
           "options": [
-            "ب",
             "ت",
-            "ث"
+            "ث",
+            "ب"
           ],
           "answer": "ب",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ب. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2729,7 +3168,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-3-question",
@@ -2750,7 +3190,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-4-question",
@@ -2758,8 +3199,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ث",
           "options": [
-            "ث",
             "ج",
+            "ث",
             "ح"
           ],
           "answer": "ث",
@@ -2771,7 +3212,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-5-question",
@@ -2779,9 +3221,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ج",
           "options": [
-            "ج",
             "ح",
-            "خ"
+            "خ",
+            "ج"
           ],
           "answer": "ج",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ج. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2792,7 +3234,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-6-question",
@@ -2813,7 +3256,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-7-question",
@@ -2821,8 +3265,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "خ",
           "options": [
-            "خ",
             "د",
+            "خ",
             "ذ"
           ],
           "answer": "خ",
@@ -2834,7 +3278,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-8-question",
@@ -2842,9 +3287,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "د",
           "options": [
-            "د",
             "ذ",
-            "ر"
+            "ر",
+            "د"
           ],
           "answer": "د",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de د. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2855,7 +3300,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-9-question",
@@ -2876,7 +3322,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-10-question",
@@ -2884,8 +3331,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ر",
           "options": [
-            "ر",
             "ز",
+            "ر",
             "س"
           ],
           "answer": "ر",
@@ -2897,7 +3344,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-11-question",
@@ -2905,9 +3353,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ز",
           "options": [
-            "ز",
             "س",
-            "ش"
+            "ش",
+            "ز"
           ],
           "answer": "ز",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ز. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2918,7 +3366,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-12-question",
@@ -2939,7 +3388,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-13-question",
@@ -2947,8 +3397,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ش",
           "options": [
-            "ش",
             "ص",
+            "ش",
             "ض"
           ],
           "answer": "ش",
@@ -2960,7 +3410,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-14-question",
@@ -2968,9 +3419,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ص",
           "options": [
-            "ص",
             "ض",
-            "ط"
+            "ط",
+            "ص"
           ],
           "answer": "ص",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ص. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2981,7 +3432,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-15-question",
@@ -3002,7 +3454,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-16-question",
@@ -3010,8 +3463,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ط",
           "options": [
-            "ط",
             "ظ",
+            "ط",
             "ع"
           ],
           "answer": "ط",
@@ -3023,7 +3476,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-17-question",
@@ -3031,9 +3485,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ظ",
           "options": [
-            "ظ",
             "ع",
-            "غ"
+            "غ",
+            "ظ"
           ],
           "answer": "ظ",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ظ. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3044,7 +3498,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-18-question",
@@ -3065,7 +3520,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-19-question",
@@ -3073,8 +3529,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "غ",
           "options": [
-            "غ",
             "ف",
+            "غ",
             "ق"
           ],
           "answer": "غ",
@@ -3086,7 +3542,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-20-question",
@@ -3094,9 +3551,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ف",
           "options": [
-            "ف",
             "ق",
-            "ك"
+            "ك",
+            "ف"
           ],
           "answer": "ف",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ف. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3107,7 +3564,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-21-question",
@@ -3128,7 +3586,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-22-question",
@@ -3136,8 +3595,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ك",
           "options": [
-            "ك",
             "ل",
+            "ك",
             "م"
           ],
           "answer": "ك",
@@ -3149,7 +3608,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-23-question",
@@ -3157,9 +3617,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ل",
           "options": [
-            "ل",
             "م",
-            "ن"
+            "ن",
+            "ل"
           ],
           "answer": "ل",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ل. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3170,7 +3630,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-24-question",
@@ -3191,7 +3652,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-25-question",
@@ -3199,8 +3661,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ن",
           "options": [
-            "ن",
             "ه",
+            "ن",
             "و"
           ],
           "answer": "ن",
@@ -3212,7 +3674,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-26-question",
@@ -3220,9 +3683,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ه",
           "options": [
-            "ه",
             "و",
-            "ي"
+            "ي",
+            "ه"
           ],
           "answer": "ه",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de ه. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3233,7 +3696,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-27-question",
@@ -3254,7 +3718,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-28-question",
@@ -3262,8 +3727,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "ي",
           "options": [
-            "ي",
             "ا",
+            "ي",
             "ب"
           ],
           "answer": "ي",
@@ -3275,7 +3740,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-29-question",
@@ -3283,9 +3749,9 @@
           "prompt": "¿En qué dirección se leen las palabras árabes?",
           "target": "العربية",
           "options": [
-            "De derecha a izquierda",
             "De izquierda a derecha",
-            "De abajo arriba"
+            "De abajo arriba",
+            "De derecha a izquierda"
           ],
           "answer": "De derecha a izquierda",
           "explanation": "Los números pueden mantener otra dirección dentro del texto.",
@@ -3296,7 +3762,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-test-30-question",
@@ -3317,7 +3785,25 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "ب",
+              "meaning": "باء",
+              "audio": "باء"
+            },
+            {
+              "text": "ت",
+              "meaning": "تاء",
+              "audio": "تاء"
+            },
+            {
+              "text": "ث",
+              "meaning": "ثاء",
+              "audio": "ثاء"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-test-31-question",
@@ -3325,8 +3811,8 @@
           "prompt": "¿Las formas contextuales representan letras distintas?",
           "target": "عـ ـعـ ـع ع",
           "options": [
-            "No, son la misma letra en posiciones distintas",
             "Sí",
+            "No, son la misma letra en posiciones distintas",
             "Solo la final es letra"
           ],
           "answer": "No, son la misma letra en posiciones distintas",
@@ -3338,7 +3824,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "ع",
+              "meaning": "Nombre: عين; no es su sonido dentro de una palabra.",
+              "audio": "عين"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-test-32-question",
@@ -3346,9 +3841,9 @@
           "prompt": "¿Cómo empiezas a leer una palabra conectada?",
           "target": "كتب",
           "options": [
-            "Identificando sus letras contextuales",
             "Como un dibujo único",
-            "Desde la izquierda"
+            "Desde la izquierda",
+            "Identificando sus letras contextuales"
           ],
           "answer": "Identificando sus letras contextuales",
           "explanation": "Segmenta mentalmente en letras y luego une sonidos.",
@@ -3359,7 +3854,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-test-33-question",
@@ -3380,7 +3877,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-test-34-question",
@@ -3388,8 +3887,8 @@
           "prompt": "¿Por qué una palabra árabe puede verse dividida?",
           "target": "دار",
           "options": [
-            "Porque algunas letras no conectan hacia la izquierda",
             "Porque se lee por columnas",
+            "Porque algunas letras no conectan hacia la izquierda",
             "Porque faltan letras"
           ],
           "answer": "Porque algunas letras no conectan hacia la izquierda",
@@ -3401,7 +3900,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-test-35-question",
@@ -3409,9 +3910,9 @@
           "prompt": "¿Qué indican َ ِ ُ?",
           "target": "َ ِ ُ",
           "options": [
-            "Vocales cortas",
             "Puntos de consonante",
-            "Final de oración"
+            "Final de oración",
+            "Vocales cortas"
           ],
           "answer": "Vocales cortas",
           "explanation": "Material infantil y didáctico suele mostrarlas.",
@@ -3422,7 +3923,31 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FATHA SOBRE ب",
+              "text": "بَ",
+              "meaning": "b con a breve",
+              "audio": "بَ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "KASRA BAJO ب",
+              "text": "بِ",
+              "meaning": "b con i breve",
+              "audio": "بِ",
+              "audio_source": "tts"
+            },
+            {
+              "label": "DAMMA SOBRE ب",
+              "text": "بُ",
+              "meaning": "b con u breve",
+              "audio": "بُ",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-test-36-question",
@@ -3435,7 +3960,7 @@
             "Una pausa de párrafo"
           ],
           "answer": "Una consonante duplicada",
-          "explanation": "Cambian la estructura silábica y pueden cambiar significado.",
+          "explanation": "Son signos ortográficos: no tienen una pronunciación aislada que un botón pueda reproducir.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -3443,7 +3968,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "arabic-reading-00-test-37-question",
@@ -3451,8 +3977,8 @@
           "prompt": "¿Qué pueden representar ا, و, ي?",
           "target": "ا · و · ي",
           "options": [
-            "Vocales largas según el contexto",
             "Solo puntuación",
+            "Vocales largas según el contexto",
             "Siempre letras mudas"
           ],
           "answer": "Vocales largas según el contexto",
@@ -3464,7 +3990,31 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "ALIF: VOCAL LARGA",
+              "text": "بَا",
+              "meaning": "b con a larga",
+              "audio": "بَا",
+              "audio_source": "tts"
+            },
+            {
+              "label": "WAW: VOCAL LARGA",
+              "text": "بُو",
+              "meaning": "b con u larga",
+              "audio": "بُو",
+              "audio_source": "tts"
+            },
+            {
+              "label": "YA: VOCAL LARGA",
+              "text": "بِي",
+              "meaning": "b con i larga",
+              "audio": "بِي",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-test-38-question",
@@ -3472,12 +4022,12 @@
           "prompt": "¿Qué representa hamza?",
           "target": "ء · أ · إ",
           "options": [
-            "Un cierre glotal",
             "Una vocal larga fija",
-            "El plural"
+            "El plural",
+            "Un cierre glotal"
           ],
           "answer": "Un cierre glotal",
-          "explanation": "No es idéntica a alif, aunque a menudo aparezcan juntas.",
+          "explanation": "Hamza indica un breve cierre en la garganta antes de soltar el aire. No es el nombre alif; أ e إ usan alif como soporte escrito.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -3485,7 +4035,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "arabic-reading-00-test-39-question",
@@ -3506,7 +4058,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA CON VOCALES",
+              "text": "كِتَاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "arabic-reading-00-test-40-question",
@@ -3514,8 +4076,8 @@
           "prompt": "¿Cómo se leen textos sin todas las vocales?",
           "target": "كتاب",
           "options": [
-            "Con vocabulario, patrones y contexto",
             "Inventando vocales al azar",
+            "Con vocabulario, patrones y contexto",
             "Leyendo solo puntos"
           ],
           "answer": "Con vocabulario, patrones y contexto",
@@ -3527,7 +4089,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "LA MISMA PALABRA SIN MARCAS",
+              "text": "كتاب",
+              "meaning": "libro",
+              "audio": "كِتَاب",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     }

@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b11-cause-effect-03-13-meaning",
@@ -999,7 +1000,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b11-cause-effect-03-13-listen",
@@ -1022,7 +1024,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b11-cause-effect-03-14-teach",
@@ -1042,7 +1045,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-03-14-meaning",
@@ -1065,7 +1069,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-03-14-listen",
@@ -1088,7 +1093,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         }
       ]
     },
@@ -1705,7 +1711,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-review-02-14-listen",
@@ -1728,7 +1735,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-review-02-16-meaning",
@@ -1819,7 +1827,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b1-1-cause-effect-production-dictation",
@@ -1839,7 +1848,8 @@
             "production",
             "dictation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b1-1-cause-effect-production-blocks",
@@ -1867,7 +1877,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b1-1-cause-effect-production-complete",
@@ -1891,7 +1902,7 @@
         {
           "id": "english-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
+          "prompt": "Di o escribe en inglés: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "What do you think?",
           "accepted_answers": [
@@ -1928,7 +1939,8 @@
             "speaking",
             "optional"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b1-1-cause-effect-production-dialogue",
@@ -1945,14 +1957,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
+              "prompt": "Di o escribe en inglés: «Como resultado, el proyecto se retrasó.»",
               "answer": "As a result, the project was delayed.",
               "accepted_answers": [
                 "As a result, the project was delayed."
               ],
               "audio": "As a result, the project was delayed.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
             },
             {
               "role": "model",
@@ -1963,14 +1976,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
+              "prompt": "Di o escribe en inglés: «Aunque estaba cansada, terminó el trabajo.»",
               "answer": "Although she was tired, she finished the work.",
               "accepted_answers": [
                 "Although she was tired, she finished the work."
               ],
               "audio": "Although she was tired, she finished the work.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
             }
           ],
           "minimum_correct": 2,
@@ -2586,7 +2600,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b11-cause-effect-test-13-listen",
@@ -2609,7 +2624,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "As a result introduce una consecuencia de algo mencionado antes. El retraso es el resultado; esta frase no especifica por sí sola qué lo causó."
         },
         {
           "id": "english-b11-cause-effect-test-14-meaning",
@@ -2632,7 +2648,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-test-14-listen",
@@ -2655,7 +2672,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Although presenta un contraste: el cansancio podía impedir terminar, pero ella terminó. She identifica a la persona como ella. Cambiar although por because convertiría el contraste en una causa."
         },
         {
           "id": "english-b11-cause-effect-test-15-meaning",

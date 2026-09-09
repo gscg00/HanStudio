@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Potrebbe suaviza la petición y corresponde aquí al tratamiento de Lei. Aiutarmi y mi potrebbe aiutare sitúan mi en posiciones distintas manteniendo la idea de ayudarme. No hay que introducir un tú informal para resolver este contexto."
         },
         {
           "id": "italian-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "italian-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Potrebbe aiutarmi, per favore?",
+          "accepted_answers": [
+            "Potrebbe aiutarmi, per favore?",
+            "Mi potrebbe aiutare, per favore?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Potrebbe aiutarmi, per favore?",
+          "slow_audio": "Potrebbe aiutarmi, per favore?",
+          "usage_note": "Potrebbe suaviza la petición y corresponde aquí al tratamiento de Lei. Aiutarmi y mi potrebbe aiutare sitúan mi en posiciones distintas manteniendo la idea de ayudarme. No hay que introducir un tú informal para resolver este contexto.",
+          "explanation": "Potrebbe suaviza la petición y corresponde aquí al tratamiento de Lei. Aiutarmi y mi potrebbe aiutare sitúan mi en posiciones distintas manteniendo la idea de ayudarme. No hay que introducir un tú informal para resolver este contexto.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "italian-b11-register-01-10-teach",
@@ -1890,7 +1916,7 @@
         {
           "id": "italian-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en italiano: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Dividiamo il lavoro.",
           "accepted_answers": [
@@ -1944,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en italiano.",
+              "prompt": "Di o escribe en italiano: «Gracias por avisarme con tiempo.»",
               "answer": "Grazie per avermi avvisato in anticipo.",
               "accepted_answers": [
                 "Grazie per avermi avvisato in anticipo."
@@ -1962,7 +1988,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en italiano.",
+              "prompt": "Di o escribe en italiano: «Lamento informarle de que la cita se canceló.»",
               "answer": "Mi dispiace informarla che l’appuntamento è stato cancellato.",
               "accepted_answers": [
                 "Mi dispiace informarla che l’appuntamento è stato cancellato."
@@ -1980,7 +2006,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en italiano.",
+              "prompt": "Di o escribe en italiano: «Vamos a dividir el trabajo.»",
               "answer": "Dividiamo il lavoro.",
               "accepted_answers": [
                 "Dividiamo il lavoro."

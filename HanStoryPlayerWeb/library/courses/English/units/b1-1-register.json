@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Could you…? y Would you…? permiten formular una petición cortés. Please refuerza la cortesía, pero el tono y la situación también importan. No se está preguntando aquí por una capacidad en el pasado."
         },
         {
           "id": "english-b11-register-01-09-meaning",
@@ -231,6 +232,32 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "english-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Could you help me, please?",
+          "accepted_answers": [
+            "Could you help me, please?",
+            "Could you please help me?",
+            "Would you help me, please?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Could you help me, please?",
+          "slow_audio": "Could you help me, please?",
+          "usage_note": "Could you…? y Would you…? permiten formular una petición cortés. Please refuerza la cortesía, pero el tono y la situación también importan. No se está preguntando aquí por una capacidad en el pasado.",
+          "explanation": "Could you…? y Would you…? permiten formular una petición cortés. Please refuerza la cortesía, pero el tono y la situación también importan. No se está preguntando aquí por una capacidad en el pasado.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "english-b11-register-01-10-teach",
@@ -1892,7 +1919,7 @@
         {
           "id": "english-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en inglés: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "Let us divide the work.",
           "accepted_answers": [
@@ -1946,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
+              "prompt": "Di o escribe en inglés: «Gracias por avisarme con tiempo.»",
               "answer": "Thank you for letting me know in advance.",
               "accepted_answers": [
                 "Thank you for letting me know in advance."
@@ -1964,7 +1991,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
+              "prompt": "Di o escribe en inglés: «Lamento informarle de que la cita se canceló.»",
               "answer": "I regret to inform you that the appointment was cancelled.",
               "accepted_answers": [
                 "I regret to inform you that the appointment was cancelled."
@@ -1982,7 +2009,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en inglés.",
+              "prompt": "Di o escribe en inglés: «Vamos a dividir el trabajo.»",
               "answer": "Let us divide the work.",
               "accepted_answers": [
                 "Let us divide the work."

@@ -39,8 +39,8 @@
           "options": [],
           "answer": "",
           "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
-          "audio": "あ",
-          "slow_audio": "あ",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -56,6 +56,28 @@
             "Formas curvas frecuentes.",
             "Una mora por signo básico.",
             "Base indispensable para leer."
+          ],
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
           ]
         },
         {
@@ -64,8 +86,8 @@
           "prompt": "¿Qué aprenderás primero para leer japonés?",
           "target": "あ い う え お",
           "options": [
-            "Hiragana",
             "Rōmaji permanente",
+            "Hiragana",
             "Solo kanji"
           ],
           "answer": "Hiragana",
@@ -77,7 +99,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-01-b-teach",
@@ -87,8 +132,8 @@
           "options": [],
           "answer": "",
           "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
-          "audio": "い",
-          "slow_audio": "い",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -104,6 +149,14 @@
             "ア es katakana.",
             "日 es kanji.",
             "Ambos pueden aparecer en una frase."
+          ],
+          "audio_examples": [
+            {
+              "label": "EJEMPLO DE KATAKANA",
+              "text": "ア",
+              "audio": "ア",
+              "meaning": "Representa la misma vocal que あ."
+            }
           ]
         },
         {
@@ -112,9 +165,9 @@
           "prompt": "¿Katakana usa sonidos totalmente distintos de hiragana?",
           "target": "ア · 日",
           "options": [
-            "No, representa las mismas moras básicas",
+            "No representa sonidos",
             "Sí",
-            "No representa sonidos"
+            "No, representa las mismas moras básicas"
           ],
           "answer": "No, representa las mismas moras básicas",
           "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
@@ -125,7 +178,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO DE KATAKANA",
+              "text": "ア",
+              "audio": "ア",
+              "meaning": "Representa la misma vocal que あ."
+            }
+          ]
         }
       ]
     },
@@ -160,8 +222,8 @@
           "options": [],
           "answer": "",
           "explanation": "Escucha cada vocal y conserva su duración.",
-          "audio": "あ",
-          "slow_audio": "あ",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -177,6 +239,28 @@
             "あ: a.",
             "い: i.",
             "う/え/お completan el sistema."
+          ],
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
           ]
         },
         {
@@ -185,8 +269,8 @@
           "prompt": "¿Cuántas vocales básicas organiza el kana?",
           "target": "あ い う え お",
           "options": [
-            "Cinco",
             "Tres",
+            "Cinco",
             "Diez"
           ],
           "answer": "Cinco",
@@ -198,7 +282,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-02-b-teach",
@@ -233,9 +340,9 @@
           "prompt": "¿Cuántas moras tiene «ひと»?",
           "target": "ひと",
           "options": [
-            "Dos",
+            "Tres",
             "Una",
-            "Tres"
+            "Dos"
           ],
           "answer": "Dos",
           "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
@@ -246,7 +353,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -281,8 +389,8 @@
           "options": [],
           "answer": "",
           "explanation": "El curso presenta una familia, practica y repasa anteriores.",
-          "audio": "か",
-          "slow_audio": "か",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -298,6 +406,38 @@
             "か: k+a.",
             "き: k+i.",
             "く/け/こ continúan la fila."
+          ],
+          "audio_examples": [
+            {
+              "label": "FILA K · A",
+              "text": "か",
+              "audio": "か",
+              "meaning": "Primera mora de la fila K."
+            },
+            {
+              "label": "FILA K · I",
+              "text": "き",
+              "audio": "き",
+              "meaning": "Segunda mora de la fila K."
+            },
+            {
+              "label": "FILA K · U",
+              "text": "く",
+              "audio": "く",
+              "meaning": "Tercera mora de la fila K."
+            },
+            {
+              "label": "FILA K · E",
+              "text": "け",
+              "audio": "け",
+              "meaning": "Cuarta mora de la fila K."
+            },
+            {
+              "label": "FILA K · O",
+              "text": "こ",
+              "audio": "こ",
+              "meaning": "Quinta mora de la fila K."
+            }
           ]
         },
         {
@@ -306,8 +446,8 @@
           "prompt": "¿Qué cambia dentro de una fila de kana?",
           "target": "か き く け こ",
           "options": [
-            "La vocal",
             "El sentido de lectura",
+            "La vocal",
             "El tipo de escritura"
           ],
           "answer": "La vocal",
@@ -319,7 +459,40 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FILA K · A",
+              "text": "か",
+              "audio": "か",
+              "meaning": "Primera mora de la fila K."
+            },
+            {
+              "label": "FILA K · I",
+              "text": "き",
+              "audio": "き",
+              "meaning": "Segunda mora de la fila K."
+            },
+            {
+              "label": "FILA K · U",
+              "text": "く",
+              "audio": "く",
+              "meaning": "Tercera mora de la fila K."
+            },
+            {
+              "label": "FILA K · E",
+              "text": "け",
+              "audio": "け",
+              "meaning": "Cuarta mora de la fila K."
+            },
+            {
+              "label": "FILA K · O",
+              "text": "こ",
+              "audio": "こ",
+              "meaning": "Quinta mora de la fila K."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-03-b-teach",
@@ -329,8 +502,8 @@
           "options": [],
           "answer": "",
           "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
-          "audio": "し",
-          "slow_audio": "し",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -346,6 +519,28 @@
             "し tiene sonido propio.",
             "ち y つ requieren escucha.",
             "ふ no es una f española idéntica."
+          ],
+          "audio_examples": [
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "し",
+              "audio": "し"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ち",
+              "audio": "ち"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "つ",
+              "audio": "つ"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ふ",
+              "audio": "ふ"
+            }
           ]
         },
         {
@@ -354,9 +549,9 @@
           "prompt": "¿Cómo debes aprender し o つ?",
           "target": "し · ち · つ · ふ",
           "options": [
-            "Asociando el kana directamente con su audio",
+            "Inventando una vocal",
             "Leyendo rōmaji siempre",
-            "Inventando una vocal"
+            "Asociando el kana directamente con su audio"
           ],
           "answer": "Asociando el kana directamente con su audio",
           "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
@@ -367,7 +562,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "し",
+              "audio": "し"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ち",
+              "audio": "ち"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "つ",
+              "audio": "つ"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ふ",
+              "audio": "ふ"
+            }
+          ]
         }
       ]
     },
@@ -402,8 +620,8 @@
           "options": [],
           "answer": "",
           "explanation": "No son signos decorativos.",
-          "audio": "が",
-          "slow_audio": "が",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -419,6 +637,20 @@
             "か→が.",
             "さ→ざ.",
             "は→ば o ぱ."
+          ],
+          "audio_examples": [
+            {
+              "label": "DAKUTEN · か CAMBIA A",
+              "text": "が",
+              "audio": "が",
+              "meaning": "El signo modifica la consonante."
+            },
+            {
+              "label": "HANDAKUTEN · は CAMBIA A",
+              "text": "ぱ",
+              "audio": "ぱ",
+              "meaning": "El círculo modifica la consonante."
+            }
           ]
         },
         {
@@ -427,8 +659,8 @@
           "prompt": "¿Qué hace dakuten?",
           "target": "か→が · は→ぱ",
           "options": [
-            "Modifica la consonante de una familia",
             "Alarga siempre la vocal",
+            "Modifica la consonante de una familia",
             "Convierte kana en kanji"
           ],
           "answer": "Modifica la consonante de una familia",
@@ -440,7 +672,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "DAKUTEN · か CAMBIA A",
+              "text": "が",
+              "audio": "が",
+              "meaning": "El signo modifica la consonante."
+            },
+            {
+              "label": "HANDAKUTEN · は CAMBIA A",
+              "text": "ぱ",
+              "audio": "ぱ",
+              "meaning": "El círculo modifica la consonante."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-04-b-teach",
@@ -449,9 +696,9 @@
           "target": "きゃ · っ",
           "options": [],
           "answer": "",
-          "explanation": "No leas el kana pequeño como una mora completa independiente.",
-          "audio": "きゃ",
-          "slow_audio": "きゃ",
+          "explanation": "ゃ, ゅ y ょ pequeños se unen al kana anterior en una sola mora: きゃ cuenta una. En cambio, っ sí ocupa una mora: きって se cuenta き・っ・て, tres pulsos, sin pronunciar una u en っ.",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -461,26 +708,40 @@
           "gradable": false,
           "meaning": "",
           "teaching_kind": "rule",
-          "sound_hint": "ゃゅょ pequeños forman combinaciones; っ marca consonante doble.",
+          "sound_hint": "ゃゅょ se combinan con el kana anterior; っ ocupa su propio pulso antes de la consonante doble.",
           "memory_hint": "El tamaño importa.",
           "teaching_points": [
-            "き + ゃ → きゃ.",
-            "っ prepara una consonante doble.",
-            "El ritmo cambia."
+            "き + ゃ → きゃ: una mora.",
+            "きって → き・っ・て: tres moras.",
+            "No pronuncies っ como つ ni elimines su pulso."
+          ],
+          "audio_examples": [
+            {
+              "label": "KANA PEQUEÑO EN COMBINACIÓN",
+              "text": "きゃ",
+              "audio": "きゃ",
+              "meaning": "Se lee como una sola mora combinada."
+            },
+            {
+              "label": "CONSONANTE DOBLE EN CONTEXTO",
+              "text": "きって",
+              "audio": "きって",
+              "meaning": "Tres moras: き・っ・て. La っ ocupa un pulso antes de la consonante."
+            }
           ]
         },
         {
           "id": "japanese-reading-00-04-b-question",
           "type": "select_translation",
-          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "prompt": "¿Cuántas moras tiene きって, contando la っ pequeña?",
           "target": "きゃ · っ",
           "options": [
-            "No",
-            "Sí",
-            "Es silencioso siempre"
+            "Dos",
+            "Tres",
+            "Cuatro"
           ],
-          "answer": "No",
-          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "answer": "Tres",
+          "explanation": "ゃ, ゅ y ょ pequeños se unen al kana anterior en una sola mora: きゃ cuenta una. En cambio, っ sí ocupa una mora: きって se cuenta き・っ・て, tres pulsos, sin pronunciar una u en っ.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -488,7 +749,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         }
       ]
     },
@@ -523,8 +786,8 @@
           "options": [],
           "answer": "",
           "explanation": "No reduzcas la diferencia a un acento gráfico.",
-          "audio": "おばあさん",
-          "slow_audio": "おばあさん",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -540,6 +803,20 @@
             "おばさん: tía/señora.",
             "おばあさん: abuela/señora mayor.",
             "あ adicional cuenta."
+          ],
+          "audio_examples": [
+            {
+              "label": "VOCAL NORMAL",
+              "text": "おばさん",
+              "audio": "おばさん",
+              "meaning": "Tía o señora."
+            },
+            {
+              "label": "VOCAL LARGA",
+              "text": "おばあさん",
+              "audio": "おばあさん",
+              "meaning": "Abuela o señora mayor."
+            }
           ]
         },
         {
@@ -548,8 +825,8 @@
           "prompt": "¿Una vocal larga puede cambiar significado?",
           "target": "おばさん · おばあさん",
           "options": [
-            "Sí",
             "No",
+            "Sí",
             "Solo en canciones"
           ],
           "answer": "Sí",
@@ -561,7 +838,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "VOCAL NORMAL",
+              "text": "おばさん",
+              "audio": "おばさん",
+              "meaning": "Tía o señora."
+            },
+            {
+              "label": "VOCAL LARGA",
+              "text": "おばあさん",
+              "audio": "おばあさん",
+              "meaning": "Abuela o señora mayor."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-05-b-teach",
@@ -596,9 +888,9 @@
           "prompt": "¿Qué indica ー en katakana?",
           "target": "コーヒー",
           "options": [
-            "Vocal larga",
+            "Consonante doble",
             "Separación de palabras",
-            "Consonante doble"
+            "Vocal larga"
           ],
           "answer": "Vocal larga",
           "explanation": "Es muy frecuente en palabras extranjeras escritas en katakana.",
@@ -609,7 +901,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -669,8 +962,8 @@
           "prompt": "¿Conviene memorizar todas las lecturas de un kanji de golpe?",
           "target": "人",
           "options": [
-            "No",
             "Sí",
+            "No",
             "Los kanji no tienen lectura"
           ],
           "answer": "No",
@@ -682,7 +975,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "japanese-reading-00-06-b-teach",
@@ -717,9 +1011,9 @@
           "prompt": "¿Qué sistema debe usar la ayuda de lectura japonesa?",
           "target": "人（ひと）",
           "options": [
-            "Kana mediante furigana, no rōmaji",
+            "Traducción española encima",
             "Solo letras latinas",
-            "Traducción española encima"
+            "Kana mediante furigana, no rōmaji"
           ],
           "answer": "Kana mediante furigana, no rōmaji",
           "explanation": "A diferencia del rōmaji, mantiene al alumno dentro del sistema japonés.",
@@ -730,7 +1024,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -764,9 +1059,9 @@
           "prompt": "¿Qué aprenderás primero para leer japonés?",
           "target": "あ い う え お",
           "options": [
+            "Solo kanji",
             "Hiragana",
-            "Rōmaji permanente",
-            "Solo kanji"
+            "Rōmaji permanente"
           ],
           "answer": "Hiragana",
           "explanation": "El Mundo 1 enseñará el silabario completo de forma acumulativa.",
@@ -777,7 +1072,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-review-2-question",
@@ -785,9 +1103,9 @@
           "prompt": "¿Cuántas moras tiene «ひと»?",
           "target": "ひと",
           "options": [
-            "Dos",
             "Una",
-            "Tres"
+            "Tres",
+            "Dos"
           ],
           "answer": "Dos",
           "explanation": "Cada kana básico ocupa una mora; más adelante verás que ん y っ también cuentan.",
@@ -798,7 +1116,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "japanese-reading-00-review-3-question",
@@ -819,20 +1138,53 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FILA K · A",
+              "text": "か",
+              "audio": "か",
+              "meaning": "Primera mora de la fila K."
+            },
+            {
+              "label": "FILA K · I",
+              "text": "き",
+              "audio": "き",
+              "meaning": "Segunda mora de la fila K."
+            },
+            {
+              "label": "FILA K · U",
+              "text": "く",
+              "audio": "く",
+              "meaning": "Tercera mora de la fila K."
+            },
+            {
+              "label": "FILA K · E",
+              "text": "け",
+              "audio": "け",
+              "meaning": "Cuarta mora de la fila K."
+            },
+            {
+              "label": "FILA K · O",
+              "text": "こ",
+              "audio": "こ",
+              "meaning": "Quinta mora de la fila K."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-review-4-question",
           "type": "select_translation",
-          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "prompt": "¿Cuántas moras tiene きって, contando la っ pequeña?",
           "target": "きゃ · っ",
           "options": [
-            "No",
-            "Sí",
-            "Es silencioso siempre"
+            "Dos",
+            "Tres",
+            "Cuatro"
           ],
-          "answer": "No",
-          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "answer": "Tres",
+          "explanation": "ゃ, ゅ y ょ pequeños se unen al kana anterior en una sola mora: きゃ cuenta una. En cambio, っ sí ocupa una mora: きって se cuenta き・っ・て, tres pulsos, sin pronunciar una u en っ.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -840,7 +1192,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "japanese-reading-00-review-5-question",
@@ -848,9 +1202,9 @@
           "prompt": "¿Una vocal larga puede cambiar significado?",
           "target": "おばさん · おばあさん",
           "options": [
-            "Sí",
             "No",
-            "Solo en canciones"
+            "Solo en canciones",
+            "Sí"
           ],
           "answer": "Sí",
           "explanation": "No reduzcas la diferencia a un acento gráfico.",
@@ -861,7 +1215,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "VOCAL NORMAL",
+              "text": "おばさん",
+              "audio": "おばさん",
+              "meaning": "Tía o señora."
+            },
+            {
+              "label": "VOCAL LARGA",
+              "text": "おばあさん",
+              "audio": "おばあさん",
+              "meaning": "Abuela o señora mayor."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-review-6-question",
@@ -882,7 +1251,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     },
@@ -914,14 +1284,13 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «ぱ»",
           "target": "ぱ",
-          "instruction": "Escribe exactamente «か→が · は→ぱ». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «ぱ». No escribas cómo suena ni su explicación.",
           "answer": "ぱ",
           "accepted_answers": [
-            "ぱ",
-            "か→が · は→ぱ"
+            "ぱ"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Una respuesta correcta es «か→が · は→ぱ».",
+          "allow_minor_typos": false,
+          "explanation": "ぱ se forma añadiendo el handakuten (゜) a は. Se lee pa.",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -935,58 +1304,73 @@
           "type": "typed_translation",
           "prompt": "Copia exactamente esta grafía o comparación: «きゃ · っ»",
           "target": "きゃ · っ",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «きゃ · っ».",
+          "instruction": "Copia exactamente «きゃ · っ». No escribas cómo suena ni su explicación.",
           "answer": "きゃ · っ",
           "accepted_answers": [
             "きゃ · っ"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «きゃ». La grafía que se practica es «きゃ · っ».",
+          "allow_minor_typos": false,
+          "explanation": "きゃ combina き con ゃ pequeño y ocupa una mora. っ pequeño indica una pausa consonántica y ocupa otra mora; aquí copias dos grafías distintas.",
           "audio": "",
           "slow_audio": "",
           "tags": [
             "production",
             "dictation",
-            "reading"
+            "reading",
+            "copying"
           ],
-          "xp": 20
+          "xp": 20,
+          "audio_examples": [
+            {
+              "label": "KANA PEQUEÑO EN COMBINACIÓN",
+              "text": "きゃ",
+              "audio": "きゃ",
+              "meaning": "Se lee como una sola mora combinada."
+            },
+            {
+              "label": "CONSONANTE DOBLE EN CONTEXTO",
+              "text": "きって",
+              "audio": "きって",
+              "meaning": "La っ prepara la consonante doble."
+            }
+          ]
         },
         {
           "id": "japanese-reading-foundations-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Reconstruye solo el resultado final",
-          "target": "ぱ",
+          "prompt": "Elige el resultado de añadir handakuten (゜) a は",
+          "target": "は + ゜",
           "options": [
-            "·",
-            "か→が",
-            "は→ぱ"
+            "ば",
+            "ぱ",
+            "は"
           ],
           "joiner": " ",
           "answer": "ぱ",
           "accepted_answers": [
-            "ぱ",
-            "か→が · は→ぱ"
+            "ぱ"
           ],
-          "explanation": "La forma completa es «か→が · は→ぱ».",
+          "explanation": "Dakuten: か → が (ka → ga). Handakuten: は → ぱ (ha → pa).",
           "audio": "",
           "slow_audio": "",
           "tags": [
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "instruction": "Toca el bloque que representa el resultado final."
         },
         {
           "id": "japanese-reading-foundations-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la sílaba que oyes",
           "target": "",
-          "instruction": "Escribe exactamente «きゃ · っ», no una guía de pronunciación.",
-          "answer": "きゃ · っ",
+          "instruction": "Escribe la combinación de kana que oyes.",
+          "answer": "きゃ",
           "accepted_answers": [
-            "きゃ · っ"
+            "きゃ"
           ],
-          "explanation": "Escuchaste «きゃ · っ». No leas el kana pequeño como una mora completa independiente.",
+          "explanation": "きゃ se lee kya y ocupa una sola mora. La ゃ pequeña se combina con き.",
           "audio": "きゃ",
           "slow_audio": "きゃ",
           "tags": [
@@ -1031,8 +1415,8 @@
           "prompt": "¿Qué aprenderás primero para leer japonés?",
           "target": "あ い う え お",
           "options": [
-            "Hiragana",
             "Rōmaji permanente",
+            "Hiragana",
             "Solo kanji"
           ],
           "answer": "Hiragana",
@@ -1044,7 +1428,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-2-question",
@@ -1052,9 +1459,9 @@
           "prompt": "¿Katakana usa sonidos totalmente distintos de hiragana?",
           "target": "ア · 日",
           "options": [
-            "No, representa las mismas moras básicas",
             "Sí",
-            "No representa sonidos"
+            "No representa sonidos",
+            "No, representa las mismas moras básicas"
           ],
           "answer": "No, representa las mismas moras básicas",
           "explanation": "Katakana se usa mucho en préstamos; kanji se combina con kana.",
@@ -1065,7 +1472,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "EJEMPLO DE KATAKANA",
+              "text": "ア",
+              "audio": "ア",
+              "meaning": "Representa la misma vocal que あ."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-3-question",
@@ -1074,8 +1490,8 @@
           "target": "あ い う え お",
           "options": [
             "Cinco",
-            "Tres",
-            "Diez"
+            "Diez",
+            "Tres"
           ],
           "answer": "Cinco",
           "explanation": "Escucha cada vocal y conserva su duración.",
@@ -1086,7 +1502,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "あ",
+              "audio": "あ"
+            },
+            {
+              "text": "い",
+              "audio": "い"
+            },
+            {
+              "text": "う",
+              "audio": "う"
+            },
+            {
+              "text": "え",
+              "audio": "え"
+            },
+            {
+              "text": "お",
+              "audio": "お"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-4-question",
@@ -1094,8 +1533,8 @@
           "prompt": "¿Cuántas moras tiene «ひと»?",
           "target": "ひと",
           "options": [
-            "Dos",
             "Una",
+            "Dos",
             "Tres"
           ],
           "answer": "Dos",
@@ -1107,7 +1546,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "japanese-reading-00-test-5-question",
@@ -1115,9 +1555,9 @@
           "prompt": "¿Qué cambia dentro de una fila de kana?",
           "target": "か き く け こ",
           "options": [
-            "La vocal",
             "El sentido de lectura",
-            "El tipo de escritura"
+            "El tipo de escritura",
+            "La vocal"
           ],
           "answer": "La vocal",
           "explanation": "El curso presenta una familia, practica y repasa anteriores.",
@@ -1128,7 +1568,40 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "FILA K · A",
+              "text": "か",
+              "audio": "か",
+              "meaning": "Primera mora de la fila K."
+            },
+            {
+              "label": "FILA K · I",
+              "text": "き",
+              "audio": "き",
+              "meaning": "Segunda mora de la fila K."
+            },
+            {
+              "label": "FILA K · U",
+              "text": "く",
+              "audio": "く",
+              "meaning": "Tercera mora de la fila K."
+            },
+            {
+              "label": "FILA K · E",
+              "text": "け",
+              "audio": "け",
+              "meaning": "Cuarta mora de la fila K."
+            },
+            {
+              "label": "FILA K · O",
+              "text": "こ",
+              "audio": "こ",
+              "meaning": "Quinta mora de la fila K."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-6-question",
@@ -1137,8 +1610,8 @@
           "target": "し · ち · つ · ふ",
           "options": [
             "Asociando el kana directamente con su audio",
-            "Leyendo rōmaji siempre",
-            "Inventando una vocal"
+            "Inventando una vocal",
+            "Leyendo rōmaji siempre"
           ],
           "answer": "Asociando el kana directamente con su audio",
           "explanation": "No dependas de escribir shi, chi o tsu en rōmaji.",
@@ -1149,7 +1622,30 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "し",
+              "audio": "し"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ち",
+              "audio": "ち"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "つ",
+              "audio": "つ"
+            },
+            {
+              "label": "SONIDO QUE SE APRENDE DIRECTAMENTE",
+              "text": "ふ",
+              "audio": "ふ"
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-7-question",
@@ -1157,8 +1653,8 @@
           "prompt": "¿Qué hace dakuten?",
           "target": "か→が · は→ぱ",
           "options": [
-            "Modifica la consonante de una familia",
             "Alarga siempre la vocal",
+            "Modifica la consonante de una familia",
             "Convierte kana en kanji"
           ],
           "answer": "Modifica la consonante de una familia",
@@ -1170,20 +1666,35 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "DAKUTEN · か CAMBIA A",
+              "text": "が",
+              "audio": "が",
+              "meaning": "El signo modifica la consonante."
+            },
+            {
+              "label": "HANDAKUTEN · は CAMBIA A",
+              "text": "ぱ",
+              "audio": "ぱ",
+              "meaning": "El círculo modifica la consonante."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-8-question",
           "type": "select_translation",
-          "prompt": "¿Un kana pequeño se lee igual que uno grande aislado?",
+          "prompt": "¿Cuántas moras tiene きって, contando la っ pequeña?",
           "target": "きゃ · っ",
           "options": [
-            "No",
-            "Sí",
-            "Es silencioso siempre"
+            "Dos",
+            "Tres",
+            "Cuatro"
           ],
-          "answer": "No",
-          "explanation": "No leas el kana pequeño como una mora completa independiente.",
+          "answer": "Tres",
+          "explanation": "ゃ, ゅ y ょ pequeños se unen al kana anterior en una sola mora: きゃ cuenta una. En cambio, っ sí ocupa una mora: きって se cuenta き・っ・て, tres pulsos, sin pronunciar una u en っ.",
           "audio": "",
           "slow_audio": "",
           "image": null,
@@ -1191,7 +1702,9 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": []
         },
         {
           "id": "japanese-reading-00-test-9-question",
@@ -1200,8 +1713,8 @@
           "target": "おばさん · おばあさん",
           "options": [
             "Sí",
-            "No",
-            "Solo en canciones"
+            "Solo en canciones",
+            "No"
           ],
           "answer": "Sí",
           "explanation": "No reduzcas la diferencia a un acento gráfico.",
@@ -1212,7 +1725,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "VOCAL NORMAL",
+              "text": "おばさん",
+              "audio": "おばさん",
+              "meaning": "Tía o señora."
+            },
+            {
+              "label": "VOCAL LARGA",
+              "text": "おばあさん",
+              "audio": "おばあさん",
+              "meaning": "Abuela o señora mayor."
+            }
+          ]
         },
         {
           "id": "japanese-reading-00-test-10-question",
@@ -1220,9 +1748,9 @@
           "prompt": "¿Qué indica ー en katakana?",
           "target": "コーヒー",
           "options": [
+            "Consonante doble",
             "Vocal larga",
-            "Separación de palabras",
-            "Consonante doble"
+            "Separación de palabras"
           ],
           "answer": "Vocal larga",
           "explanation": "Es muy frecuente en palabras extranjeras escritas en katakana.",
@@ -1233,7 +1761,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "japanese-reading-00-test-11-question",
@@ -1241,9 +1770,9 @@
           "prompt": "¿Conviene memorizar todas las lecturas de un kanji de golpe?",
           "target": "人",
           "options": [
-            "No",
             "Sí",
-            "Los kanji no tienen lectura"
+            "Los kanji no tienen lectura",
+            "No"
           ],
           "answer": "No",
           "explanation": "Un kanji puede tener varias lecturas según la palabra.",
@@ -1254,7 +1783,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "japanese-reading-00-test-12-question",
@@ -1275,7 +1805,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         }
       ]
     }

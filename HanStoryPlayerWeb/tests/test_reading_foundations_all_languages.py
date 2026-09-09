@@ -66,6 +66,17 @@ def test_reading_foundations_teach_before_testing_and_require_full_mastery():
         for lesson in unit["lessons"]:
             if lesson.get("isReview") or lesson.get("isTest"):
                 continue
+            if lesson.get("generatedProduction"):
+                assert any(
+                    activity["type"] in {
+                        "typed_translation", "dictation", "build_with_blocks",
+                        "complete_without_options", "transform_sentence",
+                        "open_question", "speak_and_transcribe",
+                        "guided_dialogue", "stage_scenario",
+                    }
+                    for activity in lesson["activities"]
+                )
+                continue
             first_gradable = next(
                 index
                 for index, activity in enumerate(lesson["activities"])
@@ -185,8 +196,11 @@ def test_answers_and_referenced_audio_are_valid():
                 assert activity["id"] not in activity_ids
                 activity_ids.add(activity["id"])
                 options = activity.get("options", [])
-                if options:
+                if options and activity["type"] != "build_with_blocks":
                     assert activity["answer"] in options, activity["id"]
+                if activity["type"] == "build_with_blocks":
+                    assert activity["answer"], activity["id"]
+                    assert len(activity["options"]) == len(set(activity["options"])), activity["id"]
                 for field in ("audio", "slow_audio"):
                     audio_key = activity.get(field)
                     if not audio_key:

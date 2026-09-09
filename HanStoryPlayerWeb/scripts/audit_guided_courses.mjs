@@ -1,10 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { canBuildAnswer } from '../src/guided_activity_quality.js';
+import { resolveTeachingLinks } from '../src/guided_teaching_links.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.resolve(here, "..");
 const coursesRoot = path.join(webRoot, "library", "courses");
+const identityReviewFile = path.join(webRoot, 'course-authoring/qa_identity_review.json');
+const reviewedIdentity = fs.existsSync(identityReviewFile) ? readJson(identityReviewFile).reviewed || [] : [];
 const supportedLanguages = [
   "Arabic",
   "Chinese",
@@ -25,6 +29,8 @@ const teachingTypes = new Set([
   "dialogue_model",
 ]);
 const gradableTypes = new Set([
+  'typed_translation', 'dictation', 'build_with_blocks', 'complete_without_options',
+  'transform_sentence', 'open_question', 'speak_and_transcribe', 'guided_dialogue', 'stage_scenario',
   "audio_to_kana",
   "build_word",
   "complete_particle",
@@ -131,6 +137,8 @@ function isPronunciationOrRuleQuestion(activity) {
 }
 
 function hasPriorTeaching(activities, activityIndex, activity) {
+  const links = resolveTeachingLinks(activities, activityIndex);
+  if (links.declared) return links.sources.length > 0 && links.invalid.length === 0;
   const target = normalize(activity.target);
   const answer = normalize(activity.answer);
   const audio = normalize(activity.audio);
@@ -160,6 +168,9 @@ function hasFollowingMeaning(activities, activityIndex, activity) {
 function auditActivity(language, unit, lesson, activities, index, manifest, languageRoot) {
   const activity = activities[index];
   const where = context(language, unit, lesson, activity);
+  const teachingLinks = resolveTeachingLinks(activities, index);
+  if (teachingLinks.invalid.length) addIssue('error', 'invalid_teaching_reference', where,
+    `La referencia no apunta a enseñanza anterior de esta lección: ${teachingLinks.invalid.join(', ')}`);
   stats.activities += 1;
   stats.byLanguage[language].activities += 1;
 
@@ -211,7 +222,8 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
     const normalizedOptions = options.map(normalize);
     const normalizedAnswer = normalize(answer);
 
-    if (!answer) {
+    const dialogue = ['guided_dialogue','stage_scenario'].includes(activity.type);
+    if (!answer && !dialogue) {
       addIssue("error", "missing_answer", where, "La actividad evaluable no tiene respuesta.");
     }
     if (
@@ -235,7 +247,7 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
       );
     }
     if (options.length && new Set(normalizedOptions).size !== normalizedOptions.length) {
-      const duplicateIsNeededForAssembly = activity.type === "build_word"
+      const duplicateIsNeededForAssembly = activity.type === 'build_with_blocks' || activity.type === 'reorder_sentence' || activity.type === "build_word"
         || activity.type === "reorder_syllables";
       if (!duplicateIsNeededForAssembly) {
         addIssue(
@@ -256,6 +268,16 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
     }
   }
 
+  if (activity.type === 'build_with_blocks' && !canBuildAnswer(activity)) {
+    addIssue('error','block_answer_not_buildable',where,'Los bloques no pueden construir la respuesta completa.');
+  }
+  if (['guided_dialogue','stage_scenario'].includes(activity.type)) {
+    const turns=(activity.turns||[]).filter(turn=>turn.role==='learner');
+    if (!turns.length || turns.some(turn=>!clean(turn.answer)&&!(turn.accepted_answers||[]).some(clean))) {
+      addIssue('error','dialogue_without_answers',where,'El diálogo no tiene respuestas evaluables para todos los turnos.');
+    }
+  }
+
   if (isMeaningQuestion(activity)) {
     if (
       normalize(activity.target) === normalize(activity.answer)
@@ -268,11 +290,15 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
         "La supuesta traducción repite el texto del idioma objetivo.",
       );
     } else if (normalize(activity.target) === normalize(activity.answer)) {
+      const reviewed = reviewedIdentity.some(item => item.language === language && item.unitId === unit.id
+        && item.activityId === activity.id && item.prompt === activity.prompt
+        && item.target === activity.target && item.answer === activity.answer);
       addIssue(
-        "warning",
-        "identity_translation",
+        reviewed ? "info" : "warning",
+        reviewed ? "reviewed_identity_translation" : "identity_translation",
         where,
-        "La traducción coincide con la forma objetivo; conviene confirmar que sea un cognado real.",
+        reviewed ? "Forma compartida revisada para esta pregunta; no implica idénticos usos o pronunciación."
+          : "La traducción coincide con la forma objetivo; conviene confirmar que sea un cognado real.",
       );
     }
     if (spanishInstructionAnswers.has(clean(activity.answer))) {
@@ -301,14 +327,15 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
 
   for (const example of activity.audio_examples ?? []) {
     const audioKey = clean(example.audio);
-    if (!audioKey || !manifestHasAudio(manifest, audioKey)) {
+    const ttsFallback = example.audio_source === 'tts' || example.tts_fallback === true;
+    if (!audioKey || (!ttsFallback && !manifestHasAudio(manifest, audioKey))) {
       addIssue(
         "error",
         "missing_example_audio",
         where,
         `El ejemplo «${clean(example.label) || clean(example.text)}» no tiene un audio válido.`,
       );
-    } else if (!manifestAudioExists(languageRoot, manifest, audioKey)) {
+    } else if (!ttsFallback && !manifestAudioExists(languageRoot, manifest, audioKey)) {
       addIssue(
         "error",
         "missing_example_audio_file",
@@ -316,12 +343,16 @@ function auditActivity(language, unit, lesson, activities, index, manifest, lang
         `El archivo físico del ejemplo «${clean(example.label) || clean(example.text)}» no existe.`,
       );
     }
-    if (!clean(example.text) || !clean(example.meaning)) {
+    // A pronunciation drill can intentionally contain only a grapheme and
+    // its sound.  Requiring a translation here led authors to repeat an
+    // unhelpful pseudo-meaning beside every kana/vowel.  The visible text and
+    // a valid audio key remain non-negotiable.
+    if (!clean(example.text)) {
       addIssue(
         "error",
         "incomplete_audio_example",
         where,
-        "Un ejemplo de audio no incluye texto y significado.",
+        "Un ejemplo de audio no incluye la grafía o texto que reproduce.",
       );
     }
   }

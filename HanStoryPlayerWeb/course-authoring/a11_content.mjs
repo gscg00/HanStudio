@@ -17,7 +17,7 @@ export const A11_THEMES=Object.freeze([
   },
   {
     id:'routine',title:'Rutina diaria',objective:'Hablar de acciones frecuentes, horarios y hábitos.',
-    meanings:['despertarse','trabajar','estudiar','comer','beber','dormir','mañana','noche','todos los días','a las siete','después del trabajo','antes de dormir','Me levanto a las siete.','Estudio por la tarde.','Comemos juntos.','No trabajo el domingo.'],
+    meanings:['despertarse','trabajar','estudiar','comer','beber','dormir','la mañana (parte del día)','noche','todos los días','a las siete','después del trabajo','antes de dormir','Me levanto a las siete.','Estudio por la tarde.','Comemos juntos.','No trabajo el domingo.'],
   },
   {
     id:'food',title:'Comida y bebida',objective:'Pedir, aceptar, rechazar y expresar preferencias básicas.',

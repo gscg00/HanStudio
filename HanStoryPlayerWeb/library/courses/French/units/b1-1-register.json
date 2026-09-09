@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Pourriez es condicional de pouvoir y suaviza la petición. En esta situación vous se dirige a una persona con tratamiento de usted; no implica que haya varias personas. S’il vous plaît acompaña ese tratamiento."
         },
         {
           "id": "french-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "french-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "Pourriez-vous m’aider, s’il vous plaît ?",
+          "accepted_answers": [
+            "Pourriez-vous m’aider, s’il vous plaît ?",
+            "Est-ce que vous pourriez m’aider, s’il vous plaît ?"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "Pourriez-vous m’aider, s’il vous plaît ?",
+          "slow_audio": "Pourriez-vous m’aider, s’il vous plaît ?",
+          "usage_note": "Pourriez es condicional de pouvoir y suaviza la petición. En esta situación vous se dirige a una persona con tratamiento de usted; no implica que haya varias personas. S’il vous plaît acompaña ese tratamiento.",
+          "explanation": "Pourriez es condicional de pouvoir y suaviza la petición. En esta situación vous se dirige a una persona con tratamiento de usted; no implica que haya varias personas. S’il vous plaît acompaña ese tratamiento.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "french-b11-register-01-10-teach",
@@ -1890,7 +1916,7 @@
         {
           "id": "french-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en francés: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "On va partager le travail.",
           "accepted_answers": [
@@ -1944,7 +1970,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
+              "prompt": "Di o escribe en francés: «Gracias por avisarme con tiempo.»",
               "answer": "Merci de m’avoir prévenu à l’avance.",
               "accepted_answers": [
                 "Merci de m’avoir prévenu à l’avance."
@@ -1962,7 +1988,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
+              "prompt": "Di o escribe en francés: «Lamento informarle de que la cita se canceló.»",
               "answer": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
               "accepted_answers": [
                 "J’ai le regret de vous informer que le rendez-vous a été annulé."
@@ -1980,7 +2006,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en francés.",
+              "prompt": "Di o escribe en francés: «Vamos a dividir el trabajo.»",
               "answer": "On va partager le travail.",
               "accepted_answers": [
                 "On va partager le travail."

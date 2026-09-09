@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b11-cause-effect-03-13-meaning",
@@ -999,7 +1000,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b11-cause-effect-03-13-listen",
@@ -1022,7 +1024,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b11-cause-effect-03-14-teach",
@@ -1042,7 +1045,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-03-14-meaning",
@@ -1065,7 +1069,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-03-14-listen",
@@ -1088,7 +1093,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         }
       ]
     },
@@ -1705,7 +1711,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-review-02-14-listen",
@@ -1728,7 +1735,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-review-02-16-meaning",
@@ -1819,7 +1827,8 @@
             "production",
             "translation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b1-1-cause-effect-production-dictation",
@@ -1839,7 +1848,8 @@
             "production",
             "dictation"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b1-1-cause-effect-production-blocks",
@@ -1867,7 +1877,8 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b1-1-cause-effect-production-complete",
@@ -1891,7 +1902,7 @@
         {
           "id": "italian-b1-1-cause-effect-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «¿Tú qué opinas?»",
+          "prompt": "Di o escribe en italiano: «¿Tú qué opinas?»",
           "target": "¿Tú qué opinas?",
           "answer": "Tu che cosa ne pensi?",
           "accepted_answers": [
@@ -1928,7 +1939,8 @@
             "speaking",
             "optional"
           ],
-          "xp": 15
+          "xp": 15,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b1-1-cause-effect-production-dialogue",
@@ -1945,14 +1957,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en italiano.",
+              "prompt": "Di o escribe en italiano: «Como resultado, el proyecto se retrasó.»",
               "answer": "Di conseguenza, il progetto è stato ritardato.",
               "accepted_answers": [
                 "Di conseguenza, il progetto è stato ritardato."
               ],
               "audio": "Di conseguenza, il progetto è stato ritardato.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
             },
             {
               "role": "model",
@@ -1963,14 +1976,15 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en italiano.",
+              "prompt": "Di o escribe en italiano: «Aunque estaba cansada, terminó el trabajo.»",
               "answer": "Sebbene fosse stanca, ha finito il lavoro.",
               "accepted_answers": [
                 "Sebbene fosse stanca, ha finito il lavoro."
               ],
               "audio": "Sebbene fosse stanca, ha finito il lavoro.",
               "allow_minor_typos": true,
-              "speech_enabled": true
+              "speech_enabled": true,
+              "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
             }
           ],
           "minimum_correct": 2,
@@ -2586,7 +2600,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b11-cause-effect-test-13-listen",
@@ -2609,7 +2624,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Di conseguenza anuncia el resultado de una causa previa. È stato ritardato presenta el proyecto como aquello que fue retrasado; no explica quién o qué produjo ese retraso."
         },
         {
           "id": "italian-b11-cause-effect-test-14-meaning",
@@ -2632,7 +2648,8 @@
             "cause-effect",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-test-14-listen",
@@ -2655,7 +2672,8 @@
             "cause-effect",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Sebbene introduce una concesión: terminó a pesar de estar cansada. Stanca está en femenino; fosse es la forma de essere que aparece en esta subordinada."
         },
         {
           "id": "italian-b11-cause-effect-test-15-meaning",

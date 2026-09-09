@@ -40,7 +40,8 @@ def test_every_language_has_six_b11_units_and_42_lessons():
             unit = load(COURSES / language / "units" / f"{unit_id}.json")
             assert unit["requirements"] == [previous]
             previous = unit_id
-            assert len(unit["lessons"]) == 7
+            assert len(unit["lessons"]) == 8
+            assert sum(bool(lesson.get("generatedProduction")) for lesson in unit["lessons"]) == 1
             assert sum(bool(lesson.get("isReview")) for lesson in unit["lessons"]) == 2
             assert sum(bool(lesson.get("isTest")) for lesson in unit["lessons"]) == 1
             taught = [
@@ -88,9 +89,9 @@ def test_b11_xp_catalog_is_complete_and_private():
         for unit_id in B11_IDS:
             unit = load(COURSES / language / "units" / f"{unit_id}.json")
             for lesson in unit["lessons"]:
-                assert lesson["id"].lower() in sql
+                assert lesson["id"].lower() in "\n".join(path.read_text(encoding="utf-8").lower() for path in (ROOT / "supabase/migrations").glob("*.sql"))
                 count += 1
-    assert count == 420
+    assert count == 480
 
 
 def test_service_worker_precaches_b11_manifests():

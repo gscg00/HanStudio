@@ -59,27 +59,6 @@
           ]
         },
         {
-          "id": "english-reading-00-01-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "A",
-          "options": [
-            "A",
-            "B",
-            "C"
-          ],
-          "answer": "A",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ay",
-          "slow_audio": "ay",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-01-b-teach",
           "type": "teach_concept",
           "prompt": "Letra B",
@@ -105,27 +84,6 @@
             "Nombre en Inglés: bee.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-01-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "B",
-          "options": [
-            "B",
-            "C",
-            "D"
-          ],
-          "answer": "B",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "bee",
-          "slow_audio": "bee",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-01-c-teach",
@@ -155,27 +113,6 @@
           ]
         },
         {
-          "id": "english-reading-00-01-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "C",
-          "options": [
-            "C",
-            "D",
-            "E"
-          ],
-          "answer": "C",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "see",
-          "slow_audio": "see",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-01-d-teach",
           "type": "teach_concept",
           "prompt": "Letra D",
@@ -201,27 +138,6 @@
             "Nombre en Inglés: dee.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-01-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "D",
-          "options": [
-            "D",
-            "E",
-            "F"
-          ],
-          "answer": "D",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "dee",
-          "slow_audio": "dee",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-01-e-teach",
@@ -251,14 +167,122 @@
           ]
         },
         {
+          "id": "english-reading-00-01-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "A",
+          "options": [
+            "B",
+            "A",
+            "C"
+          ],
+          "answer": "A",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de A. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ay",
+          "slow_audio": "ay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-01-a-teach",
+            "english-reading-00-01-b-teach",
+            "english-reading-00-01-c-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-01-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "B",
+          "options": [
+            "C",
+            "D",
+            "B"
+          ],
+          "answer": "B",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "bee",
+          "slow_audio": "bee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-01-b-teach",
+            "english-reading-00-01-c-teach",
+            "english-reading-00-01-d-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-01-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "C",
+          "options": [
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": "C",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de C. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "see",
+          "slow_audio": "see",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-01-c-teach",
+            "english-reading-00-01-d-teach",
+            "english-reading-00-01-e-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-01-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "D",
+          "options": [
+            "E",
+            "D",
+            "A"
+          ],
+          "answer": "D",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de D. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "dee",
+          "slow_audio": "dee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-01-a-teach",
+            "english-reading-00-01-d-teach",
+            "english-reading-00-01-e-teach"
+          ]
+        },
+        {
           "id": "english-reading-00-01-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
-            "F",
-            "G"
+            "A",
+            "B",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -269,7 +293,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-01-a-teach",
+            "english-reading-00-01-b-teach",
+            "english-reading-00-01-e-teach"
+          ]
         }
       ]
     },
@@ -324,27 +354,6 @@
           ]
         },
         {
-          "id": "english-reading-00-02-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "F",
-          "options": [
-            "F",
-            "G",
-            "H"
-          ],
-          "answer": "F",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eff",
-          "slow_audio": "eff",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-02-b-teach",
           "type": "teach_concept",
           "prompt": "Letra G",
@@ -372,27 +381,6 @@
           ]
         },
         {
-          "id": "english-reading-00-02-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "G",
-          "options": [
-            "G",
-            "H",
-            "I"
-          ],
-          "answer": "G",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "gee",
-          "slow_audio": "gee",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-02-c-teach",
           "type": "teach_concept",
           "prompt": "Letra H",
@@ -400,8 +388,8 @@
           "options": [],
           "answer": "",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "aitch",
-          "slow_audio": "aitch",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -417,28 +405,15 @@
             "Forma escrita: H.",
             "Nombre en Inglés: aitch.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
+          ],
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
           ]
-        },
-        {
-          "id": "english-reading-00-02-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "H",
-          "options": [
-            "H",
-            "I",
-            "J"
-          ],
-          "answer": "H",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "aitch",
-          "slow_audio": "aitch",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-02-d-teach",
@@ -468,27 +443,6 @@
           ]
         },
         {
-          "id": "english-reading-00-02-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "I",
-          "options": [
-            "I",
-            "J",
-            "K"
-          ],
-          "answer": "I",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "eye",
-          "slow_audio": "eye",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-02-e-teach",
           "type": "teach_concept",
           "prompt": "Letra J",
@@ -516,14 +470,130 @@
           ]
         },
         {
+          "id": "english-reading-00-02-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "F",
+          "options": [
+            "G",
+            "F",
+            "H"
+          ],
+          "answer": "F",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de F. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "eff",
+          "slow_audio": "eff",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-02-a-teach",
+            "english-reading-00-02-b-teach",
+            "english-reading-00-02-c-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-02-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "G",
+          "options": [
+            "H",
+            "I",
+            "G"
+          ],
+          "answer": "G",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "gee",
+          "slow_audio": "gee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-02-b-teach",
+            "english-reading-00-02-c-teach",
+            "english-reading-00-02-d-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-02-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "H",
+          "options": [
+            "H",
+            "I",
+            "J"
+          ],
+          "answer": "H",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-02-c-teach",
+            "english-reading-00-02-d-teach",
+            "english-reading-00-02-e-teach"
+          ],
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
+          ]
+        },
+        {
+          "id": "english-reading-00-02-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "I",
+          "options": [
+            "J",
+            "I",
+            "F"
+          ],
+          "answer": "I",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de I. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "eye",
+          "slow_audio": "eye",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-02-a-teach",
+            "english-reading-00-02-d-teach",
+            "english-reading-00-02-e-teach"
+          ]
+        },
+        {
           "id": "english-reading-00-02-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
-            "K",
-            "L"
+            "F",
+            "G",
+            "J"
           ],
           "answer": "J",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de J. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -534,7 +604,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-02-a-teach",
+            "english-reading-00-02-b-teach",
+            "english-reading-00-02-e-teach"
+          ]
         }
       ]
     },
@@ -589,27 +665,6 @@
           ]
         },
         {
-          "id": "english-reading-00-03-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "K",
-          "options": [
-            "K",
-            "L",
-            "M"
-          ],
-          "answer": "K",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "kay",
-          "slow_audio": "kay",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-03-b-teach",
           "type": "teach_concept",
           "prompt": "Letra L",
@@ -635,27 +690,6 @@
             "Nombre en Inglés: el.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-03-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "L",
-          "options": [
-            "L",
-            "M",
-            "N"
-          ],
-          "answer": "L",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "el",
-          "slow_audio": "el",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-03-c-teach",
@@ -685,27 +719,6 @@
           ]
         },
         {
-          "id": "english-reading-00-03-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "M",
-          "options": [
-            "M",
-            "N",
-            "O"
-          ],
-          "answer": "M",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "em",
-          "slow_audio": "em",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-03-d-teach",
           "type": "teach_concept",
           "prompt": "Letra N",
@@ -731,27 +744,6 @@
             "Nombre en Inglés: en.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-03-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "N",
-          "options": [
-            "N",
-            "O",
-            "P"
-          ],
-          "answer": "N",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "en",
-          "slow_audio": "en",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-03-e-teach",
@@ -781,14 +773,122 @@
           ]
         },
         {
+          "id": "english-reading-00-03-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "K",
+          "options": [
+            "L",
+            "K",
+            "M"
+          ],
+          "answer": "K",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "kay",
+          "slow_audio": "kay",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-03-a-teach",
+            "english-reading-00-03-b-teach",
+            "english-reading-00-03-c-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-03-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "L",
+          "options": [
+            "M",
+            "N",
+            "L"
+          ],
+          "answer": "L",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de L. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "el",
+          "slow_audio": "el",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-03-b-teach",
+            "english-reading-00-03-c-teach",
+            "english-reading-00-03-d-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-03-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "M",
+          "options": [
+            "M",
+            "N",
+            "O"
+          ],
+          "answer": "M",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de M. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "em",
+          "slow_audio": "em",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-03-c-teach",
+            "english-reading-00-03-d-teach",
+            "english-reading-00-03-e-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-03-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "N",
+          "options": [
+            "O",
+            "N",
+            "K"
+          ],
+          "answer": "N",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "en",
+          "slow_audio": "en",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-03-a-teach",
+            "english-reading-00-03-d-teach",
+            "english-reading-00-03-e-teach"
+          ]
+        },
+        {
           "id": "english-reading-00-03-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "O",
           "options": [
-            "O",
-            "P",
-            "Q"
+            "K",
+            "L",
+            "O"
           ],
           "answer": "O",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de O. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -799,7 +899,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-03-a-teach",
+            "english-reading-00-03-b-teach",
+            "english-reading-00-03-e-teach"
+          ]
         }
       ]
     },
@@ -854,27 +960,6 @@
           ]
         },
         {
-          "id": "english-reading-00-04-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "P",
-          "options": [
-            "P",
-            "Q",
-            "R"
-          ],
-          "answer": "P",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "pee",
-          "slow_audio": "pee",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-04-b-teach",
           "type": "teach_concept",
           "prompt": "Letra Q",
@@ -900,27 +985,6 @@
             "Nombre en Inglés: cue.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-04-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "Q",
-          "options": [
-            "Q",
-            "R",
-            "S"
-          ],
-          "answer": "Q",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "cue",
-          "slow_audio": "cue",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-04-c-teach",
@@ -950,27 +1014,6 @@
           ]
         },
         {
-          "id": "english-reading-00-04-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "R",
-          "options": [
-            "R",
-            "S",
-            "T"
-          ],
-          "answer": "R",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ar",
-          "slow_audio": "ar",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-04-d-teach",
           "type": "teach_concept",
           "prompt": "Letra S",
@@ -996,27 +1039,6 @@
             "Nombre en Inglés: ess.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-04-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "S",
-          "options": [
-            "S",
-            "T",
-            "U"
-          ],
-          "answer": "S",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ess",
-          "slow_audio": "ess",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-04-e-teach",
@@ -1046,14 +1068,122 @@
           ]
         },
         {
+          "id": "english-reading-00-04-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "P",
+          "options": [
+            "Q",
+            "P",
+            "R"
+          ],
+          "answer": "P",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de P. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "pee",
+          "slow_audio": "pee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-04-a-teach",
+            "english-reading-00-04-b-teach",
+            "english-reading-00-04-c-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-04-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "Q",
+          "options": [
+            "R",
+            "S",
+            "Q"
+          ],
+          "answer": "Q",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "cue",
+          "slow_audio": "cue",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-04-b-teach",
+            "english-reading-00-04-c-teach",
+            "english-reading-00-04-d-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-04-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "R",
+          "options": [
+            "R",
+            "S",
+            "T"
+          ],
+          "answer": "R",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de R. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ar",
+          "slow_audio": "ar",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-04-c-teach",
+            "english-reading-00-04-d-teach",
+            "english-reading-00-04-e-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-04-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "S",
+          "options": [
+            "T",
+            "S",
+            "P"
+          ],
+          "answer": "S",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de S. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ess",
+          "slow_audio": "ess",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-04-a-teach",
+            "english-reading-00-04-d-teach",
+            "english-reading-00-04-e-teach"
+          ]
+        },
+        {
           "id": "english-reading-00-04-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
-            "U",
-            "V"
+            "P",
+            "Q",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1064,7 +1194,13 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-04-a-teach",
+            "english-reading-00-04-b-teach",
+            "english-reading-00-04-e-teach"
+          ]
         }
       ]
     },
@@ -1119,27 +1255,6 @@
           ]
         },
         {
-          "id": "english-reading-00-05-a-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "U",
-          "options": [
-            "U",
-            "V",
-            "W"
-          ],
-          "answer": "U",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "you",
-          "slow_audio": "you",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-05-b-teach",
           "type": "teach_concept",
           "prompt": "Letra V",
@@ -1165,27 +1280,6 @@
             "Nombre en Inglés: vee.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-05-b-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "V",
-          "options": [
-            "V",
-            "W",
-            "X"
-          ],
-          "answer": "V",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "vee",
-          "slow_audio": "vee",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-05-c-teach",
@@ -1215,27 +1309,6 @@
           ]
         },
         {
-          "id": "english-reading-00-05-c-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "W",
-          "options": [
-            "W",
-            "X",
-            "Y"
-          ],
-          "answer": "W",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "double you",
-          "slow_audio": "double you",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
-        },
-        {
           "id": "english-reading-00-05-d-teach",
           "type": "teach_concept",
           "prompt": "Letra X",
@@ -1261,27 +1334,6 @@
             "Nombre en Inglés: ex.",
             "El nombre de la letra no sustituye sus sonidos dentro de una palabra."
           ]
-        },
-        {
-          "id": "english-reading-00-05-d-question",
-          "type": "listening_choice",
-          "prompt": "¿Qué letra acabas de escuchar?",
-          "target": "X",
-          "options": [
-            "X",
-            "Y",
-            "Z"
-          ],
-          "answer": "X",
-          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "ex",
-          "slow_audio": "ex",
-          "image": null,
-          "writing_asset": null,
-          "tags": [
-            "reading-foundations"
-          ],
-          "xp": 10
         },
         {
           "id": "english-reading-00-05-e-teach",
@@ -1311,14 +1363,122 @@
           ]
         },
         {
+          "id": "english-reading-00-05-a-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "U",
+          "options": [
+            "V",
+            "U",
+            "W"
+          ],
+          "answer": "U",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de U. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "you",
+          "slow_audio": "you",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-05-a-teach",
+            "english-reading-00-05-b-teach",
+            "english-reading-00-05-c-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-05-b-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "V",
+          "options": [
+            "W",
+            "X",
+            "V"
+          ],
+          "answer": "V",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de V. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "vee",
+          "slow_audio": "vee",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-05-b-teach",
+            "english-reading-00-05-c-teach",
+            "english-reading-00-05-d-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-05-c-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "W",
+          "options": [
+            "W",
+            "X",
+            "Y"
+          ],
+          "answer": "W",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "double you",
+          "slow_audio": "double you",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-05-c-teach",
+            "english-reading-00-05-d-teach",
+            "english-reading-00-05-e-teach"
+          ]
+        },
+        {
+          "id": "english-reading-00-05-d-question",
+          "type": "listening_choice",
+          "prompt": "¿Qué letra acabas de escuchar?",
+          "target": "X",
+          "options": [
+            "Y",
+            "X",
+            "U"
+          ],
+          "answer": "X",
+          "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de X. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
+          "audio": "ex",
+          "slow_audio": "ex",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "reading-foundations"
+          ],
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-05-a-teach",
+            "english-reading-00-05-d-teach",
+            "english-reading-00-05-e-teach"
+          ]
+        },
+        {
           "id": "english-reading-00-05-e-question",
           "type": "listening_choice",
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
-            "Z",
-            "A"
+            "A",
+            "U",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -1329,7 +1489,12 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-05-a-teach",
+            "english-reading-00-05-e-teach"
+          ]
         }
       ]
     },
@@ -1389,8 +1554,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
+            "Z",
             "B"
           ],
           "answer": "Z",
@@ -1402,7 +1567,11 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "teaching_refs": [
+            "english-reading-00-06-a-teach"
+          ]
         }
       ]
     },
@@ -1433,7 +1602,7 @@
           "id": "english-reading-00-07-a-teach",
           "type": "teach_concept",
           "prompt": "La letra no es su nombre",
-          "target": "A · /æ/",
+          "target": "A · /æ/ en cat",
           "options": [],
           "answer": "",
           "explanation": "En inglés una misma letra puede representar sonidos distintos según la palabra.",
@@ -1459,14 +1628,15 @@
             {
               "label": "NOMBRE DE LA LETRA",
               "text": "A",
-              "meaning": "se llama «ei»",
+              "meaning": "Nombre: ay; no es su sonido dentro de una palabra.",
               "audio": "ay"
             },
             {
-              "label": "DENTRO DE UNA PALABRA",
-              "text": "car",
-              "meaning": "auto",
-              "audio": "car"
+              "label": "A DENTRO DE UNA PALABRA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
             }
           ]
         },
@@ -1474,10 +1644,10 @@
           "id": "english-reading-00-07-a-question",
           "type": "select_translation",
           "prompt": "¿Qué debes mirar al leer una palabra?",
-          "target": "A · /æ/",
+          "target": "A · /æ/ en cat",
           "options": [
-            "El sonido de la letra en esa palabra",
             "Solo el nombre del abecedario",
+            "El sonido de la letra en esa palabra",
             "La traducción española"
           ],
           "answer": "El sonido de la letra en esa palabra",
@@ -1489,7 +1659,23 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "A",
+              "meaning": "Nombre: ay; no es su sonido dentro de una palabra.",
+              "audio": "ay"
+            },
+            {
+              "label": "A DENTRO DE UNA PALABRA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-07-b-teach",
@@ -1538,9 +1724,9 @@
           "prompt": "¿Puede C tener más de un sonido?",
           "target": "C: car / city",
           "options": [
-            "Sí, depende del contexto",
             "No, siempre suena igual",
-            "Solo en nombres propios"
+            "Solo en nombres propios",
+            "Sí, depende del contexto"
           ],
           "answer": "Sí, depende del contexto",
           "explanation": "Muchas correspondencias inglesas dependen de las letras vecinas.",
@@ -1551,7 +1737,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "C CON SONIDO K",
+              "text": "car",
+              "meaning": "auto",
+              "audio": "car"
+            },
+            {
+              "label": "C CON SONIDO S",
+              "text": "city",
+              "meaning": "ciudad",
+              "audio": "city"
+            }
+          ]
         }
       ]
     },
@@ -1586,8 +1787,8 @@
           "options": [],
           "answer": "",
           "explanation": "Las cinco letras vocálicas representan más de cinco sonidos.",
-          "audio": "ay",
-          "slow_audio": "ay",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1600,9 +1801,18 @@
           "sound_hint": "La vocal breve no se pronuncia como el nombre «ei».",
           "memory_hint": "Escucha la palabra completa; no deletrees.",
           "teaching_points": [
-            "Una vocal breve dura poco.",
-            "No añadas una vocal española.",
-            "Compara palabras en pares."
+            "La vocal de cat /æ/ tiene un sonido distinto del nombre A /eɪ/.",
+            "No basta con acortar el nombre de la letra.",
+            "Escucha la vocal dentro de cat."
+          ],
+          "audio_examples": [
+            {
+              "label": "A BREVE EN CONTEXTO",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -1611,8 +1821,8 @@
           "prompt": "¿La A de cat suena igual que el nombre A?",
           "target": "A en cat",
           "options": [
-            "No, es un sonido vocálico breve",
             "Sí, siempre es «ei»",
+            "No, es un sonido vocálico breve",
             "No se pronuncia"
           ],
           "answer": "No, es un sonido vocálico breve",
@@ -1624,7 +1834,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "A BREVE EN CONTEXTO",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-08-b-teach",
@@ -1673,9 +1893,9 @@
           "prompt": "¿Qué hace normalmente la e final en name?",
           "target": "a_e: name",
           "options": [
-            "Modifica la vocal anterior y no suena",
             "Se pronuncia como e española",
-            "Duplica la consonante"
+            "Duplica la consonante",
+            "Modifica la vocal anterior y no suena"
           ],
           "answer": "Modifica la vocal anterior y no suena",
           "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
@@ -1686,7 +1906,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "A LARGA + E SILENCIOSA",
+              "text": "name",
+              "meaning": "nombre",
+              "audio": "name"
+            },
+            {
+              "label": "OTRO EJEMPLO",
+              "text": "cake",
+              "meaning": "pastel",
+              "audio": "cake"
+            }
+          ]
         }
       ]
     },
@@ -1760,8 +1995,8 @@
           "prompt": "¿B y V representan el mismo sonido inglés?",
           "target": "B / V",
           "options": [
-            "No, se articulan de manera distinta",
             "Sí, siempre",
+            "No, se articulan de manera distinta",
             "Solo cambian al escribir"
           ],
           "answer": "No, se articulan de manera distinta",
@@ -1773,7 +2008,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO B",
+              "text": "book",
+              "meaning": "libro",
+              "audio": "book"
+            },
+            {
+              "label": "SONIDO V",
+              "text": "very",
+              "meaning": "muy",
+              "audio": "very"
+            }
+          ]
         },
         {
           "id": "english-reading-00-09-b-teach",
@@ -1783,8 +2033,8 @@
           "options": [],
           "answer": "",
           "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
-          "audio": "aitch",
-          "slow_audio": "aitch",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1800,6 +2050,14 @@
             "Expulsa aire suavemente.",
             "No añadas una j española fuerte.",
             "Hay algunas palabras con h muda."
+          ],
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
           ]
         },
         {
@@ -1808,9 +2066,9 @@
           "prompt": "¿Qué haces normalmente con una H inicial inglesa?",
           "target": "H",
           "options": [
-            "Produces una salida suave de aire",
             "La omites siempre",
-            "La pronuncias como rr"
+            "La pronuncias como rr",
+            "Produces una salida suave de aire"
           ],
           "answer": "Produces una salida suave de aire",
           "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
@@ -1821,7 +2079,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
+          ]
         }
       ]
     },
@@ -1895,8 +2162,8 @@
           "prompt": "¿Cómo se lee TH?",
           "target": "TH",
           "options": [
-            "Como un sonido conjunto, no deletreando T y H",
             "Como dos sílabas",
+            "Como un sonido conjunto, no deletreando T y H",
             "Siempre como t española"
           ],
           "answer": "Como un sonido conjunto, no deletreando T y H",
@@ -1908,7 +2175,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "TH SORDA",
+              "text": "think",
+              "meaning": "pensar",
+              "audio": "think"
+            },
+            {
+              "label": "TH SONORA",
+              "text": "this",
+              "meaning": "esto",
+              "audio": "this"
+            }
+          ]
         },
         {
           "id": "english-reading-00-10-b-teach",
@@ -1957,9 +2239,9 @@
           "prompt": "¿Qué debes hacer al encontrar SH o CH?",
           "target": "SH · CH",
           "options": [
-            "Reconocer el grupo como una unidad sonora",
             "Pronunciar cada nombre de letra",
-            "Ignorar la segunda letra"
+            "Ignorar la segunda letra",
+            "Reconocer el grupo como una unidad sonora"
           ],
           "answer": "Reconocer el grupo como una unidad sonora",
           "explanation": "Dividir estos grupos produce una pronunciación artificial.",
@@ -1970,7 +2252,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO SH",
+              "text": "ship",
+              "meaning": "barco",
+              "audio": "ship"
+            },
+            {
+              "label": "SONIDO CH",
+              "text": "chair",
+              "meaning": "silla",
+              "audio": "chair"
+            }
+          ]
         }
       ]
     },
@@ -2044,8 +2341,8 @@
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
           "target": "kn · wr",
           "options": [
-            "No, algunas son silenciosas",
             "Sí, sin excepción",
+            "No, algunas son silenciosas",
             "Solo las consonantes"
           ],
           "answer": "No, algunas son silenciosas",
@@ -2057,7 +2354,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "K SILENCIOSA",
+              "text": "know",
+              "meaning": "saber",
+              "audio": "know"
+            },
+            {
+              "label": "W SILENCIOSA",
+              "text": "write",
+              "meaning": "escribir",
+              "audio": "write"
+            }
+          ]
         },
         {
           "id": "english-reading-00-11-b-teach",
@@ -2067,8 +2379,8 @@
           "options": [],
           "answer": "",
           "explanation": "-ed puede sonar t, d o id; -s puede sonar s, z o iz.",
-          "audio": "ess",
-          "slow_audio": "ess",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2084,6 +2396,32 @@
             "worked termina en t.",
             "played termina en d.",
             "wanted termina en id."
+          ],
+          "audio_examples": [
+            {
+              "text": "worked",
+              "meaning": "trabajó",
+              "audio": "worked",
+              "audio_source": "tts"
+            },
+            {
+              "text": "played",
+              "meaning": "jugó",
+              "audio": "played",
+              "audio_source": "tts"
+            },
+            {
+              "text": "wanted",
+              "meaning": "quiso",
+              "audio": "wanted",
+              "audio_source": "tts"
+            },
+            {
+              "text": "dogs",
+              "meaning": "perros",
+              "audio": "dogs",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2092,9 +2430,9 @@
           "prompt": "¿La terminación -ed suena siempre igual?",
           "target": "-ed · -s",
           "options": [
-            "No, cambia según el contexto",
             "Sí, siempre «ed»",
-            "Nunca se pronuncia"
+            "Nunca se pronuncia",
+            "No, cambia según el contexto"
           ],
           "answer": "No, cambia según el contexto",
           "explanation": "-ed puede sonar t, d o id; -s puede sonar s, z o iz.",
@@ -2105,7 +2443,34 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "worked",
+              "meaning": "trabajó",
+              "audio": "worked",
+              "audio_source": "tts"
+            },
+            {
+              "text": "played",
+              "meaning": "jugó",
+              "audio": "played",
+              "audio_source": "tts"
+            },
+            {
+              "text": "wanted",
+              "meaning": "quiso",
+              "audio": "wanted",
+              "audio_source": "tts"
+            },
+            {
+              "text": "dogs",
+              "meaning": "perros",
+              "audio": "dogs",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2140,8 +2505,8 @@
           "options": [],
           "answer": "",
           "explanation": "El acento puede distinguir palabras y facilita la comprensión.",
-          "audio": "eye",
-          "slow_audio": "eye",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2157,6 +2522,22 @@
             "Una sílaba recibe más prominencia.",
             "Las demás se reducen con frecuencia.",
             "Escucha la palabra completa."
+          ],
+          "audio_examples": [
+            {
+              "label": "SUSTANTIVO",
+              "text": "a present",
+              "meaning": "un regalo",
+              "audio": "a present",
+              "audio_source": "tts"
+            },
+            {
+              "label": "VERBO",
+              "text": "I present",
+              "meaning": "presento",
+              "audio": "I present",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2165,8 +2546,8 @@
           "prompt": "¿Todas las sílabas inglesas tienen la misma fuerza?",
           "target": "PREsent / preSENT",
           "options": [
-            "No, suele haber una sílaba principal",
             "Sí, siempre",
+            "No, suele haber una sílaba principal",
             "Solo en preguntas"
           ],
           "answer": "No, suele haber una sílaba principal",
@@ -2178,7 +2559,24 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SUSTANTIVO",
+              "text": "a present",
+              "meaning": "un regalo",
+              "audio": "a present",
+              "audio_source": "tts"
+            },
+            {
+              "label": "VERBO",
+              "text": "I present",
+              "meaning": "presento",
+              "audio": "I present",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-12-b-teach",
@@ -2188,8 +2586,8 @@
           "options": [],
           "answer": "",
           "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
-          "audio": "see",
-          "slow_audio": "see",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2205,6 +2603,15 @@
             "Identifica el patrón.",
             "Produce sus sonidos.",
             "Únelos sin pausas artificiales."
+          ],
+          "audio_examples": [
+            {
+              "label": "PALABRA COMPLETA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
           ]
         },
         {
@@ -2213,9 +2620,9 @@
           "prompt": "¿Cómo lees una palabra conocida?",
           "target": "cat ≠ C-A-T",
           "options": [
-            "Uniendo sus sonidos y patrones",
             "Diciendo los nombres de cada letra",
-            "Traduciéndola antes de verla"
+            "Traduciéndola antes de verla",
+            "Uniendo sus sonidos y patrones"
           ],
           "answer": "Uniendo sus sonidos y patrones",
           "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
@@ -2226,7 +2633,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA COMPLETA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2260,8 +2677,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2273,7 +2690,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-2-question",
@@ -2281,9 +2699,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
-            "I"
+            "I",
+            "G"
           ],
           "answer": "G",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de G. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2294,7 +2712,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-3-question",
@@ -2315,7 +2734,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-4-question",
@@ -2323,8 +2743,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -2336,7 +2756,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-5-question",
@@ -2344,9 +2765,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
-            "A"
+            "A",
+            "Y"
           ],
           "answer": "Y",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Y. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2357,7 +2778,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-6-question",
@@ -2378,16 +2800,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-review-7-question",
           "type": "select_translation",
           "prompt": "¿Qué debes mirar al leer una palabra?",
-          "target": "A · /æ/",
+          "target": "A · /æ/ en cat",
           "options": [
-            "El sonido de la letra en esa palabra",
             "Solo el nombre del abecedario",
+            "El sonido de la letra en esa palabra",
             "La traducción española"
           ],
           "answer": "El sonido de la letra en esa palabra",
@@ -2399,7 +2822,23 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "A",
+              "meaning": "Nombre: ay; no es su sonido dentro de una palabra.",
+              "audio": "ay"
+            },
+            {
+              "label": "A DENTRO DE UNA PALABRA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-review-8-question",
@@ -2407,9 +2846,9 @@
           "prompt": "¿Qué hace normalmente la e final en name?",
           "target": "a_e: name",
           "options": [
-            "Modifica la vocal anterior y no suena",
             "Se pronuncia como e española",
-            "Duplica la consonante"
+            "Duplica la consonante",
+            "Modifica la vocal anterior y no suena"
           ],
           "answer": "Modifica la vocal anterior y no suena",
           "explanation": "El patrón de la e silenciosa aparece en muchas palabras frecuentes.",
@@ -2420,7 +2859,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "A LARGA + E SILENCIOSA",
+              "text": "name",
+              "meaning": "nombre",
+              "audio": "name"
+            },
+            {
+              "label": "OTRO EJEMPLO",
+              "text": "cake",
+              "meaning": "pastel",
+              "audio": "cake"
+            }
+          ]
         },
         {
           "id": "english-reading-00-review-9-question",
@@ -2441,7 +2895,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO B",
+              "text": "book",
+              "meaning": "libro",
+              "audio": "book"
+            },
+            {
+              "label": "SONIDO V",
+              "text": "very",
+              "meaning": "muy",
+              "audio": "very"
+            }
+          ]
         },
         {
           "id": "english-reading-00-review-10-question",
@@ -2449,8 +2918,8 @@
           "prompt": "¿Qué debes hacer al encontrar SH o CH?",
           "target": "SH · CH",
           "options": [
-            "Reconocer el grupo como una unidad sonora",
             "Pronunciar cada nombre de letra",
+            "Reconocer el grupo como una unidad sonora",
             "Ignorar la segunda letra"
           ],
           "answer": "Reconocer el grupo como una unidad sonora",
@@ -2462,7 +2931,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO SH",
+              "text": "ship",
+              "meaning": "barco",
+              "audio": "ship"
+            },
+            {
+              "label": "SONIDO CH",
+              "text": "chair",
+              "meaning": "silla",
+              "audio": "chair"
+            }
+          ]
         },
         {
           "id": "english-reading-00-review-11-question",
@@ -2470,9 +2954,9 @@
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
           "target": "kn · wr",
           "options": [
-            "No, algunas son silenciosas",
             "Sí, sin excepción",
-            "Solo las consonantes"
+            "Solo las consonantes",
+            "No, algunas son silenciosas"
           ],
           "answer": "No, algunas son silenciosas",
           "explanation": "La ortografía inglesa conserva huellas históricas.",
@@ -2483,7 +2967,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "K SILENCIOSA",
+              "text": "know",
+              "meaning": "saber",
+              "audio": "know"
+            },
+            {
+              "label": "W SILENCIOSA",
+              "text": "write",
+              "meaning": "escribir",
+              "audio": "write"
+            }
+          ]
         },
         {
           "id": "english-reading-00-review-12-question",
@@ -2504,7 +3003,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA COMPLETA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     },
@@ -2536,12 +3045,12 @@
           "type": "typed_translation",
           "prompt": "Copia solo esta letra, sílaba o grupo: «TH»",
           "target": "TH",
-          "instruction": "Escribe exactamente «TH». No escribas cómo suena ni su explicación.",
+          "instruction": "Copia exactamente «TH». No escribas cómo suena ni su explicación.",
           "answer": "TH",
           "accepted_answers": [
             "TH"
           ],
-          "allow_minor_typos": true,
+          "allow_minor_typos": false,
           "explanation": "Una respuesta correcta es «TH».",
           "audio": "",
           "slow_audio": "",
@@ -2549,28 +3058,44 @@
             "production",
             "copying"
           ],
-          "xp": 20
+          "xp": 20,
+          "audio_examples": [
+            {
+              "label": "TH SORDA",
+              "text": "think",
+              "meaning": "pensar",
+              "audio": "think"
+            },
+            {
+              "label": "TH SONORA",
+              "text": "this",
+              "meaning": "esto",
+              "audio": "this"
+            }
+          ]
         },
         {
           "id": "english-reading-foundations-production-dictation",
-          "type": "typed_translation",
-          "prompt": "Copia exactamente esta grafía o comparación: «SH · CH»",
-          "target": "SH · CH",
-          "instruction": "Esta comparación tiene ejemplos de audio separados. Copia exactamente «SH · CH».",
-          "answer": "SH · CH",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra practicada en los ejemplos de SH y CH",
+          "target": "",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "ship",
           "accepted_answers": [
-            "SH · CH"
+            "ship"
           ],
-          "allow_minor_typos": true,
-          "explanation": "Escuchaste el ejemplo «see». La grafía que se practica es «SH · CH».",
-          "audio": "",
-          "slow_audio": "",
+          "allow_minor_typos": false,
+          "explanation": "Escuchaste «ship» (barco). SH representa el sonido inicial del ejemplo.",
+          "audio": "ship",
+          "slow_audio": "ship",
           "tags": [
             "production",
             "dictation",
             "reading"
           ],
-          "xp": 20
+          "xp": 20,
+          "reading_audio_source_id": "english-reading-00-10-b-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         },
         {
           "id": "english-reading-foundations-production-blocks",
@@ -2578,7 +3103,8 @@
           "prompt": "Reconstruye solo el resultado final",
           "target": "TH",
           "options": [
-            "TH"
+            "H",
+            "T"
           ],
           "joiner": "",
           "answer": "TH",
@@ -2592,28 +3118,45 @@
             "production",
             "blocks"
           ],
-          "xp": 15
+          "xp": 15,
+          "audio_examples": [
+            {
+              "label": "TH SORDA",
+              "text": "think",
+              "meaning": "pensar",
+              "audio": "think"
+            },
+            {
+              "label": "TH SONORA",
+              "text": "this",
+              "meaning": "esto",
+              "audio": "this"
+            }
+          ]
         },
         {
           "id": "english-reading-foundations-production-complete",
-          "type": "complete_without_options",
-          "prompt": "Escucha y escribe solo la letra, sílaba o grupo que oyes",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la otra palabra practicada en los ejemplos de SH y CH",
           "target": "",
-          "instruction": "Escribe exactamente «SH · CH», no una guía de pronunciación.",
-          "answer": "SH · CH",
+          "instruction": "Escribe la palabra completa que escuches.",
+          "answer": "chair",
           "accepted_answers": [
-            "SH · CH"
+            "chair"
           ],
-          "explanation": "Escuchaste «SH · CH». Dividir estos grupos produce una pronunciación artificial.",
-          "audio": "see",
-          "slow_audio": "see",
+          "explanation": "Escuchaste «chair» (silla). CH representa el sonido inicial del ejemplo.",
+          "audio": "chair",
+          "slow_audio": "chair",
           "tags": [
             "production",
             "completion",
             "reading",
             "english"
           ],
-          "xp": 15
+          "xp": 15,
+          "allow_minor_typos": false,
+          "reading_audio_source_id": "english-reading-00-10-b-teach",
+          "dictation_instruction": "Escribe la palabra completa que escuches."
         }
       ]
     },
@@ -2649,8 +3192,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "A",
           "options": [
-            "A",
             "B",
+            "A",
             "C"
           ],
           "answer": "A",
@@ -2662,7 +3205,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-2-question",
@@ -2670,9 +3214,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "B",
           "options": [
-            "B",
             "C",
-            "D"
+            "D",
+            "B"
           ],
           "answer": "B",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de B. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2683,7 +3227,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-3-question",
@@ -2704,7 +3249,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-4-question",
@@ -2712,8 +3258,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "D",
           "options": [
-            "D",
             "E",
+            "D",
             "F"
           ],
           "answer": "D",
@@ -2725,7 +3271,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-5-question",
@@ -2733,9 +3280,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "E",
           "options": [
-            "E",
             "F",
-            "G"
+            "G",
+            "E"
           ],
           "answer": "E",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de E. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2746,7 +3293,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-6-question",
@@ -2767,7 +3315,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-7-question",
@@ -2775,8 +3324,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "G",
           "options": [
-            "G",
             "H",
+            "G",
             "I"
           ],
           "answer": "G",
@@ -2788,7 +3337,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-8-question",
@@ -2796,20 +3346,29 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "H",
           "options": [
-            "H",
             "I",
-            "J"
+            "J",
+            "H"
           ],
           "answer": "H",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de H. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
-          "audio": "aitch",
-          "slow_audio": "aitch",
+          "audio": "",
+          "slow_audio": "",
           "image": null,
           "writing_asset": null,
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-9-question",
@@ -2830,7 +3389,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-10-question",
@@ -2838,8 +3398,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "J",
           "options": [
-            "J",
             "K",
+            "J",
             "L"
           ],
           "answer": "J",
@@ -2851,7 +3411,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-11-question",
@@ -2859,9 +3420,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "K",
           "options": [
-            "K",
             "L",
-            "M"
+            "M",
+            "K"
           ],
           "answer": "K",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de K. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2872,7 +3433,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-12-question",
@@ -2893,7 +3455,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-13-question",
@@ -2901,8 +3464,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "M",
           "options": [
-            "M",
             "N",
+            "M",
             "O"
           ],
           "answer": "M",
@@ -2914,7 +3477,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-14-question",
@@ -2922,9 +3486,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "N",
           "options": [
-            "N",
             "O",
-            "P"
+            "P",
+            "N"
           ],
           "answer": "N",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de N. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2935,7 +3499,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-15-question",
@@ -2956,7 +3521,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-16-question",
@@ -2964,8 +3530,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "P",
           "options": [
-            "P",
             "Q",
+            "P",
             "R"
           ],
           "answer": "P",
@@ -2977,7 +3543,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-17-question",
@@ -2985,9 +3552,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Q",
           "options": [
-            "Q",
             "R",
-            "S"
+            "S",
+            "Q"
           ],
           "answer": "Q",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Q. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -2998,7 +3565,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-18-question",
@@ -3019,7 +3587,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-19-question",
@@ -3027,8 +3596,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "S",
           "options": [
-            "S",
             "T",
+            "S",
             "U"
           ],
           "answer": "S",
@@ -3040,7 +3609,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-20-question",
@@ -3048,9 +3618,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "T",
           "options": [
-            "T",
             "U",
-            "V"
+            "V",
+            "T"
           ],
           "answer": "T",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de T. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3061,7 +3631,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-21-question",
@@ -3082,7 +3653,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-22-question",
@@ -3090,8 +3662,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "V",
           "options": [
-            "V",
             "W",
+            "V",
             "X"
           ],
           "answer": "V",
@@ -3103,7 +3675,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-23-question",
@@ -3111,9 +3684,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "W",
           "options": [
-            "W",
             "X",
-            "Y"
+            "Y",
+            "W"
           ],
           "answer": "W",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de W. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3124,7 +3697,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-24-question",
@@ -3145,7 +3719,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-25-question",
@@ -3153,8 +3728,8 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Y",
           "options": [
-            "Y",
             "Z",
+            "Y",
             "A"
           ],
           "answer": "Y",
@@ -3166,7 +3741,8 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-26-question",
@@ -3174,9 +3750,9 @@
           "prompt": "¿Qué letra acabas de escuchar?",
           "target": "Z",
           "options": [
-            "Z",
             "A",
-            "B"
+            "B",
+            "Z"
           ],
           "answer": "Z",
           "explanation": "Esta tarjeta enseña únicamente la identidad y el nombre de Z. Sus sonidos dentro de sílabas y palabras se practican en las lecciones siguientes.",
@@ -3187,13 +3763,14 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3
         },
         {
           "id": "english-reading-00-test-27-question",
           "type": "select_translation",
           "prompt": "¿Qué debes mirar al leer una palabra?",
-          "target": "A · /æ/",
+          "target": "A · /æ/ en cat",
           "options": [
             "El sonido de la letra en esa palabra",
             "Solo el nombre del abecedario",
@@ -3208,7 +3785,23 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "NOMBRE DE LA LETRA",
+              "text": "A",
+              "meaning": "Nombre: ay; no es su sonido dentro de una palabra.",
+              "audio": "ay"
+            },
+            {
+              "label": "A DENTRO DE UNA PALABRA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-28-question",
@@ -3216,8 +3809,8 @@
           "prompt": "¿Puede C tener más de un sonido?",
           "target": "C: car / city",
           "options": [
-            "Sí, depende del contexto",
             "No, siempre suena igual",
+            "Sí, depende del contexto",
             "Solo en nombres propios"
           ],
           "answer": "Sí, depende del contexto",
@@ -3229,7 +3822,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "C CON SONIDO K",
+              "text": "car",
+              "meaning": "auto",
+              "audio": "car"
+            },
+            {
+              "label": "C CON SONIDO S",
+              "text": "city",
+              "meaning": "ciudad",
+              "audio": "city"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-29-question",
@@ -3237,9 +3845,9 @@
           "prompt": "¿La A de cat suena igual que el nombre A?",
           "target": "A en cat",
           "options": [
-            "No, es un sonido vocálico breve",
             "Sí, siempre es «ei»",
-            "No se pronuncia"
+            "No se pronuncia",
+            "No, es un sonido vocálico breve"
           ],
           "answer": "No, es un sonido vocálico breve",
           "explanation": "Las cinco letras vocálicas representan más de cinco sonidos.",
@@ -3250,7 +3858,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "A BREVE EN CONTEXTO",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-30-question",
@@ -3271,7 +3889,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "A LARGA + E SILENCIOSA",
+              "text": "name",
+              "meaning": "nombre",
+              "audio": "name"
+            },
+            {
+              "label": "OTRO EJEMPLO",
+              "text": "cake",
+              "meaning": "pastel",
+              "audio": "cake"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-31-question",
@@ -3279,8 +3912,8 @@
           "prompt": "¿B y V representan el mismo sonido inglés?",
           "target": "B / V",
           "options": [
-            "No, se articulan de manera distinta",
             "Sí, siempre",
+            "No, se articulan de manera distinta",
             "Solo cambian al escribir"
           ],
           "answer": "No, se articulan de manera distinta",
@@ -3292,7 +3925,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO B",
+              "text": "book",
+              "meaning": "libro",
+              "audio": "book"
+            },
+            {
+              "label": "SONIDO V",
+              "text": "very",
+              "meaning": "muy",
+              "audio": "very"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-32-question",
@@ -3300,9 +3948,9 @@
           "prompt": "¿Qué haces normalmente con una H inicial inglesa?",
           "target": "H",
           "options": [
-            "Produces una salida suave de aire",
             "La omites siempre",
-            "La pronuncias como rr"
+            "La pronuncias como rr",
+            "Produces una salida suave de aire"
           ],
           "answer": "Produces una salida suave de aire",
           "explanation": "En palabras como hello, la H inicial forma parte de la pronunciación.",
@@ -3313,7 +3961,16 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "H CON SALIDA DE AIRE",
+              "text": "house",
+              "meaning": "casa",
+              "audio": "house"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-33-question",
@@ -3334,7 +3991,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "TH SORDA",
+              "text": "think",
+              "meaning": "pensar",
+              "audio": "think"
+            },
+            {
+              "label": "TH SONORA",
+              "text": "this",
+              "meaning": "esto",
+              "audio": "this"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-34-question",
@@ -3342,8 +4014,8 @@
           "prompt": "¿Qué debes hacer al encontrar SH o CH?",
           "target": "SH · CH",
           "options": [
-            "Reconocer el grupo como una unidad sonora",
             "Pronunciar cada nombre de letra",
+            "Reconocer el grupo como una unidad sonora",
             "Ignorar la segunda letra"
           ],
           "answer": "Reconocer el grupo como una unidad sonora",
@@ -3355,7 +4027,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SONIDO SH",
+              "text": "ship",
+              "meaning": "barco",
+              "audio": "ship"
+            },
+            {
+              "label": "SONIDO CH",
+              "text": "chair",
+              "meaning": "silla",
+              "audio": "chair"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-35-question",
@@ -3363,9 +4050,9 @@
           "prompt": "¿Debes pronunciar siempre todas las letras inglesas?",
           "target": "kn · wr",
           "options": [
-            "No, algunas son silenciosas",
             "Sí, sin excepción",
-            "Solo las consonantes"
+            "Solo las consonantes",
+            "No, algunas son silenciosas"
           ],
           "answer": "No, algunas son silenciosas",
           "explanation": "La ortografía inglesa conserva huellas históricas.",
@@ -3376,7 +4063,22 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "K SILENCIOSA",
+              "text": "know",
+              "meaning": "saber",
+              "audio": "know"
+            },
+            {
+              "label": "W SILENCIOSA",
+              "text": "write",
+              "meaning": "escribir",
+              "audio": "write"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-36-question",
@@ -3397,7 +4099,34 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "text": "worked",
+              "meaning": "trabajó",
+              "audio": "worked",
+              "audio_source": "tts"
+            },
+            {
+              "text": "played",
+              "meaning": "jugó",
+              "audio": "played",
+              "audio_source": "tts"
+            },
+            {
+              "text": "wanted",
+              "meaning": "quiso",
+              "audio": "wanted",
+              "audio_source": "tts"
+            },
+            {
+              "text": "dogs",
+              "meaning": "perros",
+              "audio": "dogs",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-37-question",
@@ -3405,8 +4134,8 @@
           "prompt": "¿Todas las sílabas inglesas tienen la misma fuerza?",
           "target": "PREsent / preSENT",
           "options": [
-            "No, suele haber una sílaba principal",
             "Sí, siempre",
+            "No, suele haber una sílaba principal",
             "Solo en preguntas"
           ],
           "answer": "No, suele haber una sílaba principal",
@@ -3418,7 +4147,24 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "SUSTANTIVO",
+              "text": "a present",
+              "meaning": "un regalo",
+              "audio": "a present",
+              "audio_source": "tts"
+            },
+            {
+              "label": "VERBO",
+              "text": "I present",
+              "meaning": "presento",
+              "audio": "I present",
+              "audio_source": "tts"
+            }
+          ]
         },
         {
           "id": "english-reading-00-test-38-question",
@@ -3426,9 +4172,9 @@
           "prompt": "¿Cómo lees una palabra conocida?",
           "target": "cat ≠ C-A-T",
           "options": [
-            "Uniendo sus sonidos y patrones",
             "Diciendo los nombres de cada letra",
-            "Traduciéndola antes de verla"
+            "Traduciéndola antes de verla",
+            "Uniendo sus sonidos y patrones"
           ],
           "answer": "Uniendo sus sonidos y patrones",
           "explanation": "La lectura fluida combina sonidos y patrones conocidos.",
@@ -3439,7 +4185,17 @@
           "tags": [
             "reading-foundations"
           ],
-          "xp": 10
+          "xp": 10,
+          "option_order_version": 3,
+          "audio_examples": [
+            {
+              "label": "PALABRA COMPLETA",
+              "text": "cat",
+              "meaning": "gato",
+              "audio": "cat",
+              "audio_source": "tts"
+            }
+          ]
         }
       ]
     }

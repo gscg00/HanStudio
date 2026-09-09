@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v134';
+const SHELL='hanstory-shell-v199';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -24,6 +24,11 @@ const ASSETS=[
   './src/beginner_courses.js','./src/data/zero_courses.js','./src/japanese_course_app.js','./src/guided_phrase_support.js',
   './src/japanese_course_logic.js','./src/guided_course_config.js','./src/guided_course_logic.js',
   './src/guided_course_answers.js','./src/guided_speech_recognition.js','./src/guided_virtual_keyboard.js',
+  './src/guided_activity_quality.js','./src/serial_task_queue.js',
+  './src/guided_answer_variants.js',
+  './src/guided_learning_feedback.js',
+  './src/guided_retry.js',
+  './src/guided_teaching_links.js',
   './manifest.webmanifest','./library/library.json',
   './library/courses/Korean/units/hangul-foundations.json',
   './library/courses/English/units/reading-foundations.json',

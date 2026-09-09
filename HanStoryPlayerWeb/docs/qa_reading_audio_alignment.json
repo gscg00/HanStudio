@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-09T20:38:24.952Z",
+  "scope": "Production activities tagged reading only. Text mismatch is a review signal, not acoustic validation. Explicit reviewed contextual mappings remain informational; all new mismatches are warnings.",
+  "courses": [
+    {
+      "language": "Arabic",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "Chinese",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "English",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "French",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "German",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "Italian",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "Japanese",
+      "checked": 4,
+      "flagged": 0
+    },
+    {
+      "language": "Korean",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "Portuguese",
+      "checked": 2,
+      "flagged": 0
+    },
+    {
+      "language": "Russian",
+      "checked": 2,
+      "flagged": 0
+    }
+  ],
+  "findings": [
+    {
+      "severity": "info",
+      "language": "Chinese",
+      "file": "reading-foundations.json",
+      "lessonId": "chinese-reading-foundations-production-checkpoint",
+      "activityId": "chinese-reading-foundations-production-dictation",
+      "type": "dictation",
+      "prompt": "Escucha y escribe el carácter aprendido que significa «tú»",
+      "answer": "你",
+      "audio": "nǐ",
+      "classification": "reviewed_contextual_audio_mapping",
+      "message": "pinyin nǐ identifica el carácter 你"
+    },
+    {
+      "severity": "info",
+      "language": "Chinese",
+      "file": "reading-foundations.json",
+      "lessonId": "chinese-reading-foundations-production-checkpoint",
+      "activityId": "chinese-reading-foundations-production-complete",
+      "type": "complete_without_options",
+      "prompt": "Completa el saludo aprendido con el carácter que escuchas",
+      "answer": "你",
+      "audio": "nǐ",
+      "classification": "reviewed_contextual_audio_mapping",
+      "message": "pinyin nǐ identifica el carácter 你 dentro de 你好"
+    },
+    {
+      "severity": "info",
+      "language": "Portuguese",
+      "file": "reading-foundations.json",
+      "lessonId": "portuguese-reading-foundations-production-checkpoint",
+      "activityId": "portuguese-reading-foundations-production-complete",
+      "type": "complete_without_options",
+      "prompt": "Completa la palabra practicada con S entre vocales",
+      "answer": "s",
+      "audio": "casa",
+      "classification": "reviewed_contextual_audio_mapping",
+      "message": "casa es la palabra completa usada como pista para completar s"
+    },
+    {
+      "severity": "info",
+      "language": "Russian",
+      "file": "reading-foundations.json",
+      "lessonId": "russian-reading-foundations-production-checkpoint",
+      "activityId": "russian-reading-foundations-production-dictation",
+      "type": "dictation",
+      "prompt": "Escucha el nombre de la letra y escribe su grafía",
+      "answer": "Ж",
+      "audio": "жэ",
+      "classification": "reviewed_contextual_audio_mapping",
+      "message": "el nombre жэ identifica la grafía Ж"
+    },
+    {
+      "severity": "info",
+      "language": "Russian",
+      "file": "reading-foundations.json",
+      "lessonId": "russian-reading-foundations-production-checkpoint",
+      "activityId": "russian-reading-foundations-production-complete",
+      "type": "dictation",
+      "prompt": "Escucha otro nombre de letra y escribe su grafía",
+      "answer": "Ш",
+      "audio": "ша",
+      "classification": "reviewed_contextual_audio_mapping",
+      "message": "el nombre ша identifica la grafía Ш"
+    }
+  ]
+}

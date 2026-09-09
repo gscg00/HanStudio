@@ -182,7 +182,38 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "word_breakdown": [
+            {
+              "text": "私",
+              "meaning": "yo"
+            },
+            {
+              "text": "の",
+              "meaning": "de / posesión",
+              "note": "Une “yo” con “nombre”: mi nombre."
+            },
+            {
+              "text": "名前",
+              "meaning": "nombre"
+            },
+            {
+              "text": "は",
+              "speech_text": "わ",
+              "meaning": "marca el tema",
+              "note": "Como partícula se escribe は y aquí se pronuncia “wa”."
+            },
+            {
+              "text": "アナ",
+              "meaning": "Ana"
+            },
+            {
+              "text": "です",
+              "meaning": "soy / es",
+              "note": "Cierre cortés de la oración."
+            }
+          ],
+          "usage_note": "La estructura X は Y です presenta X como tema y da información sobre él."
         },
         {
           "id": "japanese-a11-identity-01-09-meaning",
@@ -974,7 +1005,39 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "word_breakdown": [
+            {
+              "text": "お",
+              "meaning": "prefijo de cortesía"
+            },
+            {
+              "text": "名前",
+              "meaning": "nombre"
+            },
+            {
+              "text": "は",
+              "speech_text": "わ",
+              "meaning": "marca el tema",
+              "note": "Como partícula se escribe は y aquí se pronuncia “wa”."
+            },
+            {
+              "text": "何",
+              "speech_text": "なん",
+              "meaning": "qué",
+              "note": "Delante de です se lee なん."
+            },
+            {
+              "text": "です",
+              "meaning": "es",
+              "note": "Forma cortés."
+            },
+            {
+              "text": "か",
+              "meaning": "marca de pregunta"
+            }
+          ],
+          "usage_note": "お delante de 名前 hace la pregunta más cortés; normalmente se usa para preguntar el nombre de otra persona."
         },
         {
           "id": "japanese-a11-identity-03-13-meaning",
@@ -1040,7 +1103,24 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "word_breakdown": [
+            {
+              "text": "メキシコ",
+              "meaning": "México"
+            },
+            {
+              "text": "から",
+              "meaning": "de / desde",
+              "note": "Marca el lugar de origen."
+            },
+            {
+              "text": "来ました",
+              "meaning": "vine / he venido",
+              "note": "Pasado cortés de 来る (venir)."
+            }
+          ],
+          "usage_note": "La construcción [lugar] から来ました expresa de dónde viene una persona; en español suele traducirse de forma natural como “Soy de…”."
         },
         {
           "id": "japanese-a11-identity-03-14-meaning",
@@ -1264,7 +1344,29 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "word_breakdown": [
+            {
+              "text": "日本語",
+              "meaning": "idioma japonés"
+            },
+            {
+              "text": "を",
+              "speech_text": "お",
+              "meaning": "marca el objeto directo",
+              "note": "Como partícula se escribe を y normalmente se pronuncia “o”."
+            },
+            {
+              "text": "少し",
+              "meaning": "un poco"
+            },
+            {
+              "text": "話します",
+              "meaning": "hablo",
+              "note": "Forma cortés de 話す (hablar)."
+            }
+          ],
+          "usage_note": "少し limita la cantidad: indica que se habla solo un poco de japonés."
         },
         {
           "id": "japanese-a11-identity-04-15-meaning",
@@ -1891,7 +1993,7 @@
         {
           "id": "japanese-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «idioma»",
+          "prompt": "Di o escribe en japonés: «idioma»",
           "target": "idioma",
           "answer": "言葉",
           "accepted_answers": [
@@ -1945,7 +2047,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en japonés.",
+              "prompt": "Di o escribe en japonés: «¿Cómo te llamas?»",
               "answer": "お名前は何ですか。",
               "accepted_answers": [
                 "お名前は何ですか。"
@@ -1963,7 +2065,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en japonés.",
+              "prompt": "Di o escribe en japonés: «Soy de México.»",
               "answer": "メキシコから来ました。",
               "accepted_answers": [
                 "メキシコから来ました。"

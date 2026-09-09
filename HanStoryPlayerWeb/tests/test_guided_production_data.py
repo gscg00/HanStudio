@@ -143,7 +143,19 @@ class GuidedProductionDataTests(unittest.TestCase):
                     activities = lesson["activities"]
                     self.assertGreaterEqual(len(activities), 4, lesson["id"])
                     self.assertNotEqual("lesson_intro", activities[-1]["type"], lesson["id"])
-                    self.assertTrue(any(activity.get("audio") or activity.get("turns") for activity in activities), lesson["id"])
+                    # Most checkpoints model an audible phrase or a dialogue.
+                    # A production task may also be legitimately visual: Arabic
+                    # sukun/shadda are orthographic signs with no isolated sound,
+                    # so requiring audio would reintroduce a misleading button.
+                    self.assertTrue(
+                        any(
+                            activity.get("audio")
+                            or activity.get("turns")
+                            or (activity.get("instruction") and activity.get("answer"))
+                            for activity in activities
+                        ),
+                        lesson["id"],
+                    )
 
     def test_stage_scenarios_have_six_or_more_turns(self):
         for language, directory, course in self.iter_courses():
@@ -276,8 +288,14 @@ class GuidedProductionDataTests(unittest.TestCase):
                 self.assertEqual(typed["target"], typed["answer"], typed["id"])
                 self.assertIn(typed["answer"], typed.get("accepted_answers", []), typed["id"])
                 self.assertNotRegex(typed["answer"], r"[=→]")
-                self.assertTrue(blocks["prompt"].startswith("Reconstruye solo el resultado final"), blocks["id"])
+                self.assertTrue(blocks["prompt"].startswith(("Reconstruye solo el resultado final", "Elige el resultado de añadir")), blocks["id"])
                 self.assertNotRegex(blocks["answer"], r"[=→]")
+                # Una grafía indivisible (por ejemplo una sílaba coreana
+                # única) no puede separarse sin inventar piezas; cuando la
+                # respuesta tiene varias piezas, la actividad sí debe ofrecer
+                # una reconstrucción real y no un único clic.
+                if len(blocks["answer"]) > 1:
+                    self.assertGreaterEqual(len(blocks.get("options", [])), 2, blocks["id"])
 
     def test_pronunciation_focused_units_do_not_turn_explanations_into_dialogue(self):
         path = COURSES / "French" / "units" / "reading-foundations.json"
@@ -308,7 +326,10 @@ class GuidedProductionDataTests(unittest.TestCase):
 
     def test_service_worker_publishes_new_runtime_without_erasing_progress(self):
         source = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-        self.assertIn("hanstory-shell-v134", source)
+        self.assertIn("hanstory-shell-v199", source)
+        self.assertIn("./src/guided_activity_quality.js", source)
+        self.assertIn("./src/serial_task_queue.js", source)
+        self.assertIn("./src/guided_answer_variants.js", source)
         self.assertIn("./src/guided_course_answers.js", source)
         self.assertIn("./src/guided_speech_recognition.js", source)
         self.assertIn("./src/guided_virtual_keyboard.js", source)

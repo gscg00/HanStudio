@@ -1134,7 +1134,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b11-narrative-04-07-meaning",
@@ -1157,7 +1158,8 @@
             "narrative",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b11-narrative-04-07-listen",
@@ -1180,7 +1182,8 @@
             "narrative",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b11-narrative-04-08-teach",
@@ -1891,11 +1894,12 @@
         {
           "id": "russian-b1-1-narrative-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «¿Alguna vez has estado allí?»",
+          "prompt": "Di o escribe en ruso: «¿Alguna vez has estado allí?»",
           "target": "¿Alguna vez has estado allí?",
           "answer": "Ты когда-нибудь там был?",
           "accepted_answers": [
-            "Ты когда-нибудь там был?"
+            "Ты когда-нибудь там был?",
+            "Ты когда-нибудь там была?"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1906,7 +1910,8 @@
             "production",
             "open-answer"
           ],
-          "xp": 20
+          "xp": 20,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b1-1-narrative-production-speak",
@@ -1945,7 +1950,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Mientras tanto, mi hermana llamó a la policía.»",
               "answer": "Тем временем моя сестра позвонила в полицию.",
               "accepted_answers": [
                 "Тем временем моя сестра позвонила в полицию."
@@ -1963,7 +1968,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en ruso.",
+              "prompt": "Di o escribe en ruso: «Al final, todo salió bien.»",
               "answer": "В конце концов всё закончилось хорошо.",
               "accepted_answers": [
                 "В конце концов всё закончилось хорошо."
@@ -2310,7 +2315,8 @@
             "narrative",
             "meaning"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b11-narrative-test-07-listen",
@@ -2333,7 +2339,8 @@
             "narrative",
             "listening"
           ],
-          "xp": 10
+          "xp": 10,
+          "usage_note": "Este modelo pregunta a un hombre. Al preguntar a una mujer se dice «Ты когда-нибудь там была?»: en pasado singular, был cambia a была según el género de la persona a la que se refiere."
         },
         {
           "id": "russian-b11-narrative-test-08-meaning",

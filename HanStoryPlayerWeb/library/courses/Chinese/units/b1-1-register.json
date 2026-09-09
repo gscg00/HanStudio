@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "您 es el tratamiento respetuoso elegido para esta situación. 吗 convierte la frase en pregunta; 我 es quien pide ayuda. 帮帮 repite el verbo y puede suavizar la petición; 帮我 mantiene la petición sin esa repetición."
         },
         {
           "id": "chinese-b11-register-01-09-meaning",
@@ -231,6 +232,31 @@
             "listening"
           ],
           "xp": 10
+        },
+        {
+          "id": "chinese-qa-register-request",
+          "type": "open_question",
+          "prompt": "Pide ayuda con cortesía",
+          "learning_context": "Te diriges a una persona desconocida en un lugar de atención al público. Necesitas que te ayude. Usa el tratamiento respetuoso practicado en esta unidad.",
+          "instruction": "Formula una pregunta para pedir ayuda. Se aceptan las formulaciones registradas para esta situación; no tienes que copiar palabra por palabra el modelo.",
+          "target": "¿Podría ayudarme, por favor?",
+          "answer": "您能帮帮我吗？",
+          "accepted_answers": [
+            "您能帮帮我吗？",
+            "您能帮我吗？"
+          ],
+          "answer_policy": "registered",
+          "speech_enabled": true,
+          "audio": "您能帮帮我吗？",
+          "slow_audio": "您能帮帮我吗？",
+          "usage_note": "您 es el tratamiento respetuoso elegido para esta situación. 吗 convierte la frase en pregunta; 我 es quien pide ayuda. 帮帮 repite el verbo y puede suavizar la petición; 帮我 mantiene la petición sin esa repetición.",
+          "explanation": "您 es el tratamiento respetuoso elegido para esta situación. 吗 convierte la frase en pregunta; 我 es quien pide ayuda. 帮帮 repite el verbo y puede suavizar la petición; 帮我 mantiene la petición sin esa repetición.",
+          "tags": [
+            "production",
+            "register",
+            "contextual-request"
+          ],
+          "xp": 20
         },
         {
           "id": "chinese-b11-register-01-10-teach",
@@ -1893,7 +1919,7 @@
         {
           "id": "chinese-b1-1-register-production-open",
           "type": "open_question",
-          "prompt": "Produce el ejemplo que demuestra: «Vamos a dividir el trabajo.»",
+          "prompt": "Di o escribe en chino: «Vamos a dividir el trabajo.»",
           "target": "Vamos a dividir el trabajo.",
           "answer": "我们把工作分开做吧。",
           "accepted_answers": [
@@ -1947,7 +1973,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en chino.",
+              "prompt": "Di o escribe en chino: «Gracias por avisarme con tiempo.»",
               "answer": "谢谢您提前告诉我。",
               "accepted_answers": [
                 "谢谢您提前告诉我。"
@@ -1965,7 +1991,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en chino.",
+              "prompt": "Di o escribe en chino: «Lamento informarle de que la cita se canceló.»",
               "answer": "很遗憾地通知您，预约已经取消。",
               "accepted_answers": [
                 "很遗憾地通知您，预约已经取消。"
@@ -1983,7 +2009,7 @@
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe este ejemplo en chino.",
+              "prompt": "Di o escribe en chino: «Vamos a dividir el trabajo.»",
               "answer": "我们把工作分开做吧。",
               "accepted_answers": [
                 "我们把工作分开做吧。"

@@ -5,7 +5,7 @@
   "languageCode": "pt",
   "version": 12,
   "routeLabel": "RUTA GUIADA · DE CERO A B1",
-  "tagline": "Afina la pronunciación y empieza a leer portugués real.",
+  "tagline": "Aprende portugués y distingue con claridad formas de Portugal y Brasil.",
   "vocabularyGoal": 300,
   "vocabularyPrepared": 322,
   "levels": [
@@ -526,5 +526,10 @@
     ],
     "speechOptional": true,
     "audioPolicy": "reuse-existing-only"
+  },
+  "variantPolicy": {
+    "scope": "Portugal y Brasil",
+    "wordTtsLanguage": "pt-PT",
+    "note": "El curso presenta las dos variedades y etiqueta el vocabulario que cambia entre ellas."
   }
 }
