@@ -4,6 +4,7 @@
 
 ## Límites vigentes que no se deben presentar como resueltos
 
+- Para esta instancia privada, el propietario acepta estos límites; la revisión nativa queda como mejora opcional y no bloquea el uso.
 - Las rutas y los archivos de audio se han validado técnicamente; falta una escucha lingüística independiente que valore pronunciación, naturalidad y sincronía texto-voz de cada grabación/TTS.
 - Las comprobaciones automatizadas cubren secuencia, evaluación y renderizado, pero no pueden demostrar por sí solas que una persona aprenda el idioma ni sustituir una revisión nativa integral de las 68.223 actividades.
 - El desglose palabra por palabra existe para los casos editoriales enriquecidos, pero no para cada frase de los diez catálogos.

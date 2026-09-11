@@ -4,10 +4,11 @@ const word=(text,meaning,label='EJEMPLO EN CONTEXTO')=>({label,text,meaning,audi
 const name=(text,audio)=>({label:'NOMBRE DE LA LETRA',text,meaning:`Nombre: ${audio}; no es su sonido dentro de una palabra.`,audio});
 export const foundationExampleRepairs={
  English:{
-  'A · /æ/':{target:'A · /æ/ en cat',examples:[name('A','ay'),word('cat','gato','A DENTRO DE UNA PALABRA')]},
-  'A en cat':{examples:[word('cat','gato','A BREVE EN CONTEXTO')],teaching_points:['La vocal de cat /æ/ tiene un sonido distinto del nombre A /eɪ/.','No basta con acortar el nombre de la letra.','Escucha la vocal dentro de cat.']},
+  'A · /æ/':{target:'A · /æ/',examples:[name('A','ay'),word('bag','bolsa','A DENTRO DE UNA PALABRA')]},
+  'A · /æ/ en cat':{target:'A · /æ/',examples:[name('A','ay'),word('bag','bolsa','A DENTRO DE UNA PALABRA')]},
+  'A en cat':{target:'A en bag',examples:[word('bag','bolsa','A BREVE EN CONTEXTO')],teaching_points:['La vocal de bag /æ/ tiene un sonido distinto del nombre A /eɪ/.','No basta con acortar el nombre de la letra.','Escucha la vocal dentro de bag.']},
   'H':{examples:[word('house','casa','H CON SALIDA DE AIRE')]},
-  'cat ≠ C-A-T':{examples:[word('cat','gato','PALABRA COMPLETA')]},
+  'cat ≠ C-A-T':{target:'bag ≠ B-A-G',examples:[word('bag','bolsa','PALABRA COMPLETA')]},
  },
  German:{
   'ß':{examples:[word('Straße','calle','ß DENTRO DE UNA PALABRA')],sound_hint:'ß representa una s sorda y no es una B. No significa que debas alargar la consonante.'},
@@ -60,6 +61,7 @@ export function repairFoundationPedagogy(unit,language,manifest={}){
    a.audio='';a.slow_audio='';
    a.audio_examples=spec.examples.map(example=>({...example,...(manifest[example.audio]?{}:{audio_source:'tts'})}));
    if(spec.target)a.target=spec.target;
+   if(a.type!=='teach_concept'&&spec.target==='A en bag')a.prompt='¿La A de bag suena igual que el nombre A?';
    if(spec.explanation)a.explanation=spec.explanation;
    if(spec.sound_hint&&a.type==='teach_concept')a.sound_hint=spec.sound_hint;
    if(spec.teaching_points&&a.type==='teach_concept')a.teaching_points=[...spec.teaching_points];

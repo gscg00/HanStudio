@@ -8,7 +8,7 @@ const activities=language=>read(language).lessons.flatMap(l=>l.activities);
 const byId=(language,id)=>activities(language).find(a=>a.id===id);
 test('word and vowel models do not play unrelated letter names',()=>{
  for(const [language,id,expected] of [
-  ['English','english-reading-00-08-a-teach','cat'],
+  ['English','english-reading-00-08-a-teach','bag'],
   ['German','german-reading-00-12-a-teach','Strumpf'],
   ['Italian','italian-reading-00-06-b-teach','casa'],
   ['Portuguese','portuguese-reading-00-09-b-teach','chave'],

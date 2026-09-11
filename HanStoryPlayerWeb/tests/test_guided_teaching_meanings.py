@@ -179,7 +179,7 @@ def test_korean_topic_particle_uses_the_pattern_and_grammar_distractors():
         assert activity.get("audio") == "저는 학생이에요."
         assert activity.get("meaning", "") == ""
         assert question.get("prompt") == "¿Qué debes recordar sobre «은/는»?"
-        assert question.get("answer") == "Marca el tema de la conversación."
+        assert question.get("answer") == "Marca el tema: 은 va después de consonante y 는 después de vocal."
         assert all(option not in {"cómo", "ahí"} for option in question.get("options", []))
 
 

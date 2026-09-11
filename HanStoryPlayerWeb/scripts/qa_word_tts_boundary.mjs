@@ -64,7 +64,9 @@ try{
       assert.equal(await page.evaluate(()=>window.__qaSpoken.at(-1).text),contextual.speech_text);
     }
     const spokenCount=(await page.evaluate(()=>window.__qaSpoken.length)),mediaBefore=await page.evaluate(()=>window.__qaMediaPlays);
-    await page.locator('[data-jp-audio]').first().click();
+    const phraseAudio=page.locator('[data-jp-audio-source="prompt"]').first();
+    assert.equal(await phraseAudio.count(),1,`${language}: falta el control de frase completa`);
+    await phraseAudio.click();
     if(missingAudio){
       await page.waitForFunction(count=>window.__qaSpoken.length>count,spokenCount);
       assert.equal(await page.evaluate(()=>window.__qaSpoken.at(-1).text),found.activity.audio);

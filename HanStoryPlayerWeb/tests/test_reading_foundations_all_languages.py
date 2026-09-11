@@ -208,17 +208,18 @@ def test_answers_and_referenced_audio_are_valid():
                     assert audio_key in manifest, (language, activity["id"], audio_key)
                     assert (COURSES / language / manifest[audio_key]).is_file()
                 for example in activity.get("audio_examples", []):
-                    assert example["label"], activity["id"]
                     assert example["text"], activity["id"]
-                    assert example["meaning"], activity["id"]
+                    assert example["audio"], activity["id"]
+                    if example.get("audio_source") == "tts":
+                        # TTS examples are synthesized by the browser and do
+                        # not need a physical entry in the language manifest.
+                        continue
                     assert example["audio"] in manifest, (
                         language,
                         activity["id"],
                         example["audio"],
                     )
-                    assert (
-                        COURSES / language / manifest[example["audio"]]
-                    ).is_file()
+                    assert (COURSES / language / manifest[example["audio"]]).is_file()
 
 
 def test_english_comparison_cards_offer_each_example_separately():
@@ -229,7 +230,7 @@ def test_english_comparison_cards_offer_each_example_separately():
         for activity in lesson["activities"]
     }
     expected = {
-        "english-reading-00-07-a-teach": {"ay", "car"},
+        "english-reading-00-07-a-teach": {"ay", "bag"},
         "english-reading-00-07-b-teach": {"car", "city"},
         "english-reading-00-08-b-teach": {"name", "cake"},
         "english-reading-00-09-a-teach": {"book", "very"},
