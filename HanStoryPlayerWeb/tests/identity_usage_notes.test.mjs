@@ -4,7 +4,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const cases = {
-  French: ['bon matin', 'Uso regional y familiar'],
   Portuguese: ['Chamo-me Ana.', 'variante europea'],
   Korean: ['좋은 아침이에요', 'saludo general más frecuente'],
 };

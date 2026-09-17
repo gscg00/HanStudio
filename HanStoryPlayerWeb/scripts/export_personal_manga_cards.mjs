@@ -62,8 +62,8 @@ const unlockAfter=({language,text,breakdown,level})=>{
   return Math.max(2,...terms.map(term=>curriculum.firstSeen.get(term)));
 };
 const studyWorthy=({language,text,translation,breakdown,title})=>{
-  const source=clean(text),spanish=clean(translation?.translation),terms=normalizeTerm(source),sound=/\b(?:jaj|aaah|aah|uff|glup|gruñ|suspiro|zumb|onomatopeya)\b/ui,normalized=terms.join(''),editorial=/^(?:inhalt|extra|kapitel|episode|tokio\b|chef de guerre|chi.?s sweet home|mein ärgster bester freund)/ui,koreanNoise=/(?:^출처:|^제작|@|\]\s*만|(?:^|\s)ep\d|^정신이의 과학 노트[!.]*$|^잘 치는 타)/u;
-  if(!breakdown.length||/[〈《【]/u.test(source)||editorial.test(source)||koreanNoise.test(source)||/^(?:\s*(?:ep\d+|어휘\s*체크|총\s*\d+부작))/ui.test(source)||normalized===normalizeTerm(title).join(''))return false;
+  const source=clean(text),spanish=clean(translation?.translation),note=clean(translation?.note),terms=normalizeTerm(source),sound=/\b(?:jaj|aaah|aah|uff|glup|gruñ|suspiro|zumb|onomatopeya)\b/ui,normalized=terms.join(''),editorial=/^(?:inhalt|extra|kapitel|episode|tokio\b|chef de guerre|chi.?s sweet home|mein ärgster bester freund)/ui,koreanNoise=/(?:^출처:|^제작|@|\]\s*만|(?:^|\s)ep\d|^정신이의 과학 노트[!.]*$|^잘 치는 타)/u,unreliable=/(?:imposible interpretarlo|impide interpretarlo|no se puede interpretar|parece enumerar)/ui;
+  if(!breakdown.length||/[〈《【]/u.test(source)||editorial.test(source)||koreanNoise.test(source)||unreliable.test(note)||/^(?:\s*(?:ep\d+|어휘\s*체크|총\s*\d+부작))/ui.test(source)||normalized===normalizeTerm(title).join(''))return false;
   if(sound.test(spanish)||/(.)\1{3,}/u.test(source))return false;
   if(new Set(terms).size===1)return false;
   if(language!=='Korean'&&terms.length<2)return false;

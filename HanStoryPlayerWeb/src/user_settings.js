@@ -3,15 +3,25 @@ import{reviewConceptKey}from'./guided_course_logic.js';
 
 export const DEFAULT_DAILY_REVIEW_LIMIT=20;
 export const DAILY_REVIEW_LIMIT_OPTIONS=Object.freeze([10,20,30,50,100]);
+export const DEFAULT_TTS_RATE=1;
+export const TTS_RATE_OPTIONS=Object.freeze([.85,1,1.15]);
+export const DEFAULT_READING_AID_MODE='on_demand';
+export const READING_AID_MODES=Object.freeze(['on_demand','always']);
+export const DEFAULT_THEME='light';
+export const THEMES=Object.freeze(['light','dark']);
+export const DEFAULT_FEEDBACK_SOUNDS=true;
 const localDateKey=date=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
 
 const clampReviewLimit=value=>{
   const number=Number(value);
   return DAILY_REVIEW_LIMIT_OPTIONS.includes(number)?number:DEFAULT_DAILY_REVIEW_LIMIT;
 };
+const clampTtsRate=value=>TTS_RATE_OPTIONS.includes(Number(value))?Number(value):DEFAULT_TTS_RATE;
+const clampReadingAidMode=value=>READING_AID_MODES.includes(value)?value:DEFAULT_READING_AID_MODE;
+const clampTheme=value=>THEMES.includes(value)?value:DEFAULT_THEME;
 
 export function normalizeUserSettings(value={}){
-  return{id:'settings:global',dailyReviewLimit:clampReviewLimit(value.dailyReviewLimit),updatedAt:value.updatedAt||''};
+  return{id:'settings:global',dailyReviewLimit:clampReviewLimit(value.dailyReviewLimit),ttsRate:clampTtsRate(value.ttsRate),readingAidMode:clampReadingAidMode(value.readingAidMode),theme:clampTheme(value.theme),feedbackSounds:value.feedbackSounds!==false,updatedAt:value.updatedAt||''};
 }
 
 export async function loadUserSettings(){

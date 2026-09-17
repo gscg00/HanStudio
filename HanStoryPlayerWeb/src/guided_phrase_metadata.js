@@ -24,7 +24,22 @@ export const PHRASE_SUPPORT_BY_LANGUAGE={
       {text:'少し',meaning:'un poco'},{text:'話します',meaning:'hablo',note:'Forma cortés de 話す (hablar).'}
     ],usage_note:'少し limita la cantidad: indica que se habla solo un poco de japonés.'}
   },
+  French:{
+    'bonsoir':{usage_note:'Se usa para saludar al final de la tarde o por la noche. Para despedirte o desear que alguien duerma bien se dice «bonne nuit».'}
+  },
+  German:{
+    'Guten Abend':{usage_note:'Es un saludo de la tarde o la noche. «Gute Nacht» se usa al despedirse antes de dormir, no para iniciar la conversación.'}
+  },
+  Russian:{
+    'добрый вечер':{usage_note:'Es un saludo de la tarde o la noche. «Спокойной ночи» se usa para desear buenas noches antes de dormir.'},
+    'мать':{usage_note:'Significa “madre” y es una palabra neutral o algo formal. En una conversación familiar es frecuente decir «мама».'},
+    'отец':{usage_note:'Significa “padre” y es una palabra neutral o algo formal. En una conversación familiar es frecuente decir «папа».'}
+  },
   Korean:{
+    '좋은 아침이에요':{usage_note:'Se entiende como “buenos días”, pero «안녕하세요» es el saludo general más frecuente, también por la mañana.'},
+    '좋은 저녁이에요':{usage_note:'Literalmente es “es una buena tarde/noche”. No es el saludo cotidiano habitual: para saludar por la noche se usa normalmente «안녕하세요».'},
+    '안녕히 가세요':{usage_note:'Se dice cuando la otra persona se va y tú te quedas. Si tú eres quien se va, di «안녕히 계세요».'},
+    '이 사람들은 제 가족이에요.':{usage_note:'«이 사람들은» significa “estas personas”; la frase presenta a varias personas como tu familia.'},
     '사울 씨, 잘 잤어요?':{word_breakdown:[
       {text:'사울 씨',meaning:'Saul + 씨 (tratamiento respetuoso)'},{text:'잘',meaning:'bien'},{text:'잤어요',meaning:'dormiste / durmió'}
     ],usage_note:'잘 잤어요? es una pregunta amable para saber si alguien durmió bien.',context_note:'Se usa como saludo por la mañana.'},

@@ -30,8 +30,8 @@ function exercises({language,slug,theme,target,meaning,index,targets,meanings,pr
   const id=`${slug}-${prefix}-${String(index+1).padStart(2,'0')}`;
   const values=[],phraseSupport=PHRASE_SUPPORT_BY_LANGUAGE[language]?.[String(target).trim()]||{};
   if(teach)values.push({...activity(`${id}-teach`,'teach_concept','Aprende y escucha',{target,meaning,explanation:meaning,audio:target,gradable:false,tags:[theme,'teaching']}),...phraseSupport});
-  values.push(activity(`${id}-meaning`,'select_translation',`¿Qué significa «${target}»?`,{target,options:distractors(meanings,meaning,index),answer:meaning,explanation:`«${target}» significa «${meaning}».`,audio:target,tags:[theme,'meaning']}));
-  values.push(activity(`${id}-listen`,'listening_choice','Escucha y elige la forma escrita correcta',{options:distractors(targets,target,index+2),answer:target,explanation:`La forma escuchada es «${target}»: ${meaning}`,audio:target,tags:[theme,'listening']}));
+  values.push({...activity(`${id}-meaning`,'select_translation',`¿Qué significa «${target}»?`,{target,options:distractors(meanings,meaning,index),answer:meaning,explanation:`«${target}» significa «${meaning}».`,audio:target,tags:[theme,'meaning']}),...phraseSupport});
+  values.push({...activity(`${id}-listen`,'listening_choice','Escucha y elige la forma escrita correcta',{options:distractors(targets,target,index+2),answer:target,explanation:`La forma escuchada es «${target}»: ${meaning}`,audio:target,tags:[theme,'listening']}),...phraseSupport});
   return values;
 }
 function teachingLesson({language,slug,theme,unitTitle,number,indices,targets,meanings}){
