@@ -6,6 +6,8 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
+from french_word_explanations import breakdown_for, grammar_for
+
 
 WEB = Path(__file__).resolve().parents[1]
 CODE = "HF-44-S1"
@@ -186,12 +188,15 @@ def write_technical(tracks):
 def write_explanations(tracks):
     items = {}
     for track in tracks:
-        if track["type"] == "phrase":
+        if track["type"] in {"phrase", "word"}:
             items[track["id"]] = {
                 "natural_meaning_es": track["translation"],
-                "explanation_es": "Frase seleccionada de la edición francesa del episodio para practicar comprensión y producción oral.",
-                "usage_notes_es": ["Escúchala como un bloque completo y repítela manteniendo el ritmo de la escena."],
-                "breakdown": [], "grammar_notes": [], "listening_tip_es": "Fíjate en las contracciones y en la entonación de la pregunta o la advertencia.",
+                "explanation_es": "Cada elemento se explica en su forma francesa real. La traducción natural resume el sentido de la escena; el desglose muestra el papel de cada palabra.",
+                "usage_notes_es": ["Escucha la entrada en contexto y después repítela palabra por palabra."],
+                "breakdown": breakdown_for(track["text"]),
+                "grammar_notes": grammar_for(track["text"]),
+                "listening_tip_es": "Escucha la vocal final y repite la entrada manteniendo el ritmo francés.",
+                "requires_review": False,
             }
     out = BOOK / "explanations" / "track_explanations.json"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -263,8 +268,9 @@ def main():
         encoding="utf-8",
     )
     (BOOK / "Web_Explanations_Report.txt").write_text(
-        f"{len([t for t in tracks if t['type']=='phrase'])} explicaciones de frase generadas.\n"
-        "Cada explicación indica traducción natural, práctica de repetición y pista de escucha.\n"
+        f"{len(tracks)} explicaciones de pista generadas ({len([t for t in tracks if t['type']=='phrase'])} frases + {len([t for t in tracks if t['type']=='word'])} entradas de vocabulario).\n"
+        "Cada frase incluye desglose palabra por palabra, función en español, notas gramaticales y pista de escucha.\n"
+        "Cada entrada de vocabulario incluye su desglose y significado en contexto.\n"
         "Las entradas están enlazadas por ID al manifest.\n", encoding="utf-8")
     update_library()
     print(json.dumps({"code": CODE, "book": str(BOOK), "lessons": len(EPISODES), "tracks": len(tracks)}, ensure_ascii=False))
