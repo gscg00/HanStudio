@@ -102,18 +102,18 @@ function writeFit(ctx,text,x,y,maxW,size,font,col,seed,prog,rot=0){
 function drawBeat(ctx,W,Hh,t,S,beat){
   const local=t-beat.t0,seed=beat.index*97+11;
   if(beat.kind==='title'){
-    mText(ctx,`REPASO · CLASE ${beat.classNumber}`,96,170,`400 72px ${MARKER}`,K,seed,H.clamp(local/1.1),-0.012);
+    mText(ctx,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),96,170,`400 72px ${MARKER}`,K,seed,H.clamp(local/1.1),-0.012);
     marker(ctx,P([[90,198],[420,193],[700,188]],seed,2.2),B,8,seed+1,H.clamp((local-1.1)/0.3));
     writeFit(ctx,beat.unitTitle||'',420,300,640,52,`700 SIZEpx ${HAND}`,K,seed+3,H.clamp((local-1.3)/0.8));
-    mText(ctx,'¿Cuánto recuerdas?',420,470,`700 54px ${HAND}`,R,seed+5,H.clamp((local-2)/0.8),-0.02,'center');
+    mText(ctx,(beat.tagline||'¿Cuánto recuerdas?'),420,470,`700 54px ${HAND}`,R,seed+5,H.clamp((local-2)/0.8),-0.02,'center');
     if(S.assets.scene&&local>0.6){const p=H.clamp((local-0.6)/0.8);marker(ctx,P(box(800,250,1190,520),seed+8,2),K,6,seed*7,H.clamp(p*1.6));if(p>0.3){ctx.save();ctx.globalAlpha=H.clamp((p-0.3)/0.4);ctx.drawImage(S.assets.scene,812,262,366,246);ctx.restore();}}
     return;
   }
   if(beat.kind==='end'){
     mText(ctx,'¡Muy bien!',640,250,`400 96px ${MARKER}`,G,seed,H.clamp(local/0.9),-0.015,'center');
     marker(ctx,P([[400,282],[640,276],[880,272]],seed,2),G,8,seed+1,H.clamp((local-0.9)/0.3));
-    mText(ctx,`${beat.total} frases repasadas`,640,390,`700 52px ${HAND}`,K,seed+2,H.clamp((local-1.2)/0.7),0,'center');
-    mText(ctx,'Mañana vuelven: ¡no las sueltes!',640,470,`700 48px ${HAND}`,R,seed+3,H.clamp((local-1.9)/0.9),-0.01,'center');
+    mText(ctx,(beat.tally||`${beat.total} frases repasadas`),640,390,`700 52px ${HAND}`,K,seed+2,H.clamp((local-1.2)/0.7),0,'center');
+    mText(ctx,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),640,470,`700 48px ${HAND}`,R,seed+3,H.clamp((local-1.9)/0.9),-0.01,'center');
     marker(ctx,P([[1010,360],[1030,392],[1080,320]],seed+4,0.8),G,10,seed+5,H.clamp((local-1.1)/0.25));
     return;
   }

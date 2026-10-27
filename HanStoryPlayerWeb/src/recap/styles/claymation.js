@@ -166,16 +166,16 @@ function block(G,ctx,text,cx,y,maxW,size,st,cols,o={}){
 function drawBeat(G,ctx,S,beat){
   const lt=G.lt,fr=G.fr;
   if(beat.kind==='title'){
-    word(G,ctx,`REPASO · CLASE ${beat.classNumber}`,56,150,70,0.1,PAL);
+    word(G,ctx,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),56,150,70,0.1,PAL);
     block(G,ctx,beat.unitTitle||'',390,310,640,80,0.7,CREAM,{min:48,mid:true});
     const sc=S.assets.scene;obj(G,ctx,()=>picCard('scene',sc,410,290),800,130,life(G,0.4,{seed:2}),{shadow:{blur:16,dx:10,dy:12,a:0.45}});
-    const q='¿Cuánto recuerdas?';word(G,ctx,q,640-wordW(q,72)/2,632,72,1.3,YEL);
+    const q=(beat.tagline||'¿Cuánto recuerdas?');word(G,ctx,q,640-wordW(q,72)/2,632,72,1.3,YEL);
     return;
   }
   if(beat.kind==='end'){
     const m='¡Muy bien!';word(G,ctx,m,640-wordW(m,128)/2,250,128,0.5,PAL,{step:1/12});
-    const f=`${beat.total} frases repasadas`;word(G,ctx,f,640-wordW(f,78)/2,390,78,1.1,CREAM);
-    block(G,ctx,'Mañana vuelven: ¡no las sueltes!',640,632,1180,66,1.7,YEL);
+    const f=(beat.tally||`${beat.total} frases repasadas`);word(G,ctx,f,640-wordW(f,78)/2,390,78,1.1,CREAM);
+    block(G,ctx,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),640,632,1180,66,1.7,YEL);
     obj(G,ctx,SPR.star,1090,70,life(G,1.0,{seed:5}),{rot:Math.round(lt*6)*0.08,ax:60,ay:60,shadow:{blur:10,dx:6,dy:8,a:0.45}});
     obj(G,ctx,SPR.star,90,330,life(G,1.25,{seed:6}),{sx:0.7,sy:0.7,rot:-Math.round(lt*6)*0.08,ax:60,ay:60,shadow:{blur:10,dx:6,dy:8,a:0.45}});
     return;

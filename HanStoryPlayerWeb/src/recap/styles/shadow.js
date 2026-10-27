@@ -241,15 +241,15 @@ function dropPlaque(p,t,t0,x,y,text,size,o={}){if(t<t0)return;plaque(p,{x,y:lerp
 function drawBeat(st,t,S,beat){
   const local=t-beat.t0,t0=beat.t0;
   if(beat.kind==='title'){
-    hangCard(st,t,t0+0.15,420,250,[{text:`REPASO · CLASE ${beat.classNumber}`,size:62},{text:beat.unitTitle||'',size:50,italic:true}],620);
-    pup(st,{},p=>dropPlaque(p,t,t0+1.6,420,470,'¿Cuánto recuerdas?',46,{hang:150}));
+    hangCard(st,t,t0+0.15,420,250,[{text:(beat.heading||`REPASO · CLASE ${beat.classNumber}`),size:62},{text:beat.unitTitle||'',size:50,italic:true}],620);
+    pup(st,{},p=>dropPlaque(p,t,t0+1.6,420,470,(beat.tagline||'¿Cuánto recuerdas?'),46,{hang:150}));
     if(S.assets.scene&&local>0.5)pup(st,{},(p,g,rods)=>slide(p,g,{x:960,y:lerp(900,300,EO(sm(t0+0.5,t0+1.1,t))),w:400,h:290,rot:swing(t,t0+1.1,0.04,3,9)+Math.sin(t*1.3)*0.01,img:S.assets.scene},rods));
     pup(st,{},(p,g,rods)=>magpie(p,g,{x:lerp(1440,1150,EO(sm(t0+0.6,t0+1.6,t))),y:640-Math.abs(Math.sin(sm(t0+0.6,t0+1.6,t)*Math.PI*3))*24,s:0.72,wing:0.1+(1-sm(t0+1.4,t0+1.9,t))*(0.5+0.5*Math.sin(t*15)),head:Math.sin(t*1.5)*0.05,look:[-1,0],blink:blinkAt(local,[2.6])},rods));
     return;
   }
   if(beat.kind==='end'){
     const c=hangCard(st,t,t0+0.15,600,220,[{text:'¡Muy bien!',size:96,italic:true}],760);
-    pup(st,{},p=>{dropPlaque(p,t,t0+0.9,600,400,`${beat.total} frases repasadas`,46,{hang:Math.max(40,400-((c.y??220)+c.h/2))});dropPlaque(p,t,t0+1.5,600,510,'Mañana vuelven: ¡no las sueltes!',42,{hang:70});});
+    pup(st,{},p=>{dropPlaque(p,t,t0+0.9,600,400,(beat.tally||`${beat.total} frases repasadas`),46,{hang:Math.max(40,400-((c.y??220)+c.h/2))});dropPlaque(p,t,t0+1.5,600,510,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),42,{hang:70});});
     pup(st,{},(p,g)=>moon(p,g,{x:1130,y:170,r:62,fill:1,burst:EO(sm(t0+0.6,t0+1.0,t))*(1-0.15*Math.sin((t-t0)*6))}));
     const bow=Math.sin(Math.PI*sm(t0+2.0,t0+2.6,t));
     pup(st,{},(p,g,rods)=>magpie(p,g,{x:1130,y:640,s:0.72,tilt:bow*0.25,head:bow*0.3,wing:0.2+bow*0.5+0.4*Math.max(0,Math.sin(t*12))*(1-sm(t0+0.6,t0+1.6,t)),look:[-1,0.2],blink:blinkAt(local,[3.2])},rods));

@@ -211,10 +211,10 @@ function burst(ctx,cx,cy,rx,ry,t,t0){for(let i=0;i<7;i++){const a=i/7*TAU+0.4,p=
 function drawBeat(ctx,W,Hh,t,S,beat){
   const local=t-beat.t0,seed=beat.index*97+11,t0=beat.t0;
   if(beat.kind==='title'){
-    const head=`REPASO · CLASE ${beat.classNumber}`,fs=fitFont(ctx,[head],660,66,`700 SIZEpx ${FONT}`);
+    const head=(beat.heading||`REPASO · CLASE ${beat.classNumber}`),fs=fitFont(ctx,[head],660,66,`700 SIZEpx ${FONT}`);
     kWord(ctx,head,420,168,fs,t,t0+0.2,0.035,{fill:C.white,line:C.pinkD,wob:0.02});
     kFit(ctx,beat.unitTitle||'',420,288,640,58,t,t0+0.95,{fill:C.white,line:C.lavD},0);
-    const ps=pop(t,t0+1.7,1.3);if(ps.s>0){ctx.save();ctx.translate(420,420);ctx.rotate(-0.05+0.03*Math.sin(t*4));ctx.scale(ps.sx,ps.sy);kText(ctx,'¿Cuánto recuerdas?',0,0,56,{fill:C.butter,line:C.pinkD,outer:C.plum,lw:0.2});ctx.restore();}
+    const ps=pop(t,t0+1.7,1.3);if(ps.s>0){ctx.save();ctx.translate(420,420);ctx.rotate(-0.05+0.03*Math.sin(t*4));ctx.scale(ps.sx,ps.sy);kText(ctx,(beat.tagline||'¿Cuánto recuerdas?'),0,0,56,{fill:C.butter,line:C.pinkD,outer:C.plum,lw:0.2});ctx.restore();}
     for(const [tt,x,y,sz] of [[t0+1.9,760,382,70],[t0+2.05,804,318,46]]){const p=pop(t,tt,1.4);if(p.s<=0)continue;ctx.save();ctx.translate(x,y);ctx.rotate(0.14*Math.sin(t*9+x));ctx.scale(p.sx,p.sy);kText(ctx,'?',0,0,sz,{fill:C.butter,line:C.pinkD,outer:C.plum,lw:0.2});ctx.restore();}
     if(S.assets.scene)picCard(ctx,S.assets.scene,980,300,420,300,t,t0+0.5,seed);
     // la mascota cae y rebota (boing)
@@ -224,8 +224,8 @@ function drawBeat(ctx,W,Hh,t,S,beat){
   }
   if(beat.kind==='end'){
     kWord(ctx,'¡Muy bien!',640,236,104,t,t0+0.15,0.05,{fill:C.white,line:C.mintD,outer:C.plum,ow:0.09,lw:0.2,wob:0.03});
-    const p1=pop(t,t0+0.9);if(p1.s>0){ctx.save();ctx.translate(640,360);ctx.scale(p1.sx,p1.sy);kText(ctx,`${beat.total} frases repasadas`,0,0,56,{fill:C.white,line:C.pinkD});ctx.restore();}
-    const p2=pop(t,t0+1.5);if(p2.s>0){ctx.save();ctx.translate(560,464);ctx.rotate(-0.02);ctx.scale(p2.sx,p2.sy);kText(ctx,'Mañana vuelven: ¡no las sueltes!',0,0,48,{fill:C.butter,line:C.lavD,outer:C.plum,ow:0.1,lw:0.2});ctx.restore();}
+    const p1=pop(t,t0+0.9);if(p1.s>0){ctx.save();ctx.translate(640,360);ctx.scale(p1.sx,p1.sy);kText(ctx,(beat.tally||`${beat.total} frases repasadas`),0,0,56,{fill:C.white,line:C.pinkD});ctx.restore();}
+    const p2=pop(t,t0+1.5);if(p2.s>0){ctx.save();ctx.translate(560,464);ctx.rotate(-0.02);ctx.scale(p2.sx,p2.sy);kText(ctx,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),0,0,48,{fill:C.butter,line:C.lavD,outer:C.plum,ow:0.1,lw:0.2});ctx.restore();}
     const hop=Math.max(0,Math.sin(t*TAU*1.5))*18;
     bunny(ctx,1110,600,0.44,{eyes:local<2.4?'star':'happy',mouth:'smile',armL:2.3+0.35*Math.sin(t*9),armR:2.3+0.35*Math.sin(t*9+1.5),lift:hop,sq:squash(t,t0+0.1,0.15),ear:0.2*Math.sin(t*8)});
     for(let i=0;i<6;i++){const u=((t-t0)*0.6+i/6)%1;heart(ctx,[150,330,820,980,240,700][i]+Math.sin(u*9+i)*14,720-u*260,(12+6*Math.sin(u*Math.PI))*H.clamp(local*2),[C.pinkD,C.pink,C.red][i%3]);}

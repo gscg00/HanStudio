@@ -96,15 +96,15 @@ function scene(B,beat,t,S,X,fold=1){
   B.pinwheel(X-5.2,-2.6,1.0,0.3+t*1.2,TEAL);B.pinwheel(X+5.4,-2.4,0.85,1.1-t*1.5,MUS);
   if(beat.kind==='title'){
     const sc=S.assets.scene;
-    B.tent(sc?X-1.3:X,0.6,sc?2.3:3,1.5,0,u(0.1,0.9),(c,w,h)=>{band(c,w,h,IND,'KIT DE REPASO · DOBLA AQUÍ',0.17);printer([[`REPASO · CLASE ${beat.classNumber}`,0.3,0.43]])(c,w,h);para(c,beat.unitTitle||'',w,h,0.2,0.75,'#3a8f86',1);});
+    B.tent(sc?X-1.3:X,0.6,sc?2.3:3,1.5,0,u(0.1,0.9),(c,w,h)=>{band(c,w,h,IND,(beat.kit||'KIT DE REPASO')+' · DOBLA AQUÍ',0.17);printer([[(beat.heading||`REPASO · CLASE ${beat.classNumber}`),0.3,0.43]])(c,w,h);para(c,beat.unitTitle||'',w,h,0.2,0.75,'#3a8f86',1);});
     if(sc)B.tent(X+2.6,0.5,1.15,1.45,-0.12,u(0.5,1.1),picturePaint(sc));
-    B.tent(X-0.2,2.6,2.0,0.55,0,u(1.4,1.8),printer([['¿Cuánto recuerdas?',0.62,0.55,'#e45a3e']]));
+    B.tent(X-0.2,2.6,2.0,0.55,0,u(1.4,1.8),printer([[(beat.tagline||'¿Cuánto recuerdas?'),0.62,0.55,'#e45a3e']]));
     B.arrowFlat(X-3.6,1.7,X-2.2,2.4,seg(L,1.1,1.5)*fold,MUS);
     return;
   }
   if(beat.kind==='end'){
-    B.tent(X,0.6,2.6,1.5,0,u(0.1,0.9),(c,w,h)=>{band(c,w,h,GREEN,'¡MODELO TERMINADO!',0.17);printer([['¡Muy bien!',0.4,0.45,'#2f8a5a'],[`${beat.total} frases repasadas`,0.23,0.78]])(c,w,h);});
-    B.tent(X,2.6,2.4,0.55,0,u(1.3,1.7),printer([['Mañana vuelven: ¡no las sueltes!',0.55,0.55,'#e45a3e']]));
+    B.tent(X,0.6,2.6,1.5,0,u(0.1,0.9),(c,w,h)=>{band(c,w,h,GREEN,'¡MODELO TERMINADO!',0.17);printer([['¡Muy bien!',0.4,0.45,'#2f8a5a'],[(beat.tally||`${beat.total} frases repasadas`),0.23,0.78]])(c,w,h);});
+    B.tent(X,2.6,2.4,0.55,0,u(1.3,1.7),printer([[(beat.closing||'Mañana vuelven: ¡no las sueltes!'),0.55,0.55,'#e45a3e']]));
     const sp=pop(L,1.0,0.5)*fold;if(sp>0)B.star(X+2.9,2.15+0.12*Math.sin(t*3),0.5,0.42*sp,(L-1)*2.5);
     B.check([X-2.2,2.0,0.8],pop(L,1.2,0.35)*fold);
     return;

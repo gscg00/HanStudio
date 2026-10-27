@@ -22,23 +22,27 @@ export function pickRecapItems(items){
   return out;
 }
 
-export function buildRecapTimeline({classNumber=1,unitTitle='',items=[],languageName='coreano'}={}){
-  const picked=pickRecapItems(items),beats=[],speech=[];
+// Los videos por tema (pestaña Videos) reutilizan esta línea de tiempo con otro
+// título y cierre, y en modo «teach»: es la primera vez que se ve cada palabra,
+// así que siempre se escucha primero, la pausa es corta y se conserva el orden.
+export function buildRecapTimeline({classNumber=1,unitTitle='',items=[],languageName='coreano',mode='quiz',heading='',closing='',tagline='',eyebrow='',kit='',tally='',tallyUnit='',titleSpeech='Repaso de hoy. ¿Cuánto recuerdas?',endSpeech='¡Muy bien! Mañana lo repasamos otra vez.',voiceFor=null}={}){
+  const teach=mode==='teach',labels=Object.fromEntries(Object.entries({heading,closing,tagline,eyebrow,kit,tally,tallyUnit}).filter(([,value])=>value));
+  const picked=teach?(items||[]).filter(item=>item?.target&&item?.meaning):pickRecapItems(items),beats=[],speech=[];
   let t=0;
   const say=(at,lang,text,voice,beatIndex)=>{const est=estimateSpeech(text,lang);speech.push({id:speech.length,t:at,est,lang,text,voice,beat:beatIndex});return est;};
 
-  beats.push({kind:'title',index:0,t0:0,t1:TITLE_DUR,classNumber,unitTitle,total:picked.length,languageName});
+  beats.push({kind:'title',index:0,t0:0,t1:TITLE_DUR,classNumber,unitTitle,total:picked.length,languageName,...labels});
   // Frase fija (sin número) para poder usar la grabación del narrador.
-  say(0.45,'es','Repaso de hoy. ¿Cuánto recuerdas?','es',0);
+  say(0.45,'es',titleSpeech,'es',0);
   t=TITLE_DUR;
 
   picked.forEach((item,i)=>{
-    const index=beats.length,mode=i%2?'produce':'listen',voice=Math.floor(i/2)%2?'tl-m':'tl-f';
+    const index=beats.length,mode=teach||!(i%2)?'listen':'produce',voice=voiceFor?.(item,i)||(Math.floor(i/2)%2?'tl-m':'tl-f');
     const askAt=t+INTRO,phases={};
     if(mode==='listen'){
       const heard=say(askAt,'tl',item.target,voice,index);
       phases.ask=[t,askAt+heard+0.35];
-      phases.think=[phases.ask[1],phases.ask[1]+thinkTime(item.target,mode)];
+      phases.think=[phases.ask[1],phases.ask[1]+(teach?0.9:thinkTime(item.target,mode))];
       const r0=phases.think[1],es=say(r0+0.15,'es',item.meaning,'es',index),again=say(r0+0.15+es+0.45,'tl',item.target,voice,index);
       phases.reveal=[r0,r0+0.15+es+0.45+again+TAIL];
     }else{
@@ -53,8 +57,8 @@ export function buildRecapTimeline({classNumber=1,unitTitle='',items=[],language
   });
 
   const endIndex=beats.length;
-  beats.push({kind:'end',index:endIndex,t0:t,t1:t+END_DUR,total:picked.length,classNumber});
-  say(t+0.5,'es','¡Muy bien! Mañana lo repasamos otra vez.','es',endIndex);
+  beats.push({kind:'end',index:endIndex,t0:t,t1:t+END_DUR,total:picked.length,classNumber,...labels});
+  say(t+0.5,'es',endSpeech,'es',endIndex);
   t+=END_DUR;
   return {duration:t,beats,speech,items:picked,classNumber,unitTitle};
 }

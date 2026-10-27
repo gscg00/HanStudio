@@ -73,7 +73,7 @@ function newspaper(c,cx,cy,sc,rot,head,sub,img){
   c.fillStyle='rgba(0,0,0,0.1)';for(let k=8;k>=0;k--){const g=k*2.5;c.fillRect(-380+12-g,-240+18-g,760+2*g,480+2*g);}
   const np=c.createLinearGradient(-380,-240,380,240);np.addColorStop(0,gy(240));np.addColorStop(0.5,gy(224));np.addColorStop(1,gy(196));c.fillStyle=np;c.fillRect(-380,-240,760,480);
   const fd=c.createLinearGradient(-30,0,30,0);fd.addColorStop(0,'rgba(0,0,0,0)');fd.addColorStop(0.45,'rgba(0,0,0,0.13)');fd.addColorStop(0.55,'rgba(255,255,255,0.18)');fd.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=fd;c.fillRect(-30,-240,60,480);
-  c.fillStyle=gy(25);c.textAlign='center';c.font=`400 50px ${FRAK}`;c.fillText('El Diario del Repaso',0,-184);
+  c.fillStyle=gy(25);c.textAlign='center';c.font=`400 50px ${FRAK}`;c.fillText('El Diario de HanStudio',0,-184);
   c.fillRect(-360,-168,720,3);c.fillRect(-360,-160,720,1);
   c.font=`400 15px ${COUR}`;c.fillText('EDICIÓN DE LA TARDE  ★  CINCO CENTAVOS',0,-144);
   const hs=fitText(c,head,700,78,`400 SIZEpx ${ANTON}`);c.font=`400 ${hs}px ${ANTON}`;c.fillText(head,0,-66);
@@ -245,8 +245,8 @@ function drawBeat(c,t,S,beat){
   const local=t-beat.t0;
   if(beat.kind==='title'){
     office(c,t);const p=E.out(sm(0.1,1.0,local));
-    newspaper(c,640,318,0.04+0.9*p,(1-p)*Math.PI*5-0.04,`REPASO · CLASE ${beat.classNumber}`,beat.unitTitle||'',S.assets.scene);
-    NR(c,'¿Cuánto recuerdas?',640,628,56,sm(1.4,1.9,local));
+    newspaper(c,640,318,0.04+0.9*p,(1-p)*Math.PI*5-0.04,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),beat.unitTitle||'',S.assets.scene);
+    NR(c,(beat.tagline||'¿Cuánto recuerdas?'),640,628,56,sm(1.4,1.9,local));
     return;
   }
   if(beat.kind==='end'){
@@ -254,9 +254,9 @@ function drawBeat(c,t,S,beat){
     c.save();c.textAlign='center';c.shadowColor='rgba(0,0,0,0.9)';c.shadowBlur=12;c.fillStyle=gy(242);
     const a=(t0)=>H.clamp((local-t0)/0.5);
     c.globalAlpha=a(0.5);c.font=`400 92px ${LIME}`;c.fillText('¡Muy bien!',470,250);
-    c.globalAlpha=a(1.1);c.font=`400 54px ${LIME}`;c.fillText(`${beat.total} frases repasadas`,470,350);
+    c.globalAlpha=a(1.1);c.font=`400 54px ${LIME}`;c.fillText((beat.tally||`${beat.total} frases repasadas`),470,350);
     c.globalAlpha=a(1.4);c.fillRect(466.5,380,7,32);c.beginPath();c.moveTo(452,406);c.lineTo(488,406);c.lineTo(470,432);c.closePath();c.fill();
-    c.globalAlpha=a(1.8);const fs=fitText(c,'Mañana vuelven: ¡no las sueltes!',820,46,`400 SIZEpx ${LIME}`);c.font=`400 ${fs}px ${LIME}`;c.fillText('Mañana vuelven: ¡no las sueltes!',470,500);
+    c.globalAlpha=a(1.8);const fs=fitText(c,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),820,46,`400 SIZEpx ${LIME}`);c.font=`400 ${fs}px ${LIME}`;c.fillText((beat.closing||'Mañana vuelven: ¡no las sueltes!'),470,500);
     c.restore();return;
   }
   const {think,reveal}=beatTimes(beat),item=beat.item,img=S.assets.picture(item.picture),listen=beat.kind==='listen';
