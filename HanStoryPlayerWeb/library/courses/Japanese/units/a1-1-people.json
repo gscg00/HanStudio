@@ -52,7 +52,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: はは"
         },
         {
           "id": "japanese-a11-people-01-01-meaning",
@@ -118,7 +119,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ちち"
         },
         {
           "id": "japanese-a11-people-01-02-meaning",
@@ -184,7 +186,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: これはわたしのかぞくです。"
         },
         {
           "id": "japanese-a11-people-01-09-meaning",
@@ -250,7 +253,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: かれはわたしのともだちです。"
         },
         {
           "id": "japanese-a11-people-01-10-meaning",
@@ -342,7 +346,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: いもうと"
         },
         {
           "id": "japanese-a11-people-02-03-meaning",
@@ -408,7 +413,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: おとうと"
         },
         {
           "id": "japanese-a11-people-02-04-meaning",
@@ -474,7 +480,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: かのじょはわたしのいもうとです。"
         },
         {
           "id": "japanese-a11-people-02-11-meaning",
@@ -540,7 +547,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: おとうとがふたりいます。"
         },
         {
           "id": "japanese-a11-people-02-12-meaning",
@@ -844,7 +852,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ともだち"
         },
         {
           "id": "japanese-a11-people-03-05-meaning",
@@ -910,7 +919,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: こども"
         },
         {
           "id": "japanese-a11-people-03-06-meaning",
@@ -1042,7 +1052,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: なんさいですか。"
         },
         {
           "id": "japanese-a11-people-03-14-meaning",
@@ -1134,7 +1145,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: おんなのひと"
         },
         {
           "id": "japanese-a11-people-04-07-meaning",
@@ -1200,7 +1212,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: おとこのひと"
         },
         {
           "id": "japanese-a11-people-04-08-meaning",
@@ -1266,7 +1279,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: はははここではたらいています。"
         },
         {
           "id": "japanese-a11-people-04-15-meaning",
@@ -1332,7 +1346,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: わたしたちはいっしょにすんでいます。"
         },
         {
           "id": "japanese-a11-people-04-16-meaning",
@@ -1809,7 +1824,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "だれですか。",
           "accepted_answers": [
-            "だれですか。"
+            "だれですか。",
+            "誰ですか。",
+            "どなたですか。"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «だれですか。».",
@@ -1829,7 +1846,9 @@
           "instruction": "Escribe exactamente lo que oyes.",
           "answer": "何歳ですか。",
           "accepted_answers": [
-            "何歳ですか。"
+            "何歳ですか。",
+            "なんさいですか。",
+            "おいくつですか。"
           ],
           "allow_minor_typos": true,
           "explanation": "Escuchaste «何歳ですか。». El ejemplo practica: ¿Cuántos años tienes?",
@@ -1894,7 +1913,8 @@
           "target": "mujer",
           "answer": "女の人",
           "accepted_answers": [
-            "女の人"
+            "女の人",
+            "おんなのひと"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1914,7 +1934,9 @@
           "target": "¿Cuántos años tienes?",
           "answer": "何歳ですか。",
           "accepted_answers": [
-            "何歳ですか。"
+            "何歳ですか。",
+            "なんさいですか。",
+            "おいくつですか。"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1947,7 +1969,9 @@
               "prompt": "Di o escribe en japonés: «¿Quién es?»",
               "answer": "だれですか。",
               "accepted_answers": [
-                "だれですか。"
+                "だれですか。",
+                "誰ですか。",
+                "どなたですか。"
               ],
               "audio": "だれですか。",
               "allow_minor_typos": true,
@@ -1965,7 +1989,9 @@
               "prompt": "Di o escribe en japonés: «¿Cuántos años tienes?»",
               "answer": "何歳ですか。",
               "accepted_answers": [
-                "何歳ですか。"
+                "何歳ですか。",
+                "なんさいですか。",
+                "おいくつですか。"
               ],
               "audio": "何歳ですか。",
               "allow_minor_typos": true,

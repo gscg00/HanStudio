@@ -1033,8 +1033,8 @@
           "target": "うごきます",
           "options": [
             "moverse",
-            "はいります significa «entrar».",
-            "Escuchaste あけます: abrir algo."
+            "ver o mirar",
+            "poner"
           ],
           "answer": "moverse",
           "explanation": "moverse",
@@ -1054,12 +1054,12 @@
           "prompt": "Recuerda: ¿qué expresa みます?",
           "target": "みます",
           "options": [
-            "みます significa «ver o mirar».",
-            "Escuchaste おきます: poner.",
-            "かきます significa «escribir»."
+            "ver o mirar",
+            "poner",
+            "leer"
           ],
-          "answer": "みます significa «ver o mirar».",
-          "explanation": "みます significa «ver o mirar».",
+          "answer": "ver o mirar",
+          "explanation": "ver o mirar",
           "audio": "みます",
           "slow_audio": "みます",
           "image": null,
@@ -1076,12 +1076,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "おきます significa «poner».",
+            "poner",
             "ver o mirar",
-            "La palabra completa es あけます. Escúchala seguida."
+            "leer"
           ],
-          "answer": "おきます significa «poner».",
-          "explanation": "おきます significa «poner».",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -1098,12 +1098,12 @@
           "prompt": "Recuerda: ¿qué expresa よみます?",
           "target": "よみます",
           "options": [
-            "よみます significa «leer».",
+            "leer",
             "moverse",
-            "おきます significa «poner»."
+            "escribir"
           ],
-          "answer": "よみます significa «leer».",
-          "explanation": "よみます significa «leer».",
+          "answer": "leer",
+          "explanation": "leer",
           "audio": "よみます",
           "slow_audio": "よみます",
           "image": null,
@@ -1120,12 +1120,12 @@
           "prompt": "Recuerda: ¿qué expresa かきます?",
           "target": "かきます",
           "options": [
-            "La palabra completa es かきます. Escúchala seguida.",
             "escribir",
-            "Escuchaste うごきます: moverse."
+            "meter",
+            "esperar"
           ],
-          "answer": "La palabra completa es かきます. Escúchala seguida.",
-          "explanation": "La palabra completa es かきます. Escúchala seguida.",
+          "answer": "escribir",
+          "explanation": "escribir",
           "audio": "かきます",
           "slow_audio": "かきます",
           "image": null,
@@ -1142,12 +1142,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "La palabra completa es いれます. Escúchala seguida.",
+            "meter",
             "esperar",
-            "La palabra completa es まちます. Escúchala seguida."
+            "abrir algo"
           ],
-          "answer": "La palabra completa es いれます. Escúchala seguida.",
-          "explanation": "La palabra completa es いれます. Escúchala seguida.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -1164,12 +1164,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "Escuchaste いれます: meter.",
-            "La palabra completa es おきます. Escúchala seguida.",
-            "La palabra completa es あきます. Escúchala seguida."
+            "meter",
+            "esperar",
+            "abrir algo"
           ],
-          "answer": "Escuchaste いれます: meter.",
-          "explanation": "Escuchaste いれます: meter.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -1186,12 +1186,12 @@
           "prompt": "Recuerda: ¿qué expresa あけます?",
           "target": "あけます",
           "options": [
-            "Escuchaste あけます: abrir algo.",
             "abrir algo",
-            "La palabra completa es あきます. Escúchala seguida."
+            "abrirse",
+            "entrar"
           ],
-          "answer": "Escuchaste あけます: abrir algo.",
-          "explanation": "Escuchaste あけます: abrir algo.",
+          "answer": "abrir algo",
+          "explanation": "abrir algo",
           "audio": "あけます",
           "slow_audio": "あけます",
           "image": null,
@@ -2230,12 +2230,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "おきます significa «poner».",
-            "もちます significa «tener o llevar».",
-            "escribir"
+            "poner",
+            "escribir",
+            "leer"
           ],
-          "answer": "おきます significa «poner».",
-          "explanation": "おきます significa «poner».",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -2252,12 +2252,12 @@
           "prompt": "Recuerda: ¿qué expresa かきます?",
           "target": "かきます",
           "options": [
-            "La palabra completa es かきます. Escúchala seguida.",
-            "La palabra completa es いきます. Escúchala seguida.",
-            "かきます significa «escribir»."
+            "escribir",
+            "meter",
+            "esperar"
           ],
-          "answer": "La palabra completa es かきます. Escúchala seguida.",
-          "explanation": "La palabra completa es かきます. Escúchala seguida.",
+          "answer": "escribir",
+          "explanation": "escribir",
           "audio": "かきます",
           "slow_audio": "かきます",
           "image": null,
@@ -2274,12 +2274,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "Escuchaste いれます: meter.",
-            "あけます significa «abrir algo».",
-            "わかります significa «entender»."
+            "meter",
+            "esperar",
+            "abrir algo"
           ],
-          "answer": "Escuchaste いれます: meter.",
-          "explanation": "Escuchaste いれます: meter.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -2318,12 +2318,12 @@
           "prompt": "Recuerda: ¿qué expresa きます?",
           "target": "きます",
           "options": [
-            "きます significa «venir».",
-            "Escuchaste おきます: poner.",
-            "おきます significa «poner»."
+            "venir",
+            "volver a casa",
+            "regresar"
           ],
-          "answer": "きます significa «venir».",
-          "explanation": "きます significa «venir».",
+          "answer": "venir",
+          "explanation": "venir",
           "audio": "きます",
           "slow_audio": "きます",
           "image": null,
@@ -2340,12 +2340,12 @@
           "prompt": "Recuerda: ¿qué expresa もどります?",
           "target": "もどります",
           "options": [
-            "もどります significa «regresar».",
-            "Escuchaste おきます: poner.",
-            "Escuchaste はじまります: comenzar."
+            "regresar",
+            "apresurarse",
+            "buscar"
           ],
-          "answer": "もどります significa «regresar».",
-          "explanation": "もどります significa «regresar».",
+          "answer": "regresar",
+          "explanation": "regresar",
           "audio": "もどります",
           "slow_audio": "もどります",
           "image": null,
@@ -2362,12 +2362,12 @@
           "prompt": "Recuerda: ¿qué expresa さがします?",
           "target": "さがします",
           "options": [
-            "La palabra completa es さがします. Escúchala seguida.",
-            "うごきます significa «moverse».",
-            "よみます significa «leer»."
+            "buscar",
+            "comprar",
+            "tener o llevar"
           ],
-          "answer": "La palabra completa es さがします. Escúchala seguida.",
-          "explanation": "La palabra completa es さがします. Escúchala seguida.",
+          "answer": "buscar",
+          "explanation": "buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "image": null,
@@ -2377,6 +2377,243 @@
             "mandatory_review"
           ],
           "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-verb-form-00",
+      "title": "Forma de diccionario y forma ます",
+      "description": "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+      "activities": [
+        {
+          "id": "jp-book1-verb-form-00-intro",
+          "type": "lesson_intro",
+          "prompt": "Forma de diccionario y forma ます",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-pattern",
+          "type": "teach_pattern",
+          "prompt": "いく → いきます",
+          "target": "いく → いきます",
+          "options": [],
+          "answer": "",
+          "explanation": "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false,
+          "memory_hint": "Diccionario = forma simple; ます = la misma acción dicha con cortesía.",
+          "teaching_points": [
+            "Los diccionarios dan la forma simple: いく (ir), みる (ver), かう (comprar).",
+            "Con desconocidos se usa la forma ます: いきます, みます, かいます.",
+            "Verbos en -る como みる o たべる: quita る y añade ます (みます, たべます).",
+            "Otros verbos: la última u pasa a i + ます: いく → いきます, かう → かいます, のむ → のみます.",
+            "Irregulares: する → します, くる → きます."
+          ]
+        },
+        {
+          "id": "jp-book1-verb-form-00-model-1",
+          "type": "dialogue_model",
+          "prompt": "ir (forma de diccionario de いきます)",
+          "target": "いく",
+          "options": [],
+          "answer": "",
+          "explanation": "ir (forma de diccionario de いきます)",
+          "audio": "いく",
+          "slow_audio": "いく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa いく?",
+          "target": "いく",
+          "options": [
+            "ir (forma de diccionario de いきます)",
+            "ver (forma de diccionario de みます)",
+            "comprar (forma de diccionario de かいます)"
+          ],
+          "answer": "ir (forma de diccionario de いきます)",
+          "explanation": "ir (forma de diccionario de いきます)",
+          "audio": "いく",
+          "slow_audio": "いく",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-00",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-00-model-2",
+          "type": "dialogue_model",
+          "prompt": "ver (forma de diccionario de みます)",
+          "target": "みる",
+          "options": [],
+          "answer": "",
+          "explanation": "ver (forma de diccionario de みます)",
+          "audio": "みる",
+          "slow_audio": "みる",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa みる?",
+          "target": "みる",
+          "options": [
+            "comprar (forma de diccionario de かいます)",
+            "ver (forma de diccionario de みます)",
+            "hacer (forma de diccionario de します)"
+          ],
+          "answer": "ver (forma de diccionario de みます)",
+          "explanation": "ver (forma de diccionario de みます)",
+          "audio": "みる",
+          "slow_audio": "みる",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-00",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-00-model-3",
+          "type": "dialogue_model",
+          "prompt": "comprar (forma de diccionario de かいます)",
+          "target": "かう",
+          "options": [],
+          "answer": "",
+          "explanation": "comprar (forma de diccionario de かいます)",
+          "audio": "かう",
+          "slow_audio": "かう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa かう?",
+          "target": "かう",
+          "options": [
+            "ir (forma de diccionario de いきます)",
+            "ver (forma de diccionario de みます)",
+            "comprar (forma de diccionario de かいます)"
+          ],
+          "answer": "comprar (forma de diccionario de かいます)",
+          "explanation": "comprar (forma de diccionario de かいます)",
+          "audio": "かう",
+          "slow_audio": "かう",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-00",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-00-model-4",
+          "type": "dialogue_model",
+          "prompt": "hacer (forma de diccionario de します)",
+          "target": "する",
+          "options": [],
+          "answer": "",
+          "explanation": "hacer (forma de diccionario de します)",
+          "audio": "する",
+          "slow_audio": "する",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-meaning-4",
+          "type": "select_translation",
+          "prompt": "¿Qué significa する?",
+          "target": "する",
+          "options": [
+            "hacer (forma de diccionario de します)",
+            "ver (forma de diccionario de みます)",
+            "comprar (forma de diccionario de かいます)"
+          ],
+          "answer": "hacer (forma de diccionario de します)",
+          "explanation": "hacer (forma de diccionario de します)",
+          "audio": "する",
+          "slow_audio": "する",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-00",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-00-model-5",
+          "type": "dialogue_model",
+          "prompt": "venir (forma de diccionario de きます)",
+          "target": "くる",
+          "options": [],
+          "answer": "",
+          "explanation": "venir (forma de diccionario de きます)",
+          "audio": "くる",
+          "slow_audio": "くる",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-00-meaning-5",
+          "type": "select_translation",
+          "prompt": "¿Qué significa くる?",
+          "target": "くる",
+          "options": [
+            "ir (forma de diccionario de いきます)",
+            "venir (forma de diccionario de きます)",
+            "ver (forma de diccionario de みます)"
+          ],
+          "answer": "venir (forma de diccionario de きます)",
+          "explanation": "venir (forma de diccionario de きます)",
+          "audio": "くる",
+          "slow_audio": "くる",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-00",
+            "meaning_recall"
+          ],
+          "xp": 15
         }
       ]
     },
@@ -2415,7 +2652,11 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "ます: afirmativo cortés, presente o futuro: よみます = leo / leeré.",
+            "ません: negativo cortés: よみません = no leo."
+          ]
         },
         {
           "id": "jp-book1-verb-form-01-model-1",
@@ -2441,7 +2682,7 @@
           "options": [
             "Leo.",
             "No leo.",
-            "No corresponde a esta oración."
+            "Volví."
           ],
           "answer": "Leo.",
           "explanation": "Leo.",
@@ -2479,7 +2720,7 @@
           "options": [
             "No leo.",
             "Leo.",
-            "No corresponde a esta oración."
+            "Volví."
           ],
           "answer": "No leo.",
           "explanation": "No leo.",
@@ -2530,7 +2771,11 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "ました: pasado: かえりました = volví.",
+            "ませんでした: pasado negativo: ありませんでした = no había."
+          ]
         },
         {
           "id": "jp-book1-verb-form-02-model-1",
@@ -2556,7 +2801,7 @@
           "options": [
             "Volví.",
             "No había.",
-            "No corresponde a esta oración."
+            "La caja se está moviendo."
           ],
           "answer": "Volví.",
           "explanation": "Volví.",
@@ -2594,7 +2839,7 @@
           "options": [
             "No había.",
             "Volví.",
-            "No corresponde a esta oración."
+            "La caja se está moviendo."
           ],
           "answer": "No había.",
           "explanation": "No había.",
@@ -2640,8 +2885,8 @@
           "target": "うごきます",
           "options": [
             "moverse",
-            "Escuchaste かえります: volver a casa.",
-            "よみます significa «leer»."
+            "ver o mirar",
+            "poner"
           ],
           "answer": "moverse",
           "explanation": "moverse",
@@ -2661,12 +2906,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "La palabra completa es おきます. Escúchala seguida.",
-            "わかります significa «entender».",
-            "いそぎます significa «apresurarse»."
+            "poner",
+            "leer",
+            "escribir"
           ],
-          "answer": "La palabra completa es おきます. Escúchala seguida.",
-          "explanation": "La palabra completa es おきます. Escúchala seguida.",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -2684,8 +2929,8 @@
           "target": "いれます",
           "options": [
             "meter",
-            "La palabra completa es まちます. Escúchala seguida.",
-            "entender"
+            "entender",
+            "esperar"
           ],
           "answer": "meter",
           "explanation": "meter",
@@ -2705,12 +2950,12 @@
           "prompt": "Recuerda: ¿qué expresa あけます?",
           "target": "あけます",
           "options": [
-            "La palabra completa es あけます. Escúchala seguida.",
+            "abrir algo",
             "poner",
             "Leo."
           ],
-          "answer": "La palabra completa es あけます. Escúchala seguida.",
-          "explanation": "La palabra completa es あけます. Escúchala seguida.",
+          "answer": "abrir algo",
+          "explanation": "abrir algo",
           "audio": "あけます",
           "slow_audio": "あけます",
           "image": null,
@@ -2728,8 +2973,8 @@
           "target": "いきます",
           "options": [
             "ir",
-            "かきます significa «escribir».",
-            "entrar"
+            "entrar",
+            "venir"
           ],
           "answer": "ir",
           "explanation": "ir",
@@ -2749,12 +2994,12 @@
           "prompt": "Recuerda: ¿qué expresa かえります?",
           "target": "かえります",
           "options": [
-            "La palabra completa es かえります. Escúchala seguida.",
-            "La palabra completa es まちます. Escúchala seguida.",
-            "Escuchaste いそぎます: apresurarse."
+            "volver a casa",
+            "regresar",
+            "apresurarse"
           ],
-          "answer": "La palabra completa es かえります. Escúchala seguida.",
-          "explanation": "La palabra completa es かえります. Escúchala seguida.",
+          "answer": "volver a casa",
+          "explanation": "volver a casa",
           "audio": "かえります",
           "slow_audio": "かえります",
           "image": null,
@@ -2773,7 +3018,7 @@
           "options": [
             "buscar",
             "No leo.",
-            "Escuchaste いれます: meter."
+            "comprar"
           ],
           "answer": "buscar",
           "explanation": "buscar",
@@ -2793,12 +3038,12 @@
           "prompt": "Recuerda: ¿qué expresa もちます?",
           "target": "もちます",
           "options": [
-            "La palabra completa es もちます. Escúchala seguida.",
-            "Escuchaste おきます: poner.",
-            "No había."
+            "tener o llevar",
+            "No había.",
+            "entender"
           ],
-          "answer": "La palabra completa es もちます. Escúchala seguida.",
-          "explanation": "La palabra completa es もちます. Escúchala seguida.",
+          "answer": "tener o llevar",
+          "explanation": "tener o llevar",
           "audio": "もちます",
           "slow_audio": "もちます",
           "image": null,
@@ -2808,6 +3053,283 @@
             "mandatory_review"
           ],
           "xp": 14
+        }
+      ]
+    },
+    {
+      "id": "jp-book1-verb-form-te",
+      "title": "Cómo se forma la forma て",
+      "description": "La forma て une acciones y sirve para pedir (てください) y para describir (ています).",
+      "activities": [
+        {
+          "id": "jp-book1-verb-form-te-intro",
+          "type": "lesson_intro",
+          "prompt": "Cómo se forma la forma て",
+          "target": "",
+          "options": [],
+          "answer": "",
+          "explanation": "La forma て une acciones y sirve para pedir (てください) y para describir (ています).",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 2,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-pattern",
+          "type": "teach_pattern",
+          "prompt": "まちます → まって",
+          "target": "まちます → まって",
+          "options": [],
+          "answer": "",
+          "explanation": "La forma て une acciones y sirve para pedir (てください) y para describir (ています).",
+          "audio": "",
+          "slow_audio": "",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false,
+          "memory_hint": "Parte de la forma ます o de la de diccionario y mira la última sílaba.",
+          "teaching_points": [
+            "Verbos en -る de tipo みる/たべる: quita ます y añade て: みます → みて.",
+            "う・つ・る → って: かいます → かって, まちます → まって, かえります → かえって.",
+            "む・ぶ・ぬ → んで: よみます → よんで.",
+            "く → いて: かきます → かいて (excepción: いきます → いって).",
+            "ぐ → いで: いそぎます → いそいで.",
+            "す → して: さがします → さがして.",
+            "Irregulares: します → して, きます → きて."
+          ]
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-1",
+          "type": "dialogue_model",
+          "prompt": "espera (forma て de まちます)",
+          "target": "まって",
+          "options": [],
+          "answer": "",
+          "explanation": "espera (forma て de まちます)",
+          "audio": "まって",
+          "slow_audio": "まって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-1",
+          "type": "select_translation",
+          "prompt": "¿Qué significa まって?",
+          "target": "まって",
+          "options": [
+            "espera (forma て de まちます)",
+            "lee (forma て de よみます)",
+            "escribe (forma て de かきます)"
+          ],
+          "answer": "espera (forma て de まちます)",
+          "explanation": "espera (forma て de まちます)",
+          "audio": "まって",
+          "slow_audio": "まって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-2",
+          "type": "dialogue_model",
+          "prompt": "lee (forma て de よみます)",
+          "target": "よんで",
+          "options": [],
+          "answer": "",
+          "explanation": "lee (forma て de よみます)",
+          "audio": "よんで",
+          "slow_audio": "よんで",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-2",
+          "type": "select_translation",
+          "prompt": "¿Qué significa よんで?",
+          "target": "よんで",
+          "options": [
+            "escribe (forma て de かきます)",
+            "lee (forma て de よみます)",
+            "apúrate (forma て de いそぎます)"
+          ],
+          "answer": "lee (forma て de よみます)",
+          "explanation": "lee (forma て de よみます)",
+          "audio": "よんで",
+          "slow_audio": "よんで",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-3",
+          "type": "dialogue_model",
+          "prompt": "escribe (forma て de かきます)",
+          "target": "かいて",
+          "options": [],
+          "answer": "",
+          "explanation": "escribe (forma て de かきます)",
+          "audio": "かいて",
+          "slow_audio": "かいて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-3",
+          "type": "select_translation",
+          "prompt": "¿Qué significa かいて?",
+          "target": "かいて",
+          "options": [
+            "espera (forma て de まちます)",
+            "lee (forma て de よみます)",
+            "escribe (forma て de かきます)"
+          ],
+          "answer": "escribe (forma て de かきます)",
+          "explanation": "escribe (forma て de かきます)",
+          "audio": "かいて",
+          "slow_audio": "かいて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-4",
+          "type": "dialogue_model",
+          "prompt": "apúrate (forma て de いそぎます)",
+          "target": "いそいで",
+          "options": [],
+          "answer": "",
+          "explanation": "apúrate (forma て de いそぎます)",
+          "audio": "いそいで",
+          "slow_audio": "いそいで",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-4",
+          "type": "select_translation",
+          "prompt": "¿Qué significa いそいで?",
+          "target": "いそいで",
+          "options": [
+            "apúrate (forma て de いそぎます)",
+            "lee (forma て de よみます)",
+            "escribe (forma て de かきます)"
+          ],
+          "answer": "apúrate (forma て de いそぎます)",
+          "explanation": "apúrate (forma て de いそぎます)",
+          "audio": "いそいで",
+          "slow_audio": "いそいで",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-5",
+          "type": "dialogue_model",
+          "prompt": "ve (forma て de いきます)",
+          "target": "いって",
+          "options": [],
+          "answer": "",
+          "explanation": "ve (forma て de いきます)",
+          "audio": "いって",
+          "slow_audio": "いって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-5",
+          "type": "select_translation",
+          "prompt": "¿Qué significa いって?",
+          "target": "いって",
+          "options": [
+            "espera (forma て de まちます)",
+            "ve (forma て de いきます)",
+            "lee (forma て de よみます)"
+          ],
+          "answer": "ve (forma て de いきます)",
+          "explanation": "ve (forma て de いきます)",
+          "audio": "いって",
+          "slow_audio": "いって",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
+        },
+        {
+          "id": "jp-book1-verb-form-te-model-6",
+          "type": "dialogue_model",
+          "prompt": "mira (forma て de みます)",
+          "target": "みて",
+          "options": [],
+          "answer": "",
+          "explanation": "mira (forma て de みます)",
+          "audio": "みて",
+          "slow_audio": "みて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [],
+          "xp": 3,
+          "gradable": false
+        },
+        {
+          "id": "jp-book1-verb-form-te-meaning-6",
+          "type": "select_translation",
+          "prompt": "¿Qué significa みて?",
+          "target": "みて",
+          "options": [
+            "lee (forma て de よみます)",
+            "escribe (forma て de かきます)",
+            "mira (forma て de みます)"
+          ],
+          "answer": "mira (forma て de みます)",
+          "explanation": "mira (forma て de みます)",
+          "audio": "みて",
+          "slow_audio": "みて",
+          "image": null,
+          "writing_asset": null,
+          "tags": [
+            "jp-book1-verb-form-te",
+            "meaning_recall"
+          ],
+          "xp": 15
         }
       ]
     },
@@ -2846,7 +3368,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Forma て + います.",
+            "Acción en curso: うごいています = se está moviendo.",
+            "Estado que resulta de un cambio: あいています = está abierta."
+          ]
         },
         {
           "id": "jp-book1-verb-form-03-model-1",
@@ -2872,7 +3399,7 @@
           "options": [
             "La caja se está moviendo.",
             "La puerta está abierta.",
-            "No corresponde a esta oración."
+            "Mira dentro de la caja, por favor."
           ],
           "answer": "La caja se está moviendo.",
           "explanation": "La caja se está moviendo.",
@@ -2910,7 +3437,7 @@
           "options": [
             "La puerta está abierta.",
             "La caja se está moviendo.",
-            "No corresponde a esta oración."
+            "Mira dentro de la caja, por favor."
           ],
           "answer": "La puerta está abierta.",
           "explanation": "La puerta está abierta.",
@@ -2961,7 +3488,11 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Forma て + ください = haga…, por favor (petición cortés).",
+            "まちます → まって → まってください."
+          ]
         },
         {
           "id": "jp-book1-verb-form-04-model-1",
@@ -2987,7 +3518,7 @@
           "options": [
             "Mira dentro de la caja, por favor.",
             "Espera aquí, por favor.",
-            "No corresponde a esta oración."
+            "No abras esa puerta, por favor."
           ],
           "answer": "Mira dentro de la caja, por favor.",
           "explanation": "Mira dentro de la caja, por favor.",
@@ -3025,7 +3556,7 @@
           "options": [
             "Espera aquí, por favor.",
             "Mira dentro de la caja, por favor.",
-            "No corresponde a esta oración."
+            "No abras esa puerta, por favor."
           ],
           "answer": "Espera aquí, por favor.",
           "explanation": "Espera aquí, por favor.",
@@ -3071,8 +3602,8 @@
           "target": "うごきます",
           "options": [
             "moverse",
-            "La palabra completa es きます. Escúchala seguida.",
-            "ver o mirar"
+            "ver o mirar",
+            "poner"
           ],
           "answer": "moverse",
           "explanation": "moverse",
@@ -3092,12 +3623,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "Escuchaste おきます: poner.",
-            "いきます significa «ir».",
-            "comprar"
+            "poner",
+            "comprar",
+            "leer"
           ],
-          "answer": "Escuchaste おきます: poner.",
-          "explanation": "Escuchaste おきます: poner.",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -3114,12 +3645,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "La palabra completa es いれます. Escúchala seguida.",
-            "La palabra completa es わかります. Escúchala seguida.",
-            "La palabra completa es いきます. Escúchala seguida."
+            "meter",
+            "esperar",
+            "abrir algo"
           ],
-          "answer": "La palabra completa es いれます. Escúchala seguida.",
-          "explanation": "La palabra completa es いれます. Escúchala seguida.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -3136,12 +3667,12 @@
           "prompt": "Recuerda: ¿qué expresa あきます?",
           "target": "あきます",
           "options": [
-            "あきます significa «abrirse».",
-            "La palabra completa es はいります. Escúchala seguida.",
-            "escribir"
+            "abrirse",
+            "escribir",
+            "entrar"
           ],
-          "answer": "あきます significa «abrirse».",
-          "explanation": "あきます significa «abrirse».",
+          "answer": "abrirse",
+          "explanation": "abrirse",
           "audio": "あきます",
           "slow_audio": "あきます",
           "image": null,
@@ -3158,12 +3689,12 @@
           "prompt": "Recuerda: ¿qué expresa きます?",
           "target": "きます",
           "options": [
-            "きます significa «venir».",
-            "Escuchaste おきます: poner.",
-            "esperar"
+            "venir",
+            "esperar",
+            "volver a casa"
           ],
-          "answer": "きます significa «venir».",
-          "explanation": "きます significa «venir».",
+          "answer": "venir",
+          "explanation": "venir",
           "audio": "きます",
           "slow_audio": "きます",
           "image": null,
@@ -3181,8 +3712,8 @@
           "target": "いそぎます",
           "options": [
             "apresurarse",
-            "La palabra completa es いれます. Escúchala seguida.",
-            "Escuchaste はじまります: comenzar."
+            "buscar",
+            "comprar"
           ],
           "answer": "apresurarse",
           "explanation": "apresurarse",
@@ -3202,12 +3733,12 @@
           "prompt": "Recuerda: ¿qué expresa さがします?",
           "target": "さがします",
           "options": [
-            "Escuchaste さがします: buscar.",
-            "Escuchaste もちます: tener o llevar.",
-            "はじまります significa «comenzar»."
+            "buscar",
+            "comprar",
+            "tener o llevar"
           ],
-          "answer": "Escuchaste さがします: buscar.",
-          "explanation": "Escuchaste さがします: buscar.",
+          "answer": "buscar",
+          "explanation": "buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "image": null,
@@ -3224,12 +3755,12 @@
           "prompt": "Recuerda: ¿qué expresa はじまります?",
           "target": "はじまります",
           "options": [
-            "Escuchaste はじまります: comenzar.",
-            "La palabra completa es さがします. Escúchala seguida.",
-            "かいます significa «comprar»."
+            "comenzar",
+            "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+            "ir (forma de diccionario de いきます)"
           ],
-          "answer": "Escuchaste はじまります: comenzar.",
-          "explanation": "Escuchaste はじまります: comenzar.",
+          "answer": "comenzar",
+          "explanation": "comenzar",
           "audio": "はじまります",
           "slow_audio": "はじまります",
           "image": null,
@@ -3277,7 +3808,11 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Forma ない + でください = no haga…, por favor.",
+            "あけます → あけない; まちます → またない; いきます → いかない; します → しない; きます → こない."
+          ]
         },
         {
           "id": "jp-book1-verb-form-05-model-1",
@@ -3302,8 +3837,8 @@
           "target": "そのドアをあけないでください。",
           "options": [
             "No abras esa puerta, por favor.",
-            "No corresponde a esta oración.",
-            "moverse"
+            "moverse",
+            "Vayamos juntos."
           ],
           "answer": "No abras esa puerta, por favor.",
           "explanation": "No abras esa puerta, por favor.",
@@ -3354,7 +3889,10 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Quita ます y añade ましょう: いきます → いきましょう = vamos / vayamos."
+          ]
         },
         {
           "id": "jp-book1-verb-form-06-model-1",
@@ -3380,7 +3918,7 @@
           "options": [
             "Vayamos juntos.",
             "Busquemos al gato.",
-            "No corresponde a esta oración."
+            "Quiero comprar agua."
           ],
           "answer": "Vayamos juntos.",
           "explanation": "Vayamos juntos.",
@@ -3418,7 +3956,7 @@
           "options": [
             "Busquemos al gato.",
             "Vayamos juntos.",
-            "No corresponde a esta oración."
+            "Quiero comprar agua."
           ],
           "answer": "Busquemos al gato.",
           "explanation": "Busquemos al gato.",
@@ -3464,8 +4002,8 @@
           "target": "うごきます",
           "options": [
             "moverse",
-            "La palabra completa es かいます. Escúchala seguida.",
-            "La palabra completa es わかります. Escúchala seguida."
+            "ver o mirar",
+            "poner"
           ],
           "answer": "moverse",
           "explanation": "moverse",
@@ -3485,12 +4023,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "Escuchaste おきます: poner.",
-            "わかります significa «entender».",
-            "regresar"
+            "poner",
+            "regresar",
+            "leer"
           ],
-          "answer": "Escuchaste おきます: poner.",
-          "explanation": "Escuchaste おきます: poner.",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -3507,12 +4045,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "La palabra completa es いれます. Escúchala seguida.",
+            "meter",
             "entender",
             "tener o llevar"
           ],
-          "answer": "La palabra completa es いれます. Escúchala seguida.",
-          "explanation": "La palabra completa es いれます. Escúchala seguida.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -3529,12 +4067,12 @@
           "prompt": "Recuerda: ¿qué expresa あきます?",
           "target": "あきます",
           "options": [
-            "あきます significa «abrirse».",
+            "abrirse",
             "No leo.",
             "No había."
           ],
-          "answer": "あきます significa «abrirse».",
-          "explanation": "あきます significa «abrirse».",
+          "answer": "abrirse",
+          "explanation": "abrirse",
           "audio": "あきます",
           "slow_audio": "あきます",
           "image": null,
@@ -3551,12 +4089,12 @@
           "prompt": "Recuerda: ¿qué expresa きます?",
           "target": "きます",
           "options": [
-            "きます significa «venir».",
+            "venir",
             "apresurarse",
-            "La palabra completa es かきます. Escúchala seguida."
+            "volver a casa"
           ],
-          "answer": "きます significa «venir».",
-          "explanation": "きます significa «venir».",
+          "answer": "venir",
+          "explanation": "venir",
           "audio": "きます",
           "slow_audio": "きます",
           "image": null,
@@ -3574,8 +4112,8 @@
           "target": "いそぎます",
           "options": [
             "apresurarse",
-            "La palabra completa es よみます. Escúchala seguida.",
-            "La palabra completa es もちます. Escúchala seguida."
+            "buscar",
+            "comprar"
           ],
           "answer": "apresurarse",
           "explanation": "apresurarse",
@@ -3595,12 +4133,12 @@
           "prompt": "Recuerda: ¿qué expresa さがします?",
           "target": "さがします",
           "options": [
-            "Escuchaste さがします: buscar.",
+            "buscar",
             "regresar",
-            "うごきます significa «moverse»."
+            "comprar"
           ],
-          "answer": "Escuchaste さがします: buscar.",
-          "explanation": "Escuchaste さがします: buscar.",
+          "answer": "buscar",
+          "explanation": "buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "image": null,
@@ -3617,12 +4155,12 @@
           "prompt": "Recuerda: ¿qué expresa はじまります?",
           "target": "はじまります",
           "options": [
-            "Escuchaste はじまります: comenzar.",
-            "かえります significa «volver a casa».",
-            "La palabra completa es みます. Escúchala seguida."
+            "comenzar",
+            "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+            "ir (forma de diccionario de いきます)"
           ],
-          "answer": "Escuchaste はじまります: comenzar.",
-          "explanation": "Escuchaste はじまります: comenzar.",
+          "answer": "comenzar",
+          "explanation": "comenzar",
           "audio": "はじまります",
           "slow_audio": "はじまります",
           "image": null,
@@ -3670,7 +4208,11 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Quita ます y añade たいです: かいます → かいたいです = quiero comprar.",
+            "Solo para lo que quieres hacer tú."
+          ]
         },
         {
           "id": "jp-book1-verb-form-07-model-1",
@@ -3696,7 +4238,7 @@
           "options": [
             "Quiero comprar agua.",
             "Quiero volver a casa.",
-            "No corresponde a esta oración."
+            "El nombre está escrito."
           ],
           "answer": "Quiero comprar agua.",
           "explanation": "Quiero comprar agua.",
@@ -3734,7 +4276,7 @@
           "options": [
             "Quiero volver a casa.",
             "Quiero comprar agua.",
-            "No corresponde a esta oración."
+            "El nombre está escrito."
           ],
           "answer": "Quiero volver a casa.",
           "explanation": "Quiero volver a casa.",
@@ -3785,7 +4327,10 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Forma て + あります: alguien lo dejó hecho a propósito: なまえがかいてあります = el nombre está escrito."
+          ]
         },
         {
           "id": "jp-book1-verb-form-08-model-1",
@@ -3810,8 +4355,8 @@
           "target": "なまえがかいてあります。",
           "options": [
             "El nombre está escrito.",
-            "No corresponde a esta oración.",
-            "moverse"
+            "moverse",
+            "Quiero volver a casa."
           ],
           "answer": "El nombre está escrito.",
           "explanation": "El nombre está escrito.",
@@ -3880,7 +4425,7 @@
           "options": [
             "leer",
             "Vayamos juntos.",
-            "Escuchaste おきます: poner."
+            "escribir"
           ],
           "answer": "leer",
           "explanation": "leer",
@@ -3900,12 +4445,12 @@
           "prompt": "Recuerda: ¿qué expresa まちます?",
           "target": "まちます",
           "options": [
-            "まちます significa «esperar».",
-            "La palabra completa es あきます. Escúchala seguida.",
-            "No leo."
+            "esperar",
+            "No leo.",
+            "abrir algo"
           ],
-          "answer": "まちます significa «esperar».",
-          "explanation": "まちます significa «esperar».",
+          "answer": "esperar",
+          "explanation": "esperar",
           "audio": "まちます",
           "slow_audio": "まちます",
           "image": null,
@@ -3922,12 +4467,12 @@
           "prompt": "Recuerda: ¿qué expresa はいります?",
           "target": "はいります",
           "options": [
-            "はいります significa «entrar».",
-            "La palabra completa es いきます. Escúchala seguida.",
-            "Propuesta: hagámoslo"
+            "entrar",
+            "Propuesta: hagámoslo",
+            "ir"
           ],
-          "answer": "はいります significa «entrar».",
-          "explanation": "はいります significa «entrar».",
+          "answer": "entrar",
+          "explanation": "entrar",
           "audio": "はいります",
           "slow_audio": "はいります",
           "image": null,
@@ -3944,12 +4489,12 @@
           "prompt": "Recuerda: ¿qué expresa かえります?",
           "target": "かえります",
           "options": [
-            "かえります significa «volver a casa».",
+            "volver a casa",
             "moverse",
             "No abras esa puerta, por favor."
           ],
-          "answer": "かえります significa «volver a casa».",
-          "explanation": "かえります significa «volver a casa».",
+          "answer": "volver a casa",
+          "explanation": "volver a casa",
           "audio": "かえります",
           "slow_audio": "かえります",
           "image": null,
@@ -3966,12 +4511,12 @@
           "prompt": "Recuerda: ¿qué expresa さがします?",
           "target": "さがします",
           "options": [
-            "さがします significa «buscar».",
+            "buscar",
             "Espera aquí, por favor.",
-            "La palabra completa es いれます. Escúchala seguida."
+            "comprar"
           ],
-          "answer": "さがします significa «buscar».",
-          "explanation": "さがします significa «buscar».",
+          "answer": "buscar",
+          "explanation": "buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "image": null,
@@ -3988,12 +4533,12 @@
           "prompt": "Recuerda: ¿qué expresa わかります?",
           "target": "わかります",
           "options": [
-            "わかります significa «entender».",
+            "entender",
             "Quiero volver a casa.",
             "meter"
           ],
-          "answer": "わかります significa «entender».",
-          "explanation": "わかります significa «entender».",
+          "answer": "entender",
+          "explanation": "entender",
           "audio": "わかります",
           "slow_audio": "わかります",
           "image": null,
@@ -4011,8 +4556,8 @@
           "target": "ドアがあいています。",
           "options": [
             "La puerta está abierta.",
-            "La palabra completa es もちます. Escúchala seguida.",
-            "わかります significa «entender»."
+            "Mira dentro de la caja, por favor.",
+            "Espera aquí, por favor."
           ],
           "answer": "La puerta está abierta.",
           "explanation": "La puerta está abierta.",
@@ -4059,7 +4604,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "いそぎます",
           "accepted_answers": [
-            "いそぎます"
+            "いそぎます",
+            "急ぎます"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «いそぎます».",
@@ -4079,7 +4625,8 @@
           "instruction": "Escribe exactamente lo que oyes.",
           "answer": "さがします",
           "accepted_answers": [
-            "さがします"
+            "さがします",
+            "探します"
           ],
           "allow_minor_typos": true,
           "explanation": "Escuchaste «さがします». El ejemplo practica: buscar",
@@ -4143,7 +4690,8 @@
           "target": "comprar",
           "answer": "かいます",
           "accepted_answers": [
-            "かいます"
+            "かいます",
+            "買います"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -4163,7 +4711,8 @@
           "target": "buscar",
           "answer": "さがします",
           "accepted_answers": [
-            "さがします"
+            "さがします",
+            "探します"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -4196,7 +4745,8 @@
               "prompt": "Di o escribe en japonés: «apresurarse»",
               "answer": "いそぎます",
               "accepted_answers": [
-                "いそぎます"
+                "いそぎます",
+                "急ぎます"
               ],
               "audio": "いそぎます",
               "allow_minor_typos": true,
@@ -4214,7 +4764,8 @@
               "prompt": "Di o escribe en japonés: «buscar»",
               "answer": "さがします",
               "accepted_answers": [
-                "さがします"
+                "さがします",
+                "探します"
               ],
               "audio": "さがします",
               "allow_minor_typos": true,
@@ -4285,8 +4836,8 @@
           "target": "みます",
           "options": [
             "ver o mirar",
-            "Escuchaste いれます: meter.",
-            "Vayamos juntos."
+            "Vayamos juntos.",
+            "poner"
           ],
           "answer": "ver o mirar",
           "explanation": "ver o mirar",
@@ -4306,12 +4857,12 @@
           "prompt": "Recuerda: ¿qué expresa うごきます?",
           "target": "うごきます",
           "options": [
-            "Escuchaste うごきます: moverse.",
-            "La palabra completa es もどります. Escúchala seguida.",
-            "Acción en progreso o estado resultante"
+            "moverse",
+            "Acción en progreso o estado resultante",
+            "ver o mirar"
           ],
-          "answer": "Escuchaste うごきます: moverse.",
-          "explanation": "Escuchaste うごきます: moverse.",
+          "answer": "moverse",
+          "explanation": "moverse",
           "audio": "うごきます",
           "slow_audio": "うごきます",
           "image": null,
@@ -4328,12 +4879,12 @@
           "prompt": "Recuerda: ¿qué expresa おきます?",
           "target": "おきます",
           "options": [
-            "La palabra completa es おきます. Escúchala seguida.",
-            "La palabra completa es いそぎます. Escúchala seguida.",
-            "buscar"
+            "poner",
+            "buscar",
+            "leer"
           ],
-          "answer": "La palabra completa es おきます. Escúchala seguida.",
-          "explanation": "La palabra completa es おきます. Escúchala seguida.",
+          "answer": "poner",
+          "explanation": "poner",
           "audio": "おきます",
           "slow_audio": "おきます",
           "image": null,
@@ -4350,12 +4901,12 @@
           "prompt": "Recuerda: ¿qué expresa よみます?",
           "target": "よみます",
           "options": [
-            "よみます significa «leer».",
-            "きます significa «venir».",
-            "もちます significa «tener o llevar»."
+            "leer",
+            "escribir",
+            "meter"
           ],
-          "answer": "よみます significa «leer».",
-          "explanation": "よみます significa «leer».",
+          "answer": "leer",
+          "explanation": "leer",
           "audio": "よみます",
           "slow_audio": "よみます",
           "image": null,
@@ -4372,12 +4923,12 @@
           "prompt": "Recuerda: ¿qué expresa かきます?",
           "target": "かきます",
           "options": [
-            "かきます significa «escribir».",
-            "おきます significa «poner».",
-            "venir"
+            "escribir",
+            "venir",
+            "meter"
           ],
-          "answer": "かきます significa «escribir».",
-          "explanation": "かきます significa «escribir».",
+          "answer": "escribir",
+          "explanation": "escribir",
           "audio": "かきます",
           "slow_audio": "かきます",
           "image": null,
@@ -4395,8 +4946,8 @@
           "target": "いれます",
           "options": [
             "meter",
-            "わかります significa «entender».",
-            "La palabra completa es さがします. Escúchala seguida."
+            "esperar",
+            "abrir algo"
           ],
           "answer": "meter",
           "explanation": "meter",
@@ -4418,7 +4969,7 @@
           "options": [
             "esperar",
             "Deseo de realizar una acción",
-            "Escuchaste かきます: escribir."
+            "abrir algo"
           ],
           "answer": "esperar",
           "explanation": "esperar",
@@ -4438,12 +4989,12 @@
           "prompt": "Recuerda: ¿qué expresa いれます?",
           "target": "いれます",
           "options": [
-            "Escuchaste いれます: meter.",
-            "La palabra completa es あけます. Escúchala seguida.",
-            "abrirse"
+            "meter",
+            "abrirse",
+            "esperar"
           ],
-          "answer": "Escuchaste いれます: meter.",
-          "explanation": "Escuchaste いれます: meter.",
+          "answer": "meter",
+          "explanation": "meter",
           "audio": "いれます",
           "slow_audio": "いれます",
           "image": null,
@@ -4460,12 +5011,12 @@
           "prompt": "Recuerda: ¿qué expresa あけます?",
           "target": "あけます",
           "options": [
-            "La palabra completa es あけます. Escúchala seguida.",
+            "abrir algo",
             "Leo.",
             "ver o mirar"
           ],
-          "answer": "La palabra completa es あけます. Escúchala seguida.",
-          "explanation": "La palabra completa es あけます. Escúchala seguida.",
+          "answer": "abrir algo",
+          "explanation": "abrir algo",
           "audio": "あけます",
           "slow_audio": "あけます",
           "image": null,
@@ -4482,12 +5033,12 @@
           "prompt": "Recuerda: ¿qué expresa あきます?",
           "target": "あきます",
           "options": [
-            "あきます significa «abrirse».",
-            "La palabra completa es おきます. Escúchala seguida.",
-            "La palabra completa es もちます. Escúchala seguida."
+            "abrirse",
+            "entrar",
+            "ir"
           ],
-          "answer": "あきます significa «abrirse».",
-          "explanation": "あきます significa «abrirse».",
+          "answer": "abrirse",
+          "explanation": "abrirse",
           "audio": "あきます",
           "slow_audio": "あきます",
           "image": null,
@@ -4504,12 +5055,12 @@
           "prompt": "Recuerda: ¿qué expresa はいります?",
           "target": "はいります",
           "options": [
-            "はいります significa «entrar».",
-            "さがします significa «buscar».",
-            "Escuchaste あけます: abrir algo."
+            "entrar",
+            "ir",
+            "venir"
           ],
-          "answer": "はいります significa «entrar».",
-          "explanation": "はいります significa «entrar».",
+          "answer": "entrar",
+          "explanation": "entrar",
           "audio": "はいります",
           "slow_audio": "はいります",
           "image": null,
@@ -4550,7 +5101,7 @@
           "options": [
             "venir",
             "No había.",
-            "Escuchaste さがします: buscar."
+            "volver a casa"
           ],
           "answer": "venir",
           "explanation": "venir",
@@ -4570,12 +5121,12 @@
           "prompt": "Recuerda: ¿qué expresa いきます?",
           "target": "いきます",
           "options": [
-            "Escuchaste いきます: ir.",
+            "ir",
             "No leo.",
-            "La palabra completa es うごきます. Escúchala seguida."
+            "venir"
           ],
-          "answer": "Escuchaste いきます: ir.",
-          "explanation": "Escuchaste いきます: ir.",
+          "answer": "ir",
+          "explanation": "ir",
           "audio": "いきます",
           "slow_audio": "いきます",
           "image": null,
@@ -4592,12 +5143,12 @@
           "prompt": "Recuerda: ¿qué expresa かえります?",
           "target": "かえります",
           "options": [
-            "La palabra completa es かえります. Escúchala seguida.",
+            "volver a casa",
             "entender",
-            "よみます significa «leer»."
+            "regresar"
           ],
-          "answer": "La palabra completa es かえります. Escúchala seguida.",
-          "explanation": "La palabra completa es かえります. Escúchala seguida.",
+          "answer": "volver a casa",
+          "explanation": "volver a casa",
           "audio": "かえります",
           "slow_audio": "かえります",
           "image": null,
@@ -4614,12 +5165,12 @@
           "prompt": "Recuerda: ¿qué expresa もどります?",
           "target": "もどります",
           "options": [
-            "もどります significa «regresar».",
-            "La palabra completa es あけます. Escúchala seguida.",
-            "La caja se está moviendo."
+            "regresar",
+            "La caja se está moviendo.",
+            "apresurarse"
           ],
-          "answer": "もどります significa «regresar».",
-          "explanation": "もどります significa «regresar».",
+          "answer": "regresar",
+          "explanation": "regresar",
           "audio": "もどります",
           "slow_audio": "もどります",
           "image": null,
@@ -4636,12 +5187,12 @@
           "prompt": "Recuerda: ¿qué expresa いそぎます?",
           "target": "いそぎます",
           "options": [
-            "いそぎます significa «apresurarse».",
+            "apresurarse",
             "abrirse",
-            "かえります significa «volver a casa»."
+            "buscar"
           ],
-          "answer": "いそぎます significa «apresurarse».",
-          "explanation": "いそぎます significa «apresurarse».",
+          "answer": "apresurarse",
+          "explanation": "apresurarse",
           "audio": "いそぎます",
           "slow_audio": "いそぎます",
           "image": null,
@@ -4681,8 +5232,8 @@
           "target": "かいます",
           "options": [
             "comprar",
-            "かいます significa «comprar».",
-            "La palabra completa es いきます. Escúchala seguida."
+            "tener o llevar",
+            "entender"
           ],
           "answer": "comprar",
           "explanation": "comprar",
@@ -4702,12 +5253,12 @@
           "prompt": "Recuerda: ¿qué expresa さがします?",
           "target": "さがします",
           "options": [
-            "Escuchaste さがします: buscar.",
-            "Escuchaste うごきます: moverse.",
-            "Mira dentro de la caja, por favor."
+            "buscar",
+            "Mira dentro de la caja, por favor.",
+            "comprar"
           ],
-          "answer": "Escuchaste さがします: buscar.",
-          "explanation": "Escuchaste さがします: buscar.",
+          "answer": "buscar",
+          "explanation": "buscar",
           "audio": "さがします",
           "slow_audio": "さがします",
           "image": null,
@@ -4724,12 +5275,12 @@
           "prompt": "Recuerda: ¿qué expresa もちます?",
           "target": "もちます",
           "options": [
-            "La palabra completa es もちます. Escúchala seguida.",
+            "tener o llevar",
             "Propuesta: hagámoslo",
             "Acción en progreso o estado resultante"
           ],
-          "answer": "La palabra completa es もちます. Escúchala seguida.",
-          "explanation": "La palabra completa es もちます. Escúchala seguida.",
+          "answer": "tener o llevar",
+          "explanation": "tener o llevar",
           "audio": "もちます",
           "slow_audio": "もちます",
           "image": null,
@@ -4746,12 +5297,12 @@
           "prompt": "Recuerda: ¿qué expresa わかります?",
           "target": "わかります",
           "options": [
-            "わかります significa «entender».",
-            "Escuchaste はじまります: comenzar.",
-            "Escuchaste おきます: poner."
+            "entender",
+            "comenzar",
+            "La forma que verás en diccionarios y la forma cortés que usas al hablar."
           ],
-          "answer": "わかります significa «entender».",
-          "explanation": "わかります significa «entender».",
+          "answer": "entender",
+          "explanation": "entender",
           "audio": "わかります",
           "slow_audio": "わかります",
           "image": null,
@@ -4768,12 +5319,12 @@
           "prompt": "Recuerda: ¿qué expresa はじまります?",
           "target": "はじまります",
           "options": [
-            "はじまります significa «comenzar».",
-            "La palabra completa es いきます. Escúchala seguida.",
-            "Escuchaste かえります: volver a casa."
+            "comenzar",
+            "La forma que verás en diccionarios y la forma cortés que usas al hablar.",
+            "ir (forma de diccionario de いきます)"
           ],
-          "answer": "はじまります significa «comenzar».",
-          "explanation": "はじまります significa «comenzar».",
+          "answer": "comenzar",
+          "explanation": "comenzar",
           "audio": "はじまります",
           "slow_audio": "はじまります",
           "image": null,

@@ -184,7 +184,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "A un hombre. A una mujer: هل تريدين أن تأتي؟"
         },
         {
           "id": "arabic-a12-social-01-09-meaning",
@@ -260,7 +261,7 @@
           "options": [
             "Sí, con mucho gusto.",
             "¿Puedo traer a un amigo?",
-            "hora"
+            "tiempo (libre)"
           ],
           "answer": "Sí, con mucho gusto.",
           "explanation": "«نعم، بكل سرور.» significa «Sí, con mucho gusto.».",
@@ -397,7 +398,7 @@
           "target": "وقت",
           "options": [],
           "answer": "",
-          "explanation": "hora",
+          "explanation": "tiempo (libre)",
           "audio": "وقت",
           "slow_audio": "وقت",
           "image": null,
@@ -416,11 +417,11 @@
           "prompt": "¿Qué significa «وقت»?",
           "target": "وقت",
           "options": [
-            "hora",
+            "tiempo (libre)",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
+          "answer": "tiempo (libre)",
           "explanation": "«وقت» significa «hora».",
           "audio": "وقت",
           "slow_audio": "وقت",
@@ -1276,7 +1277,7 @@
           "options": [
             "¿Quieres venir?",
             "¿Puedo traer a un amigo?",
-            "hora"
+            "tiempo (libre)"
           ],
           "answer": "¿Puedo traer a un amigo?",
           "explanation": "«هل يمكنني إحضار صديق؟» significa «¿Puedo traer a un amigo?».",
@@ -1460,11 +1461,11 @@
           "prompt": "¿Qué significa «وقت»?",
           "target": "وقت",
           "options": [
-            "hora",
+            "tiempo (libre)",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
+          "answer": "tiempo (libre)",
           "explanation": "«وقت» significa «hora».",
           "audio": "وقت",
           "slow_audio": "وقت",
@@ -1600,7 +1601,7 @@
           "options": [
             "Sí, con mucho gusto.",
             "¿Puedo traer a un amigo?",
-            "hora"
+            "tiempo (libre)"
           ],
           "answer": "Sí, con mucho gusto.",
           "explanation": "«نعم، بكل سرور.» significa «Sí, con mucho gusto.».",
@@ -1809,7 +1810,12 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "أين نلتقي؟",
           "accepted_answers": [
-            "أين نلتقي؟"
+            "أين نلتقي؟",
+            "أين سنلتقي؟",
+            "أين نتقابل؟",
+            "اين نلتقي؟",
+            "اين سنلتقي؟",
+            "اين نتقابل؟"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «أين نلتقي؟».",
@@ -1890,7 +1896,8 @@
           "target": "fin de semana",
           "answer": "عطلة نهاية الأسبوع",
           "accepted_answers": [
-            "عطلة نهاية الأسبوع"
+            "عطلة نهاية الأسبوع",
+            "عطلة نهاية الاسبوع"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1910,7 +1917,9 @@
           "target": "Estoy libre después de las seis.",
           "answer": "لدي وقت بعد السادسة.",
           "accepted_answers": [
-            "لدي وقت بعد السادسة."
+            "لدي وقت بعد السادسة.",
+            "عندي وقت بعد السادسة.",
+            "لدي وقت بعد الساعة السادسة."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1943,7 +1952,12 @@
               "prompt": "Di o escribe en árabe: «¿Dónde quedamos?»",
               "answer": "أين نلتقي؟",
               "accepted_answers": [
-                "أين نلتقي؟"
+                "أين نلتقي؟",
+                "أين سنلتقي؟",
+                "أين نتقابل؟",
+                "اين نلتقي؟",
+                "اين سنلتقي؟",
+                "اين نتقابل؟"
               ],
               "audio": "أين نلتقي؟",
               "allow_minor_typos": true,
@@ -1961,7 +1975,9 @@
               "prompt": "Di o escribe en árabe: «Estoy libre después de las seis.»",
               "answer": "لدي وقت بعد السادسة.",
               "accepted_answers": [
-                "لدي وقت بعد السادسة."
+                "لدي وقت بعد السادسة.",
+                "عندي وقت بعد السادسة.",
+                "لدي وقت بعد الساعة السادسة."
               ],
               "audio": "لدي وقت بعد السادسة.",
               "allow_minor_typos": true,
@@ -1979,14 +1995,15 @@
               "prompt": "Di o escribe en árabe: «fin de semana»",
               "answer": "عطلة نهاية الأسبوع",
               "accepted_answers": [
-                "عطلة نهاية الأسبوع"
+                "عطلة نهاية الأسبوع",
+                "عطلة نهاية الاسبوع"
               ],
               "audio": "عطلة نهاية الأسبوع",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2170,11 +2187,11 @@
           "prompt": "¿Qué significa «وقت»?",
           "target": "وقت",
           "options": [
-            "hora",
+            "tiempo (libre)",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
+          "answer": "tiempo (libre)",
           "explanation": "«وقت» significa «hora».",
           "audio": "وقت",
           "slow_audio": "وقت",
@@ -2448,7 +2465,7 @@
           "options": [
             "Sí, con mucho gusto.",
             "¿Puedo traer a un amigo?",
-            "hora"
+            "tiempo (libre)"
           ],
           "answer": "Sí, con mucho gusto.",
           "explanation": "«نعم، بكل سرور.» significa «Sí, con mucho gusto.».",
@@ -2678,7 +2695,7 @@
           "options": [
             "¿Quieres venir?",
             "¿Puedo traer a un amigo?",
-            "hora"
+            "tiempo (libre)"
           ],
           "answer": "¿Puedo traer a un amigo?",
           "explanation": "«هل يمكنني إحضار صديق؟» significa «¿Puedo traer a un amigo?».",

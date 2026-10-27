@@ -474,7 +474,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Vada es la forma de usted (Lei); con tú: Vai sempre dritto."
         },
         {
           "id": "italian-a11-places-02-11-meaning",
@@ -1809,7 +1810,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "La stazione è a sinistra.",
           "accepted_answers": [
-            "La stazione è a sinistra."
+            "La stazione è a sinistra.",
+            "La stazione è sulla sinistra.",
+            "La stazione si trova a sinistra."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «La stazione è a sinistra.».",
@@ -1913,7 +1916,8 @@
           "target": "Voy a la escuela.",
           "answer": "Vado a scuola.",
           "accepted_answers": [
-            "Vado a scuola."
+            "Vado a scuola.",
+            "Io vado a scuola."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1946,7 +1950,9 @@
               "prompt": "Di o escribe en italiano: «La estación está a la izquierda.»",
               "answer": "La stazione è a sinistra.",
               "accepted_answers": [
-                "La stazione è a sinistra."
+                "La stazione è a sinistra.",
+                "La stazione è sulla sinistra.",
+                "La stazione si trova a sinistra."
               ],
               "audio": "La stazione è a sinistra.",
               "allow_minor_typos": true,
@@ -1964,7 +1970,8 @@
               "prompt": "Di o escribe en italiano: «Voy a la escuela.»",
               "answer": "Vado a scuola.",
               "accepted_answers": [
-                "Vado a scuola."
+                "Vado a scuola.",
+                "Io vado a scuola."
               ],
               "audio": "Vado a scuola.",
               "allow_minor_typos": true,
@@ -1989,7 +1996,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

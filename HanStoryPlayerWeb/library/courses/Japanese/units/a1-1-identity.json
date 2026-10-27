@@ -124,7 +124,7 @@
           "prompt": "¿Qué significa «おはようございます»?",
           "target": "おはようございます",
           "options": [
-            "idioma",
+            "palabra; lenguaje",
             "Por favor.",
             "buenos días"
           ],
@@ -213,7 +213,8 @@
               "note": "Cierre cortés de la oración."
             }
           ],
-          "usage_note": "La estructura X は Y です presenta X como tema y da información sobre él."
+          "usage_note": "La estructura X は Y です presenta X como tema y da información sobre él.",
+          "sound_hint": "Lectura: わたしのなまえはアナです。"
         },
         {
           "id": "japanese-a11-identity-01-09-meaning",
@@ -288,7 +289,7 @@
           "target": "はじめまして。",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -569,7 +570,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: おねがいします。"
         },
         {
           "id": "japanese-a11-identity-02-12-meaning",
@@ -873,7 +875,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: なまえ"
         },
         {
           "id": "japanese-a11-identity-03-05-meaning",
@@ -882,7 +885,7 @@
           "target": "名前",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -939,7 +942,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: くに"
         },
         {
           "id": "japanese-a11-identity-03-06-meaning",
@@ -1037,7 +1041,8 @@
               "meaning": "marca de pregunta"
             }
           ],
-          "usage_note": "お delante de 名前 hace la pregunta más cortés; normalmente se usa para preguntar el nombre de otra persona."
+          "usage_note": "お delante de 名前 hace la pregunta más cortés; normalmente se usa para preguntar el nombre de otra persona.",
+          "sound_hint": "Lectura: おなまえはなんですか。"
         },
         {
           "id": "japanese-a11-identity-03-13-meaning",
@@ -1047,7 +1052,7 @@
           "options": [
             "¿Cómo te llamas?",
             "buenos días",
-            "idioma"
+            "palabra; lenguaje"
           ],
           "answer": "¿Cómo te llamas?",
           "explanation": "«お名前は何ですか。» significa «¿Cómo te llamas?».",
@@ -1120,7 +1125,8 @@
               "note": "Pasado cortés de 来る (venir)."
             }
           ],
-          "usage_note": "La construcción [lugar] から来ました expresa de dónde viene una persona; en español suele traducirse de forma natural como “Soy de…”."
+          "usage_note": "La construcción [lugar] から来ました expresa de dónde viene una persona; en español suele traducirse de forma natural como “Soy de…”.",
+          "sound_hint": "Lectura: メキシコからきました。"
         },
         {
           "id": "japanese-a11-identity-03-14-meaning",
@@ -1201,7 +1207,7 @@
           "target": "言葉",
           "options": [],
           "answer": "",
-          "explanation": "idioma",
+          "explanation": "palabra; lenguaje",
           "audio": "言葉",
           "slow_audio": "言葉",
           "image": null,
@@ -1212,7 +1218,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ことば"
         },
         {
           "id": "japanese-a11-identity-04-07-meaning",
@@ -1220,12 +1227,12 @@
           "prompt": "¿Qué significa «言葉»?",
           "target": "言葉",
           "options": [
-            "idioma",
+            "palabra; lenguaje",
             "Por favor.",
             "hola"
           ],
-          "answer": "idioma",
-          "explanation": "«言葉» significa «idioma».",
+          "answer": "palabra; lenguaje",
+          "explanation": "«言葉» significa «palabra; lenguaje».",
           "audio": "言葉",
           "slow_audio": "言葉",
           "image": null,
@@ -1278,7 +1285,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ひと"
         },
         {
           "id": "japanese-a11-identity-04-08-meaning",
@@ -1333,7 +1341,7 @@
           "target": "日本語を少し話します。",
           "options": [],
           "answer": "",
-          "explanation": "Hablo un poco de este idioma.",
+          "explanation": "Hablo un poco de japonés.",
           "audio": "日本語を少し話します。",
           "slow_audio": "日本語を少し話します。",
           "image": null,
@@ -1366,7 +1374,8 @@
               "note": "Forma cortés de 話す (hablar)."
             }
           ],
-          "usage_note": "少し limita la cantidad: indica que se habla solo un poco de japonés."
+          "usage_note": "少し limita la cantidad: indica que se habla solo un poco de japonés.",
+          "sound_hint": "Lectura: にほんごをすこしはなします。"
         },
         {
           "id": "japanese-a11-identity-04-15-meaning",
@@ -1375,11 +1384,11 @@
           "target": "日本語を少し話します。",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«日本語を少し話します。» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de japonés.",
+          "explanation": "«日本語を少し話します。» significa «Hablo un poco de japonés.».",
           "audio": "日本語を少し話します。",
           "slow_audio": "日本語を少し話します。",
           "image": null,
@@ -1402,7 +1411,7 @@
             "日本語を少し話します。"
           ],
           "answer": "日本語を少し話します。",
-          "explanation": "La forma escuchada es «日本語を少し話します。»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «日本語を少し話します。»: Hablo un poco de japonés.",
           "audio": "日本語を少し話します。",
           "slow_audio": "日本語を少し話します。",
           "image": null,
@@ -1432,7 +1441,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: わかりません。"
         },
         {
           "id": "japanese-a11-identity-04-16-meaning",
@@ -1514,7 +1524,7 @@
           "prompt": "¿Qué significa «おはようございます»?",
           "target": "おはようございます",
           "options": [
-            "idioma",
+            "palabra; lenguaje",
             "Por favor.",
             "buenos días"
           ],
@@ -1699,7 +1709,7 @@
           "target": "はじめまして。",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -1909,7 +1919,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "お名前は何ですか。",
           "accepted_answers": [
-            "お名前は何ですか。"
+            "お名前は何ですか。",
+            "おなまえはなんですか。",
+            "名前は何ですか。"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «お名前は何ですか。».",
@@ -1929,7 +1941,9 @@
           "instruction": "Escribe exactamente lo que oyes.",
           "answer": "メキシコから来ました。",
           "accepted_answers": [
-            "メキシコから来ました。"
+            "メキシコから来ました。",
+            "メキシコからきました。",
+            "メキシコ人です。"
           ],
           "allow_minor_typos": true,
           "explanation": "Escuchaste «メキシコから来ました。». El ejemplo practica: Soy de México.",
@@ -1993,11 +2007,12 @@
         {
           "id": "japanese-a1-1-identity-production-open",
           "type": "open_question",
-          "prompt": "Di o escribe en japonés: «idioma»",
-          "target": "idioma",
+          "prompt": "Di o escribe en japonés: «palabra; lenguaje»",
+          "target": "palabra; lenguaje",
           "answer": "言葉",
           "accepted_answers": [
-            "言葉"
+            "言葉",
+            "ことば"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -2017,7 +2032,9 @@
           "target": "Soy de México.",
           "answer": "メキシコから来ました。",
           "accepted_answers": [
-            "メキシコから来ました。"
+            "メキシコから来ました。",
+            "メキシコからきました。",
+            "メキシコ人です。"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -2050,7 +2067,9 @@
               "prompt": "Di o escribe en japonés: «¿Cómo te llamas?»",
               "answer": "お名前は何ですか。",
               "accepted_answers": [
-                "お名前は何ですか。"
+                "お名前は何ですか。",
+                "おなまえはなんですか。",
+                "名前は何ですか。"
               ],
               "audio": "お名前は何ですか。",
               "allow_minor_typos": true,
@@ -2068,7 +2087,9 @@
               "prompt": "Di o escribe en japonés: «Soy de México.»",
               "answer": "メキシコから来ました。",
               "accepted_answers": [
-                "メキシコから来ました。"
+                "メキシコから来ました。",
+                "メキシコからきました。",
+                "メキシコ人です。"
               ],
               "audio": "メキシコから来ました。",
               "allow_minor_typos": true,
@@ -2167,7 +2188,7 @@
           "prompt": "¿Qué significa «おはようございます»?",
           "target": "おはようございます",
           "options": [
-            "idioma",
+            "palabra; lenguaje",
             "Por favor.",
             "buenos días"
           ],
@@ -2306,7 +2327,7 @@
           "target": "名前",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -2397,12 +2418,12 @@
           "prompt": "¿Qué significa «言葉»?",
           "target": "言葉",
           "options": [
-            "idioma",
+            "palabra; lenguaje",
             "Por favor.",
             "hola"
           ],
-          "answer": "idioma",
-          "explanation": "«言葉» significa «idioma».",
+          "answer": "palabra; lenguaje",
+          "explanation": "«言葉» significa «palabra; lenguaje».",
           "audio": "言葉",
           "slow_audio": "言葉",
           "image": null,
@@ -2536,7 +2557,7 @@
           "target": "はじめまして。",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -2675,7 +2696,7 @@
           "options": [
             "¿Cómo te llamas?",
             "buenos días",
-            "idioma"
+            "palabra; lenguaje"
           ],
           "answer": "¿Cómo te llamas?",
           "explanation": "«お名前は何ですか。» significa «¿Cómo te llamas?».",
@@ -2766,11 +2787,11 @@
           "target": "日本語を少し話します。",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de japonés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«日本語を少し話します。» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de japonés.",
+          "explanation": "«日本語を少し話します。» significa «Hablo un poco de japonés.».",
           "audio": "日本語を少し話します。",
           "slow_audio": "日本語を少し話します。",
           "image": null,
@@ -2793,7 +2814,7 @@
             "日本語を少し話します。"
           ],
           "answer": "日本語を少し話します。",
-          "explanation": "La forma escuchada es «日本語を少し話します。»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «日本語を少し話します。»: Hablo un poco de japonés.",
           "audio": "日本語を少し話します。",
           "slow_audio": "日本語を少し話します。",
           "image": null,

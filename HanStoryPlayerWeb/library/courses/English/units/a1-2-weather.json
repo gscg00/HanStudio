@@ -1931,13 +1931,14 @@
           "id": "english-a1-2-weather-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «Necesito un abrigo.»."
+              "speaker": "ANA",
+              "text": "It is very cold today.",
+              "translation": "Hoy hace mucho frío. — Tú quieres decir: «Necesito un abrigo.».",
+              "audio": "It is very cold today."
             },
             {
               "role": "learner",
@@ -1953,9 +1954,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «El tiempo cambia rápido.»."
+              "speaker": "ANA",
+              "text": "It was sunny this morning. Now it is raining!",
+              "translation": "Esta mañana hacía sol. ¡Ahora llueve! — Tú quieres decir: «El tiempo cambia rápido.».",
+              "audio": "It was sunny this morning. Now it is raining!"
             },
             {
               "role": "learner",

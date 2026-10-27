@@ -1134,7 +1134,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "carta = tarjeta; también «papel» y «carta» (el menú)."
         },
         {
           "id": "italian-a12-shopping-04-07-meaning",
@@ -1809,7 +1810,10 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Posso pagare con la carta?",
           "accepted_answers": [
-            "Posso pagare con la carta?"
+            "Posso pagare con la carta?",
+            "Posso pagare con carta?",
+            "Posso pagare con la carta di credito?",
+            "Si può pagare con la carta?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Posso pagare con la carta?».",
@@ -1913,7 +1917,10 @@
           "target": "Solo tengo efectivo.",
           "answer": "Ho solo contanti.",
           "accepted_answers": [
-            "Ho solo contanti."
+            "Ho solo contanti.",
+            "Ho solo i contanti.",
+            "Ho soltanto contanti.",
+            "Io ho solo contanti."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1946,7 +1953,10 @@
               "prompt": "Di o escribe en italiano: «¿Puedo pagar con tarjeta?»",
               "answer": "Posso pagare con la carta?",
               "accepted_answers": [
-                "Posso pagare con la carta?"
+                "Posso pagare con la carta?",
+                "Posso pagare con carta?",
+                "Posso pagare con la carta di credito?",
+                "Si può pagare con la carta?"
               ],
               "audio": "Posso pagare con la carta?",
               "allow_minor_typos": true,
@@ -1964,7 +1974,10 @@
               "prompt": "Di o escribe en italiano: «Solo tengo efectivo.»",
               "answer": "Ho solo contanti.",
               "accepted_answers": [
-                "Ho solo contanti."
+                "Ho solo contanti.",
+                "Ho solo i contanti.",
+                "Ho soltanto contanti.",
+                "Io ho solo contanti."
               ],
               "audio": "Ho solo contanti.",
               "allow_minor_typos": true,

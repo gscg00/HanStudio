@@ -1,7 +1,9 @@
 import {meaningVariants} from './guided_answer_variants.js';
 const COMBINING_MARKS=/[\u0300-\u036f]/g;
-const PUNCTUATION=/[\s.,!?¿¡;:()[\]{}"'“”‘’«»…·・，。！？；：、]/g;
+// El guion separa como un espacio: «appelez-vous» = «appelez vous».
+const PUNCTUATION=/[\s.,!?¿¡;:()[\]{}"'“”‘’«»…·・，。！？；：、\-‐‑–]/g;
 const ARABIC_MARKS=/[\u0640\u064B-\u065F\u0670]/g;
+const SPACING_FREE_LANGUAGES=new Set(['Korean','Japanese','Chinese']);
 
 function foldLatin(value){
   return value.normalize('NFKD').replace(COMBINING_MARKS,'');
@@ -84,6 +86,12 @@ export function evaluateGuidedAnswer(activity,given,language=''){
     normalized:normalizeGuidedAnswer(answer,{language,keepSpaces})
   }));
   let match=candidates.find(candidate=>candidate.normalized===normalized);
+  // En coreano, japonés y chino el espaciado no cambia el sentido de la
+  // respuesta: «이름이뭐예요?» es la misma frase que «이름이 뭐예요?».
+  if(!match&&keepSpaces&&SPACING_FREE_LANGUAGES.has(language)){
+    const compact=normalized.replace(/\s+/g,'');
+    match=candidates.find(candidate=>candidate.normalized.replace(/\s+/g,'')===compact);
+  }
   if(!match&&activity.allow_minor_typos&&activity.answer_policy==='spelling_tolerant'&&normalized.length>=8){
     match=candidates.find(candidate=>levenshtein(candidate.normalized,normalized)<=Math.max(1,Math.floor(candidate.normalized.length*.08)));
   }

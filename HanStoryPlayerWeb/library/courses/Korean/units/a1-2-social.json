@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "어디에서 만날까요?",
           "accepted_answers": [
-            "어디에서 만날까요?"
+            "어디에서 만날까요?",
+            "어디서 만날까요?",
+            "어디에서 만나요?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «어디에서 만날까요?».",
@@ -1910,7 +1912,9 @@
           "target": "Estoy libre después de las seis.",
           "answer": "여섯 시 이후에 시간이 있어요.",
           "accepted_answers": [
-            "여섯 시 이후에 시간이 있어요."
+            "여섯 시 이후에 시간이 있어요.",
+            "6시 이후에 시간이 있어요.",
+            "여섯 시 후에 시간이 있어요."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1943,7 +1947,9 @@
               "prompt": "Di o escribe en coreano: «¿Dónde quedamos?»",
               "answer": "어디에서 만날까요?",
               "accepted_answers": [
-                "어디에서 만날까요?"
+                "어디에서 만날까요?",
+                "어디서 만날까요?",
+                "어디에서 만나요?"
               ],
               "audio": "어디에서 만날까요?",
               "allow_minor_typos": true,
@@ -1961,7 +1967,9 @@
               "prompt": "Di o escribe en coreano: «Estoy libre después de las seis.»",
               "answer": "여섯 시 이후에 시간이 있어요.",
               "accepted_answers": [
-                "여섯 시 이후에 시간이 있어요."
+                "여섯 시 이후에 시간이 있어요.",
+                "6시 이후에 시간이 있어요.",
+                "여섯 시 후에 시간이 있어요."
               ],
               "audio": "여섯 시 이후에 시간이 있어요.",
               "allow_minor_typos": true,
@@ -1986,7 +1994,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

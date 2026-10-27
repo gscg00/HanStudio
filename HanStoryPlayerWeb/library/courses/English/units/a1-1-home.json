@@ -1933,13 +1933,14 @@
           "id": "english-a1-1-home-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «La llave está sobre la mesa.»."
+              "speaker": "MAMÁ",
+              "text": "Where is the key?",
+              "translation": "¿Dónde está la llave? — Tú quieres decir: «La llave está sobre la mesa.».",
+              "audio": "Where is the key?"
             },
             {
               "role": "learner",
@@ -1955,9 +1956,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Mi habitación es pequeña.»."
+              "speaker": "MAMÁ",
+              "text": "Is your room big?",
+              "translation": "¿Tu habitación es grande? — Tú quieres decir: «Mi habitación es pequeña.».",
+              "audio": "Is your room big?"
             },
             {
               "role": "learner",

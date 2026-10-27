@@ -194,7 +194,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«J’ai faim.» significa «Tengo hambre.».",
@@ -418,7 +418,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "café",
           "explanation": "«café» significa «café».",
@@ -716,7 +716,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«J’ai faim.» significa «Tengo hambre.».",
@@ -1031,7 +1031,7 @@
           "target": "Je voudrais du riz.",
           "options": [],
           "answer": "",
-          "explanation": "Quiero un poco de arroz.",
+          "explanation": "Quisiera arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -1052,10 +1052,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Je voudrais du riz.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera arroz.",
+          "explanation": "«Je voudrais du riz.» significa «Quisiera arroz.».",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -1078,7 +1078,7 @@
             "J’ai soif."
           ],
           "answer": "Je voudrais du riz.",
-          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quisiera arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -1462,7 +1462,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "café",
           "explanation": "«café» significa «café».",
@@ -1692,10 +1692,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Je voudrais du riz.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera arroz.",
+          "explanation": "«Je voudrais du riz.» significa «Quisiera arroz.».",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -1718,7 +1718,7 @@
             "J’ai soif."
           ],
           "answer": "Je voudrais du riz.",
-          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quisiera arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Je bois du thé le matin.",
           "accepted_answers": [
-            "Je bois du thé le matin."
+            "Je bois du thé le matin.",
+            "Le matin, je bois du thé.",
+            "Je bois du thé tous les matins."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Je bois du thé le matin.».",
@@ -1832,7 +1834,7 @@
             "Je voudrais du riz."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Je voudrais du riz.». El ejemplo practica: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Je voudrais du riz.». El ejemplo practica: Quisiera arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "tags": [
@@ -1877,7 +1879,7 @@
           "accepted_answers": [
             "riz"
           ],
-          "explanation": "La forma completa es «Je voudrais du riz.»: Quiero un poco de arroz.",
+          "explanation": "La forma completa es «Je voudrais du riz.»: Quisiera arroz.",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -1911,10 +1913,12 @@
           "id": "french-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
           "prompt": "Di en voz alta: «Je voudrais du riz.»",
-          "target": "Quiero un poco de arroz.",
+          "target": "Quisiera arroz.",
           "answer": "Je voudrais du riz.",
           "accepted_answers": [
-            "Je voudrais du riz."
+            "Je voudrais du riz.",
+            "Je veux du riz.",
+            "Je voudrais un peu de riz."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1947,7 +1951,9 @@
               "prompt": "Di o escribe en francés: «Bebo té por la mañana.»",
               "answer": "Je bois du thé le matin.",
               "accepted_answers": [
-                "Je bois du thé le matin."
+                "Je bois du thé le matin.",
+                "Le matin, je bois du thé.",
+                "Je bois du thé tous les matins."
               ],
               "audio": "Je bois du thé le matin.",
               "allow_minor_typos": true,
@@ -1957,15 +1963,17 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 2",
-              "translation": "Quieres expresar: «Quiero un poco de arroz.»."
+              "translation": "Quieres expresar: «Quisiera arroz.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en francés: «Quiero un poco de arroz.»",
+              "prompt": "Di o escribe en francés: «Quisiera arroz.»",
               "answer": "Je voudrais du riz.",
               "accepted_answers": [
-                "Je voudrais du riz."
+                "Je voudrais du riz.",
+                "Je veux du riz.",
+                "Je voudrais un peu de riz."
               ],
               "audio": "Je voudrais du riz.",
               "allow_minor_typos": true,
@@ -2158,7 +2166,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "café",
           "explanation": "«café» significa «café».",
@@ -2388,7 +2396,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«J’ai faim.» significa «Tengo hambre.».",
@@ -2618,10 +2626,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Je voudrais du riz.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera arroz.",
+          "explanation": "«Je voudrais du riz.» significa «Quisiera arroz.».",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,
@@ -2644,7 +2652,7 @@
             "J’ai soif."
           ],
           "answer": "Je voudrais du riz.",
-          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Je voudrais du riz.»: Quisiera arroz.",
           "audio": "Je voudrais du riz.",
           "slow_audio": "Je voudrais du riz.",
           "image": null,

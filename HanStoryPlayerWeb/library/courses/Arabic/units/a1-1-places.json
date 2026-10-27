@@ -62,7 +62,7 @@
           "options": [
             "estación",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "estación",
           "explanation": "«محطة» significa «estación».",
@@ -463,7 +463,7 @@
           "target": "اذهب مستقيمًا.",
           "options": [],
           "answer": "",
-          "explanation": "Siga recto.",
+          "explanation": "Sigue recto.",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -474,7 +474,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Imperativo a un hombre. A una mujer: اذهبي مستقيمًا. El árabe no tiene «usted»: se usa «tú» con todos."
         },
         {
           "id": "arabic-a11-places-02-11-meaning",
@@ -484,10 +485,10 @@
           "options": [
             "¿Cómo llego al parque?",
             "escuela",
-            "Siga recto."
+            "Sigue recto."
           ],
-          "answer": "Siga recto.",
-          "explanation": "«اذهب مستقيمًا.» significa «Siga recto.».",
+          "answer": "Sigue recto.",
+          "explanation": "«اذهب مستقيمًا.» significa «Sigue recto.».",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -510,7 +511,7 @@
             "يسار"
           ],
           "answer": "اذهب مستقيمًا.",
-          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Siga recto.",
+          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Sigue recto.",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -624,7 +625,7 @@
           "options": [
             "estación",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "estación",
           "explanation": "«محطة» significa «estación».",
@@ -762,10 +763,10 @@
           "options": [
             "¿Cómo llego al parque?",
             "escuela",
-            "Siga recto."
+            "Sigue recto."
           ],
-          "answer": "Siga recto.",
-          "explanation": "«اذهب مستقيمًا.» significa «Siga recto.».",
+          "answer": "Sigue recto.",
+          "explanation": "«اذهب مستقيمًا.» significa «Sigue recto.».",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -788,7 +789,7 @@
             "يسار"
           ],
           "answer": "اذهب مستقيمًا.",
-          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Siga recto.",
+          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Sigue recto.",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -920,7 +921,7 @@
           "options": [
             "¿Cómo llego al parque?",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "parque",
           "explanation": "«حديقة» significa «parque».",
@@ -1508,7 +1509,7 @@
           "options": [
             "¿Cómo llego al parque?",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "parque",
           "explanation": "«حديقة» significa «parque».",
@@ -1809,7 +1810,10 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "المحطة على اليسار.",
           "accepted_answers": [
-            "المحطة على اليسار."
+            "المحطة على اليسار.",
+            "المحطة إلى اليسار.",
+            "المحطة على يسارك.",
+            "المحطة الى اليسار."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «المحطة على اليسار.».",
@@ -1911,7 +1915,10 @@
           "target": "Voy a la escuela.",
           "answer": "أذهب إلى المدرسة.",
           "accepted_answers": [
-            "أذهب إلى المدرسة."
+            "أذهب إلى المدرسة.",
+            "أنا أذهب إلى المدرسة.",
+            "اذهب الى المدرسة.",
+            "انا اذهب الى المدرسة."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1944,7 +1951,10 @@
               "prompt": "Di o escribe en árabe: «La estación está a la izquierda.»",
               "answer": "المحطة على اليسار.",
               "accepted_answers": [
-                "المحطة على اليسار."
+                "المحطة على اليسار.",
+                "المحطة إلى اليسار.",
+                "المحطة على يسارك.",
+                "المحطة الى اليسار."
               ],
               "audio": "المحطة على اليسار.",
               "allow_minor_typos": true,
@@ -1962,7 +1972,10 @@
               "prompt": "Di o escribe en árabe: «Voy a la escuela.»",
               "answer": "أذهب إلى المدرسة.",
               "accepted_answers": [
-                "أذهب إلى المدرسة."
+                "أذهب إلى المدرسة.",
+                "أنا أذهب إلى المدرسة.",
+                "اذهب الى المدرسة.",
+                "انا اذهب الى المدرسة."
               ],
               "audio": "أذهب إلى المدرسة.",
               "allow_minor_typos": true,
@@ -1987,7 +2000,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2035,7 +2048,7 @@
           "options": [
             "estación",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "estación",
           "explanation": "«محطة» significa «estación».",
@@ -2265,7 +2278,7 @@
           "options": [
             "¿Cómo llego al parque?",
             "parque",
-            "Siga recto."
+            "Sigue recto."
           ],
           "answer": "parque",
           "explanation": "«حديقة» significa «parque».",
@@ -2495,10 +2508,10 @@
           "options": [
             "¿Cómo llego al parque?",
             "escuela",
-            "Siga recto."
+            "Sigue recto."
           ],
-          "answer": "Siga recto.",
-          "explanation": "«اذهب مستقيمًا.» significa «Siga recto.».",
+          "answer": "Sigue recto.",
+          "explanation": "«اذهب مستقيمًا.» significa «Sigue recto.».",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,
@@ -2521,7 +2534,7 @@
             "يسار"
           ],
           "answer": "اذهب مستقيمًا.",
-          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Siga recto.",
+          "explanation": "La forma escuchada es «اذهب مستقيمًا.»: Sigue recto.",
           "audio": "اذهب مستقيمًا.",
           "slow_audio": "اذهب مستقيمًا.",
           "image": null,

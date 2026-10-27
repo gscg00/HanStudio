@@ -127,7 +127,7 @@
           "target": "stomach",
           "options": [
             "médico",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "estómago"
           ],
           "answer": "estómago",
@@ -526,12 +526,12 @@
           "id": "english-a12-health-02-12-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "Where is there a pharmacy?",
+          "target": "Is there a pharmacy nearby?",
           "options": [],
           "answer": "",
-          "explanation": "¿Dónde hay una farmacia?",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "explanation": "¿Hay una farmacia cerca?",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -545,17 +545,17 @@
         {
           "id": "english-a12-health-02-12-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Where is there a pharmacy?»?",
-          "target": "Where is there a pharmacy?",
+          "prompt": "¿Qué significa «Is there a pharmacy nearby?»?",
+          "target": "Is there a pharmacy nearby?",
           "options": [
             "farmacia",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "cabeza"
           ],
-          "answer": "¿Dónde hay una farmacia?",
-          "explanation": "«Where is there a pharmacy?» significa «¿Dónde hay una farmacia?».",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "¿Hay una farmacia cerca?",
+          "explanation": "«Is there a pharmacy nearby?» significa «¿Hay una farmacia cerca?».",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -573,12 +573,12 @@
           "options": [
             "throat",
             "help",
-            "Where is there a pharmacy?"
+            "Is there a pharmacy nearby?"
           ],
-          "answer": "Where is there a pharmacy?",
-          "explanation": "La forma escuchada es «Where is there a pharmacy?»: ¿Dónde hay una farmacia?",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "Is there a pharmacy nearby?",
+          "explanation": "La forma escuchada es «Is there a pharmacy nearby?»: ¿Hay una farmacia cerca?",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -876,7 +876,7 @@
           "target": "",
           "options": [
             "medicine",
-            "Where is there a pharmacy?",
+            "Is there a pharmacy nearby?",
             "head"
           ],
           "answer": "medicine",
@@ -1143,7 +1143,7 @@
           "target": "doctor",
           "options": [
             "médico",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "cabeza"
           ],
           "answer": "médico",
@@ -1363,7 +1363,7 @@
           "prompt": "Escucha y elige la forma escrita correcta",
           "target": "",
           "options": [
-            "Where is there a pharmacy?",
+            "Is there a pharmacy nearby?",
             "Call an ambulance.",
             "doctor"
           ],
@@ -1415,7 +1415,7 @@
           "target": "stomach",
           "options": [
             "médico",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "estómago"
           ],
           "answer": "estómago",
@@ -1641,17 +1641,17 @@
         {
           "id": "english-a12-health-review-02-12-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Where is there a pharmacy?»?",
-          "target": "Where is there a pharmacy?",
+          "prompt": "¿Qué significa «Is there a pharmacy nearby?»?",
+          "target": "Is there a pharmacy nearby?",
           "options": [
             "farmacia",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "cabeza"
           ],
-          "answer": "¿Dónde hay una farmacia?",
-          "explanation": "«Where is there a pharmacy?» significa «¿Dónde hay una farmacia?».",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "¿Hay una farmacia cerca?",
+          "explanation": "«Is there a pharmacy nearby?» significa «¿Hay una farmacia cerca?».",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1669,12 +1669,12 @@
           "options": [
             "throat",
             "help",
-            "Where is there a pharmacy?"
+            "Is there a pharmacy nearby?"
           ],
-          "answer": "Where is there a pharmacy?",
-          "explanation": "La forma escuchada es «Where is there a pharmacy?»: ¿Dónde hay una farmacia?",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "Is there a pharmacy nearby?",
+          "explanation": "La forma escuchada es «Is there a pharmacy nearby?»: ¿Hay una farmacia cerca?",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1759,7 +1759,7 @@
           "prompt": "Escucha y elige la forma escrita correcta",
           "target": "",
           "options": [
-            "Where is there a pharmacy?",
+            "Is there a pharmacy nearby?",
             "Call an ambulance.",
             "doctor"
           ],
@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "I am allergic to penicillin.",
           "accepted_answers": [
-            "I am allergic to penicillin."
+            "I am allergic to penicillin.",
+            "I have a penicillin allergy.",
+            "I'm allergic to penicillin."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «I am allergic to penicillin.».",
@@ -1932,13 +1934,14 @@
           "id": "english-a1-2-health-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «Tengo alergia a la penicilina.»."
+              "speaker": "MÉDICA",
+              "text": "Do you have any allergies?",
+              "translation": "¿Tiene alguna alergia? — Tú quieres decir: «Tengo alergia a la penicilina.».",
+              "audio": "Do you have any allergies?"
             },
             {
               "role": "learner",
@@ -1946,7 +1949,9 @@
               "prompt": "Di o escribe en inglés: «Tengo alergia a la penicilina.»",
               "answer": "I am allergic to penicillin.",
               "accepted_answers": [
-                "I am allergic to penicillin."
+                "I am allergic to penicillin.",
+                "I have a penicillin allergy.",
+                "I'm allergic to penicillin."
               ],
               "audio": "I am allergic to penicillin.",
               "allow_minor_typos": true,
@@ -1954,9 +1959,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Tome esto dos veces al día.»."
+              "speaker": "FARMACÉUTICO",
+              "text": "What did the doctor say?",
+              "translation": "¿Qué le dijo la médica? — Tú quieres decir: «Tome esto dos veces al día.».",
+              "audio": "What did the doctor say?"
             },
             {
               "role": "learner",
@@ -2064,7 +2070,7 @@
           "target": "stomach",
           "options": [
             "médico",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "estómago"
           ],
           "answer": "estómago",
@@ -2225,7 +2231,7 @@
           "target": "",
           "options": [
             "medicine",
-            "Where is there a pharmacy?",
+            "Is there a pharmacy nearby?",
             "head"
           ],
           "answer": "medicine",
@@ -2294,7 +2300,7 @@
           "target": "doctor",
           "options": [
             "médico",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "cabeza"
           ],
           "answer": "médico",
@@ -2520,17 +2526,17 @@
         {
           "id": "english-a12-health-test-12-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «Where is there a pharmacy?»?",
-          "target": "Where is there a pharmacy?",
+          "prompt": "¿Qué significa «Is there a pharmacy nearby?»?",
+          "target": "Is there a pharmacy nearby?",
           "options": [
             "farmacia",
-            "¿Dónde hay una farmacia?",
+            "¿Hay una farmacia cerca?",
             "cabeza"
           ],
-          "answer": "¿Dónde hay una farmacia?",
-          "explanation": "«Where is there a pharmacy?» significa «¿Dónde hay una farmacia?».",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "¿Hay una farmacia cerca?",
+          "explanation": "«Is there a pharmacy nearby?» significa «¿Hay una farmacia cerca?».",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2548,12 +2554,12 @@
           "options": [
             "throat",
             "help",
-            "Where is there a pharmacy?"
+            "Is there a pharmacy nearby?"
           ],
-          "answer": "Where is there a pharmacy?",
-          "explanation": "La forma escuchada es «Where is there a pharmacy?»: ¿Dónde hay una farmacia?",
-          "audio": "Where is there a pharmacy?",
-          "slow_audio": "Where is there a pharmacy?",
+          "answer": "Is there a pharmacy nearby?",
+          "explanation": "La forma escuchada es «Is there a pharmacy nearby?»: ¿Hay una farmacia cerca?",
+          "audio": "Is there a pharmacy nearby?",
+          "slow_audio": "Is there a pharmacy nearby?",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2730,7 +2736,7 @@
           "prompt": "Escucha y elige la forma escrita correcta",
           "target": "",
           "options": [
-            "Where is there a pharmacy?",
+            "Is there a pharmacy nearby?",
             "Call an ambulance.",
             "doctor"
           ],

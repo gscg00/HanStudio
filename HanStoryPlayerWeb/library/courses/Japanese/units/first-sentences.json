@@ -43,7 +43,13 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "は presenta el tema; です cierra con cortesía.",
+          "teaching_points": [
+            "は marca el tema («en cuanto a A…»). Como partícula se escribe は y se lee «wa».",
+            "です equivale a «es / soy / son» y hace la frase cortés.",
+            "わたしはミナです。 → Soy Mina."
+          ]
         },
         {
           "id": "jp-book1-sentence-01-model-1",
@@ -69,7 +75,7 @@
           "options": [
             "Soy Mina.",
             "Aquí es una biblioteca.",
-            "No corresponde a esta oración."
+            "No es una persona."
           ],
           "answer": "Soy Mina.",
           "explanation": "Soy Mina.",
@@ -107,7 +113,7 @@
           "options": [
             "Aquí es una biblioteca.",
             "Soy Mina.",
-            "No corresponde a esta oración."
+            "No es una persona."
           ],
           "answer": "Aquí es una biblioteca.",
           "explanation": "Aquí es una biblioteca.",
@@ -158,7 +164,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "ではありません = no es (cortés).",
+          "teaching_points": [
+            "ではありません niega です: ひとではありません = no es una persona.",
+            "En conversación se oye mucho じゃありません o じゃないです (mismo sentido)."
+          ]
         },
         {
           "id": "jp-book1-sentence-02-model-1",
@@ -184,7 +195,7 @@
           "options": [
             "No es una persona.",
             "Esto no es una tarjeta.",
-            "No corresponde a esta oración."
+            "¿Esto es un libro?"
           ],
           "answer": "No es una persona.",
           "explanation": "No es una persona.",
@@ -222,7 +233,7 @@
           "options": [
             "Esto no es una tarjeta.",
             "No es una persona.",
-            "No corresponde a esta oración."
+            "¿Esto es un libro?"
           ],
           "answer": "Esto no es una tarjeta.",
           "explanation": "Esto no es una tarjeta.",
@@ -430,7 +441,13 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "か al final = pregunta.",
+          "teaching_points": [
+            "Añade か al final: これはほんですか。 = ¿Esto es un libro?",
+            "No cambia el orden de las palabras ni hace falta «¿?».",
+            "Respuestas: はい、そうです (sí) / いいえ、ちがいます (no)."
+          ]
         },
         {
           "id": "jp-book1-sentence-03-model-1",
@@ -456,7 +473,7 @@
           "options": [
             "¿Esto es un libro?",
             "¿Aquí es una tienda?",
-            "No corresponde a esta oración."
+            "¿Qué es esto?"
           ],
           "answer": "¿Esto es un libro?",
           "explanation": "¿Esto es un libro?",
@@ -494,7 +511,7 @@
           "options": [
             "¿Aquí es una tienda?",
             "¿Esto es un libro?",
-            "No corresponde a esta oración."
+            "¿Qué es esto?"
           ],
           "answer": "¿Aquí es una tienda?",
           "explanation": "¿Aquí es una tienda?",
@@ -545,7 +562,14 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "こ (cerca de mí) · そ (cerca de ti) · あ (lejos de los dos).",
+          "teaching_points": [
+            "これ: esto, cerca de quien habla.",
+            "それ: eso, cerca de quien escucha.",
+            "あれ: aquello, lejos de los dos.",
+            "Delante de un sustantivo cambian a この・その・あの: このほん = este libro."
+          ]
         },
         {
           "id": "jp-book1-sentence-04-model-1",
@@ -899,7 +923,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "Mismo sistema こ・そ・あ para lugares; どこ pregunta.",
+          "teaching_points": [
+            "ここ: aquí · そこ: ahí · あそこ: allá.",
+            "どこ: ¿dónde? → ねこはどこですか。"
+          ]
         },
         {
           "id": "jp-book1-sentence-05-model-1",
@@ -925,7 +954,7 @@
           "options": [
             "¿Dónde está el gato?",
             "Está allí.",
-            "No corresponde a esta oración."
+            "Hay un libro."
           ],
           "answer": "¿Dónde está el gato?",
           "explanation": "¿Dónde está el gato?",
@@ -963,7 +992,7 @@
           "options": [
             "Está allí.",
             "¿Dónde está el gato?",
-            "No corresponde a esta oración."
+            "Hay un libro."
           ],
           "answer": "Está allí.",
           "explanation": "Está allí.",
@@ -1014,7 +1043,13 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "あります: cosas · います: personas y animales.",
+          "teaching_points": [
+            "あります para cosas y plantas: ほんがあります。",
+            "います para seres que se mueven solos: ねこがいます。",
+            "Lo que existe va marcado con が; el negativo es ありません / いません."
+          ]
         },
         {
           "id": "jp-book1-sentence-06-model-1",
@@ -1335,13 +1370,13 @@
     },
     {
       "id": "jp-book1-sentence-07",
-      "title": "上・中・近く・前",
+      "title": "うえ・なか・ちかく・まえ",
       "description": "Ubicación precisa",
       "activities": [
         {
           "id": "jp-book1-sentence-07-intro",
           "type": "lesson_intro",
-          "prompt": "上・中・近く・前",
+          "prompt": "うえ・なか・ちかく・まえ",
           "target": "",
           "options": [],
           "answer": "",
@@ -1357,8 +1392,8 @@
         {
           "id": "jp-book1-sentence-07-pattern",
           "type": "teach_pattern",
-          "prompt": "上・中・近く・前",
-          "target": "上・中・近く・前",
+          "prompt": "うえ・なか・ちかく・まえ",
+          "target": "うえ・なか・ちかく・まえ",
           "options": [],
           "answer": "",
           "explanation": "Ubicación precisa",
@@ -1368,7 +1403,13 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "A の うえ = encima de A.",
+          "teaching_points": [
+            "Lugar = cosa + の + posición: つくえのうえ (encima del escritorio).",
+            "なか: dentro · ちかく: cerca · まえ: delante.",
+            "Con あります/います el lugar lleva に: まどのちかくにいます。"
+          ]
         },
         {
           "id": "jp-book1-sentence-07-model-1",
@@ -1521,7 +1562,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "の une sustantivos; も = también.",
+          "teaching_points": [
+            "の une dos sustantivos: わたしのほん = mi libro (el libro de mí).",
+            "も = también, y reemplaza a は, が o を: カードもあります。"
+          ]
         },
         {
           "id": "jp-book1-sentence-08-model-1",
@@ -1547,7 +1593,7 @@
           "options": [
             "Es mi libro.",
             "También hay una tarjeta.",
-            "No corresponde a esta oración."
+            "La puerta se abre."
           ],
           "answer": "Es mi libro.",
           "explanation": "Es mi libro.",
@@ -1585,7 +1631,7 @@
           "options": [
             "También hay una tarjeta.",
             "Es mi libro.",
-            "No corresponde a esta oración."
+            "La puerta se abre."
           ],
           "answer": "También hay una tarjeta.",
           "explanation": "También hay una tarjeta.",
@@ -1837,7 +1883,13 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "が: quién/qué hace o pasa · を: qué recibe la acción.",
+          "teaching_points": [
+            "が marca el sujeto: ドアがあきます。 = La puerta se abre.",
+            "を marca el objeto directo: ほんをよみます。 = Leo un libro. Se escribe を y se lee «o».",
+            "は presenta un tema ya conocido; が señala algo nuevo o importante."
+          ]
         },
         {
           "id": "jp-book1-sentence-09-model-1",
@@ -1863,7 +1915,7 @@
           "options": [
             "La puerta se abre.",
             "Leo un libro.",
-            "No corresponde a esta oración."
+            "Voy a la tienda."
           ],
           "answer": "La puerta se abre.",
           "explanation": "La puerta se abre.",
@@ -1901,7 +1953,7 @@
           "options": [
             "Leo un libro.",
             "La puerta se abre.",
-            "No corresponde a esta oración."
+            "Voy a la tienda."
           ],
           "answer": "Leo un libro.",
           "explanation": "Leo un libro.",
@@ -1952,7 +2004,14 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "に destino/hora · へ dirección · で lugar de la acción · と con alguien.",
+          "teaching_points": [
+            "に: destino o momento: みせにいきます。 / しちじに.",
+            "へ: dirección; se escribe へ y se lee «e»: がっこうへいきます。",
+            "で: lugar donde ocurre la acción: ここでまちます。",
+            "と: compañía: ともだちといきます。 Ojo: いっしょに es una sola palabra (juntos)."
+          ]
         },
         {
           "id": "jp-book1-sentence-10-model-1",
@@ -2206,8 +2265,8 @@
         {
           "id": "jp-book1-sentence-review-05-recall-6",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
-          "target": "上・中・近く・前",
+          "prompt": "Recuerda: ¿qué expresa うえ・なか・ちかく・まえ?",
+          "target": "うえ・なか・ちかく・まえ",
           "options": [
             "Ubicación precisa",
             "Objetos cercanos y lejanos",
@@ -2273,13 +2332,13 @@
     },
     {
       "id": "jp-book1-sentence-11",
-      "title": "何・誰・どこ・どうして",
+      "title": "なに・だれ・どこ・どうして",
       "description": "Preguntas esenciales",
       "activities": [
         {
           "id": "jp-book1-sentence-11-intro",
           "type": "lesson_intro",
-          "prompt": "何・誰・どこ・どうして",
+          "prompt": "なに・だれ・どこ・どうして",
           "target": "",
           "options": [],
           "answer": "",
@@ -2295,8 +2354,8 @@
         {
           "id": "jp-book1-sentence-11-pattern",
           "type": "teach_pattern",
-          "prompt": "何・誰・どこ・どうして",
-          "target": "何・誰・どこ・どうして",
+          "prompt": "なに・だれ・どこ・どうして",
+          "target": "なに・だれ・どこ・どうして",
           "options": [],
           "answer": "",
           "explanation": "Preguntas esenciales",
@@ -2306,7 +2365,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "memory_hint": "Las preguntas usan el mismo orden que la respuesta y terminan en か.",
+          "teaching_points": [
+            "なに / なん: qué (なん delante de です: なんですか).",
+            "だれ: quién · どこ: dónde · どうして: por qué."
+          ]
         },
         {
           "id": "jp-book1-sentence-11-model-1",
@@ -2560,8 +2624,8 @@
         {
           "id": "jp-book1-sentence-review-06-recall-6",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
-          "target": "上・中・近く・前",
+          "prompt": "Recuerda: ¿qué expresa うえ・なか・ちかく・まえ?",
+          "target": "うえ・なか・ちかく・まえ",
           "options": [
             "Ubicación precisa",
             "Lugares cercanos y lejanos",
@@ -3091,8 +3155,8 @@
         {
           "id": "jp-book1-sentence-checkpoint-recall-21",
           "type": "word_to_translation",
-          "prompt": "Recuerda: ¿qué expresa 上・中・近く・前?",
-          "target": "上・中・近く・前",
+          "prompt": "Recuerda: ¿qué expresa うえ・なか・ちかく・まえ?",
+          "target": "うえ・なか・ちかく・まえ",
           "options": [
             "Ubicación precisa",
             "¿Por qué?",

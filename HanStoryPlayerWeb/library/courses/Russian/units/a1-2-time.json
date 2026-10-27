@@ -350,7 +350,7 @@
           "prompt": "¿Qué significa «вчера»?",
           "target": "вчера",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "ayer",
             "tarde"
           ],
@@ -668,7 +668,7 @@
           "prompt": "¿Qué significa «вчера»?",
           "target": "вчера",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "ayer",
             "tarde"
           ],
@@ -965,7 +965,7 @@
           "target": "Я приеду в восемь.",
           "options": [],
           "answer": "",
-          "explanation": "Llego a las ocho.",
+          "explanation": "Llegaré a las ocho.",
           "audio": "Я приеду в восемь.",
           "slow_audio": "Я приеду в восемь.",
           "image": null,
@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Приеду es futuro (perfectivo): «llegaré». En presente sería «Я приезжаю в восемь»."
         },
         {
           "id": "russian-a12-time-03-13-meaning",
@@ -984,12 +985,12 @@
           "prompt": "¿Qué significa «Я приеду в восемь.»?",
           "target": "Я приеду в восемь.",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "mañana",
             "temprano"
           ],
-          "answer": "Llego a las ocho.",
-          "explanation": "«Я приеду в восемь.» significa «Llego a las ocho.».",
+          "answer": "Llegaré a las ocho.",
+          "explanation": "«Я приеду в восемь.» significa «Llegaré a las ocho.».",
           "audio": "Я приеду в восемь.",
           "slow_audio": "Я приеду в восемь.",
           "image": null,
@@ -1012,7 +1013,7 @@
             "понедельник"
           ],
           "answer": "Я приеду в восемь.",
-          "explanation": "La forma escuchada es «Я приеду в восемь.»: Llego a las ocho.",
+          "explanation": "La forma escuchada es «Я приеду в восемь.»: Llegaré a las ocho.",
           "audio": "Я приеду в восемь.",
           "slow_audio": "Я приеду в восемь.",
           "image": null,
@@ -1208,7 +1209,7 @@
           "prompt": "¿Qué significa «поздно»?",
           "target": "поздно",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "mañana",
             "tarde"
           ],
@@ -1552,7 +1553,7 @@
           "prompt": "¿Qué significa «поздно»?",
           "target": "поздно",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "mañana",
             "tarde"
           ],
@@ -1804,12 +1805,15 @@
         {
           "id": "russian-a1-2-time-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en ruso: «Llego a las ocho.»",
-          "target": "Llego a las ocho.",
+          "prompt": "Escribe en ruso: «Llegaré a las ocho.»",
+          "target": "Llegaré a las ocho.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Я приеду в восемь.",
           "accepted_answers": [
-            "Я приеду в восемь."
+            "Я приеду в восемь.",
+            "Я приеду в 8.",
+            "Я буду в восемь.",
+            "Я приду в восемь."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Я приеду в восемь.».",
@@ -1844,8 +1848,8 @@
         {
           "id": "russian-a1-2-time-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Llego a las ocho.»",
-          "target": "Llego a las ocho.",
+          "prompt": "Construye la forma que significa «Llegaré a las ocho.»",
+          "target": "Llegaré a las ocho.",
           "options": [
             "Я",
             "в",
@@ -1937,15 +1941,18 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «Llego a las ocho.»."
+              "translation": "Quieres expresar: «Llegaré a las ocho.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en ruso: «Llego a las ocho.»",
+              "prompt": "Di o escribe en ruso: «Llegaré a las ocho.»",
               "answer": "Я приеду в восемь.",
               "accepted_answers": [
-                "Я приеду в восемь."
+                "Я приеду в восемь.",
+                "Я приеду в 8.",
+                "Я буду в восемь.",
+                "Я приду в восемь."
               ],
               "audio": "Я приеду в восемь.",
               "allow_minor_typos": true,
@@ -2108,7 +2115,7 @@
           "prompt": "¿Qué significa «вчера»?",
           "target": "вчера",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "ayer",
             "tarde"
           ],
@@ -2338,7 +2345,7 @@
           "prompt": "¿Qué significa «поздно»?",
           "target": "поздно",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "mañana",
             "tarde"
           ],
@@ -2568,12 +2575,12 @@
           "prompt": "¿Qué significa «Я приеду в восемь.»?",
           "target": "Я приеду в восемь.",
           "options": [
-            "Llego a las ocho.",
+            "Llegaré a las ocho.",
             "mañana",
             "temprano"
           ],
-          "answer": "Llego a las ocho.",
-          "explanation": "«Я приеду в восемь.» significa «Llego a las ocho.».",
+          "answer": "Llegaré a las ocho.",
+          "explanation": "«Я приеду в восемь.» significa «Llegaré a las ocho.».",
           "audio": "Я приеду в восемь.",
           "slow_audio": "Я приеду в восемь.",
           "image": null,
@@ -2596,7 +2603,7 @@
             "понедельник"
           ],
           "answer": "Я приеду в восемь.",
-          "explanation": "La forma escuchada es «Я приеду в восемь.»: Llego a las ocho.",
+          "explanation": "La forma escuchada es «Я приеду в восемь.»: Llegaré a las ocho.",
           "audio": "Я приеду в восемь.",
           "slow_audio": "Я приеду в восемь.",
           "image": null,

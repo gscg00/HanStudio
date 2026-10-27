@@ -482,7 +482,7 @@
           "prompt": "¿Qué significa «nach der Arbeit»?",
           "target": "nach der Arbeit",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "después del trabajo"
           ],
@@ -760,7 +760,7 @@
           "prompt": "¿Qué significa «nach der Arbeit»?",
           "target": "nach der Arbeit",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "después del trabajo"
           ],
@@ -918,7 +918,7 @@
           "prompt": "¿Qué significa «schlafen»?",
           "target": "schlafen",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "dormir",
             "después del trabajo"
           ],
@@ -976,7 +976,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "aufstehen es un verbo separable: el prefijo auf va al final de la frase: Ich stehe … auf."
         },
         {
           "id": "german-a11-routine-03-13-meaning",
@@ -1134,7 +1135,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: der Morgen (masculino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a11-routine-04-07-meaning",
@@ -1200,7 +1202,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: die Nacht (femenino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a11-routine-04-08-meaning",
@@ -1321,7 +1324,7 @@
           "target": "Ich arbeite sonntags nicht.",
           "options": [],
           "answer": "",
-          "explanation": "No trabajo el domingo.",
+          "explanation": "No trabajo los domingos.",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -1332,7 +1335,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "sonntags = los domingos (cada domingo). nicht va al final cuando niega toda la frase."
         },
         {
           "id": "german-a11-routine-04-16-meaning",
@@ -1340,12 +1344,12 @@
           "prompt": "¿Qué significa «Ich arbeite sonntags nicht.»?",
           "target": "Ich arbeite sonntags nicht.",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "a las siete"
           ],
-          "answer": "No trabajo el domingo.",
-          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo el domingo.».",
+          "answer": "No trabajo los domingos.",
+          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo los domingos.».",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -1368,7 +1372,7 @@
             "Morgen"
           ],
           "answer": "Ich arbeite sonntags nicht.",
-          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo el domingo.",
+          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo los domingos.",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -1506,7 +1510,7 @@
           "prompt": "¿Qué significa «schlafen»?",
           "target": "schlafen",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "dormir",
             "después del trabajo"
           ],
@@ -1736,12 +1740,12 @@
           "prompt": "¿Qué significa «Ich arbeite sonntags nicht.»?",
           "target": "Ich arbeite sonntags nicht.",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "a las siete"
           ],
-          "answer": "No trabajo el domingo.",
-          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo el domingo.».",
+          "answer": "No trabajo los domingos.",
+          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo los domingos.».",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -1764,7 +1768,7 @@
             "Morgen"
           ],
           "answer": "Ich arbeite sonntags nicht.",
-          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo el domingo.",
+          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo los domingos.",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -1809,7 +1813,11 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Ich stehe um sieben Uhr auf.",
           "accepted_answers": [
-            "Ich stehe um sieben Uhr auf."
+            "Ich stehe um sieben Uhr auf.",
+            "Ich stehe um 7 Uhr auf.",
+            "Um sieben Uhr stehe ich auf.",
+            "Um 7 Uhr stehe ich auf.",
+            "Ich stehe um sieben auf."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Ich stehe um sieben Uhr auf.».",
@@ -1894,7 +1902,8 @@
           "target": "la mañana (parte del día)",
           "answer": "Morgen",
           "accepted_answers": [
-            "Morgen"
+            "Morgen",
+            "der Morgen"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1914,7 +1923,10 @@
           "target": "Estudio por la tarde.",
           "answer": "Ich lerne am Nachmittag.",
           "accepted_answers": [
-            "Ich lerne am Nachmittag."
+            "Ich lerne am Nachmittag.",
+            "Am Nachmittag lerne ich.",
+            "Ich lerne nachmittags.",
+            "Nachmittags lerne ich."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1947,7 +1959,11 @@
               "prompt": "Di o escribe en alemán: «Me levanto a las siete.»",
               "answer": "Ich stehe um sieben Uhr auf.",
               "accepted_answers": [
-                "Ich stehe um sieben Uhr auf."
+                "Ich stehe um sieben Uhr auf.",
+                "Ich stehe um 7 Uhr auf.",
+                "Um sieben Uhr stehe ich auf.",
+                "Um 7 Uhr stehe ich auf.",
+                "Ich stehe um sieben auf."
               ],
               "audio": "Ich stehe um sieben Uhr auf.",
               "allow_minor_typos": true,
@@ -1965,7 +1981,10 @@
               "prompt": "Di o escribe en alemán: «Estudio por la tarde.»",
               "answer": "Ich lerne am Nachmittag.",
               "accepted_answers": [
-                "Ich lerne am Nachmittag."
+                "Ich lerne am Nachmittag.",
+                "Am Nachmittag lerne ich.",
+                "Ich lerne nachmittags.",
+                "Nachmittags lerne ich."
               ],
               "audio": "Ich lerne am Nachmittag.",
               "allow_minor_typos": true,
@@ -2248,7 +2267,7 @@
           "prompt": "¿Qué significa «schlafen»?",
           "target": "schlafen",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "dormir",
             "después del trabajo"
           ],
@@ -2478,7 +2497,7 @@
           "prompt": "¿Qué significa «nach der Arbeit»?",
           "target": "nach der Arbeit",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "después del trabajo"
           ],
@@ -2708,12 +2727,12 @@
           "prompt": "¿Qué significa «Ich arbeite sonntags nicht.»?",
           "target": "Ich arbeite sonntags nicht.",
           "options": [
-            "No trabajo el domingo.",
+            "No trabajo los domingos.",
             "beber",
             "a las siete"
           ],
-          "answer": "No trabajo el domingo.",
-          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo el domingo.».",
+          "answer": "No trabajo los domingos.",
+          "explanation": "«Ich arbeite sonntags nicht.» significa «No trabajo los domingos.».",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,
@@ -2736,7 +2755,7 @@
             "Morgen"
           ],
           "answer": "Ich arbeite sonntags nicht.",
-          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo el domingo.",
+          "explanation": "La forma escuchada es «Ich arbeite sonntags nicht.»: No trabajo los domingos.",
           "audio": "Ich arbeite sonntags nicht.",
           "slow_audio": "Ich arbeite sonntags nicht.",
           "image": null,

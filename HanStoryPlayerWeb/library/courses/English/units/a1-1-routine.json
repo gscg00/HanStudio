@@ -1809,7 +1809,11 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "I get up at seven.",
           "accepted_answers": [
-            "I get up at seven."
+            "I get up at seven.",
+            "I get up at 7.",
+            "I get up at 7:00.",
+            "I wake up at seven.",
+            "I wake up at 7."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «I get up at seven.».",
@@ -1913,7 +1917,8 @@
           "target": "Estudio por la tarde.",
           "answer": "I study in the afternoon.",
           "accepted_answers": [
-            "I study in the afternoon."
+            "I study in the afternoon.",
+            "I study in the afternoons."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1932,13 +1937,14 @@
           "id": "english-a1-1-routine-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «Me levanto a las siete.»."
+              "speaker": "ANA",
+              "text": "When do you get up?",
+              "translation": "¿A qué hora te levantas? — Tú quieres decir: «Me levanto a las siete.».",
+              "audio": "When do you get up?"
             },
             {
               "role": "learner",
@@ -1946,7 +1952,11 @@
               "prompt": "Di o escribe en inglés: «Me levanto a las siete.»",
               "answer": "I get up at seven.",
               "accepted_answers": [
-                "I get up at seven."
+                "I get up at seven.",
+                "I get up at 7.",
+                "I get up at 7:00.",
+                "I wake up at seven.",
+                "I wake up at 7."
               ],
               "audio": "I get up at seven.",
               "allow_minor_typos": true,
@@ -1954,9 +1964,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Estudio por la tarde.»."
+              "speaker": "ANA",
+              "text": "When do you study?",
+              "translation": "¿Cuándo estudias? — Tú quieres decir: «Estudio por la tarde.».",
+              "audio": "When do you study?"
             },
             {
               "role": "learner",
@@ -1964,7 +1975,8 @@
               "prompt": "Di o escribe en inglés: «Estudio por la tarde.»",
               "answer": "I study in the afternoon.",
               "accepted_answers": [
-                "I study in the afternoon."
+                "I study in the afternoon.",
+                "I study in the afternoons."
               ],
               "audio": "I study in the afternoon.",
               "allow_minor_typos": true,

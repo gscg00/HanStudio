@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "역은 왼쪽에 있어요.",
           "accepted_answers": [
-            "역은 왼쪽에 있어요."
+            "역은 왼쪽에 있어요.",
+            "역이 왼쪽에 있어요.",
+            "왼쪽에 있어요."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «역은 왼쪽에 있어요.».",
@@ -1911,7 +1913,8 @@
           "target": "Voy a la escuela.",
           "answer": "저는 학교에 가요.",
           "accepted_answers": [
-            "저는 학교에 가요."
+            "저는 학교에 가요.",
+            "학교에 가요."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1944,7 +1947,9 @@
               "prompt": "Di o escribe en coreano: «La estación está a la izquierda.»",
               "answer": "역은 왼쪽에 있어요.",
               "accepted_answers": [
-                "역은 왼쪽에 있어요."
+                "역은 왼쪽에 있어요.",
+                "역이 왼쪽에 있어요.",
+                "왼쪽에 있어요."
               ],
               "audio": "역은 왼쪽에 있어요.",
               "allow_minor_typos": true,
@@ -1962,7 +1967,8 @@
               "prompt": "Di o escribe en coreano: «Voy a la escuela.»",
               "answer": "저는 학교에 가요.",
               "accepted_answers": [
-                "저는 학교에 가요."
+                "저는 학교에 가요.",
+                "학교에 가요."
               ],
               "audio": "저는 학교에 가요.",
               "allow_minor_typos": true,
@@ -1987,7 +1993,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

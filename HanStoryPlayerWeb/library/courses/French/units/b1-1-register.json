@@ -243,7 +243,9 @@
           "answer": "Pourriez-vous m’aider, s’il vous plaît ?",
           "accepted_answers": [
             "Pourriez-vous m’aider, s’il vous plaît ?",
-            "Est-ce que vous pourriez m’aider, s’il vous plaît ?"
+            "Pourriez vous m’aider, s’il vous plaît ?",
+            "Est-ce que vous pourriez m’aider, s’il vous plaît ?",
+            "Est ce que vous pourriez m’aider, s’il vous plaît ?"
           ],
           "answer_policy": "registered",
           "speech_enabled": true,
@@ -1940,7 +1942,8 @@
           "target": "Lamento informarle de que la cita se canceló.",
           "answer": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
           "accepted_answers": [
-            "J’ai le regret de vous informer que le rendez-vous a été annulé."
+            "J’ai le regret de vous informer que le rendez-vous a été annulé.",
+            "J’ai le regret de vous informer que le rendez vous a été annulé."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1991,7 +1994,8 @@
               "prompt": "Di o escribe en francés: «Lamento informarle de que la cita se canceló.»",
               "answer": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
               "accepted_answers": [
-                "J’ai le regret de vous informer que le rendez-vous a été annulé."
+                "J’ai le regret de vous informer que le rendez-vous a été annulé.",
+                "J’ai le regret de vous informer que le rendez vous a été annulé."
               ],
               "audio": "J’ai le regret de vous informer que le rendez-vous a été annulé.",
               "allow_minor_typos": true,
@@ -2016,7 +2020,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Besides, I need to buy food.",
           "accepted_answers": [
-            "Besides, I need to buy food."
+            "Besides, I need to buy food.",
+            "Also, I need to buy food.",
+            "In addition, I need to buy food."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Besides, I need to buy food.».",
@@ -1894,7 +1896,10 @@
           "target": "por eso",
           "answer": "that is why",
           "accepted_answers": [
-            "that is why"
+            "that is why",
+            "so",
+            "therefore",
+            "that's why"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1914,7 +1919,8 @@
           "target": "Sin embargo, hoy no tengo tiempo.",
           "answer": "However, I do not have time today.",
           "accepted_answers": [
-            "However, I do not have time today."
+            "However, I do not have time today.",
+            "However, I don't have time today."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1947,7 +1953,9 @@
               "prompt": "Di o escribe en inglés: «Además, necesito comprar comida.»",
               "answer": "Besides, I need to buy food.",
               "accepted_answers": [
-                "Besides, I need to buy food."
+                "Besides, I need to buy food.",
+                "Also, I need to buy food.",
+                "In addition, I need to buy food."
               ],
               "audio": "Besides, I need to buy food.",
               "allow_minor_typos": true,
@@ -1965,7 +1973,8 @@
               "prompt": "Di o escribe en inglés: «Sin embargo, hoy no tengo tiempo.»",
               "answer": "However, I do not have time today.",
               "accepted_answers": [
-                "However, I do not have time today."
+                "However, I do not have time today.",
+                "However, I don't have time today."
               ],
               "audio": "However, I do not have time today.",
               "allow_minor_typos": true,
@@ -1983,14 +1992,17 @@
               "prompt": "Di o escribe en inglés: «por eso»",
               "answer": "that is why",
               "accepted_answers": [
-                "that is why"
+                "that is why",
+                "so",
+                "therefore",
+                "that's why"
               ],
               "audio": "that is why",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

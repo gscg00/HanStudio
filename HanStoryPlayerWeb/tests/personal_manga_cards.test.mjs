@@ -9,7 +9,7 @@ const unreliable=/(?:imposible interpretarlo|impide interpretarlo|no se puede in
 
 test('las frases personales son estudiables, completas y solo cubren los idiomas con material',()=>{
   assert.ok(cards.length>=400);
-  assert.deepEqual(new Set(cards.map(card=>card.language)),new Set(['French','German','Korean']));
+  assert.deepEqual(new Set(cards.map(card=>card.language)),new Set(['English','French','German','Korean']));
   for(const card of cards){
     assert.match(card.text,/\p{L}/u);
     assert.ok(card.translation?.trim(),`falta traducción para ${card.id}`);
@@ -20,4 +20,9 @@ test('las frases personales son estudiables, completas y solo cubren los idiomas
     assert.ok(!koreanNoise.test(card.text),`ruido coreano: ${card.text}`);
     assert.ok(!unreliable.test(card.note||''),`interpretación no fiable: ${card.text}`);
   }
+});
+
+test('cada frase personal tiene un id único (el progreso de repaso se guarda por id)',()=>{
+  const ids=cards.map(card=>card.id);
+  assert.equal(new Set(ids).size,ids.length);
 });

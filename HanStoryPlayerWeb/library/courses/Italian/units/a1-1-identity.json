@@ -190,7 +190,7 @@
           "prompt": "¿Qué significa «Mi chiamo Ana.»?",
           "target": "Mi chiamo Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -257,7 +257,7 @@
           "target": "Piacere.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -329,7 +329,7 @@
           "target": "buonasera",
           "options": [],
           "answer": "",
-          "explanation": "buenas noches",
+          "explanation": "buenas tardes / buenas noches",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -340,7 +340,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Se dice desde media tarde para saludar y también al despedirse. Buonanotte solo al irse a dormir."
         },
         {
           "id": "italian-a11-identity-02-03-meaning",
@@ -349,11 +350,11 @@
           "target": "buonasera",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona"
           ],
-          "answer": "buenas noches",
-          "explanation": "«buonasera» significa «buenas noches».",
+          "answer": "buenas tardes / buenas noches",
+          "explanation": "«buonasera» significa «buenas tardes / buenas noches».",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -376,7 +377,7 @@
             "buonasera"
           ],
           "answer": "buonasera",
-          "explanation": "La forma escuchada es «buonasera»: buenas noches",
+          "explanation": "La forma escuchada es «buonasera»: buenas tardes / buenas noches",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -667,11 +668,11 @@
           "target": "buonasera",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona"
           ],
-          "answer": "buenas noches",
-          "explanation": "«buonasera» significa «buenas noches».",
+          "answer": "buenas tardes / buenas noches",
+          "explanation": "«buonasera» significa «buenas tardes / buenas noches».",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -694,7 +695,7 @@
             "buonasera"
           ],
           "answer": "buonasera",
-          "explanation": "La forma escuchada es «buonasera»: buenas noches",
+          "explanation": "La forma escuchada es «buonasera»: buenas tardes / buenas noches",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -712,7 +713,7 @@
           "prompt": "¿Qué significa «Mi chiamo Ana.»?",
           "target": "Mi chiamo Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -851,7 +852,7 @@
           "target": "nome",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "nombre"
           ],
           "answer": "nombre",
@@ -1048,7 +1049,7 @@
           "prompt": "¿Qué significa «Vengo dal Messico.»?",
           "target": "Vengo dal Messico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona",
             "Soy de México."
           ],
@@ -1253,7 +1254,7 @@
           "target": "Parlo un po’ d’italiano.",
           "options": [],
           "answer": "",
-          "explanation": "Hablo un poco de este idioma.",
+          "explanation": "Hablo un poco de italiano.",
           "audio": "Parlo un po’ d’italiano.",
           "slow_audio": "Parlo un po’ d’italiano.",
           "image": null,
@@ -1273,11 +1274,11 @@
           "target": "Parlo un po’ d’italiano.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«Parlo un po’ d’italiano.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de italiano.",
+          "explanation": "«Parlo un po’ d’italiano.» significa «Hablo un poco de italiano.».",
           "audio": "Parlo un po’ d’italiano.",
           "slow_audio": "Parlo un po’ d’italiano.",
           "image": null,
@@ -1300,7 +1301,7 @@
             "Parlo un po’ d’italiano."
           ],
           "answer": "Parlo un po’ d’italiano.",
-          "explanation": "La forma escuchada es «Parlo un po’ d’italiano.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «Parlo un po’ d’italiano.»: Hablo un poco de italiano.",
           "audio": "Parlo un po’ d’italiano.",
           "slow_audio": "Parlo un po’ d’italiano.",
           "image": null,
@@ -1597,7 +1598,7 @@
           "target": "Piacere.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -1688,7 +1689,7 @@
           "prompt": "¿Qué significa «Vengo dal Messico.»?",
           "target": "Vengo dal Messico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona",
             "Soy de México."
           ],
@@ -1807,7 +1808,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Come ti chiami?",
           "accepted_answers": [
-            "Come ti chiami?"
+            "Come ti chiami?",
+            "Come si chiama?",
+            "Tu come ti chiami?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Come ti chiami?».",
@@ -1909,7 +1912,11 @@
           "target": "Soy de México.",
           "answer": "Vengo dal Messico.",
           "accepted_answers": [
-            "Vengo dal Messico."
+            "Vengo dal Messico.",
+            "Sono del Messico.",
+            "Sono messicano.",
+            "Sono messicana.",
+            "Io vengo dal Messico."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1942,7 +1949,9 @@
               "prompt": "Di o escribe en italiano: «¿Cómo te llamas?»",
               "answer": "Come ti chiami?",
               "accepted_answers": [
-                "Come ti chiami?"
+                "Come ti chiami?",
+                "Come si chiama?",
+                "Tu come ti chiami?"
               ],
               "audio": "Come ti chiami?",
               "allow_minor_typos": true,
@@ -1960,7 +1969,11 @@
               "prompt": "Di o escribe en italiano: «Soy de México.»",
               "answer": "Vengo dal Messico.",
               "accepted_answers": [
-                "Vengo dal Messico."
+                "Vengo dal Messico.",
+                "Sono del Messico.",
+                "Sono messicano.",
+                "Sono messicana.",
+                "Io vengo dal Messico."
               ],
               "audio": "Vengo dal Messico.",
               "allow_minor_typos": true,
@@ -2106,11 +2119,11 @@
           "target": "buonasera",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona"
           ],
-          "answer": "buenas noches",
-          "explanation": "«buonasera» significa «buenas noches».",
+          "answer": "buenas tardes / buenas noches",
+          "explanation": "«buonasera» significa «buenas tardes / buenas noches».",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -2133,7 +2146,7 @@
             "buonasera"
           ],
           "answer": "buonasera",
-          "explanation": "La forma escuchada es «buonasera»: buenas noches",
+          "explanation": "La forma escuchada es «buonasera»: buenas tardes / buenas noches",
           "audio": "buonasera",
           "slow_audio": "buonasera",
           "image": null,
@@ -2198,7 +2211,7 @@
           "target": "nome",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "nombre"
           ],
           "answer": "nombre",
@@ -2381,7 +2394,7 @@
           "prompt": "¿Qué significa «Mi chiamo Ana.»?",
           "target": "Mi chiamo Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -2428,7 +2441,7 @@
           "target": "Piacere.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -2611,7 +2624,7 @@
           "prompt": "¿Qué significa «Vengo dal Messico.»?",
           "target": "Vengo dal Messico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches",
             "persona",
             "Soy de México."
           ],
@@ -2658,11 +2671,11 @@
           "target": "Parlo un po’ d’italiano.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de italiano.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«Parlo un po’ d’italiano.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de italiano.",
+          "explanation": "«Parlo un po’ d’italiano.» significa «Hablo un poco de italiano.».",
           "audio": "Parlo un po’ d’italiano.",
           "slow_audio": "Parlo un po’ d’italiano.",
           "image": null,
@@ -2685,7 +2698,7 @@
             "Parlo un po’ d’italiano."
           ],
           "answer": "Parlo un po’ d’italiano.",
-          "explanation": "La forma escuchada es «Parlo un po’ d’italiano.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «Parlo un po’ d’italiano.»: Hablo un poco de italiano.",
           "audio": "Parlo un po’ d’italiano.",
           "slow_audio": "Parlo un po’ d’italiano.",
           "image": null,

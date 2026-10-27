@@ -1894,7 +1894,8 @@
           "target": "¿Cuándo estará listo?",
           "answer": "Quand est-ce que ce sera prêt ?",
           "accepted_answers": [
-            "Quand est-ce que ce sera prêt ?"
+            "Quand est-ce que ce sera prêt ?",
+            "Quand est ce que ce sera prêt ?"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1983,14 +1984,15 @@
               "prompt": "Di o escribe en francés: «¿Cuándo estará listo?»",
               "answer": "Quand est-ce que ce sera prêt ?",
               "accepted_answers": [
-                "Quand est-ce que ce sera prêt ?"
+                "Quand est-ce que ce sera prêt ?",
+                "Quand est ce que ce sera prêt ?"
               ],
               "audio": "Quand est-ce que ce sera prêt ?",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

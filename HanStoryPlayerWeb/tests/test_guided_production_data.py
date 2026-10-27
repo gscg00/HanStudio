@@ -255,11 +255,16 @@ class GuidedProductionDataTests(unittest.TestCase):
                             continue
                         turns = activity["turns"]
                         for index, turn in enumerate(turns):
-                            if turn["role"] == "model":
+                            if turn["role"] == "model" and turn.get("audio"):
+                                # Diálogo real (auditoría 2026-10): un personaje dice una
+                                # línea en el idioma, con traducción y audio publicado.
+                                self.assertNotIn(turn["speaker"], {"GUÍA", "TÚ"}, activity["id"])
+                                self.assertFalse(turn["text"].startswith("Situación "), activity["id"])
+                                self.assertTrue(turn.get("translation"), activity["id"])
+                            elif turn["role"] == "model":
                                 self.assertEqual("GUÍA", turn["speaker"], activity["id"])
                                 self.assertTrue(turn["text"].startswith("Situación "), activity["id"])
                                 self.assertTrue(turn["translation"].startswith(("Quieres expresar:", "Quieres decir ")), activity["id"])
-                                self.assertNotIn("audio", turn, activity["id"])
                             else:
                                 self.assertEqual("TÚ", turn["speaker"], activity["id"])
                                 self.assertTrue(turn.get("answer"), activity["id"])

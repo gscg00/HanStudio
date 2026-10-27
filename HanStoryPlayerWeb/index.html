@@ -7,7 +7,7 @@
   <title>HanStudio</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./assets/styles.css">
-  <link rel="stylesheet" href="./assets/teaching.css"><link rel="stylesheet" href="./assets/navigation.css"><link rel="stylesheet" href="./assets/japanese_course.css"><link rel="stylesheet" href="./assets/japanese_lesson.css"><link rel="stylesheet" href="./assets/guided_course_levels.css">
+  <link rel="stylesheet" href="./assets/teaching.css"><link rel="stylesheet" href="./assets/navigation.css"><link rel="stylesheet" href="./assets/japanese_course.css"><link rel="stylesheet" href="./assets/japanese_lesson.css"><link rel="stylesheet" href="./assets/guided_course_levels.css"><link rel="stylesheet" href="./assets/daily_class.css"><link rel="stylesheet" href="./assets/redesign.css">
 </head>
 <body>
   <header>
@@ -16,7 +16,7 @@
   </header>
   <main>
     <nav id="breadcrumb" class="breadcrumb" hidden></nav>
-    <section id="language-view"><span class="eyebrow">EMPEZAR</span><section id="continue-study" class="continue-study-card" hidden aria-live="polite"></section><h2>¿Qué idioma quieres estudiar?</h2><div id="languages" class="choice-grid"></div></section>
+    <section id="language-view"><div class="home-head"><div><span id="home-date" class="home-date"></span><h2 id="home-greeting">Hola</h2></div><span id="home-streak" class="home-streak" hidden><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 1.8 1.2 2.6 2.2 2.8C11.2 8.8 11 6 12 3z"/></svg><b></b><span class="sr-only">de racha</span></span></div><section id="continue-study" class="continue-study-card" hidden aria-live="polite"></section><h2 class="home-section">Tus idiomas</h2><div id="languages" class="language-list"></div></section>
     <section id="mode-view" hidden><button class="home-back">← Idiomas</button><span id="selected-language" class="eyebrow"></span><h2>¿Cómo quieres estudiar?</h2><div class="choice-grid"><button class="choice-card" data-mode="beginner"><strong>Curso de entrada</strong><span>Empieza desde cero: letras, sonidos y pronunciación.</span></button><button class="choice-card" data-mode="stories"><strong>Historias</strong><span>Ideal para estudiar siguiendo la narrativa.</span></button><button class="choice-card" data-mode="topics"><strong>Temas</strong><span>Ideal para repasar gramática, vocabulario y funciones comunicativas.</span></button></div></section>
     <section id="beginner-view" hidden><button class="beginner-back">← Formas de estudiar</button><div id="beginner-course"></div></section>
     <section id="topics-view" hidden><button class="mode-back">← Modos</button><h2>Temas</h2><div id="topics" class="topic-grid"></div><div id="topics-empty" hidden>Todavía no hay temas publicados para este idioma.</div></section>

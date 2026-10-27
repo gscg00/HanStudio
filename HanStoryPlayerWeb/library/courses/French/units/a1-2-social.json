@@ -259,7 +259,7 @@
           "target": "Oui, avec plaisir.",
           "options": [
             "Sí, con mucho gusto.",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "hora"
           ],
           "answer": "Sí, con mucho gusto.",
@@ -853,7 +853,7 @@
           "target": "endroit",
           "options": [
             "Sí, con mucho gusto.",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "lugar"
           ],
           "answer": "lugar",
@@ -1255,7 +1255,7 @@
           "target": "Je peux venir avec un ami ?",
           "options": [],
           "answer": "",
-          "explanation": "¿Puedo traer a un amigo?",
+          "explanation": "¿Puedo ir con un amigo?",
           "audio": "Je peux venir avec un ami ?",
           "slow_audio": "Je peux venir avec un ami ?",
           "image": null,
@@ -1275,11 +1275,11 @@
           "target": "Je peux venir avec un ami ?",
           "options": [
             "¿Quieres venir?",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "hora"
           ],
-          "answer": "¿Puedo traer a un amigo?",
-          "explanation": "«Je peux venir avec un ami ?» significa «¿Puedo traer a un amigo?».",
+          "answer": "¿Puedo ir con un amigo?",
+          "explanation": "«Je peux venir avec un ami ?» significa «¿Puedo ir con un amigo?».",
           "audio": "Je peux venir avec un ami ?",
           "slow_audio": "Je peux venir avec un ami ?",
           "image": null,
@@ -1302,7 +1302,7 @@
             "Je peux venir avec un ami ?"
           ],
           "answer": "Je peux venir avec un ami ?",
-          "explanation": "La forma escuchada es «Je peux venir avec un ami ?»: ¿Puedo traer a un amigo?",
+          "explanation": "La forma escuchada es «Je peux venir avec un ami ?»: ¿Puedo ir con un amigo?",
           "audio": "Je peux venir avec un ami ?",
           "slow_audio": "Je peux venir avec un ami ?",
           "image": null,
@@ -1599,7 +1599,7 @@
           "target": "Oui, avec plaisir.",
           "options": [
             "Sí, con mucho gusto.",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "hora"
           ],
           "answer": "Sí, con mucho gusto.",
@@ -1809,7 +1809,11 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "On se retrouve où ?",
           "accepted_answers": [
-            "On se retrouve où ?"
+            "On se retrouve où ?",
+            "Où est-ce qu’on se retrouve ?",
+            "Où est ce qu’on se retrouve ?",
+            "Où on se retrouve ?",
+            "On se voit où ?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «On se retrouve où ?».",
@@ -1893,7 +1897,8 @@
           "target": "fin de semana",
           "answer": "week-end",
           "accepted_answers": [
-            "week-end"
+            "week-end",
+            "week end"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1913,7 +1918,10 @@
           "target": "Estoy libre después de las seis.",
           "answer": "Je suis libre après six heures.",
           "accepted_answers": [
-            "Je suis libre après six heures."
+            "Je suis libre après six heures.",
+            "Je suis libre après 6 heures.",
+            "Je suis libre après 18 heures.",
+            "Je suis libre après 18h."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1946,7 +1954,11 @@
               "prompt": "Di o escribe en francés: «¿Dónde quedamos?»",
               "answer": "On se retrouve où ?",
               "accepted_answers": [
-                "On se retrouve où ?"
+                "On se retrouve où ?",
+                "Où est-ce qu’on se retrouve ?",
+                "Où est ce qu’on se retrouve ?",
+                "Où on se retrouve ?",
+                "On se voit où ?"
               ],
               "audio": "On se retrouve où ?",
               "allow_minor_typos": true,
@@ -1964,7 +1976,10 @@
               "prompt": "Di o escribe en francés: «Estoy libre después de las seis.»",
               "answer": "Je suis libre après six heures.",
               "accepted_answers": [
-                "Je suis libre après six heures."
+                "Je suis libre après six heures.",
+                "Je suis libre après 6 heures.",
+                "Je suis libre après 18 heures.",
+                "Je suis libre après 18h."
               ],
               "audio": "Je suis libre après six heures.",
               "allow_minor_typos": true,
@@ -1982,14 +1997,15 @@
               "prompt": "Di o escribe en francés: «fin de semana»",
               "answer": "week-end",
               "accepted_answers": [
-                "week-end"
+                "week-end",
+                "week end"
               ],
               "audio": "week-end",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2220,7 +2236,7 @@
           "target": "endroit",
           "options": [
             "Sí, con mucho gusto.",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "lugar"
           ],
           "answer": "lugar",
@@ -2450,7 +2466,7 @@
           "target": "Oui, avec plaisir.",
           "options": [
             "Sí, con mucho gusto.",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "hora"
           ],
           "answer": "Sí, con mucho gusto.",
@@ -2680,11 +2696,11 @@
           "target": "Je peux venir avec un ami ?",
           "options": [
             "¿Quieres venir?",
-            "¿Puedo traer a un amigo?",
+            "¿Puedo ir con un amigo?",
             "hora"
           ],
-          "answer": "¿Puedo traer a un amigo?",
-          "explanation": "«Je peux venir avec un ami ?» significa «¿Puedo traer a un amigo?».",
+          "answer": "¿Puedo ir con un amigo?",
+          "explanation": "«Je peux venir avec un ami ?» significa «¿Puedo ir con un amigo?».",
           "audio": "Je peux venir avec un ami ?",
           "slow_audio": "Je peux venir avec un ami ?",
           "image": null,
@@ -2707,7 +2723,7 @@
             "Je peux venir avec un ami ?"
           ],
           "answer": "Je peux venir avec un ami ?",
-          "explanation": "La forma escuchada es «Je peux venir avec un ami ?»: ¿Puedo traer a un amigo?",
+          "explanation": "La forma escuchada es «Je peux venir avec un ami ?»: ¿Puedo ir con un amigo?",
           "audio": "Je peux venir avec un ami ?",
           "slow_audio": "Je peux venir avec un ami ?",
           "image": null,

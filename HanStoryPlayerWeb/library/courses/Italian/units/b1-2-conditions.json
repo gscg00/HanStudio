@@ -350,7 +350,7 @@
           "prompt": "¿Qué significa «Il volo è stato cancellato a causa della tempesta.»?",
           "target": "Il volo è stato cancellato a causa della tempesta.",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "El vuelo se canceló debido a la tormenta.",
             "¿Qué causó este cambio?"
           ],
@@ -668,7 +668,7 @@
           "prompt": "¿Qué significa «Il volo è stato cancellato a causa della tempesta.»?",
           "target": "Il volo è stato cancellato a causa della tempesta.",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "El vuelo se canceló debido a la tormenta.",
             "¿Qué causó este cambio?"
           ],
@@ -971,7 +971,7 @@
           "target": "Se hai bisogno di aiuto, chiamami.",
           "options": [],
           "answer": "",
-          "explanation": "En caso de que necesites ayuda, llámame.",
+          "explanation": "Si necesitas ayuda, llámame.",
           "audio": "Se hai bisogno di aiuto, chiamami.",
           "slow_audio": "Se hai bisogno di aiuto, chiamami.",
           "image": null,
@@ -990,12 +990,12 @@
           "prompt": "¿Qué significa «Se hai bisogno di aiuto, chiamami.»?",
           "target": "Se hai bisogno di aiuto, chiamami.",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "Como perdí el autobús, llegué tarde.",
             "Gracias a tu ayuda, resolvimos el problema."
           ],
-          "answer": "En caso de que necesites ayuda, llámame.",
-          "explanation": "«Se hai bisogno di aiuto, chiamami.» significa «En caso de que necesites ayuda, llámame.».",
+          "answer": "Si necesitas ayuda, llámame.",
+          "explanation": "«Se hai bisogno di aiuto, chiamami.» significa «Si necesitas ayuda, llámame.».",
           "audio": "Se hai bisogno di aiuto, chiamami.",
           "slow_audio": "Se hai bisogno di aiuto, chiamami.",
           "image": null,
@@ -1018,7 +1018,7 @@
             "Non c’era abbastanza tempo; perciò siamo partiti."
           ],
           "answer": "Se hai bisogno di aiuto, chiamami.",
-          "explanation": "La forma escuchada es «Se hai bisogno di aiuto, chiamami.»: En caso de que necesites ayuda, llámame.",
+          "explanation": "La forma escuchada es «Se hai bisogno di aiuto, chiamami.»: Si necesitas ayuda, llámame.",
           "audio": "Se hai bisogno di aiuto, chiamami.",
           "slow_audio": "Se hai bisogno di aiuto, chiamami.",
           "image": null,
@@ -1214,7 +1214,7 @@
           "prompt": "¿Qué significa «Che cosa ha causato questo cambiamento?»?",
           "target": "Che cosa ha causato questo cambiamento?",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "Como perdí el autobús, llegué tarde.",
             "¿Qué causó este cambio?"
           ],
@@ -1560,7 +1560,7 @@
           "prompt": "¿Qué significa «Che cosa ha causato questo cambiamento?»?",
           "target": "Che cosa ha causato questo cambiamento?",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "Como perdí el autobús, llegué tarde.",
             "¿Qué causó este cambio?"
           ],
@@ -1812,12 +1812,13 @@
         {
           "id": "italian-b1-2-conditions-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en italiano: «En caso de que necesites ayuda, llámame.»",
-          "target": "En caso de que necesites ayuda, llámame.",
+          "prompt": "Escribe en italiano: «Si necesitas ayuda, llámame.»",
+          "target": "Si necesitas ayuda, llámame.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Se hai bisogno di aiuto, chiamami.",
           "accepted_answers": [
-            "Se hai bisogno di aiuto, chiamami."
+            "Se hai bisogno di aiuto, chiamami.",
+            "Se ti serve aiuto, chiamami."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Se hai bisogno di aiuto, chiamami.».",
@@ -1852,8 +1853,8 @@
         {
           "id": "italian-b1-2-conditions-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «En caso de que necesites ayuda, llámame.»",
-          "target": "En caso de que necesites ayuda, llámame.",
+          "prompt": "Construye la forma que significa «Si necesitas ayuda, llámame.»",
+          "target": "Si necesitas ayuda, llámame.",
           "options": [
             "di",
             "chiamami.",
@@ -1947,15 +1948,16 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «En caso de que necesites ayuda, llámame.»."
+              "translation": "Quieres expresar: «Si necesitas ayuda, llámame.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en italiano: «En caso de que necesites ayuda, llámame.»",
+              "prompt": "Di o escribe en italiano: «Si necesitas ayuda, llámame.»",
               "answer": "Se hai bisogno di aiuto, chiamami.",
               "accepted_answers": [
-                "Se hai bisogno di aiuto, chiamami."
+                "Se hai bisogno di aiuto, chiamami.",
+                "Se ti serve aiuto, chiamami."
               ],
               "audio": "Se hai bisogno di aiuto, chiamami.",
               "allow_minor_typos": true,
@@ -2118,7 +2120,7 @@
           "prompt": "¿Qué significa «Il volo è stato cancellato a causa della tempesta.»?",
           "target": "Il volo è stato cancellato a causa della tempesta.",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "El vuelo se canceló debido a la tormenta.",
             "¿Qué causó este cambio?"
           ],
@@ -2352,7 +2354,7 @@
           "prompt": "¿Qué significa «Che cosa ha causato questo cambiamento?»?",
           "target": "Che cosa ha causato questo cambiamento?",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "Como perdí el autobús, llegué tarde.",
             "¿Qué causó este cambio?"
           ],
@@ -2582,12 +2584,12 @@
           "prompt": "¿Qué significa «Se hai bisogno di aiuto, chiamami.»?",
           "target": "Se hai bisogno di aiuto, chiamami.",
           "options": [
-            "En caso de que necesites ayuda, llámame.",
+            "Si necesitas ayuda, llámame.",
             "Como perdí el autobús, llegué tarde.",
             "Gracias a tu ayuda, resolvimos el problema."
           ],
-          "answer": "En caso de que necesites ayuda, llámame.",
-          "explanation": "«Se hai bisogno di aiuto, chiamami.» significa «En caso de que necesites ayuda, llámame.».",
+          "answer": "Si necesitas ayuda, llámame.",
+          "explanation": "«Se hai bisogno di aiuto, chiamami.» significa «Si necesitas ayuda, llámame.».",
           "audio": "Se hai bisogno di aiuto, chiamami.",
           "slow_audio": "Se hai bisogno di aiuto, chiamami.",
           "image": null,
@@ -2610,7 +2612,7 @@
             "Non c’era abbastanza tempo; perciò siamo partiti."
           ],
           "answer": "Se hai bisogno di aiuto, chiamami.",
-          "explanation": "La forma escuchada es «Se hai bisogno di aiuto, chiamami.»: En caso de que necesites ayuda, llámame.",
+          "explanation": "La forma escuchada es «Se hai bisogno di aiuto, chiamami.»: Si necesitas ayuda, llámame.",
           "audio": "Se hai bisogno di aiuto, chiamami.",
           "slow_audio": "Se hai bisogno di aiuto, chiamami.",
           "image": null,
