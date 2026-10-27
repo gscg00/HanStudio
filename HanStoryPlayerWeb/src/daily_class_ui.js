@@ -6,7 +6,7 @@ import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
-import{DAILY_PHASES,advanceLearnIndex,dailyBudgetForLevel,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,hoursUntilTomorrow,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
+import{DAILY_PHASES,advanceLearnIndex,dailyBudgetForLevel,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -16,6 +16,13 @@ const proto=JapaneseCourseApp.prototype;
 const original={renderMap:proto.renderMap,renderRoute:proto.renderRoute,speakTts:proto.speakTts,shell:proto.shell,renderActivity:proto.renderActivity,renderTeachingActivity:proto.renderTeachingActivity,continue:proto.continue,handleClick:proto.handleClick,mountToday:proto.mountToday,stop:proto.stop};
 
 const dailyEnabled=app=>Boolean(app.definition?.dailyClass);
+const icon=path=>`<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
+const NAV_ICONS={
+  home:icon('<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>'),
+  today:icon('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
+  stories:icon('<path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>'),
+  profile:icon('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
+};
 
 // Cada personaje con su propia voz sintetizada, como en una grabación de Assimil.
 const MAIN_CHARACTERS=new Set(['아나','민호','Ana','Ben','Léa','Jonas','Marco','João','Миша','小明','健太','آنا','عمر']);
@@ -67,15 +74,19 @@ Object.assign(proto,{
     this.dailyMode=false;this.dailyStep=null;
     const entry=await this.ensureTodayClass(),status=dailyStatus(this.daily),now=new Date();
     if(!entry){this.shell(`<section class="dc-today"><div class="dc-empty"><b>✓</b><h1>¡Terminaste el curso!</h1><p>Sigue con el repaso espaciado y las Historias.</p><button class="primary" data-jp-route="review">Ir al repaso</button></div></section>`,'Hoy');return;}
-    const done=status==='done-today',yesterday=previousClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],lessonTitles=entry.lessons.map(ref=>this.findLesson(ref.lessonId)?.lesson.title).filter(Boolean),unit=this.units.get(entry.lessons[0]?.unitId),minutes=DAILY_PHASES.reduce((sum,phase)=>sum+phase.minutes,0);
-    const nodes=DAILY_PHASES.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':index===entry.phaseIndex?'current':'locked';return`<li class="dc-node ${state}" style="--i:${index}"><span class="dc-node-dot">${state==='done'?'✓':phase.icon}</span><strong>${esc(phase.short)}</strong><small>${phase.minutes} min</small></li>`;}).join('');
+    const done=status==='done-today',yesterday=previousClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],unit=this.units.get(entry.lessons[0]?.unitId),title=unit?.title||'Clase del día',reviewCount=yesterday?.items?.length||0;
+    // Resumen para la pantalla de inicio, que no carga el curso.
+    if(entry.title!==title||this.daily.totalLessons!==this.allLessons().length){entry.title=title;this.daily.language=this.language;this.daily.totalLessons=this.allLessons().length;this.saveDaily();}
+    const details={review:reviewCount?`${reviewCount} palabras de la clase ${yesterday.number}`:entry.number>1?'Nada pendiente de la clase anterior':'Tu primera clase: todavía no hay nada que repasar',listen:'Escucha las frases de hoy y repítelas',learn:`${entry.items.length} palabras y frases nuevas con dibujo`,practice:'Escuchar, elegir, armar frases y escribir',close:'Frases de tus cómics y video de repaso'};
+    const nodes=DAILY_PHASES.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':index===entry.phaseIndex&&!done?'current':'locked';return`<li class="dc-step ${state}" style="--i:${index}"><span class="dc-step-dot" aria-hidden="true">${state==='done'?'✓':index+1}</span><div><strong>${esc(phase.title)}</strong><span>${esc(details[phase.id])}</span></div></li>`;}).join('');
     const chips=(items,cls='')=>items.slice(0,10).map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
     const scene=sceneFor(unit?.id,entry.items);
-    const action=done?'':`<button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${entry.phaseIndex?'Continuar':'Empezar'}: ${esc(next?.title||'')} →</button>`;
-    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>Clase ${entry.number} completada</h2><p>Tu próxima clase se abre mañana (en unas ${hoursUntilTomorrow(now)} h). Dormir entre clases es parte del método: mañana empezaremos repasando esto.</p><div class="dc-extra"><h3>¿Quieres seguir?</h3><button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar las frases de hoy</button><button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button><button data-jp-action="stories">▤ Leer una Historia</button><button class="dc-advance" data-dc-action="advance">Adelantar la clase de mañana</button></div></section>`:'';
+    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${entry.phaseIndex?`Seguir con la fase ${entry.phaseIndex+1}`:'Empezar la clase'} · ${esc(next?.short||'')} <span aria-hidden="true">→</span></button><small>Puedes parar al terminar cualquier fase y seguir mañana.</small></div>`;
+    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>Clase ${entry.number} completada</h2><p>La próxima clase se abre mañana. Dormir entre clases es parte del método: mañana empezaremos repasando esto.</p><div class="dc-extra"><h3>¿Quieres seguir?</h3><button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar las frases de hoy</button><button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button><button data-jp-action="stories">▤ Leer una Historia</button><button class="dc-advance" data-dc-action="advance">Adelantar la clase de mañana</button></div></section>`:'';
     this.shell(`<section class="dc-today ${done?'is-done':''}">
-      <header class="dc-hero">${scene?`<div class="dc-hero-scene" aria-hidden="true">${scene}</div>`:''}<div class="dc-hero-text"><span class="dc-eyebrow">CLASE ${entry.number} · ${esc(weekday(now).toUpperCase())}</span><h1>${esc(unit?.title||'Clase del día')}</h1><p>${esc(lessonTitles.join(' · '))}</p><p class="dc-meta">≈ ${minutes} min · 5 fases · puedes parar en cualquier checkpoint</p></div></header>
-      <ol class="dc-path">${nodes}<span class="dc-path-track" aria-hidden="true"><i style="--w:${Math.min(100,entry.phaseIndex/(DAILY_PHASES.length-1)*100)}%"></i></span></ol>
+      <div class="dc-title"><span class="dc-eyebrow">${esc(this.definition.name.toUpperCase())} · CLASE ${entry.number}</span><h1>${esc(title)}</h1><p>${esc(weekday(now).replace(/^./,char=>char.toUpperCase()))}</p></div>
+      <div class="dc-banner">${scene?`<div class="dc-banner-scene" aria-hidden="true">${scene.replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')}</div>`:''}<span class="dc-banner-chip">${entry.items.length} nuevas${reviewCount?` · ${reviewCount} de repaso`:''}</span></div>
+      <ol class="dc-steps">${nodes}</ol>
       ${action}${doneBlock}
       <div class="dc-columns">${entry.items.length?`<section class="dc-card"><h2>Hoy aprenderás</h2><div class="dc-chips">${chips(entry.items)}</div></section>`:''}${yesterday?.items?.length?`<section class="dc-card"><h2>Repasaremos de la clase ${yesterday.number}</h2><div class="dc-chips">${chips(yesterday.items,'old')}</div></section>`:`<section class="dc-card"><h2>Cómo funciona</h2><p>Cada clase empieza repasando la anterior. Lo que veas hoy volverá mañana, en 3 días, en una semana y en un mes.</p></section>`}</div>
       ${this.todayReviewCard()}
@@ -100,7 +111,7 @@ Object.assign(proto,{
   renderPhaseIntro(phase,{subtitle='',onStart}){
     const index=DAILY_PHASES.indexOf(phase);
     this.dailyIntro=onStart;
-    this.shell(`<section class="dc-intro" style="--phase:${index}"><div class="dc-intro-num" aria-hidden="true">${index+1}</div><span class="dc-eyebrow">FASE ${index+1} DE ${DAILY_PHASES.length} · ${phase.minutes} MIN</span><h1>${esc(phase.title)}</h1><p>${esc(subtitle||phase.description)}</p><button class="primary" data-dc-action="intro-go">Comenzar</button><button class="dc-link" data-dc-action="to-today">Volver al plan de hoy</button></section>`,'Hoy');
+    this.shell(`<section class="dc-intro" style="--phase:${index}"><div class="dc-intro-num" aria-hidden="true">${index+1}</div><span class="dc-eyebrow">FASE ${index+1} DE ${DAILY_PHASES.length}</span><h1>${esc(phase.title)}</h1><p>${esc(subtitle||phase.description)}</p><button class="primary" data-dc-action="intro-go">Comenzar</button><button class="dc-link" data-dc-action="to-today">Volver al plan de hoy</button></section>`,'Hoy');
   },
 
   async startPhase(phaseId){
@@ -406,12 +417,11 @@ Object.assign(proto,{
     if(dailyEnabled(this))content=content.replace(/data-jp-route="(course|review)"/g,'data-jp-route="today"').replace(/Volver al mapa/g,'Volver a Hoy');
     original.shell.call(this,content,section);
     if(!dailyEnabled(this))return;
-    const tabs=this.root.querySelector('.jp-app-tabs');
-    if(tabs&&!tabs.querySelector('[data-jp-route="today"]')){
-      tabs.insertAdjacentHTML('afterbegin',`<button class="jp-app-tab ${section==='Hoy'?'active':''}" data-jp-route="today" ${section==='Hoy'?'aria-current="page"':''}><span aria-hidden="true">☀</span>Hoy</button>`);
-      tabs.querySelectorAll('[data-jp-route="course"],[data-jp-route="review"]').forEach(tab=>tab.remove());
-      if(section==='Hoy'||section==='Mapa'||section==='Repaso')tabs.querySelectorAll('.jp-app-tab:not([data-jp-route="today"])').forEach(tab=>{tab.classList.remove('active');tab.removeAttribute('aria-current');});
-      if(section!=='Hoy'&&!tabs.querySelector('.active'))tabs.querySelector('[data-jp-route="today"]')?.classList.add('active');
+    const nav=this.root.querySelector('.jp-app-nav');
+    if(nav){
+      // Inicio sustituye al botón «← Idioma», que en el móvil quedaba debajo de la barra.
+      const active=section==='Perfil'?'profile':'today',tab=(attrs,icon,label,on=false)=>`<button class="jp-app-tab ${on?'active':''}" ${attrs} ${on?'aria-current="page"':''}>${NAV_ICONS[icon]}${label}</button>`;
+      nav.innerHTML=`<div class="jp-app-tabs">${tab('data-jp-action="exit"','home','Inicio')}${tab('data-jp-route="today"','today','Hoy',active==='today')}${tab('data-jp-action="stories"','stories','Historias')}${tab('data-jp-route="profile"','profile','Perfil',active==='profile')}</div>`;
     }
     if(section==='Hoy')this.setBreadcrumb?.([this.definition.name,'Clase del día']);
   },
@@ -445,7 +455,7 @@ Object.assign(proto,{
     if(this.root.querySelector('.dc-today'))return;
     const path=this.root.querySelector('.jp-learning-path');
     if(!path||this.root.querySelector('.jp-today-plan'))return;
-    path.insertAdjacentHTML('beforebegin','<section class="jp-today-plan"><div><span>HOY · 30–45 MIN</span><h2>Tu clase del día</h2><p>Repaso de ayer, escucha, lecciones nuevas, práctica y cierre, con checkpoints para parar cuando lo necesites.</p></div><button class="primary" data-jp-route="today">Abrir la clase de hoy</button></section>');
+    path.insertAdjacentHTML('beforebegin','<section class="jp-today-plan"><div><span>HOY</span><h2>Tu clase del día</h2><p>Repaso de ayer, escucha, lecciones nuevas, práctica y cierre, con checkpoints para parar cuando lo necesites.</p></div><button class="primary" data-jp-route="today">Abrir la clase de hoy</button></section>');
   },
   stop(){this.dailyPlayToken=null;this.recapPlayer?.destroy();this.recapPlayer=null;return original.stop.call(this);},
   speakTts(text,rate=1,onState=null){
