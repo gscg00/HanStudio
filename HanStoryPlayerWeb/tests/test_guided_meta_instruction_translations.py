@@ -50,7 +50,9 @@ class GuidedMetaInstructionTranslationTests(unittest.TestCase):
                     )
 
     def test_repeat_cards_use_real_spanish_translations(self):
-        for unit_name in ("survival.json", "time.json"):
+        # «time» era una copia de «survival»; desde la auditoría de 2026-10 enseña
+        # números, hora y fechas, así que estas frases solo viven en survival.
+        for unit_name in ("survival.json",):
             matched = {target: [] for target in EXPECTED}
             for activity in activities_in(ENGLISH_UNITS / unit_name):
                 target = activity.get("target") or activity.get("audio")

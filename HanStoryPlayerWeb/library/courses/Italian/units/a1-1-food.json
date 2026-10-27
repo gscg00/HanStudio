@@ -194,7 +194,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«Ho fame.» significa «Tengo hambre.».",
@@ -418,7 +418,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "café",
           "explanation": "«caffè» significa «café».",
@@ -716,7 +716,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«Ho fame.» significa «Tengo hambre.».",
@@ -1031,7 +1031,7 @@
           "target": "Vorrei un po’ di riso.",
           "options": [],
           "answer": "",
-          "explanation": "Quiero un poco de arroz.",
+          "explanation": "Quisiera un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -1052,10 +1052,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Vorrei un po’ di riso.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera un poco de arroz.",
+          "explanation": "«Vorrei un po’ di riso.» significa «Quisiera un poco de arroz.».",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -1078,7 +1078,7 @@
             "Ho sete."
           ],
           "answer": "Vorrei un po’ di riso.",
-          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quisiera un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -1462,7 +1462,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "café",
           "explanation": "«caffè» significa «café».",
@@ -1692,10 +1692,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Vorrei un po’ di riso.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera un poco de arroz.",
+          "explanation": "«Vorrei un po’ di riso.» significa «Quisiera un poco de arroz.».",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -1718,7 +1718,7 @@
             "Ho sete."
           ],
           "answer": "Vorrei un po’ di riso.",
-          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quisiera un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -1809,7 +1809,12 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Bevo tè al mattino.",
           "accepted_answers": [
-            "Bevo tè al mattino."
+            "Bevo tè al mattino.",
+            "Bevo il tè al mattino.",
+            "Bevo tè la mattina.",
+            "Bevo il tè la mattina.",
+            "Io bevo tè al mattino.",
+            "La mattina bevo il tè."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Bevo tè al mattino.».",
@@ -1832,7 +1837,7 @@
             "Vorrei un po’ di riso."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Vorrei un po’ di riso.». El ejemplo practica: Quiero un poco de arroz.",
+          "explanation": "Escuchaste «Vorrei un po’ di riso.». El ejemplo practica: Quisiera un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "tags": [
@@ -1875,7 +1880,7 @@
           "accepted_answers": [
             "riso"
           ],
-          "explanation": "La forma completa es «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
+          "explanation": "La forma completa es «Vorrei un po’ di riso.»: Quisiera un poco de arroz.",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -1909,10 +1914,12 @@
           "id": "italian-a1-1-food-production-speak",
           "type": "speak_and_transcribe",
           "prompt": "Di en voz alta: «Vorrei un po’ di riso.»",
-          "target": "Quiero un poco de arroz.",
+          "target": "Quisiera un poco de arroz.",
           "answer": "Vorrei un po’ di riso.",
           "accepted_answers": [
-            "Vorrei un po’ di riso."
+            "Vorrei un po’ di riso.",
+            "Vorrei del riso.",
+            "Un po’ di riso, per favore."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1945,7 +1952,12 @@
               "prompt": "Di o escribe en italiano: «Bebo té por la mañana.»",
               "answer": "Bevo tè al mattino.",
               "accepted_answers": [
-                "Bevo tè al mattino."
+                "Bevo tè al mattino.",
+                "Bevo il tè al mattino.",
+                "Bevo tè la mattina.",
+                "Bevo il tè la mattina.",
+                "Io bevo tè al mattino.",
+                "La mattina bevo il tè."
               ],
               "audio": "Bevo tè al mattino.",
               "allow_minor_typos": true,
@@ -1955,15 +1967,17 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 2",
-              "translation": "Quieres expresar: «Quiero un poco de arroz.»."
+              "translation": "Quieres expresar: «Quisiera un poco de arroz.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en italiano: «Quiero un poco de arroz.»",
+              "prompt": "Di o escribe en italiano: «Quisiera un poco de arroz.»",
               "answer": "Vorrei un po’ di riso.",
               "accepted_answers": [
-                "Vorrei un po’ di riso."
+                "Vorrei un po’ di riso.",
+                "Vorrei del riso.",
+                "Un po’ di riso, per favore."
               ],
               "audio": "Vorrei un po’ di riso.",
               "allow_minor_typos": true,
@@ -2156,7 +2170,7 @@
           "options": [
             "café",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "café",
           "explanation": "«caffè» significa «café».",
@@ -2386,7 +2400,7 @@
           "options": [
             "arroz",
             "Tengo hambre.",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
           "answer": "Tengo hambre.",
           "explanation": "«Ho fame.» significa «Tengo hambre.».",
@@ -2616,10 +2630,10 @@
           "options": [
             "arroz",
             "verduras",
-            "Quiero un poco de arroz."
+            "Quisiera un poco de arroz."
           ],
-          "answer": "Quiero un poco de arroz.",
-          "explanation": "«Vorrei un po’ di riso.» significa «Quiero un poco de arroz.».",
+          "answer": "Quisiera un poco de arroz.",
+          "explanation": "«Vorrei un po’ di riso.» significa «Quisiera un poco de arroz.».",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,
@@ -2642,7 +2656,7 @@
             "Ho sete."
           ],
           "answer": "Vorrei un po’ di riso.",
-          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quiero un poco de arroz.",
+          "explanation": "La forma escuchada es «Vorrei un po’ di riso.»: Quisiera un poco de arroz.",
           "audio": "Vorrei un po’ di riso.",
           "slow_audio": "Vorrei un po’ di riso.",
           "image": null,

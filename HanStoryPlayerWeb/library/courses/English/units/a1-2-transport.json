@@ -1809,7 +1809,11 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Do I need to change?",
           "accepted_answers": [
-            "Do I need to change?"
+            "Do I need to change?",
+            "Do I have to change?",
+            "Do I need to change trains?",
+            "Do I have to change trains?",
+            "Do I need to transfer?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Do I need to change?».",
@@ -1932,13 +1936,14 @@
           "id": "english-a1-2-transport-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «¿Tengo que hacer transbordo?»."
+              "speaker": "EMPLEADO",
+              "text": "This train goes to the airport.",
+              "translation": "Este tren va al aeropuerto. — Tú quieres decir: «¿Tengo que hacer transbordo?».",
+              "audio": "This train goes to the airport."
             },
             {
               "role": "learner",
@@ -1946,7 +1951,11 @@
               "prompt": "Di o escribe en inglés: «¿Tengo que hacer transbordo?»",
               "answer": "Do I need to change?",
               "accepted_answers": [
-                "Do I need to change?"
+                "Do I need to change?",
+                "Do I have to change?",
+                "Do I need to change trains?",
+                "Do I have to change trains?",
+                "Do I need to transfer?"
               ],
               "audio": "Do I need to change?",
               "allow_minor_typos": true,
@@ -1954,9 +1963,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «El tren lleva retraso.»."
+              "speaker": "EMPLEADO",
+              "text": "Why are you waiting?",
+              "translation": "¿Por qué está esperando? — Tú quieres decir: «El tren lleva retraso.».",
+              "audio": "Why are you waiting?"
             },
             {
               "role": "learner",

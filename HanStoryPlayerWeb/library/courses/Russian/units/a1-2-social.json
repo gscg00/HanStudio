@@ -397,7 +397,7 @@
           "target": "время",
           "options": [],
           "answer": "",
-          "explanation": "hora",
+          "explanation": "tiempo",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -416,12 +416,12 @@
           "prompt": "¿Qué significa «время»?",
           "target": "время",
           "options": [
-            "hora",
+            "tiempo",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
-          "explanation": "«время» significa «hora».",
+          "answer": "tiempo",
+          "explanation": "«время» significa «tiempo».",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -444,7 +444,7 @@
             "Извини, я не могу."
           ],
           "answer": "время",
-          "explanation": "La forma escuchada es «время»: hora",
+          "explanation": "La forma escuchada es «время»: tiempo",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -1460,12 +1460,12 @@
           "prompt": "¿Qué significa «время»?",
           "target": "время",
           "options": [
-            "hora",
+            "tiempo",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
-          "explanation": "«время» significa «hora».",
+          "answer": "tiempo",
+          "explanation": "«время» significa «tiempo».",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -1488,7 +1488,7 @@
             "Извини, я не могу."
           ],
           "answer": "время",
-          "explanation": "La forma escuchada es «время»: hora",
+          "explanation": "La forma escuchada es «время»: tiempo",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Где встретимся?",
           "accepted_answers": [
-            "Где встретимся?"
+            "Где встретимся?",
+            "Где мы встретимся?",
+            "Где встречаемся?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Где встретимся?».",
@@ -1910,7 +1912,10 @@
           "target": "Estoy libre después de las seis.",
           "answer": "У меня есть время после шести.",
           "accepted_answers": [
-            "У меня есть время после шести."
+            "У меня есть время после шести.",
+            "У меня есть время после 6.",
+            "Я свободен после шести.",
+            "Я свободна после шести."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1943,7 +1948,9 @@
               "prompt": "Di o escribe en ruso: «¿Dónde quedamos?»",
               "answer": "Где встретимся?",
               "accepted_answers": [
-                "Где встретимся?"
+                "Где встретимся?",
+                "Где мы встретимся?",
+                "Где встречаемся?"
               ],
               "audio": "Где встретимся?",
               "allow_minor_typos": true,
@@ -1961,7 +1968,10 @@
               "prompt": "Di o escribe en ruso: «Estoy libre después de las seis.»",
               "answer": "У меня есть время после шести.",
               "accepted_answers": [
-                "У меня есть время после шести."
+                "У меня есть время после шести.",
+                "У меня есть время после 6.",
+                "Я свободен после шести.",
+                "Я свободна после шести."
               ],
               "audio": "У меня есть время после шести.",
               "allow_minor_typos": true,
@@ -1986,7 +1996,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2170,12 +2180,12 @@
           "prompt": "¿Qué significa «время»?",
           "target": "время",
           "options": [
-            "hora",
+            "tiempo",
             "¿Quieres venir?",
             "Estoy libre después de las seis."
           ],
-          "answer": "hora",
-          "explanation": "«время» significa «hora».",
+          "answer": "tiempo",
+          "explanation": "«время» significa «tiempo».",
           "audio": "время",
           "slow_audio": "время",
           "image": null,
@@ -2198,7 +2208,7 @@
             "Извини, я не могу."
           ],
           "answer": "время",
-          "explanation": "La forma escuchada es «время»: hora",
+          "explanation": "La forma escuchada es «время»: tiempo",
           "audio": "время",
           "slow_audio": "время",
           "image": null,

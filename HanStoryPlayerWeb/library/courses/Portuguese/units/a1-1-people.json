@@ -61,7 +61,7 @@
           "target": "mãe",
           "options": [
             "madre",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
           "answer": "madre",
@@ -194,7 +194,7 @@
           "options": [
             "hermana",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "Esta es mi familia.",
           "explanation": "«Esta é a minha família.» significa «Esta es mi familia.».",
@@ -418,7 +418,7 @@
           "options": [
             "hermano",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "hermano",
           "explanation": "«irmão» significa «hermano».",
@@ -548,7 +548,7 @@
           "prompt": "¿Qué significa «Tenho dois irmãos.»?",
           "target": "Tenho dois irmãos.",
           "options": [
-            "niño",
+            "niño / niña",
             "Tengo dos hermanos.",
             "madre"
           ],
@@ -623,7 +623,7 @@
           "target": "mãe",
           "options": [
             "madre",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
           "answer": "madre",
@@ -716,7 +716,7 @@
           "options": [
             "hermana",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "Esta es mi familia.",
           "explanation": "«Esta é a minha família.» significa «Esta es mi familia.».",
@@ -899,7 +899,7 @@
           "target": "criança",
           "options": [],
           "answer": "",
-          "explanation": "niño",
+          "explanation": "niño / niña",
           "audio": "criança",
           "slow_audio": "criança",
           "image": null,
@@ -910,7 +910,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "criança es siempre femenino (a criança) aunque se refiera a un niño."
         },
         {
           "id": "portuguese-a11-people-03-06-meaning",
@@ -919,10 +920,10 @@
           "target": "criança",
           "options": [
             "Vivimos juntos.",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
-          "answer": "niño",
+          "answer": "niño / niña",
           "explanation": "«criança» significa «niño».",
           "audio": "criança",
           "slow_audio": "criança",
@@ -1031,7 +1032,7 @@
           "target": "Quantos anos tem?",
           "options": [],
           "answer": "",
-          "explanation": "¿Cuántos años tienes?",
+          "explanation": "¿Cuántos años tiene?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -1052,10 +1053,10 @@
           "options": [
             "hermana",
             "hombre",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
-          "answer": "¿Cuántos años tienes?",
-          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tienes?».",
+          "answer": "¿Cuántos años tiene?",
+          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tiene?».",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -1078,7 +1079,7 @@
             "Ele é meu amigo."
           ],
           "answer": "Quantos anos tem?",
-          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tienes?",
+          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tiene?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -1462,7 +1463,7 @@
           "options": [
             "hermano",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "hermano",
           "explanation": "«irmão» significa «hermano».",
@@ -1507,10 +1508,10 @@
           "target": "criança",
           "options": [
             "Vivimos juntos.",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
-          "answer": "niño",
+          "answer": "niño / niña",
           "explanation": "«criança» significa «niño».",
           "audio": "criança",
           "slow_audio": "criança",
@@ -1644,7 +1645,7 @@
           "prompt": "¿Qué significa «Tenho dois irmãos.»?",
           "target": "Tenho dois irmãos.",
           "options": [
-            "niño",
+            "niño / niña",
             "Tengo dos hermanos.",
             "madre"
           ],
@@ -1692,10 +1693,10 @@
           "options": [
             "hermana",
             "hombre",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
-          "answer": "¿Cuántos años tienes?",
-          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tienes?».",
+          "answer": "¿Cuántos años tiene?",
+          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tiene?».",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -1718,7 +1719,7 @@
             "Ele é meu amigo."
           ],
           "answer": "Quantos anos tem?",
-          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tienes?",
+          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tiene?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -1809,7 +1810,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Quem é?",
           "accepted_answers": [
-            "Quem é?"
+            "Quem é?",
+            "Quem é ele?",
+            "Quem é ela?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Quem é?».",
@@ -1832,7 +1835,7 @@
             "Quantos anos tem?"
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Quantos anos tem?». El ejemplo practica: ¿Cuántos años tienes?",
+          "explanation": "Escuchaste «Quantos anos tem?». El ejemplo practica: ¿Cuántos años tiene?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "tags": [
@@ -1873,7 +1876,7 @@
           "accepted_answers": [
             "tem"
           ],
-          "explanation": "La forma completa es «Quantos anos tem?»: ¿Cuántos años tienes?",
+          "explanation": "La forma completa es «Quantos anos tem?»: ¿Cuántos años tiene?",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -1907,10 +1910,13 @@
           "id": "portuguese-a1-1-people-production-speak",
           "type": "speak_and_transcribe",
           "prompt": "Di en voz alta: «Quantos anos tem?»",
-          "target": "¿Cuántos años tienes?",
+          "target": "¿Cuántos años tiene?",
           "answer": "Quantos anos tem?",
           "accepted_answers": [
-            "Quantos anos tem?"
+            "Quantos anos tem?",
+            "Quantos anos tens?",
+            "Que idade tem?",
+            "Que idade tens?"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1943,7 +1949,9 @@
               "prompt": "Di o escribe en portugués: «¿Quién es?»",
               "answer": "Quem é?",
               "accepted_answers": [
-                "Quem é?"
+                "Quem é?",
+                "Quem é ele?",
+                "Quem é ela?"
               ],
               "audio": "Quem é?",
               "allow_minor_typos": true,
@@ -1953,15 +1961,18 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 2",
-              "translation": "Quieres expresar: «¿Cuántos años tienes?»."
+              "translation": "Quieres expresar: «¿Cuántos años tiene?»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en portugués: «¿Cuántos años tienes?»",
+              "prompt": "Di o escribe en portugués: «¿Cuántos años tiene?»",
               "answer": "Quantos anos tem?",
               "accepted_answers": [
-                "Quantos anos tem?"
+                "Quantos anos tem?",
+                "Quantos anos tens?",
+                "Que idade tem?",
+                "Que idade tens?"
               ],
               "audio": "Quantos anos tem?",
               "allow_minor_typos": true,
@@ -2015,7 +2026,7 @@
           "target": "mãe",
           "options": [
             "madre",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
           "answer": "madre",
@@ -2154,7 +2165,7 @@
           "options": [
             "hermano",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "hermano",
           "explanation": "«irmão» significa «hermano».",
@@ -2245,10 +2256,10 @@
           "target": "criança",
           "options": [
             "Vivimos juntos.",
-            "niño",
+            "niño / niña",
             "Ella es mi hermana."
           ],
-          "answer": "niño",
+          "answer": "niño / niña",
           "explanation": "«criança» significa «niño».",
           "audio": "criança",
           "slow_audio": "criança",
@@ -2384,7 +2395,7 @@
           "options": [
             "hermana",
             "Esta es mi familia.",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
           "answer": "Esta es mi familia.",
           "explanation": "«Esta é a minha família.» significa «Esta es mi familia.».",
@@ -2520,7 +2531,7 @@
           "prompt": "¿Qué significa «Tenho dois irmãos.»?",
           "target": "Tenho dois irmãos.",
           "options": [
-            "niño",
+            "niño / niña",
             "Tengo dos hermanos.",
             "madre"
           ],
@@ -2614,10 +2625,10 @@
           "options": [
             "hermana",
             "hombre",
-            "¿Cuántos años tienes?"
+            "¿Cuántos años tiene?"
           ],
-          "answer": "¿Cuántos años tienes?",
-          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tienes?».",
+          "answer": "¿Cuántos años tiene?",
+          "explanation": "«Quantos anos tem?» significa «¿Cuántos años tiene?».",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,
@@ -2640,7 +2651,7 @@
             "Ele é meu amigo."
           ],
           "answer": "Quantos anos tem?",
-          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tienes?",
+          "explanation": "La forma escuchada es «Quantos anos tem?»: ¿Cuántos años tiene?",
           "audio": "Quantos anos tem?",
           "slow_audio": "Quantos anos tem?",
           "image": null,

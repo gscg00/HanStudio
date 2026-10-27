@@ -1809,7 +1809,12 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Außerdem muss ich Essen kaufen.",
           "accepted_answers": [
-            "Außerdem muss ich Essen kaufen."
+            "Außerdem muss ich Essen kaufen.",
+            "Außerdem muss ich Lebensmittel kaufen.",
+            "Außerdem muss ich etwas zu essen kaufen.",
+            "Ausserdem muss ich Essen kaufen.",
+            "Ausserdem muss ich Lebensmittel kaufen.",
+            "Ausserdem muss ich etwas zu essen kaufen."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Außerdem muss ich Essen kaufen.».",
@@ -1893,7 +1898,10 @@
           "target": "por eso",
           "answer": "deshalb",
           "accepted_answers": [
-            "deshalb"
+            "deshalb",
+            "deswegen",
+            "darum",
+            "daher"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1946,7 +1954,12 @@
               "prompt": "Di o escribe en alemán: «Además, necesito comprar comida.»",
               "answer": "Außerdem muss ich Essen kaufen.",
               "accepted_answers": [
-                "Außerdem muss ich Essen kaufen."
+                "Außerdem muss ich Essen kaufen.",
+                "Außerdem muss ich Lebensmittel kaufen.",
+                "Außerdem muss ich etwas zu essen kaufen.",
+                "Ausserdem muss ich Essen kaufen.",
+                "Ausserdem muss ich Lebensmittel kaufen.",
+                "Ausserdem muss ich etwas zu essen kaufen."
               ],
               "audio": "Außerdem muss ich Essen kaufen.",
               "allow_minor_typos": true,
@@ -1982,14 +1995,17 @@
               "prompt": "Di o escribe en alemán: «por eso»",
               "answer": "deshalb",
               "accepted_answers": [
-                "deshalb"
+                "deshalb",
+                "deswegen",
+                "darum",
+                "daher"
               ],
               "audio": "deshalb",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

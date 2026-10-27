@@ -1809,7 +1809,11 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "I plan to book a room.",
           "accepted_answers": [
-            "I plan to book a room."
+            "I plan to book a room.",
+            "I am planning to book a room.",
+            "I'm planning to book a room.",
+            "I intend to book a room.",
+            "I plan to reserve a room."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «I plan to book a room.».",
@@ -1894,7 +1898,10 @@
           "target": "reservar",
           "answer": "to book",
           "accepted_answers": [
-            "to book"
+            "to book",
+            "book",
+            "to reserve",
+            "reserve"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1914,7 +1921,8 @@
           "target": "Te llamaré cuando llegue.",
           "answer": "I will call you when I arrive.",
           "accepted_answers": [
-            "I will call you when I arrive."
+            "I will call you when I arrive.",
+            "I'll call you when I arrive."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1947,7 +1955,11 @@
               "prompt": "Di o escribe en inglés: «Pienso reservar una habitación.»",
               "answer": "I plan to book a room.",
               "accepted_answers": [
-                "I plan to book a room."
+                "I plan to book a room.",
+                "I am planning to book a room.",
+                "I'm planning to book a room.",
+                "I intend to book a room.",
+                "I plan to reserve a room."
               ],
               "audio": "I plan to book a room.",
               "allow_minor_typos": true,
@@ -1965,7 +1977,8 @@
               "prompt": "Di o escribe en inglés: «Te llamaré cuando llegue.»",
               "answer": "I will call you when I arrive.",
               "accepted_answers": [
-                "I will call you when I arrive."
+                "I will call you when I arrive.",
+                "I'll call you when I arrive."
               ],
               "audio": "I will call you when I arrive.",
               "allow_minor_typos": true,

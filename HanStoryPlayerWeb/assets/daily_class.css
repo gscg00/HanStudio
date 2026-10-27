@@ -100,6 +100,7 @@
 .dc-lines li button{flex:1;display:grid;gap:.15rem;text-align:left;background:none;border:0;border-radius:12px;padding:.55rem .7rem}
 .dc-line-ko{font-size:1.35rem;font-weight:700;color:var(--dc-ink)}
 .dc-line-es{font-size:.9rem;font-weight:500;color:var(--dc-muted)}
+.dc-line-reading{font-size:.85rem;font-style:italic;color:var(--dc-accent);opacity:.9}
 .dc-line-pic{width:46px;height:46px;flex:none}
 .dc-line-pic svg{width:100%;height:100%}
 .dc-lines li.speaking{background:#fff1e6;box-shadow:inset 4px 0 0 var(--dc-accent),0 8px 20px #d96c3d22;transform:translateX(4px)}
@@ -155,6 +156,26 @@
 .dc-map-body{padding:0 1rem 1rem}
 .jp-app[data-jp-theme="dark"] .dc-map{background:#17332c;border-color:#ffffff18}
 .jp-app[data-jp-theme="dark"] .dc-map>summary{color:#ecf3ed}
+
+/* En tus cómics (paso final del cierre) */
+.dc-comic{--dc-ink:var(--jp-green,#173f35);--dc-accent:var(--jp-orange,#d96c3d);--dc-muted:#5d6f69;display:grid;gap:1rem;margin-top:1rem}
+.dc-comic-head h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4.5vw,2.2rem);margin:.3rem 0 0;color:var(--dc-ink)}
+.dc-comic-card{position:relative;display:grid;gap:1rem;padding:1.4rem;border-radius:22px;background:#fffdf6;border:3px solid #1d1f26;box-shadow:8px 8px 0 #1d1f2622;animation:dc-pop .4s both}
+.dc-comic-source{justify-self:start;padding:.25rem .7rem;border-radius:8px;background:#1d1f26;color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+.dc-comic-text{display:block;text-align:left;background:#fff;border:2px solid #1d1f26;border-radius:26px;padding:1.1rem 1.3rem;font-size:clamp(1.3rem,4.5vw,1.9rem);font-weight:800;line-height:1.35;color:#1d1f26}
+.dc-comic-text small{display:block;margin-top:.4rem;font-size:.8rem;color:var(--dc-accent)}
+.dc-comic-text mark{background:#ffe08a;color:inherit;border-radius:6px;padding:0 .15em}
+.dc-comic-help{margin:0;color:var(--dc-muted)}
+.dc-comic-reveal{display:grid;gap:.5rem;animation:dc-rise .35s both}
+.dc-comic-reveal strong{font-size:1.2rem;color:var(--dc-ink)}
+.dc-comic-reveal p{margin:0;color:var(--dc-muted)}
+.dc-comic-reveal dl{display:grid;grid-template-columns:auto 1fr;gap:.3rem .9rem;margin:.3rem 0 0}
+.dc-comic-reveal dt{font-weight:800}
+.dc-comic-reveal dd{margin:0;color:var(--dc-muted)}
+.dc-comic-actions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:flex-end}
+.dc-freq{margin:.4rem auto 0;font-size:.85rem;font-weight:700;color:var(--jp-orange,#d96c3d);text-align:center}
+.jp-app[data-jp-theme="dark"] .dc-comic-card{background:#17332c;border-color:#ecf3ed}
+.jp-app[data-jp-theme="dark"] .dc-comic-text{background:#1d3d35;color:#ecf3ed}
 
 /* Video de repaso */
 .dc-recap{--dc-ink:var(--jp-green,#173f35);--dc-accent:var(--jp-orange,#d96c3d);--dc-muted:#5d6f69;--dc-line:#173f3522;display:grid;gap:.9rem;margin-top:1rem}

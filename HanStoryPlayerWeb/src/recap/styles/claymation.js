@@ -5,7 +5,7 @@
 // barren a un lado para cambiar de escena; letras y números son plastilina prensada
 // y se rehacen cada vez que cambian. Acabado de lente: soft-light cálido/frío,
 // viñeta, parpadeo de exposición por fotograma y grano.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,glyphUnits,wrapLines} from './shared.js';
 
 const H=window.H,TAU=Math.PI*2;
 const KR='"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif';
@@ -72,9 +72,9 @@ let fontsOk=false;
 const fontsReady=()=>fontsOk||(fontsOk=(()=>{try{return document.fonts.check('700 44px "Fredoka"');}catch{return true;}})());
 const glyph=(ch,px,col)=>{
   const c=mctx();c.font=FR(px);const w=Math.ceil(c.measureText(ch).width)+4,h=Math.ceil(px*1.05);
-  return bake('g'+(fontsReady()?1:0)+ch+px+col,w,h,{R:Math.max(4,px*0.075),dome:1.3,lump:0.8,seed:ch.charCodeAt(0),color:col,draw:x=>{x.font=FR(px);x.fillText(ch,2,px*0.82);},fps:px>60?prn(ch.charCodeAt(0)+px,w,h,1,px*0.18):[]});
+  return bake('g'+(fontsReady()?1:0)+ch+px+col,w,h,{R:Math.max(4,px*0.075),dome:1.3,lump:0.8,seed:ch.charCodeAt(0)+ch.length,color:col,draw:x=>{x.font=FR(px);x.fillText(ch,2,px*0.82);},fps:px>60?prn(ch.charCodeAt(0)+px,w,h,1,px*0.18):[]});
 };
-const wordW=(str,px)=>{const c=mctx();c.font=FR(px);let w=0;for(const ch of str)w+=c.measureText(ch).width+px*0.04;return w;};
+const wordW=(str,px)=>{const c=mctx();c.font=FR(px);let w=0;for(const ch of glyphUnits(str))w+=c.measureText(ch).width+px*0.04;return w;};
 
 // ---------- utilería horneada ----------
 const SPR={
@@ -144,7 +144,7 @@ const obj=(G,ctx,spr,x,y,L,o={})=>{if(L&&!G.dry)place(ctx,spr(),x+L.dx,y+L.dy,{.
 // palabra de letras prensadas, una pieza por letra
 function word(G,ctx,str,x,y,px,st,cols=PAL,o={}){
   const m=mctx();m.font=FR(px);let cx=x,i=0;const step=o.step??1/24,off=o.colOff||0;
-  for(const ch of str){
+  for(const ch of glyphUnits(str)){
     const w=m.measureText(ch).width;
     if(ch!==' '){
       const col=typeof cols==='string'?cols:cols[(i+off)%cols.length];

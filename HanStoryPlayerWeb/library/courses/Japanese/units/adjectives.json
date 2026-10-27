@@ -921,8 +921,8 @@
           "target": "おおきい",
           "options": [
             "grande",
-            "La palabra completa es あたらしい. Escúchala seguida.",
-            "あかい significa «rojo»."
+            "pequeño",
+            "bonito o adorable"
           ],
           "answer": "grande",
           "explanation": "grande",
@@ -942,12 +942,12 @@
           "prompt": "Recuerda: ¿qué expresa ちいさい?",
           "target": "ちいさい",
           "options": [
-            "ちいさい significa «pequeño».",
-            "La palabra completa es あたらしい. Escúchala seguida.",
-            "Escuchaste かわいい: bonito o adorable."
+            "pequeño",
+            "bonito o adorable",
+            "peligroso"
           ],
-          "answer": "ちいさい significa «pequeño».",
-          "explanation": "ちいさい significa «pequeño».",
+          "answer": "pequeño",
+          "explanation": "pequeño",
           "audio": "ちいさい",
           "slow_audio": "ちいさい",
           "image": null,
@@ -964,12 +964,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "かわいい significa «bonito o adorable».",
             "bonito o adorable",
-            "おおきい significa «grande»."
+            "peligroso",
+            "nuevo"
           ],
-          "answer": "かわいい significa «bonito o adorable».",
-          "explanation": "かわいい significa «bonito o adorable».",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -986,12 +986,12 @@
           "prompt": "Recuerda: ¿qué expresa あぶない?",
           "target": "あぶない",
           "options": [
-            "あぶない significa «peligroso».",
-            "La palabra completa es ちいさい. Escúchala seguida.",
-            "La palabra completa es くろい. Escúchala seguida."
+            "peligroso",
+            "nuevo",
+            "rojo"
           ],
-          "answer": "あぶない significa «peligroso».",
-          "explanation": "あぶない significa «peligroso».",
+          "answer": "peligroso",
+          "explanation": "peligroso",
           "audio": "あぶない",
           "slow_audio": "あぶない",
           "image": null,
@@ -1008,12 +1008,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "La palabra completa es あたらしい. Escúchala seguida.",
-            "La palabra completa es ちいさい. Escúchala seguida.",
-            "rojo"
+            "nuevo",
+            "rojo",
+            "azul"
           ],
-          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
-          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -1030,12 +1030,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "La palabra completa es あかい. Escúchala seguida.",
+            "rojo",
             "negro",
-            "くろい significa «negro»."
+            "azul"
           ],
-          "answer": "La palabra completa es あかい. Escúchala seguida.",
-          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -1052,12 +1052,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "Escuchaste あかい: rojo.",
-            "おおきい significa «grande».",
-            "La palabra completa es あかい. Escúchala seguida."
+            "rojo",
+            "azul",
+            "blanco"
           ],
-          "answer": "Escuchaste あかい: rojo.",
-          "explanation": "Escuchaste あかい: rojo.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -1074,12 +1074,12 @@
           "prompt": "Recuerda: ¿qué expresa しろい?",
           "target": "しろい",
           "options": [
-            "Escuchaste しろい: blanco.",
-            "La palabra completa es ちいさい. Escúchala seguida.",
-            "La palabra completa es あおい. Escúchala seguida."
+            "blanco",
+            "negro",
+            "Los adjetivos い van directamente antes del sustantivo"
           ],
-          "answer": "Escuchaste しろい: blanco.",
-          "explanation": "Escuchaste しろい: blanco.",
+          "answer": "blanco",
+          "explanation": "blanco",
           "audio": "しろい",
           "slow_audio": "しろい",
           "image": null,
@@ -1127,7 +1127,10 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "El adjetivo va delante, sin partícula: あかいほん = libro rojo."
+          ]
         },
         {
           "id": "jp-book1-adj-pattern-01-model-1",
@@ -1153,7 +1156,7 @@
           "options": [
             "Es un libro rojo.",
             "Es un gato blanco.",
-            "No corresponde a esta oración."
+            "No es grande."
           ],
           "answer": "Es un libro rojo.",
           "explanation": "Es un libro rojo.",
@@ -1191,7 +1194,7 @@
           "options": [
             "Es un gato blanco.",
             "Es un libro rojo.",
-            "No corresponde a esta oración."
+            "No es grande."
           ],
           "answer": "Es un gato blanco.",
           "explanation": "Es un gato blanco.",
@@ -1242,7 +1245,12 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "Cambia la い final por くありません: おおきい → おおきくありません.",
+            "También se dice おおきくないです.",
+            "Excepción: いい → よくありません."
+          ]
         },
         {
           "id": "jp-book1-adj-pattern-02-model-1",
@@ -1268,7 +1276,7 @@
           "options": [
             "No es grande.",
             "No es muy grande.",
-            "No corresponde a esta oración."
+            "Es adorable, ¿verdad?"
           ],
           "answer": "No es grande.",
           "explanation": "No es grande.",
@@ -1306,7 +1314,7 @@
           "options": [
             "No es muy grande.",
             "No es grande.",
-            "No corresponde a esta oración."
+            "Es adorable, ¿verdad?"
           ],
           "answer": "No es muy grande.",
           "explanation": "No es muy grande.",
@@ -1353,7 +1361,7 @@
           "options": [
             "grande",
             "azul",
-            "Escuchaste しろい: blanco."
+            "pequeño"
           ],
           "answer": "grande",
           "explanation": "grande",
@@ -1373,12 +1381,12 @@
           "prompt": "Recuerda: ¿qué expresa ちいさい?",
           "target": "ちいさい",
           "options": [
-            "ちいさい significa «pequeño».",
+            "pequeño",
             "Es un gato blanco.",
             "Es un libro rojo."
           ],
-          "answer": "ちいさい significa «pequeño».",
-          "explanation": "ちいさい significa «pequeño».",
+          "answer": "pequeño",
+          "explanation": "pequeño",
           "audio": "ちいさい",
           "slow_audio": "ちいさい",
           "image": null,
@@ -1395,12 +1403,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "かわいい significa «bonito o adorable».",
+            "bonito o adorable",
             "No es grande.",
             "rojo"
           ],
-          "answer": "かわいい significa «bonito o adorable».",
-          "explanation": "かわいい significa «bonito o adorable».",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -1417,12 +1425,12 @@
           "prompt": "Recuerda: ¿qué expresa あぶない?",
           "target": "あぶない",
           "options": [
-            "あぶない significa «peligroso».",
-            "La palabra completa es くろい. Escúchala seguida.",
-            "No es grande."
+            "peligroso",
+            "No es grande.",
+            "nuevo"
           ],
-          "answer": "あぶない significa «peligroso».",
-          "explanation": "あぶない significa «peligroso».",
+          "answer": "peligroso",
+          "explanation": "peligroso",
           "audio": "あぶない",
           "slow_audio": "あぶない",
           "image": null,
@@ -1439,12 +1447,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "La palabra completa es あたらしい. Escúchala seguida.",
+            "nuevo",
             "Es un libro rojo.",
-            "Escuchaste おおきい: grande."
+            "rojo"
           ],
-          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
-          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -1461,12 +1469,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "La palabra completa es あかい. Escúchala seguida.",
-            "Escuchaste かわいい: bonito o adorable.",
-            "La palabra completa es あぶない. Escúchala seguida."
+            "rojo",
+            "azul",
+            "blanco"
           ],
-          "answer": "La palabra completa es あかい. Escúchala seguida.",
-          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -1483,12 +1491,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "Escuchaste あかい: rojo.",
-            "Escuchaste しろい: blanco.",
-            "La palabra completa es おおきい. Escúchala seguida."
+            "rojo",
+            "azul",
+            "blanco"
           ],
-          "answer": "Escuchaste あかい: rojo.",
-          "explanation": "Escuchaste あかい: rojo.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -1505,12 +1513,12 @@
           "prompt": "Recuerda: ¿qué expresa しろい?",
           "target": "しろい",
           "options": [
-            "Escuchaste しろい: blanco.",
-            "La palabra completa es あぶない. Escúchala seguida.",
-            "grande"
+            "blanco",
+            "grande",
+            "negro"
           ],
-          "answer": "Escuchaste しろい: blanco.",
-          "explanation": "Escuchaste しろい: blanco.",
+          "answer": "blanco",
+          "explanation": "blanco",
           "audio": "しろい",
           "slow_audio": "しろい",
           "image": null,
@@ -1558,7 +1566,10 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "ね al final busca acuerdo: «¿verdad?», «¿no?»."
+          ]
         },
         {
           "id": "jp-book1-adj-pattern-03-model-1",
@@ -1583,8 +1594,8 @@
           "target": "かわいいですね。",
           "options": [
             "Es adorable, ¿verdad?",
-            "No corresponde a esta oración.",
-            "grande"
+            "grande",
+            "Porque es peligroso."
           ],
           "answer": "Es adorable, ¿verdad?",
           "explanation": "Es adorable, ¿verdad?",
@@ -1635,7 +1646,10 @@
           "writing_asset": null,
           "tags": [],
           "xp": 3,
-          "gradable": false
+          "gradable": false,
+          "teaching_points": [
+            "から después de la razón = porque: あぶないですから。 = Porque es peligroso."
+          ]
         },
         {
           "id": "jp-book1-adj-pattern-04-model-1",
@@ -1660,8 +1674,8 @@
           "target": "あぶないですから。",
           "options": [
             "Porque es peligroso.",
-            "No corresponde a esta oración.",
-            "grande"
+            "grande",
+            "Es adorable, ¿verdad?"
           ],
           "answer": "Porque es peligroso.",
           "explanation": "Porque es peligroso.",
@@ -1707,8 +1721,8 @@
           "target": "おおきい",
           "options": [
             "grande",
-            "Escuchaste あたらしい: nuevo.",
-            "Explicar una razón"
+            "Explicar una razón",
+            "pequeño"
           ],
           "answer": "grande",
           "explanation": "grande",
@@ -1728,12 +1742,12 @@
           "prompt": "Recuerda: ¿qué expresa ちいさい?",
           "target": "ちいさい",
           "options": [
-            "La palabra completa es ちいさい. Escúchala seguida.",
+            "pequeño",
             "No es grande.",
-            "Escuchaste おおきい: grande."
+            "bonito o adorable"
           ],
-          "answer": "La palabra completa es ちいさい. Escúchala seguida.",
-          "explanation": "La palabra completa es ちいさい. Escúchala seguida.",
+          "answer": "pequeño",
+          "explanation": "pequeño",
           "audio": "ちいさい",
           "slow_audio": "ちいさい",
           "image": null,
@@ -1750,12 +1764,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "Escuchaste かわいい: bonito o adorable.",
-            "La palabra completa es ちいさい. Escúchala seguida.",
-            "La palabra completa es くろい. Escúchala seguida."
+            "bonito o adorable",
+            "peligroso",
+            "nuevo"
           ],
-          "answer": "Escuchaste かわいい: bonito o adorable.",
-          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -1772,12 +1786,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "あたらしい significa «nuevo».",
-            "La palabra completa es あぶない. Escúchala seguida.",
-            "peligroso"
+            "nuevo",
+            "peligroso",
+            "rojo"
           ],
-          "answer": "あたらしい significa «nuevo».",
-          "explanation": "あたらしい significa «nuevo».",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -1794,12 +1808,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "La palabra completa es あかい. Escúchala seguida.",
+            "rojo",
             "Es un gato blanco.",
-            "Escuchaste あたらしい: nuevo."
+            "azul"
           ],
-          "answer": "La palabra completa es あかい. Escúchala seguida.",
-          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -1817,8 +1831,8 @@
           "target": "しろい",
           "options": [
             "blanco",
-            "あたらしい significa «nuevo».",
-            "La palabra completa es あぶない. Escúchala seguida."
+            "negro",
+            "Los adjetivos い van directamente antes del sustantivo"
           ],
           "answer": "blanco",
           "explanation": "blanco",
@@ -1838,12 +1852,12 @@
           "prompt": "Recuerda: ¿qué expresa くろい?",
           "target": "くろい",
           "options": [
-            "くろい significa «negro».",
-            "あかい significa «rojo».",
-            "Pedir o compartir confirmación"
+            "negro",
+            "Pedir o compartir confirmación",
+            "Los adjetivos い van directamente antes del sustantivo"
           ],
-          "answer": "くろい significa «negro».",
-          "explanation": "くろい significa «negro».",
+          "answer": "negro",
+          "explanation": "negro",
           "audio": "くろい",
           "slow_audio": "くろい",
           "image": null,
@@ -1861,8 +1875,8 @@
           "target": "Negativo de adjetivos い",
           "options": [
             "Cambia い por くありません",
-            "しろい significa «blanco».",
-            "pequeño"
+            "pequeño",
+            "Pedir o compartir confirmación"
           ],
           "answer": "Cambia い por くありません",
           "explanation": "Cambia い por くありません",
@@ -1909,7 +1923,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "あぶない",
           "accepted_answers": [
-            "あぶない"
+            "あぶない",
+            "危ない"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «あぶない».",
@@ -1929,7 +1944,8 @@
           "instruction": "Escribe exactamente lo que oyes.",
           "answer": "あたらしい",
           "accepted_answers": [
-            "あたらしい"
+            "あたらしい",
+            "新しい"
           ],
           "allow_minor_typos": true,
           "explanation": "Escuchaste «あたらしい». El ejemplo practica: nuevo",
@@ -1992,7 +2008,8 @@
           "target": "rojo",
           "answer": "あかい",
           "accepted_answers": [
-            "あかい"
+            "あかい",
+            "赤い"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -2012,7 +2029,8 @@
           "target": "nuevo",
           "answer": "あたらしい",
           "accepted_answers": [
-            "あたらしい"
+            "あたらしい",
+            "新しい"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -2045,7 +2063,8 @@
               "prompt": "Di o escribe en japonés: «peligroso»",
               "answer": "あぶない",
               "accepted_answers": [
-                "あぶない"
+                "あぶない",
+                "危ない"
               ],
               "audio": "あぶない",
               "allow_minor_typos": true,
@@ -2063,7 +2082,8 @@
               "prompt": "Di o escribe en japonés: «nuevo»",
               "answer": "あたらしい",
               "accepted_answers": [
-                "あたらしい"
+                "あたらしい",
+                "新しい"
               ],
               "audio": "あたらしい",
               "allow_minor_typos": true,
@@ -2112,8 +2132,8 @@
           "target": "おおきい",
           "options": [
             "grande",
-            "かわいい significa «bonito o adorable».",
-            "La palabra completa es かわいい. Escúchala seguida."
+            "pequeño",
+            "bonito o adorable"
           ],
           "answer": "grande",
           "explanation": "grande",
@@ -2133,12 +2153,12 @@
           "prompt": "Recuerda: ¿qué expresa おおきい?",
           "target": "おおきい",
           "options": [
-            "おおきい significa «grande».",
+            "grande",
             "peligroso",
             "bonito o adorable"
           ],
-          "answer": "おおきい significa «grande».",
-          "explanation": "おおきい significa «grande».",
+          "answer": "grande",
+          "explanation": "grande",
           "audio": "おおきい",
           "slow_audio": "おおきい",
           "image": null,
@@ -2155,12 +2175,12 @@
           "prompt": "Recuerda: ¿qué expresa おおきい?",
           "target": "おおきい",
           "options": [
-            "La palabra completa es おおきい. Escúchala seguida.",
+            "grande",
             "Explicar una razón",
-            "Escuchaste かわいい: bonito o adorable."
+            "pequeño"
           ],
-          "answer": "La palabra completa es おおきい. Escúchala seguida.",
-          "explanation": "La palabra completa es おおきい. Escúchala seguida.",
+          "answer": "grande",
+          "explanation": "grande",
           "audio": "おおきい",
           "slow_audio": "おおきい",
           "image": null,
@@ -2178,8 +2198,8 @@
           "target": "ちいさい",
           "options": [
             "pequeño",
-            "La palabra completa es かわいい. Escúchala seguida.",
-            "Es adorable, ¿verdad?"
+            "Es adorable, ¿verdad?",
+            "bonito o adorable"
           ],
           "answer": "pequeño",
           "explanation": "pequeño",
@@ -2199,12 +2219,12 @@
           "prompt": "Recuerda: ¿qué expresa ちいさい?",
           "target": "ちいさい",
           "options": [
-            "ちいさい significa «pequeño».",
+            "pequeño",
             "grande",
-            "Escuchaste あたらしい: nuevo."
+            "bonito o adorable"
           ],
-          "answer": "ちいさい significa «pequeño».",
-          "explanation": "ちいさい significa «pequeño».",
+          "answer": "pequeño",
+          "explanation": "pequeño",
           "audio": "ちいさい",
           "slow_audio": "ちいさい",
           "image": null,
@@ -2221,12 +2241,12 @@
           "prompt": "Recuerda: ¿qué expresa ちいさい?",
           "target": "ちいさい",
           "options": [
-            "La palabra completa es ちいさい. Escúchala seguida.",
+            "pequeño",
             "Es adorable, ¿verdad?",
             "Pedir o compartir confirmación"
           ],
-          "answer": "La palabra completa es ちいさい. Escúchala seguida.",
-          "explanation": "La palabra completa es ちいさい. Escúchala seguida.",
+          "answer": "pequeño",
+          "explanation": "pequeño",
           "audio": "ちいさい",
           "slow_audio": "ちいさい",
           "image": null,
@@ -2243,12 +2263,12 @@
           "prompt": "Recuerda: ¿qué expresa おおきい?",
           "target": "おおきい",
           "options": [
-            "Escuchaste おおきい: grande.",
+            "grande",
             "Es un libro rojo.",
             "bonito o adorable"
           ],
-          "answer": "Escuchaste おおきい: grande.",
-          "explanation": "Escuchaste おおきい: grande.",
+          "answer": "grande",
+          "explanation": "grande",
           "audio": "おおきい",
           "slow_audio": "おおきい",
           "image": null,
@@ -2266,8 +2286,8 @@
           "target": "かわいい",
           "options": [
             "bonito o adorable",
-            "しろい significa «blanco».",
-            "Explicar una razón"
+            "Explicar una razón",
+            "peligroso"
           ],
           "answer": "bonito o adorable",
           "explanation": "bonito o adorable",
@@ -2287,12 +2307,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "かわいい significa «bonito o adorable».",
-            "La palabra completa es あかい. Escúchala seguida.",
-            "grande"
+            "bonito o adorable",
+            "grande",
+            "peligroso"
           ],
-          "answer": "かわいい significa «bonito o adorable».",
-          "explanation": "かわいい significa «bonito o adorable».",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -2309,12 +2329,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "La palabra completa es かわいい. Escúchala seguida.",
+            "bonito o adorable",
             "grande",
-            "Escuchaste あたらしい: nuevo."
+            "peligroso"
           ],
-          "answer": "La palabra completa es かわいい. Escúchala seguida.",
-          "explanation": "La palabra completa es かわいい. Escúchala seguida.",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -2331,12 +2351,12 @@
           "prompt": "Recuerda: ¿qué expresa かわいい?",
           "target": "かわいい",
           "options": [
-            "Escuchaste かわいい: bonito o adorable.",
+            "bonito o adorable",
             "rojo",
-            "La palabra completa es あたらしい. Escúchala seguida."
+            "peligroso"
           ],
-          "answer": "Escuchaste かわいい: bonito o adorable.",
-          "explanation": "Escuchaste かわいい: bonito o adorable.",
+          "answer": "bonito o adorable",
+          "explanation": "bonito o adorable",
           "audio": "かわいい",
           "slow_audio": "かわいい",
           "image": null,
@@ -2375,12 +2395,12 @@
           "prompt": "Recuerda: ¿qué expresa あぶない?",
           "target": "あぶない",
           "options": [
-            "あぶない significa «peligroso».",
             "peligroso",
-            "Porque es peligroso."
+            "Porque es peligroso.",
+            "nuevo"
           ],
-          "answer": "あぶない significa «peligroso».",
-          "explanation": "あぶない significa «peligroso».",
+          "answer": "peligroso",
+          "explanation": "peligroso",
           "audio": "あぶない",
           "slow_audio": "あぶない",
           "image": null,
@@ -2397,12 +2417,12 @@
           "prompt": "Recuerda: ¿qué expresa あぶない?",
           "target": "あぶない",
           "options": [
-            "La palabra completa es あぶない. Escúchala seguida.",
+            "peligroso",
             "nuevo",
             "No es grande."
           ],
-          "answer": "La palabra completa es あぶない. Escúchala seguida.",
-          "explanation": "La palabra completa es あぶない. Escúchala seguida.",
+          "answer": "peligroso",
+          "explanation": "peligroso",
           "audio": "あぶない",
           "slow_audio": "あぶない",
           "image": null,
@@ -2441,12 +2461,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "あたらしい significa «nuevo».",
-            "Escuchaste しろい: blanco.",
-            "あかい significa «rojo»."
+            "nuevo",
+            "rojo",
+            "azul"
           ],
-          "answer": "あたらしい significa «nuevo».",
-          "explanation": "あたらしい significa «nuevo».",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -2463,12 +2483,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "La palabra completa es あたらしい. Escúchala seguida.",
-            "おおきい significa «grande».",
-            "Escuchaste あかい: rojo."
+            "nuevo",
+            "rojo",
+            "azul"
           ],
-          "answer": "La palabra completa es あたらしい. Escúchala seguida.",
-          "explanation": "La palabra completa es あたらしい. Escúchala seguida.",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -2485,12 +2505,12 @@
           "prompt": "Recuerda: ¿qué expresa あたらしい?",
           "target": "あたらしい",
           "options": [
-            "Escuchaste あたらしい: nuevo.",
+            "nuevo",
             "Pedir o compartir confirmación",
-            "Escuchaste おおきい: grande."
+            "rojo"
           ],
-          "answer": "Escuchaste あたらしい: nuevo.",
-          "explanation": "Escuchaste あたらしい: nuevo.",
+          "answer": "nuevo",
+          "explanation": "nuevo",
           "audio": "あたらしい",
           "slow_audio": "あたらしい",
           "image": null,
@@ -2508,8 +2528,8 @@
           "target": "あかい",
           "options": [
             "rojo",
-            "La palabra completa es ちいさい. Escúchala seguida.",
-            "Porque es peligroso."
+            "Porque es peligroso.",
+            "azul"
           ],
           "answer": "rojo",
           "explanation": "rojo",
@@ -2529,12 +2549,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "あかい significa «rojo».",
-            "かわいい significa «bonito o adorable».",
-            "nuevo"
+            "rojo",
+            "nuevo",
+            "azul"
           ],
-          "answer": "あかい significa «rojo».",
-          "explanation": "あかい significa «rojo».",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -2551,12 +2571,12 @@
           "prompt": "Recuerda: ¿qué expresa あかい?",
           "target": "あかい",
           "options": [
-            "La palabra completa es あかい. Escúchala seguida.",
-            "Escuchaste あかい: rojo.",
-            "ちいさい significa «pequeño»."
+            "rojo",
+            "azul",
+            "blanco"
           ],
-          "answer": "La palabra completa es あかい. Escúchala seguida.",
-          "explanation": "La palabra completa es あかい. Escúchala seguida.",
+          "answer": "rojo",
+          "explanation": "rojo",
           "audio": "あかい",
           "slow_audio": "あかい",
           "image": null,
@@ -2574,8 +2594,8 @@
           "target": "あおい",
           "options": [
             "azul",
-            "La palabra completa es あかい. Escúchala seguida.",
-            "くろい significa «negro»."
+            "blanco",
+            "negro"
           ],
           "answer": "azul",
           "explanation": "azul",
@@ -2595,12 +2615,12 @@
           "prompt": "Recuerda: ¿qué expresa あおい?",
           "target": "あおい",
           "options": [
-            "あおい significa «azul».",
+            "azul",
             "Es un libro rojo.",
             "bonito o adorable"
           ],
-          "answer": "あおい significa «azul».",
-          "explanation": "あおい significa «azul».",
+          "answer": "azul",
+          "explanation": "azul",
           "audio": "あおい",
           "slow_audio": "あおい",
           "image": null,
@@ -2617,12 +2637,12 @@
           "prompt": "Recuerda: ¿qué expresa あおい?",
           "target": "あおい",
           "options": [
-            "La palabra completa es あおい. Escúchala seguida.",
+            "azul",
             "Cambia い por くありません",
             "negro"
           ],
-          "answer": "La palabra completa es あおい. Escúchala seguida.",
-          "explanation": "La palabra completa es あおい. Escúchala seguida.",
+          "answer": "azul",
+          "explanation": "azul",
           "audio": "あおい",
           "slow_audio": "あおい",
           "image": null,

@@ -342,7 +342,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "piano = plan; también «piso, planta» y, como adverbio, «despacio» (parla piano)."
         },
         {
           "id": "italian-a12-social-02-03-meaning",
@@ -1809,7 +1810,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Dove ci vediamo?",
           "accepted_answers": [
-            "Dove ci vediamo?"
+            "Dove ci vediamo?",
+            "Dove ci incontriamo?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Dove ci vediamo?».",
@@ -1911,7 +1913,10 @@
           "target": "Estoy libre después de las seis.",
           "answer": "Ho tempo dopo le sei.",
           "accepted_answers": [
-            "Ho tempo dopo le sei."
+            "Ho tempo dopo le sei.",
+            "Ho tempo dopo le 6.",
+            "Sono libero dopo le sei.",
+            "Sono libera dopo le sei."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1944,7 +1949,8 @@
               "prompt": "Di o escribe en italiano: «¿Dónde quedamos?»",
               "answer": "Dove ci vediamo?",
               "accepted_answers": [
-                "Dove ci vediamo?"
+                "Dove ci vediamo?",
+                "Dove ci incontriamo?"
               ],
               "audio": "Dove ci vediamo?",
               "allow_minor_typos": true,
@@ -1962,7 +1968,10 @@
               "prompt": "Di o escribe en italiano: «Estoy libre después de las seis.»",
               "answer": "Ho tempo dopo le sei.",
               "accepted_answers": [
-                "Ho tempo dopo le sei."
+                "Ho tempo dopo le sei.",
+                "Ho tempo dopo le 6.",
+                "Sono libero dopo le sei.",
+                "Sono libera dopo le sei."
               ],
               "audio": "Ho tempo dopo le sei.",
               "allow_minor_typos": true,
@@ -1987,7 +1996,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

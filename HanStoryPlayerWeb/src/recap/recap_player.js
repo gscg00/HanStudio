@@ -5,22 +5,13 @@
 import './lib/h.js';
 import './lib/sound.js';
 import {sceneAt} from './recap_timeline.js';
+import {pickVoice,speechLangFor} from '../voices.js';
+import {recapLanguage} from './styles/shared.js';
 
 const W=1280,HH=720;
-const LANG={ko:'ko',es:'es'};
-// Calidad: Premium («superior») > Mejorada > natural/neural > básica.
-const QUALITY=[/premium|superior/i,/enhanced|mejorada|optimizada/i,/natural|neural|online|google/i];
-const quality=voice=>{const index=QUALITY.findIndex(pattern=>pattern.test(voice.name));return index<0?0:QUALITY.length-index;};
-const FEMALE=/yuna|sora|heami|sunhi|flo|sandy|shelley|grandma|marisol|paulina|m[oó]nica|helena|lucia|female/i;
-const MALE=/minsu|injoon|eddy|reed|rocko|grandpa|jorge|juan|diego|male/i;
-
-export function chooseVoice(role,voices=window.speechSynthesis?.getVoices?.()||[]){
-  const lang=role.startsWith('ko')?'ko':'es';
-  const pool=voices.filter(voice=>voice.lang?.toLowerCase().startsWith(lang));
-  if(!pool.length)return null;
-  const wanted=role==='ko-m'?MALE:role==='ko-f'?FEMALE:null;
-  const ranked=[...pool].sort((a,b)=>(wanted?(wanted.test(b.name)-wanted.test(a.name))*10:0)+quality(b)-quality(a)+(lang==='es'?(/mx/i.test(b.lang)-/mx/i.test(a.lang))*0.5:0));
-  return ranked[0];
+// Voz del idioma estudiado (femenina y masculina) y voz del narrador en español.
+export function chooseVoices(langCode){
+  return {'tl-f':pickVoice(langCode,{gender:'f'}),'tl-m':pickVoice(langCode,{gender:'m'}),es:pickVoice('es')};
 }
 
 const svgImage=svg=>new Promise(resolve=>{
@@ -40,7 +31,8 @@ async function loadStyleFonts(style){
   await Promise.race([Promise.all((style.fonts||[]).map(spec=>document.fonts.load(spec,'AaZz09가나다').catch(()=>null))),new Promise(resolve=>setTimeout(resolve,2500))]);
 }
 
-export async function createRecapPlayer({canvas,style,timeline,pictureFor=()=>'',sceneSvg='',onState=()=>{}}){
+export async function createRecapPlayer({canvas,style,timeline,langCode='ko',languageName='',audioUrlFor=()=>null,pictureFor=()=>'',sceneSvg='',onState=()=>{}}){
+  if(languageName)recapLanguage.name=languageName.toLowerCase();
   canvas.width=W;canvas.height=HH;
   const ctx=canvas.getContext('2d',{willReadFrequently:Boolean(style.readsPixels)});
   await loadStyleFonts(style);
@@ -48,21 +40,32 @@ export async function createRecapPlayer({canvas,style,timeline,pictureFor=()=>''
   await Promise.all(timeline.items.map(async item=>{pictures.set(item.meaning,await svgImage(pictureFor(item.meaning)));}));
   const scene=await svgImage(sceneSvg);
   if(!window.speechSynthesis?.getVoices().length)await new Promise(resolve=>{window.speechSynthesis?.addEventListener?.('voiceschanged',resolve,{once:true});setTimeout(resolve,800);});
-  const voices={'ko-f':chooseVoice('ko-f'),'ko-m':chooseVoice('ko-m'),es:chooseVoice('es')};
+  const voices=chooseVoices(langCode);
 
   const state={t:0,playing:false,subtitles:false,sound:true,fired:new Set(),active:null,stopSound:null,last:0,raf:0,ended:false};
   const assets={picture:meaning=>pictures.get(meaning)||null,scene};
 
+  // Grabaciones del curso (ElevenLabs) cuando existen; si no, la voz del sistema.
+  const recording=new Audio();
   const speak=item=>{
+    const url=audioUrlFor(item.text,item.lang);
+    if(url){
+      const active={item,speaking:true};state.active=active;
+      window.speechSynthesis?.cancel();recording.pause();
+      recording.src=url;recording.playbackRate=1;
+      recording.onended=recording.onerror=()=>{active.speaking=false;};
+      recording.play().catch(()=>{active.speaking=false;});
+      return;
+    }
     const synth=window.speechSynthesis;if(!synth)return;
     const utterance=new SpeechSynthesisUtterance(item.text),voice=voices[item.voice];
-    if(voice){utterance.voice=voice;utterance.lang=voice.lang;}else utterance.lang=LANG[item.lang];
-    utterance.rate=item.lang==='ko'?0.92:1;
+    if(voice){utterance.voice=voice;utterance.lang=voice.lang;}else utterance.lang=speechLangFor(item.lang==='es'?'es':langCode);
+    utterance.rate=item.lang==='tl'?0.92:1;
     const active={item,speaking:true};state.active=active;
     utterance.onend=utterance.onerror=()=>{active.speaking=false;};
     synth.cancel();synth.speak(utterance);
   };
-  const stopSpeech=()=>{window.speechSynthesis?.cancel();if(state.active)state.active.speaking=false;};
+  const stopSpeech=()=>{window.speechSynthesis?.cancel();recording.pause();if(state.active)state.active.speaking=false;};
   const startSound=()=>{
     state.stopSound?.();state.stopSound=null;
     if(!state.sound||!state.playing||!style.score||!window.SOUND)return;
@@ -73,7 +76,7 @@ export async function createRecapPlayer({canvas,style,timeline,pictureFor=()=>''
     const current=state.active?.speaking?state.active.item:S.speaking.at(-1);
     if(!state.subtitles||!current)return;
     if(style.subtitle)return style.subtitle(ctx,W,HH,current.text,current.lang,S);
-    ctx.save();ctx.font=`600 ${current.lang==='ko'?44:38}px system-ui, "Apple SD Gothic Neo", sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.save();ctx.font=`600 ${current.lang==='tl'?44:38}px system-ui, "Apple SD Gothic Neo", sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';
     const width=Math.min(W-80,ctx.measureText(current.text).width+60);
     ctx.fillStyle='rgba(0,0,0,.66)';ctx.beginPath();ctx.roundRect((W-width)/2,HH-104,width,70,14);ctx.fill();
     ctx.fillStyle='#fff';ctx.fillText(current.text,W/2,HH-69,W-120);ctx.restore();

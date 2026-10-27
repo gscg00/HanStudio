@@ -102,12 +102,12 @@
           "id": "french-a11-identity-01-02-teach",
           "type": "teach_concept",
           "prompt": "Aprende y escucha",
-          "target": "bonjour",
+          "target": "Salut",
           "options": [],
           "answer": "",
-          "explanation": "buenos días",
-          "audio": "bonjour",
-          "slow_audio": "bonjour",
+          "explanation": "hola (entre amigos)",
+          "audio": "Salut",
+          "slow_audio": "Salut",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -116,22 +116,24 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "meaning": "hola (entre amigos)",
+          "usage_note": "Informal: con amigos y gente de tu edad. Con desconocidos, «bonjour»."
         },
         {
           "id": "french-a11-identity-01-02-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «bonjour»?",
-          "target": "bonjour",
+          "prompt": "¿Qué significa «Salut»?",
+          "target": "Salut",
           "options": [
             "idioma",
             "Por favor.",
-            "buenos días"
+            "hola (entre amigos)"
           ],
-          "answer": "buenos días",
-          "explanation": "«bonjour» significa «buenos días».",
-          "audio": "bonjour",
-          "slow_audio": "bonjour",
+          "answer": "hola (entre amigos)",
+          "explanation": "«Salut» significa «hola (entre amigos)».",
+          "audio": "Salut",
+          "slow_audio": "Salut",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -147,14 +149,14 @@
           "prompt": "Escucha y elige la forma escrita correcta",
           "target": "",
           "options": [
-            "bonjour",
+            "Salut",
             "Je m’appelle Ana.",
             "Je viens du Mexique."
           ],
-          "answer": "bonjour",
-          "explanation": "La forma escuchada es «bonjour»: buenos días",
-          "audio": "bonjour",
-          "slow_audio": "bonjour",
+          "answer": "Salut",
+          "explanation": "La forma escuchada es «Salut»: hola (entre amigos)",
+          "audio": "Salut",
+          "slow_audio": "Salut",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -258,7 +260,7 @@
           "target": "Enchanté.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -855,7 +857,7 @@
           "target": "nom",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -1205,7 +1207,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "une personne = una persona. Ojo: ne… personne = nadie: Je ne vois personne (No veo a nadie)."
         },
         {
           "id": "french-a11-identity-04-08-meaning",
@@ -1260,7 +1263,7 @@
           "target": "Je parle un peu français.",
           "options": [],
           "answer": "",
-          "explanation": "Hablo un poco de este idioma.",
+          "explanation": "Hablo un poco de francés.",
           "audio": "Je parle un peu français.",
           "slow_audio": "Je parle un peu français.",
           "image": null,
@@ -1280,11 +1283,11 @@
           "target": "Je parle un peu français.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«Je parle un peu français.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de francés.",
+          "explanation": "«Je parle un peu français.» significa «Hablo un poco de francés.».",
           "audio": "Je parle un peu français.",
           "slow_audio": "Je parle un peu français.",
           "image": null,
@@ -1307,7 +1310,7 @@
             "Je parle un peu français."
           ],
           "answer": "Je parle un peu français.",
-          "explanation": "La forma escuchada es «Je parle un peu français.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «Je parle un peu français.»: Hablo un poco de francés.",
           "audio": "Je parle un peu français.",
           "slow_audio": "Je parle un peu français.",
           "image": null,
@@ -1416,17 +1419,17 @@
         {
           "id": "french-a11-identity-review-02-02-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «bonjour»?",
-          "target": "bonjour",
+          "prompt": "¿Qué significa «Salut»?",
+          "target": "Salut",
           "options": [
             "idioma",
             "Por favor.",
-            "buenos días"
+            "hola (entre amigos)"
           ],
-          "answer": "buenos días",
-          "explanation": "«bonjour» significa «buenos días».",
-          "audio": "bonjour",
-          "slow_audio": "bonjour",
+          "answer": "hola (entre amigos)",
+          "explanation": "«Salut» significa «hola (entre amigos)».",
+          "audio": "Salut",
+          "slow_audio": "Salut",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -1605,7 +1608,7 @@
           "target": "Enchanté.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -1815,7 +1818,10 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Comment vous appelez-vous ?",
           "accepted_answers": [
-            "Comment vous appelez-vous ?"
+            "Comment vous appelez-vous ?",
+            "Comment vous appelez vous ?",
+            "Vous vous appelez comment ?",
+            "Quel est votre nom ?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Comment vous appelez-vous ?».",
@@ -1920,7 +1926,10 @@
           "target": "Soy de México.",
           "answer": "Je viens du Mexique.",
           "accepted_answers": [
-            "Je viens du Mexique."
+            "Je viens du Mexique.",
+            "Je suis du Mexique.",
+            "Je suis mexicain.",
+            "Je suis mexicaine."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1953,7 +1962,10 @@
               "prompt": "Di o escribe en francés: «¿Cómo se llama?»",
               "answer": "Comment vous appelez-vous ?",
               "accepted_answers": [
-                "Comment vous appelez-vous ?"
+                "Comment vous appelez-vous ?",
+                "Comment vous appelez vous ?",
+                "Vous vous appelez comment ?",
+                "Quel est votre nom ?"
               ],
               "audio": "Comment vous appelez-vous ?",
               "allow_minor_typos": true,
@@ -1971,7 +1983,10 @@
               "prompt": "Di o escribe en francés: «Soy de México.»",
               "answer": "Je viens du Mexique.",
               "accepted_answers": [
-                "Je viens du Mexique."
+                "Je viens du Mexique.",
+                "Je suis du Mexique.",
+                "Je suis mexicain.",
+                "Je suis mexicaine."
               ],
               "audio": "Je viens du Mexique.",
               "allow_minor_typos": true,
@@ -2067,17 +2082,17 @@
         {
           "id": "french-a11-identity-test-02-meaning",
           "type": "select_translation",
-          "prompt": "¿Qué significa «bonjour»?",
-          "target": "bonjour",
+          "prompt": "¿Qué significa «Salut»?",
+          "target": "Salut",
           "options": [
             "idioma",
             "Por favor.",
-            "buenos días"
+            "hola (entre amigos)"
           ],
-          "answer": "buenos días",
-          "explanation": "«bonjour» significa «buenos días».",
-          "audio": "bonjour",
-          "slow_audio": "bonjour",
+          "answer": "hola (entre amigos)",
+          "explanation": "«Salut» significa «hola (entre amigos)».",
+          "audio": "Salut",
+          "slow_audio": "Salut",
           "image": null,
           "writing_asset": null,
           "tags": [
@@ -2211,7 +2226,7 @@
           "target": "nom",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -2441,7 +2456,7 @@
           "target": "Enchanté.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -2673,11 +2688,11 @@
           "target": "Je parle un peu français.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de francés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«Je parle un peu français.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de francés.",
+          "explanation": "«Je parle un peu français.» significa «Hablo un poco de francés.».",
           "audio": "Je parle un peu français.",
           "slow_audio": "Je parle un peu français.",
           "image": null,
@@ -2700,7 +2715,7 @@
             "Je parle un peu français."
           ],
           "answer": "Je parle un peu français.",
-          "explanation": "La forma escuchada es «Je parle un peu français.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «Je parle un peu français.»: Hablo un poco de francés.",
           "audio": "Je parle un peu français.",
           "slow_audio": "Je parle un peu français.",
           "image": null,

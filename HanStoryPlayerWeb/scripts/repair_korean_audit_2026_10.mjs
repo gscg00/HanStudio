@@ -207,10 +207,14 @@ const oldRules={'가':'Una consonante y una vocal forman un bloque.','너':'Se l
 for(const [unitId,prefix] of [['survival','korean-survival-12-'],['essentials','korean-essentials-07-']]){
   const data=unit(unitId);
   for(const activity of allActivities(data).filter(activity=>activity.id.startsWith(prefix))){
-    const syllable=activity.answer&&ruleCards[activity.answer]&&activity.type==='listening_choice'?activity.answer:activity.target;
+    // Son fichas de regla (teaching_kind 'rule'): el objetivo sigue siendo la
+    // sílaba y la fórmula va en el enunciado y en memory_hint. Una versión
+    // anterior de este script ponía la fórmula como objetivo; se deshace aquí.
+    const shown=String(activity.target||'').includes('→')?activity.target.split('→').pop().trim():activity.target;
+    const syllable=activity.answer&&ruleCards[activity.answer]&&activity.type==='listening_choice'?activity.answer:shown;
     const card=ruleCards[syllable];if(!card)continue;
-    if(activity.type==='teach_concept'){activity.target=card[0];activity.audio=syllable;activity.slow_audio=syllable;activity.explanation=card[1];}
-    if(activity.type==='select_translation'){activity.target=card[0];activity.prompt=`¿Qué regla muestra «${card[0]}»?`;}
+    if(activity.type==='teach_concept'){activity.target=syllable;activity.audio=syllable;activity.slow_audio=syllable;activity.explanation=card[1];}
+    if(activity.type==='select_translation'){activity.target=syllable;activity.prompt=`¿Qué regla muestra «${syllable}» (${card[0].replace(' → '+syllable,'')})?`;}
     if(activity.type==='listening_choice')activity.explanation=`Escuchaste «${syllable}». ${card[1]}`;
   }
   for(const [syllable,text] of Object.entries(oldRules))replaceText(data,text,ruleCards[syllable][1],{whole:true});

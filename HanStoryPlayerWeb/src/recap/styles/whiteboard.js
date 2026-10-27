@@ -1,7 +1,7 @@
 // Estilo «Whiteboard Explainer»: rotulador sobre pizarra blanca. Técnicas
 // tomadas del paquete de estilo (marker, mText, wobble, residuo borrado y
 // brillo de la pizarra); el contenido es el repaso de la clase.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,glyphUnits,wrapLines} from './shared.js';
 
 const H=window.H;
 const BOARD=[236,240,239],K='#1d1f26',B='#1f4fc2',R='#d4262f',G='#16884a';
@@ -33,7 +33,7 @@ function marker(ctx,pts,col,w,seed,prog=1){
 // Letras de rotulador, una a una, con temblor por glifo. align: left|center.
 function mText(ctx,str,x,y,font,col,seed,prog=1,rot=0,align='left'){
   if(prog<=0)return;
-  const r=H.rng(seed),rgb=H.hex(col),chars=[...str];
+  const r=H.rng(seed),rgb=H.hex(col),chars=glyphUnits(str);
   ctx.save();ctx.font=font;ctx.textBaseline='alphabetic';
   const total=ctx.measureText(str).width;
   ctx.translate(align==='center'?x-Math.cos(rot)*total/2:x,align==='center'?y-Math.sin(rot)*total/2:y);ctx.rotate(rot);
@@ -50,9 +50,9 @@ function board(ctx,W,Hh){
     const bg=c.createLinearGradient(0,0,W,Hh);bg.addColorStop(0,'#f6f8f7');bg.addColorStop(0.55,'#ecefee');bg.addColorStop(1,'#dfe4e3');c.fillStyle=bg;c.fillRect(0,0,W,Hh);
     const rb=H.rng(5);for(let i=0;i<14;i++){const x=rb.range(26,W-26),y=rb.range(26,650),rr=rb.range(80,260),g=c.createRadialGradient(x,y,0,x,y,rr);g.addColorStop(0,`rgba(150,160,165,${rb.range(0.015,0.04)})`);g.addColorStop(1,'rgba(150,160,165,0)');c.fillStyle=g;c.fillRect(x-rr,y-rr,rr*2,rr*2);}
     const g=H.layer(W,Hh),gc=g.getContext('2d');gc.strokeStyle='#30343c';gc.fillStyle='#30343c';gc.lineCap='round';gc.lineWidth=7;
-    gc.font=`400 52px ${MARKER}`;gc.fillText('가나다라마바사',820,112);gc.font=`700 34px ${HAND}`;['- 받침 = final','- 은/는 · 이/가','- 해요 ✓'].forEach((s,i)=>gc.fillText(s,850,170+i*44));
+    gc.font=`400 52px ${MARKER}`;gc.fillText('VOCABULARIO',820,112);gc.font=`700 34px ${HAND}`;['- repasar ayer','- escuchar x3','- frases ✓'].forEach((s,i)=>gc.fillText(s,850,170+i*44));
     tracePath(gc,wobble(seg([[810,130],[1190,126]]),40));gc.stroke();
-    gc.beginPath();gc.arc(190,560,70,0,7);gc.stroke();gc.font=`700 30px ${HAND}`;gc.fillText('하나 둘 셋',330,640);
+    gc.beginPath();gc.arc(190,560,70,0,7);gc.stroke();gc.font=`700 30px ${HAND}`;gc.fillText('1 · 2 · 3',330,640);
     const m=H.layer(W,Hh),mc=m.getContext('2d'),rm=H.rng(77);mc.lineCap='round';
     for(let i=0;i<70;i++){const y=rm.range(40,660),x=rm.range(20,1100),len=rm.range(150,420);mc.strokeStyle=`rgba(0,0,0,${rm.range(0.15,0.8)})`;mc.lineWidth=rm.range(4,26);mc.beginPath();mc.moveTo(x,y);mc.quadraticCurveTo(x+len/2,y+rm.range(-30,30),x+len,y+rm.range(-18,18));mc.stroke();}
     gc.globalCompositeOperation='destination-in';gc.drawImage(m,0,0);

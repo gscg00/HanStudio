@@ -34,9 +34,43 @@ def missing_keys(language: str) -> list[str]:
     for issue in report.get("issues", []):
         if issue.get("code") != "missing_audio_manifest_entry" or issue.get("language") != language:
             continue
-        match = re.search(r"«(.+?)»", issue.get("message", ""))
+        # La clave puede llevar «» dentro («Давай на «ты»!»): se toma hasta «», pero».
+        match = re.search(r"referencia «(.+)», pero", issue.get("message", "")) or re.search(r"«(.+)»", issue.get("message", ""))
         if match and match.group(1) not in keys:
             keys.append(match.group(1))
+    return keys
+
+
+LISTEN_PROMPT = re.compile(r"forma escrita correcta|letra o símbolo correcto|qué (?:letra|grafema|símbolo|sílaba|palabra|frase|vocal)\b.*\b(?:escuchas|oyes|oíste)\b", re.I)
+
+
+def extra_keys(language: str, manifest: dict) -> list[str]:
+    """Lo que el auditor no revisa (igual que tests/test_guided_production_data.py):
+    las líneas de los diálogos y las opciones de «elige lo que oíste»."""
+    course_dir = WEB_ROOT / "library" / "courses" / language
+    course = json.loads((course_dir / "course.json").read_text(encoding="utf-8"))
+    activities = [activity for unit in course["units"] if unit.get("manifest")
+                  for lesson in json.loads((course_dir / unit["manifest"]).read_text(encoding="utf-8"))["lessons"]
+                  for activity in lesson["activities"]]
+    by_value = {}
+    for activity in activities:
+        if activity.get("audio"):
+            for value in (activity.get("target"), activity.get("answer")):
+                if str(value or "").strip():
+                    by_value.setdefault(str(value), activity["audio"])
+    keys = []
+    for activity in activities:
+        for turn in activity.get("turns", []):
+            if turn.get("audio") and turn["audio"] not in manifest:
+                keys.append(turn["audio"])
+        if activity.get("type") != "audio_to_kana" and not LISTEN_PROMPT.search(str(activity.get("prompt", ""))):
+            continue
+        explicit = activity.get("option_audio") or activity.get("optionAudio") or {}
+        for option in activity.get("options", []):
+            key = (explicit.get(option) or by_value.get(str(option))
+                   or (activity.get("audio") if str(option) == str(activity.get("answer")) else "") or str(option))
+            if key not in manifest and str(option).strip():
+                keys.append(key)
     return keys
 
 
@@ -63,7 +97,8 @@ def main() -> int:
     course = WEB_ROOT / "library" / "courses" / args.language
     manifest_path = course / "audio_manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    keys = [key for key in missing_keys(args.language) if key not in manifest["items"]]
+    keys = list(dict.fromkeys(key for key in missing_keys(args.language) + extra_keys(args.language, manifest["items"])
+                              if key not in manifest["items"]))
     print(f"{args.language}: {len(keys)} audios por generar con «{args.voice}»")
     for key in keys:
         print("  ", key)

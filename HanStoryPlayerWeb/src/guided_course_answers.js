@@ -1,6 +1,7 @@
 import {meaningVariants} from './guided_answer_variants.js';
 const COMBINING_MARKS=/[\u0300-\u036f]/g;
-const PUNCTUATION=/[\s.,!?¿¡;:()[\]{}"'“”‘’«»…·・，。！？；：、]/g;
+// El guion separa como un espacio: «appelez-vous» = «appelez vous».
+const PUNCTUATION=/[\s.,!?¿¡;:()[\]{}"'“”‘’«»…·・，。！？；：、\-‐‑–]/g;
 const ARABIC_MARKS=/[\u0640\u064B-\u065F\u0670]/g;
 const SPACING_FREE_LANGUAGES=new Set(['Korean','Japanese','Chinese']);
 

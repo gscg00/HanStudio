@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "The station is on the left.",
           "accepted_answers": [
-            "The station is on the left."
+            "The station is on the left.",
+            "It is on the left.",
+            "It's on the left."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «The station is on the left.».",
@@ -1933,13 +1935,14 @@
           "id": "english-a1-1-places-production-dialogue",
           "type": "stage_scenario",
           "prompt": "Misión final de la etapa",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «La estación está a la izquierda.»."
+              "speaker": "SEÑORA",
+              "text": "Excuse me, where is the station?",
+              "translation": "Disculpe, ¿dónde está la estación? — Tú quieres decir: «La estación está a la izquierda.».",
+              "audio": "Excuse me, where is the station?"
             },
             {
               "role": "learner",
@@ -1947,7 +1950,9 @@
               "prompt": "Di o escribe en inglés: «La estación está a la izquierda.»",
               "answer": "The station is on the left.",
               "accepted_answers": [
-                "The station is on the left."
+                "The station is on the left.",
+                "It is on the left.",
+                "It's on the left."
               ],
               "audio": "The station is on the left.",
               "allow_minor_typos": true,
@@ -1955,9 +1960,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Voy a la escuela.»."
+              "speaker": "SEÑORA",
+              "text": "Where do you go every day?",
+              "translation": "¿Adónde vas todos los días? — Tú quieres decir: «Voy a la escuela.».",
+              "audio": "Where do you go every day?"
             },
             {
               "role": "learner",
@@ -1973,9 +1979,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 3",
-              "translation": "Quieres expresar: «izquierda»."
+              "speaker": "SEÑORA",
+              "text": "Is the bank on the left or on the right?",
+              "translation": "¿El banco está a la izquierda o a la derecha? — Tú quieres decir: «izquierda».",
+              "audio": "Is the bank on the left or on the right?"
             },
             {
               "role": "learner",
@@ -1990,7 +1997,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

@@ -32,8 +32,10 @@ test('no quedan ejemplos en forma de diccionario ni traducciones erróneas conoc
   for(const wrong of ['나는 학교에 가다.','Pongo mantequilla','Es la longitud','¿No lo sé? / ¿No sé?','Mudanza / traslado de residencia','-어요/-아요 → -셔요'])assert.ok(!text.includes(wrong),wrong);
 });
 
-test('las fichas de regla de bloques no se presentan como palabras',()=>{
-  for(const id of ['survival','essentials'])for(const activity of activities(id).filter(activity=>activity.type==='teach_concept'&&/forman un bloque|batchim:|vocal (vertical|horizontal)/.test(activity.explanation||'')))assert.match(activity.target,/→/,activity.id);
+test('las fichas de regla de bloques se marcan como regla y muestran cómo se forman',()=>{
+  const cards=['survival','essentials'].flatMap(id=>activities(id)).filter(activity=>activity.type==='teach_concept'&&/forman un bloque|batchim:|vocal (vertical|horizontal)/.test(activity.explanation||''));
+  assert.ok(cards.length>=6);
+  for(const activity of cards){assert.equal(activity.teaching_kind,'rule',activity.id);assert.match(activity.memory_hint,/Cómo se forma: .+ = /,activity.id);}
 });
 
 test('el espaciado no invalida una respuesta en coreano, pero sí en idiomas con espacios',()=>{

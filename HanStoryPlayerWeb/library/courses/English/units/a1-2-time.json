@@ -259,7 +259,7 @@
           "target": "It is half past three.",
           "options": [
             "Son las tres y media.",
-            "Llego tarde.",
+            "Voy tarde.",
             "lunes"
           ],
           "answer": "Son las tres y media.",
@@ -853,7 +853,7 @@
           "target": "week",
           "options": [
             "Son las tres y media.",
-            "Llego tarde.",
+            "Voy tarde.",
             "semana"
           ],
           "answer": "semana",
@@ -1255,7 +1255,7 @@
           "target": "I am running late.",
           "options": [],
           "answer": "",
-          "explanation": "Llego tarde.",
+          "explanation": "Voy tarde.",
           "audio": "I am running late.",
           "slow_audio": "I am running late.",
           "image": null,
@@ -1275,10 +1275,10 @@
           "target": "I am running late.",
           "options": [
             "¿Qué hora es?",
-            "Llego tarde.",
+            "Voy tarde.",
             "lunes"
           ],
-          "answer": "Llego tarde.",
+          "answer": "Voy tarde.",
           "explanation": "«I am running late.» significa «Llego tarde.».",
           "audio": "I am running late.",
           "slow_audio": "I am running late.",
@@ -1302,7 +1302,7 @@
             "I am running late."
           ],
           "answer": "I am running late.",
-          "explanation": "La forma escuchada es «I am running late.»: Llego tarde.",
+          "explanation": "La forma escuchada es «I am running late.»: Voy tarde.",
           "audio": "I am running late.",
           "slow_audio": "I am running late.",
           "image": null,
@@ -1599,7 +1599,7 @@
           "target": "It is half past three.",
           "options": [
             "Son las tres y media.",
-            "Llego tarde.",
+            "Voy tarde.",
             "lunes"
           ],
           "answer": "Son las tres y media.",
@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "I arrive at eight.",
           "accepted_answers": [
-            "I arrive at eight."
+            "I arrive at eight.",
+            "I arrive at 8.",
+            "I arrive at 8:00."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «I arrive at eight.».",
@@ -1931,13 +1933,14 @@
           "id": "english-a1-2-time-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «Llego a las ocho.»."
+              "speaker": "TOM",
+              "text": "What time do you arrive?",
+              "translation": "¿A qué hora llegas? — Tú quieres decir: «Llego a las ocho.».",
+              "audio": "What time do you arrive?"
             },
             {
               "role": "learner",
@@ -1945,7 +1948,9 @@
               "prompt": "Di o escribe en inglés: «Llego a las ocho.»",
               "answer": "I arrive at eight.",
               "accepted_answers": [
-                "I arrive at eight."
+                "I arrive at eight.",
+                "I arrive at 8.",
+                "I arrive at 8:00."
               ],
               "audio": "I arrive at eight.",
               "allow_minor_typos": true,
@@ -1953,9 +1958,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «La cita es la próxima semana.»."
+              "speaker": "TOM",
+              "text": "When is the appointment?",
+              "translation": "¿Cuándo es la cita? — Tú quieres decir: «La cita es la próxima semana.».",
+              "audio": "When is the appointment?"
             },
             {
               "role": "learner",
@@ -2201,7 +2207,7 @@
           "target": "week",
           "options": [
             "Son las tres y media.",
-            "Llego tarde.",
+            "Voy tarde.",
             "semana"
           ],
           "answer": "semana",
@@ -2431,7 +2437,7 @@
           "target": "It is half past three.",
           "options": [
             "Son las tres y media.",
-            "Llego tarde.",
+            "Voy tarde.",
             "lunes"
           ],
           "answer": "Son las tres y media.",
@@ -2661,10 +2667,10 @@
           "target": "I am running late.",
           "options": [
             "¿Qué hora es?",
-            "Llego tarde.",
+            "Voy tarde.",
             "lunes"
           ],
-          "answer": "Llego tarde.",
+          "answer": "Voy tarde.",
           "explanation": "«I am running late.» significa «Llego tarde.».",
           "audio": "I am running late.",
           "slow_audio": "I am running late.",
@@ -2688,7 +2694,7 @@
             "I am running late."
           ],
           "answer": "I am running late.",
-          "explanation": "La forma escuchada es «I am running late.»: Llego tarde.",
+          "explanation": "La forma escuchada es «I am running late.»: Voy tarde.",
           "audio": "I am running late.",
           "slow_audio": "I am running late.",
           "image": null,

@@ -65,7 +65,8 @@ const isSentence=text=>/\s/.test(String(text).trim());
 export function taughtItems(lesson){
   const seen=new Set(),items=[];
   for(const activity of lesson?.activities||[]){
-    if(!TEACH_TYPES.has(activity.type))continue;
+    // Las fichas de regla (partículas, pronunciación, bloques) no son vocabulario.
+    if(!TEACH_TYPES.has(activity.type)||activity.teaching_kind==='rule')continue;
     const target=String(activity.target||'').trim(),meaning=meaningOf(activity);
     if(!target||!meaning||seen.has(target))continue;
     // Una explicación larga no es una glosa: no sirve como opción ni como tarjeta.

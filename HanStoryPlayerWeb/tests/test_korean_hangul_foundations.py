@@ -123,10 +123,13 @@ def test_korean_requires_all_24_basic_hangul_letters_before_vocabulary():
     assert "readingGateUnits()" in app
     assert "gates.every" in app
 
-    sql = (
-        ROOT
-        / "supabase/migrations/016_korean_complete_basic_hangul_catalog.sql"
-    ).read_text(encoding="utf-8").lower()
+    # El catálogo de XP se construye con todas las migraciones aplicadas en orden
+    # (016 introdujo estas lecciones; las posteriores añaden las nuevas).
+    sql = "\n".join(
+        path.read_text(encoding="utf-8").lower()
+        for path in sorted((ROOT / "supabase/migrations").glob("*.sql"))
+        if path.name[:3].isdigit() and int(path.name[:3]) >= 16
+    )
     for lesson in reading_unit["lessons"]:
         assert lesson["id"].lower() in sql
     assert "korean-reading-test-07" in sql

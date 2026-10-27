@@ -5,7 +5,7 @@
 // palabra a palabra y bloom en todo lo brillante. Técnicas del paquete: background(),
 // bloom(), card(), tile(), pill(), gtext/revealLine, eyebrow, connector/pulseOn,
 // glowDot/ring y el «empujón de cámara» con estelas de velocidad entre escenas.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,wrapLines,inLanguageLabel} from './shared.js';
 
 const H=window.H,E=H.ease,cl=H.clamp,lerp=H.lerp;
 const seg=(a,b,t)=>cl((t-a)/(b-a)),eo=(a,b,t)=>E.out(seg(a,b,t)),eio=(a,b,t)=>E.inOut(seg(a,b,t)),ebk=(a,b,t)=>(t<=a?0:t>=b?1:E.back(seg(a,b,t)));
@@ -237,7 +237,7 @@ function drawBeat(ctx,W,Hh,t,S,beat){
     }else{
       const r0=reveal[0],hitB=bump(t,r0,3.2);
       card(ctx,cx-maxW/2-30,150,maxW+60,370,{a:eo(r0,r0+0.25,t),flash:0.9*hitB,acc:[C.green,C.cyan],flashCol:C.green});
-      eyebrow(ctx,listen?'SIGNIFICA':'EN COREANO',cx-maxW/2,204,{a:eo(r0,r0+0.3,t),size:28,col:C.green});
+      eyebrow(ctx,listen?'SIGNIFICA':inLanguageLabel(),cx-maxW/2,204,{a:eo(r0,r0+0.3,t),size:28,col:C.green});
       if(t>r0)for(let i=0;i<2;i++){const q=1-bump(t,r0+i*0.12,2.5);ring(ctx,cx,320,80+q*300,i?C.violet:C.cyan,0.6*(1-q),3);}
       ctx.save();ctx.translate(cx,320);const k=1+0.08*hitB;ctx.scale(k,k);ctx.translate(-cx,-320);
       if(hitB>0.02){ctx.save();ctx.globalCompositeOperation='lighter';glowDot(ctx,cx,310,C.cyan,300,0.3*hitB);ctx.restore();}

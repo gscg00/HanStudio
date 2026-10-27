@@ -350,7 +350,7 @@
           "prompt": "¿Qué significa «Ci siamo fraintesi.»?",
           "target": "Ci siamo fraintesi.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -668,7 +668,7 @@
           "prompt": "¿Qué significa «Ci siamo fraintesi.»?",
           "target": "Ci siamo fraintesi.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -965,7 +965,7 @@
           "target": "Prima vorrei chiarire un dettaglio.",
           "options": [],
           "answer": "",
-          "explanation": "Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "Primero quisiera aclarar un detalle.",
           "audio": "Prima vorrei chiarire un dettaglio.",
           "slow_audio": "Prima vorrei chiarire un dettaglio.",
           "image": null,
@@ -984,12 +984,12 @@
           "prompt": "¿Qué significa «Prima vorrei chiarire un dettaglio.»?",
           "target": "Prima vorrei chiarire un dettaglio.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Ella estaba decepcionada con el resultado.",
             "A veces es difícil perdonar."
           ],
-          "answer": "Antes de continuar, quisiera aclarar un detalle.",
-          "explanation": "«Prima vorrei chiarire un dettaglio.» significa «Antes de continuar, quisiera aclarar un detalle.».",
+          "answer": "Primero quisiera aclarar un detalle.",
+          "explanation": "«Prima vorrei chiarire un dettaglio.» significa «Primero quisiera aclarar un detalle.».",
           "audio": "Prima vorrei chiarire un dettaglio.",
           "slow_audio": "Prima vorrei chiarire un dettaglio.",
           "image": null,
@@ -1012,7 +1012,7 @@
             "Dopo abbiamo parlato con calma."
           ],
           "answer": "Prima vorrei chiarire un dettaglio.",
-          "explanation": "La forma escuchada es «Prima vorrei chiarire un dettaglio.»: Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "La forma escuchada es «Prima vorrei chiarire un dettaglio.»: Primero quisiera aclarar un detalle.",
           "audio": "Prima vorrei chiarire un dettaglio.",
           "slow_audio": "Prima vorrei chiarire un dettaglio.",
           "image": null,
@@ -1208,7 +1208,7 @@
           "prompt": "¿Qué significa «Ho imparato ad ascoltare prima di rispondere.»?",
           "target": "Ho imparato ad ascoltare prima di rispondere.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -1552,7 +1552,7 @@
           "prompt": "¿Qué significa «Ho imparato ad ascoltare prima di rispondere.»?",
           "target": "Ho imparato ad ascoltare prima di rispondere.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -1804,12 +1804,14 @@
         {
           "id": "italian-b1-2-conversation-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en italiano: «Antes de continuar, quisiera aclarar un detalle.»",
-          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "prompt": "Escribe en italiano: «Primero quisiera aclarar un detalle.»",
+          "target": "Primero quisiera aclarar un detalle.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Prima vorrei chiarire un dettaglio.",
           "accepted_answers": [
-            "Prima vorrei chiarire un dettaglio."
+            "Prima vorrei chiarire un dettaglio.",
+            "Prima di continuare, vorrei chiarire un dettaglio.",
+            "Prima di tutto vorrei chiarire un dettaglio."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Prima vorrei chiarire un dettaglio.».",
@@ -1844,8 +1846,8 @@
         {
           "id": "italian-b1-2-conversation-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
-          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "prompt": "Construye la forma que significa «Primero quisiera aclarar un detalle.»",
+          "target": "Primero quisiera aclarar un detalle.",
           "options": [
             "chiarire",
             "un",
@@ -1938,15 +1940,17 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+              "translation": "Quieres expresar: «Primero quisiera aclarar un detalle.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en italiano: «Antes de continuar, quisiera aclarar un detalle.»",
+              "prompt": "Di o escribe en italiano: «Primero quisiera aclarar un detalle.»",
               "answer": "Prima vorrei chiarire un dettaglio.",
               "accepted_answers": [
-                "Prima vorrei chiarire un dettaglio."
+                "Prima vorrei chiarire un dettaglio.",
+                "Prima di continuare, vorrei chiarire un dettaglio.",
+                "Prima di tutto vorrei chiarire un dettaglio."
               ],
               "audio": "Prima vorrei chiarire un dettaglio.",
               "allow_minor_typos": true,
@@ -1989,7 +1993,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2127,7 +2131,7 @@
           "prompt": "¿Qué significa «Ci siamo fraintesi.»?",
           "target": "Ci siamo fraintesi.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -2357,7 +2361,7 @@
           "prompt": "¿Qué significa «Ho imparato ad ascoltare prima di rispondere.»?",
           "target": "Ho imparato ad ascoltare prima di rispondere.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -2587,12 +2591,12 @@
           "prompt": "¿Qué significa «Prima vorrei chiarire un dettaglio.»?",
           "target": "Prima vorrei chiarire un dettaglio.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar un detalle.",
             "Ella estaba decepcionada con el resultado.",
             "A veces es difícil perdonar."
           ],
-          "answer": "Antes de continuar, quisiera aclarar un detalle.",
-          "explanation": "«Prima vorrei chiarire un dettaglio.» significa «Antes de continuar, quisiera aclarar un detalle.».",
+          "answer": "Primero quisiera aclarar un detalle.",
+          "explanation": "«Prima vorrei chiarire un dettaglio.» significa «Primero quisiera aclarar un detalle.».",
           "audio": "Prima vorrei chiarire un dettaglio.",
           "slow_audio": "Prima vorrei chiarire un dettaglio.",
           "image": null,
@@ -2615,7 +2619,7 @@
             "Dopo abbiamo parlato con calma."
           ],
           "answer": "Prima vorrei chiarire un dettaglio.",
-          "explanation": "La forma escuchada es «Prima vorrei chiarire un dettaglio.»: Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "La forma escuchada es «Prima vorrei chiarire un dettaglio.»: Primero quisiera aclarar un detalle.",
           "audio": "Prima vorrei chiarire un dettaglio.",
           "slow_audio": "Prima vorrei chiarire un dettaglio.",
           "image": null,

@@ -75,5 +75,5 @@ test('un alumno puede resolver cada actividad evaluable de los diez cursos con s
       checked++;
     }
   }
-  assert.equal(checked,51482);
+  assert.equal(checked,51823);
 });

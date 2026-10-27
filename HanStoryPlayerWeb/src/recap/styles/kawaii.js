@@ -3,7 +3,7 @@
 // con rebote y squash, destellos que parpadean y escenas que cambian con iris de
 // estrella o corazón. Técnicas del paquete: cel/ol/shine, pop/squash/bob, kText/kWord,
 // fondo de lunares·estrellas·corazones, twinkles, confetti, impactLines, wipe.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,glyphUnits,wrapLines} from './shared.js';
 
 const H=window.H,TAU=Math.PI*2;
 const C={plum:'#5a3659',dark:'#3b2342',pink:'#ffbfd2',pinkS:'#f597b7',pinkD:'#ff6f9c',mint:'#bff0dc',mintS:'#86d6b9',mintD:'#3fb98e',
@@ -48,7 +48,7 @@ function kText(ctx,str,x,y,size,o={}){
 }
 // cada letra salta por su cuenta, anclada a la línea base
 function kWord(ctx,str,cx,y,size,t,t0,stg,o={}){
-  const chars=[...str];ctx.save();ctx.font=`${o.weight||700} ${size}px ${o.font||FONT}`;
+  const chars=glyphUnits(str);ctx.save();ctx.font=`${o.weight||700} ${size}px ${o.font||FONT}`;
   const ws=chars.map(c=>ctx.measureText(c).width),tot=ws.reduce((a,b)=>a+b,0)+(o.track||0)*(chars.length-1);ctx.restore();
   let x=cx-tot/2;
   chars.forEach((c,i)=>{const w=ws[i],p=pop(t,t0+i*stg,1.3);

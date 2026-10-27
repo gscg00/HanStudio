@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "A estação fica à esquerda.",
           "accepted_answers": [
-            "A estação fica à esquerda."
+            "A estação fica à esquerda.",
+            "A estação está à esquerda.",
+            "Fica à esquerda."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «A estação fica à esquerda.».",
@@ -1913,7 +1915,9 @@
           "target": "Voy a la escuela.",
           "answer": "Vou para a escola.",
           "accepted_answers": [
-            "Vou para a escola."
+            "Vou para a escola.",
+            "Vou à escola.",
+            "Eu vou para a escola."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1946,7 +1950,9 @@
               "prompt": "Di o escribe en portugués: «La estación está a la izquierda.»",
               "answer": "A estação fica à esquerda.",
               "accepted_answers": [
-                "A estação fica à esquerda."
+                "A estação fica à esquerda.",
+                "A estação está à esquerda.",
+                "Fica à esquerda."
               ],
               "audio": "A estação fica à esquerda.",
               "allow_minor_typos": true,
@@ -1964,7 +1970,9 @@
               "prompt": "Di o escribe en portugués: «Voy a la escuela.»",
               "answer": "Vou para a escola.",
               "accepted_answers": [
-                "Vou para a escola."
+                "Vou para a escola.",
+                "Vou à escola.",
+                "Eu vou para a escola."
               ],
               "audio": "Vou para a escola.",
               "allow_minor_typos": true,
@@ -1989,7 +1997,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

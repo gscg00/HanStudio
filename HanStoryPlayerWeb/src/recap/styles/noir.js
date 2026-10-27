@@ -2,7 +2,7 @@
 // paquete: luz de persiana con penumbra, humo en el haz, yeso, periódico que gira,
 // fichas policiales, odómetro mecánico, sello de goma, iris / cortinilla / reloj y
 // el acabado de proyección (vaivén, grano de nitrato, halo, polvo, raya, bandas).
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,glyphUnits,wrapLines} from './shared.js';
 
 const H=window.H,E=H.ease,sm=H.smooth,BAR=54,TAU=Math.PI*2;
 const KR='"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif';
@@ -131,7 +131,7 @@ function stamp(c,x,y,word,p,rot=-0.16,size=44){
 }
 // cinta de teletipo que se escribe letra a letra
 function tape(c,str,x,y,size,prog,rot=-0.03){
-  if(prog<=0)return;const chars=[...str],shown=chars.slice(0,Math.ceil(chars.length*H.clamp(prog))).join('');
+  if(prog<=0)return;const chars=glyphUnits(str),shown=chars.slice(0,Math.ceil(chars.length*H.clamp(prog))).join('');
   c.save();c.font=`400 ${size}px ${ELITE}`;const full=c.measureText(str).width+52,wv=Math.min(full,c.measureText(shown).width+52),h=size*1.5;
   c.translate(x,y);c.rotate(rot);const L=-full/2;
   c.save();c.shadowColor='rgba(0,0,0,0.6)';c.shadowBlur=12;c.shadowOffsetX=5;c.shadowOffsetY=8;c.fillStyle=gy(225);c.fillRect(L,-h/2,wv,h);c.restore();

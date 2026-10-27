@@ -52,7 +52,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "يستيقظ = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: أستيقظ. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-01-01-meaning",
@@ -118,7 +119,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "يعمل = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: أعمل. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-01-02-meaning",
@@ -342,7 +344,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "يدرس = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: أدرس. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-02-03-meaning",
@@ -350,7 +353,7 @@
           "prompt": "¿Qué significa «يدرس»?",
           "target": "يدرس",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "estudiar",
             "noche"
           ],
@@ -408,7 +411,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "يأكل = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: آكل. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-02-04-meaning",
@@ -668,7 +672,7 @@
           "prompt": "¿Qué significa «يدرس»?",
           "target": "يدرس",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "estudiar",
             "noche"
           ],
@@ -844,7 +848,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "يشرب = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: أشرب. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-03-05-meaning",
@@ -910,7 +915,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "ينام = forma de «él» en presente (يـ = él). Con «yo» cambia a أـ: أنام. El árabe no tiene infinitivo."
         },
         {
           "id": "arabic-a11-routine-03-06-meaning",
@@ -965,7 +971,7 @@
           "target": "أستيقظ في الساعة السابعة.",
           "options": [],
           "answer": "",
-          "explanation": "Me levanto a las siete.",
+          "explanation": "Me despierto a las siete.",
           "audio": "أستيقظ في الساعة السابعة.",
           "slow_audio": "أستيقظ في الساعة السابعة.",
           "image": null,
@@ -984,12 +990,12 @@
           "prompt": "¿Qué significa «أستيقظ في الساعة السابعة.»?",
           "target": "أستيقظ في الساعة السابعة.",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "trabajar",
             "la mañana (parte del día)"
           ],
-          "answer": "Me levanto a las siete.",
-          "explanation": "«أستيقظ في الساعة السابعة.» significa «Me levanto a las siete.».",
+          "answer": "Me despierto a las siete.",
+          "explanation": "«أستيقظ في الساعة السابعة.» significa «Me despierto a las siete.».",
           "audio": "أستيقظ في الساعة السابعة.",
           "slow_audio": "أستيقظ في الساعة السابعة.",
           "image": null,
@@ -1012,7 +1018,7 @@
             "يأكل"
           ],
           "answer": "أستيقظ في الساعة السابعة.",
-          "explanation": "La forma escuchada es «أستيقظ في الساعة السابعة.»: Me levanto a las siete.",
+          "explanation": "La forma escuchada es «أستيقظ في الساعة السابعة.»: Me despierto a las siete.",
           "audio": "أستيقظ في الساعة السابعة.",
           "slow_audio": "أستيقظ في الساعة السابعة.",
           "image": null,
@@ -1208,7 +1214,7 @@
           "prompt": "¿Qué significa «ليل»?",
           "target": "ليل",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "trabajar",
             "noche"
           ],
@@ -1552,7 +1558,7 @@
           "prompt": "¿Qué significa «ليل»?",
           "target": "ليل",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "trabajar",
             "noche"
           ],
@@ -1804,12 +1810,21 @@
         {
           "id": "arabic-a1-1-routine-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en árabe: «Me levanto a las siete.»",
-          "target": "Me levanto a las siete.",
+          "prompt": "Escribe en árabe: «Me despierto a las siete.»",
+          "target": "Me despierto a las siete.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "أستيقظ في الساعة السابعة.",
           "accepted_answers": [
-            "أستيقظ في الساعة السابعة."
+            "أستيقظ في الساعة السابعة.",
+            "أستيقظ الساعة السابعة.",
+            "أستيقظ في السابعة.",
+            "أستيقظ في الساعة 7.",
+            "أستيقظ في الساعة ٧.",
+            "استيقظ في الساعة السابعة.",
+            "استيقظ الساعة السابعة.",
+            "استيقظ في السابعة.",
+            "استيقظ في الساعة 7.",
+            "استيقظ في الساعة ٧."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «أستيقظ في الساعة السابعة.».",
@@ -1844,8 +1859,8 @@
         {
           "id": "arabic-a1-1-routine-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Me levanto a las siete.»",
-          "target": "Me levanto a las siete.",
+          "prompt": "Construye la forma que significa «Me despierto a las siete.»",
+          "target": "Me despierto a las siete.",
           "options": [
             "الساعة",
             "السابعة.",
@@ -1912,7 +1927,8 @@
           "target": "Estudio por la tarde.",
           "answer": "أدرس بعد الظهر.",
           "accepted_answers": [
-            "أدرس بعد الظهر."
+            "أدرس بعد الظهر.",
+            "ادرس بعد الظهر."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1937,15 +1953,24 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «Me levanto a las siete.»."
+              "translation": "Quieres expresar: «Me despierto a las siete.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en árabe: «Me levanto a las siete.»",
+              "prompt": "Di o escribe en árabe: «Me despierto a las siete.»",
               "answer": "أستيقظ في الساعة السابعة.",
               "accepted_answers": [
-                "أستيقظ في الساعة السابعة."
+                "أستيقظ في الساعة السابعة.",
+                "أستيقظ الساعة السابعة.",
+                "أستيقظ في السابعة.",
+                "أستيقظ في الساعة 7.",
+                "أستيقظ في الساعة ٧.",
+                "استيقظ في الساعة السابعة.",
+                "استيقظ الساعة السابعة.",
+                "استيقظ في السابعة.",
+                "استيقظ في الساعة 7.",
+                "استيقظ في الساعة ٧."
               ],
               "audio": "أستيقظ في الساعة السابعة.",
               "allow_minor_typos": true,
@@ -1963,7 +1988,8 @@
               "prompt": "Di o escribe en árabe: «Estudio por la tarde.»",
               "answer": "أدرس بعد الظهر.",
               "accepted_answers": [
-                "أدرس بعد الظهر."
+                "أدرس بعد الظهر.",
+                "ادرس بعد الظهر."
               ],
               "audio": "أدرس بعد الظهر.",
               "allow_minor_typos": true,
@@ -2108,7 +2134,7 @@
           "prompt": "¿Qué significa «يدرس»?",
           "target": "يدرس",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "estudiar",
             "noche"
           ],
@@ -2338,7 +2364,7 @@
           "prompt": "¿Qué significa «ليل»?",
           "target": "ليل",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "trabajar",
             "noche"
           ],
@@ -2568,12 +2594,12 @@
           "prompt": "¿Qué significa «أستيقظ في الساعة السابعة.»?",
           "target": "أستيقظ في الساعة السابعة.",
           "options": [
-            "Me levanto a las siete.",
+            "Me despierto a las siete.",
             "trabajar",
             "la mañana (parte del día)"
           ],
-          "answer": "Me levanto a las siete.",
-          "explanation": "«أستيقظ في الساعة السابعة.» significa «Me levanto a las siete.».",
+          "answer": "Me despierto a las siete.",
+          "explanation": "«أستيقظ في الساعة السابعة.» significa «Me despierto a las siete.».",
           "audio": "أستيقظ في الساعة السابعة.",
           "slow_audio": "أستيقظ في الساعة السابعة.",
           "image": null,
@@ -2596,7 +2622,7 @@
             "يأكل"
           ],
           "answer": "أستيقظ في الساعة السابعة.",
-          "explanation": "La forma escuchada es «أستيقظ في الساعة السابعة.»: Me levanto a las siete.",
+          "explanation": "La forma escuchada es «أستيقظ في الساعة السابعة.»: Me despierto a las siete.",
           "audio": "أستيقظ في الساعة السابعة.",
           "slow_audio": "أستيقظ في الساعة السابعة.",
           "image": null,

@@ -22,3 +22,13 @@ export function fitFont(ctx,lines,maxW,size,font,min=28){
   for(;fs>min;fs-=2){ctx.font=withSize(font,fs);if(lines.every(line=>ctx.measureText(line).width<=maxW))break;}
   ctx.restore();return fs;
 }
+
+// Unidades para animar texto letra a letra. Las escrituras que unen letras y
+// van de derecha a izquierda (árabe, hebreo) se dibujan como palabra entera:
+// separarlas rompe la forma de cada letra y el orden de lectura.
+const JOINED_SCRIPT=/[֐-ࣿיִ-﷿ﹰ-﻿]/;
+export const glyphUnits=text=>JOINED_SCRIPT.test(String(text))?[String(text)]:[...String(text)];
+
+// Idioma del curso para las etiquetas («EN FRANCÉS»); lo fija el reproductor.
+export const recapLanguage={name:'coreano'};
+export const inLanguageLabel=()=>`EN ${recapLanguage.name.toUpperCase()}`;

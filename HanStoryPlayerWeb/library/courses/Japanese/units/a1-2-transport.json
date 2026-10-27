@@ -52,7 +52,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: きっぷ"
         },
         {
           "id": "japanese-a12-transport-01-01-meaning",
@@ -118,7 +119,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: でんしゃ"
         },
         {
           "id": "japanese-a12-transport-01-02-meaning",
@@ -184,7 +186,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: きっぷをいちまいください。"
         },
         {
           "id": "japanese-a12-transport-01-09-meaning",
@@ -250,7 +253,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: でんしゃはいつでますか。"
         },
         {
           "id": "japanese-a12-transport-01-10-meaning",
@@ -408,7 +412,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ちかてつ"
         },
         {
           "id": "japanese-a12-transport-02-04-meaning",
@@ -474,7 +479,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: このバスはしないへいきますか。"
         },
         {
           "id": "japanese-a12-transport-02-11-meaning",
@@ -540,7 +546,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: つぎのていりゅうじょはどこですか。"
         },
         {
           "id": "japanese-a12-transport-02-12-meaning",
@@ -910,7 +917,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ていりゅうじょ"
         },
         {
           "id": "japanese-a12-transport-03-06-meaning",
@@ -976,7 +984,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: のりかえがひつようですか。"
         },
         {
           "id": "japanese-a12-transport-03-13-meaning",
@@ -1042,7 +1051,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: でんしゃがおくれています。"
         },
         {
           "id": "japanese-a12-transport-03-14-meaning",
@@ -1134,7 +1144,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: くうこう"
         },
         {
           "id": "japanese-a12-transport-04-07-meaning",
@@ -1200,7 +1211,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: もくてきち"
         },
         {
           "id": "japanese-a12-transport-04-08-meaning",
@@ -1266,7 +1278,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "sound_hint": "Lectura: ここでおります。"
         },
         {
           "id": "japanese-a12-transport-04-15-meaning",
@@ -1809,7 +1822,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "乗り換えが必要ですか。",
           "accepted_answers": [
-            "乗り換えが必要ですか。"
+            "乗り換えが必要ですか。",
+            "のりかえがひつようですか。"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «乗り換えが必要ですか。».",
@@ -1829,7 +1843,8 @@
           "instruction": "Escribe exactamente lo que oyes.",
           "answer": "電車が遅れています。",
           "accepted_answers": [
-            "電車が遅れています。"
+            "電車が遅れています。",
+            "でんしゃがおくれています。"
           ],
           "allow_minor_typos": true,
           "explanation": "Escuchaste «電車が遅れています。». El ejemplo practica: El tren lleva retraso.",
@@ -1899,7 +1914,8 @@
           "target": "aeropuerto",
           "answer": "空港",
           "accepted_answers": [
-            "空港"
+            "空港",
+            "くうこう"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1919,7 +1935,8 @@
           "target": "El tren lleva retraso.",
           "answer": "電車が遅れています。",
           "accepted_answers": [
-            "電車が遅れています。"
+            "電車が遅れています。",
+            "でんしゃがおくれています。"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1952,7 +1969,8 @@
               "prompt": "Di o escribe en japonés: «¿Tengo que hacer transbordo?»",
               "answer": "乗り換えが必要ですか。",
               "accepted_answers": [
-                "乗り換えが必要ですか。"
+                "乗り換えが必要ですか。",
+                "のりかえがひつようですか。"
               ],
               "audio": "乗り換えが必要ですか。",
               "allow_minor_typos": true,
@@ -1970,7 +1988,8 @@
               "prompt": "Di o escribe en japonés: «El tren lleva retraso.»",
               "answer": "電車が遅れています。",
               "accepted_answers": [
-                "電車が遅れています。"
+                "電車が遅れています。",
+                "でんしゃがおくれています。"
               ],
               "audio": "電車が遅れています。",
               "allow_minor_typos": true,

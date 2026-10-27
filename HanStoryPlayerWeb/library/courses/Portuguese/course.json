@@ -140,7 +140,7 @@
       "id": "survival",
       "world": 2,
       "title": "Comunicación esencial",
-      "description": "Saludos, cortesía y expresiones para desenvolverte.",
+      "description": "Saludos, cortesía, tú y usted, y frases para pedir ayuda.",
       "manifest": "units/survival.json",
       "icon": "Oi"
     },
@@ -156,15 +156,15 @@
       "id": "questions",
       "world": 4,
       "title": "Preguntas y estructura",
-      "description": "Orden, negación, preguntas y palabras interrogativas.",
+      "description": "Preguntas completas, porquê / porque é que y la negación con não.",
       "manifest": "units/questions.json",
       "icon": "?"
     },
     {
       "id": "time",
       "world": 5,
-      "title": "Números, tiempo y vida diaria",
-      "description": "Números, días, horas y expresiones cotidianas.",
+      "title": "Números, horas, días y precios",
+      "description": "Números del 0 al 20, la hora, los días de la semana y los precios en euros.",
       "manifest": "units/time.json",
       "icon": "12"
     },
@@ -180,7 +180,7 @@
       "id": "reading-bridge",
       "world": 7,
       "title": "Escucha y lectura guiada",
-      "description": "Oraciones graduadas con comprensión y audio.",
+      "description": "Frases cortas con los verbos en presente y estar a + infinitivo.",
       "manifest": "units/reading-bridge.json",
       "icon": "Le"
     },
@@ -188,7 +188,7 @@
       "id": "story-bridge",
       "world": 8,
       "title": "Puente hacia las historias",
-      "description": "Consolida lo esencial antes de abrir tu primera historia.",
+      "description": "Artículos, contracciones (do, na, ao, à, num) y posesivos con artículo.",
       "manifest": "units/story-bridge.json",
       "icon": "Li"
     },
@@ -530,6 +530,6 @@
   "variantPolicy": {
     "scope": "Portugal y Brasil",
     "wordTtsLanguage": "pt-PT",
-    "note": "El curso presenta las dos variedades y etiqueta el vocabulario que cambia entre ellas."
+    "note": "Base: portugués europeo (pt-PT), la misma variedad que el audio. Las formas de Brasil se presentan etiquetadas como variante (ônibus, trem, banheiro, celular, você…)."
   }
 }

@@ -4,6 +4,7 @@
 import{JapaneseCourseApp,lessonActivitiesForPresentation,reviewItemsForSession}from'./japanese_course_app.js';
 import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
 import{xpService}from'./xp_service.js';
+import{pickVoice}from'./voices.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
 import{DAILY_PHASES,advanceLearnIndex,dailyBudgetForLevel,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,hoursUntilTomorrow,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
 
@@ -17,23 +18,8 @@ const original={renderMap:proto.renderMap,renderRoute:proto.renderRoute,speakTts
 const dailyEnabled=app=>Boolean(app.definition?.dailyClass);
 
 // Cada personaje con su propia voz sintetizada, como en una grabación de Assimil.
-const FEMALE_SPEAKERS=new Set(['아나','어머니','수진','지은','루시아','Ana','Madre']);
-const FEMALE_VOICE=/yuna|flo|sandy|shelley|sora|heami|sunhi|female|여/i,MALE_VOICE=/eddy|reed|rocko|grandpa|minsu|injoon|male|남/i;
-// Calidad: Premium («superior» en macOS en español) > Mejorada > natural/neural > básica.
-const QUALITY=[/premium|superior/i,/enhanced|mejorada|optimizada/i,/natural|neural|online|google/i];
-const voiceQuality=voice=>{const index=QUALITY.findIndex(pattern=>pattern.test(voice.name));return index<0?0:QUALITY.length-index;};
-function voiceFor(speaker,lang){
-  const voices=(window.speechSynthesis?.getVoices?.()||[]).filter(voice=>voice.lang?.toLowerCase().startsWith(lang.toLowerCase().split('-')[0]));
-  if(!voices.length)return null;
-  const best=list=>[...list].sort((a,b)=>voiceQuality(b)-voiceQuality(a));
-  if(!speaker)return best(voices)[0];
-  const female=FEMALE_SPEAKERS.has(speaker),pattern=female?FEMALE_VOICE:MALE_VOICE;
-  const matches=voices.filter(voice=>pattern.test(voice.name)&&!(female?MALE_VOICE:FEMALE_VOICE).test(voice.name));
-  const pool=best(matches.length?matches:voices),top=pool.filter(voice=>voiceQuality(voice)===voiceQuality(pool[0]));
-  // Protagonistas con la mejor voz; secundarios varían dentro del grupo para no sonar igual.
-  if(['아나','민호'].includes(speaker))return top[0];
-  return pool[[...speaker].reduce((sum,ch)=>sum+ch.codePointAt(0),0)%pool.length];
-}
+const MAIN_CHARACTERS=new Set(['아나','민호','Ana','Ben','Léa','Jonas','Marco','João','Миша','小明','健太','آنا','عمر']);
+const voiceFor=(speaker,gender,lang)=>pickVoice(lang,{gender,seedName:speaker&&!MAIN_CHARACTERS.has(speaker)?speaker:''});
 
 Object.assign(proto,{
   async loadDaily(){
@@ -83,7 +69,7 @@ Object.assign(proto,{
     if(!entry){this.shell(`<section class="dc-today"><div class="dc-empty"><b>✓</b><h1>¡Terminaste el curso!</h1><p>Sigue con el repaso espaciado y las Historias.</p><button class="primary" data-jp-route="review">Ir al repaso</button></div></section>`,'Hoy');return;}
     const done=status==='done-today',yesterday=previousClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],lessonTitles=entry.lessons.map(ref=>this.findLesson(ref.lessonId)?.lesson.title).filter(Boolean),unit=this.units.get(entry.lessons[0]?.unitId),minutes=DAILY_PHASES.reduce((sum,phase)=>sum+phase.minutes,0);
     const nodes=DAILY_PHASES.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':index===entry.phaseIndex?'current':'locked';return`<li class="dc-node ${state}" style="--i:${index}"><span class="dc-node-dot">${state==='done'?'✓':phase.icon}</span><strong>${esc(phase.short)}</strong><small>${phase.minutes} min</small></li>`;}).join('');
-    const chips=(items,cls='')=>items.slice(0,10).map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
+    const chips=(items,cls='')=>items.slice(0,10).map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
     const scene=sceneFor(unit?.id,entry.items);
     const action=done?'':`<button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${entry.phaseIndex?'Continuar':'Empezar'}: ${esc(next?.title||'')} →</button>`;
     const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>Clase ${entry.number} completada</h2><p>Tu próxima clase se abre mañana (en unas ${hoursUntilTomorrow(now)} h). Dormir entre clases es parte del método: mañana empezaremos repasando esto.</p><div class="dc-extra"><h3>¿Quieres seguir?</h3><button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar las frases de hoy</button><button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button><button data-jp-action="stories">▤ Leer una Historia</button><button class="dc-advance" data-dc-action="advance">Adelantar la clase de mañana</button></div></section>`:'';
@@ -162,7 +148,7 @@ Object.assign(proto,{
   async listenLines(entry){
     this.dailyStories=await this.loadStories(entry);
     if(!this.dailyStories.length)return listeningLines(entry.items);
-    return this.dailyStories.flatMap((story,index)=>story.lines.map(line=>({target:line.text,meaning:line.translation,audio:line.text,slowAudio:line.text,speaker:line.speakerEs||line.speaker,speakerKo:line.speaker,story:index})));
+    return this.dailyStories.flatMap((story,index)=>story.lines.map(line=>({target:line.text,meaning:line.translation,audio:line.text,slowAudio:line.text,speaker:line.speakerEs||line.speaker,speakerKo:line.speaker,gender:line.gender||'',reading:line.reading||'',story:index})));
   },
 
   beginActivities(activities,step,title){
@@ -189,6 +175,8 @@ Object.assign(proto,{
     if(step.kind==='free'){this.daily=markExtraStudy(this.daily);await this.saveDaily();return this.renderCheckpoint(null,result,{free:true});}
     if(step.kind==='set'){
       if(step.srsItems?.length){this.progress=completeGuidedReview(this.progress,step.srsItems,result,this.progressConfig());this.reviewedToday+=step.srsItems.length;await this.put('metadata',this.progress);}
+      // El cierre termina con frases reales de tus cómics que usan lo de hoy.
+      if(step.phase.id==='close'){const comics=this.comicCardsForToday();if(comics.length)return this.renderComics(comics,0,result);}
       return this.finishPhase(step.phase,result);
     }
     // Lección real: se guarda igual que desde el mapa (progreso, repaso espaciado, XP).
@@ -211,7 +199,7 @@ Object.assign(proto,{
   renderLessonRetry(ref,result,passing){
     const errors=(result.errors||[]).slice(0,8);
     this.dailyRetryRef=ref;
-    this.shell(`<section class="dc-checkpoint retry"><div class="dc-ring" style="--p:${result.percentage}"><b>${result.percentage}%</b></div><span class="dc-eyebrow">CASI</span><h1>Repitamos esta lección con calma</h1><p>Para avanzar necesitas ${passing} %. Repetir ahora, con todo fresco, es exactamente como se aprende.</p>${errors.length?`<div class="dc-chips">${errors.map(error=>`<span class="dc-chip old" lang="${esc(this.definition.htmlLang)}">${esc(error.activity?.target||error.answer)}</span>`).join('')}</div>`:''}<button class="primary" data-dc-action="retry-lesson">Repetir la lección</button><button class="dc-link" data-dc-action="to-today">Parar aquí por hoy</button></section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint retry"><div class="dc-ring" style="--p:${result.percentage}"><b>${result.percentage}%</b></div><span class="dc-eyebrow">CASI</span><h1>Repitamos esta lección con calma</h1><p>Para avanzar necesitas ${passing} %. Repetir ahora, con todo fresco, es exactamente como se aprende.</p>${errors.length?`<div class="dc-chips">${errors.map(error=>`<span class="dc-chip old" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(error.activity?.target||error.answer)}</span>`).join('')}</div>`:''}<button class="primary" data-dc-action="retry-lesson">Repetir la lección</button><button class="dc-link" data-dc-action="to-today">Parar aquí por hoy</button></section>`,'Hoy');
   },
 
   async finishPhase(phase,result,{note=''}={}){
@@ -232,7 +220,7 @@ Object.assign(proto,{
 
   renderClassComplete(){
     const entry=currentClass(this.daily),results=Object.values(entry.results||{}),correct=results.reduce((sum,item)=>sum+item.correct,0),total=results.reduce((sum,item)=>sum+item.total,0);
-    this.shell(`<section class="dc-checkpoint complete"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(14)}</div><div class="dc-ring" style="--p:100"><b>★</b></div><span class="dc-eyebrow">CLASE ${entry.number} COMPLETADA</span><h1>¡Listo por hoy!</h1><p>${entry.items.length} elementos nuevos · ${total?`${Math.round(correct/total*100)} % de aciertos`:''}</p><p>Mañana empezaremos repasando exactamente esto. Volver a verlo después de dormir es lo que lo fija.</p><div class="dc-chips">${entry.items.slice(0,12).map(item=>`<span class="dc-chip" lang="${esc(this.definition.htmlLang)}">${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('')}</div><button class="primary" data-dc-action="recap">▶ Ver el video de repaso</button><button data-dg-action="start">◆ Jugar con las imágenes</button><button class="dc-link" data-dc-action="to-today">Terminar sin video</button></section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint complete"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(14)}</div><div class="dc-ring" style="--p:100"><b>★</b></div><span class="dc-eyebrow">CLASE ${entry.number} COMPLETADA</span><h1>¡Listo por hoy!</h1><p>${entry.items.length} elementos nuevos · ${total?`${Math.round(correct/total*100)} % de aciertos`:''}</p><p>Mañana empezaremos repasando exactamente esto. Volver a verlo después de dormir es lo que lo fija.</p><div class="dc-chips">${entry.items.slice(0,12).map(item=>`<span class="dc-chip" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('')}</div><button class="primary" data-dc-action="recap">▶ Ver el video de repaso</button><button data-dg-action="start">◆ Jugar con las imágenes</button><button class="dc-link" data-dc-action="to-today">Terminar sin video</button></section>`,'Hoy');
   },
 
   // ── Fase de escucha (Assimil) ──────────────────────────────────────────
@@ -244,19 +232,19 @@ Object.assign(proto,{
     const lang=esc(this.definition.htmlLang);
     let body='';
     const stories=lines.some(line=>line.story!==undefined)?this.dailyStories||[]:[];
-    const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}">${esc(line.target)}</span><span class="dc-line-es">${esc(line.meaning)}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
+    const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}" dir="auto">${esc(line.target)}</span>${line.reading?`<span class="dc-line-reading">${esc(line.reading)}</span>`:''}<span class="dc-line-es">${esc(line.meaning)}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
     const sceneOf=story=>sceneSvg(story.scene)||sceneSvg('generic');
     if(step===0){
       const pictures=stories.length?'':lines.filter(line=>hasIllustration(line.meaning)).slice(0,6).map(line=>`<figure data-dc-line="${lines.indexOf(line)}">${illustrationFor(line.meaning)}</figure>`).join('');
       const scenes=stories.map((story,index)=>`<figure class="dc-story-scene" data-dc-story="${index}">${sceneOf(story)}<figcaption>${esc(story.title)}</figcaption></figure>`).join('');
       body=`<p class="dc-listen-help">No intentes leer ni traducir. Mira la escena y deja que tu oído se acostumbre: escucha todo una o dos veces.</p>${scenes?`<div class="dc-story-scenes">${scenes}</div>`:`<div class="dc-orb" aria-hidden="true"><i></i><i></i><i></i><span>♪</span></div><div class="dc-listen-pictures">${pictures}</div>`}<p class="dc-listen-count" aria-live="polite"></p><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo</button><button data-dc-action="listen-step" data-dc-step="1">Siguiente paso →</button></div>`;
     }else if(step===1){
-      const list=stories.length?stories.map((story,storyIndex)=>`<section class="dc-story"><div class="dc-story-head"><i aria-hidden="true">${sceneOf(story)}</i><h3>${esc(story.title)}</h3></div><ol class="dc-lines">${lines.map((line,index)=>line.story===storyIndex?lineItem(line,index):'').join('')}</ol>${story.notes?.length?`<details class="dc-notes"><summary>Notas de la lección</summary><dl>${story.notes.map(note=>`<dt lang="${lang}">${esc(note.ko)}</dt><dd>${esc(note.es)}</dd>`).join('')}</dl></details>`:''}</section>`).join(''):`<ol class="dc-lines">${lines.map(lineItem).join('')}</ol>`;
+      const list=stories.length?stories.map((story,storyIndex)=>`<section class="dc-story"><div class="dc-story-head"><i aria-hidden="true">${sceneOf(story)}</i><h3>${esc(story.title)}</h3></div><ol class="dc-lines">${lines.map((line,index)=>line.story===storyIndex?lineItem(line,index):'').join('')}</ol>${story.notes?.length?`<details class="dc-notes"><summary>Notas de la lección</summary><dl>${story.notes.map(note=>`<dt lang="${lang}" dir="auto">${esc(note.ko)}</dt><dd>${esc(note.es)}</dd>`).join('')}</dl></details>`:''}</section>`).join(''):`<ol class="dc-lines">${lines.map(lineItem).join('')}</ol>`;
       body=`<p class="dc-listen-help">Ahora escucha mientras lees. Toca cualquier frase para oírla otra vez.${stories.length?' Abre las notas para entender cada detalle.':''}</p><div class="dc-lines-wrap">${list}</div><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo leyendo</button><button data-dc-action="listen-step" data-dc-step="2">Siguiente paso →</button></div>`;
     }else{
       const index=Math.max(0,Math.min(lines.length-1,this.dailyShadowIndex||0)),line=lines[index],story=stories[line.story];
       const picture=story?`<div class="dc-shadow-scene" aria-hidden="true">${sceneOf(story)}</div>`:hasIllustration(line.meaning)?`<div class="dc-shadow-pic" aria-hidden="true">${illustrationFor(line.meaning)}</div>`:'';
-      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}">${esc(line.target)}</div><div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">↺ Otra vez</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase →</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar la fase ✓</button>`}</div>`;
+      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">↺ Otra vez</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase →</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar la fase ✓</button>`}</div>`;
     }
     this.shell(`<section class="dc-listen step-${step}"><header class="jp-activity-top"><button data-dc-action="to-today" aria-label="Salir de la fase">✕</button><div class="dc-listen-tabs">${tabs}</div></header>${body}</section>`,'Hoy');
     if(step===2)this.shadowLine('normal');
@@ -304,21 +292,21 @@ Object.assign(proto,{
   async renderRecap(styleId){
     const entry=currentClass(this.daily);
     if(!entry?.items?.length)return this.showToast('Todavía no hay nada que repasar en video.');
-    const [{buildRecapTimeline},{createRecapPlayer},{RECAP_STYLES,styleIndexForClass,loadRecapStyle}]=await Promise.all([import('./recap/recap_timeline.js'),import('./recap/recap_player.js'),import('./recap/styles/index.js')]);
-    const chosen=styleId||RECAP_STYLES[styleIndexForClass(entry.number)].id;
+    const [{buildRecapTimeline},{createRecapPlayer},{RECAP_STYLES,styleIndexForDay,loadRecapStyle}]=await Promise.all([import('./recap/recap_timeline.js'),import('./recap/recap_player.js'),import('./recap/styles/index.js')]);
+    const chosen=RECAP_STYLES[styleIndexForDay(new Date(),this.definition.slug)].id;
     const unit=this.units.get(entry.lessons[0]?.unitId);
-    const chips=RECAP_STYLES.map(style=>`<button class="dc-style-chip ${style.id===chosen?'active':''}" data-dc-action="recap" data-dc-style="${esc(style.id)}">${esc(style.name)}</button>`).join('');
     this.shell(`<section class="dc-recap"><div class="dc-recap-head"><div><span class="dc-eyebrow">VIDEO DE REPASO · CLASE ${entry.number}</span><h1>¿Cuánto recuerdas de hoy?</h1><p>Escucha, intenta recordar durante la cuenta atrás y luego comprueba. Sin subtítulos tu oído trabaja más; actívalos si te pierdes.</p></div></div>
       <div class="dc-recap-stage"><canvas class="dc-recap-canvas" aria-label="Video de repaso"></canvas><div class="dc-recap-loading">Preparando el video…</div></div>
       <div class="dc-recap-controls"><button data-dc-action="recap-prev" aria-label="Pregunta anterior">⏮</button><button class="primary" data-dc-action="recap-play" aria-label="Reproducir">▶</button><button data-dc-action="recap-next" aria-label="Pregunta siguiente">⏭</button><input type="range" class="dc-recap-seek" min="0" max="1000" value="0" aria-label="Posición"><span class="dc-recap-time">0:00</span><button class="dc-recap-toggle" data-dc-action="recap-cc" aria-pressed="false" title="Subtítulos">CC</button><button class="dc-recap-toggle on" data-dc-action="recap-sound" aria-pressed="true" title="Efectos de sonido">♪</button><button data-dc-action="recap-full" aria-label="Pantalla completa">⛶</button></div>
-      <div class="dc-recap-styles"><span>Estilo:</span>${chips}</div>
       <button class="dc-link" data-dc-action="to-today">Volver al plan de hoy</button></section>`,'Hoy');
     const canvas=this.root.querySelector('.dc-recap-canvas'),[style]=await Promise.all([loadRecapStyle(chosen)]);
     const timeline=buildRecapTimeline({classNumber:entry.number,unitTitle:unit?.title||'',items:entry.items});
     const format=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
     let last='';
     this.recapPlayer?.destroy();
-    this.recapPlayer=await createRecapPlayer({canvas,style,timeline,pictureFor:illustrationFor,sceneSvg:sceneFor(unit?.id),onState:state=>{
+    const courseAudio=text=>{const path=this.audioManifest?.[text]||this.audioManifest?.[String(text).replace(/[.!?。！？]+$/,'')];return path?this.url(`library/courses/${this.definition.directory}/${path}`):null;};
+    const narrator=await this.loadNarratorAudio();
+    this.recapPlayer=await createRecapPlayer({canvas,style,timeline,languageName:this.definition.name,audioUrlFor:(text,lang)=>lang==='tl'?courseAudio(text):narrator(text),langCode:this.definition.languageCode||this.definition.htmlLang,pictureFor:illustrationFor,sceneSvg:sceneFor(unit?.id),onState:state=>{
       const key=`${Math.floor(state.t*4)}|${state.playing}|${state.ended}`;if(key===last)return;last=key;
       const seek=this.root.querySelector('.dc-recap-seek'),play=this.root.querySelector('[data-dc-action="recap-play"]'),time=this.root.querySelector('.dc-recap-time');
       if(seek&&document.activeElement!==seek)seek.value=String(Math.round(state.t/state.duration*1000));
@@ -328,6 +316,71 @@ Object.assign(proto,{
     this.root.querySelector('.dc-recap-loading')?.remove();
     const seek=this.root.querySelector('.dc-recap-seek');
     seek?.addEventListener('input',()=>this.recapPlayer?.seek(Number(seek.value)/1000*timeline.duration));
+  },
+
+  // ── En tus cómics: frases reales con lo aprendido (dentro del cierre) ──
+  comicLevelLimit(){
+    const unit=this.units.get(currentClass(this.daily)?.lessons?.[0]?.unitId),index=Math.max(0,(this.course.levels||[]).findIndex(level=>level.unitIds?.includes(unit?.id)));
+    return Math.min(4,2+Math.max(0,index-1));
+  },
+  comicCardsForToday(){
+    const entry=currentClass(this.daily);if(!entry||!this.mangaCards?.length)return[];
+    // En clases de alfabeto se enseñan letras sueltas: no hay palabras que buscar.
+    if(entry.lessons.every(ref=>/reading|hangul|hiragana|katakana|rhythm|alphabet/.test(ref.unitId)))return[];
+    const words=[...entry.items,...(previousClass(this.daily)?.items||[])].map(item=>String(item.target).replace(/[.!?¿¡。？！]/g,'').trim()).filter(Boolean);
+    const escape=word=>word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    // Igual que scripts/build_comic_reading.py: palabra entera en alfabetos
+    // latinos; en coreano una sílaba suelta solo cuenta sola o con partícula.
+    const has=(text,word)=>{
+      if(/[A-Za-zÀ-ÿ]/.test(word))return new RegExp(`(?<![\\wÀ-ÿ])${escape(word)}(?![\\wÀ-ÿ])`,'i').test(text);
+      if(/\s/.test(word))return text.includes(word);
+      const tokens=` ${text.split(/[\s.,!?…"“”'‘’()\[\]~]+/).join(' ')} `;
+      return [...word].length===1?new RegExp(` ${escape(word)}(은|는|이|가|을|를|에|에서|에게|도|의|로|으로|와|과|하고|만|요|야|아)? `).test(tokens):tokens.includes(` ${word}`);
+    };
+    const shown=new Set(this.daily.shownComics||[]),limit=this.comicLevelLimit();
+    return this.mangaCards
+      .filter(card=>!shown.has(card.id)&&Number(card.level||2)<=limit)
+      .map(card=>({card,hits:words.filter(word=>has(card.text,word))}))
+      .filter(entry=>entry.hits.length)
+      .sort((a,b)=>b.hits.length-a.hits.length||a.card.text.length-b.card.text.length)
+      // Una frase por cómic cuando se puede: más variedad de voces y contextos.
+      .reduce((picked,entry,index,all)=>{if(picked.length<3&&!picked.some(other=>other.card.source===entry.card.source))picked.push(entry);if(index===all.length-1)for(const rest of all)if(picked.length<3&&!picked.includes(rest))picked.push(rest);return picked;},[]);
+  },
+  renderComics(list,index,result){
+    this.dailyComics={list,index,result};
+    const {card,hits}=list[index],lang=esc(this.definition.htmlLang),revealed=this.dailyComicReveal;
+    let text=esc(card.text);
+    for(const word of hits)text=text.split(esc(word)).join(`<mark>${esc(word)}</mark>`);
+    this.shell(`<section class="dc-comic"><div class="dc-comic-head"><span class="dc-eyebrow">CIERRE · EN TUS CÓMICS · ${index+1} DE ${list.length}</span><h1>Lo de hoy, en una historia real</h1></div>
+      <article class="dc-comic-card"><div class="dc-comic-source">${esc(card.source)}${card.page?` · pág. ${card.page}`:''}</div><button class="dc-comic-text" data-dc-action="comic-audio" lang="${lang}" dir="auto">${text}<small>▶</small></button>
+      ${revealed?`<div class="dc-comic-reveal"><strong>${esc(card.translation)}</strong>${card.note?`<p>${esc(card.note)}</p>`:''}<dl>${(card.breakdown||[]).map(part=>`<dt lang="${lang}" dir="auto">${esc(part.term)}</dt><dd>${esc(part.meaning)}</dd>`).join('')}</dl></div>
+      <div class="dc-comic-actions"><button data-dc-action="comic-next" data-dc-ok="0">No del todo · repasarla</button><button class="primary" data-dc-action="comic-next" data-dc-ok="1">La entendí →</button></div>`:`<p class="dc-comic-help">Léela y escúchala. ¿Qué crees que dice? Las palabras marcadas las viste hoy.</p><button class="primary" data-dc-action="comic-reveal">Ver mi traducción</button>`}
+      </article><button class="dc-link" data-dc-action="comic-skip">Saltar y terminar la clase</button></section>`,'Hoy');
+    if(!revealed)this.playKeyAudio(card.text,'normal',false);
+  },
+  async comicNext(ok){
+    const state=this.dailyComics;if(!state)return;
+    const card=state.list[state.index].card;
+    this.daily.shownComics=[...new Set([...(this.daily.shownComics||[]),card.id])].slice(-2000);
+    if(!ok&&!(this.mangaState.savedIds||[]).includes(card.id)){this.mangaState.savedIds=[...(this.mangaState.savedIds||[]),card.id];await this.saveMangaState();}
+    this.dailyComicReveal=false;
+    if(state.index+1<state.list.length)return this.renderComics(state.list,state.index+1,state.result);
+    this.dailyComics=null;await this.saveDaily();
+    return this.finishPhase(DAILY_PHASES.find(phase=>phase.id==='close'),state.result);
+  },
+
+  // Cuántas veces aparece una palabra en tus cómics (solo conteos).
+  async loadComicFrequency(){
+    if(this.comicFrequency!==undefined)return this.comicFrequency;
+    const data=await this.fetch('library/personal_manga/frequency.json').catch(()=>null);
+    this.comicFrequency=data?.languages?.[this.language]||null;
+    return this.comicFrequency;
+  },
+
+  // Frases fijas del narrador grabadas (library/recap_audio). El resto, voz del sistema.
+  async loadNarratorAudio(){
+    if(!this.narratorManifest)this.narratorManifest=(await this.fetch('library/recap_audio/manifest.json').catch(()=>null))?.items||{};
+    return text=>{const path=this.narratorManifest[String(text).replace(/\d+/g,'N')];return path?this.url(`library/recap_audio/${path}`):null;};
   },
 
   // Repetición libre después de terminar la clase.
@@ -373,6 +426,10 @@ Object.assign(proto,{
     const meaning=String(activity.meaning||activity.explanation||'').trim(),svg=meaning&&illustrationFor(meaning);
     const target=this.root.querySelector('.jp-teach-symbol');
     if(svg&&target&&!this.root.querySelector('.dc-illustration'))target.insertAdjacentHTML('beforebegin',`<figure class="dc-illustration" aria-hidden="true">${svg}</figure>`);
+    const word=String(activity.target||'').replace(/[.!?¿¡。？！]/g,'').trim();
+    const badge=count=>{const box=this.root.querySelector('.jp-teach-meaning');if(count>=2&&box&&!this.root.querySelector('.dc-freq'))box.insertAdjacentHTML('afterend',`<p class="dc-freq">Aparece ${count} veces en tus cómics</p>`);};
+    if(this.comicFrequency)badge(this.comicFrequency[word]||0);
+    else if(this.comicFrequency===undefined)this.loadComicFrequency().then(map=>{if(map&&this.lesson?.activities?.[this.activityIndex]===activity)badge(map[word]||0);});
   },
   async continue(){
     if(this.dailyMode&&this.lesson&&this.activityIndex>=this.lesson.activities.length-1){this.cancelSpeech();return this.finishDailyActivities();}
@@ -392,7 +449,7 @@ Object.assign(proto,{
   },
   stop(){this.dailyPlayToken=null;this.recapPlayer?.destroy();this.recapPlayer=null;return original.stop.call(this);},
   speakTts(text,rate=1,onState=null){
-    const voice=voiceFor(this.dailySpeaker||'',this.definition.htmlLang);
+    const voice=voiceFor(this.dailySpeaker||'',this.dailyGender||'',this.definition.languageCode||this.definition.htmlLang);
     if(!voice)return original.speakTts.call(this,text,rate,onState);
     return new Promise(resolve=>{
       const synth=window.speechSynthesis,utterance=new SpeechSynthesisUtterance(String(text));
@@ -402,7 +459,7 @@ Object.assign(proto,{
       synth.cancel();synth.speak(utterance);
     });
   },
-  playLine(line,mode='normal'){this.dailySpeaker=line?.speakerKo||'';return this.playKeyAudio(line.audio,mode,false).finally(()=>{this.dailySpeaker='';});},
+  playLine(line,mode='normal'){this.dailySpeaker=line?.speakerKo||'';this.dailyGender=line?.gender||'';return this.playKeyAudio(line.audio,mode,false).finally(()=>{this.dailySpeaker='';this.dailyGender='';});},
   handleClick(event){
     const leave=event.target.closest('[data-jp-action="leave-lesson"]');
     if(leave&&this.dailyMode){this.dailyMode=false;this.cancelSpeech();this.showToast('Tu último checkpoint sigue guardado.');return this.renderToday();}
@@ -423,6 +480,10 @@ Object.assign(proto,{
     if(name==='listen-finish'){if(this.dailyListen?.replay){this.dailyListen=null;return this.renderToday();}this.dailyListen=null;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id==='listen'),null);}
     if(name==='replay-listen'){return this.listenLines(currentClass(this.daily)).then(lines=>{if(!lines.length)return;this.renderListen(lines,1);this.dailyListen.replay=true;});}
     if(name==='free-practice')return this.startFreePractice();
+    if(name==='comic-reveal'){this.dailyComicReveal=true;const state=this.dailyComics;return this.renderComics(state.list,state.index,state.result);}
+    if(name==='comic-next')return this.comicNext(action.dataset.dcOk==='1');
+    if(name==='comic-audio'){const state=this.dailyComics;return this.playKeyAudio(state.list[state.index].card.text,'normal',false);}
+    if(name==='comic-skip'){const state=this.dailyComics;this.dailyComics=null;this.dailyComicReveal=false;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id==='close'),state?.result||null);}
     if(name==='recap')return this.renderRecap(action.dataset.dcStyle);
     if(name==='recap-play')return this.recapPlayer?.toggle();
     if(name==='recap-prev')return this.recapPlayer?.step(-1);

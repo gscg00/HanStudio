@@ -190,7 +190,7 @@
           "prompt": "¿Qué significa «My name is Ana.»?",
           "target": "My name is Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -257,7 +257,7 @@
           "target": "Nice to meet you.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -329,7 +329,7 @@
           "target": "good evening",
           "options": [],
           "answer": "",
-          "explanation": "buenas noches",
+          "explanation": "buenas tardes / buenas noches (al llegar)",
           "audio": "good evening",
           "slow_audio": "good evening",
           "image": null,
@@ -340,7 +340,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Saludo al llegar por la tarde o la noche. Para despedirse por la noche se dice «good night»."
         },
         {
           "id": "english-a11-identity-02-03-meaning",
@@ -349,10 +350,10 @@
           "target": "good evening",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona"
           ],
-          "answer": "buenas noches",
+          "answer": "buenas tardes / buenas noches (al llegar)",
           "explanation": "«good evening» significa «buenas noches».",
           "audio": "good evening",
           "slow_audio": "good evening",
@@ -376,7 +377,7 @@
             "good evening"
           ],
           "answer": "good evening",
-          "explanation": "La forma escuchada es «good evening»: buenas noches",
+          "explanation": "La forma escuchada es «good evening»: buenas tardes / buenas noches (al llegar)",
           "audio": "good evening",
           "slow_audio": "good evening",
           "image": null,
@@ -667,10 +668,10 @@
           "target": "good evening",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona"
           ],
-          "answer": "buenas noches",
+          "answer": "buenas tardes / buenas noches (al llegar)",
           "explanation": "«good evening» significa «buenas noches».",
           "audio": "good evening",
           "slow_audio": "good evening",
@@ -694,7 +695,7 @@
             "good evening"
           ],
           "answer": "good evening",
-          "explanation": "La forma escuchada es «good evening»: buenas noches",
+          "explanation": "La forma escuchada es «good evening»: buenas tardes / buenas noches (al llegar)",
           "audio": "good evening",
           "slow_audio": "good evening",
           "image": null,
@@ -712,7 +713,7 @@
           "prompt": "¿Qué significa «My name is Ana.»?",
           "target": "My name is Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -851,7 +852,7 @@
           "target": "name",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -1048,7 +1049,7 @@
           "prompt": "¿Qué significa «I am from Mexico.»?",
           "target": "I am from Mexico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona",
             "Soy de México."
           ],
@@ -1253,7 +1254,7 @@
           "target": "I speak a little English.",
           "options": [],
           "answer": "",
-          "explanation": "Hablo un poco de este idioma.",
+          "explanation": "Hablo un poco de inglés.",
           "audio": "I speak a little English.",
           "slow_audio": "I speak a little English.",
           "image": null,
@@ -1273,11 +1274,11 @@
           "target": "I speak a little English.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«I speak a little English.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de inglés.",
+          "explanation": "«I speak a little English.» significa «Hablo un poco de inglés.».",
           "audio": "I speak a little English.",
           "slow_audio": "I speak a little English.",
           "image": null,
@@ -1300,7 +1301,7 @@
             "I speak a little English."
           ],
           "answer": "I speak a little English.",
-          "explanation": "La forma escuchada es «I speak a little English.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «I speak a little English.»: Hablo un poco de inglés.",
           "audio": "I speak a little English.",
           "slow_audio": "I speak a little English.",
           "image": null,
@@ -1597,7 +1598,7 @@
           "target": "Nice to meet you.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -1688,7 +1689,7 @@
           "prompt": "¿Qué significa «I am from Mexico.»?",
           "target": "I am from Mexico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona",
             "Soy de México."
           ],
@@ -1807,7 +1808,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "What is your name?",
           "accepted_answers": [
-            "What is your name?"
+            "What is your name?",
+            "What's your name?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «What is your name?».",
@@ -1910,7 +1912,8 @@
           "target": "Soy de México.",
           "answer": "I am from Mexico.",
           "accepted_answers": [
-            "I am from Mexico."
+            "I am from Mexico.",
+            "I'm from Mexico."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1929,13 +1932,14 @@
           "id": "english-a1-1-identity-production-dialogue",
           "type": "guided_dialogue",
           "prompt": "Ensayo guiado de la unidad",
-          "instruction": "Resuelve cada situación sin opciones. Puedes escribir, hablar o escuchar el modelo después de intentarlo.",
+          "instruction": "Escucha a tu interlocutor y responde en inglés. Puedes escribir o hablar.",
           "turns": [
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 1",
-              "translation": "Quieres expresar: «¿Cómo te llamas?»."
+              "speaker": "ANA",
+              "text": "Hello! Nice to meet you.",
+              "translation": "¡Hola! Mucho gusto. — Tú quieres decir: «¿Cómo te llamas?».",
+              "audio": "Hello! Nice to meet you."
             },
             {
               "role": "learner",
@@ -1943,7 +1947,8 @@
               "prompt": "Di o escribe en inglés: «¿Cómo te llamas?»",
               "answer": "What is your name?",
               "accepted_answers": [
-                "What is your name?"
+                "What is your name?",
+                "What's your name?"
               ],
               "audio": "What is your name?",
               "allow_minor_typos": true,
@@ -1951,9 +1956,10 @@
             },
             {
               "role": "model",
-              "speaker": "GUÍA",
-              "text": "Situación 2",
-              "translation": "Quieres expresar: «Soy de México.»."
+              "speaker": "ANA",
+              "text": "My name is Ana. Where are you from?",
+              "translation": "Me llamo Ana. ¿De dónde eres? — Tú quieres decir: «Soy de México.».",
+              "audio": "My name is Ana. Where are you from?"
             },
             {
               "role": "learner",
@@ -1961,7 +1967,8 @@
               "prompt": "Di o escribe en inglés: «Soy de México.»",
               "answer": "I am from Mexico.",
               "accepted_answers": [
-                "I am from Mexico."
+                "I am from Mexico.",
+                "I'm from Mexico."
               ],
               "audio": "I am from Mexico.",
               "allow_minor_typos": true,
@@ -2107,10 +2114,10 @@
           "target": "good evening",
           "options": [
             "¿Cómo te llamas?",
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona"
           ],
-          "answer": "buenas noches",
+          "answer": "buenas tardes / buenas noches (al llegar)",
           "explanation": "«good evening» significa «buenas noches».",
           "audio": "good evening",
           "slow_audio": "good evening",
@@ -2134,7 +2141,7 @@
             "good evening"
           ],
           "answer": "good evening",
-          "explanation": "La forma escuchada es «good evening»: buenas noches",
+          "explanation": "La forma escuchada es «good evening»: buenas tardes / buenas noches (al llegar)",
           "audio": "good evening",
           "slow_audio": "good evening",
           "image": null,
@@ -2199,7 +2206,7 @@
           "target": "name",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "nombre"
           ],
           "answer": "nombre",
@@ -2382,7 +2389,7 @@
           "prompt": "¿Qué significa «My name is Ana.»?",
           "target": "My name is Ana.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "Me llamo Ana.",
             "Soy de México."
           ],
@@ -2429,7 +2436,7 @@
           "target": "Nice to meet you.",
           "options": [
             "Mucho gusto.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "adiós"
           ],
           "answer": "Mucho gusto.",
@@ -2612,7 +2619,7 @@
           "prompt": "¿Qué significa «I am from Mexico.»?",
           "target": "I am from Mexico.",
           "options": [
-            "buenas noches",
+            "buenas tardes / buenas noches (al llegar)",
             "persona",
             "Soy de México."
           ],
@@ -2659,11 +2666,11 @@
           "target": "I speak a little English.",
           "options": [
             "Me llamo Ana.",
-            "Hablo un poco de este idioma.",
+            "Hablo un poco de inglés.",
             "adiós"
           ],
-          "answer": "Hablo un poco de este idioma.",
-          "explanation": "«I speak a little English.» significa «Hablo un poco de este idioma.».",
+          "answer": "Hablo un poco de inglés.",
+          "explanation": "«I speak a little English.» significa «Hablo un poco de inglés.».",
           "audio": "I speak a little English.",
           "slow_audio": "I speak a little English.",
           "image": null,
@@ -2686,7 +2693,7 @@
             "I speak a little English."
           ],
           "answer": "I speak a little English.",
-          "explanation": "La forma escuchada es «I speak a little English.»: Hablo un poco de este idioma.",
+          "explanation": "La forma escuchada es «I speak a little English.»: Hablo un poco de inglés.",
           "audio": "I speak a little English.",
           "slow_audio": "I speak a little English.",
           "image": null,

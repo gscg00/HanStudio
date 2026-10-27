@@ -4,12 +4,15 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "library" / "courses"
-OUTPUT = ROOT / "supabase" / "migrations" / "017_refresh_guided_course_catalog.sql"
+# Cada cambio de cursos va en una migración nueva (las anteriores ya se aplicaron):
+#   python3 scripts/build_xp_catalog_migration.py 020_refresh_guided_course_catalog_2026_10.sql
+OUTPUT = ROOT / "supabase" / "migrations" / (sys.argv[1] if len(sys.argv) > 1 else "017_refresh_guided_course_catalog.sql")
 REWARDS = {"normal": 20, "short": 10, "test": 30, "unitFinal": 50, "review": 5}
 
 

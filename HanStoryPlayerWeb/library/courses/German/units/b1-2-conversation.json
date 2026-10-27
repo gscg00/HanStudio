@@ -350,7 +350,7 @@
           "prompt": "¿Qué significa «Wir haben uns missverstanden.»?",
           "target": "Wir haben uns missverstanden.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -668,7 +668,7 @@
           "prompt": "¿Qué significa «Wir haben uns missverstanden.»?",
           "target": "Wir haben uns missverstanden.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -965,7 +965,7 @@
           "target": "Zuerst möchte ich etwas klären.",
           "options": [],
           "answer": "",
-          "explanation": "Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "Primero quisiera aclarar algo.",
           "audio": "Zuerst möchte ich etwas klären.",
           "slow_audio": "Zuerst möchte ich etwas klären.",
           "image": null,
@@ -984,12 +984,12 @@
           "prompt": "¿Qué significa «Zuerst möchte ich etwas klären.»?",
           "target": "Zuerst möchte ich etwas klären.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Ella estaba decepcionada con el resultado.",
             "A veces es difícil perdonar."
           ],
-          "answer": "Antes de continuar, quisiera aclarar un detalle.",
-          "explanation": "«Zuerst möchte ich etwas klären.» significa «Antes de continuar, quisiera aclarar un detalle.».",
+          "answer": "Primero quisiera aclarar algo.",
+          "explanation": "«Zuerst möchte ich etwas klären.» significa «Primero quisiera aclarar algo.».",
           "audio": "Zuerst möchte ich etwas klären.",
           "slow_audio": "Zuerst möchte ich etwas klären.",
           "image": null,
@@ -1012,7 +1012,7 @@
             "Danach haben wir ruhig miteinander gesprochen."
           ],
           "answer": "Zuerst möchte ich etwas klären.",
-          "explanation": "La forma escuchada es «Zuerst möchte ich etwas klären.»: Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "La forma escuchada es «Zuerst möchte ich etwas klären.»: Primero quisiera aclarar algo.",
           "audio": "Zuerst möchte ich etwas klären.",
           "slow_audio": "Zuerst möchte ich etwas klären.",
           "image": null,
@@ -1208,7 +1208,7 @@
           "prompt": "¿Qué significa «Ich habe gelernt, vor dem Antworten zuzuhören.»?",
           "target": "Ich habe gelernt, vor dem Antworten zuzuhören.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -1552,7 +1552,7 @@
           "prompt": "¿Qué significa «Ich habe gelernt, vor dem Antworten zuzuhören.»?",
           "target": "Ich habe gelernt, vor dem Antworten zuzuhören.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -1804,12 +1804,13 @@
         {
           "id": "german-b1-2-conversation-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en alemán: «Antes de continuar, quisiera aclarar un detalle.»",
-          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "prompt": "Escribe en alemán: «Primero quisiera aclarar algo.»",
+          "target": "Primero quisiera aclarar algo.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Zuerst möchte ich etwas klären.",
           "accepted_answers": [
-            "Zuerst möchte ich etwas klären."
+            "Zuerst möchte ich etwas klären.",
+            "Zuerst würde ich gern etwas klären."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Zuerst möchte ich etwas klären.».",
@@ -1844,8 +1845,8 @@
         {
           "id": "german-b1-2-conversation-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Antes de continuar, quisiera aclarar un detalle.»",
-          "target": "Antes de continuar, quisiera aclarar un detalle.",
+          "prompt": "Construye la forma que significa «Primero quisiera aclarar algo.»",
+          "target": "Primero quisiera aclarar algo.",
           "options": [
             "ich",
             "Zuerst",
@@ -1938,15 +1939,16 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «Antes de continuar, quisiera aclarar un detalle.»."
+              "translation": "Quieres expresar: «Primero quisiera aclarar algo.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en alemán: «Antes de continuar, quisiera aclarar un detalle.»",
+              "prompt": "Di o escribe en alemán: «Primero quisiera aclarar algo.»",
               "answer": "Zuerst möchte ich etwas klären.",
               "accepted_answers": [
-                "Zuerst möchte ich etwas klären."
+                "Zuerst möchte ich etwas klären.",
+                "Zuerst würde ich gern etwas klären."
               ],
               "audio": "Zuerst möchte ich etwas klären.",
               "allow_minor_typos": true,
@@ -1989,7 +1991,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [
@@ -2127,7 +2129,7 @@
           "prompt": "¿Qué significa «Wir haben uns missverstanden.»?",
           "target": "Wir haben uns missverstanden.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Nos entendimos mal.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -2357,7 +2359,7 @@
           "prompt": "¿Qué significa «Ich habe gelernt, vor dem Antworten zuzuhören.»?",
           "target": "Ich habe gelernt, vor dem Antworten zuzuhören.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Ella estaba decepcionada con el resultado.",
             "Aprendí a escuchar antes de responder."
           ],
@@ -2587,12 +2589,12 @@
           "prompt": "¿Qué significa «Zuerst möchte ich etwas klären.»?",
           "target": "Zuerst möchte ich etwas klären.",
           "options": [
-            "Antes de continuar, quisiera aclarar un detalle.",
+            "Primero quisiera aclarar algo.",
             "Ella estaba decepcionada con el resultado.",
             "A veces es difícil perdonar."
           ],
-          "answer": "Antes de continuar, quisiera aclarar un detalle.",
-          "explanation": "«Zuerst möchte ich etwas klären.» significa «Antes de continuar, quisiera aclarar un detalle.».",
+          "answer": "Primero quisiera aclarar algo.",
+          "explanation": "«Zuerst möchte ich etwas klären.» significa «Primero quisiera aclarar algo.».",
           "audio": "Zuerst möchte ich etwas klären.",
           "slow_audio": "Zuerst möchte ich etwas klären.",
           "image": null,
@@ -2615,7 +2617,7 @@
             "Danach haben wir ruhig miteinander gesprochen."
           ],
           "answer": "Zuerst möchte ich etwas klären.",
-          "explanation": "La forma escuchada es «Zuerst möchte ich etwas klären.»: Antes de continuar, quisiera aclarar un detalle.",
+          "explanation": "La forma escuchada es «Zuerst möchte ich etwas klären.»: Primero quisiera aclarar algo.",
           "audio": "Zuerst möchte ich etwas klären.",
           "slow_audio": "Zuerst möchte ich etwas klären.",
           "image": null,

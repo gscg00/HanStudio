@@ -350,7 +350,7 @@
           "prompt": "¿Qué significa «Versprechen»?",
           "target": "Versprechen",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "promesa",
             "decidir"
           ],
@@ -668,7 +668,7 @@
           "prompt": "¿Qué significa «Versprechen»?",
           "target": "Versprechen",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "promesa",
             "decidir"
           ],
@@ -965,7 +965,7 @@
           "target": "Ich möchte ein Zimmer reservieren.",
           "options": [],
           "answer": "",
-          "explanation": "Pienso reservar una habitación.",
+          "explanation": "Quisiera reservar una habitación.",
           "audio": "Ich möchte ein Zimmer reservieren.",
           "slow_audio": "Ich möchte ein Zimmer reservieren.",
           "image": null,
@@ -984,12 +984,12 @@
           "prompt": "¿Qué significa «Ich möchte ein Zimmer reservieren.»?",
           "target": "Ich möchte ein Zimmer reservieren.",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "intención",
             "reservar"
           ],
-          "answer": "Pienso reservar una habitación.",
-          "explanation": "«Ich möchte ein Zimmer reservieren.» significa «Pienso reservar una habitación.».",
+          "answer": "Quisiera reservar una habitación.",
+          "explanation": "«Ich möchte ein Zimmer reservieren.» significa «Quisiera reservar una habitación.».",
           "audio": "Ich möchte ein Zimmer reservieren.",
           "slow_audio": "Ich möchte ein Zimmer reservieren.",
           "image": null,
@@ -1012,7 +1012,7 @@
             "vielleicht"
           ],
           "answer": "Ich möchte ein Zimmer reservieren.",
-          "explanation": "La forma escuchada es «Ich möchte ein Zimmer reservieren.»: Pienso reservar una habitación.",
+          "explanation": "La forma escuchada es «Ich möchte ein Zimmer reservieren.»: Quisiera reservar una habitación.",
           "audio": "Ich möchte ein Zimmer reservieren.",
           "slow_audio": "Ich möchte ein Zimmer reservieren.",
           "image": null,
@@ -1208,7 +1208,7 @@
           "prompt": "¿Qué significa «entscheiden»?",
           "target": "entscheiden",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "intención",
             "decidir"
           ],
@@ -1552,7 +1552,7 @@
           "prompt": "¿Qué significa «entscheiden»?",
           "target": "entscheiden",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "intención",
             "decidir"
           ],
@@ -1804,12 +1804,14 @@
         {
           "id": "german-a2-1-future-production-translate",
           "type": "typed_translation",
-          "prompt": "Escribe en alemán: «Pienso reservar una habitación.»",
-          "target": "Pienso reservar una habitación.",
+          "prompt": "Escribe en alemán: «Quisiera reservar una habitación.»",
+          "target": "Quisiera reservar una habitación.",
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Ich möchte ein Zimmer reservieren.",
           "accepted_answers": [
-            "Ich möchte ein Zimmer reservieren."
+            "Ich möchte ein Zimmer reservieren.",
+            "Ich würde gern ein Zimmer reservieren.",
+            "Ich möchte gern ein Zimmer reservieren."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Ich möchte ein Zimmer reservieren.».",
@@ -1844,8 +1846,8 @@
         {
           "id": "german-a2-1-future-production-blocks",
           "type": "build_with_blocks",
-          "prompt": "Construye la forma que significa «Pienso reservar una habitación.»",
-          "target": "Pienso reservar una habitación.",
+          "prompt": "Construye la forma que significa «Quisiera reservar una habitación.»",
+          "target": "Quisiera reservar una habitación.",
           "options": [
             "Zimmer",
             "möchte",
@@ -1938,15 +1940,17 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 1",
-              "translation": "Quieres expresar: «Pienso reservar una habitación.»."
+              "translation": "Quieres expresar: «Quisiera reservar una habitación.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en alemán: «Pienso reservar una habitación.»",
+              "prompt": "Di o escribe en alemán: «Quisiera reservar una habitación.»",
               "answer": "Ich möchte ein Zimmer reservieren.",
               "accepted_answers": [
-                "Ich möchte ein Zimmer reservieren."
+                "Ich möchte ein Zimmer reservieren.",
+                "Ich würde gern ein Zimmer reservieren.",
+                "Ich möchte gern ein Zimmer reservieren."
               ],
               "audio": "Ich möchte ein Zimmer reservieren.",
               "allow_minor_typos": true,
@@ -2109,7 +2113,7 @@
           "prompt": "¿Qué significa «Versprechen»?",
           "target": "Versprechen",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "promesa",
             "decidir"
           ],
@@ -2339,7 +2343,7 @@
           "prompt": "¿Qué significa «entscheiden»?",
           "target": "entscheiden",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "intención",
             "decidir"
           ],
@@ -2569,12 +2573,12 @@
           "prompt": "¿Qué significa «Ich möchte ein Zimmer reservieren.»?",
           "target": "Ich möchte ein Zimmer reservieren.",
           "options": [
-            "Pienso reservar una habitación.",
+            "Quisiera reservar una habitación.",
             "intención",
             "reservar"
           ],
-          "answer": "Pienso reservar una habitación.",
-          "explanation": "«Ich möchte ein Zimmer reservieren.» significa «Pienso reservar una habitación.».",
+          "answer": "Quisiera reservar una habitación.",
+          "explanation": "«Ich möchte ein Zimmer reservieren.» significa «Quisiera reservar una habitación.».",
           "audio": "Ich möchte ein Zimmer reservieren.",
           "slow_audio": "Ich möchte ein Zimmer reservieren.",
           "image": null,
@@ -2597,7 +2601,7 @@
             "vielleicht"
           ],
           "answer": "Ich möchte ein Zimmer reservieren.",
-          "explanation": "La forma escuchada es «Ich möchte ein Zimmer reservieren.»: Pienso reservar una habitación.",
+          "explanation": "La forma escuchada es «Ich möchte ein Zimmer reservieren.»: Quisiera reservar una habitación.",
           "audio": "Ich möchte ein Zimmer reservieren.",
           "slow_audio": "Ich möchte ein Zimmer reservieren.",
           "image": null,

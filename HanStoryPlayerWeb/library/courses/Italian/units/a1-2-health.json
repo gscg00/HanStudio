@@ -1042,7 +1042,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Lo dice el médico (forma de usted)."
         },
         {
           "id": "italian-a12-health-03-14-meaning",
@@ -1809,7 +1810,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Ho un’allergia alla penicillina.",
           "accepted_answers": [
-            "Ho un’allergia alla penicillina."
+            "Ho un’allergia alla penicillina.",
+            "Sono allergico alla penicillina.",
+            "Sono allergica alla penicillina."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Ho un’allergia alla penicillina.».",
@@ -1827,14 +1830,14 @@
           "prompt": "Escucha y escribe exactamente lo que oyes",
           "target": "",
           "instruction": "Escribe exactamente lo que oyes.",
-          "answer": "Prenda questo due volte al giorno.",
+          "answer": "Mi fa male la testa.",
           "accepted_answers": [
-            "Prenda questo due volte al giorno."
+            "Mi fa male la testa."
           ],
           "allow_minor_typos": true,
-          "explanation": "Escuchaste «Prenda questo due volte al giorno.». El ejemplo practica: Tome esto dos veces al día.",
-          "audio": "Prenda questo due volte al giorno.",
-          "slow_audio": "Prenda questo due volte al giorno.",
+          "explanation": "Escuchaste «Mi fa male la testa.». El ejemplo practica: Me duele la cabeza.",
+          "audio": "Mi fa male la testa.",
+          "slow_audio": "Mi fa male la testa.",
           "tags": [
             "production",
             "dictation"
@@ -1870,12 +1873,12 @@
           "id": "italian-a1-2-health-production-complete",
           "type": "complete_without_options",
           "prompt": "Completa el elemento que falta",
-          "target": "Prenda questo due volte al ___.",
-          "answer": "giorno",
+          "target": "Mi fa male la ___.",
+          "answer": "testa",
           "accepted_answers": [
-            "giorno"
+            "testa"
           ],
-          "explanation": "La forma completa es «Prenda questo due volte al giorno.»: Tome esto dos veces al día.",
+          "explanation": "La forma completa es «Mi fa male la testa.»: Me duele la cabeza.",
           "audio": "",
           "slow_audio": "",
           "tags": [
@@ -1908,18 +1911,19 @@
         {
           "id": "italian-a1-2-health-production-speak",
           "type": "speak_and_transcribe",
-          "prompt": "Di en voz alta: «Prenda questo due volte al giorno.»",
-          "target": "Tome esto dos veces al día.",
-          "answer": "Prenda questo due volte al giorno.",
+          "prompt": "Di en voz alta: «Mi fa male la testa.»",
+          "target": "Me duele la cabeza.",
+          "answer": "Mi fa male la testa.",
           "accepted_answers": [
-            "Prenda questo due volte al giorno."
+            "Mi fa male la testa.",
+            "Ho mal di testa."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
           "optional": true,
-          "explanation": "El modelo es «Prenda questo due volte al giorno.». También puedes escribirlo.",
-          "audio": "Prenda questo due volte al giorno.",
-          "slow_audio": "Prenda questo due volte al giorno.",
+          "explanation": "El modelo es «Mi fa male la testa.». También puedes escribirlo.",
+          "audio": "Mi fa male la testa.",
+          "slow_audio": "Mi fa male la testa.",
           "tags": [
             "production",
             "speaking",
@@ -1945,7 +1949,9 @@
               "prompt": "Di o escribe en italiano: «Tengo alergia a la penicilina.»",
               "answer": "Ho un’allergia alla penicillina.",
               "accepted_answers": [
-                "Ho un’allergia alla penicillina."
+                "Ho un’allergia alla penicillina.",
+                "Sono allergico alla penicillina.",
+                "Sono allergica alla penicillina."
               ],
               "audio": "Ho un’allergia alla penicillina.",
               "allow_minor_typos": true,
@@ -1955,17 +1961,18 @@
               "role": "model",
               "speaker": "GUÍA",
               "text": "Situación 2",
-              "translation": "Quieres expresar: «Tome esto dos veces al día.»."
+              "translation": "Quieres expresar: «Me duele la cabeza.»."
             },
             {
               "role": "learner",
               "speaker": "TÚ",
-              "prompt": "Di o escribe en italiano: «Tome esto dos veces al día.»",
-              "answer": "Prenda questo due volte al giorno.",
+              "prompt": "Di o escribe en italiano: «Me duele la cabeza.»",
+              "answer": "Mi fa male la testa.",
               "accepted_answers": [
-                "Prenda questo due volte al giorno."
+                "Mi fa male la testa.",
+                "Ho mal di testa."
               ],
-              "audio": "Prenda questo due volte al giorno.",
+              "audio": "Mi fa male la testa.",
               "allow_minor_typos": true,
               "speech_enabled": true
             }

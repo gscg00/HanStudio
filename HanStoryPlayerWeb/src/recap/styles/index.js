@@ -13,7 +13,14 @@ export const RECAP_STYLES=[
   {id:'claymation',name:'Plastilina',load:()=>import('./claymation.js')},
 ];
 
-export const styleIndexForClass=number=>((Math.max(1,number)-1)%RECAP_STYLES.length);
+// Un estilo al azar cada día, fijo durante el día y distinto al de ayer.
+const dayHash=text=>{let h=2166136261;for(const ch of text){h^=ch.codePointAt(0);h=Math.imul(h,16777619);}return h>>>0;};
+const dayKey=date=>`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
+export function styleIndexForDay(date=new Date(),salt=''){
+  const pick=day=>dayHash(`${dayKey(day)}|${salt}`)%RECAP_STYLES.length;
+  const today=pick(date),yesterday=pick(new Date(date.getTime()-86400000));
+  return today===yesterday?(today+1)%RECAP_STYLES.length:today;
+}
 
 export async function loadRecapStyle(id){
   const entry=RECAP_STYLES.find(style=>style.id===id)||RECAP_STYLES[0];

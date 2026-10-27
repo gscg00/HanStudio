@@ -52,7 +52,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: die Party (femenino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-01-01-meaning",
@@ -118,7 +119,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: die Einladung (femenino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-01-02-meaning",
@@ -342,7 +344,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: der Plan (masculino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-02-03-meaning",
@@ -408,7 +411,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: die Uhrzeit (femenino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-02-04-meaning",
@@ -844,7 +848,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: der Ort (masculino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-03-05-meaning",
@@ -910,7 +915,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: der Freund (masculino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-03-06-meaning",
@@ -1042,7 +1048,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Zeit haben = tener tiempo, estar libre."
         },
         {
           "id": "german-a12-social-03-14-meaning",
@@ -1134,7 +1141,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: das Wochenende (neutro). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-04-07-meaning",
@@ -1200,7 +1208,8 @@
             "teaching"
           ],
           "xp": 2,
-          "gradable": false
+          "gradable": false,
+          "usage_note": "Apréndelo con su artículo: die Nachricht (femenino). En alemán cada sustantivo tiene género y se escribe con mayúscula."
         },
         {
           "id": "german-a12-social-04-08-meaning",
@@ -1809,7 +1818,8 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Wo treffen wir uns?",
           "accepted_answers": [
-            "Wo treffen wir uns?"
+            "Wo treffen wir uns?",
+            "Wo sollen wir uns treffen?"
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Wo treffen wir uns?».",
@@ -1892,7 +1902,8 @@
           "target": "fin de semana",
           "answer": "Wochenende",
           "accepted_answers": [
-            "Wochenende"
+            "Wochenende",
+            "das Wochenende"
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1912,7 +1923,11 @@
           "target": "Estoy libre después de las seis.",
           "answer": "Ich habe nach sechs Uhr Zeit.",
           "accepted_answers": [
-            "Ich habe nach sechs Uhr Zeit."
+            "Ich habe nach sechs Uhr Zeit.",
+            "Ich habe nach 6 Uhr Zeit.",
+            "Nach sechs Uhr habe ich Zeit.",
+            "Ich habe ab sechs Uhr Zeit.",
+            "Ich habe nach sechs Zeit."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1945,7 +1960,8 @@
               "prompt": "Di o escribe en alemán: «¿Dónde quedamos?»",
               "answer": "Wo treffen wir uns?",
               "accepted_answers": [
-                "Wo treffen wir uns?"
+                "Wo treffen wir uns?",
+                "Wo sollen wir uns treffen?"
               ],
               "audio": "Wo treffen wir uns?",
               "allow_minor_typos": true,
@@ -1963,7 +1979,11 @@
               "prompt": "Di o escribe en alemán: «Estoy libre después de las seis.»",
               "answer": "Ich habe nach sechs Uhr Zeit.",
               "accepted_answers": [
-                "Ich habe nach sechs Uhr Zeit."
+                "Ich habe nach sechs Uhr Zeit.",
+                "Ich habe nach 6 Uhr Zeit.",
+                "Nach sechs Uhr habe ich Zeit.",
+                "Ich habe ab sechs Uhr Zeit.",
+                "Ich habe nach sechs Zeit."
               ],
               "audio": "Ich habe nach sechs Uhr Zeit.",
               "allow_minor_typos": true,
@@ -1981,14 +2001,15 @@
               "prompt": "Di o escribe en alemán: «fin de semana»",
               "answer": "Wochenende",
               "accepted_answers": [
-                "Wochenende"
+                "Wochenende",
+                "das Wochenende"
               ],
               "audio": "Wochenende",
               "allow_minor_typos": true,
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

@@ -1,4 +1,4 @@
-const SHELL='hanstory-shell-v214';
+const SHELL='hanstory-shell-v215';
 const GUIDED_COURSE_LANGUAGES=['English','Korean','Russian','Italian','French','German','Chinese','Portuguese','Arabic'];
 const GUIDED_COURSE_UNITS=[
   'reading','survival','essentials','questions','time','vocabulary','reading-bridge','story-bridge',
@@ -30,7 +30,7 @@ const ASSETS=[
   './src/guided_retry.js',
   './src/guided_teaching_links.js',
   './src/daily_class.js','./src/daily_class_ui.js','./src/data/illustrations.js','./assets/daily_class.css',
-  './src/daily_game.js','./src/daily_game_logic.js','./src/recap/recap_timeline.js','./src/recap/recap_player.js','./src/recap/lib/h.js','./src/recap/lib/sound.js','./src/recap/styles/index.js','./src/recap/styles/shared.js','./src/recap/styles/whiteboard.js','./src/recap/styles/kawaii.js','./src/recap/styles/shadow.js','./src/recap/styles/techglow.js','./src/recap/styles/papercraft.js','./src/recap/styles/ukiyoe.js','./src/recap/styles/origami.js','./src/recap/styles/noir.js','./src/recap/styles/halftone.js','./src/recap/styles/claymation.js',
+  './src/daily_game.js','./src/voices.js','./src/daily_game_logic.js','./src/recap/recap_timeline.js','./src/recap/recap_player.js','./src/recap/lib/h.js','./src/recap/lib/sound.js','./src/recap/styles/index.js','./src/recap/styles/shared.js','./src/recap/styles/whiteboard.js','./src/recap/styles/kawaii.js','./src/recap/styles/shadow.js','./src/recap/styles/techglow.js','./src/recap/styles/papercraft.js','./src/recap/styles/ukiyoe.js','./src/recap/styles/origami.js','./src/recap/styles/noir.js','./src/recap/styles/halftone.js','./src/recap/styles/claymation.js',
   './manifest.webmanifest','./library/library.json',
   './library/courses/Korean/units/hangul-foundations.json',
   './library/courses/English/units/reading-foundations.json',

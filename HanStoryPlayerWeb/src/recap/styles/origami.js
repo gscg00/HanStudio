@@ -5,7 +5,7 @@
 // en máscaras a media resolución, destello de la luz clave en el momento clave,
 // viñeta y grano. Las tarjetas tienda se pliegan y repliegan, las flechas son
 // papel plegado sobre la mesa y la cámara hace un travelling por la mesa entre beats.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,wrapLines,inLanguageLabel} from './shared.js';
 
 const H=window.H;
 const TAU=Math.PI*2;
@@ -134,7 +134,7 @@ function scene(B,beat,t,S,X,fold=1){
     const n=Math.ceil(dur-1e-6);for(let i=0;i<n;i++){const stand=cl(rem-(n-1-i));B.column(cx+(i-(n-1)/2)*0.72,2.3,0.6*H.ease.out(stand)*(t<tR?1:0),i%2?TEAL:MUS,0.24);}
   }else{
     const r=t-tR,big=listen?item.es:item.ko,uu=pop(r,0.2,0.45)*fold;
-    if(uu>0)B.tent(cx,0.6,hw,1.5,0,uu,listen?(c,w,h)=>{band(c,w,h,GREEN,'¡SIGNIFICA!',0.17);para(c,big,w,h,0.36,0.58,'#2f8a5a');}:(c,w,h)=>{band(c,w,h,IND,'EN COREANO',0.17);para(c,big,w,h,0.46,0.6,'#2f4f96');});
+    if(uu>0)B.tent(cx,0.6,hw,1.5,0,uu,listen?(c,w,h)=>{band(c,w,h,GREEN,'¡SIGNIFICA!',0.17);para(c,big,w,h,0.36,0.58,'#2f8a5a');}:(c,w,h)=>{band(c,w,h,IND,inLanguageLabel(),0.17);para(c,big,w,h,0.46,0.6,'#2f4f96');});
     B.tent(cx,2.25,hw-0.2,0.55,0,seg(r,listen?0.8:0.6,listen?1.1:0.9)*fold,listen?printer([[item.ko,0.62,0.55,'#2f4f96']]):(c,w,h)=>para(c,item.es,w,h,0.55,0.55,INK,1));
     B.check([cx+hw-0.35,1.72,1.0],pop(r,1.2,0.35)*fold);
     B.arrowFlat(cx-hw-0.2,1.9,cx-hw+0.5,2.35,seg(r,0.7,1.0)*fold,MUS);

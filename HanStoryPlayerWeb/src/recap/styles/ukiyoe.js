@@ -164,7 +164,7 @@ function drawBeat(c,W,Hh,t,S,beat){
     cart(c,beat.unitTitle||'',420,285,44,win(L,0.6,0.9),'#f1e8d2',C.pruss,700);
     cart(c,'¿Cuánto recuerdas?',420,430,50,win(L,1.4,1.7),'#e8b07a',C.key,700);
     current(c,[[420,330],[400,360],[422,386]],E.out(win(L,1.1,1.4)));
-    seal(c,1172,462,58,'복',win(L,2.0,2.15),-0.06);
+    seal(c,1172,462,58,'福',win(L,2.0,2.15),-0.06);
   }else if(beat.kind==='end'){
     const sy=H.lerp(520,230,E.out(win(L,0,1.4)));
     c.save();c.fillStyle=C.red;c.beginPath();c.arc(640,sy,74,0,7);c.fill();c.restore();

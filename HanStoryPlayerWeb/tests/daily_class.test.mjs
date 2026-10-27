@@ -29,6 +29,8 @@ test('las explicaciones largas no se toman como vocabulario',()=>{
   const items=units.flatMap(unit=>unit.lessons).flatMap(taughtItems);
   assert.ok(items.length>200);
   assert.ok(items.every(item=>item.meaning.length<=48&&!/[+→=]/.test(item.target)));
+  const rules=new Set(units.flatMap(unit=>unit.lessons).flatMap(lesson=>lesson.activities).filter(activity=>activity.teaching_kind==='rule').map(activity=>activity.id));
+  assert.ok(items.every(item=>!rules.has(item.activityId)),'una ficha de regla entró como vocabulario');
 });
 
 test('la respuesta correcta no cae siempre en la misma posición',()=>{

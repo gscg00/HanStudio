@@ -1809,7 +1809,9 @@
           "instruction": "Escribe la idea completa sin mirar opciones.",
           "answer": "Вокзал слева.",
           "accepted_answers": [
-            "Вокзал слева."
+            "Вокзал слева.",
+            "Вокзал находится слева.",
+            "Вокзал налево."
           ],
           "allow_minor_typos": true,
           "explanation": "Una respuesta correcta es «Вокзал слева.».",
@@ -1910,7 +1912,8 @@
           "target": "Voy a la escuela.",
           "answer": "Я иду в школу.",
           "accepted_answers": [
-            "Я иду в школу."
+            "Я иду в школу.",
+            "Иду в школу."
           ],
           "allow_minor_typos": true,
           "speech_enabled": true,
@@ -1943,7 +1946,9 @@
               "prompt": "Di o escribe en ruso: «La estación está a la izquierda.»",
               "answer": "Вокзал слева.",
               "accepted_answers": [
-                "Вокзал слева."
+                "Вокзал слева.",
+                "Вокзал находится слева.",
+                "Вокзал налево."
               ],
               "audio": "Вокзал слева.",
               "allow_minor_typos": true,
@@ -1961,7 +1966,8 @@
               "prompt": "Di o escribe en ruso: «Voy a la escuela.»",
               "answer": "Я иду в школу.",
               "accepted_answers": [
-                "Я иду в школу."
+                "Я иду в школу.",
+                "Иду в школу."
               ],
               "audio": "Я иду в школу.",
               "allow_minor_typos": true,
@@ -1986,7 +1992,7 @@
               "speech_enabled": true
             }
           ],
-          "minimum_correct": 3,
+          "minimum_correct": 2,
           "answer": "",
           "explanation": "Repasa las respuestas que no coincidan y vuelve a decir el intercambio completo.",
           "tags": [

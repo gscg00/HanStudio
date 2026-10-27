@@ -4,7 +4,7 @@
 // solas), sombreado Lambert por cara, fibra de papel, sombras suaves de una luz
 // cálida, desenfoque de fondo, jitter de stop-motion a 12 fps y grano. La cámara
 // se desliza por la plancha de una estación a otra entre beats.
-import {beatTimes,fitFont,wrapLines} from './shared.js';
+import {beatTimes,fitFont,wrapLines,inLanguageLabel} from './shared.js';
 
 const H=window.H;
 const PI=Math.PI,HP=PI/2;
@@ -382,7 +382,7 @@ function beatFaces(beat,q,S,X,fold=1){
     const r=q-tR,big=listen?item.es:item.ko;
     // la respuesta se pliega de golpe con un rebote (el momento clave)
     const ang=1.12*(1+0.12*Math.sin(PI*clamp((r-0.45)/0.3))*(r>0.45?1:0));
-    F.push(...place(tent({w:mw,h:16,ang,a:eio(win(r,0.15,0.5))*fold,pf:listen?pCard('¡SIGNIFICA!',PAL.green,big,78,PAL.green):pCard('EN COREANO',PAL.blue,big,84,PAL.blue)}),id+6,q,cx,0,12,0));
+    F.push(...place(tent({w:mw,h:16,ang,a:eio(win(r,0.15,0.5))*fold,pf:listen?pCard('¡SIGNIFICA!',PAL.green,big,78,PAL.green):pCard(inLanguageLabel(),PAL.blue,big,84,PAL.blue)}),id+6,q,cx,0,12,0));
     const y=drop(q,tR+(listen?0.85:0.65),12);
     if(y!=null)F.push(...place(tent({w:mw-4,h:7,a:fold,pf:listen?pTag(item.ko,PAL.blue,64):pTag(item.es,PAL.ink,52)}),id+7,q,cx,y,-4,0.02));
     if(r>=1.2){const s=eback(win(r,1.2,1.45));F.push(...place(flag({pole:10,fw:7,fh:5.5,col:PAL.green,pf:pFlagV}),id+8,q,img?X+36:X+34,0,-1,-0.15,Math.max(0.05,s),0.05));}
