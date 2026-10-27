@@ -276,20 +276,20 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "¿Ah, sí? / ¿Ah, tú?",
+          "meaning": "¿Aru? (repite el nombre para confirmar)",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
           "group_hint": "",
           "word_breakdown": [
             {
-              "text": "아",
-              "meaning": "interjección de reacción; puede equivaler a «ah»",
-              "note": ""
+              "text": "아루",
+              "meaning": "Aru, un nombre propio",
+              "note": "Se repite el nombre con entonación de pregunta para confirmar."
             },
             {
-              "text": "루?",
-              "meaning": "no se puede analizar con seguridad solo con esta forma aislada; puede depender de la pronunciación o del contexto",
+              "text": "?",
+              "meaning": "entonación de pregunta",
               "note": ""
             }
           ],
@@ -304,11 +304,11 @@
           "target": "아루?",
           "options": [
             "¿Está bien? / ¿Se encuentra bien?",
-            "¿Ah, sí? / ¿Ah, tú?",
+            "¿Aru? (repite el nombre para confirmar)",
             "¿Aquí?"
           ],
-          "answer": "¿Ah, sí? / ¿Ah, tú?",
-          "explanation": "¿Ah, sí? / ¿Ah, tú?",
+          "answer": "¿Aru? (repite el nombre para confirmar)",
+          "explanation": "¿Aru? (repite el nombre para confirmar)",
           "audio": "아루?",
           "slow_audio": "아루?",
           "image": null,
@@ -327,7 +327,7 @@
             "아루?"
           ],
           "answer": "아루?",
-          "explanation": "La forma escrita correcta es «아루?»: ¿Ah, sí? / ¿Ah, tú?",
+          "explanation": "La forma escrita correcta es «아루?»: ¿Aru? (repite el nombre para confirmar)",
           "audio": "아루?",
           "slow_audio": "아루?",
           "image": null,
@@ -1669,7 +1669,7 @@
           "target": "여기가 어디예요?",
           "options": [
             "¿Dónde es esto?",
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Por favor, hable despacio."
           ],
           "answer": "¿Dónde es esto?",
@@ -1817,7 +1817,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "¿No lo sé? / ¿No sé?",
+          "meaning": "¿No lo sabe?",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -1844,12 +1844,12 @@
           "prompt": "¿Qué significa «몰라요?»?",
           "target": "몰라요?",
           "options": [
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "¿Dónde es esto?",
             "No sé coreano."
           ],
-          "answer": "¿No lo sé? / ¿No sé?",
-          "explanation": "¿No lo sé? / ¿No sé?",
+          "answer": "¿No lo sabe?",
+          "explanation": "¿No lo sabe?",
           "audio": "몰라요?",
           "slow_audio": "몰라요?",
           "image": null,
@@ -1868,7 +1868,7 @@
             "네, 저도 몰라요."
           ],
           "answer": "몰라요?",
-          "explanation": "La forma escrita correcta es «몰라요?»: ¿No lo sé? / ¿No sé?",
+          "explanation": "La forma escrita correcta es «몰라요?»: ¿No lo sabe?",
           "audio": "몰라요?",
           "slow_audio": "몰라요?",
           "image": null,
@@ -1997,7 +1997,7 @@
           "prompt": "¿Qué significa «집이에요.»?",
           "target": "집이에요.",
           "options": [
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Por favor, hable despacio.",
             "Es una casa."
           ],
@@ -2321,7 +2321,7 @@
           "prompt": "¿Qué significa «방.»?",
           "target": "방.",
           "options": [
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Habitación.",
             "Por favor, hable despacio."
           ],
@@ -2603,7 +2603,7 @@
           "target": "방이에요.",
           "options": [
             "Es una habitación.",
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Por favor, hable despacio."
           ],
           "answer": "Es una habitación.",
@@ -2817,7 +2817,7 @@
           "target": "벽이에요.",
           "options": [
             "Es una pared.",
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Por favor, hable despacio."
           ],
           "answer": "Es una pared.",
@@ -3110,12 +3110,12 @@
               "note": "raíz verbal"
             },
             {
-              "text": "-어요/-아요 → -셔요",
-              "meaning": "forma educada de presente/imperativo suave",
-              "note": "terminación cortés"
+              "text": "마시- + -어요 → 마셔요",
+              "meaning": "ㅣ + ㅓ se contraen en ㅕ",
+              "note": "No es el honorífico -시-: es solo la contracción."
             }
           ],
-          "usage_note": "• Puede sonar como una indicación amable en una situación cotidiana, por ejemplo ofreciendo una bebida. • Si el contexto ya menciona una bebida, puede equivaler a «Tómelo» o «Bébelo».",
+          "usage_note": "-아요/-어요 afirma, pregunta (con entonación de pregunta) o pide con cortesía según cómo lo digas.",
           "context_note": "Literalmente: «bebe» con terminación cortés.",
           "audio_examples": []
         },
@@ -3126,7 +3126,7 @@
           "target": "마셔요.",
           "options": [
             "Bébelo / Beba eso.",
-            "¿No lo sé? / ¿No sé?",
+            "¿No lo sabe?",
             "Por favor, hable despacio."
           ],
           "answer": "Bébelo / Beba eso.",
@@ -3172,7 +3172,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "¿Bebe? / ¿Está bebiendo?",
+          "meaning": "¿Me lo bebo?",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -3194,7 +3194,7 @@
               "note": ""
             }
           ],
-          "usage_note": "En conversación, puede sonar como una pregunta muy breve y natural. Según la situación, puede equivaler a «¿Bebe?» si se pregunta por un hábito, o «¿Está bebiendo?» si se habla de una acción en ese momento.",
+          "usage_note": "-아요/-어요 afirma, pregunta (con entonación de pregunta) o pide con cortesía según cómo lo digas.",
           "context_note": "Literalmente: «¿(usted) bebe?» o «¿(usted) está bebiendo?»; depende del contexto y del tono.",
           "audio_examples": []
         },
@@ -3205,11 +3205,11 @@
           "target": "마셔요?",
           "options": [
             "Ah, sí.",
-            "¿Bebe? / ¿Está bebiendo?",
+            "¿Me lo bebo?",
             "Sí, yo tampoco lo sé."
           ],
-          "answer": "¿Bebe? / ¿Está bebiendo?",
-          "explanation": "¿Bebe? / ¿Está bebiendo?",
+          "answer": "¿Me lo bebo?",
+          "explanation": "¿Me lo bebo?",
           "audio": "마셔요?",
           "slow_audio": "마셔요?",
           "image": null,
@@ -3228,7 +3228,7 @@
             "네, 집이에요."
           ],
           "answer": "마셔요?",
-          "explanation": "La forma escrita correcta es «마셔요?»: ¿Bebe? / ¿Está bebiendo?",
+          "explanation": "La forma escrita correcta es «마셔요?»: ¿Me lo bebo?",
           "audio": "마셔요?",
           "slow_audio": "마셔요?",
           "image": null,
@@ -4144,7 +4144,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "Como / come / comen.",
+          "meaning": "Coma.",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -4161,7 +4161,7 @@
               "note": "terminación de presente cortés"
             }
           ],
-          "usage_note": "Se usa para hablar de comer de manera cortés en situaciones cotidianas. Puede aparecer solo como respuesta breve o dentro de una frase más larga.",
+          "usage_note": "-아요/-어요 afirma, pregunta (con entonación de pregunta) o pide con cortesía según cómo lo digas.",
           "context_note": "Literalmente: «come» o «está comiendo», según el contexto.",
           "audio_examples": []
         },
@@ -4171,12 +4171,12 @@
           "prompt": "¿Qué significa «먹어요.»?",
           "target": "먹어요.",
           "options": [
-            "Como / come / comen.",
+            "Coma.",
             "¿Aquí?",
             "¿Casa?"
           ],
-          "answer": "Como / come / comen.",
-          "explanation": "Como / come / comen.",
+          "answer": "Coma.",
+          "explanation": "Coma.",
           "audio": "먹어요.",
           "slow_audio": "먹어요.",
           "image": null,
@@ -4195,7 +4195,7 @@
             "모르겠어요."
           ],
           "answer": "먹어요.",
-          "explanation": "La forma escrita correcta es «먹어요.»: Como / come / comen.",
+          "explanation": "La forma escrita correcta es «먹어요.»: Coma.",
           "audio": "먹어요.",
           "slow_audio": "먹어요.",
           "image": null,
@@ -4218,7 +4218,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "¿Come? / ¿Estás comiendo?",
+          "meaning": "¿(Lo) como?",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -4240,7 +4240,7 @@
               "note": ""
             }
           ],
-          "usage_note": "Es una forma muy común y neutral en conversación cortés. El sentido exacto depende del contexto: puede preguntar por la acción actual o por el hábito de comer.",
+          "usage_note": "-아요/-어요 afirma, pregunta (con entonación de pregunta) o pide con cortesía según cómo lo digas.",
           "context_note": "Literalmente: “¿come?”; en coreano, la forma 먹어요? puede sonar como una pregunta sobre si alguien está comiendo o si come habitualmente, según el contexto.",
           "audio_examples": []
         },
@@ -4250,12 +4250,12 @@
           "prompt": "¿Qué significa «먹어요?»?",
           "target": "먹어요?",
           "options": [
-            "¿Come? / ¿Estás comiendo?",
+            "¿(Lo) como?",
             "Sí, es mi casa.",
             "Sí, es aquí."
           ],
-          "answer": "¿Come? / ¿Estás comiendo?",
-          "explanation": "¿Come? / ¿Estás comiendo?",
+          "answer": "¿(Lo) como?",
+          "explanation": "¿(Lo) como?",
           "audio": "먹어요?",
           "slow_audio": "먹어요?",
           "image": null,
@@ -4274,7 +4274,7 @@
             "문이에요."
           ],
           "answer": "먹어요?",
-          "explanation": "La forma escrita correcta es «먹어요?»: ¿Come? / ¿Estás comiendo?",
+          "explanation": "La forma escrita correcta es «먹어요?»: ¿(Lo) como?",
           "audio": "먹어요?",
           "slow_audio": "먹어요?",
           "image": null,
@@ -4297,7 +4297,7 @@
           "tags": [],
           "xp": 2,
           "gradable": false,
-          "meaning": "Sí, como.",
+          "meaning": "Sí, coma.",
           "sound_hint": "",
           "memory_hint": "",
           "teaching_points": [],
@@ -4314,7 +4314,7 @@
               "note": ""
             }
           ],
-          "usage_note": "Se usa como respuesta breve en una conversación, normalmente cuando alguien pregunta si comes o qué haces. El contexto decide si en español suena mejor “Sí, como” o “Sí, estoy comiendo”.",
+          "usage_note": "-아요/-어요 afirma, pregunta (con entonación de pregunta) o pide con cortesía según cómo lo digas.",
           "context_note": "네 significa “sí” y 먹어요 significa “como / estoy comiendo” según el contexto.",
           "audio_examples": []
         },
@@ -4325,11 +4325,11 @@
           "target": "네, 먹어요.",
           "options": [
             "Es una habitación.",
-            "Sí, como.",
+            "Sí, coma.",
             "¿Dónde es esto?"
           ],
-          "answer": "Sí, como.",
-          "explanation": "Sí, como.",
+          "answer": "Sí, coma.",
+          "explanation": "Sí, coma.",
           "audio": "네, 먹어요.",
           "slow_audio": "네, 먹어요.",
           "image": null,
@@ -4348,7 +4348,7 @@
             "문?"
           ],
           "answer": "네, 먹어요.",
-          "explanation": "La forma escrita correcta es «네, 먹어요.»: Sí, como.",
+          "explanation": "La forma escrita correcta es «네, 먹어요.»: Sí, coma.",
           "audio": "네, 먹어요.",
           "slow_audio": "네, 먹어요.",
           "image": null,
@@ -4798,7 +4798,7 @@
           "options": [
             "Es peligroso.",
             "Es la puerta.",
-            "¿No lo sé? / ¿No sé?"
+            "¿No lo sabe?"
           ],
           "answer": "Es peligroso.",
           "explanation": "Es peligroso.",
@@ -5127,7 +5127,7 @@
           "options": [
             "Es la puerta.",
             "Todavía no se puede.",
-            "¿No lo sé? / ¿No sé?"
+            "¿No lo sabe?"
           ],
           "answer": "Todavía no se puede.",
           "explanation": "Todavía no se puede.",
@@ -5453,12 +5453,12 @@
           "prompt": "¿Qué significa «마셔요?»?",
           "target": "마셔요?",
           "options": [
-            "¿Bebe? / ¿Está bebiendo?",
+            "¿Me lo bebo?",
             "Es la puerta.",
             "Bébelo / Beba eso."
           ],
-          "answer": "¿Bebe? / ¿Está bebiendo?",
-          "explanation": "¿Bebe? / ¿Está bebiendo?",
+          "answer": "¿Me lo bebo?",
+          "explanation": "¿Me lo bebo?",
           "audio": "마셔요?",
           "slow_audio": "마셔요?",
           "image": null,
@@ -5477,7 +5477,7 @@
             "벽이에요."
           ],
           "answer": "마셔요?",
-          "explanation": "La forma escrita correcta es «마셔요?»: ¿Bebe? / ¿Está bebiendo?",
+          "explanation": "La forma escrita correcta es «마셔요?»: ¿Me lo bebo?",
           "audio": "마셔요?",
           "slow_audio": "마셔요?",
           "image": null,
@@ -5491,7 +5491,7 @@
           "prompt": "¿Qué significa «네, 배고파요.»?",
           "target": "네, 배고파요.",
           "options": [
-            "¿Bebe? / ¿Está bebiendo?",
+            "¿Me lo bebo?",
             "Sí, tengo hambre.",
             "¿Puerta? / ¿La puerta?"
           ],
@@ -5530,11 +5530,11 @@
           "target": "네, 먹어요.",
           "options": [
             "Sí, es la puerta.",
-            "Sí, como.",
+            "Sí, coma.",
             "Sí, tómalo / sí, bébelo."
           ],
-          "answer": "Sí, como.",
-          "explanation": "Sí, como.",
+          "answer": "Sí, coma.",
+          "explanation": "Sí, coma.",
           "audio": "네, 먹어요.",
           "slow_audio": "네, 먹어요.",
           "image": null,
@@ -5553,7 +5553,7 @@
             "네, 먹어요."
           ],
           "answer": "네, 먹어요.",
-          "explanation": "La forma escrita correcta es «네, 먹어요.»: Sí, como.",
+          "explanation": "La forma escrita correcta es «네, 먹어요.»: Sí, coma.",
           "audio": "네, 먹어요.",
           "slow_audio": "네, 먹어요.",
           "image": null,

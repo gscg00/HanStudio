@@ -1,6 +1,6 @@
 export const GUIDED_COURSES=Object.freeze({
   English:{slug:'english',directory:'English',name:'Inglés',flag:'🇬🇧',htmlLang:'en',languageCode:'en',accent:'#315b78',worldIcons:['A','Hi','I','?','12','W','R','B'],tagline:'Pronuncia, comprende y empieza a leer historias en inglés.'},
-  Korean:{slug:'korean',directory:'Korean',name:'Coreano',flag:'🇰🇷',htmlLang:'ko',languageCode:'ko',accent:'#8c4f6c',worldIcons:['한','안','나','뭐','열','말','글','책'],tagline:'Lee hangul y construye una base práctica para tus historias.'},
+  Korean:{slug:'korean',directory:'Korean',name:'Coreano',dailyClass:true,flag:'🇰🇷',htmlLang:'ko',languageCode:'ko',accent:'#8c4f6c',worldIcons:['한','안','나','뭐','열','말','글','책'],tagline:'Lee hangul y construye una base práctica para tus historias.'},
   Russian:{slug:'russian',directory:'Russian',name:'Ruso',flag:'🇷🇺',htmlLang:'ru',languageCode:'ru',accent:'#48638c',worldIcons:['Я','Пр','Мы','Где','12','Сл','Чт','Кн'],tagline:'Domina el cirílico y las estructuras que abren la lectura.'},
   Italian:{slug:'italian',directory:'Italian',name:'Italiano',flag:'🇮🇹',htmlLang:'it',languageCode:'it',accent:'#438069',worldIcons:['À','Ci','Io','?','12','Pa','Le','Li'],tagline:'Aprende a leer y comunicarte con una base italiana clara.'},
   French:{slug:'french',directory:'French',name:'Francés',flag:'🇫🇷',htmlLang:'fr',languageCode:'fr',accent:'#586b9a',worldIcons:['É','Sa','Je','Où','12','Mo','Li','Lv'],tagline:'Entrena oído y lectura antes de entrar a textos graduados.'},

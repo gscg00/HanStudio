@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recap preview</title>
+<style>body{margin:0;background:#222;color:#eee;font:14px system-ui}div{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:8px}canvas{width:100%;background:#000}p{margin:2px 0 8px}</style>
+<body><div id="grid"></div><script type="module">
+// Hoja de contacto de un estilo: ?style=whiteboard  (dev only)
+import {buildRecapTimeline,sceneAt} from '../src/recap/recap_timeline.js';
+import '../src/recap/lib/h.js';
+import {illustrationFor,sceneFor} from '../src/data/illustrations.js';
+const id=new URLSearchParams(location.search).get('style')||'whiteboard';
+const style=(await import(`../src/recap/styles/${id}.js`)).default;
+if(style.fontCss){const l=document.createElement('link');l.rel='stylesheet';l.href=style.fontCss;document.head.append(l);await new Promise(r=>{l.onload=l.onerror=r;setTimeout(r,3000);});}
+await Promise.race([Promise.all((style.fonts||[]).map(f=>document.fonts.load(f,'AaZz가나'))),new Promise(r=>setTimeout(r,3000))]);
+const items=[{target:'천천히 말해 주세요.',meaning:'Hable más despacio, por favor.'},{target:'물',meaning:'agua'},{target:'저는 멕시코에서 왔어요.',meaning:'Soy de México'},{target:'빵',meaning:'pan'}];
+const tl=buildRecapTimeline({classNumber:3,unitTitle:'Comida y bebida',items});
+const img=svg=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);});
+const pics=new Map();for(const it of tl.items)pics.set(it.meaning,illustrationFor(it.meaning)?await img(illustrationFor(it.meaning)):null);
+const scene=await img(sceneFor('a1-1-food'));
+const b=tl.beats,times=[[1,'title intro'],[3,'title'],[b[1].t0+0.3,'transition'],[b[1].phases.ask[0]+1.2,'listen ask'],[b[1].phases.think[0]+1,'listen think'],[b[1].phases.reveal[1]-0.2,'listen reveal'],[b[2].phases.ask[1]-0.2,'produce ask'],[b[2].phases.think[0]+2,'produce think'],[b[2].phases.reveal[1]-0.2,'produce reveal'],[b[4].phases.reveal[1]-0.3,'reveal w/ picture'],[b.at(-1).t0+0.3,'end transition'],[tl.duration-0.1,'end']];
+const grid=document.getElementById('grid');
+for(const [t,label] of times){const c=document.createElement('canvas');c.width=1280;c.height=720;const box=document.createElement('section');box.append(c);const p=document.createElement('p');const ctx=c.getContext('2d',{willReadFrequently:!!style.readsPixels});const t0=performance.now();style.frame(ctx,1280,720,t,{...sceneAt(tl,t),assets:{picture:m=>pics.get(m)||null,scene}});p.textContent=`${label} · t=${t.toFixed(2)} · ${Math.round(performance.now()-t0)} ms`;box.append(p);grid.append(box);}
+let k=null;window.scoreCheck=()=>{let n=0;const proxy=new Proxy({},{get:(o,name)=>(...a)=>{n++;return name==='withMinor'&&typeof a[0]==='function'?a[0]():undefined;}});style.score(proxy,tl);return n;};
+document.title='ready';
+</script></body>

@@ -34,9 +34,12 @@ test('la producción A1.1/A1.2 usa modelos o vocabulario enseñados previamente'
         for (const activity of lesson.activities || []) {
           const checkpoint = lesson.id.includes('production-checkpoint') && productionTypes.has(activity.type);
           if (checkpoint) {
+            // Se exige enseñanza previa del modelo. Las variantes aceptadas
+            // (sin 저는, con cifras, 어디서…) solo amplían lo que se da por
+            // correcto: no se muestran como modelo y no necesitan su propia lección.
             const answers = ['guided_dialogue', 'stage_scenario'].includes(activity.type)
-              ? (activity.turns || []).filter(turn => turn.role === 'learner').flatMap(turn => [turn.answer, ...(turn.accepted_answers || [])])
-              : [activity.answer, ...(activity.accepted_answers || [])];
+              ? (activity.turns || []).filter(turn => turn.role === 'learner').map(turn => turn.answer)
+              : [activity.answer];
             for (const answer of answers) {
               const expected = String(answer || '').trim();
               if (!expected) continue;
