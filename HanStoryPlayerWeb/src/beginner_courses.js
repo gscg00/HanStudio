@@ -37,15 +37,15 @@ Z|zee|zi (EE. UU.)|zoo`)}]},
 ㅂ|바|entre p y b suave|바
 ㅅ|사|s; ante i se acerca a sh|사
 ㅇ|아|muda al inicio; ng al final|아 / 강
-ㅈ|자|entre ch y y fuerte|자
+ㅈ|자|«ch» suave, sin aire|자
 ㅊ|차|ch con aire|차
 ㅋ|카|k con aire|카
 ㅌ|타|t con aire|타
 ㅍ|파|p con aire|파
-ㅎ|하|h aspirada|하`)},{title:'Vocales básicas',items:rows(`ㅏ|아|a|아
+ㅎ|하|solo aire, como una «j» mexicana muy suave|하`)},{title:'Vocales básicas',items:rows(`ㅏ|아|a|아
 ㅑ|야|ya|야
 ㅓ|어|entre o abierta y a; no existe igual en español|어
-ㅕ|여|yeo; como la anterior con y|여
+ㅕ|여|yeo: ㅓ con «y» delante|여
 ㅗ|오|o|오
 ㅛ|요|yo|요
 ㅜ|우|u|우
@@ -57,7 +57,7 @@ Z|zee|zi (EE. UU.)|zoo`)}]},
 마|마|ma|ㅁ + ㅏ
 바|바|ba/pa suave|ㅂ + ㅏ
 사|사|sa|ㅅ + ㅏ
-자|자|ya/cha suave|ㅈ + ㅏ
+자|자|cha suave (no «ya»)|ㅈ + ㅏ
 한|한|han|ㅎ + ㅏ + ㄴ`)}]},
   Russian:{title:'Primeros pasos con el cirílico',intro:'Muchas letras se parecen a las latinas, pero algunas representan sonidos distintos.',groups:[{title:'Alfabeto ruso',items:rows(`А|а|a|мама
 Б|бэ|b|банк
@@ -117,7 +117,7 @@ Z|zeta|ts o dz|zero`)}]},
 B|bé|be|bon
 C|cé|se|café
 D|dé|de|deux
-E|e|e cerrada o sonido neutro|le
+E|e|sonido neutro, como «eu» con labios relajados (la e cerrada es É)|le
 F|effe|ef|femme
 G|gé|ye|gare
 H|ache|ash; normalmente no suena|homme

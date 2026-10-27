@@ -152,12 +152,12 @@ function drawPanel(c,k,slot,t,S,beat){
   for(const x of [c,k]){x.save();x.translate(x0,0);x.beginPath();x.rect(0,0,PPW,PPH);x.clip();}
   const kind=beat.kind;c.drawImage(bg(kind),0,0);
   if(kind==='title'){
-    box(c,k,22,20,`REPASO · CLASE ${beat.classNumber}`,58,C.yellow,0.1,local);
+    box(c,k,22,20,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),58,C.yellow,0.1,local);
     inset(c,k,S.assets.scene,640,96,520,350,0.025,PE.back(seg(local,0.3,0.55)));
     const unit=(beat.unitTitle||'').toUpperCase(),ff='400 SIZEpx '+BANG,ls=wrapLines(k,unit,400,80,ff,2),fs=fitFont(k,ls,400,80,ff,44);
     balloon(c,k,320,330,270,160,640,250,PE.back(seg(local,0.5,0.75)));
     lines(c,k,ls,fs,320,330,popIn(local,0.75));
-    sayK(c,k,'¿CUÁNTO RECUERDAS?',76,620,580,popIn(local,1.3),'center',-0.04,14);
+    sayK(c,k,(beat.tagline||'¿Cuánto recuerdas?').toUpperCase(),76,620,580,popIn(local,1.3),'center',-0.04,14);
     const bob=Math.floor(local*6)%2?-6:0;
     if(local>1.6){say(k,'?',96,1110,560+bob,1,'center',0.2);say(k,'?',66,1050,610-bob,1,'center',0.35);}
   }else if(kind==='end'){

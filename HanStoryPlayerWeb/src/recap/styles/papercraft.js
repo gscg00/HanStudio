@@ -338,16 +338,16 @@ function beatFaces(beat,q,S,X,fold=1){
   dress();
   if(beat.kind==='title'){
     const sc=S.assets.scene;
-    F.push(...place(tent({w:sc?48:60,h:16,a:A(0.2,0.85),pf:pCard('KIT DE REPASO · CORTA · DOBLA · PEGA',PAL.blue,`REPASO · CLASE ${beat.classNumber}`,66,PAL.ink,beat.unitTitle||'',PAL.blue,1)}),id+1,q,sc?X-12:X,0,12,0));
+    F.push(...place(tent({w:sc?48:60,h:16,a:A(0.2,0.85),pf:pCard((beat.kit||'KIT DE REPASO')+' · CORTA · DOBLA · PEGA',PAL.blue,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),66,PAL.ink,beat.unitTitle||'',PAL.blue,1)}),id+1,q,sc?X-12:X,0,12,0));
     if(sc)F.push(...place(tent({w:22,h:16,a:A(0.7,1.2),pf:pPicture(sc,'ESCENA')}),id+2,q,X+27,0,12,-0.12));
     const y=drop(q,beat.t0+1.6,12);
-    if(y!=null)F.push(...place(tent({w:40,h:7,a:fold,pf:pTag('¿Cuánto recuerdas?',PAL.orange,60)}),id+3,q,X-4,y,-4,0.02));
+    if(y!=null)F.push(...place(tent({w:40,h:7,a:fold,pf:pTag((beat.tagline||'¿Cuánto recuerdas?'),PAL.orange,60)}),id+3,q,X-4,y,-4,0.02));
     return F;
   }
   if(beat.kind==='end'){
-    F.push(...place(tent({w:50,h:16,a:A(0.2,0.8),pf:pCard('¡LISTO!  ·  MAQUETA TERMINADA',PAL.green,'¡Muy bien!',84,PAL.green,`${beat.total} frases repasadas`,PAL.ink,1)}),id+1,q,X-6,0,12,0));
+    F.push(...place(tent({w:50,h:16,a:A(0.2,0.8),pf:pCard('¡LISTO!  ·  MAQUETA TERMINADA',PAL.green,'¡Muy bien!',84,PAL.green,(beat.tally||`${beat.total} frases repasadas`),PAL.ink,1)}),id+1,q,X-6,0,12,0));
     const y=drop(q,beat.t0+1.3,12);
-    if(y!=null)F.push(...place(tent({w:58,h:7,a:fold,pf:pTag('Mañana vuelven: ¡no las sueltes!',PAL.orange,56)}),id+2,q,X-4,y,-4,0));
+    if(y!=null)F.push(...place(tent({w:58,h:7,a:fold,pf:pTag((beat.closing||'Mañana vuelven: ¡no las sueltes!'),PAL.orange,56)}),id+2,q,X-4,y,-4,0));
     if(L>=0.9){const s=eback(win(L,0.9,1.2));F.push(...xf(star(5.5,2.4,2,PAL.yellow,'#f7c95a'),[X+26,17,14],0,Math.max(0.05,s)));}
     if(L>=1.0){const s=eback(win(L,1.0,1.3));F.push(...place(flag({pole:11,fw:7,fh:5.5,col:PAL.green,pf:pFlagV}),id+3,q,X+24,0,3,-0.15,Math.max(0.05,s),0.05));}
     return F;

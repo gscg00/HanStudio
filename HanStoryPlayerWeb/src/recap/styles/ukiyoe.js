@@ -160,9 +160,9 @@ function drawBeat(c,W,Hh,t,S,beat){
     c.save();c.globalAlpha=0.95;c.fillStyle=C.red;c.beginPath();c.arc(1010,sy,80,0,7);c.fill();c.restore();
     fuji(c,1010,600,440,240);
     if(S.assets.scene)printFrame(c,S.assets.scene,1000,330,360,250,win(L,0.4,0.9));
-    cart(c,`REPASO · CLASE ${beat.classNumber}`,420,150,62,win(L,0.1,0.45),'#e8d49a',C.key,760);
+    cart(c,(beat.heading||`REPASO · CLASE ${beat.classNumber}`),420,150,62,win(L,0.1,0.45),'#e8d49a',C.key,760);
     cart(c,beat.unitTitle||'',420,285,44,win(L,0.6,0.9),'#f1e8d2',C.pruss,700);
-    cart(c,'¿Cuánto recuerdas?',420,430,50,win(L,1.4,1.7),'#e8b07a',C.key,700);
+    cart(c,(beat.tagline||'¿Cuánto recuerdas?'),420,430,50,win(L,1.4,1.7),'#e8b07a',C.key,700);
     current(c,[[420,330],[400,360],[422,386]],E.out(win(L,1.1,1.4)));
     seal(c,1172,462,58,'福',win(L,2.0,2.15),-0.06);
   }else if(beat.kind==='end'){
@@ -170,9 +170,9 @@ function drawBeat(c,W,Hh,t,S,beat){
     c.save();c.fillStyle=C.red;c.beginPath();c.arc(640,sy,74,0,7);c.fill();c.restore();
     fuji(c,640,600,390,270);
     cart(c,'¡Muy bien!',640,160,84,win(L,0.1,0.45),'#e8d49a',C.key,900);
-    cart(c,`${beat.total} frases repasadas`,640,290,48,win(L,0.8,1.1),'#f1e8d2',C.pruss,900);
+    cart(c,(beat.tally||`${beat.total} frases repasadas`),640,290,48,win(L,0.8,1.1),'#f1e8d2',C.pruss,900);
     current(c,[[640,340],[615,365],[638,392]],E.out(win(L,1.2,1.5)));
-    cart(c,'Mañana vuelven: ¡no las sueltes!',640,450,46,win(L,1.5,1.8),'#e8b07a',C.key,1000);
+    cart(c,(beat.closing||'Mañana vuelven: ¡no las sueltes!'),640,450,46,win(L,1.5,1.8),'#e8b07a',C.key,1000);
     seal(c,1000,290,80,'優',win(L,2.2,2.35),-0.08);
   }else{
     const {ask,think,reveal}=beatTimes(beat),item=beat.item,img=S.assets.picture(item.picture),listen=beat.kind==='listen';

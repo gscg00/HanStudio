@@ -24,3 +24,15 @@ test('alterna escuchar y producir, y cada pregunta tiene sus tres tramos en orde
     assert.ok(spanish.t>=beat.phases.reveal[0]);
   }
 });
+
+test('los videos por tema enseñan en orden, siempre escuchando primero y con sus propios rótulos',()=>{
+  const items=[{target:'빨강',meaning:'rojo'},{target:'파랑',meaning:'azul'},{target:'빨강',meaning:'rojo'}];
+  const timeline=buildRecapTimeline({mode:'teach',items,heading:'LOS COLORES',closing:'Vuelve mañana',titleSpeech:'Los colores.',endSpeech:'¡Muy bien!',voiceFor:()=>'tl-m'});
+  const steps=timeline.beats.filter(beat=>beat.item);
+  assert.deepEqual(steps.map(beat=>beat.kind),['listen','listen','listen']);
+  assert.deepEqual(steps.map(beat=>beat.item.ko),['빨강','파랑','빨강']);
+  assert.equal(timeline.beats[0].heading,'LOS COLORES');
+  assert.equal(timeline.beats.at(-1).closing,'Vuelve mañana');
+  assert.equal(timeline.speech[0].text,'Los colores.');
+  assert.ok(timeline.speech.filter(line=>line.lang==='tl').every(line=>line.voice==='tl-m'));
+});
