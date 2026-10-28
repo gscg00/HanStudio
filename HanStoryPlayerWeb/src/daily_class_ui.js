@@ -6,7 +6,7 @@ import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
-import{DAILY_PHASES,advanceLearnIndex,dailyBudgetForLevel,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
+import{DAILY_ACTIVITY_CAP,DAILY_PHASES,advanceLearnIndex,newItemTarget,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -61,8 +61,7 @@ Object.assign(proto,{
     await this.loadDaily();
     const status=dailyStatus(this.daily);
     if(status==='in-progress'||(status==='done-today'&&!force))return currentClass(this.daily);
-    const currentUnit=this.findLesson(this.progress.currentLesson)?.unit.id,levelIndex=Math.max(0,(this.course.levels||[]).findIndex(level=>level.unitIds?.includes(currentUnit)));
-    const lessons=pickTodayLessons(this.orderedUnits(),{startLessonId:this.progress.currentLesson,completedLessons:this.progress.completedLessons,isUnitAccessible:id=>this.unitAccessible(id),budget:dailyBudgetForLevel(levelIndex)});
+    const lessons=pickTodayLessons(this.orderedUnits(),{startLessonId:this.progress.currentLesson,completedLessons:this.progress.completedLessons,isUnitAccessible:id=>this.unitAccessible(id),budget:DAILY_ACTIVITY_CAP,itemTarget:newItemTarget(this.daily)});
     if(!lessons.length)return currentClass(this.daily);
     const items=lessons.flatMap(ref=>taughtItems(this.findLesson(ref.lessonId)?.lesson));
     this.daily=createDailyClass(this.daily,{lessons,items});
