@@ -43,8 +43,8 @@ def missing(language: str) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--languages", nargs="*", default=["Korean", "French"])
-    parser.add_argument("--budget", type=int, default=1500)
+    parser.add_argument("--languages", nargs="*", default=["Korean", "French", "English", "German", "Italian", "Portuguese", "Russian", "Arabic", "Chinese", "Japanese"])
+    parser.add_argument("--budget", type=int, default=2500)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 

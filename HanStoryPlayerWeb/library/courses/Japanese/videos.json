@@ -241,64 +241,82 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
-        {
-          "target": "こんにちは",
-          "meaning": "hola",
-          "audio": "こんにちは"
-        },
         {
           "target": "おはようございます",
           "meaning": "buenos días",
           "audio": "おはようございます"
         },
         {
+          "target": "こんにちは",
+          "meaning": "hola, buenas tardes",
+          "note": "De día.",
+          "audio": "こんにちは"
+        },
+        {
           "target": "こんばんは",
-          "meaning": "buenas noches",
+          "meaning": "buenas noches (al llegar)",
           "audio": "こんばんは"
+        },
+        {
+          "target": "おやすみなさい",
+          "meaning": "buenas noches (al irse a dormir)",
+          "audio": "おやすみなさい"
         },
         {
           "target": "さようなら",
           "meaning": "adiós",
+          "note": "Despedida larga o formal; entre conocidos se dice じゃあ、また.",
           "audio": "さようなら"
         },
         {
-          "target": "ありがとうございます。",
-          "meaning": "Gracias",
-          "audio": "ありがとうございます。"
+          "target": "じゃあ、また",
+          "meaning": "nos vemos",
+          "audio": "じゃあ、また"
         },
         {
-          "target": "お願いします。",
-          "meaning": "Por favor",
-          "audio": "お願いします。"
+          "target": "ありがとうございます",
+          "meaning": "muchas gracias",
+          "audio": "ありがとうございます"
         },
         {
-          "target": "すみません。",
-          "meaning": "Disculpe",
-          "audio": "すみません。"
+          "target": "どういたしまして",
+          "meaning": "de nada",
+          "audio": "どういたしまして"
+        },
+        {
+          "target": "すみません",
+          "meaning": "disculpe, perdón",
+          "audio": "すみません"
         },
         {
           "target": "はじめまして",
-          "meaning": "mucho gusto",
+          "meaning": "mucho gusto (la primera vez)",
           "audio": "はじめまして"
+        },
+        {
+          "target": "よろしくおねがいします",
+          "meaning": "encantado de conocerte",
+          "audio": "よろしくおねがいします"
         }
       ]
     },
     {
-      "id": "colores",
       "category": "basico",
-      "title": "Los colores",
-      "scene": "park",
       "mode": "teach",
+      "scene": "park",
+      "id": "colores",
+      "title": "Los colores",
       "items": [
         {
           "target": "あかい",
           "meaning": "rojo",
+          "note": "Adjetivo; el sustantivo es あか.",
           "audio": "あかい"
         },
         {
@@ -315,6 +333,37 @@
           "target": "くろい",
           "meaning": "negro",
           "audio": "くろい"
+        },
+        {
+          "target": "きいろい",
+          "meaning": "amarillo",
+          "audio": "きいろい"
+        },
+        {
+          "target": "ちゃいろい",
+          "meaning": "café",
+          "audio": "ちゃいろい"
+        },
+        {
+          "target": "みどり",
+          "meaning": "verde",
+          "note": "Sustantivo: みどりの + cosa.",
+          "audio": "みどり"
+        },
+        {
+          "target": "オレンジ",
+          "meaning": "naranja",
+          "audio": "オレンジ"
+        },
+        {
+          "target": "むらさき",
+          "meaning": "morado",
+          "audio": "むらさき"
+        },
+        {
+          "target": "はいいろ",
+          "meaning": "gris",
+          "audio": "はいいろ"
         }
       ]
     },
@@ -363,11 +412,11 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
           "target": "分かりません。",
@@ -380,9 +429,19 @@
           "audio": "もういちどおねがいします。"
         },
         {
-          "target": "いくら",
-          "meaning": "cuánto cuesta",
-          "audio": "いくら"
+          "target": "ゆっくりおねがいします。",
+          "meaning": "Más despacio, por favor",
+          "audio": "ゆっくりおねがいします。"
+        },
+        {
+          "target": "いくらですか。",
+          "meaning": "¿Cuánto cuesta?",
+          "audio": "いくらですか。"
+        },
+        {
+          "target": "これをください。",
+          "meaning": "Deme esto, por favor",
+          "audio": "これをください。"
         },
         {
           "target": "お会計をお願いします。",
@@ -390,16 +449,196 @@
           "audio": "お会計をお願いします。"
         },
         {
-          "target": "これが欲しいです。",
-          "meaning": "Quiero esto",
-          "audio": "これが欲しいです。"
+          "target": "トイレはどこですか。",
+          "meaning": "¿Dónde está el baño?",
+          "audio": "トイレはどこですか。"
         },
         {
-          "target": "助け",
-          "meaning": "ayuda",
-          "audio": "助け"
+          "target": "たすけて！",
+          "meaning": "¡Auxilio!",
+          "audio": "たすけて！"
         }
       ]
+    },
+    {
+      "category": "basico",
+      "mode": "teach",
+      "scene": "market",
+      "title": "Contar del 1 al 10",
+      "items": [
+        {
+          "target": "いち",
+          "meaning": "uno",
+          "note": "一",
+          "audio": "いち"
+        },
+        {
+          "target": "に",
+          "meaning": "dos",
+          "note": "二",
+          "audio": "に"
+        },
+        {
+          "target": "さん",
+          "meaning": "tres",
+          "note": "三",
+          "audio": "さん"
+        },
+        {
+          "target": "よん",
+          "meaning": "cuatro",
+          "note": "四; también し",
+          "audio": "よん"
+        },
+        {
+          "target": "ご",
+          "meaning": "cinco",
+          "note": "五",
+          "audio": "ご"
+        },
+        {
+          "target": "ろく",
+          "meaning": "seis",
+          "note": "六",
+          "audio": "ろく"
+        },
+        {
+          "target": "なな",
+          "meaning": "siete",
+          "note": "七; también しち",
+          "audio": "なな"
+        },
+        {
+          "target": "はち",
+          "meaning": "ocho",
+          "note": "八",
+          "audio": "はち"
+        },
+        {
+          "target": "きゅう",
+          "meaning": "nueve",
+          "note": "九; también く",
+          "audio": "きゅう"
+        },
+        {
+          "target": "じゅう",
+          "meaning": "diez",
+          "note": "十",
+          "audio": "じゅう"
+        }
+      ],
+      "id": "numeros"
+    },
+    {
+      "category": "basico",
+      "mode": "teach",
+      "scene": "school",
+      "title": "Los días de la semana",
+      "items": [
+        {
+          "target": "月曜日",
+          "meaning": "lunes",
+          "note": "げつようび",
+          "audio": "月曜日"
+        },
+        {
+          "target": "火曜日",
+          "meaning": "martes",
+          "note": "かようび",
+          "audio": "火曜日"
+        },
+        {
+          "target": "水曜日",
+          "meaning": "miércoles",
+          "note": "すいようび",
+          "audio": "水曜日"
+        },
+        {
+          "target": "木曜日",
+          "meaning": "jueves",
+          "note": "もくようび",
+          "audio": "木曜日"
+        },
+        {
+          "target": "金曜日",
+          "meaning": "viernes",
+          "note": "きんようび",
+          "audio": "金曜日"
+        },
+        {
+          "target": "土曜日",
+          "meaning": "sábado",
+          "note": "どようび",
+          "audio": "土曜日"
+        },
+        {
+          "target": "日曜日",
+          "meaning": "domingo",
+          "note": "にちようび",
+          "audio": "日曜日"
+        }
+      ],
+      "id": "dias"
+    },
+    {
+      "category": "basico",
+      "mode": "teach",
+      "scene": "home",
+      "title": "La familia",
+      "items": [
+        {
+          "target": "家族",
+          "meaning": "familia",
+          "audio": "家族"
+        },
+        {
+          "target": "父",
+          "meaning": "mi papá",
+          "note": "Al hablar de tu propia familia.",
+          "audio": "父"
+        },
+        {
+          "target": "母",
+          "meaning": "mi mamá",
+          "audio": "母"
+        },
+        {
+          "target": "お父さん",
+          "meaning": "papá (de otra persona o al llamarlo)",
+          "audio": "お父さん"
+        },
+        {
+          "target": "お母さん",
+          "meaning": "mamá (de otra persona o al llamarla)",
+          "audio": "お母さん"
+        },
+        {
+          "target": "兄",
+          "meaning": "mi hermano mayor",
+          "audio": "兄"
+        },
+        {
+          "target": "姉",
+          "meaning": "mi hermana mayor",
+          "audio": "姉"
+        },
+        {
+          "target": "弟",
+          "meaning": "hermano menor",
+          "audio": "弟"
+        },
+        {
+          "target": "妹",
+          "meaning": "hermana menor",
+          "audio": "妹"
+        },
+        {
+          "target": "子ども",
+          "meaning": "niño, hijo",
+          "audio": "子ども"
+        }
+      ],
+      "id": "familia"
     },
     {
       "id": "historia-japanese-a11-food-02",
@@ -416,8 +655,8 @@
           "gender": "f"
         },
         {
-          "target": "健太さん、私はこれが欲しいです。カレーです。",
-          "meaning": "Kenta, yo quiero esto. El curry.",
+          "target": "健太さん、私はこれにします。カレーです。",
+          "meaning": "Kenta, yo pido esto: el curry.",
           "speaker": "Ana",
           "gender": "f"
         },
@@ -486,7 +725,7 @@
           "gender": "f"
         },
         {
-          "target": "お父さんは大きいですね。",
+          "target": "お父さんは背が高いですね。",
           "meaning": "Tu papá es muy alto, ¿eh?",
           "speaker": "Kenta",
           "gender": "m"
@@ -498,8 +737,8 @@
           "gender": "m"
         },
         {
-          "target": "彼は私の友達です。カルロスです。",
-          "meaning": "Es mi amigo. Se llama Carlos.",
+          "target": "友達のカルロスです。",
+          "meaning": "Es mi amigo Carlos.",
           "speaker": "Ana",
           "gender": "f"
         },
@@ -804,8 +1043,8 @@
       "mode": "dialogue",
       "items": [
         {
-          "target": "けんたさん、そのほんはなんですか。",
-          "meaning": "Kenta, ¿qué libro es ése?",
+          "target": "けんたさん、それはなんのほんですか。",
+          "meaning": "Kenta, ¿de qué es ese libro?",
           "speaker": "Ana",
           "gender": "f"
         },

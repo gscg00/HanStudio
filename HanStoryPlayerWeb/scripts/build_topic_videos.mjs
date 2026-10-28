@@ -28,6 +28,18 @@ const BASICS=[
 ];
 const SCENE_TITLES={restaurant:'En el restaurante',cafe:'En la cafetería',market:'En el mercado',shop:'En la tienda',station:'En la estación',street:'Por la calle',home:'En casa',kitchen:'En la cocina',park:'En el parque',classroom:'En clase',school:'En la escuela',office:'En la oficina'};
 
+// Corta en «;» o «. » solo fuera de paréntesis: «zi (EE. UU.)» no se parte.
+function splitOutsideParens(text){
+  const parts=[];let depth=0,current='';
+  for(let i=0;i<text.length;i++){
+    const char=text[i];
+    if(char==='(')depth++;else if(char===')')depth=Math.max(0,depth-1);
+    if(!depth&&(char===';'||(char==='.'&&/\s/.test(text[i+1]||'')))){parts.push(current.trim());current='';continue;}
+    current+=char;
+  }
+  if(current.trim())parts.push(current.trim());
+  return parts.length?parts:[text];
+}
 const meaningOf=activity=>String(activity.meaning||activity.explanation||'').trim();
 const readJSON=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 
@@ -46,7 +58,7 @@ function courseEntries(dir,course,audio){
       const letter=meaning.match(/^(.{1,4}):\s*(.{1,120})$/u);
       if(activity.type==='teach_concept'&&letter&&letter[1].trim()===target&&audio[activity.audio]){
         // En el video se dice la primera parte («entre o abierta y a»); el resto queda como nota.
-        const [spoken,...rest]=letter[2].trim().split(/;\s*|\.\s+/u);
+        const [spoken,...rest]=splitOutsideParens(letter[2].trim());
         if(!letters.some(item=>item.target===target))letters.push({target,meaning:spoken.replace(/\.$/,''),audio:activity.audio,...(rest.length?{note:rest.join('. ').replace(/\.?$/,'.')}:{})});
         continue;
       }

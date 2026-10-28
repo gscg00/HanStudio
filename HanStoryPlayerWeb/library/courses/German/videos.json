@@ -182,11 +182,11 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
           "target": "Hallo!",
@@ -194,19 +194,30 @@
           "audio": "Hallo!"
         },
         {
-          "target": "Guten Morgen",
+          "target": "Guten Morgen!",
           "meaning": "Buenos días",
           "audio": "Guten Morgen"
         },
         {
-          "target": "Guten Abend",
-          "meaning": "buenas noches",
+          "target": "Guten Tag!",
+          "meaning": "Buenos días, buenas tardes",
+          "note": "Saludo formal durante el día.",
+          "audio": "Guten Tag!"
+        },
+        {
+          "target": "Guten Abend!",
+          "meaning": "Buenas noches (al llegar)",
           "audio": "Guten Abend"
         },
         {
-          "target": "Auf Wiedersehen",
-          "meaning": "adiós",
-          "audio": "Auf Wiedersehen"
+          "target": "Gute Nacht!",
+          "meaning": "Buenas noches (al irse a dormir)",
+          "audio": "Gute Nacht!"
+        },
+        {
+          "target": "Wie geht's?",
+          "meaning": "¿Cómo estás?",
+          "audio": "Wie geht's?"
         },
         {
           "target": "Danke.",
@@ -216,17 +227,28 @@
         {
           "target": "Bitte.",
           "meaning": "Por favor",
+          "note": "También significa «de nada».",
           "audio": "Bitte."
         },
         {
           "target": "Entschuldigung.",
-          "meaning": "Disculpe",
+          "meaning": "Disculpe, perdón",
           "audio": "Entschuldigung."
         },
         {
           "target": "Freut mich.",
           "meaning": "Mucho gusto",
           "audio": "Freut mich."
+        },
+        {
+          "target": "Auf Wiedersehen!",
+          "meaning": "Adiós (formal)",
+          "audio": "Auf Wiedersehen"
+        },
+        {
+          "target": "Tschüss!",
+          "meaning": "Adiós (informal)",
+          "audio": "Tschüss!"
         },
         {
           "target": "ja",
@@ -300,11 +322,11 @@
       ]
     },
     {
-      "id": "colores",
       "category": "basico",
-      "title": "Los colores",
-      "scene": "park",
       "mode": "teach",
+      "scene": "park",
+      "id": "colores",
+      "title": "Los colores",
       "items": [
         {
           "target": "rot",
@@ -337,8 +359,23 @@
           "audio": "schwarz"
         },
         {
+          "target": "orange",
+          "meaning": "naranja",
+          "audio": "orange"
+        },
+        {
+          "target": "rosa",
+          "meaning": "rosa",
+          "audio": "rosa"
+        },
+        {
+          "target": "lila",
+          "meaning": "morado",
+          "audio": "lila"
+        },
+        {
           "target": "braun",
-          "meaning": "marrón",
+          "meaning": "café",
           "audio": "braun"
         },
         {
@@ -447,11 +484,11 @@
       ]
     },
     {
-      "id": "comida",
       "category": "basico",
-      "title": "Comida y bebida",
-      "scene": "restaurant",
       "mode": "teach",
+      "scene": "restaurant",
+      "id": "comida",
+      "title": "Comida y bebida",
       "items": [
         {
           "target": "Wasser",
@@ -469,6 +506,16 @@
           "audio": "Tee"
         },
         {
+          "target": "Milch",
+          "meaning": "leche",
+          "audio": "Milch"
+        },
+        {
+          "target": "Saft",
+          "meaning": "jugo",
+          "audio": "Saft"
+        },
+        {
           "target": "Brot",
           "meaning": "pan",
           "audio": "Brot"
@@ -484,18 +531,38 @@
           "audio": "Fleisch"
         },
         {
+          "target": "Fisch",
+          "meaning": "pescado",
+          "audio": "Fisch"
+        },
+        {
+          "target": "Ei",
+          "meaning": "huevo",
+          "audio": "Ei"
+        },
+        {
+          "target": "Obst",
+          "meaning": "fruta",
+          "audio": "Obst"
+        },
+        {
           "target": "Apfel",
           "meaning": "manzana",
           "audio": "Apfel"
+        },
+        {
+          "target": "Essen",
+          "meaning": "comida",
+          "audio": "Essen"
         }
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
           "target": "Ich verstehe nicht.",
@@ -503,9 +570,24 @@
           "audio": "Ich verstehe nicht."
         },
         {
-          "target": "Wie viel kostet das?",
+          "target": "Noch einmal, bitte.",
+          "meaning": "Otra vez, por favor",
+          "audio": "Noch einmal, bitte."
+        },
+        {
+          "target": "Langsamer, bitte.",
+          "meaning": "Más despacio, por favor",
+          "audio": "Langsamer, bitte."
+        },
+        {
+          "target": "Sprechen Sie Englisch?",
+          "meaning": "¿Habla inglés?",
+          "audio": "Sprechen Sie Englisch?"
+        },
+        {
+          "target": "Was kostet das?",
           "meaning": "¿Cuánto cuesta?",
-          "audio": "Wie viel kostet das?"
+          "audio": "Was kostet das?"
         },
         {
           "target": "Wo ist die Toilette?",
@@ -513,18 +595,18 @@
           "audio": "Wo ist die Toilette?"
         },
         {
+          "target": "Ich möchte das, bitte.",
+          "meaning": "Quisiera esto, por favor",
+          "audio": "Ich möchte das, bitte."
+        },
+        {
           "target": "Die Rechnung, bitte.",
           "meaning": "La cuenta, por favor",
           "audio": "Die Rechnung, bitte."
         },
         {
-          "target": "Ich möchte das.",
-          "meaning": "Quiero esto",
-          "audio": "Ich möchte das."
-        },
-        {
-          "target": "Hilfe",
-          "meaning": "ayuda",
+          "target": "Hilfe!",
+          "meaning": "¡Ayuda!",
           "audio": "Hilfe"
         }
       ]
@@ -545,7 +627,7 @@
         },
         {
           "target": "Ich möchte das. Das Curry mit Reis.",
-          "meaning": "Quiero esto. El curry con arroz.",
+          "meaning": "Quisiera esto. El curry con arroz.",
           "speaker": "Ana",
           "gender": "f"
         },
@@ -587,7 +669,7 @@
         },
         {
           "target": "Zusammen oder getrennt?",
-          "meaning": "¿Junto o por separado?",
+          "meaning": "¿Todo junto o por separado?",
           "speaker": "Mesero",
           "gender": "m"
         },
@@ -1265,7 +1347,7 @@
         },
         {
           "target": "Ja. Mein Zimmer ist im dritten Stock.",
-          "meaning": "Sí. Mi cuarto está en el cuarto piso.",
+          "meaning": "Sí. Mi cuarto está en el tercer piso.",
           "speaker": "Ana",
           "gender": "f"
         },

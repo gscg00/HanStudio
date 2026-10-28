@@ -45,9 +45,8 @@
         },
         {
           "target": "H",
-          "meaning": "acca (muda",
-          "audio": "acca",
-          "note": "endurece c/g)."
+          "meaning": "acca (muda; endurece c/g)",
+          "audio": "acca"
         },
         {
           "target": "I",
@@ -117,15 +116,15 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
           "target": "ciao",
-          "meaning": "hola",
+          "meaning": "hola o adiós (informal)",
           "audio": "ciao"
         },
         {
@@ -134,29 +133,44 @@
           "audio": "buongiorno"
         },
         {
+          "target": "buonasera",
+          "meaning": "buenas tardes o noches (al llegar)",
+          "audio": "buonasera"
+        },
+        {
           "target": "arrivederci",
-          "meaning": "adiós",
+          "meaning": "adiós, hasta luego",
           "audio": "arrivederci"
         },
         {
           "target": "grazie",
-          "meaning": "Gracias",
+          "meaning": "gracias",
           "audio": "grazie"
         },
         {
-          "target": "Per favore.",
-          "meaning": "Por favor",
-          "audio": "Per favore."
+          "target": "prego",
+          "meaning": "de nada",
+          "audio": "prego"
         },
         {
-          "target": "Mi scusi.",
-          "meaning": "Disculpe",
-          "audio": "Mi scusi."
+          "target": "per favore",
+          "meaning": "por favor",
+          "audio": "per favore"
         },
         {
-          "target": "Piacere.",
-          "meaning": "Mucho gusto",
-          "audio": "Piacere."
+          "target": "scusi",
+          "meaning": "disculpe (formal)",
+          "audio": "scusi"
+        },
+        {
+          "target": "scusa",
+          "meaning": "perdón (informal)",
+          "audio": "scusa"
+        },
+        {
+          "target": "piacere",
+          "meaning": "mucho gusto",
+          "audio": "piacere"
         },
         {
           "target": "sì",
@@ -333,11 +347,11 @@
       ]
     },
     {
-      "id": "familia",
       "category": "basico",
-      "title": "La familia",
-      "scene": "home",
       "mode": "teach",
+      "scene": "home",
+      "id": "familia",
+      "title": "La familia",
       "items": [
         {
           "target": "famiglia",
@@ -345,13 +359,18 @@
           "audio": "famiglia"
         },
         {
+          "target": "genitori",
+          "meaning": "padres (papá y mamá)",
+          "audio": "genitori"
+        },
+        {
           "target": "padre",
-          "meaning": "padre",
+          "meaning": "padre, papá",
           "audio": "padre"
         },
         {
           "target": "madre",
-          "meaning": "madre",
+          "meaning": "madre, mamá",
           "audio": "madre"
         },
         {
@@ -386,13 +405,19 @@
         },
         {
           "target": "marito",
-          "meaning": "marido",
+          "meaning": "esposo",
           "audio": "marito"
         },
         {
           "target": "moglie",
           "meaning": "esposa",
           "audio": "moglie"
+        },
+        {
+          "target": "parenti",
+          "meaning": "parientes",
+          "note": "Falso amigo: no significa «padres».",
+          "audio": "parenti"
         }
       ]
     },
@@ -461,11 +486,11 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
           "target": "Non capisco.",
@@ -473,9 +498,9 @@
           "audio": "Non capisco."
         },
         {
-          "target": "Può ripetere?",
-          "meaning": "¿Puede repetir?",
-          "audio": "Può ripetere?"
+          "target": "Può ripetere, per favore?",
+          "meaning": "¿Puede repetir, por favor?",
+          "audio": "Può ripetere, per favore?"
         },
         {
           "target": "Quanto costa?",
@@ -488,19 +513,29 @@
           "audio": "Dov'è il bagno?"
         },
         {
+          "target": "Vorrei questo, per favore.",
+          "meaning": "Quisiera esto, por favor",
+          "audio": "Vorrei questo, per favore."
+        },
+        {
           "target": "Il conto, per favore.",
           "meaning": "La cuenta, por favor",
           "audio": "Il conto, per favore."
         },
         {
-          "target": "Voglio questo.",
-          "meaning": "Quiero esto",
-          "audio": "Voglio questo."
+          "target": "Non parlo italiano.",
+          "meaning": "No hablo italiano",
+          "audio": "Non parlo italiano."
         },
         {
-          "target": "aiuto",
-          "meaning": "Ayuda",
-          "audio": "aiuto"
+          "target": "Parla spagnolo?",
+          "meaning": "¿Habla español?",
+          "audio": "Parla spagnolo?"
+        },
+        {
+          "target": "Aiuto!",
+          "meaning": "¡Ayuda!",
+          "audio": "Aiuto!"
         }
       ]
     },
@@ -519,8 +554,8 @@
           "gender": "m"
         },
         {
-          "target": "Voglio questo!",
-          "meaning": "¡Quiero esto!",
+          "target": "Vorrei questo!",
+          "meaning": "¡Quisiera esto!",
           "speaker": "Ana",
           "gender": "f"
         },

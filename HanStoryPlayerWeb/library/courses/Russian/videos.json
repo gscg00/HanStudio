@@ -45,7 +45,7 @@
         },
         {
           "target": "Ж",
-          "meaning": "como la y francesa de “journal”",
+          "meaning": "como la j francesa de «journal» (sonora, sin la d de la «ch»)",
           "audio": "жэ"
         },
         {
@@ -123,8 +123,9 @@
         },
         {
           "target": "Х",
-          "meaning": "j española suave",
-          "audio": "ха"
+          "meaning": "como la j mexicana de «jarro»",
+          "audio": "ха",
+          "note": "nunca la x de «taxi»."
         },
         {
           "target": "Ц",
@@ -181,31 +182,51 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
-          "target": "здравствуйте",
-          "meaning": "hola",
-          "audio": "здравствуйте"
+          "target": "Здравствуйте!",
+          "meaning": "Hola (formal)",
+          "audio": "Здравствуйте!"
         },
         {
-          "target": "доброе утро",
-          "meaning": "buenos días",
-          "audio": "доброе утро"
+          "target": "Привет!",
+          "meaning": "Hola (informal)",
+          "audio": "Привет!"
+        },
+        {
+          "target": "Доброе утро!",
+          "meaning": "Buenos días",
+          "audio": "Доброе утро!"
+        },
+        {
+          "target": "Добрый день!",
+          "meaning": "Buenas tardes",
+          "audio": "Добрый день!"
+        },
+        {
+          "target": "Добрый вечер!",
+          "meaning": "Buenas noches (al llegar)",
+          "audio": "Добрый вечер!"
         },
         {
           "target": "Спокойной ночи!",
-          "meaning": "¡Buenas noches!",
+          "meaning": "Buenas noches (al irse a dormir)",
           "audio": "Спокойной ночи!"
         },
         {
-          "target": "до свидания",
-          "meaning": "adiós",
-          "audio": "до свидания"
+          "target": "До свидания!",
+          "meaning": "Adiós",
+          "audio": "До свидания!"
+        },
+        {
+          "target": "Пока!",
+          "meaning": "Adiós (informal)",
+          "audio": "Пока!"
         },
         {
           "target": "Спасибо.",
@@ -213,18 +234,19 @@
           "audio": "Спасибо."
         },
         {
+          "target": "Пожалуйста.",
+          "meaning": "Por favor",
+          "note": "También significa «de nada».",
+          "audio": "Пожалуйста."
+        },
+        {
           "target": "Не за что.",
           "meaning": "De nada",
           "audio": "Не за что."
         },
         {
-          "target": "Пожалуйста.",
-          "meaning": "Por favor",
-          "audio": "Пожалуйста."
-        },
-        {
           "target": "Извините!",
-          "meaning": "¡Disculpe!",
+          "meaning": "Disculpe",
           "audio": "Извините!"
         },
         {
@@ -233,14 +255,14 @@
           "audio": "Очень приятно."
         },
         {
-          "target": "да",
-          "meaning": "sí",
-          "audio": "да"
+          "target": "Да.",
+          "meaning": "Sí",
+          "audio": "Да."
         },
         {
-          "target": "нет",
-          "meaning": "no",
-          "audio": "нет"
+          "target": "Нет.",
+          "meaning": "No",
+          "audio": "Нет."
         }
       ]
     },
@@ -304,11 +326,11 @@
       ]
     },
     {
-      "id": "colores",
       "category": "basico",
-      "title": "Los colores",
-      "scene": "park",
       "mode": "teach",
+      "scene": "park",
+      "id": "colores",
+      "title": "Los colores",
       "items": [
         {
           "target": "красный",
@@ -317,8 +339,14 @@
         },
         {
           "target": "синий",
-          "meaning": "azul",
+          "meaning": "azul oscuro",
           "audio": "синий"
+        },
+        {
+          "target": "голубой",
+          "meaning": "azul claro",
+          "note": "En ruso son dos colores distintos.",
+          "audio": "голубой"
         },
         {
           "target": "жёлтый",
@@ -351,8 +379,13 @@
           "audio": "розовый"
         },
         {
+          "target": "фиолетовый",
+          "meaning": "morado",
+          "audio": "фиолетовый"
+        },
+        {
           "target": "коричневый",
-          "meaning": "marrón",
+          "meaning": "café",
           "audio": "коричневый"
         },
         {
@@ -535,11 +568,11 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
           "target": "Я не понимаю.",
@@ -547,9 +580,19 @@
           "audio": "Я не понимаю."
         },
         {
+          "target": "Повторите, пожалуйста.",
+          "meaning": "Repita, por favor",
+          "audio": "Повторите, пожалуйста."
+        },
+        {
           "target": "Где туалет?",
           "meaning": "¿Dónde está el baño?",
           "audio": "Где туалет?"
+        },
+        {
+          "target": "Сколько стоит?",
+          "meaning": "¿Cuánto cuesta?",
+          "audio": "Сколько стоит?"
         },
         {
           "target": "Счёт, пожалуйста.",
@@ -557,19 +600,24 @@
           "audio": "Счёт, пожалуйста."
         },
         {
-          "target": "Я хочу это.",
-          "meaning": "Quiero esto",
-          "audio": "Я хочу это."
+          "target": "Дайте, пожалуйста, это.",
+          "meaning": "Deme esto, por favor",
+          "audio": "Дайте, пожалуйста, это."
         },
         {
-          "target": "помощь",
-          "meaning": "ayuda",
-          "audio": "помощь"
+          "target": "Вы говорите по-испански?",
+          "meaning": "¿Habla español?",
+          "audio": "Вы говорите по-испански?"
         },
         {
-          "target": "Ты говоришь по-испански?",
-          "meaning": "¿Hablas español?",
-          "audio": "Ты говоришь по-испански?"
+          "target": "Я не говорю по-русски.",
+          "meaning": "No hablo ruso",
+          "audio": "Я не говорю по-русски."
+        },
+        {
+          "target": "Помогите!",
+          "meaning": "¡Auxilio!",
+          "audio": "Помогите!"
         }
       ]
     },
@@ -607,13 +655,13 @@
         },
         {
           "target": "Миша, кофе — «он» или «оно»?",
-          "meaning": "Misha, ¿«café» es «él» o «ello»?",
+          "meaning": "Misha, ¿«кофе» es masculino (он) o neutro (оно)?",
           "speaker": "Ana",
           "gender": "f"
         },
         {
           "target": "Правильно — «он». Но многие говорят «оно».",
-          "meaning": "Lo correcto es «él». Pero mucha gente dice «ello».",
+          "meaning": "Lo correcto es masculino. Pero mucha gente lo usa como neutro.",
           "speaker": "Misha",
           "gender": "m"
         },
@@ -1080,14 +1128,14 @@
     {
       "id": "historia-russian-survival-07",
       "category": "situaciones",
-      "title": "El billete de tren",
+      "title": "El boleto de tren",
       "subtitle": "En la estación",
       "scene": "station",
       "mode": "dialogue",
       "items": [
         {
           "target": "Миша, вот мой билет.",
-          "meaning": "Misha, aquí está mi billete.",
+          "meaning": "Misha, aquí está mi boleto.",
           "speaker": "Ana",
           "gender": "f"
         },
@@ -2279,7 +2327,7 @@
         },
         {
           "target": "Туалет? Прямо, потом направо, около выхода.",
-          "meaning": "¿El baño? Todo recto, luego a la derecha, junto a la salida.",
+          "meaning": "¿El baño? Todo derecho, luego a la derecha, junto a la salida.",
           "speaker": "Empleada",
           "gender": "f"
         },
