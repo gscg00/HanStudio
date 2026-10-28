@@ -5,6 +5,8 @@ import{JapaneseCourseApp,lessonActivitiesForPresentation,reviewItemsForSession}f
 import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
+import{blockAnimationHTML,syllablesForCard}from'./hangul_blocks.js';
+import{kanaAnimationHTML}from'./kana_anim.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
 import{DAILY_PHASES,advanceLearnIndex,chunkActivities,courseTotals,COURSE_DAYS,learnedTargets,newItemTarget,planNextClass,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,previousClass,shuffle,taughtItems}from'./daily_class.js';
 
@@ -465,6 +467,16 @@ Object.assign(proto,{
   },
   renderTeachingActivity(activity,total){
     original.renderTeachingActivity.call(this,activity,total);
+    // Lecciones de letras de coreano: el bloque se arma delante del alumno.
+    if(this.language==='Korean'&&['hangul-foundations','reading'].includes(this.unit?.id)&&!this.root.querySelector('.hb-anim')){
+      const syllables=syllablesForCard(activity),html=syllables.length?blockAnimationHTML(syllables,{highlight:/^[ㄱ-ㅣ]$/u.test(String(activity.target).trim())?String(activity.target).trim():''}):'';
+      if(html)(this.root.querySelector('.jp-teach-symbol')||this.root.querySelector('.jp-question h1'))?.insertAdjacentHTML('afterend',html);
+    }
+    // Lecciones de kana: sonido y gemelo, combinaciones (が, きゃ) y tiempos de cada palabra.
+    if(this.language==='Japanese'&&['reading-foundations','hiragana-01','katakana','rhythm'].includes(this.unit?.id)&&!this.root.querySelector('.hb-anim')){
+      const html=kanaAnimationHTML(activity);
+      if(html)(this.root.querySelector('.jp-teach-symbol')||this.root.querySelector('.jp-question h1'))?.insertAdjacentHTML('afterend',html);
+    }
     const meaning=String(activity.meaning||activity.explanation||'').trim(),svg=meaning&&illustrationFor(meaning);
     const target=this.root.querySelector('.jp-teach-symbol');
     if(svg&&target&&!this.root.querySelector('.dc-illustration'))target.insertAdjacentHTML('beforebegin',`<figure class="dc-illustration" aria-hidden="true">${svg}</figure>`);

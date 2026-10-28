@@ -17,3 +17,19 @@ test('cuenta finalizaciones reales sin confundir el ajuste histórico de XP',()=
 test('la clave de evento es determinista e independiente de la recarga',()=>{const input={languageId:'Japanese',courseId:'japanese-from-zero',lessonId:'jp-hira-01-family-1'};assert.equal(lessonEventKey(input),lessonEventKey({...input}));assert.equal(lessonEventKey(input),'lesson-completed:japanese:japanese-from-zero:jp-hira-01-family-1');});
 test('las historias tienen identidad estable por libro y lección',()=>{assert.deepEqual(storyXpIdentity({bookCode:'HF-A1',lesson:12}),{courseId:'story:HF-A1',lessonId:'lesson:12'});assert.deepEqual(storyXpIdentity({bookCode:'CONTINUO',lesson:0}),{courseId:'story:CONTINUO',lessonId:'lesson:continuous'});});
 test('solo el último audio de una lección completa la historia',()=>{const tracks=[{lesson:1},{lesson:1},{lesson:2}];assert.equal(isStoryLessonBoundary(tracks,0),false);assert.equal(isStoryLessonBoundary(tracks,1),true);assert.equal(isStoryLessonBoundary(tracks,2),true);});
+
+test('la clase del día y los videos vistos viajan con la cuenta y se combinan bien',async()=>{
+  const {recordFromWrite}=await import('../src/local_progress_store.js');
+  const {mergeProgressData}=await import('../src/progress_merge.js');
+  assert.equal(recordFromWrite('metadata',{id:'daily:korean:v1',classes:[]}).entityKey,'daily:korean');
+  assert.equal(recordFromWrite('metadata',{id:'videos:korean:v1',watched:{}}).entityKey,'videos:korean');
+  assert.equal(recordFromWrite('metadata',{id:'otra-cosa'}),null);
+  const phone={id:'daily:korean:v1',updatedAt:'2026-10-28T08:00:00Z',classes:[{number:7,phasesDone:['review','listen']}],extraStudyDates:['2026-10-20']};
+  const laptop={id:'daily:korean:v1',updatedAt:'2026-10-28T09:00:00Z',classes:[{number:6,completedDate:'2026-10-27'}],extraStudyDates:['2026-10-21']};
+  const merged=mergeProgressData(laptop,phone);
+  assert.equal(merged.classes.at(-1).number,7);
+  assert.deepEqual(merged.extraStudyDates.sort(),['2026-10-20','2026-10-21']);
+  assert.equal(merged.completedLessons,undefined);
+  const watched=mergeProgressData({id:'videos:korean:v1',watched:{colores:'2026-10-01'}},{id:'videos:korean:v1',watched:{dias:'2026-10-02',colores:'2026-10-05'}});
+  assert.deepEqual(watched.watched,{colores:'2026-10-05',dias:'2026-10-02'});
+});

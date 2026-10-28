@@ -149,66 +149,82 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
-          "target": "olá",
+          "target": "Olá.",
           "meaning": "hola",
-          "audio": "olá"
+          "audio": "Olá."
         },
         {
-          "target": "bom dia",
+          "target": "Bom dia.",
           "meaning": "buenos días",
-          "audio": "bom dia"
+          "audio": "Bom dia."
         },
         {
-          "target": "boa noite",
+          "target": "Boa tarde.",
+          "meaning": "buenas tardes",
+          "note": "En Portugal se usa desde el mediodía.",
+          "audio": "Boa tarde."
+        },
+        {
+          "target": "Boa noite.",
           "meaning": "buenas noches",
-          "audio": "boa noite"
+          "audio": "Boa noite."
         },
         {
-          "target": "adeus",
+          "target": "Até logo.",
+          "meaning": "hasta luego",
+          "audio": "Até logo."
+        },
+        {
+          "target": "Adeus.",
           "meaning": "adiós",
-          "audio": "adeus"
+          "audio": "Adeus."
         },
         {
           "target": "Obrigado.",
-          "meaning": "Gracias",
+          "meaning": "gracias (lo dice un hombre)",
           "audio": "Obrigado."
         },
         {
+          "target": "Obrigada.",
+          "meaning": "gracias (lo dice una mujer)",
+          "audio": "Obrigada."
+        },
+        {
           "target": "De nada.",
-          "meaning": "De nada",
+          "meaning": "de nada",
           "audio": "De nada."
         },
         {
           "target": "Por favor.",
-          "meaning": "Por favor",
+          "meaning": "por favor",
           "audio": "Por favor."
         },
         {
           "target": "Desculpe.",
-          "meaning": "Disculpe",
+          "meaning": "disculpe",
           "audio": "Desculpe."
         },
         {
           "target": "Muito prazer.",
-          "meaning": "Mucho gusto",
+          "meaning": "mucho gusto",
           "audio": "Muito prazer."
         },
         {
           "target": "Sim.",
-          "meaning": "Sí",
+          "meaning": "sí",
           "audio": "Sim."
         },
         {
-          "target": "não",
+          "target": "Não.",
           "meaning": "no",
-          "audio": "não"
+          "audio": "Não."
         }
       ]
     },
@@ -488,16 +504,27 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
-          "target": "Não compreendo.",
+          "target": "Não percebo.",
           "meaning": "No entiendo",
-          "audio": "Não compreendo."
+          "note": "También: Não compreendo.",
+          "audio": "Não percebo."
+        },
+        {
+          "target": "Pode repetir, por favor?",
+          "meaning": "¿Puede repetir, por favor?",
+          "audio": "Pode repetir, por favor?"
+        },
+        {
+          "target": "Fala espanhol?",
+          "meaning": "¿Habla español?",
+          "audio": "Fala espanhol?"
         },
         {
           "target": "Quanto custa?",
@@ -515,14 +542,14 @@
           "audio": "A conta, por favor."
         },
         {
-          "target": "Quero isto.",
-          "meaning": "Quiero esto",
-          "audio": "Quero isto."
+          "target": "Queria isto, por favor.",
+          "meaning": "Quisiera esto, por favor",
+          "audio": "Queria isto, por favor."
         },
         {
-          "target": "ajuda",
-          "meaning": "ayuda",
-          "audio": "ajuda"
+          "target": "Socorro!",
+          "meaning": "¡Auxilio!",
+          "audio": "Socorro!"
         }
       ]
     },
@@ -537,19 +564,19 @@
         {
           "target": "Boa tarde. O que desejam?",
           "meaning": "Buenas tardes. ¿Qué desean?",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
-          "target": "Quero isto, por favor.",
-          "meaning": "Quiero esto, por favor.",
+          "target": "Queria isto, por favor.",
+          "meaning": "Quisiera esto, por favor.",
           "speaker": "Ana",
           "gender": "f"
         },
         {
           "target": "O arroz? Muito bem. E o senhor?",
           "meaning": "¿El arroz? Muy bien. ¿Y usted?",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
@@ -579,7 +606,7 @@
         {
           "target": "Aqui está. São dez euros.",
           "meaning": "Aquí tiene. Son diez euros.",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         }
       ]
@@ -595,7 +622,7 @@
         {
           "target": "Boa noite! O que querem?",
           "meaning": "¡Buenas noches! ¿Qué desean?",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
@@ -607,7 +634,7 @@
         {
           "target": "Aqui estão.",
           "meaning": "Aquí tienen.",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
@@ -637,7 +664,7 @@
         {
           "target": "Adeus, boa noite!",
           "meaning": "¡Adiós, buenas noches!",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         }
       ]
@@ -949,7 +976,7 @@
         {
           "target": "É ali ao fundo, à direita.",
           "meaning": "Está allá al fondo, a la derecha.",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
@@ -961,7 +988,7 @@
         {
           "target": "Ao fundo, à direita.",
           "meaning": "Al fondo, a la derecha.",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {
@@ -973,7 +1000,7 @@
         {
           "target": "Ao... fundo... à... direita.",
           "meaning": "Al... fondo... a la... derecha.",
-          "speaker": "Camarero",
+          "speaker": "Mesero",
           "gender": "m"
         },
         {

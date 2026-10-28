@@ -15,7 +15,7 @@
         },
         {
           "target": "á",
-          "meaning": "tono 2: sube, como una pregunta",
+          "meaning": "tono 2: sube de medio a alto",
           "audio": "má"
         },
         {
@@ -60,7 +60,7 @@
         },
         {
           "target": "j",
-          "meaning": "entre yi y chi, lengua adelante",
+          "meaning": "ch suave sin aire, lengua adelante",
           "audio": "jī"
         },
         {
@@ -90,22 +90,28 @@
         },
         {
           "target": "r",
-          "meaning": "r suave retrofleja",
-          "audio": "rì"
+          "meaning": "parecida a la ll/y rioplatense pero con la lengua curvada atrás",
+          "audio": "rì",
+          "note": "nunca la r de «pero»."
         }
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
-          "target": "你好！",
-          "meaning": "Hola",
+          "target": "你好",
+          "meaning": "hola",
           "audio": "你好"
+        },
+        {
+          "target": "您好",
+          "meaning": "hola (formal, a mayores)",
+          "audio": "您好"
         },
         {
           "target": "早上好",
@@ -114,8 +120,13 @@
         },
         {
           "target": "晚上好",
-          "meaning": "buenas noches",
+          "meaning": "buenas noches (al llegar)",
           "audio": "晚上好"
+        },
+        {
+          "target": "晚安",
+          "meaning": "buenas noches (al irse a dormir)",
+          "audio": "晚安"
         },
         {
           "target": "再见",
@@ -123,8 +134,8 @@
           "audio": "再见"
         },
         {
-          "target": "谢谢！",
-          "meaning": "Gracias",
+          "target": "谢谢",
+          "meaning": "gracias",
           "audio": "谢谢"
         },
         {
@@ -133,43 +144,56 @@
           "audio": "不客气"
         },
         {
-          "target": "请",
-          "meaning": "por favor",
-          "audio": "请"
+          "target": "对不起",
+          "meaning": "perdón",
+          "audio": "对不起"
+        },
+        {
+          "target": "没关系",
+          "meaning": "no pasa nada",
+          "audio": "没关系"
         },
         {
           "target": "请问",
-          "meaning": "disculpe",
+          "meaning": "disculpe, una pregunta…",
+          "note": "Solo antes de preguntar algo.",
           "audio": "请问"
         },
         {
-          "target": "很高兴认识你。",
-          "meaning": "Mucho gusto",
-          "audio": "很高兴认识你。"
-        },
-        {
-          "target": "不",
-          "meaning": "no",
-          "audio": "不"
+          "target": "很高兴认识你",
+          "meaning": "mucho gusto",
+          "audio": "很高兴认识你"
         }
       ]
     },
     {
-      "id": "numeros",
       "category": "basico",
-      "title": "Contar del 1 al 10",
-      "scene": "market",
       "mode": "teach",
+      "scene": "market",
+      "id": "numeros",
+      "title": "Contar del 1 al 10",
       "items": [
+        {
+          "target": "零",
+          "meaning": "cero",
+          "audio": "零"
+        },
         {
           "target": "一",
           "meaning": "uno",
+          "note": "Al contar en voz alta se dice yī; en teléfonos, yāo.",
           "audio": "一"
         },
         {
           "target": "二",
           "meaning": "dos",
           "audio": "二"
+        },
+        {
+          "target": "两个",
+          "meaning": "dos (de algo)",
+          "note": "Al contar cosas se usa 两, no 二.",
+          "audio": "两个"
         },
         {
           "target": "三",
@@ -317,11 +341,11 @@
       ]
     },
     {
-      "id": "familia",
       "category": "basico",
-      "title": "La familia",
-      "scene": "home",
       "mode": "teach",
+      "scene": "home",
+      "id": "familia",
+      "title": "La familia",
       "items": [
         {
           "target": "家人",
@@ -329,14 +353,34 @@
           "audio": "家人"
         },
         {
-          "target": "父亲",
-          "meaning": "padre",
-          "audio": "父亲"
+          "target": "爸爸",
+          "meaning": "papá",
+          "audio": "爸爸"
         },
         {
-          "target": "母亲",
-          "meaning": "madre",
-          "audio": "母亲"
+          "target": "妈妈",
+          "meaning": "mamá",
+          "audio": "妈妈"
+        },
+        {
+          "target": "哥哥",
+          "meaning": "hermano mayor",
+          "audio": "哥哥"
+        },
+        {
+          "target": "姐姐",
+          "meaning": "hermana mayor",
+          "audio": "姐姐"
+        },
+        {
+          "target": "弟弟",
+          "meaning": "hermano menor",
+          "audio": "弟弟"
+        },
+        {
+          "target": "妹妹",
+          "meaning": "hermana menor",
+          "audio": "妹妹"
         },
         {
           "target": "儿子",
@@ -347,6 +391,16 @@
           "target": "女儿",
           "meaning": "hija",
           "audio": "女儿"
+        },
+        {
+          "target": "爷爷",
+          "meaning": "abuelo (paterno)",
+          "audio": "爷爷"
+        },
+        {
+          "target": "奶奶",
+          "meaning": "abuela (paterna)",
+          "audio": "奶奶"
         }
       ]
     },
@@ -405,36 +459,56 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
-          "target": "我不明白。",
-          "meaning": "No entiendo",
-          "audio": "我不明白。"
+          "target": "我不明白",
+          "meaning": "no entiendo",
+          "audio": "我不明白"
         },
         {
-          "target": "再",
-          "meaning": "otra vez",
-          "audio": "再"
+          "target": "请再说一遍",
+          "meaning": "¿lo puede repetir, por favor?",
+          "audio": "请再说一遍"
         },
         {
-          "target": "请结账。",
-          "meaning": "La cuenta, por favor",
-          "audio": "请结账。"
+          "target": "请说慢一点",
+          "meaning": "más despacio, por favor",
+          "audio": "请说慢一点"
         },
         {
-          "target": "我要这个。",
-          "meaning": "Quiero esto",
-          "audio": "我要这个。"
+          "target": "多少钱？",
+          "meaning": "¿cuánto cuesta?",
+          "audio": "多少钱？"
         },
         {
-          "target": "帮助",
-          "meaning": "ayuda",
-          "audio": "帮助"
+          "target": "我要这个",
+          "meaning": "quiero esto",
+          "audio": "我要这个"
+        },
+        {
+          "target": "买单",
+          "meaning": "la cuenta, por favor",
+          "audio": "买单"
+        },
+        {
+          "target": "厕所在哪儿？",
+          "meaning": "¿dónde está el baño?",
+          "audio": "厕所在哪儿？"
+        },
+        {
+          "target": "请帮我",
+          "meaning": "ayúdeme, por favor",
+          "audio": "请帮我"
+        },
+        {
+          "target": "救命！",
+          "meaning": "¡auxilio!",
+          "audio": "救命！"
         }
       ]
     },
@@ -466,7 +540,7 @@
         },
         {
           "target": "要，一碗米饭。",
-          "meaning": "Sí, un plato de arroz.",
+          "meaning": "Sí, un tazón de arroz.",
           "speaker": "Ana",
           "gender": "f"
         },

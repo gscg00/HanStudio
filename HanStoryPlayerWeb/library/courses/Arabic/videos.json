@@ -31,7 +31,7 @@
         },
         {
           "target": "ج",
-          "meaning": "dj, como la «ll» argentina",
+          "meaning": "dj, como la j inglesa de «jeans» o la y enfática de «¡yo!»",
           "audio": "جيم",
           "note": "nunca la j española."
         },
@@ -42,7 +42,7 @@
         },
         {
           "target": "خ",
-          "meaning": "j española fuerte",
+          "meaning": "como una j mexicana muy raspada (como la j de España)",
           "audio": "خاء"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
           "target": "ظ",
-          "meaning": "th o z enfática",
+          "meaning": "«th» de this, enfática (ذ con la lengua retraída)",
           "audio": "ظاء"
         },
         {
@@ -155,184 +155,222 @@
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
+      "mode": "teach",
       "scene": "cafe",
-      "mode": "teach",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
         {
-          "target": "السلام عليكم",
+          "target": "السَّلَامُ عَلَيْكُم",
           "meaning": "Hola",
-          "audio": "السلام عليكم"
+          "note": "Literalmente: la paz sea con ustedes.",
+          "audio": "السَّلَامُ عَلَيْكُم"
         },
         {
-          "target": "صباح الخير",
+          "target": "وَعَلَيْكُمُ السَّلَام",
+          "meaning": "Hola (respuesta)",
+          "audio": "وَعَلَيْكُمُ السَّلَام"
+        },
+        {
+          "target": "مَرْحَبًا",
+          "meaning": "Hola",
+          "audio": "مَرْحَبًا"
+        },
+        {
+          "target": "صَبَاحُ الْخَيْر",
           "meaning": "Buenos días",
-          "audio": "صباح الخير"
+          "audio": "صَبَاحُ الْخَيْر"
         },
         {
-          "target": "مع السلامة",
+          "target": "صَبَاحُ النُّور",
+          "meaning": "Buenos días (respuesta)",
+          "audio": "صَبَاحُ النُّور"
+        },
+        {
+          "target": "مَسَاءُ الْخَيْر",
+          "meaning": "Buenas tardes, buenas noches",
+          "audio": "مَسَاءُ الْخَيْر"
+        },
+        {
+          "target": "مَعَ السَّلَامَة",
           "meaning": "Adiós",
-          "audio": "مع السلامة"
+          "audio": "مَعَ السَّلَامَة"
         },
         {
-          "target": "شكرًا.",
+          "target": "شُكْرًا",
           "meaning": "Gracias",
-          "audio": "شكرًا."
+          "audio": "شُكْرًا"
         },
         {
-          "target": "عفوًا",
+          "target": "عَفْوًا",
           "meaning": "De nada",
-          "audio": "عفوًا"
+          "audio": "عَفْوًا"
         },
         {
-          "target": "من فضلك.",
+          "target": "مِنْ فَضْلِك",
           "meaning": "Por favor",
-          "audio": "من فضلك."
+          "note": "فَضْلِكَ a un hombre, فَضْلِكِ a una mujer.",
+          "audio": "مِنْ فَضْلِك"
         },
         {
-          "target": "عذرًا.",
+          "target": "عُذْرًا",
           "meaning": "Disculpe",
-          "audio": "عذرًا."
+          "audio": "عُذْرًا"
         },
         {
-          "target": "آسف",
-          "meaning": "Lo siento",
-          "audio": "آسف"
+          "target": "آسِف",
+          "meaning": "Lo siento (lo dice un hombre)",
+          "audio": "آسِف"
         },
         {
-          "target": "تشرّفت بلقائك.",
+          "target": "آسِفَة",
+          "meaning": "Lo siento (lo dice una mujer)",
+          "audio": "آسِفَة"
+        },
+        {
+          "target": "تَشَرَّفْنَا",
           "meaning": "Mucho gusto",
-          "audio": "تشرّفت بلقائك."
+          "audio": "تَشَرَّفْنَا"
         },
         {
-          "target": "نعم",
+          "target": "نَعَم",
           "meaning": "Sí",
-          "audio": "نعم"
+          "audio": "نَعَم"
         },
         {
-          "target": "لا",
+          "target": "لَا",
           "meaning": "No",
-          "audio": "لا"
+          "audio": "لَا"
         }
       ]
     },
     {
-      "id": "numeros",
       "category": "basico",
-      "title": "Contar del 1 al 10",
+      "mode": "teach",
       "scene": "market",
-      "mode": "teach",
+      "id": "numeros",
+      "title": "Contar del 1 al 10",
       "items": [
         {
-          "target": "واحد",
+          "target": "وَاحِد",
           "meaning": "uno",
-          "audio": "واحد"
+          "note": "١",
+          "audio": "وَاحِد"
         },
         {
-          "target": "اثنان",
+          "target": "اِثْنَان",
           "meaning": "dos",
-          "audio": "اثنان"
+          "note": "٢",
+          "audio": "اِثْنَان"
         },
         {
-          "target": "ثلاثة",
+          "target": "ثَلَاثَة",
           "meaning": "tres",
-          "audio": "ثلاثة"
+          "note": "٣",
+          "audio": "ثَلَاثَة"
         },
         {
-          "target": "أربعة",
+          "target": "أَرْبَعَة",
           "meaning": "cuatro",
-          "audio": "أربعة"
+          "note": "٤",
+          "audio": "أَرْبَعَة"
         },
         {
-          "target": "خمسة",
+          "target": "خَمْسَة",
           "meaning": "cinco",
-          "audio": "خمسة"
+          "note": "٥",
+          "audio": "خَمْسَة"
         },
         {
-          "target": "ستة",
+          "target": "سِتَّة",
           "meaning": "seis",
-          "audio": "ستة"
+          "note": "٦",
+          "audio": "سِتَّة"
         },
         {
-          "target": "سبعة",
+          "target": "سَبْعَة",
           "meaning": "siete",
-          "audio": "سبعة"
+          "note": "٧",
+          "audio": "سَبْعَة"
         },
         {
-          "target": "ثمانية",
+          "target": "ثَمَانِيَة",
           "meaning": "ocho",
-          "audio": "ثمانية"
+          "note": "٨",
+          "audio": "ثَمَانِيَة"
         },
         {
-          "target": "تسعة",
+          "target": "تِسْعَة",
           "meaning": "nueve",
-          "audio": "تسعة"
+          "note": "٩",
+          "audio": "تِسْعَة"
         },
         {
-          "target": "عشرة",
+          "target": "عَشَرَة",
           "meaning": "diez",
-          "audio": "عشرة"
+          "note": "١٠",
+          "audio": "عَشَرَة"
         }
       ]
     },
     {
-      "id": "colores",
       "category": "basico",
-      "title": "Los colores",
-      "scene": "park",
       "mode": "teach",
+      "scene": "park",
+      "id": "colores",
+      "title": "Los colores",
       "items": [
         {
-          "target": "أحمر",
+          "target": "أَحْمَر",
           "meaning": "rojo",
-          "audio": "أحمر"
+          "note": "Forma masculina; femenino: حَمْرَاء.",
+          "audio": "أَحْمَر"
         },
         {
-          "target": "أزرق",
+          "target": "أَزْرَق",
           "meaning": "azul",
-          "audio": "أزرق"
+          "audio": "أَزْرَق"
         },
         {
-          "target": "أصفر",
+          "target": "أَصْفَر",
           "meaning": "amarillo",
-          "audio": "أصفر"
+          "audio": "أَصْفَر"
         },
         {
-          "target": "أخضر",
+          "target": "أَخْضَر",
           "meaning": "verde",
-          "audio": "أخضر"
+          "audio": "أَخْضَر"
         },
         {
-          "target": "أبيض",
+          "target": "أَبْيَض",
           "meaning": "blanco",
-          "audio": "أبيض"
+          "audio": "أَبْيَض"
         },
         {
-          "target": "أسود",
+          "target": "أَسْوَد",
           "meaning": "negro",
-          "audio": "أسود"
+          "audio": "أَسْوَد"
         },
         {
-          "target": "برتقالي",
+          "target": "بُرْتُقَالِيّ",
           "meaning": "naranja",
-          "audio": "برتقالي"
+          "audio": "بُرْتُقَالِيّ"
         },
         {
-          "target": "وردي",
+          "target": "وَرْدِيّ",
           "meaning": "rosa",
-          "audio": "وردي"
+          "audio": "وَرْدِيّ"
         },
         {
-          "target": "بني",
-          "meaning": "marrón",
-          "audio": "بني"
+          "target": "بُنِّيّ",
+          "meaning": "café",
+          "audio": "بُنِّيّ"
         },
         {
-          "target": "رمادي",
+          "target": "رَمَادِيّ",
           "meaning": "gris",
-          "audio": "رمادي"
+          "audio": "رَمَادِيّ"
         }
       ]
     },
@@ -381,159 +419,176 @@
       ]
     },
     {
-      "id": "familia",
       "category": "basico",
-      "title": "La familia",
+      "mode": "teach",
       "scene": "home",
-      "mode": "teach",
+      "id": "familia",
+      "title": "La familia",
       "items": [
         {
-          "target": "عائلة",
+          "target": "عَائِلَة",
           "meaning": "familia",
-          "audio": "عائلة"
+          "audio": "عَائِلَة"
         },
         {
-          "target": "أب",
+          "target": "أَب",
           "meaning": "padre",
-          "audio": "أب"
+          "audio": "أَب"
         },
         {
-          "target": "أم",
+          "target": "أُمّ",
           "meaning": "madre",
-          "audio": "أم"
+          "audio": "أُمّ"
         },
         {
-          "target": "أخ",
+          "target": "أَخ",
           "meaning": "hermano",
-          "audio": "أخ"
+          "audio": "أَخ"
         },
         {
-          "target": "أخت",
+          "target": "أُخْت",
           "meaning": "hermana",
-          "audio": "أخت"
+          "audio": "أُخْت"
         },
         {
-          "target": "ابن",
+          "target": "اِبْن",
           "meaning": "hijo",
-          "audio": "ابن"
+          "audio": "اِبْن"
         },
         {
-          "target": "ابنة",
+          "target": "بِنْت",
           "meaning": "hija",
-          "audio": "ابنة"
+          "note": "También اِبْنَة.",
+          "audio": "بِنْت"
         },
         {
-          "target": "جد",
+          "target": "جَدّ",
           "meaning": "abuelo",
-          "audio": "جد"
+          "audio": "جَدّ"
         },
         {
-          "target": "جدة",
+          "target": "جَدَّة",
           "meaning": "abuela",
-          "audio": "جدة"
+          "audio": "جَدَّة"
         },
         {
-          "target": "زوج",
+          "target": "زَوْج",
           "meaning": "esposo",
-          "audio": "زوج"
+          "audio": "زَوْج"
         },
         {
-          "target": "زوجة",
+          "target": "زَوْجَة",
           "meaning": "esposa",
-          "audio": "زوجة"
+          "audio": "زَوْجَة"
         }
       ]
     },
     {
-      "id": "comida",
       "category": "basico",
-      "title": "Comida y bebida",
+      "mode": "teach",
       "scene": "restaurant",
-      "mode": "teach",
+      "id": "comida",
+      "title": "Comida y bebida",
       "items": [
         {
-          "target": "ماء",
+          "target": "مَاء",
           "meaning": "agua",
-          "audio": "ماء"
+          "audio": "مَاء"
         },
         {
-          "target": "قهوة",
+          "target": "قَهْوَة",
           "meaning": "café",
-          "audio": "قهوة"
+          "audio": "قَهْوَة"
         },
         {
-          "target": "شاي",
+          "target": "شَاي",
           "meaning": "té",
-          "audio": "شاي"
+          "audio": "شَاي"
         },
         {
-          "target": "حليب",
+          "target": "حَلِيب",
           "meaning": "leche",
-          "audio": "حليب"
+          "audio": "حَلِيب"
         },
         {
-          "target": "خبز",
+          "target": "خُبْز",
           "meaning": "pan",
-          "audio": "خبز"
+          "audio": "خُبْز"
         },
         {
-          "target": "أرز",
+          "target": "أَرُزّ",
           "meaning": "arroz",
-          "audio": "أرز"
+          "audio": "أَرُزّ"
         },
         {
-          "target": "لحم",
+          "target": "لَحْم",
           "meaning": "carne",
-          "audio": "لحم"
+          "audio": "لَحْم"
         },
         {
-          "target": "سمك",
+          "target": "سَمَك",
           "meaning": "pescado",
-          "audio": "سمك"
+          "audio": "سَمَك"
         },
         {
-          "target": "تفاحة",
+          "target": "تُفَّاحَة",
           "meaning": "manzana",
-          "audio": "تفاحة"
+          "audio": "تُفَّاحَة"
         },
         {
-          "target": "طعام",
+          "target": "طَعَام",
           "meaning": "comida",
-          "audio": "طعام"
+          "audio": "طَعَام"
         }
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
-          "target": "لا أفهم.",
+          "target": "لَا أَفْهَم",
           "meaning": "No entiendo",
-          "audio": "لا أفهم."
+          "audio": "لَا أَفْهَم"
         },
         {
-          "target": "أين الحمّام؟",
+          "target": "أَيْنَ الْحَمَّام؟",
           "meaning": "¿Dónde está el baño?",
-          "audio": "أين الحمّام؟"
+          "audio": "أَيْنَ الْحَمَّام؟"
         },
         {
-          "target": "الحساب من فضلك.",
+          "target": "بِكَمْ هَذَا؟",
+          "meaning": "¿Cuánto cuesta esto?",
+          "audio": "بِكَمْ هَذَا؟"
+        },
+        {
+          "target": "الْحِسَاب، مِنْ فَضْلِك",
           "meaning": "La cuenta, por favor",
-          "audio": "الحساب من فضلك."
+          "audio": "الْحِسَاب، مِنْ فَضْلِك"
         },
         {
-          "target": "أريد هذا.",
-          "meaning": "Quiero esto",
-          "audio": "أريد هذا."
+          "target": "أُرِيدُ هَذَا، مِنْ فَضْلِك",
+          "meaning": "Quiero esto, por favor",
+          "audio": "أُرِيدُ هَذَا، مِنْ فَضْلِك"
         },
         {
-          "target": "مساعدة",
-          "meaning": "ayuda",
-          "audio": "مساعدة"
+          "target": "لَا أَتَكَلَّمُ الْعَرَبِيَّة",
+          "meaning": "No hablo árabe",
+          "audio": "لَا أَتَكَلَّمُ الْعَرَبِيَّة"
+        },
+        {
+          "target": "هَلْ تَتَكَلَّمُ الْإِسْبَانِيَّة؟",
+          "meaning": "¿Habla español?",
+          "note": "A una mujer: تَتَكَلَّمِين.",
+          "audio": "هَلْ تَتَكَلَّمُ الْإِسْبَانِيَّة؟"
+        },
+        {
+          "target": "النَّجْدَة!",
+          "meaning": "¡Auxilio!",
+          "audio": "النَّجْدَة!"
         }
       ]
     },

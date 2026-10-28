@@ -47,7 +47,7 @@
         },
         {
           "target": "H",
-          "meaning": "eich, con h aspirada",
+          "meaning": "eich (sin h al inicio; la h solo suena como aire dentro de palabras: house)",
           "audio": "aitch"
         },
         {
@@ -137,53 +137,92 @@
         },
         {
           "target": "Z",
-          "meaning": "zi (EE",
-          "audio": "zee",
-          "note": "UU.)."
+          "meaning": "zi, con z zumbada como abeja (EE. UU.)",
+          "audio": "zee"
         }
       ]
     },
     {
-      "id": "saludos",
       "category": "basico",
-      "title": "Saludos y cortesía",
-      "scene": "cafe",
       "mode": "teach",
+      "scene": "cafe",
+      "id": "saludos",
+      "title": "Saludos y cortesía",
       "items": [
+        {
+          "target": "Hi!",
+          "meaning": "Hola",
+          "audio": "Hi."
+        },
         {
           "target": "Hello!",
           "meaning": "Hola",
           "audio": "Hello!"
         },
         {
-          "target": "good morning",
-          "meaning": "buenos días",
-          "audio": "good morning"
+          "target": "Good morning.",
+          "meaning": "Buenos días",
+          "audio": "Good morning."
         },
         {
-          "target": "goodbye",
-          "meaning": "adiós",
-          "audio": "goodbye"
+          "target": "Good afternoon.",
+          "meaning": "Buenas tardes",
+          "audio": "Good afternoon."
         },
         {
-          "target": "thank you",
-          "meaning": "gracias",
-          "audio": "thank you"
+          "target": "Good evening.",
+          "meaning": "Buenas noches (al llegar)",
+          "audio": "Good evening."
         },
         {
-          "target": "please",
-          "meaning": "por favor",
-          "audio": "please"
+          "target": "Good night.",
+          "meaning": "Buenas noches (al despedirse)",
+          "audio": "Good night."
         },
         {
-          "target": "excuse me",
-          "meaning": "disculpe",
-          "audio": "excuse me"
+          "target": "How are you?",
+          "meaning": "¿Cómo estás?",
+          "audio": "How are you?"
+        },
+        {
+          "target": "I'm fine, thanks.",
+          "meaning": "Bien, gracias",
+          "audio": "I'm fine, thanks."
         },
         {
           "target": "Nice to meet you.",
           "meaning": "Mucho gusto",
           "audio": "Nice to meet you."
+        },
+        {
+          "target": "Please.",
+          "meaning": "Por favor",
+          "audio": "Please."
+        },
+        {
+          "target": "Thank you.",
+          "meaning": "Gracias",
+          "audio": "Thank you."
+        },
+        {
+          "target": "You're welcome.",
+          "meaning": "De nada",
+          "audio": "You're welcome."
+        },
+        {
+          "target": "Excuse me.",
+          "meaning": "Disculpe",
+          "audio": "Excuse me."
+        },
+        {
+          "target": "Sorry.",
+          "meaning": "Perdón",
+          "audio": "Sorry."
+        },
+        {
+          "target": "Bye!",
+          "meaning": "Adiós",
+          "audio": "Bye!"
         },
         {
           "target": "yes",
@@ -257,11 +296,11 @@
       ]
     },
     {
-      "id": "colores",
       "category": "basico",
-      "title": "Los colores",
-      "scene": "park",
       "mode": "teach",
+      "scene": "park",
+      "id": "colores",
+      "title": "Los colores",
       "items": [
         {
           "target": "red",
@@ -305,13 +344,18 @@
         },
         {
           "target": "brown",
-          "meaning": "marrón",
+          "meaning": "café",
           "audio": "brown"
         },
         {
-          "target": "grey",
+          "target": "gray",
           "meaning": "gris",
-          "audio": "grey"
+          "audio": "gray"
+        },
+        {
+          "target": "purple",
+          "meaning": "morado",
+          "audio": "purple"
         }
       ]
     },
@@ -483,16 +527,31 @@
       ]
     },
     {
-      "id": "sobrevivir",
       "category": "basico",
-      "title": "Frases para sobrevivir",
-      "scene": "street",
       "mode": "teach",
+      "scene": "street",
+      "id": "sobrevivir",
+      "title": "Frases para sobrevivir",
       "items": [
         {
           "target": "I don't understand.",
           "meaning": "No entiendo",
           "audio": "I don't understand."
+        },
+        {
+          "target": "Can you repeat that, please?",
+          "meaning": "¿Puede repetir, por favor?",
+          "audio": "Can you repeat that, please?"
+        },
+        {
+          "target": "Slowly, please.",
+          "meaning": "Más despacio, por favor",
+          "audio": "Slowly, please."
+        },
+        {
+          "target": "Do you speak Spanish?",
+          "meaning": "¿Habla español?",
+          "audio": "Do you speak Spanish?"
         },
         {
           "target": "How much is it?",
@@ -505,19 +564,20 @@
           "audio": "Where is the bathroom?"
         },
         {
-          "target": "The bill, please.",
+          "target": "I'd like this, please.",
+          "meaning": "Quisiera esto, por favor",
+          "audio": "I'd like this, please."
+        },
+        {
+          "target": "The check, please.",
           "meaning": "La cuenta, por favor",
-          "audio": "The bill, please."
+          "note": "En Reino Unido: the bill.",
+          "audio": "The check, please."
         },
         {
-          "target": "I want this.",
-          "meaning": "Quiero esto",
-          "audio": "I want this."
-        },
-        {
-          "target": "help",
-          "meaning": "ayuda",
-          "audio": "help"
+          "target": "Help!",
+          "meaning": "¡Ayuda!",
+          "audio": "Help!"
         }
       ]
     },
@@ -536,8 +596,8 @@
           "gender": "m"
         },
         {
-          "target": "Yes. I want this: chicken with rice.",
-          "meaning": "Sí. Quiero esto: pollo con arroz.",
+          "target": "Yes. I'd like this: chicken with rice.",
+          "meaning": "Sí. Quisiera esto: pollo con arroz.",
           "speaker": "Ana",
           "gender": "f"
         },

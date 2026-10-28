@@ -3,7 +3,25 @@ const dateValue=value=>{const stamp=Date.parse(value||'');return Number.isFinite
 const newer=(a,b)=>dateValue(a?.updatedAt||a?.lastDate||a?.lastStudyDate||a?.lastSeen||a?.completedAt)>=dateValue(b?.updatedAt||b?.lastDate||b?.lastStudyDate||b?.lastSeen||b?.completedAt)?a:b;
 const maxScore=(a={},b={})=>Number(a.percentage??a.score??0)>=Number(b.percentage??b.score??0)?a:b;
 
+// Clase del día: gana el dispositivo que va más adelante (más clases, luego más
+// fases hechas, luego el más reciente); los días de estudio extra se juntan.
+export function mergeDailyState(local={},remote={}){
+  const rank=state=>{const entry=state?.classes?.at(-1);return [entry?.number||0,entry?.completedDate?99:(entry?.phasesDone?.length||0)*10+(entry?.learnIndex||0),dateValue(state?.updatedAt)];};
+  const a=rank(local),b=rank(remote),ahead=a[0]!==b[0]?(a[0]>b[0]?local:remote):a[1]!==b[1]?(a[1]>b[1]?local:remote):a[2]>=b[2]?local:remote;
+  return {...ahead,extraStudyDates:unique([...(local.extraStudyDates||[]),...(remote.extraStudyDates||[])])};
+}
+
+// Videos vistos: se juntan los de los dos dispositivos.
+export function mergeWatched(local={},remote={}){
+  const watched={...(local.watched||{})};
+  for(const[id,date]of Object.entries(remote.watched||{}))if(!watched[id]||String(date)>String(watched[id]))watched[id]=date;
+  return {...newer(local,remote),watched};
+}
+
 export function mergeProgressData(local={},remote={}){
+  const kind=String(local.id||remote.id||'');
+  if(kind.startsWith('daily:'))return mergeDailyState(local,remote);
+  if(kind.startsWith('videos:'))return mergeWatched(local,remote);
   const recent=newer(local,remote)||{},merged={...local,...remote,...recent};
   for(const key of ['completedLessons','unlockedUnits','unlockedLessons','favorites','activityDates'])merged[key]=unique([...(local[key]||[]),...(remote[key]||[])]);
   merged.xp=Math.max(Number(local.xp||0),Number(remote.xp||0));
