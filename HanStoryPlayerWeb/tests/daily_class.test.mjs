@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {DAILY_ACTIVITY_CAP,newItemTarget,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,dailyStatus,dateKey,defaultDailyState,DAILY_PHASES,pickTodayLessons,recallChoice,taughtItems} from '../src/daily_class.js';
+import {DAILY_ACTIVITY_CAP,chunkActivities,learnedTargets,newItemTarget,planNextClass,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,dailyStatus,dateKey,defaultDailyState,DAILY_PHASES,pickTodayLessons,recallChoice,taughtItems} from '../src/daily_class.js';
 
 const course=JSON.parse(fs.readFileSync(new URL('../library/courses/Korean/course.json',import.meta.url)));
 const units=course.levels.flatMap(level=>level.unitIds).map(id=>JSON.parse(fs.readFileSync(new URL(`../library/courses/Korean/units/${id}.json`,import.meta.url))));
@@ -70,4 +70,26 @@ test('con meta de palabras la clase se acerca a la meta sin partir lecciones y l
   assert.deepEqual(ids(9),['l1','l2','r1']);
   assert.deepEqual(ids(11),['l1','l2','r1','l3']);
   assert.deepEqual(ids(20),['l1','l2','r1','l3','l4']);
+});
+
+test('el camino propio toma las siguientes palabras aunque crucen lecciones, sin repasos ni exámenes',()=>{
+  const word=target=>[{type:'teach_word',target,meaning:`m-${target}`},{type:'select_translation',target,answer:`m-${target}`},{type:'listening_choice',answer:target,audio:target}];
+  const lesson=(id,targets,extra={})=>({id,activities:[{type:'lesson_intro'},...targets.flatMap(word),{type:'dialogue_model',target:'diálogo'}],...extra});
+  const letters={id:'abc',lessons:[{id:'letters-1',activities:[{type:'teach_concept',target:'A',teaching_kind:'rule',explanation:'A: a'}]}]};
+  const unit={id:'u',lessons:[lesson('l1',['a','b','c','d']),lesson('l2',['e','f','g','h']),lesson('u-review-01',[],{isReview:true}),lesson('l3',['i','j']),lesson('u-test',[],{isTest:true})]};
+  const ordered=[letters,unit];
+  assert.deepEqual(planNextClass(ordered,{target:8}),{mode:'concepts',lessons:[{unitId:'abc',lessonId:'letters-1'}]});
+  const day=planNextClass(ordered,{completedLessons:['letters-1'],learned:new Set(['a','b']),target:5});
+  assert.equal(day.mode,'items');
+  assert.deepEqual(day.items.map(item=>item.target),['c','d','e','f','g']);
+  assert.deepEqual(day.chunks.map(chunk=>[chunk.lessonId,chunk.startsLesson,chunk.endsLesson]),[['l1',false,true],['l2',true,false]]);
+  // Los ejercicios de una parte: solo los de sus palabras; el diálogo, el día que termina la lección.
+  const first=chunkActivities(unit.lessons[0].activities,day.chunks[0]).map(activity=>activity.type+':'+(activity.target||activity.answer||''));
+  assert.deepEqual(first,['teach_word:c','select_translation:c','listening_choice:c','teach_word:d','select_translation:d','listening_choice:d','dialogue_model:diálogo']);
+  const second=chunkActivities(unit.lessons[1].activities,day.chunks[1]).map(activity=>activity.type);
+  assert.equal(second[0],'lesson_intro');
+  assert.ok(!second.includes('dialogue_model'));
+  // Lo aprendido sale de las clases y de las lecciones completas.
+  const state={classes:[{completedDate:'2026-10-01',items:[{target:'e'}]}]};
+  assert.deepEqual([...learnedTargets(state,['l1'],ordered)].sort(),['a','b','c','d','e']);
 });
