@@ -90,7 +90,7 @@ Object.assign(proto,{
   async markWatched(id){
     const watched=await this.loadWatched();
     watched[id]=dateKey(new Date());
-    await this.put('metadata',{id:watchedId(this.definition.slug),watched}).catch(()=>{});
+    await this.put('metadata',{id:watchedId(this.definition.slug),watched,updatedAt:new Date().toISOString()}).catch(()=>{});
   },
 
   async renderRoute(){

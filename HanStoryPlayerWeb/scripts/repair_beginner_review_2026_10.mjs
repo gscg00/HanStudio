@@ -19,6 +19,13 @@ const FIXES={
     'h aspirada':'solo aire, como una «j» mexicana muy suave',
     'Pasa con todos los batchim: 이름이 [이르미], 음식이 [음시기]':'Pasa con casi todos los batchim: 이름이 [이르미], 음식이 [음시기]. La ㅇ final no se mueve (강아지) y la ㅎ final desaparece (좋아요 [조아요]).',
   },
+  'Korean/units/hangul-foundations.json':{
+    // 우유 usa ㅠ, que todavía no se ha enseñado; 아이 solo usa ㅇ, ㅏ, ㅣ.
+    '우유':'아이',
+    'leche':'niño',
+    // 한국어 no se lee [한-국-어]: la ㄱ final pasa a la sílaba siguiente.
+    'Lee cada bloque una sola vez y luego une la palabra: idioma coreano.':'Lee cada bloque una sola vez y luego une la palabra: idioma coreano. Ojo: se pronuncia [한구거]; la ㄱ final pasa a la sílaba siguiente porque esta empieza con ㅇ.',
+  },
   'French/units/reading.json':{
     'E: e cerrada o sonido neutro':'E: sonido neutro, como «eu» con labios relajados (la e cerrada es É)',
     'Q: ku':'Q: kü (k + la u francesa)',

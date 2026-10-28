@@ -189,3 +189,46 @@ body>footer{display:none}
 .dc-course-progress span{display:block;height:8px;border-radius:8px;background:var(--hs-line);overflow:hidden}
 .dc-course-progress i{display:block;height:100%;border-radius:8px;background:var(--hs-accent)}
 .dc-course-progress small{color:var(--hs-muted);font-size:.8rem;font-weight:600}
+
+/* ── Animación de bloques del hangeul ───────────────────── */
+.hb-anim{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1rem;margin:.4rem auto .8rem;padding:0}
+.hb-block{position:relative;width:var(--box);height:calc(var(--box)*1.62)}
+.hb-square{position:relative;width:var(--box);height:var(--box);border:2px dashed #d9cdb8;border-radius:16px;background:var(--hs-card)}
+.hb-piece{position:absolute;display:grid;place-items:center;line-height:1;font-family:"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-weight:700;animation:hb-fly 2.8s calc(var(--i)*2.4s) both cubic-bezier(.3,.7,.2,1)}
+.hb-initial{color:#d96c3d}
+.hb-vowel{color:#2f7a4f}
+.hb-final{color:#3f5e8c}
+.hb-piece.hb-focus{text-shadow:0 0 0 currentColor,0 0 14px #f2b48f}
+.hb-result{position:absolute;inset:0;display:grid;place-items:center;font:700 calc(var(--box)*.74)/1 "Noto Sans KR","Apple SD Gothic Neo",sans-serif;color:var(--hs-ink);opacity:0;animation:hb-merge 2.8s calc(var(--i)*2.4s) both}
+.hb-anim figcaption{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.5rem}
+.hb-legend{display:flex;gap:.6rem;font-size:.8rem;font-weight:700}
+.hb-key:before{content:"";display:inline-block;width:.7rem;height:.7rem;margin-right:.3rem;border-radius:3px;background:currentColor;vertical-align:-1px}
+.hb-replay{min-height:36px;padding:.3rem .8rem;font-size:.8rem}
+@keyframes hb-fly{0%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.7)}12%{opacity:1;transform:translate(var(--dx),var(--dy)) scale(1)}42%{transform:translate(var(--dx),var(--dy))}72%{opacity:1;transform:none}86%{opacity:1;transform:none}100%{opacity:.12;transform:none}}
+@keyframes hb-merge{0%,80%{opacity:0;transform:scale(.9)}100%{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hb-piece{animation:none;opacity:.25}.hb-result{animation:none;opacity:1}}
+
+/* ── Animaciones de kana ────────────────────────────────── */
+.jk-result{font-family:"Hiragino Sans","Noto Sans JP",sans-serif}
+.hb-anim .hb-piece:lang(ja),.jk-beats b,.jk-twin b{font-family:"Hiragino Sans","Noto Sans JP",sans-serif}
+.jk-twin{align-items:center;gap:.8rem}
+.jk-card{display:flex;flex-direction:column;align-items:center;gap:.2rem;padding:.6rem 1rem;border:2px solid var(--hs-line);border-radius:16px;background:var(--hs-card)}
+.jk-card b{font-size:3.4rem;line-height:1;font-weight:600}
+.jk-card small{color:var(--hs-muted);font-size:.75rem;font-weight:700}
+.jk-main b{color:#d96c3d}
+.jk-other{border-style:dashed;animation:jk-in .7s 1.4s both cubic-bezier(.3,.7,.2,1)}
+.jk-other b{color:#3f5e8c}
+.jk-sound{padding:.3rem .7rem;border-radius:999px;background:#ddebdf;color:#1f5a39;font-weight:700;animation:jk-pop .5s .5s both}
+.jk-beats{flex-direction:column;align-items:center}
+.jk-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.4rem}
+.jk-row em{margin-left:.4rem;color:var(--hs-muted);font-size:.8rem;font-style:normal;font-weight:700}
+.jk-beat{display:flex;flex-direction:column;align-items:center;gap:.15rem;min-width:52px;padding:.45rem .35rem;border:2px solid var(--hs-line);border-radius:14px;background:var(--hs-card);animation:jk-beat .55s calc(var(--b)*.6s + .3s) both}
+.jk-beat b{font-size:1.9rem;line-height:1.1;font-weight:600;color:var(--hs-ink)}
+.jk-beat small{color:var(--hs-muted);font-size:.7rem;font-weight:700}
+.jk-beat.pause{border-style:dashed;background:transparent}
+.jk-beat.pause b{color:#9aa69f}
+.jk-beat.long b{color:#2f7a4f}
+@keyframes jk-in{from{opacity:0;transform:translateX(-24px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes jk-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes jk-beat{0%{opacity:.25;transform:none}45%{opacity:1;transform:translateY(-8px);border-color:#d96c3d;box-shadow:0 8px 18px #d96c3d33}100%{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.jk-other,.jk-sound,.jk-beat{animation:none}}
