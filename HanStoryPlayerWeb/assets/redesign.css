@@ -185,3 +185,7 @@ body>footer{display:none}
 @media(max-width:720px){.vd-grid{grid-template-columns:1fr 1fr}.vd-grid.vd-list{grid-template-columns:1fr}.jp-app .jp-app-tab{font-size:.68rem}}
 .dc-step.skip{opacity:.5}
 .dc-step.skip .dc-step-dot{border-style:dashed}
+.dc-course-progress{display:flex;flex-direction:column;gap:.3rem;margin-top:.6rem}
+.dc-course-progress span{display:block;height:8px;border-radius:8px;background:var(--hs-line);overflow:hidden}
+.dc-course-progress i{display:block;height:100%;border-radius:8px;background:var(--hs-accent)}
+.dc-course-progress small{color:var(--hs-muted);font-size:.8rem;font-weight:600}

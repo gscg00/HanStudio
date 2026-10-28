@@ -6,7 +6,7 @@ import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
-import{DAILY_ACTIVITY_CAP,DAILY_PHASES,advanceLearnIndex,newItemTarget,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,pickTodayLessons,previousClass,shuffle,taughtItems}from'./daily_class.js';
+import{DAILY_PHASES,advanceLearnIndex,chunkActivities,courseTotals,COURSE_DAYS,learnedTargets,newItemTarget,planNextClass,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,listeningLines,markExtraStudy,normalizeDailyState,previousClass,shuffle,taughtItems}from'./daily_class.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -61,10 +61,14 @@ Object.assign(proto,{
     await this.loadDaily();
     const status=dailyStatus(this.daily);
     if(status==='in-progress'||(status==='done-today'&&!force))return currentClass(this.daily);
-    const lessons=pickTodayLessons(this.orderedUnits(),{startLessonId:this.progress.currentLesson,completedLessons:this.progress.completedLessons,isUnitAccessible:id=>this.unitAccessible(id),budget:DAILY_ACTIVITY_CAP,itemTarget:newItemTarget(this.daily)});
-    if(!lessons.length)return currentClass(this.daily);
-    const items=lessons.flatMap(ref=>taughtItems(this.findLesson(ref.lessonId)?.lesson));
-    this.daily=createDailyClass(this.daily,{lessons,items});
+    // Camino propio: las siguientes palabras del idioma, sin lecciones completas ni exámenes.
+    const ordered=this.orderedUnits(),plan=planNextClass(ordered,{completedLessons:this.progress.completedLessons,learned:learnedTargets(this.daily,this.progress.completedLessons,ordered),target:newItemTarget(this.daily,courseTotals(ordered))});
+    if(plan.mode==='concepts')this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items:[]});
+    else{
+      if(!plan.items.length)return currentClass(this.daily);
+      const lessons=[...new Map(plan.chunks.map(chunk=>[chunk.lessonId,{unitId:chunk.unitId,lessonId:chunk.lessonId}])).values()];
+      this.daily=createDailyClass(this.daily,{lessons,items:plan.items,chunks:plan.chunks});
+    }
     await this.saveDaily();
     return currentClass(this.daily);
   },
@@ -76,23 +80,25 @@ Object.assign(proto,{
     if(!entry){this.shell(`<section class="dc-today"><div class="dc-empty"><b>✓</b><h1>¡Terminaste el curso!</h1><p>Sigue con el repaso espaciado y las Historias.</p><button class="primary" data-jp-route="review">Ir al repaso</button></div></section>`,'Hoy');return;}
     const done=status==='done-today',yesterday=previousClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],unit=this.units.get(entry.lessons[0]?.unitId),title=unit?.title||'Clase del día',reviewCount=yesterday?.items?.length||0;
     // Resumen para la pantalla de inicio, que no carga el curso.
-    if(entry.title!==title||this.daily.totalLessons!==this.allLessons().length){entry.title=title;this.daily.language=this.language;this.daily.totalLessons=this.allLessons().length;this.saveDaily();}
-    const lettersDay=!entry.items.length&&!reviewCount,skipped=new Set(lettersDay?['review','listen','practice','close']:[]);
-    const details={review:reviewCount?`${reviewCount} palabras de la clase ${yesterday.number}`:entry.number>1?'Nada pendiente de la clase anterior':'Tu primera clase: todavía no hay nada que repasar',listen:'Escucha las frases de hoy y repítelas',learn:entry.items.length?`${entry.items.length} palabras y frases nuevas con dibujo`:`${entry.lessons.length} lecci${entry.lessons.length===1?'ón':'ones'} de letras y sonidos`,practice:'Escuchar, elegir, armar frases y escribir',close:'Mezcla de hoy y de ayer, y video de repaso'};
-    if(lettersDay)['review','listen','practice','close'].forEach(id=>{details[id]='Hoy no hace falta: hoy toca aprender a leer';});;
+    // Avance «de 0 a 100»: palabras y frases vistas sobre todas las del idioma.
+    const ordered=this.orderedUnits(),totals=courseTotals(ordered),learned=learnedTargets(this.daily,this.progress.completedLessons,ordered).size;
+    const percent=totals.totalItems?Math.min(100,Math.round(learned/totals.totalItems*100)):0,weeksLeft=Math.max(0,Math.ceil((1-percent/100)*COURSE_DAYS/7));
+    if(entry.title!==title||this.daily.totalItems!==totals.totalItems||this.daily.learnedItems!==learned){entry.title=title;this.daily.language=this.language;this.daily.totalLessons=this.allLessons().length;this.daily.totalItems=totals.totalItems;this.daily.learnedItems=learned;this.saveDaily();}
+    const lettersDay=!entry.items.length&&!reviewCount,reading=entry.lessons.every(ref=>/foundation|reading|hangul|hiragana|katakana/.test(ref.unitId)),skipped=new Set(lettersDay?['review','listen','practice','close']:[]);
+    const details={review:reviewCount?`${reviewCount} palabras de la clase ${yesterday.number}`:entry.number>1?'Nada pendiente de la clase anterior':'Tu primera clase: todavía no hay nada que repasar',listen:'Escucha las frases de hoy y repítelas',learn:entry.items.length?`${entry.items.length} palabras y frases nuevas con dibujo`:reading?`${entry.lessons.length} lecci${entry.lessons.length===1?'ón':'ones'} de letras y sonidos`:`${entry.lessons.length} explicaci${entry.lessons.length===1?'ón':'ones'} para entender el idioma`,practice:'Escuchar, elegir, armar frases y escribir',close:'Mezcla de hoy y de ayer, y video de repaso'};
+    if(lettersDay)['review','listen','practice','close'].forEach(id=>{details[id]=reading?'Hoy no hace falta: hoy toca aprender a leer':'Hoy no hace falta: hoy toca una explicación';});;
     const nodes=DAILY_PHASES.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':skipped.has(phase.id)?'skip':index===entry.phaseIndex&&!done?'current':'locked';return`<li class="dc-step ${state}" style="--i:${index}"><span class="dc-step-dot" aria-hidden="true">${state==='done'?'✓':index+1}</span><div><strong>${esc(phase.title)}</strong><span>${esc(details[phase.id])}</span></div></li>`;}).join('');
     const chips=(items,cls='')=>items.slice(0,10).map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
     const scene=sceneFor(unit?.id,entry.items);
-    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${lettersDay?`${entry.learnIndex?'Seguir':'Empezar'}: ${entry.lessons.length} lecciones de lectura`:`${entry.phaseIndex?`Seguir con la fase ${entry.phaseIndex+1}`:'Empezar la clase'} · ${esc(next?.short||'')}`} <span aria-hidden="true">→</span></button><small>Puedes parar al terminar cualquier fase y seguir mañana.</small></div>`;
+    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${lettersDay?`${entry.learnIndex?'Seguir':'Empezar'}: ${entry.lessons.length} ${reading?'lecciones de lectura':entry.lessons.length===1?'explicación':'explicaciones'}`:`${entry.phaseIndex?`Seguir con la fase ${entry.phaseIndex+1}`:'Empezar la clase'} · ${esc(next?.short||'')}`} <span aria-hidden="true">→</span></button><small>Puedes parar al terminar cualquier fase y seguir mañana.</small></div>`;
     const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>Clase ${entry.number} completada</h2><p>La próxima clase se abre mañana. Dormir entre clases es parte del método: mañana empezaremos repasando esto.</p><div class="dc-extra"><h3>¿Quieres seguir?</h3><button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar las frases de hoy</button><button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button><button data-jp-action="stories">▤ Leer una Historia</button><button class="dc-advance" data-dc-action="advance">Adelantar la clase de mañana</button></div></section>`:'';
     this.shell(`<section class="dc-today ${done?'is-done':''}">
-      <div class="dc-title"><span class="dc-eyebrow">${esc(this.definition.name.toUpperCase())} · CLASE ${entry.number}</span><h1>${esc(title)}</h1><p>${esc(weekday(now).replace(/^./,char=>char.toUpperCase()))}</p></div>
-      <div class="dc-banner">${scene?`<div class="dc-banner-scene" aria-hidden="true">${scene.replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')}</div>`:''}<span class="dc-banner-chip">${entry.items.length?`${entry.items.length} nuevas`:'Letras y sonidos'}${reviewCount?` · ${reviewCount} de repaso`:''}</span></div>
+      <div class="dc-title"><span class="dc-eyebrow">${esc(this.definition.name.toUpperCase())} · CLASE ${entry.number}</span><h1>${esc(title)}</h1><p>${esc(weekday(now).replace(/^./,char=>char.toUpperCase()))}</p><div class="dc-course-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percent}" aria-label="Avance del idioma"><span><i style="width:${percent}%"></i></span><small>${percent} % del ${esc(this.definition.name.toLowerCase())}${percent<100?` · si entras cada día, terminas en unas ${weeksLeft} semanas`:''}</small></div></div>
+      <div class="dc-banner">${scene?`<div class="dc-banner-scene" aria-hidden="true">${scene.replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')}</div>`:''}<span class="dc-banner-chip">${entry.items.length?`${entry.items.length} nuevas`:reading?'Letras y sonidos':'Explicación'}${reviewCount?` · ${reviewCount} de repaso`:''}</span></div>
       <ol class="dc-steps">${nodes}</ol>
       ${action}${doneBlock}
       <div class="dc-columns">${entry.items.length?`<section class="dc-card"><h2>Hoy aprenderás</h2><div class="dc-chips">${chips(entry.items)}</div></section>`:''}${yesterday?.items?.length?`<section class="dc-card"><h2>Repasaremos de la clase ${yesterday.number}</h2><div class="dc-chips">${chips(yesterday.items,'old')}</div></section>`:`<section class="dc-card"><h2>Cómo funciona</h2><p>Cada clase empieza repasando la anterior. Lo que veas hoy volverá mañana, en 3 días, en una semana y en un mes.</p></section>`}</div>
       ${this.todayReviewCard()}
-      <details class="dc-map"><summary><span>Mapa del curso</span><small>Todas las unidades, tu progreso y las lecciones sueltas</small></summary><div class="dc-map-body">${this.captureMap()}</div></details>
     </section>`,'Hoy');
   },
 
@@ -133,9 +139,11 @@ Object.assign(proto,{
       return this.renderPhaseIntro(phase,{subtitle:stories?`${stories===1?'Una historia':`${stories} historias`} con ${lines.length} frases. Primero solo escuchas, luego lees con traducción y notas, y al final repites en voz alta.`:`${lines.length} frases. Primero solo escuchas, luego lees con traducción y al final repites en voz alta.`,onStart:()=>this.renderListen(lines,0)});
     }
     if(phase.id==='learn'){
-      const total=entry.lessons.length,current=entry.lessons[entry.learnIndex];
+      const parts=entry.chunks||entry.lessons,total=parts.length,current=parts[entry.learnIndex];
       if(!current)return this.finishPhase(phase,null);
-      return this.renderPhaseIntro(phase,{subtitle:total>1?`Lección ${entry.learnIndex+1} de ${total}: ${this.findLesson(current.lessonId)?.lesson.title||''}`:'',onStart:()=>this.runLesson(current)});
+      const title=this.findLesson(current.lessonId)?.lesson.title||'';
+      const subtitle=entry.chunks?`${entry.items.length} palabras y frases nuevas${total>1?` · parte ${entry.learnIndex+1} de ${total}: ${title.replace(/ · \d+$/,'')}`:''}`:total>1?`Lección ${entry.learnIndex+1} de ${total}: ${title}`:'';
+      return this.renderPhaseIntro(phase,{subtitle,onStart:()=>this.runLesson(current)});
     }
     if(phase.id==='practice'){
       const activities=buildPracticeSet(entry.items,pool,{seed,hasPicture:hasIllustration});
@@ -150,7 +158,8 @@ Object.assign(proto,{
   // Historias tipo Larousse/Assimil: una por lección, en stories/<unitId>.json.
   async loadStories(entry){
     this.storyCache??=new Map();
-    const unitIds=[...new Set(entry.lessons.map(ref=>ref.unitId))],lessonIds=entry.lessons.map(ref=>ref.lessonId);
+    // Con el camino propio, la historia de una lección sale el día que se termina (ya se conocen sus palabras).
+    const refs=entry.chunks?entry.chunks.filter(chunk=>chunk.endsLesson):entry.lessons,unitIds=[...new Set(refs.map(ref=>ref.unitId))],lessonIds=refs.map(ref=>ref.lessonId);
     const files=await Promise.all(unitIds.map(async unitId=>{
       if(!this.storyCache.has(unitId))this.storyCache.set(unitId,await this.fetch(`library/courses/${this.definition.directory}/stories/${unitId}.json`).catch(()=>null));
       return this.storyCache.get(unitId);
@@ -177,7 +186,10 @@ Object.assign(proto,{
     if(!found)return this.renderToday();
     const phase=DAILY_PHASES.find(item=>item.id==='learn');
     this.dailyMode=true;this.dailyStep={kind:'lesson',phase,ref,unit:found.unit};this.reviewMode=false;
-    this.lesson={...found.lesson,activities:lessonActivitiesForPresentation(this.course,found.unit,found.lesson)};
+    const activities=lessonActivitiesForPresentation(this.course,found.unit,found.lesson);
+    // Una «parte» de la clase: solo los ejercicios de las palabras de hoy.
+    this.lesson={...found.lesson,activities:ref.targets?chunkActivities(activities,ref):activities};
+    if(!this.lesson.activities.length){this.dailyMode=false;return this.skipChunk(ref);}
     this.unit=found.unit;this.activityIndex=0;this.answers={};this.blockSelections={};this.speechState=null;this.feedback=null;
     this.renderActivity();
   },
@@ -194,8 +206,16 @@ Object.assign(proto,{
     }
     // Lección real: se guarda igual que desde el mapa (progreso, repaso espaciado, XP).
     const passing=Number(this.lesson.passingScore??this.course.unlockRules?.minimumScore??GUIDED_PASSING_SCORE),passed=result.percentage>=passing;
+    const chunk=step.ref?.targets?step.ref:null,before={completed:this.progress.completedLessons.includes(this.lesson.id),score:this.progress.lessonScores?.[this.lesson.id],current:this.progress.currentLesson};
     this.progress=completeGuidedLesson(this.progress,this.unit,this.lesson,result,this.progressConfig(this.lesson));
-    if(passed){
+    // Una parte que no termina la lección guarda el repaso espaciado de sus palabras,
+    // pero la lección sigue abierta hasta que se hayan visto todas.
+    if(chunk&&!chunk.endsLesson){
+      if(!before.completed)this.progress.completedLessons=this.progress.completedLessons.filter(id=>id!==this.lesson.id);
+      if(before.score)this.progress.lessonScores[this.lesson.id]=before.score;else delete this.progress.lessonScores[this.lesson.id];
+      this.progress.currentLesson=this.lesson.id;
+    }
+    if(passed&&(!chunk||chunk.endsLesson)){
       const lessonType=this.lesson.isReview?'review':this.lesson.isTest?'test':this.lesson.isUnitFinal?'unitFinal':'normal';
       const reward=await xpService.awardLessonXP({languageId:this.language,courseId:this.course.courseId||`${this.definition.slug}-from-zero`,lessonId:this.lesson.id,score:result.percentage,completedAt:new Date().toISOString(),lessonType,xpReward:this.lesson.xpReward}).catch(()=>null);
       result.awardedXp=reward?.xp||0;
@@ -203,10 +223,17 @@ Object.assign(proto,{
     }
     await this.put('metadata',this.progress);
     if(!passed)return this.renderLessonRetry(step.ref,result,passing);
+    const entry=currentClass(this.daily),nextIndex=entry.learnIndex+1,total=(entry.chunks||entry.lessons).length;
+    this.daily=advanceLearnIndex(this.daily,nextIndex);
+    if(nextIndex<total){await this.saveDaily();return this.renderCheckpoint(step.phase,result,{lessonBreak:true,nextIndex,total,part:Boolean(entry.chunks)});}
+    return this.finishPhase(step.phase,result);
+  },
+  // Una parte sin ejercicios (todo ya visto) se salta sin checkpoint.
+  async skipChunk(ref){
     const entry=currentClass(this.daily),nextIndex=entry.learnIndex+1;
     this.daily=advanceLearnIndex(this.daily,nextIndex);
-    if(nextIndex<entry.lessons.length){await this.saveDaily();return this.renderCheckpoint(step.phase,result,{lessonBreak:true,nextIndex,total:entry.lessons.length});}
-    return this.finishPhase(step.phase,result);
+    await this.saveDaily();
+    return nextIndex<(entry.chunks||entry.lessons).length?this.startPhase('learn'):this.finishPhase(DAILY_PHASES.find(phase=>phase.id==='learn'),null,{skip:true});
   },
 
   renderLessonRetry(ref,result,passing){
@@ -226,10 +253,10 @@ Object.assign(proto,{
   },
 
   // ── Checkpoint animado ─────────────────────────────────────────────────
-  renderCheckpoint(phase,result,{note='',lessonBreak=false,nextIndex=0,total=0,free=false}={}){
+  renderCheckpoint(phase,result,{note='',lessonBreak=false,nextIndex=0,total=0,free=false,part=false}={}){
     const entry=currentClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],percent=result?.total?result.percentage:100,doneCount=entry.phasesDone.length;
-    const title=free?'Práctica libre terminada':lessonBreak?`Lección ${nextIndex} de ${total} superada`:`${phase.title}: hecho`;
-    const nextLabel=free?'':lessonBreak?`Seguir con la lección ${nextIndex+1}`:!entry.items.length&&['practice','close'].includes(next?.id)?'Terminar la clase':`Seguir: ${next.title}`;
+    const title=free?'Práctica libre terminada':lessonBreak?`${part?'Parte':'Lección'} ${nextIndex} de ${total} superada`:`${phase.title}: hecho`;
+    const nextLabel=free?'':lessonBreak?`Seguir con la ${part?'parte':'lección'} ${nextIndex+1}`:!entry.items.length&&['practice','close'].includes(next?.id)?'Terminar la clase':`Seguir: ${next.title}`;
     const nextAttr=lessonBreak?'learn':next?.id;
     this.shell(`<section class="dc-checkpoint"><div class="dc-ring" style="--p:${percent}"><b>${result?.total?`${percent}%`:'✓'}</b></div><span class="dc-eyebrow">${free?'PRÁCTICA EXTRA':'CHECKPOINT GUARDADO'}</span><h1>${esc(title)}</h1>${result?.total?`<p>${result.correct} de ${result.total} correctas.${result.errors?.length?' Lo que fallaste volverá antes en tus repasos.':''}</p>`:''}${note?`<p>${esc(note)}</p>`:''}${free?'':`<div class="dc-mini-path">${DAILY_PHASES.map((item,index)=>`<i class="${entry.phasesDone.includes(item.id)?'done':index===entry.phaseIndex?'current':''}" title="${esc(item.title)}"></i>`).join('')}</div><p class="dc-small">${doneCount} de ${DAILY_PHASES.length} fases · si tienes que irte, mañana retomas desde aquí.</p>`}${nextLabel?`<button class="primary" data-dc-action="start-phase" data-dc-phase="${esc(nextAttr)}">${esc(nextLabel)} →</button>`:''}<button class="dc-link" data-dc-action="to-today">${free?'Volver':'Salir por hoy'}</button></section>`,'Hoy');
   },

@@ -17,7 +17,7 @@ export function languageSummaries(metadataItems,courses,now=new Date()){
     // La racha solo sigue viva si estudiaste hoy o ayer.
     const streak=[today,yesterday].includes(progress?.lastStudyDate)?Number(progress.streak)||0:0;
     const started=Boolean(entry||completed);
-    return {language,started,classNumber:entry?.number||0,title:entry?.title||'',phasesDone,phases:PHASES,inProgress:Boolean(entry&&!entry.completedDate),doneToday,completed,total:daily?.totalLessons||0,streak,activityDates:progress?.activityDates||[],lastDate:daily?.updatedAt||progress?.updatedAt||progress?.lastStudyDate||''};
+    return {language,started,classNumber:entry?.number||0,title:entry?.title||'',phasesDone,phases:PHASES,inProgress:Boolean(entry&&!entry.completedDate),doneToday,completed:daily?.totalItems?daily.learnedItems||0:completed,total:daily?.totalItems||daily?.totalLessons||0,streak,activityDates:progress?.activityDates||[],lastDate:daily?.updatedAt||progress?.updatedAt||progress?.lastStudyDate||''};
   });
 }
 

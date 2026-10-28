@@ -11,18 +11,35 @@ export const DAILY_NEW_ACTIVITY_BUDGET=48;
 // cuesta más; después el alumno avanza más rápido con la misma media hora.
 export const dailyBudgetForLevel=levelIndex=>DAILY_NEW_ACTIVITY_BUDGET+Math.min(3,Math.max(0,levelIndex))*8;
 export const DAILY_MAX_LESSONS=9;
-// Palabras y frases nuevas por clase: empieza en 8 y sube 1 cada 3 clases que
-// salen bien (≥70 %), hasta 20. Las lecciones no se parten: se queda lo más cerca posible de la meta. Si la última clase salió mal (<60 %), la
-// siguiente trae 2 menos. Las clases de letras no cuentan: no traen vocabulario.
+// Ritmo: todo el idioma, de 0 a 100, en unos 3-4 meses si entras cada día.
+// La cantidad de palabras nuevas sube en línea recta desde ~70 % del promedio
+// hasta ~130 %, así que el total cabe en COURSE_DAYS clases. Cada clase que sale
+// bien (≥70 %) avanza el ritmo; si la última salió mal (<60 %), la siguiente
+// trae 2 menos. Las clases de letras no cuentan: no traen vocabulario.
+export const COURSE_DAYS=105;
 export const NEW_ITEMS_START=8,NEW_ITEMS_MAX=20,NEW_ITEMS_MIN=6;
 // Tope de ejercicios por clase, solo como seguridad para que no se alargue.
 export const DAILY_ACTIVITY_CAP=100;
 const classScore=entry=>{const results=Object.values(entry.results||{}),total=results.reduce((sum,item)=>sum+item.total,0);return total?results.reduce((sum,item)=>sum+item.correct,0)/total*100:null;};
-export function newItemTarget(state){
+export function newItemTarget(state,{totalItems=0,conceptDays=0,days=COURSE_DAYS}={}){
   const vocabulary=(state?.classes||[]).filter(entry=>entry.completedDate&&entry.items?.length);
   const good=vocabulary.filter(entry=>(classScore(entry)??100)>=70).length,last=vocabulary.at(-1);
-  const target=Math.min(NEW_ITEMS_MAX,NEW_ITEMS_START+Math.floor(good/3));
-  return last&&(classScore(last)??100)<60?Math.max(NEW_ITEMS_MIN,target-2):target;
+  let target;
+  if(totalItems){
+    const vocabularyDays=Math.max(20,days-conceptDays),average=totalItems/vocabularyDays,start=Math.max(4,Math.round(average*0.7)),end=2*average-start;
+    target=Math.round(start+(end-start)*Math.min(1,good/(vocabularyDays-1)));
+  }else target=Math.min(NEW_ITEMS_MAX,NEW_ITEMS_START+Math.floor(good/3));
+  return last&&(classScore(last)??100)<60?Math.max(Math.min(target,NEW_ITEMS_MIN),target-2):target;
+}
+
+// Tamaño del idioma para el ritmo y el «de 0 a 100».
+export function courseTotals(ordered){
+  const items=new Set();let concepts=0;
+  for(const unit of ordered)for(const lesson of unit.lessons||[]){
+    taughtItems(lesson).forEach(item=>items.add(item.target));
+    if(lessonKind(lesson)==='concept')concepts++;
+  }
+  return {totalItems:items.size,conceptDays:Math.ceil(concepts/6)};
 }
 export const DAILY_REVIEW_LIMIT=24;
 
@@ -117,9 +134,9 @@ export function pickTodayLessons(ordered,{startLessonId,completedLessons=[],isUn
   return picked;
 }
 
-export function createDailyClass(state,{lessons,items,now=new Date()}){
+export function createDailyClass(state,{lessons,items,chunks=null,now=new Date()}){
   const number=(currentClass(state)?.number||0)+1;
-  const entry={number,createdDate:dateKey(now),completedDate:null,lessons,items,phaseIndex:0,phasesDone:[],learnIndex:0,results:{},updatedAt:now.toISOString()};
+  const entry={number,createdDate:dateKey(now),completedDate:null,lessons,items,...(chunks?{chunks}:{}),phaseIndex:0,phasesDone:[],learnIndex:0,results:{},updatedAt:now.toISOString()};
   return {...state,classes:[...state.classes,entry].slice(-60),updatedAt:now.toISOString()};
 }
 
@@ -232,3 +249,63 @@ export function listeningLines(todayItems,limit=12){
 }
 
 export const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/DAY);
+
+// ── Camino propio de la clase del día ──────────────────────────────────
+// La clase ya no sigue lecciones, unidades ni exámenes: toma las siguientes N
+// palabras y frases del idioma en el orden del curso, estén donde estén. Solo
+// las lecciones de letras y conceptos (sin vocabulario) se dan completas.
+const SKIPPED_LESSON=lesson=>lesson.isReview||lesson.isTest||/review|test|production|checkpoint/.test(String(lesson.id));
+const lessonKind=lesson=>taughtItems(lesson).length?'items':SKIPPED_LESSON(lesson)?'skip':(lesson.activities||[]).some(activity=>TEACH_TYPES.has(activity.type))?'concept':'skip';
+
+export function learnedTargets(state,completedLessons,ordered){
+  const done=new Set(completedLessons||[]),learned=new Set();
+  for(const entry of state?.classes||[])if(entry.completedDate||entry.learnIndex>0)for(const item of entry.items||[])learned.add(item.target);
+  for(const unit of ordered)for(const lesson of unit.lessons||[])if(done.has(lesson.id))taughtItems(lesson).forEach(item=>learned.add(item.target));
+  return learned;
+}
+
+// Devuelve {mode:'concepts',lessons} para un día de letras o
+// {mode:'items',chunks,items} con las palabras de hoy agrupadas por lección.
+export function planNextClass(ordered,{completedLessons=[],learned=new Set(),target=8,maxConceptLessons=6,activityCap=DAILY_ACTIVITY_CAP}={}){
+  const done=new Set(completedLessons),chunks=[],concepts=[],lessonOf=new Map();let count=0,conceptActivities=0;
+  const result=()=>({mode:'items',chunks,items:chunks.flatMap(chunk=>taughtItems(lessonOf.get(chunk.lessonId)).filter(item=>chunk.targets.includes(item.target)))});
+  for(const unit of ordered)for(const lesson of unit.lessons||[]){
+    if(done.has(lesson.id))continue;
+    const kind=lessonKind(lesson);
+    if(kind==='skip')continue;
+    if(kind==='concept'){
+      // Las letras se dan solas, en su propio día y en orden.
+      if(chunks.length)return result();
+      const size=(lesson.activities||[]).length;
+      if(concepts.length&&(concepts.length>=maxConceptLessons||conceptActivities+size>activityCap))return {mode:'concepts',lessons:concepts};
+      concepts.push({unitId:unit.id,lessonId:lesson.id});conceptActivities+=size;
+      continue;
+    }
+    if(concepts.length)return {mode:'concepts',lessons:concepts};
+    const all=taughtItems(lesson),pending=all.filter(item=>!learned.has(item.target));
+    if(!pending.length)continue;
+    const take=pending.slice(0,target-count);
+    lessonOf.set(lesson.id,lesson);
+    chunks.push({unitId:unit.id,lessonId:lesson.id,targets:take.map(item=>item.target),startsLesson:pending.length===all.length,endsLesson:take.length===pending.length});
+    count+=take.length;
+    if(count>=target)return result();
+  }
+  if(concepts.length)return {mode:'concepts',lessons:concepts};
+  return result();
+}
+
+// Ejercicios de una lección que corresponden a las palabras de hoy: su tarjeta,
+// su traducción y su escucha. La introducción va el día que empieza la lección y
+// lo que no es de una palabra concreta (reglas, diálogos) el día que termina.
+export function chunkActivities(activities,{targets=[],startsLesson=false,endsLesson=false}={}){
+  const wanted=new Set(targets),all=new Set();
+  for(const activity of activities)for(const key of [activity.target,activity.answer,activity.audio])if(key)all.add(String(key));
+  const lessonTargets=new Set([...all].filter(key=>activities.some(activity=>TEACH_TYPES.has(activity.type)&&activity.target===key&&activity.teaching_kind!=='rule')));
+  const owner=activity=>[activity.target,activity.answer,activity.audio].map(key=>String(key||'')).find(key=>lessonTargets.has(key));
+  return activities.filter(activity=>{
+    if(activity.type==='lesson_intro')return startsLesson;
+    const key=owner(activity);
+    if(key)return wanted.has(key);
+    return endsLesson;
+  });
+}
