@@ -10,7 +10,20 @@ export const DAILY_NEW_ACTIVITY_BUDGET=48;
 // Con el nivel crece lo que cabe en una clase: al principio todo es nuevo y
 // cuesta más; después el alumno avanza más rápido con la misma media hora.
 export const dailyBudgetForLevel=levelIndex=>DAILY_NEW_ACTIVITY_BUDGET+Math.min(3,Math.max(0,levelIndex))*8;
-export const DAILY_MAX_LESSONS=6;
+export const DAILY_MAX_LESSONS=9;
+// Palabras y frases nuevas por clase: empieza en 8 y sube 1 cada 3 clases que
+// salen bien (≥70 %), hasta 20. Las lecciones no se parten: se queda lo más cerca posible de la meta. Si la última clase salió mal (<60 %), la
+// siguiente trae 2 menos. Las clases de letras no cuentan: no traen vocabulario.
+export const NEW_ITEMS_START=8,NEW_ITEMS_MAX=20,NEW_ITEMS_MIN=6;
+// Tope de ejercicios por clase, solo como seguridad para que no se alargue.
+export const DAILY_ACTIVITY_CAP=100;
+const classScore=entry=>{const results=Object.values(entry.results||{}),total=results.reduce((sum,item)=>sum+item.total,0);return total?results.reduce((sum,item)=>sum+item.correct,0)/total*100:null;};
+export function newItemTarget(state){
+  const vocabulary=(state?.classes||[]).filter(entry=>entry.completedDate&&entry.items?.length);
+  const good=vocabulary.filter(entry=>(classScore(entry)??100)>=70).length,last=vocabulary.at(-1);
+  const target=Math.min(NEW_ITEMS_MAX,NEW_ITEMS_START+Math.floor(good/3));
+  return last&&(classScore(last)??100)<60?Math.max(NEW_ITEMS_MIN,target-2):target;
+}
 export const DAILY_REVIEW_LIMIT=24;
 
 export const DAILY_PHASES=Object.freeze([
@@ -80,21 +93,26 @@ export function taughtItems(lesson){
 }
 
 // Elige las lecciones nuevas de hoy siguiendo el orden del curso.
-export function pickTodayLessons(ordered,{startLessonId,completedLessons=[],isUnitAccessible=()=>true,budget=DAILY_NEW_ACTIVITY_BUDGET,maxLessons=DAILY_MAX_LESSONS}={}){
+export function pickTodayLessons(ordered,{startLessonId,completedLessons=[],isUnitAccessible=()=>true,budget=DAILY_NEW_ACTIVITY_BUDGET,maxLessons=DAILY_MAX_LESSONS,itemTarget=null}={}){
   const flat=ordered.flatMap(unit=>(unit.lessons||[]).map(lesson=>({unit,lesson})));
   let start=flat.findIndex(item=>item.lesson.id===startLessonId);
   if(start<0)start=flat.findIndex(item=>!completedLessons.includes(item.lesson.id));
   if(start<0)return [];
-  const picked=[];let used=0;
+  const picked=[],seen=new Set();let used=0,items=0;
   for(let i=start;i<flat.length&&picked.length<maxLessons;i++){
     const item=flat[i];
     if(!isUnitAccessible(item.unit.id)&&picked.length)break;
-    const size=(item.lesson.activities||[]).length;
+    const size=(item.lesson.activities||[]).length,fresh=itemTarget==null?[]:taughtItems(item.lesson).map(entry=>entry.target).filter(target=>!seen.has(target)),newItems=new Set(fresh).size;
     if(picked.length&&used+size>budget)break;
+    // Con meta de palabras nuevas: no se pasa de la meta más que un poco (las lecciones no se parten).
+    // Se añade la lección siguiente solo si deja la clase más cerca de la meta.
+    // Las lecciones de repaso (sin palabras nuevas) no cuentan para la meta.
+    if(itemTarget!=null&&picked.length&&items>0&&newItems>0&&Math.abs(items+newItems-itemTarget)>=Math.abs(items-itemTarget))break;
     picked.push({unitId:item.unit.id,lessonId:item.lesson.id});
-    used+=size;
+    used+=size;items+=newItems;fresh.forEach(target=>seen.add(target));
     // Una prueba cierra la clase: no se mezcla con contenido nuevo detrás.
     if(item.lesson.isTest)break;
+    if(itemTarget!=null&&items>=itemTarget)break;
   }
   return picked;
 }

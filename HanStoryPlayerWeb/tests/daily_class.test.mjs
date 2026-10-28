@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,dailyStatus,dateKey,defaultDailyState,DAILY_PHASES,pickTodayLessons,recallChoice,taughtItems} from '../src/daily_class.js';
+import {DAILY_ACTIVITY_CAP,newItemTarget,buildCloseSet,buildPracticeSet,buildReviewSet,completePhase,createDailyClass,dailyStatus,dateKey,defaultDailyState,DAILY_PHASES,pickTodayLessons,recallChoice,taughtItems} from '../src/daily_class.js';
 
 const course=JSON.parse(fs.readFileSync(new URL('../library/courses/Korean/course.json',import.meta.url)));
 const units=course.levels.flatMap(level=>level.unitIds).map(id=>JSON.parse(fs.readFileSync(new URL(`../library/courses/Korean/units/${id}.json`,import.meta.url))));
@@ -49,4 +49,25 @@ test('repaso, práctica y cierre producen ejercicios válidos',()=>{
       if(activity.type!=='build_with_blocks')assert.equal(new Set(activity.options).size,activity.options.length,activity.id);
     }
   }
+});
+
+test('la meta de palabras nuevas sube 1 cada 3 clases bien hechas, hasta 20, y baja si la última salió mal',()=>{
+  const cls=(percentage,items=8)=>({completedDate:'2026-10-01',items:Array.from({length:items},(_,i)=>({target:`w${i}`})),results:{practice:{correct:percentage,total:100,percentage}}});
+  assert.equal(newItemTarget({classes:[]}),8);
+  assert.equal(newItemTarget({classes:[cls(90),cls(90),cls(90)]}),9);
+  // Las clases de letras (sin vocabulario) no cuentan.
+  assert.equal(newItemTarget({classes:[cls(90,0),cls(90,0),cls(90,0)]}),8);
+  assert.equal(newItemTarget({classes:[cls(90),cls(90),cls(90),cls(50)]}),7);
+  assert.equal(newItemTarget({classes:Array.from({length:60},()=>cls(95))}),20);
+});
+
+test('con meta de palabras la clase se acerca a la meta sin partir lecciones y las de repaso no cuentan',()=>{
+  const lesson=(id,targets,activities=12)=>({id,activities:[...targets.map(target=>({type:'teach_word',target,meaning:`m-${target}`})),...Array.from({length:activities-targets.length},()=>({type:'select_translation'}))]});
+  const unit={id:'u',lessons:[lesson('l1',['a','b','c','d']),lesson('l2',['e','f','g','h']),lesson('r1',[]),lesson('l3',['i','j','k','l']),lesson('l4',['m','n','o','p'])]};
+  const ids=target=>pickTodayLessons([unit],{startLessonId:'l1',budget:DAILY_ACTIVITY_CAP,itemTarget:target}).map(item=>item.lessonId);
+  assert.deepEqual(ids(8),['l1','l2']);
+  // La lección de repaso que sigue entra: repasa lo recién aprendido.
+  assert.deepEqual(ids(9),['l1','l2','r1']);
+  assert.deepEqual(ids(11),['l1','l2','r1','l3']);
+  assert.deepEqual(ids(20),['l1','l2','r1','l3','l4']);
 });
