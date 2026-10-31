@@ -2,14 +2,14 @@
 // de todos los cursos guiados) envolviendo unos pocos métodos, para no tocar
 // el flujo de lecciones existente.
 import{JapaneseCourseApp,lessonActivitiesForPresentation,reviewItemsForSession}from'./japanese_course_app.js';
-import{completeGuidedLesson,completeGuidedReview,reviewSchedule,scoreActivities,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
+import{completeGuidedLesson,completeGuidedReview,scoreActivities,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
 import{blockAnimationHTML,syllablesForCard}from'./hangul_blocks.js';
 import{kanaAnimationHTML}from'./kana_anim.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
-import{DAILY_PHASES,advanceLearnIndex,buildClassClose,buildClassPractice,buildCloseSet,buildLearnSet,buildReviewSet,classReviewItems,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
-import{CLASS_MODULES,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
+import{DAILY_PHASES,advanceLearnIndex,estimatedMinutes,buildClassClose,buildClassPractice,buildCloseSet,buildLearnSet,buildReviewSet,classReviewItems,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
+import{CLASS_MODULES,LATIN_SCRIPT,STORY_UNITS,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -57,14 +57,21 @@ Object.assign(proto,{
     return[...known.values()];
   },
 
+  // Las historias son el material de escucha: se cargan al preparar una clase nueva.
+  async loadClassStories(){
+    if(this.classStories)return this.classStories;
+    const files=await Promise.all(STORY_UNITS.map(id=>this.fetch(`library/courses/${this.definition.directory}/stories/${id}.json`).catch(()=>null)));
+    return this.classStories=Object.fromEntries(STORY_UNITS.map((id,index)=>[id,files[index]?.stories||[]]));
+  },
+
   async ensureTodayClass(force=false){
     await this.loadDaily();
     const status=dailyStatus(this.daily);
     if(status==='in-progress'||(status==='done-today'&&!force))return currentClass(this.daily);
-    const plan=planNextLesson(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily});
+    const stories=await this.loadClassStories(),plan=planNextLesson(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily,stories});
     if(!plan)return currentClass(this.daily);
     if(plan.mode==='reading')this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items:[],meta:{plan:PLAN_VERSION,kind:'reading',title:'Aprende a leer'}});
-    else{const{id:classId,title,goal,module,items,lines,replies,rule,task}=plan.class;this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items,meta:{plan:PLAN_VERSION,kind:'class',classId,title,goal,module,lines,replies,rule,task}});}
+    else{const{id:classId,title,goal,module,level,items,lines,story,replies,rule,task,production}=plan.class;this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items,meta:{plan:PLAN_VERSION,kind:'class',classId,title,goal,module,level,lines,story,replies,rule,task,production}});}
     await this.saveDaily();
     return currentClass(this.daily);
   },
@@ -74,34 +81,27 @@ Object.assign(proto,{
     this.dailyMode=false;this.dailyStep=null;
     const entry=await this.ensureTodayClass(),status=dailyStatus(this.daily),now=new Date();
     if(!entry){this.shell(`<section class="dc-today"><div class="dc-empty"><b>✓</b><h1>¡Terminaste el curso!</h1><p>Sigue con el repaso espaciado para mantener lo aprendido.</p><button class="primary" data-jp-route="review">Ir al repaso</button></div></section>`,'Hoy');return;}
-    const done=status==='done-today',reading=entry.kind==='reading',next=DAILY_PHASES[entry.phaseIndex],title=entry.title,review=classReviewItems(this.daily,{limit:12}).filter(item=>!entry.items.some(today=>today.target===item.target));
+    const done=status==='done-today',reading=entry.kind==='reading',next=DAILY_PHASES[entry.phaseIndex],title=entry.title,review=classReviewItems(this.daily).filter(item=>!entry.items.some(today=>today.target===item.target));
     // Resumen para la pantalla de inicio, que no carga el curso.
-    const progress=planProgress(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily}),weeksLeft=Math.ceil(progress.remaining/7);
+    const progress=planProgress(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily});
     if(this.daily.totalItems!==progress.total||this.daily.learnedItems!==progress.done||this.daily.language!==this.language){this.daily.language=this.language;this.daily.totalLessons=this.allLessons().length;this.daily.totalItems=progress.total;this.daily.learnedItems=progress.done;this.saveDaily();}
-    const module=CLASS_MODULES.find(item=>item.id===entry.module),eyebrow=reading?`${this.definition.name} · Lectura`:`${this.definition.name} · Clase ${entry.number}${module?` · ${module.title}`:''}`,goal=reading?'Antes de hablar, aprendes a leer: así podrás leer todo lo que veas en las clases.':`Al terminar podrás ${entry.goal}`;
-    const details={review:`${review.length} palabras y frases de clases anteriores`,listen:'Escucha una conversación con lo de hoy',learn:`${entry.items.length} palabras y frases, y cómo funcionan`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
-    const shown=DAILY_PHASES.filter(phase=>(phase.id!=='review'||review.length)&&(phase.id!=='listen'||entry.items.length));
+    const module=CLASS_MODULES.find(item=>item.id===entry.module),dialogue=entry.lines?.some(line=>line.speaker),eyebrow=reading?`${this.definition.name} · Lectura`:`${this.definition.name} · ${entry.level||progress.level} · Clase ${entry.number}${module?` · ${module.title}`:''}`,goal=reading?'Antes de hablar, aprendes a leer: así podrás leer todo lo que veas en las clases.':`Al terminar podrás ${entry.goal}`;
+    const details={review:`${review.length} palabras y frases de clases anteriores`,listen:entry.story?`Escucha la historia «${entry.story}»`:dialogue?'Escucha una conversación con lo de hoy':'Escucha, lee y repite lo de hoy',learn:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
+    const shown=this.classSteps(entry),minutes=estimatedMinutes(entry,review.length);
     const nodes=shown.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':phase===next&&!done?'current':'locked';return`<li class="dc-step ${state}" style="--i:${index}"><span class="dc-step-dot" aria-hidden="true">${state==='done'?'✓':index+1}</span><div><strong>${esc(phase.title)}</strong><span>${esc(details[phase.id])}</span></div></li>`;}).join('');
-    const chips=(items,cls='')=>items.slice(0,10).map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
+    const chips=(items,cls='')=>items.map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
     const sound=nextSoundLesson(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons});
-    const started=entry.phaseIndex>0||entry.learnIndex>0;
-    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${reading?`${started?'Seguir':'Empezar'} la lectura`:started?`Seguir: ${esc(next?.title||'')}`:'Empezar la clase'} <span aria-hidden="true">→</span></button><small>Tu avance se guarda: puedes parar cuando quieras.</small></div>`;
-    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>${reading?'Lectura completada':`Clase ${entry.number} completada`}</h2><p>${entry.goal?`Ya puedes ${esc(entry.goal)} `:''}La próxima clase se abre mañana: repasar después de dormir es lo que lo fija.</p><div class="dc-extra"><h3>¿Quieres seguir?</h3>${entry.items.length?`<button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar la conversación</button>`:''}<button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button>${sound?'<button data-dc-action="sound-lesson">♫ Lección de pronunciación</button>':''}<button class="dc-advance" data-dc-action="advance">Adelantar la clase de mañana</button></div></section>`:'';
+    const started=entry.phaseIndex>0||entry.learnIndex>0||Boolean(entry.resume);
+    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${reading?`${started?'Seguir':'Empezar'} la lectura`:started?`Seguir: ${esc(next?.title||'')}`:'Empezar la clase'} <span aria-hidden="true">→</span></button><small>${reading?'':`Unos ${minutes} minutos · `}puedes parar cuando quieras</small></div>`;
+    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>${reading?'Lectura completada':`Clase ${entry.number} completada`}</h2><p>${entry.goal?`Ya puedes ${esc(entry.goal)} `:''}Por hoy es suficiente. Mañana hay otra clase.</p><details class="dc-extra"><summary>¿Quieres seguir un poco más?</summary>${entry.items.length?`<button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar lo de hoy</button>`:''}<button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button>${sound?'<button data-dc-action="sound-lesson">♫ Lección de pronunciación</button>':''}<button class="dc-advance" data-dc-action="advance">Hacer la siguiente clase ahora</button></details></section>`:'';
     this.shell(`<section class="dc-today ${done?'is-done':''}">
-      <div class="dc-title"><span class="dc-eyebrow">${esc(eyebrow.toUpperCase())}</span><h1>${esc(title)}</h1><p class="dc-goal">${esc(goal)}</p><div class="dc-course-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress.percent}" aria-label="Avance del idioma"><span><i style="width:${progress.percent}%"></i></span><small>${progress.done} de ${progress.total} clases${weeksLeft?` · con una clase al día, unas ${weeksLeft} semanas más`:''}</small></div></div>
-      ${reading?`<section class="dc-card dc-reading-note"><h2>Hoy: ${entry.lessons.length} lecci${entry.lessons.length===1?'ón':'ones'} de lectura</h2><p>Las primeras clases son solo letras y sonidos. En cuanto puedas leer empiezan las conversaciones.</p></section>`:`<ol class="dc-steps">${nodes}</ol>`}
+      <div class="dc-title"><span class="dc-eyebrow">${esc(eyebrow.toUpperCase())}</span><h1>${esc(title)}</h1>${done?'':`<p class="dc-goal">${esc(goal)}</p>`}<div class="dc-course-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress.percent}" aria-label="Avance del idioma"><span><i style="width:${progress.percent}%"></i></span><small>Nivel ${esc(progress.level)} · ${progress.done} de ${progress.total} clases</small></div></div>
+      ${reading?`<section class="dc-card dc-reading-note"><h2>Hoy: ${entry.lessons.length} lecci${entry.lessons.length===1?'ón':'ones'} de lectura</h2><p>Las primeras clases son solo letras y sonidos. En cuanto puedas leer empiezan las conversaciones.</p></section>`:done?'':`<ol class="dc-steps">${nodes}</ol>`}
       ${action}${doneBlock}
-      <div class="dc-columns">${entry.items.length?`<section class="dc-card"><h2>Hoy aprenderás</h2><div class="dc-chips">${chips(entry.items)}</div></section>`:''}${review.length?`<section class="dc-card"><h2>Hoy repasas</h2><div class="dc-chips">${chips(review,'old')}</div></section>`:''}</div>
-      ${this.todayReviewCard()}
+      ${entry.items.length&&!done?`<details class="dc-card dc-preview"><summary>Ver lo que aprenderás hoy</summary><div class="dc-chips">${chips(entry.items)}</div></details>`:''}
     </section>`,'Hoy');
   },
 
-  // ── Hoy es la sección principal: incluye el repaso espaciado y el mapa ──
-  todayReviewCard(){
-    const due=reviewSchedule(this.progress).due.length,allowance=this.reviewAllowance(),available=Math.min(due,allowance.remaining);
-    if(!due)return'';
-    return `<section class="dc-card dc-srs"><div><h2>Repaso espaciado</h2><p>${available?`${available} tarjeta${available===1?'':'s'} de días anteriores te esperan. Cada una vuelve a 1, 3, 7, 14 y 30 días.`:due?'Completaste tu límite de repaso de hoy.':''}</p><small>${allowance.completed} de ${allowance.limit} repasadas hoy · el límite se cambia en Perfil.</small></div>${available?'<button class="primary" data-jp-action="start-review">Repasar ahora</button>':''}</section>`;
-  },
   // El mapa se dibuja con el motor original y se inserta dentro de Hoy.
   captureMap(){
     let html='';
@@ -110,11 +110,11 @@ Object.assign(proto,{
     return html;
   },
 
-  // ── Transición animada entre fases ─────────────────────────────────────
-  renderPhaseIntro(phase,{subtitle='',onStart}){
-    const index=DAILY_PHASES.indexOf(phase),entry=currentClass(this.daily),reading=entry?.kind==='reading',title=reading?entry.title:phase.title;
-    this.dailyIntro=onStart;
-    this.shell(`<section class="dc-intro" style="--phase:${index}"><span class="dc-eyebrow">${reading?'LECTURA':esc(`CLASE ${entry.number} · ${entry.title}`.toUpperCase())}</span><h1>${esc(title)}</h1><p>${esc(subtitle||phase.description)}</p><button class="primary" data-dc-action="intro-go">Comenzar</button><button class="dc-link" data-dc-action="to-today">Volver al plan de hoy</button></section>`,'Hoy');
+  // Los pasos que esta clase tiene de verdad: sin repaso el primer día, sin nada en lectura.
+  classSteps(entry){
+    if(entry.kind==='reading')return[];
+    const review=entry.phasesDone.includes('review')||classReviewItems(this.daily).some(item=>!entry.items.some(today=>today.target===item.target));
+    return DAILY_PHASES.filter(phase=>(phase.id!=='review'||review)&&(phase.id!=='listen'||entry.items.length));
   },
 
   async startPhase(phaseId){
@@ -125,28 +125,28 @@ Object.assign(proto,{
       const allowance=this.reviewAllowance(),srs=reviewItemsForSession(this.progress,Math.min(allowance.remaining,8)),old=classReviewItems(this.daily).filter(item=>!entry.items.some(today=>today.target===item.target));
       const activities=buildReviewSet(old,srs.map(item=>item.activity).filter(Boolean),this.itemPool(entry,{includeToday:false}),{seed});
       if(!activities.length)return this.finishPhase(phase,null,{skip:true});
-      return this.renderPhaseIntro(phase,{subtitle:`${activities.length} preguntas sobre lo que ya viste. Recordar sin mirar es lo que fortalece la memoria.`,onStart:()=>this.runSet(phase,activities,{srsItems:srs})});
+      return this.runSet(phase,activities,{srsItems:srs});
     }
     if(phase.id==='listen'){
       const lines=this.listenLines(entry);
       if(!lines.length)return this.finishPhase(phase,null,{skip:true});
-      return this.renderPhaseIntro(phase,{subtitle:'Primero solo escuchas, luego lees con la traducción y al final repites en voz alta.',onStart:()=>this.renderListen(lines,0)});
+      return this.renderListen(lines,0);
     }
     if(phase.id==='learn'){
       const parts=partsOf(entry),current=parts[entry.learnIndex];
       if(!current)return this.finishPhase(phase,null);
-      if(current.items){const activities=buildLearnSet(entry.items,{teach:item=>this.teachActivity(item),rule:entry.rule,seed});return this.renderPhaseIntro(phase,{subtitle:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}.`,onStart:()=>this.runSet(phase,activities)});}
-      const title=this.findLesson(current.lessonId)?.lesson.title||'';
-      return this.renderPhaseIntro(phase,{subtitle:entry.kind==='reading'?`Lección ${entry.learnIndex+1} de ${parts.length}: ${title}`:`Primero, los sonidos: ${title}`,onStart:()=>this.runLesson(current)});
+      if(current.items)return this.runSet(phase,buildLearnSet(entry.items,{teach:item=>this.teachActivity(item),rule:entry.rule,seed}));
+      return this.runLesson(current);
     }
     if(phase.id==='practice'){
       const activities=buildClassPractice(entry.items,pool,{seed,language:this.language});
       if(!activities.length)return this.finishPhase(phase,null,{skip:true});
-      return this.renderPhaseIntro(phase,{onStart:()=>this.runSet(phase,activities)});
+      return this.runSet(phase,activities);
     }
-    const activities=entry.items.length?buildClassClose(entry,pool,{seed}):[];
+    const typing=LATIN_SCRIPT.has(this.language)?this.definition.name.toLowerCase():'',production=(this.findLesson(entry.production?.lessonId)?.lesson.activities||[]).filter(activity=>activity.type!=='lesson_intro');
+    const activities=entry.items.length?buildClassClose(entry,pool,{seed,typing,production}):[];
     if(!activities.length)return this.finishPhase(phase,null,{skip:true});
-    return this.renderPhaseIntro(phase,{onStart:()=>this.runSet(phase,activities)});
+    return this.runSet(phase,activities);
   },
 
   listenLines(entry){return entry.lines?.length?entry.lines:entry.items||[];},
@@ -160,7 +160,8 @@ Object.assign(proto,{
     this.dailyMode=true;this.dailyStep=step;this.reviewMode=false;
     this.lesson={id:`daily-${step.phase.id}-${Date.now()}`,title,activities};
     this.unit=step.unit||{id:'daily',lessons:[this.lesson]};
-    this.activityIndex=0;this.answers={};this.blockSelections={};this.speechState=null;this.feedback=null;
+    const resume=step.kind==='set'?currentClass(this.daily)?.resume:null,resumed=resume?.phase===step.phase.id&&activities[resume.index]?.id===resume.id;
+    this.activityIndex=resumed?resume.index:0;this.answers=resumed?resume.answers:{};this.blockSelections={};this.speechState=null;this.feedback=null;
     this.renderActivity();
   },
   runSet(phase,activities,{srsItems=[]}={}){this.beginActivities(activities,{kind:'set',phase,srsItems},phase.title);},
@@ -183,6 +184,7 @@ Object.assign(proto,{
     this.dailyMode=false;
     if(step.kind==='free'){this.daily=markExtraStudy(this.daily);await this.saveDaily();return this.renderCheckpoint(null,result,{free:true});}
     if(step.kind==='set'){
+      delete currentClass(this.daily).resume;
       if(step.srsItems?.length){this.progress=completeGuidedReview(this.progress,step.srsItems,result,this.progressConfig());this.reviewedToday+=step.srsItems.length;await this.put('metadata',this.progress);}
       // Lo que se falla vuelve en el próximo repaso.
       const weak=(result.errors||[]).map(error=>this.lesson.activities.find(activity=>activity.id===error.activityId)?.itemTarget).filter(Boolean);
@@ -200,16 +202,16 @@ Object.assign(proto,{
     }
     await this.put('metadata',this.progress);
     if(step.extra)return this.renderCheckpoint(null,result,{free:true});
-    if(!passed)return this.renderLessonRetry(step.ref,result,passing);
+    if(!passed)return this.renderLessonRetry(step.ref,result);
     const entry=currentClass(this.daily),nextIndex=entry.learnIndex+1,total=partsOf(entry).length;
     this.daily=advanceLearnIndex(this.daily,nextIndex);
     if(nextIndex<total){await this.saveDaily();return this.renderCheckpoint(step.phase,result,{lessonBreak:true,nextIndex,total});}
     return this.finishPhase(step.phase,result);
   },
-  renderLessonRetry(ref,result,passing){
+  renderLessonRetry(ref,result){
     const errors=(result.errors||[]).slice(0,8);
     this.dailyRetryRef=ref;
-    this.shell(`<section class="dc-checkpoint retry"><div class="dc-ring" style="--p:${result.percentage}"><b>${result.percentage}%</b></div><span class="dc-eyebrow">CASI</span><h1>Repitamos esta lección con calma</h1><p>Para avanzar necesitas ${passing} %. Repetir ahora, con todo fresco, es exactamente como se aprende.</p>${errors.length?`<div class="dc-chips">${errors.map(error=>`<span class="dc-chip old" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(error.activity?.target||error.answer)}</span>`).join('')}</div>`:''}<button class="primary" data-dc-action="retry-lesson">Repetir la lección</button><button class="dc-link" data-dc-action="to-today">Parar aquí por hoy</button></section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint retry"><span class="dc-eyebrow">CASI</span><h1>Repitamos esta lección con calma</h1><p>Hacerla otra vez ahora, con todo fresco, es como se aprende.</p>${errors.length?`<div class="dc-chips">${errors.map(error=>`<span class="dc-chip old" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(error.activity?.target||error.answer)}</span>`).join('')}</div>`:''}<button class="primary" data-dc-action="retry-lesson">Repetir la lección</button><button class="dc-link" data-dc-action="to-today">Parar aquí por hoy</button></section>`,'Hoy');
   },
 
   async finishPhase(phase,result,{note='',skip=false}={}){
@@ -224,17 +226,17 @@ Object.assign(proto,{
 
   // ── Checkpoint animado ─────────────────────────────────────────────────
   renderCheckpoint(phase,result,{note='',lessonBreak=false,nextIndex=0,total=0,free=false}={}){
-    const entry=currentClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],percent=result?.total?result.percentage:100,steps=DAILY_PHASES.filter(item=>entry.kind!=='reading'&&(item.id!=='review'||entry.phasesDone.includes('review')));
+    const entry=currentClass(this.daily),next=DAILY_PHASES[entry.phaseIndex],steps=this.classSteps(entry),step=steps.indexOf(next)+1;
     const nextPart=lessonBreak&&partsOf(entry)[nextIndex];
-    const title=free?'Práctica terminada':lessonBreak?entry.kind==='reading'?`Lección ${nextIndex} de ${total} superada`:'Sonidos superados':`${phase.title}: hecho`;
-    const nextLabel=free?'':lessonBreak?nextPart?.items?'Seguir con la clase':`Seguir con la lección ${nextIndex+1}`:next?`Seguir: ${next.title}`:'';
-    const nextAttr=lessonBreak?'learn':next?.id;
-    this.shell(`<section class="dc-checkpoint"><div class="dc-ring" style="--p:${percent}"><b>${result?.total?`${percent}%`:'✓'}</b></div><span class="dc-eyebrow">${free?'PRÁCTICA EXTRA':'GUARDADO'}</span><h1>${esc(title)}</h1>${result?.total?`<p>${result.correct} de ${result.total} correctas.${result.errors?.length?' Lo que fallaste volverá en tu próximo repaso.':''}</p>`:''}${note?`<p>${esc(note)}</p>`:''}${free||!steps.length?'':`<div class="dc-mini-path">${steps.map(item=>`<i class="${entry.phasesDone.includes(item.id)?'done':item===next?'current':''}" title="${esc(item.title)}"></i>`).join('')}</div>`}${nextLabel?`<button class="primary" data-dc-action="start-phase" data-dc-phase="${esc(nextAttr)}">${esc(nextLabel)} →</button>`:''}<button class="dc-link" data-dc-action="to-today">${free?'Volver':'Salir por hoy'}</button></section>`,'Hoy');
+    const title=free?'Práctica terminada':lessonBreak?entry.kind==='reading'?`Lección ${nextIndex} de ${total} lista`:'Sonidos listos':`Ahora: ${next?.title||''}`;
+    const nextLabel=free?'':lessonBreak?nextPart?.items?'Seguir con la clase':`Seguir con la lección ${nextIndex+1}`:'Continuar';
+    const nextAttr=lessonBreak?'learn':next?.id,missed=result?.errors?.length;
+    this.shell(`<section class="dc-checkpoint"><span class="dc-check" aria-hidden="true">✓</span>${!free&&!lessonBreak&&step?`<span class="dc-eyebrow">PASO ${step} DE ${steps.length}</span>`:''}<h1>${esc(title)}</h1>${!free&&!lessonBreak&&next?`<p>${esc(next.id==='listen'&&!entry.lines?.some(line=>line.speaker)?'Escucha lo de hoy, léelo y repítelo en voz alta.':next.description)}</p>`:''}${missed?`<p class="dc-soft">Lo que no salió volverá en un repaso.</p>`:''}${note?`<p>${esc(note)}</p>`:''}${nextLabel?`<button class="primary" data-dc-action="start-phase" data-dc-phase="${esc(nextAttr)}">${esc(nextLabel)}</button>`:''}<button class="dc-link" data-dc-action="to-today">${free?'Volver':'Seguir más tarde'}</button></section>`,'Hoy');
   },
 
   renderClassComplete(){
-    const entry=currentClass(this.daily),results=Object.values(entry.results||{}),correct=results.reduce((sum,item)=>sum+item.correct,0),total=results.reduce((sum,item)=>sum+item.total,0),reading=entry.kind==='reading';
-    this.shell(`<section class="dc-checkpoint complete"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(14)}</div><div class="dc-ring" style="--p:100"><b>★</b></div><span class="dc-eyebrow">${reading?'LECTURA':`CLASE ${entry.number}`} COMPLETADA</span><h1>${reading?'¡Listo por hoy!':`Ya puedes ${esc(entry.goal)}`}</h1><p>${total?`${Math.round(correct/total*100)} % de aciertos. `:''}Mañana empezamos repasando esto.</p><div class="dc-chips">${entry.items.slice(0,12).map(item=>`<span class="dc-chip" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('')}</div>${entry.items.length?`<button class="primary" data-dc-action="recap">▶ Ver el video de repaso</button><button data-dg-action="start">◆ Jugar con las imágenes</button>`:''}<button class="dc-link" data-dc-action="to-today">${entry.items.length?'Terminar sin video':'Terminar'}</button></section>`,'Hoy');
+    const entry=currentClass(this.daily),reading=entry.kind==='reading';
+    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">★</span><span class="dc-eyebrow">${reading?'LECTURA':`CLASE ${entry.number}`} TERMINADA</span><h1>${reading?'¡Listo por hoy!':`Ya puedes ${esc(entry.goal)}`}</h1><p>Mañana empezamos repasando esto.</p><button class="primary" data-dc-action="to-today">Terminar</button>${entry.items.length?`<button class="dc-link" data-dc-action="recap">Ver el video de repaso</button>`:''}</section>`,'Hoy');
   },
 
   // ── Fase de escucha (Assimil) ──────────────────────────────────────────
@@ -242,7 +244,6 @@ Object.assign(proto,{
     this.stopPlayback?.();
     this.dailyListen={lines,step,current:-1,replay:Boolean(this.dailyListen?.replay&&this.dailyListen.lines===lines)};
     const steps=['Solo escucha','Lee y escucha','Repite en voz alta'];
-    const tabs=steps.map((label,index)=>`<span class="${index===step?'active':index<step?'done':''}">${index+1}. ${label}</span>`).join('');
     const lang=esc(this.definition.htmlLang);
     let body='';
     const stories=lines.some(line=>line.story!==undefined)?this.dailyStories||[]:[];
@@ -251,16 +252,16 @@ Object.assign(proto,{
     if(step===0){
       const pictures=stories.length?'':lines.filter(line=>hasIllustration(line.meaning)).slice(0,6).map(line=>`<figure data-dc-line="${lines.indexOf(line)}">${illustrationFor(line.meaning)}</figure>`).join('');
       const scenes=stories.map((story,index)=>`<figure class="dc-story-scene" data-dc-story="${index}">${sceneOf(story)}<figcaption>${esc(story.title)}</figcaption></figure>`).join('');
-      body=`<p class="dc-listen-help">Todavía no intentes entenderlo todo. Escucha una o dos veces cómo suena.</p>${scenes?`<div class="dc-story-scenes">${scenes}</div>`:`<div class="dc-orb" aria-hidden="true"><i></i><i></i><i></i><span>♪</span></div><div class="dc-listen-pictures">${pictures}</div>`}<p class="dc-listen-count" aria-live="polite"></p><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo</button><button data-dc-action="listen-step" data-dc-step="1">Siguiente paso →</button></div>`;
+      body=`<p class="dc-listen-help">${currentClass(this.daily)?.story?`Hoy escuchas «${esc(currentClass(this.daily).story)}». Habrá palabras nuevas: no te detengas, solo sigue la idea.`:'Todavía no intentes entenderlo todo. Escucha una o dos veces cómo suena.'}</p>${scenes?`<div class="dc-story-scenes">${scenes}</div>`:`<div class="dc-orb" aria-hidden="true"><i></i><i></i><i></i><span>♪</span></div><div class="dc-listen-pictures">${pictures}</div>`}<p class="dc-listen-count" aria-live="polite"></p><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo</button><button data-dc-action="listen-step" data-dc-step="1">Siguiente →</button></div>`;
     }else if(step===1){
       const list=stories.length?stories.map((story,storyIndex)=>`<section class="dc-story"><div class="dc-story-head"><i aria-hidden="true">${sceneOf(story)}</i><h3>${esc(story.title)}</h3></div><ol class="dc-lines">${lines.map((line,index)=>line.story===storyIndex?lineItem(line,index):'').join('')}</ol>${story.notes?.length?`<details class="dc-notes"><summary>Notas de la lección</summary><dl>${story.notes.map(note=>`<dt lang="${lang}" dir="auto">${esc(note.ko)}</dt><dd>${esc(note.es)}</dd>`).join('')}</dl></details>`:''}</section>`).join(''):`<ol class="dc-lines">${lines.map(lineItem).join('')}</ol>`;
-      body=`<p class="dc-listen-help">Ahora escucha mientras lees. Toca cualquier frase para oírla otra vez.${stories.length?' Abre las notas para entender cada detalle.':''}</p><div class="dc-lines-wrap">${list}</div><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo leyendo</button><button data-dc-action="listen-step" data-dc-step="2">Siguiente paso →</button></div>`;
+      body=`<p class="dc-listen-help">Ahora escucha mientras lees. Toca cualquier frase para oírla otra vez.${stories.length?' Abre las notas para entender cada detalle.':''}</p><div class="dc-lines-wrap">${list}</div><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo leyendo</button><button data-dc-action="listen-step" data-dc-step="2">Siguiente →</button></div>`;
     }else{
       const index=Math.max(0,Math.min(lines.length-1,this.dailyShadowIndex||0)),line=lines[index],story=stories[line.story];
       const picture=story?`<div class="dc-shadow-scene" aria-hidden="true">${sceneOf(story)}</div>`:hasIllustration(line.meaning)?`<div class="dc-shadow-pic" aria-hidden="true">${illustrationFor(line.meaning)}</div>`:'';
-      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">↺ Otra vez</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase →</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar la fase ✓</button>`}</div>`;
+      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">↺ Otra vez</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase →</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ✓</button>`}</div>`;
     }
-    this.shell(`<section class="dc-listen step-${step}"><header class="jp-activity-top"><button data-dc-action="to-today" aria-label="Salir de la fase">✕</button><div class="dc-listen-tabs">${tabs}</div></header>${body}</section>`,'Hoy');
+    this.shell(`<section class="dc-listen step-${step}"><header class="dc-listen-top"><button data-dc-action="to-today" aria-label="Salir">✕</button><div><strong>${esc(steps[step])}</strong><span>${step+1} de ${steps.length}</span></div></header>${body}</section>`,'Hoy');
     if(step===2)this.shadowLine('normal');
   },
 
@@ -382,7 +383,7 @@ Object.assign(proto,{
     original.renderActivity.call(this);
     // Los ejercicios de la clase ya explican todo en el mensaje: no hay más detalles.
     if(this.dailyMode&&activity?.tags?.includes('daily'))this.root.querySelectorAll('.jp-learning-review,[data-jp-action="review-explanation"]').forEach(element=>element.remove());
-    if(this.dailyMode){const type=this.root.querySelector('.jp-type');if(type&&this.dailyStep?.phase)type.textContent=`${this.dailyStep.phase.title.toUpperCase()}${activity?.dailyKind==='recall'?' · RECUERDA':''}`;}
+    if(this.dailyMode){const type=this.root.querySelector('.jp-type');if(type&&this.dailyStep?.phase){const entry=currentClass(this.daily),steps=entry?this.classSteps(entry):[],step=steps.indexOf(this.dailyStep.phase)+1;type.textContent=`${this.dailyStep.phase.title.toUpperCase()}${step?` · PASO ${step} DE ${steps.length}`:''}`;}}
   },
   renderTeachingActivity(activity,total){
     original.renderTeachingActivity.call(this,activity,total);
@@ -399,10 +400,13 @@ Object.assign(proto,{
     const meaning=String(activity.meaning||activity.explanation||'').trim(),svg=meaning&&illustrationFor(meaning);
     const target=this.root.querySelector('.jp-teach-symbol');
     if(svg&&target&&!this.root.querySelector('.dc-illustration'))target.insertAdjacentHTML('beforebegin',`<figure class="dc-illustration" aria-hidden="true">${svg}</figure>`);
+    if(this.dailyMode){const heading=this.root.querySelector('.jp-question h1');if(heading?.textContent.trim()==='Aprende y escucha')heading.remove();}
   },
   async continue(){
     if(this.dailyMode&&this.lesson&&this.activityIndex>=this.lesson.activities.length-1){this.cancelSpeech();return this.finishDailyActivities();}
-    return original.continue.call(this);
+    await original.continue.call(this);
+    // Salir a media parte no borra lo hecho: la próxima vez sigue en la misma pregunta.
+    if(this.dailyMode&&this.dailyStep?.kind==='set'){const entry=currentClass(this.daily);entry.resume={phase:this.dailyStep.phase.id,index:this.activityIndex,id:this.lesson.activities[this.activityIndex]?.id,answers:this.answers};this.saveDaily();}
   },
   renderRoute(){
     // Curso y Repaso viven ahora dentro de Hoy.
@@ -431,13 +435,12 @@ Object.assign(proto,{
   playLine(line,mode='normal'){this.dailySpeaker=line?.speakerKo||'';this.dailyGender=line?.gender||'';return this.playKeyAudio(line.audio,mode,false).finally(()=>{this.dailySpeaker='';this.dailyGender='';});},
   handleClick(event){
     const leave=event.target.closest('[data-jp-action="leave-lesson"]');
-    if(leave&&this.dailyMode){this.dailyMode=false;this.cancelSpeech();this.showToast('Tu último checkpoint sigue guardado.');return this.renderToday();}
+    if(leave&&this.dailyMode){this.dailyMode=false;this.cancelSpeech();this.showToast('Tu avance está guardado.');return this.renderToday();}
     const action=event.target.closest('[data-dc-action]');
     if(!action)return original.handleClick.call(this,event);
     const name=action.dataset.dcAction;
     if(!['play-line','play-all','shadow-again','shadow-slow'].includes(name)&&!name.startsWith('recap')){this.dailyPlayToken=null;this.stopPlayback?.();}
     if(name==='start-phase')return this.startPhase(action.dataset.dcPhase);
-    if(name==='intro-go'){const go=this.dailyIntro;this.dailyIntro=null;return go?.();}
     if(name==='to-today'){this.dailyMode=false;return this.renderToday();}
     if(name==='retry-lesson')return this.runLesson(this.dailyRetryRef);
     if(name==='play-all')return this.playLines();
@@ -456,9 +459,6 @@ Object.assign(proto,{
     if(name==='recap-next')return this.recapPlayer?.step(1);
     if(name==='recap-cc'||name==='recap-sound'){const on=action.getAttribute('aria-pressed')!=='true';action.setAttribute('aria-pressed',String(on));action.classList.toggle('on',on);return name==='recap-cc'?this.recapPlayer?.setSubtitles(on):this.recapPlayer?.setSound(on);}
     if(name==='recap-full'){const stage=this.root.querySelector('.dc-recap-stage');return document.fullscreenElement?document.exitFullscreen():stage?.requestFullscreen?.();}
-    if(name==='advance'){
-      if(!window.confirm('Te recomendamos esperar a mañana: repasar después de dormir es lo que fija la memoria. ¿Adelantar la siguiente clase de todos modos?'))return;
-      return this.ensureTodayClass(true).then(()=>this.renderToday());
-    }
+    if(name==='advance')return this.ensureTodayClass(true).then(()=>this.renderToday());
   },
 });
