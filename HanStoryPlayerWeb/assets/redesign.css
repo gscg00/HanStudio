@@ -232,3 +232,16 @@ body>footer{display:none}
 @keyframes jk-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
 @keyframes jk-beat{0%{opacity:.25;transform:none}45%{opacity:1;transform:translateY(-8px);border-color:#d96c3d;box-shadow:0 8px 18px #d96c3d33}100%{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.jk-other,.jk-sound,.jk-beat{animation:none}}
+
+/* Clase con objetivo */
+.dc-title .dc-goal{margin:.35rem 0 .7rem;color:var(--hs-ink);font-size:1rem;font-weight:600;line-height:1.35}
+.dc-reading-note p{margin:.25rem 0 0;color:var(--hs-muted)}
+.dc-teacher{text-align:left;max-width:38rem;margin-inline:auto}
+.dc-teacher h1{margin:.2rem 0 .6rem}
+.dc-teacher-text{font-size:1.08rem;line-height:1.55;color:var(--hs-ink);margin:0 0 1rem}
+.dc-teacher-examples{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.dc-teacher-examples button{width:100%;display:flex;flex-direction:column;gap:.1rem;align-items:flex-start;padding:.7rem .9rem;border:1px solid #1b3a3222;border-radius:14px;background:#fffdf8;text-align:start;color:var(--hs-ink);font-size:1.05rem;font-weight:600}
+.dc-teacher-examples em{font-style:normal;font-weight:400;font-size:.88rem;color:var(--hs-muted)}
+.jp-app[data-jp-theme="dark"] .dc-teacher-text,.jp-app[data-jp-theme="dark"] .dc-title .dc-goal{color:inherit}
+.jp-app[data-jp-theme="dark"] .dc-teacher-examples button{background:transparent;color:inherit}
+@media(min-width:721px){.dc-dock{position:static}}

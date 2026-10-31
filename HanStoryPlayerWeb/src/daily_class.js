@@ -33,9 +33,11 @@ export function newItemTarget(state,{totalItems=0,conceptDays=0,days=COURSE_DAYS
 }
 
 // Tamaño del idioma para el ritmo y el «de 0 a 100».
-export function courseTotals(ordered){
+export function courseTotals(ordered,{readingUnits=null}={}){
   const items=new Set();let concepts=0;
   for(const unit of ordered)for(const lesson of unit.lessons||[]){
+    // Con el plan por temas la lectura va en paralelo: no cuenta para el ritmo.
+    if(readingUnits?.has(unit.id))continue;
     taughtItems(lesson).forEach(item=>items.add(item.target));
     if(lessonKind(lesson)==='concept')concepts++;
   }
@@ -44,11 +46,11 @@ export function courseTotals(ordered){
 export const DAILY_REVIEW_LIMIT=24;
 
 export const DAILY_PHASES=Object.freeze([
-  {id:'review',title:'Repaso de ayer',short:'Repaso',minutes:8,icon:'↻',description:'Recupera lo que aprendiste ayer antes de añadir nada nuevo.'},
-  {id:'listen',title:'Escucha y repite',short:'Escucha',minutes:8,icon:'♪',description:'Escucha las frases de hoy, léelas con traducción y repítelas en voz alta.'},
-  {id:'learn',title:'Aprende lo nuevo',short:'Aprende',minutes:14,icon:'✦',description:'Imagen, sonido y significado: las lecciones nuevas de hoy.'},
-  {id:'practice',title:'Práctica activa',short:'Práctica',minutes:7,icon:'✎',description:'Ahora lo produces tú: arma frases, recuerda palabras y escribe lo que oyes.'},
-  {id:'close',title:'Cierre del día',short:'Cierre',minutes:5,icon:'★',description:'Mezcla de hoy y de ayer para fijarlo antes de irte.'},
+  {id:'review',title:'Repaso',short:'Repaso',minutes:8,icon:'↻',description:'Recupera lo que aprendiste ayer antes de añadir nada nuevo.'},
+  {id:'listen',title:'La situación',short:'Situación',minutes:8,icon:'♪',description:'Escucha cómo se usa lo de hoy en una conversación real, léela y repítela.'},
+  {id:'learn',title:'Aprende',short:'Aprende',minutes:14,icon:'✦',description:'Cada palabra y frase de la conversación, y cómo funciona el idioma.'},
+  {id:'practice',title:'Práctica',short:'Práctica',minutes:7,icon:'✎',description:'Primero lo reconoces, luego lo recuerdas y al final armas las frases tú.'},
+  {id:'close',title:'Úsalo',short:'Úsalo',minutes:5,icon:'★',description:'Responde como en una conversación real y dilo con tus propias palabras.'},
 ]);
 
 export const dailyStateId=slug=>`daily:${slug}:v1`;
@@ -134,10 +136,10 @@ export function pickTodayLessons(ordered,{startLessonId,completedLessons=[],isUn
   return picked;
 }
 
-export function createDailyClass(state,{lessons,items,chunks=null,now=new Date()}){
+export function createDailyClass(state,{lessons,items,chunks=null,meta={},now=new Date()}){
   const number=(currentClass(state)?.number||0)+1;
-  const entry={number,createdDate:dateKey(now),completedDate:null,lessons,items,...(chunks?{chunks}:{}),phaseIndex:0,phasesDone:[],learnIndex:0,results:{},updatedAt:now.toISOString()};
-  return {...state,classes:[...state.classes,entry].slice(-60),updatedAt:now.toISOString()};
+  const entry={number,createdDate:dateKey(now),completedDate:null,lessons,items,...(chunks?{chunks}:{}),...meta,phaseIndex:0,phasesDone:[],learnIndex:0,results:{},updatedAt:now.toISOString()};
+  return {...state,classes:[...state.classes,entry].slice(-400),updatedAt:now.toISOString()};
 }
 
 export function completePhase(state,phaseId,result=null,now=new Date()){
@@ -172,7 +174,7 @@ function distractors(item,pool,count,key,seed){
   return [...new Set([...shuffle(same,seed),...shuffle(rest,seed+'r')].map(other=>other[key]))].slice(0,count);
 }
 
-const baseActivity=(item,id,extra)=>({id,target:'',options:[],answer:'',explanation:'',audio:item.audio,slow_audio:item.slowAudio,tags:['daily'],xp:10,sourceActivityId:item.activityId,...extra});
+const baseActivity=(item,id,extra)=>({id,target:'',options:[],answer:'',explanation:'',audio:item.audio,slow_audio:item.slowAudio,tags:['daily'],xp:10,sourceActivityId:item.activityId,itemTarget:item.target,...extra});
 
 // Recordar en la dirección difícil: ves el significado y eliges la forma en el idioma.
 export function recallChoice(item,pool,seed){
@@ -183,7 +185,7 @@ export function recallChoice(item,pool,seed){
 // Escuchar y elegir el significado (comprensión sin ver la escritura).
 export function listenMeaning(item,pool,seed){
   const options=shuffle([item.meaning,...distractors(item,pool,2,'meaning',seed)],`${seed}o${item.target}`);
-  return baseActivity(item,`daily-listen-${seed}-${hash(item.target)}`,{type:'listening_choice',dailyKind:'listen',prompt:'Escucha y elige qué significa',options,answer:item.meaning,explanation:`Escuchaste «${item.target}»: ${item.meaning}.`});
+  return baseActivity(item,`daily-listen-${seed}-${hash(item.target)}`,{type:'listening_choice',dailyKind:'listen',prompt:'Escucha y elige qué significa',options,answer:item.meaning,explanation:`Escuchaste «${item.target}»: ${item.meaning.replace(/\.$/,'')}.`});
 }
 
 // Rosetta: escucha y elige la imagen.
@@ -195,10 +197,19 @@ export function pictureChoice(item,pool,seed,hasPicture){
 }
 
 // Armar la frase con bloques (producción guiada).
-export function buildSentence(item,seed){
-  const words=String(item.target).trim().split(/\s+/);
-  if(words.length<2)return null;
-  return baseActivity(item,`daily-build-${seed}-${hash(item.target)}`,{type:'build_with_blocks',dailyKind:'build',prompt:`Arma la frase: «${item.meaning}»`,target:item.meaning,options:shuffle(words,`${seed}b${item.target}`),joiner:' ',answer:item.target,accepted_answers:[item.target],explanation:`La frase es «${item.target}».`,xp:15});
+export function buildSentence(item,seed,language=''){
+  const text=String(item.target).trim(),{blocks,joiner}=sentenceBlocks(text,language);
+  // Con dos bloques no hay nada que construir.
+  if(blocks.length<3)return null;
+  return baseActivity(item,`daily-build-${seed}-${hash(item.target)}`,{type:'build_with_blocks',dailyKind:'build',prompt:`Arma la frase: «${item.meaning}»`,target:item.meaning,options:shuffle(blocks,`${seed}b${item.target}`),joiner,answer:text,accepted_answers:[text],explanation:`La frase es «${text}».`,xp:15});
+}
+
+// El japonés y el chino se escriben sin espacios: los bloques son palabras reales.
+export function sentenceBlocks(text,language=''){
+  if(!['Japanese','Chinese'].includes(language)||typeof Intl.Segmenter!=='function')return{blocks:text.split(/\s+/),joiner:' '};
+  const parts=[...new Intl.Segmenter(language==='Japanese'?'ja':'zh',{granularity:'word'}).segment(text)],blocks=[];
+  for(const part of parts){if(part.isWordLike||!blocks.length)blocks.push(part.segment);else blocks[blocks.length-1]+=part.segment;}
+  return{blocks,joiner:''};
 }
 
 // Dictado corto: solo palabras breves para no frustrar con el teclado.
@@ -249,6 +260,46 @@ export function listeningLines(todayItems,limit=12){
 }
 
 export const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/DAY);
+
+// ── Las cuatro partes de una clase con objetivo ───────────────────────
+// Lo que vuelve hoy: la clase anterior y las de hace 3, 7, 14 y 30 clases, más lo fallado.
+export function classReviewItems(state,{limit=DAILY_REVIEW_LIMIT}={}){
+  const classes=(state?.classes||[]).filter(entry=>entry.completedDate&&entry.items?.length),byNumber=new Map(classes.map(entry=>[entry.number,entry])),last=classes.at(-1)?.number;
+  if(!last)return[];
+  const picked=new Map(),add=item=>{if(item&&!picked.has(item.target))picked.set(item.target,item);};
+  for(const entry of classes.slice(-5))for(const target of entry.weak||[])add(entry.items.find(item=>item.target===target));
+  for(const offset of[0,2,6,13,29])(byNumber.get(last-offset)?.items||[]).forEach(add);
+  return[...picked.values()].slice(0,limit);
+}
+
+// Presentación: se enseña de una en una, y cada dos se comprueba que se distinguen.
+// Al final llega la regla, cuando ya hay ejemplos reales en los que apoyarla.
+export function buildLearnSet(items,{teach,rule='',seed}){
+  const out=[];
+  items.forEach((item,index)=>{
+    out.push(teach(item));
+    if(index%2===1)out.push(listenMeaning(item,items.slice(0,index+1),`${seed}-${index}`));
+  });
+  if(rule)out.push({id:`daily-rule-${seed}`,type:'teach_concept',rule:true,prompt:'Cómo funciona',target:'',options:[],answer:'',explanation:rule,audio:'',slow_audio:'',examples:items.filter(item=>isSentence(item.target)||/[.?!。？！]$/.test(item.meaning)).slice(0,3),tags:['daily'],xp:2,gradable:false});
+  return out;
+}
+
+// Práctica controlada: reconocer → recordar → construir.
+export function buildClassPractice(items,pool,{seed,language='',limit=16}={}){
+  const order=shuffle(items,seed),builds=order.map(item=>buildSentence(item,seed,language)).filter(Boolean),sentences=new Set(builds.map(activity=>activity.itemTarget));
+  return[...order.map(item=>listenMeaning(item,pool,seed)),...order.filter(item=>!sentences.has(item.target)).map(item=>recallChoice(item,pool,seed)),...builds].slice(0,limit);
+}
+
+// Producción: responder a lo que te dicen y decirlo con tus palabras.
+export function buildClassClose(entry,pool,{seed}){
+  const replies=(entry.replies||[]).map(({asked,answer},index)=>{
+    const options=shuffle([answer.target,...distractors(answer,pool,2,'target',`${seed}${index}`)],`${seed}r${index}`);
+    return baseActivity(answer,`daily-reply-${seed}-${index}`,{type:'select_translation',dailyKind:'reply',prompt:`Te dicen esto («${asked.meaning}»). ¿Qué respondes?`,target:asked.target,options,answer:answer.target,audio:asked.audio,slow_audio:asked.slowAudio,optionAudio:true,explanation:`Una buena respuesta es «${answer.target}»: ${answer.meaning}`});
+  });
+  const recall=shuffle(entry.items,`${seed}c`).slice(0,replies.length?3:5).map(item=>recallChoice(item,pool,`${seed}c`));
+  const task=entry.task?[{id:`daily-task-${seed}`,type:'teach_concept',task:true,prompt:'Tu turno',target:'',options:[],answer:'',explanation:entry.task,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}]:[];
+  return[...replies,...recall,...task];
+}
 
 // ── Camino propio de la clase del día ──────────────────────────────────
 // La clase ya no sigue lecciones, unidades ni exámenes: toma las siguientes N
@@ -308,4 +359,63 @@ export function chunkActivities(activities,{targets=[],startsLesson=false,endsLe
     if(key)return wanted.has(key);
     return endsLesson;
   });
+}
+
+// ── Clase por temas (plan de enseñanza) ───────────────────────────────
+// Cada día: una dosis de lectura (letras o kana) y las siguientes palabras
+// del plan de enseñanza (src/syllabus.js), tema por tema. Ver planSyllabusClass.
+export function planSyllabusClass(ordered,{completedLessons=[],learned=new Set(),target=8,maxReadingLessons=2,readingItems=6,activityCap=DAILY_ACTIVITY_CAP,syllabus}={}){
+  const {READING_UNITS,themeFor,themeRank,themeGoal}=syllabus;
+  const done=new Set(completedLessons),chunks=[],items=[];
+  // 1. Lectura: hasta 2 lecciones de letras completas, o hasta 6 letras/sílabas sueltas.
+  let readingActivities=0,readingCount=0,readingConcepts=0;
+  reading:for(const unit of ordered){
+    if(!READING_UNITS.has(unit.id))continue;
+    for(const lesson of unit.lessons||[]){
+      if(done.has(lesson.id))continue;
+      const kind=lessonKind(lesson);
+      if(kind==='skip')continue;
+      if(kind==='concept'){
+        const size=(lesson.activities||[]).length;
+        if(readingCount||readingConcepts>=maxReadingLessons||(readingConcepts&&readingActivities+size>activityCap/2))break reading;
+        chunks.push({unitId:unit.id,lessonId:lesson.id,reading:true});readingConcepts++;readingActivities+=size;
+        continue;
+      }
+      if(readingConcepts)break reading;
+      const all=taughtItems(lesson),pending=all.filter(item=>!learned.has(item.target));
+      if(!pending.length)continue;
+      const take=pending.slice(0,readingItems-readingCount);
+      chunks.push({unitId:unit.id,lessonId:lesson.id,targets:take.map(item=>item.target),startsLesson:pending.length===all.length,endsLesson:take.length===pending.length,reading:true});
+      items.push(...take);readingCount+=take.length;
+      if(readingCount>=readingItems)break reading;
+    }
+  }
+  // 2. Tema del día: todas las palabras pendientes ordenadas por el plan y, dentro de cada tema, por el curso.
+  const seen=new Set(learned),pool=[];let order=0;
+  for(const unit of ordered){
+    if(READING_UNITS.has(unit.id))continue;
+    for(const lesson of unit.lessons||[]){
+      if(done.has(lesson.id))continue;
+      for(const item of taughtItems(lesson)){
+        if(seen.has(item.target))continue;
+        seen.add(item.target);
+        const theme=themeFor(unit.id,item.meaning);
+        pool.push({item,unitId:unit.id,lesson,theme,rank:themeRank(theme),order:order++});
+      }
+    }
+  }
+  pool.sort((a,b)=>a.rank-b.rank||a.order-b.order);
+  const taken=pool.slice(0,target),theme=taken[0]?.theme||null;
+  // Agrupa por lección en el orden en que aparecen, para hacer solo sus ejercicios.
+  const byLesson=new Map();
+  for(const entry of taken){
+    if(!byLesson.has(entry.lesson.id))byLesson.set(entry.lesson.id,{entry,targets:[]});
+    byLesson.get(entry.lesson.id).targets.push(entry.item.target);
+  }
+  for(const{entry,targets}of byLesson.values()){
+    const all=taughtItems(entry.lesson),pending=all.filter(item=>!learned.has(item.target));
+    chunks.push({unitId:entry.unitId,lessonId:entry.lesson.id,targets,startsLesson:pending.length===all.length,endsLesson:pending.every(item=>targets.includes(item.target)),theme:entry.theme});
+  }
+  items.push(...taken.map(entry=>entry.item));
+  return {mode:'items',chunks,items,theme,goal:theme?themeGoal(theme):'Aprende a leer',reading:{lessons:readingConcepts,items:readingCount}};
 }
