@@ -33,9 +33,11 @@ export function newItemTarget(state,{totalItems=0,conceptDays=0,days=COURSE_DAYS
 }
 
 // Tamaño del idioma para el ritmo y el «de 0 a 100».
-export function courseTotals(ordered){
+export function courseTotals(ordered,{readingUnits=null}={}){
   const items=new Set();let concepts=0;
   for(const unit of ordered)for(const lesson of unit.lessons||[]){
+    // Con el plan por temas la lectura va en paralelo: no cuenta para el ritmo.
+    if(readingUnits?.has(unit.id))continue;
     taughtItems(lesson).forEach(item=>items.add(item.target));
     if(lessonKind(lesson)==='concept')concepts++;
   }
@@ -308,4 +310,63 @@ export function chunkActivities(activities,{targets=[],startsLesson=false,endsLe
     if(key)return wanted.has(key);
     return endsLesson;
   });
+}
+
+// ── Clase por temas (plan de enseñanza) ───────────────────────────────
+// Cada día: una dosis de lectura (letras o kana) y las siguientes palabras
+// del plan de enseñanza (src/syllabus.js), tema por tema. Ver planSyllabusClass.
+export function planSyllabusClass(ordered,{completedLessons=[],learned=new Set(),target=8,maxReadingLessons=2,readingItems=6,activityCap=DAILY_ACTIVITY_CAP,syllabus}={}){
+  const {READING_UNITS,themeFor,themeRank,themeGoal}=syllabus;
+  const done=new Set(completedLessons),chunks=[],items=[];
+  // 1. Lectura: hasta 2 lecciones de letras completas, o hasta 6 letras/sílabas sueltas.
+  let readingActivities=0,readingCount=0,readingConcepts=0;
+  reading:for(const unit of ordered){
+    if(!READING_UNITS.has(unit.id))continue;
+    for(const lesson of unit.lessons||[]){
+      if(done.has(lesson.id))continue;
+      const kind=lessonKind(lesson);
+      if(kind==='skip')continue;
+      if(kind==='concept'){
+        const size=(lesson.activities||[]).length;
+        if(readingCount||readingConcepts>=maxReadingLessons||(readingConcepts&&readingActivities+size>activityCap/2))break reading;
+        chunks.push({unitId:unit.id,lessonId:lesson.id,reading:true});readingConcepts++;readingActivities+=size;
+        continue;
+      }
+      if(readingConcepts)break reading;
+      const all=taughtItems(lesson),pending=all.filter(item=>!learned.has(item.target));
+      if(!pending.length)continue;
+      const take=pending.slice(0,readingItems-readingCount);
+      chunks.push({unitId:unit.id,lessonId:lesson.id,targets:take.map(item=>item.target),startsLesson:pending.length===all.length,endsLesson:take.length===pending.length,reading:true});
+      items.push(...take);readingCount+=take.length;
+      if(readingCount>=readingItems)break reading;
+    }
+  }
+  // 2. Tema del día: todas las palabras pendientes ordenadas por el plan y, dentro de cada tema, por el curso.
+  const seen=new Set(learned),pool=[];let order=0;
+  for(const unit of ordered){
+    if(READING_UNITS.has(unit.id))continue;
+    for(const lesson of unit.lessons||[]){
+      if(done.has(lesson.id))continue;
+      for(const item of taughtItems(lesson)){
+        if(seen.has(item.target))continue;
+        seen.add(item.target);
+        const theme=themeFor(unit.id,item.meaning);
+        pool.push({item,unitId:unit.id,lesson,theme,rank:themeRank(theme),order:order++});
+      }
+    }
+  }
+  pool.sort((a,b)=>a.rank-b.rank||a.order-b.order);
+  const taken=pool.slice(0,target),theme=taken[0]?.theme||null;
+  // Agrupa por lección en el orden en que aparecen, para hacer solo sus ejercicios.
+  const byLesson=new Map();
+  for(const entry of taken){
+    if(!byLesson.has(entry.lesson.id))byLesson.set(entry.lesson.id,{entry,targets:[]});
+    byLesson.get(entry.lesson.id).targets.push(entry.item.target);
+  }
+  for(const{entry,targets}of byLesson.values()){
+    const all=taughtItems(entry.lesson),pending=all.filter(item=>!learned.has(item.target));
+    chunks.push({unitId:entry.unitId,lessonId:entry.lesson.id,targets,startsLesson:pending.length===all.length,endsLesson:pending.every(item=>targets.includes(item.target)),theme:entry.theme});
+  }
+  items.push(...taken.map(entry=>entry.item));
+  return {mode:'items',chunks,items,theme,goal:theme?themeGoal(theme):'Aprende a leer',reading:{lessons:readingConcepts,items:readingCount}};
 }
