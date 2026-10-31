@@ -245,3 +245,38 @@ body>footer{display:none}
 .jp-app[data-jp-theme="dark"] .dc-teacher-text,.jp-app[data-jp-theme="dark"] .dc-title .dc-goal{color:inherit}
 .jp-app[data-jp-theme="dark"] .dc-teacher-examples button{background:transparent;color:inherit}
 @media(min-width:721px){.dc-dock{position:static}}
+
+/* Clase tranquila: sin esperas entre pantallas, una sola acción clara y sin barra inferior durante la clase. */
+.dc-today *,.dc-checkpoint *{animation-duration:.16s!important;animation-delay:0s!important}
+.dc-today{padding-top:1rem}
+.dc-dock small{text-align:center}
+.dc-preview summary,.dc-extra summary{cursor:pointer;font-weight:700;color:var(--hs-ink);list-style-position:inside}
+.dc-preview .dc-chips{margin-top:.8rem}
+.dc-extra{display:grid;gap:.5rem;text-align:left}
+.dc-extra[open] summary{margin-bottom:.4rem}
+.dc-check{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#e6f0e8;color:#1f5a39;font-size:1.5rem;font-weight:700}
+.dc-checkpoint.complete .dc-check{background:#fbecc9;color:#9a6a10}
+.dc-checkpoint{margin-top:12vh;padding:2rem 1.2rem}
+.dc-checkpoint .dc-soft{font-size:.88rem}
+.jp-app:has(.dc-listen){padding-bottom:0}
+.jp-app:has(.dc-listen) .jp-app-nav{display:none!important}
+.dc-listen{margin-top:0;padding-bottom:0;min-height:calc(100dvh - 90px);align-content:start;grid-template-rows:auto auto 1fr auto}
+.dc-listen-top{display:flex;align-items:center;gap:.8rem}
+.dc-listen-top button{width:44px;height:44px;flex:none;border-radius:14px;border:1px solid var(--dc-line);background:#fff;color:var(--dc-ink);font-size:1.05rem}
+.dc-listen-top div{display:flex;flex:1;align-items:baseline;justify-content:space-between;gap:.6rem}
+.dc-listen-top strong{color:var(--dc-ink);font-size:1.05rem}
+.dc-listen-top span{color:var(--dc-muted);font-size:.85rem;white-space:nowrap}
+.dc-lines,.dc-lines-wrap{max-height:none;overflow:visible}
+.dc-listen-actions{position:sticky;bottom:0;margin:0 -1rem;padding:.8rem 1rem calc(.9rem + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--dc-paper) 22%)}
+.jp-app[data-jp-theme="dark"] .dc-listen-top button{background:#1d3d35}
+.jp-app[data-jp-theme="dark"] .dc-check{background:#1d3d35;color:#bfe3c8}
+.jp-app[data-jp-theme="dark"] .dc-listen-actions{background:none}
+/* El tema oscuro solo oscurecía las tarjetas: los títulos claros quedaban sobre el fondo crema. */
+body:has(.jp-app[data-jp-theme="dark"]){background:#10261f}
+body:has(.jp-app[data-jp-theme="dark"]) .breadcrumb{color:#cfdcd2}
+.jp-app[data-jp-theme="dark"] .dc-title small,.jp-app[data-jp-theme="dark"] .dc-dock small,.jp-app[data-jp-theme="dark"] .dc-step span{color:#b9c9be}
+.jp-app[data-jp-theme="dark"] .dc-listen-top strong{color:#ecf3ed}
+.jp-app[data-jp-theme="dark"] .dc-listen-top button{color:#ecf3ed}
+.jp-app[data-jp-theme="dark"] .dc-preview summary,.jp-app[data-jp-theme="dark"] .dc-extra summary{color:#ecf3ed}
+.jp-app[data-jp-theme="dark"] .dc-dock .dc-cta{background:#ecf3ed;color:#10261f}
+.jp-app[data-jp-theme="dark"] .dc-today,.jp-app[data-jp-theme="dark"] .dc-checkpoint,.jp-app[data-jp-theme="dark"] .dc-listen{--dc-muted:#b9c9be}

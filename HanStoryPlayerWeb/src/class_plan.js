@@ -10,6 +10,8 @@
 // Las A1 de los 10 idiomas comparten inventario y posición, así que una referencia
 // como 'identity:2' es la misma frase en todos, con su audio ya grabado.
 import{CLASS_RULES,CLASS_NUMBERS}from'./data/class_rules.js';
+import{UNIT_RULE_KEYS,UNIT_RULES}from'./data/unit_rules.js';
+import{themeFor}from'./syllabus.js';
 
 const UNIT_KEYS={identity:'a1-1-identity',people:'a1-1-people',home:'a1-1-home',routine:'a1-1-routine',food:'a1-1-food',places:'a1-1-places',shopping:'a1-2-shopping',time:'a1-2-time'};
 const refs=(unit,list)=>list.map(index=>`${unit}:${index}`);
@@ -47,9 +49,17 @@ export const CLASS_PLAN=Object.freeze([
   {id:'c24',module:'compras',title:'Pagar',goal:'preguntar cómo pagar.',items:[...refs('shopping',[9,12,10,11])],dialogue:[['A','shopping:10'],['B','shopping:11']],replies:[['shopping:10','shopping:11']],task:'Repite toda una compra: precio, decisión y pago.'},
 ]);
 
-// Después de lo diseñado a mano, cada unidad del curso se reparte en tres clases.
-const AUTO_UNITS=['a1-2-transport','a1-2-health','a1-2-weather','a1-2-social','a2-1-past','a2-1-future','a2-1-comparison','a2-1-ability','a2-1-services','a2-1-conversation','a2-2-opinions','a2-2-experiences','a2-2-workStudy','a2-2-technology','a2-2-culture','a2-2-problemSolving','b1-1-narrative','b1-1-cause-effect','b1-1-media','b1-1-emotions','b1-1-society','b1-1-register','b1-2-conditions','b1-2-nuance','b1-2-negotiation','b1-2-projects','b1-2-perspectives','b1-2-conversation'];
-const AUTO_PARTS=3;
+// La clase más pequeña que deja el curso completo dentro de COURSE_DAYS.
+const fittedSize=new WeakMap();
+function extendedSpecs(units,language,stories){
+  const anchor=units.values().next().value,known=anchor&&fittedSize.get(anchor);
+  if(known)return specsOfSize(units,language,stories,known);
+  const days=COURSE_DAYS-readingDays(units);
+  let size=MIN_ITEMS,specs=specsOfSize(units,language,stories,size);
+  while(specs.length>days&&size<MAX_ITEMS)specs=specsOfSize(units,language,stories,++size);
+  if(anchor)fittedSize.set(anchor,size);
+  return specs;
+}
 
 // Las letras y sonidos: en alfabeto latino el alumno ya puede leer, así que la clase
 // empieza a comunicar desde el día 1 y la pronunciación es una lección opcional al
@@ -72,25 +82,87 @@ export function unitInventory(unit){
       const target=String(activity.target||'').trim();
       if(!TEACH.has(activity.type)||activity.teaching_kind==='rule'||!target||seen.has(target))continue;
       seen.add(target);
-      items.push({target,meaning:shortMeaning(activity.meaning||activity.explanation),audio:activity.audio||target,slowAudio:activity.slow_audio||activity.audio||target,reading:readingOf(activity),activityId:activity.id,lessonId:lesson.id});
+      const sentence=/[.?!。？！؟]$/.test(target)||/\s/.test(target);
+      items.push({target,glossed:Boolean(activity.meaning),meaning:sentence?String(activity.meaning||activity.explanation||'').trim():shortMeaning(activity.meaning||activity.explanation),audio:activity.audio||target,slowAudio:activity.slow_audio||activity.audio||target,reading:readingOf(activity),activityId:activity.id,lessonId:lesson.id});
     }
   }
   return items;
 }
 
-const isSentenceMeaning=item=>/[.?!]$/.test(item.meaning);
-function autoSpecs(units){
-  const specs=[];
-  for(const id of AUTO_UNITS){
-    const unit=units.get(id);
-    if(!unit)continue;
-    const all=unitInventory(unit),sentences=all.filter(isSentenceMeaning),words=all.filter(item=>!isSentenceMeaning(item));
-    for(let part=0;part<AUTO_PARTS;part++){
-      const pick=list=>list.filter((_,index)=>index%AUTO_PARTS===part),lines=pick(sentences),items=[...pick(words),...lines];
-      if(items.length)specs.push({id:`${id}-${part+1}`,module:id,title:AUTO_PARTS>1?`${unit.title} · ${part+1}`:unit.title,goal:`${String(unit.description||unit.title).replace(/^./,char=>char.toLowerCase()).replace(/\.?$/,'.')}`,resolved:items,lines,replies:[]});
+// ── De lo diseñado a mano al B1 ───────────────────────────────────────
+// El curso entero cabe en COURSE_DAYS clases. Cada elemento se enseña una sola vez:
+// las unidades de A2 y B1 reutilizan frases de otras, y esas ya no cuentan como nuevas.
+export const COURSE_DAYS=120;
+const MIN_ITEMS=6,MAX_ITEMS=12;
+const PLAN_UNITS=['a1-2-transport','a1-2-health','a1-2-weather','a1-2-social','a2-1-past','a2-1-future','a2-1-comparison','a2-1-ability','a2-1-services','a2-1-conversation','a2-2-opinions','a2-2-experiences','a2-2-workStudy','a2-2-technology','a2-2-culture','a2-2-problemSolving','b1-1-narrative','b1-1-cause-effect','b1-1-media','b1-1-emotions','b1-1-society','b1-1-register','b1-2-conditions','b1-2-nuance','b1-2-negotiation','b1-2-projects','b1-2-perspectives','b1-2-conversation'];
+// Vocabulario por tema: se enseña justo después del módulo que trata ese tema.
+const WORD_UNITS=['a1-1-introductions','survival','essentials','questions','time','vocabulary','first-words','first-sentences','basic-verbs','adjectives'];
+// Frases graduadas: práctica de lectura y escucha entre las clases de A2 y B1.
+const SENTENCE_UNITS=['reading-bridge','story-bridge'];
+const PACKS={
+  saludos:['contacto','Más frases de cortesía','responder con naturalidad a saludos y agradecimientos.'],sobrevivir:['contacto','Salir de un apuro','pedir ayuda y hacerte entender cuando te falten palabras.'],presentarse:['contacto','Hablar de ti','contar más cosas sobre ti.'],numeros:['contacto','Más números','usar más números.'],
+  familia:['personas','Más sobre las personas','hablar con más detalle de las personas de tu vida.'],preguntas:['personas','Hacer preguntas','hacer más preguntas.'],frases:['personas','Verbos para hacer frases','formar más frases con verbos básicos.'],
+  casa:['casa','Más cosas de casa','describir mejor tu casa.'],objetos:['casa','Las cosas que te rodean','nombrar y señalar objetos de tu día.'],rutina:['dia','Más acciones del día','contar con más detalle lo que haces.'],comida:['comida','Más comida y bebida','decir con más detalle lo que comes y bebes.'],lugares:['ciudad','Más lugares','hablar de más lugares de la ciudad.'],tiempo:['tiempo','Días, meses y momentos','decir cuándo pasan las cosas con más precisión.'],compras:['compras','Más palabras para comprar','desenvolverte mejor en una tienda.'],
+  transporte:['a1-2-transport','Más sobre transporte','hablar con más detalle de cómo te mueves.'],salud:['a1-2-health','Más sobre salud','explicar mejor cómo te sientes.'],clima:['a1-2-weather','El clima y la ropa','hablar del clima y de lo que llevas puesto.'],planes:['a1-2-social','Más planes','proponer y aceptar más planes.'],
+};
+const CLASS_TASK={sentences:'Elige una frase de hoy, cámbiala para que hable de ti y dila en voz alta.',words:'Usa tres palabras de hoy en frases sobre tu vida y dilas en voz alta.'};
+// Cada módulo escrito a mano cierra con los ejercicios de producción de su unidad.
+const MODULE_UNIT={contacto:'a1-1-identity',personas:'a1-1-people',casa:'a1-1-home',dia:'a1-1-routine',comida:'a1-1-food',ciudad:'a1-1-places',tiempo:'a1-2-time',compras:'a1-2-shopping'};
+export const STORY_UNITS=['survival','a1-1-identity','a1-1-people','a1-1-home','a1-1-routine','a1-1-food','a1-1-places'];
+const MODULE_STORIES={contacto:['survival','a1-1-identity'],personas:['a1-1-people'],casa:['a1-1-home'],dia:['a1-1-routine'],comida:['a1-1-food'],ciudad:['a1-1-places']};
+const ARTICLE=/^(der|die|das|le|la|les|l'|l’|il|lo|i|gli|le|o|a|os|as|the|to|un|une|ein|eine) /;
+const itemKey=item=>String(item.target).toLowerCase().replace(/[.,;:!?¿¡«»"。？！、]/g,'').trim().replace(ARTICLE,'');
+const isSentenceItem=item=>/[.?!。？！]$/.test(item.meaning)||/[.?!。？！؟]$/.test(item.target);
+const usableItem=item=>item.meaning.length>0&&item.meaning.length<=120&&item.meaning!==item.target&&!/[+→=]/.test(item.target)&&!/^[A-Za-zÀ-ÿ]$/.test(item.target)&&!/\b(elij|elig|seleccion)/i.test(item.meaning);
+const inventoryOf=(units,id)=>units.has(id)?unitInventory(units.get(id)).filter(usableItem):[];
+// Al final de estas listas hay formas sueltas sacadas de textos (kommst, Lina, Und): no son vocabulario.
+const VOCABULARY_END={German:417,French:431};
+const wordInventory=(units,id,language)=>{const list=unitInventory(units.get(id)||{}).slice(0,id==='vocabulary'?VOCABULARY_END[language]??Infinity:Infinity);return list.filter(item=>usableItem(item)&&(item.glossed||id!=='vocabulary'));};
+const levelOf=id=>id.startsWith('b1')?'B1':id.startsWith('a2')?'A2':'A1';
+const chunkItems=(list,size)=>{
+  const chunks=[];
+  for(let index=0;index<list.length;index+=size)chunks.push(list.slice(index,index+size));
+  if(chunks.length>1&&chunks.at(-1).length<3)chunks.at(-2).push(...chunks.pop());
+  return chunks;
+};
+const productionRef=(units,id)=>{const lesson=units.get(id)?.lessons?.find(item=>/production|checkpoint/.test(String(item.id))&&(item.activities||[]).length);return lesson?{unitId:id,lessonId:lesson.id}:null;};
+const readingDays=units=>Math.ceil([...units.values()].filter(unit=>READING_UNITS.has(unit.id)).flatMap(unit=>unit.lessons||[]).filter(lesson=>!skippedLesson(lesson)&&(lesson.activities||[]).length).length/READING_LESSONS_PER_CLASS);
+const storyLines=story=>(story.lines||[]).map(line=>({target:line.text,meaning:line.translation,audio:line.text,slowAudio:line.text,reading:'',speaker:line.speakerEs||line.speaker,speakerKo:line.speaker,gender:line.gender}));
+
+function specsOfSize(units,language,stories,size){
+  const taught=new Set(CLASS_PLAN.flatMap(spec=>spec.items.map(ref=>refItem(ref,units)).filter(Boolean).map(itemKey)));
+  (CLASS_NUMBERS[language]||[]).forEach(target=>taught.add(itemKey({target})));
+  const claim=list=>list.filter(item=>{const key=itemKey(item);if(taught.has(key))return false;taught.add(key);return true;});
+  const lessons=PLAN_UNITS.map(id=>({id,items:claim(inventoryOf(units,id))})).filter(unit=>unit.items.length);
+  const words=claim(WORD_UNITS.flatMap(id=>wordInventory(units,id,language).map(item=>({...item,unitId:id}))));
+  const sentences=claim(SENTENCE_UNITS.flatMap(id=>inventoryOf(units,id)));
+  const themed=new Map(),general=[];
+  for(const item of words){const theme=themeFor(item.unitId,item.meaning);if(PACKS[theme])themed.set(theme,[...(themed.get(theme)||[]),item]);else general.push(item);}
+  // Un tema con tres palabras no da para una clase: pasan a las palabras frecuentes.
+  for(const[theme,items]of themed)if(items.length<MIN_ITEMS){general.push(...items);themed.delete(theme);}
+  const pool=new Map(STORY_UNITS.map(id=>[id,[...(stories?.[id]||[])]])),takeStory=(ids=STORY_UNITS)=>{for(const id of ids){const story=pool.get(id)?.shift();if(story)return story;}return null;};
+  const make=(id,module,title,goal,items,extra={})=>{const story=extra.story,lines=story?storyLines(story):items.filter(isSentenceItem);return{id,module,title,goal,resolved:items,lines,story:story?.title||'',level:extra.level||'A1',rule:extra.rule||'',production:extra.production||null,task:CLASS_TASK[items.some(isSentenceItem)?'sentences':'words']};};
+  const packs=new Map();
+  for(const[theme,[anchor,title,goal]]of Object.entries(PACKS))chunkItems(themed.get(theme)||[],size).forEach((items,index,all)=>{const list=packs.get(anchor)||[];list.push(make(`pack-${theme}-${index+1}`,anchor,all.length>1?`${title} · ${index+1}`:title,goal,items,{story:takeStory(MODULE_STORIES[anchor]||[])}));packs.set(anchor,list);});
+  const rules=UNIT_RULES[language]||[];
+  const mains=lessons.flatMap(({id,items})=>{
+    const unit=units.get(id),goal=String(unit.description||unit.title).replace(/^./,char=>char.toLowerCase()).replace(/\.?$/,'.'),parts=chunkItems(items,size),ruleAt=UNIT_RULE_KEYS.indexOf(id);
+    const classes=parts.map((part,index)=>make(`${id}-${index+1}`,id,parts.length>1?`${unit.title} · ${index+1}`:unit.title,goal,part,{level:levelOf(id),rule:index?'':rules[ruleAt]||'',production:index===parts.length-1?productionRef(units,id):null}));
+    return[...classes,...(packs.get(id)||[])];
+  });
+  const fillers=[...chunkItems(general,size).map((items,index)=>({items,index,kind:'words'})),...chunkItems(sentences,size).map((items,index)=>({items,index,kind:'sentences'}))];
+  const hand=CLASS_PLAN.flatMap((spec,index)=>{const last=CLASS_PLAN[index+1]?.module!==spec.module,production=last?productionRef(units,MODULE_UNIT[spec.module]):null;return[{...spec,level:'A1',production},...(last?packs.get(spec.module)||[]:[])];});
+  // Las clases de palabras generales se reparten entre las de A2 y B1 para que nunca vayan dos seguidas.
+  const firstLater=mains.findIndex(spec=>spec.level!=='A1'),later=mains.slice(firstLater<0?mains.length:firstLater),merged=firstLater<0?mains:mains.slice(0,firstLater);
+  const totalLater=later.length+fillers.length;let used=0;
+  for(let index=0;index<later.length;index++){
+    merged.push(later[index]);
+    while(used<fillers.length&&(used+1)/(fillers.length+1)<=(index+1)/(later.length+1)){
+      const{items,index:number,kind}=fillers[used++],level=later[index].level,title=kind==='words'?`Palabras frecuentes · ${number+1}`:`Lee y entiende · ${number+1}`;
+      merged.push(make(`${kind}-${number+1}`,'general',title,kind==='words'?'ampliar tu vocabulario con palabras de uso diario.':'entender frases completas al oírlas y leerlas.',items,{level,story:takeStory()}));
     }
   }
-  return specs;
+  return totalLater?[...hand,...merged]:[...hand,...mains];
 }
 
 const refItem=(ref,units)=>{const[key,index]=ref.split(':');return unitInventory(units.get(UNIT_KEYS[key]))[Number(index)]||null;};
@@ -98,14 +170,14 @@ const refItem=(ref,units)=>{const[key,index]=ref.split(':');return unitInventory
 // La clase concreta para un idioma: palabras, diálogo, regla y tarea.
 export function resolveClass(spec,units,language){
   const rule=CLASS_RULES[language]?.[Number(spec.id.slice(1))-1]||'';
-  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,items:spec.resolved,lines:spec.lines.map(item=>({...item})),replies:[],rule:'',task:''};
+  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production};
   const items=spec.numbers?(CLASS_NUMBERS[language]||[]).map((target,index)=>({target,meaning:String(index+1),audio:target,slowAudio:target,reading:'',activityId:`numbers-${index+1}`,lessonId:''})):spec.items.map(ref=>refItem(ref,units)).filter(Boolean);
   const lines=spec.dialogue.map(([speaker,ref])=>{const item=refItem(ref,units);return item&&{...item,speaker:speaker==='A'?'Ana':'Leo',speakerKo:speaker==='A'?'Ana':'Leo',gender:speaker==='A'?'f':'m'};}).filter(Boolean);
   const replies=spec.replies.map(([asked,answer])=>({asked:refItem(asked,units),answer:refItem(answer,units)})).filter(pair=>pair.asked&&pair.answer);
-  return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,items,lines,replies,rule,task:spec.task};
+  return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level||'A1',items,lines,story:'',replies,rule,task:spec.task,production:spec.production||null};
 }
 
-export const allClassSpecs=units=>[...CLASS_PLAN,...autoSpecs(units)];
+export const allClassSpecs=(units,{language='',stories=null}={})=>extendedSpecs(units,language,stories);
 export const doneClassIds=state=>new Set((state?.classes||[]).filter(entry=>entry.classId&&entry.completedDate).map(entry=>entry.classId));
 
 function pendingReading(ordered,completedLessons,limit){
@@ -122,13 +194,13 @@ function pendingReading(ordered,completedLessons,limit){
 }
 
 // Qué toca en la próxima clase: un día de lectura o la siguiente clase del plan.
-export function planNextLesson(ordered,{language,completedLessons=[],state=null}={}){
+export function planNextLesson(ordered,{language,completedLessons=[],state=null,stories=null}={}){
   const latin=LATIN_SCRIPT.has(language);
   if(!latin){
     const lessons=pendingReading(ordered,completedLessons,READING_LESSONS_PER_CLASS);
     if(lessons.length)return{mode:'reading',lessons};
   }
-  const units=new Map(ordered.map(unit=>[unit.id,unit])),done=doneClassIds(state),spec=allClassSpecs(units).find(item=>!done.has(item.id));
+  const units=new Map(ordered.map(unit=>[unit.id,unit])),done=doneClassIds(state),spec=allClassSpecs(units,{language,stories}).find(item=>!done.has(item.id));
   if(!spec)return null;
   return{mode:'class',class:resolveClass(spec,units,language),lessons:[]};
 }
@@ -138,7 +210,7 @@ export const nextSoundLesson=(ordered,{language,completedLessons=[]}={})=>LATIN_
 
 // Avance real: clases hechas sobre el total, contando los días de lectura pendientes.
 export function planProgress(ordered,{language,completedLessons=[],state=null}={}){
-  const units=new Map(ordered.map(unit=>[unit.id,unit])),total=allClassSpecs(units).length,done=doneClassIds(state).size;
+  const units=new Map(ordered.map(unit=>[unit.id,unit])),specs=allClassSpecs(units,{language}),total=specs.length,done=doneClassIds(state).size,level=specs.find(spec=>!doneClassIds(state).has(spec.id))?.level||'B1';
   const reading=LATIN_SCRIPT.has(language)?0:Math.ceil(pendingReading(ordered,completedLessons,Infinity).length/READING_LESSONS_PER_CLASS);
-  return{done,total,remaining:Math.max(0,total-done)+reading,percent:total?Math.min(100,Math.round(done/total*100)):0};
+  return{done,total,level,remaining:Math.max(0,total-done)+reading,percent:total?Math.min(100,Math.round(done/total*100)):0};
 }

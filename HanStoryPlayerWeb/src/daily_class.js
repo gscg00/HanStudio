@@ -168,7 +168,9 @@ function hash(text){let h=2166136261;for(const ch of String(text)){h^=ch.codePoi
 function seeded(seed){let s=hash(seed)||1;return()=>{s^=s<<13;s^=s>>>17;s^=s<<5;return((s>>>0)%100000)/100000;};}
 export function shuffle(list,seed){const rand=seeded(seed),copy=[...list];for(let i=copy.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 
-function distractors(item,pool,count,key,seed){
+function distractors(item,pool,count,key,baseSeed){
+  // La semilla incluye el elemento: si no, las mismas opciones falsas se repiten y delatan la respuesta.
+  const seed=`${baseSeed}|${item.target}`;
   const same=pool.filter(other=>other[key]!==item[key]&&other.meaning!==item.meaning&&isSentence(other.target)===isSentence(item.target));
   const rest=pool.filter(other=>other[key]!==item[key]&&other.meaning!==item.meaning&&!same.includes(other));
   return [...new Set([...shuffle(same,seed),...shuffle(rest,seed+'r')].map(other=>other[key]))].slice(0,count);
@@ -185,7 +187,7 @@ export function recallChoice(item,pool,seed){
 // Escuchar y elegir el significado (comprensión sin ver la escritura).
 export function listenMeaning(item,pool,seed){
   const options=shuffle([item.meaning,...distractors(item,pool,2,'meaning',seed)],`${seed}o${item.target}`);
-  return baseActivity(item,`daily-listen-${seed}-${hash(item.target)}`,{type:'listening_choice',dailyKind:'listen',prompt:'Escucha y elige qué significa',options,answer:item.meaning,explanation:`Escuchaste «${item.target}»: ${item.meaning.replace(/\.$/,'')}.`});
+  return baseActivity(item,`daily-listen-${seed}-${hash(item.target)}`,{type:'listening_choice',dailyKind:'listen',prompt:'Escucha y elige qué significa',options,answer:item.meaning,explanation:`Escuchaste «${item.target}»: ${/[.?!]$/.test(item.meaning)?item.meaning:`${item.meaning}.`}`});
 }
 
 // Rosetta: escucha y elige la imagen.
@@ -226,7 +228,7 @@ export function buildReviewSet(yesterdayItems,srsActivities,pool,{seed,limit=DAI
     out.push(index%2?listenMeaning(item,pool,seed):recallChoice(item,pool,seed));
   });
   // Lo de ayer va primero; el repaso espaciado completa hasta el límite.
-  const fromYesterday=out.slice(0,Math.ceil(limit*2/3));
+  const fromYesterday=out.slice(0,srsActivities.length?Math.ceil(limit*2/3):limit);
   const srs=srsActivities.slice(0,limit-fromYesterday.length);
   return shuffle([...fromYesterday,...srs],seed+'mix');
 }
@@ -259,16 +261,24 @@ export function listeningLines(todayItems,limit=12){
   return [...sentences,...words].slice(0,limit);
 }
 
+// Tiempo real de una clase, redondeado de 5 en 5: se dice antes de empezar para que no haya sorpresas.
+export function estimatedMinutes(entry,reviewCount=0){
+  const items=entry.items?.length||0,lines=entry.lines?.length||items,seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*22+items*28+18*11+(entry.production?240:0)+150;
+  return Math.max(10,Math.round(seconds/300)*5);
+}
+
 export const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/DAY);
 
 // ── Las cuatro partes de una clase con objetivo ───────────────────────
-// Lo que vuelve hoy: la clase anterior y las de hace 3, 7, 14 y 30 clases, más lo fallado.
+// Lo que vuelve hoy: la clase anterior y las de hace 3, 7, 14, 30, 60 y 90 clases, más lo
+// fallado. Se reparte por turnos para que lo antiguo no quede fuera por lo reciente.
 export function classReviewItems(state,{limit=DAILY_REVIEW_LIMIT}={}){
   const classes=(state?.classes||[]).filter(entry=>entry.completedDate&&entry.items?.length),byNumber=new Map(classes.map(entry=>[entry.number,entry])),last=classes.at(-1)?.number;
   if(!last)return[];
   const picked=new Map(),add=item=>{if(item&&!picked.has(item.target))picked.set(item.target,item);};
   for(const entry of classes.slice(-5))for(const target of entry.weak||[])add(entry.items.find(item=>item.target===target));
-  for(const offset of[0,2,6,13,29])(byNumber.get(last-offset)?.items||[]).forEach(add);
+  const queues=[0,2,6,13,29,59,89].map(offset=>[...(byNumber.get(last-offset)?.items||[])]);
+  while(picked.size<limit&&queues.some(queue=>queue.length))for(const queue of queues)if(picked.size<limit)add(queue.shift());
   return[...picked.values()].slice(0,limit);
 }
 
@@ -285,20 +295,27 @@ export function buildLearnSet(items,{teach,rule='',seed}){
 }
 
 // Práctica controlada: reconocer → recordar → construir.
-export function buildClassPractice(items,pool,{seed,language='',limit=16}={}){
-  const order=shuffle(items,seed),builds=order.map(item=>buildSentence(item,seed,language)).filter(Boolean),sentences=new Set(builds.map(activity=>activity.itemTarget));
-  return[...order.map(item=>listenMeaning(item,pool,seed)),...order.filter(item=>!sentences.has(item.target)).map(item=>recallChoice(item,pool,seed)),...builds].slice(0,limit);
+export function buildClassPractice(items,pool,{seed,language='',limit=18}={}){
+  const order=shuffle(items,seed),builds=order.map(item=>buildSentence(item,seed,language)).filter(Boolean).slice(0,6),sentences=new Set(builds.map(activity=>activity.itemTarget));
+  const recalls=order.filter(item=>!sentences.has(item.target)).map(item=>recallChoice(item,pool,seed)).slice(0,6);
+  return[...order.slice(0,limit-builds.length-recalls.length).map(item=>listenMeaning(item,pool,seed)),...recalls,...builds];
+}
+
+// Escribir de memoria: recordar sin opciones es lo que más fija y prepara para hablar.
+export function typedRecall(item,seed,languageName){
+  return baseActivity(item,`daily-typed-${seed}-${hash(item.target)}`,{type:'typed_translation',dailyKind:'typed',prompt:`Escribe en ${languageName}: «${item.meaning}»`,target:item.meaning,instruction:'Escríbelo sin mirar opciones.',answer:item.target,accepted_answers:[item.target],allow_minor_typos:true,explanation:`Se escribe «${item.target}».`,audio:'',slow_audio:'',xp:15});
 }
 
 // Producción: responder a lo que te dicen y decirlo con tus palabras.
-export function buildClassClose(entry,pool,{seed}){
+export function buildClassClose(entry,pool,{seed,typing='',production=[]}){
   const replies=(entry.replies||[]).map(({asked,answer},index)=>{
     const options=shuffle([answer.target,...distractors(answer,pool,2,'target',`${seed}${index}`)],`${seed}r${index}`);
     return baseActivity(answer,`daily-reply-${seed}-${index}`,{type:'select_translation',dailyKind:'reply',prompt:`Te dicen esto («${asked.meaning}»). ¿Qué respondes?`,target:asked.target,options,answer:answer.target,audio:asked.audio,slow_audio:asked.slowAudio,optionAudio:true,explanation:`Una buena respuesta es «${answer.target}»: ${answer.meaning}`});
   });
-  const recall=shuffle(entry.items,`${seed}c`).slice(0,replies.length?3:5).map(item=>recallChoice(item,pool,`${seed}c`));
+  const order=shuffle(entry.items,`${seed}c`),typed=typing?order.filter(item=>[...item.target].length<=45).slice(0,3).map(item=>typedRecall(item,`${seed}c`,typing)):[];
+  const recall=order.filter(item=>!typed.some(activity=>activity.itemTarget===item.target)).slice(0,replies.length?2:3).map(item=>recallChoice(item,pool,`${seed}c`));
   const task=entry.task?[{id:`daily-task-${seed}`,type:'teach_concept',task:true,prompt:'Tu turno',target:'',options:[],answer:'',explanation:entry.task,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}]:[];
-  return[...replies,...recall,...task];
+  return[...replies,...recall,...typed,...production,...task];
 }
 
 // ── Camino propio de la clase del día ──────────────────────────────────
