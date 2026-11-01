@@ -216,7 +216,7 @@ export default {
   name:'Origami',
   fonts:['700 30px "Space Grotesk"','400 15px "Space Mono"'],
   fontCss:'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=block',
-  readsPixels:true,
+  readsPixels:false,
   frame(ctx,W,Hh,t,S){
     S0=S;const beat=S.beat,X=STATION(beat.index),B=builder();
     let cam=camFor(beat,t,X);

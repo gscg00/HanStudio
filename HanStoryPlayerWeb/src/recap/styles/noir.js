@@ -41,6 +41,13 @@ function slats(o){
   return(C[key]=l);
 }
 // grano de nitrato: tabla de ruido sembrada; cada fotograma (24 fps) lee desde otro desfase
+function grainTile(ctx){
+  if(C.grainPattern)return C.grainPattern;
+  const tile=H.layer(256,256),x=tile.getContext('2d'),img=x.createImageData(256,256),G=grainBuf();
+  for(let i=0;i<65536;i++){const v=128+G[i]*127;img.data[i*4]=img.data[i*4+1]=img.data[i*4+2]=v;img.data[i*4+3]=255;}
+  x.putImageData(img,0,0);
+  return C.grainPattern=ctx.createPattern(tile,'repeat');
+}
 function grainBuf(){
   if(C.grain)return C.grain;
   const n=W*HH+65536,g=new Float32Array(n),r=H.rng(901);
@@ -297,11 +304,13 @@ function drawBeat(c,t,S,beat){
 function finish(ctx,t){
   const fr24=Math.floor(t*24),Rg=H.rng(7000+fr24),flick=1+NZ.n2(t*9,4.4)*0.05;
   const soft=lay('soft',W,HH),sfx=soft.getContext('2d');sfx.filter='blur(0.8px)';sfx.drawImage(ctx.canvas,0,0);sfx.filter='none';ctx.drawImage(soft,0,0);
-  const LV=C.lv||(C.lv=new Float32Array(766)),LA=C.la||(C.la=new Float32Array(766));
-  for(let s=0;s<766;s++){let v=Math.min(1,s/765*flick);v=v<0.5?0.5*Math.pow(2*v,1.5):1-0.5*Math.pow(2-2*v,1.3);LV[s]=v;LA[s]=0.15*(0.5+0.8*Math.sqrt(v*(1-v)+0.04));}
-  const img=ctx.getImageData(0,0,W,HH),d=img.data,G=grainBuf();let p=Math.floor(Rg()*65536);
-  for(let i=0;i<d.length;i+=4,p++){const s=d[i]+d[i+1]+d[i+2];let v=LV[s]+G[p]*LA[s];v=v<0?0:v>1?1:v;d[i]=v*255;d[i+1]=v*252;d[i+2]=v*246;}
-  ctx.putImageData(img,0,0);
+  // Blanco y negro, contraste y grano por composición: leer los píxeles de cada cuadro traba los móviles.
+  ctx.save();
+  ctx.globalCompositeOperation='saturation';ctx.fillStyle='#000';ctx.fillRect(0,0,W,HH);
+  ctx.globalCompositeOperation='overlay';ctx.globalAlpha=0.35;ctx.drawImage(ctx.canvas,0,0);
+  ctx.globalCompositeOperation='multiply';ctx.globalAlpha=1;ctx.fillStyle=`rgb(${Math.min(255,255*flick)},${Math.min(252,252*flick)},${Math.min(246,246*flick)})`;ctx.fillRect(0,0,W,HH);
+  ctx.globalCompositeOperation='overlay';ctx.globalAlpha=0.16;ctx.translate(-Rg()*256,-Rg()*256);ctx.fillStyle=grainTile(ctx);ctx.fillRect(0,0,W+256,HH+256);
+  ctx.restore();
   const hl=lay('bloom',W>>2,HH>>2),hx=hl.getContext('2d');hx.filter='blur(6px) brightness(1.2)';hx.drawImage(ctx.canvas,0,0,W>>2,HH>>2);hx.filter='none';
   ctx.save();ctx.globalCompositeOperation='screen';ctx.globalAlpha=0.25;ctx.drawImage(hl,0,0,W,HH);ctx.restore();
   H.vignette(ctx,W,HH,0.7,'0,0,0');
@@ -318,7 +327,7 @@ export default {
   name:'Cine negro',
   fonts:['400 76px "Anton"','700 40px "Oswald"','400 66px "Limelight"','400 52px "Special Elite"','700 30px "Courier Prime"','400 15px "Courier Prime"','italic 400 36px "Playfair Display"','400 50px "UnifrakturMaguntia"'],
   fontCss:'https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:wght@400;700&family=Limelight&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Special+Elite&family=UnifrakturMaguntia&display=block',
-  readsPixels:true,
+  readsPixels:false,
   frame(ctx,Wc,Hc,t,S){
     const wx=NZ.n2(t*3.1,0.3)*2.2,wy=NZ.n2(0.7,t*2.7)*2.8;
     ctx.fillStyle='#000';ctx.fillRect(0,0,W,HH);

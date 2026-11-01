@@ -280,3 +280,29 @@ body:has(.jp-app[data-jp-theme="dark"]) .breadcrumb{color:#cfdcd2}
 .jp-app[data-jp-theme="dark"] .dc-preview summary,.jp-app[data-jp-theme="dark"] .dc-extra summary{color:#ecf3ed}
 .jp-app[data-jp-theme="dark"] .dc-dock .dc-cta{background:#ecf3ed;color:#10261f}
 .jp-app[data-jp-theme="dark"] .dc-today,.jp-app[data-jp-theme="dark"] .dc-checkpoint,.jp-app[data-jp-theme="dark"] .dc-listen{--dc-muted:#b9c9be}
+
+/* Cuaderno */
+.nb-view{--dc-ink:var(--jp-green,#173f35);--dc-muted:#5d6f69;--dc-line:#173f3522;display:grid;gap:1rem;max-width:680px;margin:0 auto;padding:1rem 1rem 6rem}
+.jp-app[data-jp-theme="dark"] .nb-view{--dc-ink:#ecf3ed;--dc-muted:#b8c8c0;--dc-line:#ffffff25}
+.nb-view h1{margin:0;color:var(--dc-ink)}
+.nb-view h2{margin:.4rem 0;color:var(--dc-ink);font-size:1.05rem}
+.nb-search{display:grid;gap:.35rem;color:var(--dc-muted);font-size:.9rem}
+.nb-search input{width:100%;box-sizing:border-box;min-height:48px;padding:.6rem .8rem;border:1px solid var(--dc-line);border-radius:14px;background:transparent;color:var(--dc-ink);font-size:1rem}
+.nb-seen{display:grid;gap:.5rem}
+.nb-seen[hidden]{display:none}
+.nb-class{border:1px solid var(--dc-line);border-radius:14px;padding:.75rem .9rem}
+.nb-class summary{display:flex;justify-content:space-between;gap:.8rem;color:var(--dc-ink);font-weight:600;cursor:pointer}
+.nb-class summary small{color:var(--dc-muted);font-weight:400}
+.nb-rule,.nb-rule-hit p{color:var(--dc-ink);line-height:1.5}
+.nb-rule-hit{margin-top:.8rem;border-top:1px solid var(--dc-line);padding-top:.6rem}
+.nb-rule-hit h3{margin:0;color:var(--dc-ink);font-size:.95rem}
+.nb-items{display:grid;gap:.25rem;margin:.6rem 0 0;padding:0;list-style:none}
+.nb-items button{display:grid;gap:.1rem;width:100%;min-height:44px;padding:.5rem .3rem;border:0;border-bottom:1px solid var(--dc-line);background:none;color:var(--dc-ink);text-align:start;font:inherit}
+.nb-items b{font-size:1.05rem}
+.nb-items small,.nb-items em{color:var(--dc-muted);font-size:.82rem;font-style:normal}
+.nb-empty{color:var(--dc-muted)}
+.dc-role-heard{margin:.6rem 0 0;color:var(--dc-ink);font-size:1.05rem}
+
+/* Redacción de la clase: escribir primero, comparar después. */
+.dc-writing{width:100%;margin-top:14px;padding:12px;border:1px solid currentColor;border-radius:12px;font:inherit;background:transparent;color:inherit;resize:vertical;box-sizing:border-box}
+.dc-model{margin-top:12px}.dc-model summary{cursor:pointer;font-weight:600}.dc-model p{margin:8px 0 0;line-height:1.5}

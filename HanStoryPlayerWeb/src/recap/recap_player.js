@@ -5,6 +5,7 @@
 import './lib/h.js';
 import './lib/sound.js';
 import {sceneAt} from './recap_timeline.js';
+import {FPS_STEPS,nextFps} from './recap_pace.js';
 import {pickVoice,speechLangFor} from '../voices.js';
 import {recapLanguage} from './styles/shared.js';
 
@@ -42,12 +43,15 @@ export async function createRecapPlayer({canvas,style,timeline,langCode='ko',lan
   if(!window.speechSynthesis?.getVoices().length)await new Promise(resolve=>{window.speechSynthesis?.addEventListener?.('voiceschanged',resolve,{once:true});setTimeout(resolve,800);});
   const voices=chooseVoices(langCode);
 
-  const state={t:0,playing:false,subtitles:false,sound:true,fired:new Set(),active:null,stopSound:null,last:0,raf:0,ended:false};
+  const state={t:0,playing:false,subtitles:false,sound:true,fired:new Set(),active:null,stopSound:null,last:0,raf:0,ended:false,fps:FPS_STEPS[0],drawn:0,gap:0,dirty:true};
   const assets={picture:meaning=>pictures.get(meaning)||null,scene};
 
   // Grabaciones del curso (ElevenLabs) cuando existen; si no, la voz del sistema.
   const recording=new Audio();
+  // Las dos frases siguientes ya descargadas: la voz no se retrasa si la red va lenta.
+  const fetched=new Set(),prefetch=item=>{const url=item&&audioUrlFor(item.text,item.lang);if(url&&!fetched.has(url)){fetched.add(url);fetch(url).catch(()=>fetched.delete(url));}};
   const speak=item=>{
+    const index=timeline.speech.indexOf(item);prefetch(timeline.speech[index+1]);prefetch(timeline.speech[index+2]);
     const url=audioUrlFor(item.text,item.lang);
     if(url){
       const active={item,speaking:true};state.active=active;
@@ -89,9 +93,22 @@ export async function createRecapPlayer({canvas,style,timeline,langCode='ko',lan
     drawSubtitle(S);
     onState({t:state.t,duration:timeline.duration,playing:state.playing,beat:S.beat,subtitles:state.subtitles,sound:state.sound,ended:state.ended});
   };
+  // Las piezas pesadas de cada escena se preparan aquí, no a mitad del video.
+  const prewarm=async()=>{
+    const start=performance.now();
+    for(const beat of timeline.beats)for(const t of[beat.t0+0.05,(beat.t0+beat.t1)/2,beat.t1-0.05]){
+      if(performance.now()-start>1500)return;
+      state.t=t;draw();
+      await new Promise(resolve=>setTimeout(resolve));
+    }
+  };
   const tick=now=>{
     state.raf=requestAnimationFrame(tick);
-    const dt=Math.min(0.1,Math.max(0,(now-(state.last||now))/1000));state.last=now;
+    if(now-state.drawn<1000/state.fps-2)return;
+    if(state.playing&&state.drawn)state.gap=state.gap*0.9+(now-state.drawn)*0.1;
+    if(state.gap>0&&nextFps(state.fps,state.gap)!==state.fps){state.fps=nextFps(state.fps,state.gap);state.gap=0;}
+    state.drawn=now;
+    const dt=Math.min(0.25,Math.max(0,(now-(state.last||now))/1000));state.last=now;
     if(state.playing){
       for(const item of timeline.speech)if(!state.fired.has(item.id)&&state.t>=item.t){state.fired.add(item.id);speak(item);}
       // Si la voz real sigue hablando al terminar su tiempo estimado, el reloj espera.
@@ -103,16 +120,19 @@ export async function createRecapPlayer({canvas,style,timeline,langCode='ko',lan
         if(state.t>=timeline.duration){state.playing=false;state.ended=true;state.stopSound?.();state.stopSound=null;}
       }
     }
+    // En pausa, o mientras espera a la voz, la imagen es la misma: no se redibuja.
+    if(state.t===state.shown&&!state.dirty)return;
+    state.shown=state.t;state.dirty=false;
     draw();
   };
 
   const api={
     duration:timeline.duration,
-    play(){if(state.ended||state.t>=timeline.duration)api.seek(0);state.playing=true;state.ended=false;state.last=0;startSound();},
-    pause(){state.playing=false;stopSpeech();state.stopSound?.();state.stopSound=null;},
+    play(){if(state.ended||state.t>=timeline.duration)api.seek(0);state.playing=true;state.ended=false;state.last=0;state.dirty=true;prefetch(timeline.speech[0]);startSound();},
+    pause(){state.playing=false;state.dirty=true;stopSpeech();state.stopSound?.();state.stopSound=null;},
     toggle(){state.playing?api.pause():api.play();},
     seek(t){
-      state.t=Math.max(0,Math.min(timeline.duration,t));state.ended=false;stopSpeech();
+      state.t=Math.max(0,Math.min(timeline.duration,t));state.ended=false;state.dirty=true;stopSpeech();
       state.fired=new Set(timeline.speech.filter(item=>item.t<state.t).map(item=>item.id));
       if(state.playing)startSound();
     },
@@ -121,11 +141,13 @@ export async function createRecapPlayer({canvas,style,timeline,langCode='ko',lan
       const S=sceneAt(timeline,state.t),target=timeline.beats[Math.max(0,Math.min(timeline.beats.length-1,S.beat.index+direction))];
       api.seek(target.t0+0.01);
     },
-    setSubtitles(on){state.subtitles=Boolean(on);},
-    setSound(on){state.sound=Boolean(on);on?startSound():(state.stopSound?.(),state.stopSound=null);},
+    setSubtitles(on){state.subtitles=Boolean(on);state.dirty=true;},
+    setSound(on){state.sound=Boolean(on);state.dirty=true;on?startSound():(state.stopSound?.(),state.stopSound=null);},
     voices,
     destroy(){cancelAnimationFrame(state.raf);api.pause();},
   };
+  await prewarm();
+  state.t=0;
   state.raf=requestAnimationFrame(tick);
   return api;
 }
