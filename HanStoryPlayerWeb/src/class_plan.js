@@ -12,6 +12,8 @@
 import{CLASS_RULES,CLASS_NUMBERS}from'./data/class_rules.js';
 import{UNIT_RULE_KEYS,UNIT_RULES}from'./data/unit_rules.js';
 import{themeFor}from'./syllabus.js';
+import{ADVANCED_CLASSES}from'./data/advanced_classes.js';
+import{EXTRA_UNIT_RULES}from'./data/extra_unit_rules.js';
 
 const UNIT_KEYS={identity:'a1-1-identity',people:'a1-1-people',home:'a1-1-home',routine:'a1-1-routine',food:'a1-1-food',places:'a1-1-places',shopping:'a1-2-shopping',time:'a1-2-time'};
 const refs=(unit,list)=>list.map(index=>`${unit}:${index}`);
@@ -92,8 +94,11 @@ export function unitInventory(unit){
 // ── De lo diseñado a mano al B1 ───────────────────────────────────────
 // El curso entero cabe en COURSE_DAYS clases. Cada elemento se enseña una sola vez:
 // las unidades de A2 y B1 reutilizan frases de otras, y esas ya no cuentan como nuevas.
-export const COURSE_DAYS=120;
+export const COURSE_DAYS=180;
 const MIN_ITEMS=6,MAX_ITEMS=12;
+// Cada semana son seis clases nuevas y una de repaso; cada nivel cierra con una prueba.
+export const WEEK_CLASSES=6;
+const RECAP_ITEMS=14,EXAM_ITEMS=30;
 const PLAN_UNITS=['a1-2-transport','a1-2-health','a1-2-weather','a1-2-social','a2-1-past','a2-1-future','a2-1-comparison','a2-1-ability','a2-1-services','a2-1-conversation','a2-2-opinions','a2-2-experiences','a2-2-workStudy','a2-2-technology','a2-2-culture','a2-2-problemSolving','b1-1-narrative','b1-1-cause-effect','b1-1-media','b1-1-emotions','b1-1-society','b1-1-register','b1-2-conditions','b1-2-nuance','b1-2-negotiation','b1-2-projects','b1-2-perspectives','b1-2-conversation'];
 // Vocabulario por tema: se enseña justo después del módulo que trata ese tema.
 const WORD_UNITS=['a1-1-introductions','survival','essentials','questions','time','vocabulary','first-words','first-sentences','basic-verbs','adjectives'];
@@ -129,7 +134,7 @@ const productionRef=(units,id)=>{const lesson=units.get(id)?.lessons?.find(item=
 const readingDays=units=>Math.ceil([...units.values()].filter(unit=>READING_UNITS.has(unit.id)).flatMap(unit=>unit.lessons||[]).filter(lesson=>!skippedLesson(lesson)&&(lesson.activities||[]).length).length/READING_LESSONS_PER_CLASS);
 const storyLines=story=>(story.lines||[]).map(line=>({target:line.text,meaning:line.translation,audio:line.text,slowAudio:line.text,reading:'',speaker:line.speakerEs||line.speaker,speakerKo:line.speaker,gender:line.gender}));
 
-function specsOfSize(units,language,stories,size){
+function baseSpecs(units,language,stories,size){
   const taught=new Set(CLASS_PLAN.flatMap(spec=>spec.items.map(ref=>refItem(ref,units)).filter(Boolean).map(itemKey)));
   (CLASS_NUMBERS[language]||[]).forEach(target=>taught.add(itemKey({target})));
   const claim=list=>list.filter(item=>{const key=itemKey(item);if(taught.has(key))return false;taught.add(key);return true;});
@@ -147,14 +152,16 @@ function specsOfSize(units,language,stories,size){
   const rules=UNIT_RULES[language]||[];
   const mains=lessons.flatMap(({id,items})=>{
     const unit=units.get(id),goal=String(unit.description||unit.title).replace(/^./,char=>char.toLowerCase()).replace(/\.?$/,'.'),parts=chunkItems(items,size),ruleAt=UNIT_RULE_KEYS.indexOf(id);
-    const classes=parts.map((part,index)=>make(`${id}-${index+1}`,id,parts.length>1?`${unit.title} · ${index+1}`:unit.title,goal,part,{level:levelOf(id),rule:index?'':rules[ruleAt]||'',production:index===parts.length-1?productionRef(units,id):null}));
+    const classes=parts.map((part,index)=>make(`${id}-${index+1}`,id,parts.length>1?`${unit.title} · ${index+1}`:unit.title,goal,part,{level:levelOf(id),rule:index?'':rules[ruleAt]||EXTRA_UNIT_RULES[language]?.[id]||'',production:index===parts.length-1?productionRef(units,id):null}));
     return[...classes,...(packs.get(id)||[])];
   });
   const fillers=[...chunkItems(general,size).map((items,index)=>({items,index,kind:'words'})),...chunkItems(sentences,size).map((items,index)=>({items,index,kind:'sentences'}))];
   const hand=CLASS_PLAN.flatMap((spec,index)=>{const last=CLASS_PLAN[index+1]?.module!==spec.module,production=last?productionRef(units,MODULE_UNIT[spec.module]):null;return[{...spec,level:'A1',production},...(last?packs.get(spec.module)||[]:[])];});
   // Las clases de palabras generales se reparten entre las de A2 y B1 para que nunca vayan dos seguidas.
-  const firstLater=mains.findIndex(spec=>spec.level!=='A1'),later=mains.slice(firstLater<0?mains.length:firstLater),merged=firstLater<0?mains:mains.slice(0,firstLater);
-  const totalLater=later.length+fillers.length;let used=0;
+  // Son material sencillo: van con el A2, para que lo marcado B1 sea B1 de verdad.
+  const firstLater=mains.findIndex(spec=>spec.level!=='A1'),firstB1=mains.findIndex(spec=>spec.level==='B1'),end=firstB1<0?mains.length:firstB1;
+  const later=mains.slice(firstLater<0?mains.length:firstLater,end),merged=firstLater<0?[...mains]:mains.slice(0,firstLater);
+  let used=0;
   for(let index=0;index<later.length;index++){
     merged.push(later[index]);
     while(used<fillers.length&&(used+1)/(fillers.length+1)<=(index+1)/(later.length+1)){
@@ -162,23 +169,55 @@ function specsOfSize(units,language,stories,size){
       merged.push(make(`${kind}-${number+1}`,'general',title,kind==='words'?'ampliar tu vocabulario con palabras de uso diario.':'entender frases completas al oírlas y leerlas.',items,{level,story:takeStory()}));
     }
   }
-  return totalLater?[...hand,...merged]:[...hand,...mains];
+  return[...hand,...merged,...firstLater<0?[]:mains.slice(end)];
 }
+
+// Las clases escritas para pasar de B1: gramática, texto, ejercicios y redacción.
+const advancedSpec=spec=>({...spec,advanced:true,module:spec.level,resolved:spec.items.map(([target,meaning],index)=>({target,meaning,audio:target,slowAudio:target,reading:'',glossed:true,activityId:`${spec.id}-${index}`,lessonId:''})),lines:spec.text.map(([target,meaning])=>({target,meaning,audio:target,slowAudio:target,reading:''})),story:spec.textTitle,production:null});
+
+// El programa completo: lo nuevo, el repaso semanal y la prueba de cada nivel.
+function withProgram(specs,language){
+  const out=[];let week=[],number=0;
+  const closeWeek=()=>{if(week.length<3)return;out.push({id:`semana-${++number}`,kind:'recap',level:week.at(-1).level,module:week.at(-1).module,title:`Repaso de la semana ${number}`,goal:'usar sin ayuda lo que viste esta semana.',from:week});week=[];};
+  const closeLevel=level=>{closeWeek();out.push({id:`prueba-${level}`,kind:'exam',level,module:out.at(-1)?.module,title:`Prueba de nivel ${level}`,goal:`demostrar que dominas el nivel ${level}.`,from:all.filter(spec=>spec.level===level)});};
+  // Una frase que el curso ya enseñó no vuelve como nueva: el repaso se encarga de ella.
+  const taught=new Set(specs.flatMap(spec=>(spec.resolved||[]).map(item=>item.target)));
+  const fresh=spec=>({...spec,resolved:spec.resolved.filter(item=>{if(taught.has(item.target))return false;taught.add(item.target);return true;})});
+  const all=[...specs,...(ADVANCED_CLASSES[language]||[]).map(advancedSpec).map(fresh)];
+  all.forEach((spec,index)=>{
+    out.push(spec);week.push(spec);
+    if(week.length===WEEK_CLASSES)closeWeek();
+    if(all[index+1]?.level!==spec.level)closeLevel(spec.level);
+  });
+  return out;
+}
+
+const specsOfSize=(units,language,stories,size)=>withProgram(baseSpecs(units,language,stories,size),language);
 
 const refItem=(ref,units)=>{const[key,index]=ref.split(':');return unitInventory(units.get(UNIT_KEYS[key]))[Number(index)]||null;};
 
 // La clase concreta para un idioma: palabras, diálogo, regla y tarea.
 export function resolveClass(spec,units,language){
+  if(spec.kind)return resolveReview(spec,units,language);
   const rule=CLASS_RULES[language]?.[Number(spec.id.slice(1))-1]||'';
-  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production};
+  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production,...(spec.advanced?{questions:spec.questions,drills:spec.drills,write:spec.write}:{})};
   const items=spec.numbers?(CLASS_NUMBERS[language]||[]).map((target,index)=>({target,meaning:String(index+1),audio:target,slowAudio:target,reading:'',activityId:`numbers-${index+1}`,lessonId:''})):spec.items.map(ref=>refItem(ref,units)).filter(Boolean);
   const lines=spec.dialogue.map(([speaker,ref])=>{const item=refItem(ref,units);return item&&{...item,speaker:speaker==='A'?'Ana':'Leo',speakerKo:speaker==='A'?'Ana':'Leo',gender:speaker==='A'?'f':'m'};}).filter(Boolean);
   const replies=spec.replies.map(([asked,answer])=>({asked:refItem(asked,units),answer:refItem(answer,units)})).filter(pair=>pair.asked&&pair.answer);
   return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level||'A1',items,lines,story:'',replies,rule,task:spec.task,production:spec.production||null};
 }
 
+// Repaso y prueba no enseñan nada nuevo: toman una muestra repartida de lo ya visto.
+function resolveReview(spec,units,language){
+  const parts=spec.from.map(item=>resolveClass(item,units,language)),seen=new Set(),pool=parts.flatMap(part=>part.items).filter(item=>{if(seen.has(item.target))return false;seen.add(item.target);return true;});
+  const sentences=pool.filter(isSentenceItem),source=spec.kind==='exam'||sentences.length<RECAP_ITEMS/2?pool:[...sentences,...pool.filter(item=>!isSentenceItem(item))],limit=spec.kind==='exam'?EXAM_ITEMS:RECAP_ITEMS,step=Math.max(1,source.length/limit);
+  const items=Array.from({length:Math.min(limit,source.length)},(_,index)=>source[Math.floor(index*step)]);
+  return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,stage:spec.kind,items,lines:spec.kind==='exam'?[]:items.filter(isSentenceItem).slice(0,8),story:'',replies:[],rule:'',rules:spec.kind==='exam'?[]:parts.map(part=>part.rule).filter(Boolean),task:spec.kind==='exam'?'':'Cuenta en voz alta qué aprendiste esta semana, con frases completas.',production:null};
+}
+
 export const allClassSpecs=(units,{language='',stories=null}={})=>extendedSpecs(units,language,stories);
-export const doneClassIds=state=>new Set((state?.classes||[]).filter(entry=>entry.classId&&entry.completedDate).map(entry=>entry.classId));
+// Una prueba sin aprobar no cuenta: vuelve a tocar en la siguiente clase.
+export const doneClassIds=state=>new Set((state?.classes||[]).filter(entry=>entry.classId&&entry.completedDate&&!entry.retake).map(entry=>entry.classId));
 
 function pendingReading(ordered,completedLessons,limit){
   const done=new Set(completedLessons),picked=[];

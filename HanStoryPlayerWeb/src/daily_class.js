@@ -43,7 +43,7 @@ export function courseTotals(ordered,{readingUnits=null}={}){
   }
   return {totalItems:items.size,conceptDays:Math.ceil(concepts/6)};
 }
-export const DAILY_REVIEW_LIMIT=24;
+export const DAILY_REVIEW_LIMIT=30;
 
 export const DAILY_PHASES=Object.freeze([
   {id:'review',title:'Repaso',short:'Repaso',minutes:8,icon:'↻',description:'Recupera lo que aprendiste ayer antes de añadir nada nuevo.'},
@@ -51,6 +51,10 @@ export const DAILY_PHASES=Object.freeze([
   {id:'learn',title:'Aprende',short:'Aprende',minutes:14,icon:'✦',description:'Cada palabra y frase de la conversación, y cómo funciona el idioma.'},
   {id:'practice',title:'Práctica',short:'Práctica',minutes:7,icon:'✎',description:'Primero lo reconoces, luego lo recuerdas y al final armas las frases tú.'},
   {id:'close',title:'Úsalo',short:'Úsalo',minutes:5,icon:'★',description:'Responde como en una conversación real y dilo con tus propias palabras.'},
+  {id:'reading',title:'Lectura',short:'Lectura',minutes:20,icon:'▤',description:'Escucha y lee un texto más largo, repítelo y comprueba que lo entendiste.'},
+  {id:'words',title:'Vocabulario',short:'Vocabulario',minutes:12,icon:'＋',description:'Palabras nuevas que volverán en tus repasos.'},
+  {id:'deep',title:'Escucha profunda',short:'Escucha',minutes:15,icon:'♫',description:'Vuelve a oír los textos de esta semana, primero sin mirar y luego repitiendo.'},
+  {id:'output',title:'Escribe y habla',short:'Producción',minutes:15,icon:'✍',description:'Sin ayuda: primero escribes y luego hablas en voz alta.'},
 ]);
 
 export const dailyStateId=slug=>`daily:${slug}:v1`;
@@ -222,10 +226,10 @@ export function dictation(item,seed){
 }
 
 // Fase 1: repaso de ayer + repaso espaciado pendiente.
-export function buildReviewSet(yesterdayItems,srsActivities,pool,{seed,limit=DAILY_REVIEW_LIMIT}={}){
+export function buildReviewSet(yesterdayItems,srsActivities,pool,{seed,limit=DAILY_REVIEW_LIMIT,harder=null}={}){
   const out=[];
   shuffle(yesterdayItems,seed).forEach((item,index)=>{
-    out.push(index%2?listenMeaning(item,pool,seed):recallChoice(item,pool,seed));
+    out.push(harder?.(item)||(index%2?listenMeaning(item,pool,seed):recallChoice(item,pool,seed)));
   });
   // Lo de ayer va primero; el repaso espaciado completa hasta el límite.
   const fromYesterday=out.slice(0,srsActivities.length?Math.ceil(limit*2/3):limit);
@@ -263,23 +267,50 @@ export function listeningLines(todayItems,limit=12){
 
 // Tiempo real de una clase, redondeado de 5 en 5: se dice antes de empezar para que no haya sorpresas.
 export function estimatedMinutes(entry,reviewCount=0){
-  const items=entry.items?.length||0,lines=entry.lines?.length||items,seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*22+items*28+18*11+(entry.production?240:0)+150;
+  if(entry.stage==='exam')return Math.max(10,Math.round((entry.items?.length||0)*18/300)*5);
+  const items=entry.items?.length||0,lines=entry.lines?.length||items,extra=(entry.questions?.length||0)*25+(entry.drills?.length||0)*40+(entry.write?420:0)+(entry.rules?.length||0)*30+(entry.book?.lines?.length||0)*40+(entry.book?120:0)+(entry.words?.length||0)*40+(entry.output?660:0)+(entry.deep?.length||0)*30,seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*(roleplayScript(entry.lines)?27:22)+(entry.stage?0:items*28)+18*11+(entry.production?240:0)+150+extra;
   return Math.max(10,Math.round(seconds/300)*5);
 }
 
 export const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/DAY);
 
 // ── Las cuatro partes de una clase con objetivo ───────────────────────
-// Lo que vuelve hoy: la clase anterior y las de hace 3, 7, 14, 30, 60 y 90 clases, más lo
-// fallado. Se reparte por turnos para que lo antiguo no quede fuera por lo reciente.
-export function classReviewItems(state,{limit=DAILY_REVIEW_LIMIT}={}){
-  const classes=(state?.classes||[]).filter(entry=>entry.completedDate&&entry.items?.length),byNumber=new Map(classes.map(entry=>[entry.number,entry])),last=classes.at(-1)?.number;
-  if(!last)return[];
-  const picked=new Map(),add=item=>{if(item&&!picked.has(item.target))picked.set(item.target,item);};
-  for(const entry of classes.slice(-5))for(const target of entry.weak||[])add(entry.items.find(item=>item.target===target));
-  const queues=[0,2,6,13,29,59,89].map(offset=>[...(byNumber.get(last-offset)?.items||[])]);
-  while(picked.size<limit&&queues.some(queue=>queue.length))for(const queue of queues)if(picked.size<limit)add(queue.shift());
-  return[...picked.values()].slice(0,limit);
+// Memoria de cada palabra: cuanto mejor la recuerdas, más tarda en volver. Lo nuevo vuelve al
+// día siguiente. Lo fallado vuelve mañana y por delante de todo; lo atrasado no se pierde,
+// espera su turno por orden de antigüedad. Va por días reales: saltarte días no rompe nada.
+export const REVIEW_INTERVALS=Object.freeze([1,6,21,60,150]);
+const addDays=(key,days)=>{const date=new Date(`${key}T12:00:00`);date.setDate(date.getDate()+days);return dateKey(date);};
+
+export function classReviewItems(state,{limit=DAILY_REVIEW_LIMIT,now=new Date()}={}){
+  const today=dateKey(now),due=new Map();
+  for(const entry of state?.classes||[]){
+    if(!entry.completedDate)continue;
+    for(const item of[...(entry.items||[]),...(entry.words||[])]){
+      const memory=state.memory?.[item.target]||{box:0,due:addDays(entry.completedDate,1)};
+      if(memory.due<=today&&!due.has(item.target))due.set(item.target,{item,memory});
+    }
+  }
+  return[...due.values()].sort((a,b)=>Number(Boolean(b.memory.failed))-Number(Boolean(a.memory.failed))||a.memory.due.localeCompare(b.memory.due)).slice(0,limit).map(({item,memory})=>({...item,box:memory.box}));
+}
+
+// reviewed: lo que tocaba repasar. failed: lo que salió mal, en el repaso o en la clase.
+export function recordReview(state,{reviewed=[],failed=[]},now=new Date()){
+  const today=dateKey(now),memory={...state.memory},wrong=new Set(failed);
+  for(const target of new Set([...reviewed,...failed])){
+    const box=memory[target]?.box||0;
+    memory[target]=wrong.has(target)?{box:Math.max(0,box-2),due:addDays(today,1),failed:true}:{box:Math.min(REVIEW_INTERVALS.length-1,box+1),due:addDays(today,REVIEW_INTERVALS[Math.min(REVIEW_INTERVALS.length-1,box+1)])};
+  }
+  return{...state,memory};
+}
+
+// Un papel en la conversación: lo que dice el otro lo oyes, lo tuyo lo dices de memoria.
+const ROLEPLAY_LINES=12;
+export function roleplayScript(lines){
+  const counts=new Map();
+  for(const line of lines||[])if(line.speaker&&!/narrador/i.test(line.speaker))counts.set(line.speaker,(counts.get(line.speaker)||0)+1);
+  const speakers=[...counts.entries()],role=speakers.slice(1).sort((a,b)=>b[1]-a[1])[0]?.[0]||'',shown=(lines||[]).slice(0,ROLEPLAY_LINES);
+  if(!role||shown.filter(line=>line.speaker===role).length<2)return null;
+  return{role,turns:shown.map(line=>({line,mine:line.speaker===role}))};
 }
 
 // Presentación: se enseña de una en una, y cada dos se comprueba que se distinguen.
@@ -315,8 +346,38 @@ export function buildClassClose(entry,pool,{seed,typing='',production=[]}){
   const order=shuffle(entry.items,`${seed}c`),typed=typing?order.filter(item=>[...item.target].length<=45).slice(0,3).map(item=>typedRecall(item,`${seed}c`,typing)):[];
   const recall=order.filter(item=>!typed.some(activity=>activity.itemTarget===item.target)).slice(0,replies.length?2:3).map(item=>recallChoice(item,pool,`${seed}c`));
   const task=entry.task?[{id:`daily-task-${seed}`,type:'teach_concept',task:true,prompt:'Tu turno',target:'',options:[],answer:'',explanation:entry.task,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}]:[];
-  return[...replies,...recall,...typed,...production,...task];
+  const written=entry.write?[{id:`daily-write-${seed}`,type:'teach_concept',task:true,writing:true,prompt:'Escribe',target:'',options:[],answer:'',explanation:entry.write.prompt,model:entry.write.model,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}]:[];
+  return[...replies,...recall,...typed,...production,...written,...task];
 }
+
+// Entender el texto y aplicar la regla de hoy, antes de la práctica de vocabulario.
+export function buildTextChecks(entry,seed){
+  const questions=(entry.questions||[]).map(([prompt,answer,...others],index)=>({id:`daily-text-${seed}-${index}`,type:'select_translation',dailyKind:'text',prompt,target:'',targetIsSpanish:true,options:shuffle([answer,...others],`${seed}q${index}`),answer,explanation:`Según el texto: ${answer}`,audio:'',slow_audio:'',tags:['daily'],xp:10}));
+  const drills=(entry.drills||[]).map(([prompt,...answers],index)=>({id:`daily-drill-${seed}-${index}`,type:'typed_translation',dailyKind:'drill',prompt,target:'',instruction:'Aplica la regla de hoy.',answer:answers[0],accepted_answers:answers,allow_minor_typos:true,answer_policy:'spelling_tolerant',explanation:`Una respuesta correcta: «${answers[0]}».`,audio:'',slow_audio:'',tags:['daily'],xp:15}));
+  return[...questions,...drills];
+}
+
+// Prueba de nivel: sin ayudas, de lo fácil (reconocer) a lo difícil (producir).
+export const EXAM_PASS=70;
+export function buildExamSet(items,pool,{seed,language='',typing=''}){
+  const order=shuffle(items,seed),third=Math.ceil(order.length/3);
+  const produce=item=>(typing&&[...item.target].length<=45?typedRecall(item,seed,typing):buildSentence(item,seed,language))||recallChoice(item,pool,seed);
+  return[...order.slice(0,third).map(item=>listenMeaning(item,pool,seed)),...order.slice(third,third*2).map(item=>recallChoice(item,pool,seed)),...order.slice(third*2).map(produce)];
+}
+
+// Lectura: entender frases del texto, oírlas sin apoyo y escribir una al dictado.
+export function buildReadingChecks(lines,{seed,dictate=2}={}){
+  const order=shuffle(lines,seed),meanings=order.slice(0,4).map(item=>listenMeaning(item,lines,seed));
+  const typed=order.slice(4,4+dictate).map(item=>baseActivity(item,`daily-dictado-${seed}-${hash(item.target)}`,{type:'typed_translation',dailyKind:'dictation',prompt:'Escucha y escribe la frase',target:'',instruction:'Escríbela tal como la oyes.',answer:item.target,accepted_answers:[item.target],allow_minor_typos:true,answer_policy:'spelling_tolerant',explanation:`La frase era «${item.target}»: ${item.meaning}`}));
+  return[...meanings,...typed];
+}
+
+export const buildWordChecks=(words,pool,{seed})=>shuffle(words,seed).map(item=>recallChoice(item,pool,seed));
+
+export const buildOutputCards=(output,{seed,language=''})=>[{id:`daily-write-free-${seed}`,type:'teach_concept',task:true,writing:true,prompt:'Escribe',target:'',options:[],answer:'',explanation:`En ${language}: ${output.write}`,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false},{id:`daily-speak-${seed}`,type:'teach_concept',task:true,prompt:'Habla',target:'',options:[],answer:'',explanation:`En voz alta y sin mirar nada: ${output.speak}`,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}];
+
+// El repaso de la semana vuelve a explicar cada regla, sin tarjetas de palabras.
+export const buildRecapRules=(rules,seed)=>(rules||[]).map((explanation,index)=>({id:`daily-recap-rule-${seed}-${index}`,type:'teach_concept',rule:true,prompt:'Recuerda',target:'',options:[],answer:'',explanation,audio:'',slow_audio:'',examples:[],tags:['daily'],xp:2,gradable:false}));
 
 // ── Camino propio de la clase del día ──────────────────────────────────
 // La clase ya no sigue lecciones, unidades ni exámenes: toma las siguientes N

@@ -5,21 +5,23 @@ export const RECAP_STYLES=[
   {id:'kawaii',name:'Anime kawaii',load:()=>import('./kawaii.js')},
   {id:'shadow',name:'Teatro de sombras',load:()=>import('./shadow.js')},
   {id:'techglow',name:'Neón tecnológico',load:()=>import('./techglow.js')},
-  {id:'papercraft',name:'Maqueta de papel',load:()=>import('./papercraft.js')},
-  {id:'ukiyoe',name:'Grabado ukiyo-e',load:()=>import('./ukiyoe.js')},
+  {id:'papercraft',heavy:true,name:'Maqueta de papel',load:()=>import('./papercraft.js')},
+  {id:'ukiyoe',heavy:true,name:'Grabado ukiyo-e',load:()=>import('./ukiyoe.js')},
   {id:'origami',name:'Origami',load:()=>import('./origami.js')},
   {id:'noir',name:'Cine negro',load:()=>import('./noir.js')},
   {id:'halftone',name:'Cómic pop',load:()=>import('./halftone.js')},
-  {id:'claymation',name:'Plastilina',load:()=>import('./claymation.js')},
+  {id:'claymation',heavy:true,name:'Plastilina',load:()=>import('./claymation.js')},
 ];
 
 // Un estilo al azar cada día, fijo durante el día y distinto al de ayer.
 const dayHash=text=>{let h=2166136261;for(const ch of text){h^=ch.codePointAt(0);h=Math.imul(h,16777619);}return h>>>0;};
+// Los estilos pesados traban los móviles: se conservan, pero no entran en la rotación.
+const LIGHT_STYLES=RECAP_STYLES.filter(style=>!style.heavy);
 const dayKey=date=>`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
 export function styleIndexForDay(date=new Date(),salt=''){
-  const pick=day=>dayHash(`${dayKey(day)}|${salt}`)%RECAP_STYLES.length;
+  const pick=day=>dayHash(`${dayKey(day)}|${salt}`)%LIGHT_STYLES.length;
   const today=pick(date),yesterday=pick(new Date(date.getTime()-86400000));
-  return today===yesterday?(today+1)%RECAP_STYLES.length:today;
+  return RECAP_STYLES.indexOf(LIGHT_STYLES[today===yesterday?(today+1)%LIGHT_STYLES.length:today]);
 }
 
 export async function loadRecapStyle(id){

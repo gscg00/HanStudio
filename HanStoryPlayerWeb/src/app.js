@@ -12,6 +12,7 @@ import {languageSummaries,featuredSummary,bestStreak} from './home_summary.js';
 import './daily_game.js';
 import './profile_ui.js';
 import './videos_ui.js';
+import './notebook_ui.js';
 const $=s=>document.querySelector(s), base=new URL('.',location.href), state={catalog:[],library:[],manifests:new Map(),book:null,tracks:[],index:0,tab:'online',language:null,mode:null,topicIndex:null,topic:null,initialized:false,currentLesson:null,inlineIndex:null,japaneseAudio:{}}; const audio=$('#audio'),inlineAudio=new Audio(),courseAudio=new Audio();
 document.title=BRANDING.appName;$('#brand-eyebrow').textContent=BRANDING.eyebrow;$('#brand-eyebrow').hidden=!BRANDING.eyebrow;$('#brand-title').textContent=BRANDING.heroTitle;$('#brand-subtitle').textContent=BRANDING.heroSubtitle;$('#brand-subtitle').hidden=!BRANDING.heroSubtitle;
 $('#breadcrumb').insertAdjacentHTML('afterend','<div id="nav-actions" class="nav-actions" hidden><button data-nav="home">Inicio</button><button id="nav-course" data-nav="course">Curso de entrada</button></div>');document.querySelector('#player-view>.back').insertAdjacentHTML('afterend',' <button id="next-lesson" hidden>Siguiente lección →</button>');document.querySelector('.transport').insertAdjacentHTML('afterend','<button id="next-lesson-player" class="primary" hidden>Siguiente lección →</button><p id="story-xp-note" class="story-xp-note" hidden aria-live="polite"></p>');
