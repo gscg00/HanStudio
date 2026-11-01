@@ -11,7 +11,7 @@ import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustratio
 import{recognizeGuidedSpeech,speechRecognitionSupport}from'./guided_speech_recognition.js';
 import{evaluateGuidedAnswer}from'./guided_course_answers.js';
 import{DAILY_PHASES,advanceLearnIndex,estimatedMinutes,EXAM_PASS,buildClassClose,buildClassPractice,buildCloseSet,buildExamSet,buildLearnSet,buildOutputCards,buildReadingChecks,buildRecapRules,buildTextChecks,buildWordChecks,buildReviewSet,buildSentence,classReviewItems,recordReview,roleplayScript,typedRecall,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
-import{BOOK_PATH,bookLessons,dailyWords,outputPrompts,recycledLines,studyDose}from'./study_plan.js';
+import{BOOK_PATH,bookLessons,dailyWords,deepLines,outputPrompts,recycledLines,studyDose}from'./study_plan.js';
 import{WORD_PACKS}from'./data/word_packs.js';
 import{CLASS_MODULES,LATIN_SCRIPT,STORY_UNITS,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
 
@@ -49,7 +49,7 @@ Object.assign(proto,{
     return this.daily;
   },
   // Las grabaciones de los libros se oyen igual que las del curso.
-  registerBookAudio(entry){for(const item of[...(entry.book?.lines||[]),...(entry.words||[])])if(item.file)this.audioManifest[item.audio]=item.file;},
+  registerBookAudio(entry){for(const item of[...(entry.book?.lines||[]),...(entry.deep||[]),...(entry.words||[])])if(item.file)this.audioManifest[item.audio]=item.file;},
   reviewLimit(){return studyDose(this.language).reviews;},
   async nextBookLesson(){
     const used=this.daily.classes.filter(entry=>entry.book?.code).length;let skip=used;
@@ -67,7 +67,7 @@ Object.assign(proto,{
     const number=this.daily.classes.length,dose=studyDose(this.language),lesson=await this.nextBookLesson(),lines=lesson?.lines||recycledLines(this.daily,{seed:number});
     const book=lines.length?{code:lesson?.code||'',title:lesson?`${lesson.title} · ${lesson.number}`:'Escucha otra vez',lines}:null;
     const words=dailyWords(this.daily,{bookWords:lesson?.words||[],pack:WORD_PACKS[this.language]||[],limit:dose.words});
-    return{book,words,output:outputPrompts(level,number)};
+    return{book,words,deep:deepLines(this.daily),output:outputPrompts(level,number)};
   },
   async saveDaily(){await this.put('metadata',this.daily).catch(()=>{});},
 
@@ -118,6 +118,7 @@ Object.assign(proto,{
     const details={review:`${review.length} palabras y frases de clases anteriores`,listen:entry.story?`Escucha la historia «${entry.story}»`:dialogue?'Escucha una conversación con lo de hoy':'Escucha, lee y repite lo de hoy',learn:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
     if(entry.stage==='exam')details.practice=`${entry.items.length} preguntas sin ayuda · aprobar con ${EXAM_PASS}%`;
     if(entry.stage==='recap')details.learn='Vuelve a ver las reglas de la semana';
+    if(entry.deep?.length)details.deep=`${entry.deep.length} frases de los últimos días`;
     if(entry.book)details.reading=`${entry.book.lines.length} frases de «${entry.book.title}»`;
     if(entry.words?.length)details.words=`${entry.words.length} palabras nuevas`;
     if(entry.output)details.output='Un texto corto y unos minutos hablando';
@@ -167,7 +168,7 @@ Object.assign(proto,{
     if(entry.kind==='reading')return[];
     const review=entry.phasesDone.includes('review')||classReviewItems(this.daily,{limit:this.reviewLimit()}).some(item=>!entry.items.some(today=>today.target===item.target));
     if(entry.stage==='exam')return DAILY_PHASES.filter(phase=>phase.id==='practice');
-    return DAILY_PHASES.filter(phase=>(phase.id!=='review'||review)&&(phase.id!=='listen'||entry.items.length)&&(entry.stage!=='recap'||phase.id!=='learn'||entry.rules?.length)&&(phase.id!=='reading'||entry.book)&&(phase.id!=='words'||entry.words?.length)&&(phase.id!=='output'||entry.output));
+    return DAILY_PHASES.filter(phase=>(phase.id!=='review'||review)&&(phase.id!=='listen'||entry.items.length)&&(entry.stage!=='recap'||phase.id!=='learn'||entry.rules?.length)&&(phase.id!=='reading'||entry.book)&&(phase.id!=='words'||entry.words?.length)&&(phase.id!=='output'||entry.output)&&(phase.id!=='deep'||entry.deep?.length));
   },
 
   async startPhase(phaseId){
@@ -185,6 +186,10 @@ Object.assign(proto,{
     if(phase.id==='reading'){
       if(!entry.book)return this.finishPhase(phase,null,{skip:true});
       return this.renderListen(entry.book.lines,0,{phase:'reading'});
+    }
+    if(phase.id==='deep'){
+      if(!entry.deep?.length)return this.finishPhase(phase,null,{skip:true});
+      return this.renderListen(entry.deep,0,{phase:'deep'});
     }
     if(phase.id==='words'){
       if(!entry.words?.length)return this.finishPhase(phase,null,{skip:true});
@@ -332,7 +337,7 @@ Object.assign(proto,{
     const same=this.dailyListen?.lines===lines;
     this.dailyListen={lines,step,current:-1,replay:Boolean(this.dailyListen?.replay&&same),phase:phase||(same?this.dailyListen.phase:null)};
     const script=roleplayScript(lines),steps=['Solo escucha','Lee y escucha','Repite en voz alta',...(script?['Tu papel']:[])];
-    const lang=esc(this.definition.htmlLang),listenTitle=this.dailyListen.phase==='reading'?currentClass(this.daily)?.book?.title:currentClass(this.daily)?.story;
+    const lang=esc(this.definition.htmlLang),listenTitle=this.dailyListen.phase==='reading'?currentClass(this.daily)?.book?.title:this.dailyListen.phase==='deep'?'los textos de esta semana':currentClass(this.daily)?.story;
     let body='';
     const stories=lines.some(line=>line.story!==undefined)?this.dailyStories||[]:[];
     const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}" dir="auto">${esc(line.target)}</span>${line.reading?`<span class="dc-line-reading">${esc(line.reading)}</span>`:''}<span class="dc-line-es">${esc(line.meaning)}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
@@ -566,7 +571,7 @@ Object.assign(proto,{
     if(name==='shadow-again')return this.shadowLine('normal');
     if(name==='shadow-slow')return this.shadowLine('slow');
     if(name==='shadow-next'){this.dailyShadowIndex=(this.dailyShadowIndex||0)+1;return this.renderListen(this.dailyListen.lines,2);}
-    if(name==='listen-finish'){if(this.dailyListen?.replay){this.dailyListen=null;return this.renderToday();}if(this.dailyListen?.phase==='reading'){const lines=this.dailyListen.lines,entry=currentClass(this.daily),phase=DAILY_PHASES.find(item=>item.id==='reading');this.dailyListen=null;return this.runSet(phase,buildReadingChecks(lines,{seed:`${entry.number}-reading`}));}this.dailyListen=null;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id==='listen'),null);}
+    if(name==='listen-finish'){if(this.dailyListen?.replay){this.dailyListen=null;return this.renderToday();}if(this.dailyListen?.phase==='reading'){const lines=this.dailyListen.lines,entry=currentClass(this.daily),phase=DAILY_PHASES.find(item=>item.id==='reading');this.dailyListen=null;return this.runSet(phase,buildReadingChecks(lines,{seed:`${entry.number}-reading`}));}const listenPhase=this.dailyListen?.phase==='deep'?'deep':'listen';this.dailyListen=null;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id===listenPhase),null);}
     if(name==='replay-listen'){const lines=this.listenLines(currentClass(this.daily));if(!lines.length)return;this.renderListen(lines,1);this.dailyListen.replay=true;return;}
     if(name==='role-speak')return this.roleSpeak();
     if(name==='role-show'){this.dailyRoleShown=true;return this.renderRole();}

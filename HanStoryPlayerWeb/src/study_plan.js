@@ -49,6 +49,12 @@ export function recycledLines(state,{count=8,seed=0}={}){
   return Array.from({length:count},(_,index)=>lines[(start+index*step)%lines.length]).filter(line=>{if(seen.has(line.target))return false;seen.add(line.target);return true;});
 }
 
+// Escucha profunda: los textos de los últimos días, sin repetir frases.
+export function deepLines(state,{days=5,limit=30}={}){
+  const seen=new Set();
+  return(state?.classes||[]).slice(-days).flatMap(entry=>entry.book?.lines||[]).filter(line=>{if(seen.has(line.target))return false;seen.add(line.target);return true;}).slice(-limit);
+}
+
 const promptLevel=level=>OUTPUT_PROMPTS[level]?level:level==='B2'?'B1+':'A1';
 export function outputPrompts(level,number){
   const set=OUTPUT_PROMPTS[promptLevel(level)];

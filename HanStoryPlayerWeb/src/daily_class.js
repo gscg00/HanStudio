@@ -53,6 +53,7 @@ export const DAILY_PHASES=Object.freeze([
   {id:'close',title:'Úsalo',short:'Úsalo',minutes:5,icon:'★',description:'Responde como en una conversación real y dilo con tus propias palabras.'},
   {id:'reading',title:'Lectura',short:'Lectura',minutes:20,icon:'▤',description:'Escucha y lee un texto más largo, repítelo y comprueba que lo entendiste.'},
   {id:'words',title:'Vocabulario',short:'Vocabulario',minutes:12,icon:'＋',description:'Palabras nuevas que volverán en tus repasos.'},
+  {id:'deep',title:'Escucha profunda',short:'Escucha',minutes:15,icon:'♫',description:'Vuelve a oír los textos de esta semana, primero sin mirar y luego repitiendo.'},
   {id:'output',title:'Escribe y habla',short:'Producción',minutes:15,icon:'✍',description:'Sin ayuda: primero escribes y luego hablas en voz alta.'},
 ]);
 
@@ -267,7 +268,7 @@ export function listeningLines(todayItems,limit=12){
 // Tiempo real de una clase, redondeado de 5 en 5: se dice antes de empezar para que no haya sorpresas.
 export function estimatedMinutes(entry,reviewCount=0){
   if(entry.stage==='exam')return Math.max(10,Math.round((entry.items?.length||0)*18/300)*5);
-  const items=entry.items?.length||0,lines=entry.lines?.length||items,extra=(entry.questions?.length||0)*25+(entry.drills?.length||0)*40+(entry.write?420:0)+(entry.rules?.length||0)*30+(entry.book?.lines?.length||0)*40+(entry.book?120:0)+(entry.words?.length||0)*40+(entry.output?660:0),seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*(roleplayScript(entry.lines)?27:22)+(entry.stage?0:items*28)+18*11+(entry.production?240:0)+150+extra;
+  const items=entry.items?.length||0,lines=entry.lines?.length||items,extra=(entry.questions?.length||0)*25+(entry.drills?.length||0)*40+(entry.write?420:0)+(entry.rules?.length||0)*30+(entry.book?.lines?.length||0)*40+(entry.book?120:0)+(entry.words?.length||0)*40+(entry.output?660:0)+(entry.deep?.length||0)*30,seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*(roleplayScript(entry.lines)?27:22)+(entry.stage?0:items*28)+18*11+(entry.production?240:0)+150+extra;
   return Math.max(10,Math.round(seconds/300)*5);
 }
 

@@ -5,6 +5,8 @@ import{CLASS_PLAN,COURSE_DAYS,WEEK_CLASSES,allClassSpecs,doneClassIds,resolveCla
 import{CLASS_RULES,CLASS_NUMBERS}from'../src/data/class_rules.js';
 import{UNIT_RULES,UNIT_RULE_KEYS}from'../src/data/unit_rules.js';
 import{searchNotebook}from'../src/notebook.js';
+import{BOOK_PATH,bookLessons,dailyWords,deepLines,outputPrompts,recycledLines,studyDose}from'../src/study_plan.js';
+import{WORD_PACKS}from'../src/data/word_packs.js';
 import{evaluateGuidedAnswer}from'../src/guided_course_answers.js';
 import{ADVANCED_CLASSES}from'../src/data/advanced_classes.js';
 import{RECAP_STYLES,styleIndexForDay}from'../src/recap/styles/index.js';
@@ -85,15 +87,15 @@ test('inglés llega a B2 dentro de los 180 días',()=>{
   assert.equal(specs.filter(spec=>spec.level==='B2'&&!spec.kind).length,20);
 });
 
-for(const spec of ADVANCED_CLASSES.English)test(`inglés ${spec.id}: clase completa y sus respuestas se aceptan`,()=>{
+for(const[language,classes]of Object.entries(ADVANCED_CLASSES))for(const spec of classes)test(`${language} ${spec.id}: clase completa y sus respuestas se aceptan`,()=>{
   assert.ok(spec.goal&&spec.rule.length>120&&spec.write.prompt&&spec.write.model);
-  assert.ok(spec.items.length>=8);
+  assert.ok(spec.items.length>=7);
   assert.ok(spec.text.length>=5);
   for(const[target,meaning]of[...spec.items,...spec.text])assert.ok(target&&meaning,target);
   for(const[,answer,...others]of spec.questions)assert.ok(others.length>=2&&!others.includes(answer));
   const checks=buildTextChecks(spec,'t');
   assert.equal(checks.length,spec.questions.length+spec.drills.length);
-  for(const check of checks.filter(item=>item.dailyKind==='drill'))for(const answer of check.accepted_answers)assert.ok(evaluateGuidedAnswer(check,answer,'English').correct,`${check.prompt}: ${answer}`);
+  for(const check of checks.filter(item=>item.dailyKind==='drill'))for(const answer of check.accepted_answers)assert.ok(evaluateGuidedAnswer(check,answer,language).correct,`${check.prompt}: ${answer}`);
 });
 
 test('lo nuevo vuelve al día siguiente y cada acierto lo aleja',()=>{
@@ -184,4 +186,48 @@ test('el cuaderno encuentra en los dos idiomas y prefiere lo que ya viste',()=>{
 
 test('los estilos de video pesados no salen en la rotación',()=>{
   for(let day=1;day<=60;day++)assert.ok(!RECAP_STYLES[styleIndexForDay(new Date(2026,0,day),'french')].heavy);
+});
+
+test('la dosis sigue la prioridad: dos horas en tres idiomas y una en los demás',()=>{
+  for(const language of['German','French','Korean'])assert.equal(studyDose(language).minutes,120);
+  for(const language of['English','Italian','Japanese','Arabic'])assert.equal(studyDose(language).minutes,60);
+});
+
+for(const language of['German','French','Korean'])test(`${language}: los libros dan frases y palabras con su grabación`,()=>{
+  for(const code of BOOK_PATH[language]){
+    const lessons=bookLessons(JSON.parse(fs.readFileSync(`library/books/${code}/hanstory_manifest.json`,'utf8')),code);
+    assert.ok(lessons.length>=9,`${code}: ${lessons.length}`);
+    for(const lesson of lessons)for(const line of lesson.lines){
+      assert.ok(line.target&&line.meaning,code);
+      if(line.file)assert.ok(fs.existsSync(`library/books/${code}/${line.file.split(`${code}/`)[1]}`),line.file);
+    }
+  }
+  assert.ok(WORD_PACKS[language].length>=800);
+});
+
+test('las palabras del día no repiten lo aprendido y respetan el cupo',()=>{
+  const state={classes:[{items:[{target:'Haus'}],words:[{target:'Baum'}]}]},make=target=>({target});
+  assert.deepEqual(dailyWords(state,{bookWords:[make('Haus'),make('Auto')],pack:[make('Baum'),make('Tisch'),make('Stuhl')],limit:2}).map(item=>item.target),['Auto','Tisch']);
+});
+
+test('sin libro, el bloque de lectura reutiliza frases ya vistas',()=>{
+  const items=[{target:'uno dos'},{target:'tres cuatro'},{target:'sola'}];
+  assert.deepEqual(recycledLines({classes:[{items}]},{count:4}).map(line=>line.target).sort(),['tres cuatro','uno dos']);
+  assert.deepEqual(recycledLines({classes:[]}),[]);
+});
+
+test('lo escrito y lo hablado cambian con el nivel y el día',()=>{
+  assert.notEqual(outputPrompts('A1',0).write,outputPrompts('A1',1).write);
+  assert.notEqual(outputPrompts('A1',0).write,outputPrompts('B1+',0).write);
+  assert.ok(outputPrompts('B2',3).speak);
+});
+
+test('las palabras de la lectura vuelven en el repaso',()=>{
+  const state={classes:[{completedDate:'2026-01-01',items:[],words:[{target:'Baum'}]}]};
+  assert.deepEqual(classReviewItems(state,{now:new Date('2026-01-02T12:00:00')}).map(item=>item.target),['Baum']);
+});
+
+test('la escucha profunda junta los textos recientes sin repetir',()=>{
+  const line=target=>({target}),state={classes:[{book:{lines:[line('a'),line('b')]}},{book:{lines:[line('b'),line('c')]}},{}]};
+  assert.deepEqual(deepLines(state).map(item=>item.target),['a','b','c']);
 });

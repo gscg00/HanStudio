@@ -7,10 +7,13 @@ const norm=value=>String(value??'').normalize('NFD').replace(/\p{Mn}/gu,'').toLo
 // Una entrada por clase, en orden. seen: ya la hiciste.
 export function notebookClasses(units,{language='',stories=null,state=null}={}){
   const done=doneClassIds(state);
-  return allClassSpecs(units,{language,stories}).filter(spec=>!spec.kind).map((spec,index)=>{
+  const classes=allClassSpecs(units,{language,stories}).filter(spec=>!spec.kind).map((spec,index)=>{
     const{id,title,level,items,rule}=resolveClass(spec,units,language);
     return{id,number:index+1,title,level,items,rule,seen:done.has(id)};
   });
+  // El vocabulario de cada día no pertenece a una clase del plan, pero también se consulta.
+  const words=(state?.classes||[]).flatMap(entry=>entry.words||[]);
+  return words.length?[...classes,{id:'vocabulario',number:classes.length+1,title:'Vocabulario de tus lecturas',level:'',items:words,rule:'',seen:true}]:classes;
 }
 
 // Busca en las dos direcciones (idioma y español) y en las explicaciones de gramática.
