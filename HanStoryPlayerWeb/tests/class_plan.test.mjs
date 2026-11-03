@@ -1,17 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import{CLASS_PLAN,COURSE_DAYS,WEEK_CLASSES,allClassSpecs,doneClassIds,resolveClass,planNextLesson,planProgress,unitInventory,LATIN_SCRIPT}from'../src/class_plan.js';
+import{registerComics,unplacedScenes,COMIC_COVERAGE,comicCoverage,CLASS_PLAN,COURSE_DAYS,WEEK_CLASSES,placementSample,allClassSpecs,doneClassIds,resolveClass,planNextLesson,planProgress,unitInventory,LATIN_SCRIPT}from'../src/class_plan.js';
 import{CLASS_RULES,CLASS_NUMBERS}from'../src/data/class_rules.js';
 import{UNIT_RULES,UNIT_RULE_KEYS}from'../src/data/unit_rules.js';
 import{searchNotebook}from'../src/notebook.js';
-import{BOOK_PATH,bookLessons,dailyWords,deepLines,outputPrompts,recycledLines,studyDose}from'../src/study_plan.js';
+import{STORY_EVERY,nextStory,BOOK_PATH,bookLessons,dailyWords,deepLines,outputPrompts,recycledLines,studyDose}from'../src/study_plan.js';
 import{WORD_PACKS}from'../src/data/word_packs.js';
+import{LONG_READINGS}from'../src/data/long_readings.js';
 import{evaluateGuidedAnswer}from'../src/guided_course_answers.js';
 import{ADVANCED_CLASSES}from'../src/data/advanced_classes.js';
 import{RECAP_STYLES,styleIndexForDay}from'../src/recap/styles/index.js';
 import{nextFps}from'../src/recap/recap_pace.js';
-import{EXAM_PASS,REVIEW_INTERVALS,buildExamSet,buildRecapRules,buildTextChecks,classReviewItems,recallChoice,recordReview,roleplayScript}from'../src/daily_class.js';
+import{buildComicAnalysis,placementLevel,EXAM_PASS,REVIEW_INTERVALS,buildExamSet,buildRecapRules,buildTextChecks,classReviewItems,recallChoice,recordReview,roleplayScript}from'../src/daily_class.js';
+
+// Las escenas de cómic se registran como lo hace la página al abrir cada idioma.
+for(const language of['French','German','Korean','English'])registerComics(language,(await import(`../src/data/comics/${language}.js`)).COMIC_SCENES);
 
 const LANGUAGES=['English','French','German','Italian','Portuguese','Japanese','Korean','Russian','Chinese','Arabic'];
 const load=language=>{const course=JSON.parse(fs.readFileSync(`library/courses/${language}/course.json`,'utf8'));return course.units.map(unit=>{const path=`library/courses/${language}/units/${unit.id}.json`;return fs.existsSync(path)?{...JSON.parse(fs.readFileSync(path,'utf8')),id:unit.id,title:unit.title,description:unit.description}:null;}).filter(Boolean);};
@@ -230,4 +234,92 @@ test('las palabras de la lectura vuelven en el repaso',()=>{
 test('la escucha profunda junta los textos recientes sin repetir',()=>{
   const line=target=>({target}),state={classes:[{book:{lines:[line('a'),line('b')]}},{book:{lines:[line('b'),line('c')]}},{}]};
   assert.deepEqual(deepLines(state).map(item=>item.target),['a','b','c']);
+});
+
+for(const[language,stories]of Object.entries(LONG_READINGS))test(`${language}: lecturas largas completas y en orden de dificultad`,()=>{
+  const order=['A2','B1','B1+'];let last=0;
+  assert.ok(stories.length>=24);
+  assert.equal(new Set(stories.map(story=>story.id)).size,stories.length);
+  for(const story of stories){
+    const rank=order.indexOf(story.level);
+    assert.ok(rank>=last,story.id);last=rank;
+    assert.ok(story.text.length>=10,story.id);
+    for(const[target,meaning]of story.text)assert.ok(target&&meaning,story.id);
+    assert.equal(story.questions.length,3,story.id);
+    for(const[,answer,...others]of story.questions)assert.ok(others.length>=2&&!others.includes(answer),story.id);
+  }
+});
+
+test('la lectura larga empieza en A2 y llega cada pocas clases',()=>{
+  assert.equal(nextStory({classes:[]},'German','A1'),null);
+  const first=nextStory({classes:[]},'German','A2');
+  assert.equal(first.id,'de-l01');
+  assert.equal(nextStory({classes:[{level:'A2',longread:first}]},'German','A2'),null);
+  const later=nextStory({classes:[{level:'A2',longread:first},...Array.from({length:STORY_EVERY},()=>({level:'A2'}))]},'German','A2');
+  assert.equal(later.id,'de-l02');
+  assert.equal(nextStory({classes:[]},'Italian','A2'),null);
+});
+
+for(const language of['German','French','Korean','Italian'])test(`${language}: la prueba de nivel cubre cada nivel del plan`,()=>{
+  const ordered=load(language),units=new Map(ordered.map(unit=>[unit.id,unit])),sample=placementSample(units,language);
+  assert.deepEqual(sample.map(part=>part.level),[...new Set(allClassSpecs(units,{language}).filter(spec=>!spec.kind).map(spec=>spec.level))]);
+  for(const part of sample)assert.equal(part.items.length,6,part.level);
+});
+
+test('el nivel estimado es el último aprobado sin saltarse ninguno',()=>{
+  assert.equal(placementLevel([{level:'A1',percentage:90},{level:'A2',percentage:75},{level:'B1',percentage:40}]),'A2');
+  assert.equal(placementLevel([{level:'A1',percentage:50},{level:'A2',percentage:90}]),'');
+  assert.equal(placementLevel([{level:'A1',percentage:100},{level:'A2',percentage:50},{level:'B1',percentage:100}]),'A1');
+});
+
+for(const language of['French','German','Korean'])test(`${language}: las clases de «Lengua real» llegan cuando ya conoces el tema`,()=>{
+  const ordered=load(language),units=new Map(ordered.map(unit=>[unit.id,unit])),specs=allClassSpecs(units,{language}),comics=specs.filter(spec=>spec.comic);
+  assert.ok(comics.length>=8,`${comics.length}`);
+  const placed=new Set(comics.map(spec=>spec.id));
+  assert.ok(unplacedScenes(units,language).every(scene=>!placed.has(scene.id)));
+  assert.ok(planProgress(ordered,{language}).remaining<=COURSE_DAYS);
+  const notes=JSON.parse(fs.readFileSync(`library/comic_notes/${language}.json`,'utf8'));
+  let last=-10;
+  specs.forEach((spec,index)=>{
+    if(!spec.comic)return;
+    assert.notEqual(spec.level,'A1',spec.id);
+    assert.ok(index-last>=5,`${spec.id}: dos escenas en la misma semana`);last=index;
+    assert.ok(spec.resolved.length>=8,spec.id);
+    if(spec.comicKind==='hanja')assert.ok(['B1','B1+','B2'].includes(spec.level),spec.id);
+    for(const item of spec.resolved){
+      assert.ok(notes[item.target],`${spec.id}: «${item.target}» sin análisis`);
+      if(item.file)assert.ok(fs.existsSync(`library/books/${item.file.split('/books/')[1]}`),item.file);
+    }
+    const cards=buildComicAnalysis(spec.resolved,notes,{seed:'t'});
+    assert.ok(cards.every(card=>card.explanation.startsWith('Significa')));
+  });
+  for(const exam of specs.filter(spec=>spec.kind==='exam'))assert.ok(exam.from.every(spec=>!spec.comic));
+});
+
+test('la cobertura cuenta las palabras ya enseñadas',()=>{
+  assert.equal(comicCoverage([['Je vais partir demain']],new Set(['vais','partir','demain']),'French'),1);
+  assert.equal(comicCoverage([['Je vais partir demain']],new Set(['vais']),'French'),1/3);
+  assert.ok(COMIC_COVERAGE>0&&COMIC_COVERAGE<1);
+});
+
+// La interfaz no se importa en los tests (usa el DOM): al menos su sintaxis debe ser válida.
+test('todos los módulos de la página tienen sintaxis válida',async()=>{
+  const{execFileSync}=await import('node:child_process'),os=await import('node:os'),path=await import('node:path');
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'hs-syntax-'));
+  for(const folder of['src','src/data','src/recap','src/recap/styles'])for(const name of fs.readdirSync(folder).filter(file=>file.endsWith('.js'))){
+    const copy=path.join(dir,`${folder.replace(/\//g,'_')}_${name.replace(/\.js$/,'.mjs')}`);
+    fs.copyFileSync(`${folder}/${name}`,copy);
+    assert.doesNotThrow(()=>execFileSync(process.execPath,['--check',copy],{stdio:'pipe'}),`${folder}/${name}`);
+  }
+  fs.rmSync(dir,{recursive:true,force:true});
+});
+
+test('las tarjetas de manga se reparten sin perder ninguna escena',()=>{
+  for(const language of['French','German','Korean']){
+    const ordered=load(language),units=new Map(ordered.map(unit=>[unit.id,unit])),specs=allClassSpecs(units,{language});
+    const scenes=specs.filter(spec=>spec.comic).length+unplacedScenes(units,language).length;
+    assert.ok(scenes>=30,`${language}: ${scenes}`);
+  }
+  const korean=allClassSpecs(new Map(load('Korean').map(unit=>[unit.id,unit])),{language:'Korean'});
+  assert.ok(korean.some(spec=>spec.comicKind==='hanja')||unplacedScenes(new Map(load('Korean').map(unit=>[unit.id,unit])),'Korean').some(scene=>scene.kind==='hanja'));
 });

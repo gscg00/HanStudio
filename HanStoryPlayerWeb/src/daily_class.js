@@ -52,6 +52,8 @@ export const DAILY_PHASES=Object.freeze([
   {id:'practice',title:'Práctica',short:'Práctica',minutes:7,icon:'✎',description:'Primero lo reconoces, luego lo recuerdas y al final armas las frases tú.'},
   {id:'close',title:'Úsalo',short:'Úsalo',minutes:5,icon:'★',description:'Responde como en una conversación real y dilo con tus propias palabras.'},
   {id:'reading',title:'Lectura',short:'Lectura',minutes:20,icon:'▤',description:'Escucha y lee un texto más largo, repítelo y comprueba que lo entendiste.'},
+  {id:'story',title:'Lectura larga',short:'Lectura larga',minutes:20,icon:'❖',description:'Un texto de varios párrafos a tu nivel, con preguntas al final.'},
+  {id:'real',title:'Frases reales',short:'Frases reales',minutes:10,icon:'❝',description:'Frases de manga explicadas una a una: cómo habla la gente de verdad.'},
   {id:'words',title:'Vocabulario',short:'Vocabulario',minutes:12,icon:'＋',description:'Palabras nuevas que volverán en tus repasos.'},
   {id:'deep',title:'Escucha profunda',short:'Escucha',minutes:15,icon:'♫',description:'Vuelve a oír los textos de esta semana, primero sin mirar y luego repitiendo.'},
   {id:'output',title:'Escribe y habla',short:'Producción',minutes:15,icon:'✍',description:'Sin ayuda: primero escribes y luego hablas en voz alta.'},
@@ -268,7 +270,7 @@ export function listeningLines(todayItems,limit=12){
 // Tiempo real de una clase, redondeado de 5 en 5: se dice antes de empezar para que no haya sorpresas.
 export function estimatedMinutes(entry,reviewCount=0){
   if(entry.stage==='exam')return Math.max(10,Math.round((entry.items?.length||0)*18/300)*5);
-  const items=entry.items?.length||0,lines=entry.lines?.length||items,extra=(entry.questions?.length||0)*25+(entry.drills?.length||0)*40+(entry.write?420:0)+(entry.rules?.length||0)*30+(entry.book?.lines?.length||0)*40+(entry.book?120:0)+(entry.words?.length||0)*40+(entry.output?660:0)+(entry.deep?.length||0)*30,seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*(roleplayScript(entry.lines)?27:22)+(entry.stage?0:items*28)+18*11+(entry.production?240:0)+150+extra;
+  const items=entry.items?.length||0,lines=entry.lines?.length||items,extra=(entry.questions?.length||0)*25+(entry.drills?.length||0)*40+(entry.write?420:0)+(entry.rules?.length||0)*30+(entry.book?.lines?.length||0)*40+(entry.book?120:0)+(entry.words?.length||0)*40+(entry.output?660:0)+(entry.deep?.length||0)*30+(entry.real?.lines.length||0)*60+(entry.longread?(entry.longread.lines.length*45+(entry.longread.questions?.length||0)*30):0),seconds=Math.min(reviewCount,DAILY_REVIEW_LIMIT)*11+lines*(roleplayScript(entry.lines)?27:22)+(entry.stage?0:items*28)+18*11+(entry.production?240:0)+150+extra;
   return Math.max(10,Math.round(seconds/300)*5);
 }
 
@@ -375,6 +377,24 @@ export function buildReadingChecks(lines,{seed,dictate=2}={}){
 export const buildWordChecks=(words,pool,{seed})=>shuffle(words,seed).map(item=>recallChoice(item,pool,seed));
 
 export const buildOutputCards=(output,{seed,language=''})=>[{id:`daily-write-free-${seed}`,type:'teach_concept',task:true,writing:true,prompt:'Escribe',target:'',options:[],answer:'',explanation:`En ${language}: ${output.write}`,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false},{id:`daily-speak-${seed}`,type:'teach_concept',task:true,prompt:'Habla',target:'',options:[],answer:'',explanation:`En voz alta y sin mirar nada: ${output.speak}`,audio:'',slow_audio:'',tags:['daily'],xp:5,gradable:false}];
+
+// «Lengua real»: una tarjeta por frase con su sentido, su desglose y sus notas.
+export function buildComicAnalysis(items,notes,{seed}){
+  return items.map((item,index)=>{
+    const[breakdown=[],grammar=[]]=notes?.[item.target]||[];
+    const parts=[`Significa: «${item.meaning}».`,breakdown.length?breakdown.map(([text,meaning,role])=>`• ${text}: ${meaning}${role?` (${role})`:''}`).join('\n'):'',grammar.length?grammar.map(([pattern,explanation])=>`◆ ${pattern}: ${explanation}`).join('\n'):''].filter(Boolean);
+    // El desglose se generó automáticamente: se avisa una vez, al principio.
+    if(index===0)parts.push('Este desglose se hizo de forma automática y puede tener errores. Si algo no cuadra, fíate del sentido natural de la frase.');
+    return{id:`daily-comic-${seed}-${index}`,type:'teach_concept',rule:true,prompt:item.target,target:'',options:[],answer:'',explanation:parts.join('\n\n'),audio:'',slow_audio:'',examples:[item],tags:['daily'],xp:2,gradable:false,itemTarget:item.target};
+  });
+}
+
+// Nivel estimado: el último nivel aprobado sin saltarse ninguno anterior.
+export function placementLevel(scores,pass=EXAM_PASS){
+  let level='';
+  for(const{level:name,percentage}of scores){if(percentage<pass)break;level=name;}
+  return level;
+}
 
 // El repaso de la semana vuelve a explicar cada regla, sin tarjetas de palabras.
 export const buildRecapRules=(rules,seed)=>(rules||[]).map((explanation,index)=>({id:`daily-recap-rule-${seed}-${index}`,type:'teach_concept',rule:true,prompt:'Recuerda',target:'',options:[],answer:'',explanation,audio:'',slow_audio:'',examples:[],tags:['daily'],xp:2,gradable:false}));

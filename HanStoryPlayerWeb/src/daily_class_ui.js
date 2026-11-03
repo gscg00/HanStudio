@@ -10,9 +10,11 @@ import{kanaAnimationHTML}from'./kana_anim.js';
 import{illustrationFor,hasIllustration,sceneFor,sceneSvg}from'./data/illustrations.js';
 import{recognizeGuidedSpeech,speechRecognitionSupport}from'./guided_speech_recognition.js';
 import{evaluateGuidedAnswer}from'./guided_course_answers.js';
-import{DAILY_PHASES,advanceLearnIndex,estimatedMinutes,EXAM_PASS,buildClassClose,buildClassPractice,buildCloseSet,buildExamSet,buildLearnSet,buildOutputCards,buildReadingChecks,buildRecapRules,buildTextChecks,buildWordChecks,buildReviewSet,buildSentence,classReviewItems,recordReview,roleplayScript,typedRecall,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
-import{BOOK_PATH,bookLessons,dailyWords,deepLines,outputPrompts,recycledLines,studyDose}from'./study_plan.js';
+import{DAILY_PHASES,advanceLearnIndex,estimatedMinutes,EXAM_PASS,buildClassClose,buildClassPractice,buildCloseSet,buildExamSet,buildComicAnalysis,buildLearnSet,buildOutputCards,buildReadingChecks,buildRecapRules,buildTextChecks,buildWordChecks,buildReviewSet,buildSentence,classReviewItems,recordReview,roleplayScript,typedRecall,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
+import{BOOK_PATH,bookLessons,dailyWords,deepLines,nextStory,outputPrompts,recycledLines,studyDose}from'./study_plan.js';
 import{WORD_PACKS}from'./data/word_packs.js';
+import{allClassSpecs,placementSample,registerComics,unplacedScenes}from'./class_plan.js';
+import{dateKey,placementLevel}from'./daily_class.js';
 import{CLASS_MODULES,LATIN_SCRIPT,STORY_UNITS,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
@@ -49,12 +51,36 @@ Object.assign(proto,{
     return this.daily;
   },
   // Las grabaciones de los libros se oyen igual que las del curso.
-  registerBookAudio(entry){for(const item of[...(entry.book?.lines||[]),...(entry.deep||[]),...(entry.words||[])])if(item.file)this.audioManifest[item.audio]=item.file;},
+  registerBookAudio(entry){for(const item of[...(entry.items||[]),...(entry.book?.lines||[]),...(entry.deep||[]),...(entry.words||[])])if(item.file)this.audioManifest[item.audio]=item.file;},
   reviewLimit(){return studyDose(this.language).reviews;},
+  // Las escenas de cómic y manga del idioma: se cargan una vez, antes de planear nada.
+  async loadComics(){
+    if(this.comicsLoaded===this.language)return;
+    const module=await import(`./data/comics/${this.definition.directory}.js`).catch(()=>({COMIC_SCENES:[]}));
+    registerComics(this.language,module.COMIC_SCENES);this.comicsLoaded=this.language;
+  },
+  placedComicRanges(){
+    const units=new Map(this.orderedUnits().map(unit=>[unit.id,unit]));
+    return allClassSpecs(units,{language:this.language}).filter(spec=>spec.comicKind==='book').map(({code,from,to})=>({code,from,to}));
+  },
+  // «Frases reales»: unas frases de manga analizadas al día, después de la clase.
+  nextRealPhrases(){
+    const units=new Map(this.orderedUnits().map(unit=>[unit.id,unit])),scenes=unplacedScenes(units,this.language).filter(scene=>scene.kind),seen=this.daily.classes.reduce((sum,entry)=>sum+(entry.real?.lines.length||0),0);
+    // Se reparten para acabarlas antes que el plan: entre 6 y 12 al día.
+    const pending=scenes.reduce((sum,scene)=>sum+scene.lines.length,0)-seen,days=Math.max(1,allClassSpecs(units,{language:this.language}).length-this.daily.classes.length),limit=Math.min(12,Math.max(6,Math.ceil(pending/days)));
+    let skip=seen;
+    for(const scene of scenes){
+      if(skip>=scene.lines.length){skip-=scene.lines.length;continue;}
+      const lines=scene.lines.slice(skip,skip+limit).map(([target,meaning])=>({target,meaning,audio:target,slowAudio:target,reading:'',file:'',activityId:`${scene.id}-${target}`,lessonId:''}));
+      return{title:scene.kind==='hanja'?scene.title:scene.source,lines};
+    }
+    return null;
+  },
   async nextBookLesson(){
     const used=this.daily.classes.filter(entry=>entry.book?.code).length;let skip=used;
     for(const code of BOOK_PATH[this.language]||[]){
-      const lessons=this.bookCache?.[code]||bookLessons(await this.fetch(`library/books/${code}/hanstory_manifest.json`).catch(()=>null),code);
+      // Lo que ya se analiza en las clases de «Lengua real» no vuelve como lectura.
+      const placed=this.placedComicRanges(),lessons=this.bookCache?.[code]||bookLessons(await this.fetch(`library/books/${code}/hanstory_manifest.json`).catch(()=>null),code).filter(lesson=>!placed.some(range=>range.code===code&&lesson.number>=range.from&&lesson.number<=range.to));
       (this.bookCache??={})[code]=lessons;
       if(skip<lessons.length)return lessons[skip];
       skip-=lessons.length;
@@ -67,7 +93,7 @@ Object.assign(proto,{
     const number=this.daily.classes.length,dose=studyDose(this.language),lesson=await this.nextBookLesson(),lines=lesson?.lines||recycledLines(this.daily,{seed:number});
     const book=lines.length?{code:lesson?.code||'',title:lesson?`${lesson.title} · ${lesson.number}`:'Escucha otra vez',lines}:null;
     const words=dailyWords(this.daily,{bookWords:lesson?.words||[],pack:WORD_PACKS[this.language]||[],limit:dose.words});
-    return{book,words,deep:deepLines(this.daily),output:outputPrompts(level,number)};
+    return{book,words,real:level==='A1'?null:this.nextRealPhrases(),deep:deepLines(this.daily),longread:nextStory(this.daily,this.language,level),output:outputPrompts(level,number)};
   },
   async saveDaily(){await this.put('metadata',this.daily).catch(()=>{});},
 
@@ -93,12 +119,13 @@ Object.assign(proto,{
 
   async ensureTodayClass(force=false){
     await this.loadDaily();
+    await this.loadComics();
     const status=dailyStatus(this.daily);
     if(status==='in-progress'||(status==='done-today'&&!force))return currentClass(this.daily);
     const stories=await this.loadClassStories(),plan=planNextLesson(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily,stories});
     if(!plan)return currentClass(this.daily);
     if(plan.mode==='reading')this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items:[],meta:{plan:PLAN_VERSION,kind:'reading',title:'Aprende a leer'}});
-    else{const{id:classId,title,goal,module,level,items,lines,story,replies,rule,task,production,stage,rules,questions,drills,write}=plan.class;const blocks=await this.studyBlocks(stage,level);this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items,meta:{plan:PLAN_VERSION,kind:'class',...blocks,classId,title,goal,module,level,lines,story,replies,rule,task,production,stage,rules,questions,drills,write}});}
+    else{const{id:classId,title,goal,module,level,items,lines,story,replies,rule,task,production,stage,rules,questions,drills,write,comic}=plan.class;const blocks=await this.studyBlocks(stage,level);this.daily=createDailyClass(this.daily,{lessons:plan.lessons,items,meta:{plan:PLAN_VERSION,kind:'class',...blocks,classId,title,goal,module,level,lines,story,replies,rule,task,production,stage,rules,questions,drills,write,comic}});}
     this.registerBookAudio(currentClass(this.daily));
     await this.saveDaily();
     return currentClass(this.daily);
@@ -118,6 +145,9 @@ Object.assign(proto,{
     const details={review:`${review.length} palabras y frases de clases anteriores`,listen:entry.story?`Escucha la historia «${entry.story}»`:dialogue?'Escucha una conversación con lo de hoy':'Escucha, lee y repite lo de hoy',learn:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
     if(entry.stage==='exam')details.practice=`${entry.items.length} preguntas sin ayuda · aprobar con ${EXAM_PASS}%`;
     if(entry.stage==='recap')details.learn='Vuelve a ver las reglas de la semana';
+    if(entry.comic)details.learn=`Analiza las ${entry.items.length} frases de la escena: qué dicen y por qué así`;
+    if(entry.real)details.real=`${entry.real.lines.length} frases de «${entry.real.title}» explicadas`;
+    if(entry.longread)details.story=`«${entry.longread.title}» · ${entry.longread.lines.length} frases y preguntas`;
     if(entry.deep?.length)details.deep=`${entry.deep.length} frases de los últimos días`;
     if(entry.book)details.reading=`${entry.book.lines.length} frases de «${entry.book.title}»`;
     if(entry.words?.length)details.words=`${entry.words.length} palabras nuevas`;
@@ -149,6 +179,17 @@ Object.assign(proto,{
     const typing=LATIN_SCRIPT.has(this.language)?this.definition.name.toLowerCase():'';
     return item=>item.box<2?null:typing&&[...item.target].length<=45?typedRecall(item,seed,typing):buildSentence(item,seed,this.language);
   },
+  // Prueba de nivel: no cambia el plan, solo mide dónde estás de verdad.
+  async startPlacement(){
+    await this.loadDaily();
+    const units=new Map(this.orderedUnits().map(unit=>[unit.id,unit])),sample=placementSample(units,this.language),pool=sample.flatMap(part=>part.items),seed=`placement-${Date.now()}`,typing=LATIN_SCRIPT.has(this.language)?this.definition.name.toLowerCase():'';
+    const activities=sample.flatMap(part=>buildExamSet(part.items,pool,{seed:`${seed}-${part.level}`,language:this.language,typing}).map(activity=>({...activity,placementLevel:part.level})));
+    this.beginActivities(activities,{kind:'placement',phase:{id:'placement',title:'Prueba de nivel'}},'Prueba de nivel');
+  },
+  renderPlacementResult(scores,level){
+    const rows=scores.map(({level:name,correct,total,percentage})=>`<li><b>${esc(name)}</b><span>${correct} de ${total}</span><em>${percentage}%</em></li>`).join('');
+    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">◎</span><span class="dc-eyebrow">PRUEBA DE NIVEL</span><h1>${level?`Tu nivel: ${esc(level)}`:'Aún por debajo de A1'}</h1><p>Cuenta un nivel como superado con ${EXAM_PASS}% o más, sin saltarse ninguno. Es una estimación con pocas preguntas: repítela cada mes para ver tu avance.</p><ul class="dc-placement">${rows}</ul><button class="primary" data-jp-route="profile">Volver al perfil</button></section>`,'Perfil');
+  },
   startKeepReview(){
     const items=classReviewItems(this.daily,{limit:this.reviewLimit()}),seed=`keep-${Date.now()}`,pool=this.daily.classes.flatMap(entry=>entry.items);
     if(!items.length)return this.renderToday();
@@ -168,7 +209,7 @@ Object.assign(proto,{
     if(entry.kind==='reading')return[];
     const review=entry.phasesDone.includes('review')||classReviewItems(this.daily,{limit:this.reviewLimit()}).some(item=>!entry.items.some(today=>today.target===item.target));
     if(entry.stage==='exam')return DAILY_PHASES.filter(phase=>phase.id==='practice');
-    return DAILY_PHASES.filter(phase=>(phase.id!=='review'||review)&&(phase.id!=='listen'||entry.items.length)&&(entry.stage!=='recap'||phase.id!=='learn'||entry.rules?.length)&&(phase.id!=='reading'||entry.book)&&(phase.id!=='words'||entry.words?.length)&&(phase.id!=='output'||entry.output)&&(phase.id!=='deep'||entry.deep?.length));
+    return DAILY_PHASES.filter(phase=>(phase.id!=='review'||review)&&(phase.id!=='listen'||entry.items.length)&&(entry.stage!=='recap'||phase.id!=='learn'||entry.rules?.length)&&(phase.id!=='reading'||entry.book)&&(phase.id!=='words'||entry.words?.length)&&(phase.id!=='output'||entry.output)&&(phase.id!=='deep'||entry.deep?.length)&&(phase.id!=='story'||entry.longread)&&(phase.id!=='real'||entry.real));
   },
 
   async startPhase(phaseId){
@@ -179,6 +220,10 @@ Object.assign(proto,{
       if(phase.id!=='practice')return this.finishPhase(phase,null,{skip:true});
       return this.runSet(phase,buildExamSet(entry.items,this.itemPool(entry,{includeToday:false}),{seed,language:this.language,typing:typingName}));
     }
+    if(entry.comic&&phase.id==='learn'){
+      const notes=await this.fetch(`library/comic_notes/${this.definition.directory}.json`).catch(()=>null);
+      return this.runSet(phase,buildComicAnalysis(entry.items,notes,{seed}));
+    }
     if(entry.stage==='recap'&&phase.id==='learn'){
       const cards=buildRecapRules(entry.rules,seed);
       return cards.length?this.runSet(phase,cards):this.finishPhase(phase,null,{skip:true});
@@ -186,6 +231,15 @@ Object.assign(proto,{
     if(phase.id==='reading'){
       if(!entry.book)return this.finishPhase(phase,null,{skip:true});
       return this.renderListen(entry.book.lines,0,{phase:'reading'});
+    }
+    if(phase.id==='real'){
+      if(!entry.real)return this.finishPhase(phase,null,{skip:true});
+      const notes=await this.fetch(`library/comic_notes/${this.definition.directory}.json`).catch(()=>null);
+      return this.runSet(phase,[...buildComicAnalysis(entry.real.lines,notes,{seed}),...buildWordChecks(entry.real.lines.slice(0,3),[...pool,...entry.real.lines],{seed})]);
+    }
+    if(phase.id==='story'){
+      if(!entry.longread)return this.finishPhase(phase,null,{skip:true});
+      return this.renderListen(entry.longread.lines,0,{phase:'story'});
     }
     if(phase.id==='deep'){
       if(!entry.deep?.length)return this.finishPhase(phase,null,{skip:true});
@@ -263,6 +317,13 @@ Object.assign(proto,{
     // Cada palabra guarda cómo te fue: de eso depende cuándo vuelve.
     const targetOf=id=>this.lesson.activities.find(activity=>activity.id===id)?.itemTarget,failed=(result.errors||[]).map(error=>targetOf(error.activityId)).filter(Boolean);
     if(step.kind==='keep'){this.daily=recordReview(this.daily,{reviewed:this.lesson.activities.map(activity=>activity.itemTarget).filter(Boolean),failed});await this.saveDaily();return this.renderToday();}
+    if(step.kind==='placement'){
+      const wrong=new Set((result.errors||[]).map(error=>error.activityId)),levels=[...new Set(this.lesson.activities.map(activity=>activity.placementLevel))];
+      const scores=levels.map(level=>{const items=this.lesson.activities.filter(activity=>activity.placementLevel===level),correct=items.filter(activity=>!wrong.has(activity.id)).length;return{level,correct,total:items.length,percentage:Math.round(correct/items.length*100)};});
+      const level=placementLevel(scores);
+      this.daily={...this.daily,placement:{date:dateKey(),level,scores}};await this.saveDaily();
+      return this.renderPlacementResult(scores,level);
+    }
     if(step.kind==='free'){this.daily=markExtraStudy(this.daily);await this.saveDaily();return this.renderCheckpoint(null,result,{free:true});}
     if(step.kind==='set'){
       delete currentClass(this.daily).resume;
@@ -337,7 +398,7 @@ Object.assign(proto,{
     const same=this.dailyListen?.lines===lines;
     this.dailyListen={lines,step,current:-1,replay:Boolean(this.dailyListen?.replay&&same),phase:phase||(same?this.dailyListen.phase:null)};
     const script=roleplayScript(lines),steps=['Solo escucha','Lee y escucha','Repite en voz alta',...(script?['Tu papel']:[])];
-    const lang=esc(this.definition.htmlLang),listenTitle=this.dailyListen.phase==='reading'?currentClass(this.daily)?.book?.title:this.dailyListen.phase==='deep'?'los textos de esta semana':currentClass(this.daily)?.story;
+    const lang=esc(this.definition.htmlLang),listenTitle=this.dailyListen.phase==='story'?currentClass(this.daily)?.longread?.title:this.dailyListen.phase==='reading'?currentClass(this.daily)?.book?.title:this.dailyListen.phase==='deep'?'los textos de esta semana':currentClass(this.daily)?.story;
     let body='';
     const stories=lines.some(line=>line.story!==undefined)?this.dailyStories||[]:[];
     const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}" dir="auto">${esc(line.target)}</span>${line.reading?`<span class="dc-line-reading">${esc(line.reading)}</span>`:''}<span class="dc-line-es">${esc(line.meaning)}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
@@ -571,13 +632,14 @@ Object.assign(proto,{
     if(name==='shadow-again')return this.shadowLine('normal');
     if(name==='shadow-slow')return this.shadowLine('slow');
     if(name==='shadow-next'){this.dailyShadowIndex=(this.dailyShadowIndex||0)+1;return this.renderListen(this.dailyListen.lines,2);}
-    if(name==='listen-finish'){if(this.dailyListen?.replay){this.dailyListen=null;return this.renderToday();}if(this.dailyListen?.phase==='reading'){const lines=this.dailyListen.lines,entry=currentClass(this.daily),phase=DAILY_PHASES.find(item=>item.id==='reading');this.dailyListen=null;return this.runSet(phase,buildReadingChecks(lines,{seed:`${entry.number}-reading`}));}const listenPhase=this.dailyListen?.phase==='deep'?'deep':'listen';this.dailyListen=null;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id===listenPhase),null);}
+    if(name==='listen-finish'){if(this.dailyListen?.replay){this.dailyListen=null;return this.renderToday();}if(this.dailyListen?.phase==='story'){const entry=currentClass(this.daily),phase=DAILY_PHASES.find(item=>item.id==='story');this.dailyListen=null;const checks=[...buildTextChecks({questions:entry.longread.questions},`${entry.number}-story`),...buildReadingChecks(entry.longread.lines,{seed:`${entry.number}-story`,dictate:1}).slice(2)];return this.runSet(phase,checks);}if(this.dailyListen?.phase==='reading'){const lines=this.dailyListen.lines,entry=currentClass(this.daily),phase=DAILY_PHASES.find(item=>item.id==='reading');this.dailyListen=null;return this.runSet(phase,buildReadingChecks(lines,{seed:`${entry.number}-reading`}));}const listenPhase=this.dailyListen?.phase==='deep'?'deep':'listen';this.dailyListen=null;return this.finishPhase(DAILY_PHASES.find(phase=>phase.id===listenPhase),null);}
     if(name==='replay-listen'){const lines=this.listenLines(currentClass(this.daily));if(!lines.length)return;this.renderListen(lines,1);this.dailyListen.replay=true;return;}
     if(name==='role-speak')return this.roleSpeak();
     if(name==='role-show'){this.dailyRoleShown=true;return this.renderRole();}
     if(name==='role-again'){const script=roleplayScript(this.dailyListen.lines);return this.playLine(script.turns[this.dailyRoleIndex||0].line);}
     if(name==='role-next'){this.dailyRoleIndex=(this.dailyRoleIndex||0)+1;this.dailyRoleShown=false;this.dailyRoleSaid=null;return this.renderRole();}
     if(name==='keep-review')return this.startKeepReview();
+    if(name==='placement')return this.startPlacement();
     if(name==='free-practice')return this.startFreePractice();
     if(name==='sound-lesson')return this.runSoundLesson();
     if(name==='recap')return this.renderRecap(action.dataset.dcStyle);

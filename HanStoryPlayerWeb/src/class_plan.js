@@ -52,15 +52,16 @@ export const CLASS_PLAN=Object.freeze([
 ]);
 
 // La clase más pequeña que deja el curso completo dentro de COURSE_DAYS.
-const fittedSize=new WeakMap();
+let fittedSize=new WeakMap();
+// Si el plan no cabe, sobran las últimas escenas de cómic: son lo único opcional.
+const trimComics=(specs,days)=>{let extra=specs.length-days;return extra<=0?specs:[...specs].reverse().filter(spec=>!(spec.comic&&extra-->0)).reverse();};
 function extendedSpecs(units,language,stories){
-  const anchor=units.values().next().value,known=anchor&&fittedSize.get(anchor);
-  if(known)return specsOfSize(units,language,stories,known);
-  const days=COURSE_DAYS-readingDays(units);
+  const anchor=units.values().next().value,known=anchor&&fittedSize.get(anchor),days=COURSE_DAYS-readingDays(units);
+  if(known)return trimComics(specsOfSize(units,language,stories,known),days);
   let size=MIN_ITEMS,specs=specsOfSize(units,language,stories,size);
   while(specs.length>days&&size<MAX_ITEMS)specs=specsOfSize(units,language,stories,++size);
   if(anchor)fittedSize.set(anchor,size);
-  return specs;
+  return trimComics(specs,days);
 }
 
 // Las letras y sonidos: en alfabeto latino el alumno ya puede leer, así que la clase
@@ -95,7 +96,8 @@ export function unitInventory(unit){
 // El curso entero cabe en COURSE_DAYS clases. Cada elemento se enseña una sola vez:
 // las unidades de A2 y B1 reutilizan frases de otras, y esas ya no cuentan como nuevas.
 export const COURSE_DAYS=180;
-const MIN_ITEMS=6,MAX_ITEMS=12;
+// Clases más llenas solo cuando no hay otra forma de que todo quepa (idiomas con escenas de cómic).
+const MIN_ITEMS=6,MAX_ITEMS=16;
 // Cada semana son seis clases nuevas y una de repaso; cada nivel cierra con una prueba.
 export const WEEK_CLASSES=6;
 const RECAP_ITEMS=14,EXAM_ITEMS=30;
@@ -175,15 +177,60 @@ function baseSpecs(units,language,stories,size){
 // Las clases escritas para pasar de B1: gramática, texto, ejercicios y redacción.
 const advancedSpec=spec=>({...spec,advanced:true,module:spec.level,resolved:spec.items.map(([target,meaning],index)=>({target,meaning,audio:target,slowAudio:target,reading:'',glossed:true,activityId:`${spec.id}-${index}`,lessonId:''})),lines:spec.text.map(([target,meaning])=>({target,meaning,audio:target,slowAudio:target,reading:''})),story:spec.textTitle,production:null});
 
+// «Lengua real»: una escena de cómic analizada frase a frase. Llega cuando ya conoces la
+// mayoría de sus palabras (COMIC_COVERAGE) y nunca dos en la misma semana.
+export const COMIC_COVERAGE=0.5;
+const COMIC_GAP=5;
+const tokensOf=(text,language)=>String(text).toLowerCase().normalize('NFC').split(/[\s.,;:!?¿¡…"«»“”„()'’-]+/).filter(word=>word.length>=(language==='Korean'?1:3));
+// En coreano las partículas se pegan a la palabra: basta con que coincida el comienzo.
+const knows=(known,word,language)=>known.has(word)||(language==='Korean'&&[...word].length>2&&known.has([...word].slice(0,2).join('')));
+export function comicCoverage(lines,known,language){
+  const words=lines.flatMap(([target])=>tokensOf(target,language));
+  return words.length?words.filter(word=>knows(known,word,language)).length/words.length:0;
+}
+const LEVEL_RANK={A1:0,A2:1,B1:2,'B1+':3,B2:4};
+const comicSpec=(scene,level)=>{
+  const items=scene.lines.map(([target,meaning,file,speaker],index)=>({target,meaning,audio:target,slowAudio:target,reading:'',file:file?`../../books/${scene.code}/audio/${file}`:'',speaker,speakerKo:speaker,glossed:true,activityId:`${scene.id}-${index}`,lessonId:''}));
+  const span=scene.from===scene.to?`${scene.kind?'página':'episodio'} ${scene.from}`:`${scene.kind?'páginas':'episodios'} ${scene.from}–${scene.to}`,hanja=scene.kind==='hanja';
+  return{id:scene.id,comic:true,comicKind:scene.kind||'book',code:scene.code,from:scene.from,to:scene.to,module:'comic',level,title:hanja?scene.title:`Lengua real: ${scene.kind?scene.source:scene.title}`,goal:hanja?'reconocer una raíz hanja y deducir las palabras que la usan.':'entender cómo habla la gente de verdad en una escena.',resolved:items,lines:items.map(item=>({...item})),story:`${scene.kind?scene.source:scene.title}, ${span}`,rule:'',production:null,task:hanja?'Di tres palabras coreanas que conozcas con esta raíz y explica qué tienen en común.':'Elige la frase de la escena que más te sirva y úsala en una situación tuya, en voz alta.'};
+};
+// Las escenas de cada idioma se registran al abrirlo (src/data/comics/<idioma>.js): son grandes.
+const COMICS={};
+export function registerComics(language,scenes){COMICS[language]=scenes||[];fittedSize=new WeakMap();}
+// Cada obra va en orden; de entre las siguientes de cada obra entra la que mejor entiendes.
+function withComics(specs,language){
+  const queues=new Map();
+  for(const scene of COMICS[language]||[])queues.set(scene.code,[...(queues.get(scene.code)||[]),scene]);
+  const out=[],known=new Set();let since=COMIC_GAP;
+  for(const spec of specs){
+    out.push(spec);since++;
+    for(const item of spec.resolved||[])for(const word of tokensOf(item.target,language)){known.add(word);if(language==='Korean')known.add([...word].slice(0,2).join(''));}
+    if(spec.level==='A1'||since<COMIC_GAP)continue;
+    const rank=LEVEL_RANK[spec.level]??0,late=rank>=LEVEL_RANK['B1+'];
+    const heads=[...queues.values()].map(queue=>queue[0]).filter(scene=>scene&&(LEVEL_RANK[scene.level]??1)<=rank&&(scene.kind!=='hanja'||rank>=LEVEL_RANK.B1));
+    // Los capítulos de hanja traen su propia explicación: no esperan a la cobertura y van primero.
+    const best=heads.map(scene=>({scene,coverage:scene.kind==='hanja'?2:comicCoverage(scene.lines,known,language)})).filter(({coverage})=>late||coverage>=COMIC_COVERAGE).sort((a,b)=>b.coverage-a.coverage)[0];
+    if(best){queues.get(best.scene.code).shift();out.push(comicSpec(best.scene,spec.level));since=0;}
+  }
+  return out;
+}
+
+// Lo que no cupo como clase propia: va al bloque diario «Frases reales» (manga y hanja)
+// o vuelve a la lectura (episodios de libro).
+export function unplacedScenes(units,language){
+  const placed=new Set(allClassSpecs(units,{language}).filter(spec=>spec.comic).map(spec=>spec.id));
+  return(COMICS[language]||[]).filter(scene=>!placed.has(scene.id));
+}
+
 // El programa completo: lo nuevo, el repaso semanal y la prueba de cada nivel.
 function withProgram(specs,language){
   const out=[];let week=[],number=0;
   const closeWeek=()=>{if(week.length<3)return;out.push({id:`semana-${++number}`,kind:'recap',level:week.at(-1).level,module:week.at(-1).module,title:`Repaso de la semana ${number}`,goal:'usar sin ayuda lo que viste esta semana.',from:week});week=[];};
-  const closeLevel=level=>{closeWeek();out.push({id:`prueba-${level}`,kind:'exam',level,module:out.at(-1)?.module,title:`Prueba de nivel ${level}`,goal:`demostrar que dominas el nivel ${level}.`,from:all.filter(spec=>spec.level===level)});};
+  const closeLevel=level=>{closeWeek();out.push({id:`prueba-${level}`,kind:'exam',level,module:out.at(-1)?.module,title:`Prueba de nivel ${level}`,goal:`demostrar que dominas el nivel ${level}.`,from:all.filter(spec=>spec.level===level&&!spec.comic)});};
   // Una frase que el curso ya enseñó no vuelve como nueva: el repaso se encarga de ella.
   const taught=new Set(specs.flatMap(spec=>(spec.resolved||[]).map(item=>item.target)));
   const fresh=spec=>({...spec,resolved:spec.resolved.filter(item=>{if(taught.has(item.target))return false;taught.add(item.target);return true;})});
-  const all=[...specs,...(ADVANCED_CLASSES[language]||[]).map(advancedSpec).map(fresh)];
+  const all=withComics([...specs,...(ADVANCED_CLASSES[language]||[]).map(advancedSpec).map(fresh)],language).map(spec=>spec.comic?fresh(spec):spec);
   all.forEach((spec,index)=>{
     out.push(spec);week.push(spec);
     if(week.length===WEEK_CLASSES)closeWeek();
@@ -200,7 +247,7 @@ const refItem=(ref,units)=>{const[key,index]=ref.split(':');return unitInventory
 export function resolveClass(spec,units,language){
   if(spec.kind)return resolveReview(spec,units,language);
   const rule=CLASS_RULES[language]?.[Number(spec.id.slice(1))-1]||'';
-  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production,...(spec.advanced?{questions:spec.questions,drills:spec.drills,write:spec.write}:{})};
+  if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production,...(spec.advanced?{questions:spec.questions,drills:spec.drills,write:spec.write}:{}),...(spec.comic?{comic:true}:{})};
   const items=spec.numbers?(CLASS_NUMBERS[language]||[]).map((target,index)=>({target,meaning:String(index+1),audio:target,slowAudio:target,reading:'',activityId:`numbers-${index+1}`,lessonId:''})):spec.items.map(ref=>refItem(ref,units)).filter(Boolean);
   const lines=spec.dialogue.map(([speaker,ref])=>{const item=refItem(ref,units);return item&&{...item,speaker:speaker==='A'?'Ana':'Leo',speakerKo:speaker==='A'?'Ana':'Leo',gender:speaker==='A'?'f':'m'};}).filter(Boolean);
   const replies=spec.replies.map(([asked,answer])=>({asked:refItem(asked,units),answer:refItem(answer,units)})).filter(pair=>pair.asked&&pair.answer);
@@ -213,6 +260,20 @@ function resolveReview(spec,units,language){
   const sentences=pool.filter(isSentenceItem),source=spec.kind==='exam'||sentences.length<RECAP_ITEMS/2?pool:[...sentences,...pool.filter(item=>!isSentenceItem(item))],limit=spec.kind==='exam'?EXAM_ITEMS:RECAP_ITEMS,step=Math.max(1,source.length/limit);
   const items=Array.from({length:Math.min(limit,source.length)},(_,index)=>source[Math.floor(index*step)]);
   return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,stage:spec.kind,items,lines:spec.kind==='exam'?[]:items.filter(isSentenceItem).slice(0,8),story:'',replies:[],rule:'',rules:spec.kind==='exam'?[]:parts.map(part=>part.rule).filter(Boolean),task:spec.kind==='exam'?'':'Cuenta en voz alta qué aprendiste esta semana, con frases completas.',production:null};
+}
+
+// Prueba de nivel: unas pocas frases de cada nivel del plan, repartidas a lo largo de él.
+export function placementSample(units,language,{perLevel=6}={}){
+  const byLevel=new Map();
+  for(const spec of allClassSpecs(units,{language}).filter(item=>!item.kind))for(const item of resolveClass(spec,units,language).items){
+    const list=byLevel.get(spec.level)||[];
+    if(!list.some(other=>other.target===item.target))list.push(item);
+    byLevel.set(spec.level,list);
+  }
+  return[...byLevel.entries()].map(([level,items])=>{
+    const sentences=items.filter(isSentenceItem),pool=sentences.length>=perLevel?sentences:items,step=Math.max(1,pool.length/perLevel);
+    return{level,items:Array.from({length:Math.min(perLevel,pool.length)},(_,index)=>pool[Math.floor(index*step)])};
+  });
 }
 
 export const allClassSpecs=(units,{language='',stories=null}={})=>extendedSpecs(units,language,stories);

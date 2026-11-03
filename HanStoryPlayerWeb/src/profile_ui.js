@@ -28,6 +28,7 @@ Object.assign(proto,{
     const view=this.root.querySelector('.jp-simple-view');
     if(!view||view.classList.contains('pf-view'))return;
     const daily=this.loadDaily?await this.loadDaily().catch(()=>null):null;
+    await this.loadComics?.();
     const words=new Set((daily?.classes||[]).flatMap(entry=>(entry.items||[]).map(item=>item.target))).size;
     const calendar=studyCalendar({activityDates:this.progress.activityDates,classDates:(daily?.classes||[]).map(entry=>entry.completedDate).filter(Boolean),extraDates:daily?.extraStudyDates||[]});
     const studied=calendar.filter(day=>day.level).length,today=dateKey(new Date());
@@ -39,6 +40,7 @@ Object.assign(proto,{
     view.classList.add('pf-view');
     view.innerHTML=`<div class="pf-head"><span class="pf-avatar" aria-hidden="true">${esc(this.definition.htmlLang.toUpperCase())}</span><div><h1>${esc(this.definition.name)}</h1><p>Tu avance en este idioma</p></div></div>
       <div class="pf-stats">${stats.map(([value,label])=>`<div><b>${esc(value)}</b><span>${esc(label)}</span></div>`).join('')}</div>
+      <section class="pf-card pf-placement"><div class="pf-card-head"><h2>Prueba de nivel</h2><small>${daily?.placement?`Última: ${esc(daily.placement.level||'por debajo de A1')} · ${esc(daily.placement.date)}`:'Aún no la has hecho'}</small></div><p>Unas preguntas de cada nivel, sin ayuda, para saber dónde estás de verdad. No cambia tu plan.</p><button class="primary" data-dc-action="placement">Comprobar mi nivel</button></section>
       <section class="pf-card"><div class="pf-card-head"><h2>Últimas ${WEEKS} semanas</h2><small>${studied} día${studied===1?'':'s'} con estudio</small></div><div class="pf-calendar" role="img" aria-label="${studied} días con estudio en las últimas ${WEEKS} semanas">${calendar.map(day=>`<i class="l${day.level}${day.key===today?' today':''}" title="${day.key}"></i>`).join('')}</div></section>`;
     if(settings){
       // La cabecera <header> heredaba la franja oscura del encabezado de la página.

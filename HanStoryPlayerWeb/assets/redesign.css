@@ -306,3 +306,10 @@ body:has(.jp-app[data-jp-theme="dark"]) .breadcrumb{color:#cfdcd2}
 /* Redacción de la clase: escribir primero, comparar después. */
 .dc-writing{width:100%;margin-top:14px;padding:12px;border:1px solid currentColor;border-radius:12px;font:inherit;background:transparent;color:inherit;resize:vertical;box-sizing:border-box}
 .dc-model{margin-top:12px}.dc-model summary{cursor:pointer;font-weight:600}.dc-model p{margin:8px 0 0;line-height:1.5}
+
+/* Resultado de la prueba de nivel. */
+.dc-placement{list-style:none;padding:0;margin:16px auto;max-width:340px;display:grid;gap:8px}.dc-placement li{display:grid;grid-template-columns:3.5em 1fr auto;gap:12px;align-items:center;padding:10px 14px;border:1px solid currentColor;border-radius:12px}.dc-placement span{opacity:.75}
+.pf-placement p{margin:0 0 12px;line-height:1.45}
+
+/* El análisis de «Lengua real» separa sentido, desglose y notas en líneas. */
+.dc-teacher-text{white-space:pre-line}

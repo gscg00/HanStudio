@@ -2,6 +2,7 @@
 // tiempo: libros con audio grabado, vocabulario nuevo, escribir y hablar.
 // Módulo puro (sin DOM) para poder probarlo con node:test.
 import{OUTPUT_PROMPTS}from'./data/output_prompts.js';
+import{LONG_READINGS}from'./data/long_readings.js';
 
 const PRIORITY=new Set(['German','French','Korean']);
 export const studyDose=language=>PRIORITY.has(language)?{minutes:120,goal:'B1 alto',reviews:80,words:12}:{minutes:60,goal:'A2',reviews:40,words:6};
@@ -52,7 +53,19 @@ export function recycledLines(state,{count=8,seed=0}={}){
 // Escucha profunda: los textos de los últimos días, sin repetir frases.
 export function deepLines(state,{days=5,limit=30}={}){
   const seen=new Set();
-  return(state?.classes||[]).slice(-days).flatMap(entry=>entry.book?.lines||[]).filter(line=>{if(seen.has(line.target))return false;seen.add(line.target);return true;}).slice(-limit);
+  return(state?.classes||[]).slice(-days).flatMap(entry=>[...(entry.book?.lines||[]),...(entry.longread?.lines||[])]).filter(line=>{if(seen.has(line.target))return false;seen.add(line.target);return true;}).slice(-limit);
+}
+
+// Lectura larga: desde A2, una cada STORY_EVERY clases, en orden de dificultad.
+export const STORY_EVERY=4;
+const asLine=([target,meaning])=>({target,meaning,audio:target,slowAudio:target,reading:'',speaker:'',speakerKo:'',file:'',activityId:'',lessonId:''});
+export function nextStory(state,language,level){
+  const list=LONG_READINGS[language]||[];
+  if(!list.length||level==='A1')return null;
+  const classes=state?.classes||[],read=classes.filter(entry=>entry.longread).length,sinceA2=classes.filter(entry=>entry.level&&entry.level!=='A1').length;
+  if(sinceA2<read*STORY_EVERY)return null;
+  const story=list[read];
+  return story?{id:story.id,title:story.title,level:story.level,lines:story.text.map(asLine),questions:story.questions}:null;
 }
 
 const promptLevel=level=>OUTPUT_PROMPTS[level]?level:level==='B2'?'B1+':'A1';
