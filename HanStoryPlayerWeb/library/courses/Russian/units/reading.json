@@ -2651,22 +2651,24 @@
         },
         {
           "id": "russian-reading-08-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «молоко»?",
-          "target": "молоко",
-          "options": [
-            "[малако́]",
-            "[молоко́]",
-            "[мо́локо]"
-          ],
-          "answer": "[малако́]",
-          "explanation": "Solo la última О es fuerte; las otras dos, sin acento, suenan [а].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "молоко",
+          "explanation": "Se escribe «молоко» y suena [малако́]. Solo la última О es fuerte; las otras dos, sin acento, suenan [а].",
           "audio": "молоко",
           "slow_audio": "молоко",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "молоко"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-1-listen",
@@ -2714,22 +2716,24 @@
         },
         {
           "id": "russian-reading-08-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «вода»?",
-          "target": "вода",
-          "options": [
-            "[вода́]",
-            "[вада́]",
-            "[во́да]"
-          ],
-          "answer": "[вада́]",
-          "explanation": "вода́: la О no lleva acento y suena [а].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "вода",
+          "explanation": "Se escribe «вода» y suena [вада́]. вода́: la О no lleva acento y suena [а].",
           "audio": "вода",
           "slow_audio": "вода",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "вода"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-2-listen",
@@ -2777,22 +2781,24 @@
         },
         {
           "id": "russian-reading-08-3-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «хорошо»?",
-          "target": "хорошо",
-          "options": [
-            "[хорошо́]",
-            "[харо́шо]",
-            "[харашо́]"
-          ],
-          "answer": "[харашо́]",
-          "explanation": "хорошо́: dos О átonas que suenan [а]. Es una de las palabras más frecuentes.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "хорошо",
+          "explanation": "Se escribe «хорошо» y suena [харашо́]. хорошо́: dos О átonas que suenan [а]. Es una de las palabras más frecuentes.",
           "audio": "хорошо",
           "slow_audio": "хорошо",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "хорошо"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-3-listen",
@@ -2842,22 +2848,24 @@
         },
         {
           "id": "russian-reading-08-4-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «сестра»?",
-          "target": "сестра",
-          "options": [
-            "[систра́]",
-            "[сестра́]",
-            "[се́стра]"
-          ],
-          "answer": "[систра́]",
-          "explanation": "сестра́: la Е sin acento se reduce y suena casi [и].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "сестра",
+          "explanation": "Se escribe «сестра» y suena [систра́]. сестра́: la Е sin acento se reduce y suena casi [и].",
           "audio": "сестра",
           "slow_audio": "сестра",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "сестра"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-4-listen",
@@ -2907,22 +2915,24 @@
         },
         {
           "id": "russian-reading-08-5-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «язык»?",
-          "target": "язык",
-          "options": [
-            "[язы́к]",
-            "[йизы́к]",
-            "[я́зык]"
-          ],
-          "answer": "[йизы́к]",
-          "explanation": "язы́к: la Я sin acento suena casi [йи].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "язык",
+          "explanation": "Se escribe «язык» y suena [йизы́к]. язы́к: la Я sin acento suena casi [йи].",
           "audio": "язык",
           "slow_audio": "язык",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "язык"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-5-listen",
@@ -2970,22 +2980,24 @@
         },
         {
           "id": "russian-reading-08-6-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «это»?",
-          "target": "это",
-          "options": [
-            "[э́то]",
-            "[эта́]",
-            "[э́та]"
-          ],
-          "answer": "[э́та]",
-          "explanation": "э́то: el acento está en la Э y la О final suena [а].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "это",
+          "explanation": "Se escribe «это» y suena [э́та]. э́то: el acento está en la Э y la О final suena [а].",
           "audio": "это",
           "slow_audio": "это",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "это"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-08-6-listen",
@@ -3059,22 +3071,24 @@
         },
         {
           "id": "russian-reading-09-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «хлеб»?",
-          "target": "хлеб",
-          "options": [
-            "[хлеп]",
-            "[хлеб]",
-            "[хле́бэ]"
-          ],
-          "answer": "[хлеп]",
-          "explanation": "Б final se ensordece y suena [п].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "хлеб",
+          "explanation": "Se escribe «хлеб» y suena [хлеп]. Б final se ensordece y suena [п].",
           "audio": "хлеб",
           "slow_audio": "хлеб",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "хлеб"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-09-1-listen",
@@ -3122,22 +3136,24 @@
         },
         {
           "id": "russian-reading-09-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «друг»?",
-          "target": "друг",
-          "options": [
-            "[друг]",
-            "[друк]",
-            "[дру́га]"
-          ],
-          "answer": "[друк]",
-          "explanation": "Г final suena [к].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "друг",
+          "explanation": "Se escribe «друг» y suena [друк]. Г final suena [к].",
           "audio": "друг",
           "slow_audio": "друг",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "друг"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-09-2-listen",
@@ -3185,22 +3201,24 @@
         },
         {
           "id": "russian-reading-09-3-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «год»?",
-          "target": "год",
-          "options": [
-            "[год]",
-            "[го́да]",
-            "[гот]"
-          ],
-          "answer": "[гот]",
-          "explanation": "Д final suena [т].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "год",
+          "explanation": "Se escribe «год» y suena [гот]. Д final suena [т].",
           "audio": "год",
           "slow_audio": "год",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "год"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-09-3-listen",
@@ -3379,22 +3397,24 @@
         },
         {
           "id": "russian-reading-09-6-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «машина»?",
-          "target": "машина",
-          "options": [
-            "[мащи́на]",
-            "[ма́шина]",
-            "[машы́на]"
-          ],
-          "answer": "[машы́на]",
-          "explanation": "Ш es siempre dura: ши se lee [шы]. Lo mismo pasa con жи [жы] y ци [цы].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "машина",
+          "explanation": "Se escribe «машина» y suena [машы́на]. Ш es siempre dura: ши se lee [шы]. Lo mismo pasa con жи [жы] y ци [цы].",
           "audio": "машина",
           "slow_audio": "машина",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "машина"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "russian-reading-09-6-listen",

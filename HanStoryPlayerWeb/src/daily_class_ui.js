@@ -34,6 +34,7 @@ const NAV_ICONS={
   today:icon('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
   videos:icon('<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/>'),
   notebook:icon('<path d="M5 4a2 2 0 0 1 2-2h12v18H7a2 2 0 0 0-2 2z"/><path d="M5 20V4M10 7h5"/>'),
+  typing:icon('<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/>'),
   profile:icon('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
 };
 
@@ -90,7 +91,9 @@ Object.assign(proto,{
   // Lo que completa la clase hasta la dosis del idioma. La prueba de nivel va sola.
   async studyBlocks(stage,level){
     if(stage==='exam')return{};
-    const number=this.daily.classes.length,dose=studyDose(this.language),lesson=await this.nextBookLesson(),lines=lesson?.lines||recycledLines(this.daily,{seed:number});
+    // Los libros empiezan en A2: en A1 sus frases son demasiado difíciles (B1 el primer día).
+    // Mientras tanto la lectura repite frases ya aprendidas en clases anteriores.
+    const number=this.daily.classes.length,dose=studyDose(this.language),lesson=level==='A1'?null:await this.nextBookLesson(),lines=lesson?.lines||recycledLines(this.daily,{seed:number});
     const book=lines.length?{code:lesson?.code||'',title:lesson?`${lesson.title} · ${lesson.number}`:'Escucha otra vez',lines}:null;
     const words=dailyWords(this.daily,{bookWords:lesson?.words||[],pack:WORD_PACKS[this.language]||[],limit:dose.words});
     return{book,words,real:level==='A1'?null:this.nextRealPhrases(),deep:deepLines(this.daily),longread:nextStory(this.daily,this.language,level),output:outputPrompts(level,number)};
@@ -554,8 +557,8 @@ Object.assign(proto,{
     const nav=this.root.querySelector('.jp-app-nav');
     if(nav){
       // Inicio sustituye al botón «← Idioma», que en el móvil quedaba debajo de la barra.
-      const active=section==='Perfil'?'profile':section==='Videos'?'videos':section==='Cuaderno'?'notebook':'today',tab=(attrs,icon,label,on=false)=>`<button class="jp-app-tab ${on?'active':''}" ${attrs} ${on?'aria-current="page"':''}>${NAV_ICONS[icon]}${label}</button>`;
-      nav.innerHTML=`<div class="jp-app-tabs">${tab('data-jp-action="exit"','home','Inicio')}${tab('data-jp-route="today"','today','Hoy',active==='today')}${tab('data-jp-route="notebook"','notebook','Cuaderno',active==='notebook')}${tab('data-jp-route="videos"','videos','Videos',active==='videos')}${tab('data-jp-route="profile"','profile','Perfil',active==='profile')}</div>`;
+      const active=section==='Perfil'?'profile':section==='Videos'?'videos':section==='Cuaderno'?'notebook':section==='Escribir'?'typing':'today',tab=(attrs,icon,label,on=false)=>`<button class="jp-app-tab ${on?'active':''}" ${attrs} ${on?'aria-current="page"':''}>${NAV_ICONS[icon]}${label}</button>`;
+      nav.innerHTML=`<div class="jp-app-tabs">${tab('data-jp-action="exit"','home','Inicio')}${tab('data-jp-route="today"','today','Hoy',active==='today')}${tab('data-jp-route="notebook"','notebook','Cuaderno',active==='notebook')}${tab('data-jp-route="videos"','videos','Videos',active==='videos')}${tab('data-jp-route="typing" data-desktop-only','typing','Escribir',active==='typing')}${tab('data-jp-route="profile"','profile','Perfil',active==='profile')}</div>`;
     }
     if(section==='Hoy')this.setBreadcrumb?.([this.definition.name]);
   },

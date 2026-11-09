@@ -313,3 +313,37 @@ body:has(.jp-app[data-jp-theme="dark"]) .breadcrumb{color:#cfdcd2}
 
 /* El análisis de «Lengua real» separa sentido, desglose y notas en líneas. */
 .dc-teacher-text{white-space:pre-line}
+
+/* ── Escribir: práctica con el teclado físico ───────────── */
+@media (pointer:coarse){.jp-app .jp-app-tab[data-desktop-only]{display:none}}
+.ty-view{display:flex;flex-direction:column;gap:1.2rem;max-width:760px;margin:0 auto}
+.ty-toggle{display:flex;gap:.5rem;align-items:flex-start;color:var(--hs-muted);font-size:.88rem}
+.ty-keyboard{display:flex;flex-direction:column;align-items:center;gap:6px;padding:.8rem;border:1px solid var(--hs-line);border-radius:18px;background:var(--hs-card)}
+.ty-row{display:flex;gap:5px}
+.ty-row:nth-child(2){margin-left:18px}.ty-row:nth-child(3){margin-left:42px}
+.ty-key{display:flex;flex-direction:column;align-items:center;justify-content:center;width:44px;height:48px;border:1px solid var(--hs-line);border-radius:9px;background:var(--hs-bg);transition:background .15s,transform .15s}
+.ty-key b{font-size:1.15rem;line-height:1}
+.ty-key small{color:var(--hs-muted);font-size:.65rem}
+.ty-key.next{background:var(--hs-peach);border-color:var(--hs-accent);transform:translateY(-2px)}
+.ty-shift{margin:.2rem 0 0;color:var(--hs-accent);font-size:.8rem;font-weight:700}
+.ty-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.7rem}
+.ty-card{display:flex;flex-direction:column;align-items:flex-start;gap:.25rem;min-height:92px;padding:.8rem;border:1px solid var(--hs-line);border-radius:16px;background:var(--hs-card);color:var(--hs-ink);text-align:left}
+.ty-card small{color:var(--hs-muted);font-size:.78rem}
+.ty-card em{margin-top:auto;font-style:normal;font-weight:700;color:var(--hs-ok)}
+.ty-card:disabled{opacity:.5}
+.ty-play{align-self:flex-start;min-height:48px;padding:.6rem 1.6rem}
+.ty-run,.ty-game{display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:760px;margin:0 auto}
+.ty-top{display:flex;align-items:center;justify-content:space-between;width:100%;color:var(--hs-muted);font-weight:700}
+.ty-quit{width:44px;height:44px;padding:0;border:1px solid var(--hs-line);border-radius:12px;background:var(--hs-card)}
+.ty-timer{width:100%;height:8px;border-radius:8px;background:var(--hs-line);overflow:hidden}
+.ty-timer i{display:block;height:100%;background:var(--hs-accent);transform-origin:left;animation:ty-time linear forwards}
+@keyframes ty-time{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+.ty-target{margin:.6rem 0 0;font:700 clamp(2rem,7vw,3.4rem)/1.15 var(--hs-serif);color:var(--hs-ink);text-align:center}
+.ty-target.ok{color:var(--hs-ok)}.ty-target.miss{color:var(--hs-accent)}
+.ty-input{width:min(520px,100%);min-height:56px;padding:.6rem 1rem;border:2px solid var(--hs-line);border-radius:16px;background:var(--hs-card);font-size:1.5rem;text-align:center}
+.ty-input:focus{outline:none;border-color:var(--hs-accent)}
+.ty-map{width:100%;display:flex;justify-content:center}
+.ty-canvas{width:100%;max-width:720px;border-radius:18px;background:#10201b}
+.ty-results li.ok b{color:var(--hs-ok)}.ty-results li.miss b{color:var(--hs-accent)}
+.ty-actions{display:flex;flex-wrap:wrap;gap:.6rem}
+@media (max-width:520px){.ty-key{width:26px;height:40px}.ty-key b{font-size:.9rem}.ty-row:nth-child(2){margin-left:10px}.ty-row:nth-child(3){margin-left:24px}}
