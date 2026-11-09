@@ -3700,22 +3700,24 @@
         },
         {
           "id": "korean-reading-11-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «한국어»?",
-          "target": "한국어",
-          "options": [
-            "[한구거]",
-            "[한국어]",
-            "[항구거]"
-          ],
-          "answer": "[한구거]",
-          "explanation": "Encadenamiento: si la sílaba siguiente empieza por ㅇ, el batchim pasa a ella. 한국어 → [한구거].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "한국어",
+          "explanation": "Se escribe «한국어» y suena [한구거]. Encadenamiento: si la sílaba siguiente empieza por ㅇ, el batchim pasa a ella. 한국어 → [한구거].",
           "audio": "한국어",
           "slow_audio": "한국어",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "한국어"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-1-listen",
@@ -3763,22 +3765,24 @@
         },
         {
           "id": "korean-reading-11-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «이름이»?",
-          "target": "이름이",
-          "options": [
-            "[이름이]",
-            "[이르미]",
-            "[이른미]"
-          ],
-          "answer": "[이르미]",
-          "explanation": "Encadenamiento: la ㅁ de 름 pasa a 이. 이름이 → [이르미].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "이름이",
+          "explanation": "Se escribe «이름이» y suena [이르미]. Encadenamiento: la ㅁ de 름 pasa a 이. 이름이 → [이르미].",
           "audio": "이름이",
           "slow_audio": "이름이",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "이름이"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-2-listen",
@@ -3829,22 +3833,24 @@
         },
         {
           "id": "korean-reading-11-3-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «감사합니다»?",
-          "target": "감사합니다",
-          "options": [
-            "[감사합니다]",
-            "[감사한니다]",
-            "[감사함니다]"
-          ],
-          "answer": "[감사함니다]",
-          "explanation": "Nasalización: ㅂ delante de ㄴ suena ㅁ. 합니다 → [함니다].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "감사합니다",
+          "explanation": "Se escribe «감사합니다» y suena [감사함니다]. Nasalización: ㅂ delante de ㄴ suena ㅁ. 합니다 → [함니다].",
           "audio": "감사합니다",
           "slow_audio": "감사합니다",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "감사합니다"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-3-listen",
@@ -3892,22 +3898,24 @@
         },
         {
           "id": "korean-reading-11-4-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «좋아요»?",
-          "target": "좋아요",
-          "options": [
-            "[조아요]",
-            "[좋아요]",
-            "[초아요]"
-          ],
-          "answer": "[조아요]",
-          "explanation": "ㅎ débil: entre vocales o tras ㄴ/ㄹ/ㅁ, la ㅎ casi desaparece. 좋아요 → [조아요].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "좋아요",
+          "explanation": "Se escribe «좋아요» y suena [조아요]. ㅎ débil: entre vocales o tras ㄴ/ㄹ/ㅁ, la ㅎ casi desaparece. 좋아요 → [조아요].",
           "audio": "좋아요",
           "slow_audio": "좋아요",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "좋아요"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-4-listen",
@@ -3955,22 +3963,24 @@
         },
         {
           "id": "korean-reading-11-5-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «괜찮아요»?",
-          "target": "괜찮아요",
-          "options": [
-            "[괜찬하요]",
-            "[괜차나요]",
-            "[괜찰아요]"
-          ],
-          "answer": "[괜차나요]",
-          "explanation": "La ㅎ de ㄶ desaparece y la ㄴ se encadena: 괜찮아요 → [괜차나요].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "괜찮아요",
+          "explanation": "Se escribe «괜찮아요» y suena [괜차나요]. La ㅎ de ㄶ desaparece y la ㄴ se encadena: 괜찮아요 → [괜차나요].",
           "audio": "괜찮아요",
           "slow_audio": "괜찮아요",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "괜찮아요"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-5-listen",
@@ -4018,22 +4028,24 @@
         },
         {
           "id": "korean-reading-11-6-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «학교»?",
-          "target": "학교",
-          "options": [
-            "[학교]",
-            "[하교]",
-            "[학꾜]"
-          ],
-          "answer": "[학꾜]",
-          "explanation": "Tensificación: tras un batchim ㄱ, ㄷ o ㅂ, la consonante siguiente se vuelve tensa. 학교 → [학꾜].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "학교",
+          "explanation": "Se escribe «학교» y suena [학꾜]. Tensificación: tras un batchim ㄱ, ㄷ o ㅂ, la consonante siguiente se vuelve tensa. 학교 → [학꾜].",
           "audio": "학교",
           "slow_audio": "학교",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "학교"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-6-listen",
@@ -4084,22 +4096,24 @@
         },
         {
           "id": "korean-reading-11-7-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «없어요»?",
-          "target": "없어요",
-          "options": [
-            "[업써요]",
-            "[어써요]",
-            "[없어요]"
-          ],
-          "answer": "[업써요]",
-          "explanation": "Batchim doble ㅄ: suena ㅂ, y la ㅅ pasa (tensa) a la sílaba siguiente. 없어요 → [업써요].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "없어요",
+          "explanation": "Se escribe «없어요» y suena [업써요]. Batchim doble ㅄ: suena ㅂ, y la ㅅ pasa (tensa) a la sílaba siguiente. 없어요 → [업써요].",
           "audio": "없어요",
           "slow_audio": "없어요",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "없어요"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-7-listen",
@@ -4147,22 +4161,24 @@
         },
         {
           "id": "korean-reading-11-8-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «부엌»?",
-          "target": "부엌",
-          "options": [
-            "[부엌]",
-            "[부억]",
-            "[부어크]"
-          ],
-          "answer": "[부억]",
-          "explanation": "Al final de sílaba solo hay 7 sonidos (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ). ㅋ final suena ㄱ: 부엌 → [부억]; 옷 → [옫].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "부엌",
+          "explanation": "Se escribe «부엌» y suena [부억]. Al final de sílaba solo hay 7 sonidos (ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ). ㅋ final suena ㄱ: 부엌 → [부억]; 옷 → [옫].",
           "audio": "부엌",
           "slow_audio": "부엌",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "부엌"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "korean-reading-11-8-listen",

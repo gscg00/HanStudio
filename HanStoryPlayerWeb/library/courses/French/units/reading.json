@@ -2011,22 +2011,24 @@
         },
         {
           "id": "french-reading-07-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «moi»?",
-          "target": "moi",
-          "options": [
-            "[mua]",
-            "[moi]",
-            "[mo]"
-          ],
-          "answer": "[mua]",
-          "explanation": "oi suena «ua»: moi [mua], trois [trua], noir [nuar].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "moi",
+          "explanation": "Se escribe «moi» y suena [mua]. oi suena «ua»: moi [mua], trois [trua], noir [nuar].",
           "audio": "moi",
           "slow_audio": "moi",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "moi"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-07-1-listen",
@@ -2077,22 +2079,24 @@
         },
         {
           "id": "french-reading-07-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «beau»?",
-          "target": "beau",
-          "options": [
-            "[beau]",
-            "[bo]",
-            "[be-o]"
-          ],
-          "answer": "[bo]",
-          "explanation": "eau y au suenan «o»: beau [bo], eau [o], au revoir [o-revuar].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "beau",
+          "explanation": "Se escribe «beau» y suena [bo]. eau y au suenan «o»: beau [bo], eau [o], au revoir [o-revuar].",
           "audio": "beau",
           "slow_audio": "beau",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "beau"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-07-2-listen",
@@ -2269,22 +2273,24 @@
         },
         {
           "id": "french-reading-07-5-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «tout»?",
-          "target": "tout",
-          "options": [
-            "[tout]",
-            "[tu]",
-            "[tü]"
-          ],
-          "answer": "[tu]",
-          "explanation": "ou suena como la u española: tout [tu], vous [vu], bonjour [bõ-zhur].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "tout",
+          "explanation": "Se escribe «tout» y suena [tu]. ou suena como la u española: tout [tu], vous [vu], bonjour [bõ-zhur].",
           "audio": "tout",
           "slow_audio": "tout",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "tout"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-07-5-listen",
@@ -2550,22 +2556,24 @@
         },
         {
           "id": "french-reading-08-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «enfant»?",
-          "target": "enfant",
-          "options": [
-            "[ã-fã]",
-            "[en-fant]",
-            "[an-fan-te]"
-          ],
-          "answer": "[ã-fã]",
-          "explanation": "an, en, am, em = «a» nasal (ã). La n no suena: enfant, temps [tã], chambre [shãbr].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "enfant",
+          "explanation": "Se escribe «enfant» y suena [ã-fã]. an, en, am, em = «a» nasal (ã). La n no suena: enfant, temps [tã], chambre [shãbr].",
           "audio": "enfant",
           "slow_audio": "enfant",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "enfant"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-08-1-listen",
@@ -2679,22 +2687,24 @@
         },
         {
           "id": "french-reading-08-3-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «vin»?",
-          "target": "vin",
-          "options": [
-            "[vin]",
-            "[vi]",
-            "[vẽ]"
-          ],
-          "answer": "[vẽ]",
-          "explanation": "in, im, ain, ein = «e» nasal muy abierta (ẽ): vin, pain [pẽ], matin [ma-tẽ]. Hoy un suena casi igual.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "vin",
+          "explanation": "Se escribe «vin» y suena [vẽ]. in, im, ain, ein = «e» nasal muy abierta (ẽ): vin, pain [pẽ], matin [ma-tẽ]. Hoy un suena casi igual.",
           "audio": "vin",
           "slow_audio": "vin",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "vin"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-08-3-listen",
@@ -2828,22 +2838,24 @@
         },
         {
           "id": "french-reading-09-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «petit»?",
-          "target": "petit",
-          "options": [
-            "[pe-tí]",
-            "[pe-tit]",
-            "[pe-ti-te]"
-          ],
-          "answer": "[pe-tí]",
-          "explanation": "La consonante final no suena: petit [pe-tí], grand [grã], trop [tro], deux [dö].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "petit",
+          "explanation": "Se escribe «petit» y suena [pe-tí]. La consonante final no suena: petit [pe-tí], grand [grã], trop [tro], deux [dö].",
           "audio": "petit",
           "slow_audio": "petit",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "petit"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-09-1-listen",
@@ -3017,22 +3029,24 @@
         },
         {
           "id": "french-reading-09-4-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «parlez»?",
-          "target": "parlez",
-          "options": [
-            "[par-lé]",
-            "[par-les]",
-            "[par-léz]"
-          ],
-          "answer": "[par-lé]",
-          "explanation": "-ez y -er finales suenan é: parlez, parler, chez [shé]. La z y la r no se pronuncian.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "parlez",
+          "explanation": "Se escribe «parlez» y suena [par-lé]. -ez y -er finales suenan é: parlez, parler, chez [shé]. La z y la r no se pronuncian.",
           "audio": "parlez",
           "slow_audio": "parlez",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "parlez"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-09-4-listen",
@@ -3355,22 +3369,24 @@
         },
         {
           "id": "french-reading-10-4-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «maison»?",
-          "target": "maison",
-          "options": [
-            "[mè-zõ]",
-            "[mè-sõ]",
-            "[mai-són]"
-          ],
-          "answer": "[mè-zõ]",
-          "explanation": "Una s entre dos vocales suena z (zumbido): maison, rose, chose. Para sonido s entre vocales se escribe ss: poisson.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "maison",
+          "explanation": "Se escribe «maison» y suena [mè-zõ]. Una s entre dos vocales suena z (zumbido): maison, rose, chose. Para sonido s entre vocales se escribe ss: poisson.",
           "audio": "maison",
           "slow_audio": "maison",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "maison"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-10-4-listen",
@@ -3418,22 +3434,24 @@
         },
         {
           "id": "french-reading-10-5-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «garçon»?",
-          "target": "garçon",
-          "options": [
-            "[gar-kõ]",
-            "[gar-sõ]",
-            "[gar-zón]"
-          ],
-          "answer": "[gar-sõ]",
-          "explanation": "ç (c con cedilla) suena s delante de a, o, u: garçon, ça, français. Sin cedilla sonaría k.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "garçon",
+          "explanation": "Se escribe «garçon» y suena [gar-sõ]. ç (c con cedilla) suena s delante de a, o, u: garçon, ça, français. Sin cedilla sonaría k.",
           "audio": "garçon",
           "slow_audio": "garçon",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "garçon"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-10-5-listen",
@@ -3481,22 +3499,24 @@
         },
         {
           "id": "french-reading-10-6-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «fille»?",
-          "target": "fille",
-          "options": [
-            "[fil]",
-            "[fi-lie]",
-            "[fiy]"
-          ],
-          "answer": "[fiy]",
-          "explanation": "ille suele sonar «iy»: fille, famille, travailler. Excepciones: ville [vil], mille [mil].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "fille",
+          "explanation": "Se escribe «fille» y suena [fiy]. ille suele sonar «iy»: fille, famille, travailler. Excepciones: ville [vil], mille [mil].",
           "audio": "fille",
           "slow_audio": "fille",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "fille"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-10-6-listen",
@@ -3696,22 +3716,24 @@
         },
         {
           "id": "french-reading-11-1-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «les amis»?",
-          "target": "les amis",
-          "options": [
-            "[le-za-mí]",
-            "[le a-mí]",
-            "[les a-mís]"
-          ],
-          "answer": "[le-za-mí]",
-          "explanation": "Liaison: una s, x o z final muda suena z si la palabra siguiente empieza por vocal o h: les amis, deux heures, vous êtes [vu-zèt].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "les amis",
+          "explanation": "Se escribe «les amis» y suena [le-za-mí]. Liaison: una s, x o z final muda suena z si la palabra siguiente empieza por vocal o h: les amis, deux heures, vous êtes [vu-zèt].",
           "audio": "les amis",
           "slow_audio": "les amis",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "les amis"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-1-listen",
@@ -3759,22 +3781,24 @@
         },
         {
           "id": "french-reading-11-2-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «les enfants»?",
-          "target": "les enfants",
-          "options": [
-            "[le ã-fã]",
-            "[le-zã-fã]",
-            "[les en-fants]"
-          ],
-          "answer": "[le-zã-fã]",
-          "explanation": "Liaison en z otra vez: les enfants. La s final de enfants y la t no suenan.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "les enfants",
+          "explanation": "Se escribe «les enfants» y suena [le-zã-fã]. Liaison en z otra vez: les enfants. La s final de enfants y la t no suenan.",
           "audio": "les enfants",
           "slow_audio": "les enfants",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "les enfants"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-2-listen",
@@ -3822,22 +3846,24 @@
         },
         {
           "id": "french-reading-11-3-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «deux heures»?",
-          "target": "deux heures",
-          "options": [
-            "[dö ör]",
-            "[deus eu-res]",
-            "[dö-zör]"
-          ],
-          "answer": "[dö-zör]",
-          "explanation": "deux + heures: la x suena z y se une; la h no suena. Lo oirás en todas las horas: trois heures [trua-zör].",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "deux heures",
+          "explanation": "Se escribe «deux heures» y suena [dö-zör]. deux + heures: la x suena z y se une; la h no suena. Lo oirás en todas las horas: trois heures [trua-zör].",
           "audio": "deux heures",
           "slow_audio": "deux heures",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "deux heures"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-3-listen",
@@ -3888,22 +3914,24 @@
         },
         {
           "id": "french-reading-11-4-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «l’eau»?",
-          "target": "l’eau",
-          "options": [
-            "[lo]",
-            "[la o]",
-            "[le e-a-u]"
-          ],
-          "answer": "[lo]",
-          "explanation": "Elisión: le, la, je, ne, de, que pierden su vocal delante de vocal o h y se escribe un apóstrofo: l’eau, l’homme, j’ai, je n’ai pas.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "l’eau",
+          "explanation": "Se escribe «l’eau» y suena [lo]. Elisión: le, la, je, ne, de, que pierden su vocal delante de vocal o h y se escribe un apóstrofo: l’eau, l’homme, j’ai, je n’ai pas.",
           "audio": "l’eau",
           "slow_audio": "l’eau",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "l’eau"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-4-listen",
@@ -3951,22 +3979,24 @@
         },
         {
           "id": "french-reading-11-5-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «j’habite»?",
-          "target": "j’habite",
-          "options": [
-            "[ye a-bít]",
-            "[zha-bít]",
-            "[zhe a-bi-te]"
-          ],
-          "answer": "[zha-bít]",
-          "explanation": "je + habite → j’habite: la h no impide la elisión. Nunca «je habite».",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "j’habite",
+          "explanation": "Se escribe «j’habite» y suena [zha-bít]. je + habite → j’habite: la h no impide la elisión. Nunca «je habite».",
           "audio": "j’habite",
           "slow_audio": "j’habite",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "j’habite"
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-5-listen",
@@ -4014,22 +4044,24 @@
         },
         {
           "id": "french-reading-11-6-meaning",
-          "type": "select_translation",
-          "prompt": "¿Cómo se pronuncia «Il est ici.»?",
-          "target": "Il est ici.",
-          "options": [
-            "[il est i-ci]",
-            "[il è i-sí]",
-            "[i-lè-ti-sí]"
-          ],
-          "answer": "[i-lè-ti-sí]",
-          "explanation": "Encadenamiento y liaison: la l de il se une a est, y la t muda de est suena delante de ici. Se oye como una sola palabra.",
+          "type": "dictation",
+          "prompt": "Escucha y escribe la palabra",
+          "target": "",
+          "options": [],
+          "answer": "Il est ici.",
+          "explanation": "Se escribe «Il est ici.» y suena [i-lè-ti-sí]. Encadenamiento y liaison: la l de il se une a est, y la t muda de est suena delante de ici. Se oye como una sola palabra.",
           "audio": "Il est ici.",
           "slow_audio": "Il est ici.",
           "image": null,
           "writing_asset": null,
           "tags": [],
-          "xp": 10
+          "xp": 10,
+          "instruction": "Escúchala bien: no se escribe exactamente como suena.",
+          "accepted_answers": [
+            "Il est ici."
+          ],
+          "allow_minor_typos": false,
+          "soundQuestion": "dictation"
         },
         {
           "id": "french-reading-11-6-listen",

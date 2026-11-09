@@ -16,7 +16,10 @@ test('antes de survival se enseñan todas las iniciales, las finales difíciles 
   for(const item of ['m','f','n','l','h','z','c','s','e','ian','ui','er','zi · ci · si','zhi · chi · shi · ri','ju · qu · xu'])assert.ok(before.has(item),item);
   for(const item of ['你好','很好','不是','不好','一个','一天','谢谢'])assert.ok(before.has(item),`sandhi: ${item}`);
   const sandhi=activities('reading').find(activity=>activity.id==='chinese-reading-07-3-meaning');
-  assert.equal(sandhi.answer,'[bú shì]');
+  // Se escucha y se elige la palabra (sin escrituras falsas); el cambio de tono va en la explicación.
+  assert.equal(sandhi.type,'listening_choice');
+  assert.equal(sandhi.answer,'不是');
+  assert.match(sandhi.explanation,/\[bú shì\]/);
 });
 
 test('essentials enseña 是, 很 + adjetivo, 的, 也, 在 y 都',()=>{

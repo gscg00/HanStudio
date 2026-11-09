@@ -13,6 +13,7 @@ Object.assign(proto,{
   },
   async renderNotebook(){
     await this.loadDaily();
+    await this.loadComics?.();
     this.notebook=notebookClasses(new Map(this.orderedUnits().map(unit=>[unit.id,unit])),{language:this.language,stories:await this.loadClassStories(),state:this.daily});
     const seen=this.notebook.filter(entry=>entry.seen).reverse();
     const classes=seen.map(entry=>`<details class="nb-class"><summary><span>${esc(entry.title)}</span><small>${entry.items.length}</small></summary>${entry.rule?`<p class="nb-rule">${esc(entry.rule)}</p>`:''}<ul class="nb-items">${entry.items.map(item=>this.notebookRow(item)).join('')}</ul></details>`).join('');

@@ -108,6 +108,8 @@ const PHYSICAL_LAYOUTS={
 };
 
 const KOREAN_SHIFT={KeyQ:'ㅃ',KeyW:'ㅉ',KeyE:'ㄸ',KeyR:'ㄲ',KeyT:'ㅆ',KeyO:'ㅒ',KeyP:'ㅖ'};
+// Para dibujar el mapa del teclado en la práctica de escritura.
+export const physicalLayout=language=>PHYSICAL_LAYOUTS[language]?{base:PHYSICAL_LAYOUTS[language],shift:language==='Korean'?KOREAN_SHIFT:{}}:null;
 
 export function virtualKeyFromPhysicalInput(language,{key='',code='',shiftKey=false}={}){
   if(key==='Backspace')return VIRTUAL_KEY_BACKSPACE;
