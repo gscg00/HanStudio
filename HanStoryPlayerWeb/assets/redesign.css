@@ -57,8 +57,8 @@ body>footer{display:none}
 .jp-app .jp-app-tab{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.5rem .9rem;border:0;border-radius:12px;background:none;color:var(--hs-muted);font-size:.88rem;font-weight:600}
 .jp-app .jp-app-tab.active{background:var(--hs-soft);color:var(--hs-accent);font-weight:700}
 @media(max-width:720px){
-  body:has(.jp-app)>header,body:has(.jp-app) #breadcrumb{display:none}
-  body:has(.jp-app) main{margin-top:max(1rem,env(safe-area-inset-top))}
+  body:has(#beginner-view:not([hidden]) .jp-app)>header,body:has(.jp-app) #breadcrumb{display:none}
+  body:has(#beginner-view:not([hidden]) .jp-app) main{margin-top:max(1rem,env(safe-area-inset-top))}
   .jp-app .jp-app-nav{position:fixed;right:0;bottom:0;left:0;z-index:50;margin:0;padding:.35rem .5rem calc(.35rem + env(safe-area-inset-bottom));border-top:1px solid var(--hs-line);border-radius:0;background:var(--hs-card);box-shadow:0 -8px 24px #1b3a3210}
   .jp-app .jp-app-tabs{width:100%;justify-content:space-around;padding:0;border:0;background:none}
   .jp-app .jp-app-tab{flex:1;flex-direction:column;gap:.15rem;min-height:52px;padding:.3rem .2rem;font-size:.72rem;background:none}
@@ -423,3 +423,27 @@ body:has(.jp-app) #breadcrumb{display:none}
 .ty-game-card{transition:transform .18s ease,box-shadow .18s ease}
 .ty-game-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px #1b3a3214}
 .pf-calendar{grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;max-width:360px;justify-content:start}
+/* Tarea de hoy en Escribir */
+.ty-daily{display:grid;gap:.9rem;margin:0 0 1.4rem;padding:1.2rem 1.3rem;border-radius:20px;background:var(--hs-ink,#1b3a32);color:#fffdf8;box-shadow:0 14px 34px #1b3a3226}
+.ty-daily-head{display:flex;align-items:flex-start;gap:.9rem}
+.ty-daily-head>div{flex:1;min-width:0}
+.ty-daily h2{margin:.15rem 0 .25rem;font-size:1.3rem;color:#fffdf8}
+.ty-daily p{margin:0;color:#d8e4dc;font-size:.92rem}
+.ty-daily .dc-eyebrow{color:#f2b48f}
+.ty-daily-icon{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:14px;background:#ffffff1a;color:#f2b48f}
+.ty-streak{flex:none;padding:.3rem .65rem;border-radius:999px;background:#f2b48f;color:#1b3a32;font-size:.8rem;font-weight:800;white-space:nowrap}
+.ty-daily-bar{height:8px;border-radius:999px;background:#ffffff26;overflow:hidden}
+.ty-daily-bar i{display:block;height:100%;border-radius:inherit;background:#f2b48f;transition:width .35s ease}
+.ty-daily-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.ty-daily-foot small{color:#d8e4dc;font-variant-numeric:tabular-nums}
+.ty-daily-foot button{min-width:8rem}
+.ty-daily-foot button.primary{background:#f2b48f;color:#1b3a32;border-color:#f2b48f}
+.ty-daily-foot button:not(.primary){background:transparent;color:#fffdf8;border-color:#ffffff55}
+.ty-daily.done .ty-daily-icon{background:#2f7a4f;color:#fff}
+.ty-section{margin:0 0 .7rem;font-size:1rem;color:var(--hs-ink)}
+.ty-daily-run .ty-daily-bar{background:var(--hs-line,#e6dccb);margin:.2rem 0 1rem}
+.ty-daily-run .ty-daily-bar i{background:var(--hs-accent,#df6c38)}
+.ty-meaning{margin:.35rem 0 0;color:var(--hs-muted);font-size:1.05rem;text-align:center}
+.ty-input.wrong{border-color:#c4493a;box-shadow:0 0 0 4px #c4493a22}
+.ty-hint{min-height:1.3em;margin:.4rem 0 0;color:#b23c2e;font-size:.9rem;text-align:center}
+.ty-daily-run .ty-stage{display:flex;flex-direction:column;align-items:center}
