@@ -47,3 +47,28 @@ test('letras difíciles, carrera y dictado',async()=>{
   assert.ok(raceTexts(items).length>=3);
   assert.ok(dictationItems(items).every(item=>item.level!=='phrases'));
 });
+
+test('tarea del día: mismas palabras todo el día, lo de clase primero y racha de días',async()=>{
+  const {dailyTaskItems,dailyTaskState,advanceDailyTask,DAILY_TASK_COUNT}=await import('../src/typing_logic.js');
+  const pool=[...Array(30)].map((_,index)=>({text:`w${index}`,meaning:`m${index}`,level:index%5===0?'phrases':'words',known:index<6}));
+  const a=dailyTaskItems(pool,'2026-11-09'),b=dailyTaskItems(pool,'2026-11-09');
+  assert.equal(a.length,DAILY_TASK_COUNT);
+  assert.deepEqual(a.map(item=>item.text),b.map(item=>item.text));
+  assert.ok(a.filter(item=>item.level==='phrases').length<=3);
+  assert.ok(pool.filter(item=>item.known&&item.level!=='phrases').every(item=>a.some(other=>other.text===item.text)));
+  let state=dailyTaskState(null,'2026-11-09');
+  for(let index=0;index<3;index++)state=advanceDailyTask(state,3,'2026-11-09');
+  assert.equal(state.completed,true);assert.equal(state.streak,1);
+  state=advanceDailyTask(state,3,'2026-11-09');assert.equal(state.streak,1);
+  let next=dailyTaskState(state,'2026-11-10');assert.equal(next.done,0);assert.equal(next.streak,1);
+  for(let index=0;index<3;index++)next=advanceDailyTask(next,3,'2026-11-10');
+  assert.equal(next.streak,2);
+  assert.equal(dailyTaskState(next,'2026-11-13').streak,0);
+});
+
+test('frases sin espacio final y œ escrita como oe',async()=>{
+  const {typingText,typedMatches}=await import('../src/typing_logic.js');
+  assert.equal(typingText({target:'Ça va ?'},'French'),'Ça va');
+  assert.ok(typedMatches('oeuf','œuf','French'));
+  assert.ok(typedMatches("l'addition",'L’addition','French'));
+});

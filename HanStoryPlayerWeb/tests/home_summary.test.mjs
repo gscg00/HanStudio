@@ -32,3 +32,14 @@ test('destaca la clase a medias antes que una ya terminada hoy',()=>{
   assert.equal(featuredSummary([summaries[0]]).language,'French');
   assert.equal(featuredSummary([summaries[2]]),null);
 });
+
+test('una clase de lectura cuenta lecciones, no fases',()=>{
+  const lessons=['a','b','c'].map(lessonId=>({unitId:'u',lessonId}));
+  const [summary]=languageSummaries([
+    {id:'daily:korean:v1',classes:[{number:1,kind:'reading',lessons,phasesDone:['review','listen'],totalSteps:0,completedDate:null}]},
+    {id:'guided:korean:v1',completedLessons:['a']},
+  ],{Korean:{slug:'korean'}},new Date('2026-11-09T12:00:00'));
+  assert.equal(summary.reading,true);
+  assert.equal(summary.phases,3);
+  assert.equal(summary.phasesDone,1);
+});

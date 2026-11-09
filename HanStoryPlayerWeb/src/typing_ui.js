@@ -12,7 +12,8 @@ import{decomposeHangulText,physicalLayout}from'./guided_virtual_keyboard.js';
 import{nativeTypingEnabled,setNativeTyping,POSITIONAL,finishKana}from'./native_typing.js';
 import{ui}from'./ui_icons.js';
 const hudHTML=(wave,lives,score)=>`<b>Ola ${wave+1}</b><span class="ty-lives" aria-label="${Math.max(0,lives)} vidas">${ui('heart',{size:16}).repeat(Math.max(0,lives))}</span><b>${score}</b>`;
-import{LEVELS,buildLevel,correctPrefix,dictationItems,levelResult,raceProgress,raceTexts,timeFor,typedMatches,typingPool,updateWeakness,waveSettings,waveWords,weakFirst}from'./typing_logic.js';
+import{dateKey}from'./daily_class.js';
+import{DAILY_TASK_COUNT,advanceDailyTask,dailyTaskItems,dailyTaskState,LEVELS,buildLevel,correctPrefix,normalizeTyped,dictationItems,levelResult,raceProgress,raceTexts,timeFor,typedMatches,typingPool,updateWeakness,waveSettings,waveWords,weakFirst}from'./typing_logic.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const proto=JapaneseCourseApp.prototype,original={renderRoute:proto.renderRoute,handleClick:proto.handleClick,stop:proto.stop};
@@ -21,7 +22,7 @@ const recordId=slug=>`typing:${slug}:v1`;
 const KEY_ROWS=[['KeyQ','KeyW','KeyE','KeyR','KeyT','KeyY','KeyU','KeyI','KeyO','KeyP','BracketLeft','BracketRight'],['KeyA','KeyS','KeyD','KeyF','KeyG','KeyH','KeyJ','KeyK','KeyL','Semicolon','Quote'],['KeyZ','KeyX','KeyC','KeyV','KeyB','KeyN','KeyM','Comma','Period','Slash']];
 const LATIN={BracketLeft:'[',BracketRight:']',Semicolon:';',Quote:"'",Comma:',',Period:'.',Slash:'/'};
 const latinOf=code=>LATIN[code]||code.replace('Key','');
-const REVEAL_OK=1600,REVEAL_MISS=2400;
+const REVEAL_OK=1600,REVEAL_MISS=2400,REVEAL_DAILY=900;
 const svg=body=>`<svg viewBox="0 0 120 80" aria-hidden="true">${body}</svg>`;
 const GAME_ART={
   clock:svg('<rect width="120" height="80" fill="#f3e3d6"/><circle cx="60" cy="42" r="24" fill="#fffdf8" stroke="#1b3a32" stroke-width="3"/><path d="M60 42V28M60 42l10 6" stroke="#b8501f" stroke-width="3" stroke-linecap="round"/><rect x="54" y="12" width="12" height="6" rx="2" fill="#1b3a32"/>'),
@@ -68,10 +69,15 @@ Object.assign(proto,{
     const positional=POSITIONAL.has(this.language),native=nativeTypingEnabled(),name=this.definition.name.toLowerCase();
     const how=positional?`Tu teclado escribe en ${name} por posición, como un teclado nativo.`:this.language==='Japanese'?'Escribe en rōmaji y se convierte en kana: ka → か, shi → し, tsu → つ, kk → っ, nn → ん.':this.language==='Chinese'?'Para escribir caracteres chinos activa el método de entrada pinyin de tu sistema.':'Escribe con tu teclado de siempre; los acentos cuentan.';
     const chips=LEVELS.map((level,index)=>{const best=record.levels[level.id],count=pool.filter(item=>item.level===level.id).length,locked=index>0&&!record.levels[LEVELS[index-1].id]?.passed;return`<button class="ty-chip ${best?.passed?'done':''}" data-ty-level="${level.id}" ${count<4||locked?'disabled':''} title="${esc(locked?'Pasa el nivel anterior (8 de 10)':level.note)}">${index+1}. ${esc(level.title)}${best?` · ${best.correct}/10`:''}</button>`;}).join('');
-    const weakCount=Object.keys(record.weak||{}).length;
+    const weakCount=Object.keys(record.weak||{}).length,day=dateKey(new Date()),task=dailyTaskState(record.daily,day),taskItems=dailyTaskItems(pool,day);
+    this.dailyTask={day,items:taskItems};
+    const taskTotal=taskItems.length,taskDone=Math.min(task.done,taskTotal),taskPercent=taskTotal?Math.round(taskDone/taskTotal*100):0;
+    const taskCard=taskTotal?`<article class="ty-daily ${task.completed?'done':''}"><div class="ty-daily-head"><span class="ty-daily-icon">${ui(task.completed?'check':'pencil',{size:22})}</span><div><span class="dc-eyebrow">TAREA DE HOY</span><h2>${task.completed?'Hecha por hoy':`${taskTotal} palabras para escribir`}</h2><p>${task.completed?'Mañana hay otras. Puedes repetirla si quieres.':'Sin reloj: ve a tu ritmo y fíjate dónde está cada letra.'}</p></div>${task.streak?`<span class="ty-streak" title="Días seguidos">${task.streak} día${task.streak===1?'':'s'}</span>`:''}</div><div class="ty-daily-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${taskTotal}" aria-valuenow="${taskDone}"><i style="width:${taskPercent}%"></i></div><div class="ty-daily-foot"><small>${taskDone} de ${taskTotal}</small><button class="${task.completed?'':'primary'}" data-ty-daily>${task.completed?'Repetir':taskDone?'Seguir':'Empezar'}</button></div></article>`:'';
     const card=(art,title,text,action,extra='',disabled=false)=>`<article class="ty-game-card"><span class="ty-art">${GAME_ART[art]}</span><div><h2>${esc(title)}</h2><p>${esc(text)}</p>${extra}</div>${action?`<button class="primary" ${action} ${disabled?'disabled':''}>Jugar</button>`:''}</article>`;
     this.shell(`<section class="ty-view" data-typing-lang="${esc(this.language)}"><div class="dc-title"><span class="dc-eyebrow">${esc(this.definition.name.toUpperCase())} · ESCRIBIR</span><h1>Escribe con tu teclado</h1><p>${esc(how)}</p></div>
       ${positional?`<details class="ty-mapbox"><summary>Ver el mapa del teclado</summary>${this.keyboardMap()}<label class="ty-toggle"><input type="checkbox" data-ty-native ${native?'checked':''}> Mi teclado escribe en ${esc(name)} (desactívalo si ya tienes el teclado ${esc(name)} instalado)</label></details>`:''}
+      ${taskCard}
+      <h2 class="ty-section">Juegos</h2>
       <div class="ty-games">
         ${card('clock','Contrarreloj','Escribe antes de que se acabe el tiempo; verás qué significa cada una al terminarla.','',`<div class="ty-chips">${chips}</div>${weakCount?`<p class="ty-note">${weakCount} letra${weakCount===1?'':'s'} difícil${weakCount===1?'':'es'}: saldrán más en «Letras».</p>`:''}`)}
         ${card('rocks','Asteroides','Cada asteroide trae una palabra y su traducción. Escríbela antes de que choque con tu nave.','data-ty-asteroids',record.asteroids?`<p class="ty-note">Récord: ${record.asteroids} puntos</p>`:'',pool.length<6)}
@@ -94,6 +100,7 @@ Object.assign(proto,{
   },
   renderTypingItem(){
     const state=this.typing,item=state.items[state.index],dictation=state.mode==='dictation';
+    if(state.mode==='daily')return this.renderDailyTaskItem();
     const seconds=timeFor(item.text,this.language,{level:LEVELS.findIndex(level=>level.id===state.levelId)})+(dictation?3:0);
     this.shell(`<section class="ty-run" data-typing-lang="${esc(this.language)}"><div class="ty-top"><button class="ty-quit" data-ty-quit aria-label="Salir">${ui('close')}</button><span>${state.index+1} / ${state.items.length}</span></div>
       <div class="ty-timer"><i style="animation-duration:${seconds}s"></i></div>
@@ -105,9 +112,35 @@ Object.assign(proto,{
     clearTimeout(this.typingTimer);
     this.typingTimer=setTimeout(()=>this.finishTypingItem(false),seconds*1000);
   },
+  // Tarea del día: sin reloj, con la palabra, su significado y la tecla siguiente.
+  startDailyTask(){
+    window.__hanstudioApp=this;
+    const task=this.dailyTask;if(!task?.items?.length)return this.renderTyping();
+    this.typingRecord().then(record=>{
+      const saved=dailyTaskState(record.daily,task.day),start=saved.completed?0:Math.min(saved.done,task.items.length-1);
+      this.typing={mode:'daily',items:task.items,index:start,answers:[],day:task.day,repeat:saved.completed};
+      this.renderTypingItem();
+    });
+  },
+  renderDailyTaskItem(){
+    const state=this.typing,item=state.items[state.index],total=state.items.length;
+    this.shell(`<section class="ty-run ty-daily-run" data-typing-lang="${esc(this.language)}"><div class="ty-top"><button class="ty-quit" data-ty-quit aria-label="Salir">${ui('close')}</button><span>Tarea de hoy · ${state.index+1} / ${total}</span></div>
+      <div class="ty-daily-bar"><i style="width:${state.index/total*100}%"></i></div>
+      <div class="ty-stage"><p class="ty-target" lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(item.text)}</p>${item.meaning?`<p class="ty-meaning">${esc(item.meaning)}</p>`:''}</div>
+      <input class="ty-input" data-ty-input autocomplete="off" autocapitalize="off" spellcheck="false" lang="${esc(this.definition.htmlLang)}" dir="auto" aria-label="Escribe: ${esc(item.text)}">
+      <p class="ty-hint" aria-live="polite"></p>
+      <div class="ty-map">${this.keyboardMap(this.nextLetter(item.text,''))}</div></section>`,'Escribir');
+    this.root.querySelector('[data-ty-input]')?.focus();
+    clearTimeout(this.typingTimer);
+  },
   onTypingInput(input){
     const state=this.typing;if(!state||state.revealing)return;
     const item=state.items[state.index];
+    if(state.mode==='daily'){
+      const typed=this.typedValue(input),wrong=input.value&&!typedMatches(typed,item.text,this.language)&&(this.language==='Korean'?!this.nextLetter(item.text,input.value):!normalizeTyped(item.text,this.language).startsWith(normalizeTyped(input.value,this.language)));
+      input.classList.toggle('wrong',Boolean(wrong));
+      const hint=this.root.querySelector('.ty-hint');if(hint)hint.textContent=wrong?'Esa letra no va: bórrala y prueba otra.':'';
+    }
     if(state.mode!=='dictation'){const map=this.root.querySelector('.ty-map');if(map)map.innerHTML=this.keyboardMap(this.nextLetter(item.text,input.value));}
     if(typedMatches(this.typedValue(input),item.text,this.language))this.finishTypingItem(true);
   },
@@ -122,12 +155,24 @@ Object.assign(proto,{
     if(input)input.disabled=true;
     this.root.querySelector('.ty-timer i')?.style.setProperty('animation-play-state','paused');
     if(state.mode==='dictation'&&!ok)this.playKeyAudio?.(item.text,'normal',false);
-    setTimeout(()=>{if(this.typing!==state)return;state.revealing=false;state.index++;state.index<state.items.length?this.renderTypingItem():this.renderTypingResult();},ok?REVEAL_OK:REVEAL_MISS);
+    if(state.mode==='daily'){
+      this.root.querySelector('.ty-hint')?.replaceChildren();
+      this.typingRecord().then(async record=>{
+        if(!state.repeat){record.daily=advanceDailyTask(dailyTaskState(record.daily,state.day),state.items.length,state.day);await this.saveTypingRecord(record);}
+        state.record=record.daily;
+      });
+    }
+    setTimeout(()=>{if(this.typing!==state)return;state.revealing=false;state.index++;state.index<state.items.length?this.renderTypingItem():this.renderTypingResult();},state.mode==='daily'?REVEAL_DAILY:ok?REVEAL_OK:REVEAL_MISS);
   },
   async renderTypingResult(){
     const state=this.typing,result=levelResult(state.answers),record=await this.typingRecord();
     record.weak=this.typingWeak||record.weak||{};
     let title,line,again,next='';
+    if(state.mode==='daily'){
+      const task=dailyTaskState(record.daily,state.day);
+      this.typing=null;
+      return this.renderTypingScore('Tarea de hoy',task.streak>1?`¡Hecha! ${task.streak} días seguidos`:'¡Hecha! Mañana hay otras palabras','<button class="primary" data-ty-menu>Ir a los juegos</button>',{back:false});
+    }
     if(state.mode==='dictation'){
       const best=result.correct>(record.dictation||0);if(best)record.dictation=result.correct;
       title='Dictado relámpago';line=`${result.correct} de ${result.total}${best?' · ¡nuevo récord!':''}`;again='data-ty-dictation';
@@ -143,8 +188,8 @@ Object.assign(proto,{
     this.renderTypingScore(title,line,`<button class="primary" ${again}>Otra vez</button>${next}`);
   },
   // Fin de una partida: solo el resultado, sin listas que saquen del juego.
-  renderTypingScore(title,line,buttons){
-    this.shell(`<section class="ty-run ty-score"><span class="dc-eyebrow">${esc(title.toUpperCase())}</span><h1>${esc(line)}</h1><div class="ty-actions">${buttons}<button data-ty-menu>Volver</button></div></section>`,'Escribir');
+  renderTypingScore(title,line,buttons,{back=true}={}){
+    this.shell(`<section class="ty-run ty-score"><span class="dc-eyebrow">${esc(title.toUpperCase())}</span><h1>${esc(line)}</h1><div class="ty-actions">${buttons}${back?'<button data-ty-menu>Volver</button>':''}</div></section>`,'Escribir');
     this.root.querySelector('.ty-actions .primary')?.focus();
   },
 
@@ -277,11 +322,12 @@ Object.assign(proto,{
 
   stop(){clearTimeout(this.typingTimer);this.typing=null;this.asteroids=null;this.race=null;return original.stop.call(this);},
   handleClick(event){
-    const button=event.target.closest('[data-ty-level],[data-ty-asteroids],[data-ty-race],[data-ty-dictation],[data-ty-replay],[data-ty-menu],[data-ty-quit]');
+    const button=event.target.closest('[data-ty-daily],[data-ty-level],[data-ty-asteroids],[data-ty-race],[data-ty-dictation],[data-ty-replay],[data-ty-menu],[data-ty-quit]');
     if(!button)return original.handleClick.call(this,event);
     if(button.hasAttribute('data-ty-replay')){const item=this.typing?.items?.[this.typing.index];if(item)this.playKeyAudio?.(item.text,'normal',false);this.root.querySelector('[data-ty-input]')?.focus();return;}
     clearTimeout(this.typingTimer);
     if(button.dataset.tyLevel)return this.startTypingLevel(button.dataset.tyLevel);
+    if(button.hasAttribute('data-ty-daily'))return this.startDailyTask();
     if(button.hasAttribute('data-ty-asteroids'))return this.startAsteroids();
     if(button.hasAttribute('data-ty-race'))return this.startRace();
     if(button.hasAttribute('data-ty-dictation'))return this.startDictation();

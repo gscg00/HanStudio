@@ -13,7 +13,7 @@ export const ITEMS_PER_LEVEL=10,PASS=8;
 const KANA=/^[\p{Script=Hiragana}\p{Script=Katakana}ー・\s]+$/u;
 // Lo que se escribe: en japonés solo kana (el kanji necesita un método de entrada).
 export function typingText(item,language){
-  const target=String(item?.target||'').trim().replace(/[.!?。！？]+$/u,'');
+  const target=String(item?.target||'').trim().replace(/[.!?。！？]+$/u,'').trim();
   if(language!=='Japanese')return target;
   if(KANA.test(target))return target;
   const note=String(item?.note||item?.reading||'').trim();
@@ -60,6 +60,8 @@ export const normalizeTyped=(text,language)=>{
   let value=String(text||'').normalize('NFC').trim().replace(/[.!?¡¿。！？]+$/u,'').replace(/\s+/g,' ');
   if(/[A-Za-zÀ-ÿ]/.test(value)&&!['Korean','Japanese','Chinese','Arabic','Russian'].includes(language))value=value.toLowerCase();
   if(language==='Russian')value=value.toLowerCase().replace(/ё/g,'е');
+  // œ y æ no están en un teclado español: «oeuf» vale por «œuf».
+  value=value.replace(/œ/g,'oe').replace(/Œ/g,'Oe').replace(/æ/g,'ae').replace(/[’‘`´]/g,"'");
   return value;
 };
 export const typedMatches=(typed,target,language)=>normalizeTyped(typed,language)===normalizeTyped(target,language);
@@ -110,4 +112,33 @@ export const raceProgress=(done,current,total)=>total?Math.min(1,(done+current)/
 export function dictationItems(pool,{seed=0,count=ITEMS_PER_LEVEL}={}){
   const words=buildLevel(pool,'words',{seed,count}),shorts=buildLevel(pool,'short',{seed,count});
   return [...words,...shorts].slice(0,count);
+}
+
+// ── Tarea del día ─────────────────────────────────────────────────────
+// Quince palabras sin reloj para acostumbrarse al teclado. Las mismas todo el día
+// (se puede dejar a medias y seguir), primero lo aprendido en clase y lo más corto.
+export const DAILY_TASK_COUNT=15;
+export function dailyTaskItems(pool,day,{count=DAILY_TASK_COUNT}={}){
+  const order=['short','words','letters','phrases'],seed=`daily|${day}`;
+  const ranked=order.flatMap(level=>buildLevel(pool,level,{seed,count:pool.length}));
+  // Como mucho tres frases: es para soltar los dedos, no una prueba.
+  const phrases=ranked.filter(item=>item.level==='phrases').slice(0,3);
+  const rest=ranked.filter(item=>item.level!=='phrases');
+  const known=rest.filter(item=>item.known),other=rest.filter(item=>!item.known);
+  const picked=[...known,...other].slice(0,Math.max(0,count-phrases.length));
+  // De lo más corto a lo más largo, para entrar en calor.
+  return [...shuffle(picked,seed).sort((a,b)=>[...a.text].length-[...b.text].length),...phrases].slice(0,count);
+}
+const previousDay=day=>{const date=new Date(`${day}T12:00:00`);date.setDate(date.getDate()-1);return date.toISOString().slice(0,10);};
+// Estado de la tarea de hoy a partir de lo guardado (un día nuevo empieza de cero).
+export function dailyTaskState(saved,day){
+  const today=saved?.date===day?saved:{date:day,done:0,completed:false};
+  const alive=saved&&(saved.lastCompleted===day||saved.lastCompleted===previousDay(day));
+  return {...today,streak:alive?Number(saved.streak)||0:0,lastCompleted:saved?.lastCompleted||''};
+}
+// Una palabra más hecha; al llegar al total, la tarea cuenta para la racha.
+export function advanceDailyTask(state,total,day){
+  const done=Math.min(total,(state.done||0)+1),completed=done>=total;
+  if(!completed||state.completed)return {...state,done};
+  return {...state,done,completed:true,lastCompleted:day,streak:state.lastCompleted===day?state.streak:(state.streak||0)+1};
 }
