@@ -2,7 +2,7 @@
 // de todos los cursos guiados) envolviendo unos pocos métodos, para no tocar
 // el flujo de lecciones existente.
 import{JapaneseCourseApp,lessonActivitiesForPresentation,reviewItemsForSession}from'./japanese_course_app.js';
-import{completeGuidedLesson,completeGuidedReview,scoreActivities,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
+import{completeGuidedLesson,completeGuidedReview,scoreActivities,touchStudyDate,GUIDED_PASSING_SCORE}from'./guided_course_logic.js';
 import{xpService}from'./xp_service.js';
 import{pickVoice}from'./voices.js';
 import{blockAnimationHTML,syllablesForCard}from'./hangul_blocks.js';
@@ -16,6 +16,7 @@ import{WORD_PACKS}from'./data/word_packs.js';
 import{allClassSpecs,placementSample,registerComics,unplacedScenes}from'./class_plan.js';
 import{dateKey,placementLevel}from'./daily_class.js';
 import{CLASS_MODULES,LATIN_SCRIPT,STORY_UNITS,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
+import{ui,withIcon}from'./ui_icons.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -120,7 +121,17 @@ Object.assign(proto,{
     return this.classStories=Object.fromEntries(STORY_UNITS.map((id,index)=>[id,files[index]?.stories||[]]));
   },
 
-  async ensureTodayClass(force=false){
+  // Las notas de cómic pesan cientos de KB: se descargan una vez por sesión.
+  async comicNotesData(){
+    if(this.comicNotesCache===undefined)this.comicNotesCache=await this.fetch(`library/comic_notes/${this.definition.directory}.json`).catch(()=>null);
+    return this.comicNotesCache;
+  },
+  // Dos toques seguidos en «Hacer la siguiente clase» no deben crear dos clases.
+  ensureTodayClass(force=false){
+    this.ensuringClass??=this.buildTodayClass(force).finally(()=>{this.ensuringClass=null;});
+    return this.ensuringClass;
+  },
+  async buildTodayClass(force=false){
     await this.loadDaily();
     await this.loadComics();
     const status=dailyStatus(this.daily);
@@ -145,7 +156,7 @@ Object.assign(proto,{
     const progress=planProgress(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons,state:this.daily});
     if(this.daily.totalItems!==progress.total||this.daily.learnedItems!==progress.done||this.daily.language!==this.language){this.daily.language=this.language;this.daily.totalLessons=this.allLessons().length;this.daily.totalItems=progress.total;this.daily.learnedItems=progress.done;this.saveDaily();}
     const module=CLASS_MODULES.find(item=>item.id===entry.module),dialogue=entry.lines?.some(line=>line.speaker),eyebrow=reading?`${this.definition.name} · Lectura`:`${this.definition.name} · ${entry.level||progress.level} · Clase ${entry.number}${module?` · ${module.title}`:''}`,goal=reading?'Antes de hablar, aprendes a leer: así podrás leer todo lo que veas en las clases.':`Al terminar podrás ${entry.goal}`;
-    const details={review:`${review.length} palabras y frases de clases anteriores`,listen:entry.story?`Escucha la historia «${entry.story}»`:dialogue?'Escucha una conversación con lo de hoy':'Escucha, lee y repite lo de hoy',learn:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
+    const details={review:review.length?`${review.length} palabras y frases de clases anteriores`:'Primera clase: todavía no hay nada que repasar',listen:entry.story?`Escucha la historia «${entry.story}»`:dialogue?'Escucha una conversación con lo de hoy':'Escucha, lee y repite lo de hoy',learn:`${entry.items.length} palabras y frases${entry.rule?', y cómo funcionan':''}`,practice:'Reconoce, recuerda y arma frases',close:'Responde y dilo con tus palabras'};
     if(entry.stage==='exam')details.practice=`${entry.items.length} preguntas sin ayuda · aprobar con ${EXAM_PASS}%`;
     if(entry.stage==='recap')details.learn='Vuelve a ver las reglas de la semana';
     if(entry.comic)details.learn=`Analiza las ${entry.items.length} frases de la escena: qué dicen y por qué así`;
@@ -158,12 +169,14 @@ Object.assign(proto,{
     if(entry.write)details.close='Responde y escribe un texto corto';
     if(entry.drills?.length)details.practice='Comprueba el texto y aplica la regla';
     const shown=this.classSteps(entry),minutes=estimatedMinutes(entry,review.length);
-    const nodes=shown.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':phase===next&&!done?'current':'locked';return`<li class="dc-step ${state}" style="--i:${index}"><span class="dc-step-dot" aria-hidden="true">${state==='done'?'✓':index+1}</span><div><strong>${esc(phase.title)}</strong><span>${esc(details[phase.id])}</span></div></li>`;}).join('');
+    // El anillo del inicio cuenta los pasos reales de esta clase, no cinco fijos.
+    if(entry.totalSteps!==shown.length){entry.totalSteps=shown.length;this.saveDaily();}
+    const nodes=shown.map((phase,index)=>{const state=entry.phasesDone.includes(phase.id)?'done':phase===next&&!done?'current':'locked';return`<li class="dc-step ${state}" style="--i:${index}"><span class="dc-step-dot" aria-hidden="true">${state==='done'?ui('check',{size:16}):index+1}</span><div><strong>${esc(phase.title)}</strong><span>${esc(details[phase.id])}</span></div></li>`;}).join('');
     const chips=(items,cls='')=>items.map((item,index)=>`<span class="dc-chip ${cls}" style="--i:${index}" lang="${esc(this.definition.htmlLang)}" dir="auto">${hasIllustration(item.meaning)?`<i aria-hidden="true">${illustrationFor(item.meaning)}</i>`:''}${esc(item.target)}<em>${esc(item.meaning)}</em></span>`).join('');
     const sound=nextSoundLesson(this.orderedUnits(),{language:this.language,completedLessons:this.progress.completedLessons});
     const started=entry.phaseIndex>0||entry.learnIndex>0||Boolean(entry.resume);
-    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${reading?`${started?'Seguir':'Empezar'} la lectura`:started?`Seguir: ${esc(next?.title||'')}`:'Empezar la clase'} <span aria-hidden="true">→</span></button><small>${reading?'':`Unos ${minutes} minutos · `}puedes parar cuando quieras</small></div>`;
-    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>${reading?'Lectura completada':`Clase ${entry.number} completada`}</h2><p>${entry.goal?`Ya puedes ${esc(entry.goal)} `:''}Por hoy es suficiente. Mañana hay otra clase.</p><details class="dc-extra"><summary>¿Quieres seguir un poco más?</summary>${entry.items.length?`<button data-dc-action="recap">▶ Video de repaso de hoy</button><button data-dg-action="start">◆ Minijuego: imagen, sonido y palabra</button><button data-dc-action="replay-listen">♪ Volver a escuchar lo de hoy</button>`:''}<button data-dc-action="free-practice">✎ Práctica libre con todo lo visto</button>${sound?'<button data-dc-action="sound-lesson">♫ Lección de pronunciación</button>':''}<button class="dc-advance" data-dc-action="advance">Hacer la siguiente clase ahora</button></details></section>`:'';
+    const action=done?'':`<div class="dc-dock"><button class="primary dc-cta" data-dc-action="start-phase" data-dc-phase="${esc(next?.id)}">${reading?`${started?'Seguir':'Empezar'} la lectura`:started?`Seguir: ${esc(next?.title||'')}`:'Empezar la clase'} ${ui('arrow')}</button><small>Puedes parar cuando quieras: se guarda dónde ibas</small></div>`;
+    const doneBlock=done?`<section class="dc-done"><div class="dc-done-burst" aria-hidden="true">${'<i></i>'.repeat(12)}</div><h2>${reading?'Lectura completada':entry.retake?'Prueba no superada':`Clase ${entry.number} completada`}</h2><p>${entry.retake?'Repasa lo que fallaste; mañana vuelves a intentar la prueba.':`${entry.goal?`Ya puedes ${esc(entry.goal)} `:''}Por hoy es suficiente. Mañana hay otra clase.`}</p><details class="dc-extra"><summary>¿Quieres seguir un poco más?</summary>${entry.items.length?`<button data-dc-action="recap">${withIcon('video','Video de repaso de hoy')}</button><button data-dg-action="start">${withIcon('game','Minijuego: imagen, sonido y palabra')}</button><button data-dc-action="replay-listen">${withIcon('sound','Volver a escuchar lo de hoy')}</button>`:''}<button data-dc-action="free-practice">${withIcon('pencil','Práctica libre con todo lo visto')}</button>${sound?`<button data-dc-action="sound-lesson">${withIcon('music','Lección de pronunciación')}</button>`:''}<button class="dc-advance" data-dc-action="advance">Hacer la siguiente clase ahora</button></details></section>`:'';
     this.shell(`<section class="dc-today ${done?'is-done':''}">
       <div class="dc-title"><span class="dc-eyebrow">${esc(eyebrow.toUpperCase())}</span><h1>${esc(title)}</h1>${done?'':`<p class="dc-goal">${esc(goal)}</p>`}<div class="dc-course-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress.percent}" aria-label="Avance del idioma"><span><i style="width:${progress.percent}%"></i></span><small>Nivel ${esc(progress.level)} · ${progress.done} de ${progress.total} clases</small></div></div>
       ${reading?`<section class="dc-card dc-reading-note"><h2>Hoy: ${entry.lessons.length} lecci${entry.lessons.length===1?'ón':'ones'} de lectura</h2><p>Las primeras clases son solo letras y sonidos. En cuanto puedas leer empiezan las conversaciones.</p></section>`:done?'':`<ol class="dc-steps">${nodes}</ol>`}
@@ -175,7 +188,7 @@ Object.assign(proto,{
   // Terminado el plan, lo aprendido se mantiene con el repaso de cada día.
   renderCourseDone(){
     const due=classReviewItems(this.daily,{limit:this.reviewLimit()}).length;
-    this.shell(`<section class="dc-today"><div class="dc-empty"><b>✓</b><h1>Terminaste el plan de ${esc(this.definition.name.toLowerCase())}</h1><p>${due?`Hoy tienes ${due} palabras y frases por repasar. Con esto no se te olvida lo aprendido.`:'Hoy no tienes nada por repasar. Vuelve mañana.'}</p>${due?'<button class="primary" data-dc-action="keep-review">Repasar ahora</button>':''}<button class="dc-link" data-jp-route="notebook">Abrir el cuaderno</button></div></section>`,'Hoy');
+    this.shell(`<section class="dc-today"><div class="dc-empty"><b>${ui('check',{size:30})}</b><h1>Terminaste el plan de ${esc(this.definition.name.toLowerCase())}</h1><p>${due?`Hoy tienes ${due} palabras y frases por repasar. Con esto no se te olvida lo aprendido.`:'Hoy no tienes nada por repasar. Vuelve mañana.'}</p>${due?'<button class="primary" data-dc-action="keep-review">Repasar ahora</button>':''}<button class="dc-link" data-jp-route="notebook">Abrir el cuaderno</button></div></section>`,'Hoy');
   },
   // Las palabras que ya recuerdas bien se escriben o se arman: reconocerlas ya no cuesta.
   harderReview(seed){
@@ -224,7 +237,7 @@ Object.assign(proto,{
       return this.runSet(phase,buildExamSet(entry.items,this.itemPool(entry,{includeToday:false}),{seed,language:this.language,typing:typingName}));
     }
     if(entry.comic&&phase.id==='learn'){
-      const notes=await this.fetch(`library/comic_notes/${this.definition.directory}.json`).catch(()=>null);
+      const notes=await this.comicNotesData();
       return this.runSet(phase,buildComicAnalysis(entry.items,notes,{seed}));
     }
     if(entry.stage==='recap'&&phase.id==='learn'){
@@ -237,7 +250,7 @@ Object.assign(proto,{
     }
     if(phase.id==='real'){
       if(!entry.real)return this.finishPhase(phase,null,{skip:true});
-      const notes=await this.fetch(`library/comic_notes/${this.definition.directory}.json`).catch(()=>null);
+      const notes=await this.comicNotesData();
       return this.runSet(phase,[...buildComicAnalysis(entry.real.lines,notes,{seed}),...buildWordChecks(entry.real.lines.slice(0,3),[...pool,...entry.real.lines],{seed})]);
     }
     if(phase.id==='story'){
@@ -367,6 +380,13 @@ Object.assign(proto,{
 
   async finishPhase(phase,result,{note='',skip=false}={}){
     this.daily=completePhase(this.daily,phase.id,result);
+    // Las fases que esta clase no tiene (p. ej. «Frases reales» en A1) se cierran solas,
+    // para que el checkpoint no anuncie un paso que no existe.
+    const entry=currentClass(this.daily),steps=entry.kind==='reading'?[]:this.classSteps(entry);
+    if(steps.length)while(entry.phaseIndex<DAILY_PHASES.length&&!entry.completedDate&&!steps.some(step=>step.id===DAILY_PHASES[currentClass(this.daily).phaseIndex]?.id)){this.daily=completePhase(this.daily,DAILY_PHASES[currentClass(this.daily).phaseIndex].id,null);if(currentClass(this.daily).completedDate)break;}
+    // Cada fase terminada cuenta como día de estudio (racha y calendario del perfil).
+    this.progress=touchStudyDate({...this.progress,activityDates:[...(this.progress.activityDates||[])],mistakes:this.progress.mistakes||[]},new Date());
+    await this.put('metadata',this.progress).catch(()=>{});
     await this.saveDaily();
     if(currentClass(this.daily).completedDate)return this.renderClassComplete();
     // Una fase sin nada que hacer (p. ej. el repaso de la primera clase) no merece un
@@ -382,17 +402,17 @@ Object.assign(proto,{
     const title=free?'Práctica terminada':lessonBreak?entry.kind==='reading'?`Lección ${nextIndex} de ${total} lista`:'Sonidos listos':`Ahora: ${next?.title||''}`;
     const nextLabel=free?'':lessonBreak?nextPart?.items?'Seguir con la clase':`Seguir con la lección ${nextIndex+1}`:'Continuar';
     const nextAttr=lessonBreak?'learn':next?.id,missed=result?.errors?.length;
-    this.shell(`<section class="dc-checkpoint"><span class="dc-check" aria-hidden="true">✓</span>${!free&&!lessonBreak&&step?`<span class="dc-eyebrow">PASO ${step} DE ${steps.length}</span>`:''}<h1>${esc(title)}</h1>${!free&&!lessonBreak&&next?`<p>${esc(next.id==='listen'&&!entry.lines?.some(line=>line.speaker)?'Escucha lo de hoy, léelo y repítelo en voz alta.':next.description)}</p>`:''}${missed?`<p class="dc-soft">Lo que no salió volverá en un repaso.</p>`:''}${note?`<p>${esc(note)}</p>`:''}${nextLabel?`<button class="primary" data-dc-action="start-phase" data-dc-phase="${esc(nextAttr)}">${esc(nextLabel)}</button>`:''}<button class="dc-link" data-dc-action="to-today">${free?'Volver':'Seguir más tarde'}</button></section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint"><span class="dc-check" aria-hidden="true">${ui('check',{size:28})}</span>${!free&&!lessonBreak&&step?`<span class="dc-eyebrow">PASO ${step} DE ${steps.length}</span>`:''}<h1>${esc(title)}</h1>${!free&&!lessonBreak&&next?`<p>${esc(next.id==='listen'&&!entry.lines?.some(line=>line.speaker)?'Escucha lo de hoy, léelo y repítelo en voz alta.':next.description)}</p>`:''}${missed?`<p class="dc-soft">Lo que no salió volverá en un repaso.</p>`:''}${note?`<p>${esc(note)}</p>`:''}${nextLabel?`<button class="primary" data-dc-action="start-phase" data-dc-phase="${esc(nextAttr)}">${esc(nextLabel)}</button>`:''}<button class="dc-link" data-dc-action="to-today">${free?'Volver':'Seguir más tarde'}</button></section>`,'Hoy');
   },
 
   renderExamResult(result,passed){
     const entry=currentClass(this.daily);
-    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">${passed?'★':'↻'}</span><span class="dc-eyebrow">${esc(entry.title.toUpperCase())}</span><h1>${result.percentage}%</h1><p>${passed?`Superaste el nivel ${esc(entry.level)}. Lo que fallaste vuelve en tus próximos repasos.`:`Para pasar hace falta ${EXAM_PASS}%. Lo que fallaste vuelve primero en el repaso y mañana repites la prueba.`}</p><button class="primary" data-jp-route="today">Volver a Hoy</button></section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">${passed?ui('star',{size:28}):ui('replay',{size:28})}</span><span class="dc-eyebrow">${esc(entry.title.toUpperCase())}</span><h1>${result.percentage}%</h1><p>${passed?`Superaste el nivel ${esc(entry.level)}. Lo que fallaste vuelve en tus próximos repasos.`:`Para pasar hace falta ${EXAM_PASS}%. Lo que fallaste vuelve primero en el repaso y mañana repites la prueba.`}</p><button class="primary" data-jp-route="today">Volver a Hoy</button></section>`,'Hoy');
   },
 
   renderClassComplete(){
     const entry=currentClass(this.daily),reading=entry.kind==='reading';
-    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">★</span><span class="dc-eyebrow">${reading?'LECTURA':`CLASE ${entry.number}`} TERMINADA</span><h1>${reading?'¡Listo por hoy!':`Ya puedes ${esc(entry.goal)}`}</h1><p>Mañana empezamos repasando esto.</p><button class="primary" data-dc-action="to-today">Terminar</button>${entry.items.length?`<button class="dc-link" data-dc-action="recap">Ver el video de repaso</button>`:''}</section>`,'Hoy');
+    this.shell(`<section class="dc-checkpoint complete"><span class="dc-check" aria-hidden="true">${ui('star',{size:28})}</span><span class="dc-eyebrow">${reading?'LECTURA':`CLASE ${entry.number}`} TERMINADA</span><h1>${reading?'¡Listo por hoy!':`Ya puedes ${esc(entry.goal)}`}</h1><p>Mañana empezamos repasando esto.</p><button class="primary" data-dc-action="to-today">Terminar</button>${entry.items.length?`<button class="dc-link" data-dc-action="recap">Ver el video de repaso</button>`:''}</section>`,'Hoy');
   },
 
   // ── Fase de escucha (Assimil) ──────────────────────────────────────────
@@ -409,16 +429,16 @@ Object.assign(proto,{
     if(step===0){
       const pictures=stories.length?'':lines.filter(line=>hasIllustration(line.meaning)).slice(0,6).map(line=>`<figure data-dc-line="${lines.indexOf(line)}">${illustrationFor(line.meaning)}</figure>`).join('');
       const scenes=stories.map((story,index)=>`<figure class="dc-story-scene" data-dc-story="${index}">${sceneOf(story)}<figcaption>${esc(story.title)}</figcaption></figure>`).join('');
-      body=`<p class="dc-listen-help">${listenTitle?`Hoy escuchas «${esc(listenTitle)}». Habrá palabras nuevas: no te detengas, solo sigue la idea.`:'Todavía no intentes entenderlo todo. Escucha una o dos veces cómo suena.'}</p>${scenes?`<div class="dc-story-scenes">${scenes}</div>`:`<div class="dc-orb" aria-hidden="true"><i></i><i></i><i></i><span>♪</span></div><div class="dc-listen-pictures">${pictures}</div>`}<p class="dc-listen-count" aria-live="polite"></p><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo</button><button data-dc-action="listen-step" data-dc-step="1">Siguiente →</button></div>`;
+      body=`<p class="dc-listen-help">${listenTitle?`Hoy escuchas «${esc(listenTitle)}». Habrá palabras nuevas: no te detengas, solo sigue la idea.`:'Todavía no intentes entenderlo todo. Escucha una o dos veces cómo suena.'}</p>${scenes?`<div class="dc-story-scenes">${scenes}</div>`:`<div class="dc-orb" aria-hidden="true"><i></i><i></i><i></i><span>${ui('sound',{size:34})}</span></div><div class="dc-listen-pictures">${pictures}</div>`}<p class="dc-listen-count" aria-live="polite"></p><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">${withIcon('play','Escuchar todo')}</button><button data-dc-action="listen-step" data-dc-step="1">Siguiente ${ui('arrow')}</button></div>`;
     }else if(step===1){
       const list=stories.length?stories.map((story,storyIndex)=>`<section class="dc-story"><div class="dc-story-head"><i aria-hidden="true">${sceneOf(story)}</i><h3>${esc(story.title)}</h3></div><ol class="dc-lines">${lines.map((line,index)=>line.story===storyIndex?lineItem(line,index):'').join('')}</ol>${story.notes?.length?`<details class="dc-notes"><summary>Notas de la lección</summary><dl>${story.notes.map(note=>`<dt lang="${lang}" dir="auto">${esc(note.ko)}</dt><dd>${esc(note.es)}</dd>`).join('')}</dl></details>`:''}</section>`).join(''):`<ol class="dc-lines">${lines.map(lineItem).join('')}</ol>`;
-      body=`<p class="dc-listen-help">Ahora escucha mientras lees. Toca cualquier frase para oírla otra vez.${stories.length?' Abre las notas para entender cada detalle.':''}</p><div class="dc-lines-wrap">${list}</div><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">▶ Escuchar todo leyendo</button><button data-dc-action="listen-step" data-dc-step="2">Siguiente →</button></div>`;
+      body=`<p class="dc-listen-help">Ahora escucha mientras lees. Toca cualquier frase para oírla otra vez.${stories.length?' Abre las notas para entender cada detalle.':''}</p><div class="dc-lines-wrap">${list}</div><div class="dc-listen-actions"><button class="primary" data-dc-action="play-all">${withIcon('play','Escuchar todo leyendo')}</button><button data-dc-action="listen-step" data-dc-step="2">Siguiente ${ui('arrow')}</button></div>`;
     }else if(step===2){
       const index=Math.max(0,Math.min(lines.length-1,this.dailyShadowIndex||0)),line=lines[index],story=stories[line.story];
       const picture=story?`<div class="dc-shadow-scene" aria-hidden="true">${sceneOf(story)}</div>`:hasIllustration(line.meaning)?`<div class="dc-shadow-pic" aria-hidden="true">${illustrationFor(line.meaning)}</div>`:'';
-      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">↺ Otra vez</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase →</button>`:script?`<button class="primary" data-dc-action="listen-step" data-dc-step="3">Siguiente →</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ✓</button>`}</div>`;
+      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">${withIcon('replay','Otra vez')}</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase ${ui('arrow')}</button>`:script?`<button class="primary" data-dc-action="listen-step" data-dc-step="3">Siguiente ${ui('arrow')}</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ${ui('check')}</button>`}</div>`;
     }else if(step===3)body=this.roleplayBody(script);
-    this.shell(`<section class="dc-listen step-${step}"><header class="dc-listen-top"><button data-dc-action="to-today" aria-label="Salir">✕</button><div><strong>${esc(steps[step])}</strong><span>${step+1} de ${steps.length}</span></div></header>${body}</section>`,'Hoy');
+    this.shell(`<section class="dc-listen step-${step}"><header class="dc-listen-top"><button data-dc-action="to-today" aria-label="Salir">${ui('close')}</button><div><strong>${esc(steps[step])}</strong><span>${step+1} de ${steps.length}</span></div></header>${body}</section>`,'Hoy');
     if(step===2)this.shadowLine('normal');
     if(step===3)this.roleplayTurn(script);
   },
@@ -428,7 +448,7 @@ Object.assign(proto,{
     const lang=esc(this.definition.htmlLang),index=Math.min(turns.length-1,this.dailyRoleIndex||0),{line,mine}=turns[index],shown=!mine||this.dailyRoleShown;
     const said=this.dailyRoleSaid,heard=said?`<p class="dc-role-heard" lang="${lang}" dir="auto">${esc(said.text)}</p><p class="dc-soft">${said.ok?'Se entendió.':'Compara con la frase y dila otra vez si quieres.'}</p>`:'';
     const speak=mine&&!shown?`${speechRecognitionSupport().supported?'<button class="primary" data-dc-action="role-speak">🎤 Decirlo</button>':''}<button ${speechRecognitionSupport().supported?'':'class="primary"'} data-dc-action="role-show">Ya lo dije, ver la frase</button>`:'';
-    const next=shown||!mine?`<button data-dc-action="role-again">↺ Oír</button>${index<turns.length-1?'<button class="primary" data-dc-action="role-next">Siguiente →</button>':'<button class="primary" data-dc-action="listen-finish">Terminar ✓</button>'}`:'';
+    const next=shown||!mine?`<button data-dc-action="role-again">${withIcon('replay','Oír')}</button>${index<turns.length-1?`<button class="primary" data-dc-action="role-next">Siguiente ${ui('arrow')}</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ${ui('check')}</button>`}`:'';
     return`<p class="dc-listen-help">Eres ${esc(role)}. Cuando te toque, di la frase de memoria, en voz alta. Si no te sale, mírala: no pasa nada.</p><div class="dc-shadow"><div class="dc-shadow-count">${index+1} / ${turns.length}</div><div class="dc-line-speaker">${esc(mine?`Tú (${role})`:line.speaker||'')}</div>${shown?`<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}`:'<div class="dc-shadow-ko" aria-hidden="true">…</div>'}<div class="dc-shadow-es">${esc(line.meaning)}</div>${heard}</div><div class="dc-listen-actions">${speak}${next}</div>`;
   },
   roleplayTurn(script){
@@ -498,7 +518,7 @@ Object.assign(proto,{
     const unit=this.units.get(entry.lessons[0]?.unitId);
     this.shell(`<section class="dc-recap"><div class="dc-recap-head"><div><span class="dc-eyebrow">VIDEO DE REPASO · CLASE ${entry.number}</span><h1>¿Cuánto recuerdas de hoy?</h1><p>Escucha, intenta recordar durante la cuenta atrás y luego comprueba. Sin subtítulos tu oído trabaja más; actívalos si te pierdes.</p></div></div>
       <div class="dc-recap-stage"><canvas class="dc-recap-canvas" aria-label="Video de repaso"></canvas><div class="dc-recap-loading">Preparando el video…</div></div>
-      <div class="dc-recap-controls"><button data-dc-action="recap-prev" aria-label="Pregunta anterior">⏮</button><button class="primary" data-dc-action="recap-play" aria-label="Reproducir">▶</button><button data-dc-action="recap-next" aria-label="Pregunta siguiente">⏭</button><input type="range" class="dc-recap-seek" min="0" max="1000" value="0" aria-label="Posición"><span class="dc-recap-time">0:00</span><button class="dc-recap-toggle" data-dc-action="recap-cc" aria-pressed="false" title="Subtítulos">CC</button><button class="dc-recap-toggle on" data-dc-action="recap-sound" aria-pressed="true" title="Efectos de sonido">♪</button><button data-dc-action="recap-full" aria-label="Pantalla completa">⛶</button></div>
+      <div class="dc-recap-controls"><button data-dc-action="recap-prev" aria-label="Pregunta anterior">${ui('prev')}</button><button class="primary" data-dc-action="recap-play" aria-label="Reproducir">${ui('play')}</button><button data-dc-action="recap-next" aria-label="Pregunta siguiente">${ui('next')}</button><input type="range" class="dc-recap-seek" min="0" max="1000" value="0" aria-label="Posición"><span class="dc-recap-time">0:00</span><button class="dc-recap-toggle" data-dc-action="recap-cc" aria-pressed="false" title="Subtítulos">CC</button><button class="dc-recap-toggle on" data-dc-action="recap-sound" aria-pressed="true" title="Efectos de sonido">${ui('sound')}</button><button data-dc-action="recap-full" aria-label="Pantalla completa">${ui('expand')}</button></div>
       <button class="dc-link" data-dc-action="to-today">Volver al plan de hoy</button></section>`,'Hoy');
     const canvas=this.root.querySelector('.dc-recap-canvas'),[style]=await Promise.all([loadRecapStyle(chosen)]);
     const timeline=buildRecapTimeline({classNumber:entry.number,unitTitle:entry.title||unit?.title||'',items:entry.items});
@@ -511,7 +531,7 @@ Object.assign(proto,{
       const key=`${Math.floor(state.t*4)}|${state.playing}|${state.ended}`;if(key===last)return;last=key;
       const seek=this.root.querySelector('.dc-recap-seek'),play=this.root.querySelector('[data-dc-action="recap-play"]'),time=this.root.querySelector('.dc-recap-time');
       if(seek&&document.activeElement!==seek)seek.value=String(Math.round(state.t/state.duration*1000));
-      if(play){play.textContent=state.playing?'⏸':state.ended?'↺':'▶';play.setAttribute('aria-label',state.playing?'Pausar':'Reproducir');}
+      if(play){play.innerHTML=ui(state.playing?'pause':state.ended?'replay':'play');play.setAttribute('aria-label',state.playing?'Pausar':'Reproducir');}
       if(time)time.textContent=`${format(state.t)} / ${format(state.duration)}`;
     }});
     this.root.querySelector('.dc-recap-loading')?.remove();
@@ -538,14 +558,14 @@ Object.assign(proto,{
   renderPictureActivity(activity,total){
     const selected=this.answers[activity.id]||'';
     const options=activity.options.map((option,index)=>`<button class="jp-answer dc-picture-option ${selected===option?'selected':''} ${this.feedback&&option===activity.answer?'correct-option':''}" data-jp-answer="${esc(option)}" ${this.feedback?'disabled':''} aria-label="Opción ${index+1}">${illustrationFor(option)}${this.feedback?`<small>${esc(option)}</small>`:''}</button>`).join('');
-    this.shell(`<section class="jp-activity"><header class="jp-activity-top"><button data-jp-action="leave-lesson">✕</button><div class="jp-progress"><i style="width:${(this.activityIndex+1)/total*100}%"></i></div><strong>${this.activityIndex+1}/${total}</strong></header><main class="jp-question"><span class="jp-type">ESCUCHA Y MIRA</span><h1>${esc(activity.prompt)}</h1><button class="jp-big-audio" data-jp-audio="normal" data-jp-audio-source="prompt" aria-label="Escuchar">▶</button><div class="jp-answers dc-picture-grid">${options}</div><div class="jp-listen-row"><button data-jp-audio="slow" data-jp-audio-source="prompt">Lento</button></div></main>${this.feedback?`<footer class="jp-feedback ${this.feedback.correct?'correct':'wrong'}"><div><strong>${this.feedback.correct?'¡Muy bien!':'Todavía no'}</strong><p>${esc(activity.explanation)}</p></div><button class="primary" data-jp-action="continue">Continuar</button></footer>`:`<footer class="jp-check"><button class="primary" data-jp-action="check" ${selected?'':'disabled'}>Comprobar</button></footer>`}</section>`,'Hoy');
+    this.shell(`<section class="jp-activity"><header class="jp-activity-top"><button data-jp-action="leave-lesson" aria-label="Salir de la lección">${ui('close')}</button><div class="jp-progress"><i style="width:${(this.activityIndex+1)/total*100}%"></i></div><strong>${this.activityIndex+1}/${total}</strong></header><main class="jp-question"><span class="jp-type">ESCUCHA Y MIRA</span><h1>${esc(activity.prompt)}</h1><button class="jp-big-audio" data-jp-audio="normal" data-jp-audio-source="prompt" aria-label="Escuchar">${ui('play',{size:30})}</button><div class="jp-answers dc-picture-grid">${options}</div><div class="jp-listen-row"><button data-jp-audio="slow" data-jp-audio-source="prompt">Lento</button></div></main>${this.feedback?`<footer class="jp-feedback ${this.feedback.correct?'correct':'wrong'}"><div><strong>${this.feedback.correct?'¡Muy bien!':'Todavía no'}</strong><p>${esc(activity.explanation)}</p></div><button class="primary" data-jp-action="continue">Continuar</button></footer>`:`<footer class="jp-check"><button class="primary" data-jp-action="check" ${selected?'':'disabled'}>Comprobar</button></footer>`}</section>`,'Hoy');
     if(!this.feedback&&!this.dailyAutoPlayed?.has(activity.id)){(this.dailyAutoPlayed??=new Set()).add(activity.id);this.playKeyAudio(activity.audio,'normal',false);}
   },
 
   // Las tarjetas de profesor: la regla de la clase y la tarea final.
   renderTeacherCard(activity,total){
     const lang=esc(this.definition.htmlLang),examples=(activity.examples||[]).map(item=>`<li><button data-jp-audio="normal" data-jp-audio-key="${esc(item.audio)}" aria-label="Escuchar"><span lang="${lang}" dir="auto">${esc(item.target)}</span><em>${esc(item.meaning)}</em></button></li>`).join('');
-    this.shell(`<section class="jp-activity"><header class="jp-activity-top"><button data-jp-action="leave-lesson" aria-label="Salir de la lección">✕</button><div class="jp-progress"><i style="width:${(this.activityIndex+1)/total*100}%"></i></div><strong>${this.activityIndex+1}/${total}</strong></header><main class="jp-question dc-teacher"><span class="jp-type">${activity.task?'SIN AYUDA':'EL PROFESOR EXPLICA'}</span><h1>${esc(activity.prompt)}</h1><p class="dc-teacher-text">${esc(activity.explanation)}</p>${examples?`<ul class="dc-teacher-examples">${examples}</ul>`:''}${activity.writing?`<textarea class="dc-writing" rows="6" lang="${lang}" aria-label="Tu texto"></textarea>${activity.model?`<details class="dc-model"><summary>Compara con un modelo</summary><p lang="${lang}" dir="auto">${esc(activity.model)}</p></details>`:''}`:''}</main><footer class="jp-check"><button class="primary" data-jp-action="continue">${activity.writing?'Terminé':activity.task?'Ya lo dije':'Entendido'}</button></footer></section>`,'Hoy');
+    this.shell(`<section class="jp-activity"><header class="jp-activity-top"><button data-jp-action="leave-lesson" aria-label="Salir de la lección">${ui('close')}</button><div class="jp-progress"><i style="width:${(this.activityIndex+1)/total*100}%"></i></div><strong>${this.activityIndex+1}/${total}</strong></header><main class="jp-question dc-teacher"><span class="jp-type">${activity.task?'SIN AYUDA':'EL PROFESOR EXPLICA'}</span><h1>${esc(activity.prompt)}</h1><p class="dc-teacher-text">${esc(activity.explanation)}</p>${examples?`<ul class="dc-teacher-examples">${examples}</ul>`:''}${activity.writing?`<textarea class="dc-writing" rows="6" lang="${lang}" aria-label="Tu texto"></textarea>${activity.model?`<details class="dc-model"><summary>Compara con un modelo</summary><p lang="${lang}" dir="auto">${esc(activity.model)}</p></details>`:''}`:''}</main><footer class="jp-check"><button class="primary" data-jp-action="continue">${activity.writing?'Terminé':activity.task?'Ya lo dije':'Entendido'}</button></footer></section>`,'Hoy');
   },
 
   // ── Envolturas de métodos existentes ───────────────────────────────────
@@ -589,14 +609,19 @@ Object.assign(proto,{
     if(this.dailyMode){const heading=this.root.querySelector('.jp-question h1');if(heading?.textContent.trim()==='Aprende y escucha')heading.remove();}
   },
   async continue(){
-    if(this.dailyMode&&this.lesson&&this.activityIndex>=this.lesson.activities.length-1){this.cancelSpeech();return this.finishDailyActivities();}
+    // Un segundo toque mientras se guarda el final de una parte no debe llegar al motor
+    // viejo (que lo trataría como lección del mapa y mostraría el mapa antiguo).
+    if(this.finishingDaily||(!this.dailyMode&&String(this.lesson?.id||'').startsWith('daily-')))return;
+    if(this.dailyMode&&this.lesson&&this.activityIndex>=this.lesson.activities.length-1){this.cancelSpeech();this.finishingDaily=true;try{return await this.finishDailyActivities();}finally{this.finishingDaily=false;}}
     await original.continue.call(this);
     // Salir a media parte no borra lo hecho: la próxima vez sigue en la misma pregunta.
     if(this.dailyMode&&this.dailyStep?.kind==='set'){const entry=currentClass(this.daily);entry.resume={phase:this.dailyStep.phase.id,index:this.activityIndex,id:this.lesson.activities[this.activityIndex]?.id,answers:this.answers};this.saveDaily();}
   },
   renderRoute(){
-    // Curso y Repaso viven ahora dentro de Hoy.
-    if(dailyEnabled(this)&&/^#\/[^/]+(\/(course|review))?\/?$/.test(location.hash)){history.replaceState(null,'',`#/${this.definition.slug}/today`);}
+    // Atrás desde Hoy deja el hash vacío: se vuelve al inicio, no al mapa antiguo.
+    if(dailyEnabled(this)&&this.active&&!location.hash.startsWith(`#/${this.definition.slug}`)){this.stop();this.onExit?.();return;}
+    // Curso, Repaso y las páginas de unidad o resultado del mapa viejo viven ahora dentro de Hoy.
+    if(dailyEnabled(this)&&/^#\/[^/]+(\/(course|review|course\/unit\/[^/]+|course\/result\/[^/]+))?\/?$/.test(location.hash)){history.replaceState(null,'',`#/${this.definition.slug}/today`);}
     return original.renderRoute.call(this);
   },
   mountToday(){

@@ -6,6 +6,7 @@
 import{JapaneseCourseApp}from'./japanese_course_app.js';
 import{illustrationFor,sceneSvg}from'./data/illustrations.js';
 import{dateKey}from'./daily_class.js';
+import{ui}from'./ui_icons.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const proto=JapaneseCourseApp.prototype,original={renderRoute:proto.renderRoute};
@@ -65,7 +66,7 @@ Object.assign(proto,{
     const list=`<details class="vd-notes"><summary>Ver todo lo del video</summary><ul class="vd-items">${topic.items.map(item=>`<li><b lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(item.target)}</b><span>${esc(item.meaning)}</span>${item.note?`<small>${esc(item.note)}</small>`:''}</li>`).join('')}</ul></details>`;
     this.shell(`<section class="dc-recap vd-player"><div class="dc-recap-head"><div><span class="dc-eyebrow">${esc(CATEGORIES.find(category=>category.id===topic.category)?.title.toUpperCase()||'VIDEO')}</span><h1>${esc(topic.title)}</h1><p>${topic.mode==='dialogue'?'Escucha cada frase, piensa qué significa y comprueba. Repítela en voz alta.':'Mira, escucha y repite en voz alta cada palabra.'} Los subtítulos están en CC.</p></div></div>
       <div class="dc-recap-stage"><canvas class="dc-recap-canvas" aria-label="Video: ${esc(topic.title)}"></canvas><div class="dc-recap-loading">Preparando el video…</div></div>
-      <div class="dc-recap-controls"><button data-dc-action="recap-prev" aria-label="Anterior">⏮</button><button class="primary" data-dc-action="recap-play" aria-label="Reproducir">▶</button><button data-dc-action="recap-next" aria-label="Siguiente">⏭</button><input type="range" class="dc-recap-seek" min="0" max="1000" value="0" aria-label="Posición"><span class="dc-recap-time">0:00</span><button class="dc-recap-toggle" data-dc-action="recap-cc" aria-pressed="false" title="Subtítulos">CC</button><button class="dc-recap-toggle on" data-dc-action="recap-sound" aria-pressed="true" title="Efectos de sonido">♪</button><button data-dc-action="recap-full" aria-label="Pantalla completa">⛶</button></div>
+      <div class="dc-recap-controls"><button data-dc-action="recap-prev" aria-label="Anterior">${ui('prev')}</button><button class="primary" data-dc-action="recap-play" aria-label="Reproducir">${ui('play')}</button><button data-dc-action="recap-next" aria-label="Siguiente">${ui('next')}</button><input type="range" class="dc-recap-seek" min="0" max="1000" value="0" aria-label="Posición"><span class="dc-recap-time">0:00</span><button class="dc-recap-toggle" data-dc-action="recap-cc" aria-pressed="false" title="Subtítulos">CC</button><button class="dc-recap-toggle on" data-dc-action="recap-sound" aria-pressed="true" title="Efectos de sonido">${ui('sound')}</button><button data-dc-action="recap-full" aria-label="Pantalla completa">${ui('expand')}</button></div>
       ${list}${notes}<button class="dc-link" data-jp-route="videos">Volver a Videos</button></section>`,'Videos');
     const canvas=this.root.querySelector('.dc-recap-canvas'),style=await loadRecapStyle(chosen);
     const timeline=buildRecapTimeline(topicTimelineOptions(topic,this.definition.name));
@@ -80,7 +81,7 @@ Object.assign(proto,{
       const key=`${Math.floor(state.t*4)}|${state.playing}|${state.ended}`;if(key===last)return;last=key;
       const seek=this.root.querySelector('.dc-recap-seek'),play=this.root.querySelector('[data-dc-action="recap-play"]'),time=this.root.querySelector('.dc-recap-time');
       if(seek&&document.activeElement!==seek)seek.value=String(Math.round(state.t/state.duration*1000));
-      if(play){play.textContent=state.playing?'⏸':state.ended?'↺':'▶';play.setAttribute('aria-label',state.playing?'Pausar':'Reproducir');}
+      if(play){play.innerHTML=ui(state.playing?'pause':state.ended?'replay':'play');play.setAttribute('aria-label',state.playing?'Pausar':'Reproducir');}
       if(time)time.textContent=`${format(state.t)} / ${format(state.duration)}`;
     }});
     this.root.querySelector('.dc-recap-loading')?.remove();
