@@ -1,8 +1,9 @@
 // Minijuego de imágenes para después de la clase: une imagen, sonido y palabra
 // en el idioma. Nunca muestra la traducción salvo cuando el alumno se equivoca.
 import{JapaneseCourseApp}from'./japanese_course_app.js';
+import{ui}from'./ui_icons.js';
 import{silhouetteFor,hasIllustration}from'./data/illustrations.js';
-import{taughtItems,markExtraStudy}from'./daily_class.js';
+import{taughtItems,markExtraStudy,recordReview}from'./daily_class.js';
 import{GAME_SECONDS,answer,createGame,finished,itemOf,markSeen,mastered,nextCard,progress}from'./daily_game_logic.js';
 
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
@@ -38,6 +39,8 @@ Object.assign(proto,{
     const left=Math.max(0,this.game.endsAt-Date.now()),ring=this.root.querySelector('.dg-clock circle.on'),label=this.root.querySelector('.dg-clock b');
     if(ring)ring.style.strokeDashoffset=String(113*(1-left/(GAME_SECONDS*1000)));
     if(label)label.textContent=`${Math.floor(left/60000)}:${String(Math.floor(left/1000)%60).padStart(2,'0')}`;
+    // A las 0:00 se termina, salvo que se esté leyendo la corrección de un error.
+    if(left<=0&&!this.game.feedback)this.renderGameEnd();
   },
 
   nextGameCard(){
@@ -51,12 +54,12 @@ Object.assign(proto,{
   renderGameCard(){
     const game=this.game,card=game.card,[c1,c2]=PALETTES[game.step%PALETTES.length],lang=esc(this.definition.htmlLang),fb=game.feedback;
     const item=card.target?itemOf(game,card.target):null;
-    const option=(target,kind)=>{const it=itemOf(game,target),state=fb?(target===card.target?'is-right':target===fb.picked?'is-wrong':'is-dim'):'';return kind==='image'?`<button class="dg-option dg-image ${state}" data-dg-action="pick" data-dg-target="${esc(target)}" aria-label="Opción">${img(it.meaning)}</button>`:`<button class="dg-option dg-word ${state}" data-dg-action="pick" data-dg-target="${esc(target)}" lang="${lang}" dir="auto">${esc(target)}</button>`;};
+    const option=(target,kind)=>{const it=itemOf(game,target),state=fb?(target===card.target?'is-right':target===fb.picked?'is-wrong':'is-dim'):'';return kind==='image'?`<button class="dg-option dg-image ${state}" data-dg-action="pick" data-dg-target="${esc(target)}" aria-label="Opción ${esc(String(card.options.indexOf(target)+1))}">${img(it.meaning)}</button>`:`<button class="dg-option dg-word ${state}" data-dg-action="pick" data-dg-target="${esc(target)}" lang="${lang}" dir="auto">${esc(target)}</button>`;};
     let body='';
     if(card.type==='intro'){
       body=`<button class="dg-intro" data-dg-action="next" aria-label="Continuar">${img(item.meaning,'dg-hero')}<strong lang="${lang}" dir="auto">${esc(item.target)}</strong><span class="dg-hint">Escucha y fíjate. Toca para seguir</span></button>`;
     }else if(card.type==='pick-image'||card.type==='listen'){
-      const center=card.type==='listen'?`<button class="dg-ear" data-dg-action="audio" aria-label="Escuchar otra vez">♪</button>`:`<button class="dg-center" data-dg-action="audio" lang="${lang}" dir="auto">${esc(item.target)}<small>▶</small></button>`;
+      const center=card.type==='listen'?`<button class="dg-ear" data-dg-action="audio" aria-label="Escuchar otra vez">${ui('sound',{size:40})}</button>`:`<button class="dg-center" data-dg-action="audio" lang="${lang}" dir="auto">${esc(item.target)}<small>${ui('play',{size:14})}</small></button>`;
       body=`<div class="dg-corners">${card.options.slice(0,2).map(target=>option(target,'image')).join('')}${center}${card.options.slice(2).map(target=>option(target,'image')).join('')}</div>`;
     }else if(card.type==='pick-word'){
       body=`<div class="dg-picture"><button class="dg-hero-btn" data-dg-action="audio-off" aria-label="Imagen">${img(item.meaning,'dg-hero')}</button><div class="dg-words">${card.options.map(target=>option(target,'word')).join('')}</div></div>`;
@@ -68,7 +71,7 @@ Object.assign(proto,{
     const reveal=fb&&!fb.ok?`<button class="dg-reveal" data-dg-action="next"><span lang="${lang}" dir="auto">${esc(fb.item.target)}</span><b>${esc(fb.item.meaning)}</b>${fb.otherItem?`<em><span lang="${lang}" dir="auto">${esc(fb.otherItem.target)}</span> = ${esc(fb.otherItem.meaning)}</em>`:''}<small>Toca para seguir</small></button>`:'';
     const done=mastered(game).length,total=game.pool.length;
     this.shell(`<section class="dg-game dg-is-${card.type}" style="--g1:${c1};--g2:${c2}">
-      <div class="dg-top"><button data-dg-action="quit" aria-label="Salir del minijuego">✕</button><span>Lo que ya conoces</span><div class="dg-clock"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><circle class="on" cx="20" cy="20" r="18"/></svg><b></b></div></div>
+      <div class="dg-top"><button data-dg-action="quit" aria-label="Salir del minijuego">${ui('close')}</button><span>Lo que ya conoces</span><div class="dg-clock"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><circle class="on" cx="20" cy="20" r="18"/></svg><b></b></div></div>
       <div class="dg-stage" data-step="${game.step}">${body}</div>${reveal}
       <div class="dg-bottom"><span>${done} de ${total} dominadas</span><div class="dg-bar"><i style="width:${progress(game)}%"></i></div><span>${progress(game)}%</span></div>
     </section>`,'Hoy');
@@ -105,7 +108,9 @@ Object.assign(proto,{
     const game=this.game;clearInterval(this.gameTimer);this.gameTimer=null;
     if(!game)return this.renderToday();
     const won=mastered(game),all=finished(game);
-    if(this.daily){this.daily=markExtraStudy(this.daily);this.saveDaily();}
+    // Lo que fallaste vuelve de verdad en tu próximo repaso (antes solo lo decía).
+    const failed=Object.entries(game.stats).filter(([,stat])=>stat.wrong>0).map(([target])=>target);
+    if(this.daily){this.daily=markExtraStudy(failed.length?recordReview(this.daily,{failed}):this.daily);this.saveDaily();}
     this.shell(`<section class="dg-game dg-is-end" style="--g1:#8a63d2;--g2:#4b3c9e"><div class="dg-end-card"><span>${all?'¡LAS DOMINASTE TODAS!':'¡TIEMPO!'}</span><h1>${won.length} palabra${won.length===1?'':'s'} dominada${won.length===1?'':'s'}</h1><p>${game.correct} aciertos · ${game.mistakes} errores. Las que fallaste vuelven en tu próximo repaso.</p><div class="dg-end-grid">${won.slice(0,24).map(target=>`<figure>${img(itemOf(game,target).meaning)}<figcaption lang="${esc(this.definition.htmlLang)}" dir="auto">${esc(target)}</figcaption></figure>`).join('')}</div><button class="primary" data-dg-action="start">Otra ronda</button><button class="dg-link" data-dg-action="quit">Volver a Hoy</button></div></section>`,'Hoy');
   },
 

@@ -36,7 +36,8 @@ export function typingPool(sources,language){
   const seen=new Set(),pool=[];
   for(const item of sources){
     const text=typingText(item,language);
-    if(!text||seen.has(text)||text.length>40)continue;
+    // Patrones de gramática («~입니다», «A は B»), listas con barras o puntos suspensivos no se escriben.
+    if(!text||seen.has(text)||text.length>40||/[~～…/=+→]|\b[AB]\b/.test(text))continue;
     seen.add(text);
     pool.push({text,meaning:String(item.meaning||'').trim(),level:levelOf(text,language),known:Boolean(item.known)});
   }
@@ -77,4 +78,36 @@ export function waveWords(pool,wave,seed=0){
   const settings=waveSettings(wave),candidates=pool.filter(item=>settings.levels.includes(item.level));
   const list=shuffle(candidates.length>=settings.words?candidates:pool,`${seed}|${wave}`);
   return Array.from({length:settings.words},(_,index)=>list[index%Math.max(1,list.length)]).filter(Boolean);
+}
+
+// ── Letras difíciles (como keybr) ─────────────────────────────────────
+// Cada fallo suma y cada acierto resta: las letras con más deuda salen primero.
+export function updateWeakness(weak,text,ok){
+  const next={...(weak||{})},value=(next[text]||0)+(ok?-1:2);
+  if(value<=0)delete next[text];else next[text]=Math.min(9,value);
+  return next;
+}
+export function weakFirst(items,weak){
+  const score=item=>weak?.[item.text]||0;
+  return [...items].sort((a,b)=>score(b)-score(a));
+}
+
+// ── Carrera ───────────────────────────────────────────────────────────
+// Cinco frases de tus clases (si no hay, palabras), para correr contra tu mejor tiempo.
+export function raceTexts(pool,{count=5,seed=0}={}){
+  const phrases=buildLevel(pool,'phrases',{seed,count});
+  return phrases.length>=3?phrases:[...phrases,...buildLevel(pool,'words',{seed,count:count-phrases.length})];
+}
+// Cuánto de lo escrito coincide desde el principio (para pintar el avance letra a letra).
+export function correctPrefix(typed,target){
+  const a=[...String(typed)],b=[...String(target)];let index=0;
+  while(index<a.length&&a[index]===b[index])index++;
+  return index;
+}
+export const raceProgress=(done,current,total)=>total?Math.min(1,(done+current)/total):0;
+
+// ── Dictado relámpago ─────────────────────────────────────────────────
+export function dictationItems(pool,{seed=0,count=ITEMS_PER_LEVEL}={}){
+  const words=buildLevel(pool,'words',{seed,count}),shorts=buildLevel(pool,'short',{seed,count});
+  return [...words,...shorts].slice(0,count);
 }

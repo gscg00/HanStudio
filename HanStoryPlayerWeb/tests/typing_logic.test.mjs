@@ -36,3 +36,14 @@ test('rōmaji a kana como un teclado japonés',()=>{
   assert.equal(finishKana(romajiToKana('hon')),'ほん');
   assert.equal(romajiToKana('ko-hi-',{katakana:true}),'コーヒー');
 });
+
+test('letras difíciles, carrera y dictado',async()=>{
+  const {updateWeakness,weakFirst,raceTexts,correctPrefix,dictationItems,typingPool:pool}=await import('../src/typing_logic.js');
+  let weak=updateWeakness({},'ㄹ',false);weak=updateWeakness(weak,'ㄱ',false);weak=updateWeakness(weak,'ㄱ',true);
+  assert.deepEqual(weakFirst([{text:'ㄱ'},{text:'ㄴ'},{text:'ㄹ'}],weak).map(item=>item.text),['ㄹ','ㄱ','ㄴ']);
+  assert.equal(correctPrefix('안녕하','안녕하세요'),3);
+  assert.equal(correctPrefix('안냥','안녕하세요'),1);
+  const items=pool(['물 주세요.','감사합니다','안녕하세요','이거 주세요','계산서 주세요','잘 모르겠어요'].map(target=>({target,meaning:'x'})),'Korean');
+  assert.ok(raceTexts(items).length>=3);
+  assert.ok(dictationItems(items).every(item=>item.level!=='phrases'));
+});

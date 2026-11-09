@@ -347,3 +347,79 @@ body:has(.jp-app[data-jp-theme="dark"]) .breadcrumb{color:#cfdcd2}
 .ty-results li.ok b{color:var(--hs-ok)}.ty-results li.miss b{color:var(--hs-accent)}
 .ty-actions{display:flex;flex-wrap:wrap;gap:.6rem}
 @media (max-width:520px){.ty-key{width:26px;height:40px}.ty-key b{font-size:.9rem}.ty-row:nth-child(2){margin-left:10px}.ty-row:nth-child(3){margin-left:24px}}
+/* Menú de juegos de escritura */
+.ty-games{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.9rem}
+.ty-game-card{display:grid;grid-template-columns:120px 1fr;grid-template-rows:auto auto;gap:.4rem 1rem;align-items:start;padding:1rem;border:1px solid var(--hs-line);border-radius:20px;background:var(--hs-card)}
+.ty-game-card .ty-art{grid-row:span 2;width:120px;height:80px;border-radius:14px;overflow:hidden;display:block}
+.ty-game-card .ty-art svg{width:100%;height:100%;display:block}
+.ty-game-card h2{margin:0;font:700 1.15rem var(--hs-serif);color:var(--hs-ink)}
+.ty-game-card p{margin:.2rem 0 0;color:var(--hs-muted);font-size:.86rem}
+.ty-game-card>button{grid-column:2;justify-self:start;min-height:44px;padding:.45rem 1.4rem}
+.ty-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.ty-chip{min-height:38px;padding:.35rem .8rem;border:1px solid var(--hs-line);border-radius:999px;background:var(--hs-bg);font-size:.82rem;font-weight:600}
+.ty-chip.done{border-color:var(--hs-ok);color:#1f5a39}
+.ty-chip:disabled{opacity:.45}
+.ty-note{margin:.5rem 0 0;color:var(--hs-accent)!important;font-size:.8rem!important;font-weight:700}
+.ty-mapbox{padding:.6rem .9rem;border:1px solid var(--hs-line);border-radius:16px;background:var(--hs-card)}
+.ty-mapbox summary{cursor:pointer;font-weight:700}
+.ty-mapbox .ty-keyboard{border:0;padding:.6rem 0}
+/* Durante el juego */
+.ty-stage{min-height:120px;display:flex;align-items:center;justify-content:center;width:100%}
+.ty-reveal{display:flex;flex-direction:column;align-items:center;gap:.2rem;margin:0;animation:dc-pop .3s both}
+.ty-reveal b{font:700 clamp(1.8rem,6vw,3rem)/1.15 var(--hs-serif)}
+.ty-reveal span{font-size:1.15rem;color:var(--hs-muted)}
+.ty-reveal.ok b{color:var(--hs-ok)}.ty-reveal.miss b{color:var(--hs-accent)}
+.ty-listen{width:96px;height:96px;border:0;border-radius:50%;background:var(--hs-ink);color:#fffdf8;font-size:2.2rem}
+.ty-score{padding:2rem 0;text-align:center}
+.ty-score h1{margin:.3rem 0 1rem;font:700 clamp(1.6rem,5vw,2.4rem) var(--hs-serif);color:var(--hs-ink)}
+.ty-track{display:flex;flex-direction:column;gap:.5rem;width:100%;padding:.8rem;border-radius:16px;background:var(--hs-soft)}
+.ty-lane{position:relative;height:34px;border-bottom:2px dashed #d9cdb8}
+.ty-lane small{position:absolute;right:0;bottom:4px;color:var(--hs-muted);font-size:.72rem;font-weight:700}
+.ty-car{position:absolute;bottom:4px;left:calc(var(--p)*(100% - 44px));width:44px;height:20px;border-radius:7px;background:var(--hs-accent);transition:left .15s}
+.ty-car:before,.ty-car:after{content:"";position:absolute;bottom:-5px;width:10px;height:10px;border-radius:50%;background:var(--hs-ink)}
+.ty-car:before{left:6px}.ty-car:after{right:6px}
+.ghost .ty-car{background:#5e6e6855}
+.ty-sentence{margin:0;font:600 clamp(1.4rem,4vw,2.1rem)/1.4 var(--hs-serif);color:#9aa69f;text-align:center}
+.ty-sentence .done{color:var(--hs-ok)}.ty-sentence .wrong{color:#fff;background:var(--hs-accent);border-radius:4px}
+@media (max-width:520px){.ty-game-card{grid-template-columns:1fr}.ty-game-card .ty-art{grid-row:auto;width:100%;height:90px}.ty-game-card>button{grid-column:1}}
+/* Metro: la línea con sus estaciones; el tren avanza al escribir. */
+.ty-metro{position:relative;width:calc(100% - 60px);height:96px;margin:0 30px;border-radius:0}
+.ty-metro:before{content:"";position:absolute;left:0;right:0;top:40px;height:8px;border-radius:8px;background:#3e8f5a}
+.ty-station{position:absolute;top:32px;left:calc(var(--at)*100%);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;width:0}
+.ty-station i{display:block;width:24px;height:24px;border:4px solid #3e8f5a;border-radius:50%;background:#fffdf8;box-sizing:border-box}
+.ty-station.reached i{background:#3e8f5a}
+.ty-station small{position:absolute;top:30px;width:120px;text-align:center;color:var(--hs-muted);font-size:.72rem;line-height:1.2}
+.ty-station small b{display:block;color:var(--hs-ink);font-size:.85rem}
+.ty-station:nth-child(odd) small{top:-26px}
+.ty-train{position:absolute;top:30px;left:calc(var(--p)*100%);transform:translateX(-50%);width:38px;height:28px;border-radius:8px 8px 4px 4px;background:var(--hs-accent);transition:left .25s;z-index:2}
+.ty-train:before{content:"";position:absolute;left:6px;right:6px;top:5px;height:9px;border-radius:3px;background:#fffdf8cc}
+.ty-train.ghost{background:#5e6e6866;z-index:1}
+
+/* ── Iconos y acabado (2026-11) ─────────────────────────────────────── */
+.ui-icon{display:inline-block;flex:none;vertical-align:-.2em}
+.jp-app button:has(>.ui-icon){display:inline-flex;align-items:center;justify-content:center;gap:.5rem}
+.dc-extra button:has(>.ui-icon){justify-content:flex-start}
+.dc-extra button>.ui-icon{color:var(--hs-accent)}
+.dc-cta .ui-icon{transition:transform .18s ease}
+.dc-cta:hover .ui-icon{transform:translateX(3px)}
+.dc-dock small{display:block;margin-top:.55rem;text-align:center;color:var(--hs-muted)}
+.jp-big-audio .ui-icon{margin-left:4px}
+.dc-check .ui-icon,.dc-empty b .ui-icon{vertical-align:middle}
+.dc-preview summary,.dc-extra summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.dc-preview summary::-webkit-details-marker,.dc-extra summary::-webkit-details-marker{display:none}
+.dc-preview summary::after,.dc-extra summary::after{content:"";width:.55rem;height:.55rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease;opacity:.6}
+.dc-preview[open] summary::after,.dc-extra[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.ty-hud{display:inline-flex;align-items:center;gap:.9rem;font-variant-numeric:tabular-nums}
+.ty-lives{display:inline-flex;gap:2px;color:#e2574c}
+.ty-quit .ui-icon,.dg-top button .ui-icon{display:block}
+:focus-visible{outline:3px solid var(--hs-accent,#df6c38);outline-offset:2px}
+.jp-app button{-webkit-tap-highlight-color:transparent}
+/* Las pestañas ya dicen dónde estás: la ruta del curso viejo sobra. */
+body:has(.jp-app) #breadcrumb{display:none}
+.ty-mapbox summary{list-style:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-weight:700}
+.ty-mapbox summary::-webkit-details-marker{display:none}
+.ty-mapbox summary::after{content:"";width:.55rem;height:.55rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease;opacity:.6}
+.ty-mapbox[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.ty-game-card{transition:transform .18s ease,box-shadow .18s ease}
+.ty-game-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px #1b3a3214}
+.pf-calendar{grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;max-width:360px;justify-content:start}
