@@ -125,6 +125,9 @@ const inventoryOf=(units,id)=>units.has(id)?unitInventory(units.get(id)).filter(
 // Al final de estas listas hay formas sueltas sacadas de textos (kommst, Lina, Und): no son vocabulario.
 const VOCABULARY_END={German:417,French:431};
 const wordInventory=(units,id,language)=>{const list=unitInventory(units.get(id)||{}).slice(0,id==='vocabulary'?VOCABULARY_END[language]??Infinity:Infinity);return list.filter(item=>usableItem(item)&&(item.glossed||id!=='vocabulary'));};
+// Las palabras básicas del curso (pronombres, verbos y cosas de todos los días), en su orden:
+// el bloque de vocabulario las adelanta antes de pasar a la lista de frecuencia avanzada.
+export const basicWords=(units,language)=>wordInventory(units,'vocabulary',language);
 const levelOf=id=>id.startsWith('b1')?'B1':id.startsWith('a2')?'A2':'A1';
 const chunkItems=(list,size)=>{
   const chunks=[];

@@ -13,11 +13,13 @@ import{evaluateGuidedAnswer}from'./guided_course_answers.js';
 import{DAILY_PHASES,advanceLearnIndex,estimatedMinutes,EXAM_PASS,buildClassClose,buildClassPractice,buildCloseSet,buildExamSet,buildComicAnalysis,buildLearnSet,buildOutputCards,buildReadingChecks,buildRecapRules,buildTextChecks,buildWordChecks,buildReviewSet,buildSentence,classReviewItems,recordReview,roleplayScript,typedRecall,completePhase,createDailyClass,currentClass,dailyStateId,dailyStatus,markExtraStudy,normalizeDailyState,previousClass,shuffle}from'./daily_class.js';
 import{BOOK_PATH,bookLessons,dailyWords,deepLines,nextStory,outputPrompts,recycledLines,studyDose}from'./study_plan.js';
 import{WORD_PACKS}from'./data/word_packs.js';
-import{allClassSpecs,placementSample,registerComics,unplacedScenes}from'./class_plan.js';
+import{allClassSpecs,basicWords,placementSample,registerComics,unplacedScenes}from'./class_plan.js';
 import{dateKey,placementLevel}from'./daily_class.js';
 import{CLASS_MODULES,LATIN_SCRIPT,STORY_UNITS,nextSoundLesson,planNextLesson,planProgress}from'./class_plan.js';
 import{ui,withIcon}from'./ui_icons.js';
 
+// En una conversación, «bonjour» de la lista de palabras se dice «Bonjour».
+const spoken=(line,text=line.target)=>line.speaker?String(text||'').replace(/^\p{Ll}/u,char=>char.toLocaleUpperCase()):text;
 const esc=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -96,7 +98,7 @@ Object.assign(proto,{
     // Mientras tanto la lectura repite frases ya aprendidas en clases anteriores.
     const number=this.daily.classes.length,dose=studyDose(this.language),lesson=level==='A1'?null:await this.nextBookLesson(),lines=lesson?.lines||recycledLines(this.daily,{seed:number});
     const book=lines.length?{code:lesson?.code||'',title:lesson?`${lesson.title} · ${lesson.number}`:'Escucha otra vez',lines}:null;
-    const words=dailyWords(this.daily,{bookWords:lesson?.words||[],pack:WORD_PACKS[this.language]||[],limit:dose.words});
+    const words=dailyWords(this.daily,{bookWords:lesson?.words||[],basics:basicWords(this.units,this.language),pack:WORD_PACKS[this.language]||[],limit:dose.words});
     return{book,words,real:level==='A1'?null:this.nextRealPhrases(),deep:deepLines(this.daily),longread:nextStory(this.daily,this.language,level),output:outputPrompts(level,number)};
   },
   async saveDaily(){await this.put('metadata',this.daily).catch(()=>{});},
@@ -263,6 +265,11 @@ Object.assign(proto,{
     }
     if(phase.id==='words'){
       if(!entry.words?.length)return this.finishPhase(phase,null,{skip:true});
+      // Clases creadas antes de las palabras básicas: si solo traían la lista avanzada, se cambian.
+      if(entry.words.every(item=>/^pack-/.test(item.activityId||''))){
+        const others={classes:this.daily.classes.filter(other=>other!==entry)},words=dailyWords(others,{basics:basicWords(this.units,this.language),limit:entry.words.length});
+        if(words.length===entry.words.length&&words.some(item=>!/^pack-/.test(item.activityId||''))){entry.words=words;await this.saveDaily();}
+      }
       return this.runSet(phase,[...buildLearnSet(entry.words,{teach:item=>this.teachActivity(item),seed}),...buildWordChecks(entry.words,[...pool,...entry.words],{seed})]);
     }
     if(phase.id==='output'){
@@ -424,7 +431,7 @@ Object.assign(proto,{
     const lang=esc(this.definition.htmlLang),listenTitle=this.dailyListen.phase==='story'?currentClass(this.daily)?.longread?.title:this.dailyListen.phase==='reading'?currentClass(this.daily)?.book?.title:this.dailyListen.phase==='deep'?'los textos de esta semana':currentClass(this.daily)?.story;
     let body='';
     const stories=lines.some(line=>line.story!==undefined)?this.dailyStories||[]:[];
-    const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}" dir="auto">${esc(line.target)}</span>${line.reading?`<span class="dc-line-reading">${esc(line.reading)}</span>`:''}<span class="dc-line-es">${esc(line.meaning)}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
+    const lineItem=(line,index)=>`<li data-dc-line="${index}" style="--i:${index}"><button data-dc-action="play-line" data-dc-line="${index}">${line.speaker?`<span class="dc-line-speaker">${esc(line.speaker)}</span>`:''}<span class="dc-line-ko" lang="${lang}" dir="auto">${esc(spoken(line))}</span>${line.reading?`<span class="dc-line-reading">${esc(line.reading)}</span>`:''}<span class="dc-line-es">${esc(spoken(line,line.meaning))}</span></button>${!line.speaker&&hasIllustration(line.meaning)?`<i class="dc-line-pic" aria-hidden="true">${illustrationFor(line.meaning)}</i>`:''}</li>`;
     const sceneOf=story=>sceneSvg(story.scene)||sceneSvg('generic');
     if(step===0){
       const pictures=stories.length?'':lines.filter(line=>hasIllustration(line.meaning)).slice(0,6).map(line=>`<figure data-dc-line="${lines.indexOf(line)}">${illustrationFor(line.meaning)}</figure>`).join('');
@@ -436,7 +443,7 @@ Object.assign(proto,{
     }else if(step===2){
       const index=Math.max(0,Math.min(lines.length-1,this.dailyShadowIndex||0)),line=lines[index],story=stories[line.story];
       const picture=story?`<div class="dc-shadow-scene" aria-hidden="true">${sceneOf(story)}</div>`:hasIllustration(line.meaning)?`<div class="dc-shadow-pic" aria-hidden="true">${illustrationFor(line.meaning)}</div>`:'';
-      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(line.meaning)}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">${withIcon('replay','Otra vez')}</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase ${ui('arrow')}</button>`:script?`<button class="primary" data-dc-action="listen-step" data-dc-step="3">Siguiente ${ui('arrow')}</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ${ui('check')}</button>`}</div>`;
+      body=`<p class="dc-listen-help">Escucha la frase y repítela en voz alta imitando el ritmo y la entonación. No pasa nada si no sale perfecta.</p><div class="dc-shadow" style="--n:${lines.length}"><div class="dc-shadow-count">${index+1} / ${lines.length}</div>${picture}${line.speaker?`<div class="dc-line-speaker">${esc(line.speaker)}</div>`:''}<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(spoken(line))}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}<div class="dc-shadow-es">${esc(spoken(line,line.meaning))}</div><div class="dc-shadow-turn" aria-live="polite"><span>Escucha…</span><div class="dc-shadow-bar"><i></i></div></div></div><div class="dc-listen-actions"><button data-dc-action="shadow-again">${withIcon('replay','Otra vez')}</button><button data-dc-action="shadow-slow">Lento</button>${index<lines.length-1?`<button class="primary" data-dc-action="shadow-next">Siguiente frase ${ui('arrow')}</button>`:script?`<button class="primary" data-dc-action="listen-step" data-dc-step="3">Siguiente ${ui('arrow')}</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ${ui('check')}</button>`}</div>`;
     }else if(step===3)body=this.roleplayBody(script);
     this.shell(`<section class="dc-listen step-${step}"><header class="dc-listen-top"><button data-dc-action="to-today" aria-label="Salir">${ui('close')}</button><div><strong>${esc(steps[step])}</strong><span>${step+1} de ${steps.length}</span></div></header>${body}</section>`,'Hoy');
     if(step===2)this.shadowLine('normal');
@@ -447,9 +454,9 @@ Object.assign(proto,{
   roleplayBody({role,turns}){
     const lang=esc(this.definition.htmlLang),index=Math.min(turns.length-1,this.dailyRoleIndex||0),{line,mine}=turns[index],shown=!mine||this.dailyRoleShown;
     const said=this.dailyRoleSaid,heard=said?`<p class="dc-role-heard" lang="${lang}" dir="auto">${esc(said.text)}</p><p class="dc-soft">${said.ok?'Se entendió.':'Compara con la frase y dila otra vez si quieres.'}</p>`:'';
-    const speak=mine&&!shown?`${speechRecognitionSupport().supported?'<button class="primary" data-dc-action="role-speak">🎤 Decirlo</button>':''}<button ${speechRecognitionSupport().supported?'':'class="primary"'} data-dc-action="role-show">Ya lo dije, ver la frase</button>`:'';
+    const speak=mine&&!shown?`${speechRecognitionSupport().supported?'<button class="primary" data-dc-action="role-speak">'+withIcon('mic','Decirlo')+'</button>':''}<button ${speechRecognitionSupport().supported?'':'class="primary"'} data-dc-action="role-show">Ya lo dije, ver la frase</button>`:'';
     const next=shown||!mine?`<button data-dc-action="role-again">${withIcon('replay','Oír')}</button>${index<turns.length-1?`<button class="primary" data-dc-action="role-next">Siguiente ${ui('arrow')}</button>`:`<button class="primary" data-dc-action="listen-finish">Terminar ${ui('check')}</button>`}`:'';
-    return`<p class="dc-listen-help">Eres ${esc(role)}. Cuando te toque, di la frase de memoria, en voz alta. Si no te sale, mírala: no pasa nada.</p><div class="dc-shadow"><div class="dc-shadow-count">${index+1} / ${turns.length}</div><div class="dc-line-speaker">${esc(mine?`Tú (${role})`:line.speaker||'')}</div>${shown?`<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(line.target)}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}`:'<div class="dc-shadow-ko" aria-hidden="true">…</div>'}<div class="dc-shadow-es">${esc(line.meaning)}</div>${heard}</div><div class="dc-listen-actions">${speak}${next}</div>`;
+    return`<p class="dc-listen-help">Eres ${esc(role)}. Cuando te toque, di la frase de memoria, en voz alta. Si no te sale, mírala: no pasa nada.</p><div class="dc-shadow"><div class="dc-shadow-count">${index+1} / ${turns.length}</div><div class="dc-line-speaker">${esc(mine?`Tú (${role})`:line.speaker||'')}</div>${shown?`<div class="dc-shadow-ko" lang="${lang}" dir="auto">${esc(spoken(line))}</div>${line.reading?`<div class="dc-line-reading">${esc(line.reading)}</div>`:''}`:'<div class="dc-shadow-ko" aria-hidden="true">…</div>'}<div class="dc-shadow-es">${esc(spoken(line,line.meaning))}</div>${heard}</div><div class="dc-listen-actions">${speak}${next}</div>`;
   },
   roleplayTurn(script){
     const turn=script.turns[Math.min(script.turns.length-1,this.dailyRoleIndex||0)];
@@ -572,6 +579,8 @@ Object.assign(proto,{
   shell(content,section='Mapa'){
     if(this.recapPlayer&&!content.includes('dc-recap')){this.recapPlayer.destroy();this.recapPlayer=null;}
     if(dailyEnabled(this))content=content.replace(/data-jp-route="(course|review)"/g,'data-jp-route="today"').replace(/Volver al mapa/g,'Volver a Hoy');
+    // Las pantallas de ejercicios del motor antiguo todavía escriben ▶ y ✕ como texto.
+    content=content.replace(/>▶ ?</g,`>${ui('play',{size:18})}<`).replace(/>▶ /g,`>${ui('play',{size:16})}`).replace(/>✕</g,`>${ui('close')}<`);
     original.shell.call(this,content,section);
     if(!dailyEnabled(this))return;
     const nav=this.root.querySelector('.jp-app-nav');

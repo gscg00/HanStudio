@@ -31,9 +31,11 @@ export function bookLessons(manifest,code){
 const known=state=>{const seen=new Set();for(const entry of state?.classes||[])for(const item of[...(entry.items||[]),...(entry.words||[])])seen.add(String(item.target).toLowerCase());return seen;};
 
 // Palabras de hoy: primero las de la lectura, luego la lista de frecuencia hasta llenar el cupo.
-export function dailyWords(state,{bookWords=[],pack=[],limit=12}={}){
+// Antes de la lista de frecuencia (nivel intermedio) van las palabras básicas del curso:
+// el primer día no tocan «el contrato» ni «el consumidor».
+export function dailyWords(state,{bookWords=[],basics=[],pack=[],limit=12}={}){
   const seen=known(state),out=[];
-  for(const item of[...bookWords,...pack]){
+  for(const item of[...bookWords,...basics,...pack]){
     const key=String(item.target).toLowerCase();
     if(seen.has(key))continue;
     seen.add(key);out.push(item);

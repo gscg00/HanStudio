@@ -214,6 +214,11 @@ test('las palabras del día no repiten lo aprendido y respetan el cupo',()=>{
   assert.deepEqual(dailyWords(state,{bookWords:[make('Haus'),make('Auto')],pack:[make('Baum'),make('Tisch'),make('Stuhl')],limit:2}).map(item=>item.target),['Auto','Tisch']);
 });
 
+test('el vocabulario empieza por las palabras básicas, no por la lista avanzada',()=>{
+  const make=target=>({target}),state={classes:[{items:[{target:'je'}]}]};
+  assert.deepEqual(dailyWords(state,{basics:[make('je'),make('tu'),make('il')],pack:[make('le contrat'),make('le contrôle')],limit:3}).map(item=>item.target),['tu','il','le contrat']);
+});
+
 test('sin libro, el bloque de lectura reutiliza frases ya vistas',()=>{
   const items=[{target:'uno dos'},{target:'tres cuatro'},{target:'sola'}];
   assert.deepEqual(recycledLines({classes:[{items}]},{count:4}).map(line=>line.target).sort(),['tres cuatro','uno dos']);
