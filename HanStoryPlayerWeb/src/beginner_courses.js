@@ -10,7 +10,7 @@ D|dee|di|door
 E|ee|i larga|even
 F|eff|ef|food
 G|gee|yi; a veces g fuerte|game
-H|aitch|eich, con h aspirada|house
+H|aitch|eich, sin h al inicio|house
 I|eye|ai|island
 J|jay|yei|job
 K|kay|kei|key
@@ -66,7 +66,7 @@ Z|zee|zi (EE. UU.)|zoo`)}]},
 Д|дэ|d|дом
 Е|е|ye / e|есть
 Ё|ё|yo|ёлка
-Ж|жэ|como la y francesa de “journal”|жук
+Ж|жэ|como la j francesa de «journal»|жук
 З|зэ|z sonora|зима
 И|и|i|мир
 Й|и краткое|y breve|мой
@@ -81,7 +81,7 @@ Z|zee|zi (EE. UU.)|zoo`)}]},
 Т|тэ|t|там
 У|у|u|утро
 Ф|эф|f|фото
-Х|ха|j española suave|хорошо
+Х|ха|como la j mexicana de «jarro»|хорошо
 Ц|цэ|ts|центр
 Ч|чэ|ch|чай
 Ш|ша|sh|школа
@@ -155,7 +155,7 @@ M|emm|em|Mann
 N|enn|en|Name
 O|oh|o|offen
 P|peh|pe|Park
-Q|kuh|ku|Quelle
+Q|kuh|kü (k + la u francesa)|Quelle
 R|err|r de garganta o vibrante|rot
 S|ess|s; al inicio puede sonar z|Sonne
 T|teh|te|Tag
@@ -261,7 +261,7 @@ Z|tsett|tset|Zeit
 ヲ|ヲ|o; uso poco frecuente|ヲ
 ン|ン|n|パン`)}]},
   Chinese:{title:'Primeros pasos con el chino mandarín',intro:'El chino no tiene alfabeto. Comienza con pinyin y sus cuatro tonos; cambiar el tono puede cambiar el significado.',groups:[{title:'Los cuatro tonos',items:rows(`ā|mā|tono 1: alto y plano|mā 妈, mamá
-á|má|tono 2: sube, como una pregunta|má 麻, cáñamo
+á|má|tono 2: sube de medio a alto|má 麻, cáñamo
 ǎ|mǎ|tono 3: baja y vuelve a subir|mǎ 马, caballo
 à|mà|tono 4: cae con fuerza|mà 骂, regañar`)},{title:'Sonidos iniciales útiles',items:rows(`b|bā|p suave sin aire|八
 p|pā|p con bastante aire|趴
@@ -269,7 +269,7 @@ d|dā|t suave sin aire|搭
 t|tā|t con aire|他
 g|gē|k suave sin aire|哥
 k|kē|k con aire|科
-j|jī|entre yi y chi, lengua adelante|鸡
+j|jī|ch suave sin aire, lengua adelante|鸡
 q|qī|chi con mucho aire|七
 x|xī|sh muy suave, lengua adelante|西
 zh|zhī|ch retrofleja, lengua atrás|知
@@ -298,7 +298,7 @@ S|esse|ese|sol
 T|tê|te|tempo
 U|u|u|uva
 V|vê|ve|vida
-W|dáblio|dablio|web
+W|dáblio|dáblio|web
 X|xis|sh, s, z o ks|xícara
 Y|ípsilon|ípsilon|yoga
 Z|zê|ze|zero`)}]},
