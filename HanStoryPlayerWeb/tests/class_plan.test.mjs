@@ -328,3 +328,28 @@ test('las tarjetas de manga se reparten sin perder ninguna escena',()=>{
   const korean=allClassSpecs(new Map(load('Korean').map(unit=>[unit.id,unit])),{language:'Korean'});
   assert.ok(korean.some(spec=>spec.comicKind==='hanja')||unplacedScenes(new Map(load('Korean').map(unit=>[unit.id,unit])),'Korean').some(scene=>scene.kind==='hanja'));
 });
+
+test('las opciones falsas nunca son también correctas y salen de lo cercano',async()=>{
+  const{recallChoice,listenMeaning,optionKey}=await import('../src/daily_class.js');
+  const item={target:'Salut',meaning:'hola (entre amigos)',audio:'Salut'};
+  const pool=[{target:'Bonjour',meaning:'hola'},{target:'Merci',meaning:'gracias'},{target:'Au revoir',meaning:'adiós'},{target:'Salut.',meaning:'hola'},{target:'Oui',meaning:'sí'}];
+  const recall=recallChoice(item,pool,'s');
+  assert.ok(!recall.options.includes('Bonjour')&&!recall.options.includes('Salut.'),recall.options.join(','));
+  const listen=listenMeaning(item,pool,'s');
+  assert.equal(new Set(listen.options.map(optionKey)).size,listen.options.length);
+  assert.ok(!listen.options.includes('hola'));
+  // Con muchas opciones posibles, las falsas salen del principio del pool (lo de hoy y lo reciente).
+  const big=[...Array.from({length:30},(_,index)=>({target:`near${index}`,meaning:`cerca ${index}`})),...Array.from({length:200},(_,index)=>({target:`far${index}`,meaning:`lejos ${index}`}))];
+  for(let index=0;index<20;index++)assert.ok(recallChoice({target:'x',meaning:'equis'},big,`t${index}`).options.every(option=>!option.startsWith('far')));
+});
+
+test('«Leer y pronunciar»: orden, bloqueo y repasos que esperan a lo que repasan',async()=>{
+  const lesson=(id,extra={})=>({id,title:id,activities:[{type:'teach_concept',target:'a'}],...extra});
+  const units=[{id:'reading',title:'Lectura',lessons:[lesson('l1'),lesson('l2'),lesson('l-review',{isReview:true}),lesson('l3')]}];
+  const{soundLessons,soundsPending}=await import('./helpers/sounds_logic.mjs');
+  let list=soundLessons(units,[]);
+  assert.deepEqual(list.map(entry=>entry.open),[true,false,false,false]);
+  list=soundLessons(units,['l1','l2']);
+  assert.deepEqual(list.map(entry=>entry.open),[true,true,true,true]);
+  assert.deepEqual(soundsPending(units,['l1','l2']).map(entry=>entry.lesson.id),['l3']);
+});
