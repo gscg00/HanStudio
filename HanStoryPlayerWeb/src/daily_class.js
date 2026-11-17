@@ -97,7 +97,8 @@ export function hoursUntilTomorrow(now=new Date()){
 }
 
 const meaningOf=activity=>String(activity.meaning||activity.explanation||'').trim();
-const isSentence=text=>/\s/.test(String(text).trim());
+// Una frase tiene espacios o acaba en signo de cierre («목말라요.» es una frase entera).
+const isSentence=text=>/\s/.test(String(text).trim())||/[.?!。？！؟]$/.test(String(text).trim());
 
 // Elementos enseñados en una lección: lo que luego se repasa y se practica.
 export function taughtItems(lesson){
@@ -174,12 +175,29 @@ function hash(text){let h=2166136261;for(const ch of String(text)){h^=ch.codePoi
 function seeded(seed){let s=hash(seed)||1;return()=>{s^=s<<13;s^=s>>>17;s^=s<<5;return((s>>>0)%100000)/100000;};}
 export function shuffle(list,seed){const rand=seeded(seed),copy=[...list];for(let i=copy.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 
+// Lo esencial de un texto para comparar opciones: sin aclaraciones entre paréntesis, sin
+// signos ni mayúsculas. «hola» y «hola (entre amigos)» o «Me llamo Ana.» y «Me llamo Ana»
+// cuentan como lo mismo; los acentos sí se respetan («cómo» no es «como»).
+const NEAR_OPTIONS=24;
+export const optionKey=text=>String(text??'').replace(/\([^)]*\)/g,' ').toLowerCase().replace(/[¿¡?!.,;:«»"'…/\-]/g,' ').replace(/\s+/g,' ').trim();
+// Una opción falsa nunca puede ser también correcta: ni la misma forma ni el mismo significado.
+const clash=(other,item)=>optionKey(other.target)===optionKey(item.target)||optionKey(other.meaning)===optionKey(item.meaning);
 function distractors(item,pool,count,key,baseSeed){
   // La semilla incluye el elemento: si no, las mismas opciones falsas se repiten y delatan la respuesta.
   const seed=`${baseSeed}|${item.target}`;
-  const same=pool.filter(other=>other[key]!==item[key]&&other.meaning!==item.meaning&&isSentence(other.target)===isSentence(item.target));
-  const rest=pool.filter(other=>other[key]!==item[key]&&other.meaning!==item.meaning&&!same.includes(other));
-  return [...new Set([...shuffle(same,seed),...shuffle(rest,seed+'r')].map(other=>other[key]))].slice(0,count);
+  // El orden del pool importa: primero lo de hoy y lo más reciente. Las opciones falsas salen
+  // de ahí y del mismo tipo (palabra o frase), para que la respuesta no se adivine por descarte.
+  const tier=(other,index)=>(index<NEAR_OPTIONS?0:2)+(isSentence(other.target)===isSentence(item.target)?0:1);
+  const ranked=pool.map((other,index)=>({other,tier:tier(other,index)})).filter(({other})=>!clash(other,item));
+  const ordered=[0,1,2,3].flatMap(level=>shuffle(ranked.filter(entry=>entry.tier===level).map(entry=>entry.other),`${seed}${level}`));
+  const picked=[],keys=new Set([optionKey(item[key])]);
+  for(const other of ordered){
+    const value=other[key],valueKey=optionKey(value);
+    if(keys.has(valueKey))continue;
+    keys.add(valueKey);picked.push(value);
+    if(picked.length>=count)break;
+  }
+  return picked;
 }
 
 const baseActivity=(item,id,extra)=>({id,target:'',options:[],answer:'',explanation:'',audio:item.audio,slow_audio:item.slowAudio,tags:['daily'],xp:10,sourceActivityId:item.activityId,itemTarget:item.target,...extra});
@@ -187,7 +205,7 @@ const baseActivity=(item,id,extra)=>({id,target:'',options:[],answer:'',explanat
 // Recordar en la dirección difícil: ves el significado y eliges la forma en el idioma.
 export function recallChoice(item,pool,seed){
   const options=shuffle([item.target,...distractors(item,pool,2,'target',seed)],`${seed}o${item.target}`);
-  return baseActivity(item,`daily-recall-${seed}-${hash(item.target)}`,{type:'select_translation',dailyKind:'recall',prompt:`¿Cómo se dice «${item.meaning}»?`,target:item.meaning,targetIsSpanish:true,options,answer:item.target,audio:'',slow_audio:'',optionAudio:true,explanation:`«${item.meaning}» se dice «${item.target}».`});
+  return baseActivity(item,`daily-recall-${seed}-${hash(item.target)}`,{type:'select_translation',dailyKind:'recall',prompt:'¿Cómo se dice?',target:item.meaning,targetIsSpanish:true,options,answer:item.target,audio:'',slow_audio:'',optionAudio:true,explanation:`«${item.meaning}» se dice «${item.target}».`});
 }
 
 // Escuchar y elegir el significado (comprensión sin ver la escritura).

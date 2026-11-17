@@ -22,13 +22,17 @@ export function bookLessons(manifest,code){
   for(const track of manifest?.tracks||[]){
     if(!usable(track))continue;
     const group=byLesson.get(track.lesson)||{code,title:manifest.title,number:track.lesson,lines:[],words:[]},item={target:track.text,meaning:track.translation,audio:track.text,slowAudio:track.text,reading:'',speaker:track.speaker||'',speakerKo:track.speaker||'',file:track.audio_path?`../../books/${code}/${track.audio_path}`:'',activityId:`book-${track.id}`,lessonId:''};
+    // Las glosas de palabras sueltas van en minúscula, como en el resto del curso («isla», no «Isla»).
+    if(track.type==='word'&&!/[.?!]$/.test(item.meaning)&&!/^\p{Lu}{2}/u.test(item.meaning))item.meaning=item.meaning.charAt(0).toLowerCase()+item.meaning.slice(1);
     (track.type==='word'?group.words:group.lines).push(item);
     byLesson.set(track.lesson,group);
   }
   return[...byLesson.values()].filter(group=>group.lines.length>=3).sort((a,b)=>a.number-b.number);
 }
 
-const known=state=>{const seen=new Set();for(const entry of state?.classes||[])for(const item of[...(entry.items||[]),...(entry.words||[])])seen.add(String(item.target).toLowerCase());return seen;};
+// Para no repetir palabras: sin signos ni mayúsculas («감사합니다.» es «감사합니다»).
+const wordKey=text=>String(text??'').toLowerCase().replace(/[.,;:!?¿¡…。？！、«»"']/g,'').replace(/\s+/g,' ').trim();
+const known=state=>{const seen=new Set();for(const entry of state?.classes||[])for(const item of[...(entry.items||[]),...(entry.words||[])])seen.add(wordKey(item.target));return seen;};
 
 // Palabras de hoy: primero las de la lectura, luego la lista de frecuencia hasta llenar el cupo.
 // Antes de la lista de frecuencia (nivel intermedio) van las palabras básicas del curso:
@@ -36,7 +40,7 @@ const known=state=>{const seen=new Set();for(const entry of state?.classes||[])f
 export function dailyWords(state,{bookWords=[],basics=[],pack=[],limit=12}={}){
   const seen=known(state),out=[];
   for(const item of[...bookWords,...basics,...pack]){
-    const key=String(item.target).toLowerCase();
+    const key=wordKey(item.target);
     if(seen.has(key))continue;
     seen.add(key);out.push(item);
     if(out.length>=limit)break;

@@ -244,6 +244,7 @@ function withProgram(specs,language){
 
 const specsOfSize=(units,language,stories,size)=>withProgram(baseSpecs(units,language,stories,size),language);
 
+const NUMBER_NAMES=['uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez'];
 const refItem=(ref,units)=>{const[key,index]=ref.split(':');return unitInventory(units.get(UNIT_KEYS[key]))[Number(index)]||null;};
 
 // La clase concreta para un idioma: palabras, diálogo, regla y tarea.
@@ -251,7 +252,7 @@ export function resolveClass(spec,units,language){
   if(spec.kind)return resolveReview(spec,units,language);
   const rule=CLASS_RULES[language]?.[Number(spec.id.slice(1))-1]||'';
   if(spec.resolved)return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level,items:spec.resolved,lines:spec.lines.map(item=>({...item})),story:spec.story,replies:[],rule:spec.rule,task:spec.task,production:spec.production,...(spec.advanced?{questions:spec.questions,drills:spec.drills,write:spec.write}:{}),...(spec.comic?{comic:true}:{})};
-  const items=spec.numbers?(CLASS_NUMBERS[language]||[]).map((target,index)=>({target,meaning:String(index+1),audio:target,slowAudio:target,reading:'',activityId:`numbers-${index+1}`,lessonId:''})):spec.items.map(ref=>refItem(ref,units)).filter(Boolean);
+  const items=spec.numbers?(CLASS_NUMBERS[language]||[]).map((target,index)=>({target,meaning:`${index+1} (${NUMBER_NAMES[index]})`,audio:target,slowAudio:target,reading:'',activityId:`numbers-${index+1}`,lessonId:''})):spec.items.map(ref=>refItem(ref,units)).filter(Boolean);
   const lines=spec.dialogue.map(([speaker,ref])=>{const item=refItem(ref,units);return item&&{...item,speaker:speaker==='A'?'Ana':'Leo',speakerKo:speaker==='A'?'Ana':'Leo',gender:speaker==='A'?'f':'m'};}).filter(Boolean);
   const replies=spec.replies.map(([asked,answer])=>({asked:refItem(asked,units),answer:refItem(answer,units)})).filter(pair=>pair.asked&&pair.answer);
   return{id:spec.id,title:spec.title,goal:spec.goal,module:spec.module,level:spec.level||'A1',items,lines,story:'',replies,rule,task:spec.task,production:spec.production||null};

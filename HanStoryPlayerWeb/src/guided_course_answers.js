@@ -111,9 +111,10 @@ export function answerFeedback(activity,given,language=''){
     return{...result,message:activity.success_message||[dialogueMessage,activity.explanation].filter(Boolean).join(' ')};
   }
   const expected=result.expected||activity.answer||'';
+  // Si la explicación ya dice la respuesta, no se repite delante.
   const dialogueMessage=result.totalTurns
     ? `Revisa el intercambio: ${result.correctTurns} de ${result.totalTurns} respuestas fueron correctas.${expected?` Modelo: ${expected}`:''}`
-    : `Respuesta esperada: ${expected}`;
+    : expected&&String(activity.explanation||'').includes(expected)?'':`Respuesta esperada: ${expected}`;
   const constrained=['typed_translation','open_question','guided_dialogue','stage_scenario'].includes(activity.type);
   const note=constrained?' Se compara con las expresiones registradas en esta actividad; una formulación diferente puede ser válida.':'';
   return{...result,message:activity.error_message||[dialogueMessage+note,result.orthographyHint,activity.explanation].filter(Boolean).join(' ')};
